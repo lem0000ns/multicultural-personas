@@ -3,7 +3,7 @@ import json
 hm_resource = {"afar": 0, "balochi": 0, "faroese": 0, "fijian": 0, "hiligaynon": 0, "kirundi": 0, "papiamento": 0, "pashto": 0, "samoan": 0, "tongan": 0, "tswana": 0, "wolof": 0, "english": 1, "chinese": 1, "spanish": 1, "german": 1, "arabic": 1, "hebrew": 1, "hindi": 1, "hungarian": 1, "japanese": 1, "korean": 1, "russian": 1}
 
 def analyze(type):
-    with open(f"personaData/{type}-persona.json", "r") as f:
+    with open(f"personaData/{type}-j.json", "r") as f:
         data = json.load(f)
     
     # Initialize counters for high/medium resource languages
@@ -142,7 +142,7 @@ def analyze(type):
 
 if __name__ == "__main__":
     try:
-        analyze("agnostic")
-        analyze("specific")
+        analyze("ag")
+        analyze("sp")
     except Exception as e:
         print(f"Error analyzing {type}: {e}")

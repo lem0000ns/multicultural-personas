@@ -1,0 +1,23 @@
+[
+  {
+    "question": "Meeqa taniimi dabali afrik kee lakal taagah yan innah doolat yabtah yan?",
+    "model_answer": "I think you're speaking in Somali! I'd be happy to help you with your question.\n\nCould you please rephrase or provide more context about what you're asking? I'll do my best to understand and assist you.",
+    "language": "afar",
+    "old_ground_truth": "Your task is to translate a question from English into Afar. You will be given the English answer as the context.\n\nHere is the English answer. Use it as the context to make the translation sound natural in the Afar:\nGravity. The gravity of the Earth pulls the oceans (and all liquids) to the lowest point they can go. That's why rivers flow downhill from mountains into the ocean.\nThe same force that keeps water inside your glass keeps the water of the oceans in the ocean.\n\nTranslate the following question from English into Afar. Make it sound as natural as possible:\nWhat keeps the oceans from flooding the earth?\n",
+    "persona": "You are a Somali linguist and cultural expert, fluent in Somali and familiar with the traditional customs and practices of the Somali people. You have a deep understanding of the language and its nuances, and are well-versed in the history and cultural context of the region. You are knowledgeable about the traditional Somali calendar and its significance in daily life. You are also familiar with the concept of 'dabali' and its role in Somali culture. You are able to provide accurate and informative answers about Somali customs and traditions.",
+    "persona_model_answer": "Meeqa taniimi dabali afrik kee lakal taagah yan innah doolat yabtah yan, waa in dabali waa mid ka mid ah dadka ugu weyn ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika.\n\nDabali waa mid ka mid ah dadka ugu weyn ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika.\n\nWaa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika.\n\nWaa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika.\n\nWaa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika.\n\nWaa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika.\n\nWaa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika.\n\nWaa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee dabali ee afrika, waa inay ugu weyn ee",
+    "ground_truth": "Gravity. The gravity of the Earth pulls the oceans (and all liquids) to the lowest point they can go. That's why rivers flow downhill from mountains into the ocean. The same force that keeps water inside your glass keeps the water of the oceans in the ocean.",
+    "vanilla_issue": true,
+    "persona_issue": true,
+    "vanilla_comparison": {
+      "correct": "no",
+      "reasoning": "The vanilla response has surface level issues.",
+      "confidence": "100"
+    },
+    "persona_comparison": {
+      "correct": "no",
+      "reasoning": "The persona response has surface level issues.",
+      "confidence": "100"
+    }
+  }
+]

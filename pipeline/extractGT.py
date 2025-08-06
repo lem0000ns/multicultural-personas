@@ -29,7 +29,7 @@ def cleanup():
         print(f"Error during cleanup: {e}")
 
 def extract_ground_truth(type):
-    with open(f"personaData/{type}-persona-no-compare.json", "r") as f:
+    with open(f"personaData/{type}-pj.json", "r") as f:
         data = json.load(f)
     for entry in data:
         if entry["old_ground_truth"] == "None":
@@ -40,8 +40,7 @@ def extract_ground_truth(type):
         temp_language2 = "English" if type == "specific" else entry["language"].capitalize()
         chat_input = [
             {"role": "system",
-            "content": f"""You are a helpful assistant. Your task is to extract the ground truth from a prompt that is used to generate a translation. Return the ground truth exactly as it is without any additional translation or words. Oftentimes, the ground truth follows the phrase: \"Here is the {temp_language1} answer. Use it as the context to make the translation sound natural in the {temp_language2}.\". If there is no ground truth, output \"None\".
-            
+            "content": f"""You are a text extraction assistant. Your only task is to extract the exact ground truth text from the given prompt. \n\n⚠️ Do not translate, rewrite, summarize, or modify any words.\n\n⚠️ Do not interpret the meaning of the text.\n\n⚠️ Output the ground truth exactly as it appears, character for character.\n\n⚠️ Oftentimes, the ground truth follows the phrase: \"Here is the {temp_language1} answer. Use it as the context to make the translation sound natural in the {temp_language2}.\". If there is no ground truth, output \"None\".\n\n
             EXAMPLE:
             Prompt: Your task is to translate a question from English into Samoan. You will be given the English answer as the context.\n\nHere is the English answer. Use it as the context to make the translation sound natural in the Samoan:\nA larger lens gathers more light. Period. A larger lens weighs more which requires a larger frame to carry it. A larger frame allows for a larger sensor. A larger sensor generates more data which makes it easier to perform noise reduction. In short, that much larger camera is also MUCH more capable than your cell phone.\n\nTranslate the following question from English into Samoan. Make it sound as natural as possible:\nWhy do we still use gigantic TV studio cameras when the same technology is now cell phone sized?\n
 
@@ -55,13 +54,13 @@ def extract_ground_truth(type):
         ground_truth = generate_text(chat_input, llm, sampling_params)
         entry["ground_truth"] = ground_truth
     
-    with open(f"personaData/{type}-persona-no-compare.json", "w") as f:
+    with open(f"personaData/{type}-pj.json", "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
     try:
-        extract_ground_truth("agnostic")
-        extract_ground_truth("specific")
+        extract_ground_truth("ag")
+        extract_ground_truth("sp")
     finally:
         cleanup()
         print("Cleanup completed for LLM extractGT instance!")

@@ -13,7 +13,7 @@ JUDGE_PROMPT = """Judge whether the following response to a question is roughly 
 
 Your judgement must be in the format and criteria specified below:
 
-reasoning: Explain why the response is correct or incorrect based on the correct_answer, focusing only on if there are meaningful differences between the correct_answer and the response. Do not comment on any background to the problem, do not attempt to solve the problem, do not argue for any answer different than the correct_answer, focus only on whether the answers match. A response is roughly correct if it captures the main idea or meaning of the correct answer, even if it is incomplete, imprecise, or uses different wording. Focus only on whether there are meaningful differences that affect the correctness of the answer. Do not provide background information, do not solve the problem yourself, and do not suggest alternative answers.
+reasoning: Explain why the response is correct or incorrect based on the correct_answer, focusing only on if there are meaningful differences between the correct_answer and the response. Do not comment on any background to the problem, do not attempt to solve the problem, do not argue for any answer different than the correct_answer, focus only on whether the answers match. A response is roughly correct if it captures the main idea or meaning of the correct answer, even if it is incomplete, imprecise, or uses different wording. Do not provide background information, do not solve the problem yourself, and do not suggest alternative answers.
 
 Be concise and objective. Your goal is to assess whether the response aligns with the correct_answer in substance.
 
@@ -21,13 +21,15 @@ correct: Answer 'yes' if the response matches the correct_answer given above, or
 
 confidence: The extracted confidence score between 0% and 100% from the response. Put 100 if there is no confidence score available."""
 
-JUDGE_EYE_TEST = """Determine which of the following two responses better answers the question, based on detail, accuracy, and completeness. Respond in English, regardless of the language of the question. Your judgement must be in the format and criteria specified below:
+JUDGE_EYE_TEST = """Determine which of the following two responses better answers the question, based on detail, accuracy, and completeness. Focus only on how well each response addresses the substance of the question.
 
-verdict: Answer 'Answer 1' if the first response is better than the second response, or 'Answer 2' if the second response is better than the first response.
+Your judgement must be in the format and criteria specified below:
 
-reasoning: Explain why the first response is better than the second response, or why the second response is better than the first response. 
+verdict: Answer "Answer 1" if the first response better answers the question or "Answer 2" if the second response better answers the question.
 
-confidence: The extracted confidence score between 0% and 100% from the response. Put 100 if there is no confidence score available."""
+reasoning: In English, explain why the chosen response is better, focusing on accuracy, relevance, clarity, and completeness of the answer. Do not solve the question yourself or suggest alternative answers.
+
+confidence: The extracted confidence score between 0% and 100% from the response. Put 100 if there is no confidence score available"""
 
 def cleanup():
     """Clean up GPU memory and close LLM instance"""
@@ -82,8 +84,8 @@ def parse_response(response):
     Returns a dictionary with reasoning, correct, and confidence fields
     """
     comparison = {
-        "reasoning": "",
         "correct": "",
+        "reasoning": "",
         "confidence": "",
     }
     
@@ -107,7 +109,7 @@ def parse_response(response):
 # automatic pipeline to compare answers
 @weave.op()
 def compare_answers(type):
-    with open(f"personaData/{type}-persona-no-compare.json", "r") as f:
+    with open(f"personaData/{type}-pj.json", "r") as f:
         data = json.load(f)
     try:
         for i in range(len(data)):
@@ -117,15 +119,35 @@ def compare_answers(type):
 
             # IF NO GROUND TRUTH AVAILABLE
             if data[i]["ground_truth"] == "None":
-                user_prompt = f"""Question: {question}
 
-Answer 1: {model_answer}
+                # HANDLING ANY SURFACE LEVEL ISSUES
+                if data[i]["vanilla_issue"] and data[i]["persona_issue"]:
+                    data[i]["comparison"] = {
+                        "verdict": "None",
+                        "reasoning": "Both responses have surface level issues.",
+                        "confidence": "100",
+                    }
+                    continue
+                elif data[i]["vanilla_issue"]:
+                    data[i]["comparison"] = {
+                        "verdict": "Answer 2",
+                        "reasoning": "The vanilla response has surface level issues.",
+                        "confidence": "100",
+                    }
+                    continue
+                elif data[i]["persona_issue"]:
+                    data[i]["comparison"] = {
+                        "verdict": "Answer 1",
+                        "reasoning": "The persona response has surface level issues.",
+                        "confidence": "100",
+                    }
+                    continue
 
-Answer 2: {persona_model_answer}"""
-
+                # PERFORMING EYE TEST
+                user_prompt = f"""Question: {question}\n\nAnswer 1: {model_answer}\n\nAnswer 2: {persona_model_answer}"""
                 chat_input = [
                     {"role": "system", "content": JUDGE_EYE_TEST},
-                    {"role": "user", "content": user_prompt}
+                    {"role": "user", "content": "prompt: " + user_prompt}
                 ]
                 response = generate_text(chat_input, llm, sampling_params)
                 comparison = parse_response_eye_test(response)
@@ -133,38 +155,43 @@ Answer 2: {persona_model_answer}"""
 
             # IF GROUND TRUTH AVAILABLE, COMPARE TO GROUND TRUTH
             else:
+
                 # VANILLA COMPARISON
-                user_prompt = f"""Question: {question}
-
-Response: {model_answer}
-
-Correct Answer: {data[i]["ground_truth"]}"""
-
-                chat_input = [
-                    {"role": "system", "content": JUDGE_PROMPT},
-                    {"role": "user", "content": user_prompt}
-                ]
-                vanilla_response = generate_text(chat_input, llm, sampling_params)
-                comparison = parse_response(vanilla_response)
-                data[i]["vanilla_comparison"] = comparison
+                if not data[i]["vanilla_issue"]:
+                    user_prompt = f"""Question: {question}\n\nResponse: {model_answer}\n\nCorrect Answer: {data[i]["ground_truth"]}"""
+                    chat_input = [
+                        {"role": "system", "content": JUDGE_PROMPT},
+                        {"role": "user", "content": user_prompt}
+                    ]
+                    vanilla_response = generate_text(chat_input, llm, sampling_params)
+                    comparison = parse_response(vanilla_response)
+                    data[i]["vanilla_comparison"] = comparison
+                else:
+                    data[i]["vanilla_comparison"] = {
+                        "correct": "no",
+                        "reasoning": "The vanilla response has surface level issues.",
+                        "confidence": "100",
+                    }
 
                 # PERSONA COMPARISON
-                user_prompt = f"""Question: {question}
+                if not data[i]["persona_issue"]:
+                    user_prompt = f"""Question: {question}\n\nResponse: {persona_model_answer}\n\nCorrect Answer: {data[i]["ground_truth"]}"""
+                    chat_input = [
+                        {"role": "system", "content": JUDGE_PROMPT},
+                        {"role": "user", "content": user_prompt}
+                    ]
+                    persona_response = generate_text(chat_input, llm, sampling_params)
+                    comparison = parse_response(persona_response)
+                    data[i]["persona_comparison"] = comparison
+                else:
+                    data[i]["persona_comparison"] = {
+                        "correct": "no",
+                        "reasoning": "The persona response has surface level issues.",
+                        "confidence": "100",
+                    }
 
-                Response: {persona_model_answer}
-
-                Correct Answer: {data[i]["ground_truth"]}"""
-
-                chat_input = [
-                    {"role": "system", "content": JUDGE_PROMPT},
-                    {"role": "user", "content": user_prompt}
-                ]
-                persona_response = generate_text(chat_input, llm, sampling_params)
-                comparison = parse_response(persona_response)
-                data[i]["persona_comparison"] = comparison
-
-            with open(f"personaData/{type}-persona.json", "w") as f:
-                json.dump(data, f, indent=2, ensure_ascii=False)
+        with open(f"personaData/{type}-j.json", "w") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Comparison added to {type} successfully!")
         return data
     except Exception as e:
@@ -173,8 +200,8 @@ Correct Answer: {data[i]["ground_truth"]}"""
 
 if __name__ == "__main__":
     try:
-        compare_answers("agnostic")
-        compare_answers("specific")
+        compare_answers("ag")
+        compare_answers("sp")
     finally:
         cleanup()
         print("Cleanup done for LLM judge instance!")

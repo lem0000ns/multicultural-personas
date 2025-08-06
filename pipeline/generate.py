@@ -1,10 +1,11 @@
 import random
 import json
+import sys
 from vllm import LLM, SamplingParams
 import torch
 import gc
 
-languages = ['afar', 'arabic', 'balochi', 'chinese', 'english']
+languages = ['afar', 'arabic', 'balochi', 'chinese', 'english', 'faroese', 'fijian', 'german', 'hebrew', 'hiligaynon', 'hindi', 'hungarian', 'japanese', 'kirundi', 'korean', 'papiamento', 'pashto', 'russian', 'samoan', 'spanish', 'tongan', 'tswana', 'wolof']
 
 model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
 llm = LLM(model=model_name, tensor_parallel_size=4, dtype='half')
@@ -22,29 +23,41 @@ def add_persona(type, data):
             curQuestion = data[i]["question"]
             chat_input = [
                 {"role": "system",
-                "content": f"You are an expert in crafting concise and effective persona descriptions for language models. Your task is to generate a persona for a given question that will guide the model’s behavior. Write the persona in second person and focus exclusively on the model's background, expertise, and relevant traits that are directly useful for the task. Do not include names, fictional roles, or occupations. Limit the description to no more than 5 sentences and write it in the target language specified by {data[i]['language']}."},
+                "content": f"You are an expert in crafting concise and effective persona descriptions for language models. Your task is to generate a persona in {data[i]['language']} for a given question that will guide the model’s behavior in accurately and completely answering that question. The persona must describe the model as the ideal answerer, with relevant knowledge, skills, and cultural or linguistic familiarity necessary to give the best possible answer. Write the persona in second person and focus exclusively on background, expertise, and traits that directly help in answering the question. Do not describe someone who would ask the question. Limit to no more than 5 sentences. Respond ONLY with a JSON object in the exact format: {{\"persona\": \"[your {data[i]['language']} persona description here]\"}} with no extra text or explanation."},
                 {"role": "user",
                 "content": curQuestion}
             ]
             persona = generate_text(chat_input, llm, sampling_params)
-            data[i]["persona"] = persona
+            
+            # Parse JSON response to extract persona text
+            try:
+                persona_json = json.loads(persona)
+                persona_text = persona_json.get("persona", persona)  # Fallback to original if parsing fails
+            except (json.JSONDecodeError, KeyError):
+                # If JSON parsing fails, try to extract persona from the response
+                persona_text = persona.strip()
+                # Remove common prefixes like "Sure! here is your persona: "
+                if persona_text.startswith("Sure!") or persona_text.startswith("Here is your persona:"):
+                    persona_text = persona_text.split(":", 1)[-1].strip()
+            
+            data[i]["persona"] = persona_text
             # generate persona-model answer
             chat_input = [
                 {"role": "system",
-                "content": f"{persona}. Answer the question using {data[i]['language']} in a way that is consistent with your persona."},
+                "content": f"{persona_text}. Answer the question using {data[i]['language']} in a way that is consistent with the knowledge, style, and perspective of the persona, but do not speak as the persona or use first-person language."},
                 {"role": "user",
                 "content": f"Question: {curQuestion}"}
             ]
             persona_model_answer = generate_text(chat_input, llm, sampling_params)
             data[i]["persona_model_answer"] = persona_model_answer
         
-        with open(f"personaData/{type}-persona-no-compare.json", "w") as f:
+        with open(f"personaData/{type}-pj.json", "w") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Persona added to {type} successfully!") 
     except Exception as e:
         print(f"Error adding persona to {type}: {e}")
 
-def sample_questions(type, n_questions):
+def sample_questions(type, n_questions, n_languages):
     print("Initializing LLM...")
     print("LLM initialized successfully!")
     
@@ -52,7 +65,7 @@ def sample_questions(type, n_questions):
     ground_truths = []
     
     print("Loading questions from datasets...")
-    for cur_lang in languages:
+    for cur_lang in languages[:n_languages]:
         json_file = f"CaLMQA/data/datasets/dataset-{type}-{cur_lang}.json"
         try:
             with open(json_file, 'r') as f:
@@ -123,8 +136,13 @@ def cleanup():
 
 if __name__ == "__main__":
     try:
-        sample_questions("agnostic", 1)
-        sample_questions("specific", 1)
+        n_questions = int(sys.argv[1])
+        n_languages = int(sys.argv[2]) if int(sys.argv[2]) != -1 else len(languages)
+        
+        print(f"Generating {n_questions} questions for {n_languages} languages")
+        
+        sample_questions("ag", n_questions, n_languages)
+        sample_questions("sp", n_questions, n_languages)
     finally:
         cleanup()
         print("Cleanup completed for LLM generate instance!")

@@ -3,9 +3,13 @@ from vllm import LLM, SamplingParams
 import torch
 import gc
 import weave
+import os
+from utils.configs import configs
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 
 weave.init("mc-personas-judge")
-llm = LLM(model='Qwen/Qwen2.5-32B-Instruct', tensor_parallel_size=8, dtype='half')
+llm = LLM(model='Qwen/Qwen2.5-32B-Instruct', tensor_parallel_size=4, dtype='half')
 
 sampling_params = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=512)
 
@@ -21,7 +25,7 @@ correct: Answer 'yes' if the response matches the correct_answer given above, or
 
 confidence: The extracted confidence score between 0% and 100% from the response. Put 100 if there is no confidence score available."""
 
-JUDGE_EYE_TEST = """Determine which of the following two responses better answers the question, based on detail, accuracy, and completeness. Focus only on how well each response addresses the substance of the question.
+JUDGE_EYE_TEST = """Determine which of the following two responses better answers the question, based strictly on the factual detail, accuracy, and completeness of the information provided. Ignore factors such as whether the answer asks for clarification, acknowledges the question, conversational tone, or style. Focus only on how well each response directly addresses the core substance of the question.
 
 Your judgement must be in the format and criteria specified below:
 
@@ -108,8 +112,8 @@ def parse_response(response):
 
 # automatic pipeline to compare answers
 @weave.op()
-def compare_answers(type):
-    with open(f"personaData/{type}-pj.json", "r") as f:
+def compare_answers(config_name, type):
+    with open(f"personaData/{type}/{config_name}.json", "r") as f:
         data = json.load(f)
     try:
         for i in range(len(data)):
@@ -190,9 +194,9 @@ def compare_answers(type):
                         "confidence": "100",
                     }
 
-        with open(f"personaData/{type}-j.json", "w") as f:
+        with open(f"personaData/{type}/{config_name}-results.json", "w") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        print(f"Comparison added to {type} successfully!")
+        print(f"Comparison added to {type}/{config_name} successfully!")
         return data
     except Exception as e:
         print(f"Error comparing answers for {type}: {e}")
@@ -200,8 +204,11 @@ def compare_answers(type):
 
 if __name__ == "__main__":
     try:
-        compare_answers("ag")
-        compare_answers("sp")
+        for config_name in configs:
+            print(f"Comparing answers for {config_name} agnostic...")
+            compare_answers(config_name, "agnostic")
+            print(f"Comparing answers for {config_name} specific...")
+            compare_answers(config_name, "specific")
     finally:
         cleanup()
         print("Cleanup done for LLM judge instance!")

@@ -1,0 +1,64 @@
+{
+  "config_name": "detailed_persona",
+  "type": "specific",
+  "high_medium_resource": {
+    "ground_truth": {
+      "total": 48,
+      "vanilla_correct": 5,
+      "persona_correct": 2,
+      "vanilla_accuracy": 0.10416666666666667,
+      "persona_accuracy": 0.041666666666666664,
+      "vanilla_avg_confidence": 100.0,
+      "persona_avg_confidence": 100.0
+    },
+    "eye_test": {
+      "total": 6,
+      "vanilla_correct": 5,
+      "persona_correct": 1,
+      "vanilla_accuracy": 0.8333333333333334,
+      "persona_accuracy": 0.16666666666666666,
+      "vanilla_avg_confidence": 100.0,
+      "persona_avg_confidence": 100.0
+    }
+  },
+  "low_resource": {
+    "ground_truth": {
+      "total": 0,
+      "vanilla_correct": 0,
+      "persona_correct": 0,
+      "vanilla_accuracy": 0,
+      "persona_accuracy": 0,
+      "vanilla_avg_confidence": 0,
+      "persona_avg_confidence": 0
+    },
+    "eye_test": {
+      "total": 49,
+      "vanilla_correct": 37,
+      "persona_correct": 12,
+      "vanilla_accuracy": 0.7551020408163265,
+      "persona_accuracy": 0.24489795918367346,
+      "vanilla_avg_confidence": 100.0,
+      "persona_avg_confidence": 100.0
+    }
+  },
+  "overall": {
+    "ground_truth": {
+      "total": 48,
+      "vanilla_correct": 5,
+      "persona_correct": 2,
+      "vanilla_accuracy": 0.10416666666666667,
+      "persona_accuracy": 0.041666666666666664,
+      "vanilla_avg_confidence": 100.0,
+      "persona_avg_confidence": 100.0
+    },
+    "eye_test": {
+      "total": 55,
+      "vanilla_correct": 42,
+      "persona_correct": 13,
+      "vanilla_accuracy": 0.7636363636363637,
+      "persona_accuracy": 0.23636363636363636,
+      "vanilla_avg_confidence": 100.0,
+      "persona_avg_confidence": 100.0
+    }
+  }
+}

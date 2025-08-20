@@ -1,6 +1,11 @@
 from vllm import LLM, SamplingParams
 import json
 import torch
+import os
+from utils.process import process
+from utils.configs import configs
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 
 llm = LLM(model='Qwen/Qwen2.5-32B-Instruct', tensor_parallel_size=4, dtype='half')
 
@@ -28,8 +33,8 @@ def cleanup():
     except Exception as e:
         print(f"Error during cleanup: {e}")
 
-def extract_ground_truth(type):
-    with open(f"personaData/{type}-pj.json", "r") as f:
+def extract_ground_truth(config_name, type):
+    with open(f"personaData/{type}/{config_name}.json", "r") as f:
         data = json.load(f)
     for entry in data:
         if entry["old_ground_truth"] == "None":
@@ -54,13 +59,18 @@ def extract_ground_truth(type):
         ground_truth = generate_text(chat_input, llm, sampling_params)
         entry["ground_truth"] = ground_truth
     
-    with open(f"personaData/{type}-pj.json", "w") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"Processing {type} for surface level issues...")
+    processed_data = process(type, data)
+    with open(f"personaData/{type}/{config_name}.json", "w") as f:
+        json.dump(processed_data, f, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
     try:
-        extract_ground_truth("ag")
-        extract_ground_truth("sp")
+        for config_name in configs:
+            print(f"Extracting ground truth for {config_name} agnostic...")
+            extract_ground_truth(config_name, "agnostic")
+            print(f"Extracting ground truth for {config_name} specific...")
+            extract_ground_truth(config_name, "specific")
     finally:
         cleanup()
         print("Cleanup completed for LLM extractGT instance!")

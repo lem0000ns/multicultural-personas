@@ -4,9 +4,32 @@ from collections import Counter
 import tiktoken
 import json
 
+language_codes = {
+    "afar": "aa",            # ISO 639-1
+    "fijian": "fj",          # ISO 639-1
+    "samoan": "sm",          # ISO 639-1
+    "tongan": "to",          # ISO 639-1
+    "wolof": "wo",           # ISO 639-1
+    "hindi": "hi",           # ISO 639-1
+    "faroese": "fo",         # ISO 639-1
+    "pashto": "ps",          # ISO 639-1
+    "russian": "ru",         # ISO 639-1
+    "tswana": "tn",          # ISO 639-1
+    "arabic": "ar",          # ISO 639-1
+    "english": "en",         # ISO 639-1
+    "spanish": "es",         # ISO 639-1
+    "korean": "ko",          # ISO 639-1
+    "japanese": "ja",        # ISO 639-1
+    "chinese": "zh",         # ISO 639-1
+    "german": "de",          # ISO 639-1
+    "hebrew": "he",          # ISO 639-1
+    "hungarian": "hu",       # ISO 639-1
+}
+
+
 def should_use_polyglot_detector(language: str) -> bool:
     return language in [
-        "afar", "hiligaynon", "fijian", "samoan", "tongan", "kirundi", "wolof", "hindi", "faroese", "pashto", "russian", "samoan", "tswana", "wolof", "arabic", "balochi"
+        "afar", "fijian", "samoan", "tongan", "wolof", "hindi", "faroese", "pashto", "russian","tswana", "arabic"
     ]
 
 def is_correct_language(text, language: str) -> bool:
@@ -18,7 +41,15 @@ def is_correct_language(text, language: str) -> bool:
             predicted_lang = langid.classify(text)[0]
     else:
         predicted_lang = langid.classify(text)[0]
-    return predicted_lang == language
+    
+    # if low-accuracy detection language, check if predicted language is in high-accuracy detection language, else return True
+    if (language == "papiamento" or language == "balochi" or language == "hiligaynon" or language == "kirundi"):
+        if predicted_lang in [language_codes[lang] for lang in ["afar", "arabic", "chinese", "english", "faroese", "german", "hebrew", "hindi", "hungarian", "japanese", "korean", "pashto", "spanish", "tongan"]]:
+            return False
+        return True
+    print("Predicted language:", predicted_lang)
+    print("Language code:", language_codes[language])
+    return predicted_lang == language_codes[language]
 
 def get_token_ids(string: str, encoding_name: str = "o200k_base") -> list[int]:
     """Returns the token IDs in a text string using the specified encoding."""
@@ -60,21 +91,9 @@ def process_data(data: list[dict]) -> list[dict]:
         item["persona_issue"] = not is_correct_language(item["persona_model_answer"], item["language"]) or has_repetition(item["persona_model_answer"])
     return data
 
-def process(type):
+def process(type, data):
     try:
-        with open(f"personaData/{type}-pj.json", "r") as f:
-            data = json.load(f)
         processed_data = process_data(data)
-        with open(f"personaData/{type}-pj.json", "w") as f:
-            json.dump(processed_data, f, indent=2, ensure_ascii=False)
-    except Exception as e:
-        print(f"Error processing data: {e}")
-
-if __name__ == "__main__":
-    try:
-        print("Processing agnostic for surface level issues...")
-        process("ag")
-        print("Processing specific for surface level issues...")
-        process("sp")
+        return processed_data
     except Exception as e:
         print(f"Error processing data: {e}")

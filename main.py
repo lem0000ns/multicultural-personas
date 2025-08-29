@@ -6,39 +6,34 @@ import torch
 import gc
 import sys
 import re
+from utils import country_to_language
+from configs import system_prompts
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
 llm = LLM(model=model_name, tensor_parallel_size=4, dtype='half')
-sampling_params = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=512)
 
-def generate_text(chat_input, llm):
+# Create separate sampling params for different question types
+mcq_sampling_params = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=1)
+tf_sampling_params = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=2)
+persona_sampling_params = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=512)
+
+def generate_text(chat_input, llm, sampling_params):
     output = llm.chat(chat_input, sampling_params)
     return output[0].outputs[0].text
 
-def generate_persona_description(question, country):   
+def generate_persona_description(question, country, mode):   
     chat_input = [
         {"role": "system",
-        "content": """You are an expert in crafting personas that will be used as a system prompt to a language model in answering a given question accurately and completely in a direct and concise manner. You will be given the question and the relevant country that the question content is related to. \n
-        Your task is to generate a persona that MUST:
-        1. Have RELEVANT expertise that directly relates to the question content
-        2. Provide cultural/linguistic context that enhances understanding
-        3. Guide the model toward more accurate, complete, and helpful responses
-        4. Not include any other text other than the persona description
-        5. Be in English
-        6. BE IN SECOND PERSON; in other words, DO NOT include fictional characters, names, or any other non-real entities. You are addressing the language model directly.
-
-        # IMPORTANT #
-        Always start with "You are" ...
-        
-        """},
+        "content": system_prompts[mode].format(language={"English" if "eng" in mode else country_to_language[country]})
+        },
         {"role": "user",
-        "content": "question: " + question + "\n\n" + "country: " + country}
+        "content": "question: " + question + "\n\n" + "country: " + country + "\n\npersona description: "}
     ]
-    response = generate_text(chat_input, llm)
+    response = generate_text(chat_input, llm, persona_sampling_params)
     return response
 
-def run_eval(type, difficulty):
+def run_eval(type, difficulty, mode):
     ds = load_dataset("kellycyy/CulturalBench", f"CulturalBench-{difficulty}", split="test")
 
     data = {}
@@ -60,30 +55,33 @@ def run_eval(type, difficulty):
                     continue
                 # Use same persona description for same question (4 at a time)
                 if type == "persona" and prev_prompt_question != prompt_question:
-                    persona_description = generate_persona_description(prompt_question, country)
+                    persona_description = generate_persona_description(prompt_question, country, mode)
                 prev_prompt_question = prompt_question
                 if type == "persona":
-                    system_prompt = f"{persona_description}\n\nYou will be given a question and an answer. Output \"true\" if the answer is correct, otherwise output \"false\". Do not output anything else. Structure your output as follows: {{\"answer\": \"true\" or \"false\"}}"
+                    system_prompt = persona_description
                 else:
-                    system_prompt = "You are a helpful assistant. You are a given a question and an answer. Output \"true\" if the answer is correct, otherwise output \"false\". Do not output anything else. Structure your output as follows: {{\"answer\": \"true\" or \"false\"}}"
+                    system_prompt = "You are a helpful assistant."
                 chat_input = [
                     {"role": "system",
                     "content": system_prompt},
                     {"role": "user",
-                    "content": "question: " + prompt_question + "\n\n" + "answer: " + prompt_option}
+                    "content": "Is this answer true or false for this question? You must choose either True or False.\nQuestion: " + prompt_question + "\nAnswer: " + prompt_option}
                 ]
-                response = generate_text(chat_input, llm)
+                response = generate_text(chat_input, llm, tf_sampling_params)
 
                 try:
-                    response_json = json.loads(response)
+                    # Check if response contains "true" or "false"
+                    response_lower = response.lower().strip()
+                    response_answer = "true" if "true" in response_lower else "false"
+                    
                     # Store data in JSON format
                     if type == "persona":
-                        data[i + j] = {"question": prompt_question, "prompt_option": prompt_option, "persona_description": persona_description, "correct_answer": prompt_answer, "persona_answer": response_json["answer"]}
+                        data[i + j] = {"question": prompt_question, "prompt_option": prompt_option, "persona_description": persona_description, "correct_answer": prompt_answer, "persona_answer": response_answer, "country": country}
                     else:
-                        data[i + j] = {"question": prompt_question, "prompt_option": prompt_option, "correct_answer": prompt_answer, "vanilla_answer": response_json["answer"]}
+                        data[i + j] = {"question": prompt_question, "prompt_option": prompt_option, "correct_answer": prompt_answer, "vanilla_answer": response_answer, "country": country}
 
                     # Normalize to strings for comparison
-                    if str(response_json["answer"]).lower() == str(prompt_answer).lower():
+                    if str(response_answer).lower() == str(prompt_answer).lower():
                         continue
                     else:
                         isCorrect = False
@@ -111,37 +109,38 @@ def run_eval(type, difficulty):
             if option_a is None or option_b is None or option_c is None or option_d is None or answer is None or prompt_question is None or country is None:
                 continue
             if type == "persona":
-                persona_description = generate_persona_description(prompt_question, country)
-                system_prompt = f"{persona_description}\n\nYou will be given a question and an answer. Output the letter of the correct answer in string format. Do not output anything else. Structure your output as follows: {{\"answer\": \"A\", \"B\", \"C\", or \"D\"}}"
+                persona_description = generate_persona_description(prompt_question, country, mode)
+                system_prompt = persona_description
             else:
-                system_prompt = "You are a helpful assistant. You are a given a question and an answer. Output the letter of the correct answer in string format. Do not output anything else. Structure your output as follows: {{\"answer\": \"A\", \"B\", \"C\", or \"D\"}}"
+                system_prompt = "You are a helpful assistant."
             
             chat_input = [
                 {"role": "system",
                 "content": system_prompt},
                 {"role": "user",
-                "content": "question: " + prompt_question + "\n\n" + "A: " + option_a + "\n\n" + "B: " + option_b + "\n\n" + "C: " + option_c + "\n\n" + "D: " + option_d}
+                "content": "Instruction: You must select one option among A,B,C,D. Do not output any other things.\nQuestion: " + prompt_question + "\nA. " + option_a + "\nB. " + option_b + "\nC. " + option_c + "\nD. " + option_d}
             ]
-            response = generate_text(chat_input, llm)
-            response = re.sub(r'{"answer":\s*([A-D])}', r'{"answer": "\1"}', response)
+            response = generate_text(chat_input, llm, mcq_sampling_params)
+            
             try:
-                response_json = json.loads(response)
+                response_answer = response.upper().strip()
+                
                 # Store data in JSON format
                 if type == "persona":
-                    data[i + j] = {"question": prompt_question, "options": {"A": option_a, "B": option_b, "C": option_c, "D": option_d}, "persona_description": persona_description, "correct_answer": answer, "persona_answer": response_json["answer"]}
+                    data[i] = {"question": prompt_question, "options": {"A": option_a, "B": option_b, "C": option_c, "D": option_d}, "persona_description": persona_description, "correct_answer": answer, "persona_answer": response_answer, "country": country}
                 else:
-                    data[i + j] = {"question": prompt_question, "options": {"A": option_a, "B": option_b, "C": option_c, "D": option_d}, "correct_answer": answer, "vanilla_answer": response_json["answer"]}
+                    data[i] = {"question": prompt_question, "options": {"A": option_a, "B": option_b, "C": option_c, "D": option_d}, "correct_answer": answer, "vanilla_answer": response_answer, "country": country}
                 # Normalize to strings for comparison
-                if response_json["answer"].upper() == answer.upper():
+                if response_answer.upper() == answer.upper():
                     correct += 1
                 total += 1
             except:
                 print("Error parsing response: " + response)
                 continue
     
-    with open(f"data/{type}_data_{difficulty}.jsonl", "w") as f:
+    with open(f"{mode}/{type}_{difficulty}.jsonl", "w") as f:
         for entry in data.values():
-            f.write(json.dumps(entry) + "\n")
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
         f.write(f"{type.capitalize()} Accuracy for {difficulty}: {correct / total}\n")
     
     print(f"{type.capitalize()} Accuracy for {difficulty}: {correct / total}")
@@ -171,30 +170,23 @@ def cleanup():
 if __name__ == "__main__":
     try:
         run_type = sys.argv[1] if len(sys.argv) > 1 else "all"
+        mode = sys.argv[2] if len(sys.argv) > 2 else "eng"
 
         options = {
             "all": [
-                lambda: run_eval("vanilla", "Hard"),
-                lambda: run_eval("persona", "Hard"),
-                lambda: run_eval("vanilla", "Easy"),
-                lambda: run_eval("persona", "Easy"),
+                lambda: run_eval("persona", "Hard", mode),
+                lambda: run_eval("persona", "Easy", mode),
             ],
             "hard": [
-                lambda: run_eval("vanilla", "Hard"),
-                lambda: run_eval("persona", "Hard"),
+                lambda: run_eval("persona", "Hard", mode),
             ],
             "easy": [
-                lambda: run_eval("vanilla", "Easy"),
-                lambda: run_eval("persona", "Easy"),
+                lambda: run_eval("persona", "Easy", mode),
             ],
             "vanilla": [
-                lambda: run_eval("vanilla", "Hard"),
-                lambda: run_eval("vanilla", "Easy"),
-            ],
-            "persona": [
-                lambda: run_eval("persona", "Hard"),
-                lambda: run_eval("persona", "Easy"),
-            ],
+                lambda: run_eval("vanilla", "Hard", mode),
+                lambda: run_eval("vanilla", "Easy", mode),
+            ]
         }
 
         if run_type not in options:

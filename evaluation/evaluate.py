@@ -4,10 +4,9 @@ import json
 import os
 import torch
 import gc
-import sys
-import re
-from utils import country_to_language
-from configs import system_prompts
+from tools.utils import country_to_language, modes_list, run_type_list
+from tools.configs import system_prompts
+import argparse
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
@@ -138,7 +137,7 @@ def run_eval(type, difficulty, mode):
                 print("Error parsing response: " + response)
                 continue
     
-    with open(f"{mode}/{type}_{difficulty}.jsonl", "w") as f:
+    with open(f"../results/{mode}/{type}_{difficulty}.jsonl", "w") as f:
         for entry in data.values():
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
         f.write(f"{type.capitalize()} Accuracy for {difficulty}: {correct / total}\n")
@@ -168,33 +167,26 @@ def cleanup():
         print(f"Error during cleanup: {e}")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--run_type", type=str, required=True, choices=run_type_list, default="all")
+    parser.add_argument("--mode", type=str, required=True, nargs="+", choices=modes_list + ["all"], default="eng")
+    args = parser.parse_args()
     try:
-        run_type = sys.argv[1] if len(sys.argv) > 1 else "all"
-        mode = sys.argv[2] if len(sys.argv) > 2 else "eng"
-
-        options = {
-            "all": [
-                lambda: run_eval("persona", "Hard", mode),
-                lambda: run_eval("persona", "Easy", mode),
-            ],
-            "hard": [
-                lambda: run_eval("persona", "Hard", mode),
-            ],
-            "easy": [
-                lambda: run_eval("persona", "Easy", mode),
-            ],
-            "vanilla": [
-                lambda: run_eval("vanilla", "Hard", mode),
-                lambda: run_eval("vanilla", "Easy", mode),
-            ]
-        }
-
-        if run_type not in options:
-            print("Invalid run type. Valid types are: " + ", ".join(options.keys()))
+        if args.run_type not in run_type_list:
+            print("Invalid run type. Valid types are: " + ", ".join(run_type_list))
             exit(1)
-
-        for func in options[run_type]:
-            func()
+        if args.run_type == "vanilla":
+            run_eval("vanilla", "Hard", "vanilla")
+            run_eval("vanilla", "Easy", "vanilla")
+        else:
+            for mode in args.mode if args.mode[0] != "all" else modes_list:
+                if args.run_type == "hard":
+                    run_eval("persona", "Hard", mode)
+                elif args.run_type == "easy":
+                    run_eval("persona", "Easy", mode)
+                elif args.run_type == "all":
+                    run_eval("persona", "Hard", mode)
+                    run_eval("persona", "Easy", mode)
     except Exception as e:
         print(e)
     finally:

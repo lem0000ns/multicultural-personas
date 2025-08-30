@@ -1,0 +1,104 @@
+{
+  "net_persona": {
+    "easy": {
+      "Net Accuracy": 0.9787928221859659,
+      "Regions": {
+        "Africa": 0.03731343283582089,
+        "East Asia": -0.023696682464455,
+        "East Europe": -0.02608695652173909,
+        "Middle East/West Asia": 0.03149606299212604,
+        "North America": -0.03703703703703698,
+        "Oceania": -0.11538461538461542,
+        "South America": 0.013333333333333308,
+        "South Asia": 0.04716981132075482,
+        "South Europe": 0.06666666666666665,
+        "Southeast Asia": 0.0062893081761006275,
+        "West Europe": 0.02083333333333337
+      }
+    },
+    "hard": {
+      "Net Accuracy": 6.275468622656888,
+      "Regions": {
+        "Africa": 0.008918510375154565,
+        "East Asia": 0.041363383904820306,
+        "East Europe": 0.05630565583634184,
+        "Middle East/West Asia": 0.020564432454866166,
+        "North America": 0.0039634146341462895,
+        "Oceania": 0.00023691068467190934,
+        "South America": 0.023084503572308512,
+        "South Asia": 0.045403726708074466,
+        "South Europe": 0.020344287949921713,
+        "Southeast Asia": 0.035089631971591984,
+        "West Europe": 0.07238712975684569
+      }
+    }
+  },
+  "persona": {
+    "easy": {
+      "Accuracy": 70.47308319738988,
+      "Regions": {
+        "Africa": 0.8059701492537313,
+        "East Asia": 0.6113744075829384,
+        "East Europe": 0.7130434782608696,
+        "Middle East/West Asia": 0.5984251968503937,
+        "North America": 0.7777777777777778,
+        "Oceania": 0.6538461538461539,
+        "South America": 0.6933333333333334,
+        "South Asia": 0.7830188679245284,
+        "South Europe": 0.7866666666666666,
+        "Southeast Asia": 0.7358490566037735,
+        "West Europe": 0.7083333333333334
+      }
+    },
+    "hard": {
+      "Accuracy": 40.17929910350448,
+      "Regions": {
+        "Africa": 0.8052631578947368,
+        "East Asia": 0.7724867724867724,
+        "East Europe": 0.7566666666666667,
+        "Middle East/West Asia": 0.7025316455696202,
+        "North America": 0.8414634146341463,
+        "Oceania": 0.746268656716418,
+        "South America": 0.775609756097561,
+        "South Asia": 0.8354037267080745,
+        "South Europe": 0.7981220657276995,
+        "Southeast Asia": 0.7973273942093542,
+        "West Europe": 0.7908745247148289
+      }
+    }
+  },
+  "vanilla": {
+    "easy": {
+      "Accuracy": 69.49429037520392,
+      "Regions": {
+        "Africa": 0.7686567164179104,
+        "East Asia": 0.6350710900473934,
+        "East Europe": 0.7391304347826086,
+        "Middle East/West Asia": 0.5669291338582677,
+        "North America": 0.8148148148148148,
+        "Oceania": 0.7692307692307693,
+        "South America": 0.68,
+        "South Asia": 0.7358490566037735,
+        "South Europe": 0.72,
+        "Southeast Asia": 0.7295597484276729,
+        "West Europe": 0.6875
+      }
+    },
+    "hard": {
+      "Accuracy": 33.903830480847596,
+      "Regions": {
+        "Africa": 0.7963446475195822,
+        "East Asia": 0.7311233885819521,
+        "East Europe": 0.7003610108303249,
+        "Middle East/West Asia": 0.6819672131147541,
+        "North America": 0.8375,
+        "Oceania": 0.746031746031746,
+        "South America": 0.7525252525252525,
+        "South Asia": 0.79,
+        "South Europe": 0.7777777777777778,
+        "Southeast Asia": 0.7622377622377622,
+        "West Europe": 0.7184873949579832
+      }
+    }
+  }
+}

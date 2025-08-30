@@ -93,3 +93,6 @@ country_to_language = {
     "Australia": "English",
     "New Zealand": "English"
 }
+
+run_type_list = ["all", "hard", "easy", "vanilla"]
+modes_list = ["brief_eng", "brief_ling", "detailed_eng", "detailed_ling", "eng", "ling"]

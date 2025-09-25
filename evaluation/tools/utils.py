@@ -95,4 +95,4 @@ country_to_language = {
 }
 
 run_type_list = ["all", "hard", "easy", "vanilla"]
-modes_list = ["brief_eng", "brief_ling", "detailed_eng", "detailed_ling", "eng", "ling"]
+modes_list = ["eng_no_expertise", "eng_no_cultural", "eng_no_reasoning", "eng_no_direct", "eng", "ling_no_expertise", "ling_no_cultural", "ling_no_reasoning", "ling_no_direct", "eng", "ling"]

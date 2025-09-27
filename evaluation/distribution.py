@@ -69,7 +69,7 @@ def country_distribution(mode):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", type=str, nargs="+", required=True, choices=["brief_eng", "brief_ling", "detailed_eng", "detailed_ling", "eng", "ling", "all"], default=["all"])
+    parser.add_argument("--mode", type=str, nargs="+", required=True, choices=["eng_no_direct", "eng_no_reasoning", "eng_no_cultural", "eng_no_expertise", "ling_no_direct", "ling_no_reasoning", "ling_no_cultural", "ling_no_expertise", "eng", "ling", "all"], default=["all"])
     args = parser.parse_args()
-    for mode in args.mode if args.mode[0] != "all" else ["brief_eng", "brief_ling", "detailed_eng", "detailed_ling", "eng", "ling"]:
+    for mode in args.mode if args.mode[0] != "all" else ["eng_no_direct", "eng_no_reasoning", "eng_no_cultural", "eng_no_expertise", "ling_no_direct", "ling_no_reasoning", "ling_no_cultural", "ling_no_expertise", "eng", "ling"]:
         country_distribution(mode=mode)

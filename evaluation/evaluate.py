@@ -8,9 +8,9 @@ from tools.utils import country_to_language, modes_list, run_type_list
 from tools.configs import system_prompts
 import argparse
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1, 2"
 model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
-llm = LLM(model=model_name, tensor_parallel_size=4, dtype='half')
+llm = LLM(model=model_name, tensor_parallel_size=2, dtype='half')
 
 # Create separate sampling params for different question types
 mcq_sampling_params = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=1)

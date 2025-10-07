@@ -59,7 +59,7 @@ country_to_language = {
     "Romania": "Romanian",
     "Ukraine": "Ukrainian",
     "Russia": "Russian",
-    "Spain": "Spanish",
+    "Spain": "Spaznish",
     "Italy": "Italian",
     "France": "French",
     "Germany": "German",
@@ -94,5 +94,6 @@ country_to_language = {
     "New Zealand": "English"
 }
 
-run_type_list = ["all", "hard", "easy", "vanilla"]
-modes_list = ["eng_no_expertise", "eng_no_cultural", "eng_no_reasoning", "eng_no_direct", "eng", "ling_no_expertise", "ling_no_cultural", "ling_no_reasoning", "ling_no_direct", "eng", "ling"]
+modes_list_p1 = ["eng_p1", "ling_p1"]
+modes_list_p2 = ["eng_p2", "ling_p2"]
+modes_list = modes_list_p1 + modes_list_p2

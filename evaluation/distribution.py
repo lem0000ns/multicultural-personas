@@ -1,15 +1,15 @@
 import json
 import argparse
-from tools.utils import country_to_continent
+from tools.utils import country_to_continent, modes_list, modes_list_p1, modes_list_p2
 
 def process_data(type, difficulty, mode):
     try:
-        with open(f"../results/{mode}/{type}_{difficulty}.jsonl", "r") as f:
+        with open(f"../results/{mode[-2:]}/{mode[:-3]}/{type}_{difficulty}.jsonl", "r") as f:
             lines = f.readlines()
             data = [json.loads(line) for line in lines[:-1]]
             accuracy = (float(lines[-1].split(" ")[-1].strip()) * 100)
     except Exception as e:
-        print(f"Error processing results/{mode}/{type}_{difficulty}.jsonl: {e}")
+        print(f"Error processing results/{mode[-2:]}/{mode[:-3]}/{type}_{difficulty}.jsonl: {e}")
         return None
     
     stats = {}
@@ -39,7 +39,7 @@ def country_distribution(mode):
     # Process vanilla culturalbench-hard
     vanilla_hard_stats, vanilla_hard_accuracy = process_data("vanilla", "Hard", "vanilla")
     
-    with open(f"../results/{mode}/country_distribution.json", "w") as f:
+    with open(f"../results/{mode[-2:]}/{mode[:-3]}/country_distribution.json", "w") as f:
         json.dump({
             "vanilla": {
                 "easy": {"Accuracy": vanilla_easy_accuracy, "Regions": vanilla_easy_stats or {}}, 
@@ -69,7 +69,26 @@ def country_distribution(mode):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", type=str, nargs="+", required=True, choices=["eng_no_direct", "eng_no_reasoning", "eng_no_cultural", "eng_no_expertise", "ling_no_direct", "ling_no_reasoning", "ling_no_cultural", "ling_no_expertise", "eng", "ling", "all"], default=["all"])
+    parser.add_argument("--prompt", type=str, required=False, choices=["p1", "p2", "both"])
+    parser.add_argument("--mode", type=str, nargs="+", required=False, choices=modes_list + ["all"], default=["all"])
     args = parser.parse_args()
-    for mode in args.mode if args.mode[0] != "all" else ["eng_no_direct", "eng_no_reasoning", "eng_no_cultural", "eng_no_expertise", "ling_no_direct", "ling_no_reasoning", "ling_no_cultural", "ling_no_expertise", "eng", "ling"]:
-        country_distribution(mode=mode)
+
+    try:
+        # if user specified prompt, run all modes associated with that prompt
+        if args.prompt == "p1" or args.prompt == "both":
+            for mode in modes_list_p1:
+                country_distribution(mode=mode)
+        if args.prompt == "p2" or args.prompt == "both":
+            for mode in modes_list_p2:
+                country_distribution(mode=mode)
+
+        # run remaining modes
+        for mode in args.mode if args.mode[0] != "all" else modes_list:
+            if (args.prompt == "p1" or args.prompt == "both") and mode[-2:] == "p1":
+                continue
+            if (args.prompt == "p2" or args.prompt == "both") and mode[-2:] == "p2":
+                continue
+            country_distribution(mode=mode)
+    except Exception as e:
+        print(e)
+        exit(1)

@@ -2,14 +2,15 @@ import json
 import argparse
 from tools.utils import country_to_continent, modes_list, modes_list_p1, modes_list_p2
 
-def process_data(type, difficulty, mode):
+def process_data(type, difficulty, iter, mode):
     try:
-        with open(f"../results/{mode[-2:]}/{mode[:-3]}/{type}_{difficulty}.jsonl", "r") as f:
+        file_name = f"../results/{mode[-2:]}/{mode[:-3]}/i{iter}/{type}_{difficulty}.jsonl" if type != "vanilla" else f"../results/vanilla/vanilla_{difficulty}.jsonl"
+        with open(file_name, "r") as f:
             lines = f.readlines()
             data = [json.loads(line) for line in lines[:-1]]
             accuracy = (float(lines[-1].split(" ")[-1].strip()) * 100)
     except Exception as e:
-        print(f"Error processing results/{mode[-2:]}/{mode[:-3]}/{type}_{difficulty}.jsonl: {e}")
+        print(f"Error processing {file_name}: {e}")
         return None
     
     stats = {}
@@ -27,45 +28,50 @@ def process_data(type, difficulty, mode):
     return stats, accuracy
 
 def country_distribution(mode):
-    # Process persona-prompted culturalbench-easy
-    persona_easy_stats, persona_easy_accuracy = process_data("persona", "Easy", mode)
+    for iter in range(1, 2):
+        try:
+            # Process persona-prompted culturalbench-easy
+            persona_easy_stats, persona_easy_accuracy = process_data("persona", "Easy", iter, mode)
 
-    # Process vanilla culturalbench-easy
-    vanilla_easy_stats, vanilla_easy_accuracy = process_data("vanilla", "Easy", "vanilla")
-    
-    # Process persona-prompted culturalbench-hard
-    persona_hard_stats, persona_hard_accuracy = process_data("persona", "Hard", mode)
-    
-    # Process vanilla culturalbench-hard
-    vanilla_hard_stats, vanilla_hard_accuracy = process_data("vanilla", "Hard", "vanilla")
-    
-    with open(f"../results/{mode[-2:]}/{mode[:-3]}/country_distribution.json", "w") as f:
-        json.dump({
-            "vanilla": {
-                "easy": {"Accuracy": vanilla_easy_accuracy, "Regions": vanilla_easy_stats or {}}, 
-                "hard": {"Accuracy": vanilla_hard_accuracy, "Regions": vanilla_hard_stats or {}}
-            }, 
-            "persona": {
-                "easy": {"Accuracy": persona_easy_accuracy, "Regions": persona_easy_stats or {}}, 
-                "hard": {"Accuracy": persona_hard_accuracy, "Regions": persona_hard_stats or {}}
-            },
-            "net_persona": {
-                "easy": {
-                    "Net Accuracy": persona_easy_accuracy - vanilla_easy_accuracy,
-                    "Regions": {
-                        region: persona_easy_stats[region] - vanilla_easy_stats[region]
-                        for region in (persona_easy_stats or {}).keys()
+            # Process vanilla culturalbench-easy
+            vanilla_easy_stats, vanilla_easy_accuracy = process_data("vanilla", "Easy", iter, "vanilla")
+            
+            # Process persona-prompted culturalbench-hard
+            persona_hard_stats, persona_hard_accuracy = process_data("persona", "Hard", iter, mode)
+            
+            # Process vanilla culturalbench-hard
+            vanilla_hard_stats, vanilla_hard_accuracy = process_data("vanilla", "Hard", iter, "vanilla")
+            
+            with open(f"../results/{mode[-2:]}/{mode[:-3]}/i{iter}/country_distribution.json", "w") as f:
+                json.dump({
+                    "vanilla": {
+                        "easy": {"Accuracy": vanilla_easy_accuracy, "Regions": vanilla_easy_stats or {}}, 
+                        "hard": {"Accuracy": vanilla_hard_accuracy, "Regions": vanilla_hard_stats or {}}
+                    }, 
+                    "persona": {
+                        "easy": {"Accuracy": persona_easy_accuracy, "Regions": persona_easy_stats or {}}, 
+                        "hard": {"Accuracy": persona_hard_accuracy, "Regions": persona_hard_stats or {}}
+                    },
+                    "net_persona": {
+                        "easy": {
+                            "Net Accuracy": persona_easy_accuracy - vanilla_easy_accuracy,
+                            "Regions": {
+                                region: persona_easy_stats[region] - vanilla_easy_stats[region]
+                                for region in (persona_easy_stats or {}).keys()
+                            }
+                        } if persona_easy_stats and vanilla_easy_stats else {},
+                        "hard": {
+                            "Net Accuracy": persona_hard_accuracy - vanilla_hard_accuracy,
+                            "Regions": {
+                                region: persona_hard_stats[region] - vanilla_hard_stats[region]
+                                for region in (persona_hard_stats or {}).keys()
+                            }
+                        } if persona_hard_stats and vanilla_hard_stats else {}
                     }
-                } if persona_easy_stats and vanilla_easy_stats else {},
-                "hard": {
-                    "Net Accuracy": persona_hard_accuracy - vanilla_hard_accuracy,
-                    "Regions": {
-                        region: persona_hard_stats[region] - vanilla_hard_stats[region]
-                        for region in (persona_hard_stats or {}).keys()
-                    }
-                } if persona_hard_stats and vanilla_hard_stats else {}
-            }
-        }, f, indent=2, sort_keys=True)
+                }, f, indent=2, sort_keys=True)
+        except Exception as e:
+            print(f"Error processing {mode}: {e}")
+            continue
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

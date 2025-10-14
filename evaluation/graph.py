@@ -7,7 +7,7 @@ def display_net_accuracy(metric, order_by):
     x_data = modes_list
     y_data = []
     for mode in modes_list:
-        with open(f"../results/{mode}/country_distribution.json", "r") as f:
+        with open(f"../results/{mode[-2:]}/{mode[:-3]}/country_distribution.json", "r") as f:
             data = json.load(f)
             if order_by == "both":
                 average = (data["net_persona"]["easy"]["Net Accuracy"] + data["net_persona"]["hard"]["Net Accuracy"]) / 2

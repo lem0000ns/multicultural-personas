@@ -4,13 +4,21 @@ import json
 import os
 import torch
 import gc
-from tools.utils import country_to_language, modes_list, modes_list_p1, modes_list_p2
+from tools.utils import modes_list, modes_list_p1, modes_list_p2, country_to_language
 from tools.configs import system_prompts
 import argparse
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1, 2"
 model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
-llm = LLM(model=model_name, tensor_parallel_size=2, dtype='half')
+
+# Global variable to store LLM instance
+llm = None
+
+def get_llm():
+    global llm
+    if llm is None:
+        llm = LLM(model=model_name, tensor_parallel_size=2, dtype='half')
+    return llm
 
 # Create separate sampling params for different question types
 sampling_params = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=512)
@@ -20,15 +28,29 @@ def generate_text(chat_input, llm):
     return output[0].outputs[0].text
 
 def generate_persona_description(question, country, mode):   
+    llm_instance = get_llm()
+    language = country_to_language[country].lower()
+    system_prompt = system_prompts[mode] if "eng" in mode else system_prompts[mode](language)
     chat_input = [
         {"role": "system",
-        "content": system_prompts[mode].format(language={"English" if "eng" in mode else country_to_language[country]})
+        "content": system_prompt
         },
         {"role": "user",
         "content": "question: " + question + "\n\n" + "country: " + country + "\n\npersona description: "}
     ]
-    response = generate_text(chat_input, llm)
+    response = generate_text(chat_input, llm_instance)
     return response
+
+def is_valid_set(ds, i):
+    for j in range(4):
+        cur_row = ds[i + j]
+        prompt_question = cur_row["prompt_question"]
+        prompt_option = cur_row["prompt_option"]
+        prompt_answer = cur_row["answer"]
+        country = cur_row["country"]
+        if prompt_option is None or prompt_answer is None or prompt_question is None or country is None:
+            return False
+    return True
 
 def run_eval(type, difficulty, mode):
     print(f"Running {type} evaluation for {difficulty} difficulty with {mode} mode")
@@ -41,8 +63,14 @@ def run_eval(type, difficulty, mode):
     if difficulty == "Hard":
         prev_prompt_question = persona_description = ""
         for i in range(0, len(ds), 4):
+            # ensure set of 4 options is complete
+            isValidSet = is_valid_set(ds, i)
+            
+            if not isValidSet:
+                continue
+
             # iterate over one question at a time (4 options)
-            isCorrect  = True
+            isCorrect = True
             isError = False
             for j in range(4):
                 cur_row = ds[i + j]
@@ -50,8 +78,6 @@ def run_eval(type, difficulty, mode):
                 prompt_option = cur_row["prompt_option"]
                 prompt_answer = cur_row["answer"]
                 country = cur_row["country"]
-                if prompt_option is None or prompt_answer is None or prompt_question is None or country is None:
-                    continue
                 # Use same persona description for same question (4 at a time)
                 if type == "persona" and prev_prompt_question != prompt_question:
                     persona_description = generate_persona_description(prompt_question, country, mode)
@@ -77,7 +103,8 @@ def run_eval(type, difficulty, mode):
                         ),
                     },
                 ]
-                response = generate_text(chat_input, llm)
+                llm_instance = get_llm()
+                response = generate_text(chat_input, llm_instance)
 
                 try:
                     result = json.loads(response)
@@ -104,7 +131,6 @@ def run_eval(type, difficulty, mode):
                     continue
                 else:
                     isCorrect = False
-                    break
 
             if isError:
                 continue
@@ -140,7 +166,8 @@ def run_eval(type, difficulty, mode):
                 "Example format: {\"answer\": \"A\", \"reasoning\": \"The answer is A because ...\"}"
                 "\nQuestion: " + prompt_question + "\nA. " + option_a + "\nB. " + option_b + "\nC. " + option_c + "\nD. " + option_d}
             ]
-            response = generate_text(chat_input, llm)
+            llm_instance = get_llm()
+            response = generate_text(chat_input, llm_instance)
             
             try:
                 result = json.loads(response)
@@ -163,7 +190,7 @@ def run_eval(type, difficulty, mode):
     if type == "vanilla":
         file_name = f"../results/vanilla/vanilla_{difficulty}.jsonl"
     else:
-        file_name = f"../results/{mode[-2:]}/{mode[:-3]}/{type}_{difficulty}.jsonl"
+        file_name = f"../results/{mode[-2:]}/{mode[:-3]}/i1/{type}_{difficulty}.jsonl"
     with open(file_name, "w") as f:
         for entry in data.values():
             f.write(json.dumps(entry, ensure_ascii=False) + "\n")
@@ -173,25 +200,25 @@ def run_eval(type, difficulty, mode):
 
 def cleanup():
     """Clean up GPU memory and close LLM instance"""
-    print("Cleaning up GPU memory for LLM generate instance...")
-    try:
-        # Clear CUDA cache
-        if torch.cuda.is_available():
-            torch.cuda.empty_cache()
-            print("CUDA cache cleared")
-        
-        global llm
-        # Close the LLM instance
-        if llm is not None:
+    global llm
+    if llm is not None:
+        print("Cleaning up GPU memory for LLM generate instance...")
+        try:
+            # Clear CUDA cache
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+                print("CUDA cache cleared")
+            
+            # Close the LLM instance
             del llm
             llm = None
             print("LLM instance deleted")
-        
-        # Force garbage collection
-        gc.collect()
             
-    except Exception as e:
-        print(f"Error during cleanup: {e}")
+            # Force garbage collection
+            gc.collect()
+                
+        except Exception as e:
+            print(f"Error during cleanup: {e}")
 
 def diff_eval_clf(difficulty, mode):
     if difficulty == "hard":

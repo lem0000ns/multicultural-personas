@@ -30,7 +30,7 @@ def generate_persona_description(question, country, mode):
     language = country_to_language[country].lower()
     system_prompt = system_prompts[mode] if "eng" in mode else system_prompts[mode](language)
     question_t = questions_translated[language.capitalize()]
-    country_t = countries_translated[country.capitalize()]
+    country_t = countries_translated[country.lower()]
     persona_description_t = persona_descriptions_translated[language.capitalize()]
     chat_input = [
         {"role": "system",
@@ -80,6 +80,7 @@ def run_initial_eval(difficulty, mode, num_iterations):
                 prompt_option = cur_row["prompt_option"]
                 prompt_answer = cur_row["answer"]
                 country = cur_row["country"]
+                language = country_to_language[country].capitalize()
                 # use same persona description for same question (4 at a time)
                 if prev_prompt_question != prompt_question:
                     persona_description = generate_persona_description(prompt_question, country, mode)
@@ -96,8 +97,9 @@ def run_initial_eval(difficulty, mode, num_iterations):
                             "Is this answer true or false for this question? "
                             "You must choose either True or False, and provide a brief explanation for your answer. "
                             "Respond in valid JSON format with two keys: "
-                            "\"correct\" (either \"true\" or \"false\") and \"reasoning\" (a short explanation). "
+                            f"\"correct\" (either \"true\" or \"false\") and \"reasoning\" (a short explanation in {language}). "
                             "Example format: {\"correct\": \"{true/false}\", \"reasoning\": \"{reasoning}\"}"
+                            f"IMPORTANT: The reasoning must be in {language}. "
                             f"\nQuestion: {prompt_question}\nAnswer: {prompt_option}"
                         ),
                     },
@@ -148,15 +150,17 @@ def run_initial_eval(difficulty, mode, num_iterations):
                 continue
             persona_description = generate_persona_description(prompt_question, country, mode)
             system_prompt = persona_description
-            
+
+            language = country_to_language[country].capitalize()
             chat_input = [
                 {"role": "system",
                 "content": system_prompt},
                 {"role": "user",
                 "content": "Instruction: You must select one option among A,B,C,D. "
                 "Respond in valid JSON format with two keys: "
-                "\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and \"reasoning\" (a short explanation). "
-                "Example format: {\"answer\": \"A\", \"reasoning\": \"The answer is A because ...\"}"
+                f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and \"reasoning\" (a short explanation in {language}). "
+                "Example format: {\"answer\": \"{A/B/C/D}\", \"reasoning\": \"{reasoning}\"}"
+                f"IMPORTANT: The reasoning must be in {language}. "
                 "\nQuestion: " + prompt_question + "\nA. " + option_a + "\nB. " + option_b + "\nC. " + option_c + "\nD. " + option_d}
             ]
             llm_instance = get_llm()
@@ -271,14 +275,16 @@ def run_iterations(mode, num_iterations, difficulty, file_name):
                 option_b = item["options"]["B"]
                 option_c = item["options"]["C"]
                 option_d = item["options"]["D"]
+                language = country_to_language[item["country"].capitalize()]
                 chat_input = [
                     {"role": "system",
                     "content": new_persona},
                     {"role": "user",
                     "content": "Instruction: You must select one option among A,B,C,D. "
                     "Respond in valid JSON format with two keys: "
-                    "\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and \"reasoning\" (a short explanation). "
-                    "Example format: {\"answer\": \"A\", \"reasoning\": \"The answer is A because ...\"}"
+                    f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and \"reasoning\" (a short explanation in {language}). "
+                    "Example format: {\"answer\": \"{A/B/C/D}\", \"reasoning\": \"{reasoning}\"}"
+                    f"IMPORTANT: The reasoning must be in {language}. "
                     "\nQuestion: " + prompt_question + "\nA. " + option_a + "\nB. " + option_b + "\nC. " + option_c + "\nD. " + option_d}
                 ]
                 llm_instance = get_llm()
@@ -333,6 +339,7 @@ def run_iterations(mode, num_iterations, difficulty, file_name):
                     print("Error parsing response from refine prompt: " + refine_response)
                     continue
 
+                language = country_to_language[data[i]["country"].capitalize()]
                 for j in range(4):
                     prompt_option = data[i + j]["prompt_option"]
                     correct_answer = data[i + j]["correct_answer"]
@@ -347,8 +354,9 @@ def run_iterations(mode, num_iterations, difficulty, file_name):
                                 "Is this answer true or false for this question? "
                                 "You must choose either True or False, and provide a brief explanation for your answer. "
                                 "Respond in valid JSON format with two keys: "
-                                "\"correct\" (either \"true\" or \"false\") and \"reasoning\" (a short explanation). "
-                                "Example format: {\"correct\": \"true\", \"reasoning\": \"The answer is true because ...\"}"
+                                f"\"correct\" (either \"true\" or \"false\") and \"reasoning\" (a short explanation in {language}). "
+                                "Example format: {\"correct\": \"{true/false}\", \"reasoning\": \"{reasoning}\"}"
+                                f"IMPORTANT: The reasoning must be in {language}. "
                                 f"\nQuestion: {prompt_question}\nAnswer: {prompt_option}"
                             ),
                         },
@@ -408,31 +416,29 @@ def cleanup():
 
 if __name__ == "__main__":
     try:
-        # parser = argparse.ArgumentParser(description="Run initial evaluation and iterations")
-        # parser.add_argument("--mode", type=str, required=True, help="Mode to run (e.g., ling_p2, eng_p1)")
-        # parser.add_argument("--num_iterations", type=int, required=True, help="Total number of iterations including initial evaluation")
-        # parser.add_argument("--difficulty", type=str, required=True, choices=["easy", "hard", "Easy", "Hard"], help="Difficulty level")
-        # args = parser.parse_args()
+        parser = argparse.ArgumentParser(description="Run initial evaluation and iterations")
+        parser.add_argument("--mode", type=str, required=True, help="Mode to run (e.g., ling_p2, eng_p1)")
+        parser.add_argument("--num_iterations", type=int, required=True, help="Total number of iterations including initial evaluation")
+        parser.add_argument("--difficulty", type=str, required=True, choices=["easy", "hard", "Easy", "Hard"], help="Difficulty level")
+        args = parser.parse_args()
 
-        # difficulty = args.difficulty.capitalize()
+        difficulty = args.difficulty.capitalize()
         
         # track all accuracies
         all_accuracies = []
         
         # run initial evaluation
-        # initial_accuracy, file_name = run_initial_eval(difficulty, args.mode, args.num_iterations)
-        # all_accuracies.append(initial_accuracy)
-        file_name = "../results/p1/ling/i3/persona_Easy.jsonl"
-        difficulty = "Easy"
-        iteration_accuracies = run_iterations("ling_p1", 3, difficulty, file_name)
+        initial_accuracy, file_name = run_initial_eval(difficulty, args.mode, args.num_iterations)
+        all_accuracies.append(initial_accuracy)
+        iteration_accuracies = run_iterations(args.mode, 3, difficulty, file_name)
         all_accuracies.extend(iteration_accuracies)
         
         # run additional iterations
-        # if args.num_iterations > 1:
-        #     iteration_accuracies = run_iterations(args.mode, args.num_iterations, difficulty, file_name)
-        #     all_accuracies.extend(iteration_accuracies)
-        # else:
-        #     print("\nNo additional iterations to run (num_iterations = 1)")
+        if args.num_iterations > 1:
+            iteration_accuracies = run_iterations(args.mode, args.num_iterations, difficulty, file_name)
+            all_accuracies.extend(iteration_accuracies)
+        else:
+            print("\nNo additional iterations to run (num_iterations = 1)")
         
         # write accuracy summary to end of file
         with open(file_name, "a") as f:

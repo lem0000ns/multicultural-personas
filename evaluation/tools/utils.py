@@ -1,5 +1,73 @@
 import os
 
+lang_to_spp = {
+    "English": "You are...",
+    "Spanish": "Tú eres...",
+    "Portuguese": "Você é...",
+    "Czech": "Ty jsi...",
+    "Polish": "Jesteś...",
+    "Romanian": "Tu ești...",
+    "Ukrainian": "Ти є...",
+    "Russian": "Ты есть...",
+    "Italian": "Tu sei...",
+    "French": "Tu es...",
+    "German": "Du bist...",
+    "Dutch": "Jij bent...",
+    "Arabic": "أنت...",
+    "Persian": "تو هستی...",
+    "Hebrew": "אתה...",
+    "Turkish": "Sen ...sin...",
+    "Bengali": "তুমি...",
+    "Hindi": "तुम हो...",
+    "Nepali": "तिमी हौ...",
+    "Urdu": "تم ہو...",
+    "Indonesian": "Kamu adalah...",
+    "Malay": "Kamu ialah...",
+    "Tagalog": "Ikaw ay...",
+    "Thai": "คุณคือ...",
+    "Vietnamese": "Bạn là...",
+    "Mandarin": "你是...",
+    "Traditional": "你係...",
+    "Cantonese": "你係...",
+    "Japanese": "あなたは...",
+    "Korean": "당신은..."
+}
+
+
+language_to_code = {
+    "English": "en",
+    "Spanish": "es",
+    "Portuguese": "pt",
+    "Czech": "cs",
+    "Polish": "pl",
+    "Romanian": "ro",
+    "Ukrainian": "uk",
+    "Russian": "ru",
+    "Italian": "it",
+    "French": "fr",
+    "German": "de",
+    "Dutch": "nl",
+    "Arabic": "ar",
+    "Persian": "fa",
+    "Hebrew": "he",
+    "Turkish": "tr",
+    "Bengali": "bn",
+    "Hindi": "hi",
+    "Nepali": "ne",
+    "Urdu": "ur",
+    "Indonesian": "id",
+    "Malay": "ms",
+    "Tagalog": "tl",
+    "Thai": "th",
+    "Vietnamese": "vi",
+    "Mandarin": "zh-CN",
+    "Traditional": "zh-TW",
+    "Cantonese": "yue",
+    "Japanese": "ja",
+    "Korean": "ko"
+}
+
+
 country_to_continent = {
     "United States": "North America",
     "Canada": "North America",
@@ -51,7 +119,7 @@ country_to_continent = {
 country_to_language = {
     "United States": "English",
     "Canada": "English",
-    "Argentina": "Spanish",
+    "Argentina": "Spanish", 
     "Brazil": "Portuguese",
     "Chile": "Spanish",
     "Mexico": "Spanish",
@@ -88,7 +156,7 @@ country_to_language = {
     "Thailand": "Thai",
     "Vietnam": "Vietnamese",
     "China": "Mandarin",
-    "Hong Kong": "Traditional",
+    "Hong Kong": "Cantonese",
     "Japan": "Japanese",
     "South Korea": "Korean",
     "Taiwan": "Traditional",
@@ -389,6 +457,9 @@ language_to_prompt_1 = {
     2. 总是以“你是一位”...开头，后面紧跟角色描述。
     """,
         "traditional": """
+        TODO
+        """,
+        "cantonese": """
     你係一位專家，擅長為語言模型打造角色（persona），呢啲角色將會作為系統提示（system prompt），用嚟準確回答選擇題或判斷題。你會收到問題以及問題內容所涉及嘅相關國家。你嘅任務係生成一個全新嘅角色，呢個角色必須：
     1. 具備同問題內容直接相關嘅專業知識。
     2. 提供能夠增進理解嘅文化或語言背景。
@@ -660,7 +731,11 @@ language_to_prompt_2 = {
     1. 只包含角色描述——不含额外的解释、格式或翻译。
     2. 始终以“你是一位”……开头，后跟角色描述。""",
 
-        "traditional": """你係一位創造角色嘅專家，呢啲角色設計出嚟係為咗做語言模型嘅系統提示，用嚟回答選擇題或係非題。你會收到問題同埋相關嘅國家。你嘅目標係產生一個符合以下要求嘅角色：
+        "traditional": """
+        TODO
+        """,
+
+        "cantonese": """你係一位創造角色嘅專家，呢啲角色設計出嚟係為咗做語言模型嘅系統提示，用嚟回答選擇題或係非題。你會收到問題同埋相關嘅國家。你嘅目標係產生一個符合以下要求嘅角色：
     1. 擁有同問題主題直接相關嘅專業知識。
     2. 加入能夠增進理解嘅文化或語言背景。
     3. 鼓勵精確嘅推理同準確選擇正確答案。
@@ -716,6 +791,7 @@ questions_translated = {
     "Vietnamese": "câu hỏi",
     "Mandarin": "问题",
     "Traditional": "問題",
+    "Cantonese": "問題",
     "Japanese": "質問",
     "Korean": "질문"
 }
@@ -795,7 +871,8 @@ persona_descriptions_translated = {
     "Thai": "คำอธิบายบุคลิก",
     "Vietnamese": "mô tả chân dung nhân vật",
     "Mandarin": "角色描述",
-    "Traditional": "角色描述",
+    "Traditional": "TODO",
+    "Cantonese": "角色描述",
     "Japanese": "ペルソナの説明",
     "Korean": "페르소나 설명"
 }
@@ -827,7 +904,8 @@ previous_persona_translated = {
     "Thai": "เพอร์โซนาก่อนหน้า",
     "Vietnamese": "persona trước đó",
     "Mandarin": "先前的角色",
-    "Traditional": "之前嘅角色",
+    "Traditional": "TODO",
+    "Cantonese": "之前嘅角色",
     "Japanese": "前のペルソナ",
     "Korean": "이전 페르소나"
 }
@@ -859,7 +937,8 @@ predicted_answers_translated = {
     "Thai": "คำตอบที่คาดการณ์ไว้",
     "Vietnamese": "câu trả lời dự đoán",
     "Mandarin": "预测的答案",
-    "Traditional": "預測嘅答案",
+    "Traditional": "TODO",
+    "Cantonese": "預測嘅答案",
     "Japanese": "予測された答え",
     "Korean": "예측된 답변"
 }
@@ -891,39 +970,8 @@ reasonings_translated = {
     "Thai": "การให้เหตุผล",
     "Vietnamese": "lý luận",
     "Mandarin": "推理",
-    "Traditional": "推理",
+    "Traditional": "TODO",
+    "Cantonese": "推理",
     "Japanese": "推論",
     "Korean": "추론"
-}
-
-new_persona_translated = {
-    "English": "new persona",
-    "Spanish": "nueva persona",
-    "Portuguese": "nova persona",
-    "Czech": "nová persona",
-    "Polish": "nowa persona",
-    "Romanian": "persona nouă",
-    "Ukrainian": "нова персона",
-    "Russian": "новая персона",
-    "Italian": "nuova persona",
-    "French": "nouvelle persona",
-    "German": "neue Persona",
-    "Dutch": "nieuwe persona",
-    "Arabic": "الشخصية الجديدة",
-    "Persian": "پرسونای جدید",
-    "Hebrew": "הפרסונה החדשה",
-    "Turkish": "yeni persona",
-    "Bengali": "নতুন পার্সোনা",
-    "Hindi": "नई व्यक्तित्व",
-    "Nepali": "नयाँ व्यक्तित्व",
-    "Urdu": "نئی پرسونہ",
-    "Indonesian": "persona baru",
-    "Malay": "persona baharu",
-    "Tagalog": "bagong persona",
-    "Thai": "เพอร์โซนาใหม่",
-    "Vietnamese": "persona mới",
-    "Mandarin": "新的角色",
-    "Traditional": "新嘅角色",
-    "Japanese": "新しいペルソナ",
-    "Korean": "새로운 페르소나"
 }

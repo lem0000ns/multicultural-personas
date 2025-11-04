@@ -5,7 +5,7 @@ import os
 from datasets import load_dataset
 from persona_generator import generate_persona_description, cap, sanitize_json
 from tools.utils import country_to_language
-from llm_utils import get_llm, generate_text
+from tools.llm_utils import get_llm, generate_text
 
 
 def is_valid_set(ds, i):
@@ -29,7 +29,7 @@ def is_valid_set(ds, i):
     return True
 
 
-def evaluate_hard_initial(ds, mode):
+async def evaluate_hard_initial(ds, mode):
     """Run initial evaluation for Hard difficulty.
     
     Args:
@@ -42,7 +42,7 @@ def evaluate_hard_initial(ds, mode):
     data = {}
     correct = total = 0
     iteration = 1
-    prev_prompt_question = persona_description = ""
+    persona_description = ""
     
     for i in range(0, len(ds), 4):
         # ensure set of 4 options is complete
@@ -54,46 +54,69 @@ def evaluate_hard_initial(ds, mode):
         # iterate over one question at a time (4 options)
         isCorrect = True
         isError = False
+        cur_set_data = []
+        
         for j in range(4):
             cur_row = ds[i + j]
             prompt_question = cur_row["prompt_question"]
             prompt_option = cur_row["prompt_option"]
             prompt_answer = cur_row["answer"]
             country = cur_row["country"]
+            
             if "eng" in mode or "e2l" in mode:
                 language = "English"
             else:
                 language = country_to_language[cap(country)].capitalize()
+            
             # use same persona description for same question (4 at a time)
-            if prev_prompt_question != prompt_question:
-                persona_description = generate_persona_description(prompt_question, country, mode)
-            prev_prompt_question = prompt_question
+            if j == 0:
+                pretranslated, translated = await generate_persona_description(
+                    prompt_question, 
+                    country, 
+                    mode
+                )
+                if "l2e" in mode or "e2l" in mode:
+                    persona_description = translated
+                else:
+                    persona_description = pretranslated
+                # if not in correct language, disregard this question (set of 4 options)
+                if persona_description is None:
+                    break
+            
             system_prompt = persona_description
             chat_input = [
                 {
                     "role": "system",
-                    "content": system_prompt,
+                    "content": system_prompt
                 },
                 {
                     "role": "user",
                     "content": (
-                        "Is this answer true or false for this question? "
-                        "You must choose either True or False, and provide a brief explanation for your answer. "
-                        "Respond in valid JSON format with two keys: "
-                        f"\"correct\" (either \"true\" or \"false\") and \"reasoning\" (a short explanation in {language}). "
-                        "Example format: {\"correct\": \"{true/false}\", \"reasoning\": \"{reasoning}\"}"
-                        f"IMPORTANT: The reasoning must be in {language}. "
-                        f"\nQuestion: {prompt_question}\nAnswer: {prompt_option}"
-                    ),
-                },
+                        "Is this answer true or false for this question?\n"
+                        "You must choose either True or False, and provide a brief "
+                        "explanation for your answer.\n"
+                        "Respond in valid JSON format with two keys: \n"
+                        f"\"correct\" (either \"true\" or \"false\") and "
+                        f"\"reasoning\" (a short explanation in {language}). \n"
+                        "Example format: {\"correct\": \"{true/false}\", \"reasoning\": \"{reasoning}\"}\n"
+                        f"IMPORTANT: The reasoning must be in {language}.\n"
+                        f"Question: {prompt_question}\n"
+                        f"Answer: {prompt_option}"
+                    )
+                }
             ]
+            
             llm_instance = get_llm()
             response = generate_text(chat_input, llm_instance)
             response = sanitize_json(response, "hard")
 
             try:
                 result = json.loads(response)
-                thinks_correct = "true" if "true" in result["correct"].lower().strip() else "false"
+                thinks_correct = (
+                    "true" 
+                    if "true" in result["correct"].lower().strip() 
+                    else "false"
+                )
                 reasoning = result["reasoning"].strip()
             except json.JSONDecodeError:
                 # fallback if model didn't return valid JSON
@@ -107,15 +130,34 @@ def evaluate_hard_initial(ds, mode):
                 break
 
             # store data in JSON format
-            data[i + j] = {"question": prompt_question, "prompt_option": prompt_option, "persona_description": persona_description, "correct_answer": prompt_answer, "persona_answer": thinks_correct, "reasoning": reasoning, "country": country, "iteration": iteration}
+            item_data = {
+                "question": prompt_question,
+                "prompt_option": prompt_option,
+                "persona_description": persona_description,
+                "correct_answer": prompt_answer,
+                "persona_answer": thinks_correct,
+                "reasoning": reasoning,
+                "country": country,
+                "iteration": iteration
+            }
+            
+            if "l2e" in mode or "e2l" in mode:
+                item_data["pretranslated_persona"] = pretranslated
+            
+            cur_set_data.append(item_data)
+            
             # normalize to strings for comparison
             if str(thinks_correct).lower() == str(prompt_answer).lower():
                 continue
             else:
                 isCorrect = False
 
-        if isError:
+        if isError or len(cur_set_data) != 4:
             continue
+        
+        for j in range(4):
+            data[i + j] = cur_set_data[j]
+        
         if isCorrect:
             correct += 1
         total += 1
@@ -123,7 +165,7 @@ def evaluate_hard_initial(ds, mode):
     return data, correct, total
 
 
-def evaluate_easy_initial(ds, mode):
+async def evaluate_easy_initial(ds, mode):
     """Run initial evaluation for Easy difficulty.
     
     Args:
@@ -145,26 +187,56 @@ def evaluate_easy_initial(ds, mode):
         option_d = cur_row["prompt_option_d"]
         answer = cur_row["answer"]
         country = cur_row["country"]
-        if option_a is None or option_b is None or option_c is None or option_d is None or answer is None or prompt_question is None or country is None:
+
+        if (option_a is None or option_b is None or option_c is None or 
+            option_d is None or answer is None or prompt_question is None or 
+            country is None):
             continue
-        persona_description = generate_persona_description(prompt_question, country, mode)
+
+        pretranslated, translated = await generate_persona_description(
+            prompt_question, 
+            country, 
+            mode
+        )
+        if "l2e" in mode or "e2l" in mode:
+            persona_description = translated
+        else:
+            persona_description = pretranslated
+
+        # if not in correct language, disregard this question
+        if persona_description is None:
+            continue
+        
         system_prompt = persona_description
 
         if "eng" in mode or "e2l" in mode:
             language = "English"
         else:
             language = country_to_language[cap(country)].capitalize()
+        
         chat_input = [
-            {"role": "system",
-            "content": system_prompt},
-            {"role": "user",
-            "content": "Instruction: You must select one option among A,B,C,D. "
-            "Respond in valid JSON format with two keys: "
-            f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and \"reasoning\" (a short explanation in {language}). "
-            "Example format: {\"answer\": \"{A/B/C/D}\", \"reasoning\": \"{reasoning}\"}"
-            f"IMPORTANT: The reasoning must be in {language}. "
-            "\nQuestion: " + prompt_question + "\nA. " + option_a + "\nB. " + option_b + "\nC. " + option_c + "\nD. " + option_d}
+            {
+                "role": "system",
+                "content": system_prompt
+            },
+            {
+                "role": "user",
+                "content": (
+                    "Instruction: You must select one option among A,B,C,D.\n"
+                    "Respond in valid JSON format with two keys: \n"
+                    f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and "
+                    f"\"reasoning\" (a short explanation in {language}). \n"
+                    "Example format: {\"answer\": \"{A/B/C/D}\", \"reasoning\": \"{reasoning}\"}\n"
+                    f"IMPORTANT: The reasoning must be in {language}.\n"
+                    f"\nQuestion: {prompt_question}\n"
+                    f"A. {option_a}\n"
+                    f"B. {option_b}\n"
+                    f"C. {option_c}\n"
+                    f"D. {option_d}"
+                )
+            }
         ]
+        
         llm_instance = get_llm()
         response = generate_text(chat_input, llm_instance)
         response = sanitize_json(response, "easy")
@@ -175,7 +247,29 @@ def evaluate_easy_initial(ds, mode):
             reasoning = result["reasoning"].strip()
             
             # store data in JSON format
-            data[i] = {"question": prompt_question, "options": {"A": option_a, "B": option_b, "C": option_c, "D": option_d}, "persona_description": persona_description, "correct_answer": answer, "persona_answer": response_answer, "reasoning": reasoning, "country": country, "iteration": 1}
+            options_dict = {
+                "A": option_a,
+                "B": option_b,
+                "C": option_c,
+                "D": option_d
+            }
+            
+            item_data = {
+                "question": prompt_question,
+                "options": options_dict,
+                "persona_description": persona_description,
+                "correct_answer": answer,
+                "persona_answer": response_answer,
+                "reasoning": reasoning,
+                "country": country,
+                "iteration": 1
+            }
+            
+            if "l2e" in mode or "e2l" in mode:
+                item_data["pretranslated_persona"] = pretranslated
+            
+            data[i] = item_data
+            
             # normalize to strings for comparison
             if response_answer.upper() == answer.upper():
                 correct += 1
@@ -187,7 +281,7 @@ def evaluate_easy_initial(ds, mode):
     return data, correct, total
 
 
-def run_initial_eval(difficulty, mode, num_iterations):
+async def run_initial_eval(difficulty, mode, num_iterations):
     """Run initial evaluation (i1) for the given difficulty.
     
     Args:
@@ -201,9 +295,9 @@ def run_initial_eval(difficulty, mode, num_iterations):
     ds = load_dataset("kellycyy/CulturalBench", f"CulturalBench-{difficulty}", split="test")
 
     if difficulty == "Hard":
-        data, correct, total = evaluate_hard_initial(ds, mode)
+        data, correct, total = await evaluate_hard_initial(ds, mode)
     else:
-        data, correct, total = evaluate_easy_initial(ds, mode)
+        data, correct, total = await evaluate_easy_initial(ds, mode)
     
     # write results to file (initial write)
     file_name = f"../results/{mode[-2:]}/{mode[:-3]}/i{num_iterations}/persona_{difficulty}.jsonl"

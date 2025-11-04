@@ -8,7 +8,6 @@ from vllm import LLM, SamplingParams
 # Configuration
 os.environ["CUDA_VISIBLE_DEVICES"] = "1, 2"
 MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
-SAMPLING_PARAMS = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=1024)
 
 # Global LLM instance
 llm = None
@@ -22,7 +21,7 @@ def get_llm():
     return llm
 
 
-def generate_text(chat_input, llm_instance):
+def generate_text(chat_input, llm_instance, max_tokens=1024):
     """Generate text from chat input using the LLM.
     
     Args:
@@ -32,6 +31,7 @@ def generate_text(chat_input, llm_instance):
     Returns:
         Generated text string
     """
+    SAMPLING_PARAMS = SamplingParams(temperature=0.0, top_p=0.95, max_tokens=max_tokens)
     output = llm_instance.chat(chat_input, SAMPLING_PARAMS)
     return output[0].outputs[0].text
 

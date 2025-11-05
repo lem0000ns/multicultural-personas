@@ -1,6 +1,6 @@
 from tools.llm_utils import get_llm, generate_text  
 from datasets import load_dataset
-import json
+from tools.db.db_utils import save_results, save_accuracy
 
 def run_vanilla(difficulty):
     """Run vanilla (no persona) evaluation for a given difficulty."""
@@ -88,11 +88,11 @@ def run_vanilla(difficulty):
                 continue
             data[i] = {"question": cur_question, "prompt_option_a": prompt_option_a, "prompt_option_b": prompt_option_b, "prompt_option_c": prompt_option_c, "prompt_option_d": prompt_option_d, "correct_answer": answer, "vanilla_answer": response, "country": country}
 
-    with open(f"../results/vanilla/vanilla_{difficulty}.jsonl", "w") as f:
-        for entry in data.values():
-            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
-        accuracy = total_correct / total if total > 0 else 0
-        f.write(f"Vanilla Accuracy for {difficulty}: {accuracy}")
+    db_path = f"../results/vanilla/vanilla_{difficulty}.db"
+    for entry in data.values():
+        save_results(db_path, entry, difficulty, "vanilla")
+    accuracy = total_correct / total if total > 0 else 0
+    save_accuracy(db_path, 1, difficulty, "vanilla", accuracy, total_correct, total)
 
 if __name__ == "__main__":
     run_vanilla("Easy")

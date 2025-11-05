@@ -3,10 +3,15 @@
 import streamlit as st
 import json
 import pandas as pd
+import sys
 from pathlib import Path
 import plotly.express as px
 import plotly.graph_objects as go
 from collections import Counter
+
+# Add evaluation directory to path for imports
+sys.path.append(str(Path(__file__).parent / "evaluation"))
+from evaluation.tools.db.db_utils import load_results, get_all_iterations, get_accuracies
 
 # Set page config
 st.set_page_config(
@@ -54,49 +59,64 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 @st.cache_data
-def load_jsonl_file(file_path):
-    """Load JSONL file and return as list of dicts."""
-    data = []
-    summary_lines = []
+def load_db_file(db_path):
+    """Load data from SQLite database and return as list of dicts."""
+    data = load_results(db_path)
     
-    with open(file_path, 'r') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            # Check if line is a summary line
-            if "Accuracy" in line:
-                summary_lines.append(line)
-            else:
-                data.append(json.loads(line))
+    # Get accuracy summary
+    accuracies = get_accuracies(db_path)
+    summary_lines = []
+    for acc in accuracies:
+        summary_line = f"Persona Accuracy for {acc['difficulty']} - Iteration {acc['iteration']}: {acc['accuracy']:.4f}"
+        summary_lines.append(summary_line)
     
     return data, summary_lines
 
 def get_available_results():
-    """Scan the results directory for available JSONL files."""
-    results_dir = Path("/home/kevinyang/mc-personas/results")
-    jsonl_files = list(results_dir.rglob("*.jsonl"))
+    """Scan the results directory for available database files.
     
-    # Organize by type
+    Returns:
+        Dictionary organized as: {mode: {prompt: [files]}}
+    """
+    results_dir = Path("/home/kevinyang/mc-personas/results")
+    db_files = list(results_dir.rglob("*.db"))
+    
+    # Organize by mode and prompt
+    # Structure: {mode: {prompt: [files]}}
     organized = {}
-    for file in jsonl_files:
+    
+    for file in db_files:
         relative_path = file.relative_to(results_dir)
         parts = relative_path.parts
         
-        # Create a nice display name
         if parts[0] == "vanilla":
-            category = "Vanilla (No Persona)"
+            mode = "vanilla"
+            prompt = None  # vanilla doesn't have prompt
         else:
-            category = f"{parts[0].upper()} - {parts[1].upper()}"
+            # parts[0] is like 'p1' or 'p2'
+            # parts[1] is like 'eng', 'ling', 'e2l', 'l2e'
+            prompt = parts[0]  # p1, p2
+            mode = parts[1]    # eng, ling, e2l, l2e
         
-        if category not in organized:
-            organized[category] = []
+        if mode not in organized:
+            organized[mode] = {}
         
-        organized[category].append({
-            "path": str(file),
-            "name": relative_path.name,
-            "relative_path": str(relative_path)
-        })
+        if mode == "vanilla":
+            if "all" not in organized[mode]:
+                organized[mode]["all"] = []
+            organized[mode]["all"].append({
+                "path": str(file),
+                "name": relative_path.name,
+                "relative_path": str(relative_path)
+            })
+        else:
+            if prompt not in organized[mode]:
+                organized[mode][prompt] = []
+            organized[mode][prompt].append({
+                "path": str(file),
+                "name": relative_path.name,
+                "relative_path": str(relative_path)
+            })
     
     return organized
 
@@ -104,36 +124,25 @@ def is_single_item_correct(item):
     """Check if a single item's answer is correct (for individual line checking)."""
     correct_answer = item.get("correct_answer")
     
-    # Check if this is vanilla format (uses vanilla_answer instead of persona_answer)
-    if "vanilla_answer" in item:
-        vanilla_answer = item.get("vanilla_answer")
-        
-        # For Hard mode (true/false format), convert string to boolean
-        if isinstance(vanilla_answer, str) and vanilla_answer.lower() in ["true", "false"]:
-            vanilla_answer_bool = vanilla_answer.lower() == "true"
-            # correct_answer should be boolean for Hard mode
-            if isinstance(correct_answer, bool):
-                return correct_answer == vanilla_answer_bool
-        
-        # For Easy mode (A/B/C/D format), compare strings directly
-        return correct_answer == vanilla_answer
+    # Get the model's answer (could be model_answer, persona_answer, or vanilla_answer)
+    model_answer = item.get("model_answer") or item.get("persona_answer") or item.get("vanilla_answer")
     
-    # Otherwise it's persona format (uses persona_answer)
-    persona_answer = item.get("persona_answer")
+    if model_answer is None:
+        return False
     
-    # Check if it's Easy mode (has 'options' field) or Hard mode (has 'prompt_option' field)
-    if "options" in item:
-        # Easy mode: compare strings directly (A/B/C/D)
-        return correct_answer.lower() == persona_answer.lower()
+    # Check if it's Hard mode (has 'prompt_option') or Easy mode (has options with data)
+    is_hard_mode = bool(item.get("prompt_option"))
+    
+    if is_hard_mode:
+        # Hard mode: compare as strings (both "true" or "false")
+        # Normalize both to lowercase strings for comparison
+        model_answer_str = str(model_answer).lower().strip()
+        correct_answer_str = str(correct_answer).lower().strip()
+        
+        return model_answer_str == correct_answer_str
     else:
-        # Hard mode: convert string to boolean for comparison
-        if isinstance(persona_answer, str):
-            persona_answer_bool = persona_answer.lower() == "true"
-        else:
-            persona_answer_bool = bool(persona_answer)
-        
-        # Check if the persona's answer matches the correct answer
-        return correct_answer == persona_answer_bool
+        # Easy mode: compare strings directly (A/B/C/D)
+        return correct_answer.lower() == model_answer.lower()
 
 def is_answer_correct(item):
     """Wrapper for backward compatibility."""
@@ -144,9 +153,10 @@ def calculate_accuracy(data):
     if not data:
         return 0.0
     
-    # Detect format - check if it's Hard mode (has prompt_option) or Easy mode (has options)
-    # Hard mode has prompt_option, Easy mode has options
-    is_hard_mode = "prompt_option" in data[0]
+    # Detect format - check if it's Hard mode (has prompt_option) or Easy mode (has options with data)
+    # Hard mode: has prompt_option
+    # Easy mode: has options dict with actual option data (A, B, C, D keys)
+    is_hard_mode = bool(data[0].get("prompt_option"))
     
     if is_hard_mode:
         # For Hard mode: group by question and check if ALL options are correct
@@ -191,7 +201,7 @@ def main():
     st.markdown("### Visualize CulturalBench Evaluation Results")
     
     # Sidebar for file selection
-    st.sidebar.header("📁 Select Results File")
+    st.sidebar.header("📁 Select Results")
     
     available_results = get_available_results()
     
@@ -199,18 +209,57 @@ def main():
         st.error("No results files found in the results directory!")
         return
     
-    # Category selection
-    category = st.sidebar.selectbox(
-        "Category",
-        options=list(available_results.keys()),
+    # Mode selection (eng, ling, e2l, l2e, vanilla)
+    mode_display_names = {
+        "eng": "🇺🇸 English",
+        "ling": "🌍 Linguistic",
+        "e2l": "🇺🇸→🌍 English to Local",
+        "l2e": "🌍→🇺🇸 Local to English",
+        "vanilla": "⚪ Vanilla (No Persona)"
+    }
+    
+    available_modes = sorted(available_results.keys())
+    mode_options = [mode_display_names.get(m, m.upper()) for m in available_modes]
+    
+    selected_mode_display = st.sidebar.selectbox(
+        "Mode",
+        options=mode_options,
         index=0
     )
     
-    # File selection within category
-    files = available_results[category]
+    # Get the actual mode key from display name
+    selected_mode = available_modes[mode_options.index(selected_mode_display)]
+    
+    # Prompt selection (p1, p2) - only if not vanilla
+    if selected_mode != "vanilla":
+        available_prompts = sorted(available_results[selected_mode].keys())
+        prompt_display_names = {
+            "p1": "📝 Prompt 1",
+            "p2": "📝 Prompt 2"
+        }
+        prompt_options = [prompt_display_names.get(p, p.upper()) for p in available_prompts]
+        
+        selected_prompt_display = st.sidebar.selectbox(
+            "Prompt",
+            options=prompt_options,
+            index=0
+        )
+        
+        selected_prompt = available_prompts[prompt_options.index(selected_prompt_display)]
+        files = available_results[selected_mode][selected_prompt]
+    else:
+        # For vanilla, no prompt selection needed
+        files = available_results[selected_mode]["all"]
+        selected_prompt = "N/A"
+    
+    # File selection (difficulty and iteration)
+    if not files:
+        st.error(f"No files found for {selected_mode_display}")
+        return
+    
     file_names = [f["name"] for f in files]
     selected_file_name = st.sidebar.selectbox(
-        "File",
+        "Dataset",
         options=file_names,
         index=0
     )
@@ -220,11 +269,14 @@ def main():
     file_path = selected_file["path"]
     
     st.sidebar.markdown("---")
-    st.sidebar.info(f"**Path:** `{selected_file['relative_path']}`")
+    st.sidebar.info(f"**Mode:** {selected_mode_display}")
+    if selected_mode != "vanilla":
+        st.sidebar.info(f"**Prompt:** {selected_prompt_display}")
+    st.sidebar.info(f"**File:** `{selected_file['name']}`")
     
     # Load data
     with st.spinner("Loading data..."):
-        data, summary_lines = load_jsonl_file(file_path)
+        data, summary_lines = load_db_file(file_path)
     
     if not data:
         st.warning("No data found in the selected file!")
@@ -243,7 +295,7 @@ def main():
         st.header("Overview")
         
         # Key metrics
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3 = st.columns(3)
         
         total_questions = len(data)
         
@@ -254,10 +306,8 @@ def main():
         with col1:
             st.metric("Total Questions", total_questions)
         with col2:
-            st.metric("Accuracy", f"{accuracy:.2f}%")
-        with col3:
             st.metric("Countries", unique_countries)
-        with col4:
+        with col3:
             st.metric("Iterations", unique_iterations)
         
         # Accuracy by iteration
@@ -278,13 +328,16 @@ def main():
                 )
                 fig.update_traces(line_color="#1f77b4", marker=dict(size=10))
                 fig.update_layout(hovermode="x unified")
-                st.plotly_chart(fig, use_container_width=True)
+                plotly_config = {
+                    "width": "stretch"
+                }
+                st.plotly_chart(fig, config=plotly_config)
                 
                 # Show table
                 st.dataframe(
                     df_iterations.style.format({"accuracy": "{:.2f}%"}),
                     hide_index=True,
-                    use_container_width=True
+                    width='stretch'
                 )
         
     
@@ -304,7 +357,8 @@ def main():
             accuracy = calculate_accuracy(items)
             
             # For display: count questions properly
-            is_hard_mode = "prompt_option" in items[0] and "options" not in items[0]
+            # Hard mode: has prompt_option
+            is_hard_mode = bool(items[0].get("prompt_option"))
             if is_hard_mode:
                 # Count unique questions
                 unique_questions = len(set(item.get("question", "") for item in items))
@@ -327,7 +381,7 @@ def main():
                 "Accuracy (%)": "{:.2f}%"
             }),
             hide_index=True,
-            use_container_width=True
+            width='stretch'
         )
         
         # Performance by country for each iteration
@@ -372,7 +426,10 @@ def main():
                         height=400,
                         showlegend=False
                     )
-                    st.plotly_chart(fig, use_container_width=True)
+                    plotly_config = {
+                        "width": "stretch"
+                    }
+                    st.plotly_chart(fig, config=plotly_config)
     
     with tab3:
         st.header("📝 Question Explorer")
@@ -380,31 +437,41 @@ def main():
         # Filters
         col1, col2, col3 = st.columns(3)
         
+        # Get available iterations and sort them
+        available_iterations = sorted(set(item.get("iteration", 1) for item in data))
+        
         with col1:
+            # Iteration filter (no "All" option, default to iteration 1)
+            default_iteration_idx = 0  # Default to first iteration (usually 1)
+            if 1 in available_iterations:
+                default_iteration_idx = available_iterations.index(1)
+            
+            selected_iteration = st.selectbox(
+                "Iteration", 
+                available_iterations,
+                index=default_iteration_idx,
+                help="Select which iteration to view questions from"
+            )
+        
+        with col2:
             countries = ["All"] + sorted(set(item.get("country", "Unknown") for item in data))
             selected_country = st.selectbox("Filter by Country", countries)
         
-        with col2:
+        with col3:
             answer_filter = st.selectbox("Filter by Answer", ["All", "Correct", "Incorrect"])
         
-        with col3:
-            iterations = ["All"] + sorted(set(str(item.get("iteration", 1)) for item in data))
-            selected_iteration = st.selectbox("Filter by Iteration", iterations)
+        # Apply filters - iteration filter is ALWAYS applied
+        filtered_data = [item for item in data if item.get("iteration", 1) == selected_iteration]
         
-        # Apply filters
-        filtered_data = data
         if selected_country != "All":
-            filtered_data = [item for item in filtered_data if item.get("country") == selected_country]
+            filtered_data = [item for item in filtered_data if item.get("country").lower() == selected_country.lower()]
         
         if answer_filter == "Correct":
             filtered_data = [item for item in filtered_data if is_answer_correct(item)]
         elif answer_filter == "Incorrect":
             filtered_data = [item for item in filtered_data if not is_answer_correct(item)]
         
-        if selected_iteration != "All":
-            filtered_data = [item for item in filtered_data if str(item.get("iteration", 1)) == selected_iteration]
-        
-        st.info(f"Showing {len(filtered_data)} questions")
+        st.info(f"Showing {len(filtered_data)} questions from Iteration {selected_iteration}")
         
         # Search
         search_query = st.text_input("🔍 Search questions", "")
@@ -427,12 +494,13 @@ def main():
                 with col1:
                     st.markdown(f"**Question:** {item.get('question', 'N/A')}")
                     
-                    # Show options for vanilla format or prompt_option for persona format
-                    if "options" in item:
+                    # Show options for Easy mode or prompt_option for Hard mode
+                    options = item.get('options')
+                    if options and isinstance(options, dict):
                         st.markdown("**Options:**")
-                        for key, value in item.get('options', {}).items():
+                        for key, value in options.items():
                             st.markdown(f"  - {key}: {value}")
-                    else:
+                    elif item.get('prompt_option'):
                         st.markdown(f"**Option:** {item.get('prompt_option', 'N/A')}")
                     
                     st.markdown(f"**Reasoning:** {item.get('reasoning', 'N/A')}")
@@ -444,10 +512,9 @@ def main():
                     st.markdown(f"**Correct Answer:** {item.get('correct_answer', 'N/A')}")
                     
                     # Show the appropriate answer field
-                    if "vanilla_answer" in item:
-                        st.markdown(f"**Model Answer:** {item.get('vanilla_answer', 'N/A')}")
-                    else:
-                        st.markdown(f"**Persona Answer:** {item.get('persona_answer', 'N/A')}")
+                    # Get model answer from any available field
+                    model_answer = item.get('model_answer') or item.get('persona_answer') or item.get('vanilla_answer', 'N/A')
+                    st.markdown(f"**Model Answer:** {model_answer}")
                     
                     st.markdown(f"**Result:** {'✅ Correct' if is_correct else '❌ Incorrect'}")
                 
@@ -482,7 +549,7 @@ def main():
                     country_personas[country].append(item.get("persona_description"))
             
             # Show one persona per country
-            for country in sorted(country_personas.keys())[:10]:  # Limit to 10
+            for country in sorted(country_personas.keys()):
                 with st.expander(f"🌍 {country}"):
                     st.write(country_personas[country][0])
     
@@ -504,7 +571,8 @@ def main():
             accuracy = calculate_accuracy(items)
             
             # For display: count questions properly
-            is_hard_mode = "prompt_option" in items[0] and "options" not in items[0]
+            # Hard mode: has prompt_option
+            is_hard_mode = bool(items[0].get("prompt_option"))
             if is_hard_mode:
                 # Count unique questions
                 unique_questions = len(set(item.get("question", "") for item in items))
@@ -528,7 +596,7 @@ def main():
                 "Accuracy (%)": "{:.2f}%"
             }),
             hide_index=True,
-            use_container_width=True
+            width='stretch'
         )
         
         # Line chart
@@ -541,19 +609,26 @@ def main():
                 title="Accuracy Progression Across Iterations"
             )
             fig.update_traces(line_color="#1f77b4", marker=dict(size=12))
-            st.plotly_chart(fig, use_container_width=True)
+            plotly_config = {
+                "width": "stretch"
+            }
+            st.plotly_chart(fig, config=plotly_config)
         
         # Answer distribution for each iteration
         st.subheader("📊 Answer Distribution by Iteration")
         
         # Check which answer field to use
-        if "vanilla_answer" in data[0]:
-            answer_field = "vanilla_answer"
-        else:
+        # Determine which answer field is available
+        if "model_answer" in data[0]:
+            answer_field = "model_answer"
+        elif "persona_answer" in data[0]:
             answer_field = "persona_answer"
+        else:
+            answer_field = "vanilla_answer"
         
         # Detect mode and set up ordering and colors
-        is_hard_mode = "prompt_option" in data[0]
+        # Hard mode: has prompt_option
+        is_hard_mode = bool(data[0].get("prompt_option"))
         if is_hard_mode:
             # Hard mode: true, false (display capitalized)
             answer_order = ["true", "false"]
@@ -597,7 +672,10 @@ def main():
                         height=300,
                         showlegend=False
                     )
-                    st.plotly_chart(fig, use_container_width=True)
+                    plotly_config = {
+                        "width": "stretch"
+                    }
+                    st.plotly_chart(fig, config=plotly_config)
 
 if __name__ == "__main__":
     main()

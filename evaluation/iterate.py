@@ -6,17 +6,30 @@ import asyncio
 from evaluators import run_initial_eval
 from iteration_runner import run_iterations
 from tools.llm_utils import cleanup
+from tools.db.db_utils import load_results, get_all_iterations
 
-def calculate_accuracy(file_name, iteration, difficulty):
-    with open(file_name, "r") as f:
-        lines = [json.loads(line) for line in f.readlines() if json.loads(line)["iteration"] == iteration]
-    total = len(lines) if difficulty == "Easy" else len(lines) / 4
+def calculate_accuracy_from_db(db_path, iteration, difficulty):
+    """Calculate accuracy for a given iteration from database.
+    
+    Args:
+        db_path: Path to database file
+        iteration: Iteration number
+        difficulty: "Easy" or "Hard"
+    
+    Returns:
+        Accuracy value
+    """
+    results = load_results(db_path, iteration=iteration)
+    total = len(results) if difficulty == "Easy" else len(results) / 4
     correct = 0
+    
     if difficulty == "Hard":
-        for i in range(0, len(lines), 4):
+        for i in range(0, len(results), 4):
             isCorrect = True
             for j in range(i, i + 4):
-                if str(lines[j]["persona_answer"]).lower().strip() == str(lines[j]["correct_answer"]).lower().strip():
+                # Support both model_answer and persona_answer for backward compatibility
+                answer = results[j].get("model_answer", results[j].get("persona_answer"))
+                if str(answer).lower().strip() == str(results[j]["correct_answer"]).lower().strip():
                     continue
                 else:
                     isCorrect = False
@@ -24,10 +37,13 @@ def calculate_accuracy(file_name, iteration, difficulty):
             if isCorrect:
                 correct += 1
     else:
-        for line in lines:
-            if line["persona_answer"].upper().strip() == line["correct_answer"].upper().strip():
+        for result in results:
+            # Support both model_answer and persona_answer for backward compatibility
+            answer = result.get("model_answer", result.get("persona_answer"))
+            if answer.upper().strip() == result["correct_answer"].upper().strip():
                 correct += 1
-    return correct / total
+    
+    return correct / total if total > 0 else 0
 
 async def main():
     """Main async function to run evaluation and iterations."""
@@ -45,23 +61,23 @@ async def main():
     
     # run initial evaluation (if not resuming)
     if not args.resume:
-        initial_accuracy, file_name = await run_initial_eval(difficulty, args.mode, args.num_iterations)
+        initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode, args.num_iterations)
         all_accuracies.append(initial_accuracy)
-    # calculate initial accuracy from file name (if resuming)
+    # calculate initial accuracy from database (if resuming)
     else:
-        print(f"Resume: calculating initial accuracy from file name")
-        file_name = f"../results/{args.mode[-2:]}/{args.mode[:-3]}/i{args.num_iterations}/persona_{difficulty}.jsonl"
-        all_accuracies.append(calculate_accuracy(file_name, 1, difficulty))
+        print(f"Resume: calculating initial accuracy from database")
+        db_path = f"../results/{args.mode[-2:]}/{args.mode[:-3]}/i{args.num_iterations}/persona_{difficulty}.db"
+        all_accuracies.append(calculate_accuracy_from_db(db_path, 1, difficulty))
     
     if args.resume:
-        # read last iteration from file
-        print(f"Resume: reading last iteration from file")
-        with open(file_name, "r") as f:
-            lines = f.readlines()
-            last_iteration = json.loads(lines[-1])["iteration"]
+        # read last iteration from database
+        print(f"Resume: reading last iteration from database")
+        iterations = get_all_iterations(db_path)
+        last_iteration = max(iterations) if iterations else 1
         start_iteration = last_iteration + 1
+        
         for i in range(2, start_iteration):
-            all_accuracies.append(calculate_accuracy(file_name, i, difficulty))
+            all_accuracies.append(calculate_accuracy_from_db(db_path, i, difficulty))
         print(f"Calculated accuracies up to iteration {last_iteration}")
         print("Accuracies: " + str(all_accuracies))
     else:
@@ -69,18 +85,16 @@ async def main():
 
     # run additional iterations
     if args.num_iterations > 1:
-        iteration_accuracies = await run_iterations(args.mode, args.num_iterations, difficulty, file_name, start_iteration)
+        iteration_accuracies = await run_iterations(args.mode, args.num_iterations, difficulty, db_path, start_iteration)
         all_accuracies.extend(iteration_accuracies)
     else:
         print("\nNo additional iterations to run (num_iterations = 1)")
     
-    # write accuracy summary to end of file
-    with open(file_name, "a") as f:
-        f.write("\n")
-        for i, accuracy in enumerate(all_accuracies, start=1):
-            summary_line = f"Persona Accuracy for {difficulty} - Iteration {i}: {accuracy:.4f}"
-            f.write(summary_line + "\n")
-            print(summary_line)
+    # print accuracy summary
+    print("\n=== Accuracy Summary ===")
+    for i, accuracy in enumerate(all_accuracies, start=1):
+        summary_line = f"Persona Accuracy for {difficulty} - Iteration {i}: {accuracy:.4f}"
+        print(summary_line)
 
 if __name__ == "__main__":
     try:

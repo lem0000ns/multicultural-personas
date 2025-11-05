@@ -6,6 +6,7 @@ from datasets import load_dataset
 from persona_generator import generate_persona_description, cap, sanitize_json
 from tools.utils import country_to_language
 from tools.llm_utils import get_llm, generate_text
+from tools.db.db_utils import save_results, save_accuracy
 
 
 def is_valid_set(ds, i):
@@ -135,7 +136,7 @@ async def evaluate_hard_initial(ds, mode):
                 "prompt_option": prompt_option,
                 "persona_description": persona_description,
                 "correct_answer": prompt_answer,
-                "persona_answer": thinks_correct,
+                "model_answer": thinks_correct,
                 "reasoning": reasoning,
                 "country": country,
                 "iteration": iteration
@@ -259,7 +260,7 @@ async def evaluate_easy_initial(ds, mode):
                 "options": options_dict,
                 "persona_description": persona_description,
                 "correct_answer": answer,
-                "persona_answer": response_answer,
+                "model_answer": response_answer,
                 "reasoning": reasoning,
                 "country": country,
                 "iteration": 1
@@ -290,7 +291,7 @@ async def run_initial_eval(difficulty, mode, num_iterations):
         num_iterations: Total number of iterations (used for file naming)
     
     Returns:
-        Tuple of (accuracy, file_name)
+        Tuple of (accuracy, db_path)
     """
     ds = load_dataset("kellycyy/CulturalBench", f"CulturalBench-{difficulty}", split="test")
 
@@ -299,14 +300,15 @@ async def run_initial_eval(difficulty, mode, num_iterations):
     else:
         data, correct, total = await evaluate_easy_initial(ds, mode)
     
-    # write results to file (initial write)
-    file_name = f"../results/{mode[-2:]}/{mode[:-3]}/i{num_iterations}/persona_{difficulty}.jsonl"
-    os.makedirs(os.path.dirname(file_name), exist_ok=True)
-    with open(file_name, "w") as f:
-        for entry in data.values():
-            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    # write results to database (initial write)
+    db_path = f"../results/{mode[-2:]}/{mode[:-3]}/i{num_iterations}/persona_{difficulty}.db"
+    os.makedirs(os.path.dirname(db_path), exist_ok=True)
+    
+    save_results(db_path, data, difficulty, mode)
     
     accuracy = correct / total if total > 0 else 0
+    save_accuracy(db_path, 1, difficulty, mode, accuracy, correct, total)
+    
     print(f"Initial Persona Accuracy for {difficulty}: {accuracy}")
-    return accuracy, file_name
+    return accuracy, db_path
 

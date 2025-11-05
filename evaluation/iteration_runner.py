@@ -4,37 +4,40 @@ import json
 from persona_generator import generate_new_persona, cap, sanitize_json
 from tools.utils import country_to_language
 from tools.llm_utils import get_llm, generate_text
+from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration
 
 
-def append_to_file(file_name, new_data, correct, total, iteration):
-    """Append iteration data to existing file.
+def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode):
+    """Append iteration data to database.
     
     Args:
-        file_name: Path to file
+        db_path: Path to database file
         new_data: Dictionary of new data entries
         correct: Number of correct answers
         total: Total number of questions
         iteration: Current iteration number
+        difficulty: "Easy" or "Hard"
+        mode: Mode string (e.g., "eng_p1")
     
     Returns:
         Accuracy for this iteration
     """
-    with open(file_name, "a") as f:
-        for entry in new_data.values():
-            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    save_results(db_path, new_data, difficulty, mode)
     
     accuracy = correct / total if total > 0 else 0
+    save_accuracy(db_path, iteration, difficulty, mode, accuracy, correct, total)
+    
     print(f"Iteration {iteration} Accuracy: {accuracy}")
     return accuracy
 
 
-async def run_easy_iterations(mode, num_iterations, file_name, start_iteration=2):
+async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
     """Run iterations for Easy difficulty.
     
     Args:
         mode: Mode (eng_*, ling_*, or e2l_*)
         num_iterations: Total number of iterations
-        file_name: Path to file containing results
+        db_path: Path to database file containing results
         start_iteration: Starting iteration number
     
     Returns:
@@ -43,14 +46,8 @@ async def run_easy_iterations(mode, num_iterations, file_name, start_iteration=2
     accuracies = []
     
     for cur_iteration in range(start_iteration, num_iterations + 1):
-        # read all data from file (includes previous iterations)
-        with open(file_name, "r") as f:
-            lines = f.readlines()
-            # only get the most recent iteration's data (from previous iteration)
-            data = [json.loads(line) for line in lines if line.strip() and "Persona Accuracy" not in line]
-            # filter to get only the previous iteration's data
-            prev_iteration = cur_iteration - 1
-            data = [item for item in data if item.get("iteration") == prev_iteration]
+        # Load data from previous iteration
+        data = load_previous_iteration(db_path, cur_iteration)
         
         correct = total = 0
         new_data = {}
@@ -67,7 +64,7 @@ async def run_easy_iterations(mode, num_iterations, file_name, start_iteration=2
                     "Easy",
                     item["question"],
                     old_persona,
-                    item["options"][item["persona_answer"]],
+                    item["options"][item.get("model_answer", item.get("persona_answer"))],
                     item["reasoning"],
                     mode,
                     item["country"],
@@ -147,7 +144,7 @@ async def run_easy_iterations(mode, num_iterations, file_name, start_iteration=2
                     "persona_description": new_persona,
                     "refine_reasoning": refine_reasoning,
                     "correct_answer": correct_answer,
-                    "persona_answer": response_answer,
+                    "model_answer": response_answer,
                     "reasoning": reasoning,
                     "country": item["country"],
                     "iteration": cur_iteration
@@ -166,19 +163,19 @@ async def run_easy_iterations(mode, num_iterations, file_name, start_iteration=2
                 print("Error parsing response: " + response)
                 continue
 
-        accuracy = append_to_file(file_name, new_data, correct, total, cur_iteration)
+        accuracy = append_to_db(db_path, new_data, correct, total, cur_iteration, "Easy", mode)
         accuracies.append(accuracy)
     
     return accuracies
 
 
-async def run_hard_iterations(mode, num_iterations, file_name, start_iteration=2):
+async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
     """Run iterations for Hard difficulty.
     
     Args:
         mode: Mode (eng_*, ling_*, or e2l_*)
         num_iterations: Total number of iterations
-        file_name: Path to file containing results
+        db_path: Path to database file containing results
         start_iteration: Starting iteration number
     
     Returns:
@@ -187,14 +184,8 @@ async def run_hard_iterations(mode, num_iterations, file_name, start_iteration=2
     accuracies = []
     
     for cur_iteration in range(start_iteration, num_iterations + 1):
-        # read all data from file (includes previous iterations)
-        with open(file_name, "r") as f:
-            lines = f.readlines()
-            # only get the most recent iteration's data (from previous iteration)
-            data = [json.loads(line) for line in lines if line.strip() and not line.startswith("Persona Accuracy")]
-            # filter to get only the previous iteration's data
-            prev_iteration = cur_iteration - 1
-            data = [item for item in data if item.get("iteration") == prev_iteration]
+        # Load data from previous iteration
+        data = load_previous_iteration(db_path, cur_iteration)
         
         correct = total = 0
         new_data = {}
@@ -204,9 +195,10 @@ async def run_hard_iterations(mode, num_iterations, file_name, start_iteration=2
             qa_responses = ""
             
             for j in range(4):
+                answer_field = data[i + j].get("model_answer", data[i + j].get("persona_answer"))
                 qa_responses += (
                     data[i + j]["prompt_option"] + ": " + 
-                    data[i + j]["persona_answer"] + "\n" + 
+                    answer_field + "\n" + 
                     "reasoning: " + 
                     data[i + j]["reasoning"] + "\n\n"
                 )
@@ -305,7 +297,7 @@ async def run_hard_iterations(mode, num_iterations, file_name, start_iteration=2
                     "persona_description": new_persona,
                     "refine_reasoning": refine_reasoning,
                     "correct_answer": correct_answer,
-                    "persona_answer": thinks_correct,
+                    "model_answer": thinks_correct,
                     "reasoning": reasoning,
                     "country": data[i + j]["country"],
                     "iteration": cur_iteration
@@ -332,27 +324,27 @@ async def run_hard_iterations(mode, num_iterations, file_name, start_iteration=2
                 correct += 1
             total += 1
 
-        accuracy = append_to_file(file_name, new_data, correct, total, cur_iteration)
+        accuracy = append_to_db(db_path, new_data, correct, total, cur_iteration, "Hard", mode)
         accuracies.append(accuracy)
     
     return accuracies
 
 
-async def run_iterations(mode, num_iterations, difficulty, file_name, start_iteration=2):
+async def run_iterations(mode, num_iterations, difficulty, db_path, start_iteration=2):
     """Run iterations starting from iteration 2.
     
     Args:
         mode: Mode (eng_*, ling_*, or e2l_*)
         num_iterations: Total number of iterations
         difficulty: "Easy" or "Hard"
-        file_name: Path to file containing results
+        db_path: Path to database file containing results
         start_iteration: Starting iteration number
     
     Returns:
         List of accuracies for each iteration
     """
     if difficulty == "Easy":
-        return await run_easy_iterations(mode, num_iterations, file_name, start_iteration)
+        return await run_easy_iterations(mode, num_iterations, db_path, start_iteration)
     else:
-        return await run_hard_iterations(mode, num_iterations, file_name, start_iteration)
+        return await run_hard_iterations(mode, num_iterations, db_path, start_iteration)
 

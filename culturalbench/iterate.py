@@ -1,12 +1,13 @@
 """Main script for running iterative persona refinement on CulturalBench."""
 
-import json
 import argparse
 import asyncio
 from evaluators import run_initial_eval
 from iteration_runner import run_iterations
 from tools.llm_utils import cleanup
 from tools.db.db_utils import load_results, get_all_iterations
+import tools.llm_utils
+from tools import llm_utils
 
 def calculate_accuracy_from_db(db_path, iteration, difficulty):
     """Calculate accuracy for a given iteration from database.
@@ -29,7 +30,9 @@ def calculate_accuracy_from_db(db_path, iteration, difficulty):
             for j in range(i, i + 4):
                 # Support both model_answer and persona_answer for backward compatibility
                 answer = results[j].get("model_answer", results[j].get("persona_answer"))
-                if str(answer).lower().strip() == str(results[j]["correct_answer"]).lower().strip():
+                # Normalize correct_answer (1/0) to true/false for comparison
+                expected_answer = "true" if str(results[j]["correct_answer"]) == "1" else "false"
+                if str(answer).lower().strip() == expected_answer:
                     continue
                 else:
                     isCorrect = False
@@ -52,8 +55,17 @@ async def main():
     parser.add_argument("--num_iterations", type=int, required=True, help="Total number of iterations including initial evaluation")
     parser.add_argument("--difficulty", type=str, required=True, choices=["easy", "hard", "Easy", "Hard"], help="Difficulty level")
     parser.add_argument("--resume", action="store_true", required=False, default=False, help="Resume from last iteration")
+    parser.add_argument("--model", type=str, required=False, default="meta-llama/Meta-Llama-3-8B-Instruct", help="Model to use")
+    parser.add_argument("--temperature", type=float, required=False, default=0.0, help="Temperature to use")
     args = parser.parse_args()
 
+    # switch to specificed model (default is Llama-3-8B-Instruct)
+    if args.model:
+        tools.llm_utils.MODEL_NAME = args.model
+    # use specified temperature (default is 0.0)
+    if args.temperature:
+        tools.llm_utils.TEMPERATURE = args.temperature
+        
     difficulty = args.difficulty.capitalize()
     
     # track all accuracies
@@ -61,12 +73,16 @@ async def main():
     
     # run initial evaluation (if not resuming)
     if not args.resume:
-        initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode, args.num_iterations)
+        initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode)
         all_accuracies.append(initial_accuracy)
     # calculate initial accuracy from database (if resuming)
     else:
         print(f"Resume: calculating initial accuracy from database")
-        db_path = f"../results/{args.mode[-2:]}/{args.mode[:-3]}/i{args.num_iterations}/persona_{difficulty}.db"
+        model_to_save = {
+            "Qwen/Qwen3-4B": "qwen3_4b",
+            "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
+        }
+        db_path = f"../results/{args.mode[-2:]}/{args.mode[:-3]}/{difficulty.lower()}_t{args.temperature}_{model_to_save[llm_utils.MODEL_NAME]}.db"
         all_accuracies.append(calculate_accuracy_from_db(db_path, 1, difficulty))
     
     if args.resume:
@@ -91,7 +107,7 @@ async def main():
         print("\nNo additional iterations to run (num_iterations = 1)")
     
     # print accuracy summary
-    print("\n=== Accuracy Summary ===")
+    print(f"\n=== Accuracy Summary for {difficulty} and {args.mode}===")
     for i, accuracy in enumerate(all_accuracies, start=1):
         summary_line = f"Persona Accuracy for {difficulty} - Iteration {i}: {accuracy:.4f}"
         print(summary_line)

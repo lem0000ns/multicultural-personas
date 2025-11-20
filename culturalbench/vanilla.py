@@ -1,4 +1,4 @@
-from tools.llm_utils import get_llm, generate_text  
+from tools.llm_utils import get_llm, generate_text
 from datasets import load_dataset
 from tools.db.db_utils import save_results, save_accuracy
 
@@ -88,7 +88,7 @@ def run_vanilla(difficulty):
                 continue
             data[i] = {"question": cur_question, "prompt_option_a": prompt_option_a, "prompt_option_b": prompt_option_b, "prompt_option_c": prompt_option_c, "prompt_option_d": prompt_option_d, "correct_answer": answer, "vanilla_answer": response, "country": country}
 
-    db_path = f"../results/vanilla/vanilla_{difficulty}.db"
+    db_path = f"../results/vanilla/{difficulty.lower()}.db"
     for entry in data.values():
         save_results(db_path, entry, difficulty, "vanilla")
     accuracy = total_correct / total if total > 0 else 0

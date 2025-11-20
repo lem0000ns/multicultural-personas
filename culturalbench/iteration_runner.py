@@ -3,7 +3,8 @@
 import json
 from persona_generator import generate_new_persona, cap, sanitize_json
 from tools.utils import country_to_language
-from tools.llm_utils import get_llm, generate_text
+from tools.llm_utils import get_llm, generate_text_funcs
+from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration
 
 
@@ -44,14 +45,18 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
         List of accuracies for each iteration
     """
     accuracies = []
+    is_translation_mode = "e2l" in mode or "l2e" in mode
     
     for cur_iteration in range(start_iteration, num_iterations + 1):
         # Load data from previous iteration
         data = load_previous_iteration(db_path, cur_iteration)
+        print(f"Currently running iteration {cur_iteration}")
         
         correct = total = 0
         new_data = {}
         for i, item in enumerate(data):
+
+            print(f"Question {i} of {len(data)}")
 
             # parse response from self-refinement prompt with CoT reasoning
             try:
@@ -68,18 +73,22 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
                     item["reasoning"],
                     mode,
                     item["country"],
-                    cur_iteration
                 )
                 # if not in correct language, disregard this question
-                if refine_response is None:
+                if refine_response is None and is_translation_mode:
                     continue
-                    
-                result = json.loads(refine_response)
+                
+                result = None
+                if is_translation_mode:
+                    result = json.loads(refine_response)
+                else:
+                    result = json.loads(pretranslated)
+
                 new_persona = result["revised_persona"]
                 refine_reasoning = result["reasoning"]
+
             except Exception as e:
-                print(e)
-                print("Error parsing response from refine prompt: " + refine_response)
+                print(f"Error generating/parsing persona for question {i}: {type(e).__name__}: {str(e)}")
                 continue
 
             prompt_question = item["question"]
@@ -121,8 +130,13 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
                 }
             ]
             llm_instance = get_llm()
-            response = generate_text(chat_input, llm_instance)
-            response = sanitize_json(response, "easy")
+            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
+
+            try:
+                response = sanitize_json(response, "easy")
+            except Exception as e:
+                print(f"Error sanitizing JSON for response: {response}")
+                pass
             
             try:
                 result = json.loads(response)
@@ -152,6 +166,8 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
                 
                 if "l2e" in mode or "e2l" in mode:
                     base_data["pretranslated_persona"] = pretranslated
+                if thinking_content is not None:
+                    base_data["thinking_content"] = thinking_content
                 
                 new_data[i] = base_data
                 
@@ -159,8 +175,8 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
                 if response_answer.upper() == correct_answer.upper():
                     correct += 1
                 total += 1
-            except:
-                print("Error parsing response: " + response)
+            except Exception as e:
+                print(f"Error generating answer for question {i}: {type(e).__name__}: {str(e)}")
                 continue
 
         accuracy = append_to_db(db_path, new_data, correct, total, cur_iteration, "Easy", mode)
@@ -221,7 +237,6 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                     data[i]["reasoning"],
                     mode,
                     data[i]["country"],
-                    cur_iteration
                 )
                 # if not in correct language, disregard this question (set of 4 options)
                 if refine_response is None:
@@ -230,9 +245,9 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                 result = json.loads(refine_response)
                 new_persona = result["revised_persona"]
                 refine_reasoning = result["reasoning"]
-            except:
+            except Exception as e:
                 isError = True
-                print("Error parsing response from refine prompt: " + refine_response)
+                print(f"Error generating/parsing persona for question set {i//4}: {type(e).__name__}: {str(e)}")
                 continue
 
             if "eng" in mode or "e2l" in mode:
@@ -268,7 +283,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                 ]
                 
                 llm_instance = get_llm()
-                response = generate_text(chat_input, llm_instance)
+                thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
                 response = sanitize_json(response, "hard")
                 
                 try:
@@ -285,9 +300,9 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                     thinks_correct = "true" if "true" in response_lower else "false"
                     reasoning = response_lower.strip()
                 # if there's an error, disregard this question (set of 4 options)
-                except:
+                except Exception as e:
                     isError = True
-                    print("Error parsing response: " + response)
+                    print(f"Error generating answer for option {j} in question set {i//4}: {type(e).__name__}: {str(e)}")
                     break
 
                 # store data in JSON format
@@ -305,11 +320,18 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                 
                 if "l2e" in mode or "e2l" in mode:
                     item_data["pretranslated_persona"] = pretranslated
+                if thinking_content is not None:
+                    item_data["thinking_content"] = thinking_content
                 
                 cur_set_data.append(item_data)
                 
-                # normalize to strings for comparison
-                if str(thinks_correct).lower() == str(correct_answer).lower():
+                # normalize to strings for comparison (convert 0/1 to false/true)
+                correct_str = str(correct_answer).lower().strip()
+                if correct_str in ["1", "true"]:
+                    expected_answer = "true"
+                else:
+                    expected_answer = "false"
+                if str(thinks_correct).lower() == expected_answer:
                     continue
                 else:
                     isCorrect = False

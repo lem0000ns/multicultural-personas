@@ -28,6 +28,7 @@ def init_db(db_path: str):
             correct_answer TEXT NOT NULL,
             model_answer TEXT NOT NULL,
             reasoning TEXT,
+            thinking_content TEXT,
             country TEXT NOT NULL,
             refine_reasoning TEXT,
             options TEXT,
@@ -37,6 +38,14 @@ def init_db(db_path: str):
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )
     ''')
+    
+    # Migrate existing table to add missing columns if needed
+    cursor.execute("PRAGMA table_info(results)")
+    columns = {col[1] for col in cursor.fetchall()}
+    
+    if 'thinking_content' not in columns:
+        cursor.execute('ALTER TABLE results ADD COLUMN thinking_content TEXT')
+        print("Added missing 'thinking_content' column to results table")
     
     # Create indexes for faster queries
     cursor.execute('CREATE INDEX IF NOT EXISTS idx_iteration ON results(iteration)')
@@ -76,6 +85,19 @@ def save_results(db_path: str, data: Dict, difficulty: str, mode: str):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
+    # Get the iteration number from the first entry to delete old data for this iteration
+    if data:
+        first_entry = next(iter(data.values()))
+        iteration = first_entry.get('iteration')
+        
+        # Delete any existing data for this iteration to prevent duplicates
+        if iteration is not None:
+            cursor.execute(
+                'DELETE FROM results WHERE iteration = ? AND difficulty = ? AND mode = ?',
+                (iteration, difficulty, mode)
+            )
+            print(f"Cleared existing data for iteration {iteration}")
+    
     for entry in data.values():
         # Convert options dict to JSON string if present
         options_str = json.dumps(entry.get('options', {})) if 'options' in entry else None
@@ -83,9 +105,9 @@ def save_results(db_path: str, data: Dict, difficulty: str, mode: str):
         cursor.execute('''
             INSERT INTO results 
             (iteration, question, persona_description, pretranslated_persona, 
-             correct_answer, model_answer, reasoning, country, refine_reasoning, 
+             correct_answer, model_answer, reasoning, thinking_content, country, refine_reasoning, 
              options, prompt_option, difficulty, mode)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             entry.get('iteration'),
             entry.get('question'),
@@ -94,6 +116,7 @@ def save_results(db_path: str, data: Dict, difficulty: str, mode: str):
             entry.get('correct_answer'),
             entry.get('model_answer'),
             entry.get('reasoning'),
+            entry.get('thinking_content'),
             entry.get('country'),
             entry.get('refine_reasoning'),
             options_str,
@@ -121,6 +144,12 @@ def save_accuracy(db_path: str, iteration: int, difficulty: str, mode: str,
     """
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
+    
+    # Delete any existing metadata for this iteration to prevent duplicates
+    cursor.execute(
+        'DELETE FROM metadata WHERE iteration = ? AND difficulty = ? AND mode = ?',
+        (iteration, difficulty, mode)
+    )
     
     cursor.execute('''
         INSERT INTO metadata 

@@ -5,7 +5,8 @@ import os
 from datasets import load_dataset
 from persona_generator import generate_persona_description, cap, sanitize_json
 from tools.utils import country_to_language
-from tools.llm_utils import get_llm, generate_text
+from tools.llm_utils import get_llm, generate_text_funcs
+from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy
 
 
@@ -108,7 +109,7 @@ async def evaluate_hard_initial(ds, mode):
             ]
             
             llm_instance = get_llm()
-            response = generate_text(chat_input, llm_instance)
+            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
             response = sanitize_json(response, "hard")
 
             try:
@@ -144,11 +145,18 @@ async def evaluate_hard_initial(ds, mode):
             
             if "l2e" in mode or "e2l" in mode:
                 item_data["pretranslated_persona"] = pretranslated
-            
+            if thinking_content is not None:
+                item_data["thinking_content"] = thinking_content
+                
             cur_set_data.append(item_data)
             
-            # normalize to strings for comparison
-            if str(thinks_correct).lower() == str(prompt_answer).lower():
+            # normalize to strings for comparison (convert 0/1 to false/true)
+            correct_str = str(prompt_answer).lower().strip()
+            if correct_str in ["1", "true"]:
+                expected_answer = "true"
+            else:
+                expected_answer = "false"
+            if str(thinks_correct).lower() == expected_answer:
                 continue
             else:
                 isCorrect = False
@@ -239,7 +247,7 @@ async def evaluate_easy_initial(ds, mode):
         ]
         
         llm_instance = get_llm()
-        response = generate_text(chat_input, llm_instance)
+        thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
         response = sanitize_json(response, "easy")
         
         try:
@@ -268,6 +276,8 @@ async def evaluate_easy_initial(ds, mode):
             
             if "l2e" in mode or "e2l" in mode:
                 item_data["pretranslated_persona"] = pretranslated
+            if thinking_content is not None:
+                item_data["thinking_content"] = thinking_content
             
             data[i] = item_data
             
@@ -282,13 +292,12 @@ async def evaluate_easy_initial(ds, mode):
     return data, correct, total
 
 
-async def run_initial_eval(difficulty, mode, num_iterations):
+async def run_initial_eval(difficulty, mode):
     """Run initial evaluation (i1) for the given difficulty.
     
     Args:
         difficulty: "Easy" or "Hard"
         mode: Mode (eng_*, ling_*, or e2l_*)
-        num_iterations: Total number of iterations (used for file naming)
     
     Returns:
         Tuple of (accuracy, db_path)
@@ -299,9 +308,14 @@ async def run_initial_eval(difficulty, mode, num_iterations):
         data, correct, total = await evaluate_hard_initial(ds, mode)
     else:
         data, correct, total = await evaluate_easy_initial(ds, mode)
+
+    model_to_save = {
+        "Qwen/Qwen3-4B": "qwen3_4b",
+        "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
+    }
     
     # write results to database (initial write)
-    db_path = f"../results/{mode[-2:]}/{mode[:-3]}/i{num_iterations}/persona_{difficulty}.db"
+    db_path = f"../results/{mode[-2:]}/{mode[:-3]}/{difficulty.lower()}_t{llm_utils.TEMPERATURE}_{model_to_save[llm_utils.MODEL_NAME]}.db"
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
     
     save_results(db_path, data, difficulty, mode)

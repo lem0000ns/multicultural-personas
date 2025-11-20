@@ -9,9 +9,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 from collections import Counter
 
-# Add evaluation directory to path for imports
-sys.path.append(str(Path(__file__).parent / "evaluation"))
-from evaluation.tools.db.db_utils import load_results, get_all_iterations, get_accuracies
+# Add culturalbench directory to path for imports
+sys.path.append(str(Path(__file__).parent / "culturalbench"))
+from culturalbench.tools.db.db_utils import load_results, get_accuracies
 
 # Set page config
 st.set_page_config(
@@ -434,96 +434,295 @@ def main():
     with tab3:
         st.header("📝 Question Explorer")
         
-        # Filters
-        col1, col2, col3 = st.columns(3)
+        # Check if this is a Qwen3-4B model (to show thinking content)
+        is_qwen3_4b = file_path.endswith("qwen3_4b.db")
         
-        # Get available iterations and sort them
-        available_iterations = sorted(set(item.get("iteration", 1) for item in data))
+        # Detect if this is Hard mode (has prompt_option) or Easy mode
+        is_hard_mode = bool(data[0].get("prompt_option")) if data else False
+        
+        # Filters
+        col1, col2 = st.columns(2)
         
         with col1:
-            # Iteration filter (no "All" option, default to iteration 1)
-            default_iteration_idx = 0  # Default to first iteration (usually 1)
-            if 1 in available_iterations:
-                default_iteration_idx = available_iterations.index(1)
-            
-            selected_iteration = st.selectbox(
-                "Iteration", 
-                available_iterations,
-                index=default_iteration_idx,
-                help="Select which iteration to view questions from"
-            )
-        
-        with col2:
             countries = ["All"] + sorted(set(item.get("country", "Unknown") for item in data))
             selected_country = st.selectbox("Filter by Country", countries)
         
-        with col3:
-            answer_filter = st.selectbox("Filter by Answer", ["All", "Correct", "Incorrect"])
-        
-        # Apply filters - iteration filter is ALWAYS applied
-        filtered_data = [item for item in data if item.get("iteration", 1) == selected_iteration]
-        
-        if selected_country != "All":
-            filtered_data = [item for item in filtered_data if item.get("country").lower() == selected_country.lower()]
-        
-        if answer_filter == "Correct":
-            filtered_data = [item for item in filtered_data if is_answer_correct(item)]
-        elif answer_filter == "Incorrect":
-            filtered_data = [item for item in filtered_data if not is_answer_correct(item)]
-        
-        st.info(f"Showing {len(filtered_data)} questions from Iteration {selected_iteration}")
+        with col2:
+            answer_filter = st.selectbox("Filter by Answer", ["All", "Correct (Any Iteration)", "Incorrect (Any Iteration)"])
         
         # Search
         search_query = st.text_input("🔍 Search questions", "")
-        if search_query:
-            filtered_data = [
-                item for item in filtered_data 
-                if search_query.lower() in item.get("question", "").lower()
-            ]
         
-        # Display questions
-        for idx, item in enumerate(filtered_data[:50]):  # Limit to 50 for performance
-            is_correct = is_answer_correct(item)
+        from collections import defaultdict
+        
+        if is_hard_mode:
+            # Hard mode: Group by question, show all 4 options together across iterations
+            question_groups = defaultdict(lambda: defaultdict(list))
             
-            with st.expander(
-                f"{'✅' if is_correct else '❌'} Q{idx+1}: {item.get('question', 'No question')[:100]}...",
-                expanded=False
-            ):
-                col1, col2 = st.columns([2, 1])
+            for item in data:
+                question = item.get("question", "")
+                iteration = item.get("iteration", 1)
+                question_groups[question][iteration].append(item)
+            
+            # Filter and collect question sets
+            filtered_sets = []
+            for question, iterations_dict in question_groups.items():
+                first_iter = min(iterations_dict.keys())
+                first_items = iterations_dict[first_iter]
                 
-                with col1:
-                    st.markdown(f"**Question:** {item.get('question', 'N/A')}")
+                # Country filter
+                if selected_country != "All":
+                    if first_items[0].get("country", "").lower() != selected_country.lower():
+                        continue
+                
+                # Search filter
+                if search_query and search_query.lower() not in question.lower():
+                    continue
+                
+                # Answer filter
+                passes_filter = False
+                if answer_filter == "All":
+                    passes_filter = True
+                else:
+                    for iteration, option_items in iterations_dict.items():
+                        all_correct = all(is_answer_correct(item) for item in option_items)
+                        any_incorrect = any(not is_answer_correct(item) for item in option_items)
+                        
+                        if answer_filter == "Correct (Any Iteration)" and all_correct:
+                            passes_filter = True
+                            break
+                        elif answer_filter == "Incorrect (Any Iteration)" and any_incorrect:
+                            passes_filter = True
+                            break
+                
+                if passes_filter:
+                    filtered_sets.append({
+                        "question": question,
+                        "iterations": iterations_dict,
+                        "first_item": first_items[0]
+                    })
+            
+            # Pagination
+            items_per_page = st.selectbox("Question sets per page", [10, 25, 50, "All"], index=1)
+            
+            if items_per_page == "All":
+                items_per_page = len(filtered_sets)
+            
+            total_pages = (len(filtered_sets) + items_per_page - 1) // items_per_page if items_per_page > 0 else 1
+            
+            if total_pages > 1:
+                page = st.number_input("Page", min_value=1, max_value=total_pages, value=1)
+            else:
+                page = 1
+            
+            start_idx = (page - 1) * items_per_page
+            end_idx = min(start_idx + items_per_page, len(filtered_sets))
+            
+            st.info(f"Showing question sets {start_idx + 1}-{end_idx} of {len(filtered_sets)}")
+            
+            # Display Hard mode questions
+            for idx in range(start_idx, end_idx):
+                question_set = filtered_sets[idx]
+                iterations_dict = question_set["iterations"]
+                first_item = question_set["first_item"]
+                
+                # Check if latest iteration has all options correct
+                latest_iter = max(iterations_dict.keys())
+                latest_options = iterations_dict[latest_iter]
+                all_correct = all(is_answer_correct(item) for item in latest_options)
+                
+                with st.expander(
+                    f"{'✅' if all_correct else '❌'} Q{idx+1}: {question_set['question'][:100]}... ({len(iterations_dict)} iterations)",
+                    expanded=False
+                ):
+                    st.markdown(f"**Question:** {question_set['question']}")
+                    st.markdown(f"**Country:** {first_item.get('country', 'Unknown')}")
+                    st.markdown("---")
                     
-                    # Show options for Easy mode or prompt_option for Hard mode
-                    options = item.get('options')
+                    # Display each iteration
+                    for iteration in sorted(iterations_dict.keys()):
+                        option_items = iterations_dict[iteration]
+                        iter_all_correct = all(is_answer_correct(item) for item in option_items)
+                        
+                        st.markdown(f"### {'✅' if iter_all_correct else '❌'} Iteration {iteration}")
+                        
+                        # Show persona (same for all 4 options)
+                        if option_items[0].get("persona_description"):
+                            st.markdown("**🎭 Persona:**")
+                            st.info(option_items[0].get("persona_description"))
+                        
+                        # Show refine reasoning
+                        if option_items[0].get("refine_reasoning"):
+                            st.markdown("**🔄 Self-Refinement Reasoning:**")
+                            st.warning(option_items[0].get("refine_reasoning"))
+                        
+                        # Show all 4 options
+                        st.markdown("**Options & Answers:**")
+                        for option_item in option_items:
+                            option_text = option_item.get("prompt_option", "")
+                            model_answer = option_item.get("model_answer", "N/A")
+                            correct_answer = option_item.get("correct_answer", "N/A")
+                            
+                            correct_str = "True" if str(correct_answer) in ["1", "true", "True"] else "False"
+                            model_str = "True" if str(model_answer).lower() == "true" else "False"
+                            is_option_correct = is_answer_correct(option_item)
+                            
+                            st.markdown(
+                                f"{'✅' if is_option_correct else '❌'} **{option_text}** → "
+                                f"Model: {model_str}, Correct: {correct_str}"
+                            )
+                            
+                            # Show reasoning for this option
+                            if option_item.get("reasoning"):
+                                with st.expander(f"💬 Reasoning: {option_text[:50]}...", expanded=False):
+                                    st.text(option_item.get("reasoning"))
+                            
+                            # Show thinking content
+                            if is_qwen3_4b and option_item.get("thinking_content"):
+                                with st.expander(f"💭 Thinking: {option_text[:50]}...", expanded=False):
+                                    st.text_area(
+                                        "Model's internal reasoning",
+                                        option_item.get("thinking_content"),
+                                        height=200,
+                                        key=f"thinking_{idx}_{iteration}_{option_text[:20]}",
+                                        disabled=True
+                                    )
+                        
+                        if iteration < max(iterations_dict.keys()):
+                            st.markdown("---")
+        
+        else:
+            # Easy mode: Group by question, show all iterations
+            question_groups = defaultdict(list)
+            
+            for item in data:
+                question = item.get("question", "")
+                question_groups[question].append(item)
+            
+            # Sort each group by iteration
+            for question in question_groups:
+                question_groups[question] = sorted(question_groups[question], key=lambda x: x.get("iteration", 1))
+            
+            # Filter and collect questions
+            filtered_questions = []
+            for question, items in question_groups.items():
+                first_item = items[0]
+                
+                # Country filter
+                if selected_country != "All":
+                    if first_item.get("country", "").lower() != selected_country.lower():
+                        continue
+                
+                # Search filter
+                if search_query and search_query.lower() not in question.lower():
+                    continue
+                
+                # Answer filter (check any iteration)
+                passes_filter = False
+                if answer_filter == "All":
+                    passes_filter = True
+                else:
+                    for item in items:
+                        if answer_filter == "Correct (Any Iteration)" and is_answer_correct(item):
+                            passes_filter = True
+                            break
+                        elif answer_filter == "Incorrect (Any Iteration)" and not is_answer_correct(item):
+                            passes_filter = True
+                            break
+                
+                if passes_filter:
+                    filtered_questions.append({
+                        "question": question,
+                        "items": items,
+                        "first_item": first_item
+                    })
+            
+            # Pagination
+            items_per_page = st.selectbox("Questions per page", [10, 25, 50, 100, "All"], index=2)
+            
+            if items_per_page == "All":
+                items_per_page = len(filtered_questions)
+            
+            total_pages = (len(filtered_questions) + items_per_page - 1) // items_per_page if items_per_page > 0 else 1
+            
+            if total_pages > 1:
+                page = st.number_input("Page", min_value=1, max_value=total_pages, value=1)
+            else:
+                page = 1
+            
+            start_idx = (page - 1) * items_per_page
+            end_idx = min(start_idx + items_per_page, len(filtered_questions))
+            
+            st.info(f"Showing questions {start_idx + 1}-{end_idx} of {len(filtered_questions)}")
+            
+            # Display questions with all iterations
+            for idx in range(start_idx, end_idx):
+                question_data = filtered_questions[idx]
+                items = question_data["items"]
+                first_item = question_data["first_item"]
+                
+                # Check if most recent iteration is correct
+                latest_item = items[-1]
+                is_correct = is_answer_correct(latest_item)
+                
+                with st.expander(
+                    f"{'✅' if is_correct else '❌'} Q{idx+1}: {question_data['question'][:100]}... ({len(items)} iterations)",
+                    expanded=False
+                ):
+                    st.markdown(f"**Question:** {question_data['question']}")
+                    
+                    # Show options
+                    options = first_item.get('options')
                     if options and isinstance(options, dict):
                         st.markdown("**Options:**")
                         for key, value in options.items():
                             st.markdown(f"  - {key}: {value}")
-                    elif item.get('prompt_option'):
-                        st.markdown(f"**Option:** {item.get('prompt_option', 'N/A')}")
                     
-                    st.markdown(f"**Reasoning:** {item.get('reasoning', 'N/A')}")
-                
-                with col2:
-                    st.markdown(f"**Country:** {item.get('country', 'Unknown')}")
-                    if "iteration" in item:
-                        st.markdown(f"**Iteration:** {item.get('iteration', 'N/A')}")
-                    st.markdown(f"**Correct Answer:** {item.get('correct_answer', 'N/A')}")
+                    st.markdown(f"**Country:** {first_item.get('country', 'Unknown')}")
+                    st.markdown(f"**Correct Answer:** {first_item.get('correct_answer', 'N/A')}")
+                    st.markdown("---")
                     
-                    # Show the appropriate answer field
-                    # Get model answer from any available field
-                    model_answer = item.get('model_answer') or item.get('persona_answer') or item.get('vanilla_answer', 'N/A')
-                    st.markdown(f"**Model Answer:** {model_answer}")
-                    
-                    st.markdown(f"**Result:** {'✅ Correct' if is_correct else '❌ Incorrect'}")
-                
-                if item.get("persona_description"):
-                    st.markdown("**Persona:**")
-                    st.info(item.get("persona_description"))
-        
-        if len(filtered_data) > 50:
-            st.warning(f"Showing first 50 of {len(filtered_data)} questions. Apply more filters to see specific results.")
+                    # Display each iteration
+                    for iter_idx, item in enumerate(items):
+                        iter_is_correct = is_answer_correct(item)
+                        iteration_num = item.get('iteration', 1)
+                        
+                        st.markdown(f"### {'✅' if iter_is_correct else '❌'} Iteration {iteration_num}")
+                        
+                        # Model answer
+                        model_answer = item.get('model_answer') or item.get('persona_answer') or item.get('vanilla_answer', 'N/A')
+                        st.markdown(f"**Model Answer:** {model_answer} {'✅ Correct' if iter_is_correct else '❌ Incorrect'}")
+                        
+                        # Persona description
+                        if item.get("persona_description"):
+                            st.markdown("**🎭 Persona:**")
+                            st.info(item.get("persona_description"))
+                        
+                        # Refine reasoning (from self-refinement)
+                        if item.get("refine_reasoning"):
+                            st.markdown("**🔄 Self-Refinement Reasoning:**")
+                            st.warning(item.get("refine_reasoning"))
+                        
+                        # Answer reasoning
+                        if item.get("reasoning"):
+                            st.markdown("**💬 Answer Reasoning:**")
+                            st.text(item.get("reasoning"))
+                        
+                        # Thinking content for Qwen3-4B models
+                        if is_qwen3_4b and item.get("thinking_content"):
+                            st.markdown("**💭 Thinking Content:**")
+                            with st.container():
+                                st.text_area(
+                                    f"Model's internal reasoning (Iteration {iteration_num})",
+                                    item.get("thinking_content"),
+                                    height=200,
+                                    key=f"thinking_easy_{idx}_{iter_idx}",
+                                    disabled=True
+                                )
+                        
+                        # Separator between iterations
+                        if iter_idx < len(items) - 1:
+                            st.markdown("---")
     
     with tab4:
         st.header("🎭 Persona Analysis")

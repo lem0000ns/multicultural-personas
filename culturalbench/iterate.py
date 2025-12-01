@@ -57,6 +57,7 @@ async def main():
     parser.add_argument("--resume", action="store_true", required=False, default=False, help="Resume from last iteration")
     parser.add_argument("--model", type=str, required=False, default="meta-llama/Meta-Llama-3-8B-Instruct", help="Model to use")
     parser.add_argument("--temperature", type=float, required=False, default=0.0, help="Temperature to use")
+    parser.add_argument("--custom", type=str, required=False, default=None, help="Custom suffix to append to database path")
     args = parser.parse_args()
 
     # switch to specificed model (default is Llama-3-8B-Instruct)
@@ -73,7 +74,7 @@ async def main():
     
     # run initial evaluation (if not resuming)
     if not args.resume:
-        initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode)
+        initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode, args.custom)
         all_accuracies.append(initial_accuracy)
     # calculate initial accuracy from database (if resuming)
     else:
@@ -82,7 +83,10 @@ async def main():
             "Qwen/Qwen3-4B": "qwen3_4b",
             "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
         }
-        db_path = f"../results/{args.mode[-2:]}/{args.mode[:-3]}/{difficulty.lower()}_t{args.temperature}_{model_to_save[llm_utils.MODEL_NAME]}.db"
+        db_path = f"../results/{args.mode[-2:]}/{args.mode[:-3]}/{difficulty.lower()}_t{args.temperature}_{model_to_save[llm_utils.MODEL_NAME]}"
+        if args.custom:
+            db_path += f"_{args.custom}"
+        db_path += ".db"
         all_accuracies.append(calculate_accuracy_from_db(db_path, 1, difficulty))
     
     if args.resume:

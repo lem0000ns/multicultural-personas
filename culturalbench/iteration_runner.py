@@ -1,11 +1,12 @@
 """Functions for running iterative persona refinement."""
 
 import json
-from persona_generator import generate_new_persona, cap, sanitize_json
+from persona_generator import generate_new_persona, cap
 from tools.utils import country_to_language
 from tools.llm_utils import get_llm, generate_text_funcs
 from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration
+import json_repair
 
 
 def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode):
@@ -65,11 +66,18 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
                     if "l2e" not in mode and "e2l" not in mode
                     else item["pretranslated_persona"]
                 )
+                
+                # provide all 4 options for persona refinement
+                prev_answers = ""
+                for option in item["options"]:
+                    prev_answers += option + ": " + item["options"][option] + "\n"
+                prev_answers += "Model answer: " + item["model_answer"]
+
                 pretranslated, refine_response = await generate_new_persona(
                     "Easy",
                     item["question"],
                     old_persona,
-                    item["options"][item.get("model_answer", item.get("persona_answer"))],
+                    prev_answers,
                     item["reasoning"],
                     mode,
                     item["country"],
@@ -80,9 +88,9 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
                 
                 result = None
                 if is_translation_mode:
-                    result = json.loads(refine_response)
+                    result = json_repair.loads(refine_response)
                 else:
-                    result = json.loads(pretranslated)
+                    result = json_repair.loads(pretranslated)
 
                 new_persona = result["revised_persona"]
                 refine_reasoning = result["reasoning"]
@@ -107,6 +115,11 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
             else:
                 language = country_to_language[cap(country)]
             
+            # For qwen3 thinking mode in "ling" mode, add instruction to think in the relevant language
+            thinking_instruction = ""
+            if "ling" in mode and llm_utils.MODEL_NAME == "Qwen/Qwen3-4B":
+                thinking_instruction = f"You MUST write internal reasoning inside <think>...</think> in {language}. If any part of <think>...</think> is not {language}, regenerate the reasoning.\n\n"
+            
             chat_input = [
                 {
                     "role": "system",
@@ -115,6 +128,7 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
                 {
                     "role": "user",
                     "content": (
+                        thinking_instruction +
                         "Instruction: You must select one option among A,B,C,D.\n"
                         "Respond in valid JSON format with two keys: \n"
                         f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and "
@@ -133,13 +147,12 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2):
             thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
 
             try:
-                response = sanitize_json(response, "easy")
+                result = json_repair.loads(response)
             except Exception as e:
                 print(f"Error sanitizing JSON for response: {response}")
                 pass
             
             try:
-                result = json.loads(response)
                 response_answer = result["answer"].upper().strip()
                 reasoning = result["reasoning"].strip()
                 correct_answer = item["correct_answer"]
@@ -198,6 +211,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
         List of accuracies for each iteration
     """
     accuracies = []
+    is_translation_mode = "e2l" in mode or "l2e" in mode
     
     for cur_iteration in range(start_iteration, num_iterations + 1):
         # Load data from previous iteration
@@ -208,16 +222,6 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
         
         for i in range(0, len(data), 4):
             prompt_question = data[i]["question"]
-            qa_responses = ""
-            
-            for j in range(4):
-                answer_field = data[i + j].get("model_answer", data[i + j].get("persona_answer"))
-                qa_responses += (
-                    data[i + j]["prompt_option"] + ": " + 
-                    answer_field + "\n" + 
-                    "reasoning: " + 
-                    data[i + j]["reasoning"] + "\n\n"
-                )
             
             isError = False
             isCorrect = True
@@ -233,16 +237,21 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                     "Hard",
                     prompt_question,
                     old_persona,
-                    qa_responses,
+                    "",
                     data[i]["reasoning"],
                     mode,
                     data[i]["country"],
                 )
                 # if not in correct language, disregard this question (set of 4 options)
-                if refine_response is None:
+                if refine_response is None and is_translation_mode:
                     continue
+                
+                result = None
+                if is_translation_mode:
+                    result = json_repair.loads(refine_response)
+                else:
+                    result = json_repair.loads(pretranslated)
                     
-                result = json.loads(refine_response)
                 new_persona = result["revised_persona"]
                 refine_reasoning = result["reasoning"]
             except Exception as e:
@@ -254,6 +263,11 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                 language = "English"
             else:
                 language = country_to_language[cap(data[i]["country"])].capitalize()
+            
+            # For qwen3 thinking mode in "ling" mode, add instruction to think in the relevant language
+            thinking_instruction = ""
+            if "ling" in mode and llm_utils.MODEL_NAME == "Qwen/Qwen3-4B":
+                thinking_instruction = f"You MUST write internal reasoning inside <think>...</think> in {language}. If any part of <think>...</think> is not {language}, regenerate the reasoning.\n\n"
             
             cur_set_data = []
             for j in range(4):
@@ -268,6 +282,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                     {
                         "role": "user",
                         "content": (
+                            thinking_instruction +
                             "Is this answer true or false for this question?\n"
                             "You must choose either True or False, and provide a brief "
                             "explanation for your answer.\n"
@@ -284,10 +299,9 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2):
                 
                 llm_instance = get_llm()
                 thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
-                response = sanitize_json(response, "hard")
+                result = json_repair.loads(response)
                 
                 try:
-                    result = json.loads(response)
                     thinks_correct = (
                         "true" 
                         if "true" in result["correct"].lower().strip() 

@@ -3,11 +3,12 @@
 import json
 import os
 from datasets import load_dataset
-from persona_generator import generate_persona_description, cap, sanitize_json
+from persona_generator import generate_persona_description, cap
 from tools.utils import country_to_language
 from tools.llm_utils import get_llm, generate_text_funcs
 from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy
+import json_repair
 
 
 def is_valid_set(ds, i):
@@ -85,6 +86,11 @@ async def evaluate_hard_initial(ds, mode):
                 if persona_description is None:
                     break
             
+            # For qwen3 thinking mode in "ling" mode, add instruction to think in the relevant language
+            thinking_instruction = ""
+            if "ling" in mode and llm_utils.MODEL_NAME == "Qwen/Qwen3-4B":
+                thinking_instruction = f"You MUST write internal reasoning inside <think>...</think> in {language}. If any part of <think>...</think> is not {language}, regenerate the reasoning.\n\n"
+            
             system_prompt = persona_description
             chat_input = [
                 {
@@ -94,6 +100,7 @@ async def evaluate_hard_initial(ds, mode):
                 {
                     "role": "user",
                     "content": (
+                        thinking_instruction +
                         "Is this answer true or false for this question?\n"
                         "You must choose either True or False, and provide a brief "
                         "explanation for your answer.\n"
@@ -109,26 +116,19 @@ async def evaluate_hard_initial(ds, mode):
             ]
             
             llm_instance = get_llm()
-            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
-            response = sanitize_json(response, "hard")
+            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
 
             try:
-                result = json.loads(response)
+                result = json_repair.loads(response)
                 thinks_correct = (
                     "true" 
                     if "true" in result["correct"].lower().strip() 
                     else "false"
                 )
                 reasoning = result["reasoning"].strip()
-            except json.JSONDecodeError:
-                # fallback if model didn't return valid JSON
-                response_lower = response.lower().strip()
-                thinks_correct = "true" if "true" in response_lower else "false"
-                reasoning = response_lower.strip()
-            # if there's an error, disregard this question (set of 4 options)
-            except:
+            except Exception as e:
                 isError = True
-                print("Error parsing response: " + response)
+                print("Error parsing response: " + response + " " + str(e))
                 break
 
             # store data in JSON format
@@ -223,6 +223,11 @@ async def evaluate_easy_initial(ds, mode):
         else:
             language = country_to_language[cap(country)].capitalize()
         
+        # For qwen3 thinking mode in "ling" mode, add instruction to think in the relevant language
+        thinking_instruction = ""
+        if "ling" in mode and llm_utils.MODEL_NAME == "Qwen/Qwen3-4B":
+            thinking_instruction = f"You MUST write internal reasoning inside <think>...</think> in {language}. If any part of <think>...</think> is not {language}, regenerate the reasoning.\n\n"
+        
         chat_input = [
             {
                 "role": "system",
@@ -231,6 +236,7 @@ async def evaluate_easy_initial(ds, mode):
             {
                 "role": "user",
                 "content": (
+                    thinking_instruction +
                     "Instruction: You must select one option among A,B,C,D.\n"
                     "Respond in valid JSON format with two keys: \n"
                     f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and "
@@ -247,11 +253,9 @@ async def evaluate_easy_initial(ds, mode):
         ]
         
         llm_instance = get_llm()
-        thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
-        response = sanitize_json(response, "easy")
-        
+        thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
         try:
-            result = json.loads(response)
+            result = json_repair.loads(response)
             response_answer = result["answer"].upper().strip()
             reasoning = result["reasoning"].strip()
             
@@ -292,12 +296,13 @@ async def evaluate_easy_initial(ds, mode):
     return data, correct, total
 
 
-async def run_initial_eval(difficulty, mode):
+async def run_initial_eval(difficulty, mode, custom=None):
     """Run initial evaluation (i1) for the given difficulty.
     
     Args:
         difficulty: "Easy" or "Hard"
         mode: Mode (eng_*, ling_*, or e2l_*)
+        custom: Optional custom suffix to append to database path
     
     Returns:
         Tuple of (accuracy, db_path)
@@ -315,7 +320,10 @@ async def run_initial_eval(difficulty, mode):
     }
     
     # write results to database (initial write)
-    db_path = f"../results/{mode[-2:]}/{mode[:-3]}/{difficulty.lower()}_t{llm_utils.TEMPERATURE}_{model_to_save[llm_utils.MODEL_NAME]}.db"
+    db_path = f"../results/{mode[-2:]}/{mode[:-3]}/{difficulty.lower()}_t{llm_utils.TEMPERATURE}_{model_to_save[llm_utils.MODEL_NAME]}"
+    if custom:
+        db_path += f"_{custom}"
+    db_path += ".db"
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
     
     save_results(db_path, data, difficulty, mode)

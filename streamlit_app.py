@@ -434,8 +434,8 @@ def main():
     with tab3:
         st.header("📝 Question Explorer")
         
-        # Check if this is a Qwen3-4B model (to show thinking content)
-        is_qwen3_4b = file_path.endswith("qwen3_4b.db")
+        # check if qwen3 to show thinking content
+        is_qwen3_4b = "qwen3_4b" in file_path
         
         # Detect if this is Hard mode (has prompt_option) or Easy mode
         is_hard_mode = bool(data[0].get("prompt_option")) if data else False

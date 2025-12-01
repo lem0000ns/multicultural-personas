@@ -176,7 +176,6 @@ language_to_prompt_1 = {
     2. Provide cultural or linguistic context that enhances understanding.
     3. Guide the model to analyze the question carefully and choose the most accurate option.
     4. Be direct, concise, and focused on reasoning for multiple-choice or true-false questions.
-    5. Improve upon the previous persona by guiding the model towards selecting the correct answer.
 
     IMPORTANT:
     1. Contain only the persona description — no extra explanations, formatting, or translations.
@@ -187,7 +186,6 @@ language_to_prompt_1 = {
     2. Proporcionar contexto cultural o lingüístico que mejore la comprensión.
     3. Guiar al modelo para analizar la pregunta cuidadosamente y elegir la opción más precisa.
     4. Ser directo, conciso y centrado en el razonamiento para preguntas de opción múltiple o verdadero/falso.
-    5. Mejorar la persona anterior guiando al modelo hacia la selección de la respuesta correcta.
     IMPORTANTE:
     1. Contener solo la descripción de la persona — sin explicaciones adicionales, formato o traducciones.
     2. Siempre comenzar con 'Eres'... seguido de la descripción de la persona.
@@ -198,7 +196,6 @@ language_to_prompt_1 = {
     2. Fornecer contexto cultural ou linguístico que melhore a compreensão.
     3. Guiar o modelo para analisar a pergunta cuidadosamente e escolher a opção mais precisa.
     4. Ser direto, conciso e focado no raciocínio para perguntas de múltipla escolha ou verdadeiro/falso.
-    5. Melhorar a persona anterior, guiando o modelo para a seleção da resposta correta.
     IMPORTANTE:
     1. Conter apenas a descrição da persona — sem explicações extras, formatação ou traduções.
     2. Sempre começar com 'Você é'... seguido pela descrição da persona.
@@ -209,7 +206,6 @@ language_to_prompt_1 = {
     2. Poskytovat kulturní nebo jazykový kontext, který zlepšuje porozumění.
     3. Vést model k pečlivé analýze otázky a výběru nejpřesnější možnosti.
     4. Být přímá, stručná a zaměřená na odůvodnění u otázek s výběrem z více možností nebo typu pravda/nepravda.
-    5. Zlepšit předchozí personu tím, že navede model k výběru správné odpovědi.
     DŮLEŽITÉ:
     1. Obsahovat pouze popis persony — žádná další vysvětlení, formátování nebo překlady.
     2. Vždy začínat slovy 'Jste'... následovanými popisem persony.
@@ -220,7 +216,6 @@ language_to_prompt_1 = {
     2. Zapewniać kontekst kulturowy lub językowy, który poprawia zrozumienie.
     3. Kierować model do starannej analizy pytania i wyboru najdokładniejszej opcji.
     4. Być bezpośrednia, zwięzła i skoncentrowana na uzasadnieniu w przypadku pytań wielokrotnego wyboru lub prawda/fałsz.
-    5. Ulepszać poprzednią personę, kierując model w stronę wyboru prawidłowej odpowiedzi.
     WAŻNE:
     1. Zawierać tylko opis persony — bez dodatkowych wyjaśnień, formatowania czy tłumaczeń.
     2. Zawsze zaczynać się od 'Jesteś'... po którym następuje opis persony.
@@ -231,7 +226,6 @@ language_to_prompt_1 = {
     2. Ofere context cultural sau lingvistic care îmbunătățește înțelegerea.
     3. Ghideze modelul să analizeze cu atenție întrebarea și să aleagă opțiunea cea mai exactă.
     4. Fie directă, concisă și concentrată pe raționament pentru întrebările cu variante multiple sau de tip adevărat/fals.
-    5. Îmbunătățească persona anterioară prin ghidarea modelului către selectarea răspunsului corect.
     IMPORTANT:
     1. Conțină doar descrierea persona — fără explicații suplimentare, formatare sau traduceri.
     2. Înceapă întotdeauna cu 'Ești'... urmat de descrierea persona.
@@ -242,7 +236,6 @@ language_to_prompt_1 = {
     2. Надавати культурний або мовний контекст, що покращує розуміння.
     3. Спрямовувати модель на ретельний аналіз запитання та вибір найточнішого варіанту.
     4. Бути прямим, стислим і зосередженим на обґрунтуванні для запитань з варіантами вибору або типу «так/ні».
-    5. Вдосконалювати попереднього персонажа, направляючи модель до вибору правильної відповіді.
     ВАЖЛИВО:
     1. Містити лише опис персонажа — без додаткових пояснень, форматування чи перекладів.
     2. Завжди починатися з «Ви —»... з наступним описом персонажа.
@@ -253,7 +246,6 @@ language_to_prompt_1 = {
     2. Предоставлять культурный или лингвистический контекст, улучшающий понимание.
     3. Направлять модель на тщательный анализ вопроса и выбор наиболее точного варианта.
     4. Быть прямой, краткой и сосредоточенной на аргументации для вопросов с множественным выбором или типа «верно/неверно».
-    5. Улучшать предыдущую персону, направляя модель к выбору правильного ответа.
     ВАЖНО:
     1. Содержать только описание персоны — без лишних объяснений, форматирования или переводов.
     2. Всегда начинаться с «Вы —»... с последующим описанием персоны.
@@ -264,7 +256,6 @@ language_to_prompt_1 = {
     2. Fornire un contesto culturale o linguistico che migliori la comprensione.
     3. Guidare il modello ad analizzare attentamente la domanda e a scegliere l'opzione più accurata.
     4. Essere diretta, concisa e focalizzata sul ragionamento per domande a scelta multipla o vero/falso.
-    5. Migliorare la persona precedente guidando il modello verso la selezione della risposta corretta.
     IMPORTANTE:
     1. Contenere solo la descrizione della persona — nessuna spiegazione aggiuntiva, formattazione o traduzione.
     2. Iniziare sempre con 'Sei un'... seguito dalla descrizione della persona.
@@ -275,7 +266,6 @@ language_to_prompt_1 = {
     2. Fournir un contexte culturel ou linguistique qui améliore la compréhension.
     3. Guider le modèle pour analyser attentivement la question et choisir l'option la plus précise.
     4. Être directe, concise et axée sur le raisonnement pour les questions à choix multiples ou de type vrai/faux.
-    5. Améliorer la persona précédente en guidant le modèle vers la sélection de la bonne réponse.
     IMPORTANT :
     1. Contenir uniquement la description de la persona — pas d'explications supplémentaires, de formatage ou de traductions.
     2. Toujours commencer par 'Vous êtes'... suivi de la description de la persona.
@@ -286,7 +276,6 @@ language_to_prompt_1 = {
     2. Kulturellen oder sprachlichen Kontext bereitstellen MUSS, der das Verständnis verbessert.
     3. Das Modell anleiten MUSS, die Frage sorgfältig zu analysieren und die genaueste Option auszuwählen.
     4. Direkt, prägnant und auf die Begründung für Multiple-Choice- oder Richtig/Falsch-Fragen ausgerichtet sein MUSS.
-    5. Die vorherige Persona verbessern MUSS, indem sie das Modell zur Auswahl der richtigen Antwort anleitet.
     WICHTIG:
     1. Enthalten Sie nur die Persona-Beschreibung – keine zusätzlichen Erklärungen, Formatierungen oder Übersetzungen.
     2. Beginnen Sie immer mit 'Sie sind'... gefolgt von der Persona-Beschreibung.
@@ -297,7 +286,6 @@ language_to_prompt_1 = {
     2. Culturele of taalkundige context bieden die het begrip verbetert.
     3. Het model begeleiden om de vraag zorgvuldig te analyseren en de meest nauwkeurige optie te kiezen.
     4. Direct, beknopt en gericht zijn op redenering voor meerkeuze- of waar/onwaar-vragen.
-    5. De vorige persona verbeteren door het model te begeleiden naar het selecteren van het juiste antwoord.
     BELANGRIJK:
     1. Alleen de persona-beschrijving bevatten — geen extra uitleg, opmaak of vertalingen.
     2. Altijd beginnen met 'U bent'... gevolgd door de persona-beschrijving.
@@ -308,7 +296,6 @@ language_to_prompt_1 = {
     2. توفر سياقًا ثقافيًا أو لغويًا يعزز الفهم.
     3. توجه النموذج لتحليل السؤال بعناية واختيار الخيار الأكثر دقة.
     4. تكون مباشرة وموجزة ومركزة على المنطق في أسئلة الاختيار من متعدد أو الصح/الخطأ.
-    5. تحسن الشخصية السابقة من خلال توجيه النموذج نحو اختيار الإجابة الصحيحة.
     هام:
     1. تحتوي فقط على وصف الشخصية — بدون أي تفسيرات إضافية أو تنسيق أو ترجمات.
     2. تبدأ دائمًا بـ 'أنت'... متبوعًا بوصف الشخصية.
@@ -319,7 +306,6 @@ language_to_prompt_1 = {
     ۲. زمینه فرهنگی یا زبانی را فراهم کند که درک را افزایش دهد.
     ۳. مدل را برای تجزیه و تحلیل دقیق سؤال و انتخاب دقیق‌ترین گزینه راهنمایی کند.
     ۴. برای سؤالات چند گزینه‌ای یا صحیح/غلط، مستقیم، مختصر و متمرکز بر استدلال باشد.
-    ۵. با راهنمایی مدل به سمت انتخاب پاسخ صحیح، پرسونای قبلی را بهبود بخشد.
     مهم:
     ۱. فقط شامل توضیحات پرسونا باشد — بدون توضیحات، قالب‌بندی یا ترجمه‌های اضافی.
     ۲. همیشه با 'شما یک...' و سپس توضیحات پرسونا شروع شود.
@@ -330,7 +316,6 @@ language_to_prompt_1 = {
     2. לספק הקשר תרבותי או לשוני המשפר את ההבנה.
     3. להנחות את המודל לנתח את השאלה בקפידה ולבחור באפשרות המדויקת ביותר.
     4. להיות ישירה, תמציתית וממוקדת בהנמקה לשאלות רב-ברירה או נכון/לא נכון.
-    5. לשפר את הפרסונה הקודמת על ידי הכוונת המודל לבחירת התשובה הנכונה.
     חשוב:
     1. להכיל רק את תיאור הפרסונה — ללא הסברים נוספים, עיצוב או תרגומים.
     2. להתחיל תמיד ב'אתה'... ואחריו תיאור הפרסונה.
@@ -341,7 +326,6 @@ language_to_prompt_1 = {
     2. Anlamayı artıran kültürel veya dilsel bağlam sağlamalıdır.
     3. Modeli, soruyu dikkatlice analiz etmeye ve en doğru seçeneği seçmeye yönlendirmelidir.
     4. Çoktan seçmeli veya doğru/yanlış sorular için doğrudan, öz ve akıl yürütmeye odaklı olmalıdır.
-    5. Modeli doğru cevabı seçmeye yönlendirerek önceki personayı iyileştirmelidir.
     ÖNEMLİ:
     1. Sadece persona tanımını içermelidir — ekstra açıklama, biçimlendirme veya çeviri olmamalıdır.
     2. Her zaman 'Sen bir...' ile başlamalı ve ardından persona tanımı gelmelidir.
@@ -352,7 +336,6 @@ language_to_prompt_1 = {
     2. সাংস্কৃতিক বা ভাষাগত প্রসঙ্গ প্রদান করতে হবে যা বোঝাপড়া বাড়ায়।
     3. মডেলটিকে প্রশ্নটি সাবধানে বিশ্লেষণ করতে এবং সবচেয়ে সঠিক বিকল্পটি বেছে নিতে গাইড করতে হবে।
     4. বহুনির্বাচনী বা সত্য/মিথ্যা প্রশ্নের জন্য সরাসরি, সংক্ষিপ্ত এবং যুক্তির উপর দৃষ্টি নিবদ্ধ করতে হবে।
-    5. মডেলটিকে সঠিক উত্তর বেছে নেওয়ার দিকে পরিচালিত করে পূর্ববর্তী পার্সোনার উন্নতি করতে হবে।
     গুরুত্বপূর্ণ:
     1. শুধুমাত্র পার্সোনার বর্ণনা থাকবে — কোনো অতিরিক্ত ব্যাখ্যা, বিন্যাস বা অনুবাদ থাকবে না।
     2. সর্বদা 'আপনি একজন'... দিয়ে শুরু হবে এবং তারপরে পার্সোনার বর্ণনা থাকবে।
@@ -362,8 +345,7 @@ language_to_prompt_1 = {
     1. प्रश्न सामग्री के लिए सीधे प्रासंगिक विशेषज्ञता रखे।
     2. सांस्कृतिक या भाषाई संदर्भ प्रदान करे जो समझ को बढ़ाता है।
     3. मॉडल को प्रश्न का ध्यानपूर्वक विश्लेषण करने और सबसे सटीक विकल्प चुनने के लिए मार्गदर्शन करे।
-    4. बहुविकल्पीय या सही/गलत प्रश्नों के लिए प्रत्यक्ष, संक्षिप्त और तर्क पर केंद्रित हो।
-    5. मॉडल को सही उत्तर चुनने की दिशा में मार्गदर्शन करके पिछले व्यक्तित्व में सुधार करे।
+    4. बहुविकल्पीय या सही/गलत प्रश्नों के लिए प्रत्यक्ष, संक्षिप्त और तर्क पर केंद्रित हो।   
     महत्वपूर्ण:
     1. इसमें केवल व्यक्तित्व का विवरण हो — कोई अतिरिक्त स्पष्टीकरण, स्वरूपण या अनुवाद नहीं।
     2. हमेशा 'आप एक'... से शुरू हो, जिसके बाद व्यक्तित्व का विवरण हो।
@@ -374,7 +356,6 @@ language_to_prompt_1 = {
     २. बुझाइलाई बढाउने सांस्कृतिक वा भाषिक सन्दर्भ प्रदान गर्नुपर्छ।
     ३. मोडेललाई प्रश्नलाई ध्यानपूर्वक विश्लेषण गर्न र सबैभन्दा सही विकल्प छनोट गर्न मार्गदर्शन गर्नुपर्छ।
     ४. बहु-विकल्पीय वा सत्य/असत्य प्रश्नहरूको लागि सीधा, संक्षिप्त, र तर्कमा केन्द्रित हुनुपर्छ।
-    ५. मोडेललाई सही उत्तर छनोट गर्न मार्गदर्शन गरेर अघिल्लो व्यक्तित्वमा सुधार गर्नुपर्छ।
     महत्वपूर्ण:
     १. केवल व्यक्तित्वको विवरण समावेश गर्नुहोस् — कुनै अतिरिक्त स्पष्टीकरण, ढाँचा, वा अनुवादहरू छैनन्।
     २. सधैं 'तपाईं एक'... बाट सुरु गर्नुहोस्, त्यसपछि व्यक्तित्वको विवरण दिनुहोस्।
@@ -385,7 +366,6 @@ language_to_prompt_1 = {
     2. ثقافتی یا لسانی سیاق و سباق فراہم کرے جو فہم کو بڑھائے۔
     3. ماڈل کو سوال کا بغور تجزیہ کرنے اور سب سے درست آپشن منتخب کرنے کی رہنمائی کرے۔
     4. کثیر الانتخابی یا صحیح/غلط سوالات کے لیے براہ راست، جامع، اور استدلال پر مرکوز ہو۔
-    5. ماڈل کو صحیح جواب منتخب کرنے کی طرف رہنمائی کرکے پچھلے کردار کو بہتر بنائے۔
     اہم:
     1. صرف کردار کی تفصیل پر مشتمل ہو — کوئی اضافی وضاحت، فارمیٹنگ، یا ترجمہ نہ ہو۔
     2. ہمیشہ 'آپ ایک'... سے شروع ہو، جس کے بعد کردار کی تفصیل ہو۔
@@ -396,7 +376,6 @@ language_to_prompt_1 = {
     2. Memberikan konteks budaya atau linguistik yang meningkatkan pemahaman.
     3. Membimbing model untuk menganalisis pertanyaan dengan cermat dan memilih opsi yang paling akurat.
     4. Langsung, ringkas, dan fokus pada penalaran untuk pertanyaan pilihan ganda atau benar-salah.
-    5. Meningkatkan persona sebelumnya dengan membimbing model untuk memilih jawaban yang benar.
     PENTING:
     1. Hanya berisi deskripsi persona — tidak ada penjelasan, format, atau terjemahan tambahan.
     2. Selalu dimulai dengan 'Anda adalah'... diikuti oleh deskripsi persona.
@@ -407,7 +386,6 @@ language_to_prompt_1 = {
     2. Menyediakan konteks budaya atau linguistik yang meningkatkan pemahaman.
     3. Membimbing model untuk menganalisis soalan dengan teliti dan memilih pilihan yang paling tepat.
     4. Bersikap langsung, ringkas, dan fokus pada penaakulan untuk soalan aneka pilihan atau benar/salah.
-    5. Memperbaiki persona sebelumnya dengan membimbing model ke arah memilih jawapan yang betul.
     PENTING:
     1. Mengandungi hanya perihalan persona — tiada penjelasan, pemformatan, atau terjemahan tambahan.
     2. Sentiasa bermula dengan 'Anda seorang'... diikuti dengan perihalan persona.
@@ -418,7 +396,6 @@ language_to_prompt_1 = {
     2. Magbigay ng kontekstong pangkultura o linggwistiko na nagpapahusay ng pag-unawa.
     3. Gabayan ang modelo na suriin nang mabuti ang tanong at piliin ang pinakatumpak na opsyon.
     4. Maging direkta, maikli, at nakatuon sa pangangatuwiran para sa mga tanong na multiple-choice o true/false.
-    5. Pagbutihin ang naunang persona sa pamamagitan ng paggabay sa modelo tungo sa pagpili ng tamang sagot.
     MAHALAGA:
     1. Naglalaman lamang ng paglalarawan ng persona — walang karagdagang paliwanag, pag-format, o pagsasalin.
     2. Palaging magsimula sa 'Ikaw ay'... na sinusundan ng paglalarawan ng persona.
@@ -429,7 +406,6 @@ language_to_prompt_1 = {
     2. ให้บริบททางวัฒนธรรมหรือภาษาที่ช่วยเพิ่มความเข้าใจ
     3. ชี้นำโมเดลให้วิเคราะห์คำถามอย่างรอบคอบและเลือกตัวเลือกที่แม่นยำที่สุด
     4. มีความตรงไปตรงมา กระชับ และมุ่งเน้นไปที่การให้เหตุผลสำหรับคำถามแบบปรนัยหรือจริง/เท็จ
-    5. ปรับปรุงบุคลิกก่อนหน้าโดยการชี้นำโมเดลไปสู่การเลือกคำตอบที่ถูกต้อง
     สำคัญ:
     1. มีเพียงคำอธิบายบุคลิกเท่านั้น — ไม่มีคำอธิบายเพิ่มเติม การจัดรูปแบบ หรือการแปล
     2. เริ่มต้นด้วย 'คุณคือ'... เสมอ ตามด้วยคำอธิบายบุคลิก
@@ -440,7 +416,6 @@ language_to_prompt_1 = {
     2. Cung cấp bối cảnh văn hóa hoặc ngôn ngữ giúp tăng cường sự hiểu biết.
     3. Hướng dẫn mô hình phân tích câu hỏi một cách cẩn thận và chọn phương án chính xác nhất.
     4. Trực tiếp, ngắn gọn và tập trung vào lý luận cho các câu hỏi trắc nghiệm hoặc đúng/sai.
-    5. Cải thiện chân dung nhân vật trước đó bằng cách hướng dẫn mô hình chọn câu trả lời đúng.
     QUAN TRỌNG:
     1. Chỉ chứa mô tả về chân dung nhân vật — không có giải thích, định dạng hoặc bản dịch bổ sung.
     2. Luôn bắt đầu bằng 'Bạn là'... theo sau là mô tả về chân dung nhân vật.
@@ -451,7 +426,6 @@ language_to_prompt_1 = {
     2. 提供能够增进理解的文化或语言背景。
     3. 引导模型仔细分析问题，并选择最准确的选项。
     4. 针对多项选择题或判断题，做到直接、简洁，并专注于推理过程。
-    5. 通过引导模型选择正确答案来改进先前的角色。
     重要提示：
     1. 只包含角色描述——不含任何额外的解释、格式或翻译。
     2. 总是以“你是一位”...开头，后面紧跟角色描述。
@@ -463,7 +437,6 @@ language_to_prompt_1 = {
     2. 提供能增進理解的文化或語言脈絡。
     3. 引導模型仔細分析問題，並選擇最準確的選項。
     4. 針對選擇題或是非題，應直接、簡潔，並專注於推理過程。
-    5. 藉由引導模型選擇正確答案，以改善先前的角色設定。
 
     重要事項：
     1. 僅包含角色描述 — 不含任何額外解釋、格式或翻譯。
@@ -475,7 +448,6 @@ language_to_prompt_1 = {
     2. 提供能夠增進理解嘅文化或語言背景。
     3. 引導模型仔細分析問題，並選擇最準確嘅選項。
     4. 針對選擇題或判斷題，做到直接、簡潔，並專注於推理過程。
-    5. 通過引導模型選擇正確答案嚟改進先前嘅角色。
     重要提示：
     1. 只包含角色描述——唔好有任何額外嘅解釋、格式或翻譯。
     2. 永遠用「你係一位」...開頭，後面跟住角色描述。
@@ -486,7 +458,6 @@ language_to_prompt_1 = {
     2. 理解を深めるための文化的または言語的な文脈を提供すること。
     3. モデルが質問を注意深く分析し、最も正確な選択肢を選ぶように導くこと。
     4. 多肢選択問題や正誤問題に対して、直接的、簡潔、かつ論理的根拠に焦点を当てること。
-    5. モデルが正解を選ぶように導くことで、以前のペルソナを改善すること。
     重要：
     1. ペルソナの説明のみを含めること — 追加の説明、書式設定、翻訳は不要です。
     2. 常に「あなたは」...で始まり、その後にペルソナの説明が続くようにすること。
@@ -497,7 +468,6 @@ language_to_prompt_1 = {
     2. 이해를 돕는 문화적 또는 언어적 맥락을 제공할 것.
     3. 모델이 질문을 신중하게 분석하고 가장 정확한 옵션을 선택하도록 유도할 것.
     4. 선다형 또는 참/거짓 질문에 대해 직접적이고 간결하며 추론에 중점을 둘 것.
-    5. 모델이 정답을 선택하도록 유도하여 이전 페르소나를 개선할 것.
     중요:
     1. 페르소나 설명만 포함할 것 — 추가 설명, 서식 또는 번역은 포함하지 않습니다.
     2. 항상 '당신은'...으로 시작하고 그 뒤에 페르소나 설명을 붙일 것.

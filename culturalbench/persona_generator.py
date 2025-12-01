@@ -7,84 +7,11 @@ from tools import llm_utils
 import googletrans
 from langdetect import detect
 import json
+import json_repair
 
 def is_english(text):
     """Check if text is in English."""
     return detect(text) == "en"
-
-# used to sanitize json response for self-refinement and also easy mode answer + CoT
-def sanitize_json(response, question_type):
-    """Sanitize response to be a valid json object. If response is not a valid json object, add closing brace and remove newlines."""
-    try:
-        json.loads(response)
-        return response
-    except json.JSONDecodeError:
-        pass
-
-    if question_type == "easy":
-        first_key_str = "answer"
-        second_key_str = "reasoning"
-    elif question_type == "refine":
-        first_key_str = "reasoning"
-        second_key_str = "revised_persona"
-    elif question_type == "hard":
-        first_key_str = "correct"
-        second_key_str = "reasoning"
-
-    response = response.replace("\n", "")
-    if len(response) == 0:
-        return f"{{\"{first_key_str}\": \"\", \"{second_key_str}\": \"\"}}"
-    
-    if response[-1] != "}":
-        response = response + "}"
-    if response[0] != "{":
-        response = "{" + response
-    
-    # deal with quotes in first key
-    second_key_pos = response.find(second_key_str)
-    if second_key_pos == -1:
-        return f"{{\"{first_key_str}\": \"\", \"{second_key_str}\": \"\"}}"
-    
-    comma_before_second_key = response.rfind(",", 0, second_key_pos)
-    colon_pos = response.find(":")
-    if colon_pos == -1 or comma_before_second_key == -1:
-        return f"{{\"{first_key_str}\": \"\", \"{second_key_str}\": \"\"}}"
-    
-    first_key_val = response[colon_pos + 1: comma_before_second_key].strip()
-    # replace double quotes with single quotes
-    first_key_val = first_key_val.replace("\"", "'")
-    # wrap first_key in double quotes again
-    if len(first_key_val) > 0 and first_key_val[0] == "'":
-        first_key_val = "\"" + first_key_val[1:]
-    else:
-        first_key_val = "\"" + first_key_val
-    if len(first_key_val) > 0 and first_key_val[-1] == "'":
-        first_key_val = first_key_val[:-1] + "\""
-    else:
-        first_key_val = first_key_val + "\""
-
-    # deal with quotes in revised_persona
-    last_colon_pos = response.rfind(":")
-    last_brace_pos = response.rfind("}")
-    if last_colon_pos == -1 or last_brace_pos == -1:
-        return f"{{\"{first_key_str}\": {first_key_val}, \"{second_key_str}\": \"\"}}"
-    
-    second_key_val = response[last_colon_pos + 1:last_brace_pos].strip()
-    # replace double quotes with single quotes
-    second_key_val = second_key_val.replace("\"", "'")
-    # wrap second_key in double quotes again
-    if len(second_key_val) > 0 and second_key_val[0] == "'":
-        second_key_val = "\"" + second_key_val[1:]
-    else:
-        second_key_val = "\"" + second_key_val
-    if len(second_key_val) > 0 and second_key_val[-1] == "'":
-        second_key_val = second_key_val[:-1] + "\""
-    else:
-        second_key_val = second_key_val + "\""
-
-    response = f"{{\"{first_key_str}\": {first_key_val}, \"{second_key_str}\": {second_key_val}}}"
-
-    return response
 
 async def translate_text_chunk(translator, text, language, max_retries=3):
     """Translate a single chunk of text with retry logic."""
@@ -302,15 +229,30 @@ async def generate_new_persona(difficulty, question, old_persona, pred_ans, reas
     previous_persona_t = previous_persona_translated[language]
     predicted_answer_t = predicted_answers_translated[language]
     reasoning_t = reasonings_translated[language]
+
+    # only include model's previous answer in easy mode
     if difficulty == "Easy":
         self_refine_prompt = self_refine_prompt_easy.format(language=language, second_person_pronoun=lang_to_spp[language])
+        user_content = (
+            f"{question_t}: " + question + "\n\n"
+            + f"{previous_persona_t}: " + old_persona + "\n\n"
+            + f"{predicted_answer_t}: " + pred_ans + "\n\n"
+            + f"{reasoning_t}: " + reasoning
+        )
+    # only provide previous persona in hard mode to prevent leaking information between independent questions
     else:
         self_refine_prompt = self_refine_prompt_hard.format(language=language, second_person_pronoun=lang_to_spp[language])
+        user_content = (
+            f"{question_t}: " + question + "\n\n"
+            + f"{previous_persona_t}: " + old_persona + "\n\n"
+            + f"{reasoning_t}: " + reasoning
+        )
+        
     chat_input = [
         {"role": "system",
         "content": self_refine_prompt},
         {"role": "user",
-        "content": f"{question_t}: " + question + "\n\n" + f"{previous_persona_t}: " + old_persona + "\n\n" + f"{predicted_answer_t}: " + pred_ans + "\n\n" + f"{reasoning_t}: " + reasoning}
+        "content": user_content}
     ]
 
     # outputs json object with two keys: reasoning and revised_persona
@@ -320,16 +262,16 @@ async def generate_new_persona(difficulty, question, old_persona, pred_ans, reas
     while attempts > 0:
         _, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
         # sanitize json response
-        response = sanitize_json(response, "refine")
         try:
-            response_json = json.loads(response)
+            response_json = json_repair.loads(response)
             if ("e2l" in mode or "eng" in mode) and not is_english(response_json["revised_persona"]):
                 attempts -= 1
             elif ("l2e" in mode or "ling" in mode) and is_english(response_json["revised_persona"]):
                 attempts -= 1
             else:
                 break
-        except json.JSONDecodeError:
+        except Exception as e:
+            print("Error parsing response: " + response + " " + str(e))
             attempts -= 1
 
     translated_response = None
@@ -346,5 +288,5 @@ if __name__ == "__main__":
     response = "{\"reasoning\": \"The previous persona is knowledgeable about Japanese food culture, but the predicted answer is not entirely accurate. Leaving a little bit of food on the plate is not a common practice in Japan, especially when eating ramen. A more accurate approach would be to finish the entire bowl and then show appreciation for the chef's effort. This revised persona will focus on the importance of finishing the meal and expressing gratitude to the chef. By doing so, the model will be more likely to select the correct answer.\",   \"revised_persona\": あなたは、ラーメンを食べ終わった後、シェフに対して感謝の言葉を述べる日本人です。}"
     print(response)
     print("--------------------------------")
-    print(sanitize_json(response, "refine"))
+    print(json_repair.loads(response))
 

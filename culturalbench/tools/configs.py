@@ -13,7 +13,6 @@ Your task is to generate a new persona that MUST:
 2. Provide cultural or linguistic context that enhances understanding.
 3. Guide the model to analyze the question carefully and choose the most accurate option.
 4. Be direct, concise, and focused on reasoning for multiple-choice or true-false questions.
-5. Improve upon the previous persona by guiding the model towards selecting the correct answer.
 
 {footnote}"""
 
@@ -27,9 +26,38 @@ Your goal is to produce a persona that:
 
 {footnote}"""
 
-self_refine_prompt_easy = "You are an expert at designing culturally informed personas to improve model performance on multiple-choice questions.\n\nYou will be provided with a question, the model's previous persona, its predicted answer, and the reasoning behind that prediction.\n\nYour task is to create a revised persona that increases the likelihood of the model selecting the correct answer.\n\nRespond in valid JSON format with two keys:\n\n\"reasoning\": \"[Chain-of-Thought goes here, explaining why the new persona is effective and how it addresses the previous model's failure. This must be a concise step-by-step analysis reasoning with no more than 5 sentences]\",\n\"revised_persona\": \"[Revised persona description goes here.]\"\n\nIMPORTANT:\n\n1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON. The output must be strictly parseable by json.loads().\n2. The content of the \"revised_persona\" key must contain only the persona description — no extra explanations, formatting, or translations.\n3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n6. The \"reasoning\" key must be concise and about 5 sentences long."
+self_refine_prompt_easy = (
+    "You are an expert at designing culturally informed personas to improve model performance on multiple-choice questions.\n\n"
+    "You will be provided with a question, the model's previous persona, its predicted answer among the 4 options, and the reasoning behind that prediction.\n\n"
+    "Your task is to create a revised persona that possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
+    "Respond in valid JSON format with two keys:\n\n"
+    "\"reasoning\": \"[Chain-of-Thought goes here, explaining why the new persona is effective. This must be a concise step-by-step analysis reasoning with no more than 5 sentences]\",\n"
+    "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
+    "IMPORTANT:\n\n"
+    "1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.\n"
+    "2. The content of the \"revised_persona\" key must contain only the persona description — no extra explanations, formatting, or translations.\n"
+    "3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n"
+    "4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n"
+    "5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n"
+    "6. The \"reasoning\" key must be concise and about 5 sentences long.\n"
+    "7. **CRITICAL:** The revised persona must NOT explicitly state the correct answer, the option letter, or the specific text of the options. It must not be biased toward a specific choice. Instead, focus on defining a specific cultural identity, region, or profession that would inherently know the answer."
+)
 
-self_refine_prompt_hard = """You are an expert in designing culturally informed personas to improve model performance on multiple-choice or true/false questions. You will be provided with a question, the model's previous persona, and the model's responses to several true/false statements related to that question. Your task is to create a revised persona that increases the likelihood of the model selecting the correct response.\n\nRespond in valid JSON format with two keys:\n\n\"reasoning\": (Chain-of-Thought goes here, explaining why the new persona is effective and how it addresses the previous model's failure based on the true/false responses. This must be a detailed and concise step-by-step analysis.),\n\"revised_persona\": (Revised persona description goes here.)\n\nIMPORTANT:\n\n1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON. The output must be strictly parseable by json.loads().\n2. The content of the "revised_persona" key must contain only the persona description — no extra explanations, formatting, or translations.\n3. The "revised_persona" content must always start with {second_person_pronoun}, followed by the persona description.\n4. The "revised_persona" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n6. The "reasoning" key must be concise and about 5 sentences long."""
+self_refine_prompt_hard = (
+    "You are an expert at designing culturally informed personas to improve model performance on multiple-choice or true/false questions.\n\n"
+    "You will be provided with a question and the model's previous persona.\n\n"
+    "Your task is to create a revised persona that possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
+    "Respond in valid JSON format with two keys:\n\n"
+    "\"reasoning\": \"[Chain-of-Thought goes here, explaining why the new persona is effective and how it addresses the previous model's failure based on the true/false responses. This must be a detailed and concise step-by-step analysis.]\",\n"
+    "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
+    "IMPORTANT:\n\n"
+    "1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.\n"
+    "2. The content of the \"revised_persona\" key must contain only the persona description — no extra explanations, formatting, or translations.\n"
+    "3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n"
+    "4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n"
+    "5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n"
+    "6. The \"reasoning\" key must be concise and about 5 sentences long."
+)
 
 system_prompts = {
     "eng_p1": prompt_1,

@@ -187,7 +187,7 @@ async def evaluate_easy_initial(ds, mode):
     data = {}
     correct = total = 0
     
-    for i in range(len(ds)): 
+    for i in range(4): 
         cur_row = ds[i]
         prompt_question = cur_row["prompt_question"]
         option_a = cur_row["prompt_option_a"]

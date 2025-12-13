@@ -199,7 +199,7 @@ async def generate_persona_description(question, country, mode):
     return response, translated_response
 
 
-async def generate_new_persona(difficulty, question, previous_personas_data, mode, country, use_all_previous=False):
+async def generate_new_persona(difficulty, question, previous_personas_data, mode, country):
     """Generate new persona description through self-refinement.
     
     For eng mode, generate english persona description. For ling mode, generate persona 
@@ -209,20 +209,16 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
     Args:
         difficulty: Difficulty level ("Easy" or "Hard")
         question: The question text
-        previous_personas_data: If use_all_previous is True, list of dicts with previous persona info.
-            For Easy mode, each dict should have:
+        previous_personas_data: A dict with the previous persona info.
+            For Easy mode, should have:
                 - 'persona': persona description
                 - 'model_answer': model's answer
                 - 'reasoning': reasoning for the answer
-                - 'iteration': iteration number
-            For Hard mode, each dict should have:
+            For Hard mode, should have:
                 - 'persona': persona description
                 - 'reasoning': reasoning for the answer
-                - 'iteration': iteration number
-        If use_all_previous is False, a single dict with the previous persona info (same structure as above).
         mode: The mode (eng_*, ling_*, or e2l_*)
         country: The country name
-        use_all_previous: If True, use all previous personas; if False, use only the previous one
     
     Returns:
         New persona description
@@ -239,102 +235,36 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
     predicted_answer_t = predicted_answers_translated[language]
     reasoning_t = reasonings_translated[language]
 
-    # Build content with all previous personas or just the previous one
+    # Build content with previous persona
     if difficulty == "Easy":
-        # Format the prompt with appropriate description based on use_all_previous
-        if use_all_previous:
-            iterations_description = "You will be provided with a question and all previous persona descriptions from previous iterations, along with the model's predicted answers and reasoning for each iteration."
-            plural_suffix = "s"
-            learning_guidance = "When multiple personas are provided, analyze the progression across iterations to identify patterns and improvements. Pay special attention to the most recent iteration, and consider how the personas evolved over time to build upon previous refinements."
-        else:
-            iterations_description = "You will be provided with a question, its corresponding persona description, the model's predicted answer among the 4 options, and the reasoning behind that prediction."
-            plural_suffix = ""
-            learning_guidance = ""
-        
         self_refine_prompt = self_refine_prompt_easy.format(
             language=language, 
             second_person_pronoun=lang_to_spp[language],
-            iterations_description=iterations_description,
-            plural_suffix=plural_suffix,
-            learning_guidance=learning_guidance
         )
-        if use_all_previous:
-            # Format: Question (once) + all previous personas with their responses
-            personas_content = ""
-            for idx, prev_data in enumerate(previous_personas_data, start=1):
-                persona = prev_data.get('persona', '')
-                model_answer = prev_data.get('model_answer', '')
-                reasoning = prev_data.get('reasoning', '')
-                iteration = prev_data.get('iteration', '')
-                personas_content += f"\n--- Iteration {iteration} ---\n"
-                personas_content += f"{persona_t}: {persona}\n"
-                personas_content += f"{predicted_answer_t}: {model_answer}\n"
-                personas_content += f"{reasoning_t}: {reasoning}\n"
-            
-            user_content = (
-                f"{question_t}: " + question + "\n\n"
-                + "Previous personas and their responses (ordered from earliest to most recent):\n"
-                + personas_content
-            )
-            print(user_content)
-            print("--------------------------------")
-        else:
-            # Original format: single previous persona with response
-            prev_data = previous_personas_data
-            persona = prev_data.get('persona', '')
-            model_answer = prev_data.get('model_answer', '')
-            reasoning = prev_data.get('reasoning', '')
-            user_content = (
-                f"{question_t}: " + question + "\n\n"
-                + f"{persona_t}: " + persona + "\n\n"
-                + f"{predicted_answer_t}: " + model_answer + "\n\n"
-                + f"{reasoning_t}: " + reasoning
-            )
+        prev_data = previous_personas_data
+        persona = prev_data.get('persona', '')
+        model_answer = prev_data.get('model_answer', '')
+        reasoning = prev_data.get('reasoning', '')
+        user_content = (
+            f"{question_t}: " + question + "\n\n"
+            + f"{persona_t}: " + persona + "\n\n"
+            + f"{predicted_answer_t}: " + model_answer + "\n\n"
+            + f"{reasoning_t}: " + reasoning
+        )
     # Hard mode
     else:
-        # Format the prompt with appropriate description based on use_all_previous
-        if use_all_previous:
-            iterations_description = "You will be provided with a question and all previous persona descriptions from previous iterations."
-            plural_suffix = "s"
-            learning_guidance = "When multiple personas are provided, analyze the progression across iterations to identify patterns and improvements. Pay special attention to the most recent iteration, and consider how the personas evolved over time to build upon previous refinements."
-        else:
-            iterations_description = "You will be provided with a question and its corresponding persona description."
-            plural_suffix = ""
-            learning_guidance = ""
-        
         self_refine_prompt = self_refine_prompt_hard.format(
             language=language, 
             second_person_pronoun=lang_to_spp[language],
-            iterations_description=iterations_description,
-            plural_suffix=plural_suffix,
-            learning_guidance=learning_guidance
         )
-        if use_all_previous:
-            # Format: Question (once) + all previous personas
-            personas_content = ""
-            for idx, prev_data in enumerate(previous_personas_data, start=1):
-                persona = prev_data.get('persona', '')
-                reasoning = prev_data.get('reasoning', '')
-                iteration = prev_data.get('iteration', '')
-                personas_content += f"\n--- Iteration {iteration} ---\n"
-                personas_content += f"{persona_t}: {persona}\n"
-                personas_content += f"{reasoning_t}: {reasoning}\n"
-            
-            user_content = (
-                f"{question_t}: " + question + "\n\n"
-                + "Previous personas (ordered from earliest to most recent):\n"
-                + personas_content
-            )
-        else:
-            # Original format: single previous persona
-            prev_data = previous_personas_data
-            persona = prev_data.get('persona', '')
-            reasoning = prev_data.get('reasoning', '')
-            user_content = (
-                f"{question_t}: " + question + "\n\n"
-                + f"{persona_t}: " + persona + "\n\n"
-                + f"{reasoning_t}: " + reasoning
-            )
+        prev_data = previous_personas_data
+        persona = prev_data.get('persona', '')
+        reasoning = prev_data.get('reasoning', '')
+        user_content = (
+            f"{question_t}: " + question + "\n\n"
+            + f"{persona_t}: " + persona + "\n\n"
+            + f"{reasoning_t}: " + reasoning
+        )
         
     chat_input = [
         {"role": "system",

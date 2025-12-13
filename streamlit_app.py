@@ -184,6 +184,8 @@ def calculate_accuracy(data):
 def extract_iteration_accuracies(summary_lines):
     """Extract accuracy values from summary lines."""
     accuracies = []
+    majority_vote = None
+    
     for line in summary_lines:
         # Parse line like "Persona Accuracy for Hard - Iteration 1: 0.7500"
         try:
@@ -191,10 +193,15 @@ def extract_iteration_accuracies(summary_lines):
             if len(parts) == 2:
                 accuracy = float(parts[1].strip())
                 iteration = int(line.split("Iteration")[1].split(":")[0].strip())
-                accuracies.append({"iteration": iteration, "accuracy": accuracy * 100})
+                # iteration=0 indicates majority voting result
+                if iteration == 0:
+                    majority_vote = accuracy * 100
+                else:
+                    accuracies.append({"iteration": iteration, "accuracy": accuracy * 100})
         except:
             continue
-    return sorted(accuracies, key=lambda x: x["iteration"])
+    
+    return sorted(accuracies, key=lambda x: x["iteration"]), majority_vote
 
 def main():
     st.title("📊 MC-Personas Results Viewer")
@@ -313,7 +320,7 @@ def main():
         # Accuracy by iteration
         if summary_lines:
             st.subheader("📊 Accuracy Over Iterations")
-            iteration_data = extract_iteration_accuracies(summary_lines)
+            iteration_data, majority_vote_accuracy = extract_iteration_accuracies(summary_lines)
             
             if iteration_data:
                 df_iterations = pd.DataFrame(iteration_data)
@@ -327,18 +334,46 @@ def main():
                     labels={"iteration": "Iteration", "accuracy": "Accuracy (%)"}
                 )
                 fig.update_traces(line_color="#1f77b4", marker=dict(size=10))
+                
+                # Add majority voting as horizontal line if available
+                if majority_vote_accuracy is not None:
+                    fig.add_hline(
+                        y=majority_vote_accuracy, 
+                        line_dash="dash", 
+                        line_color="#28a745",
+                        annotation_text=f"Majority Vote: {majority_vote_accuracy:.2f}%",
+                        annotation_position="top right"
+                    )
+                
                 fig.update_layout(hovermode="x unified")
                 plotly_config = {
                     "width": "stretch"
                 }
                 st.plotly_chart(fig, config=plotly_config)
                 
-                # Show table
+                # Show table with majority voting row
+                if majority_vote_accuracy is not None:
+                    # Add majority voting row to dataframe
+                    mv_row = pd.DataFrame([{"iteration": "Majority Vote", "accuracy": majority_vote_accuracy}])
+                    df_display = pd.concat([df_iterations, mv_row], ignore_index=True)
+                else:
+                    df_display = df_iterations
+                
                 st.dataframe(
-                    df_iterations.style.format({"accuracy": "{:.2f}%"}),
+                    df_display.style.format({"accuracy": "{:.2f}%"}),
                     hide_index=True,
                     width='stretch'
                 )
+                
+                # Highlight majority voting result if available
+                if majority_vote_accuracy is not None:
+                    best_iteration_acc = df_iterations["accuracy"].max()
+                    improvement = majority_vote_accuracy - best_iteration_acc
+                    
+                    if improvement > 0:
+                        st.success(f"🎯 **Majority Voting Result:** {majority_vote_accuracy:.2f}% (+{improvement:.2f}% over best iteration)")
+                    else:
+                        st.info(f"🎯 **Majority Voting Result:** {majority_vote_accuracy:.2f}% ({improvement:.2f}% vs best iteration)")
         
     
     with tab2:
@@ -788,10 +823,28 @@ def main():
         
         df_iterations = pd.DataFrame(iteration_data)
         
+        # Get majority voting accuracy if available
+        _, majority_vote_acc = extract_iteration_accuracies(summary_lines) if summary_lines else (None, None)
+        
         # Display table
         st.subheader("Performance by Iteration")
+        
+        # Add majority voting row if available
+        if majority_vote_acc is not None:
+            total_questions = iteration_data[0]["Total Questions"] if iteration_data else 0
+            total_countries = iteration_data[0]["Countries"] if iteration_data else 0
+            mv_row = pd.DataFrame([{
+                "Iteration": "Majority Vote",
+                "Total Questions": total_questions,
+                "Accuracy (%)": majority_vote_acc,
+                "Countries": total_countries
+            }])
+            df_display = pd.concat([df_iterations, mv_row], ignore_index=True)
+        else:
+            df_display = df_iterations
+        
         st.dataframe(
-            df_iterations.style.format({
+            df_display.style.format({
                 "Accuracy (%)": "{:.2f}%"
             }),
             hide_index=True,
@@ -808,10 +861,41 @@ def main():
                 title="Accuracy Progression Across Iterations"
             )
             fig.update_traces(line_color="#1f77b4", marker=dict(size=12))
+            
+            # Add majority voting as horizontal line if available
+            if majority_vote_acc is not None:
+                fig.add_hline(
+                    y=majority_vote_acc, 
+                    line_dash="dash", 
+                    line_color="#28a745",
+                    annotation_text=f"Majority Vote: {majority_vote_acc:.2f}%",
+                    annotation_position="top right"
+                )
+            
             plotly_config = {
                 "width": "stretch"
             }
             st.plotly_chart(fig, config=plotly_config)
+        
+        # Highlight majority voting comparison
+        if majority_vote_acc is not None and len(df_iterations) > 0:
+            best_iter_acc = df_iterations["Accuracy (%)"].max()
+            last_iter_acc = df_iterations["Accuracy (%)"].iloc[-1]
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                improvement_vs_best = majority_vote_acc - best_iter_acc
+                if improvement_vs_best > 0:
+                    st.success(f"📈 vs Best Iteration: **+{improvement_vs_best:.2f}%**")
+                else:
+                    st.info(f"📊 vs Best Iteration: **{improvement_vs_best:.2f}%**")
+            
+            with col2:
+                improvement_vs_last = majority_vote_acc - last_iter_acc
+                if improvement_vs_last > 0:
+                    st.success(f"📈 vs Last Iteration: **+{improvement_vs_last:.2f}%**")
+                else:
+                    st.info(f"📊 vs Last Iteration: **{improvement_vs_last:.2f}%**")
         
         # Answer distribution for each iteration
         st.subheader("📊 Answer Distribution by Iteration")

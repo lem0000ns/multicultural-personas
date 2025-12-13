@@ -28,9 +28,8 @@ Your goal is to produce a persona that:
 
 self_refine_prompt_easy = (
     "You are an expert at designing culturally informed personas to improve model performance on multiple-choice questions.\n\n"
-    "{iterations_description}\n\n"
-    "Your task is to improve upon the given persona{plural_suffix} by revising the persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
-    "{learning_guidance}\n\n"
+    "You will be provided with a question, its corresponding persona description, the model's predicted answer among the 4 options, and the reasoning behind that prediction.\n\n"
+    "Your task is to improve upon the given persona by revising the persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
     "Respond in valid JSON format with two keys:\n\n"
     "\"reasoning\": \"[Chain-of-Thought goes here, explaining why the new persona is effective. This must be a concise step-by-step analysis reasoning with no more than 5 sentences]\",\n"
     "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
@@ -46,9 +45,8 @@ self_refine_prompt_easy = (
 
 self_refine_prompt_hard = (
     "You are an expert at designing culturally informed personas to improve model performance on multiple-choice or true/false questions.\n\n"
-    "{iterations_description}\n\n"
-    "Your task is to improve upon the given persona{plural_suffix} by revising the persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
-    "{learning_guidance}\n\n"
+    "You will be provided with a question and its corresponding persona description.\n\n"
+    "Your task is to improve upon the given persona by revising the persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
     "Respond in valid JSON format with two keys:\n\n"
     "\"reasoning\": \"[Chain-of-Thought goes here, explaining why the new persona is effective and how it addresses the previous model's failure based on the true/false responses. This must be a detailed and concise step-by-step analysis.]\",\n"
     "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"

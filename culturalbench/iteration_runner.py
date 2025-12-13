@@ -5,7 +5,7 @@ from persona_generator import generate_new_persona, cap
 from tools.utils import country_to_language
 from tools.llm_utils import get_llm, generate_text_funcs
 from tools import llm_utils
-from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration, load_all_iterations_for_question, load_results
+from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration, load_results
 import json_repair
 
 
@@ -33,15 +33,13 @@ def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode)
     return accuracy
 
 
-async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, use_all_previous=False):
+async def run_easy_iterations(mode, num_iterations, db_path):
     """Run iterations for Easy difficulty.
     
     Args:
         mode: Mode (eng_*, ling_*, or e2l_*)
         num_iterations: Total number of iterations
         db_path: Path to database file containing results
-        start_iteration: Starting iteration number
-        use_all_previous: If True, use all previous personas; if False, use only the previous one
     
     Returns:
         List of accuracies for each iteration
@@ -49,7 +47,7 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
     accuracies = []
     is_translation_mode = "e2l" in mode or "l2e" in mode
     
-    for cur_iteration in range(start_iteration, num_iterations + 1):
+    for cur_iteration in range(2, num_iterations + 1):
         # Load data from previous iteration
         data = load_previous_iteration(db_path, cur_iteration)
         print(f"Currently running iteration {cur_iteration}")
@@ -62,42 +60,22 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
 
             # parse response from self-refinement prompt with CoT reasoning
             try:
-                if use_all_previous:
-                    # Load all previous iterations for this question
-                    all_prev_data = load_all_iterations_for_question(
-                        db_path, item["question"], item["country"], "Easy", mode, cur_iteration
-                    )
-                    # Format previous personas data
-                    previous_personas_data = []
-                    for prev_item in all_prev_data:
-                        persona = (
-                            prev_item["persona_description"] 
-                            if "l2e" not in mode and "e2l" not in mode
-                            else prev_item.get("pretranslated_persona", prev_item["persona_description"])
-                        )
-                        previous_personas_data.append({
-                            'persona': persona,
-                            'model_answer': prev_item["model_answer"],
-                            'reasoning': prev_item["reasoning"],
-                            'iteration': prev_item["iteration"]
-                        })
-                else:
-                    # Use only the previous iteration
-                    old_persona = (
-                        item["persona_description"] 
-                        if "l2e" not in mode and "e2l" not in mode
-                        else item["pretranslated_persona"]
-                    )
-                    # provide all 4 options for persona refinement
-                    prev_answers = ""
-                    for option in item["options"]:
-                        prev_answers += option + ": " + item["options"][option] + "\n"
-                    prev_answers += "Model answer: " + item["model_answer"]
-                    previous_personas_data = {
-                        'persona': old_persona,
-                        'model_answer': prev_answers,
-                        'reasoning': item["reasoning"]
-                    }
+                # Use only the previous iteration
+                old_persona = (
+                    item["persona_description"] 
+                    if "l2e" not in mode and "e2l" not in mode
+                    else item["pretranslated_persona"]
+                )
+                # provide all 4 options for persona refinement
+                prev_answers = ""
+                for option in item["options"]:
+                    prev_answers += option + ": " + item["options"][option] + "\n"
+                prev_answers += "Model answer: " + item["model_answer"]
+                previous_personas_data = {
+                    'persona': old_persona,
+                    'model_answer': prev_answers,
+                    'reasoning': item["reasoning"]
+                }
 
                 pretranslated, refine_response = await generate_new_persona(
                     "Easy",
@@ -105,7 +83,6 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     previous_personas_data,
                     mode,
                     item["country"],
-                    use_all_previous,
                 )
                 # if not in correct language, disregard this question
                 if refine_response is None and is_translation_mode:
@@ -223,15 +200,13 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
     return accuracies
 
 
-async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, use_all_previous=False):
+async def run_hard_iterations(mode, num_iterations, db_path):
     """Run iterations for Hard difficulty.
     
     Args:
         mode: Mode (eng_*, ling_*, or e2l_*)
         num_iterations: Total number of iterations
         db_path: Path to database file containing results
-        start_iteration: Starting iteration number
-        use_all_previous: If True, use all previous personas; if False, use only the previous one
     
     Returns:
         List of accuracies for each iteration
@@ -239,7 +214,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
     accuracies = []
     is_translation_mode = "e2l" in mode or "l2e" in mode
     
-    for cur_iteration in range(start_iteration, num_iterations + 1):
+    for cur_iteration in range(2, num_iterations + 1):
         # Load data from previous iteration
         data = load_previous_iteration(db_path, cur_iteration)
         
@@ -254,35 +229,16 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
 
             # parse response from self-refinement prompt with CoT reasoning
             try:
-                if use_all_previous:
-                    # Load all previous iterations for this question
-                    all_prev_data = load_all_iterations_for_question(
-                        db_path, prompt_question, data[i]["country"], "Hard", mode, cur_iteration
-                    )
-                    # Format previous personas data
-                    previous_personas_data = []
-                    for prev_item in all_prev_data:
-                        persona = (
-                            prev_item["persona_description"]
-                            if "l2e" not in mode and "e2l" not in mode
-                            else prev_item.get("pretranslated_persona", prev_item["persona_description"])
-                        )
-                        previous_personas_data.append({
-                            'persona': persona,
-                            'reasoning': prev_item["reasoning"],
-                            'iteration': prev_item["iteration"]
-                        })
-                else:
-                    # Use only the previous iteration
-                    old_persona = (
-                        data[i]["persona_description"]
-                        if "l2e" not in mode and "e2l" not in mode
-                        else data[i]["pretranslated_persona"]
-                    )
-                    previous_personas_data = {
-                        'persona': old_persona,
-                        'reasoning': data[i]["reasoning"]
-                    }
+                # Use only the previous iteration
+                old_persona = (
+                    data[i]["persona_description"]
+                    if "l2e" not in mode and "e2l" not in mode
+                    else data[i]["pretranslated_persona"]
+                )
+                previous_personas_data = {
+                    'persona': old_persona,
+                    'reasoning': data[i]["reasoning"]
+                }
                 
                 pretranslated, refine_response = await generate_new_persona(
                     "Hard",
@@ -290,7 +246,6 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     previous_personas_data,
                     mode,
                     data[i]["country"],
-                    use_all_previous,
                 )
                 # if not in correct language, disregard this question (set of 4 options)
                 if refine_response is None and is_translation_mode:
@@ -416,7 +371,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
     return accuracies
 
 
-async def run_iterations(mode, num_iterations, difficulty, db_path, start_iteration=2, use_all_previous=False):
+async def run_iterations(mode, num_iterations, difficulty, db_path):
     """Run iterations starting from iteration 2.
     
     Args:
@@ -424,14 +379,12 @@ async def run_iterations(mode, num_iterations, difficulty, db_path, start_iterat
         num_iterations: Total number of iterations
         difficulty: "Easy" or "Hard"
         db_path: Path to database file containing results
-        start_iteration: Starting iteration number
-        use_all_previous: If True, use all previous personas; if False, use only the previous one
     
     Returns:
         List of accuracies for each iteration
     """
     if difficulty == "Easy":
-        return await run_easy_iterations(mode, num_iterations, db_path, start_iteration, use_all_previous)
+        return await run_easy_iterations(mode, num_iterations, db_path)
     else:
-        return await run_hard_iterations(mode, num_iterations, db_path, start_iteration, use_all_previous)
+        return await run_hard_iterations(mode, num_iterations, db_path)
 

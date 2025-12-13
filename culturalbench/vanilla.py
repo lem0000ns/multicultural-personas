@@ -1,4 +1,4 @@
-from tools.llm_utils import get_llm, generate_text
+from tools.llm_utils import get_llm, generate_text_funcs, MODEL_NAME
 from datasets import load_dataset
 from tools.db.db_utils import save_results, save_accuracy
 
@@ -31,7 +31,7 @@ def run_vanilla(difficulty):
                             "Is this answer true or false for this question? You must choose either True or False."
                         )}
                     ]
-                    response = generate_text(chat_input, llm_instance, max_tokens=1)
+                    response = generate_text_funcs[MODEL_NAME](llm_instance, chat_input, max_tokens=1)
 
                     cur_set_data.append({"question": cur_question, "prompt_option": cur_option, "correct_answer": answer, "vanilla_answer": response, "country": country})
 
@@ -79,12 +79,12 @@ def run_vanilla(difficulty):
                         f"D. {prompt_option_d}\n"
                     )}
                 ]
-                response = generate_text(chat_input, llm_instance, max_tokens=1)
+                response = generate_text_funcs[MODEL_NAME](llm_instance, chat_input, max_tokens=1)
                 if str(response).strip().lower() == str(answer).strip().lower():
                     total_correct += 1
                 total += 1
             except Exception as e:
-                print(f"Error evaluationg question during easy mode: {e}")
+                print(f"Error evaluating question during easy mode: {e}")
                 continue
             data[i] = {"question": cur_question, "prompt_option_a": prompt_option_a, "prompt_option_b": prompt_option_b, "prompt_option_c": prompt_option_c, "prompt_option_d": prompt_option_d, "correct_answer": answer, "vanilla_answer": response, "country": country}
 

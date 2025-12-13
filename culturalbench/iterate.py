@@ -58,6 +58,7 @@ async def main():
     parser.add_argument("--model", type=str, required=False, default="meta-llama/Meta-Llama-3-8B-Instruct", help="Model to use")
     parser.add_argument("--temperature", type=float, required=False, default=0.0, help="Temperature to use")
     parser.add_argument("--custom", type=str, required=False, default=None, help="Custom suffix to append to database path")
+    parser.add_argument("--use_all_previous", action="store_true", required=False, default=False, help="Use all previous personas instead of just the previous one")
     args = parser.parse_args()
 
     # switch to specificed model (default is Llama-3-8B-Instruct)
@@ -105,7 +106,7 @@ async def main():
 
     # run additional iterations
     if args.num_iterations > 1:
-        iteration_accuracies = await run_iterations(args.mode, args.num_iterations, difficulty, db_path, start_iteration)
+        iteration_accuracies = await run_iterations(args.mode, args.num_iterations, difficulty, db_path, start_iteration, args.use_all_previous)
         all_accuracies.extend(iteration_accuracies)
     else:
         print("\nNo additional iterations to run (num_iterations = 1)")

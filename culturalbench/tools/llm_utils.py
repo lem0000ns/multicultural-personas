@@ -7,7 +7,7 @@ from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # Configuration
-os.environ["CUDA_VISIBLE_DEVICES"] = "1, 2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 TEMPERATURE = 0.0   
 
@@ -93,7 +93,7 @@ def get_llm():
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
         elif MODEL_NAME == "meta-llama/Meta-Llama-3-8B-Instruct":
-            llm = LLM(model=MODEL_NAME, tensor_parallel_size=2, dtype='half')
+            llm = LLM(model=MODEL_NAME, tensor_parallel_size=4, dtype='half')
     return llm
 
 

@@ -102,6 +102,13 @@ def save_results(db_path: str, data: Dict, difficulty: str, mode: str):
         # Convert options dict to JSON string if present
         options_str = json.dumps(entry.get('options', {})) if 'options' in entry else None
         
+        # Helper function to convert dict/list values to JSON strings
+        # This handles cases where LLM outputs might be structured data instead of strings
+        def convert_value(value):
+            if not isinstance(value, str):
+                return json.dumps(value)
+            return value
+        
         cursor.execute('''
             INSERT INTO results 
             (iteration, question, persona_description, pretranslated_persona, 
@@ -111,14 +118,14 @@ def save_results(db_path: str, data: Dict, difficulty: str, mode: str):
         ''', (
             entry.get('iteration'),
             entry.get('question'),
-            entry.get('persona_description'),
-            entry.get('pretranslated_persona'),
+            convert_value(entry.get('persona_description')),
+            convert_value(entry.get('pretranslated_persona')),
             entry.get('correct_answer'),
             entry.get('model_answer'),
-            entry.get('reasoning'),
-            entry.get('thinking_content'),
+            convert_value(entry.get('reasoning')),
+            convert_value(entry.get('thinking_content')),
             entry.get('country'),
-            entry.get('refine_reasoning'),
+            convert_value(entry.get('refine_reasoning')),
             options_str,
             entry.get('prompt_option'),
             difficulty,
@@ -220,6 +227,48 @@ def load_previous_iteration(db_path: str, iteration: int) -> list:
         List of dictionaries containing results from previous iteration
     """
     return load_results(db_path, iteration=iteration - 1)
+
+
+def load_all_iterations_for_question(db_path: str, question: str, country: str, 
+                                     difficulty: str, mode: str, max_iteration: int) -> list:
+    """Load all previous iterations for a specific question.
+    
+    Args:
+        db_path: Path to the SQLite database file
+        question: The question text
+        country: The country name
+        difficulty: "Easy" or "Hard"
+        mode: Mode string
+        max_iteration: Maximum iteration to load (exclusive, loads iterations < max_iteration)
+    
+    Returns:
+        List of dictionaries containing results from all previous iterations, sorted by iteration
+    """
+    if not os.path.exists(db_path):
+        return []
+    
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+    
+    cursor.execute('''
+        SELECT * FROM results 
+        WHERE question = ? AND country = ? AND difficulty = ? AND mode = ? AND iteration < ?
+        ORDER BY iteration, id
+    ''', (question, country, difficulty, mode, max_iteration))
+    
+    rows = cursor.fetchall()
+    
+    # Convert to list of dicts and parse JSON fields
+    results = []
+    for row in rows:
+        result = dict(row)
+        if result.get('options'):
+            result['options'] = json.loads(result['options'])
+        results.append(result)
+    
+    conn.close()
+    return results
 
 
 def get_all_iterations(db_path: str) -> list:

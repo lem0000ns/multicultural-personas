@@ -276,8 +276,7 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
                 + "Previous personas and their responses (ordered from earliest to most recent):\n"
                 + personas_content
             )
-            print(user_content)
-            print("--------------------------------")
+            
         else:
             # Original format: single previous persona with response
             prev_data = previous_personas_data

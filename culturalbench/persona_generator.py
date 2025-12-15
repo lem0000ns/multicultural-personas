@@ -1,6 +1,6 @@
 """Persona generation and refinement functions."""
 
-from tools.utils import country_to_language, language_to_code, questions_translated, countries_translated, persona_descriptions_translated, persona_translated, predicted_answers_translated, reasonings_translated, lang_to_spp
+from tools.utils import country_to_language, language_to_code, lang_to_spp
 from tools.configs import system_prompts, self_refine_prompt_easy, self_refine_prompt_hard
 from tools.llm_utils import get_llm, generate_text_funcs
 from tools import llm_utils
@@ -100,11 +100,13 @@ async def translate_text(response, language, parse, max_retries=3):
             # update json object with translated revised_persona (self-refinement)
             if parse:
                 try:
-                    response = json.loads(response)
-                    translated = await translate_long_text(response["revised_persona"], language, max_retries=max_retries)
-                    response["revised_persona"] = translated
-                    return json.dumps(response, ensure_ascii=False)
-                except json.JSONDecodeError:
+                    resp_obj = json_repair.loads(response) if isinstance(response, str) else response
+                    if not isinstance(resp_obj, dict) or "revised_persona" not in resp_obj:
+                        return response
+                    translated = await translate_long_text(resp_obj["revised_persona"], language, max_retries=max_retries)
+                    resp_obj["revised_persona"] = translated
+                    return json.dumps(resp_obj, ensure_ascii=False)
+                except Exception:
                     return response
             # directly translate persona description (first iteration)
             translated = await translate_long_text(response, language, max_retries=max_retries)
@@ -123,8 +125,8 @@ async def translate_text(response, language, parse, max_retries=3):
                     # Return original text if translation fails
                     if parse:
                         try:
-                            resp_dict = json.loads(response) if isinstance(response, str) else response
-                            return json.dumps(response, ensure_ascii=False)
+                            resp_dict = json_repair.loads(response) if isinstance(response, str) else response
+                            return json.dumps(resp_dict, ensure_ascii=False) if isinstance(resp_dict, dict) else response
                         except:
                             return response
                     return response
@@ -164,15 +166,12 @@ async def generate_persona_description(question, country, mode):
     else:
         system_prompt = system_prompts[mode](language)
     
-    question_t = questions_translated[language.capitalize()]
-    country_t = countries_translated[country.lower()]
-    persona_description_t = persona_descriptions_translated[language.capitalize()]
     chat_input = [
         {"role": "system",
         "content": system_prompt
         },
         {"role": "user",
-        "content": f"{question_t}: " + question + "\n\n" + f"{country_t}: " + country + f"\n\n{persona_description_t}: "}
+        "content": f"Question: {question}\n\nCountry: {country}\n\nPersona description: "}
     ]
 
     # 3 attempts to generate response in correct language
@@ -230,10 +229,6 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
         language = country_to_language[cap(country)]
     
     # self-refinement
-    question_t = questions_translated[language]
-    persona_t = persona_translated[language]
-    predicted_answer_t = predicted_answers_translated[language]
-    reasoning_t = reasonings_translated[language]
 
     # Build content with previous persona
     if difficulty == "Easy":
@@ -245,11 +240,12 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
         persona = prev_data.get('persona', '')
         model_answer = prev_data.get('model_answer', '')
         reasoning = prev_data.get('reasoning', '')
+
         user_content = (
-            f"{question_t}: " + question + "\n\n"
-            + f"{persona_t}: " + persona + "\n\n"
-            + f"{predicted_answer_t}: " + model_answer + "\n\n"
-            + f"{reasoning_t}: " + reasoning
+            "Question: " + question + "\n\n"
+            + "Persona: " + persona + "\n\n"
+            + "Predicted answer: " + model_answer + "\n\n"
+            + "Reasoning: " + reasoning
         )
     # Hard mode
     else:
@@ -260,10 +256,11 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
         prev_data = previous_personas_data
         persona = prev_data.get('persona', '')
         reasoning = prev_data.get('reasoning', '')
+
         user_content = (
-            f"{question_t}: " + question + "\n\n"
-            + f"{persona_t}: " + persona + "\n\n"
-            + f"{reasoning_t}: " + reasoning
+            "Question: " + question + "\n\n"
+            + "Persona: " + persona + "\n\n"
+            + "Reasoning: " + reasoning
         )
         
     chat_input = [

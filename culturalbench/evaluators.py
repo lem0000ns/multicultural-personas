@@ -47,7 +47,7 @@ async def evaluate_hard_initial(ds, mode):
     iteration = 1
     persona_description = ""
     
-    for i in range(0, len(ds), 4):
+    for i in range(0, 12, 4):
         # ensure set of 4 options is complete
         isValidSet = is_valid_set(ds, i)
         

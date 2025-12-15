@@ -66,7 +66,7 @@ def init_db(db_path: str):
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )
     ''')
-    
+
     conn.commit()
     conn.close()
 
@@ -166,6 +166,8 @@ def save_accuracy(db_path: str, iteration: int, difficulty: str, mode: str,
     
     conn.commit()
     conn.close()
+
+
 
 
 def load_results(db_path: str, iteration: Optional[int] = None, 

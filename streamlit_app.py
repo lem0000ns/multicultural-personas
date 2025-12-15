@@ -69,8 +69,18 @@ def load_db_file(db_path):
     for acc in accuracies:
         summary_line = f"Persona Accuracy for {acc['difficulty']} - Iteration {acc['iteration']}: {acc['accuracy']:.4f}"
         summary_lines.append(summary_line)
-    
     return data, summary_lines
+
+
+def latest_iteration_only(data):
+    """Filter to only the latest iteration in the DB (avoids mixing iterations in accuracy calc)."""
+    if not data:
+        return []
+    iters = [item.get("iteration", 1) for item in data if item.get("iteration") is not None]
+    if not iters:
+        return data
+    latest = max(iters)
+    return [item for item in data if item.get("iteration", 1) == latest]
 
 def get_available_results():
     """Scan the results directory for available database files.
@@ -78,7 +88,7 @@ def get_available_results():
     Returns:
         Dictionary organized as: {mode: {prompt: [files]}}
     """
-    results_dir = Path("/home/kevinyang/mc-personas/results")
+    results_dir = Path(__file__).parent / "results"
     db_files = list(results_dir.rglob("*.db"))
     
     # Organize by mode and prompt
@@ -134,12 +144,16 @@ def is_single_item_correct(item):
     is_hard_mode = bool(item.get("prompt_option"))
     
     if is_hard_mode:
-        # Hard mode: compare as strings (both "true" or "false")
-        # Normalize both to lowercase strings for comparison
+        # Hard mode: normalize correct_answer (often stored as 0/1) to "true"/"false"
         model_answer_str = str(model_answer).lower().strip()
         correct_answer_str = str(correct_answer).lower().strip()
-        
-        return model_answer_str == correct_answer_str
+
+        if correct_answer_str in ["1", "true"]:
+            expected = "true"
+        else:
+            expected = "false"
+
+        return model_answer_str == expected
     else:
         # Easy mode: compare strings directly (A/B/C/D)
         return correct_answer.lower() == model_answer.lower()
@@ -159,18 +173,20 @@ def calculate_accuracy(data):
     is_hard_mode = bool(data[0].get("prompt_option"))
     
     if is_hard_mode:
-        # For Hard mode: group by question and check if ALL options are correct
+        # For Hard mode: group by (question, country) and check if ALL options are correct.
+        # This matches how inference counts Hard mode (one 4-option set per (question, country)).
         from collections import defaultdict
         question_groups = defaultdict(list)
         
         for item in data:
             question = item.get("question", "")
-            question_groups[question].append(item)
+            country = item.get("country", "Unknown")
+            question_groups[(question, country)].append(item)
         
         correct_questions = 0
         total_questions = len(question_groups)
         
-        for question, items in question_groups.items():
+        for _, items in question_groups.items():
             # A question is correct only if ALL its options are answered correctly
             if all(is_single_item_correct(item) for item in items):
                 correct_questions += 1
@@ -185,6 +201,7 @@ def extract_iteration_accuracies(summary_lines):
     """Extract accuracy values from summary lines."""
     accuracies = []
     majority_vote = None
+    best_of_n = None
     
     for line in summary_lines:
         # Parse line like "Persona Accuracy for Hard - Iteration 1: 0.7500"
@@ -196,12 +213,15 @@ def extract_iteration_accuracies(summary_lines):
                 # iteration=0 indicates majority voting result
                 if iteration == 0:
                     majority_vote = accuracy * 100
+                # iteration=-1 indicates best-of-n result
+                elif iteration == -1:
+                    best_of_n = accuracy * 100
                 else:
                     accuracies.append({"iteration": iteration, "accuracy": accuracy * 100})
         except:
             continue
     
-    return sorted(accuracies, key=lambda x: x["iteration"]), majority_vote
+    return sorted(accuracies, key=lambda x: x["iteration"]), majority_vote, best_of_n
 
 def main():
     st.title("📊 MC-Personas Results Viewer")
@@ -288,6 +308,9 @@ def main():
     if not data:
         st.warning("No data found in the selected file!")
         return
+
+    # Use latest iteration for aggregate accuracy views (otherwise mixing iterations can look like 0%)
+    data_latest = latest_iteration_only(data)
     
     # Main content area
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
@@ -304,10 +327,9 @@ def main():
         # Key metrics
         col1, col2, col3 = st.columns(3)
         
-        total_questions = len(data)
-        
-        accuracy = calculate_accuracy(data)
-        unique_countries = len(set(item.get("country", "Unknown") for item in data))
+        total_questions = len(data_latest)
+        accuracy = calculate_accuracy(data_latest)
+        unique_countries = len(set(item.get("country", "Unknown") for item in data_latest))
         unique_iterations = len(set(item.get("iteration", 1) for item in data))
         
         with col1:
@@ -316,11 +338,13 @@ def main():
             st.metric("Countries", unique_countries)
         with col3:
             st.metric("Iterations", unique_iterations)
+
+        st.metric("Latest Iteration Accuracy (%)", f"{accuracy:.2f}")
         
         # Accuracy by iteration
         if summary_lines:
             st.subheader("📊 Accuracy Over Iterations")
-            iteration_data, majority_vote_accuracy = extract_iteration_accuracies(summary_lines)
+            iteration_data, majority_vote_accuracy, best_of_n_accuracy = extract_iteration_accuracies(summary_lines)
             
             if iteration_data:
                 df_iterations = pd.DataFrame(iteration_data)
@@ -344,6 +368,16 @@ def main():
                         annotation_text=f"Majority Vote: {majority_vote_accuracy:.2f}%",
                         annotation_position="top right"
                     )
+
+                # Add best-of-n (same LLM) as horizontal line if available
+                if best_of_n_accuracy is not None:
+                    fig.add_hline(
+                        y=best_of_n_accuracy,
+                        line_dash="dot",
+                        line_color="#ff7f0e",
+                        annotation_text=f"Best-of-N: {best_of_n_accuracy:.2f}%",
+                        annotation_position="bottom right",
+                    )
                 
                 fig.update_layout(hovermode="x unified")
                 plotly_config = {
@@ -351,29 +385,39 @@ def main():
                 }
                 st.plotly_chart(fig, config=plotly_config)
                 
-                # Show table with majority voting row
+                # Show table with special result rows.
+                df_display = df_iterations.copy()
+                df_display["iteration"] = df_display["iteration"].astype(str)
                 if majority_vote_accuracy is not None:
-                    # Add majority voting row to dataframe
                     mv_row = pd.DataFrame([{"iteration": "Majority Vote", "accuracy": majority_vote_accuracy}])
-                    df_display = pd.concat([df_iterations, mv_row], ignore_index=True)
-                else:
-                    df_display = df_iterations
-                
+                    df_display = pd.concat([df_display, mv_row], ignore_index=True)
+                if best_of_n_accuracy is not None:
+                    bon_row = pd.DataFrame([{"iteration": "Best-of-N", "accuracy": best_of_n_accuracy}])
+                    df_display = pd.concat([df_display, bon_row], ignore_index=True)
                 st.dataframe(
                     df_display.style.format({"accuracy": "{:.2f}%"}),
                     hide_index=True,
                     width='stretch'
                 )
                 
-                # Highlight majority voting result if available
+                # Highlight results
+                best_iteration_acc = df_iterations["accuracy"].max()
+                
                 if majority_vote_accuracy is not None:
-                    best_iteration_acc = df_iterations["accuracy"].max()
                     improvement = majority_vote_accuracy - best_iteration_acc
-                    
                     if improvement > 0:
-                        st.success(f"🎯 **Majority Voting Result:** {majority_vote_accuracy:.2f}% (+{improvement:.2f}% over best iteration)")
+                        st.success(f"🎯 **Majority Voting:** {majority_vote_accuracy:.2f}% (+{improvement:.2f}% over best iteration)")
                     else:
-                        st.info(f"🎯 **Majority Voting Result:** {majority_vote_accuracy:.2f}% ({improvement:.2f}% vs best iteration)")
+                        st.info(f"🎯 **Majority Voting:** {majority_vote_accuracy:.2f}% ({improvement:.2f}% vs best iteration)")
+
+                if best_of_n_accuracy is not None:
+                    improvement = best_of_n_accuracy - best_iteration_acc
+                    if improvement > 0:
+                        st.success(f"🏆 **Best-of-N (same LLM):** {best_of_n_accuracy:.2f}% (+{improvement:.2f}% over best iteration)")
+                    else:
+                        st.info(f"🏆 **Best-of-N (same LLM):** {best_of_n_accuracy:.2f}% ({improvement:.2f}% vs best iteration)")
+                
+                # (best-of-n removed)
         
     
     with tab2:
@@ -382,7 +426,7 @@ def main():
         # Group data by country first
         from collections import defaultdict
         country_items = defaultdict(list)
-        for item in data:
+        for item in data_latest:
             country = item.get("country", "Unknown")
             country_items[country].append(item)
         
@@ -823,25 +867,36 @@ def main():
         
         df_iterations = pd.DataFrame(iteration_data)
         
-        # Get majority voting accuracy if available
-        _, majority_vote_acc = extract_iteration_accuracies(summary_lines) if summary_lines else (None, None)
+        # Get majority voting and best-of-n accuracy if available
+        _, majority_vote_acc, best_of_n_acc = extract_iteration_accuracies(summary_lines) if summary_lines else (None, None, None)
         
         # Display table
         st.subheader("Performance by Iteration")
         
-        # Add majority voting row if available
+        # Add special result rows.
+        # IMPORTANT: keep Arrow happy by keeping the display Iteration column as string.
+        df_display = df_iterations.copy()
+        df_display["Iteration"] = df_display["Iteration"].astype(str)
+        total_questions = iteration_data[0]["Total Questions"] if iteration_data else 0
+        total_countries = iteration_data[0]["Countries"] if iteration_data else 0
+        
         if majority_vote_acc is not None:
-            total_questions = iteration_data[0]["Total Questions"] if iteration_data else 0
-            total_countries = iteration_data[0]["Countries"] if iteration_data else 0
             mv_row = pd.DataFrame([{
                 "Iteration": "Majority Vote",
                 "Total Questions": total_questions,
                 "Accuracy (%)": majority_vote_acc,
                 "Countries": total_countries
             }])
-            df_display = pd.concat([df_iterations, mv_row], ignore_index=True)
-        else:
-            df_display = df_iterations
+            df_display = pd.concat([df_display, mv_row], ignore_index=True)
+
+        if best_of_n_acc is not None:
+            bon_row = pd.DataFrame([{
+                "Iteration": "Best-of-N",
+                "Total Questions": total_questions,
+                "Accuracy (%)": best_of_n_acc,
+                "Countries": total_countries
+            }])
+            df_display = pd.concat([df_display, bon_row], ignore_index=True)
         
         st.dataframe(
             df_display.style.format({
@@ -871,31 +926,59 @@ def main():
                     annotation_text=f"Majority Vote: {majority_vote_acc:.2f}%",
                     annotation_position="top right"
                 )
+
+            if best_of_n_acc is not None:
+                fig.add_hline(
+                    y=best_of_n_acc,
+                    line_dash="dot",
+                    line_color="#ff7f0e",
+                    annotation_text=f"Best-of-N: {best_of_n_acc:.2f}%",
+                    annotation_position="bottom right",
+                )
             
             plotly_config = {
                 "width": "stretch"
             }
             st.plotly_chart(fig, config=plotly_config)
         
-        # Highlight majority voting comparison
-        if majority_vote_acc is not None and len(df_iterations) > 0:
+        # Highlight comparison metrics
+        if (majority_vote_acc is not None or best_of_n_acc is not None) and len(df_iterations) > 0:
             best_iter_acc = df_iterations["Accuracy (%)"].max()
             last_iter_acc = df_iterations["Accuracy (%)"].iloc[-1]
             
-            col1, col2 = st.columns(2)
-            with col1:
-                improvement_vs_best = majority_vote_acc - best_iter_acc
-                if improvement_vs_best > 0:
-                    st.success(f"📈 vs Best Iteration: **+{improvement_vs_best:.2f}%**")
-                else:
-                    st.info(f"📊 vs Best Iteration: **{improvement_vs_best:.2f}%**")
+            if majority_vote_acc is not None:
+                st.markdown("**🎯 Majority Voting:**")
+                col1, col2 = st.columns(2)
+                with col1:
+                    improvement_vs_best = majority_vote_acc - best_iter_acc
+                    if improvement_vs_best > 0:
+                        st.success(f"📈 vs Best Iteration: **+{improvement_vs_best:.2f}%**")
+                    else:
+                        st.info(f"📊 vs Best Iteration: **{improvement_vs_best:.2f}%**")
+                with col2:
+                    improvement_vs_last = majority_vote_acc - last_iter_acc
+                    if improvement_vs_last > 0:
+                        st.success(f"📈 vs Last Iteration: **+{improvement_vs_last:.2f}%**")
+                    else:
+                        st.info(f"📊 vs Last Iteration: **{improvement_vs_last:.2f}%**")
+
+            if best_of_n_acc is not None:
+                st.markdown("**🏆 Best-of-N (same LLM):**")
+                col1, col2 = st.columns(2)
+                with col1:
+                    improvement_vs_best = best_of_n_acc - best_iter_acc
+                    if improvement_vs_best > 0:
+                        st.success(f"📈 vs Best Iteration: **+{improvement_vs_best:.2f}%**")
+                    else:
+                        st.info(f"📊 vs Best Iteration: **{improvement_vs_best:.2f}%**")
+                with col2:
+                    improvement_vs_last = best_of_n_acc - last_iter_acc
+                    if improvement_vs_last > 0:
+                        st.success(f"📈 vs Last Iteration: **+{improvement_vs_last:.2f}%**")
+                    else:
+                        st.info(f"📊 vs Last Iteration: **{improvement_vs_last:.2f}%**")
             
-            with col2:
-                improvement_vs_last = majority_vote_acc - last_iter_acc
-                if improvement_vs_last > 0:
-                    st.success(f"📈 vs Last Iteration: **+{improvement_vs_last:.2f}%**")
-                else:
-                    st.info(f"📊 vs Last Iteration: **{improvement_vs_last:.2f}%**")
+            # (best-of-n removed)
         
         # Answer distribution for each iteration
         st.subheader("📊 Answer Distribution by Iteration")

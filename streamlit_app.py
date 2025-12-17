@@ -78,7 +78,7 @@ def get_available_results():
     Returns:
         Dictionary organized as: {mode: {prompt: [files]}}
     """
-    results_dir = Path("/home/kevinyang/mc-personas/results")
+    results_dir = Path(__file__).parent / "results"
     db_files = list(results_dir.rglob("*.db"))
     
     # Organize by mode and prompt
@@ -134,12 +134,18 @@ def is_single_item_correct(item):
     is_hard_mode = bool(item.get("prompt_option"))
     
     if is_hard_mode:
-        # Hard mode: compare as strings (both "true" or "false")
-        # Normalize both to lowercase strings for comparison
-        model_answer_str = str(model_answer).lower().strip()
-        correct_answer_str = str(correct_answer).lower().strip()
-        
-        return model_answer_str == correct_answer_str
+        # Hard mode: normalize to "true"/"false" strings before comparing.
+        def _norm_tf(v):
+            if v is None:
+                return None
+            s = str(v).strip().lower()
+            if s in {"1", "true", "t", "yes"}:
+                return "true"
+            if s in {"0", "false", "f", "no"}:
+                return "false"
+            return s
+
+        return _norm_tf(model_answer) == _norm_tf(correct_answer)
     else:
         # Easy mode: compare strings directly (A/B/C/D)
         return correct_answer.lower() == model_answer.lower()
@@ -159,13 +165,14 @@ def calculate_accuracy(data):
     is_hard_mode = bool(data[0].get("prompt_option"))
     
     if is_hard_mode:
-        # For Hard mode: group by question and check if ALL options are correct
+        # For Hard mode: group by (question, country) and check if ALL options are correct
         from collections import defaultdict
         question_groups = defaultdict(list)
         
         for item in data:
             question = item.get("question", "")
-            question_groups[question].append(item)
+            country = item.get("country", "")
+            question_groups[(question, country)].append(item)
         
         correct_questions = 0
         total_questions = len(question_groups)

@@ -9,6 +9,38 @@ from tools.db.db_utils import save_results, save_accuracy, load_previous_iterati
 import json_repair
 
 
+def _extract_revised_persona_text(value):
+    """Best-effort: if value is a JSON string/dict with revised_persona, return that field; else return value."""
+    if value is None:
+        return None
+    if isinstance(value, dict):
+        return value.get("revised_persona") or value.get("persona_description") or value
+    if isinstance(value, str):
+        s = value.strip()
+        if s.startswith("{") and ("revised_persona" in s or "\"revised_persona\"" in s):
+            try:
+                obj = json_repair.loads(s)
+                if isinstance(obj, dict) and "revised_persona" in obj:
+                    return obj["revised_persona"]
+            except Exception:
+                return value
+        return value
+    return value
+
+
+def _format_easy_options_and_answer(item):
+    """Format Easy-mode options + model answer without revealing correct answer."""
+    options = item.get("options") or {}
+    lines = []
+    for opt in ["A", "B", "C", "D"]:
+        if opt in options:
+            lines.append(f"{opt}: {options[opt]}")
+    model_answer = item.get("model_answer")
+    if model_answer is not None:
+        lines.append(f"Model answer: {model_answer}")
+    return "\n".join(lines).strip()
+
+
 def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode):
     """Append iteration data to database.
     
@@ -73,11 +105,12 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
                         persona = (
                             prev_item["persona_description"] 
                             if "l2e" not in mode and "e2l" not in mode
-                            else prev_item.get("pretranslated_persona", prev_item["persona_description"])
+                            else _extract_revised_persona_text(prev_item.get("pretranslated_persona", prev_item["persona_description"]))
                         )
                         previous_personas_data.append({
                             'persona': persona,
-                            'model_answer': prev_item["model_answer"],
+                            # Include full A/B/C/D options + the model's chosen option (no correct answer).
+                            'model_answer': _format_easy_options_and_answer(prev_item),
                             'reasoning': prev_item["reasoning"],
                             'iteration': prev_item["iteration"]
                         })
@@ -86,13 +119,10 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     old_persona = (
                         item["persona_description"] 
                         if "l2e" not in mode and "e2l" not in mode
-                        else item["pretranslated_persona"]
+                        else _extract_revised_persona_text(item.get("pretranslated_persona"))
                     )
                     # provide all 4 options for persona refinement
-                    prev_answers = ""
-                    for option in item["options"]:
-                        prev_answers += option + ": " + item["options"][option] + "\n"
-                    prev_answers += "Model answer: " + item["model_answer"]
+                    prev_answers = _format_easy_options_and_answer(item)
                     previous_personas_data = {
                         'persona': old_persona,
                         'model_answer': prev_answers,
@@ -112,8 +142,10 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     continue
                 
                 result = None
+                pretranslated_persona_text = None
                 if is_translation_mode:
                     result = json_repair.loads(refine_response)
+                    pretranslated_persona_text = _extract_revised_persona_text(pretranslated)
                 else:
                     result = json_repair.loads(pretranslated)
 
@@ -140,11 +172,6 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
             else:
                 language = country_to_language[cap(country)]
             
-            # For qwen3 thinking mode in "ling" mode, add instruction to think in the relevant language
-            thinking_instruction = ""
-            if "ling" in mode and llm_utils.MODEL_NAME == "Qwen/Qwen3-4B":
-                thinking_instruction = f"You MUST write internal reasoning inside <think>...</think> in {language}. If any part of <think>...</think> is not {language}, regenerate the reasoning.\n\n"
-            
             chat_input = [
                 {
                     "role": "system",
@@ -153,7 +180,6 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
                 {
                     "role": "user",
                     "content": (
-                        thinking_instruction +
                         "Instruction: You must select one option among A,B,C,D.\n"
                         "Respond in valid JSON format with two keys: \n"
                         f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and "
@@ -203,7 +229,8 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
                 }
                 
                 if "l2e" in mode or "e2l" in mode:
-                    base_data["pretranslated_persona"] = pretranslated
+                    # Store only the source-language persona text (used as context for next-iteration refinement).
+                    base_data["pretranslated_persona"] = pretranslated_persona_text
                 if thinking_content is not None:
                     base_data["thinking_content"] = thinking_content
                 
@@ -265,7 +292,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                         persona = (
                             prev_item["persona_description"]
                             if "l2e" not in mode and "e2l" not in mode
-                            else prev_item.get("pretranslated_persona", prev_item["persona_description"])
+                            else _extract_revised_persona_text(prev_item.get("pretranslated_persona", prev_item["persona_description"]))
                         )
                         previous_personas_data.append({
                             'persona': persona,
@@ -277,7 +304,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     old_persona = (
                         data[i]["persona_description"]
                         if "l2e" not in mode and "e2l" not in mode
-                        else data[i]["pretranslated_persona"]
+                        else _extract_revised_persona_text(data[i].get("pretranslated_persona"))
                     )
                     previous_personas_data = {
                         'persona': old_persona,
@@ -297,8 +324,10 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     continue
                 
                 result = None
+                pretranslated_persona_text = None
                 if is_translation_mode:
                     result = json_repair.loads(refine_response)
+                    pretranslated_persona_text = _extract_revised_persona_text(pretranslated)
                 else:
                     result = json_repair.loads(pretranslated)
                     
@@ -314,11 +343,6 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
             else:
                 language = country_to_language[cap(data[i]["country"])].capitalize()
             
-            # For qwen3 thinking mode in "ling" mode, add instruction to think in the relevant language
-            thinking_instruction = ""
-            if "ling" in mode and llm_utils.MODEL_NAME == "Qwen/Qwen3-4B":
-                thinking_instruction = f"You MUST write internal reasoning inside <think>...</think> in {language}. If any part of <think>...</think> is not {language}, regenerate the reasoning.\n\n"
-            
             cur_set_data = []
             for j in range(4):
                 prompt_option = data[i + j]["prompt_option"]
@@ -332,7 +356,6 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     {
                         "role": "user",
                         "content": (
-                            thinking_instruction +
                             "Is this answer true or false for this question?\n"
                             "You must choose either True or False, and provide a brief "
                             "explanation for your answer.\n"
@@ -383,7 +406,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                 }
                 
                 if "l2e" in mode or "e2l" in mode:
-                    item_data["pretranslated_persona"] = pretranslated
+                    item_data["pretranslated_persona"] = pretranslated_persona_text
                 if thinking_content is not None:
                     item_data["thinking_content"] = thinking_content
                 

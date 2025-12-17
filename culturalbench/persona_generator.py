@@ -93,6 +93,7 @@ async def translate_long_text(text, language, max_chunk_size=400, max_retries=3)
 async def translate_text(response, language, parse, max_retries=3):
     """Translate text to a given language. If parse is True, parse the response as json and return updated json object with translated revised_persona. If parse is False, return direct string translation."""
     import asyncio
+    import json_repair
     
     # Retry logic for network timeouts
     for attempt in range(max_retries):
@@ -100,11 +101,11 @@ async def translate_text(response, language, parse, max_retries=3):
             # update json object with translated revised_persona (self-refinement)
             if parse:
                 try:
-                    response = json.loads(response)
-                    translated = await translate_long_text(response["revised_persona"], language, max_retries=max_retries)
-                    response["revised_persona"] = translated
-                    return json.dumps(response, ensure_ascii=False)
-                except json.JSONDecodeError:
+                    resp_obj = json_repair.loads(response) if isinstance(response, str) else response
+                    translated = await translate_long_text(resp_obj["revised_persona"], language, max_retries=max_retries)
+                    resp_obj["revised_persona"] = translated
+                    return json.dumps(resp_obj, ensure_ascii=False)
+                except Exception:
                     return response
             # directly translate persona description (first iteration)
             translated = await translate_long_text(response, language, max_retries=max_retries)
@@ -180,7 +181,7 @@ async def generate_persona_description(question, country, mode):
     response = ""
     while attempts > 0:
         _, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
-        # check if english
+        # check if response is in correct language
         if ("e2l" in mode or "eng" in mode) and not is_english(response):
             attempts -= 1
         elif ("l2e" in mode or "ling" in mode) and is_english(response):
@@ -237,17 +238,16 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
     question_t = questions_translated[language]
     persona_t = persona_translated[language]
     predicted_answer_t = predicted_answers_translated[language]
-    reasoning_t = reasonings_translated[language]
 
     # Build content with all previous personas or just the previous one
     if difficulty == "Easy":
         # Format the prompt with appropriate description based on use_all_previous
         if use_all_previous:
-            iterations_description = "You will be provided with a question and all previous persona descriptions from previous iterations, along with the model's predicted answers and reasoning for each iteration."
+            iterations_description = "You will be provided with a question and all previous persona descriptions from previous iterations, and the model's predicted answers."
             plural_suffix = "s"
             learning_guidance = "When multiple personas are provided, analyze the progression across iterations to identify patterns and improvements. Pay special attention to the most recent iteration, and consider how the personas evolved over time to build upon previous refinements."
         else:
-            iterations_description = "You will be provided with a question, its corresponding persona description, the model's predicted answer among the 4 options, and the reasoning behind that prediction."
+            iterations_description = "You will be provided with a question, its corresponding persona description, and the model's predicted answer among the 4 options."
             plural_suffix = ""
             learning_guidance = ""
         
@@ -258,18 +258,17 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
             plural_suffix=plural_suffix,
             learning_guidance=learning_guidance
         )
+
         if use_all_previous:
-            # Format: Question (once) + all previous personas with their responses
+            # all previous personas and responses
             personas_content = ""
             for idx, prev_data in enumerate(previous_personas_data, start=1):
                 persona = prev_data.get('persona', '')
                 model_answer = prev_data.get('model_answer', '')
-                reasoning = prev_data.get('reasoning', '')
                 iteration = prev_data.get('iteration', '')
                 personas_content += f"\n--- Iteration {iteration} ---\n"
                 personas_content += f"{persona_t}: {persona}\n"
                 personas_content += f"{predicted_answer_t}: {model_answer}\n"
-                personas_content += f"{reasoning_t}: {reasoning}\n"
             
             user_content = (
                 f"{question_t}: " + question + "\n\n"
@@ -278,16 +277,14 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
             )
             
         else:
-            # Original format: single previous persona with response
+            # only previous persona and response
             prev_data = previous_personas_data
             persona = prev_data.get('persona', '')
             model_answer = prev_data.get('model_answer', '')
-            reasoning = prev_data.get('reasoning', '')
             user_content = (
                 f"{question_t}: " + question + "\n\n"
                 + f"{persona_t}: " + persona + "\n\n"
                 + f"{predicted_answer_t}: " + model_answer + "\n\n"
-                + f"{reasoning_t}: " + reasoning
             )
     # Hard mode
     else:
@@ -309,15 +306,13 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
             learning_guidance=learning_guidance
         )
         if use_all_previous:
-            # Format: Question (once) + all previous personas
+            # all previous personas
             personas_content = ""
             for idx, prev_data in enumerate(previous_personas_data, start=1):
                 persona = prev_data.get('persona', '')
-                reasoning = prev_data.get('reasoning', '')
                 iteration = prev_data.get('iteration', '')
                 personas_content += f"\n--- Iteration {iteration} ---\n"
                 personas_content += f"{persona_t}: {persona}\n"
-                personas_content += f"{reasoning_t}: {reasoning}\n"
             
             user_content = (
                 f"{question_t}: " + question + "\n\n"
@@ -325,14 +320,12 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
                 + personas_content
             )
         else:
-            # Original format: single previous persona
+            # only previous persona
             prev_data = previous_personas_data
             persona = prev_data.get('persona', '')
-            reasoning = prev_data.get('reasoning', '')
             user_content = (
                 f"{question_t}: " + question + "\n\n"
                 + f"{persona_t}: " + persona + "\n\n"
-                + f"{reasoning_t}: " + reasoning
             )
         
     chat_input = [
@@ -347,6 +340,7 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
     # 3 attempts to generate response in correct language
     attempts = 3
     while attempts > 0:
+        # _ is thinking content (not relevant)
         _, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
         # sanitize json response
         try:
@@ -362,12 +356,13 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
             attempts -= 1
 
     translated_response = None
+    fixed_json_string = json.dumps(json_repair.loads(response), ensure_ascii=False)
     # translate english revised_persona to appropriate language if e2l mode
     if "e2l" in mode:
-        translated_response = await translate_text(response, language_to_code[country_to_language[cap(country)]], parse=True)
+        translated_response = await translate_text(fixed_json_string, language_to_code[country_to_language[cap(country)]], parse=True)
     # translate ling mode revised_persona to english
     elif "l2e" in mode:
-        translated_response = await translate_text(response, language_to_code["English"], parse=True)
+        translated_response = await translate_text(fixed_json_string, language_to_code["English"], parse=True)
         
     return response, translated_response
 

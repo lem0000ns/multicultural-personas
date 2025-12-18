@@ -13,6 +13,12 @@ TEMPERATURE = 0.0
 
 # Global LLM instance
 llm = None
+external_llm = None
+
+def mistral_7b_generate(llm_instance, messages, max_tokens=1024, enable_thinking_bool=False):
+    SAMPLING_PARAMS = SamplingParams(temperature=TEMPERATURE, top_p=0.95, max_tokens=max_tokens)
+    output = llm_instance.chat(messages, SAMPLING_PARAMS)
+    return None, output[0].outputs[0].text
 
 def qwen3_4b_generate_thinking(llm_instance, messages, enable_thinking_bool=False):
     """Generate thinking and content from Qwen3"""
@@ -74,6 +80,7 @@ def llama_3_8b_instruct_generate(llm_instance, messages, max_tokens=1024, enable
 generate_text_funcs = {
    "Qwen/Qwen3-4B": qwen3_4b_generate_thinking,
    "meta-llama/Meta-Llama-3-8B-Instruct": llama_3_8b_instruct_generate,
+   "mistralai/Mistral-7B-Instruct-v0.3": mistral_7b_generate,
 }
 
 def get_llm():
@@ -96,10 +103,18 @@ def get_llm():
             llm = LLM(model=MODEL_NAME, tensor_parallel_size=4, dtype='half')
     return llm
 
+def get_external_llm():
+    """Get or initialize the LLM instance for external feedback"""
+    global external_llm
+    if external_llm is None:
+        external_llm = LLM(model="mistralai/Mistral-7B-Instruct-v0.3", trust_remote_code=True)
+    return external_llm
+
 
 def cleanup():
     """Clean up GPU memory by deleting the LLM instance."""
     global llm
+    global external_llm
     if llm is not None:
         print("Cleaning up GPU memory for LLM instance...")
         try:
@@ -109,6 +124,15 @@ def cleanup():
             del llm
             llm = None
             print("LLM instance deleted")
+            gc.collect()
+        except Exception as e:
+            print(f"Error during cleanup: {e}")
+    if external_llm is not None:
+        print("Cleaning up GPU memory for external LLM instance...")
+        try:
+            del external_llm
+            external_llm = None
+            print("External LLM instance deleted")
             gc.collect()
         except Exception as e:
             print(f"Error during cleanup: {e}")

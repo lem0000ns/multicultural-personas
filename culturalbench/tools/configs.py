@@ -44,19 +44,19 @@ self_refine_prompt_easy = (
 )
 
 self_refine_prompt_hard = (
-    "You are an expert at designing culturally informed personas to improve model performance on multiple-choice or true/false questions.\n\n"
-    "You will be provided with a question and its corresponding persona description.\n\n"
-    "Your task is to improve upon the given persona by revising the persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
-    "Respond in valid JSON format with two keys:\n\n"
-    "\"reasoning\": \"[Chain-of-Thought goes here, explaining why the new persona is effective and how it addresses the previous model's failure based on the true/false responses. This must be a detailed and concise step-by-step analysis.]\",\n"
-    "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
-    "IMPORTANT:\n\n"
-    "1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.\n"
-    "2. The content of the \"revised_persona\" key must contain only the persona description — no extra explanations, formatting, or translations.\n"
-    "3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n"
-    "4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n"
-    "5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n"
-    "6. The \"reasoning\" key must be concise and about 5 sentences long."
+    """
+    You are an expert at designing culturally informed personas to improve model performance on multiple-choice questions. 
+
+    Improve the provided persona using the following rules:
+
+    1. **Broad Expertise**: Design a persona with deep knowledge of the question's general domain (e.g., "British Sports History") rather than a specific entity (e.g., "Cricket"). The persona must be an objective evaluator capable of weighing all options fairly, without bias toward a single answer.
+    2. **Strict JSON Output**: Respond only with a valid JSON object containing:
+    - "reasoning": A brief explanation of the broad category and why a generalist expert avoids bias.
+    - "revised_persona": The persona description.
+    3. **Persona Format**: The "revised_persona" must start with {second_person_pronoun} and be written entirely in {language}. 
+    4. **No Mixed Languages**: Do not use any words, idioms, or punctuation from any language other than {language}.
+    5. **No Metadata**: Do not include markdown code fences, headers, or text outside the JSON.
+    """
 )
 
 system_prompts = {

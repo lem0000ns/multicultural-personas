@@ -86,13 +86,11 @@ def get_available_results():
     """Scan the results directory for available database files.
     
     Returns:
-        Dictionary organized as: {mode: {prompt: [files]}}
+        Dictionary organized as: {mode: [files]}
     """
     results_dir = Path(__file__).parent / "results"
     db_files = list(results_dir.rglob("*.db"))
     
-    # Organize by mode and prompt
-    # Structure: {mode: {prompt: [files]}}
     organized = {}
     
     for file in db_files:
@@ -101,32 +99,17 @@ def get_available_results():
         
         if parts[0] == "vanilla":
             mode = "vanilla"
-            prompt = None  # vanilla doesn't have prompt
         else:
-            # parts[0] is like 'p1' or 'p2'
-            # parts[1] is like 'eng', 'ling', 'e2l', 'l2e'
-            prompt = parts[0]  # p1, p2
-            mode = parts[1]    # eng, ling, e2l, l2e
+            mode = parts[0]
         
         if mode not in organized:
-            organized[mode] = {}
+            organized[mode] = []
         
-        if mode == "vanilla":
-            if "all" not in organized[mode]:
-                organized[mode]["all"] = []
-            organized[mode]["all"].append({
-                "path": str(file),
-                "name": relative_path.name,
-                "relative_path": str(relative_path)
-            })
-        else:
-            if prompt not in organized[mode]:
-                organized[mode][prompt] = []
-            organized[mode][prompt].append({
-                "path": str(file),
-                "name": relative_path.name,
-                "relative_path": str(relative_path)
-            })
+        organized[mode].append({
+            "path": str(file),
+            "name": relative_path.name,
+            "relative_path": str(relative_path)
+        })
     
     return organized
 
@@ -236,7 +219,6 @@ def main():
         st.error("No results files found in the results directory!")
         return
     
-    # Mode selection (eng, ling, e2l, l2e, vanilla)
     mode_display_names = {
         "eng": "🇺🇸 English",
         "ling": "🌍 Linguistic",
@@ -254,32 +236,9 @@ def main():
         index=0
     )
     
-    # Get the actual mode key from display name
     selected_mode = available_modes[mode_options.index(selected_mode_display)]
+    files = available_results[selected_mode]
     
-    # Prompt selection (p1, p2) - only if not vanilla
-    if selected_mode != "vanilla":
-        available_prompts = sorted(available_results[selected_mode].keys())
-        prompt_display_names = {
-            "p1": "📝 Prompt 1",
-            "p2": "📝 Prompt 2"
-        }
-        prompt_options = [prompt_display_names.get(p, p.upper()) for p in available_prompts]
-        
-        selected_prompt_display = st.sidebar.selectbox(
-            "Prompt",
-            options=prompt_options,
-            index=0
-        )
-        
-        selected_prompt = available_prompts[prompt_options.index(selected_prompt_display)]
-        files = available_results[selected_mode][selected_prompt]
-    else:
-        # For vanilla, no prompt selection needed
-        files = available_results[selected_mode]["all"]
-        selected_prompt = "N/A"
-    
-    # File selection (difficulty and iteration)
     if not files:
         st.error(f"No files found for {selected_mode_display}")
         return
@@ -297,8 +256,6 @@ def main():
     
     st.sidebar.markdown("---")
     st.sidebar.info(f"**Mode:** {selected_mode_display}")
-    if selected_mode != "vanilla":
-        st.sidebar.info(f"**Prompt:** {selected_prompt_display}")
     st.sidebar.info(f"**File:** `{selected_file['name']}`")
     
     # Load data
@@ -416,6 +373,98 @@ def main():
                         st.success(f"🏆 **Best-of-N (same LLM):** {best_of_n_accuracy:.2f}% (+{improvement:.2f}% over best iteration)")
                     else:
                         st.info(f"🏆 **Best-of-N (same LLM):** {best_of_n_accuracy:.2f}% ({improvement:.2f}% vs best iteration)")
+                
+                # Show best-of-n trajectory information
+                if best_of_n_accuracy is not None:
+                    st.subheader("🎯 Best-of-N Trajectory Information")
+                    st.info("💡 Best-of-N selects the best trajectory (persona + answer + reasoning) across all iterations. Below shows all available trajectories for each question.")
+                    
+                    # Group data by question
+                    from collections import defaultdict
+                    question_groups = defaultdict(list)
+                    for item in data:
+                        key = (item.get("question", ""), item.get("country", ""))
+                        question_groups[key].append(item)
+                    
+                    # Check if hard mode
+                    is_hard_mode = bool(data[0].get("prompt_option")) if data else False
+                    
+                    if is_hard_mode:
+                        # Hard mode: show trajectories for each prompt_option
+                        best_of_n_data = []
+                        for (question, country), items in question_groups.items():
+                            # Group by prompt_option
+                            option_groups = defaultdict(list)
+                            for item in items:
+                                prompt_option = item.get("prompt_option", "")
+                                if prompt_option:
+                                    option_groups[prompt_option].append(item)
+                            
+                            # For each prompt_option, show trajectories across iterations
+                            for prompt_option, option_items in sorted(option_groups.items()):
+                                # Sort by iteration
+                                option_items_sorted = sorted(option_items, key=lambda x: x.get("iteration", 0))
+                                
+                                # Get correct answer
+                                correct_answer = option_items_sorted[0].get("correct_answer", "")
+                                expected = "true" if str(correct_answer).lower().strip() in ["1", "true"] else "false"
+                                
+                                # Build trajectory info
+                                trajectory_rows = []
+                                for item in option_items_sorted:
+                                    iteration = item.get("iteration", "?")
+                                    answer = str(item.get("model_answer", "")).lower().strip()
+                                    is_correct = answer == expected
+                                    persona_preview = (item.get("persona_description", "") or "")[:50] + "..." if len(item.get("persona_description", "") or "") > 50 else (item.get("persona_description", "") or "")
+                                    reasoning_preview = (item.get("reasoning", "") or "")[:50] + "..." if len(item.get("reasoning", "") or "") > 50 else (item.get("reasoning", "") or "")
+                                    trajectory_rows.append({
+                                        "Question": question[:60] + "..." if len(question) > 60 else question,
+                                        "Country": country,
+                                        "Option": prompt_option[:40] + "..." if len(str(prompt_option)) > 40 else str(prompt_option),
+                                        "Iteration": iteration,
+                                        "Answer": answer.upper(),
+                                        "Correct": "✅" if is_correct else "❌",
+                                        "Persona": persona_preview,
+                                        "Reasoning": reasoning_preview
+                                    })
+                                
+                                best_of_n_data.extend(trajectory_rows)
+                        
+                        if best_of_n_data:
+                            df_best_of_n = pd.DataFrame(best_of_n_data)
+                            st.dataframe(df_best_of_n, hide_index=True, use_container_width=True, height=400)
+                    else:
+                        # Easy mode: show trajectories per question
+                        best_of_n_data = []
+                        for (question, country), items in question_groups.items():
+                            # Sort by iteration
+                            items_sorted = sorted(items, key=lambda x: x.get("iteration", 0))
+                            
+                            # Get correct answer and options
+                            correct_answer = (items_sorted[0].get("correct_answer", "") or "").upper().strip()
+                            options = items_sorted[0].get("options", {}) or {}
+                            
+                            # Show trajectories
+                            for item in items_sorted:
+                                iteration = item.get("iteration", "?")
+                                answer = (item.get("model_answer", "") or "").upper().strip()
+                                is_correct = answer == correct_answer
+                                persona_preview = (item.get("persona_description", "") or "")[:60] + "..." if len(item.get("persona_description", "") or "") > 60 else (item.get("persona_description", "") or "")
+                                reasoning_preview = (item.get("reasoning", "") or "")[:60] + "..." if len(item.get("reasoning", "") or "") > 60 else (item.get("reasoning", "") or "")
+                                
+                                best_of_n_data.append({
+                                    "Question": question[:80] + "..." if len(question) > 80 else question,
+                                    "Country": country,
+                                    "Iteration": iteration,
+                                    "Answer": answer,
+                                    "Correct": "✅" if is_correct else "❌",
+                                    "Persona": persona_preview,
+                                    "Reasoning": reasoning_preview
+                                })
+                        
+                        if best_of_n_data:
+                            df_best_of_n = pd.DataFrame(best_of_n_data)
+                            st.dataframe(df_best_of_n, hide_index=True, use_container_width=True, height=400)
                 
                 # (best-of-n removed)
         

@@ -19,7 +19,7 @@ def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode)
         total: Total number of questions
         iteration: Current iteration number
         difficulty: "Easy" or "Hard"
-        mode: Mode string (e.g., "eng_p1")
+        mode: Mode string (e.g., "eng", "ling")
     
     Returns:
         Accuracy for this iteration
@@ -37,7 +37,7 @@ async def run_easy_iterations(mode, num_iterations, db_path):
     """Run iterations for Easy difficulty.
     
     Args:
-        mode: Mode (eng_*, ling_*, or e2l_*)
+        mode: Mode (eng, ling, l2e, e2l)
         num_iterations: Total number of iterations
         db_path: Path to database file containing results
     

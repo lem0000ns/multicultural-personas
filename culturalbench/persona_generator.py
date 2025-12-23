@@ -149,18 +149,18 @@ async def generate_persona_description(question, country, mode):
     Args:
         question: The question text
         country: The country name
-        mode: The mode (eng_*, ling_*, e2l_*, or l2e_*)
+        mode: The mode (eng, ling, e2l, or l2e)
     
     Returns:
         Generated persona description
     """
+    
     llm_instance = get_llm()
     if "eng" in mode or "e2l" in mode:
         language = "English"
     else:
         language = country_to_language[cap(country)].lower()
     
-    # Get system prompt - call lambda for ling mode
     if "eng" in mode or "e2l" in mode:
         system_prompt = system_prompts[mode]
     else:

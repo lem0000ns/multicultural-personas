@@ -187,7 +187,7 @@ async def evaluate_easy_initial(ds, mode):
     data = {}
     correct = total = 0
     
-    for i in range(4): 
+    for i in range(len(ds)): 
         cur_row = ds[i]
         prompt_question = cur_row["prompt_question"]
         option_a = cur_row["prompt_option_a"]
@@ -319,8 +319,8 @@ async def run_initial_eval(difficulty, mode, custom=None):
         "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
     }
     
-    # write results to database (initial write)
-    db_path = f"../results/{mode[-2:]}/{mode[:-3]}/{difficulty.lower()}_t{llm_utils.TEMPERATURE}_{model_to_save[llm_utils.MODEL_NAME]}"
+    mode_prefix = mode.split("_")[0]
+    db_path = f"../results/{mode_prefix}/{difficulty.lower()}_t{llm_utils.TEMPERATURE}_{model_to_save[llm_utils.MODEL_NAME]}"
     if custom:
         db_path += f"_{custom}"
     db_path += ".db"

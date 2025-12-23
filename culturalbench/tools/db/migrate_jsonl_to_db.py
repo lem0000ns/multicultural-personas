@@ -8,33 +8,21 @@ from db_utils import save_results, save_accuracy
 
 
 def parse_difficulty_and_mode_from_path(file_path):
-    """Extract difficulty and mode from file path.
-    
-    Example paths:
-    - ../results/p1/ling/i5/persona_Easy.jsonl
-    - ../results/p1/eng/i3/persona_Hard.jsonl
-    """
+    """Extract difficulty and mode from file path."""
     path = Path(file_path)
     
-    # Get difficulty from filename
     difficulty = "Easy" if "Easy" in path.name else "Hard"
     
-    # Get mode from path parts
     parts = path.parts
-    # Find the mode (eng, ling, l2e, e2l)
     mode_part = None
-    persona_num = None
     
-    for i, part in enumerate(parts):
+    for part in parts:
         if part in ['eng', 'ling', 'l2e', 'e2l']:
             mode_part = part
-            # Get persona number from previous part (e.g., p1, p2)
-            if i > 0:
-                persona_num = parts[i-1]
             break
     
-    if mode_part and persona_num:
-        mode = f"{mode_part}_{persona_num}"
+    if mode_part:
+        mode = f"{mode_part}_p1"
     else:
         mode = "unknown"
     

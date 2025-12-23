@@ -4,9 +4,9 @@ from db_utils import load_results
 
 
 def calculate_consistency(mode, temperature, model_name):
-    """Calculate easy-hard consistency for a given mode + prompt"""
-    db_path_easy = f"../../../results/{mode[-2:]}/{mode[:-3]}/easy_t{temperature}_{model_name}.db"
-    db_path_hard = f"../../../results/{mode[-2:]}/{mode[:-3]}/hard_t{temperature}_{model_name}.db"
+    mode_prefix = mode.split("_")[0]
+    db_path_easy = f"../../../results/{mode_prefix}/easy_t{temperature}_{model_name}.db"
+    db_path_hard = f"../../../results/{mode_prefix}/hard_t{temperature}_{model_name}.db"
 
     print("\n\nCalculating consistency for", mode, temperature, model_name)
     print("=" * 50)

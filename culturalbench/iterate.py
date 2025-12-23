@@ -13,7 +13,7 @@ from tools import llm_utils
 async def main():
     """Main async function to run evaluation and iterations."""
     parser = argparse.ArgumentParser(description="Run initial evaluation and iterations")
-    parser.add_argument("--mode", type=str, required=True, help="Mode to run (e.g., ling_p2, eng_p1)")
+    parser.add_argument("--mode", type=str, required=True, help="Mode to run (e.g., ling, eng)")
     parser.add_argument("--num_iterations", type=int, required=True, help="Total number of iterations including initial evaluation")
     parser.add_argument("--difficulty", type=str, required=True, choices=["easy", "hard", "Easy", "Hard"], help="Difficulty level")
     parser.add_argument("--model", type=str, required=False, default="meta-llama/Meta-Llama-3-8B-Instruct", help="Model to use")
@@ -31,10 +31,8 @@ async def main():
         
     difficulty = args.difficulty.capitalize()
     
-    # track all accuracies
     all_accuracies = []
     
-    # run initial evaluation
     initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode, args.custom)
     all_accuracies.append(initial_accuracy)
 
@@ -59,8 +57,8 @@ async def main():
             save_majority_vote_accuracy(db_path, difficulty, args.mode, majority_accuracy, correct, total)
             print(f"Majority Voting Accuracy: {majority_accuracy:.4f} ({correct}/{total})")
         else:
-            # Best-of-n mode: same/original LLM selects best persona, then answers with it
-            print(f"\n=== Running Best-of-{args.num_iterations} Persona Selection (same LLM) ===")
+            # Best-of-n mode
+            print(f"\n=== Running Best-of-{args.num_iterations} Trajectory Selection ===")
             best_of_n_accuracy, correct, total = await run_best_of_n(db_path, difficulty, args.mode)
             save_best_of_n_accuracy(db_path, difficulty, args.mode, best_of_n_accuracy, correct, total)
             print(f"Best-of-{args.num_iterations} Accuracy: {best_of_n_accuracy:.4f} ({correct}/{total})")
@@ -75,7 +73,7 @@ async def main():
         print(f"Majority Voting (Best-of-{args.num_iterations}): {majority_accuracy:.4f}")
 
     if best_of_n_accuracy is not None:
-        print(f"Best-of-{args.num_iterations} (same LLM): {best_of_n_accuracy:.4f}")
+        print(f"Best-of-{args.num_iterations}: {best_of_n_accuracy:.4f}")
 
 if __name__ == "__main__":
     try:

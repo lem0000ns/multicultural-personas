@@ -7,7 +7,7 @@ def normalize_answer(answer):
     return bool(answer)
 
 def verify_country(country: str, iteration: int):
-    with open("./results/p2/ling/i5/persona_Hard.jsonl", "r") as f:
+    with open("./results/ling/i5/persona_Hard.jsonl", "r") as f:
         data = [json.loads(line) for line in f if line.strip() and "Accuracy" not in line]
     correct = 0
     total = 0

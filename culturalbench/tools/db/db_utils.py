@@ -78,7 +78,7 @@ def save_results(db_path: str, data: Dict, difficulty: str, mode: str):
         db_path: Path to the SQLite database file
         data: Dictionary of results to save
         difficulty: "Easy" or "Hard"
-        mode: Mode string (e.g., "eng_p1", "ling_p1", "l2e_p1")
+        mode: Mode string (e.g., "eng_p1", "ling_p1", "l2e_p1") - stored with _p1 suffix for backwards compatibility
     """
     init_db(db_path)
     

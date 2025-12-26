@@ -3,7 +3,7 @@
 import json
 from persona_generator import generate_new_persona, cap
 from tools.utils import country_to_language
-from tools.llm_utils import get_llm, generate_text_funcs
+from tools.llm_utils import get_llm, generate_text_funcs, cleanup, pre_generate_all_feedback
 from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration, load_results
 import json_repair
@@ -19,15 +19,16 @@ def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode)
         total: Total number of questions
         iteration: Current iteration number
         difficulty: "Easy" or "Hard"
-        mode: Mode string (e.g., "eng_p1")
+        mode: Mode string (e.g., "eng")
     
     Returns:
         Accuracy for this iteration
     """
-    save_results(db_path, new_data, difficulty, mode)
+    mode_for_db = f"{mode}_p1"
+    save_results(db_path, new_data, difficulty, mode_for_db)
     
     accuracy = correct / total if total > 0 else 0
-    save_accuracy(db_path, iteration, difficulty, mode, accuracy, correct, total)
+    save_accuracy(db_path, iteration, difficulty, mode_for_db, accuracy, correct, total)
     
     print(f"Iteration {iteration} Accuracy: {accuracy}")
     return accuracy
@@ -51,6 +52,18 @@ async def run_easy_iterations(mode, num_iterations, db_path):
         # Load data from previous iteration
         data = load_previous_iteration(db_path, cur_iteration)
         print(f"Currently running iteration {cur_iteration}")
+        
+        # Step 1: Cleanup main LLM
+        print(f"[Iteration {cur_iteration}] Cleaning up main LLM...")
+        cleanup()
+        
+        # Step 2: Pre-generate all feedback using external LLM
+        print(f"[Iteration {cur_iteration}] Pre-generating feedback for {len(data)} questions...")
+        pre_generate_all_feedback(data, "Easy")
+        
+        # Step 3: Cleanup external LLM
+        print(f"[Iteration {cur_iteration}] Cleaning up external LLM...")
+        cleanup()
         
         correct = total = 0
         new_data = {}
@@ -83,6 +96,7 @@ async def run_easy_iterations(mode, num_iterations, db_path):
                     previous_personas_data,
                     mode,
                     item["country"],
+                    question_index=i,
                 )
                 # if not in correct language, disregard this question
                 if refine_response is None and is_translation_mode:
@@ -217,6 +231,23 @@ async def run_hard_iterations(mode, num_iterations, db_path):
     for cur_iteration in range(2, num_iterations + 1):
         # Load data from previous iteration
         data = load_previous_iteration(db_path, cur_iteration)
+        print(f"Currently running iteration {cur_iteration}")
+        
+        # Step 1: Cleanup main LLM
+        print(f"[Iteration {cur_iteration}] Cleaning up main LLM...")
+        cleanup()
+        
+        # Step 2: Pre-generate all feedback using external LLM
+        print(f"[Iteration {cur_iteration}] Pre-generating feedback for {len(data)} questions...")
+        pre_generate_all_feedback(data, "Hard")
+        
+        # Step 3: Cleanup external LLM
+        print(f"[Iteration {cur_iteration}] Cleaning up external LLM...")
+        cleanup()
+        
+        # Step 4: Initialize main LLM for processing
+        print(f"[Iteration {cur_iteration}] Initializing main LLM...")
+        get_llm()  # Initialize main LLM
         
         correct = total = 0
         new_data = {}
@@ -246,6 +277,7 @@ async def run_hard_iterations(mode, num_iterations, db_path):
                     previous_personas_data,
                     mode,
                     data[i]["country"],
+                    question_index=i,
                 )
                 # if not in correct language, disregard this question (set of 4 options)
                 if refine_response is None and is_translation_mode:

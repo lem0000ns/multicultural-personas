@@ -1,7 +1,7 @@
 """Persona generation and refinement functions."""
 
 from tools.utils import country_to_language, language_to_code, lang_to_spp
-from tools.configs import system_prompts, self_refine_prompt_easy, self_refine_prompt_hard
+from tools.configs import system_prompts, self_refine_prompt_easy, self_refine_prompt_hard, feedback_prompt_easy, feedback_prompt_hard
 from tools.llm_utils import get_llm, generate_text_funcs
 from tools import llm_utils
 import googletrans
@@ -134,6 +134,22 @@ async def translate_text(response, language, parse, max_retries=3):
                 # For other exceptions, re-raise
                 raise
 
+def get_feedback(difficulty, question, persona, model_answer=None, question_index=None):
+    """Get feedback from pre-generated feedback array.
+    
+    Args:
+        difficulty: "Easy" or "Hard"
+        question: Question text (for backward compatibility, not used if question_index provided)
+        persona: Persona text (for backward compatibility, not used if question_index provided)
+        model_answer: Model answer (for backward compatibility, not used if question_index provided)
+        question_index: Index into pre-generated feedback array
+    
+    Returns:
+        Feedback string
+    """
+    from tools.llm_utils import pre_generated_feedback
+    
+    return pre_generated_feedback[question_index]
 
 def cap(country):
     """Capitalize each word in country name."""
@@ -198,7 +214,7 @@ async def generate_persona_description(question, country, mode):
     return response, translated_response
 
 
-async def generate_new_persona(difficulty, question, previous_personas_data, mode, country):
+async def generate_new_persona(difficulty, question, previous_personas_data, mode, country, question_index=None):
     """Generate new persona description through self-refinement.
     
     For eng mode, generate english persona description. For ling mode, generate persona 
@@ -218,6 +234,7 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
                 - 'reasoning': reasoning for the answer
         mode: The mode (eng_*, ling_*, or e2l_*)
         country: The country name
+        question_index: Index for looking up pre-generated feedback
     
     Returns:
         New persona description
@@ -228,8 +245,6 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
     else:
         language = country_to_language[cap(country)]
     
-    # self-refinement
-
     # Build content with previous persona
     if difficulty == "Easy":
         self_refine_prompt = self_refine_prompt_easy.format(
@@ -239,13 +254,14 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
         prev_data = previous_personas_data
         persona = prev_data.get('persona', '')
         model_answer = prev_data.get('model_answer', '')
-        reasoning = prev_data.get('reasoning', '')
+
+        feedback = get_feedback(difficulty, question, persona, model_answer, question_index=question_index)
 
         user_content = (
             "Question: " + question + "\n\n"
             + "Persona: " + persona + "\n\n"
             + "Predicted answer: " + model_answer + "\n\n"
-            + "Reasoning: " + reasoning
+            + "Feedback: " + feedback
         )
     # Hard mode
     else:
@@ -255,12 +271,13 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
         )
         prev_data = previous_personas_data
         persona = prev_data.get('persona', '')
-        reasoning = prev_data.get('reasoning', '')
+
+        feedback = get_feedback(difficulty, question, persona, question_index=question_index)
 
         user_content = (
             "Question: " + question + "\n\n"
             + "Persona: " + persona + "\n\n"
-            + "Reasoning: " + reasoning
+            + "Feedback: " + feedback
         )
         
     chat_input = [

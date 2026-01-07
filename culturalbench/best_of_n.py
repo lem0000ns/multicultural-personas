@@ -70,12 +70,35 @@ async def select_best_trajectory(difficulty: str, question: str, country: str, p
     Returns:
         JSON string response from LLM
     """
-    # Build trajectories list text
+    MAX_PROMPT_LENGTH = 8192
+    # Reserve space for prompt template and question/country/options (estimate ~1000 chars)
+    RESERVED_SPACE = 1000
+    MAX_TRAJECTORIES_CONTENT = MAX_PROMPT_LENGTH - RESERVED_SPACE
+    
+    def truncate_text(text: str, max_length: int) -> str:
+        """Truncate text to max_length, adding ellipsis if truncated."""
+        if len(text) <= max_length:
+            return text
+        return text[:max_length-3] + "..."
+    
+    # Calculate per-trajectory max length (distribute available space across trajectories)
+    num_trajectories = len(trajectories)
+    if num_trajectories == 0:
+        raise ValueError("No trajectories provided")
+    
+    # Estimate overhead per trajectory (headers, labels, etc. ~100 chars per trajectory)
+    overhead_per_traj = 100
+    available_per_traj = (MAX_TRAJECTORIES_CONTENT - (num_trajectories * overhead_per_traj)) // num_trajectories
+    max_persona_len = available_per_traj // 3
+    max_reasoning_len = available_per_traj // 2
+    max_answer_len = 200  # Answers are typically short
+    
+    # Build trajectories list text with truncation
     trajectories_list = ""
     for idx, traj in enumerate(trajectories, start=1):
-        persona = traj.get("persona_description", "")
-        answer = traj.get("model_answer", "")
-        reasoning = traj.get("reasoning", "")
+        persona = truncate_text(traj.get("persona_description", ""), max_persona_len)
+        answer = truncate_text(traj.get("model_answer", ""), max_answer_len)
+        reasoning = truncate_text(traj.get("reasoning", ""), max_reasoning_len)
         trajectories_list += f"\n--- Trajectory {idx} ---\n"
         trajectories_list += f"Persona: {persona}\n"
         trajectories_list += f"Answer: {answer}\n"
@@ -101,6 +124,44 @@ async def select_best_trajectory(difficulty: str, question: str, country: str, p
             prompt_option=prompt_option,
             trajectories_list=trajectories_list,
         )
+    
+    # Final check - if still too long, truncate more aggressively
+    if len(prompt) > MAX_PROMPT_LENGTH:
+        # Calculate how much we need to reduce
+        excess = len(prompt) - MAX_PROMPT_LENGTH
+        # Reduce reasoning length (usually the longest component)
+        reduction_per_traj = excess // num_trajectories
+        trajectories_list = ""
+        for idx, traj in enumerate(trajectories, start=1):
+            persona = truncate_text(traj.get("persona_description", ""), max_persona_len)
+            answer = truncate_text(traj.get("model_answer", ""), max_answer_len)
+            # Reduce reasoning more aggressively
+            new_reasoning_len = max(100, max_reasoning_len - reduction_per_traj)
+            reasoning = truncate_text(traj.get("reasoning", ""), new_reasoning_len)
+            trajectories_list += f"\n--- Trajectory {idx} ---\n"
+            trajectories_list += f"Persona: {persona}\n"
+            trajectories_list += f"Answer: {answer}\n"
+            trajectories_list += f"Reasoning: {reasoning}\n"
+        
+        # Rebuild prompt with truncated trajectories
+        if difficulty == "Easy":
+            prompt = TRAJECTORY_SELECTION_EASY_PROMPT.format(
+                question=question,
+                country=country,
+                options_text=options_text,
+                trajectories_list=trajectories_list,
+            )
+        else:
+            prompt = TRAJECTORY_SELECTION_HARD_PROMPT.format(
+                question=question,
+                country=country,
+                prompt_option=prompt_option,
+                trajectories_list=trajectories_list,
+            )
+        
+        # If still too long after aggressive truncation, warn but proceed
+        if len(prompt) > MAX_PROMPT_LENGTH:
+            print(f"Warning: Prompt still exceeds limit after truncation: {len(prompt)} chars (limit: {MAX_PROMPT_LENGTH})")
     
     llm_instance = get_llm()
     _, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, [{"role": "user", "content": prompt}], enable_thinking_bool=False)

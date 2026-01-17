@@ -19,21 +19,7 @@ import math
 
 import openai
 from openai import AzureOpenAI,OpenAI
-from transformers import T5Tokenizer, T5ForConditionalGeneration, AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer, LlamaTokenizer, pipeline, AutoConfig, BitsAndBytesConfig
-from transformers.generation.utils import GenerationConfig
-from peft import PeftModel, PeftConfig
-import torch
-import anthropic
 from typing import Union
-import google.generativeai as genai
-from google.generativeai.types import safety_types
-from google.oauth2 import service_account
-import vertexai
-from vertexai.language_models import TextGenerationModel
-import anthropic
-from anthropic import HUMAN_PROMPT, AI_PROMPT
-import cohere
-from together import Together
 
 MODEL_PATHS = {
     "gpt-3.5-turbo-0125":"gpt-3.5-turbo-0125",
@@ -83,6 +69,13 @@ def get_tokenizer_model(model_name,model_path,model_cache_dir):
     tokenizer,model = None,None
     
     if 'gpt' not in model_name and 'gemini' not in model_name and 'claude' not in model_name and 'bison' not in model_name and 'command' not in model_name and 'Qwen' not in model_name:
+        # Lazy import for local models only
+        try:
+            from transformers import T5Tokenizer, T5ForConditionalGeneration, AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer, LlamaTokenizer, pipeline, AutoConfig, BitsAndBytesConfig
+            from peft import PeftModel, PeftConfig
+            import torch
+        except ImportError:
+            raise ImportError("transformers, peft, and torch packages are required for local models. Install them with: pip install transformers peft torch")
         if 'llama' in model_name.lower():
             tokenizer = LlamaTokenizer.from_pretrained(model_path, use_fast=False,token=os.getenv("HF_TOKEN"))
             model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", 
@@ -201,6 +194,10 @@ def get_together_response(
     dialogue_history=None,
     system_message=None
 ):
+    try:
+        from together import Together
+    except ImportError:
+        raise ImportError("together package is required for Together AI models. Install it with: pip install together")
 
     client = Together(api_key=os.getenv("TOGETHER_API_KEY"))
     n_try = 0
@@ -251,6 +248,10 @@ def get_cohere_response(
     max_try=10,
     dialogue_history=None
 ):
+    try:
+        import cohere
+    except ImportError:
+        raise ImportError("cohere package is required for Cohere models. Install it with: pip install cohere")
     
     co = cohere.Client(os.getenv("COHERE_API_KEY"))
     
@@ -363,16 +364,19 @@ def get_gpt_response(
             if (model_name.startswith("gpt-3.5-turbo") and 'instruct' not in model_name) or model_name.startswith("gpt-4"):
                 time.sleep(0.5)
                 res = client.chat.completions.create(**prompt)
-                outputs = [o['message']['content'].strip("\n ") for o in res['choices']]
+                # Handle response object properly
+                outputs = [choice.message.content.strip("\n ") for choice in res.choices]
             else:
                 res = client.chat.completions.create(**prompt)
-                outputs = [o['text'].strip("\n ") for o in res['choices']]
+                outputs = [choice.text.strip("\n ") for choice in res.choices]
             break
         except KeyboardInterrupt:
             raise Exception("KeyboardInterrupted!")
-        except:
-            print("Exception: Sleep for 10 sec")
-            time.sleep(10)
+        except Exception as e:
+            print(f"Exception (attempt {n_try + 1}/{max_try}): {type(e).__name__}: {str(e)}")
+            if n_try < max_try - 1:
+                print("Sleep for 10 sec before retry...")
+                time.sleep(10)
             n_try += 1
             continue
         
@@ -424,6 +428,11 @@ def inference_azure(prompt,model_name,temperature=0,top_p=1,max_attempt=10,syste
     return res.strip()
 
 def inference_claude(prompt,temperature=0,top_p=1,model_name="culture-gpt-4-1106-Preview",max_attempt=10,system_message=None):
+    try:
+        import anthropic
+    except ImportError:
+        raise ImportError("anthropic package is required for Claude models. Install it with: pip install anthropic")
+    
     c =  anthropic.Anthropic(api_key=os.getenv('CLAUDE_API_KEY'))    
     
     attempt = 0
@@ -469,6 +478,13 @@ def inference_claude(prompt,temperature=0,top_p=1,model_name="culture-gpt-4-1106
     return res.strip()
     
 def model_inference(prompt,model_path,model,tokenizer,max_length=512,system_message=None):
+    # Lazy import for local models only
+    try:
+        from transformers.generation.utils import GenerationConfig
+        import torch
+    except ImportError:
+        pass
+    
     if 'Orion' in model_path:
         model.generation_config = GenerationConfig.from_pretrained(model_path)
         messages = [{"role": "user", "content": prompt}]
@@ -615,6 +631,11 @@ def get_gemini_response(prompt,model_name,
     top_p=1.0,
     greedy=False,
     max_attempt=10,):
+    try:
+        import google.generativeai as genai
+        from google.generativeai.types import safety_types
+    except ImportError:
+        raise ImportError("google-generativeai package is required for Gemini models. Install it with: pip install google-generativeai")
     
     GOOGLE_API_KEY=os.getenv('GOOGLE_API_KEY')
     genai.configure(api_key=GOOGLE_API_KEY)
@@ -676,6 +697,11 @@ def get_palm_response(prompt,model_name,
     top_p=1.0,
     greedy=False,
     max_attempt=10,):
+    try:
+        import google.generativeai as genai
+        from google.generativeai.types import safety_types
+    except ImportError:
+        raise ImportError("google-generativeai package is required for PaLM models. Install it with: pip install google-generativeai")
     
     GOOGLE_API_KEY=os.getenv('GOOGLE_API_KEY')
     genai.configure(api_key=GOOGLE_API_KEY)
@@ -730,6 +756,15 @@ def get_palm2_response(prompt,model_name,
     top_p=1.0,
     greedy=False,
     max_attempt=10,):
+    try:
+        from google.oauth2 import service_account
+        import vertexai
+        from vertexai.language_models import TextGenerationModel
+        import google.generativeai as genai
+        from google.generativeai.types import safety_types
+    except ImportError:
+        raise ImportError("google-cloud-aiplatform and google-generativeai packages are required for Bison models. Install them with: pip install google-cloud-aiplatform google-generativeai")
+    
     credentials = service_account.Credentials.from_service_account_file(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
     vertexai.init(project=os.getenv('GOOGLE_PROJECT_NAME'),credentials=credentials)
     

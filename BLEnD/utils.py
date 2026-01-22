@@ -415,7 +415,8 @@ def inference_azure(prompt,model_name,temperature=0,top_p=1,max_attempt=10,syste
                 break
         except KeyboardInterrupt:
             raise Exception("KeyboardInterrupted!")
-        except:
+        except Exception as e:
+            print(f"Exception (attempt {attempt + 1}/{max_attempt}): {type(e).__name__}: {str(e)}")
             print("Exception: Sleep for 10 sec")
             time.sleep(10)
             attempt += 1
@@ -477,7 +478,7 @@ def inference_claude(prompt,temperature=0,top_p=1,model_name="culture-gpt-4-1106
             return "UNKNOWN_ERROR"
     return res.strip()
     
-def model_inference(prompt,model_path,model,tokenizer,max_length=512,system_message=None):
+def model_inference(prompt,model_path,model,tokenizer,max_length=512,system_message=None,temperature=1.0,top_p=1.0):
     # Lazy import for local models only
     try:
         from transformers.generation.utils import GenerationConfig
@@ -619,8 +620,16 @@ def model_inference(prompt,model_path,model,tokenizer,max_length=512,system_mess
         )[0]
     
     else:
+        # Default handling for models like aya-101
+        if system_message:
+            prompt = f"{system_message}\n\n{prompt}"
         input_ids = tokenizer(prompt, return_tensors="pt", return_token_type_ids=False).to(model.device)
-        outputs = model.generate(**input_ids,max_length=max_length)
+        generate_kwargs = {"max_length": max_length, "do_sample": True}
+        if temperature > 0:
+            generate_kwargs["temperature"] = temperature
+        if top_p < 1.0:
+            generate_kwargs["top_p"] = top_p
+        outputs = model.generate(**input_ids, **generate_kwargs)
         result = tokenizer.decode(outputs[0],skip_special_tokens=True)
         result = result.replace(prompt,'').strip()
         
@@ -847,7 +856,7 @@ def get_model_response(model_name,prompt,model,tokenizer,temperature,top_p,gpt_a
     elif 'Qwen' in model_name:
         response = get_together_response(prompt,model_name=model_name,temperature=temperature,top_p=top_p,system_message=system_message)
     else:
-        response = model_inference(prompt,model_path=model_name,model=model,tokenizer=tokenizer, system_message=system_message)
+        response = model_inference(prompt,model_path=model_name,model=model,tokenizer=tokenizer, system_message=system_message, temperature=temperature, top_p=top_p)
             
     return response
 
@@ -910,17 +919,25 @@ def read_jsonl(filename):
 def write_csv_row(values,filename):
     open_trial = 0
     
+    # Ensure directory exists
+    dirname = os.path.dirname(filename)
+    if dirname:  # Only create directory if filename has a path
+        os.makedirs(dirname, exist_ok=True)
+    
     while True:
         if open_trial > 10:
-            raise Exception("something wrong")
+            raise Exception(f"Failed to write to {filename} after 10 attempts")
 
         try:
             with open(filename, "a", encoding="utf-8") as f:
                 writer = csv.writer(f)
                 writer.writerow(values)
             break
-        except:
-            print("open failed")
+        except Exception as e:
+            open_trial += 1
+            if open_trial <= 3:  # Only print first few errors to avoid spam
+                print(f"open failed (attempt {open_trial}/10): {str(e)}")
+            time.sleep(0.1)  # Small delay before retry
             continue
 
 def replace_country_name(s,country):

@@ -10,32 +10,90 @@ def evaluate_all_metrics(
     ):
     
     if not os.path.exists(eval_res_filename):
-        write_csv_row(['model','country','language','prompt_no','eval_method','score'],eval_res_filename)
+        write_csv_row(['model','country','language','prompt_no','eval_method','score','iteration'],eval_res_filename)
     
     res_df = get_model_response_file(data_dir=response_dir,model=model,country=country,language=language,prompt_no=prompt_no)
-      
+    
+    # Check if iteration column exists
+    has_iteration = 'iteration' in res_df.columns
+    
+    # Get unique iterations if available, otherwise evaluate all at once
+    if has_iteration:
+        iterations = sorted(res_df['iteration'].unique())
+        print(f"Found iterations: {iterations}")
+    else:
+        iterations = [None]  # Evaluate all data at once
+    
     real_annotation = get_annotations(data_dir=annotation_dir,country=country,template=annotation_template)
     
-    sem_b,sem_w,res_df = soft_exact_match(country=country,language=language,annotation_dict=real_annotation,response_df=res_df,id_col=id_col,r_col=r_col,annotations_key=annotations_key)
-    write_csv_row([model,country,language,prompt_no,'SEM-B',sem_b],eval_res_filename)
-    write_csv_row([model,country,language,prompt_no,'SEM-W',sem_w],eval_res_filename)
+    # Store scores for each iteration
+    iteration_scores = {}
     
-    res_df.to_csv(os.path.join(response_dir,f'{model}_{country}_{language}_{prompt_no}_response_score.csv'),index=False,encoding='utf-8')
+    # Evaluate for each iteration
+    for iteration in iterations:
+        # Filter dataframe by iteration if available
+        if has_iteration and iteration is not None:
+            iter_df = res_df[res_df['iteration'] == iteration].copy()
+            print(f"\n{'='*60}")
+            print(f"Evaluating Iteration {iteration}")
+            print(f"{'='*60}\n")
+        else:
+            iter_df = res_df.copy()
+            print(f"\n{'='*60}")
+            print(f"Evaluating All Data (no iteration column)")
+            print(f"{'='*60}\n")
+        
+        if len(iter_df) == 0:
+            print(f"Warning: No data found for iteration {iteration}. Skipping.")
+            continue
+        
+        sem_b,sem_w,iter_df_scored = soft_exact_match(country=country,language=language,annotation_dict=real_annotation,response_df=iter_df,id_col=id_col,r_col=r_col,annotations_key=annotations_key)
+        
+        # Store iteration score
+        iteration_key = f"iteration_{iteration}" if iteration is not None else "all"
+        iteration_scores[iteration_key] = {'SEM-B': sem_b, 'SEM-W': sem_w}
+        
+        # Write to CSV with iteration column
+        write_csv_row([model,country,language,prompt_no,'SEM-B',sem_b,iteration if iteration is not None else ''],eval_res_filename)
+        write_csv_row([model,country,language,prompt_no,'SEM-W',sem_w,iteration if iteration is not None else ''],eval_res_filename)
+        
+        # Save scored dataframe with iteration suffix
+        if has_iteration and iteration is not None:
+            iter_df_scored.to_csv(os.path.join(response_dir,f'{model}_{country}_{language}_{prompt_no}_response_score_iter{iteration}.csv'),index=False,encoding='utf-8')
+        else:
+            iter_df_scored.to_csv(os.path.join(response_dir,f'{model}_{country}_{language}_{prompt_no}_response_score.csv'),index=False,encoding='utf-8')
     
-    # Multiple Choice Question
+    # Multiple Choice Question (only for English, evaluated once, not per iteration)
     if language == 'English':
-        mc_score = multiple_choice_score(model,mc_dir,f'{model}-mc_res.csv',mc_res_file,eval_res_file,wrong_country_ratio_file,country)    
-        write_csv_row([model,country,'English',None,'MC',mc_score],eval_res_file)
+        mc_res_file = f'{model}-mc_res.csv'
+        if os.path.exists(os.path.join(mc_dir, mc_res_file)):
+            mc_score = multiple_choice_score(model,mc_dir,mc_res_file,None,eval_res_filename,None,country)    
+            write_csv_row([model,country,'English',None,'MC',mc_score,''],eval_res_filename)
+        else:
+            print(f"Warning: MCQ response file {mc_res_file} not found in {mc_dir}. Skipping MCQ evaluation.")
      
     # leave the latest result if duplicated
     # Read the file as pd.DataFrame
     df = pd.read_csv(eval_res_filename)
 
-    # Delete duplicate lines regarding model, country, language, prompt_no, eval_method
-    df.drop_duplicates(subset=['model', 'country', 'language', 'prompt_no', 'eval_method'], keep='last', inplace=True)
+    # Delete duplicate lines regarding model, country, language, prompt_no, eval_method, iteration
+    if 'iteration' in df.columns:
+        df.drop_duplicates(subset=['model', 'country', 'language', 'prompt_no', 'eval_method', 'iteration'], keep='last', inplace=True)
+    else:
+        df.drop_duplicates(subset=['model', 'country', 'language', 'prompt_no', 'eval_method'], keep='last', inplace=True)
 
     # Write the modified DataFrame back to the file
     df.to_csv(eval_res_filename, index=False, encoding='utf-8')
+    
+    # Print summary per iteration
+    print(f"\n{'='*60}")
+    print(f"Evaluation Summary for {model} - {country} - {language} - {prompt_no}")
+    print(f"{'='*60}")
+    for iter_key, scores in sorted(iteration_scores.items()):
+        print(f"{iter_key.upper()}:")
+        print(f"  SEM-B (Binary): {scores['SEM-B']:.4f}")
+        print(f"  SEM-W (Weighted): {scores['SEM-W']:.4f}")
+    print(f"{'='*60}\n")
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Choose your model(s) & language(s)')

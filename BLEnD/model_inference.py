@@ -1,4 +1,14 @@
 from utils import *
+import sys
+import os
+import json
+import json_repair
+
+# Add evaluation directory to path for persona utilities
+eval_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'evaluation')
+if eval_dir not in sys.path:
+    sys.path.append(eval_dir)
+from persona_util import persona_prompt_saq, persona_refine_prompt_saq
 
 parser = argparse.ArgumentParser(description='Choose your model(s) & language(s)')
 parser.add_argument('--model',type=str,
@@ -30,12 +40,14 @@ parser.add_argument('--model_cache_dir',type=str,default='.cache',
 parser.add_argument("--gpt_azure", type=str2bool, nargs='?',
                     const=True, default=False,
                     help="Whether you are using the AzureOpenAI for GPT-models' response generation.")
-parser.add_argument('--temperature',type=int,default=0,
+parser.add_argument('--temperature',type=float,default=0,
                     help='Provide generation temperature for GPT models.')
 parser.add_argument('--top_p',type=int,default=0,
                     help='Provide generation top_p for GPT models.')
 parser.add_argument('--gpus',type=str,default=None,
                     help='Provide GPU IDs to use (e.g., "0,1"). Sets CUDA_VISIBLE_DEVICES environment variable.')
+parser.add_argument('--num_iterations',type=int,default=1,
+                    help='Provide the number of iterations to run.')
 
 args = parser.parse_args()
 
@@ -48,7 +60,7 @@ def make_prompt(question,prompt_no,language,country,prompt_sheet):
 
     return prompt.replace('{q}',question)
 
-def generate_response(model_name,model_path,tokenizer,model,language,country,q_df,q_col,id_col,output_dir,prompt_no=None,prompt_dir=None,prompt_file=None):
+def generate_response(model_name,model_path,tokenizer,model,language,country,q_df,q_col,id_col,output_dir,prompt_no=None,prompt_dir=None,prompt_file=None,iteration=1):
     replace_country_flag = False
     if language != COUNTRY_LANG[country] and language == 'English':
         replace_country_flag = True
@@ -84,19 +96,40 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
         output_filename = os.path.join(output_dir,f"{model_name}-{country}_{language}_{prompt_no}_result.csv")
     else:
         output_filename = os.path.join(output_dir,f"{model_name}-{country}_{language}_result.csv")
+    
+    # Load previous iteration results if iteration > 1
+    previous_iter_data = {}
+    if iteration > 1:
+        if os.path.exists(output_filename):
+            prev_df = pd.read_csv(output_filename)
+            # Filter for previous iteration
+            if 'iteration' in prev_df.columns:
+                prev_df = prev_df[prev_df['iteration'] == iteration - 1]
+                for _, row in prev_df.iterrows():
+                    guid = row[id_col]
+                    # Store previous persona if available
+                    if 'persona' in prev_df.columns:
+                        previous_iter_data[guid] = {
+                            'persona': row.get('persona', ''),
+                            'response': row.get('response', '')
+                        }
+    
     print(q_df[[id_col,q_col]])
     
     guid_list = set()
     if os.path.exists(output_filename):
         already = pd.read_csv(output_filename)
+        # Filter to only current iteration when checking for already processed items
+        if 'iteration' in already.columns:
+            already = already[already['iteration'] == iteration]
         guid_list = set(already[id_col])
         print(already)
         
         
     else:        
-        write_csv_row([id_col,q_col,'prompt','response','prompt_no'],output_filename)
+        write_csv_row([id_col,q_col,'prompt','response','prompt_no','iteration','persona'],output_filename)
       
-    pb = tqdm(q_df.iterrows(),desc=model_name,total=len(q_df))
+    pb = tqdm(q_df.iterrows(),desc=f"{model_name} (iter {iteration})",total=len(q_df))
     for _,d in pb:
         q = d[q_col]
         guid = d[id_col]
@@ -112,13 +145,61 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
             prompt = make_prompt(q,prompt_no,language,country,prompt_sheet)
         else:
             prompt = q
-            
+        
+        # Generate or refine persona based on iteration
+        if iteration == 1:
+            # First iteration: generate new persona
+            persona_prompt_formatted = persona_prompt_saq.format(country=country,q=q)
+            persona = get_model_response(model_path,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
+        else:
+            # Subsequent iterations: refine previous persona
+            prev_persona = previous_iter_data.get(guid, {}).get('persona', '')
+            if not prev_persona:
+                # Fallback: if no previous persona found, generate new one
+                print(f"Warning: No previous persona found for {guid}, generating new persona")
+                persona_prompt_formatted = persona_prompt_saq.format(country=country,q=q)
+                persona = get_model_response(model_path,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
+            else:
+                # Refine persona
+                refine_prompt_formatted = persona_refine_prompt_saq.format(q=q, prev_persona=prev_persona)
+                refine_response = get_model_response(model_path,refine_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
+                
+                # Parse JSON response
+                try:
+                    refine_result = json_repair.loads(refine_response)
+                    if isinstance(refine_result, dict):
+                        persona = refine_result.get("revised_persona", prev_persona)
+                    elif isinstance(refine_result, str):
+                        # Model returned persona directly as string, use it
+                        persona = refine_result.strip()
+                        if not persona or len(persona) < 10:
+                            # If too short, fallback to previous
+                            persona = prev_persona
+                    else:
+                        # Unexpected type, fallback
+                        persona = prev_persona
+                except Exception as e:
+                    print(f"Error parsing refinement response for {guid}: {e}")
+                    print(f"Response: {refine_response[:200]}...")  # Print first 200 chars
+                    # Try to extract persona if it looks like plain text
+                    refine_response_clean = refine_response.strip()
+                    if refine_response_clean.startswith("You are") and len(refine_response_clean) > 20:
+                        # Looks like a persona, use it
+                        persona = refine_response_clean
+                    else:
+                        # Fallback to previous persona if parsing fails
+                        persona = prev_persona
+
+        print("--------------------------------")
+        print("Persona: ",persona)
+        print("--------------------------------")
         print(prompt)
         
-        response = get_model_response(model_path,prompt,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
+        # Use persona as system_message when generating response
+        response = get_model_response(model_path,prompt,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure,system_message=persona)
             
         print(response)
-        write_csv_row([guid,q,prompt,response,prompt_no],output_filename)
+        write_csv_row([guid,q,prompt,response,prompt_no,iteration,persona],output_filename)
         
     del guid_list
             
@@ -172,14 +253,19 @@ def get_response_from_all():
         
         tokenizer,model = get_tokenizer_model(model_name,model_path,args.model_cache_dir)
         
-        if isinstance(languages,str):
+        # Loop over iterations
+        for iteration in range(1, args.num_iterations + 1):
+            print(f"\n{'='*60}")
+            print(f"Starting Iteration {iteration}/{args.num_iterations}")
+            print(f"{'='*60}\n")
             
-            questions = get_questions(languages,countries)
-            generate_response(model_name,model_path,tokenizer,model,languages,countries,questions,question_col,id_col,output_dir,prompt_no=prompt_no,prompt_dir=prompt_dir,prompt_file=prompt_file)
-        else:
-            for l,c in zip(languages,countries):
-                questions = get_questions(l,c)
-                generate_response(model_name,model_path,tokenizer,model,l,c,questions,question_col,id_col,output_dir,prompt_no=prompt_no,prompt_dir=prompt_dir,prompt_file=prompt_file)
+            if isinstance(languages,str):
+                questions = get_questions(languages,countries)
+                generate_response(model_name,model_path,tokenizer,model,languages,countries,questions,question_col,id_col,output_dir,prompt_no=prompt_no,prompt_dir=prompt_dir,prompt_file=prompt_file,iteration=iteration)
+            else:
+                for l,c in zip(languages,countries):
+                    questions = get_questions(l,c)
+                    generate_response(model_name,model_path,tokenizer,model,l,c,questions,question_col,id_col,output_dir,prompt_no=prompt_no,prompt_dir=prompt_dir,prompt_file=prompt_file,iteration=iteration)
         
     if isinstance(models,str):
        generate_response_per_model(models)

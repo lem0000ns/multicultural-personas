@@ -48,6 +48,10 @@ parser.add_argument('--gpus',type=str,default=None,
                     help='Provide GPU IDs to use (e.g., "0,1"). Sets CUDA_VISIBLE_DEVICES environment variable.')
 parser.add_argument('--num_iterations',type=int,default=1,
                     help='Provide the number of iterations to run.')
+parser.add_argument('--sample_size',type=int,default=None,
+                    help='Randomly sample N questions per country. If not provided, all questions will be used.')
+parser.add_argument('--random_seed',type=int,default=42,
+                    help='Random seed for sampling questions. Default is 42 for reproducibility.')
 
 args = parser.parse_args()
 
@@ -150,7 +154,7 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
         if iteration == 1:
             # First iteration: generate new persona
             persona_prompt_formatted = persona_prompt_saq.format(country=country,q=q)
-            persona = get_model_response(model_path,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
+            persona = get_model_response(model_name,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
         else:
             # Subsequent iterations: refine previous persona
             prev_persona = previous_iter_data.get(guid, {}).get('persona', '')
@@ -158,11 +162,26 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
                 # Fallback: if no previous persona found, generate new one
                 print(f"Warning: No previous persona found for {guid}, generating new persona")
                 persona_prompt_formatted = persona_prompt_saq.format(country=country,q=q)
-                persona = get_model_response(model_path,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
+                persona = get_model_response(model_name,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
             else:
                 # Refine persona
-                refine_prompt_formatted = persona_refine_prompt_saq.format(q=q, prev_persona=prev_persona)
-                refine_response = get_model_response(model_path,refine_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
+                # Format the system prompt with language and pronoun
+                refine_system_prompt = persona_refine_prompt_saq.format(
+                    language="English",
+                    second_person_pronoun="You"
+                )
+                # Create user prompt with question and previous persona
+                refine_user_prompt = f"Question: {q}\n\nPrevious persona: {prev_persona}\n\nGenerate the improved persona:"
+                refine_response = get_model_response(
+                    model_name,
+                    refine_user_prompt,
+                    model,
+                    tokenizer,
+                    temperature=args.temperature,
+                    top_p=args.top_p,
+                    gpt_azure=args.gpt_azure,
+                    system_message=refine_system_prompt
+                )
                 
                 # Parse JSON response
                 try:
@@ -196,7 +215,7 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
         print(prompt)
         
         # Use persona as system_message when generating response
-        response = get_model_response(model_path,prompt,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure,system_message=persona)
+        response = get_model_response(model_name,prompt,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure,system_message=persona)
             
         print(response)
         write_csv_row([guid,q,prompt,response,prompt_no,iteration,persona],output_filename)
@@ -239,7 +258,13 @@ def get_response_from_all():
         
     def get_questions(language,country):
         questions_df = pd.read_csv(os.path.join(question_dir,f'{country}_questions.csv'),encoding='utf-8')
-
+        
+        # Sample questions if sample_size is specified
+        if args.sample_size is not None and len(questions_df) > args.sample_size:
+            print(f"Sampling {args.sample_size} questions from {len(questions_df)} total questions for {country}")
+            questions_df = questions_df.sample(n=args.sample_size, random_state=args.random_seed)
+            questions_df = questions_df.reset_index(drop=True)
+        
         return questions_df
     
     

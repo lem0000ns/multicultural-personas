@@ -43,6 +43,7 @@ MODEL_PATHS = {
     'SeaLLM-7B-v2.5':'SeaLLMs/SeaLLM-7B-v2.5',
     'Merak-7B-v4':'Ichsan2895/Merak-7B-v4',
     'jais-13b-chat':'core42/jais-13b-chat',
+    'llama-3-8b-instruct':'meta-llama/Meta-Llama-3-8B-Instruct',
 }
 
 COUNTRY_LANG = { 
@@ -68,7 +69,7 @@ COUNTRY_LANG = {
 def get_tokenizer_model(model_name,model_path,model_cache_dir):
     tokenizer,model = None,None
     
-    if 'gpt' not in model_name and 'gemini' not in model_name and 'claude' not in model_name and 'bison' not in model_name and 'command' not in model_name and 'Qwen' not in model_name:
+    if 'gpt' not in model_name and 'gemini' not in model_name and 'claude' not in model_name and 'bison' not in model_name and 'command' not in model_name and 'Qwen' not in model_name and 'llama-3-8b-instruct' not in model_name:
         # Lazy import for local models only
         try:
             from transformers import T5Tokenizer, T5ForConditionalGeneration, AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer, LlamaTokenizer, pipeline, AutoConfig, BitsAndBytesConfig
@@ -212,6 +213,64 @@ def get_together_response(
             if system_message:
                 messages.append({"role": "system", "content": system_message})
             messages.append({"role": "user", "content": text})
+            response = client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                temperature=temperature,
+                top_p=top_p,
+                max_tokens=max_tokens,
+            )
+        
+            response = response.choices[0].message.content.strip()
+            break
+        except KeyboardInterrupt:
+            raise Exception("KeyboardInterrupted!")
+        except:
+            try:
+                print(response)
+            except:
+                print('ERROR')
+            print("Exception: Sleep for 10 sec")
+            
+            time.sleep(10)
+            n_try += 1
+            continue
+            
+    return response
+
+def get_sglang_response(
+    text,
+    model_name='meta-llama/Meta-Llama-3-8B-Instruct',
+    temperature=1.0,
+    top_p=1.0,
+    max_tokens=512,
+    greedy=False,
+    num_sequence=1,
+    max_try=10,
+    dialogue_history=None,
+    system_message=None
+):
+    """
+    Get response from SGLang server using OpenAI-compatible API
+    """
+    client = OpenAI(
+        base_url="http://34.126.87.212:30000/v1",
+        api_key="EMPTY"
+    )
+    
+    n_try = 0
+    while True:
+        if n_try == max_try:
+            outputs = ["something wrong"]
+            response = None
+            break
+        try:
+            time.sleep(0.5)
+            messages = []
+            if system_message:
+                messages.append({"role": "system", "content": system_message})
+            messages.append({"role": "user", "content": text})
+            
             response = client.chat.completions.create(
                 model=model_name,
                 messages=messages,
@@ -855,6 +914,8 @@ def get_model_response(model_name,prompt,model,tokenizer,temperature,top_p,gpt_a
         response = get_cohere_response(prompt,model_name=model_name,temperature=temperature,top_p=top_p)
     elif 'Qwen' in model_name:
         response = get_together_response(prompt,model_name=model_name,temperature=temperature,top_p=top_p,system_message=system_message)
+    elif 'llama-3-8b-instruct' in model_name:
+        response = get_sglang_response(prompt,model_name=MODEL_PATHS[model_name],temperature=temperature,top_p=top_p,system_message=system_message)
     else:
         response = model_inference(prompt,model_path=model_name,model=model,tokenizer=tokenizer, system_message=system_message, temperature=temperature, top_p=top_p)
             

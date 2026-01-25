@@ -28,27 +28,31 @@ Question: {q}
 
 Generate the persona:"""
 
-persona_refine_prompt_saq = """You are an expert at designing culturally informed personas to improve model performance on short-answer questions.
+persona_refine_prompt_saq = (
+    "You are an expert at designing culturally informed personas to improve model performance on short answer questions.\n\n"
+   "Your task is to improve upon the given persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
+   "Respond in valid JSON format with two keys:\n\n"
+   "\"reasoning\": \"[Chain-of-Thought goes here. Explain how the given persona could be improved and why the new persona is effective.]\",\n"
+   "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
+   "IMPORTANT:\n\n"
+   "1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.\n"
+   "2. The content of the \"revised_persona\" key must contain only the persona description — no extra explanations, formatting, or translations.\n"
+   "3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n"
+   "4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n"
+   "5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n"
+)
 
-You will be provided with a question and its corresponding persona description from a previous iteration.
-
-Your task is to improve upon the given persona by revising it such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.
-
-Respond in valid JSON format with two keys:
-
-"reasoning": "[Chain-of-Thought goes here, explaining why the new persona is effective. This must be a concise step-by-step analysis reasoning with no more than 5 sentences]",
-"revised_persona": "[Revised persona description goes here.]"
-
-IMPORTANT:
-
-1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.
-2. The content of the "revised_persona" key must contain only the persona description — no extra explanations, formatting, or translations.
-3. The "revised_persona" content must always start with "You are", followed by the persona description.
-4. The "revised_persona" **must be written entirely in English**, with no words, sentences, or transliterations from any other language.
-5. **CRITICAL:** The revised persona must NOT explicitly state the correct answer. Instead, focus on defining a specific cultural identity, region, or profession that would inherently know the answer.
-
-Question: {q}
-
-Previous persona: {prev_persona}
-
-Generate the improved persona:"""
+persona_refine_prompt_mcq = (
+    "You are an expert at designing culturally informed personas to improve model performance on multiple-choice questions.\n\n"
+   "Your task is to improve upon the given persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
+   "Respond in valid JSON format with two keys:\n\n"
+   "\"reasoning\": \"[Chain-of-Thought goes here. Explain how the given persona could be improved and why the new persona is effective.]\",\n"
+   "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
+   "IMPORTANT:\n\n"
+   "1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.\n"
+   "2. The content of the \"revised_persona\" key must contain only the persona description — no extra explanations, formatting, or translations.\n"
+   "3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n"
+   "4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n"
+   "5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n"
+   "6. The persona must be an expert in the entire domain of the topic, not narrowly focused on a single sub-fact or entity, and must maintain a neutral, balanced perspective capable of fairly weighing competing viewpoints without built-in preferences or biases."
+)

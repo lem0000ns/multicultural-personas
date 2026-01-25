@@ -17,24 +17,23 @@
 #     "c4ai-command-r-plus"
 # )
 
-MODEL_KEYS=("aya-101")
-COUNTRIES=("UK")
-LANGUAGES=("English")
+MODEL_KEYS=("llama-3-8b-instruct")
 # Define countries and languages as parallel arrays
-# COUNTRIES=("UK" "US" "South_Korea" "Algeria" "China" "Indonesia" "Spain" "Iran" "Mexico" "Assam" "Greece" "Ethiopia" "Northern_Nigeria" "Azerbaijan" "North_Korea" "West_Java")
-# LANGUAGES=("English" "English" "Korean" "Arabic" "Chinese" "Indonesian" "Spanish" "Persian" "Spanish" "Assamese" "Greek" "Amharic" "Hausa" "Azerbaijani" "Korean" "Sundanese")
+COUNTRIES=("UK" "US" "South_Korea" "Algeria" "China" "Indonesia" "Spain" "Iran" "Mexico" "Assam" "Greece" "Ethiopia" "Northern_Nigeria" "Azerbaijan" "North_Korea" "West_Java")
+LANGUAGES=("English" "English" "Korean" "Arabic" "Chinese" "Indonesian" "Spanish" "Persian" "Spanish" "Assamese" "Greek" "Amharic" "Hausa" "Azerbaijani" "Korean" "Sundanese")
 
 
 # Prompt numbers
-PROMPT_NUMBERS=("inst-1")
+PROMPT_NUMBERS=("inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-6" "inst-6" "inst-6" "inst-6" "inst-4" "inst-6" "inst-6")
 
 # Iterate over models, countries, languages, and prompts
 for model_key in "${MODEL_KEYS[@]}"; do
     for i in "${!COUNTRIES[@]}"; do
         country="${COUNTRIES[$i]}"
         language="${LANGUAGES[$i]}"
-        for prompt_no in "${PROMPT_NUMBERS[@]}"; do
-            python evaluate.py --model "$model_key" \
+        prompt_no="${PROMPT_NUMBERS[$i]}"
+        
+        python evaluate.py --model "$model_key" \
                                 --language "$language" \
                                 --country "$country" \
                                 --prompt_no "$prompt_no" \
@@ -46,21 +45,21 @@ for model_key in "${MODEL_KEYS[@]}"; do
                                 --annotation_filename "${country}_data.json" \
                                 --annotations_key "annotations" \
                                 --evaluation_result_file "evaluation_results.csv"
-            if [ "$language" != "English" ]; then
-                python evaluate.py --model "$model_key" \
-                                    --language "English" \
-                                    --country "$country" \
-                                    --prompt_no "$prompt_no" \
-                                    --id_col ID \
-                                    --question_col Translation \
-                                    --response_col response \
-                                    --response_dir "../model_inference_results" \
-                                    --annotation_dir "../data/annotations" \
-                                    --annotation_filename "${country}_data.json"  \
-                                    --annotations_key "annotations" \
-                                    --evaluation_result_file "evaluation_results.csv"
-            fi
-        done
+        
+        # if [ "$language" != "English" ]; then
+        #     python evaluate.py --model "$model_key" \
+        #                         --language "English" \
+        #                         --country "$country" \
+        #                         --prompt_no "$prompt_no" \
+        #                         --id_col ID \
+        #                         --question_col Translation \
+        #                         --response_col response \
+        #                         --response_dir "../model_inference_results" \
+        #                         --annotation_dir "../data/annotations" \
+        #                         --annotation_filename "${country}_data.json"  \
+        #                         --annotations_key "annotations" \
+        #                         --evaluation_result_file "evaluation_results.csv"
+        # fi
     done
 done
 

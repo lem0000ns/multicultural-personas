@@ -35,26 +35,26 @@ export GOOGLE_PROJECT_NAME=""
 #     "SeaLLM-7B-v2.5"
 #     "Merak-7B-v4"
 #     "jais-13b-chat"
+#     "llama-3-8b-instruct"
 # )
 
 # Use local model instead of API model
-MODEL_KEYS=("aya-101")
+MODEL_KEYS=("llama-3-8b-instruct")
 
-# COUNTRIES=("UK" "US" "South_Korea" "Algeria" "China" "Indonesia" "Spain" "Iran" "Mexico" "Assam" "Greece" "Ethiopia" "Northern_Nigeria" "Azerbaijan" "North_Korea" "West_Java")
-COUNTRIES=("UK")
-LANGUAGES=("English")
-# LANGUAGES=("English" "English" "Korean" "Arabic" "Chinese" "Indonesian" "Spanish" "Persian" "Spanish" "Assamese" "Greek" "Amharic" "Hausa" "Azerbaijani" "Korean" "Sundanese")
+COUNTRIES=("UK" "US" "South_Korea" "Algeria" "China" "Indonesia" "Spain" "Iran" "Mexico" "Assam" "Greece" "Ethiopia" "Northern_Nigeria" "Azerbaijan" "North_Korea" "West_Java")
+LANGUAGES=("English" "English" "Korean" "Arabic" "Chinese" "Indonesian" "Spanish" "Persian" "Spanish" "Assamese" "Greek" "Amharic" "Hausa" "Azerbaijani" "Korean" "Sundanese")
 
-# Prompt numbers
-PROMPT_NUMBERS=("inst-1")
+# Prompt numbers for each country (same order as COUNTRIES array)
+PROMPT_NUMBERS=("inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-6" "inst-6" "inst-6" "inst-6" "inst-4" "inst-6" "inst-6")
 
 # Iterate over models, countries, languages, and prompts
 for model_key in "${MODEL_KEYS[@]}"; do
     for i in "${!COUNTRIES[@]}"; do
         country="${COUNTRIES[$i]}"
         language="${LANGUAGES[$i]}"
-        for prompt_no in "${PROMPT_NUMBERS[@]}"; do
-            python model_inference.py --model "$model_key" \
+        prompt_no="${PROMPT_NUMBERS[$i]}"
+        
+        python model_inference.py --model "$model_key" \
                                 --language "$language" \
                                 --country "$country" \
                                 --question_dir "./data/questions" \
@@ -71,28 +71,30 @@ for model_key in "${MODEL_KEYS[@]}"; do
                                 --gpus "0,1,2,3" \
                                 --temperature 0.6 \
                                 --top_p 1 \
-                                --num_iterations 5
-            if [ "$language" != "English" ]; then
-                python model_inference.py --model "$model_key" \
-                                    --language "$language" \
-                                    --country "$country" \
-                                    --question_dir "./data/questions" \
-                                    --question_file "${country}_questions.csv" \
-                                    --question_col Question \
-                                    --prompt_dir "./data/prompts" \
-                                    --prompt_file "${country}_prompts.csv" \
-                                    --prompt_no "$prompt_no" \
-                                    --id_col ID \
-                                    --output_dir "./model_inference_results" \
-                                    --output_file "${model_key}-${country}_English_${prompt_no}_result.csv" \
-                                    --model_cache_dir ".cache" \
-                                    --gpt_azure "False" \
-                                    --gpus "0,1,2,3" \
-                                    --temperature 0.6 \
-                                    --top_p 1 \
-                                    --num_iterations 5
-            fi
-        done
+                                --num_iterations 5 \
+                                --sample_size 100
+
+        if [ "$language" != "English" ]; then
+            python model_inference.py --model "$model_key" \
+                                --language "$language" \
+                                --country "$country" \
+                                --question_dir "./data/questions" \
+                                --question_file "${country}_questions.csv" \
+                                --question_col Question \
+                                --prompt_dir "./data/prompts" \
+                                --prompt_file "${country}_prompts.csv" \
+                                --prompt_no "$prompt_no" \
+                                --id_col ID \
+                                --output_dir "./model_inference_results" \
+                                --output_file "${model_key}-${country}_English_${prompt_no}_result.csv" \
+                                --model_cache_dir ".cache" \
+                                --gpt_azure "False" \
+                                --gpus "0,1,2,3" \
+                                --temperature 0.6 \
+                                --top_p 1 \
+                                --num_iterations 5 \
+                                --sample_size 100
+        fi
     done
 done
 

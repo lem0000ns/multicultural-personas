@@ -28,7 +28,7 @@ for model_key in "${MODEL_KEYS[@]}"; do
         --temperature 0.6 \
         --top_p 1 \
         --gpt_azure 'True' \
-        --num_iterations 5 \
+        --num_iterations 1 \
         --sample_size 200 \
         --random_seed 42
 done

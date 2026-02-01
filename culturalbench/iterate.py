@@ -55,8 +55,8 @@ async def main():
     parser.add_argument("--num_iterations", type=int, required=True, help="Total number of iterations including initial evaluation")
     parser.add_argument("--difficulty", type=str, required=True, choices=["easy", "hard", "Easy", "Hard"], help="Difficulty level")
     parser.add_argument("--resume", action="store_true", required=False, default=False, help="Resume from last iteration")
-    parser.add_argument("--model", type=str, required=False, default="meta-llama/Meta-Llama-3-8B-Instruct", help="Model to use")
-    parser.add_argument("--temperature", type=float, required=False, default=0.0, help="Temperature to use")
+    parser.add_argument("--model", type=str, required=False, default="Qwen/Qwen3-14B", help="Model to use")
+    parser.add_argument("--temperature", type=float, required=False, default=0.6, help="Temperature to use")
     parser.add_argument("--custom", type=str, required=False, default=None, help="Custom suffix to append to database path")
     parser.add_argument("--use_all_previous", action="store_true", required=False, default=False, help="Use all previous personas instead of just the previous one")
     args = parser.parse_args()
@@ -69,12 +69,16 @@ async def main():
         tools.llm_utils.TEMPERATURE = args.temperature
         
     difficulty = args.difficulty.capitalize()
-    
+
+    print(f"Config: mode={args.mode} difficulty={difficulty} model={args.model} temperature={args.temperature} num_iterations={args.num_iterations}")
+    print(f"Resume: {args.resume}")
+
     # track all accuracies
     all_accuracies = []
-    
+
     # run initial evaluation (if not resuming)
     if not args.resume:
+        print("Running initial evaluation (iteration 1)...")
         initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode, args.custom)
         all_accuracies.append(initial_accuracy)
     # calculate initial accuracy from database (if resuming)
@@ -83,6 +87,7 @@ async def main():
         model_to_save = {
             "Qwen/Qwen3-4B": "qwen3_4b",
             "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
+            "Qwen/Qwen3-14B": "qwen3_14b",
         }
         db_path = f"../results/{args.mode[-2:]}/{args.mode[:-3]}/{difficulty.lower()}_t{args.temperature}_{model_to_save[llm_utils.MODEL_NAME]}"
         if args.custom:

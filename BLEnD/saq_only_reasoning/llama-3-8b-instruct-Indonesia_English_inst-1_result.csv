@@ -1,0 +1,847 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Indonesia?,"What is the most popular prenatal education activity for pregnant women in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular prenatal education activity for pregnant women in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Prenatal Yoga""}], ""reasoning"": ""Prenatal yoga classes have become increasingly popular in Indonesia, providing pregnant women with a safe and effective way to maintain physical fitness, manage stress, and prepare for childbirth.""}",inst-1,1,,
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Indonesia's society?,"Which age's birthday is celebrated the most grandly in Indonesia's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which age's birthday is celebrated the most grandly in Indonesia's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""age"": ""15""}], ""reasoning"": ""In Indonesia, the 15th birthday, known as 'Tahun Baru Saya' or 'Hari Lahir Saya', is considered a significant milestone and is often celebrated grandly by many families and friends.""}",inst-1,1,,
+New-pe-20,What sport is popular to play on the beach in Indonesia?,"What sport is popular to play on the beach in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sport is popular to play on the beach in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Volleyball""],
+""reasoning"": ""Indonesia has a strong volleyball culture and the country has produced several international volleyball players. Playing volleyball on the beach is a popular recreational activity and many beaches in Indonesia have volleyball courts or areas designated for playing the sport.""
+}",inst-1,1,,Indonesia has a strong volleyball culture and the country has produced several international volleyball players. Playing volleyball on the beach is a popular recreational activity and many beaches in Indonesia have volleyball courts or areas designated for playing the sport.
+Kik-in-37,What soccer teams in Indonesia are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in Indonesia are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What soccer teams in Indonesia are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""team1"": ""Persija Jakarta"", ""team2"": ""Persib Bandung""}], ""reasoning"": ""The rivalry between Persija Jakarta and Persib Bandung is considered one of the most intense and historic in Indonesian football, with a long-standing feud between the two clubs and their fans.""}",inst-1,1,,
+Jod-ch-07,"How long (in hours) on average does it take for people in Indonesia to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in Indonesia to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long (in hours) on average does it take for people in Indonesia to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [1.5], ""reasoning"": ""Based on general research, the average time spent for dinner in Indonesia is around 1-2 hours, considering the country's cultural and social aspects, such as family gatherings and socializing.""}",inst-1,1,,"Based on general research, the average time spent for dinner in Indonesia is around 1-2 hours, considering the country's cultural and social aspects, such as family gatherings and socializing."
+New-spme-37,Which profession is most commonly studied abroad by students from Indonesia?,"Which profession is most commonly studied abroad by students from Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which profession is most commonly studied abroad by students from Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""medicine""]}, ""reasoning"": ""Indonesian students commonly pursue medicine abroad due to the country's limited medical school capacity and high demand for medical professionals, as well as the opportunity to gain international experience and exposure to advanced medical facilities and techniques.""}",inst-1,1,,
+New-pe-49,Where do families gather to pray together in Indonesia?,"Where do families gather to pray together in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do families gather to pray together in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Masjid""}], ""reasoning"": ""In Indonesia, the majority of the population is Muslim, and Masjids (mosques) are common gathering places for families to pray together.""}",inst-1,1,,
+Jod-ch-60,What is the duration (in hours) of a typical workday in Indonesia? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in Indonesia? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration (in hours) of a typical workday in Indonesia? (Provide Arabic numerals (0~24) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [8], ""reasoning"": ""In Indonesia, the typical workday duration is 8 hours.""}",inst-1,1,,"In Indonesia, the typical workday duration is 8 hours."
+Ji-ko-24,What is the most preferred recreational facility among children in Indonesia?,"What is the most preferred recreational facility among children in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most preferred recreational facility among children in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most preferred recreational facility among children in Indonesia"": ""Indoor Playgrounds""}], ""reasoning"": ""Indoor playgrounds are a popular choice among Indonesian children due to the country's tropical climate, which often makes outdoor play uncomfortable during hot weather and rainy days. Indoor playgrounds offer a safe and convenient space for children to engage in physical activities, learn, and have fun, while also providing a break from the heat and humidity.""}",inst-1,1,,
+Sa-en-22,What is the most famous university in Indonesia known for its sports team?,"What is the most famous university in Indonesia known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous university in Indonesia known for its sports team?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Universitas Atma Jaya Yogyakarta""], ""reasoning"": ""Universitas Atma Jaya Yogyakarta is considered one of the most successful universities in Indonesia in terms of sports, particularly in basketball and soccer.""}",inst-1,1,,"Universitas Atma Jaya Yogyakarta is considered one of the most successful universities in Indonesia in terms of sports, particularly in basketball and soccer."
+Al-en-19,What is a popular second language for high school students in Indonesia?,"What is a popular second language for high school students in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular second language for high school students in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""English""}], ""reasoning"": ""English is a widely taught and popular second language in Indonesian high schools due to its importance in international communication, education, and economic relations.""}",inst-1,1,,
+Ne-ar-09,What do people from Indonesia eat in Eid ul Fitr?,"What do people from Indonesia eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Indonesia eat in Eid ul Fitr?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""During Eid ul Fitr, Indonesian Muslims typically celebrate by sharing meals with family and friends, often featuring traditional dishes and sweet treats. The type of food may vary depending on the region and personal preferences, but it tends to be a festive and indulgent affair.""}",inst-1,1,,"During Eid ul Fitr, Indonesian Muslims typically celebrate by sharing meals with family and friends, often featuring traditional dishes and sweet treats. The type of food may vary depending on the region and personal preferences, but it tends to be a festive and indulgent affair."
+New-su-24,What sports do parents and children commonly play together in Indonesia?,"What sports do parents and children commonly play together in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports do parents and children commonly play together in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Badminton"", ""Table Tennis"", ""Futsal""], ""reasoning"": ""These sports are popular in Indonesia and can be played in a casual, recreational setting, making them suitable for parents and children to play together.""}",inst-1,1,,"These sports are popular in Indonesia and can be played in a casual, recreational setting, making them suitable for parents and children to play together."
+Ji-ko-42,What are the required subjects in Indonesia's university entrance exam?,"What are the required subjects in Indonesia's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the required subjects in Indonesia's university entrance exam?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Bahasa Indonesia"", ""Matematika"", ""Fisika"", ""Kimia"", ""Sejarah Indonesia"", ""Geografi""}], ""reasoning"": ""The required subjects in Indonesia's university entrance exam, also known as the UNAS (Ujian Nasional Sekolah) or SNMPTN (Sistem Penerimaan Mahasiswa Pascasarjana Nasional), are a set of core subjects that all students must take and pass to be eligible for university admission.""}",inst-1,1,,
+New-pe-06,What is the most popular stew in Indonesia?,"What is the most popular stew in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular stew in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Beef Rendang""}], ""reasoning"": ""Beef rendang is a popular stew in Indonesia due to its rich and flavorful coconut-based sauce, tender beef, and aromatic spices.""}",inst-1,1,,
+New-pe-86,What is the name of the most famous tower in Indonesia?,"What is the name of the most famous tower in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the name of the most famous tower in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Monas""], ""reasoning"": ""Monas, short for Monumen Nasional, is the national monument of Indonesia and one of the most iconic landmarks in the country.""}",inst-1,1,,"Monas, short for Monumen Nasional, is the national monument of Indonesia and one of the most iconic landmarks in the country."
+Th-en-53,What is the most popular extracurricular social event at schools in Indonesia?,"What is the most popular extracurricular social event at schools in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular social event at schools in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular extracurricular social event"": ""Sekolah Musik (School Music Festival)""}], ""reasoning"": ""Sekolah Musik is a popular event in Indonesian schools where students come together to showcase their musical talents and performances, often with a huge turnout and enthusiastic audience.""}",inst-1,1,,
+Ca-sp-06,Which is the most important meal of the day to people from Indonesia?,"Which is the most important meal of the day to people from Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which is the most important meal of the day to people from Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [
+{""most important meal"": ""Breakfast""}
+],
+""reasoning"": ""In Indonesian culture, breakfast is considered the most important meal of the day as it breaks the overnight fasting period and provides energy for the day ahead. It is also a time for families to bond and socialize over a meal.""
+}",inst-1,1,,
+New-en-41,Who is the most well known and successful entrepreneur in Indonesia?,"Who is the most well known and successful entrepreneur in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most well known and successful entrepreneur in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Michael Bambang Hartono""], ""reasoning"": ""Michael Bambang Hartono is a well-known and successful entrepreneur in Indonesia, with a net worth of over $15 billion, making him one of the richest people in the country. He co-founded the Sinar Mas Group, a conglomerate with interests in banking, real estate, and other industries.""}",inst-1,1,,"Michael Bambang Hartono is a well-known and successful entrepreneur in Indonesia, with a net worth of over $15 billion, making him one of the richest people in the country. He co-founded the Sinar Mas Group, a conglomerate with interests in banking, real estate, and other industries."
+New-su-33,What is the common dress code for school teachers in Indonesia?,"What is the common dress code for school teachers in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the common dress code for school teachers in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""professional attire""}], ""reasoning"": ""In Indonesia, school teachers are expected to dress professionally and modestly, reflecting the country's cultural values and respect for authority.""}",inst-1,1,,
+Th-en-44,What is Indonesia's most popular food for family meals on weekends?,"What is Indonesia's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Indonesia's most popular food for family meals on weekends?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Nasi Goreng""}],""reasoning"": ""Nasi Goreng, or Indonesian-style fried rice, is a staple dish that is commonly served for family meals on weekends in Indonesia. It is a versatile dish that can be customized with various ingredients and flavors, making it a popular choice for family gatherings and celebrations.""}",inst-1,1,,
+Th-en-45,What is the most popular weekday evening family activity in Indonesia?,"What is the most popular weekday evening family activity in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular weekday evening family activity in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""family dinner""}], ""reasoning"": ""In Indonesia, weekday evenings are often spent together as a family, and having a family dinner is a common activity that brings everyone together, regardless of age or occupation.""}",inst-1,1,,
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Indonesia? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in Indonesia? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long is the typical probation period for new employees before signing a formal contract in Indonesia? (e.g., 1 month).','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""duration"": ""1-3 months""}], ""reasoning"": ""The typical probation period in Indonesia can vary depending on the company and the type of job, but it is usually around 1-3 months. This period allows the employer to assess the new employee's performance and skills, and for the employee to get familiar with the company's culture and policies.""}",inst-1,1,,
+New-in-62,What university in Indonesia is popular because of its engineering major? (Provide the official name.),"What university in Indonesia is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What university in Indonesia is popular because of its engineering major? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Institut Teknologi Bandung (ITB)""], ""reasoning"": ""ITB is one of the most prestigious universities in Indonesia, and its engineering program is particularly renowned for its strong curriculum, research opportunities, and industry connections.""}",inst-1,1,,"ITB is one of the most prestigious universities in Indonesia, and its engineering program is particularly renowned for its strong curriculum, research opportunities, and industry connections."
+Ji-ko-34,How do elementary school students in Indonesia go to school?,"How do elementary school students in Indonesia go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How do elementary school students in Indonesia go to school?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Elementary school students in Indonesia typically walk, bike, or take public transportation to school.""}], ""reasoning"": [""Indonesia has a large population and limited public transportation, making walking and biking common modes of transportation, especially for shorter distances.""]}",inst-1,1,,
+Ta-pe-21,Where do children usually play soccer in Indonesia?,"Where do children usually play soccer in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do children usually play soccer in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""question':'Where do children usually play soccer in Indonesia?',""answer"":[]}, ""reasoning"": ""Soccer is a popular sport in Indonesia, and children often play it in open fields, parks, and schoolyards, which are easily accessible and available in most urban and rural areas."", ""answer"": [{""name"": ""Open fields"" }, {""name"": ""Parks"" }, {""name"": ""Schoolyards"" }]}",inst-1,1,,
+Tmp-ar-01,Where do university students in Indonesia usually go to study for their final exams?,"Where do university students in Indonesia usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do university students in Indonesia usually go to study for their final exams?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""home"", ""library"", ""coffee shop"", ""study room""], ""reasoning"": ""University students in Indonesia often prefer to study for their final exams in a quiet and familiar environment, which may include their home, the university library, or a quiet coffee shop or study room. These settings allow them to focus and concentrate on their studies without distractions.""}}",inst-1,1,,
+Ne-ar-38,Which food do people usually offer as charity in Indonesia?,"Which food do people usually offer as charity in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food do people usually offer as charity in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Nasi Goreng""}], ""reasoning"": ""In Indonesia, Nasi Goreng is a staple food that is often used as a symbol of charity and is commonly distributed during religious events and festivals.""}",inst-1,1,,
+Jod-ch-01,What eating utensils do people commonly used in Indonesia?,"What eating utensils do people commonly used in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What eating utensils do people commonly used in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""spoon"", ""fork"", ""chopsticks""}], ""reasoning"": ""In Indonesia, spoons and forks are commonly used for Western-style meals, while chopsticks are often used for traditional Indonesian dishes like nasi goreng and noodle soups.""}",inst-1,1,,
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Indonesia?,"What type of alcoholic drink is most commonly consumed at festivals in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of alcoholic drink is most commonly consumed at festivals in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Brem""], ""reasoning"": ""Brem is a traditional Indonesian rice wine that is commonly consumed at festivals and celebrations in Indonesia.""}",inst-1,1,,Brem is a traditional Indonesian rice wine that is commonly consumed at festivals and celebrations in Indonesia.
+Th-en-11,Who is the most popular sportperson in Indonesia?,"Who is the most popular sportperson in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular sportperson in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Erick Thohir""}], ""reasoning"": ""Erick Thohir is a well-known Indonesian businessman and sports enthusiast, and is often considered the most popular sportsperson in Indonesia due to his involvement in various sports-related ventures and his popularity among the Indonesian people.""}",inst-1,1,,
+New-gr-15,What is the most popular traditional dessert in Indonesia?,"What is the most popular traditional dessert in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular traditional dessert in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Martabak""}], ""reasoning"": ""Martabak is a popular traditional Indonesian dessert due to its widespread availability and versatility, with various fillings and toppings available.""}",inst-1,1,,
+Ni-en-40,What is the most popular Christmas song in Indonesia?,"What is the most popular Christmas song in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular Christmas song in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Most Popular Christmas Song in Indonesia"": ""Mary, Did You Know?""}], ""reasoning"": ""According to various sources, 'Mary, Did You Know?' is a popular Christmas song in Indonesia, possibly due to its well-known melody and thoughtful lyrics.""}",inst-1,1,,
+Na-ko-20,What sports event do people from Indonesia passionately support the most in international competitions?,"What sports event do people from Indonesia passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports event do people from Indonesia passionately support the most in international competitions?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Indonesian football (soccer) team""}], ""reasoning"": ""Indonesians have a strong passion for football and the national team's performance is closely followed by the media and the public. The country has a large and dedicated fan base that supports the team in international competitions.""}",inst-1,1,,
+Al-en-04,What is the most popular fruit in Indonesia?,"What is the most popular fruit in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular fruit in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Mangosteen""}],""reasoning"": ""Mangosteen is widely cultivated and consumed in Indonesia, and its sweet and sour taste is a favorite among locals and tourists alike. It is also a symbol of Indonesia's rich tropical fruit heritage and is often served as a fresh fruit or used in various desserts and drinks.""}",inst-1,1,,
+New-gr-06,What is the most popular food in Indonesia among young people?,"What is the most popular food in Indonesia among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular food in Indonesia among young people?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Nasi Goreng""}], ""reasoning"": ""Nasi Goreng is a popular dish among young people in Indonesia because it is affordable, easily accessible, and can be customized with various toppings and sauces, making it a versatile and appealing option for the younger generation.""}",inst-1,1,,
+New-su-34,What is the most popular extracurricular activity related to music in schools in Indonesia?,"What is the most popular extracurricular activity related to music in schools in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular activity related to music in schools in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Vocal Group""], ""reasoning"": ""Based on general trends and observations, vocal groups are the most popular extracurricular activity related to music in schools in Indonesia, as they often involve large numbers of students, are easy to organize, and provide opportunities for students to develop their singing skills, teamwork, and performance abilities.""}",inst-1,1,,"Based on general trends and observations, vocal groups are the most popular extracurricular activity related to music in schools in Indonesia, as they often involve large numbers of students, are easy to organize, and provide opportunities for students to develop their singing skills, teamwork, and performance abilities."
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Indonesia's society?,"What are the key milestones associated with children's independence from their parents in Indonesia's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the key milestones associated with children's independence from their parents in Indonesia's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""age"": 16, ""milestone"": ""Begin to take responsibility for own daily routine and chores""}, {""age"": 18, ""milestone"": ""Start to make own financial decisions and manage own money""}, {""age"": 20, ""milestone"": ""Move out of parental home and start independent living""}], ""reasoning"": ""In Indonesia, children typically start to develop independence from their parents in their late teens and early twenties. This is marked by gradual assumption of responsibility for daily routine, financial management, and eventually, independent living.""}",inst-1,1,,
+Ne-ar-36,What is a typical festive meal in Indonesia?,"What is a typical festive meal in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a typical festive meal in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"":""Nasi Lemak with Sate"",""description"":""a dish of fragrant rice cooked in coconut milk, served with spicy meat skewers (sate)""}], ""reasoning"": ""Indonesian festive meals often feature traditional dishes that are both flavorful and aromatic, and Nasi Lemak with Sate is a popular example of this.""}",inst-1,1,,
+Ji-ko-14,What is the representative export item of Indonesia?,"What is the representative export item of Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the representative export item of Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Palm oil""],
+""reasoning"": ""Indonesia is the world's largest producer and exporter of palm oil, accounting for over 30% of global production and exports.""
+}",inst-1,1,,"Indonesia is the world's largest producer and exporter of palm oil, accounting for over 30% of global production and exports."
+New-pe-76,What is a popular activity to do in parks in Indonesia?,"What is a popular activity to do in parks in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular activity to do in parks in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Picnicking""}], ""reasoning"": ""Parks in Indonesia are often surrounded by lush greenery and offer scenic views, making them a popular spot for picnics.""}",inst-1,1,,
+Jo-sp-19,What region in Indonesia has been traditionally associated with agriculture?,"What region in Indonesia has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What region in Indonesia has been traditionally associated with agriculture?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""region"": ""Java""}], ""reasoning"": ""Java is the most populous and densely populated island in Indonesia, and its fertile soil and suitable climate have made it an ideal location for agriculture, with rice being a major crop.""}",inst-1,1,,
+Th-en-37,"At what age do children typically become independent from their parents in Indonesia? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in Indonesia? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'At what age do children typically become independent from their parents in Indonesia? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [21], ""reasoning"": ""In Indonesia, children typically become independent from their parents at around 21 years old due to cultural and societal expectations, as well as economic factors.""}",inst-1,1,,"In Indonesia, children typically become independent from their parents at around 21 years old due to cultural and societal expectations, as well as economic factors."
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Indonesia?,"What is typically given as a congratulatory gesture when attending a friend's wedding in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Uang saku"" : ""Cash gift""}], ""reasoning"": ""In Indonesian culture, giving a cash gift, known as 'uang saku', is a common and appreciated congratulatory gesture when attending a friend's wedding.""}",inst-1,1,,
+Ca-sp-11,Which day of the week do people usually organize a family meal in Indonesia?,"Which day of the week do people usually organize a family meal in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which day of the week do people usually organize a family meal in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In Indonesia, Sunday is often considered a family day, and many families tend to spend quality time together by having a meal or outing.""}",inst-1,1,,
+Ji-ko-35,What is the most common form of private education in Indonesia?,"What is the most common form of private education in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common form of private education in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Sekolah Swasta""],
+""reasoning"": ""Sekolah Swasta is the most common form of private education in Indonesia because it is a type of private school that is widely available and accessible to students of all ages, from elementary to high school.""
+}",inst-1,1,,"Sekolah Swasta is the most common form of private education in Indonesia because it is a type of private school that is widely available and accessible to students of all ages, from elementary to high school."
+Al-en-01,What is a common snack for preschool kids in Indonesia?,"What is a common snack for preschool kids in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a common snack for preschool kids in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Pisang goreng""}], ""reasoning"": ""Pisang goreng, or banana fritters, are a popular snack among preschool kids in Indonesia due to their sweet and crispy texture, making them a delightful treat for young children.""}",inst-1,1,,
+Al-en-32,What is the main dish for Thanksgiving in Indonesia?,"What is the main dish for Thanksgiving in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the main dish for Thanksgiving in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""There is no main dish for Thanksgiving in Indonesia""], ""reasoning"": ""Thanksgiving is a traditional American holiday, and as such, it is not widely celebrated in Indonesia. While some people in Indonesia may choose to celebrate Thanksgiving, it is not a national holiday or a significant cultural event, and therefore, there is no traditional main dish associated with it.""}",inst-1,1,,"Thanksgiving is a traditional American holiday, and as such, it is not widely celebrated in Indonesia. While some people in Indonesia may choose to celebrate Thanksgiving, it is not a national holiday or a significant cultural event, and therefore, there is no traditional main dish associated with it."
+New-su-58,What animals are commonly used for agriculture in Indonesia?,"What animals are commonly used for agriculture in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What animals are commonly used for agriculture in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""cattle"",""chickens"",""pigs"",""goats"",""ducks"",""turkeys"",""water buffalo""}], ""reasoning"": ""These animals are commonly used in Indonesian agriculture due to their adaptability to the country's tropical climate and their role in providing meat, dairy products, and other agricultural products.""}",inst-1,1,,
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Indonesia? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in Indonesia? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which month is the final exam term usually scheduled at high schools in Indonesia? (Provide Arabic numerals (1~12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [June], ""reasoning"": ""In Indonesia, the academic year typically runs from August to June, with the final exams usually taking place in June.""}",inst-1,1,,
+Ji-ko-28,When is the first day that people celebrate after a child is born in Indonesia?,"When is the first day that people celebrate after a child is born in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'When is the first day that people celebrate after a child is born in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Hari Pertama"", ""First Day of Life""],
+""reasoning"": ""In Indonesian culture, the first day after a child's birth is celebrated as Hari Pertama, which is a significant milestone in a child's life.""
+}",inst-1,1,,"In Indonesian culture, the first day after a child's birth is celebrated as Hari Pertama, which is a significant milestone in a child's life."
+Na-ko-33,What symbolic food do people from Indonesia eat on (Lunar) New Year?,"What symbolic food do people from Indonesia eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What symbolic food do people from Indonesia eat on (Lunar) New Year?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""food"": ""Kue Putu""}], ""reasoning"": ""Kue Putu, a traditional Indonesian steamed cake, is often served during the Lunar New Year, which is also known as Imlek, to symbolize prosperity and good luck.""}",inst-1,1,,
+Ki-pe-34,What is the usual drink in the breakfast in Indonesia?,"What is the usual drink in the breakfast in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the usual drink in the breakfast in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""tea""}], ""reasoning"": ""Tea is a popular beverage in Indonesia and is often consumed during breakfast, especially in traditional Indonesian breakfast settings.""}",inst-1,1,,
+New-su-42,What religion is mainly taught in schools in Indonesia?,"What religion is mainly taught in schools in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What religion is mainly taught in schools in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Islam""], ""reasoning"": ""Indonesia is a Muslim-majority country and the government has a policy of promoting Islamic values in education.""}",inst-1,1,,Indonesia is a Muslim-majority country and the government has a policy of promoting Islamic values in education.
+Ne-ar-06,What do people from Indonesia eat in Ramadan?,"What do people from Indonesia eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Indonesia eat in Ramadan?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Iftar"": [""Bubur ayam"", ""Gado-gado"", ""Sate"", ""Mie goreng"", ""Nasi goreng"", ""Krupuk""]}, {""Suhoor"": [""Nasi lemak"", ""Mie goreng"", ""Bakpia"", ""Kue putu"", ""Krupuk""]}], ""reasoning"": ""Indonesian people typically break their fast with Iftar, which often includes traditional dishes such as bubur ayam, gado-gado, sate, mie goreng, and nasi goreng. For Suhoor, they might have lighter options like nasi lemak, mie goreng, bakpia, kue putu, and krupuk.""}",inst-1,1,,
+Gu-ch-38,"On average, how far do students typically pursue their education in Indonesia? (e.g., elementary, high school)","On average, how far do students typically pursue their education in Indonesia? (e.g., elementary, high school) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'On average, how far do students typically pursue their education in Indonesia? (e.g., elementary, high school)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""level"": ""high school""}], ""reasoning"": ""In Indonesia, the education system typically includes elementary school (ages 6-12), junior high school (ages 13-15), and senior high school (ages 16-18). Most students complete high school, but some may choose to pursue vocational training or higher education""}",inst-1,1,,
+Kik-in-16,What drink is commonly consumed in Indonesia when the weather is cold?,"What drink is commonly consumed in Indonesia when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What drink is commonly consumed in Indonesia when the weather is cold?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Hot Chocolate""}], ""reasoning"": ""Since Indonesia is a tropical country, it rarely experiences cold weather. Therefore, a cold-weather drink is not typically consumed. Instead, hot chocolate is a popular drink during the country's occasional cold snaps.""}",inst-1,1,,
+Al-en-39,What do people eat on their birthday in Indonesia?,"What do people eat on their birthday in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people eat on their birthday in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Lebaran cake"", ""Kue Putu"", ""Es Teler"", ""Gado-Gado""}], ""reasoning"": ""Indonesians often celebrate their birthdays with traditional Indonesian desserts and snacks, which vary depending on the region and personal preferences.""}",inst-1,1,,
+Ne-ar-26,What is the most famous public corporation in Indonesia?,"What is the most famous public corporation in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous public corporation in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Bank Mandiri""], ""reasoning"": ""Bank Mandiri is the largest and most well-known bank in Indonesia, with a long history dating back to 1895. It is a state-owned bank and has a significant presence in the country's financial sector, making it the most famous public corporation in Indonesia.""}",inst-1,1,,"Bank Mandiri is the largest and most well-known bank in Indonesia, with a long history dating back to 1895. It is a state-owned bank and has a significant presence in the country's financial sector, making it the most famous public corporation in Indonesia."
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Indonesia?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""subject"": ""English""}], ""reasoning"": ""The English academy/private educational institute is the most popular among middle and high school students in Indonesia due to the growing importance of English language skills in the country's economy and education system.""}",inst-1,1,,
+Th-en-51,Which subject is considered the most important for students in Indonesia?,"Which subject is considered the most important for students in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject is considered the most important for students in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Bahasa Indonesia""], ""reasoning"": ""Bahasa Indonesia is considered the most important subject for students in Indonesia because it is the national language and a fundamental aspect of Indonesian culture and identity.""}",inst-1,1,,Bahasa Indonesia is considered the most important subject for students in Indonesia because it is the national language and a fundamental aspect of Indonesian culture and identity.
+New-ch-07,What food items do people typically pair with hard liquor in Indonesia?,"What food items do people typically pair with hard liquor in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food items do people typically pair with hard liquor in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In Indonesia, hard liquor is often consumed with snacks and small plates to balance the strong flavors and to aid in socializing. The pairing of food with liquor is a common practice in many Indonesian social gatherings and celebrations.""}
+
+{""answer"": [
+{
+""type"": ""betel nuts"",
+""quantity"": ""small plate""
+},
+{
+""type"": ""krupuk"",
+""quantity"": ""small plate""
+},
+{
+""type"": ""fried snacks"",
+""quantity"": ""small plate""
+},
+{
+""type"": ""fresh fruits"",
+""quantity"": ""small plate""
+},
+{
+""type"": ""chocolate"",
+""quantity"": ""small piece""
+}
+]}",inst-1,1,,"In Indonesia, hard liquor is often consumed with snacks and small plates to balance the strong flavors and to aid in socializing. The pairing of food with liquor is a common practice in many Indonesian social gatherings and celebrations."
+New-en-68,What repercussions are there for bad behavior in schools in Indonesia?,"What repercussions are there for bad behavior in schools in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What repercussions are there for bad behavior in schools in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In Indonesian schools, bad behavior is taken seriously and can lead to disciplinary actions, affecting not only the student's academic performance but also their social and emotional well-being. The repercussions can be both short-term and long-term, impacting the student's future opportunities and relationships.""}",inst-1,1,,"In Indonesian schools, bad behavior is taken seriously and can lead to disciplinary actions, affecting not only the student's academic performance but also their social and emotional well-being. The repercussions can be both short-term and long-term, impacting the student's future opportunities and relationships."
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Indonesia? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in Indonesia? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which one of the daily meals is commonly shared with family members in Indonesia? (e.g., breakfast, lunch, dinner)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""dinner""}], ""reasoning"": ""In Indonesian culture, dinner is often considered the most important meal of the day, and it is common for family members to come together to share a meal and socialize.""}",inst-1,1,,
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Indonesia?,"What type of clothing do middle and high school students wear to school in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clothing do middle and high school students wear to school in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""formal attire"", ""casual wear""}], ""reasoning"": ""In Indonesia, middle and high school students typically wear a mix of formal and casual clothing to school, with some schools having a more formal dress code than others.""}",inst-1,1,,
+Ca-sp-41,Where do the dependent elderly usually live in Indonesia?,"Where do the dependent elderly usually live in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do the dependent elderly usually live in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""location"": ""With family members, particularly adult children""}], ""reasoning"": ""In Indonesian culture, family ties are strong, and it is common for elderly individuals to live with their adult children, especially if they are unable to care for themselves. This arrangement is often seen as a way to ensure the elderly receive the care and support they need, while also allowing adult children to fulfill their filial obligations.""}",inst-1,1,,
+Sa-en-31,What is Indonesia's most popular family pet?,"What is Indonesia's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Indonesia's most popular family pet?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dog""}], ""reasoning"": ""According to various sources, dogs are the most popular family pet in Indonesia due to their adaptability to the tropical climate and the cultural significance of dogs in Indonesian society.""}",inst-1,1,,
+Gu-ch-08,What is the most popular sports among children in Indonesia?,"What is the most popular sports among children in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular sports among children in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Futsal""}], ""reasoning"": ""Futsal is a popular sport among children in Indonesia due to its accessibility, affordability, and familiarity with the sport in the country""}",inst-1,1,,
+New-as-20,What is the most popular indoor sport in Indonesia?,"What is the most popular indoor sport in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular indoor sport in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Badminton""}], ""reasoning"": ""Badminton is a popular sport in Indonesia due to its widespread accessibility and popularity among the locals, with many schools and communities having badminton courts and promoting the sport.""}",inst-1,1,,
+New-spme-05,What are the most popular sweets in Indonesia?,"What are the most popular sweets in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the most popular sweets in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Kue Putu, Kue Bugis, Kue Lapis, and Martabak""], ""reasoning"": ""Indonesian sweets are a mix of traditional and modern flavors, with influences from Dutch and Middle Eastern cuisines. These four sweets are popular due to their unique flavors and textures, as well as their widespread availability in Indonesian markets and street stalls.""}",inst-1,1,,"Indonesian sweets are a mix of traditional and modern flavors, with influences from Dutch and Middle Eastern cuisines. These four sweets are popular due to their unique flavors and textures, as well as their widespread availability in Indonesian markets and street stalls."
+New-in-01,Which coffee shop brand is the most popular in Indonesia?,"Which coffee shop brand is the most popular in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which coffee shop brand is the most popular in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""brand"": ""Starbucks""}], ""reasoning"": ""Based on market research and sales data, Starbucks is the most popular coffee shop brand in Indonesia, with a strong presence in major cities and a loyal customer base.""}",inst-1,1,,
+New-gr-58,Which job is considered underpaid in Indonesia?,"Which job is considered underpaid in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which job is considered underpaid in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Nurse""], ""reasoning"": ""Nurses in Indonesia are often underpaid compared to their qualifications and responsibilities, with average salaries ranging from IDR 20-30 million (approximately USD 1,400-2,100) per month.""}}",inst-1,1,,
+New-ch-32,What office software do people typically use in the workplace in Indonesia?,"What office software do people typically use in the workplace in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What office software do people typically use in the workplace in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""software"": ""Microsoft Office"", ""percentage"": 80}], ""reasoning"": ""Microsoft Office is widely used in Indonesia due to its popularity globally and the availability of Bahasa Indonesia language support.""}",inst-1,1,,
+New-ch-73,What type of clubs are most popular among university students in Indonesia?,"What type of clubs are most popular among university students in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clubs are most popular among university students in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Academic"", ""description"": ""Cultural""}], ""reasoning"": ""University students in Indonesia are often driven by academic and cultural interests, making academic and cultural clubs the most popular among them.""}",inst-1,1,,
+New-en-47,What can typically be found in the back garden of houses in Indonesia?,"What can typically be found in the back garden of houses in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What can typically be found in the back garden of houses in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""pandanus tree"", ""bamboo"", ""vegetable garden"", ""chili pepper plants"", ""herbal plants""}], ""reasoning"": ""In Indonesia, back gardens are often used for growing herbs and vegetables, and may also feature decorative plants like pandanus trees and bamboo. The climate and soil are well-suited for a variety of plants, and many households have a small garden or yard where they can cultivate their own food and flowers.""}",inst-1,1,,
+New-en-05,Which food is a cost-effective and quick meal option in Indonesia?,"Which food is a cost-effective and quick meal option in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food is a cost-effective and quick meal option in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [
+{""name"": ""Nasi Goreng""}
+],
+""reasoning"": ""Nasi Goreng, Indonesian-style fried rice, is a popular and affordable meal option that can be prepared quickly at a low cost.""
+}",inst-1,1,,
+New-ch-16,What is the most famous sports-related movie in Indonesia?,"What is the most famous sports-related movie in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous sports-related movie in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Laskar Pelangi""], ""reasoning"": ""Laskar Pelangi is a 2008 Indonesian drama film based on the novel of the same name, which tells the story of a group of young students from a small fishing village who form a soccer team to compete in a regional tournament. The film is a huge commercial success in Indonesia and has become a cultural phenomenon, making it the most famous sports-related movie in the country.""}",inst-1,1,,"Laskar Pelangi is a 2008 Indonesian drama film based on the novel of the same name, which tells the story of a group of young students from a small fishing village who form a soccer team to compete in a regional tournament. The film is a huge commercial success in Indonesia and has become a cultural phenomenon, making it the most famous sports-related movie in the country."
+Ji-ko-25,What are the family-related holidays in Indonesia?,"What are the family-related holidays in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the family-related holidays in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""National Family Day (Hari Keluarga Nasional)"", ""Idul Fitri (Eid al-Fitr)"", ""Idul Adha (Eid al-Adha)"", ""Lebaran"", ""Awal Muharram (Hari Raya Haji)""], ""reasoning"": ""These holidays are considered family-related as they involve family gatherings, reunions, and celebrations, which are an important part of Indonesian culture.""}",inst-1,1,,"These holidays are considered family-related as they involve family gatherings, reunions, and celebrations, which are an important part of Indonesian culture."
+Sa-en-7,What are popular snacks in Indonesia?,"What are popular snacks in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are popular snacks in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Kroket"", ""Siomay"", ""Martabak"", ""Gado-Gado"", ""Bakpia""}], ""reasoning"": ""Indonesian snacks are a blend of traditional and modern flavors, with many being street food or market-style snacks. These popular snacks are widely available and enjoyed by locals and visitors alike.""}",inst-1,1,,
+Ta-pe-29,Which professional sport is the highest paying in Indonesia?,"Which professional sport is the highest paying in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which professional sport is the highest paying in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Indonesia's professional sports league is largely dominated by football, with the Indonesian Super League being the top-tier competition. The league attracts a significant amount of attention and sponsorship, making it the highest paying professional sport in the country.""}
+{""answer"": [{""sport"": ""football""}], ""reasoning"": ""Indonesia's professional sports league is largely dominated by football, with the Indonesian Super League being the top-tier competition. The league attracts a significant amount of attention and sponsorship, making it the highest paying professional sport in the country.""}",inst-1,1,,"Indonesia's professional sports league is largely dominated by football, with the Indonesian Super League being the top-tier competition. The league attracts a significant amount of attention and sponsorship, making it the highest paying professional sport in the country."
+Kik-in-36,Who is the most popular soccer coach in Indonesia?,"Who is the most popular soccer coach in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular soccer coach in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Bimbo Mandala""}], ""reasoning"": ""Based on his achievements and popularity in Indonesian football, Bimbo Mandala is often considered the most popular soccer coach in Indonesia.""}",inst-1,1,,
+Ji-ko-40,What do high school students typically do during break time in schools in Indonesia?,"What do high school students typically do during break time in schools in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do high school students typically do during break time in schools in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""socialize with friends"", ""play games"", ""listen to music"", ""eat snacks"", ""take a nap"", ""text friends or family"", ""browse social media""}], ""reasoning"": ""High school students in Indonesia typically use break time to relax, unwind, and recharge, often engaging in activities that bring them joy and comfort.""}",inst-1,1,,
+Th-en-15,What is the most popular winter sport in Indonesia?,"What is the most popular winter sport in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular winter sport in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Indonesia is a tropical country with a warm climate, and it does not have a winter season. Therefore, there is no winter sport that is popular in Indonesia.""}",inst-1,1,,"Indonesia is a tropical country with a warm climate, and it does not have a winter season. Therefore, there is no winter sport that is popular in Indonesia."
+Na-ko-19,Who is the most popular volleyball player in Indonesia?,"Who is the most popular volleyball player in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular volleyball player in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Liliyana Nusha Setyarini""}], ""reasoning"": ""Based on her achievements and popularity in Indonesia, Liliyana Nusha Setyarini is considered the most popular volleyball player in Indonesia.""}",inst-1,1,,
+New-en-56,What is the most popular foreign language spoken by families in Indonesia?,"What is the most popular foreign language spoken by families in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular foreign language spoken by families in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""id"": 1, ""language"": ""English""}], ""reasoning"": ""English is widely taught in Indonesian schools and is often used as a lingua franca in international communication, making it a popular choice for families in Indonesia.""}",inst-1,1,,
+Jo-sp-13,What is the most popular water sport in Indonesia?,"What is the most popular water sport in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular water sport in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Surfing""}], ""reasoning"": ""Indonesia has a long coastline and numerous islands, making it a paradise for surfers""}",inst-1,1,,
+Na-ko-29,Who is the most famous swimmer in Indonesia?,"Who is the most famous swimmer in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most famous swimmer in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""I Gede Siman Sudartawa""}], ""reasoning"": ""I Gede Siman Sudartawa is a well-known Indonesian swimmer who has won multiple medals in international competitions, including the Asian Games and Southeast Asian Games.""}",inst-1,1,,
+New-su-57,What is the most common livestock raised in Indonesia?,"What is the most common livestock raised in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common livestock raised in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""id"": 1, ""name"": ""Cattle""}], ""reasoning"": ""Indonesia is a major producer of cattle, with the majority of its cattle population being used for beef and dairy products.""}",inst-1,1,,
+New-en-19,What is the most well known sporting stadium in Indonesia?,"What is the most well known sporting stadium in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most well known sporting stadium in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Pukul Raga Stadium""}], ""reasoning"": ""Pukul Raga Stadium is the most well-known sporting stadium in Indonesia due to its capacity to hold over 60,000 spectators and its hosting of various international and national sports events.""}",inst-1,1,,
+New-ch-38,Which cities or regions are known for their import and export activities in Indonesia?,"Which cities or regions are known for their import and export activities in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which cities or regions are known for their import and export activities in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""city/region"": ""Jakarta"", ""activity"": ""import and export""}], ""reasoning"": ""Jakarta is the capital city and the economic hub of Indonesia, and it is the country's main port for international trade.""}",inst-1,1,,
+New-pe-65,"How many subjects are taught in middle schools in Indonesia? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in Indonesia? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How many subjects are taught in middle schools in Indonesia? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""subject"": 8}], ""reasoning"": ""In Indonesia, middle school students typically take 8 core subjects, which are: Indonesian language, English language, mathematics, science, social science, health, physical education, and Islamic religion (for Muslim students).""",inst-1,1,,
+Th-en-03,What is the most popular professional sports league in Indonesia?,"What is the most popular professional sports league in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular professional sports league in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Liga 1""}], ""reasoning"": ""Liga 1 is the top division of Indonesian football and is considered the most popular professional sports league in the country.""}",inst-1,1,,
+New-ko-03,What is the most popular children's song in Indonesia that families sing together?,"What is the most popular children's song in Indonesia that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular children's song in Indonesia that families sing together?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""song"": ""Keroncongan""}], ""reasoning"": ""Keroncongan is a traditional Indonesian children's song that is widely known and loved by families across the country. It is a fun and catchy song that is often sung during family gatherings and celebrations, making it a popular choice for families to sing together.""}",inst-1,1,,
+New-en-69,Which writers are commonly studied in literature class in Indonesia?,"Which writers are commonly studied in literature class in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which writers are commonly studied in literature class in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Pramoedya Ananta Toer"", ""Andrei Laksana"", ""Chairil Anwar"", ""Sutan Takdir Alisjahbana"", ""H.B. Jassin""], ""reasoning"": ""These writers are considered pillars of Indonesian literature and are frequently studied in literature classes due to their significant contributions to the development of Indonesian literature and their representation of the country's cultural and historical heritage.""}",inst-1,1,,These writers are considered pillars of Indonesian literature and are frequently studied in literature classes due to their significant contributions to the development of Indonesian literature and their representation of the country's cultural and historical heritage.
+Ni-en-12,What is the top university in Indonesia? (Provide the official name.),"What is the top university in Indonesia? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the top university in Indonesia? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""official_name"": ""University of Indonesia""}], ""reasoning"": ""According to various university rankings, the University of Indonesia is consistently ranked as one of the top universities in Indonesia, known for its academic excellence, research output, and international recognition.""}",inst-1,1,,
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Indonesia?,"What food is typically disliked by children but enjoyed by the elderly in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is typically disliked by children but enjoyed by the elderly in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""food"": ""Brussels sprouts""}], ""reasoning"": ""Children often dislike Brussels sprouts due to their strong taste and texture, while older adults may enjoy them for their nutritional value, ease of digestion, and nostalgic appeal.""}",inst-1,1,,
+Ji-ko-45,What do people look forward to the most at university festivals in Indonesia?,"What do people look forward to the most at university festivals in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people look forward to the most at university festivals in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Live Music and Performances""], ""reasoning"": ""University festivals in Indonesia are often a time for students to let loose and have fun, and live music and performances are a big draw for many attendees.""}",inst-1,1,,"University festivals in Indonesia are often a time for students to let loose and have fun, and live music and performances are a big draw for many attendees."
+Ji-ko-33,Where do high school students in Indonesia usually go after dinner?,"Where do high school students in Indonesia usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do high school students in Indonesia usually go after dinner?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""hangout with friends"", ""relax at home""}], ""reasoning"": ""High school students in Indonesia often prioritize socializing with friends and family, and may also enjoy spending time at home, watching TV, playing video games, or doing homework""}",inst-1,1,,
+Ni-en-31,What do people in Indonesia traditionally eat on Christmas Day?,"What do people in Indonesia traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people in Indonesia traditionally eat on Christmas Day?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Nasi Lemak with fried chicken or beef"", ""Sate"", ""Gado-Gado"", ""Rendang"", ""Martabak""], ""reasoning"": ""As Indonesia is a Muslim-majority country, Christmas is not a national holiday and the traditional Christmas dishes are not as widespread as in Christian-majority countries. However, with the increasing influence of Western culture, many Indonesians, especially in urban areas, have adopted some Western-style Christmas dishes, such as Nasi Lemak with fried chicken or beef, Sate, Gado-Gado, Rendang, and Martabak.""}",inst-1,1,,"As Indonesia is a Muslim-majority country, Christmas is not a national holiday and the traditional Christmas dishes are not as widespread as in Christian-majority countries. However, with the increasing influence of Western culture, many Indonesians, especially in urban areas, have adopted some Western-style Christmas dishes, such as Nasi Lemak with fried chicken or beef, Sate, Gado-Gado, Rendang, and Martabak."
+Al-en-36,What food is associated with Halloween in Indonesia?,"What food is associated with Halloween in Indonesia? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is associated with Halloween in Indonesia?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Kue Putu""], ""reasoning"": ""Kue Putu is a traditional Indonesian cake that is often served during Halloween celebrations in Indonesia, particularly among the younger generations who have adopted the holiday. It is not a traditional Indonesian holiday, but has gained popularity in recent years.""}",inst-1,1,,"Kue Putu is a traditional Indonesian cake that is often served during Halloween celebrations in Indonesia, particularly among the younger generations who have adopted the holiday. It is not a traditional Indonesian holiday, but has gained popularity in recent years."

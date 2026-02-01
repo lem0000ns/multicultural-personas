@@ -3,6 +3,7 @@
 import json
 import os
 from datasets import load_dataset
+from tqdm.auto import tqdm
 from persona_generator import generate_persona_description, cap
 from tools.utils import country_to_language
 from tools.llm_utils import get_llm, generate_text_funcs
@@ -46,8 +47,8 @@ async def evaluate_hard_initial(ds, mode):
     correct = total = 0
     iteration = 1
     persona_description = ""
-    
-    for i in range(0, len(ds), 4):
+    n_sets = (len(ds) + 3) // 4
+    for i in tqdm(range(0, len(ds), 4), total=n_sets, desc="Initial eval (Hard)", unit="set"):
         # ensure set of 4 options is complete
         isValidSet = is_valid_set(ds, i)
         
@@ -186,8 +187,8 @@ async def evaluate_easy_initial(ds, mode):
     """
     data = {}
     correct = total = 0
-    
-    for i in range(len(ds)): 
+    n_questions = len(ds)
+    for i in tqdm(range(n_questions), total=n_questions, desc="Initial eval (Easy)", unit="q"):
         cur_row = ds[i]
         prompt_question = cur_row["prompt_question"]
         option_a = cur_row["prompt_option_a"]
@@ -307,7 +308,9 @@ async def run_initial_eval(difficulty, mode, custom=None):
     Returns:
         Tuple of (accuracy, db_path)
     """
+    print(f"Loading CulturalBench dataset ({difficulty})...")
     ds = load_dataset("kellycyy/CulturalBench", f"CulturalBench-{difficulty}", split="test")
+    print(f"Dataset loaded ({len(ds)} examples). Starting evaluation...")
 
     if difficulty == "Hard":
         data, correct, total = await evaluate_hard_initial(ds, mode)
@@ -317,6 +320,7 @@ async def run_initial_eval(difficulty, mode, custom=None):
     model_to_save = {
         "Qwen/Qwen3-4B": "qwen3_4b",
         "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
+        "Qwen/Qwen3-14B": "qwen3_14b",
     }
     
     # write results to database (initial write)

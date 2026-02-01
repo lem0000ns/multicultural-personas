@@ -216,3 +216,14 @@ __marimo__/
 *.db-trace-lock-journal-lock
 *.db-trace-lock-journal-lock-journal
 *.db-trace-lock-journal-lock-journal-lock
+
+# Large result files
+BLEnD/evaluation/mc_data/*.csv
+BLEnD/evaluation/mc_data/*.png
+BLEnD/*/response/
+*.out
+nohup.out
+
+# CulturalBench results
+culturalbench/results/
+culturalbench/*.jsonl

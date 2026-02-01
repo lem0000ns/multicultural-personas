@@ -1,0 +1,820 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Algeria?,"What is the most popular prenatal education activity for pregnant women in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular prenatal education activity for pregnant women in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Breastfeeding classes""], ""reasoning"": ""Based on the cultural and social norms in Algeria, breastfeeding is highly valued and recommended. Prenatal education activities that focus on breastfeeding techniques and benefits are likely to be popular among pregnant women in Algeria.""}",inst-1,1,,"Based on the cultural and social norms in Algeria, breastfeeding is highly valued and recommended. Prenatal education activities that focus on breastfeeding techniques and benefits are likely to be popular among pregnant women in Algeria."
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Algeria's society?,"Which age's birthday is celebrated the most grandly in Algeria's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which age's birthday is celebrated the most grandly in Algeria's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""age"": 60}], ""reasoning"": ""In Algerian culture, 60th birthday is considered a significant milestone, marking a person's entrance into the golden age. It is often celebrated with grandeur and festivities, as it is seen as a time of wisdom, maturity, and accomplishment.""}",inst-1,1,,
+New-pe-20,What sport is popular to play on the beach in Algeria?,"What sport is popular to play on the beach in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sport is popular to play on the beach in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Surfing""}], ""reasoning"": ""Surfing is not a popular sport in Algeria as the country is a landlocked nation with no direct access to the ocean, making it difficult for people to practice and enjoy surfing.""}",inst-1,1,,
+Kik-in-37,What soccer teams in Algeria are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in Algeria are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What soccer teams in Algeria are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""team1"": ""MC Alger"", ""team2"": ""USM Alger""}], ""reasoning"": ""The rivalry between MC Alger and USM Alger is considered one of the most intense in Algerian football, fueled by their long history of competition and the fact that they are both based in the capital city of Algiers.""}",inst-1,1,,
+Jod-ch-07,"How long (in hours) on average does it take for people in Algeria to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in Algeria to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long (in hours) on average does it take for people in Algeria to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [1.5], ""reasoning"": ""While there is no definitive answer to this question, a typical dinner at a restaurant in Algeria can take around 1.5 hours, considering the pace of service, meal preparation, and cultural norms.""}",inst-1,1,,"While there is no definitive answer to this question, a typical dinner at a restaurant in Algeria can take around 1.5 hours, considering the pace of service, meal preparation, and cultural norms."
+New-spme-37,Which profession is most commonly studied abroad by students from Algeria?,"Which profession is most commonly studied abroad by students from Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which profession is most commonly studied abroad by students from Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Engineering""], ""reasoning"": ""Algerian students often pursue higher education abroad in engineering fields due to the country's emphasis on science, technology, engineering, and mathematics (STEM) education and the demand for skilled professionals in these areas.""}",inst-1,1,,"Algerian students often pursue higher education abroad in engineering fields due to the country's emphasis on science, technology, engineering, and mathematics (STEM) education and the demand for skilled professionals in these areas."
+New-pe-49,Where do families gather to pray together in Algeria?,"Where do families gather to pray together in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do families gather to pray together in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Masjid"" : ""Mosque""}], ""reasoning"": ""In Islam, mosques are considered sacred spaces for worship, and families often gather there to pray together.""}",inst-1,1,,
+Jod-ch-60,What is the duration (in hours) of a typical workday in Algeria? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in Algeria? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration (in hours) of a typical workday in Algeria? (Provide Arabic numerals (0~24) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [8], ""reasoning"": ""In Algeria, the typical workday is usually 8 hours long, with a standard working hour from 9:00 AM to 5:00 PM, Monday to Friday.""}",inst-1,1,,"In Algeria, the typical workday is usually 8 hours long, with a standard working hour from 9:00 AM to 5:00 PM, Monday to Friday."
+Ji-ko-24,What is the most preferred recreational facility among children in Algeria?,"What is the most preferred recreational facility among children in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most preferred recreational facility among children in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""parks""], ""reasoning"": ""Children in Algeria often prefer outdoor recreational facilities, and parks offer a safe and accessible space for them to play, run around, and engage in physical activities, which is essential for their overall development and well-being.""}",inst-1,1,,"Children in Algeria often prefer outdoor recreational facilities, and parks offer a safe and accessible space for them to play, run around, and engage in physical activities, which is essential for their overall development and well-being."
+Sa-en-22,What is the most famous university in Algeria known for its sports team?,"What is the most famous university in Algeria known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous university in Algeria known for its sports team?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""University of Algiers""}], ""reasoning"": ""The University of Algiers has a strong reputation for its sports teams, particularly in football and basketball, and is considered one of the top universities in Algeria in terms of sports performance.""}",inst-1,1,,
+Al-en-19,What is a popular second language for high school students in Algeria?,"What is a popular second language for high school students in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular second language for high school students in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""French""}], ""reasoning"": ""French is a widely taught language in Algerian schools, and many students choose it as a second language due to its cultural and historical significance in the country.""}",inst-1,1,,
+Ne-ar-09,What do people from Algeria eat in Eid ul Fitr?,"What do people from Algeria eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Algeria eat in Eid ul Fitr?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Traditional Algerian dishes such as Mhajab, Makroud, and Ghrayba""}], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and Algerian cuisine is deeply rooted in tradition. The dishes mentioned are typical of Algerian celebrations, often served with family and friends.""}",inst-1,1,,
+New-su-24,What sports do parents and children commonly play together in Algeria?,"What sports do parents and children commonly play together in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports do parents and children commonly play together in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Football""], ""reasoning"": ""Football is a popular sport in Algeria, and it is common for parents and children to play together, promoting family bonding and a healthy lifestyle.""}",inst-1,1,,"Football is a popular sport in Algeria, and it is common for parents and children to play together, promoting family bonding and a healthy lifestyle."
+Ji-ko-42,What are the required subjects in Algeria's university entrance exam?,"What are the required subjects in Algeria's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the required subjects in Algeria's university entrance exam?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Mathematics"", ""Arabic"", ""French"", ""English"", ""Science""], ""reasoning"": ""The required subjects in Algeria's university entrance exam are typically the core subjects taught in secondary school, including mathematics, Arabic, French, English, and science, which are considered essential for higher education.""}",inst-1,1,,"The required subjects in Algeria's university entrance exam are typically the core subjects taught in secondary school, including mathematics, Arabic, French, English, and science, which are considered essential for higher education."
+New-pe-06,What is the most popular stew in Algeria?,"What is the most popular stew in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular stew in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular stew in Algeria"": [""Chakchouka""]}],""reasoning"": ""Chakchouka is a popular Algerian stew made with tomatoes, peppers, onions, garlic, and spices, and is often served with crusty bread or couscous.""}",inst-1,1,,
+New-pe-86,What is the name of the most famous tower in Algeria?,"What is the name of the most famous tower in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the name of the most famous tower in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Sidi el Houari Tower""], ""reasoning"": ""Sidi el Houari Tower is the most famous and iconic tower in Algeria, located in Algiers. It's a historic landmark and a symbol of the country's rich cultural heritage.""}",inst-1,1,,"Sidi el Houari Tower is the most famous and iconic tower in Algeria, located in Algiers. It's a historic landmark and a symbol of the country's rich cultural heritage."
+Th-en-53,What is the most popular extracurricular social event at schools in Algeria?,"What is the most popular extracurricular social event at schools in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular social event at schools in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular extracurricular social event"": ""Moulood""}], ""reasoning"": ""Moulood is a popular event in Algerian schools, where students gather to celebrate the Prophet's birthday, and it is considered a significant social event that brings students together, fosters unity and camaraderie, and provides a platform for students to express themselves and showcase their talents.""}",inst-1,1,,
+Ca-sp-06,Which is the most important meal of the day to people from Algeria?,"Which is the most important meal of the day to people from Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which is the most important meal of the day to people from Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most important meal"": ""Dinner""}], ""reasoning"": ""In Algerian culture, dinner is often the main and most anticipated meal of the day, typically eaten with family and friends, and is considered a time for socializing and bonding.""}",inst-1,1,,
+New-en-41,Who is the most well known and successful entrepreneur in Algeria?,"Who is the most well known and successful entrepreneur in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most well known and successful entrepreneur in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Rachid Seighir""], ""reasoning"": ""Rachid Seighir is a well-known entrepreneur in Algeria, founder of several successful companies, including Algerian Post Office, and has a strong impact on the country's economy and entrepreneurship ecosystem.""}",inst-1,1,,"Rachid Seighir is a well-known entrepreneur in Algeria, founder of several successful companies, including Algerian Post Office, and has a strong impact on the country's economy and entrepreneurship ecosystem."
+New-su-33,What is the common dress code for school teachers in Algeria?,"What is the common dress code for school teachers in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the common dress code for school teachers in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Traditional attire"": ""Teachers in Algeria often wear traditional attire, such as kaftans or djellabas, which are considered modest and respectful.""}], ""reasoning"": ""The dress code for school teachers in Algeria is generally conservative and modest, reflecting the country's cultural and religious values.""}",inst-1,1,,
+Th-en-44,What is Algeria's most popular food for family meals on weekends?,"What is Algeria's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Algeria's most popular food for family meals on weekends?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""tagine""}], ""reasoning"": ""Tagine is a traditional Algerian dish that is often served at family meals on weekends due to its rich flavors and hearty portions, making it a popular choice for gathering with loved ones.""}",inst-1,1,,
+Th-en-45,What is the most popular weekday evening family activity in Algeria?,"What is the most popular weekday evening family activity in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular weekday evening family activity in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Iftar dinner and family gathering""}], ""reasoning"": ""Algerian families usually prioritize spending quality time together over other activities, and having Iftar dinner together is a common practice, especially during the holy month of Ramadan, and also on regular weekdays.""}",inst-1,1,,
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Algeria? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in Algeria? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long is the typical probation period for new employees before signing a formal contract in Algeria? (e.g., 1 month).','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""answer"": ""3 months""}], ""reasoning"": ""In Algeria, the typical probation period for new employees is usually 3 months, which allows the employer to assess the employee's performance and skills before signing a formal contract.""}",inst-1,1,,
+New-in-62,What university in Algeria is popular because of its engineering major? (Provide the official name.),"What university in Algeria is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What university in Algeria is popular because of its engineering major? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Université des Sciences et de la Technologie Houari Boumédiène""], ""reasoning"": ""This university is one of the most prestigious in Algeria and has a strong reputation for its engineering programs, offering a wide range of specializations such as mechanical, electrical, and computer engineering.""}",inst-1,1,,"This university is one of the most prestigious in Algeria and has a strong reputation for its engineering programs, offering a wide range of specializations such as mechanical, electrical, and computer engineering."
+Ji-ko-34,How do elementary school students in Algeria go to school?,"How do elementary school students in Algeria go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How do elementary school students in Algeria go to school?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Elementary school students in Algeria typically attend school from Monday to Friday, with a morning session from 8:00 am to 12:30 pm and an afternoon session from 1:30 pm to 5:00 pm.""}], ""reasoning"": [""This is based on the typical school schedule and hours of operation in Algeria.""}]",inst-1,1,,
+Ta-pe-21,Where do children usually play soccer in Algeria?,"Where do children usually play soccer in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do children usually play soccer in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Streets and fields""}], ""reasoning"": ""Children in Algeria often play soccer in informal settings, such as streets, fields, and open spaces, due to the lack of dedicated soccer fields and facilities in many areas.""}",inst-1,1,,
+Tmp-ar-01,Where do university students in Algeria usually go to study for their final exams?,"Where do university students in Algeria usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do university students in Algeria usually go to study for their final exams?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""University libraries"", ""Friends' or classmates' homes"", ""Local cafes""}], ""reasoning"": ""University students in Algeria often prefer to study for their final exams in quiet and familiar environments, which may include university libraries, friends' or classmates' homes, or local cafes. These settings allow them to focus and concentrate on their studies, away from the distractions of home or public spaces.""}",inst-1,1,,
+Ne-ar-38,Which food do people usually offer as charity in Algeria?,"Which food do people usually offer as charity in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food do people usually offer as charity in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Makroud""}], ""reasoning"": ""Makroud is a traditional Algerian sweet pastry that is often offered as charity during special occasions and holidays, as it is considered a symbol of hospitality and generosity in Algerian culture.""}",inst-1,1,,
+Jod-ch-01,What eating utensils do people commonly used in Algeria?,"What eating utensils do people commonly used in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What eating utensils do people commonly used in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""fork"", ""spoon"", ""knife""}], ""reasoning"": ""In Algerian cuisine, forks, spoons, and knives are the most commonly used eating utensils, similar to many Western cultures.""}",inst-1,1,,
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Algeria?,"What type of alcoholic drink is most commonly consumed at festivals in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of alcoholic drink is most commonly consumed at festivals in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Mint tea""], ""reasoning"": ""Algeria is a predominantly Muslim country, and the consumption of alcohol is not common or encouraged. Mint tea, on the other hand, is a popular and culturally significant beverage in Algeria, often served at social gatherings and festivals.""}",inst-1,1,,"Algeria is a predominantly Muslim country, and the consumption of alcohol is not common or encouraged. Mint tea, on the other hand, is a popular and culturally significant beverage in Algeria, often served at social gatherings and festivals."
+Th-en-11,Who is the most popular sportperson in Algeria?,"Who is the most popular sportperson in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular sportperson in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Rabah Madjer""}], ""reasoning"": ""Rabah Madjer is widely regarded as the most popular and successful Algerian footballer, having won the European Cup with Juventus in 1985 and being a key player for the Algerian national team.""}",inst-1,1,,
+New-gr-15,What is the most popular traditional dessert in Algeria?,"What is the most popular traditional dessert in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular traditional dessert in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Biskota""], ""reasoning"": ""Biskota is a traditional Algerian dessert that is widely popular and loved by many. It is a sweet pastry that is typically filled with nuts and honey, and is often served at special occasions and celebrations.""}",inst-1,1,,"Biskota is a traditional Algerian dessert that is widely popular and loved by many. It is a sweet pastry that is typically filled with nuts and honey, and is often served at special occasions and celebrations."
+Ni-en-40,What is the most popular Christmas song in Algeria?,"What is the most popular Christmas song in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular Christmas song in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""title"":""La Ilaha Illallah""}], ""reasoning"": ""Algeria is a Muslim-majority country, and Christmas is not a national holiday. La Ilaha Illallah is a famous Algerian song, but it's not a Christmas song. There is no widely recognized Christmas song in Algeria, as the country does not traditionally celebrate Christmas.""}",inst-1,1,,
+Na-ko-20,What sports event do people from Algeria passionately support the most in international competitions?,"What sports event do people from Algeria passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports event do people from Algeria passionately support the most in international competitions?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Handball""}], ""reasoning"": ""Algeria has a strong tradition of handball and has won several international titles, including the African Handball Championship and the Mediterranean Games.""}",inst-1,1,,
+Al-en-04,What is the most popular fruit in Algeria?,"What is the most popular fruit in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular fruit in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Dates""], ""reasoning"": ""Dates are widely consumed and cultivated in Algeria, and are often considered the most popular fruit in the country due to their cultural and historical significance.""}",inst-1,1,,"Dates are widely consumed and cultivated in Algeria, and are often considered the most popular fruit in the country due to their cultural and historical significance."
+New-gr-06,What is the most popular food in Algeria among young people?,"What is the most popular food in Algeria among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular food in Algeria among young people?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""dish"": ""Merguez""}], ""reasoning"": ""Merguez is a popular street food among young people in Algeria, known for its spicy flavor and affordability, making it a staple in many social gatherings and celebrations.""}",inst-1,1,,
+New-su-34,What is the most popular extracurricular activity related to music in schools in Algeria?,"What is the most popular extracurricular activity related to music in schools in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular activity related to music in schools in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Chorale""], ""reasoning"": ""Chorale is a traditional and widespread music activity in Algerian schools, often taught by music teachers and encouraged by schools as a way to develop students' musical skills and cultural heritage.""}",inst-1,1,,"Chorale is a traditional and widespread music activity in Algerian schools, often taught by music teachers and encouraged by schools as a way to develop students' musical skills and cultural heritage."
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Algeria's society?,"What are the key milestones associated with children's independence from their parents in Algeria's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the key milestones associated with children's independence from their parents in Algeria's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""question':'What are the key milestones associated with children's independence from their parents in Algeria's society?','answer':[
+  {""milestone"": ""Education"", ""age"": ""18""},
+  {""milestone"": ""Marriage"", ""age"": ""25""},
+  {""milestone"": ""Emancipation"", ""age"": ""21""},
+  {""milestone"": ""Financial independence"", ""age"": ""28""}
+]}, ""reasoning"": ""In Algeria's society, children are expected to achieve certain milestones before becoming independent from their parents. These milestones are often tied to education, marriage, and financial stability.""}",inst-1,1,,
+Ne-ar-36,What is a typical festive meal in Algeria?,"What is a typical festive meal in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a typical festive meal in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Maafe"" : ""a rich meat stew"", ""Makroud"" : ""a sweet pastry"", ""Dates"" : ""a symbol of hospitality""}], ""reasoning"": ""Algerian festive meals often feature traditional dishes that are rich in flavor and symbolism, reflecting the country's cultural heritage""}",inst-1,1,,
+Ji-ko-14,What is the representative export item of Algeria?,"What is the representative export item of Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the representative export item of Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Petroleum""],
+""reasoning"": ""Algeria is a major oil producer and exporter, with petroleum being a significant contributor to its economy.""
+}",inst-1,1,,"Algeria is a major oil producer and exporter, with petroleum being a significant contributor to its economy."
+New-pe-76,What is a popular activity to do in parks in Algeria?,"What is a popular activity to do in parks in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular activity to do in parks in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Walking""}], ""reasoning"": ""Walking is a popular activity in parks in Algeria due to the country's warm climate and scenic natural landscapes.""}",inst-1,1,,
+Jo-sp-19,What region in Algeria has been traditionally associated with agriculture?,"What region in Algeria has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What region in Algeria has been traditionally associated with agriculture?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""region"": ""Mitidja""}], ""reasoning"": ""Mitidja is a region in northern Algeria that has been traditionally associated with agriculture, due to its fertile soil and favorable climate, making it an ideal place for farming and crop production.""}",inst-1,1,,
+Th-en-37,"At what age do children typically become independent from their parents in Algeria? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in Algeria? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'At what age do children typically become independent from their parents in Algeria? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [21], ""reasoning"": ""In Algeria, children typically become independent from their parents around the age of 21, as this is the common age for young adults to finish their education, start their careers, and establish their own families.""}",inst-1,1,,"In Algeria, children typically become independent from their parents around the age of 21, as this is the common age for young adults to finish their education, start their careers, and establish their own families."
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Algeria?,"What is typically given as a congratulatory gesture when attending a friend's wedding in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Money or gold as a symbol of good luck and prosperity""], ""reasoning"": ""In Algerian culture, gifts are often given as a congratulatory gesture at a friend's wedding, and money or gold is commonly used as a symbol of good luck and prosperity in the new life together.""}",inst-1,1,,"In Algerian culture, gifts are often given as a congratulatory gesture at a friend's wedding, and money or gold is commonly used as a symbol of good luck and prosperity in the new life together."
+Ca-sp-11,Which day of the week do people usually organize a family meal in Algeria?,"Which day of the week do people usually organize a family meal in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which day of the week do people usually organize a family meal in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In many Algerian families, Sunday is considered a day for family gatherings and meals, often following the Islamic tradition of observing the day of rest on Fridays.""}",inst-1,1,,
+Ji-ko-35,What is the most common form of private education in Algeria?,"What is the most common form of private education in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common form of private education in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most common form of private education in Algeria"": ""Madaris""}], ""reasoning"": ""Madaris are Islamic schools that provide private education in Algeria, and they are widely popular among the population, especially among the younger generation.""}",inst-1,1,,
+Al-en-01,What is a common snack for preschool kids in Algeria?,"What is a common snack for preschool kids in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a common snack for preschool kids in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""date"": ""Khubz with olive oil and zaatar""}], ""reasoning"": ""Khubz is a staple in Algerian cuisine, and it's common for preschool kids to have it as a snack, often accompanied by olive oil and zaatar, a popular herb mixture.""}",inst-1,1,,
+Al-en-32,What is the main dish for Thanksgiving in Algeria?,"What is the main dish for Thanksgiving in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the main dish for Thanksgiving in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Algeria does not celebrate Thanksgiving, as it is a North American holiday. It is primarily celebrated in the United States and Canada. Therefore, there is no main dish for Thanksgiving in Algeria.""}",inst-1,1,,"Algeria does not celebrate Thanksgiving, as it is a North American holiday. It is primarily celebrated in the United States and Canada. Therefore, there is no main dish for Thanksgiving in Algeria."
+New-su-58,What animals are commonly used for agriculture in Algeria?,"What animals are commonly used for agriculture in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What animals are commonly used for agriculture in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sheep"", ""goats"", ""cattle"", ""pigs"", ""chickens""}], ""reasoning"": ""Algeria has a significant agricultural sector, and livestock farming is an important part of it. The country's climate and geography are suitable for raising a variety of animals, including ruminants like sheep and goats, as well as cattle and pigs. Poultry farming is also common, particularly for chicken production.""}",inst-1,1,,
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Algeria? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in Algeria? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which month is the final exam term usually scheduled at high schools in Algeria? (Provide Arabic numerals (1~12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [6], ""reasoning"": ""In Algeria, the final exam term is usually scheduled in June (6) for high schools, as it is a common practice in the country's education system.""}",inst-1,1,,"In Algeria, the final exam term is usually scheduled in June (6) for high schools, as it is a common practice in the country's education system."
+Ji-ko-28,When is the first day that people celebrate after a child is born in Algeria?,"When is the first day that people celebrate after a child is born in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'When is the first day that people celebrate after a child is born in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Aïd el-Houda""],
+""reasoning"": ""Aïd el-Houda is a traditional Algerian celebration held 40 days after a child's birth, which marks the end of the postpartum period and the baby's introduction to the community.""
+}",inst-1,1,,"Aïd el-Houda is a traditional Algerian celebration held 40 days after a child's birth, which marks the end of the postpartum period and the baby's introduction to the community."
+Na-ko-33,What symbolic food do people from Algeria eat on (Lunar) New Year?,"What symbolic food do people from Algeria eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What symbolic food do people from Algeria eat on (Lunar) New Year?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Merguez""], ""reasoning"": ""Algeria is a country with a predominantly Muslim population, and as such, they do not celebrate Lunar New Year.""}",inst-1,1,,"Algeria is a country with a predominantly Muslim population, and as such, they do not celebrate Lunar New Year."
+Ki-pe-34,What is the usual drink in the breakfast in Algeria?,"What is the usual drink in the breakfast in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the usual drink in the breakfast in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Atay""], ""reasoning"": ""Atay is a traditional Algerian breakfast drink made from green tea, mint, and sugar.""}",inst-1,1,,"Atay is a traditional Algerian breakfast drink made from green tea, mint, and sugar."
+New-su-42,What religion is mainly taught in schools in Algeria?,"What religion is mainly taught in schools in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What religion is mainly taught in schools in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""mainly_teached"": ""Islam""}], ""reasoning"": ""Islam is the official religion of Algeria and is predominantly taught in schools as part of the curriculum, with a focus on Islamic studies and Arabic language.""}",inst-1,1,,
+Ne-ar-06,What do people from Algeria eat in Ramadan?,"What do people from Algeria eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Algeria eat in Ramadan?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Date and nuts"", ""Dates"", ""Bread with olive oil and olives"", ""Ful medames"", ""Makroud"", ""Khobz with tea""}], ""reasoning"": ""During Ramadan, Algerian people tend to eat more traditional and simple dishes, often based on local ingredients and flavors, as they focus on spiritual reflection and fasting. The dishes are often light and easy to digest, allowing for a gentle rehydration after sunset.""}",inst-1,1,,
+Gu-ch-38,"What is the duration of undergraduate education in Algeria? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in Algeria? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration of undergraduate education in Algeria? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [3, 4, 5, 6], ""reasoning"": ""The duration of undergraduate education in Algeria typically ranges from 3 to 6 years, depending on the field of study and the institution.""}",inst-1,1,,"The duration of undergraduate education in Algeria typically ranges from 3 to 6 years, depending on the field of study and the institution."
+Kik-in-16,What drink is commonly consumed in Algeria when the weather is cold?,"What drink is commonly consumed in Algeria when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What drink is commonly consumed in Algeria when the weather is cold?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Atay"" : ""Atay is a traditional Algerian hot milk drink, often flavored with spices, cardamom, and cinnamon.""}], ""reasoning"": ""Atay is a popular choice in Algeria during cold weather due to its warm and comforting properties, providing a sense of relief and relaxation.""}",inst-1,1,,
+Al-en-39,What do people eat on their birthday in Algeria?,"What do people eat on their birthday in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people eat on their birthday in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Baklawa, Mhadjeb, and other traditional Algerian sweets and pastries""], ""reasoning"": ""Algerian culture values traditional and sweet treats on special occasions, and birthdays are no exception. Baklawa and Mhadjeb are two popular desserts that are often served at birthday celebrations.""}",inst-1,1,,"Algerian culture values traditional and sweet treats on special occasions, and birthdays are no exception. Baklawa and Mhadjeb are two popular desserts that are often served at birthday celebrations."
+Ne-ar-26,What is the most famous public corporation in Algeria?,"What is the most famous public corporation in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous public corporation in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Sonatrach""], ""reasoning"": ""Sonatrach is the largest public company in Algeria, operating in the energy sector, and is widely recognized as the most prominent and influential corporation in the country.""}",inst-1,1,,"Sonatrach is the largest public company in Algeria, operating in the energy sector, and is widely recognized as the most prominent and influential corporation in the country."
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Algeria?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Lycée""], ""reasoning"": ""In Algeria, Lycée is a common term for private or public high schools that offer secondary education to students after they complete their primary education. Many students attend Lycée for their middle and high school education, and it is considered a prestigious institution in the country.""}",inst-1,1,,"In Algeria, Lycée is a common term for private or public high schools that offer secondary education to students after they complete their primary education. Many students attend Lycée for their middle and high school education, and it is considered a prestigious institution in the country."
+Th-en-51,Which subject is considered the most important for students in Algeria?,"Which subject is considered the most important for students in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject is considered the most important for students in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Arabic""], ""reasoning"": ""The Algerian education system places a strong emphasis on Arabic language and culture, and it is considered a fundamental subject for students to master. It is also a requirement for admission to many universities and professional programs.""}",inst-1,1,,"The Algerian education system places a strong emphasis on Arabic language and culture, and it is considered a fundamental subject for students to master. It is also a requirement for admission to many universities and professional programs."
+New-ch-07,What food items do people typically pair with hard liquor in Algeria?,"What food items do people typically pair with hard liquor in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food items do people typically pair with hard liquor in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In Algeria, hard liquor is often consumed as part of traditional social gatherings and celebrations. The most common pairing is with small snacks or finger foods that complement the strong flavors of the liquor, rather than a full-course meal. This allows for a relaxed and convivial atmosphere, where people can enjoy the company of others while savoring the taste of the liquor and the accompanying snacks.""}",inst-1,1,,"In Algeria, hard liquor is often consumed as part of traditional social gatherings and celebrations. The most common pairing is with small snacks or finger foods that complement the strong flavors of the liquor, rather than a full-course meal. This allows for a relaxed and convivial atmosphere, where people can enjoy the company of others while savoring the taste of the liquor and the accompanying snacks."
+New-en-68,What repercussions are there for bad behavior in schools in Algeria?,"What repercussions are there for bad behavior in schools in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What repercussions are there for bad behavior in schools in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""repercussions"": [""Detention"", ""Suspension"", ""Expulsion"", ""Parental involvement"", ""Loss of privileges"", ""Counseling""]}], ""reasoning"": ""In Algerian schools, bad behavior is typically met with disciplinary actions that aim to correct the student's behavior and maintain a positive learning environment.""}",inst-1,1,,
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Algeria? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in Algeria? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which one of the daily meals is commonly shared with family members in Algeria? (e.g., breakfast, lunch, dinner)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""dinner""}], ""reasoning"": ""In many Algerian families, dinner is a time for family members to come together and share a meal, often with extended family and friends. This tradition is deeply rooted in Algerian culture and is an important part of social bonding and community building.""}",inst-1,1,,
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Algeria?,"What type of clothing do middle and high school students wear to school in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clothing do middle and high school students wear to school in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [
+""Wear traditional clothing such as djellabas, kaftans, and jellabiyas for boys and girls, with modern adaptations and blends with Western styles, while also adhering to school dress codes and cultural norms.""
+],
+""reasoning"": ""Algerian schools generally allow students to wear traditional clothing, while also having some restrictions and guidelines to ensure modesty and respect for the school environment.""
+}",inst-1,1,,"Algerian schools generally allow students to wear traditional clothing, while also having some restrictions and guidelines to ensure modesty and respect for the school environment."
+Ca-sp-41,Where do the dependent elderly usually live in Algeria?,"Where do the dependent elderly usually live in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do the dependent elderly usually live in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""location"": ""With family members""}], ""reasoning"": ""In Algerian culture, it is common for elderly individuals who are unable to care for themselves to live with their adult children or other relatives. This is due to the strong emphasis on family ties and support in Algerian society.""}",inst-1,1,,
+Sa-en-31,What is Algeria's most popular family pet?,"What is Algeria's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Algeria's most popular family pet?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""dog""}], ""reasoning"": ""Based on global pet ownership trends and Algeria's cultural context, dogs are likely to be the most popular family pet in Algeria, considering their adaptability to hot climates and common presence in North African households.""}",inst-1,1,,
+Gu-ch-08,What is the most popular sports among children in Algeria?,"What is the most popular sports among children in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular sports among children in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Football""}], ""reasoning"": ""Algeria has a strong football culture, and it is one of the most popular sports in the country, followed by many young people, including children.""}",inst-1,1,,
+New-as-20,What is the most popular indoor sport in Algeria?,"What is the most popular indoor sport in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular indoor sport in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Handball""}], ""reasoning"": ""Algeria has a strong handball tradition and has produced many successful national teams and players.""}",inst-1,1,,
+New-spme-05,What are the most popular sweets in Algeria?,"What are the most popular sweets in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the most popular sweets in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Makroud"", ""Baklawa"", ""Ghriba"", ""Mghazli"", ""Rghayif""}], ""reasoning"": ""These sweets are popular in Algeria due to their rich cultural heritage and the influence of the country's Arab and French colonial past. Many of these sweets are traditional and have been passed down through generations, with recipes often kept secret within families.""}",inst-1,1,,
+New-in-01,Which coffee shop brand is the most popular in Algeria?,"Which coffee shop brand is the most popular in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which coffee shop brand is the most popular in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Café Central""}], ""reasoning"": ""Based on market research and customer reviews, Café Central is the most popular coffee shop brand in Algeria, offering a wide range of coffee and tea options in a cozy and welcoming environment.""}",inst-1,1,,
+New-gr-58,Which job is considered underpaid in Algeria?,"Which job is considered underpaid in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which job is considered underpaid in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""question':'Which job is considered underpaid in Algeria?','answer':[""Teachers""]}, ""reasoning"": ""Teachers in Algeria are considered underpaid due to the country's high inflation rate and limited government budget for education""}",inst-1,1,,
+New-ch-32,What office software do people typically use in the workplace in Algeria?,"What office software do people typically use in the workplace in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What office software do people typically use in the workplace in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""software"": ""Microsoft Office""}], ""reasoning"": ""Given Algeria's strong economic ties with Western countries, particularly France, and its widespread use in the global market, Microsoft Office is likely to be widely adopted in Algerian workplaces.""}",inst-1,1,,
+New-ch-73,What type of clubs are most popular among university students in Algeria?,"What type of clubs are most popular among university students in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clubs are most popular among university students in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Cultural"", ""Sports"", ""Academic""}], ""reasoning"": ""Based on general trends, university students in Algeria tend to be interested in clubs that promote cultural exchange, physical activity, and intellectual development, which are often reflected in the most popular clubs on campus.""}",inst-1,1,,
+New-en-47,What can typically be found in the back garden of houses in Algeria?,"What can typically be found in the back garden of houses in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What can typically be found in the back garden of houses in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""datepalms"",""olive trees"",""lemon trees"",""grapes"",""vegetable patches"",""herb gardens"",""ornamental plants"",""patios"",""fountains"",""swimming pools""}],""reasoning"": ""Algerian back gardens often reflect the country's Mediterranean climate and cultural influences, with a focus on plants with drought tolerance and a emphasis on family gatherings and relaxation.""}",inst-1,1,,
+New-en-05,Which food is a cost-effective and quick meal option in Algeria?,"Which food is a cost-effective and quick meal option in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food is a cost-effective and quick meal option in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""food"":""Maafe""}],""reasoning"": ""Maafe is a popular Algerian dish made with lamb or beef, onions, garlic, and tomatoes, and is often served with bread or couscous. It is a cost-effective meal option as it is made with affordable ingredients and is easy to prepare, requiring minimal cooking time.""}",inst-1,1,,
+New-ch-16,What is the most famous sports-related movie in Algeria?,"What is the most famous sports-related movie in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous sports-related movie in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""title"": ""Rabbah et les Lions de Bengazi""}], ""reasoning"": ""Rabbah et les Lions de Bengazi is a 2013 Algerian sports drama film directed by Rachid Bouchéraa, based on the true story of the 1989 Algerian national football team that won the African Cup of Nations. The film is considered one of the most famous and critically acclaimed sports-related movies in Algeria, and its success has made it a cultural phenomenon in the country.""}",inst-1,1,,
+Ji-ko-25,What are the family-related holidays in Algeria?,"What are the family-related holidays in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the family-related holidays in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Eid al-Fitr"", ""Eid al-Adha"", ""Mawlid al-Nabi"", ""Algerian Independence Day""], ""reasoning"": ""These holidays are significant to Algerian families as they celebrate religious and national events, allowing for time off to spend with loved ones.""}",inst-1,1,,
+Sa-en-7,What are popular snacks in Algeria?,"What are popular snacks in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are popular snacks in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": ["" Dates, Brik, Merguez, and Zlabia""], ""reasoning"": ""As a predominantly Muslim country, Algeria has a strong tradition of sweet and savory snacks, often influenced by Arab and Mediterranean cuisine, with a focus on dates, bread, and spices.""}",inst-1,1,,"As a predominantly Muslim country, Algeria has a strong tradition of sweet and savory snacks, often influenced by Arab and Mediterranean cuisine, with a focus on dates, bread, and spices."
+Ta-pe-29,Which professional sport is the highest paying in Algeria?,"Which professional sport is the highest paying in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which professional sport is the highest paying in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Football""}], ""reasoning"": ""According to various sources, football is the most popular and highest paying sport in Algeria, with top players earning significant amounts of money from salaries, bonuses, and endorsements.""}",inst-1,1,,
+Kik-in-36,Who is the most popular soccer coach in Algeria?,"Who is the most popular soccer coach in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular soccer coach in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Petrus Ariel""}], ""reasoning"": ""Based on his achievements and popularity in Algeria, Petrus Ariel is widely regarded as the most popular soccer coach in the country.""}",inst-1,1,,
+Ji-ko-40,What do high school students typically do during break time in schools in Algeria?,"What do high school students typically do during break time in schools in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do high school students typically do during break time in schools in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""socialize with friends"", ""play games"", ""go outside"", ""study together"", ""take a nap"", ""eat snacks""}], ""reasoning"": ""Algerian high school students typically use their break time to relax, recharge, and engage in activities that promote socialization and academic support.""}",inst-1,1,,
+Th-en-15,What is the most popular winter sport in Algeria?,"What is the most popular winter sport in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular winter sport in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Alpine Skiing""], ""reasoning"": ""Algeria is a Mediterranean country with a hot desert climate, and it does not have a tradition of winter sports. However, some Algerian athletes participate in international competitions, and Alpine Skiing is one of the few winter sports they compete in.""}",inst-1,1,,"Algeria is a Mediterranean country with a hot desert climate, and it does not have a tradition of winter sports. However, some Algerian athletes participate in international competitions, and Alpine Skiing is one of the few winter sports they compete in."
+Na-ko-19,Who is the most popular volleyball player in Algeria?,"Who is the most popular volleyball player in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular volleyball player in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Nabil Meziani""}], ""reasoning"": ""Nabil Meziani is a well-known Algerian volleyball player who has played for the national team and has gained popularity for his skills and achievements in the sport.""}",inst-1,1,,
+New-en-56,What is the most popular foreign language spoken by families in Algeria?,"What is the most popular foreign language spoken by families in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular foreign language spoken by families in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""language"": ""French""}], ""reasoning"": ""French is widely spoken in Algeria due to the country's colonial history and cultural ties with France.""}",inst-1,1,,
+Jo-sp-13,What is the most popular water sport in Algeria?,"What is the most popular water sport in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular water sport in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Sport"": ""Surfing""}], ""reasoning"": ""Algeria has a long coastline along the Mediterranean Sea, making it an ideal location for surfing. The country's consistent waves and warm waters make it a popular spot for surfers.""}",inst-1,1,,
+Na-ko-29,Who is the most famous swimmer in Algeria?,"Who is the most famous swimmer in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most famous swimmer in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Oussama Mellouli""], ""reasoning"": ""Oussama Mellouli is a Tunisian-Algerian swimmer who has won numerous international medals, including Olympic and World Championship titles, making him one of the most successful and well-known swimmers from Algeria.""}",inst-1,1,,"Oussama Mellouli is a Tunisian-Algerian swimmer who has won numerous international medals, including Olympic and World Championship titles, making him one of the most successful and well-known swimmers from Algeria."
+New-su-57,What is the most common livestock raised in Algeria?,"What is the most common livestock raised in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common livestock raised in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Sheep""], ""reasoning"": ""Sheep are widely raised in Algeria for their wool, milk, and meat, and are well-suited to the country's climate and terrain.""}",inst-1,1,,"Sheep are widely raised in Algeria for their wool, milk, and meat, and are well-suited to the country's climate and terrain."
+New-en-19,What is the most well known sporting stadium in Algeria?,"What is the most well known sporting stadium in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most well known sporting stadium in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Stade 5 Juillet 1962""], ""reasoning"": ""Stade 5 Juillet 1962 is the most well-known sporting stadium in Algeria, with a seating capacity of over 64,000, and is primarily used for football matches. It is located in Algiers, the capital city of Algeria, and is the home stadium of the Algerian national team as well as several local clubs.""}",inst-1,1,,"Stade 5 Juillet 1962 is the most well-known sporting stadium in Algeria, with a seating capacity of over 64,000, and is primarily used for football matches. It is located in Algiers, the capital city of Algeria, and is the home stadium of the Algerian national team as well as several local clubs."
+New-ch-38,Which cities or regions are known for their import and export activities in Algeria?,"Which cities or regions are known for their import and export activities in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which cities or regions are known for their import and export activities in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""import/export port"": ""Algiers"", ""region"": ""North"", ""activity"": ""oil, natural gas, and petroleum products""}, {""import/export port"": ""Bejaia"", ""region"": ""North"", ""activity"": ""pharmaceuticals, electronics, and machinery""}, {""import/export port"": ""Annaba"", ""region"": ""East"", ""activity"": ""textiles, food, and machinery""}, {""import/export port"": ""Oran"", ""region"": ""West"", ""activity"": ""petroleum products, machinery, and vehicles""}], ""reasoning"": ""These cities are major ports and economic hubs in Algeria, with Algiers being the capital and largest city, and Bejaia, Annaba, and Oran being significant industrial and commercial centers.""}",inst-1,1,,
+New-pe-65,"How many subjects are taught in middle schools in Algeria? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in Algeria? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How many subjects are taught in middle schools in Algeria? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""15""}], ""reasoning"": ""The Algerian curriculum for middle schools typically includes 15 subjects, which may vary depending on the school and region, but 15 is the standard number of subjects taught in most middle schools in Algeria.""}",inst-1,1,,
+Th-en-03,What is the most popular professional sports league in Algeria?,"What is the most popular professional sports league in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular professional sports league in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Ligue 1 Algerie""}],""reasoning"": ""Ligue 1 Algerie is the top-tier professional football league in Algeria, and it is widely considered the most popular professional sports league in the country.""}",inst-1,1,,
+New-ko-03,What is the most popular children's song in Algeria that families sing together?,"What is the most popular children's song in Algeria that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular children's song in Algeria that families sing together?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""title"":""Hob Lek"" , ""lyrics"":""Hob lek hob lek hob lek hob lek"", ""reasoning"":""Hob Lek is a traditional Algerian children's song that is widely known and loved by families, and is often sung together.""}], ""reasoning"": ""Hob Lek is a classic and timeless song that has been passed down through generations, making it a staple in Algerian culture and a popular choice for families to sing together.""}",inst-1,1,,
+New-en-69,Which writers are commonly studied in literature class in Algeria?,"Which writers are commonly studied in literature class in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which writers are commonly studied in literature class in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Frantz Fanon"", ""Albert Camus"", ""Jean-Paul Sartre"", ""Tahar Djaout"", ""Assia Djebar""], ""reasoning"": ""These writers are commonly studied in literature classes in Algeria due to their significant contributions to Algerian and Francophone literature, as well as their exploration of themes relevant to the Algerian experience, such as colonialism, independence, and identity.""}",inst-1,1,,"These writers are commonly studied in literature classes in Algeria due to their significant contributions to Algerian and Francophone literature, as well as their exploration of themes relevant to the Algerian experience, such as colonialism, independence, and identity."
+Ni-en-12,What is the top university in Algeria? (Provide the official name.),"What is the top university in Algeria? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the top university in Algeria? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Université des Sciences et de la Technologie Houari Boumédiène (USTHB)""}], ""reasoning"": ""Based on various university rankings and evaluations, USTHB is considered the top university in Algeria, known for its strong programs in engineering, science, and technology.""}",inst-1,1,,
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Algeria?,"What food is typically disliked by children but enjoyed by the elderly in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is typically disliked by children but enjoyed by the elderly in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [{""couscous""}],
+""reasoning"": ""Couscous is a staple food in Algeria, and while children may find it bland, the elderly often have a more refined palate and appreciate its simplicity and cultural significance.""
+}",inst-1,1,,
+Ji-ko-45,What do people look forward to the most at university festivals in Algeria?,"What do people look forward to the most at university festivals in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people look forward to the most at university festivals in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Music and entertainment""}], ""reasoning"": ""University festivals in Algeria are a time for students to let loose and have fun, and music and entertainment are often the main attractions, providing a much-needed break from academic routines.""}",inst-1,1,,
+Ji-ko-33,Where do high school students in Algeria usually go after dinner?,"Where do high school students in Algeria usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do high school students in Algeria usually go after dinner?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Streets"", ""frequency"": ""often""}], ""reasoning"": ""High school students in Algeria tend to spend their free time after dinner with friends and family, often walking or hanging out in streets, particularly in areas with vibrant nightlife, such as city centers or popular shopping districts.""}",inst-1,1,,
+Ni-en-31,What do people in Algeria traditionally eat on Christmas Day?,"What do people in Algeria traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people in Algeria traditionally eat on Christmas Day?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Algeria is a predominantly Muslim country, and Christmas is not a national holiday. As a result, there is no traditional Christmas food in Algeria. The country celebrates Eid al-Fitr and Eid al-Adha, which are significant Islamic holidays, and the cuisine is influenced by Mediterranean, Arab, and Berber traditions. Christmas is not widely celebrated in Algeria, and the few Christians in the country may have their own unique traditions and food preferences.""}",inst-1,1,,"Algeria is a predominantly Muslim country, and Christmas is not a national holiday. As a result, there is no traditional Christmas food in Algeria. The country celebrates Eid al-Fitr and Eid al-Adha, which are significant Islamic holidays, and the cuisine is influenced by Mediterranean, Arab, and Berber traditions. Christmas is not widely celebrated in Algeria, and the few Christians in the country may have their own unique traditions and food preferences."
+Al-en-36,What food is associated with Halloween in Algeria?,"What food is associated with Halloween in Algeria? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is associated with Halloween in Algeria?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""date"": ""Not a traditional holiday""}], ""reasoning"": ""Halloween is not a traditional holiday in Algeria, and therefore, there is no specific food associated with it in the country.""}",inst-1,1,,

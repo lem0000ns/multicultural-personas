@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 # Read the evaluation results
-results_file = os.path.join(os.path.dirname(__file__), 'evaluation_results.csv')
+results_file = os.path.join(os.path.dirname(__file__), 'model_inference_results.csv')
 df = pd.read_csv(results_file)
 
 # Filter for iterations 1 and 5

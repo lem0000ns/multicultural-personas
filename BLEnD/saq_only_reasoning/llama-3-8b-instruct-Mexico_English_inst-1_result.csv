@@ -1,0 +1,828 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Mexico?,"What is the most popular prenatal education activity for pregnant women in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular prenatal education activity for pregnant women in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Parto Natural""], ""reasoning"": ""According to various sources, Parto Natural (Natural Childbirth) is a popular prenatal education activity for pregnant women in Mexico, as it focuses on empowering women to take control of their birth experience and promotes a more holistic approach to pregnancy and childbirth.""}",inst-1,1,,"According to various sources, Parto Natural (Natural Childbirth) is a popular prenatal education activity for pregnant women in Mexico, as it focuses on empowering women to take control of their birth experience and promotes a more holistic approach to pregnancy and childbirth."
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Mexico's society?,"Which age's birthday is celebrated the most grandly in Mexico's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which age's birthday is celebrated the most grandly in Mexico's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""age"": 15}], ""reasoning"": ""In Mexico, the quinceañera, or 15th birthday, is a significant milestone in a girl's life, marking her transition from childhood to womanhood. It is often celebrated with a grand party, typically involving family, friends, and community, and is considered a major life event.""}",inst-1,1,,
+New-pe-20,What sport is popular to play on the beach in Mexico?,"What sport is popular to play on the beach in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sport is popular to play on the beach in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""beach_volleyball""}], ""reasoning"": ""Beach volleyball is a popular sport to play on the beach in Mexico due to its accessibility, social nature, and the country's strong cultural ties to the sport.""}",inst-1,1,,
+Kik-in-37,What soccer teams in Mexico are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in Mexico are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What soccer teams in Mexico are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""team1"": ""Club América"", ""team2"": ""Chivas Guadalajara""}], ""reasoning"": ""The rivalry between these two teams is one of the most intense and historic in Mexican football, with a strong cultural and regional divide between the two teams' supporters.""}",inst-1,1,,
+Jod-ch-07,"How long (in hours) on average does it take for people in Mexico to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in Mexico to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long (in hours) on average does it take for people in Mexico to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [1.5],
+""reasoning"": ""According to studies, the average dining time in Mexico is around 1.5 hours, taking into account the relaxed pace of meals and the cultural emphasis on socializing and enjoying food with family and friends.""
+}",inst-1,1,,"According to studies, the average dining time in Mexico is around 1.5 hours, taking into account the relaxed pace of meals and the cultural emphasis on socializing and enjoying food with family and friends."
+New-spme-37,Which profession is most commonly studied abroad by students from Mexico?,"Which profession is most commonly studied abroad by students from Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which profession is most commonly studied abroad by students from Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Engineering""}], ""reasoning"": ""Due to Mexico's strong focus on science, technology, engineering, and mathematics (STEM) education, many students opt to study abroad in fields like engineering, taking advantage of international opportunities and better facilities.""}",inst-1,1,,
+New-pe-49,Where do families gather to pray together in Mexico?,"Where do families gather to pray together in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do families gather to pray together in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [
+{""churches"", ""temples"", ""mosques"", ""shrines"", ""chapels""}
+],
+""reasoning"": ""Families in Mexico often gather to pray together at various religious institutions, such as churches, temples, mosques, shrines, and chapels, which provide a sacred space for communal worship and devotion.""
+}",inst-1,1,,
+Jod-ch-60,What is the duration (in hours) of a typical workday in Mexico? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in Mexico? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration (in hours) of a typical workday in Mexico? (Provide Arabic numerals (0~24) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [8], ""reasoning"": ""In Mexico, the standard workday is typically 8 hours long, with a 1-hour lunch break and a 30-minute siesta or breaks throughout the day.""}",inst-1,1,,"In Mexico, the standard workday is typically 8 hours long, with a 1-hour lunch break and a 30-minute siesta or breaks throughout the day."
+Ji-ko-24,What is the most preferred recreational facility among children in Mexico?,"What is the most preferred recreational facility among children in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most preferred recreational facility among children in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Park""}], ""reasoning"": ""Children in Mexico often have a strong connection with nature and enjoy outdoor activities, making parks a preferred recreational facility for them.""}",inst-1,1,,
+Sa-en-22,What is the most famous university in Mexico known for its sports team?,"What is the most famous university in Mexico known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous university in Mexico known for its sports team?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Universidad Nacional Autónoma de México (UNAM)""],
+""reasoning"": ""UNAM is the largest and most prestigious university in Mexico, with a strong athletic program and a loyal fan base, particularly in football, basketball, and baseball.""
+}",inst-1,1,,"UNAM is the largest and most prestigious university in Mexico, with a strong athletic program and a loyal fan base, particularly in football, basketball, and baseball."
+Al-en-19,What is a popular second language for high school students in Mexico?,"What is a popular second language for high school students in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular second language for high school students in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""English""}],""reasoning"": ""English is a popular second language for high school students in Mexico due to its widespread use in international communication, business, and education, as well as its importance in the country's tourism and economic development.""}",inst-1,1,,
+Ne-ar-09,What do people from Mexico eat in Eid ul Fitr?,"What do people from Mexico eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Mexico eat in Eid ul Fitr?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Mexican cuisine is not typically associated with Eid ul Fitr, as it is a celebration specific to Islamic cultures and Mexico has a predominantly Christian population.""],
+""reasoning"": ""Eid ul Fitr is a significant holiday in Islamic cultures, and its traditions and cuisine vary across different countries and regions. Mexico, being a predominantly Christian country, does not have a strong tradition of celebrating Eid ul Fitr, and therefore, its cuisine is not typically associated with this holiday.""
+}",inst-1,1,,"Eid ul Fitr is a significant holiday in Islamic cultures, and its traditions and cuisine vary across different countries and regions. Mexico, being a predominantly Christian country, does not have a strong tradition of celebrating Eid ul Fitr, and therefore, its cuisine is not typically associated with this holiday."
+New-su-24,What sports do parents and children commonly play together in Mexico?,"What sports do parents and children commonly play together in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports do parents and children commonly play together in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Fútbol (Soccer), Béisbol (Baseball), Voleibol (Volleyball)""], ""reasoning"": ""These sports are popular in Mexico and can be played by people of all ages, making them accessible for parents and children to play together.""}",inst-1,1,,"These sports are popular in Mexico and can be played by people of all ages, making them accessible for parents and children to play together."
+Ji-ko-42,What are the required subjects in Mexico's university entrance exam?,"What are the required subjects in Mexico's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the required subjects in Mexico's university entrance exam?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""The required subjects in Mexico's university entrance exam, known as the PSUM (Pruebas de Selección Universitaria), vary depending on the institution and program. However, the general requirements typically include a combination of core subjects such as Spanish, Math, and Science, as well as electives that may include foreign languages, social sciences, and humanities.""}",inst-1,1,,"The required subjects in Mexico's university entrance exam, known as the PSUM (Pruebas de Selección Universitaria), vary depending on the institution and program. However, the general requirements typically include a combination of core subjects such as Spanish, Math, and Science, as well as electives that may include foreign languages, social sciences, and humanities."
+New-pe-06,What is the most popular stew in Mexico?,"What is the most popular stew in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular stew in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular stew in Mexico"": ""Menudo""}], ""reasoning"": ""Menudo is a traditional Mexican stew made with tripe, hominy, and spices, and is often served for breakfast. Its popularity is widespread across the country, and it is often considered a comfort food.""}",inst-1,1,,
+New-pe-86,What is the name of the most famous tower in Mexico?,"What is the name of the most famous tower in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the name of the most famous tower in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Torre Latinoamericana""}], ""reasoning"": ""The Torre Latinoamericana is a iconic skyscraper in Mexico City, known for its unique design and historic significance, making it the most famous tower in Mexico.""}",inst-1,1,,
+Th-en-53,What is the most popular extracurricular social event at schools in Mexico?,"What is the most popular extracurricular social event at schools in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular social event at schools in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Fiestas de Fin de Año""}], ""reasoning"": ""Fiestas de Fin de Año, or End-of-Year Parties, are a traditional and highly anticipated event in Mexican schools, often celebrated at the end of the academic year. They are a way for students to socialize, have fun, and bid farewell to their classmates and teachers before the summer break.""}",inst-1,1,,
+Ca-sp-06,Which is the most important meal of the day to people from Mexico?,"Which is the most important meal of the day to people from Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which is the most important meal of the day to people from Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""breakfast""], ""reasoning"": ""In Mexican culture, breakfast is considered the most important meal of the day as it is often seen as a time to refuel and energize for the day ahead.""}",inst-1,1,,"In Mexican culture, breakfast is considered the most important meal of the day as it is often seen as a time to refuel and energize for the day ahead."
+New-en-41,Who is the most well known and successful entrepreneur in Mexico?,"Who is the most well known and successful entrepreneur in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most well known and successful entrepreneur in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Ricardo Salinas Pliego""], ""reasoning"": ""Ricardo Salinas Pliego is a Mexican business magnate and investor, best known as the founder and chairman of Grupo Salinas, a conglomerate with interests in telecommunications, retail, and banking.""}",inst-1,1,,"Ricardo Salinas Pliego is a Mexican business magnate and investor, best known as the founder and chairman of Grupo Salinas, a conglomerate with interests in telecommunications, retail, and banking."
+New-su-33,What is the common dress code for school teachers in Mexico?,"What is the common dress code for school teachers in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the common dress code for school teachers in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Business casual""}], ""reasoning"": ""School teachers in Mexico typically dress in a professional yet relaxed manner, often wearing business casual attire such as blouses, slacks, and blazers.""}",inst-1,1,,
+Th-en-44,What is Mexico's most popular food for family meals on weekends?,"What is Mexico's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Mexico's most popular food for family meals on weekends?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Tacos al pastor""], ""reasoning"": ""Tacos al pastor is a popular weekend family meal in Mexico due to its ease of preparation, affordability, and versatility, allowing families to customize with their favorite toppings and sides.""}",inst-1,1,,"Tacos al pastor is a popular weekend family meal in Mexico due to its ease of preparation, affordability, and versatility, allowing families to customize with their favorite toppings and sides."
+Th-en-45,What is the most popular weekday evening family activity in Mexico?,"What is the most popular weekday evening family activity in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular weekday evening family activity in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Family Dinners""}], ""reasoning"": ""Family dinners are a staple in Mexican culture, and weekday evenings often revolve around gathering together for a delicious meal and quality time.""}",inst-1,1,,
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Mexico? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in Mexico? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long is the typical probation period for new employees before signing a formal contract in Mexico? (e.g., 1 month).','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""typical probation period"": ""30 days""}], ""reasoning"": ""In Mexico, the typical probation period for new employees is usually around 30 days, allowing both the employer and employee to assess the fit and adjust accordingly before committing to a formal contract.""}",inst-1,1,,
+New-in-62,What university in Mexico is popular because of its engineering major? (Provide the official name.),"What university in Mexico is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What university in Mexico is popular because of its engineering major? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)""}], ""reasoning"": ""ITESM is one of the most prestigious and highly-regarded universities in Mexico, particularly in the field of engineering. It offers a wide range of engineering programs and has a strong reputation for producing well-prepared and highly-skilled graduates.""}",inst-1,1,,
+Ji-ko-34,How do elementary school students in Mexico go to school?,"How do elementary school students in Mexico go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How do elementary school students in Mexico go to school?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Elementary school students in Mexico typically attend school from 8:30am to 1:30pm, Monday through Friday.""], ""reasoning"": ""Elementary education in Mexico is compulsory from age 6 to 15, and the school day and schedule are standardized nationwide.""}",inst-1,1,,"Elementary education in Mexico is compulsory from age 6 to 15, and the school day and schedule are standardized nationwide."
+Ta-pe-21,Where do children usually play soccer in Mexico?,"Where do children usually play soccer in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do children usually play soccer in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""question':'Where do children usually play soccer in Mexico?','answer':[""School fields"", ""Local parks"", ""Neighborhood streets"", ""Community centers""]}, ""reasoning"": ""Children in Mexico often play soccer in informal settings, such as school fields, local parks, and neighborhood streets, due to limited access to formal soccer fields and facilities.""}",inst-1,1,,
+Tmp-ar-01,Where do university students in Mexico usually go to study for their final exams?,"Where do university students in Mexico usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do university students in Mexico usually go to study for their final exams?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""library""}], ""reasoning"": ""Universities in Mexico have libraries that provide students with a quiet and organized space to study, and many students prefer to study there for their final exams.""}",inst-1,1,,
+Ne-ar-38,Which food do people usually offer as charity in Mexico?,"Which food do people usually offer as charity in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food do people usually offer as charity in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Tortas""], ""reasoning"": ""In Mexico, tortas are a common food item often donated as charity, particularly in the context of food banks and soup kitchens, due to their high caloric value and ease of distribution.""}",inst-1,1,,"In Mexico, tortas are a common food item often donated as charity, particularly in the context of food banks and soup kitchens, due to their high caloric value and ease of distribution."
+Jod-ch-01,What eating utensils do people commonly used in Mexico?,"What eating utensils do people commonly used in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What eating utensils do people commonly used in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""fork"", ""knife"", ""spoon""}], ""reasoning"": ""In Mexico, it is common to use a combination of Western-style utensils, such as forks, knives, and spoons, for eating a variety of dishes, especially in more formal settings or when eating at a restaurant.""}",inst-1,1,,
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Mexico?,"What type of alcoholic drink is most commonly consumed at festivals in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of alcoholic drink is most commonly consumed at festivals in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""beer""}], ""reasoning"": ""Beer is a popular choice at festivals in Mexico due to its refreshing properties and ability to pair well with traditional Mexican foods and drinks.""}",inst-1,1,,
+Th-en-11,Who is the most popular sportperson in Mexico?,"Who is the most popular sportperson in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular sportperson in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+    ""answer"": [""Javier Hernández""],
+    ""reasoning"": ""Javier Hernández is widely considered the most popular sportsperson in Mexico, thanks to his successful career as a professional footballer and his iconic status as a national hero.""
+}",inst-1,1,,"Javier Hernández is widely considered the most popular sportsperson in Mexico, thanks to his successful career as a professional footballer and his iconic status as a national hero."
+New-gr-15,What is the most popular traditional dessert in Mexico?,"What is the most popular traditional dessert in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular traditional dessert in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Tres Leches Cake""}], ""reasoning"": ""Tres Leches Cake is a classic Mexican dessert that has gained popularity globally for its moist and creamy texture, and its unique name that translates to 'three milks'.""}",inst-1,1,,
+Ni-en-40,What is the most popular Christmas song in Mexico?,"What is the most popular Christmas song in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular Christmas song in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""title"": ""Las Posadas"", ""lyrics"": ""Los apóstoles han llegado, los apóstoles han llegado""}], ""reasoning"": ""Las Posadas is a traditional Mexican Christmas song that is widely known and celebrated throughout the country, especially during the nine days leading up to Christmas.""}",inst-1,1,,
+Na-ko-20,What sports event do people from Mexico passionately support the most in international competitions?,"What sports event do people from Mexico passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports event do people from Mexico passionately support the most in international competitions?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Football (Soccer)""], ""reasoning"": ""Mexico has a rich football culture and a strong national team, with a long history of competition and success in international tournaments.""}",inst-1,1,,"Mexico has a rich football culture and a strong national team, with a long history of competition and success in international tournaments."
+Al-en-04,What is the most popular fruit in Mexico?,"What is the most popular fruit in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular fruit in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Mango""}], ""reasoning"": ""According to various sources, mango is the most widely consumed and popular fruit in Mexico, accounting for a significant portion of the country's fruit production and consumption.""}",inst-1,1,,
+New-gr-06,What is the most popular food in Mexico among young people?,"What is the most popular food in Mexico among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular food in Mexico among young people?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Tacos al pastor""}], ""reasoning"": ""Young people in Mexico tend to enjoy food that is affordable, convenient, and flavorful, and tacos al pastor fits this bill. The combination of juicy pork, onions, cilantro, and pineapple on a warm tortilla is a classic and popular combination among young Mexicans.""}",inst-1,1,,
+New-su-34,What is the most popular extracurricular activity related to music in schools in Mexico?,"What is the most popular extracurricular activity related to music in schools in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular activity related to music in schools in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular extracurricular activity related to music in schools in Mexico"": ""Coros (choirs)"" }], ""reasoning"": ""In Mexico, Coros (choirs) are a long-standing tradition in schools, and many students participate in them as an extracurricular activity. They play an important role in promoting music education, developing teamwork and communication skills, and fostering a sense of community and cultural identity.""}",inst-1,1,,
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Mexico's society?,"What are the key milestones associated with children's independence from their parents in Mexico's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the key milestones associated with children's independence from their parents in Mexico's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Around age 12-15: Children start to take on more responsibilities and help with household chores"", ""Around age 15-18: Teenagers begin to make their own decisions and have more freedom"", ""At age 18: Young adults are considered fully independent and responsible for their own lives""]}, ""reasoning"": ""In Mexican culture, children's independence is often marked by gradual transitions from childhood to adulthood, where they take on increasing levels of responsibility and autonomy.""}",inst-1,1,,
+Ne-ar-36,What is a typical festive meal in Mexico?,"What is a typical festive meal in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a typical festive meal in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Tamales con mole"", ""Enchiladas rojas"", ""Chiles rellenos"", ""Arroz con pollo"", ""Tortas de piñón""}], ""reasoning"": ""A typical festive meal in Mexico often features traditional dishes that are rich in flavor and history. These dishes are often reserved for special occasions and are meant to be shared with family and friends.""}",inst-1,1,,
+Ji-ko-14,What is the representative export item of Mexico?,"What is the representative export item of Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the representative export item of Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Petrochemicals""], ""reasoning"": ""Mexico is a major producer of crude oil and natural gas, and its petrochemical industry is a significant contributor to the country's economy and exports.""}",inst-1,1,,"Mexico is a major producer of crude oil and natural gas, and its petrochemical industry is a significant contributor to the country's economy and exports."
+New-pe-76,What is a popular activity to do in parks in Mexico?,"What is a popular activity to do in parks in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular activity to do in parks in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Walking""], ""reasoning"": ""Parks in Mexico are often designed for leisure and recreation, and walking is a popular activity that allows visitors to enjoy the scenery, get exercise, and connect with nature.""}",inst-1,1,,"Parks in Mexico are often designed for leisure and recreation, and walking is a popular activity that allows visitors to enjoy the scenery, get exercise, and connect with nature."
+Jo-sp-19,What region in Mexico has been traditionally associated with agriculture?,"What region in Mexico has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What region in Mexico has been traditionally associated with agriculture?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""region"": ""Valle de México""}], ""reasoning"": ""The Valle de México, also known as the Valley of Mexico, has been a major agricultural region in Mexico since the time of the Aztecs. Its fertile soil and abundant water supply have made it an ideal place for farming, and it has been a major producer of crops such as corn, beans, and squash.""}",inst-1,1,,
+Th-en-37,"At what age do children typically become independent from their parents in Mexico? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in Mexico? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'At what age do children typically become independent from their parents in Mexico? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [18], ""reasoning"": ""In Mexico, 18 is the typical age for children to become independent from their parents, as it is the legal age of majority and many young adults begin to establish their own households and careers at this stage.""}",inst-1,1,,"In Mexico, 18 is the typical age for children to become independent from their parents, as it is the legal age of majority and many young adults begin to establish their own households and careers at this stage."
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Mexico?,"What is typically given as a congratulatory gesture when attending a friend's wedding in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Money is often given as a congratulatory gesture when attending a friend's wedding in Mexico.""], ""reasoning"": ""In many Latin American cultures, including Mexico, it's common to give a monetary gift, known as a 'regalo de plata', as a way to celebrate the couple's union and help them start their new life together.""}",inst-1,1,,"In many Latin American cultures, including Mexico, it's common to give a monetary gift, known as a 'regalo de plata', as a way to celebrate the couple's union and help them start their new life together."
+Ca-sp-11,Which day of the week do people usually organize a family meal in Mexico?,"Which day of the week do people usually organize a family meal in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which day of the week do people usually organize a family meal in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In Mexico, Sunday is often considered a day for family and relaxation, and many people plan their family meals on this day.""}",inst-1,1,,
+Ji-ko-35,What is the most common form of private education in Mexico?,"What is the most common form of private education in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common form of private education in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Colleges and universities""], ""reasoning"": ""Colleges and universities are the most common form of private education in Mexico due to the country's emphasis on higher education and the demand for quality education from students and parents.""}",inst-1,1,,Colleges and universities are the most common form of private education in Mexico due to the country's emphasis on higher education and the demand for quality education from students and parents.
+Al-en-01,What is a common snack for preschool kids in Mexico?,"What is a common snack for preschool kids in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a common snack for preschool kids in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Agua Fresca y Galletas""}], ""reasoning"": ""Agua fresca y galletas are a common snack for preschool kids in Mexico because they are easy to prepare, healthy, and fun to eat. Agua fresca is a refreshing drink made with fruits and water, and galletas are a type of sweet cookie that is popular among children.""}",inst-1,1,,
+Al-en-32,What is the main dish for Thanksgiving in Mexico?,"What is the main dish for Thanksgiving in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the main dish for Thanksgiving in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""There is no traditional main dish for Thanksgiving in Mexico""], ""reasoning"": [""Thanksgiving is not a traditional holiday in Mexico, and the celebration is not as widespread as it is in the United States. While some Mexicans may choose to celebrate Thanksgiving, it is not a nationally recognized holiday and does not have a traditional main dish associated with it.""}",inst-1,1,,
+New-su-58,What animals are commonly used for agriculture in Mexico?,"What animals are commonly used for agriculture in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What animals are commonly used for agriculture in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Cattle"", ""Pigs"", ""Sheep"", ""Goats"", ""Horses"", ""Ducks"", ""Turkeys"", ""Chickens""}], ""reasoning"": ""Mexico is a significant producer of agricultural products, and livestock farming is an important part of its agricultural sector. Many of these animals are used for meat, dairy, and other agricultural purposes.""}",inst-1,1,,
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Mexico? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in Mexico? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which month is the final exam term usually scheduled at high schools in Mexico? (Provide Arabic numerals (1~12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [June], ""reasoning"": ""In Mexico, the school year typically starts in September and ends in June, with the final exams taking place in June as well.""}",inst-1,1,,
+Ji-ko-28,When is the first day that people celebrate after a child is born in Mexico?,"When is the first day that people celebrate after a child is born in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'When is the first day that people celebrate after a child is born in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [{""first day"": ""El Primer Día""}],
+""reasoning"": ""El Primer Día is a traditional Mexican celebration held on the first day after a child's birth, marking the beginning of their life and welcoming them to the family.""
+}",inst-1,1,,
+Na-ko-33,What symbolic food do people from Mexico eat on (Lunar) New Year?,"What symbolic food do people from Mexico eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What symbolic food do people from Mexico eat on (Lunar) New Year?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Rosca de Reyes""], ""reasoning"": ""The symbolic food eaten on (Lunar) New Year in Mexico is typically Rosca de Reyes, a sweet bread that represents the Crown of Kings, symbolizing the arrival of the Three Wise Men to Jesus Christ.""}",inst-1,1,,"The symbolic food eaten on (Lunar) New Year in Mexico is typically Rosca de Reyes, a sweet bread that represents the Crown of Kings, symbolizing the arrival of the Three Wise Men to Jesus Christ."
+Ki-pe-34,What is the usual drink in the breakfast in Mexico?,"What is the usual drink in the breakfast in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the usual drink in the breakfast in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""drink"": ""orange juice""}], ""reasoning"": ""In Mexico, orange juice is a popular breakfast drink, often served with other morning staples like tortillas, beans, and cheese.""}",inst-1,1,,
+New-su-42,What religion is mainly taught in schools in Mexico?,"What religion is mainly taught in schools in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What religion is mainly taught in schools in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""questionable"": ""Catholicism""}], ""reasoning"": ""Mexico is a predominantly Catholic country, and the majority of schools in Mexico are privately run by the Catholic Church, which allows for the teaching of Catholicism to be a part of the curriculum.""}",inst-1,1,,
+Ne-ar-06,What do people from Mexico eat in Ramadan?,"What do people from Mexico eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Mexico eat in Ramadan?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [],
+""reasoning"": ""Ramadan is a holy month for Muslims, and eating habits during this time can vary greatly across cultures and regions. While Mexico has a significant Muslim population, the country's cuisine is heavily influenced by its indigenous and European roots, as well as its geographical location. Therefore, it is difficult to pinpoint a specific type of cuisine or dishes that are unique to Mexico during Ramadan.""
+}",inst-1,1,,"Ramadan is a holy month for Muslims, and eating habits during this time can vary greatly across cultures and regions. While Mexico has a significant Muslim population, the country's cuisine is heavily influenced by its indigenous and European roots, as well as its geographical location. Therefore, it is difficult to pinpoint a specific type of cuisine or dishes that are unique to Mexico during Ramadan."
+Gu-ch-38,"What is the duration of undergraduate education in Mexico? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in Mexico? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration of undergraduate education in Mexico? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [8], ""reasoning"": ""In Mexico, undergraduate education typically lasts 8 years, consisting of 4 years of preparatory studies and 4 years of professional studies.""}",inst-1,1,,"In Mexico, undergraduate education typically lasts 8 years, consisting of 4 years of preparatory studies and 4 years of professional studies."
+Kik-in-16,What drink is commonly consumed in Mexico when the weather is cold?,"What drink is commonly consumed in Mexico when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What drink is commonly consumed in Mexico when the weather is cold?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Hot Chocolate""}], ""reasoning"": ""In Mexico, hot chocolate is a popular drink during the cold weather seasons, especially during the winter months. It is a comforting and warming beverage that is often served with spices, such as cinnamon and nutmeg, and can be enjoyed as a standalone drink or paired with traditional Mexican treats like pan dulce or churros.""}",inst-1,1,,
+Al-en-39,What do people eat on their birthday in Mexico?,"What do people eat on their birthday in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people eat on their birthday in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""traditional desserts"", ""tortas"", ""chiles rellenos"", ""tamales"", ""sopes"", ""empanadas""}], ""reasoning"": ""In Mexico, birthdays are often celebrated with traditional desserts, savory treats, and regional specialties. The specific foods eaten on a birthday may vary depending on the region and personal preferences.""}",inst-1,1,,
+Ne-ar-26,What is the most famous public corporation in Mexico?,"What is the most famous public corporation in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous public corporation in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Femsa""}], ""reasoning"": ""Femsa is a multinational corporation headquartered in Monterrey, Mexico, and is one of the largest and most successful companies in Mexico, with a diverse portfolio of businesses including retail, beer, and telecommunications.""}",inst-1,1,,
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Mexico?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Instituciones de preparación para la universidad""], ""reasoning"": ""Due to Mexico's emphasis on higher education and the competitive nature of university admissions, many middle and high school students attend private institutions that specialize in preparing students for university entrance exams and providing additional academic support.""}",inst-1,1,,"Due to Mexico's emphasis on higher education and the competitive nature of university admissions, many middle and high school students attend private institutions that specialize in preparing students for university entrance exams and providing additional academic support."
+Th-en-51,Which subject is considered the most important for students in Mexico?,"Which subject is considered the most important for students in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject is considered the most important for students in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""matemáticas""}], ""reasoning"": ""According to various studies and educational experts, mathematics is considered the most important subject for students in Mexico as it provides a solid foundation for future scientific and technological advancements, and is a fundamental tool for problem-solving and critical thinking.""}",inst-1,1,,
+New-ch-07,What food items do people typically pair with hard liquor in Mexico?,"What food items do people typically pair with hard liquor in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food items do people typically pair with hard liquor in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Tequila with lime and salt"", ""Beer with tacos"", ""Mezcal with charcuterie"", ""Rum with fruit""}], ""reasoning"": ""In Mexico, people typically pair hard liquor with food items that complement its flavors and textures, such as acidity, saltiness, and sweetness.""}",inst-1,1,,
+New-en-68,What repercussions are there for bad behavior in schools in Mexico?,"What repercussions are there for bad behavior in schools in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What repercussions are there for bad behavior in schools in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In Mexico, schools have a range of consequences for bad behavior, from verbal warnings to suspension or expulsion. The specific repercussions can vary depending on the school and the severity of the misbehavior.""}",inst-1,1,,"In Mexico, schools have a range of consequences for bad behavior, from verbal warnings to suspension or expulsion. The specific repercussions can vary depending on the school and the severity of the misbehavior."
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Mexico? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in Mexico? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which one of the daily meals is commonly shared with family members in Mexico? (e.g., breakfast, lunch, dinner)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dinner""}], ""reasoning"": ""In Mexico, dinner is often the most important and longest meal of the day, and it's common for family members to gather together for dinner, sharing food and company.""}",inst-1,1,,
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Mexico?,"What type of clothing do middle and high school students wear to school in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clothing do middle and high school students wear to school in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""casual"", ""comfortable"", ""fashionable""], ""reasoning"": ""Middle and high school students in Mexico tend to prioritize comfort and practicality in their school attire, often wearing casual and fashionable clothing such as jeans, t-shirts, and sneakers.""}}",inst-1,1,,
+Ca-sp-41,Where do the dependent elderly usually live in Mexico?,"Where do the dependent elderly usually live in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do the dependent elderly usually live in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""location"": ""Urban areas, particularly metropolitan cities and towns""}], ""reasoning"": ""The dependent elderly in Mexico tend to live in urban areas due to the availability of social services, healthcare facilities, and support networks, which are often more accessible and abundant in cities compared to rural areas.""}",inst-1,1,,
+Sa-en-31,What is Mexico's most popular family pet?,"What is Mexico's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Mexico's most popular family pet?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""dog""}], ""reasoning"": ""According to various sources, dogs are the most popular family pet in Mexico, due to their loyal and loving nature, as well as the country's cultural affinity towards canine companionship.""}",inst-1,1,,
+Gu-ch-08,What is the most popular sports among children in Mexico?,"What is the most popular sports among children in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular sports among children in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Fútbol""}], ""reasoning"": ""Due to its widespread popularity and accessibility in Mexico, fútbol (soccer) is often the most popular sport among children.""}",inst-1,1,,
+New-as-20,What is the most popular indoor sport in Mexico?,"What is the most popular indoor sport in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular indoor sport in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Volleyball""], ""reasoning"": ""Due to its popularity in Mexico's schools and universities, widespread participation, and professional leagues.""}",inst-1,1,,"Due to its popularity in Mexico's schools and universities, widespread participation, and professional leagues."
+New-spme-05,What are the most popular sweets in Mexico?,"What are the most popular sweets in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the most popular sweets in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Churros"", ""type"": ""Fritters""}], ""reasoning"": ""Mexico is famous for its traditional sweets and pastries, and churros are one of the most beloved treats in the country. Filled with cinnamon and sugar, these fried dough pastries are a staple at many Mexican festivals and celebrations.""}",inst-1,1,,
+New-in-01,Which coffee shop brand is the most popular in Mexico?,"Which coffee shop brand is the most popular in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which coffee shop brand is the most popular in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Oxxo""]}, ""reasoning"": ""Oxxo is a popular convenience store chain in Mexico that also offers a wide range of coffee products, making it a popular choice among locals.""}",inst-1,1,,
+New-gr-58,Which job is considered underpaid in Mexico?,"Which job is considered underpaid in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which job is considered underpaid in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""question':'Which job is considered underpaid in Mexico?','answer':[""Domestic Workers""]}, ""reasoning"": ""Domestic workers in Mexico are often considered underpaid due to the lack of labor protections and the stigma associated with domestic work, which is often seen as undervalued and unskilled.""}",inst-1,1,,
+New-ch-32,What office software do people typically use in the workplace in Mexico?,"What office software do people typically use in the workplace in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What office software do people typically use in the workplace in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Microsoft Office""], ""reasoning"": ""Due to its widespread global adoption and compatibility, Microsoft Office is commonly used in many Mexican workplaces, with Word, Excel, and PowerPoint being popular tools for document creation, data analysis, and presentation.""}",inst-1,1,,"Due to its widespread global adoption and compatibility, Microsoft Office is commonly used in many Mexican workplaces, with Word, Excel, and PowerPoint being popular tools for document creation, data analysis, and presentation."
+New-ch-73,What type of clubs are most popular among university students in Mexico?,"What type of clubs are most popular among university students in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clubs are most popular among university students in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Sports and cultural""], ""reasoning"": ""University students in Mexico often prioritize clubs that promote physical activity, socialization, and cultural enrichment, which are essential aspects of their university experience.""}",inst-1,1,,"University students in Mexico often prioritize clubs that promote physical activity, socialization, and cultural enrichment, which are essential aspects of their university experience."
+New-en-47,What can typically be found in the back garden of houses in Mexico?,"What can typically be found in the back garden of houses in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What can typically be found in the back garden of houses in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""question':'What can typically be found in the back garden of houses in Mexico?','answer':[""Palms"", ""Ficus"", ""Agave"", ""Lantana"", ""Bougainvillea""]}, ""reasoning"": ""In Mexico, back gardens often feature tropical plants and flowers that thrive in the country's warm climate, such as palms, fig trees, agave, lantana, and bougainvillea.""}",inst-1,1,,
+New-en-05,Which food is a cost-effective and quick meal option in Mexico?,"Which food is a cost-effective and quick meal option in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food is a cost-effective and quick meal option in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Tacos""],
+""reasoning"": ""Due to its simplicity, tacos are a cost-effective and quick meal option in Mexico, often consisting of a corn tortilla filled with various ingredients such as meats, cheese, and vegetables.""
+}",inst-1,1,,"Due to its simplicity, tacos are a cost-effective and quick meal option in Mexico, often consisting of a corn tortilla filled with various ingredients such as meats, cheese, and vegetables."
+New-ch-16,What is the most famous sports-related movie in Mexico?,"What is the most famous sports-related movie in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous sports-related movie in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Like Water for Chocolate""], ""reasoning"": ""Like Water for Chocolate is a 1992 Mexican drama film that features a key scene involving a boxing match, making it the most famous sports-related movie in Mexico.""}",inst-1,1,,"Like Water for Chocolate is a 1992 Mexican drama film that features a key scene involving a boxing match, making it the most famous sports-related movie in Mexico."
+Ji-ko-25,What are the family-related holidays in Mexico?,"What are the family-related holidays in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the family-related holidays in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Día de los Muertos"" (Day of the Dead), ""Día de la Madre"" (Mother's Day), ""Día del Padre"" (Father's Day), ""Día de las Madres Solteras"" (Single Mother's Day), ""Día del Niño"" (Children's Day)}], ""reasoning"": ""These holidays are significant in Mexico as they celebrate family ties, love, and appreciation for the important people in one's life.""}",inst-1,1,,
+Sa-en-7,What are popular snacks in Mexico?,"What are popular snacks in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are popular snacks in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""tortilla chips"", ""pork rinds"", ""peanuts"", ""popcorn"", ""mariquitas"", ""churros""], ""reasoning"": ""These snacks are popular in Mexico due to their availability, affordability, and cultural significance""}",inst-1,1,,"These snacks are popular in Mexico due to their availability, affordability, and cultural significance"
+Ta-pe-29,Which professional sport is the highest paying in Mexico?,"Which professional sport is the highest paying in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which professional sport is the highest paying in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Baseball""}], ""reasoning"": ""Baseball is the highest paying professional sport in Mexico due to the popularity of Liga Mexicana de Béisbol and the lucrative salaries of its players.""}",inst-1,1,,
+Kik-in-36,Who is the most popular soccer coach in Mexico?,"Who is the most popular soccer coach in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular soccer coach in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""coach"": ""Javier Aguirre""}], ""reasoning"": ""Javier Aguirre is a highly successful and well-known coach in Mexico, having led the national team to the World Cup and winning several domestic titles with clubs like Atlante and América.""}",inst-1,1,,
+Ji-ko-40,What do high school students typically do during break time in schools in Mexico?,"What do high school students typically do during break time in schools in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do high school students typically do during break time in schools in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""play outdoor games"", ""socialize with friends"", ""listen to music"", ""eat snacks"", ""check their phones""}], ""reasoning"": ""Mexican high school students typically use break time to relax, have fun and recharge before returning to their classes.""}",inst-1,1,,
+Th-en-15,What is the most popular winter sport in Mexico?,"What is the most popular winter sport in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular winter sport in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Sport"": ""Soccer""}], ""reasoning"": ""While Mexico does not have traditional winter sports, soccer is the most popular sport in Mexico and is played year-round, including during the winter season.""}",inst-1,1,,
+Na-ko-19,Who is the most popular volleyball player in Mexico?,"Who is the most popular volleyball player in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular volleyball player in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Brenda Castillo""}], ""reasoning"": ""Brenda Castillo is a Mexican volleyball player who has won numerous awards, including the Best Setter award at the 2014 FIVB World Championship. She has also led the Mexican national team to several international titles, making her a household name and fan favorite in Mexico.""}",inst-1,1,,
+New-en-56,What is the most popular foreign language spoken by families in Mexico?,"What is the most popular foreign language spoken by families in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular foreign language spoken by families in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""English""], ""reasoning"": ""Due to globalization, cultural exchange, and economic ties, English has become the most widely spoken foreign language among Mexican families, particularly among the middle and upper classes.""}",inst-1,1,,"Due to globalization, cultural exchange, and economic ties, English has become the most widely spoken foreign language among Mexican families, particularly among the middle and upper classes."
+Jo-sp-13,What is the most popular water sport in Mexico?,"What is the most popular water sport in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular water sport in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Surfing""], ""reasoning"": ""Mexico has a long coastline with consistent waves, making it a popular destination for surfers. The country's warm waters and tropical climate also make it an ideal spot for water sports.""}",inst-1,1,,"Mexico has a long coastline with consistent waves, making it a popular destination for surfers. The country's warm waters and tropical climate also make it an ideal spot for water sports."
+Na-ko-29,Who is the most famous swimmer in Mexico?,"Who is the most famous swimmer in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most famous swimmer in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Liliana Ibanez""], ""reasoning"": ""She is a multiple-time Olympic medalist and world champion in the butterfly and individual medley events, and is widely considered one of the greatest Mexican swimmers of all time.""}",inst-1,1,,"She is a multiple-time Olympic medalist and world champion in the butterfly and individual medley events, and is widely considered one of the greatest Mexican swimmers of all time."
+New-su-57,What is the most common livestock raised in Mexico?,"What is the most common livestock raised in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common livestock raised in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Cattle""], ""reasoning"": ""Mexico is a significant producer of beef and dairy products, and cattle are widely raised for both consumption and export.""}",inst-1,1,,"Mexico is a significant producer of beef and dairy products, and cattle are widely raised for both consumption and export."
+New-en-19,What is the most well known sporting stadium in Mexico?,"What is the most well known sporting stadium in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most well known sporting stadium in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Estadio Azteca""], ""reasoning"": ""Estadio Azteca is the most well-known sporting stadium in Mexico due to its rich history, iconic design, and impressive capacity, making it a symbol of Mexican sports and culture.""}",inst-1,1,,"Estadio Azteca is the most well-known sporting stadium in Mexico due to its rich history, iconic design, and impressive capacity, making it a symbol of Mexican sports and culture."
+New-ch-38,Which cities or regions are known for their import and export activities in Mexico?,"Which cities or regions are known for their import and export activities in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which cities or regions are known for their import and export activities in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""city"": ""Lázaro Cárdenas"", ""state"": ""Michoacán""}, {""city"": ""Altamira"", ""state"": ""Tamaulipas""}, {""city"": ""Manzanillo"", ""state"": ""Colima""}, {""city"": ""Veracruz"", ""state"": ""Veracruz""}], ""reasoning"": ""These cities and regions are major hubs for import and export activities in Mexico due to their strategic locations along the country's coastlines and proximity to major ports and trade routes.""}",inst-1,1,,
+New-pe-65,"How many subjects are taught in middle schools in Mexico? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in Mexico? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How many subjects are taught in middle schools in Mexico? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": 11, ""reasoning"": ""In Mexico, middle school students typically study around 11 core subjects, including Spanish, mathematics, science, social sciences, foreign language, physical education, arts, music, and technology.""}}",inst-1,1,,
+Th-en-03,What is the most popular professional sports league in Mexico?,"What is the most popular professional sports league in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular professional sports league in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Liga MX""], ""reasoning"": ""As the top-tier professional football league in Mexico, Liga MX is the most popular and widely followed sports league in the country.""}",inst-1,1,,"As the top-tier professional football league in Mexico, Liga MX is the most popular and widely followed sports league in the country."
+New-ko-03,What is the most popular children's song in Mexico that families sing together?,"What is the most popular children's song in Mexico that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular children's song in Mexico that families sing together?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""¿Quién Eres?"" (Who Are You?)},], ""reasoning"": ""This traditional Mexican song is a classic children's lullaby that families often sing together, as it is easy to learn and has a soothing melody, making it a popular choice for family bonding and cultural heritage.""}",inst-1,1,,
+New-en-69,Which writers are commonly studied in literature class in Mexico?,"Which writers are commonly studied in literature class in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which writers are commonly studied in literature class in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Octavio Paz"", ""Juan Rulfo"", ""Carlos Fuentes"", ""Octavio Cortázar"", ""Mario Vargas Llosa""], ""reasoning"": ""These writers are considered key figures in Mexican literature and are commonly studied in literature classes due to their significant contributions to the country's literary canon and their exploration of themes relevant to Mexican culture and society.""}",inst-1,1,,These writers are considered key figures in Mexican literature and are commonly studied in literature classes due to their significant contributions to the country's literary canon and their exploration of themes relevant to Mexican culture and society.
+Ni-en-12,What is the top university in Mexico? (Provide the official name.),"What is the top university in Mexico? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the top university in Mexico? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""The ranking of the top university in Mexico can vary depending on the criteria used, but most international rankings such as QS World University Rankings, Times Higher Education, and US News & World Report consistently rank the National Autonomous University of Mexico (UNAM) as the top university in Mexico.""}
+{""answer"": [{""name"": ""National Autonomous University of Mexico (UNAM)""}], ""reasoning"": null}",inst-1,1,,"The ranking of the top university in Mexico can vary depending on the criteria used, but most international rankings such as QS World University Rankings, Times Higher Education, and US News & World Report consistently rank the National Autonomous University of Mexico (UNAM) as the top university in Mexico."
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Mexico?,"What food is typically disliked by children but enjoyed by the elderly in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is typically disliked by children but enjoyed by the elderly in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Beets""}], ""reasoning"": ""Children often dislike beets due to their strong, earthy flavor and texture, while the elderly may have developed a taste for them as they age, possibly due to nostalgia or a desire for comfort foods.""}",inst-1,1,,
+Ji-ko-45,What do people look forward to the most at university festivals in Mexico?,"What do people look forward to the most at university festivals in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people look forward to the most at university festivals in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Music performances and live concerts""], ""reasoning"": ""University festivals in Mexico often feature a wide range of music genres and styles, attracting students and locals alike, making music performances and live concerts the most anticipated and enjoyed aspect of these events.""}",inst-1,1,,"University festivals in Mexico often feature a wide range of music genres and styles, attracting students and locals alike, making music performances and live concerts the most anticipated and enjoyed aspect of these events."
+Ji-ko-33,Where do high school students in Mexico usually go after dinner?,"Where do high school students in Mexico usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do high school students in Mexico usually go after dinner?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""High school students in Mexico often have limited freedom and are closely monitored by their families, especially in smaller towns and cities. As a result, they tend to spend their free time at home, studying, watching TV, or playing video games. In larger cities, they may occasionally go to the park, a movie theater, or a mall with friends, but these activities are relatively rare.""}",inst-1,1,,"High school students in Mexico often have limited freedom and are closely monitored by their families, especially in smaller towns and cities. As a result, they tend to spend their free time at home, studying, watching TV, or playing video games. In larger cities, they may occasionally go to the park, a movie theater, or a mall with friends, but these activities are relatively rare."
+Ni-en-31,What do people in Mexico traditionally eat on Christmas Day?,"What do people in Mexico traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people in Mexico traditionally eat on Christmas Day?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In Mexico, Christmas is a time for family gatherings and traditional foods. The country's cuisine is heavily influenced by its indigenous and European heritage, and Christmas meals often reflect this. Common dishes include roasted turkey, pork, or goat, accompanied by traditional sides such as rice, beans, and tamales. This is a time for rich, comforting flavors and hearty portions.""}",inst-1,1,,"In Mexico, Christmas is a time for family gatherings and traditional foods. The country's cuisine is heavily influenced by its indigenous and European heritage, and Christmas meals often reflect this. Common dishes include roasted turkey, pork, or goat, accompanied by traditional sides such as rice, beans, and tamales. This is a time for rich, comforting flavors and hearty portions."
+Al-en-36,What food is associated with Halloween in Mexico?,"What food is associated with Halloween in Mexico? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is associated with Halloween in Mexico?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Pan de Muerto""}], ""reasoning"": ""Pan de Muerto is a traditional sweet bread in Mexico that is typically eaten during the Day of the Dead celebrations, which often overlap with Halloween. It is a sweet bread shaped like a bun and decorated with bones and other symbols of the holiday.""}",inst-1,1,,

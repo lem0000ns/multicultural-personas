@@ -283,7 +283,7 @@ def generate_prompt_mc(question,country,answers,choices,min_choice,dummy_choices
         else:
             prompt = question.replace('your country',country.replace('_',' '))
         
-        prompt += ' Without any explanation, choose only one from the given alphabet choices(e.g., A, B, C). Provide as JSON format: {"answer_choice":""}\n\n'
+        prompt += ' Choose only one from the given alphabet choices(e.g., A, B, C). Provide your answer and reasoning as JSON format: {"answer":"A","reasoning":"Your reasoning here"}\n\n'
         
         for chosen_choices in combinations(choices.items(),min_choice):
             all_choices = sorted([(v,k) for k,v in chosen_choices]+[(answer,country)]+[(dummy,'dummy') for dummy in dummy_choices])

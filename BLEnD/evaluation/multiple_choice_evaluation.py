@@ -3,7 +3,7 @@ from multiple_choice_generation import *
 from persona_util import *
 import json_repair
 
-def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,response_file=None,temperature=1,top_p=0,gpt_azure=True,num_iterations=1,sample_size=None,random_seed=42):
+def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,response_file=None,temperature=1,top_p=0,gpt_azure=True,num_iterations=1,sample_size=None,random_seed=42,use_persona=True,use_reasoning=True):
     if response_file == None:
         response_file = f"{model_name}-mc_res.csv"
     
@@ -58,7 +58,7 @@ def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,respo
         # Check what's already done for current iteration
         already = None
         if not os.path.exists(os.path.join(mc_dir,response_file)):
-            write_csv_row(list(questions_df.columns)+['full_res','final_ans','iteration','persona'],os.path.join(mc_dir,response_file))
+            write_csv_row(list(questions_df.columns)+['full_res','final_ans','iteration','persona','reasoning'],os.path.join(mc_dir,response_file))
         else:
             already = pd.read_csv(os.path.join(mc_dir,response_file),encoding='utf-8')
             # Filter to only current iteration when checking for already processed items
@@ -77,15 +77,49 @@ def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,respo
                     continue
             
             country = row['country']
-            prompt = row['prompt']
-            print(prompt)
 
+            if use_reasoning:
+                predefined_prompt = row['prompt']
+                if ' Without' in predefined_prompt:
+                    prompt_question = predefined_prompt.split(' Without')[0].strip()
+                elif '\n\nA.' in predefined_prompt:
+                    prompt_question = predefined_prompt.split('\n\nA.')[0].strip()
+                    if ' Provide' in prompt_question:
+                        prompt_question = prompt_question.split(' Provide')[0].strip()
+                    if ' Choose' in prompt_question:
+                        prompt_question = prompt_question.split(' Choose')[0].strip()
+                else:
+                    prompt_question = predefined_prompt.split('\n')[0].strip()
+                
+                choices_dict = json.loads(row['choices'])
+                option_a = choices_dict.get('A', '')
+                option_b = choices_dict.get('B', '')
+                option_c = choices_dict.get('C', '')
+                option_d = choices_dict.get('D', '')
+                
+
+                prompt = (
+                    "Instruction: You must select one option among A,B,C,D.\n"
+                    "Respond in valid JSON format with two keys: \n"
+                    "\"answer_choice\" (either \"A\", \"B\", \"C\", or \"D\") and "
+                    "\"reasoning\" (a short explanation). \n"
+                    "Example format: {\"answer_choice\": \"A\", \"reasoning\": \"your reasoning\"}\n"
+                    f"Question: {prompt_question}\n"
+                    f"A. {option_a}\n"
+                    f"B. {option_b}\n"
+                    f"C. {option_c}\n"
+                    f"D. {option_d}"
+                )
+            else:
+                prompt = row['prompt']
+
+            persona = None
             # Generate or refine persona based on iteration
-            if iteration == 1:
+            if iteration == 1 and use_persona:
                 # First iteration: generate new persona
                 persona_prompt_formatted = generate_persona_prompt + f"\n\nCountry: {country}\nQuestion: {prompt}\n\nGenerate the persona:"
                 persona = get_model_response(model_name,persona_prompt_formatted,model,tokenizer,temperature,top_p,gpt_azure)
-            else:
+            elif use_persona:
                 # Subsequent iterations: refine previous persona
                 prev_persona = previous_iter_data.get(qid, {}).get('persona', '')
                 if not prev_persona:
@@ -139,15 +173,64 @@ def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,respo
                             # Fallback to previous persona if parsing fails
                             persona = prev_persona
             
+            if persona:
+                print("--------------------------------")
+                print("Persona: ",persona)
             print("--------------------------------")
-            print("Persona: ",persona)
+            print("Prompt: ",prompt)
             print("--------------------------------")
 
             full_res = get_model_response(model_name,prompt,model,tokenizer,temperature,top_p,gpt_azure,system_message=persona)
-            print(full_res)
+            print("Full Response: ",full_res)
+            print("--------------------------------\n")
             json_res = get_json_str(full_res)
             
-            if isinstance(json_res,dict) and 'answer_choice' in json_res:
+            # Extract reasoning from JSON response (if available)
+            reasoning = ""
+            # First try to get reasoning from parsed JSON dict
+            if isinstance(json_res, dict):
+                if 'reasoning' in json_res:
+                    reasoning = str(json_res['reasoning'])
+                    print(f"Found reasoning in JSON dict: {reasoning[:100]}...")
+                elif 'answer' in json_res and 'reasoning' not in json_res:
+                    print("Warning: JSON has 'answer' but no 'reasoning' field. Model may not have provided reasoning.")
+            # If not found in dict, try to extract from full_res using json_repair for better parsing
+            if not reasoning and 'reasoning' in str(full_res).lower():
+                try:
+                    # Try to parse the full response as JSON using json_repair
+                    repaired_json = json_repair.loads(full_res)
+                    if isinstance(repaired_json, dict) and 'reasoning' in repaired_json:
+                        reasoning = str(repaired_json['reasoning'])
+                        print(f"Found reasoning via json_repair: {reasoning[:100]}...")
+                except Exception as e:
+                    # Fallback to regex extraction
+                    try:
+                        reasoning_match = re.search(r'"reasoning"\s*:\s*"([^"]*(?:\\.[^"]*)*)"', str(full_res))
+                        if reasoning_match:
+                            reasoning = reasoning_match.group(1).replace('\\"', '"').replace('\\n', '\n')
+                            print(f"Found reasoning via regex: {reasoning[:100]}...")
+                    except Exception as e2:
+                        print(f"Could not extract reasoning: {e2}")
+            
+            # Try to extract answer from JSON format: {"answer": "A", "reasoning": "..."}
+            if isinstance(json_res,dict) and 'answer' in json_res:
+                try:
+                    # Extract the answer letter (A, B, C, D, etc.)
+                    final_ans = re.findall(r'[A-Z]',str(json_res['answer']))[0]
+                except:
+                    # Fallback: try to match the answer value with choices
+                    try:
+                        answer_value = str(json_res['answer'])
+                        for k,v in json.loads(row['choices']).items():
+                            if v == answer_value or k == answer_value:
+                                final_ans = str(k)
+                                break
+                        else:
+                            final_ans = full_res
+                    except:
+                        final_ans = full_res
+            # Backward compatibility: also check for old format {"answer_choice": "..."}
+            elif isinstance(json_res,dict) and 'answer_choice' in json_res:
                 try:
                     final_ans = re.findall(r'[A-Z]',str(json_res['answer_choice']))[0]
                     if final_ans+'.' not in prompt:
@@ -157,7 +240,6 @@ def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,respo
                                 break
                         else:
                             final_ans = full_res 
-                    
                 except:
                     for k,v in json.loads(row['choices']).items():
                         if v == json_res['answer_choice']:
@@ -166,12 +248,13 @@ def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,respo
                     else:
                         final_ans = full_res
             else:
+                # Fallback: try to extract answer from response text
                 try:
                     final_ans = re.findall(r'[A-Z]',json_res)[0]
                 except:
                     final_ans = full_res
             
-            write_csv_row(list(row)+[full_res,final_ans,iteration,persona],os.path.join(mc_dir,response_file))
+            write_csv_row(list(row)+[full_res,final_ans,iteration,persona,reasoning],os.path.join(mc_dir,response_file))
             if final_ans == row['answer_idx']:
                 right += 1
             pb.set_postfix({'score':right/(i+1)})
@@ -224,6 +307,10 @@ if __name__ == "__main__":
                         help='Number of questions to sample per country. If None, use all questions.')
     parser.add_argument('--random_seed',type=int,default=42,
                         help='Random seed for sampling questions.')
+    parser.add_argument('--use_persona',type=str2bool,default=True,
+                        help='Whether to use persona for response generation. Default is True.')
+    parser.add_argument('--use_reasoning',type=str2bool,default=True,
+                        help='Whether to use reasoning for response generation. Default is True.')
     
     args = parser.parse_args()
     
@@ -237,4 +324,6 @@ if __name__ == "__main__":
                           gpt_azure=args.gpt_azure,
                           num_iterations=args.num_iterations,
                           sample_size=args.sample_size,
-                          random_seed=args.random_seed)
+                          random_seed=args.random_seed,
+                          use_persona=args.use_persona,
+                          use_reasoning=args.use_reasoning)

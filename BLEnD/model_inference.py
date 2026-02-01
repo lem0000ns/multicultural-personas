@@ -52,6 +52,10 @@ parser.add_argument('--sample_size',type=int,default=None,
                     help='Randomly sample N questions per country. If not provided, all questions will be used.')
 parser.add_argument('--random_seed',type=int,default=42,
                     help='Random seed for sampling questions. Default is 42 for reproducibility.')
+parser.add_argument('--use_persona',type=str2bool,default=True,
+                    help='Whether to use persona for response generation. Default is True.')
+parser.add_argument('--use_reasoning',type=str2bool,default=True,
+                    help='Whether to use reasoning for response generation. Default is True.')
 
 args = parser.parse_args()
 
@@ -64,7 +68,7 @@ def make_prompt(question,prompt_no,language,country,prompt_sheet):
 
     return prompt.replace('{q}',question)
 
-def generate_response(model_name,model_path,tokenizer,model,language,country,q_df,q_col,id_col,output_dir,prompt_no=None,prompt_dir=None,prompt_file=None,iteration=1):
+def generate_response(model_name,model_path,tokenizer,model,language,country,q_df,q_col,id_col,output_dir,prompt_no=None,prompt_dir=None,prompt_file=None,iteration=1, use_persona=True, use_reasoning=True):
     replace_country_flag = False
     if language != COUNTRY_LANG[country] and language == 'English':
         replace_country_flag = True
@@ -131,7 +135,7 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
         
         
     else:        
-        write_csv_row([id_col,q_col,'prompt','response','prompt_no','iteration','persona'],output_filename)
+        write_csv_row([id_col,q_col,'prompt','response','prompt_no','iteration','persona','reasoning'],output_filename)
       
     pb = tqdm(q_df.iterrows(),desc=f"{model_name} (iter {iteration})",total=len(q_df))
     for _,d in pb:
@@ -151,11 +155,12 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
             prompt = q
         
         # Generate or refine persona based on iteration
-        if iteration == 1:
+        persona = None
+        if iteration == 1 and use_persona:
             # First iteration: generate new persona
             persona_prompt_formatted = persona_prompt_saq.format(country=country,q=q)
             persona = get_model_response(model_name,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
-        else:
+        elif use_persona:
             # Subsequent iterations: refine previous persona
             prev_persona = previous_iter_data.get(guid, {}).get('persona', '')
             if not prev_persona:
@@ -212,13 +217,34 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
         print("--------------------------------")
         print("Persona: ",persona)
         print("--------------------------------")
+
+        if use_reasoning:
+            prompt += (
+                "\n\nRespond in valid JSON format with two keys:\n"
+                "\"answer\" (a short answer to the question) and "
+                "\"reasoning\" (a short explanation).\n"
+                "Example format: {\"answer\": \"{answer here}\", \"reasoning\": \"{reasoning here}\"}\n"
+                "DO NOT include any other text or comments in your response."
+            )
+
         print(prompt)
+        print("--------------------------------")
         
         # Use persona as system_message when generating response
         response = get_model_response(model_name,prompt,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure,system_message=persona)
             
         print(response)
-        write_csv_row([guid,q,prompt,response,prompt_no,iteration,persona],output_filename)
+        
+        # Extract reasoning from JSON response (if available)
+        reasoning = ""
+        try:
+            json_res = get_json_str(response)
+            if isinstance(json_res, dict) and 'reasoning' in json_res:
+                reasoning = str(json_res['reasoning'])
+        except:
+            pass  # If parsing fails, leave reasoning empty
+        
+        write_csv_row([guid,q,prompt,response,prompt_no,iteration,persona,reasoning],output_filename)
         
     del guid_list
             
@@ -227,15 +253,15 @@ def get_response_from_all():
     languages = args.language
     countries = args.country
     question_dir = args.question_dir
-    question_file = args.question_file
     question_col = args.question_col
     prompt_no = args.prompt_no
     prompt_dir = args.prompt_dir
     prompt_file = args.prompt_file
     id_col = args.id_col
     output_dir = args.output_dir
-    azure = args.gpt_azure
-    
+    use_persona = str2bool(args.use_persona)
+    use_reasoning = str2bool(args.use_reasoning)
+
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
     
@@ -268,7 +294,7 @@ def get_response_from_all():
         return questions_df
     
     
-    def generate_response_per_model(model_name):
+    def generate_response_per_model(model_name,use_persona=True,use_reasoning=True):
         # For API-based models (GPT, Claude, Gemini, etc.), use model name as path if not in MODEL_PATHS
         if model_name in MODEL_PATHS:
             model_path = MODEL_PATHS[model_name]
@@ -286,17 +312,17 @@ def get_response_from_all():
             
             if isinstance(languages,str):
                 questions = get_questions(languages,countries)
-                generate_response(model_name,model_path,tokenizer,model,languages,countries,questions,question_col,id_col,output_dir,prompt_no=prompt_no,prompt_dir=prompt_dir,prompt_file=prompt_file,iteration=iteration)
+                generate_response(model_name,model_path,tokenizer,model,languages,countries,questions,question_col,id_col,output_dir,prompt_no=prompt_no,prompt_dir=prompt_dir,prompt_file=prompt_file,iteration=iteration,use_persona=use_persona,use_reasoning=use_reasoning)
             else:
                 for l,c in zip(languages,countries):
                     questions = get_questions(l,c)
-                    generate_response(model_name,model_path,tokenizer,model,l,c,questions,question_col,id_col,output_dir,prompt_no=prompt_no,prompt_dir=prompt_dir,prompt_file=prompt_file,iteration=iteration)
+                    generate_response(model_name,model_path,tokenizer,model,l,c,questions,question_col,id_col,output_dir,prompt_no=prompt_no,prompt_dir=prompt_dir,prompt_file=prompt_file,iteration=iteration,use_persona=use_persona,use_reasoning=use_reasoning)
         
     if isinstance(models,str):
-       generate_response_per_model(models)
+       generate_response_per_model(models,use_persona=use_persona,use_reasoning=use_reasoning)
     else:
         for m in models:
-            generate_response_per_model(m)
+            generate_response_per_model(m,use_persona=use_persona,use_reasoning=use_reasoning)
 
  
 if __name__ == "__main__":

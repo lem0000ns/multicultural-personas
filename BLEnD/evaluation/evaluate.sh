@@ -40,26 +40,26 @@ for model_key in "${MODEL_KEYS[@]}"; do
                                 --id_col ID \
                                 --question_col Translation \
                                 --response_col response \
-                                --response_dir "../model_inference_results" \
+                                --response_dir "../saq_only_reasoning_results" \
                                 --annotation_dir "../data/annotations" \
                                 --annotation_filename "${country}_data.json" \
                                 --annotations_key "annotations" \
-                                --evaluation_result_file "evaluation_results.csv"
+                                --evaluation_result_file "model_inference_results.csv"
         
-        # if [ "$language" != "English" ]; then
-        #     python evaluate.py --model "$model_key" \
-        #                         --language "English" \
-        #                         --country "$country" \
-        #                         --prompt_no "$prompt_no" \
-        #                         --id_col ID \
-        #                         --question_col Translation \
-        #                         --response_col response \
-        #                         --response_dir "../model_inference_results" \
-        #                         --annotation_dir "../data/annotations" \
-        #                         --annotation_filename "${country}_data.json"  \
-        #                         --annotations_key "annotations" \
-        #                         --evaluation_result_file "evaluation_results.csv"
-        # fi
+        if [ "$language" != "English" ]; then
+            python evaluate.py --model "$model_key" \
+                                --language "English" \
+                                --country "$country" \
+                                --prompt_no "$prompt_no" \
+                                --id_col ID \
+                                --question_col Translation \
+                                --response_col response \
+                                --response_dir "../saq_only_reasoning_results" \
+                                --annotation_dir "../data/annotations" \
+                                --annotation_filename "${country}_data.json"  \
+                                --annotations_key "annotations" \
+                                --evaluation_result_file "evaluation_results.csv"
+        fi
     done
 done
 

@@ -1,0 +1,835 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Iran?,"What is the most popular prenatal education activity for pregnant women in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular prenatal education activity for pregnant women in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Prenatal classes""}], ""reasoning"": ""Prenatal classes are a common and effective way to educate pregnant women about pregnancy, childbirth, and parenting in Iran, and are often offered by healthcare providers and hospitals.""}",inst-1,1,,
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Iran's society?,"Which age's birthday is celebrated the most grandly in Iran's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which age's birthday is celebrated the most grandly in Iran's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""age"": ""15""}], ""reasoning"": ""In Iran, the 15th birthday is considered a significant milestone, marking the transition from childhood to adolescence. It is often celebrated with grand festivities, including traditional foods, music, and gifts.""}",inst-1,1,,
+New-pe-20,What sport is popular to play on the beach in Iran?,"What sport is popular to play on the beach in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sport is popular to play on the beach in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Beach Volleyball""], ""reasoning"": ""Beach volleyball is a popular sport in Iran, and the country has hosted several international beach volleyball tournaments, including the FIVB Beach Volleyball World Tour.""}",inst-1,1,,"Beach volleyball is a popular sport in Iran, and the country has hosted several international beach volleyball tournaments, including the FIVB Beach Volleyball World Tour."
+Kik-in-37,What soccer teams in Iran are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in Iran are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What soccer teams in Iran are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""team1"": ""Esteghlal"", ""team2"": ""Persepolis""}], ""reasoning"": ""Esteghlal and Persepolis are the two most successful and popular clubs in Iran, with a long history of rivalry and intense matches between them.""}",inst-1,1,,
+Jod-ch-07,"How long (in hours) on average does it take for people in Iran to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in Iran to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long (in hours) on average does it take for people in Iran to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [1.5],
+""reasoning"": ""According to a survey, the average time spent by Iranians at a restaurant for dinner is around 1 hour and 30 minutes, which is a reasonable duration for a meal and socializing.""
+}",inst-1,1,,"According to a survey, the average time spent by Iranians at a restaurant for dinner is around 1 hour and 30 minutes, which is a reasonable duration for a meal and socializing."
+New-spme-37,Which profession is most commonly studied abroad by students from Iran?,"Which profession is most commonly studied abroad by students from Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which profession is most commonly studied abroad by students from Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Software Engineering""}], ""reasoning"": ""According to various reports and studies, a significant number of Iranian students choose to study abroad, particularly in fields related to technology and engineering. Software engineering is a highly sought-after profession in Iran, and studying abroad provides students with access to advanced education, research opportunities, and a stronger job market.""}",inst-1,1,,
+New-pe-49,Where do families gather to pray together in Iran?,"Where do families gather to pray together in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do families gather to pray together in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""location"": ""Mosques""}], ""reasoning"": ""Mosques are common gathering places for families to pray together in Iran, as they are an integral part of Islamic worship and community life.""}",inst-1,1,,
+Jod-ch-60,What is the duration (in hours) of a typical workday in Iran? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in Iran? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration (in hours) of a typical workday in Iran? (Provide Arabic numerals (0~24) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [8], ""reasoning"": ""In Iran, the typical workday is typically 8 hours long, with most employees working from 8:00 AM to 4:00 PM, with a one-hour lunch break.""}",inst-1,1,,"In Iran, the typical workday is typically 8 hours long, with most employees working from 8:00 AM to 4:00 PM, with a one-hour lunch break."
+Ji-ko-24,What is the most preferred recreational facility among children in Iran?,"What is the most preferred recreational facility among children in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most preferred recreational facility among children in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Playgrounds""}], ""reasoning"": ""Based on various studies and surveys, playgrounds are often the most preferred recreational facility among children in Iran, providing a safe and accessible space for physical activity, socialization, and imagination.""}",inst-1,1,,
+Sa-en-22,What is the most famous university in Iran known for its sports team?,"What is the most famous university in Iran known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous university in Iran known for its sports team?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Amirkabir University of Technology""], ""reasoning"": ""Amirkabir University of Technology is one of the most prestigious universities in Iran, and its sports teams, particularly its football team, are widely recognized and respected.""}",inst-1,1,,"Amirkabir University of Technology is one of the most prestigious universities in Iran, and its sports teams, particularly its football team, are widely recognized and respected."
+Al-en-19,What is a popular second language for high school students in Iran?,"What is a popular second language for high school students in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular second language for high school students in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [
+[""English""]
+],
+""reasoning"": ""English is widely taught and learned in Iran, and it is a popular choice for high school students due to its global importance and relevance in international communication, education, and business.""
+}",inst-1,1,,"English is widely taught and learned in Iran, and it is a popular choice for high school students due to its global importance and relevance in international communication, education, and business."
+Ne-ar-09,What do people from Iran eat in Eid ul Fitr?,"What do people from Iran eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Iran eat in Eid ul Fitr?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Saffron rice with herbs"", ""Grilled fish"", ""Fesenjan chicken"", ""Khoresh bademjan"", ""Halva""], ""reasoning"": ""Traditional Iranian dishes are often served during Eid ul Fitr, with a focus on sweet and savory flavors, and a variety of textures.""}",inst-1,1,,"Traditional Iranian dishes are often served during Eid ul Fitr, with a focus on sweet and savory flavors, and a variety of textures."
+New-su-24,What sports do parents and children commonly play together in Iran?,"What sports do parents and children commonly play together in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports do parents and children commonly play together in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Futsal""}], ""reasoning"": ""Futsal is a popular team sport in Iran, and it is common to see families playing together, with parents and children forming teams or playing in the same league.""}",inst-1,1,,
+Ji-ko-42,What are the required subjects in Iran's university entrance exam?,"What are the required subjects in Iran's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the required subjects in Iran's university entrance exam?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Mathematics"", ""Physics"", ""Chemistry"", ""English""], ""reasoning"": ""These four subjects are the required and mandatory subjects for the university entrance exam in Iran, and are considered as the foundation of scientific and cultural knowledge.""}",inst-1,1,,"These four subjects are the required and mandatory subjects for the university entrance exam in Iran, and are considered as the foundation of scientific and cultural knowledge."
+New-pe-06,What is the most popular stew in Iran?,"What is the most popular stew in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular stew in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular stew in Iran"": ""Fesenjan""}], ""reasoning"": ""Fesenjan is a classic Persian stew made with chicken or duck, pomegranate juice, and ground walnuts, and is often served with steamed rice. Its unique flavor and texture have made it a beloved dish throughout Iran.""}",inst-1,1,,
+New-pe-86,What is the name of the most famous tower in Iran?,"What is the name of the most famous tower in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the name of the most famous tower in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Milad Tower""}], ""reasoning"": ""The Milad Tower, also known as the Tehran Tower, is the tallest tower in Iran and one of the most recognizable landmarks in the country.""}",inst-1,1,,
+Th-en-53,What is the most popular extracurricular social event at schools in Iran?,"What is the most popular extracurricular social event at schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular social event at schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Nowruz Celebrations""}], ""reasoning"": ""Nowruz, the Persian New Year, is a significant cultural event in Iran, and schools often organize celebrations to promote social bonding and cultural awareness among students.""}",inst-1,1,,
+Ca-sp-06,Which is the most important meal of the day to people from Iran?,"Which is the most important meal of the day to people from Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which is the most important meal of the day to people from Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most important meal of the day to people from Iran"": ""Breakfast""}], ""reasoning"": ""In Iranian culture, breakfast is considered the most important meal of the day as it provides energy and sustenance for the day ahead, following a traditional late dinner the previous night.""}",inst-1,1,,
+New-en-41,Who is the most well known and successful entrepreneur in Iran?,"Who is the most well known and successful entrepreneur in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most well known and successful entrepreneur in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Mahdi Alizadeh""], ""reasoning"": ""Mahdi Alizadeh is a well-known and successful entrepreneur in Iran, having founded and led several successful startups and companies, including the popular online marketplace Digikala. He is widely recognized as one of the most successful entrepreneurs in Iran and has received numerous awards and recognition for his achievements.""}",inst-1,1,,"Mahdi Alizadeh is a well-known and successful entrepreneur in Iran, having founded and led several successful startups and companies, including the popular online marketplace Digikala. He is widely recognized as one of the most successful entrepreneurs in Iran and has received numerous awards and recognition for his achievements."
+New-su-33,What is the common dress code for school teachers in Iran?,"What is the common dress code for school teachers in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the common dress code for school teachers in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Chador or hijab with a modest dress""], ""reasoning"": ""In Iran, school teachers are expected to dress modestly and in accordance with the country's Islamic laws. A chador or hijab is a symbol of modesty and is commonly worn by women in Iran. The dress code for male teachers is generally more relaxed, but they are still expected to dress modestly and avoid revealing clothing.""}}",inst-1,1,,
+Th-en-44,What is Iran's most popular food for family meals on weekends?,"What is Iran's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Iran's most popular food for family meals on weekends?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Fesenjan and Chicken""]}, ""reasoning"": ""Fesenjan is a popular Persian dish made with chicken cooked in a pomegranate and walnut sauce, which is often served on special occasions and weekends. It's a comforting and flavorful meal that brings families together.""}",inst-1,1,,
+Th-en-45,What is the most popular weekday evening family activity in Iran?,"What is the most popular weekday evening family activity in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular weekday evening family activity in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [{""Most popular weekday evening family activity in Iran: Watching TV together""}],
+""reasoning"": ""Based on cultural and social norms in Iran, watching TV together is a common and relaxing activity that families enjoy during the evening after dinner, allowing them to bond and spend quality time together.""
+}",inst-1,1,,
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Iran? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in Iran? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long is the typical probation period for new employees before signing a formal contract in Iran? (e.g., 1 month).','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""probation_period"": 3}], ""reasoning"": ""Typically, the probation period for new employees before signing a formal contract in Iran is 3 months.""}",inst-1,1,,
+New-in-62,What university in Iran is popular because of its engineering major? (Provide the official name.),"What university in Iran is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What university in Iran is popular because of its engineering major? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Sharif University of Technology""}],
+""reasoning"": ""Sharif University of Technology is one of the most prestigious and well-known universities in Iran, particularly for its strong programs in engineering fields such as mechanical, electrical, and computer engineering.""}",inst-1,1,,
+Ji-ko-34,How do elementary school students in Iran go to school?,"How do elementary school students in Iran go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How do elementary school students in Iran go to school?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Elementary school students in Iran typically start their day by taking a bus or walking to school.""}], ""reasoning"": [""This is a common mode of transportation for students in Iran, as many schools are located in urban areas and public transportation is widely available.""]}",inst-1,1,,
+Ta-pe-21,Where do children usually play soccer in Iran?,"Where do children usually play soccer in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do children usually play soccer in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""soccer fields"", ""neighborhood parks"", ""school yards""}], ""reasoning"": ""Children in Iran often play soccer in publicly accessible areas, such as designated soccer fields, neighborhood parks, and school yards, due to the country's limited availability of private spaces for recreational activities.""}",inst-1,1,,
+Tmp-ar-01,Where do university students in Iran usually go to study for their final exams?,"Where do university students in Iran usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do university students in Iran usually go to study for their final exams?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""library""}], ""reasoning"": ""University students in Iran typically go to the library to study for their final exams due to its quiet and conducive environment, access to relevant study materials, and availability of support services.""}",inst-1,1,,
+Ne-ar-38,Which food do people usually offer as charity in Iran?,"Which food do people usually offer as charity in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food do people usually offer as charity in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""dates""], ""reasoning"": ""In Iran, dates are considered a traditional and symbolic food for charity, as they are believed to have nourishing properties and are often distributed during religious holidays and celebrations.""}",inst-1,1,,"In Iran, dates are considered a traditional and symbolic food for charity, as they are believed to have nourishing properties and are often distributed during religious holidays and celebrations."
+Jod-ch-01,What eating utensils do people commonly used in Iran?,"What eating utensils do people commonly used in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What eating utensils do people commonly used in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""spoon"", ""fork"", ""chopsticks""}], ""reasoning"": ""In Iran, people commonly use a combination of utensils for eating, including spoons for soups and desserts, forks for meat and vegetables, and chopsticks for some specific dishes like rice and kebabs.""}",inst-1,1,,
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Iran?,"What type of alcoholic drink is most commonly consumed at festivals in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of alcoholic drink is most commonly consumed at festivals in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Doogh""], ""reasoning"": ""Doogh is a popular yogurt-based drink in Iran, often consumed at festivals and other social gatherings.""}",inst-1,1,,"Doogh is a popular yogurt-based drink in Iran, often consumed at festivals and other social gatherings."
+Th-en-11,Who is the most popular sportperson in Iran?,"Who is the most popular sportperson in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular sportperson in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Alireza Beiranvand""}], ""reasoning"": ""Alireza Beiranvand is a well-known Iranian professional footballer who plays as a goalkeeper for Persepolis FC and the Iran national team, and has gained widespread popularity in Iran due to his impressive performances and achievements in international competitions.""}",inst-1,1,,
+New-gr-15,What is the most popular traditional dessert in Iran?,"What is the most popular traditional dessert in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular traditional dessert in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Gaz"",], ""reasoning"": ""Gaz is a traditional Iranian dessert made from sugar, cornstarch, and rose water, and is often served at special occasions and celebrations.""}",inst-1,1,,
+Ni-en-40,What is the most popular Christmas song in Iran?,"What is the most popular Christmas song in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular Christmas song in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""title"": ""Shab-e Yalda"", ""song"": ""Shab-e Yalda (Persian: شب یلدا)""}], ""reasoning"": ""Shab-e Yalda is a traditional Iranian winter festival, often referred to as the Persian Christmas, as it is celebrated on the same day as Christmas in the Northern Hemisphere. The song 'Shab-e Yalda' is a popular winter song in Iran, often played during this festive period.""}",inst-1,1,,
+Na-ko-20,What sports event do people from Iran passionately support the most in international competitions?,"What sports event do people from Iran passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports event do people from Iran passionately support the most in international competitions?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [{""Futsal""}],
+""reasoning"": ""Iran has a strong tradition and dominance in Futsal, having won multiple World Championships and Asian Games titles, making it a highly popular and passionately supported sport in the country.""",inst-1,1,,
+Al-en-04,What is the most popular fruit in Iran?,"What is the most popular fruit in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular fruit in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Pomegranate""}],""reasoning"": ""Pomegranate is a staple fruit in Iranian cuisine and culture, and is widely consumed throughout the country.""}",inst-1,1,,
+New-gr-06,What is the most popular food in Iran among young people?,"What is the most popular food in Iran among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular food in Iran among young people?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dizi""}], ""reasoning"": ""Young people in Iran often crave comfort food that is easy to consume and share with friends, and Dizi, a hearty and flavorful soup, fits the bill.""}",inst-1,1,,
+New-su-34,What is the most popular extracurricular activity related to music in schools in Iran?,"What is the most popular extracurricular activity related to music in schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular activity related to music in schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Chorus (Ghoroob)""],
+""reasoning"": ""In Iran, Chorus (Ghoroob) is a traditional and popular extracurricular activity in schools, often taught by music teachers and focusing on singing and vocal harmonies.""
+}",inst-1,1,,"In Iran, Chorus (Ghoroob) is a traditional and popular extracurricular activity in schools, often taught by music teachers and focusing on singing and vocal harmonies."
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Iran's society?,"What are the key milestones associated with children's independence from their parents in Iran's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the key milestones associated with children's independence from their parents in Iran's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""marriage"", ""education completion"", ""emancipation"", ""moving out of parents' home""], ""reasoning"": ""These milestones mark significant transitions in a child's life, indicating their increased independence from their parents, as they begin to establish their own families, careers, and living arrangements.""}",inst-1,1,,"These milestones mark significant transitions in a child's life, indicating their increased independence from their parents, as they begin to establish their own families, careers, and living arrangements."
+Ne-ar-36,What is a typical festive meal in Iran?,"What is a typical festive meal in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a typical festive meal in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""dish"": ""Fesenjan"", ""main course"": ""Khoresh-e Bademjan"", ""side dishes"": [""Sabzi Polo"", ""Baghali Polo"", ""Khoresh-e Fesenjan""]}], ""reasoning"": ""Fesenjan is a rich and flavorful stew made with pomegranate juice and walnuts, commonly served during Nowruz, the Persian New Year. Khoresh-e Bademjan is a popular eggplant stew, and Sabzi Polo, Baghali Polo, and Khoresh-e Fesenjan are traditional side dishes that accompany the main course.""}",inst-1,1,,
+Ji-ko-14,What is the representative export item of Iran?,"What is the representative export item of Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the representative export item of Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""petroleum"" : ""Crude Oil""}], ""reasoning"": ""Iran is the world's 4th largest producer of crude oil and has the world's 2nd largest reserves of crude oil, making it a significant contributor to the global oil market.""}",inst-1,1,,
+New-pe-76,What is a popular activity to do in parks in Iran?,"What is a popular activity to do in parks in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular activity to do in parks in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Picnicking""}], ""reasoning"": ""Parks in Iran are often designed with picnic areas and offer stunning views, making them a popular spot for families and friends to enjoy a meal together.""}",inst-1,1,,
+Jo-sp-19,What region in Iran has been traditionally associated with agriculture?,"What region in Iran has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What region in Iran has been traditionally associated with agriculture?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""region"": ""Ostān-e Khūzestān""}], ""reasoning"": ""The region has fertile soil, adequate water resources, and a suitable climate, making it suitable for agriculture, particularly for crops like rice, wheat, and citrus fruits.""}",inst-1,1,,
+Th-en-37,"At what age do children typically become independent from their parents in Iran? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in Iran? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'At what age do children typically become independent from their parents in Iran? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [21], ""reasoning"": ""In Iran, children typically become independent from their parents in their early twenties, as they complete their education and start their careers, which is a common milestone for independence in many cultures.""}",inst-1,1,,"In Iran, children typically become independent from their parents in their early twenties, as they complete their education and start their careers, which is a common milestone for independence in many cultures."
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Iran?,"What is typically given as a congratulatory gesture when attending a friend's wedding in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""gift"": ""Gold jewelry or coins""}], ""reasoning"": ""In Iranian culture, gold is a symbol of prosperity and good fortune, and giving gold jewelry or coins as a gift is a common way to congratulate the newlyweds and wish them a happy and prosperous future together.""}",inst-1,1,,
+Ca-sp-11,Which day of the week do people usually organize a family meal in Iran?,"Which day of the week do people usually organize a family meal in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which day of the week do people usually organize a family meal in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""Friday""],
+""reasoning"": ""Friday is often considered a day of rest and family gatherings in Iran, coinciding with the end of the workweek and the start of the weekend.""
+}",inst-1,1,,"Friday is often considered a day of rest and family gatherings in Iran, coinciding with the end of the workweek and the start of the weekend."
+Ji-ko-35,What is the most common form of private education in Iran?,"What is the most common form of private education in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common form of private education in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Madrasa""}], ""reasoning"": ""Madrasa is the most common form of private education in Iran due to its long history and widespread presence throughout the country.""}",inst-1,1,,
+Al-en-01,What is a common snack for preschool kids in Iran?,"What is a common snack for preschool kids in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a common snack for preschool kids in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Gaz"", ""description"": ""a type of nougat""}], ""reasoning"": ""Gaz is a popular snack among Iranian children, known for its sweet and chewy texture.""}",inst-1,1,,
+Al-en-32,What is the main dish for Thanksgiving in Iran?,"What is the main dish for Thanksgiving in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the main dish for Thanksgiving in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""main dish for Thanksgiving in Iran is not a traditional dish""}],""reasoning"": [""Iran does not celebrate Thanksgiving, it is a North American harvest festival and is not widely celebrated in Iran, therefore there is no traditional main dish.""]}",inst-1,1,,
+New-su-58,What animals are commonly used for agriculture in Iran?,"What animals are commonly used for agriculture in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What animals are commonly used for agriculture in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sheep"", ""goats"", ""cattle"", ""pigs"", ""chickens"", ""turkeys"", ""ducks"", ""bees""}], ""reasoning"": ""These animals are commonly used for agriculture in Iran due to the country's climatic conditions and traditional practices, with sheep and goats being particularly well-suited to the country's mountainous regions.""}",inst-1,1,,
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Iran? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in Iran? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which month is the final exam term usually scheduled at high schools in Iran? (Provide Arabic numerals (1~12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [5], ""reasoning"": ""In Iran, the academic year usually starts in September and ends in June, with the final exams taking place in May.""}",inst-1,1,,"In Iran, the academic year usually starts in September and ends in June, with the final exams taking place in May."
+Ji-ko-28,When is the first day that people celebrate after a child is born in Iran?,"When is the first day that people celebrate after a child is born in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'When is the first day that people celebrate after a child is born in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""date"": ""7th day after birth""}], ""reasoning"": ""In Iran, the first celebration after a child's birth is called 'Aqiqeh' which typically takes place on the 7th day after birth.""}",inst-1,1,,
+Na-ko-33,What symbolic food do people from Iran eat on (Lunar) New Year?,"What symbolic food do people from Iran eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What symbolic food do people from Iran eat on (Lunar) New Year?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Sabzi Polo with Samanu""}], ""reasoning"": ""Sabzi Polo with Samanu is a traditional dish served during Nowruz, the Persian New Year, as a symbol of renewal and fertility. Sabzi Polo represents the earth and Samanu represents the sun, together symbolizing the eternal cycle of nature and the renewal of life.""}",inst-1,1,,
+Ki-pe-34,What is the usual drink in the breakfast in Iran?,"What is the usual drink in the breakfast in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the usual drink in the breakfast in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Doogh""], ""reasoning"": ""Doogh is a traditional yogurt-based drink in Iran, often consumed with breakfast""}",inst-1,1,,"Doogh is a traditional yogurt-based drink in Iran, often consumed with breakfast"
+New-su-42,What religion is mainly taught in schools in Iran?,"What religion is mainly taught in schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What religion is mainly taught in schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Islam""}], ""reasoning"": ""The official religion of Iran is Shia Islam, and as such, Islamic studies are a mandatory part of the curriculum in Iranian schools.""}",inst-1,1,,
+Ne-ar-06,What do people from Iran eat in Ramadan?,"What do people from Iran eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Iran eat in Ramadan?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""dates, flatbread, herbs, rice, and stews""], ""reasoning"": ""Traditional Iranian cuisine during Ramadan emphasizes simple, comforting, and nutritious foods that are easy to digest, such as dates, flatbread, and herbs, while also incorporating staple ingredients like rice and stews.""}",inst-1,1,,"Traditional Iranian cuisine during Ramadan emphasizes simple, comforting, and nutritious foods that are easy to digest, such as dates, flatbread, and herbs, while also incorporating staple ingredients like rice and stews."
+Gu-ch-38,"What is the duration of undergraduate education in Iran? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in Iran? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration of undergraduate education in Iran? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""duration"": 4}], ""reasoning"": ""In Iran, the typical duration of undergraduate education is four years.""}",inst-1,1,,
+Kik-in-16,What drink is commonly consumed in Iran when the weather is cold?,"What drink is commonly consumed in Iran when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What drink is commonly consumed in Iran when the weather is cold?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Chai""}], ""reasoning"": ""Chai is a popular hot drink in Iran, and it is commonly consumed during cold weather as it helps to warm the body and provide a comforting beverage.""}",inst-1,1,,
+Al-en-39,What do people eat on their birthday in Iran?,"What do people eat on their birthday in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people eat on their birthday in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Traditional Iranian sweets and pastries"", ""Fruit and nuts"", ""Baklava and other sweet treats"", ""Persian-style ice cream""}], ""reasoning"": ""Iranians often celebrate their birthdays with a traditional Iranian dessert, such as baklava, and a variety of sweet treats, including fruit and nuts. This is because sweet treats are considered a symbol of celebration and joy in Iranian culture.""}",inst-1,1,,
+Ne-ar-26,What is the most famous public corporation in Iran?,"What is the most famous public corporation in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous public corporation in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Telecommunications Company of Iran (TCI)""], ""reasoning"": ""TCI is the largest telecommunications service provider in Iran, offering a range of services including mobile, fixed-line, and internet services, making it the most well-known and widely used public corporation in the country.""}",inst-1,1,,"TCI is the largest telecommunications service provider in Iran, offering a range of services including mobile, fixed-line, and internet services, making it the most well-known and widely used public corporation in the country."
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Iran?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Toefl Academy""], ""reasoning"": ""Based on the popularity and demand of the subject, it is likely that most middle or high students in Iran attend a Toefl Academy, as the TOEFL (Test of English as a Foreign Language) is a widely accepted English proficiency test required for university admissions in many countries, including the United States, Canada, and the UK.""}",inst-1,1,,"Based on the popularity and demand of the subject, it is likely that most middle or high students in Iran attend a Toefl Academy, as the TOEFL (Test of English as a Foreign Language) is a widely accepted English proficiency test required for university admissions in many countries, including the United States, Canada, and the UK."
+Th-en-51,Which subject is considered the most important for students in Iran?,"Which subject is considered the most important for students in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject is considered the most important for students in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""mathematics""}], ""reasoning"": ""Mathematics is considered the most important subject in Iran because it is a fundamental tool for problem-solving, critical thinking, and analytical skills, and is also a key subject for students to pursue higher education and careers in various fields, including science, technology, engineering, and mathematics (STEM) fields.""}",inst-1,1,,
+New-ch-07,What food items do people typically pair with hard liquor in Iran?,"What food items do people typically pair with hard liquor in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food items do people typically pair with hard liquor in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""date"": ""Rice"", ""fruit"": ""Grape"", ""herb"": ""Mint"", ""tea"": ""Green""}], ""reasoning"": ""In Iran, strong drinks are often consumed with traditional snacks and sweet treats that complement their flavors.""}",inst-1,1,,
+New-en-68,What repercussions are there for bad behavior in schools in Iran?,"What repercussions are there for bad behavior in schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What repercussions are there for bad behavior in schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Severe repercussions for bad behavior in Iranian schools include corporal punishment, detention, suspension, and even expulsion. The education system in Iran emphasizes discipline and respect for authority, and misbehavior is viewed as a serious offense.""}",inst-1,1,,"Severe repercussions for bad behavior in Iranian schools include corporal punishment, detention, suspension, and even expulsion. The education system in Iran emphasizes discipline and respect for authority, and misbehavior is viewed as a serious offense."
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Iran? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in Iran? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which one of the daily meals is commonly shared with family members in Iran? (e.g., breakfast, lunch, dinner)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""dinner""}], ""reasoning"": ""In Iranian culture, dinner is often the main meal of the day, and it is common for families to gather together to share a meal and socialize in the evening.""}",inst-1,1,,
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Iran?,"What type of clothing do middle and high school students wear to school in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clothing do middle and high school students wear to school in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Modest and conservative clothing"", ""Long-sleeved shirts and pants"", ""Hijabs and headscarves for girls""]}, ""reasoning"": ""In Iran, the dress code for middle and high school students is generally modest and conservative, adhering to the country's Islamic dress code. Boys typically wear long-sleeved shirts and pants, while girls often wear hijabs and headscarves to cover their hair and neck.""}",inst-1,1,,
+Ca-sp-41,Where do the dependent elderly usually live in Iran?,"Where do the dependent elderly usually live in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do the dependent elderly usually live in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""With family members or in nursing homes""], ""reasoning"": ""In Iran, it is common for the elderly to live with their children or other family members, especially if they are unable to care for themselves. This is due to strong cultural and social values that emphasize family ties and support. However, with increasing urbanization and changing lifestyles, there is a growing trend towards elderly care facilities and nursing homes, particularly in larger cities like Tehran and Isfahan.""}",inst-1,1,,"In Iran, it is common for the elderly to live with their children or other family members, especially if they are unable to care for themselves. This is due to strong cultural and social values that emphasize family ties and support. However, with increasing urbanization and changing lifestyles, there is a growing trend towards elderly care facilities and nursing homes, particularly in larger cities like Tehran and Isfahan."
+Sa-en-31,What is Iran's most popular family pet?,"What is Iran's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Iran's most popular family pet?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dog""}], ""reasoning"": ""Based on the available data and research, dogs are considered to be one of the most popular family pets in Iran.""}",inst-1,1,,
+Gu-ch-08,What is the most popular sports among children in Iran?,"What is the most popular sports among children in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular sports among children in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Football""}], ""reasoning"": ""According to various sources, football is the most popular sport among children in Iran, likely due to the country's strong football tradition and the popularity of the sport globally.""}",inst-1,1,,
+New-as-20,What is the most popular indoor sport in Iran?,"What is the most popular indoor sport in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular indoor sport in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Futsal""}], ""reasoning"": ""Futsal is the most popular indoor sport in Iran due to its widespread popularity and success of the Iranian national team in international competitions.""}",inst-1,1,,
+New-spme-05,What are the most popular sweets in Iran?,"What are the most popular sweets in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the most popular sweets in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Gaz"", ""Baklava"", ""Kuluche""}], ""reasoning"": ""Traditional Persian sweets are highly sweetened and often served as a dessert or snack, with nuts and dried fruits being common ingredients. Gaz, Baklava, and Kuluche are popular choices due to their rich flavors and textures.""}",inst-1,1,,
+New-in-01,Which coffee shop brand is the most popular in Iran?,"Which coffee shop brand is the most popular in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which coffee shop brand is the most popular in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""brand"": ""Shahrzad Coffee""}], ""reasoning"": ""Shahrzad Coffee is a well-known and popular coffee shop chain in Iran, with multiple locations throughout the country.""}",inst-1,1,,
+New-gr-58,Which job is considered underpaid in Iran?,"Which job is considered underpaid in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which job is considered underpaid in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""question':'Which job is considered underpaid in Iran?','answer':[
+    {""name"": ""Teacher"", ""percentage"": ""50%""},
+    {""name"": ""Nurse"", ""percentage"": ""40%""},
+    {""name"": ""Doctor"", ""percentage"": ""30%""},
+    {""name"": ""Engineer"", ""percentage"": ""20%""},
+    {""name"": ""Software Developer"", ""percentage"": ""15%""}
+]},
+""reasoning"": ""According to various studies and reports, these professions are considered underpaid in Iran due to the large gap between their salaries and the cost of living, as well as the lack of adequate compensation and benefits.""}",inst-1,1,,
+New-ch-32,What office software do people typically use in the workplace in Iran?,"What office software do people typically use in the workplace in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What office software do people typically use in the workplace in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""software"": ""Microsoft Office""}], ""reasoning"": ""Given the widespread use of Microsoft products globally, it is likely that Microsoft Office is commonly used in Iranian workplaces due to its popularity and compatibility with international standards.""}",inst-1,1,,
+New-ch-73,What type of clubs are most popular among university students in Iran?,"What type of clubs are most popular among university students in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clubs are most popular among university students in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Cultural and Artistic Clubs""}], ""reasoning"": ""University students in Iran often have a strong interest in cultural and artistic activities, such as music, theater, and fine arts, which are seen as a way to express themselves and connect with others.""}",inst-1,1,,
+New-en-47,What can typically be found in the back garden of houses in Iran?,"What can typically be found in the back garden of houses in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What can typically be found in the back garden of houses in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Olive trees"", ""Pomegranate trees"", ""Gardening tools"", ""Fruit trees"", ""Herbs"", ""Vines"", ""Fountains"", ""Birdhouses"", ""Seating areas"", ""Flowers""}], ""reasoning"": ""Given Iran's climate and cultural heritage, back gardens in houses are often designed to provide shade, beauty, and a sense of tranquility. Olive and pomegranate trees are common, as well as various herbs and flowers. Gardening tools and seating areas are also typical, as homeowners often enjoy spending time in their gardens. Fountains and birdhouses may also be present, adding to the serene atmosphere.""}",inst-1,1,,
+New-en-05,Which food is a cost-effective and quick meal option in Iran?,"Which food is a cost-effective and quick meal option in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food is a cost-effective and quick meal option in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Iranian-style rice and beans""}], ""reasoning"": ""It is a staple food in Iran, easily available, and can be prepared quickly at home or at a street food stall.""}",inst-1,1,,
+New-ch-16,What is the most famous sports-related movie in Iran?,"What is the most famous sports-related movie in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous sports-related movie in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""The Color of Paradise""], ""reasoning"": ""The Color of Paradise is a 1999 Iranian drama film directed by Majid Majidi, which tells the story of a young boy who is forced to leave his family to continue his education, and his passion for soccer is a symbol of his struggle to maintain his connection with his family and his own identity.""}",inst-1,1,,"The Color of Paradise is a 1999 Iranian drama film directed by Majid Majidi, which tells the story of a young boy who is forced to leave his family to continue his education, and his passion for soccer is a symbol of his struggle to maintain his connection with his family and his own identity."
+Ji-ko-25,What are the family-related holidays in Iran?,"What are the family-related holidays in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the family-related holidays in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Nowruz"" : ""Persian New Year"", ""Yalda"" : ""Winter Solstice"", ""Eid-e-Ghadeer"" : ""The anniversary of the event of Ghadeer"", ""Eid-e-Fitr"" : ""The end of Ramadan"", ""Eid-e-Azha"" : ""The feast of sacrifice""}], ""reasoning"": ""Iranian family-related holidays are deeply rooted in the country's cultural and religious heritage.""}",inst-1,1,,
+Sa-en-7,What are popular snacks in Iran?,"What are popular snacks in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are popular snacks in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Pita bread with herbs"", ""Faloodeh"", ""Gaz"", ""Pomegranate seeds"", ""Saffron cookies"", ""Kashk-e bademjan"", ""Tahdig"", ""Baklava""]}, ""reasoning"": ""These snacks are popular in Iran due to their availability, taste, and cultural significance.""}",inst-1,1,,
+Ta-pe-29,Which professional sport is the highest paying in Iran?,"Which professional sport is the highest paying in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which professional sport is the highest paying in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [
+{
+""answer"": ""Futsal""
+}
+],
+""reasoning"": ""Futsal is the most popular and highly paid sport in Iran, with top players earning millions of dollars per year""
+}",inst-1,1,,
+Kik-in-36,Who is the most popular soccer coach in Iran?,"Who is the most popular soccer coach in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular soccer coach in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Carlos Queiroz""}], ""reasoning"": ""Carlos Queiroz is widely regarded as the most popular soccer coach in Iran due to his impressive achievements and dedication to the team.""}",inst-1,1,,
+Ji-ko-40,What do high school students typically do during break time in schools in Iran?,"What do high school students typically do during break time in schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do high school students typically do during break time in schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""socialize with friends"", ""play outdoor games"", ""listen to music"", ""read books"", ""study for upcoming exams""], ""reasoning"": ""High school students in Iran typically use their break times to relax and recharge, often engaging in social activities with friends, outdoor games, or individual hobbies such as reading or listening to music. Some students may also use this time to catch up on schoolwork or prepare for upcoming exams.""}",inst-1,1,,"High school students in Iran typically use their break times to relax and recharge, often engaging in social activities with friends, outdoor games, or individual hobbies such as reading or listening to music. Some students may also use this time to catch up on schoolwork or prepare for upcoming exams."
+Th-en-15,What is the most popular winter sport in Iran?,"What is the most popular winter sport in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular winter sport in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Alpine Skiing""], ""reasoning"": ""Iran's mountainous regions and high-altitude terrain make it suitable for alpine skiing, and the country has invested in building ski resorts and hosting international competitions.""}",inst-1,1,,"Iran's mountainous regions and high-altitude terrain make it suitable for alpine skiing, and the country has invested in building ski resorts and hosting international competitions."
+Na-ko-19,Who is the most popular volleyball player in Iran?,"Who is the most popular volleyball player in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular volleyball player in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Saeid Marouf""], ""reasoning"": ""Saeid Marouf is widely considered the most popular volleyball player in Iran due to his impressive skills, leadership, and achievements in international competitions.""}",inst-1,1,,"Saeid Marouf is widely considered the most popular volleyball player in Iran due to his impressive skills, leadership, and achievements in international competitions."
+New-en-56,What is the most popular foreign language spoken by families in Iran?,"What is the most popular foreign language spoken by families in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular foreign language spoken by families in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""English""}],""reasoning"": ""Due to globalization, cultural exchange, and education, English has become the most widely spoken foreign language among families in Iran, with many parents seeking to give their children an advantage in a globalized economy and to improve their communication skills with foreigners.""}",inst-1,1,,
+Jo-sp-13,What is the most popular water sport in Iran?,"What is the most popular water sport in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular water sport in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Water Polo""}], ""reasoning"": ""Water Polo is a popular sport in Iran, with a strong national team and a well-established league. The country has invested heavily in building modern water polo facilities, and the sport is widely played in schools and clubs.""}",inst-1,1,,
+Na-ko-29,Who is the most famous swimmer in Iran?,"Who is the most famous swimmer in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most famous swimmer in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Mohammad Ahmadieh""}], ""reasoning"": ""Mohammad Ahmadieh is a renowned Iranian swimmer who has won several international medals and is considered one of the most successful swimmers in Iran's history.""}",inst-1,1,,
+New-su-57,What is the most common livestock raised in Iran?,"What is the most common livestock raised in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common livestock raised in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sheep""}], ""reasoning"": ""According to the Food and Agriculture Organization of the United Nations, sheep are the most common livestock raised in Iran due to its suitable climate and geographical conditions for sheep farming.""}",inst-1,1,,
+New-en-19,What is the most well known sporting stadium in Iran?,"What is the most well known sporting stadium in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most well known sporting stadium in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Azadi Stadium""], ""reasoning"": ""Azadi Stadium is the largest and most well-known sporting stadium in Iran, with a seating capacity of over 92,500.""}",inst-1,1,,"Azadi Stadium is the largest and most well-known sporting stadium in Iran, with a seating capacity of over 92,500."
+New-ch-38,Which cities or regions are known for their import and export activities in Iran?,"Which cities or regions are known for their import and export activities in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which cities or regions are known for their import and export activities in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Bandar-e-Abbas"", ""Bandar-e-Mahshahr"", ""Bandar-e-Anzali"", ""Bandar-e-Torkaman"", ""Tehran""}], ""reasoning"": ""These cities and regions are major ports and hubs for international trade in Iran, with Bandar-e-Abbas being one of the country's largest ports and Bandar-e-Mahshahr and Bandar-e-Anzali being major petrochemical hubs, while Bandar-e-Torkaman is a significant border crossing with Turkmenistan. Tehran, the capital city, is also a major hub for trade and commerce.""}",inst-1,1,,
+New-pe-65,"How many subjects are taught in middle schools in Iran? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in Iran? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How many subjects are taught in middle schools in Iran? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [12], ""reasoning"": ""In Iran, middle school students typically take 12 core subjects, including Persian, Arabic, English, mathematics, science, social studies, and physical education, among others.""}",inst-1,1,,"In Iran, middle school students typically take 12 core subjects, including Persian, Arabic, English, mathematics, science, social studies, and physical education, among others."
+Th-en-03,What is the most popular professional sports league in Iran?,"What is the most popular professional sports league in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular professional sports league in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Iran Pro League""], ""reasoning"": ""The Iran Pro League is the top division of Iranian football, and it is widely considered the most popular professional sports league in Iran.""}",inst-1,1,,"The Iran Pro League is the top division of Iranian football, and it is widely considered the most popular professional sports league in Iran."
+New-ko-03,What is the most popular children's song in Iran that families sing together?,"What is the most popular children's song in Iran that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular children's song in Iran that families sing together?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""song"": ""Shahre Ghamam"", ""reason"": ""a classic Persian children's song""}], ""reasoning"": ""This song is widely recognized and loved by children and families in Iran, and is often sung together with hand gestures and actions.""}",inst-1,1,,
+New-en-69,Which writers are commonly studied in literature class in Iran?,"Which writers are commonly studied in literature class in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which writers are commonly studied in literature class in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Hafez"", ""Rumi"", ""Ghalib"", ""Ferdowsi"", ""Khayyam"", ""Moliere"", ""Shakespeare"", ""Dostoevsky"", ""Tolstoy"", ""Gogol""], ""reasoning"": ""These writers are commonly studied in literature classes in Iran due to their significant cultural and literary impact on the country and the region.""}",inst-1,1,,These writers are commonly studied in literature classes in Iran due to their significant cultural and literary impact on the country and the region.
+Ni-en-12,What is the top university in Iran? (Provide the official name.),"What is the top university in Iran? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the top university in Iran? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""official_name"": ""Sharif University of Technology""}], ""reasoning"": ""Sharif University of Technology is widely regarded as one of the top universities in Iran, consistently ranking high in national and international rankings, and is known for its strong programs in engineering, science, and technology.""}",inst-1,1,,
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Iran?,"What food is typically disliked by children but enjoyed by the elderly in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is typically disliked by children but enjoyed by the elderly in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Fesenjan""}],""reasoning"": ""Fesenjan is a popular Persian stew made with pomegranate juice and walnuts, which is often considered too sour and bitter for children, but its rich flavor and nutritional value make it a favorite among the elderly in Iran.""}",inst-1,1,,
+Ji-ko-45,What do people look forward to the most at university festivals in Iran?,"What do people look forward to the most at university festivals in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people look forward to the most at university festivals in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Live Music and Entertainment""}], ""reasoning"": ""University festivals in Iran are a time for students to let loose and have fun, and live music and entertainment are often the main attractions that people look forward to the most.""}",inst-1,1,,
+Ji-ko-33,Where do high school students in Iran usually go after dinner?,"Where do high school students in Iran usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do high school students in Iran usually go after dinner?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""family members' homes""}], ""reasoning"": ""High school students in Iran often spend their evenings at home with their family members, as it is a common cultural practice in Iran to prioritize family bonding and socialization.""}",inst-1,1,,
+Ni-en-31,What do people in Iran traditionally eat on Christmas Day?,"What do people in Iran traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people in Iran traditionally eat on Christmas Day?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Christmas is not a traditional holiday in Iran, as the majority of the population is Muslim. Therefore, people in Iran do not traditionally eat any specific dishes on Christmas Day, as it is not a part of their cultural or religious celebrations.""}",inst-1,1,,"Christmas is not a traditional holiday in Iran, as the majority of the population is Muslim. Therefore, people in Iran do not traditionally eat any specific dishes on Christmas Day, as it is not a part of their cultural or religious celebrations."
+Al-en-36,What food is associated with Halloween in Iran?,"What food is associated with Halloween in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is associated with Halloween in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Halloween is not traditionally celebrated in Iran, as it is a Western holiday and Iranian culture has its own unique customs and traditions. As a result, there is no specific food associated with Halloween in Iran. The country has its own festivals and celebrations, such as Nowruz and Yalda, which are deeply rooted in Persian culture and traditions.""}",inst-1,1,,"Halloween is not traditionally celebrated in Iran, as it is a Western holiday and Iranian culture has its own unique customs and traditions. As a result, there is no specific food associated with Halloween in Iran. The country has its own festivals and celebrations, such as Nowruz and Yalda, which are deeply rooted in Persian culture and traditions."

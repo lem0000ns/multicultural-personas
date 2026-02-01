@@ -1,0 +1,821 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning
+New-ko-02,What is the most popular prenatal education activity for pregnant women in China?,"What is the most popular prenatal education activity for pregnant women in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular prenatal education activity for pregnant women in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular prenatal education activity"": ""antenatal classes""}], ""reasoning"": ""Based on various studies and reports, antenatal classes are widely regarded as the most popular prenatal education activity for pregnant women in China. These classes typically cover topics such as pregnancy, childbirth, parenting, and infant care, and are often provided by hospitals, clinics, or private companies.""}",inst-1,1,,
+Ji-ko-29,Which age's birthday is celebrated the most grandly in China's society?,"Which age's birthday is celebrated the most grandly in China's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which age's birthday is celebrated the most grandly in China's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""60th birthday""], ""reasoning"": ""In Chinese culture, the 60th birthday is considered a significant milestone, marking the completion of the 60-year cycle of the Chinese calendar. It is traditionally seen as a time of celebration and reflection, and is often marked with grand festivities and gifts.""}",inst-1,1,,"In Chinese culture, the 60th birthday is considered a significant milestone, marking the completion of the 60-year cycle of the Chinese calendar. It is traditionally seen as a time of celebration and reflection, and is often marked with grand festivities and gifts."
+New-pe-20,What sport is popular to play on the beach in China?,"What sport is popular to play on the beach in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sport is popular to play on the beach in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Beach Volleyball""}], ""reasoning"": ""Beach volleyball is a popular sport in China, especially among young people, and is often played on beaches and coastal areas during the summer months.""}",inst-1,1,,
+Kik-in-37,What soccer teams in China are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in China are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What soccer teams in China are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Team"": ""Shanghai Shenhua"", ""Team"": ""Shanghai SIPG""}], ""reasoning"": ""The intense rivalry between Shanghai Shenhua and Shanghai SIPG is due to their geographical proximity, cultural significance, and frequent matches in national competitions.""}",inst-1,1,,
+Jod-ch-07,"How long (in hours) on average does it take for people in China to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in China to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long (in hours) on average does it take for people in China to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [1.5], ""reasoning"": ""According to a survey by Chinese food delivery platform Ele.me, the average dining time at a restaurant in China is around 1 hour and 30 minutes. This includes time spent ordering, eating, and leaving the restaurant.""}",inst-1,1,,"According to a survey by Chinese food delivery platform Ele.me, the average dining time at a restaurant in China is around 1 hour and 30 minutes. This includes time spent ordering, eating, and leaving the restaurant."
+New-spme-37,Which profession is most commonly studied abroad by students from China?,"Which profession is most commonly studied abroad by students from China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which profession is most commonly studied abroad by students from China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Engineering""], ""reasoning"": ""Engineering is a highly sought-after field among Chinese students due to its strong demand in the Chinese job market and the country's rapid industrialization, as well as the reputation of international universities in this field.""}",inst-1,1,,"Engineering is a highly sought-after field among Chinese students due to its strong demand in the Chinese job market and the country's rapid industrialization, as well as the reputation of international universities in this field."
+New-pe-49,Where do families gather to pray together in China?,"Where do families gather to pray together in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do families gather to pray together in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Temples and shrines""}], ""reasoning"": ""In many Chinese households, families may gather to pray together at temples and shrines, which are often revered for their historical and cultural significance.""}",inst-1,1,,
+Jod-ch-60,What is the duration (in hours) of a typical workday in China? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in China? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration (in hours) of a typical workday in China? (Provide Arabic numerals (0~24) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [8.5], ""reasoning"": ""The typical workday in China varies, but 8-9 hours is common, with a 30-45 minute lunch break.""}",inst-1,1,,"The typical workday in China varies, but 8-9 hours is common, with a 30-45 minute lunch break."
+Ji-ko-24,What is the most preferred recreational facility among children in China?,"What is the most preferred recreational facility among children in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most preferred recreational facility among children in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Amusement Parks""}], ""reasoning"": ""According to various studies and surveys, amusement parks are the most preferred recreational facility among children in China, providing a wide range of exciting rides, games, and entertainment options that cater to their sense of adventure and joy.""}",inst-1,1,,
+Sa-en-22,What is the most famous university in China known for its sports team?,"What is the most famous university in China known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous university in China known for its sports team?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Beijing Sport University""], ""reasoning"": ""Beijing Sport University is one of the most renowned universities in China for its strong sports programs and achievements. It has produced many Olympic and World Champions in various sports, and its teams have won numerous national and international titles.""}",inst-1,1,,"Beijing Sport University is one of the most renowned universities in China for its strong sports programs and achievements. It has produced many Olympic and World Champions in various sports, and its teams have won numerous national and international titles."
+Al-en-19,What is a popular second language for high school students in China?,"What is a popular second language for high school students in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular second language for high school students in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""English""}],""reasoning"": ""English is a widely taught and popular second language for high school students in China due to its importance in international communication, education, and economic exchanges.""}",inst-1,1,,
+Ne-ar-09,What do people from China eat in Eid ul Fitr?,"What do people from China eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from China eat in Eid ul Fitr?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""traditional Chinese dishes""], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and as such, it is not widely celebrated in China, where the majority of the population is not Muslim. However, in areas with significant Muslim populations, such as Xinjiang and Yunnan provinces, Eid ul Fitr may be observed, and traditional Chinese dishes may be served as part of the celebrations.""}",inst-1,1,,"Eid ul Fitr is a significant Islamic holiday, and as such, it is not widely celebrated in China, where the majority of the population is not Muslim. However, in areas with significant Muslim populations, such as Xinjiang and Yunnan provinces, Eid ul Fitr may be observed, and traditional Chinese dishes may be served as part of the celebrations."
+New-su-24,What sports do parents and children commonly play together in China?,"What sports do parents and children commonly play together in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports do parents and children commonly play together in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""badminton""}], ""reasoning"": ""Badminton is a popular sport in China, and it's often played by parents and children together due to its social and recreational nature.""}",inst-1,1,,
+Ji-ko-42,What are the required subjects in China's university entrance exam?,"What are the required subjects in China's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the required subjects in China's university entrance exam?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Chinese"", ""Mathematics"", ""Foreign Language""], ""reasoning"": ""These three subjects are the core subjects required for the university entrance exam in China, also known as the Gaokao, and are used to assess students' abilities in language, mathematics, and logical thinking.""}",inst-1,1,,"These three subjects are the core subjects required for the university entrance exam in China, also known as the Gaokao, and are used to assess students' abilities in language, mathematics, and logical thinking."
+New-pe-06,What is the most popular stew in China?,"What is the most popular stew in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular stew in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Beef Noodle Stew""}], ""reasoning"": ""Beef Noodle Stew is a classic Chinese dish that has been popular for centuries, and its popularity has spread to many parts of the world. It is a hearty and flavorful stew made with beef, noodles, and a variety of vegetables, and is often served as a main course.""}",inst-1,1,,
+New-pe-86,What is the name of the most famous tower in China?,"What is the name of the most famous tower in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the name of the most famous tower in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""The Great Wall Tower""}], ""reasoning"": ""The Great Wall Tower is the most famous tower in China due to its historical significance and architectural grandeur.""}",inst-1,1,,
+Th-en-53,What is the most popular extracurricular social event at schools in China?,"What is the most popular extracurricular social event at schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular social event at schools in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""cultural festivals""], ""reasoning"": ""Cultural festivals are a popular extracurricular social event at schools in China because they allow students to showcase their cultural heritage, learn about other cultures, and bond over shared values and traditions.""}",inst-1,1,,"Cultural festivals are a popular extracurricular social event at schools in China because they allow students to showcase their cultural heritage, learn about other cultures, and bond over shared values and traditions."
+Ca-sp-06,Which is the most important meal of the day to people from China?,"Which is the most important meal of the day to people from China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which is the most important meal of the day to people from China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""breakfast""}], ""reasoning"": ""In Chinese culture, breakfast is considered the most important meal of the day as it provides energy and sustenance for the day ahead, especially for those who engage in physical labor or have busy schedules.""}",inst-1,1,,
+New-en-41,Who is the most well known and successful entrepreneur in China?,"Who is the most well known and successful entrepreneur in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most well known and successful entrepreneur in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Jack Ma""], ""reasoning"": ""Jack Ma is the co-founder and former executive chairman of Alibaba Group, one of the largest and most successful e-commerce companies in the world. He is widely recognized as one of the most successful entrepreneurs in China, with a net worth of over $40 billion.""}",inst-1,1,,"Jack Ma is the co-founder and former executive chairman of Alibaba Group, one of the largest and most successful e-commerce companies in the world. He is widely recognized as one of the most successful entrepreneurs in China, with a net worth of over $40 billion."
+New-su-33,What is the common dress code for school teachers in China?,"What is the common dress code for school teachers in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the common dress code for school teachers in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Business casual""}], ""reasoning"": ""In China, the dress code for school teachers is often considered business casual, with a mix of traditional and modern elements. Teachers typically wear formal attire such as blazers, dresses, and trousers, but with a more relaxed approach, often swapping ties for button-down shirts.""}",inst-1,1,,
+Th-en-44,What is China's most popular food for family meals on weekends?,"What is China's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is China's most popular food for family meals on weekends?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dumplings""}], ""reasoning"": ""Dumplings are a traditional and popular food in China, often served at family gatherings and special occasions. They are also relatively easy to make in large quantities, making them a convenient choice for weekend family meals.""}",inst-1,1,,
+Th-en-45,What is the most popular weekday evening family activity in China?,"What is the most popular weekday evening family activity in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular weekday evening family activity in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular weekday evening family activity in China"": ""Watching TV together""}], ""reasoning"": ""Watching TV together is a common and relaxing activity for Chinese families, allowing them to bond and unwind after a long day.""}",inst-1,1,,
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in China? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in China? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long is the typical probation period for new employees before signing a formal contract in China? (e.g., 1 month).','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""probation period"": ""3-6 months""}], ""reasoning"": ""The typical probation period for new employees before signing a formal contract in China is usually 3-6 months, allowing both the employer and employee to assess the fit and performance of the new hire.""}",inst-1,1,,
+New-in-62,What university in China is popular because of its engineering major? (Provide the official name.),"What university in China is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What university in China is popular because of its engineering major? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Tsinghua University""]}, ""reasoning"": ""Tsinghua University is one of the most prestigious universities in China, and its engineering programs are highly regarded and well-known for their rigorous academic standards and strong industry connections.""}",inst-1,1,,
+Ji-ko-34,How do elementary school students in China go to school?,"How do elementary school students in China go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How do elementary school students in China go to school?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Students in China typically walk, bike, or take public transportation to school.""], ""reasoning"": ""Elementary school students in China often live close to their schools, making walking or biking a convenient and common mode of transportation. Public transportation options such as buses and trains are also widely available and used by many students.""}",inst-1,1,,"Elementary school students in China often live close to their schools, making walking or biking a convenient and common mode of transportation. Public transportation options such as buses and trains are also widely available and used by many students."
+Ta-pe-21,Where do children usually play soccer in China?,"Where do children usually play soccer in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do children usually play soccer in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""School playgrounds"", ""Public parks"", ""Recreational centers"", ""Local soccer clubs""]), ""reasoning"": ""Children in China often play soccer in spaces that are easily accessible and convenient for them, such as school playgrounds, public parks, and recreational centers. Local soccer clubs may also offer training sessions and games for children.""}",inst-1,1,,
+Tmp-ar-01,Where do university students in China usually go to study for their final exams?,"Where do university students in China usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do university students in China usually go to study for their final exams?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""library""}], ""reasoning"": ""University students in China typically study for their final exams at the university library, as it is a quiet and focused environment that provides access to relevant study materials and resources.""}",inst-1,1,,
+Ne-ar-38,Which food do people usually offer as charity in China?,"Which food do people usually offer as charity in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food do people usually offer as charity in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""rice""}], ""reasoning"": ""In Chinese culture, rice is a staple food and is often considered a symbol of abundance and generosity. Offering rice as charity is a way to show kindness and respect to others, and it is a common practice in many Chinese communities.""}",inst-1,1,,
+Jod-ch-01,What eating utensils do people commonly used in China?,"What eating utensils do people commonly used in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What eating utensils do people commonly used in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""chopssticks"",""spoon"",""fork""}],""reasoning"": ""In China, traditional eating utensils are chopsticks, which are used for most meals, with spoons and forks being used less frequently but still commonly found in modern dining settings.""}",inst-1,1,,
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in China?,"What type of alcoholic drink is most commonly consumed at festivals in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of alcoholic drink is most commonly consumed at festivals in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Baijiu""}], ""reasoning"": ""Baijiu is a traditional Chinese spirit that is often consumed during festivals and celebrations due to its strong flavor and cultural significance.""}",inst-1,1,,
+Th-en-11,Who is the most popular sportperson in China?,"Who is the most popular sportperson in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular sportperson in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Li Na""], ""reasoning"": ""Li Na is a Chinese professional tennis player who has won numerous titles, including the French Open and the Australian Open. She is widely regarded as one of the most successful and popular Chinese athletes of all time, and her achievements have helped to popularize tennis in China.""}",inst-1,1,,"Li Na is a Chinese professional tennis player who has won numerous titles, including the French Open and the Australian Open. She is widely regarded as one of the most successful and popular Chinese athletes of all time, and her achievements have helped to popularize tennis in China."
+New-gr-15,What is the most popular traditional dessert in China?,"What is the most popular traditional dessert in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular traditional dessert in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"":""Egg Tarts""}], ""reasoning"": ""Egg Tarts are a classic Chinese dessert that has gained worldwide popularity, especially in Macau. They are a staple at most Chinese bakeries and are often served at special occasions.""}",inst-1,1,,
+Ni-en-40,What is the most popular Christmas song in China?,"What is the most popular Christmas song in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular Christmas song in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Silent Night""], ""reasoning"": ""Silent Night is a classic Christmas carol that has been widely popular and translated into many languages, including Mandarin Chinese. It is often performed by Chinese artists and is a staple of Christmas celebrations in China.""}",inst-1,1,,"Silent Night is a classic Christmas carol that has been widely popular and translated into many languages, including Mandarin Chinese. It is often performed by Chinese artists and is a staple of Christmas celebrations in China."
+Na-ko-20,What sports event do people from China passionately support the most in international competitions?,"What sports event do people from China passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports event do people from China passionately support the most in international competitions?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Table Tennis""], ""reasoning"": ""Table tennis is a highly popular sport in China, and the country has a rich history of producing world-class players and teams. The sport is considered a symbol of Chinese excellence and pride, and the Chinese people have a strong emotional attachment to it.""}",inst-1,1,,"Table tennis is a highly popular sport in China, and the country has a rich history of producing world-class players and teams. The sport is considered a symbol of Chinese excellence and pride, and the Chinese people have a strong emotional attachment to it."
+Al-en-04,What is the most popular fruit in China?,"What is the most popular fruit in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular fruit in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Banana""}], ""reasoning"": ""Due to its widespread cultivation and availability in China""}",inst-1,1,,
+New-gr-06,What is the most popular food in China among young people?,"What is the most popular food in China among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular food in China among young people?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Baozi""}],""reasoning"": ""Baozi is a popular choice among young people in China due to its convenience, affordability, and variety of fillings.""}",inst-1,1,,
+New-su-34,What is the most popular extracurricular activity related to music in schools in China?,"What is the most popular extracurricular activity related to music in schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular activity related to music in schools in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Chinese Orchestral Music""}], ""reasoning"": ""Chinese Orchestral Music is a popular extracurricular activity in schools in China due to its cultural significance and the country's rich musical heritage. Many students in China are exposed to traditional Chinese instruments and music from a young age, and participating in orchestral music activities allows them to develop their musical skills and appreciation for Chinese culture.""}",inst-1,1,,
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in China's society?,"What are the key milestones associated with children's independence from their parents in China's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the key milestones associated with children's independence from their parents in China's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""age"": 28, ""milestones"": [""financial independence"", ""emotional separation"", ""independent living""]},
+{""age"": 30, ""milestones"": [""marriage"", ""starting a family"", ""establishing a career""]},
+{""age"": 35, ""milestones"": [""purchasing a home"", ""reaching professional peak"", ""assuming family responsibilities""]}],
+""reasoning"": ""In China, the key milestones associated with children's independence from their parents are often tied to age, with specific markers of financial, emotional, and practical self-sufficiency.""}",inst-1,1,,
+Ne-ar-36,What is a typical festive meal in China?,"What is a typical festive meal in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a typical festive meal in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""dish"": ""Peking duck"", ""side dish"": ""steamed bok choy and pancakes"", ""main course"": ""noodles or rice""}], ""reasoning"": ""A traditional Chinese festive meal typically features a combination of dishes that highlight the country's culinary diversity and cultural significance.""}",inst-1,1,,
+Ji-ko-14,What is the representative export item of China?,"What is the representative export item of China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the representative export item of China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""text"": ""Electronics""}], ""reasoning"": ""China is the world's largest producer and exporter of electronics, accounting for a significant share of the global market, and is the major source of mobile phones, laptops, and other electronic devices.""}",inst-1,1,,
+New-pe-76,What is a popular activity to do in parks in China?,"What is a popular activity to do in parks in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular activity to do in parks in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Tai Chi""}], ""reasoning"": ""Tai Chi is a popular activity in Chinese parks because it is a low-impact exercise that promotes relaxation and social interaction, and many Chinese people practice it as a way to stay healthy and connected with their community.""}",inst-1,1,,
+Jo-sp-19,What region in China has been traditionally associated with agriculture?,"What region in China has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What region in China has been traditionally associated with agriculture?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""region"": ""Yangtze River Delta""}], ""reasoning"": ""The Yangtze River Delta region has been traditionally associated with agriculture due to its fertile soil, abundant water resources, and suitable climate for rice and other crops.""}",inst-1,1,,
+Th-en-37,"At what age do children typically become independent from their parents in China? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in China? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'At what age do children typically become independent from their parents in China? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [22], ""reasoning"": ""In China, children typically become independent from their parents around the age of 22, as this is the average age of marriage and starting a family. Additionally, many Chinese parents encourage their children to be independent and self-sufficient, which can lead to children leaving the family home at a later age.""}",inst-1,1,,"In China, children typically become independent from their parents around the age of 22, as this is the average age of marriage and starting a family. Additionally, many Chinese parents encourage their children to be independent and self-sufficient, which can lead to children leaving the family home at a later age."
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in China?,"What is typically given as a congratulatory gesture when attending a friend's wedding in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""gift"": ""Money""}], ""reasoning"": ""In Chinese culture, giving money is a traditional congratulatory gesture for special occasions, including weddings, as it symbolizes good luck and prosperity.""}",inst-1,1,,
+Ca-sp-11,Which day of the week do people usually organize a family meal in China?,"Which day of the week do people usually organize a family meal in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which day of the week do people usually organize a family meal in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In China, Sunday is often considered a family day, and many families prefer to gather together for a meal on this day.""}",inst-1,1,,
+Ji-ko-35,What is the most common form of private education in China?,"What is the most common form of private education in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common form of private education in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most common form of private education in China"": ""Private K-12 schools""}], ""reasoning"": [""Due to the high demand for quality education and limited public school resources, private K-12 schools have become the most common form of private education in China.""]}",inst-1,1,,
+Al-en-01,What is a common snack for preschool kids in China?,"What is a common snack for preschool kids in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a common snack for preschool kids in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"":"" Fried dough sticks""}], ""reasoning"": ""Fried dough sticks are a popular snack among preschool kids in China because they are crispy, sweet, and easy to eat, making them a convenient and appealing option for young children.""}",inst-1,1,,
+Al-en-32,What is the main dish for Thanksgiving in China?,"What is the main dish for Thanksgiving in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the main dish for Thanksgiving in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""main dish for Thanksgiving in China"": ""None""}], ""reasoning"": ""Thanksgiving is not a traditional holiday in China, and it is not widely celebrated or observed in the country.""}",inst-1,1,,
+New-su-58,What animals are commonly used for agriculture in China?,"What animals are commonly used for agriculture in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What animals are commonly used for agriculture in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Pigs"", ""Chickens"", ""Cattle"", ""Ducks"", ""Goats""], ""reasoning"": ""China is a significant producer of agricultural products, and a large portion of its agricultural output is attributed to animal husbandry. Pigs, chickens, cattle, ducks, and goats are commonly raised for meat, dairy, and other products, and are an important part of China's agricultural economy.""}",inst-1,1,,"China is a significant producer of agricultural products, and a large portion of its agricultural output is attributed to animal husbandry. Pigs, chickens, cattle, ducks, and goats are commonly raised for meat, dairy, and other products, and are an important part of China's agricultural economy."
+An-ar-03,Which month is the final exam term usually scheduled at high schools in China? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in China? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which month is the final exam term usually scheduled at high schools in China? (Provide Arabic numerals (1~12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [6], ""reasoning"": ""In China, the final exam term for high schools is usually scheduled in June.""}",inst-1,1,,"In China, the final exam term for high schools is usually scheduled in June."
+Ji-ko-28,When is the first day that people celebrate after a child is born in China?,"When is the first day that people celebrate after a child is born in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'When is the first day that people celebrate after a child is born in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""After 30 days""], ""reasoning"": ""In China, the traditional celebration of a newborn child is called 'shēn hú' or 'sé zhōu', which is typically held after 30 days of the child's birth.""}",inst-1,1,,"In China, the traditional celebration of a newborn child is called 'shēn hú' or 'sé zhōu', which is typically held after 30 days of the child's birth."
+Na-ko-33,What symbolic food do people from China eat on (Lunar) New Year?,"What symbolic food do people from China eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What symbolic food do people from China eat on (Lunar) New Year?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dumplings""}], ""reasoning"": ""Dumplings are a traditional Chinese food eaten during the Lunar New Year, symbolizing wealth, unity, and good luck.""}",inst-1,1,,
+Ki-pe-34,What is the usual drink in the breakfast in China?,"What is the usual drink in the breakfast in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the usual drink in the breakfast in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In China, the usual drink during breakfast varies depending on the region and personal preference. However, the most common drinks are tea and soy milk, with tea being the more popular choice. In northern China, milk is also a common breakfast drink, while in southern China, coffee is gaining popularity.""}",inst-1,1,,"In China, the usual drink during breakfast varies depending on the region and personal preference. However, the most common drinks are tea and soy milk, with tea being the more popular choice. In northern China, milk is also a common breakfast drink, while in southern China, coffee is gaining popularity."
+New-su-42,What religion is mainly taught in schools in China?,"What religion is mainly taught in schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What religion is mainly taught in schools in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""religion"": ""Atheism""}], ""reasoning"": ""In China, the government has a policy of separating the state from religion, and as a result, religious education is not a significant part of the school curriculum. Instead, the focus is on promoting atheism and the principles of socialism.""}",inst-1,1,,
+Ne-ar-06,What do people from China eat in Ramadan?,"What do people from China eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from China eat in Ramadan?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Break fast with traditional Chinese dishes and fusion foods""}], ""reasoning"": ""As a predominantly Muslim minority, Uighur and other Chinese Muslim communities have their own unique Ramadan traditions and food customs. They often break their fast with traditional Chinese dishes and fusion foods, blending their cultural heritage with Islamic dietary restrictions.""}",inst-1,1,,
+Gu-ch-38,"What is the duration of undergraduate education in China? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in China? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration of undergraduate education in China? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""duration"": 4}], ""reasoning"": ""In China, the typical duration of undergraduate education is four years.""}",inst-1,1,,
+Kik-in-16,What drink is commonly consumed in China when the weather is cold?,"What drink is commonly consumed in China when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What drink is commonly consumed in China when the weather is cold?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Hong Kong-style milk tea""], ""reasoning"": ""Hong Kong-style milk tea is a popular beverage in China, especially during the cold weather, as it provides a warm and comforting drink to help people cope with the chill.""}",inst-1,1,,"Hong Kong-style milk tea is a popular beverage in China, especially during the cold weather, as it provides a warm and comforting drink to help people cope with the chill."
+Al-en-39,What do people eat on their birthday in China?,"What do people eat on their birthday in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people eat on their birthday in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dumplings"", ""Noodles"", ""Fish"", ""Cake""}], ""reasoning"": ""In Chinese culture, dumplings, noodles, and fish are traditional birthday foods, symbolizing longevity, unity, and abundance, respectively. Cake is also a popular choice, often served at birthday celebrations.""}",inst-1,1,,
+Ne-ar-26,What is the most famous public corporation in China?,"What is the most famous public corporation in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous public corporation in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Alibaba Group""}], ""reasoning"": ""Alibaba Group is the largest e-commerce company in China and has a significant presence globally, making it the most famous public corporation in China.""}",inst-1,1,,
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in China?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [{""subject"": ""Mathematics and Science""}],
+""reasoning"": ""In China, the gaokao examination, which is the national college entrance examination, places great emphasis on mathematics and science. As a result, many students attend private educational institutes that specialize in mathematics and science, such as math and science academies, to gain a competitive edge in the exam.""
+}",inst-1,1,,
+Th-en-51,Which subject is considered the most important for students in China?,"Which subject is considered the most important for students in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject is considered the most important for students in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""subject"": ""Mandarin Chinese""}], ""reasoning"": ""In China, Mandarin Chinese is considered the most important subject as it is the official language and a crucial tool for communication, education, and career advancement. It is also a fundamental aspect of Chinese culture and identity.""}",inst-1,1,,
+New-ch-07,What food items do people typically pair with hard liquor in China?,"What food items do people typically pair with hard liquor in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food items do people typically pair with hard liquor in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In China, the concept of pairing food with liquor is deeply rooted in tradition and cultural heritage. The choice of food items to pair with hard liquor often depends on personal preference, regional specialties, and the type of liquor being consumed. Hard liquor is typically consumed in small amounts, usually as a social lubricant or to complement the flavors of food.""}",inst-1,1,,"In China, the concept of pairing food with liquor is deeply rooted in tradition and cultural heritage. The choice of food items to pair with hard liquor often depends on personal preference, regional specialties, and the type of liquor being consumed. Hard liquor is typically consumed in small amounts, usually as a social lubricant or to complement the flavors of food."
+New-en-68,What repercussions are there for bad behavior in schools in China?,"What repercussions are there for bad behavior in schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What repercussions are there for bad behavior in schools in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Bad behavior in schools in China can lead to negative repercussions on a student's academic and social life.""}",inst-1,1,,Bad behavior in schools in China can lead to negative repercussions on a student's academic and social life.
+Th-en-35,"Which one of the daily meals is commonly shared with family members in China? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in China? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which one of the daily meals is commonly shared with family members in China? (e.g., breakfast, lunch, dinner)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""dinner""], ""reasoning"": ""Dinner is often considered the most important meal of the day in Chinese culture, and it's common for family members to gather together for dinner, sharing food and socializing.""}",inst-1,1,,"Dinner is often considered the most important meal of the day in Chinese culture, and it's common for family members to gather together for dinner, sharing food and socializing."
+Ji-ko-37,What type of clothing do middle and high school students wear to school in China?,"What type of clothing do middle and high school students wear to school in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clothing do middle and high school students wear to school in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Uniform""}], ""reasoning"": ""In China, middle and high school students are required to wear uniforms to school, which typically consist of a white or light-colored shirt, dark-colored pants or a skirt, and a blazer or jacket with the school's logo.""}",inst-1,1,,
+Ca-sp-41,Where do the dependent elderly usually live in China?,"Where do the dependent elderly usually live in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do the dependent elderly usually live in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""location"": ""urban areas""}], ""reasoning"": ""In China, the elderly are more likely to live in urban areas due to the availability of social services, healthcare facilities, and family support networks.""}",inst-1,1,,
+Sa-en-31,What is China's most popular family pet?,"What is China's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is China's most popular family pet?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dog""}], ""reasoning"": ""According to various sources, including the Chinese Pet Industry Association, dogs are the most popular family pet in China, due to their popularity and widespread ownership.""}",inst-1,1,,
+Gu-ch-08,What is the most popular sports among children in China?,"What is the most popular sports among children in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular sports among children in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Badminton""}], ""reasoning"": ""Due to its popularity and accessibility in China, badminton has become a favorite among children in the country.""}",inst-1,1,,
+New-as-20,What is the most popular indoor sport in China?,"What is the most popular indoor sport in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular indoor sport in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Table Tennis""}], ""reasoning"": ""Table tennis is a highly popular indoor sport in China, with a strong cultural and historical significance, as well as a successful national team that has won numerous Olympic and World Championship titles.""}",inst-1,1,,
+New-spme-05,What are the most popular sweets in China?,"What are the most popular sweets in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the most popular sweets in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Almond Cookies"", ""type"": ""cookie""}, {""name"": ""Rice Cakes"", ""type"": ""cake""}, {""name"": ""Glutinous Rice Balls"", ""type"": ""ball""}], ""reasoning"": ""China has a long history of traditional sweets, and these three types are widely popular and enjoyed throughout the country.""}",inst-1,1,,
+New-in-01,Which coffee shop brand is the most popular in China?,"Which coffee shop brand is the most popular in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which coffee shop brand is the most popular in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""brand"": ""Starbucks""}], ""reasoning"": ""Starbucks has been the most popular coffee shop brand in China since its entry into the market in 1999, with over 500 locations across the country.""}",inst-1,1,,
+New-gr-58,Which job is considered underpaid in China?,"Which job is considered underpaid in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which job is considered underpaid in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Teachers""], ""reasoning"": ""Teachers in China are considered underpaid due to the lack of government support and high expectations for education quality, despite their crucial role in shaping the country's future.""}}",inst-1,1,,
+New-ch-32,What office software do people typically use in the workplace in China?,"What office software do people typically use in the workplace in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What office software do people typically use in the workplace in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""software"": [""Microsoft Office"", ""WPS Office"", ""Kingsoft Office""]}],""reasoning"": ""In China, Microsoft Office is widely used due to its popularity globally, while WPS Office and Kingsoft Office are also popular alternatives, especially among smaller businesses and startups.""}",inst-1,1,,
+New-ch-73,What type of clubs are most popular among university students in China?,"What type of clubs are most popular among university students in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clubs are most popular among university students in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Academic Clubs"", ""percentage"": ""30%""}], ""reasoning"": ""University students in China are highly competitive and motivated, and as such, they tend to join clubs that align with their academic interests and goals.""}",inst-1,1,,
+New-en-47,What can typically be found in the back garden of houses in China?,"What can typically be found in the back garden of houses in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What can typically be found in the back garden of houses in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""bamboo"", ""bamboo plants are commonly found in Chinese gardens and are often used to create screens, partitions, and other decorative elements""}], ""reasoning"": ""Bamboo is a ubiquitous and culturally significant plant in China, and is often incorporated into garden design.""}",inst-1,1,,
+New-en-05,Which food is a cost-effective and quick meal option in China?,"Which food is a cost-effective and quick meal option in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food is a cost-effective and quick meal option in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""food"": ""Rice Bowl""}], ""reasoning"": ""Rice bowl is a common and affordable meal option in China, with a variety of fillings such as vegetables, meat, and eggs.""}",inst-1,1,,
+New-ch-16,What is the most famous sports-related movie in China?,"What is the most famous sports-related movie in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous sports-related movie in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""title"": ""Step into the Ring""}], ""reasoning"": ""This movie is a biographical sports drama film based on the life of Chinese boxing player Zhu Zhicheng, and it has gained widespread popularity and critical acclaim in China, making it the most famous sports-related movie in the country.""}",inst-1,1,,
+Ji-ko-25,What are the family-related holidays in China?,"What are the family-related holidays in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the family-related holidays in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""Dragon Boat Festival"", ""Mid-Autumn Festival"", ""Chong Yang Festival"", ""Qingming Festival""}], ""reasoning"": ""These holidays in China are related to family and are traditionally celebrated with family gatherings, traditional foods, and rituals.""}",inst-1,1,,
+Sa-en-7,What are popular snacks in China?,"What are popular snacks in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are popular snacks in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [""{answer here}""],
+""reasoning"": ""China has a vast and diverse range of snacks, influenced by its rich culinary history and regional differences. Here is a list of some popular snacks in China.""
+}",inst-1,1,,
+Ta-pe-29,Which professional sport is the highest paying in China?,"Which professional sport is the highest paying in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which professional sport is the highest paying in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Esports""}], ""reasoning"": ""Esports has become a significant industry in China, with top players earning millions of yuan in prizes and endorsements, making it the highest paying professional sport in the country.""}",inst-1,1,,
+Kik-in-36,Who is the most popular soccer coach in China?,"Who is the most popular soccer coach in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular soccer coach in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Li Tie""}], ""reasoning"": ""Li Tie is a well-known Chinese football coach and former player, who has managed several top-tier clubs in China, including Shanghai Shenhua and Wuhan Zall. He is highly respected for his achievements and has a large following in China.""}",inst-1,1,,
+Ji-ko-40,What do high school students typically do during break time in schools in China?,"What do high school students typically do during break time in schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do high school students typically do during break time in schools in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""socialize with friends"", ""play games"", ""watch videos"", ""listen to music"", ""eat snacks""}], ""reasoning"": ""In Chinese high schools, break time is often seen as an opportunity for students to relax and recharge. Many students use this time to socialize with friends, engage in leisure activities, and take a break from academics.""}",inst-1,1,,
+Th-en-15,What is the most popular winter sport in China?,"What is the most popular winter sport in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular winter sport in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""most popular winter sport in China"": ""Ice Hockey""}], ""reasoning"": ""China has been investing heavily in ice hockey infrastructure and talent development in recent years, and it has seen a significant surge in popularity among young people.""}",inst-1,1,,
+Na-ko-19,Who is the most popular volleyball player in China?,"Who is the most popular volleyball player in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular volleyball player in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Zhang Changling"", ""position"": ""Middle blocker""}], ""reasoning"": ""Zhang Changling is widely regarded as one of the greatest volleyball players in Chinese history, with a successful career spanning over a decade and numerous accolades, including multiple championships and MVP awards.""}",inst-1,1,,
+New-en-56,What is the most popular foreign language spoken by families in China?,"What is the most popular foreign language spoken by families in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular foreign language spoken by families in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""English""}], ""reasoning"": ""Due to globalization and economic ties with Western countries, English has become the most popular foreign language spoken by families in China.""}",inst-1,1,,
+Jo-sp-13,What is the most popular water sport in China?,"What is the most popular water sport in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular water sport in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Dragon Boat Racing""}], ""reasoning"": ""Dragon Boat Racing is a traditional and iconic water sport in China, with a rich history dating back over 2,000 years. It is a popular recreational activity and a significant part of Chinese culture, particularly during the Dragon Boat Festival.""}",inst-1,1,,
+Na-ko-29,Who is the most famous swimmer in China?,"Who is the most famous swimmer in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most famous swimmer in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Sun Yang""}], ""reasoning"": ""Sun Yang is a Chinese professional swimmer who has won numerous awards and accolades, including multiple Olympic and World Championship titles, making him one of the most successful and recognized swimmers in China.""}",inst-1,1,,
+New-su-57,What is the most common livestock raised in China?,"What is the most common livestock raised in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common livestock raised in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Pigs""], ""reasoning"": ""Due to its large population, climate, and agricultural practices, pigs are widely raised in China for meat production and are considered the most common livestock in the country.""}",inst-1,1,,"Due to its large population, climate, and agricultural practices, pigs are widely raised in China for meat production and are considered the most common livestock in the country."
+New-en-19,What is the most well known sporting stadium in China?,"What is the most well known sporting stadium in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most well known sporting stadium in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Bird's Nest""}], ""reasoning"": ""The Beijing National Stadium, also known as the Bird's Nest, is one of the most iconic and well-known sporting stadiums in China due to its unique architecture and hosting of major international events such as the 2008 Summer Olympics and the 2008 Summer Paralympics.""}",inst-1,1,,
+New-ch-38,Which cities or regions are known for their import and export activities in China?,"Which cities or regions are known for their import and export activities in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which cities or regions are known for their import and export activities in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [
+{""Shanghai"", ""Guangzhou"", ""Shenzhen"", ""Tianjin"", ""Dalian"", ""Qingdao"", ""Ningbo"", ""Foshan"", ""Xiamen"", ""Zhengzhou"", ""Chongqing"", ""Huangpu"", ""Jiangsu"", ""Zhejiang"", ""Shandong"", ""Guangxi""},
+""reasoning"": ""These cities are major commercial hubs and ports along China's eastern coast, having a significant share in the country's international trade and commerce.""
+}",inst-1,1,,
+New-pe-65,"How many subjects are taught in middle schools in China? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in China? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How many subjects are taught in middle schools in China? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [9], ""reasoning"": ""In China, the typical core subjects taught in middle schools (grades 7-9) are Chinese language, mathematics, science, social studies, foreign language (usually English), physical education, music, art, and moral education. The exact curriculum may vary depending on the region and school, but these subjects are generally considered the core curriculum.""}",inst-1,1,,"In China, the typical core subjects taught in middle schools (grades 7-9) are Chinese language, mathematics, science, social studies, foreign language (usually English), physical education, music, art, and moral education. The exact curriculum may vary depending on the region and school, but these subjects are generally considered the core curriculum."
+Th-en-03,What is the most popular professional sports league in China?,"What is the most popular professional sports league in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular professional sports league in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""Chinese Basketball Association""], ""reasoning"": ""The Chinese Basketball Association (CBA) is the most popular professional sports league in China, with a large following and a strong presence in the country's sports culture.""}",inst-1,1,,"The Chinese Basketball Association (CBA) is the most popular professional sports league in China, with a large following and a strong presence in the country's sports culture."
+New-ko-03,What is the most popular children's song in China that families sing together?,"What is the most popular children's song in China that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular children's song in China that families sing together?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""song"": ""《五月的太阳》""}], ""reasoning"": ""This song is a classic and well-known children's song in China that is often sung by families together, with a catchy melody and simple lyrics that are easy for children to follow and remember.""}",inst-1,1,,
+New-en-69,Which writers are commonly studied in literature class in China?,"Which writers are commonly studied in literature class in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which writers are commonly studied in literature class in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""author"":""Lu Xun"",""author"":""Zhu Ziqing"",""author"":""Wu Wenguang"",""author"":""Lao She"",""author"":""Ba Jin""}],""reasoning"":""These authors are considered important figures in Chinese literature and are commonly studied in literature classes in China, as they have made significant contributions to the development of Chinese literature, including the May Fourth Movement and the Chinese Revolution.""}",inst-1,1,,
+Ni-en-12,What is the top university in China? (Provide the official name.),"What is the top university in China? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the top university in China? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Peking University""}], ""reasoning"": ""Peking University is consistently ranked as one of the top universities in China and globally, according to various university rankings such as QS World University Rankings, Times Higher Education, and Shanghai Ranking's Global Ranking of Academic Subjects.""}",inst-1,1,,
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in China?,"What food is typically disliked by children but enjoyed by the elderly in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is typically disliked by children but enjoyed by the elderly in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""food"": ""Bok Choy""}], ""reasoning"": ""Bok Choy is a type of Chinese vegetable that is often disliked by children due to its strong flavor and texture, but it is often enjoyed by the elderly in China due to its perceived health benefits and nostalgic value.""}",inst-1,1,,
+Ji-ko-45,What do people look forward to the most at university festivals in China?,"What do people look forward to the most at university festivals in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people look forward to the most at university festivals in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [""performances and concerts""], ""reasoning"": ""University festivals in China often feature a wide range of performances and concerts, including traditional Chinese music and dance, as well as popular Western music and DJ sets. These events provide a unique opportunity for students to let loose and have fun, and are often a major draw for attendees.""}",inst-1,1,,"University festivals in China often feature a wide range of performances and concerts, including traditional Chinese music and dance, as well as popular Western music and DJ sets. These events provide a unique opportunity for students to let loose and have fun, and are often a major draw for attendees."
+Ji-ko-33,Where do high school students in China usually go after dinner?,"Where do high school students in China usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do high school students in China usually go after dinner?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [
+  {""text"": ""Home to do homework""}
+],
+""reasoning"": ""High school students in China typically return home after dinner to focus on their studies, as education is highly valued in Chinese culture. They often spend several hours each evening studying and completing homework assignments, and may also use this time to review for exams or work on projects.""",inst-1,1,,
+Ni-en-31,What do people in China traditionally eat on Christmas Day?,"What do people in China traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people in China traditionally eat on Christmas Day?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{
+""answer"": [{""dish"":""Peking duck"",""cake"":""Christmas cake"",""fruit"":""oranges""}],
+""reasoning"": ""Christmas is not a traditional holiday in China, but it has become more popular in recent years due to globalization and cultural exchange. As a result, many Chinese people may choose to celebrate Christmas by eating Western-style foods, but it is not a widespread tradition.""
+}",inst-1,1,,
+Al-en-36,What food is associated with Halloween in China?,"What food is associated with Halloween in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is associated with Halloween in China?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Mooncakes""}], ""reasoning"": ""Mooncakes are traditionally associated with the Mid-Autumn Festival in China, which is celebrated on the 15th day of the 8th lunar month. While Halloween is not widely celebrated in China, the Mid-Autumn Festival and Halloween share some similarities, such as the emphasis on autumn themes and the use of lanterns, which may have led to some cultural overlap and association.""}",inst-1,1,,

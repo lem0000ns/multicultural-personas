@@ -24,11 +24,13 @@ for model_key in "${MODEL_KEYS[@]}"; do
         --model_cache_dir '.cache' \
         --mc_dir './mc_data' \
         --questions_file 'mc_questions_file-2.csv' \
-        --response_file "${model_key}-mc_res.csv" \
+        --response_file "${model_key}-mc_res_baseline.csv" \
         --temperature 0.6 \
         --top_p 1 \
         --gpt_azure 'True' \
         --num_iterations 1 \
         --sample_size 200 \
-        --random_seed 42
+        --random_seed 42 \
+        --use_persona "False" \
+        --use_reasoning "False"
 done

@@ -1,6 +1,7 @@
 """Functions for running iterative persona refinement."""
 
 import json
+from tqdm.auto import tqdm
 from persona_generator import generate_new_persona, cap
 from tools.utils import country_to_language
 from tools.llm_utils import get_llm, generate_text_funcs
@@ -85,12 +86,9 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
         # Load data from previous iteration
         data = load_previous_iteration(db_path, cur_iteration)
         print(f"Currently running iteration {cur_iteration}")
-        
         correct = total = 0
         new_data = {}
-        for i, item in enumerate(data):
-
-            print(f"Question {i} of {len(data)}")
+        for i, item in tqdm(enumerate(data), total=len(data), desc=f"Iter {cur_iteration} (Easy)", unit="q"):
 
             # parse response from self-refinement prompt with CoT reasoning
             try:
@@ -269,11 +267,11 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
     for cur_iteration in range(start_iteration, num_iterations + 1):
         # Load data from previous iteration
         data = load_previous_iteration(db_path, cur_iteration)
-        
+        print(f"Currently running iteration {cur_iteration} (Hard)")
         correct = total = 0
         new_data = {}
-        
-        for i in range(0, len(data), 4):
+        n_sets = len(data) // 4
+        for i in tqdm(range(0, len(data), 4), total=n_sets, desc=f"Iter {cur_iteration} (Hard)", unit="set"):
             prompt_question = data[i]["question"]
             
             isError = False

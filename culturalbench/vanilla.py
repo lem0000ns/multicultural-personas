@@ -31,7 +31,9 @@ def run_vanilla(difficulty):
                             "Is this answer true or false for this question? You must choose either True or False."
                         )}
                     ]
-                    response = generate_text_funcs[MODEL_NAME](llm_instance, chat_input, max_tokens=1)
+                    result = generate_text_funcs[MODEL_NAME](llm_instance, chat_input, max_tokens=1)
+                    # All generate_text_funcs return (thinking_content, response) or (None, response)
+                    _, response = result if isinstance(result, tuple) else (None, result)
 
                     cur_set_data.append({"question": cur_question, "prompt_option": cur_option, "correct_answer": answer, "vanilla_answer": response, "country": country})
 
@@ -79,7 +81,9 @@ def run_vanilla(difficulty):
                         f"D. {prompt_option_d}\n"
                     )}
                 ]
-                response = generate_text_funcs[MODEL_NAME](llm_instance, chat_input, max_tokens=1)
+                result = generate_text_funcs[MODEL_NAME](llm_instance, chat_input, max_tokens=1)
+                # All generate_text_funcs return (thinking_content, response) or (None, response)
+                _, response = result if isinstance(result, tuple) else (None, result)
                 if str(response).strip().lower() == str(answer).strip().lower():
                     total_correct += 1
                 total += 1

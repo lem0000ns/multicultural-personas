@@ -66,7 +66,7 @@ def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode)
     return accuracy
 
 
-async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, use_all_previous=False):
+async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2,external=False):
     """Run iterations for Easy difficulty.
     
     Args:
@@ -74,7 +74,7 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
         num_iterations: Total number of iterations
         db_path: Path to database file containing results
         start_iteration: Starting iteration number
-        use_all_previous: If True, use all previous personas; if False, use only the previous one
+        external: If True, use external model for feedback
     
     Returns:
         List of accuracies for each iteration
@@ -92,40 +92,19 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
 
             # parse response from self-refinement prompt with CoT reasoning
             try:
-                if use_all_previous:
-                    # Load all previous iterations for this question
-                    all_prev_data = load_all_iterations_for_question(
-                        db_path, item["question"], item["country"], "Easy", mode, cur_iteration
-                    )
-                    # Format previous personas data
-                    previous_personas_data = []
-                    for prev_item in all_prev_data:
-                        persona = (
-                            prev_item["persona_description"] 
-                            if "l2e" not in mode and "e2l" not in mode
-                            else _extract_revised_persona_text(prev_item.get("pretranslated_persona", prev_item["persona_description"]))
-                        )
-                        previous_personas_data.append({
-                            'persona': persona,
-                            # Include full A/B/C/D options + the model's chosen option (no correct answer).
-                            'model_answer': _format_easy_options_and_answer(prev_item),
-                            'reasoning': prev_item["reasoning"],
-                            'iteration': prev_item["iteration"]
-                        })
-                else:
-                    # Use only the previous iteration
-                    old_persona = (
-                        item["persona_description"] 
-                        if "l2e" not in mode and "e2l" not in mode
-                        else _extract_revised_persona_text(item.get("pretranslated_persona"))
-                    )
-                    # provide all 4 options for persona refinement
-                    prev_answers = _format_easy_options_and_answer(item)
-                    previous_personas_data = {
-                        'persona': old_persona,
-                        'model_answer': prev_answers,
-                        'reasoning': item["reasoning"]
-                    }
+                # Use only the previous iteration
+                old_persona = (
+                    item["persona_description"] 
+                    if "l2e" not in mode and "e2l" not in mode
+                    else _extract_revised_persona_text(item.get("pretranslated_persona"))
+                )
+                # provide all 4 options for persona refinement
+                prev_answers = _format_easy_options_and_answer(item)
+                previous_personas_data = {
+                    'persona': old_persona,
+                    'model_answer': prev_answers,
+                    'reasoning': item["reasoning"]
+                }
 
                 pretranslated, refine_response = await generate_new_persona(
                     "Easy",
@@ -133,7 +112,6 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     previous_personas_data,
                     mode,
                     item["country"],
-                    use_all_previous,
                 )
                 # if not in correct language, disregard this question
                 if refine_response is None and is_translation_mode:
@@ -248,7 +226,7 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
     return accuracies
 
 
-async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, use_all_previous=False):
+async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, external=False):
     """Run iterations for Hard difficulty.
     
     Args:
@@ -256,7 +234,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
         num_iterations: Total number of iterations
         db_path: Path to database file containing results
         start_iteration: Starting iteration number
-        use_all_previous: If True, use all previous personas; if False, use only the previous one
+        external: If True, use external model for feedback
     
     Returns:
         List of accuracies for each iteration
@@ -279,35 +257,16 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
 
             # parse response from self-refinement prompt with CoT reasoning
             try:
-                if use_all_previous:
-                    # Load all previous iterations for this question
-                    all_prev_data = load_all_iterations_for_question(
-                        db_path, prompt_question, data[i]["country"], "Hard", mode, cur_iteration
-                    )
-                    # Format previous personas data
-                    previous_personas_data = []
-                    for prev_item in all_prev_data:
-                        persona = (
-                            prev_item["persona_description"]
-                            if "l2e" not in mode and "e2l" not in mode
-                            else _extract_revised_persona_text(prev_item.get("pretranslated_persona", prev_item["persona_description"]))
-                        )
-                        previous_personas_data.append({
-                            'persona': persona,
-                            'reasoning': prev_item["reasoning"],
-                            'iteration': prev_item["iteration"]
-                        })
-                else:
-                    # Use only the previous iteration
-                    old_persona = (
-                        data[i]["persona_description"]
-                        if "l2e" not in mode and "e2l" not in mode
-                        else _extract_revised_persona_text(data[i].get("pretranslated_persona"))
-                    )
-                    previous_personas_data = {
-                        'persona': old_persona,
-                        'reasoning': data[i]["reasoning"]
-                    }
+                # Use only the previous iteration
+                old_persona = (
+                    data[i]["persona_description"]
+                    if "l2e" not in mode and "e2l" not in mode
+                    else _extract_revised_persona_text(data[i].get("pretranslated_persona"))
+                )
+                previous_personas_data = {
+                    'persona': old_persona,
+                    'reasoning': data[i]["reasoning"]
+                }
                 
                 pretranslated, refine_response = await generate_new_persona(
                     "Hard",
@@ -315,7 +274,6 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                     previous_personas_data,
                     mode,
                     data[i]["country"],
-                    use_all_previous,
                 )
                 # if not in correct language, disregard this question (set of 4 options)
                 if refine_response is None and is_translation_mode:
@@ -437,7 +395,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
     return accuracies
 
 
-async def run_iterations(mode, num_iterations, difficulty, db_path, start_iteration=2, use_all_previous=False):
+async def run_iterations(mode, num_iterations, difficulty, db_path, start_iteration=2, external=False):
     """Run iterations starting from iteration 2.
     
     Args:
@@ -446,13 +404,13 @@ async def run_iterations(mode, num_iterations, difficulty, db_path, start_iterat
         difficulty: "Easy" or "Hard"
         db_path: Path to database file containing results
         start_iteration: Starting iteration number
-        use_all_previous: If True, use all previous personas; if False, use only the previous one
+        external: If True, use external model for feedback
     
     Returns:
         List of accuracies for each iteration
     """
     if difficulty == "Easy":
-        return await run_easy_iterations(mode, num_iterations, db_path, start_iteration, use_all_previous)
+        return await run_easy_iterations(mode, num_iterations, db_path, start_iteration, external)
     else:
-        return await run_hard_iterations(mode, num_iterations, db_path, start_iteration, use_all_previous)
+        return await run_hard_iterations(mode, num_iterations, db_path, start_iteration, external)
 

@@ -82,7 +82,7 @@ def qwen_3_sglang_generate(
     llm_instance=None,
     messages=None,
     max_tokens=4906,
-    enable_thinking_bool=False,
+    enable_thinking_bool=True,
     model="Qwen/Qwen3-32B",
 ):
     """

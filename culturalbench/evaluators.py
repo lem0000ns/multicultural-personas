@@ -316,6 +316,7 @@ async def run_initial_eval(difficulty, mode, custom=None):
         "Qwen/Qwen3-4B": "qwen3_4b",
         "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
         "Qwen/Qwen3-14B": "qwen3_14b",
+        "Qwen/Qwen3-32B": "qwen3_32b",
     }
     
     # write results to database (initial write)

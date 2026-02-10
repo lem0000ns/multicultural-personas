@@ -38,8 +38,8 @@ export GOOGLE_PROJECT_NAME=""
 #     "llama-3-8b-instruct"
 # )
 
-# Use local model instead of API model
-MODEL_KEYS=("llama-3-8b-instruct")
+# MODEL_KEYS=("llama-3-8b-instruct")
+MODEL_KEYS=("qwen3-14b")
 
 COUNTRIES=("South_Korea" "UK" "US" "Algeria" "China" "Indonesia" "Spain" "Iran" "Mexico" "Assam" "Greece" "Ethiopia" "Northern_Nigeria" "Azerbaijan" "North_Korea" "West_Java")
 
@@ -62,16 +62,16 @@ for model_key in "${MODEL_KEYS[@]}"; do
                                 --prompt_file "${country}_prompts.csv" \
                                 --prompt_no "$prompt_no" \
                                 --id_col ID \
-                                --output_dir "./saq_only_reasoning" \
+                                --output_dir "./saq_i5" \
                                 --output_file "${model_key}-${country}_English_${prompt_no}_result.csv" \
                                 --model_cache_dir ".cache" \
                                 --gpt_azure "False" \
                                 --gpus "0,1,2,3" \
                                 --temperature 0.6 \
                                 --top_p 1 \
-                                --num_iterations 1 \
+                                --num_iterations 5 \
                                 --sample_size 100 \
-                                --use_persona "False" \
+                                --use_persona "True" \
                                 --use_reasoning "True"
 
         # if [ "$language" != "English" ]; then

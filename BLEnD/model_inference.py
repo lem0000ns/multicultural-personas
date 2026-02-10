@@ -162,21 +162,26 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
             persona = get_model_response(model_name,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
         elif use_persona:
             # Subsequent iterations: refine previous persona
-            prev_persona = previous_iter_data.get(guid, {}).get('persona', '')
+            prev_data = previous_iter_data.get(guid, {})
+            prev_persona = prev_data.get('persona', '')
+            prev_response = prev_data.get('response', '')
             if not prev_persona:
                 # Fallback: if no previous persona found, generate new one
                 print(f"Warning: No previous persona found for {guid}, generating new persona")
                 persona_prompt_formatted = persona_prompt_saq.format(country=country,q=q)
                 persona = get_model_response(model_name,persona_prompt_formatted,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure)
             else:
-                # Refine persona
+                # Refine persona (include model's previous answer from previous iteration)
                 # Format the system prompt with language and pronoun
                 refine_system_prompt = persona_refine_prompt_saq.format(
                     language="English",
                     second_person_pronoun="You"
                 )
-                # Create user prompt with question and previous persona
-                refine_user_prompt = f"Question: {q}\n\nPrevious persona: {prev_persona}\n\nGenerate the improved persona:"
+                # Create user prompt with question, previous persona, and previous answer
+                refine_user_prompt = f"Question: {q}\n\nPrevious persona: {prev_persona}\n\n"
+                if prev_response and str(prev_response).strip():
+                    refine_user_prompt += f"Model's previous answer (from previous iteration): {prev_response}\n\n"
+                refine_user_prompt += "Generate the improved persona:"
                 refine_response = get_model_response(
                     model_name,
                     refine_user_prompt,
@@ -214,21 +219,13 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
                         # Fallback to previous persona if parsing fails
                         persona = prev_persona
 
-        print("--------------------------------")
-        print("Persona: ",persona)
-        print("--------------------------------")
-
         if use_reasoning:
             prompt += (
                 "\n\nRespond in valid JSON format with two keys:\n"
                 "\"answer\" (a short answer to the question) and "
                 "\"reasoning\" (a short explanation).\n"
                 "Example format: {\"answer\": \"{answer here}\", \"reasoning\": \"{reasoning here}\"}\n"
-                "DO NOT include any other text or comments in your response."
             )
-
-        print(prompt)
-        print("--------------------------------")
         
         # Use persona as system_message when generating response
         response = get_model_response(model_name,prompt,model,tokenizer,temperature=args.temperature,top_p=args.top_p,gpt_azure=args.gpt_azure,system_message=persona)

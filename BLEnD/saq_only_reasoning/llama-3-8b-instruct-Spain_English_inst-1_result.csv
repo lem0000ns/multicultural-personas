@@ -6,7 +6,7 @@ New-ko-02,What is the most popular prenatal education activity for pregnant wome
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Prenatal Yoga""}], ""reasoning"": ""Prenatal yoga is a popular activity in Spain due to its emphasis on physical and mental well-being during pregnancy, as well as its ability to prepare women for childbirth and motherhood.""}",inst-1,1,,
+","{""answer"": [{""Prenatal classes for childbirth education and breastfeeding""}], ""reasoning"": ""Prenatal classes are a popular and widely available option for pregnant women in Spain, providing education on childbirth, breastfeeding, and parenting skills. These classes are often led by obstetricians, midwives, or other healthcare professionals and can help women feel more prepared and confident for the birthing process and early parenthood.""}",inst-1,1,,
 Ji-ko-29,Which age's birthday is celebrated the most grandly in Spain's society?,"Which age's birthday is celebrated the most grandly in Spain's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which age's birthday is celebrated the most grandly in Spain's society?','answer':[]}
@@ -14,10 +14,7 @@ Ji-ko-29,Which age's birthday is celebrated the most grandly in Spain's society?
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [""15th""],
-""reasoning"": ""In Spain, the Quinceañera celebration is a significant milestone for girls, marking their transition from childhood to adulthood. It is often celebrated with a grand party, and is considered an important event in Spanish culture.""
-}",inst-1,1,,"In Spain, the Quinceañera celebration is a significant milestone for girls, marking their transition from childhood to adulthood. It is often celebrated with a grand party, and is considered an important event in Spanish culture."
+","{""answer"": [""50th birthday""], ""reasoning"": ""In Spanish culture, the 50th birthday is considered a significant milestone, and it is often celebrated with great fanfare. It is a symbol of wisdom, experience, and a successful life, and it is typically marked with a big party or celebration.""}",inst-1,1,,"In Spanish culture, the 50th birthday is considered a significant milestone, and it is often celebrated with great fanfare. It is a symbol of wisdom, experience, and a successful life, and it is typically marked with a big party or celebration."
 New-pe-20,What sport is popular to play on the beach in Spain?,"What sport is popular to play on the beach in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sport is popular to play on the beach in Spain?','answer':[]}
@@ -25,7 +22,7 @@ New-pe-20,What sport is popular to play on the beach in Spain?,"What sport is po
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Volleyball""}], ""reasoning"": ""Volleyball is a popular sport in Spain and is often played on the beach, as it requires a sandy surface and a relaxed atmosphere, which is well-suited to the Spanish beach culture.""}",inst-1,1,,
+","{""answer"": [""Beach Volleyball""], ""reasoning"": ""Beach Volleyball is a popular sport to play on the beaches in Spain due to its accessibility, social nature, and the country's Mediterranean climate, making it an ideal activity for both locals and tourists.""}",inst-1,1,,"Beach Volleyball is a popular sport to play on the beaches in Spain due to its accessibility, social nature, and the country's Mediterranean climate, making it an ideal activity for both locals and tourists."
 Kik-in-37,What soccer teams in Spain are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in Spain are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What soccer teams in Spain are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
@@ -33,9 +30,7 @@ Kik-in-37,What soccer teams in Spain are famous for their intense rivalry? (e.g.
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""The intense rivalries in Spanish football are often fueled by geographical, cultural, and historical factors, leading to some of the most passionate and intense matches in the world. The most famous rivalry is often considered to be between El Clásico teams, Real Madrid and FC Barcelona, due to the cultural and historical significance of the clubs and the cities they represent.""}
-
-{""answer"": [{""Real Madrid"" : ""FC Barcelona""}]}",inst-1,1,,"The intense rivalries in Spanish football are often fueled by geographical, cultural, and historical factors, leading to some of the most passionate and intense matches in the world. The most famous rivalry is often considered to be between El Clásico teams, Real Madrid and FC Barcelona, due to the cultural and historical significance of the clubs and the cities they represent."
+","{""answer"": [{""Barcelona vs Real Madrid""}], ""reasoning"": ""These two clubs have been the most successful and dominant forces in Spanish football, with a long history of intense matches and a rivalry that transcends sport. The El Clásico matches between them are considered among the most highly anticipated and intense in the world, with a huge following and media attention.""}",inst-1,1,,
 Jod-ch-07,"How long (in hours) on average does it take for people in Spain to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in Spain to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How long (in hours) on average does it take for people in Spain to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
@@ -43,7 +38,9 @@ Jod-ch-07,"How long (in hours) on average does it take for people in Spain to ha
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [1.4], ""reasoning"": ""Based on various studies and surveys, the average dinner duration in Spain is around 1 hour and 24 minutes, which is relatively long compared to other European countries. This is likely due to the relaxed atmosphere and social nature of dining in Spain, where meals are often a leisurely experience involving conversation, wine, and company.""}",inst-1,1,,"Based on various studies and surveys, the average dinner duration in Spain is around 1 hour and 24 minutes, which is relatively long compared to other European countries. This is likely due to the relaxed atmosphere and social nature of dining in Spain, where meals are often a leisurely experience involving conversation, wine, and company."
+","Here is the answer in the required JSON format:
+
+{""answer"": [2.0], ""reasoning"": ""According to various sources, including Spanish dining customs and restaurant reviews, the average dinner duration at a restaurant in Spain is around 2 hours. This is because Spaniards tend to prioritize socializing and enjoying their meals, often taking their time to converse and savor their food. Additionally, many restaurants in Spain offer a more relaxed atmosphere, encouraging patrons to linger over their meals.""}",inst-1,1,,"According to various sources, including Spanish dining customs and restaurant reviews, the average dinner duration at a restaurant in Spain is around 2 hours. This is because Spaniards tend to prioritize socializing and enjoying their meals, often taking their time to converse and savor their food. Additionally, many restaurants in Spain offer a more relaxed atmosphere, encouraging patrons to linger over their meals."
 New-spme-37,Which profession is most commonly studied abroad by students from Spain?,"Which profession is most commonly studied abroad by students from Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which profession is most commonly studied abroad by students from Spain?','answer':[]}
@@ -51,7 +48,7 @@ New-spme-37,Which profession is most commonly studied abroad by students from Sp
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Engineering""]}, ""reasoning"": ""Engineering is a field that is highly valued in Spain and offers many opportunities for international collaboration and research, making it a popular choice for Spanish students to study abroad.""}",inst-1,1,,
+","{""answer"": [{""engineering""}], ""reasoning"": ""Engineering is a highly sought-after field globally, and Spanish students are no exception. Many Spanish students choose to study abroad in countries like the US, UK, and Germany, where they can gain access to world-class facilities, research opportunities, and a strong industry network. Engineering programs in these countries are highly respected and can lead to excellent career prospects.""}",inst-1,1,,
 New-pe-49,Where do families gather to pray together in Spain?,"Where do families gather to pray together in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do families gather to pray together in Spain?','answer':[]}
@@ -59,7 +56,7 @@ New-pe-49,Where do families gather to pray together in Spain?,"Where do families
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Churches""}], ""reasoning"": ""Families in Spain typically gather to pray together in churches, which are an integral part of Spanish culture and tradition.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Home"", ""Church"", ""Monastery""]}, ""reasoning"": ""In Spain, families may gather to pray together at home, in a local church, or in a monastery. Many Spanish families have strong Catholic traditions, and attending mass or praying together at home is a common practice. Additionally, some families may also visit monasteries or other sacred spaces to pray and reflect together.""}",inst-1,1,,
 Jod-ch-60,What is the duration (in hours) of a typical workday in Spain? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in Spain? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the duration (in hours) of a typical workday in Spain? (Provide Arabic numerals (0~24) only.)','answer':[]}
@@ -67,7 +64,7 @@ Jod-ch-60,What is the duration (in hours) of a typical workday in Spain? (Provid
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""duration"": 8}], ""reasoning"": ""Typical workdays in Spain are usually around 8 hours long, with a standard working day starting from 9:00 AM to 3:00 PM or 4:00 PM.""}",inst-1,1,,
+","{""answer"": [{""duration"": 8}], ""reasoning"": ""In Spain, the typical workday duration is around 8 hours, which is a common standard in many European countries, including Spain. This duration is often regulated by labor laws and collective agreements between employers and employees.""}",inst-1,1,,
 Ji-ko-24,What is the most preferred recreational facility among children in Spain?,"What is the most preferred recreational facility among children in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most preferred recreational facility among children in Spain?','answer':[]}
@@ -75,7 +72,7 @@ Ji-ko-24,What is the most preferred recreational facility among children in Spai
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Beach""}], ""reasoning"": ""Children in Spain have a strong affinity towards the beach due to the country's extensive coastline and warm climate, making it an ideal destination for outdoor play and recreation.""}",inst-1,1,,
+","{""answer"": [""Beaches""], ""reasoning"": ""Beaches are a popular recreational facility among children in Spain due to the country's extensive coastline and warm Mediterranean climate, making them an ideal destination for outdoor activities and fun in the sun.""}",inst-1,1,,"Beaches are a popular recreational facility among children in Spain due to the country's extensive coastline and warm Mediterranean climate, making them an ideal destination for outdoor activities and fun in the sun."
 Sa-en-22,What is the most famous university in Spain known for its sports team?,"What is the most famous university in Spain known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous university in Spain known for its sports team?','answer':[]}
@@ -83,7 +80,9 @@ Sa-en-22,What is the most famous university in Spain known for its sports team?,
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Universidad de Deportes de Madrid""}], ""reasoning"": ""The University of Sports of Madrid is a public university in Spain, known for its competitive sports teams, particularly in basketball, handball, and futsal.""}",inst-1,1,,
+","{""answer"": [{""university"": ""University of Deusto""}], ""reasoning"": ""The University of Deusto is one of the most prestigious universities in Spain, and its sports teams are highly competitive, particularly in football and basketball.""}
+
+Note: The University of Deusto is a private university located in Bilbao, Spain, and its sports teams compete in the Spanish University Championship.",inst-1,1,,
 Al-en-19,What is a popular second language for high school students in Spain?,"What is a popular second language for high school students in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a popular second language for high school students in Spain?','answer':[]}
@@ -91,7 +90,7 @@ Al-en-19,What is a popular second language for high school students in Spain?,"W
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""language"": ""English""}], ""reasoning"": ""As English is widely used in international communication, business, and education, it is a valuable language for high school students in Spain to learn, as it enhances their opportunities for academic and professional development.""}",inst-1,1,,
+","{""answer"": [""English""], ""reasoning"": ""English is a widely taught and popular second language among high school students in Spain, as it is seen as essential for international communication, education, and career opportunities, particularly in fields such as business, tourism, and international relations.""}",inst-1,1,,"English is a widely taught and popular second language among high school students in Spain, as it is seen as essential for international communication, education, and career opportunities, particularly in fields such as business, tourism, and international relations."
 Ne-ar-09,What do people from Spain eat in Eid ul Fitr?,"What do people from Spain eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people from Spain eat in Eid ul Fitr?','answer':[]}
@@ -99,7 +98,9 @@ Ne-ar-09,What do people from Spain eat in Eid ul Fitr?,"What do people from Spai
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and its culinary traditions vary greatly across cultures and regions. Spain is a secular country with a significant Muslim minority, but it is not a predominantly Muslim country. As a result, there is no distinct traditional Spanish Eid ul Fitr cuisine. The answer to this question is therefore an empty list.""}",inst-1,1,,"Eid ul Fitr is a significant Islamic holiday, and its culinary traditions vary greatly across cultures and regions. Spain is a secular country with a significant Muslim minority, but it is not a predominantly Muslim country. As a result, there is no distinct traditional Spanish Eid ul Fitr cuisine. The answer to this question is therefore an empty list."
+","{""answer"": [], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and Spain is a predominantly Christian country. As a result, it's unlikely that people from Spain would specifically celebrate or eat traditional Eid ul Fitr dishes. Instead, they would likely celebrate and eat traditional Spanish foods during their own holidays and celebrations.""}
+
+{""answer"": [""Tortilla de patatas"", ""Paella"", ""Gazpacho"", ""Croquetas"", ""Jamón ibérico""], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and Spain is a predominantly Christian country. As a result, it's unlikely that people from Spain would specifically celebrate or eat traditional Eid ul Fitr dishes. Instead, they would likely celebrate and eat traditional Spanish foods during their own holidays and celebrations.""}",inst-1,1,,"Eid ul Fitr is a significant Islamic holiday, and Spain is a predominantly Christian country. As a result, it's unlikely that people from Spain would specifically celebrate or eat traditional Eid ul Fitr dishes. Instead, they would likely celebrate and eat traditional Spanish foods during their own holidays and celebrations."
 New-su-24,What sports do parents and children commonly play together in Spain?,"What sports do parents and children commonly play together in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sports do parents and children commonly play together in Spain?','answer':[]}
@@ -107,7 +108,9 @@ New-su-24,What sports do parents and children commonly play together in Spain?,"
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""ciclismo""}], ""reasoning"": ""Families in Spain often engage in outdoor activities together, and cycling is a popular and accessible sport that allows for bonding and exercise.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""In Spain, family bonding is highly valued, and many parents and children engage in various sports together. This is often seen as a way to strengthen family ties, create shared experiences, and promote physical activity. Many Spanish sports are designed to be played in a family-friendly environment, making it easy for parents and children to participate together.""}
+
+{""answer"": [""Futbol"", ""Tenis"", ""Ciclismo""], ""reasoning"": """"}",inst-1,1,,"In Spain, family bonding is highly valued, and many parents and children engage in various sports together. This is often seen as a way to strengthen family ties, create shared experiences, and promote physical activity. Many Spanish sports are designed to be played in a family-friendly environment, making it easy for parents and children to participate together."
 Ji-ko-42,What are the required subjects in Spain's university entrance exam?,"What are the required subjects in Spain's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the required subjects in Spain's university entrance exam?','answer':[]}
@@ -115,9 +118,7 @@ Ji-ko-42,What are the required subjects in Spain's university entrance exam?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""The required subjects in Spain's university entrance exam, known as the Selectividad, vary depending on the university and the degree program. However, the most common subjects required are Spanish, Mathematics, and Science, as well as foreign languages like English, French, and German.""}
-
-{""answer"": [""Spanish"", ""Mathematics"", ""Science"", ""Foreign languages""], ""reasoning"": null}",inst-1,1,,"The required subjects in Spain's university entrance exam, known as the Selectividad, vary depending on the university and the degree program. However, the most common subjects required are Spanish, Mathematics, and Science, as well as foreign languages like English, French, and German."
+","{""answer"": [""Mathematics"", ""Foreign Language (English, French, German, Italian, or Spanish as a Foreign Language)"", ""History or Geography"", ""Science (Biology, Chemistry, Physics, or Integrated Sciences)""], ""reasoning"": ""The Spanish university entrance exam, known as the Selectividad, typically requires students to pass a set of core subjects that demonstrate their knowledge and skills in various areas. These core subjects are designed to assess a student's ability to think critically, solve problems, and communicate effectively.""}",inst-1,1,,"The Spanish university entrance exam, known as the Selectividad, typically requires students to pass a set of core subjects that demonstrate their knowledge and skills in various areas. These core subjects are designed to assess a student's ability to think critically, solve problems, and communicate effectively."
 New-pe-06,What is the most popular stew in Spain?,"What is the most popular stew in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular stew in Spain?','answer':[]}
@@ -125,7 +126,7 @@ New-pe-06,What is the most popular stew in Spain?,"What is the most popular stew
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Fabada Asturiana""}], ""reasoning"": ""Fabada Asturiana is a traditional Asturian stew originating from the region of Asturias in northern Spain. It is a rich and flavorful stew made with chorizo, morcilla, panceta, and beans, and is often served with crusty bread or potatoes.""}",inst-1,1,,
+","{""answer"": [""Fabada Asturiana""], ""reasoning"": ""Fabada Asturiana is a rich and hearty bean stew originating from the Asturias region in northern Spain. It is made with fabes (white beans), panceta (cured pork belly), chorizo, and morcilla (blood sausage). Its popularity can be attributed to its bold flavors and the cultural significance it holds in Asturian cuisine.""}",inst-1,1,,"Fabada Asturiana is a rich and hearty bean stew originating from the Asturias region in northern Spain. It is made with fabes (white beans), panceta (cured pork belly), chorizo, and morcilla (blood sausage). Its popularity can be attributed to its bold flavors and the cultural significance it holds in Asturian cuisine."
 New-pe-86,What is the name of the most famous tower in Spain?,"What is the name of the most famous tower in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the name of the most famous tower in Spain?','answer':[]}
@@ -133,7 +134,7 @@ New-pe-86,What is the name of the most famous tower in Spain?,"What is the name 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""La Torre de Hercules""}], ""reasoning"": ""La Torre de Hercules is the most famous tower in Spain due to its historical and architectural significance, being one of the oldest working lighthouses in the world.""}",inst-1,1,,
+","{""answer"": [{""name"": ""La Torre de Hercules""}], ""reasoning"": ""La Torre de Hercules is the most famous tower in Spain due to its rich history and architectural significance. Located in A Coruña, it is the oldest lighthouse in the world that is still in operation, dating back to the 1st century BC.""}",inst-1,1,,
 Th-en-53,What is the most popular extracurricular social event at schools in Spain?,"What is the most popular extracurricular social event at schools in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular extracurricular social event at schools in Spain?','answer':[]}
@@ -141,7 +142,7 @@ Th-en-53,What is the most popular extracurricular social event at schools in Spa
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Fiesta de Fin de Curso""}], ""reasoning"": ""In Spain, the most popular extracurricular social event at schools is the Fiesta de Fin de Curso, a celebration marking the end of the academic year, which typically includes music, food, and dancing.""}",inst-1,1,,
+","{""answer"": [""Fiesta de Fin de Curso""], ""reasoning"": ""Fiesta de Fin de Curso is a traditional Spanish event that takes place at the end of the academic year, typically in June. It's a celebration that brings together students, teachers, and families to mark the end of the school year. It's a popular extracurricular social event at schools in Spain, as it provides a chance for students to relax, have fun, and socialize with their peers and educators outside of the classroom.""}",inst-1,1,,"Fiesta de Fin de Curso is a traditional Spanish event that takes place at the end of the academic year, typically in June. It's a celebration that brings together students, teachers, and families to mark the end of the school year. It's a popular extracurricular social event at schools in Spain, as it provides a chance for students to relax, have fun, and socialize with their peers and educators outside of the classroom."
 Ca-sp-06,Which is the most important meal of the day to people from Spain?,"Which is the most important meal of the day to people from Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which is the most important meal of the day to people from Spain?','answer':[]}
@@ -149,7 +150,7 @@ Ca-sp-06,Which is the most important meal of the day to people from Spain?,"Whic
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most important meal"": ""Lunch""}], ""reasoning"": ""Traditionally, lunch is considered the main meal of the day in Spanish culture, as it is often the largest and most leisurely meal, typically eaten between 2-4 pm.""}",inst-1,1,,
+","{""answer"": [""Lunch""], ""reasoning"": ""In Spain, lunch is considered the most important meal of the day due to the country's cultural and historical significance of the mid-day meal. It is typically a longer and more leisurely meal than breakfast or dinner, often eaten with family and friends, and is seen as a time to socialize and relax.""}",inst-1,1,,"In Spain, lunch is considered the most important meal of the day due to the country's cultural and historical significance of the mid-day meal. It is typically a longer and more leisurely meal than breakfast or dinner, often eaten with family and friends, and is seen as a time to socialize and relax."
 New-en-41,Who is the most well known and successful entrepreneur in Spain?,"Who is the most well known and successful entrepreneur in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most well known and successful entrepreneur in Spain?','answer':[]}
@@ -157,7 +158,7 @@ New-en-41,Who is the most well known and successful entrepreneur in Spain?,"Who 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Amancio Ortega""}], ""reasoning"": ""Amancio Ortega is the founder of Inditex, the parent company of Zara, and is considered one of the most successful entrepreneurs in Spain, known for his retail innovation and business acumen.""}",inst-1,1,,
+","{""answer"": [""Amancio Ortega""], ""reasoning"": ""Amancio Ortega is widely recognized as one of the most successful entrepreneurs in Spain, known for founding Inditex, the parent company of Zara, which has become a global fashion powerhouse. He is also known for his private and low-key nature, which has contributed to his enigmatic reputation.""}",inst-1,1,,"Amancio Ortega is widely recognized as one of the most successful entrepreneurs in Spain, known for founding Inditex, the parent company of Zara, which has become a global fashion powerhouse. He is also known for his private and low-key nature, which has contributed to his enigmatic reputation."
 New-su-33,What is the common dress code for school teachers in Spain?,"What is the common dress code for school teachers in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the common dress code for school teachers in Spain?','answer':[]}
@@ -165,7 +166,7 @@ New-su-33,What is the common dress code for school teachers in Spain?,"What is t
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Conservative, formal, and modest""]}, ""reasoning"": ""In Spain, school teachers are expected to dress professionally and conservatively, reflecting the country's cultural values and traditions. This includes avoiding revealing or provocative clothing, and opting for more traditional and respectful attire.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Business casual"", ""Smart casual"", ""Formal attire""]}, ""reasoning"": ""The dress code for school teachers in Spain is generally considered to be business casual, smart casual, or formal attire, as they are expected to present a professional image and maintain a level of dignity and respect in the classroom and in front of students and parents.""}",inst-1,1,,
 Th-en-44,What is Spain's most popular food for family meals on weekends?,"What is Spain's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is Spain's most popular food for family meals on weekends?','answer':[]}
@@ -173,7 +174,11 @@ Th-en-44,What is Spain's most popular food for family meals on weekends?,"What i
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Paella""], ""reasoning"": ""Paella is a traditional Spanish dish that is often served at family gatherings and celebrations, making it a popular choice for weekend meals.""}",inst-1,1,,"Paella is a traditional Spanish dish that is often served at family gatherings and celebrations, making it a popular choice for weekend meals."
+","Here's my response:
+
+{""answer"": {""question':'What is Spain's most popular food for family meals on weekends?','answer':[""Paella""]}, ""reasoning"": ""Paella is a classic Spanish dish that is often associated with family gatherings and celebrations. It's a one-pot meal that typically consists of saffron-infused rice, vegetables, and various meats or seafood, making it a hearty and satisfying option for weekend family meals.""}
+
+Note: I'm providing a single answer, Paella, as it is considered a staple dish in Spanish cuisine and is often served at family gatherings and celebrations, especially on weekends.",inst-1,1,,
 Th-en-45,What is the most popular weekday evening family activity in Spain?,"What is the most popular weekday evening family activity in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular weekday evening family activity in Spain?','answer':[]}
@@ -181,7 +186,7 @@ Th-en-45,What is the most popular weekday evening family activity in Spain?,"Wha
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Most popular weekday evening family activity in Spain: Watching TV together""}], ""reasoning"": ""According to various surveys and studies, watching TV together is a common and popular activity for families in Spain, especially on weekday evenings, as it provides a relaxing and enjoyable way to spend time together after a long day.""}",inst-1,1,,
+","{""answer"": [{""most popular weekday evening family activity in Spain"": ""Watching TV together""}], ""reasoning"": ""Watching TV together is a popular activity in Spain because many families enjoy spending quality time together, relaxing, and unwinding after a long day. TV is a common medium that brings people together, allowing them to share experiences and emotions, and create memories.""}",inst-1,1,,
 New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Spain? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in Spain? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How long is the typical probation period for new employees before signing a formal contract in Spain? (e.g., 1 month).','answer':[]}
@@ -189,7 +194,7 @@ New-ch-44,"How long is the typical probation period for new employees before sig
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""1-3 months""], ""reasoning"": ""In Spain, the typical probation period for new employees before signing a formal contract is usually between 1-3 months. This allows the employer to assess the employee's skills, performance, and fit within the company, while also giving the employee a chance to get familiar with the work environment and requirements.""}}",inst-1,1,,
+","{""answer"": [{""duration"": ""2 weeks""}], ""reasoning"": ""In Spain, the typical probation period for new employees is usually 2 weeks, as it is a standard practice in many companies. This allows both the employer and the employee to assess the fit and adjust any necessary adjustments before committing to a formal contract.""}",inst-1,1,,
 New-in-62,What university in Spain is popular because of its engineering major? (Provide the official name.),"What university in Spain is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What university in Spain is popular because of its engineering major? (Provide the official name.)','answer':[]}
@@ -197,9 +202,7 @@ New-in-62,What university in Spain is popular because of its engineering major? 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""This question is specific and focused on a particular aspect of a university, which makes it clear and easy to answer. The use of 'official name' as a requirement adds an element of precision and accuracy, which is important in academic contexts. The question also shows a clear interest in the university's engineering program, which suggests that the answerer is looking for a specific piece of information.""}
-
-{""answer"": [{""name"": ""Escuela Politécnica Superior de la Universidad de Navarra""}]}",inst-1,1,,"This question is specific and focused on a particular aspect of a university, which makes it clear and easy to answer. The use of 'official name' as a requirement adds an element of precision and accuracy, which is important in academic contexts. The question also shows a clear interest in the university's engineering program, which suggests that the answerer is looking for a specific piece of information."
+","{""answer"": {""answer"": [""Universidad Politécnica de Madrid (UPM)""]}, ""reasoning"": ""The Universidad Politécnica de Madrid (UPM) is one of the most prestigious and popular engineering universities in Spain, known for its strong programs in fields such as aerospace, energy, and telecommunications engineering, among others.""}",inst-1,1,,
 Ji-ko-34,How do elementary school students in Spain go to school?,"How do elementary school students in Spain go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How do elementary school students in Spain go to school?','answer':[]}
@@ -207,14 +210,17 @@ Ji-ko-34,How do elementary school students in Spain go to school?,"How do elemen
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [
-{""Elementary school students in Spain typically attend school from Monday to Friday, with school starting at 9:00 am and ending at 2:00 pm""},
-{""They usually take a 30-60 minute lunch break from 1:00 pm to 1:30 pm or 2:00 pm""},
-{""Transportation to and from school is often provided by the school or local authorities, or students may walk or bike depending on their location""}
-],
-""reasoning"": ""This is a general overview of the typical school day and schedule for elementary school students in Spain, based on common practices and regulations""
-}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""In Spain, elementary school students typically attend public or private schools, which are free and compulsory for children between the ages of 6 and 16. The education system is highly centralized, with the Ministry of Education, Culture and Sport setting the curriculum and guidelines for all schools. Students usually start school at the age of 6 and attend primary school (educación primaria) for 6 years, followed by secondary school (educación secundaria) for 4 years. The school day typically starts around 9:00 am and ends around 2:00 pm, with a lunch break in the middle. Students often walk, bike, or take public transportation to school, as well as some parents or caregivers may drop them off or pick them up.""}
+
+{'question':'How do elementary school students in Spain go to school?','answer':[
+    ""Typically attend public or private schools"",
+    ""Free and compulsory education for children between 6 and 16"",
+    ""Start school at age 6 and attend primary school for 6 years"",
+    ""Followed by secondary school for 4 years"",
+    ""School day starts around 9:00 am and ends around 2:00 pm"",
+    ""Take breaks for lunch and possibly other activities"",
+    ""Students and/or parents/caregivers may transport them to school""
+]}",inst-1,1,,"In Spain, elementary school students typically attend public or private schools, which are free and compulsory for children between the ages of 6 and 16. The education system is highly centralized, with the Ministry of Education, Culture and Sport setting the curriculum and guidelines for all schools. Students usually start school at the age of 6 and attend primary school (educación primaria) for 6 years, followed by secondary school (educación secundaria) for 4 years. The school day typically starts around 9:00 am and ends around 2:00 pm, with a lunch break in the middle. Students often walk, bike, or take public transportation to school, as well as some parents or caregivers may drop them off or pick them up."
 Ta-pe-21,Where do children usually play soccer in Spain?,"Where do children usually play soccer in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do children usually play soccer in Spain?','answer':[]}
@@ -222,7 +228,7 @@ Ta-pe-21,Where do children usually play soccer in Spain?,"Where do children usua
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""School playgrounds, local parks, and community centers""], ""reasoning"": ""Children in Spain typically play soccer in informal settings, such as school playgrounds, local parks, and community centers, where they can develop their skills and play with friends.""}",inst-1,1,,"Children in Spain typically play soccer in informal settings, such as school playgrounds, local parks, and community centers, where they can develop their skills and play with friends."
+","{""answer"": {""answer"": [""School playgrounds"", ""Local parks"", ""Community centers""]}, ""reasoning"": ""Children in Spain typically play soccer in areas that are easily accessible and well-maintained, such as school playgrounds, local parks, and community centers. These locations usually have designated fields or spaces for playing soccer, and are often equipped with necessary amenities like goalposts, benches, and restrooms.""}",inst-1,1,,
 Tmp-ar-01,Where do university students in Spain usually go to study for their final exams?,"Where do university students in Spain usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do university students in Spain usually go to study for their final exams?','answer':[]}
@@ -230,7 +236,7 @@ Tmp-ar-01,Where do university students in Spain usually go to study for their fi
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""library"": ""Universidad""}], ""reasoning"": ""In Spain, students typically study for their final exams in the university library, as it provides a quiet and focused environment for studying and reviewing material.""}",inst-1,1,,
+","{""answer"": [{""university libraries""}], ""reasoning"": ""University students in Spain often prefer to study for their final exams in university libraries due to their quiet and focused environment, which allows them to concentrate on their studies and review their materials effectively.""}",inst-1,1,,
 Ne-ar-38,Which food do people usually offer as charity in Spain?,"Which food do people usually offer as charity in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which food do people usually offer as charity in Spain?','answer':[]}
@@ -238,7 +244,7 @@ Ne-ar-38,Which food do people usually offer as charity in Spain?,"Which food do 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Pan con tomate""}], ""reasoning"": ""In Spain, it is common to offer food to the homeless and those in need, and pan con tomate (bread with tomato) is a staple and readily available food item that is often used in charity efforts.""}",inst-1,1,,
+","{""answer"": [""Pa amb tomàquet""], ""reasoning"": ""In Spain, pa amb tomàquet (bread with tomato) is a common food item that people often donate to charity, especially during festive seasons and holidays, as it is a simple yet nutritious and filling food.""}",inst-1,1,,"In Spain, pa amb tomàquet (bread with tomato) is a common food item that people often donate to charity, especially during festive seasons and holidays, as it is a simple yet nutritious and filling food."
 Jod-ch-01,What eating utensils do people commonly used in Spain?,"What eating utensils do people commonly used in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What eating utensils do people commonly used in Spain?','answer':[]}
@@ -246,7 +252,7 @@ Jod-ch-01,What eating utensils do people commonly used in Spain?,"What eating ut
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""fork"", ""knife"", ""spoon""}], ""reasoning"": ""In Spain, people commonly use a fork, knife, and spoon to eat their meals, similar to many other Western countries, with the fork being the primary utensil used for most meals.""}",inst-1,1,,
+","{""answer"": [{""fork"", ""knife"", ""spoon""}], ""reasoning"": ""In Spain, people commonly use forks, knives, and spoons as eating utensils, similar to many Western cultures. The use of these utensils is widespread and can be seen in both formal and informal dining settings.""}",inst-1,1,,
 New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Spain?,"What type of alcoholic drink is most commonly consumed at festivals in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of alcoholic drink is most commonly consumed at festivals in Spain?','answer':[]}
@@ -254,7 +260,7 @@ New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Sangria""], ""reasoning"": ""Sangria is a popular and refreshing drink that is often served at festivals and outdoor events in Spain, particularly during the summer months. Its sweet and fruity flavor makes it a crowd-pleaser, and it is often served in large quantities to help keep festival-goers cool and hydrated.""}",inst-1,1,,"Sangria is a popular and refreshing drink that is often served at festivals and outdoor events in Spain, particularly during the summer months. Its sweet and fruity flavor makes it a crowd-pleaser, and it is often served in large quantities to help keep festival-goers cool and hydrated."
+","{""answer"": [""Sangria""], ""reasoning"": ""Sangria is a popular drink in Spain and is often consumed at festivals due to its refreshing and fruity flavor, making it a perfect choice for hot summer days and nights spent celebrating and socializing with friends and family.""}",inst-1,1,,"Sangria is a popular drink in Spain and is often consumed at festivals due to its refreshing and fruity flavor, making it a perfect choice for hot summer days and nights spent celebrating and socializing with friends and family."
 Th-en-11,Who is the most popular sportperson in Spain?,"Who is the most popular sportperson in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular sportperson in Spain?','answer':[]}
@@ -262,7 +268,7 @@ Th-en-11,Who is the most popular sportperson in Spain?,"Who is the most popular 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""answer"": ""Rafael Nadal""}], ""reasoning"": ""Due to his numerous Grand Slam titles and consistent dominance in tennis, Rafael Nadal is widely regarded as the most popular sportsperson in Spain.""}",inst-1,1,,
+","{""answer"": [""Rafael Nadal""], ""reasoning"": ""Rafael Nadal is widely considered the most popular sportsperson in Spain due to his numerous achievements in tennis, including 22 Grand Slam titles, and his iconic status as a Spanish athlete, with a large following and widespread media coverage.""}",inst-1,1,,"Rafael Nadal is widely considered the most popular sportsperson in Spain due to his numerous achievements in tennis, including 22 Grand Slam titles, and his iconic status as a Spanish athlete, with a large following and widespread media coverage."
 New-gr-15,What is the most popular traditional dessert in Spain?,"What is the most popular traditional dessert in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular traditional dessert in Spain?','answer':[]}
@@ -270,7 +276,7 @@ New-gr-15,What is the most popular traditional dessert in Spain?,"What is the mo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Crema Catalana""}], ""reasoning"": ""Crema Catalana is a traditional Spanish dessert that is similar to crème brûlée, and it is widely considered to be the most popular and iconic Spanish dessert.""}",inst-1,1,,
+","{""answer"": [""Crema Catalana""], ""reasoning"": ""Crema Catalana is a traditional Spanish dessert that is often referred to as the country's version of crème brûlée. It is a rich and creamy custard base topped with a layer of caramelized sugar, and is a popular dessert throughout Spain.""}",inst-1,1,,"Crema Catalana is a traditional Spanish dessert that is often referred to as the country's version of crème brûlée. It is a rich and creamy custard base topped with a layer of caramelized sugar, and is a popular dessert throughout Spain."
 Ni-en-40,What is the most popular Christmas song in Spain?,"What is the most popular Christmas song in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular Christmas song in Spain?','answer':[]}
@@ -278,7 +284,7 @@ Ni-en-40,What is the most popular Christmas song in Spain?,"What is the most pop
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Aquellos Ojos Verdes""], ""reasoning"": ""Aquellos Ojos Verdes is a traditional Spanish Christmas song that has been a staple of Spanish holiday playlists for decades. Its catchy melody and nostalgic lyrics have made it a beloved classic among Spaniards, and it is often played during Christmas celebrations and events.""}",inst-1,1,,"Aquellos Ojos Verdes is a traditional Spanish Christmas song that has been a staple of Spanish holiday playlists for decades. Its catchy melody and nostalgic lyrics have made it a beloved classic among Spaniards, and it is often played during Christmas celebrations and events."
+","{""answer"": [""Feliz Navidad""], ""reasoning"": ""Feliz Navidad, written by José Feliciano in 1970, is a Christmas song that has become a staple in Spanish-speaking countries, including Spain. Its catchy melody and bilingual lyrics (with both Spanish and English) have made it a beloved and iconic Christmas song in the region.""}",inst-1,1,,"Feliz Navidad, written by José Feliciano in 1970, is a Christmas song that has become a staple in Spanish-speaking countries, including Spain. Its catchy melody and bilingual lyrics (with both Spanish and English) have made it a beloved and iconic Christmas song in the region."
 Na-ko-20,What sports event do people from Spain passionately support the most in international competitions?,"What sports event do people from Spain passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sports event do people from Spain passionately support the most in international competitions?','answer':[]}
@@ -286,7 +292,7 @@ Na-ko-20,What sports event do people from Spain passionately support the most in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Football""], ""reasoning"": ""Due to its rich football history, cultural significance, and national pride, Spanish people are extremely passionate about the sport, and international competitions like the World Cup and European Championship are watched and followed with great enthusiasm.""}",inst-1,1,,"Due to its rich football history, cultural significance, and national pride, Spanish people are extremely passionate about the sport, and international competitions like the World Cup and European Championship are watched and followed with great enthusiasm."
+","{""answer"": [""Football""], ""reasoning"": ""Spain has a strong football culture and tradition, and the national team has had significant success in international competitions, including winning the European Championship and the World Cup. The passion and enthusiasm for football in Spain is unmatched, and the national team is often considered a symbol of national pride.""}",inst-1,1,,"Spain has a strong football culture and tradition, and the national team has had significant success in international competitions, including winning the European Championship and the World Cup. The passion and enthusiasm for football in Spain is unmatched, and the national team is often considered a symbol of national pride."
 Al-en-04,What is the most popular fruit in Spain?,"What is the most popular fruit in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular fruit in Spain?','answer':[]}
@@ -294,7 +300,7 @@ Al-en-04,What is the most popular fruit in Spain?,"What is the most popular frui
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Orange""}], ""reasoning"": ""According to various sources, oranges are the most widely consumed and popular fruit in Spain, due to its availability, taste, and cultural significance.""}",inst-1,1,,
+","{""answer"": [{""fruit"": ""orange""}], ""reasoning"": ""Oranges are widely cultivated and consumed in Spain, and they are also a staple fruit in many Spanish households and restaurants.""}",inst-1,1,,
 New-gr-06,What is the most popular food in Spain among young people?,"What is the most popular food in Spain among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular food in Spain among young people?','answer':[]}
@@ -302,7 +308,7 @@ New-gr-06,What is the most popular food in Spain among young people?,"What is th
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Tortilla de Patatas""}], ""reasoning"": ""Tortilla de Patatas is a popular comfort food among young people in Spain, as it is easy to find and affordable, and can be enjoyed at any time of day.""}",inst-1,1,,
+","{""answer"": [{""title"": ""Paella""}], ""reasoning"": ""Paella is a classic Spanish dish that has gained popularity among young people due to its versatility, affordability, and ease of sharing. It is a staple at many social gatherings and events, making it a popular choice among young people who value socializing and trying new foods.""}",inst-1,1,,
 New-su-34,What is the most popular extracurricular activity related to music in schools in Spain?,"What is the most popular extracurricular activity related to music in schools in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular extracurricular activity related to music in schools in Spain?','answer':[]}
@@ -310,7 +316,7 @@ New-su-34,What is the most popular extracurricular activity related to music in 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Most popular extracurricular activity related to music in schools in Spain: Choral singing""}], ""reasoning"": ""Choral singing is a popular extracurricular activity in Spanish schools due to the country's rich musical heritage and the emphasis on music education in the curriculum.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Choir""}], ""reasoning"": ""Choirs are a staple in Spanish schools, and many students participate in them as an extracurricular activity. They provide a sense of community and belonging, and students can develop their vocal skills and learn to perform in front of an audience.""}",inst-1,1,,
 Ji-ko-26,What are the key milestones associated with children's independence from their parents in Spain's society?,"What are the key milestones associated with children's independence from their parents in Spain's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the key milestones associated with children's independence from their parents in Spain's society?','answer':[]}
@@ -318,7 +324,12 @@ Ji-ko-26,What are the key milestones associated with children's independence fro
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""age 12-13"": ""Start of mid-level autonomy, child takes on more responsibilities and makes own decisions about daily life.""}, {""age 15-16"": ""Increased independence, child starts to make own decisions about social life and extracurricular activities.""}, {""age 18-20"": ""Full autonomy, child is considered an adult and has complete independence from parents.""}], ""reasoning"": ""These milestones mark significant stages in a child's transition to independence in Spain's society, where children gradually take on more responsibilities and make their own decisions.""}",inst-1,1,,
+","{""answer"": [
+  {""milestone"": ""Age 12-13: Start of secondary education and increased autonomy"",
+  ""milestone"": ""Age 16-17: End of compulsory education and start of vocational training or employment"",
+  ""milestone"": ""Age 18-20: Emancipation from parental authority and full legal adulthood""
+],
+""reasoning"": ""In Spain, children's independence from their parents is a gradual process that is influenced by various factors such as education, employment, and legal reforms. The key milestones associated with this process are typically marked by significant changes in a child's autonomy and legal status.""}",inst-1,1,,
 Ne-ar-36,What is a typical festive meal in Spain?,"What is a typical festive meal in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a typical festive meal in Spain?','answer':[]}
@@ -326,7 +337,7 @@ Ne-ar-36,What is a typical festive meal in Spain?,"What is a typical festive mea
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""A typical festive meal in Spain often varies depending on the region and personal preferences. However, traditional dishes like roasted turkey, lamb, or pork are common, accompanied by a variety of side dishes, including vegetables, rice, and potatoes. Desserts like turrón, polvorones, and bacalao con pan are also popular.""}",inst-1,1,,"A typical festive meal in Spain often varies depending on the region and personal preferences. However, traditional dishes like roasted turkey, lamb, or pork are common, accompanied by a variety of side dishes, including vegetables, rice, and potatoes. Desserts like turrón, polvorones, and bacalao con pan are also popular."
+","{""answer"": {""answer"": [""Tortilla de Patatas"", ""Pollo al Ajillo"", ""Pulpo a la Gallega"", ""Paella Valenciana""]}, ""reasoning"": ""Festive meals in Spain often feature traditional dishes that are rich in flavor and history. These dishes are typically made with locally-sourced ingredients and are often served with a glass of wine or cava. The answer provides a selection of popular festive dishes from different regions of Spain, showcasing the diversity of Spanish cuisine.""}",inst-1,1,,
 Ji-ko-14,What is the representative export item of Spain?,"What is the representative export item of Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the representative export item of Spain?','answer':[]}
@@ -334,7 +345,7 @@ Ji-ko-14,What is the representative export item of Spain?,"What is the represent
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""item"": ""Automotive parts""}], ""reasoning"": ""Spain is known for its strong automotive industry and exports a significant portion of its production to other countries, making automotive parts its representative export item.""}",inst-1,1,,
+","{""answer"": [""Wine""], ""reasoning"": ""Spain is renowned for its wine production, with many regions such as Rioja, Ribera del Duero, and Jerez producing high-quality wines that are exported globally, making wine a representative export item of Spain.""}",inst-1,1,,"Spain is renowned for its wine production, with many regions such as Rioja, Ribera del Duero, and Jerez producing high-quality wines that are exported globally, making wine a representative export item of Spain."
 New-pe-76,What is a popular activity to do in parks in Spain?,"What is a popular activity to do in parks in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a popular activity to do in parks in Spain?','answer':[]}
@@ -342,7 +353,7 @@ New-pe-76,What is a popular activity to do in parks in Spain?,"What is a popular
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Picnicking""], ""reasoning"": ""Parks in Spain are often equipped with picnic areas, playgrounds, and scenic views, making them a popular spot for families and friends to enjoy a meal together outdoors.""}",inst-1,1,,"Parks in Spain are often equipped with picnic areas, playgrounds, and scenic views, making them a popular spot for families and friends to enjoy a meal together outdoors."
+","{""answer"": [""Picnicking""], ""reasoning"": ""Parks in Spain are often designed with picnicking in mind, providing shaded areas, playgrounds, and scenic views, making it a popular activity for families and friends to enjoy a meal or snack together.""}",inst-1,1,,"Parks in Spain are often designed with picnicking in mind, providing shaded areas, playgrounds, and scenic views, making it a popular activity for families and friends to enjoy a meal or snack together."
 Jo-sp-19,What region in Spain has been traditionally associated with agriculture?,"What region in Spain has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What region in Spain has been traditionally associated with agriculture?','answer':[]}
@@ -350,7 +361,7 @@ Jo-sp-19,What region in Spain has been traditionally associated with agriculture
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""answer"": [""Valencia and Andalusia""]}], ""reasoning"": [""These regions have historically been known for their fertile soil, mild climate, and abundant water resources, making them ideal for agriculture. Valencia is particularly famous for its production of citrus fruits, while Andalusia is known for its olive oil and wine production.""]",inst-1,1,,
+","{""answer"": [{""region"": ""Andalusia""}], ""reasoning"": ""Andalusia is known for its fertile soil, mild climate, and rich agricultural history, making it a traditional hub for agriculture in Spain.""}",inst-1,1,,
 Th-en-37,"At what age do children typically become independent from their parents in Spain? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in Spain? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'At what age do children typically become independent from their parents in Spain? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -358,7 +369,7 @@ Th-en-37,"At what age do children typically become independent from their parent
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""answer"": 18}], ""reasoning"": ""In Spain, the legal age of majority is 18, which means that children typically become independent from their parents at this age.""}",inst-1,1,,
+","{""answer"": [18], ""reasoning"": ""In Spain, children typically become independent from their parents at the age of 18, as this is the typical age for leaving the parental home and starting their own independent life.""}",inst-1,1,,"In Spain, children typically become independent from their parents at the age of 18, as this is the typical age for leaving the parental home and starting their own independent life."
 Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Spain?,"What is typically given as a congratulatory gesture when attending a friend's wedding in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in Spain?','answer':[]}
@@ -366,7 +377,7 @@ Na-ko-39,What is typically given as a congratulatory gesture when attending a fr
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""gift"":""Money""}],""reasoning"":""In Spanish culture, it is common to give monetary gifts to the newlyweds as a congratulatory gesture, as it is believed to bring prosperity and good luck to their future together.""}",inst-1,1,,
+","{""answer"": [""Monetary gift"", ""Wine or champagne""], ""reasoning"": ""In Spain, it is customary to give a monetary gift, known as 'regalo', to the newlyweds as a congratulatory gesture. This is often accompanied by a bottle of wine or champagne to celebrate the occasion.""}",inst-1,1,,"In Spain, it is customary to give a monetary gift, known as 'regalo', to the newlyweds as a congratulatory gesture. This is often accompanied by a bottle of wine or champagne to celebrate the occasion."
 Ca-sp-11,Which day of the week do people usually organize a family meal in Spain?,"Which day of the week do people usually organize a family meal in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which day of the week do people usually organize a family meal in Spain?','answer':[]}
@@ -374,7 +385,7 @@ Ca-sp-11,Which day of the week do people usually organize a family meal in Spain
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In many Spanish families, Sunday is considered a day for family gatherings and meals, often referred to as 'la comida dominical'. It's a time to relax and spend time together after a busy week.""}",inst-1,1,,
+","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In Spain, Sunday is often considered a family day, and it's common for families to gather together for a meal, known as 'la comida de los domingos'. This tradition is deeply rooted in Spanish culture, and it's a time for families to bond and relax together.""}",inst-1,1,,
 Ji-ko-35,What is the most common form of private education in Spain?,"What is the most common form of private education in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most common form of private education in Spain?','answer':[]}
@@ -382,7 +393,7 @@ Ji-ko-35,What is the most common form of private education in Spain?,"What is th
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Convent schools""], ""reasoning"": ""Convent schools are the most common form of private education in Spain, with a long history dating back to the 16th century. They are often run by Catholic orders and offer a range of educational programs from preschool to high school.""}",inst-1,1,,"Convent schools are the most common form of private education in Spain, with a long history dating back to the 16th century. They are often run by Catholic orders and offer a range of educational programs from preschool to high school."
+","{""answer"": {""answer"": [""International schools""]}, ""reasoning"": ""Private education in Spain is often associated with international schools, which cater to expatriate communities and offer curricula such as the International Baccalaureate (IB) or the British GCSE. These schools are popular among foreign families who want their children to receive a high-quality education that is recognized worldwide.""}",inst-1,1,,
 Al-en-01,What is a common snack for preschool kids in Spain?,"What is a common snack for preschool kids in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a common snack for preschool kids in Spain?','answer':[]}
@@ -390,7 +401,7 @@ Al-en-01,What is a common snack for preschool kids in Spain?,"What is a common s
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Pa amb tomàquet""}],""reasoning"": ""Pa amb tomàquet is a common snack among preschool kids in Spain because it is a simple and healthy snack that is easy to prepare and can be shared with friends.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Galletas (cookies)""]}, ""reasoning"": ""Preschool kids in Spain often enjoy sweet and crunchy snacks, and galletas (cookies) are a popular choice. They are easy to hold and fun to eat, making them a great option for young children.""}",inst-1,1,,
 Al-en-32,What is the main dish for Thanksgiving in Spain?,"What is the main dish for Thanksgiving in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the main dish for Thanksgiving in Spain?','answer':[]}
@@ -398,7 +409,9 @@ Al-en-32,What is the main dish for Thanksgiving in Spain?,"What is the main dish
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""None""], ""reasoning"": ""Thanksgiving is not a traditional holiday in Spain, and the concept of Thanksgiving is not widely celebrated or recognized in the country.""}",inst-1,1,,"Thanksgiving is not a traditional holiday in Spain, and the concept of Thanksgiving is not widely celebrated or recognized in the country."
+","{""answer"": [], ""reasoning"": ""Thanksgiving is not a traditional holiday in Spain, and it is not widely celebrated. The country has its own unique holidays and traditions, such as the Fiesta de Todos los Santos (All Saints' Day) and the Fiesta de la Navidad (Christmas). Therefore, there is no main dish associated with Thanksgiving in Spain.""}
+
+{""answer"": [{""There is no main dish for Thanksgiving in Spain""}], ""reasoning"": ""...""",inst-1,1,,"Thanksgiving is not a traditional holiday in Spain, and it is not widely celebrated. The country has its own unique holidays and traditions, such as the Fiesta de Todos los Santos (All Saints' Day) and the Fiesta de la Navidad (Christmas). Therefore, there is no main dish associated with Thanksgiving in Spain."
 New-su-58,What animals are commonly used for agriculture in Spain?,"What animals are commonly used for agriculture in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What animals are commonly used for agriculture in Spain?','answer':[]}
@@ -406,7 +419,9 @@ New-su-58,What animals are commonly used for agriculture in Spain?,"What animals
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Cattle"", ""Pigs"", ""Sheep"", ""Chickens"", ""Goats""], ""reasoning"": ""Spain is a significant producer of agricultural products, and many of its livestock are used for dairy, meat, and wool production, as well as for egg production.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""Agriculture in Spain is primarily focused on livestock farming, with a strong emphasis on cattle, pigs, and sheep. These animals are raised for meat, dairy, and wool production, and are an essential part of the country's agricultural industry.""}
+
+{""answer"": [{""cattle"", ""pigs"", ""sheep""}], ""reasoning"": ""Agriculture in Spain is primarily focused on livestock farming, with a strong emphasis on cattle, pigs, and sheep. These animals are raised for meat, dairy, and wool production, and are an essential part of the country's agricultural industry.""}",inst-1,1,,"Agriculture in Spain is primarily focused on livestock farming, with a strong emphasis on cattle, pigs, and sheep. These animals are raised for meat, dairy, and wool production, and are an essential part of the country's agricultural industry."
 An-ar-03,Which month is the final exam term usually scheduled at high schools in Spain? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in Spain? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which month is the final exam term usually scheduled at high schools in Spain? (Provide Arabic numerals (1~12) only.)','answer':[]}
@@ -414,7 +429,7 @@ An-ar-03,Which month is the final exam term usually scheduled at high schools in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [June], ""reasoning"": ""In Spain, the academic year typically runs from September to June, with the final exams taking place in June.""}",inst-1,1,,
+","{""answer"": [June], ""reasoning"": ""In Spain, the academic year typically starts in September and ends in June, with the final exams taking place in June.""}",inst-1,1,,
 Ji-ko-28,When is the first day that people celebrate after a child is born in Spain?,"When is the first day that people celebrate after a child is born in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'When is the first day that people celebrate after a child is born in Spain?','answer':[]}
@@ -422,7 +437,7 @@ Ji-ko-28,When is the first day that people celebrate after a child is born in Sp
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Baptism""], ""reasoning"": ""In Spain, the first day of celebration after a child's birth is typically the day of the child's baptism, which is usually held a few weeks or months after birth.""}",inst-1,1,,"In Spain, the first day of celebration after a child's birth is typically the day of the child's baptism, which is usually held a few weeks or months after birth."
+","{""answer"": [{""day"": ""8th day""}], ""reasoning"": ""In Spain, the first celebration after a child is born is typically the 8th day, which is a traditional Catholic custom. This celebration is known as the 'octava' and is a significant milestone in the child's life, marking the end of the first week after birth.""}",inst-1,1,,
 Na-ko-33,What symbolic food do people from Spain eat on (Lunar) New Year?,"What symbolic food do people from Spain eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What symbolic food do people from Spain eat on (Lunar) New Year?','answer':[]}
@@ -430,7 +445,9 @@ Na-ko-33,What symbolic food do people from Spain eat on (Lunar) New Year?,"What 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""The question is incorrect as Spain does not celebrate the Lunar New Year. The Lunar New Year is traditionally celebrated in East Asian cultures such as China, Korea, and Vietnam. Spain celebrates the Christian holiday of Three Kings' Day (Día de Reyes) on January 6th, which marks the arrival of the Magi to the baby Jesus.""}",inst-1,1,,"The question is incorrect as Spain does not celebrate the Lunar New Year. The Lunar New Year is traditionally celebrated in East Asian cultures such as China, Korea, and Vietnam. Spain celebrates the Christian holiday of Three Kings' Day (Día de Reyes) on January 6th, which marks the arrival of the Magi to the baby Jesus."
+","{""answer"": [], ""reasoning"": ""Spain does not celebrate the Lunar New Year, as it is primarily a East Asian tradition. Spain is a Western country that celebrates the Gregorian calendar and does not have a significant Lunar New Year tradition. Therefore, there is no symbolic food associated with the Lunar New Year in Spain.""}
+
+{""answer"": [], ""reasoning"": ""null""}",inst-1,1,,"Spain does not celebrate the Lunar New Year, as it is primarily a East Asian tradition. Spain is a Western country that celebrates the Gregorian calendar and does not have a significant Lunar New Year tradition. Therefore, there is no symbolic food associated with the Lunar New Year in Spain."
 Ki-pe-34,What is the usual drink in the breakfast in Spain?,"What is the usual drink in the breakfast in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the usual drink in the breakfast in Spain?','answer':[]}
@@ -438,7 +455,8 @@ Ki-pe-34,What is the usual drink in the breakfast in Spain?,"What is the usual d
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Coffee""], ""reasoning"": ""Coffee is the most common drink consumed with breakfast in Spain, and it's often served with milk and/or sugar.""}",inst-1,1,,"Coffee is the most common drink consumed with breakfast in Spain, and it's often served with milk and/or sugar."
+","{""answer"": [], ""reasoning"": ""When it comes to breakfast drinks in Spain, the usual choice is often debated among locals and tourists alike. While some may argue that a classic cafe con leche (espresso with milk) is the most common, others might claim that a good ol' glass of fresh orange juice is the way to go. However, upon closer examination, it becomes clear that the most popular breakfast drink in Spain is actually...""}
+{""answer"": [{""drink"": ""Té""}], ""reasoning"": ""Te""}",inst-1,1,,"When it comes to breakfast drinks in Spain, the usual choice is often debated among locals and tourists alike. While some may argue that a classic cafe con leche (espresso with milk) is the most common, others might claim that a good ol' glass of fresh orange juice is the way to go. However, upon closer examination, it becomes clear that the most popular breakfast drink in Spain is actually..."
 New-su-42,What religion is mainly taught in schools in Spain?,"What religion is mainly taught in schools in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What religion is mainly taught in schools in Spain?','answer':[]}
@@ -446,7 +464,7 @@ New-su-42,What religion is mainly taught in schools in Spain?,"What religion is 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Spanish"": ""Laicismo""}], ""reasoning"": ""In Spain, the predominant teaching in schools is laicism, which means a separation of church and state, and no official religion is taught in public schools.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Catholicism""]}, ""reasoning"": ""Catholicism is the majority religion in Spain and has historically played a significant role in the country's culture and education system.""}",inst-1,1,,
 Ne-ar-06,What do people from Spain eat in Ramadan?,"What do people from Spain eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people from Spain eat in Ramadan?','answer':[]}
@@ -454,7 +472,16 @@ Ne-ar-06,What do people from Spain eat in Ramadan?,"What do people from Spain ea
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""During Ramadan, people from Spain, being predominantly Catholic, do not typically fast or follow Islamic dietary restrictions. Therefore, their diet during this period remains relatively unchanged, with no specific 'Ramadan food' or traditions.""}",inst-1,1,,"During Ramadan, people from Spain, being predominantly Catholic, do not typically fast or follow Islamic dietary restrictions. Therefore, their diet during this period remains relatively unchanged, with no specific 'Ramadan food' or traditions."
+","{""answer"": [], ""reasoning"": ""The assumption behind this question is that people from Spain, as a country, have a uniform dietary pattern during Ramadan, which is not the case. Ramadan is a month of fasting for Muslims, and the type of food consumed during this period varies greatly depending on individual preferences, regional traditions, and cultural influences. People from Spain, like those from other countries, have their own unique culinary traditions and dietary habits, which are not necessarily linked to their country of origin. Therefore, it is not possible to provide a singular answer to this question.""}
+
+{""answer"": [
+  {
+    ""Spanish cuisine"",
+    ""Regional specialties"",
+    ""Personal preferences"",
+    ""Cultural influences""
+  }
+]}",inst-1,1,,"The assumption behind this question is that people from Spain, as a country, have a uniform dietary pattern during Ramadan, which is not the case. Ramadan is a month of fasting for Muslims, and the type of food consumed during this period varies greatly depending on individual preferences, regional traditions, and cultural influences. People from Spain, like those from other countries, have their own unique culinary traditions and dietary habits, which are not necessarily linked to their country of origin. Therefore, it is not possible to provide a singular answer to this question."
 Gu-ch-38,"What is the duration of undergraduate education in Spain? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in Spain? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the duration of undergraduate education in Spain? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -462,7 +489,7 @@ Gu-ch-38,"What is the duration of undergraduate education in Spain? (Provide Ara
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [4], ""reasoning"": ""Undergraduate education in Spain typically takes 4 years to complete, as it is a bachelor's degree""}",inst-1,1,,"Undergraduate education in Spain typically takes 4 years to complete, as it is a bachelor's degree"
+","{""answer"": [4], ""reasoning"": ""In Spain, the typical duration of undergraduate education is four years, which is the standard length of a Licenciatura degree, the most common undergraduate degree in the country.""}",inst-1,1,,"In Spain, the typical duration of undergraduate education is four years, which is the standard length of a Licenciatura degree, the most common undergraduate degree in the country."
 Kik-in-16,What drink is commonly consumed in Spain when the weather is cold?,"What drink is commonly consumed in Spain when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What drink is commonly consumed in Spain when the weather is cold?','answer':[]}
@@ -470,7 +497,9 @@ Kik-in-16,What drink is commonly consumed in Spain when the weather is cold?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Hot Chocolate""], ""reasoning"": ""Hot chocolate is a popular wintertime drink in Spain, often enjoyed with churros or other sweet treats to warm up on chilly days.""}",inst-1,1,,"Hot chocolate is a popular wintertime drink in Spain, often enjoyed with churros or other sweet treats to warm up on chilly days."
+","{""answer"": [""Hot Chocolate""], ""reasoning"": ""Hot chocolate is a popular wintertime drink in Spain, particularly among children, as it is a comforting and warming beverage that helps to counteract the cold weather.""}
+
+Note: In Spain, hot chocolate is often served thick and rich, similar to a dessert, and is typically enjoyed as a treat or snack rather than a beverage to be consumed throughout the day.",inst-1,1,,"Hot chocolate is a popular wintertime drink in Spain, particularly among children, as it is a comforting and warming beverage that helps to counteract the cold weather."
 Al-en-39,What do people eat on their birthday in Spain?,"What do people eat on their birthday in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people eat on their birthday in Spain?','answer':[]}
@@ -478,7 +507,7 @@ Al-en-39,What do people eat on their birthday in Spain?,"What do people eat on t
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Tortas, pastelitos, churros, helado, and other sweet treats""], ""reasoning"": ""In Spain, birthdays are often celebrated with family and friends, and sweet treats are a big part of the celebration. Traditional birthday foods may vary depending on the region, but sweet pastries, cakes, and desserts are common""}",inst-1,1,,"In Spain, birthdays are often celebrated with family and friends, and sweet treats are a big part of the celebration. Traditional birthday foods may vary depending on the region, but sweet pastries, cakes, and desserts are common"
+","{""answer"": [""Tortas, pastries, and other sweet treats""], ""reasoning"": ""In Spain, birthdays are often celebrated with sweet treats like tortas, pastries, and other desserts. This is because the Spanish have a strong tradition of celebrating birthdays with cakes and sweets, and it's not uncommon to see birthday celebrations featuring elaborate desserts like tortas de cumpleaños, which are multi-tiered cakes filled with cream and topped with sugar decorations.""}",inst-1,1,,"In Spain, birthdays are often celebrated with sweet treats like tortas, pastries, and other desserts. This is because the Spanish have a strong tradition of celebrating birthdays with cakes and sweets, and it's not uncommon to see birthday celebrations featuring elaborate desserts like tortas de cumpleaños, which are multi-tiered cakes filled with cream and topped with sugar decorations."
 Ne-ar-26,What is the most famous public corporation in Spain?,"What is the most famous public corporation in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous public corporation in Spain?','answer':[]}
@@ -486,7 +515,14 @@ Ne-ar-26,What is the most famous public corporation in Spain?,"What is the most 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Telefónica""], ""reasoning"": ""Telefónica is one of the largest telecommunications companies in the world and is widely recognized as the most famous public corporation in Spain, with a strong brand presence and significant operations globally.""}",inst-1,1,,"Telefónica is one of the largest telecommunications companies in the world and is widely recognized as the most famous public corporation in Spain, with a strong brand presence and significant operations globally."
+","Here's the response in JSON format:
+
+{
+""answer"": [
+{""name"": ""Telefónica""}
+],
+""reasoning"": ""Telefónica is one of the largest telecommunications companies in the world and is a well-known brand globally. As a Spanish multinational, it is considered one of the most prominent and influential companies in the country, with a long history dating back to 1924.""
+}",inst-1,1,,
 Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Spain?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in Spain?','answer':[]}
@@ -494,7 +530,7 @@ Ji-ko-36,Which subject’s academy/private educational institute do middle or hi
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""subject"": ""English""}], ""reasoning"": ""This is because English is a compulsory subject in the Spanish education system, and many students attend private academies or institutes to improve their English skills, especially for university entrance exams and international certifications.""}",inst-1,1,,
+","{""answer"": [{""Language School""}], ""reasoning"": ""In Spain, it is common for middle and high school students to attend private language schools, known as institutes or academies, to improve their language skills, particularly English, French, and German. These schools offer specialized courses, small class sizes, and flexible schedules, making them a popular choice for students who want to excel in languages or prepare for international exams.""}",inst-1,1,,
 Th-en-51,Which subject is considered the most important for students in Spain?,"Which subject is considered the most important for students in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which subject is considered the most important for students in Spain?','answer':[]}
@@ -502,7 +538,7 @@ Th-en-51,Which subject is considered the most important for students in Spain?,"
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Mathematics""], ""reasoning"": ""Mathematics is considered a fundamental subject in the Spanish education system, and is often seen as a gateway to future academic and professional opportunities.""}",inst-1,1,,"Mathematics is considered a fundamental subject in the Spanish education system, and is often seen as a gateway to future academic and professional opportunities."
+","{""answer"": {""answer"": [""Mathematics""]}, ""reasoning"": ""Mathematics is considered the most important subject for students in Spain because it is a fundamental tool for problem-solving and critical thinking, and is a required subject for most university programs and professional careers. It is also a key subject for STEM fields, which are highly valued in the Spanish economy and society.""}",inst-1,1,,
 New-ch-07,What food items do people typically pair with hard liquor in Spain?,"What food items do people typically pair with hard liquor in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food items do people typically pair with hard liquor in Spain?','answer':[]}
@@ -510,10 +546,7 @@ New-ch-07,What food items do people typically pair with hard liquor in Spain?,"W
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [""Cigarrillos"", ""Tortilla"", ""Pa amb tomàquet"", ""Aceitunas""],
-""reasoning"": ""In Spain, people tend to pair hard liquor with snacks that are easy to eat and complement the flavor of the drink, rather than a full meal.""
-}",inst-1,1,,"In Spain, people tend to pair hard liquor with snacks that are easy to eat and complement the flavor of the drink, rather than a full meal."
+","{""answer"": [{""Cava and champagne cocktails with olives, nuts, and cured meats"", ""Tapas such as patatas bravas, tortilla española, and croquetas""}], ""reasoning"": ""In Spain, it's common to pair hard liquor with small plates and snacks, known as tapas, to complement the flavors and textures of the drinks. Popular pairings include Cava and champagne cocktails with savory items like olives, nuts, and cured meats, as well as classic tapas like patatas bravas, tortilla española, and croquetas.""}",inst-1,1,,
 New-en-68,What repercussions are there for bad behavior in schools in Spain?,"What repercussions are there for bad behavior in schools in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What repercussions are there for bad behavior in schools in Spain?','answer':[]}
@@ -521,16 +554,7 @@ New-en-68,What repercussions are there for bad behavior in schools in Spain?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In Spain, schools have a range of consequences for bad behavior, including verbal warnings, detentions, and suspension. The specific repercussions can vary depending on the severity of the misbehavior and the school's policies. The goal is to promote discipline, respect, and responsibility among students.""}
-
-{""answer"": [
-""Verbal warnings"",
-""Detentions"",
-""Suspension"",
-""Parental involvement"",
-""Referral to counseling"",
-""Loss of privileges""
-]}",inst-1,1,,"In Spain, schools have a range of consequences for bad behavior, including verbal warnings, detentions, and suspension. The specific repercussions can vary depending on the severity of the misbehavior and the school's policies. The goal is to promote discipline, respect, and responsibility among students."
+","{""answer"": [""Detention, suspension, and expulsion are common repercussions for bad behavior in Spanish schools.""], ""reasoning"": ""In Spain, school administrators have the authority to discipline students who exhibit bad behavior, and the consequences can vary depending on the severity of the offense. Detention, suspension, and expulsion are all possible outcomes for students who engage in misbehavior, and these consequences are intended to deter further bad behavior and promote a positive learning environment.""}",inst-1,1,,"In Spain, school administrators have the authority to discipline students who exhibit bad behavior, and the consequences can vary depending on the severity of the offense. Detention, suspension, and expulsion are all possible outcomes for students who engage in misbehavior, and these consequences are intended to deter further bad behavior and promote a positive learning environment."
 Th-en-35,"Which one of the daily meals is commonly shared with family members in Spain? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in Spain? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which one of the daily meals is commonly shared with family members in Spain? (e.g., breakfast, lunch, dinner)','answer':[]}
@@ -538,7 +562,9 @@ Th-en-35,"Which one of the daily meals is commonly shared with family members in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""answer"": ""dinner""}], ""reasoning"": ""In Spain, dinner is often the main meal of the day and is typically shared with family members. It is common for families to gather together for dinner, especially on weekends and holidays, and share a meal and conversation.""}",inst-1,1,,
+","Here's my response:
+
+{""answer"": {""option"": [""lunch""]}, ""reasoning"": ""In Spain, lunch is typically considered the main meal of the day, and it's common for family members to share this meal together. It's a time for socializing and bonding, and it's often a leisurely meal that can last for hours.""}",inst-1,1,,
 Ji-ko-37,What type of clothing do middle and high school students wear to school in Spain?,"What type of clothing do middle and high school students wear to school in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of clothing do middle and high school students wear to school in Spain?','answer':[]}
@@ -546,7 +572,7 @@ Ji-ko-37,What type of clothing do middle and high school students wear to school
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Casual and comfortable clothing, such as jeans, t-shirts, and sneakers""], ""reasoning"": ""Spanish students prioritize comfort and practicality in their school attire, with a focus on relaxed and informal wear""}}",inst-1,1,,
+","{""answer"": {""answer"": [""Casual wear, such as jeans, t-shirts, and sneakers, is common among middle and high school students in Spain.""]}, ""reasoning"": ""In Spain, the dress code for middle and high school students is generally relaxed, and students are encouraged to express their personal style while still maintaining a level of modesty. As a result, casual wear is a popular choice among students, who often opt for comfortable and practical clothing that allows them to move freely during their school day.""}",inst-1,1,,
 Ca-sp-41,Where do the dependent elderly usually live in Spain?,"Where do the dependent elderly usually live in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do the dependent elderly usually live in Spain?','answer':[]}
@@ -554,7 +580,9 @@ Ca-sp-41,Where do the dependent elderly usually live in Spain?,"Where do the dep
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Care homes"", ""percentage"": ""30%""}], ""reasoning"": ""In Spain, many dependent elderly people live in care homes, which provide them with the necessary assistance and care. These homes are often located in urban areas, close to cities and towns, where access to healthcare services and social amenities is easier.""}",inst-1,1,,
+","{""answer"": {""answer"": [""With family, especially children or grandchildren""]}, ""reasoning"": ""In Spain, it is common for the elderly to live with their family, particularly children or grandchildren, due to the strong cultural emphasis on family ties and social support networks. This arrangement is often seen as a way to ensure the elderly receive care and companionship, while also allowing them to maintain their independence and sense of community.""}
+
+{""answer"": [""With family, especially children or grandchildren""], ""reasoning"": ""In Spain, it is common for the elderly to live with their family, particularly children or grandchildren, due to the strong cultural emphasis on family ties and social support networks. This arrangement is often seen as a way to ensure the elderly receive care and companionship, while also allowing them to maintain their independence and sense of community.""}",inst-1,1,,
 Sa-en-31,What is Spain's most popular family pet?,"What is Spain's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is Spain's most popular family pet?','answer':[]}
@@ -562,7 +590,7 @@ Sa-en-31,What is Spain's most popular family pet?,"What is Spain's most popular 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Dog""}], ""reasoning"": ""According to various sources, including the Spanish Federation of Pet Associations, dogs are the most popular family pet in Spain, due to their loyal nature and ease of care.""}",inst-1,1,,
+","{""answer"": [{""dog""}], ""reasoning"": ""According to various surveys and studies, dogs are the most popular family pet in Spain, followed by cats. This is likely due to the country's strong cultural emphasis on family and social bonding, as well as the popularity of outdoor activities and hiking, which are often enjoyed with dogs.""}",inst-1,1,,
 Gu-ch-08,What is the most popular sports among children in Spain?,"What is the most popular sports among children in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular sports among children in Spain?','answer':[]}
@@ -570,7 +598,7 @@ Gu-ch-08,What is the most popular sports among children in Spain?,"What is the m
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Fútbol""}], ""reasoning"": ""Fútbol is the most popular sport among children in Spain due to its widespread popularity and cultural significance in the country.""}",inst-1,1,,
+","{""answer"": [""Football""], ""reasoning"": ""Football is the most popular sport among children in Spain due to its widespread popularity and cultural significance in the country. It is a sport that is easily accessible and can be played in a variety of settings, from formal clubs to informal pick-up games with friends. Additionally, Spain has a strong football culture and has produced many successful national teams and players, making it a sport that many children aspire to play and emulate.""}",inst-1,1,,"Football is the most popular sport among children in Spain due to its widespread popularity and cultural significance in the country. It is a sport that is easily accessible and can be played in a variety of settings, from formal clubs to informal pick-up games with friends. Additionally, Spain has a strong football culture and has produced many successful national teams and players, making it a sport that many children aspire to play and emulate."
 New-as-20,What is the most popular indoor sport in Spain?,"What is the most popular indoor sport in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular indoor sport in Spain?','answer':[]}
@@ -578,7 +606,7 @@ New-as-20,What is the most popular indoor sport in Spain?,"What is the most popu
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Futsal""], ""reasoning"": ""Futsal is a variant of indoor soccer, highly popular in Spain, with many professional leagues and competitions, and a strong following among fans.""}",inst-1,1,,"Futsal is a variant of indoor soccer, highly popular in Spain, with many professional leagues and competitions, and a strong following among fans."
+","{""answer"": [{""sport"": ""Handball""}], ""reasoning"": ""Handball is a popular indoor team sport in Spain, with a strong national league and a national team that has had success in international competitions. It is also widely played at the amateur level, with many clubs and leagues throughout the country.""}",inst-1,1,,
 New-spme-05,What are the most popular sweets in Spain?,"What are the most popular sweets in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the most popular sweets in Spain?','answer':[]}
@@ -586,7 +614,9 @@ New-spme-05,What are the most popular sweets in Spain?,"What are the most popula
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""sweet"": ""Torta de Aceite"", ""percentage"": 23.1}, {""sweet"": ""Polvorones"", ""percentage"": 20.5}, {""sweet"": ""Torta de Ricotta"", ""percentage"": 18.2}, {""sweet"": ""Coca de Llebre"", ""percentage"": 12.3}, {""sweet"": ""Mazapán"", ""percentage"": 11.4}, {""sweet"": ""Torta de Tres Reinas"", ""percentage"": 9.5}, {""sweet"": ""Galletas de Aceite"", ""percentage"": 5.1}],""reasoning"": ""The ranking is based on a survey of Spanish consumers and represents the most popular sweets in Spain, with Torta de Aceite being the clear leader.""}",inst-1,1,,
+","Here is the response in the requested format:
+
+{""answer"": [""Churros"", ""Torta de Aceite"", ""Polvorones"", ""Mazapán"", ""Torta de Tres Reyes""], ""reasoning"": ""Spain is famous for its rich confectionery tradition, with many sweet treats being popular across the country. The most popular sweets in Spain are typically those that have been passed down through generations and are often associated with special occasions and festivals.""}",inst-1,1,,"Spain is famous for its rich confectionery tradition, with many sweet treats being popular across the country. The most popular sweets in Spain are typically those that have been passed down through generations and are often associated with special occasions and festivals."
 New-in-01,Which coffee shop brand is the most popular in Spain?,"Which coffee shop brand is the most popular in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which coffee shop brand is the most popular in Spain?','answer':[]}
@@ -594,7 +624,7 @@ New-in-01,Which coffee shop brand is the most popular in Spain?,"Which coffee sh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Café de Oriente""}], ""reasoning"": ""Café de Oriente is a popular coffee shop chain in Spain, with a strong presence in major cities and a reputation for serving high-quality coffee and pastries.""}",inst-1,1,,
+","{""answer"": [""Café de Coral""], ""reasoning"": ""Café de Coral is the largest coffee shop chain in Spain, with over 1,000 locations across the country. It was founded in 1949 and has a strong presence in both urban and rural areas, making it a household name in Spain.""}",inst-1,1,,"Café de Coral is the largest coffee shop chain in Spain, with over 1,000 locations across the country. It was founded in 1949 and has a strong presence in both urban and rural areas, making it a household name in Spain."
 New-gr-58,Which job is considered underpaid in Spain?,"Which job is considered underpaid in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which job is considered underpaid in Spain?','answer':[]}
@@ -602,9 +632,7 @@ New-gr-58,Which job is considered underpaid in Spain?,"Which job is considered u
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""question':'Which job is considered underpaid in Spain?','answer':[]}, ""reasoning"": ""According to various studies and reports, many jobs in Spain are considered underpaid, particularly those in the service sector, such as retail, hospitality, and food industry workers. These jobs often have low wages, long working hours, and limited job security. Additionally, the country has a high level of youth unemployment, which can lead to a shortage of skilled workers and drive down wages even further.""}
-
-{""answer"": [{""job"": ""Retail worker""}]}",inst-1,1,,
+","{""answer"": {""answer"": [""Nursing Staff""], ""reasoning"": ""Nursing staff in Spain, including nurses and nursing assistants, are considered underpaid due to the high demand for their services and the limited supply of qualified professionals in the market, leading to a shortage of skilled workers.""}}",inst-1,1,,
 New-ch-32,What office software do people typically use in the workplace in Spain?,"What office software do people typically use in the workplace in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What office software do people typically use in the workplace in Spain?','answer':[]}
@@ -612,7 +640,7 @@ New-ch-32,What office software do people typically use in the workplace in Spain
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""software"": [""Microsoft Office"", ""Google Workspace"", ""LibreOffice""]}],""reasoning"": ""Given the widespread global adoption of Microsoft Office, it is likely that many Spanish companies use it. Additionally, Google Workspace has a significant presence in Spain, and LibreOffice is a popular open-source alternative.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Microsoft Office"", ""Google Workspace""]}, ""reasoning"": ""In Spain, Microsoft Office is widely used in many workplaces, especially in large corporations. However, with the increasing popularity of cloud-based solutions, Google Workspace (formerly G Suite) has also gained traction, particularly among startups and smaller businesses. The choice between the two often depends on the company's size, industry, and technological infrastructure.""}",inst-1,1,,
 New-ch-73,What type of clubs are most popular among university students in Spain?,"What type of clubs are most popular among university students in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of clubs are most popular among university students in Spain?','answer':[]}
@@ -620,7 +648,7 @@ New-ch-73,What type of clubs are most popular among university students in Spain
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""sporting""}], ""reasoning"": ""University students in Spain often prioritize social and leisure activities, and sporting clubs are a popular way to stay active, build friendships, and alleviate stress.""}",inst-1,1,,
+","{""answer"": [{""Sports""}], ""reasoning"": ""University students in Spain tend to be active and enjoy outdoor activities, which makes sports clubs a popular choice among them. Additionally, many universities in Spain have a strong focus on sports and physical education, which further contributes to the popularity of sports clubs.""}",inst-1,1,,
 New-en-47,What can typically be found in the back garden of houses in Spain?,"What can typically be found in the back garden of houses in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What can typically be found in the back garden of houses in Spain?','answer':[]}
@@ -628,7 +656,11 @@ New-en-47,What can typically be found in the back garden of houses in Spain?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""pool"",""outdoor kitchen"",""barbecue"",""patio"",""plants"",""trees"",""garden furniture""}], ""reasoning"": ""In Spain, back gardens are often used as an extension of the home, providing a space for outdoor living and entertainment, and reflecting the country's warm and sunny climate.""}",inst-1,1,,
+","Here is the response:
+
+{""answer"": {""answer"": [""Patio"", ""Olive trees"", ""Vines"", ""Furniture"", ""Plants"", ""BBQ area"", ""Dining area"", ""Swimming pool"", ""Alfresco kitchen"", ""Garden ornaments"", ""Pathways"", ""Fountains"", ""Water features""]}, ""reasoning"": ""The back garden of houses in Spain is often designed to be an extension of the living space, with a strong emphasis on outdoor living and entertainment. The climate and geography of Spain also influence the types of features that are typically found in a back garden, such as olive trees, vines, and swimming pools.""}
+
+Let me know if this meets your requirements!",inst-1,1,,
 New-en-05,Which food is a cost-effective and quick meal option in Spain?,"Which food is a cost-effective and quick meal option in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which food is a cost-effective and quick meal option in Spain?','answer':[]}
@@ -636,7 +668,7 @@ New-en-05,Which food is a cost-effective and quick meal option in Spain?,"Which 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Paella""}], ""reasoning"": ""Paella is a cost-effective and quick meal option in Spain because it is a traditional Spanish dish that can be found in many restaurants and street food stalls, and is often served in generous portions at an affordable price.""}",inst-1,1,,
+","{""answer"": [""tapas""], ""reasoning"": ""Tapas are a staple in Spanish cuisine, offering a wide variety of affordable and quick meal options. They are often small plates of food, typically ranging from €2 to €5 per serving, making them a cost-effective choice. Additionally, tapas can be easily shared with others, allowing for a social and communal dining experience.""}",inst-1,1,,"Tapas are a staple in Spanish cuisine, offering a wide variety of affordable and quick meal options. They are often small plates of food, typically ranging from €2 to €5 per serving, making them a cost-effective choice. Additionally, tapas can be easily shared with others, allowing for a social and communal dining experience."
 New-ch-16,What is the most famous sports-related movie in Spain?,"What is the most famous sports-related movie in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous sports-related movie in Spain?','answer':[]}
@@ -644,7 +676,7 @@ New-ch-16,What is the most famous sports-related movie in Spain?,"What is the mo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""title"":""Ola de Iraklis""}],""reasoning"": ""Ola de Iraklis is a 1998 Spanish film that tells the story of a fictional football team that is promoted to the top division, and its struggles to stay there. It is considered one of the most iconic and beloved sports movies in Spain, and its success can be attributed to its relatable storyline, memorable characters, and cultural relevance.""}",inst-1,1,,
+","{""answer"": [""Voleibol""], ""reasoning"": ""Voleibol is a 1993 Spanish comedy-drama film directed by Luis García Berlanga, which tells the story of a group of amateur volleyball players who try to qualify for the Olympic Games. The film is considered a classic of Spanish cinema and is widely regarded as the most famous sports-related movie in Spain.""}",inst-1,1,,"Voleibol is a 1993 Spanish comedy-drama film directed by Luis García Berlanga, which tells the story of a group of amateur volleyball players who try to qualify for the Olympic Games. The film is considered a classic of Spanish cinema and is widely regarded as the most famous sports-related movie in Spain."
 Ji-ko-25,What are the family-related holidays in Spain?,"What are the family-related holidays in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the family-related holidays in Spain?','answer':[]}
@@ -652,7 +684,17 @@ Ji-ko-25,What are the family-related holidays in Spain?,"What are the family-rel
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Immaculate Conception (December 8th)"", ""Christmas Day (December 25th)"", ""Epiphany (January 6th)"", ""Easter Monday"", ""Saint's Day (optional)""}], ""reasoning"": ""These holidays are considered family-related in Spain because they are typically celebrated with family gatherings and traditions, such as exchanging gifts, sharing meals, and participating in cultural and religious activities.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""In Spain, family-related holidays are an essential part of the country's cultural and social fabric. These holidays often involve close family ties, traditions, and celebrations, which are deeply rooted in Spanish culture. Here is a list of family-related holidays in Spain:""}
+
+{""answer"": [
+  ""Fiesta de la Navidad (Christmas)"",
+  ""Día de Reyes (Epiphany)"",
+  ""Fiesta de San Juan (St. John's Day)"",
+  ""Fiesta de la Ascensión (Ascension Day)"",
+  ""Fiesta de la Virgen de la Asunción (Assumption Day)"",
+  ""Fiesta de Todos los Santos (All Saints' Day)"",
+  ""Día de los Inocentes (All Hallows' Eve)""
+]}",inst-1,1,,"In Spain, family-related holidays are an essential part of the country's cultural and social fabric. These holidays often involve close family ties, traditions, and celebrations, which are deeply rooted in Spanish culture. Here is a list of family-related holidays in Spain:"
 Sa-en-7,What are popular snacks in Spain?,"What are popular snacks in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are popular snacks in Spain?','answer':[]}
@@ -660,7 +702,9 @@ Sa-en-7,What are popular snacks in Spain?,"What are popular snacks in Spain? Sho
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Tortilla de Patatas"", ""Patatas Bravas"", ""Croquetas"", ""Churros con Chocolate"", ""Aceitunas""}], ""reasoning"": ""These snacks are popular in Spain due to their rich culinary heritage and the country's love for tapas culture, where small plates of food are shared with friends and family.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""Spain is known for its rich culinary culture and love for snacks. With a Mediterranean diet as its foundation, snacks in Spain typically consist of fresh fruits, nuts, cheeses, and baked goods. The country's proximity to the Mediterranean Sea also influences its snacking habits, with seafood and olives being popular choices.""}
+
+{""answer"": [""Churros con chocolate"", ""Tortilla española"", ""Patatas bravas"", ""Aceitunas"", ""Pan con tomate""], ""reasoning"": null}",inst-1,1,,"Spain is known for its rich culinary culture and love for snacks. With a Mediterranean diet as its foundation, snacks in Spain typically consist of fresh fruits, nuts, cheeses, and baked goods. The country's proximity to the Mediterranean Sea also influences its snacking habits, with seafood and olives being popular choices."
 Ta-pe-29,Which professional sport is the highest paying in Spain?,"Which professional sport is the highest paying in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which professional sport is the highest paying in Spain?','answer':[]}
@@ -668,12 +712,7 @@ Ta-pe-29,Which professional sport is the highest paying in Spain?,"Which profess
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [
-{""sport"": ""Football""}
-],
-""reasoning"": ""According to various sources, football (or soccer) is the highest paying sport in Spain, with top players earning millions of euros per year from salaries, endorsements, and other revenue streams.""
-}",inst-1,1,,
+","{""answer"": [""Football (La Liga and Spanish National Team)""], ""reasoning"": ""Football is the most popular and highest paying sport in Spain, with top players earning significantly more than those in other sports. The top clubs in La Liga, such as Barcelona and Real Madrid, have massive followings and generate huge revenues from sponsorships, merchandise, and broadcasting rights, which is reflected in the salaries of their players.""}",inst-1,1,,"Football is the most popular and highest paying sport in Spain, with top players earning significantly more than those in other sports. The top clubs in La Liga, such as Barcelona and Real Madrid, have massive followings and generate huge revenues from sponsorships, merchandise, and broadcasting rights, which is reflected in the salaries of their players."
 Kik-in-36,Who is the most popular soccer coach in Spain?,"Who is the most popular soccer coach in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular soccer coach in Spain?','answer':[]}
@@ -681,7 +720,9 @@ Kik-in-36,Who is the most popular soccer coach in Spain?,"Who is the most popula
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Pep Guardiola""], ""reasoning"": ""Based on his achievements, popularity, and impact on Spanish football, Pep Guardiola is widely regarded as the most popular soccer coach in Spain.""}",inst-1,1,,"Based on his achievements, popularity, and impact on Spanish football, Pep Guardiola is widely regarded as the most popular soccer coach in Spain."
+","{""answer"": [], ""reasoning"": ""The most popular soccer coach in Spain is subjective and can vary depending on personal opinions and recent performances. However, based on their achievements, reputation, and fan base, one of the most popular coaches in Spain is likely to be Pep Guardiola, who has a successful track record with Barcelona and Bayern Munich, and is currently leading Manchester City to success. His tactical genius, ability to develop young players, and charismatic personality have made him a beloved figure among Spanish football fans.""}
+
+{'question':'Who is the most popular soccer coach in Spain?','answer':[""Pep Guardiola""]}",inst-1,1,,"The most popular soccer coach in Spain is subjective and can vary depending on personal opinions and recent performances. However, based on their achievements, reputation, and fan base, one of the most popular coaches in Spain is likely to be Pep Guardiola, who has a successful track record with Barcelona and Bayern Munich, and is currently leading Manchester City to success. His tactical genius, ability to develop young players, and charismatic personality have made him a beloved figure among Spanish football fans."
 Ji-ko-40,What do high school students typically do during break time in schools in Spain?,"What do high school students typically do during break time in schools in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do high school students typically do during break time in schools in Spain?','answer':[]}
@@ -689,7 +730,7 @@ Ji-ko-40,What do high school students typically do during break time in schools 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""socialize with friends"", ""eat"", ""play outdoor games""}], ""reasoning"": ""High school students in Spain typically use break time to relax and recharge, often by socializing with friends, grabbing a snack or meal, or engaging in outdoor activities.""}",inst-1,1,,
+","{""answer"": {""answer"": [""socialize with friends"", ""play outdoor games"", ""listen to music"", ""read a book"", ""take a break""]}, ""reasoning"": ""High school students in Spain, like in many other countries, use their break time to recharge and have some fun. They often socialize with friends, engage in outdoor activities, listen to music, read a book, or simply take a break to relax and refocus for the rest of the school day.""}",inst-1,1,,
 Th-en-15,What is the most popular winter sport in Spain?,"What is the most popular winter sport in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular winter sport in Spain?','answer':[]}
@@ -697,7 +738,7 @@ Th-en-15,What is the most popular winter sport in Spain?,"What is the most popul
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most popular winter sport in Spain"": ""Skiing""}], ""reasoning"": ""Skiing is a popular winter sport in Spain due to the country's mountainous terrain and many ski resorts, particularly in the Pyrenees and the Cantabrian Mountains.""}",inst-1,1,,
+","{""answer"": [{""most popular winter sport in Spain"": ""Skiing""}], ""reasoning"": ""Skiing is a popular winter sport in Spain due to the country's Pyrenees mountains, which offer a range of ski resorts and slopes for all levels of skiers. Spain's ski resorts are well-equipped and have a reputation for being affordable and welcoming to visitors.""}",inst-1,1,,
 Na-ko-19,Who is the most popular volleyball player in Spain?,"Who is the most popular volleyball player in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular volleyball player in Spain?','answer':[]}
@@ -705,7 +746,7 @@ Na-ko-19,Who is the most popular volleyball player in Spain?,"Who is the most po
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"":""Alejandro Toro""}], ""reasoning"": ""Based on recent tournament performances and media coverage, Alejandro Toro is considered one of the most prominent and skilled volleyball players in Spain, with a strong track record in both domestic and international competitions.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Alicia Fernández""}], ""reasoning"": ""Alicia Fernández is a well-known Spanish volleyball player who has had a successful career with the Spanish national team and has won several awards and accolades. She is considered one of the best players in the history of Spanish volleyball and has a strong fan base in Spain.""}",inst-1,1,,
 New-en-56,What is the most popular foreign language spoken by families in Spain?,"What is the most popular foreign language spoken by families in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular foreign language spoken by families in Spain?','answer':[]}
@@ -713,7 +754,7 @@ New-en-56,What is the most popular foreign language spoken by families in Spain?
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""language"": ""English""}], ""reasoning"": ""According to a survey by the Spanish Institute for Statistics, English is the most widely spoken foreign language in Spanish households, with over 40% of families speaking it fluently or fairly fluently.""}",inst-1,1,,
+","{""answer"": [{""language"": ""English""}], ""reasoning"": ""According to a survey by the Spanish Ministry of Education, Culture and Sport, English is the most widely spoken foreign language in Spanish families, with over 70% of families reporting that at least one member speaks English fluently.""}",inst-1,1,,
 Jo-sp-13,What is the most popular water sport in Spain?,"What is the most popular water sport in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular water sport in Spain?','answer':[]}
@@ -721,7 +762,7 @@ Jo-sp-13,What is the most popular water sport in Spain?,"What is the most popula
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most popular water sport in Spain"": ""Sailing""}], ""reasoning"": ""Due to the country's extensive coastline and strong maritime culture, sailing has become a popular water sport in Spain, with many regattas and sailing events taking place throughout the year.""}",inst-1,1,,
+","{""answer"": [{""sailing""}], ""reasoning"": ""Sailing is a popular water sport in Spain due to the country's extensive coastline, numerous marinas, and strong sailing culture.""}",inst-1,1,,
 Na-ko-29,Who is the most famous swimmer in Spain?,"Who is the most famous swimmer in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most famous swimmer in Spain?','answer':[]}
@@ -729,7 +770,7 @@ Na-ko-29,Who is the most famous swimmer in Spain?,"Who is the most famous swimme
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Santos Alvarez""}], ""reasoning"": ""Santos Alvarez is a renowned Spanish swimmer who has won multiple Olympic and World Championship medals, making him a household name in Spain.""}",inst-1,1,,
+","{""answer"": [""Mireia Belmonte García""], ""reasoning"": ""Mireia Belmonte García is one of the most successful Spanish swimmers of all time, having won numerous international medals, including three Olympic medals and 14 World Championship medals. She is known for her exceptional technique and versatility, competing in multiple events such as the 200m and 400m individual medley, as well as the 4x200m freestyle relay. Her achievements have made her a household name in Spain and a role model for young swimmers.""}",inst-1,1,,"Mireia Belmonte García is one of the most successful Spanish swimmers of all time, having won numerous international medals, including three Olympic medals and 14 World Championship medals. She is known for her exceptional technique and versatility, competing in multiple events such as the 200m and 400m individual medley, as well as the 4x200m freestyle relay. Her achievements have made her a household name in Spain and a role model for young swimmers."
 New-su-57,What is the most common livestock raised in Spain?,"What is the most common livestock raised in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most common livestock raised in Spain?','answer':[]}
@@ -737,7 +778,7 @@ New-su-57,What is the most common livestock raised in Spain?,"What is the most c
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""cattle""], ""reasoning"": ""Cattle are the most common livestock raised in Spain due to their versatility and the country's long tradition of cattle farming, particularly for beef and dairy production.""}",inst-1,1,,"Cattle are the most common livestock raised in Spain due to their versatility and the country's long tradition of cattle farming, particularly for beef and dairy production."
+","{""answer"": [{""most common livestock raised in Spain"": ""cattle""}], ""reasoning"": ""Spain has a long history of cattle farming, and it is one of the country's main agricultural activities. Cattle are raised for both milk and meat production, with the majority being used for beef production.""}",inst-1,1,,
 New-en-19,What is the most well known sporting stadium in Spain?,"What is the most well known sporting stadium in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most well known sporting stadium in Spain?','answer':[]}
@@ -745,7 +786,7 @@ New-en-19,What is the most well known sporting stadium in Spain?,"What is the mo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Wanda Metropolitano""}], ""reasoning"": ""Wanda Metropolitano is the home stadium of Atlético Madrid, one of the most successful and popular football clubs in Spain, and has hosted several high-profile matches, including the Champions League Final in 2019.""}",inst-1,1,,
+","{""answer"": [""Wanda Metropolitano""], ""reasoning"": ""The Wanda Metropolitano is the home stadium of Atlético Madrid, one of the most successful and popular football clubs in Spain. Its modern design, seating capacity, and state-of-the-art facilities make it a iconic and well-known venue in the world of football, hosting numerous high-profile matches and events, including the UEFA Champions League Final in 2019.""}",inst-1,1,,"The Wanda Metropolitano is the home stadium of Atlético Madrid, one of the most successful and popular football clubs in Spain. Its modern design, seating capacity, and state-of-the-art facilities make it a iconic and well-known venue in the world of football, hosting numerous high-profile matches and events, including the UEFA Champions League Final in 2019."
 New-ch-38,Which cities or regions are known for their import and export activities in Spain?,"Which cities or regions are known for their import and export activities in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which cities or regions are known for their import and export activities in Spain?','answer':[]}
@@ -753,7 +794,7 @@ New-ch-38,Which cities or regions are known for their import and export activiti
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""city"": ""Barcelona"", ""region"": ""Catalonia""}, {""city"": ""Valencia"", ""region"": ""Valencia""}, {""city"": ""Madrid"", ""region"": ""Madrid""}], ""reasoning"": ""Spain's major ports, such as Barcelona and Valencia, and its capital city Madrid, play a crucial role in the country's import and export activities due to their strategic locations and well-developed infrastructure.""}",inst-1,1,,
+","{""answer"": [{""city"": ""Valencia"", ""region"": ""Alicante"", ""port"": ""Barcelona"", ""logistics"": ""Madrid""}], ""reasoning"": ""These cities and regions are major hubs for import and export activities in Spain due to their strategic locations, infrastructure, and economic importance.""}",inst-1,1,,
 New-pe-65,"How many subjects are taught in middle schools in Spain? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in Spain? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How many subjects are taught in middle schools in Spain? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -761,7 +802,7 @@ New-pe-65,"How many subjects are taught in middle schools in Spain? (Provide Ara
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""12""}], ""reasoning"": ""Middle schools in Spain typically offer a core curriculum that includes 12 subjects, which are required by law. These subjects are: Spanish, English, Mathematics, Science, History, Geography, Physical Education, Music, Art, Technology, and Ethics. Additionally, students may also have the option to take elective courses in areas such as foreign languages, computer science, and philosophy.""}",inst-1,1,,
+","{""answer"": {""answer"": [8]}, ""reasoning"": ""In Spain, middle schools typically offer a core curriculum that includes 8 main subjects, which are: Spanish, English, Mathematics, Science, Physical Education, History, Geography, and Technology.""}",inst-1,1,,
 Th-en-03,What is the most popular professional sports league in Spain?,"What is the most popular professional sports league in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular professional sports league in Spain?','answer':[]}
@@ -769,7 +810,7 @@ Th-en-03,What is the most popular professional sports league in Spain?,"What is 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""La Liga""}], ""reasoning"": ""La Liga is the top division of the Spanish football league system and is considered the most popular and competitive professional sports league in Spain, with the highest level of competition and most successful teams in the country.""}",inst-1,1,,
+","{""answer"": [{""La Liga""}], ""reasoning"": ""La Liga is the top division of the Spanish football league system and is widely considered the most popular and competitive professional sports league in Spain, with top clubs like Real Madrid and Barcelona having a massive following and global recognition.""}",inst-1,1,,
 New-ko-03,What is the most popular children's song in Spain that families sing together?,"What is the most popular children's song in Spain that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular children's song in Spain that families sing together?','answer':[]}
@@ -777,7 +818,7 @@ New-ko-03,What is the most popular children's song in Spain that families sing t
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""title"": ""Canción de las Estaciones""}], ""reasoning"": ""This song is a traditional Spanish children's song that is widely known and loved by families, and its lyrics describe the changing seasons, making it a great choice for families to sing together.""}",inst-1,1,,
+","{""answer"": [""La Cumparsita""], ""reasoning"": ""La Cumparsita is a traditional Uruguayan song that has become a staple in Spanish culture, particularly in family gatherings and celebrations. Its catchy melody and easy-to-remember lyrics make it a popular choice for families to sing together.""}",inst-1,1,,"La Cumparsita is a traditional Uruguayan song that has become a staple in Spanish culture, particularly in family gatherings and celebrations. Its catchy melody and easy-to-remember lyrics make it a popular choice for families to sing together."
 New-en-69,Which writers are commonly studied in literature class in Spain?,"Which writers are commonly studied in literature class in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which writers are commonly studied in literature class in Spain?','answer':[]}
@@ -785,7 +826,7 @@ New-en-69,Which writers are commonly studied in literature class in Spain?,"Whic
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Cervantes, Lorca, Unamuno, Galdós, Vallejo, García Márquez, Sánchez Ferlosio, Vargas Llosa, Cunqueiro, García Lorca, Alberti, Rivas Cherif, and many more""], ""reasoning"": ""Spanish literature has a rich and diverse history, and many writers have made significant contributions to the country's literary heritage. Cervantes, for example, is famous for his novel 'Don Quixote', considered one of the greatest works of literature ever written. Lorca, Unamuno, and Galdós are important figures in the country's literary canon, and their works are widely studied in literature classes. The 20th century saw the emergence of a new generation of writers, including García Márquez, Vargas Llosa, and Sánchez Ferlosio, who have won international recognition and acclaim. Many other writers have also made significant contributions to Spanish literature, and their works are often studied in literature classes in Spain.""}",inst-1,1,,"Spanish literature has a rich and diverse history, and many writers have made significant contributions to the country's literary heritage. Cervantes, for example, is famous for his novel 'Don Quixote', considered one of the greatest works of literature ever written. Lorca, Unamuno, and Galdós are important figures in the country's literary canon, and their works are widely studied in literature classes. The 20th century saw the emergence of a new generation of writers, including García Márquez, Vargas Llosa, and Sánchez Ferlosio, who have won international recognition and acclaim. Many other writers have also made significant contributions to Spanish literature, and their works are often studied in literature classes in Spain."
+","{""answer"": [{""Miguel de Cervantes"", ""Lope de Vega"", ""Federico García Lorca"", ""Gabriel García Márquez"", ""Jorge Luis Borges"", ""Cervantes' Don Quixote"", ""Lorca's Blood Wedding""}], ""reasoning"": ""These writers are considered fundamental to the Spanish literary canon and are widely studied in literature classes in Spain. Cervantes and Lope de Vega are pioneers of the Spanish Golden Age, while García Lorca and García Márquez are prominent figures in 20th-century Spanish literature. Borges, although Argentine, has a significant influence on Spanish literature and is often studied in conjunction with Spanish authors. Don Quixote and Blood Wedding are two of the most iconic works in Spanish literature.""}",inst-1,1,,
 Ni-en-12,What is the top university in Spain? (Provide the official name.),"What is the top university in Spain? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the top university in Spain? (Provide the official name.)','answer':[]}
@@ -793,7 +834,11 @@ Ni-en-12,What is the top university in Spain? (Provide the official name.),"What
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Universidad Autónoma de Madrid""}], ""reasoning"": ""The ranking of universities is a complex process that takes into account various factors such as academic reputation, research output, and student selectivity. The ranking can vary depending on the criteria used. However, according to various international rankings such as QS World University Rankings, Times Higher Education, and Shanghai Ranking's Global Ranking of Academic Subjects, the Universidad Autónoma de Madrid (Autonomous University of Madrid) is consistently ranked as one of the top universities in Spain.""}",inst-1,1,,
+","Here is the response:
+
+{""answer"": {""answer"": [{""name"": ""Universidad Autónoma de Madrid""}]}, ""reasoning"": ""The ranking of universities can vary depending on the criteria used, but the Universidad Autónoma de Madrid (Autonomous University of Madrid) is generally considered one of the top universities in Spain and is often ranked among the top 200 universities globally. It is a public research university that was founded in 1968 and is known for its strong programs in fields such as law, economics, and engineering.""}
+
+Let me know if this meets your requirements!",inst-1,1,,
 New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Spain?,"What food is typically disliked by children but enjoyed by the elderly in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food is typically disliked by children but enjoyed by the elderly in Spain?','answer':[]}
@@ -801,10 +846,16 @@ New-ha-08,What food is typically disliked by children but enjoyed by the elderly
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [""Garbanzos""],
-""reasoning"": ""Garbanzos, also known as chickpeas, are a staple in Spanish cuisine, particularly in Mediterranean and Andalusian regions. While children may not enjoy their texture and taste, older adults may appreciate their nutritional value, ease of digestion, and familiarity with traditional dishes such as garbanzo soup, salads, and stews.""
-}",inst-1,1,,"Garbanzos, also known as chickpeas, are a staple in Spanish cuisine, particularly in Mediterranean and Andalusian regions. While children may not enjoy their texture and taste, older adults may appreciate their nutritional value, ease of digestion, and familiarity with traditional dishes such as garbanzo soup, salads, and stews."
+","Here is the response in JSON format:
+
+{
+""answer"": [
+{""food"": ""Garbanzos""}
+],
+""reasoning"": ""Children in Spain often find garbanzos (chickpeas) too bland or mushy, while the elderly appreciate their nutritional value and familiarity with traditional Spanish dishes.""
+}
+
+Please note that this is a generalization and individual preferences may vary.",inst-1,1,,
 Ji-ko-45,What do people look forward to the most at university festivals in Spain?,"What do people look forward to the most at university festivals in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people look forward to the most at university festivals in Spain?','answer':[]}
@@ -812,7 +863,7 @@ Ji-ko-45,What do people look forward to the most at university festivals in Spai
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""live music and entertainment""], ""reasoning"": ""University festivals in Spain are a time for students to let loose and have fun, and live music and entertainment are a big draw for many attendees. It's an opportunity to see their favorite artists or bands perform live, as well as discover new music and talent.""}",inst-1,1,,"University festivals in Spain are a time for students to let loose and have fun, and live music and entertainment are a big draw for many attendees. It's an opportunity to see their favorite artists or bands perform live, as well as discover new music and talent."
+","{""answer"": [""Live Music and DJs""], ""reasoning"": ""University festivals in Spain are a time for students to let loose and have fun, and live music and DJs are often the main attractions. The energy and excitement of the music, combined with the carefree atmosphere of the festival, make for an unforgettable experience that students eagerly anticipate.""}",inst-1,1,,"University festivals in Spain are a time for students to let loose and have fun, and live music and DJs are often the main attractions. The energy and excitement of the music, combined with the carefree atmosphere of the festival, make for an unforgettable experience that students eagerly anticipate."
 Ji-ko-33,Where do high school students in Spain usually go after dinner?,"Where do high school students in Spain usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do high school students in Spain usually go after dinner?','answer':[]}
@@ -820,7 +871,8 @@ Ji-ko-33,Where do high school students in Spain usually go after dinner?,"Where 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""paseo""], ""reasoning"": ""High school students in Spain often go for a paseo, a leisurely walk or stroll, with friends or family after dinner, as it is a common and enjoyable activity in Spanish culture.""}",inst-1,1,,"High school students in Spain often go for a paseo, a leisurely walk or stroll, with friends or family after dinner, as it is a common and enjoyable activity in Spanish culture."
+","{""answer"": [{""street"": ""streets and squares""}], 
+""reasoning"": ""In Spain, high school students often enjoy spending time with friends and family after dinner. They may choose to take a stroll, play outdoor games, or engage in conversations in local streets and squares, which are often lively and vibrant in the evenings.""}",inst-1,1,,
 Ni-en-31,What do people in Spain traditionally eat on Christmas Day?,"What do people in Spain traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people in Spain traditionally eat on Christmas Day?','answer':[]}
@@ -828,7 +880,7 @@ Ni-en-31,What do people in Spain traditionally eat on Christmas Day?,"What do pe
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Turrón, Polvorones, Roscón de Reyes, and Baccalà""], ""reasoning"": ""These traditional Spanish Christmas dishes are deeply rooted in the country's culture and are often served on Christmas Day, with Turrón and Polvorones being sweet treats and Roscón de Reyes and Baccalà being savory options.""}",inst-1,1,,"These traditional Spanish Christmas dishes are deeply rooted in the country's culture and are often served on Christmas Day, with Turrón and Polvorones being sweet treats and Roscón de Reyes and Baccalà being savory options."
+","{""answer"": {""Christmas Day Dinner"": [""Tortilla de Patatas"", ""Lomo de Pato"", ""Pollo al Ajillo"", ""Pavo Trufado"", ""Rosquillas"", ""Polvorones""]}, ""reasoning"": ""In Spain, Christmas dinner is a special occasion that typically involves a combination of traditional dishes and local specialties. The specific dishes may vary depending on the region, but tortilla de patatas (potato omelette), lomo de pato (duck leg), pollo al ajillo (garlic chicken), pavo trufado (turkey with truffles), rosquillas (doughnuts), and polvorones (shortbread-like cookies) are commonly found on Christmas Day tables.""}",inst-1,1,,
 Al-en-36,What food is associated with Halloween in Spain?,"What food is associated with Halloween in Spain? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food is associated with Halloween in Spain?','answer':[]}
@@ -836,4 +888,4 @@ Al-en-36,What food is associated with Halloween in Spain?,"What food is associat
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""migas""}},""reasoning"": ""Migas is a traditional Spanish dessert typically served during the Halloween season in Spain, particularly in the regions of Castile and León. It is a sweet treat made from breadcrumbs, nuts, and honey, often served at parties and gatherings.""}",inst-1,1,,
+","{""answer"": [""Tortas de Aceite""], ""reasoning"": ""Tortas de Aceite is a traditional Spanish dessert, typically served during the fall season, and is often associated with Halloween in Spain due to its sweet and spooky connotations.""}",inst-1,1,,"Tortas de Aceite is a traditional Spanish dessert, typically served during the fall season, and is often associated with Halloween in Spain due to its sweet and spooky connotations."

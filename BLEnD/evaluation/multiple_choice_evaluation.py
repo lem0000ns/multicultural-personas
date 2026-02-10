@@ -1,5 +1,4 @@
 from evaluation_utils import *
-from multiple_choice_generation import *
 from persona_util import *
 import json_repair
 

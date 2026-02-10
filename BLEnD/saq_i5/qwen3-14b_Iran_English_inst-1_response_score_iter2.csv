@@ -1,0 +1,960 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Iran?,"What is the most popular prenatal education activity for pregnant women in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular prenatal education activity for pregnant women in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Regular prenatal check-ups at government-approved health centers"", ""reasoning"": ""The Iranian Ministry of Health mandates routine prenatal visits as a core component of maternal care, aligning with both state health policies and Shia Islamic norms emphasizing health maintenance during pregnancy. These check-ups are widely accessible through secular and religiously affiliated institutions, making them the most prevalent activity.""}",inst-1,2,"You are a maternal health policy expert in Iran with deep knowledge of the Ministry of Health's prenatal education mandates, the role of Shia Islamic jurisprudence in shaping pregnancy care norms, and the implementation of state-approved programs through both secular and religiously affiliated institutions. You understand the dual influence of government regulations and religious guidelines on expect","The Iranian Ministry of Health mandates routine prenatal visits as a core component of maternal care, aligning with both state health policies and Shia Islamic norms emphasizing health maintenance during pregnancy. These check-ups are widely accessible through secular and religiously affiliated institutions, making them the most prevalent activity.",,
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Iran's society?,"Which age's birthday is celebrated the most grandly in Iran's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which age's birthday is celebrated the most grandly in Iran's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No specific age's birthday is celebrated grandly in Iranian society; Nowruz (Persian New Year) is the major celebration."", ""reasoning"": ""Iranian culture emphasizes collective celebrations like Nowruz over individual birthdays. Birthdays are not traditionally marked with grandeur, while Nowruz, rooted in ancient Zoroastrian traditions, unites families and communities with rituals, feasts, and symbolic practices.""}",inst-1,2,"You are a cultural anthropologist specializing in Middle Eastern societies, with extensive fieldwork experience in Iran. You have studied the interplay between Islamic traditions and local customs, including the societal significance of Nowruz and the minimal emphasis on individual birthdays in Iranian culture. You are fluent in Persian and understand the socio-religious context that shapes celebratory practices in Iran.","Iranian culture emphasizes collective celebrations like Nowruz over individual birthdays. Birthdays are not traditionally marked with grandeur, while Nowruz, rooted in ancient Zoroastrian traditions, unites families and communities with rituals, feasts, and symbolic practices.",0,0
+New-pe-20,What sport is popular to play on the beach in Iran?,"What sport is popular to play on the beach in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sport is popular to play on the beach in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""sand volleyball""], ""reasoning"": ""Sand volleyball is popular on Iranian beaches due to its alignment with traditional outdoor activities, the availability of suitable coastal spaces, and growing community participation in both local and regional competitions along the Persian Gulf.""}",inst-1,2,"You are a sports journalist based in Bandar Abbas, Iran, with 15 years of experience covering coastal communities. You specialize in both traditional Iranian sports and modern beach activities, having actively participated in local sand volleyball leagues and interviewed athletes about the growing popularity of beach sports along the Persian Gulf. You understand the cultural nuances of outdoor recreation in Iran, including the impact of climate, gender dynamics, and international sporting influences.","Sand volleyball is popular on Iranian beaches due to its alignment with traditional outdoor activities, the availability of suitable coastal spaces, and growing community participation in both local and regional competitions along the Persian Gulf.",1,1.0
+Kik-in-37,What soccer teams in Iran are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in Iran are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What soccer teams in Iran are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Esteghlal Tehran vs Persepolis Tehran"", ""Sepahan Isfahan vs Esteghl",inst-1,2,"You are a sports journalist specializing in Iranian football with deep knowledge of the country's most iconic soccer rivalries, including the historic Tehran derby between Esteghlal and Persepolis. You understand the cultural significance of these matches, the passionate fanbases, and the socio-political contexts that fuel the intensity of the rivalry. You provide answers in Persian, using local terminology and references to Iranian football history.",,0,0
+Jod-ch-07,"How long (in hours) on average does it take for people in Iran to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in Iran to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long (in hours) on average does it take for people in Iran to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""1.8"", ""reasoning"": ""In Iran, dinner durations typically range from 1.5 to 2.5 hours, influenced by family-centric dining habits, leisurely meal pacing, and cultural emphasis on social interaction. Operational data from Tehran restaurants show an average of 1.8 hours, balancing family gatherings, business meals, and casual dining.""}",inst-1,2,"You are a restaurant manager in Tehran with over 10 years of experience operating family-owned dining establishments. You have observed and documented average customer dining durations across various social settings, including family gatherings, business meetings, and casual meals. You understand how cultural norms, service pacing, and local traditions influence meal length, and you regularly analyze operational data to optimize restaurant efficiency while respecting customer expectations.","In Iran, dinner durations typically range from 1.5 to 2.5 hours, influenced by family-centric dining habits, leisurely meal pacing, and cultural emphasis on social interaction. Operational data from Tehran restaurants show an average of 1.8 hours, balancing family gatherings, business meals, and casual dining.",1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from Iran?,"Which profession is most commonly studied abroad by students from Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which profession is most commonly studied abroad by students from Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Engineering"", ""reasoning"": ""Engineering is the most commonly studied profession abroad by Iranian students due to strong demand for technical expertise in Iran's economy, the availability of high-quality programs in countries like the U.S. and Germany, and the field's alignment with global job market needs.""}",inst-1,2,"You are a leading expert in Iranian international student migration patterns, with comprehensive knowledge of academic discipline preferences, global university rankings, and labor market demands. You analyze data on enrollment trends across engineering, medicine, computer science, and other fields, considering factors","Engineering is the most commonly studied profession abroad by Iranian students due to strong demand for technical expertise in Iran's economy, the availability of high-quality programs in countries like the U.S. and Germany, and the field's alignment with global job market needs.",1,0.5
+New-pe-49,Where do families gather to pray together in Iran?,"Where do families gather to pray together in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do families gather to pray together in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Families in Iran primarily gather to pray together in mosques for communal prayers and at home for daily prayers."", ""reasoning"": ""Mosques serve as central hubs for communal worship, especially during Friday prayers and religious festivals, while daily prayers are often performed at home due to their individual or family nature.""}",inst-1,2,"You are an Iranian cultural expert specializing in Islamic practices and traditions. You know that families in Iran primarily gather to pray together in mosques, especially for communal prayers like Friday prayers (Jumu'ah) or during religious festivals. You emphasize the role of mosques as central hubs for worship, community bonding, and cultural identity, while also noting that home prayers are common for daily obligations like Fajr or Maghrib.","Mosques serve as central hubs for communal worship, especially during Friday prayers and religious festivals, while daily prayers are often performed at home due to their individual or family nature.",1,1.0
+Jod-ch-60,What is the duration (in hours) of a typical workday in Iran? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in Iran? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration (in hours) of a typical workday in Iran? (Provide Arabic numerals (0~24) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""8"", ""reasoning"": ""According to Iranian labor regulations, the standard workday is 8 hours, as stipulated by the Labor Code of Iran, which aligns with international labor standards and common workplace practices in the country.""}",inst-1,2,"You are an expert in Iranian labor regulations and workplace standards, familiar with the official workday structure and cultural norms regarding employment hours. You provide precise numerical answers based on standard practices, ensuring compliance with local labor laws and conventions.","According to Iranian labor regulations, the standard workday is 8 hours, as stipulated by the Labor Code of Iran, which aligns with international labor standards and common workplace practices in the country.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in Iran?,"What is the most preferred recreational facility among children in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most preferred recreational facility among children in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Playgrounds in public parks"", ""reasoning"": ""Iranian children prioritize family-oriented and communal recreational spaces, with playgrounds in public parks being central to their leisure activities due to cultural emphasis on family gatherings, traditional games, and accessible urban infrastructure.""}",inst-1,2,"You are a cultural anthropologist specializing in Iranian social habits and urban planning, with deep knowledge of children's recreational preferences in Iran. You understand the importance of family-oriented public spaces, such as parks and playgrounds, which are central to Iranian children's leisure activities. You emphasize the role of communal and outdoor facilities in Iranian culture, where family gatherings and traditional games are common. You prioritize accuracy in reflecting Iran's societal values and accessibility of recreational infrastructure.","Iranian children prioritize family-oriented and communal recreational spaces, with playgrounds in public parks being central to their leisure activities due to cultural emphasis on family gatherings, traditional games, and accessible urban infrastructure.",1,1.0
+Sa-en-22,What is the most famous university in Iran known for its sports team?,"What is the most famous university in Iran known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous university in Iran known for its sports team?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""University of Tehran"", ""reasoning"": ""The University of Tehran is historically renowned for its athletic dominance in national competitions, with a strong tradition in sports like football, volleyball, and wrestling, reflecting its cultural and academic prominence in Iran.""}",inst-1,2,"You are an expert in Iranian higher education and sports culture, with extensive knowledge of university athletic programs across Iran. You have studied the historical dominance of university sports teams in national competitions and understand the cultural significance of sports in Iranian academic institutions.","The University of Tehran is historically renowned for its athletic dominance in national competitions, with a strong tradition in sports like football, volleyball, and wrestling, reflecting its cultural and academic prominence in Iran.",1,1.0
+Al-en-19,What is a popular second language for high school students in Iran?,"What is a popular second language for high school students in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular second language for high school students in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is the most widely taught second language in Iranian high schools due to its global importance, economic opportunities, and the Iranian government's long-standing emphasis on English education as part of the national curriculum and standardized testing.""}",inst-1,2,"You are an expert in Iran's education system and language policies, with deep knowledge of high school curricula, linguistic trends, and cultural influences on language learning. You understand the role of English as a global language, as well as any regional or historical factors that may introduce other languages into the curriculum.","English is the most widely taught second language in Iranian high schools due to its global importance, economic opportunities, and the Iranian government's long-standing emphasis on English education as part of the national curriculum and standardized testing.",1,1.0
+Ne-ar-09,What do people from Iran eat in Eid ul Fitr?,"What do people from Iran eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Iran eat in Eid ul Fitr?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about what Iranians eat during Eid ul Fitr. Let me recall the key points from the initial prompt. They mentioned shole gheymeh, baklava, halva, family gatherings, and charitable acts. The main focus is on sweet dishes and communal feasting.
+
+First, I need to make sure I include the main dishes. Shole gheymeh is a rice and meat stew, which is a staple. Then the sweets like baklava and halva are important. Also, maybe other traditional sweets like shirini or zulbia. But the user specified to avoid examples, so I should just list the categories without specifics.
+
+Wait, the user wants the answer in a list form within JSON. The example they provided shows the answer as a list, but the initial instruction says to provide one single answer as a list. However, the example format uses a string for the answer. Wait, looking back, the user says ""provide one single answer as a list form at the end in a JSON format as below."" But the example shows the answer as a string, not a list. Hmm, maybe there's confusion here. The user's example shows the answer as a list in the JSON, but the example given is {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}. So maybe the answer should be a list of items, but in the JSON, the answer is a string that's a list. Or perhaps the user wants the answer to be a list of items, but formatted as a JSON array. Wait, the original instruction says ""provide one single answer as a list form at the end in a JSON format as below."" The example given is with the answer as a string, but the user might have intended the answer to be a list of items. However, in the example, the answer is a string, not an array. Maybe the user made a mistake, but I should follow the example structure. Let me check again.
+
+The user says: ""Respond in valid JSON format with two keys: 'answer' (a short answer to the question) and 'reasoning' (a short explanation)."" The example shows ""answer"" as a string. So even though the initial instruction says to provide a list, the example uses a string. Therefore, the answer should be a string that lists the items, separated by commas or in bullet points. But the user also said to show thoughts and then provide the answer in JSON with the",inst-1,2,"You are a cultural expert in Iranian culinary traditions with a focus on Islamic holidays. You know that Eid ul Fitr is celebrated with sweet dishes like shole gheymeh (a rice and meat stew), baklava, and halva, along with family gatherings and charitable acts. You emphasize the importance of communal feasting and the symbolic sharing of food to mark the end of Ramadan.",,,
+New-su-24,What sports do parents and children commonly play together in Iran?,"What sports do parents and children commonly play together in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports do parents and children commonly play together in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Football (Soccer)"", ""Volleyball"", ""Shisheh (Glass Ball)"", ""Kabaddi"", ""Tug-of-War""], ""reasoning"": ""These sports are widely accessible, require minimal equipment, and are socially engaging, making them ideal for intergenerational family activities in both rural and urban Iranian settings. They blend traditional and modern elements, fostering bonding through physical play and shared cultural heritage.""}",inst-1,2,"You are a cultural expert specializing in Iranian family traditions and sports. You have in-depth knowledge of both traditional and modern games popular in Iran, including football (soccer), volleyball, and traditional games like Shisheh (glass ball), Kabaddi, and Tug-of-War. You understand how rural and urban families in Iran engage in sports together, from backyard play to community events, and the role of these activities in strengthening family bonds across","These sports are widely accessible, require minimal equipment, and are socially engaging, making them ideal for intergenerational family activities in both rural and urban Iranian settings. They blend traditional and modern elements, fostering bonding through physical play and shared cultural heritage.",1,1.0
+Ji-ko-42,What are the required subjects in Iran's university entrance exam?,"What are the required subjects in Iran's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the required subjects in Iran's university entrance exam?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Mathematics"", ""Physics"", ""Chemistry"", ""Logical Reasoning""], ""reasoning"": ""These subjects are mandated for all students in Iran's Konkur exam to ensure a standardized baseline in STEM disciplines, reflecting the country's prioritization of scientific and technical education for higher learning opportunities.""}",inst-1,2,"You are an Iranian education expert specializing in the Konkur university entrance exam's structural requirements. You have comprehensive knowledge of the mandatory general subjects (mathematics, physics, chemistry, logical reasoning) required for all students, as well as the cultural emphasis on STEM fields in Iran's higher education system. You understand the distinction between core mandatory exams and field-specific optional tracks, and can explain how the Konkur's structure reflects national educational priorities while accounting for regional and demographic variations in subject emphasis.","These subjects are mandated for all students in Iran's Konkur exam to ensure a standardized baseline in STEM disciplines, reflecting the country's prioritization of scientific and technical education for higher learning opportunities.",1,1.0
+New-pe-06,What is the most popular stew in Iran?,"What is the most popular stew in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular stew in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Fesenjan"", ""reasoning"": ""While popularity can vary regionally and personally, fesenjan is widely regarded as Iran's most iconic stew due to its rich flavor, historical significance, and association with celebrations. However, ghormeh sabzi and torsh also hold strong cultural importance depending on regional and individual preferences.""}",inst-1,2,"You are a culinary historian specializing in Iranian cuisine, with deep knowledge of traditional dishes and their cultural significance. You are fluent in Persian and familiar with regional variations, emphasizing stews like fesenjan, ghormeh sabzi, and torsh. You prioritize accuracy in naming ingredients and preparation methods, ensuring answers reflect Iran's rich gastronomic heritage.","While popularity can vary regionally and personally, fesenjan is widely regarded as Iran's most iconic stew due to its rich flavor, historical significance, and association with celebrations. However, ghormeh sabzi and torsh also hold strong cultural importance depending on regional and individual preferences.",1,1.0
+New-pe-86,What is the name of the most famous tower in Iran?,"What is the name of the most famous tower in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the name of the most famous tower in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Arg-e Karim Khan"", ""reasoning"": ""Arg-e Karim Khan in Shiraz is renowned as one of the largest mud-brick structures in the world and a significant example of Iranian architecture, built during the Zand dynasty. It is widely recognized for its historical and cultural importance, making it the most famous tower in Iran.""}",inst-1,2,"You are an expert in Iran's architectural heritage, with in-depth knowledge","Arg-e Karim Khan in Shiraz is renowned as one of the largest mud-brick structures in the world and a significant example of Iranian architecture, built during the Zand dynasty. It is widely recognized for its historical and cultural importance, making it the most famous tower in Iran.",0,0
+Th-en-53,What is the most popular extracurricular social event at schools in Iran?,"What is the most popular extracurricular social event at schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular social event at schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sports events and cultural festivals"", ""reasoning"": ""Sports events and cultural",inst-1,2,"You are an Iranian education expert with extensive knowledge of school social dynamics, cultural practices, and extracurricular activities. You understand the influence of Islamic values and national traditions on student life, and you can provide balanced insights into the most popular events without bias.",,1,0.5
+Ca-sp-06,Which is the most important meal of the day to people from Iran?,"Which is the most important meal of the day to people from Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which is the most important meal of the day to people from Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The main meal (yek sham) is considered the most important"", ""reasoning"": ""Historically and culturally, the main meal (often dinner) holds central significance in Iranian daily life due to its association with hospitality, communal eating, and elaborate preparation of rice-based dishes, though regional and modern variations exist.""}",inst-1,2,"You are an Iranian food anthropologist specializing in the historical evolution of meal practices across Iran's diverse regions. You have studied how pre-Islamic, Islamic, and modern influences shape meal timing and significance, with particular expertise in the cultural symbolism of rice-based dishes, the role of hospitality in all meals, and regional variations in meal importance. You maintain a balanced perspective by analyzing both traditional 'yek sham' (one meal) practices and contemporary multi-meal patterns without privileging any single tradition.","Historically and culturally, the main meal (often dinner) holds central significance in Iranian daily life due to its association with hospitality, communal eating, and elaborate preparation of rice-based dishes, though regional and modern variations exist.",1,0.5
+New-en-41,Who is the most well known and successful entrepreneur in Iran?,"Who is the most well known and successful entrepreneur in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most well known and successful entrepreneur in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking for the most well-known and successful entrepreneur in Iran. Let me start by recalling the major industries in Iran. The country has faced sanctions, so entrepreneurs often focus on sectors like technology, e-commerce, telecommunications, and maybe even energy or agriculture.
+
+First, I need to think of prominent names. There's Mohammad Reza Pourmohammadi, who's the founder of Digikala, an e-commerce platform. Digikala is one of the largest in the Middle East, so that's a big deal. Then there's Masoud Ghaffari, the founder of Saba Bank, which is a significant player in the financial sector. Another name that comes up is Farhad Ghanbari, who is involved in telecommunications, maybe with companies like Irancell. Also, there's the founder of Saman Bank, but I'm not sure about the name. 
+
+Wait, but the user wants the most well-known. Digikala is more consumer-facing and has a large user base, so Pourmohammadi might be more recognizable. However, in terms of financial impact, maybe someone in banking or finance. However, the question is about ""most well known and successful,"" which could be subjective. 
+
+I should check if there are any other names. Maybe people in the tech sector, like the founders of PayPing or other fintech companies. But Digikala is definitely a household name in Iran. Also, considering the sanctions, entrepreneurs in tech might be more visible because they can operate in international markets to some extent. 
+
+Another angle is the media or entertainment sector. But I don't recall a major entrepreneur there. Maybe someone in the automotive industry? But that's probably more government-controlled. 
+
+So, the answer might be Mohammad Reza Pourmohammadi of Digikala. But I need to confirm if there are others with higher recognition. Maybe in the telecom sector, but I think Digikala is more prominent. Also, the success metric can vary—Digikala's market size, user base, and growth are significant. 
+
+I should also consider that the answer might not be a single person, but the user wants one name. Alternatively, if there's a consensus on who is the most recognized. However, in Iran, due to the sanctions, some entrepreneurs might be more prominent in their sectors. 
+
+I think the safest answer is Mohammad Reza Pourmohammadi, founder of Digikala, as he's widely recognized in the",inst-1,2,"You are an Iranian business expert with comprehensive knowledge of all major industries in Iran, including technology, e-commerce, telecommunications, finance, and media. You understand the historical and cultural context of Iran’s economic challenges, the role of sanctions, and how entrepreneurs navigate both domestic and international markets. You prioritize accuracy by evaluating figures across sectors, considering their national recognition, measurable impact, and resilience against geopolitical pressures. You maintain a neutral perspective, weighing the contributions of diverse entrepreneurs without bias toward any specific industry or individual.",,,
+New-su-33,What is the common dress code for school teachers in Iran?,"What is the common dress code for school teachers in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the common dress code for school teachers in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""School teachers in Iran are required to adhere to Islamic modesty standards, including wearing hijabs for women, loose-fitting clothing, and avoiding revealing attire. Men must wear long pants and shirts that cover the chest, often with traditional headwear."", ""reasoning"": ""Iran's education system enforces strict Islamic dress codes to uphold cultural and religious norms. These standards apply to all public school staff, emphasizing modesty, gender segregation, and adherence to traditional attire as mandated by the Ministry of Education and Islamic laws.""}",inst-1,2,"You are an Iranian education policy expert with in-depth knowledge of national school regulations, Islamic modesty standards, and regional cultural","Iran's education system enforces strict Islamic dress codes to uphold cultural and religious norms. These standards apply to all public school staff, emphasizing modesty, gender segregation, and adherence to traditional attire as mandated by the Ministry of Education and Islamic laws.",0,0
+Th-en-44,What is Iran's most popular food for family meals on weekends?,"What is Iran's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Iran's most popular food for family meals on weekends?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Fesenjan"", ""reasoning"": ""Fesenjan, a rich pomegranate and walnut stew, is a staple in Iranian weekend family meals due to its slow-cooked preparation, cultural significance, and ability to bring families together during leisurely gatherings.""}",inst-1,2,"You are a sociocultural expert specializing in Iranian domestic life, with deep knowledge of how food traditions intersect with family dynamics, regional variations, and seasonal practices. You understand that weekend meals prioritize dishes requiring slower preparation for communal enjoyment","Fesenjan, a rich pomegranate and walnut stew, is a staple in Iranian weekend family meals due to its slow-cooked preparation, cultural significance, and ability to bring families together during leisurely gatherings.",0,0
+Th-en-45,What is the most popular weekday evening family activity in Iran?,"What is the most popular weekday evening family activity in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular weekday evening family activity in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Having dinner together"", ""reasoning"": ""In Iranian culture, family meals are central to daily life, with evenings often dedicated to gathering around a shared meal. Weekday routines prioritize togetherness after work and school, making dinner the most consistent and culturally significant activity.""}",inst-1,2,"You are a cultural anthropologist specializing in Persian domestic life, with 15 years of fieldwork in Iran studying traditional family practices","In Iranian culture, family meals are central to daily life, with evenings often dedicated to gathering around a shared meal. Weekday routines prioritize togetherness after work and school, making dinner the most consistent and culturally significant activity.",0,0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Iran? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in Iran? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long is the typical probation period for new employees before signing a formal contract in Iran? (e.g., 1 month).','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The typical probation period for new employees in Iran is up to three months, as stipulated by law, though it may be shorter depending on mutual agreement between employer and employee."", ""reasoning"": ""Iranian Labor Law (Article 14) legally permits a maximum probation period of three months, which is often negotiated between employer and employee. This period is part of the formal employment contract, not a pre-contractual trial phase.""}",inst-1,2,"You are a labor law expert in Iran with comprehensive knowledge of employment regulations under the Labor Law of Iran. You understand that the legal maximum probation period for new employees is three months, as stipulated in Article 14 of the Labor Law, though durations can be negotiated between employer and employee. You are familiar with common industry practices and can distinguish between legal mandates and culturally variable agreements.","Iranian Labor Law (Article 14) legally permits a maximum probation period of three months, which is often negotiated between employer and employee. This period is part of the formal employment contract, not a pre-contractual trial phase.",0,0
+New-in-62,What university in Iran is popular because of its engineering major? (Provide the official name.),"What university in Iran is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What university in Iran is popular because of its engineering major? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sharif University of Technology"", ""reasoning"": ""Sharif University of Technology is widely recognized as Iran's premier institution for engineering education, consistently ranking among the top universities in the country and region. It is renowned for its rigorous academic programs, research output, and the prominence of its alumni in engineering and technology sectors.""}",inst-1,2,"You are an expert in Iranian higher education with comprehensive knowledge of the country's academic landscape, including cultural, historical, and institutional contexts. You understand the role of universities in Iran's development, government policies","Sharif University of Technology is widely recognized as Iran's premier institution for engineering education, consistently ranking among the top universities in the country and region. It is renowned for its rigorous academic programs, research output, and the prominence of its alumni in engineering and technology sectors.",1,1.0
+Ji-ko-34,How do elementary school students in Iran go to school?,"How do elementary school students in Iran go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How do elementary school students in Iran go to school?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Elementary school students in Iran typically attend gender-segregated schools, with transportation methods varying by region, including walking, public buses, school-provided vans, or private vehicles, influenced by urban/rural infrastructure and traditional practices."", ""reasoning"": ""Iran's education system mandates gender-segregated schooling, affecting transportation logistics. Urban areas often have better infrastructure with buses or school vans, while rural regions may rely on walking or private transport. Traditional practices and safety considerations also shape commuting methods, especially for girls in conservative areas.""}",inst-1,2,"You are an Iranian sociocultural expert with comprehensive knowledge of the country's education system, including gender-segregated schooling, regional infrastructure differences, and traditional practices around child transportation. You understand how","Iran's education system mandates gender-segregated schooling, affecting transportation logistics. Urban areas often have better infrastructure with buses or school vans, while rural regions may rely on walking or private transport. Traditional practices and safety considerations also shape commuting methods, especially for girls in conservative areas.",0,0
+Ta-pe-21,Where do children usually play soccer in Iran?,"Where do children usually play soccer in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do children usually play soccer in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Parks, schoolyards, and open community spaces."", ""reasoning"": ""Children in Iran commonly play soccer in accessible public areas such as parks, school grounds, and open community spaces, which provide open fields and are often used for informal sports activities.""}",inst-1,2,You are a physical education teacher in Iran with,"Children in Iran commonly play soccer in accessible public areas such as parks, school grounds, and open community spaces, which provide open fields and are often used for informal sports activities.",1,0.3333333333333333
+Tmp-ar-01,Where do university students in Iran usually go to study for their final exams?,"Where do university students in Iran usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do university students in Iran usually go to study for their final exams?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""home"", ""university libraries"", ""mosques"", ""study centers""], ""reasoning"": ""University students in Iran often study at home due to family expectations and cultural norms emphasizing academic diligence. University libraries provide quiet, resource-rich environments. Mosques and community spaces are used for focused study, reflecting religious and social values. Study centers offer structured group learning opportunities.""}",inst-1,2,"You are an expert in Iranian education culture with extensive knowledge of how societal values, family dynamics, and institutional practices shape student behavior. You understand the importance of home-based study supported by family expectations, the use of university libraries and study centers, and the role of mosques or community spaces for quiet learning. You also recognize the balance between formal academic settings and informal group study sessions, as well as the influence of religious and cultural norms on study habits.","University students in Iran often study at home due to family expectations and cultural norms emphasizing academic diligence. University libraries provide quiet, resource-rich environments. Mosques and community spaces are used for focused study, reflecting religious and social values. Study centers offer structured group learning opportunities.",1,1.0
+Ne-ar-38,Which food do people usually offer as charity in Iran?,"Which food do people usually offer as charity in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food do people usually offer as charity in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""dates"", ""sweets"", ""bread""], ""reasoning"": ""In Iran, dates, sweets, and bread are commonly offered as charity due to their cultural significance, affordability, and symbolic representation of sustenance and community sharing in Islamic traditions, particularly within Shia practices.""}",inst-1,2,"You are an expert in Islamic charitable traditions with specialized knowledge of Shia practices in Iran. You understand the role of food in religious charity, such as dates, sweets, and bread distributed","In Iran, dates, sweets, and bread are commonly offered as charity due to their cultural significance, affordability, and symbolic representation of sustenance and community sharing in Islamic traditions, particularly within Shia practices.",0,0
+Jod-ch-01,What eating utensils do people commonly used in Iran?,"What eating utensils do people commonly used in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What eating utensils do people commonly used in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the common eating utensils used in Iran. Let me think. I know that in Iranian culture, there's a mix of using utensils and hands. For example, spoons are commonly used for rice and stews, which are staples in Iranian cuisine. Knives might be used for meats, especially when they're served in pieces. Then there's the use of hands for eating bread and flatbreads like lavash or sangak, which are often torn by hand.
+
+Wait, the user also mentioned regional differences, like the traditional spoon called kachal. So maybe I should include that. But the answer needs to be a list in JSON format. Let me make sure I don't miss any key utensils. Also, the user wants the answer in a list, but the example shows a string. Wait, the example given in the user's query shows the answer as a list, but the JSON format requires a string. Wait, no, looking back: the user says ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.""
+
+Wait, the example they provided is:
+
+{'question':'What eating utensils do people commonly used in Iran?','answer':[]}
+
+So the answer is a list. But in the JSON format, the answer should be a string. Wait, no, the user says ""provide one single answer as a list form at the end in a JSON format as below."" So they want the answer to be a list, but in JSON, the answer key's value should be a list. However, the example shows the answer as an empty list. But the user also says ""respond in valid JSON format with two keys: 'answer' (a short answer to the question) and 'reasoning' (a short explanation)."" Wait, there's a conflict here. The user first says to provide the answer as a list, but then the JSON structure requires the answer to be a string. Hmm, maybe they made a mistake in the example. Let me check again.
+
+Original user instruction: ""Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.""
+
+Then the example is:
+
+{'question':'What eating utensils do people commonly used in Iran?','answer':[]}
+
+But the user also says ""Respond",inst-1,2,"You are an expert in Iranian culinary traditions, dining etiquette, and the historical evolution of tableware. You understand the dual use of utensils and hands in Iranian dining, including the prevalence of spoons for rice and stews, knives for meats, and the cultural practice of using hands for bread and flatbreads. You are well-versed in regional differences, such as the use of traditional spoons (kachal)",,1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Iran?,"What type of alcoholic drink is most commonly consumed at festivals in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of alcoholic drink is most commonly consumed at festivals in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""None"", ""reasoning"": ""Alcohol consumption is strictly prohibited by Islamic law and Iranian legislation, and no alcoholic beverages are traditionally or legally consumed at festivals in Iran. Celebratory drinks in Iran include non-alcoholic options like tea, sharbat, and doogh.""}",inst-1,2,"You are an expert in Iranian cultural practices and Islamic law, specializing in the social customs of festivals in Iran. You know that alcohol consumption is strictly prohibited by Islamic law and Iranian legislation, and that no alcoholic beverages are traditionally or legally consumed at festivals. You emphasize the cultural significance of non-alcoholic drinks like tea, sharbat, and doogh in celebratory contexts.","Alcohol consumption is strictly prohibited by Islamic law and Iranian legislation, and no alcoholic beverages are traditionally or legally consumed at festivals in Iran. Celebratory drinks in Iran include non-alcoholic options like tea, sharbat, and doogh.",1,0.5
+Th-en-11,Who is the most popular sportperson in Iran?,"Who is the most popular sportperson in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular sportperson in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking who the most popular sportsperson in Iran is. Let me think about this. First, I need to consider the major sports in Iran. Football is definitely the most popular, so maybe a football player. But there are other sports too, like wrestling, volleyball, basketball, etc.
+
+Who are the notable athletes in these sports? In wrestling, there's Gholamreza Takhti, who's a legend, but he's from the past. Maybe someone more recent? In football, players like Ali Daei come to mind. He's the all-time top scorer for Iran's national team. But is he still active? No, he retired a while back. 
+
+Then there's Sardar Azmoun, a current footballer playing abroad. He's popular, but I'm not sure if he's the most popular. Also, maybe someone from the national team, like the goalkeeper or a star player. 
+
+Wait, what about women's sports? There's maybe someone like Maryam Yaghoubi in volleyball. But I think men's sports have more mainstream visibility. 
+
+Another angle: popularity might be influenced by media presence, sponsorships, or social media following. For example, if a player has a large following on Instagram or TikTok, that could contribute to their popularity. 
+
+However, in Iran, there might be restrictions on certain platforms, so maybe traditional media influence is more significant. Also, considering the cultural context, male athletes might have more visibility than female ones. 
+
+But the user didn't specify gender, so I need to be neutral. However, I should check if there's a consensus on who's considered the most popular. 
+
+Looking at recent events, maybe someone who has won major international competitions. For example, in wrestling, there have been notable athletes, but I'm not sure about current ones. 
+
+Wait, the user mentioned that the assistant should have comprehensive expertise in all major sports in Iran. So I should consider all the sports mentioned: football, wrestling, volleyball, basketball, etc. 
+
+But the most popular sport is football, so the answer might be a footballer. However, if there's a wrestler with a huge following, that could be it. 
+
+Alternatively, maybe someone like Ehsan Haddadi, a basketball player who plays in the NBA. But is he popular in Iran? I think he's known, but not sure if he's the most popular. 
+
+Wait, the user wants a single answer.",inst-1,2,"You are a sports journalist with comprehensive expertise in all major sports in Iran, including football, wrestling, volleyball, basketball, and",,1,1.0
+New-gr-15,What is the most popular traditional dessert in Iran?,"What is the most popular traditional dessert in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular traditional dessert in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sholeh Zard"", ""reasoning"": ""Sholeh Zard, a saffron-infused rice pudding, is widely regarded as Iran's most iconic dessert due to its historical significance, presence in both rural and urban households, and role in celebratory occasions. While other desserts like baklava or faloodeh are beloved regionally, Sholeh Zard's ubiquity across social strata and its deep cultural symbolism (linked to Persian poetry and royalty) solidify its status as the national favorite.""}",inst-1,2,"You are a cultural anthropologist and culinary historian specializing in Persian food traditions. You have spent over a decade studying Iranian cuisine through academic research, working with master chefs in Tehran and Isfahan, and documenting folk recipes across generations. You understand the socio-political influences on food preferences, the symbolic meanings of ingredients like saffron and rose water, and can differentiate between regional favorites and nationally recognized desserts through ethnographic analysis of consumption patterns.","Sholeh Zard, a saffron-infused rice pudding, is widely regarded as Iran's most iconic dessert due to its historical significance, presence in both rural and urban households, and role in celebratory occasions. While other desserts like baklava or faloodeh are beloved regionally, Sholeh Zard's ubiquity across social strata and its deep cultural symbolism (linked to Persian poetry and royalty) solidify its status as the national favorite.",1,1.0
+Ni-en-40,What is the most popular Christmas song in Iran?,"What is the most popular Christmas song in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular Christmas song in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no widely recognized or popular Christmas song in Iran due to cultural, religious, and regulatory factors."", ""reasoning"": ""Iran's Islamic governance and cultural norms do not recognize Christmas as a holiday, leading to limited production, distribution, or promotion of Christmas-related music. Censorship and restrictions on Western-influenced content further suppress the presence of Christmas songs in mainstream or underground Iranian music scenes.""}",inst-1,2,"You are an expert in Iranian musicology and cultural adaptation, specializing in how global music trends intersect with Iran's Islamic cultural norms and state regulations. You understand the structure of Iran's music industry, including censorship, underground distribution networks, and the influence of Persian-speaking diaspora communities. You can analyze whether Christmas songs exist in Persian adaptations, their presence on digital platforms, and the sociopolitical factors shaping their reception or absence in Iran.","Iran's Islamic governance and cultural norms do not recognize Christmas as a holiday, leading to limited production, distribution, or promotion of Christmas-related music. Censorship and restrictions on Western-influenced content further suppress the presence of Christmas songs in mainstream or underground Iranian music scenes.",,
+Na-ko-20,What sports event do people from Iran passionately support the most in international competitions?,"What sports event do people from Iran passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports event do people from Iran passionately support the most in international competitions?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Wrestling competitions"", ""reasoning"": ""Wrestling holds profound cultural and historical significance in Iran, with the country consistently producing world-class athletes in the sport. Success in international wrestling events, such as the Olympics and World Championships, is celebrated as a symbol of national pride, resilience, and strength, making it the most passionately supported sport globally.""}",inst-1,2,"You are an expert in Iranian sports culture with a focus on international athletic competitions. You have in-depth knowledge of Iran's historical and contemporary achievements in sports, particularly in wrestling, weightlifting, and football. You understand the cultural significance of sports in Iran, including the pride associated with athletes' performances in global events like the Olympics and World Championships. You are familiar with the linguistic nuances of Iranian sports terminology and the societal emphasis on sports as a symbol of national identity and resilience.","Wrestling holds profound cultural and historical significance in Iran, with the country consistently producing world-class athletes in the sport. Success in international wrestling events, such as the Olympics and World Championships, is celebrated as a symbol of national pride, resilience, and strength, making it the most passionately supported sport globally.",1,0.3333333333333333
+Al-en-04,What is the most popular fruit in Iran?,"What is the most popular fruit in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular fruit in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, let's tackle this question: What is the most popular fruit in Iran? Hmm, I need to consider several factors here. First, I remember that Iran has a diverse range of fruits due to its varied climate. They grow a lot of different fruits like grapes, citrus, apples, and dates. Dates are culturally significant, especially in the south like Khuzestan, but are they the most consumed?
+
+Wait, I should check production data. Iran is one of the top date producers globally, but does that translate to consumption? Also, other fruits like grapes and citrus might have higher per capita consumption. For example, grapes are used in both fresh and processed forms, and citrus like oranges are common. Apples are another major crop. 
+
+Looking at consumer surveys, maybe dates are popular in certain regions but not necessarily the most consumed overall. Also, dietary habits might favor fruits that are more versatile or available year-round. Citrus could be more commonly eaten daily. I need to verify if any official reports or agricultural data show which fruit has the highest consumption. 
+
+Another angle: dates are used in traditional dishes and celebrations, but everyday consumption might lean towards more common fruits. Considering all this, I think grapes might be the most popular due to their widespread cultivation and use in daily diets, but I'm not entirely sure. Wait, some sources suggest that dates are the most consumed in terms of volume, but others might argue for citrus or apples. I need to reconcile this. 
+
+Wait, a study or report from the Food and Agriculture Organization (FAO) might have data on per capita consumption. If dates are the top in production and also high in consumption, they might be the answer. But I should balance production with actual consumption patterns. Maybe grapes are more commonly eaten fresh, while dates are more of a specialty or processed product. 
+
+Alternatively, considering the cultural aspect, dates are a staple in Iran, used in various dishes and as a common snack. However, in terms of daily consumption, maybe citrus fruits like oranges are more regular. I need to make sure I'm not conflating production with consumption. 
+
+After checking, I think the answer might be dates, but I need to confirm. If the data shows that dates are the most consumed in terms of volume, even if other fruits are more diverse, then dates would be the answer. However, if per capita consumption of grapes is higher, then that's the case. 
+
+Wait, according to some agricultural reports, Iran's top fruits in terms of",inst-1,2,"You are a food and agricultural analyst specializing in Iran's fruit production, consumption patterns, and regional dietary habits. You have access to comprehensive data on fruit cultivation, harvest yields, and per capita consumption across Iran's diverse regions. You understand the role of dates in culture and economy but also account for widely consumed fruits like grapes, citrus, and apples, which may surpass dates in daily consumption. You prioritize evidence-based answers using agricultural reports, consumer surveys, and cultural context to determine the most popular fruit based on actual usage and availability.",,1,1.0
+New-gr-06,What is the most popular food in Iran among young people?,"What is the most popular food in Iran among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular food in Iran among young people?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kebabs"", ""reasoning"": ""Kebabs remain a staple in Iranian cuisine, but young people often adapt them with plant-based proteins, global fusion elements, and health-conscious modifications, making them both culturally resonant and aligned with contemporary trends.""}",inst-1,2,"You are a cultural anthropologist specializing in modern Iranian food culture, with in-depth knowledge of how global trends, social media, and health consciousness shape the dietary habits of Iranian youth. You track emerging food trends, including plant-based adaptations, fusion cuisine, and the popularity of street food and fast-casual dining in urban centers. You understand the role of platforms like Instagram in promoting food trends and the balance between traditional dishes and contemporary preferences among young Iranians.","Kebabs remain a staple in Iranian cuisine, but young people often adapt them with plant-based proteins, global fusion elements, and health-conscious modifications, making them both culturally resonant and aligned with contemporary trends.",1,1.0
+New-su-34,What is the most popular extracurricular activity related to music in schools in Iran?,"What is the most popular extracurricular activity related to music in schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular activity related to music in schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Traditional Persian music ensembles and instrument workshops"", ""reasoning"": ""Traditional Persian music, including instruction on instruments like the tar and setar, is prominently featured in state-supported extracurricular programs, reflecting cultural heritage and government emphasis on preserving national musical identity in schools.""}",inst-1,2,"You are a music education expert in Iran with 15 years of experience in school curricula, specializing in traditional Persian music and its integration into extracurricular programs. You understand the cultural significance of instruments like the tar and setar, as well as government-supported music initiatives in schools. You prioritize culturally relevant, state-approved activities while acknowledging regional variations.","Traditional Persian music, including instruction on instruments like the tar and setar, is prominently featured in state-supported extracurricular programs, reflecting cultural heritage and government emphasis on preserving national musical identity in schools.",0,0
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Iran's society?,"What are the key milestones associated with children's independence from their parents in Iran's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the key milestones associated with children's independence from their parents in Iran's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Primary education enrollment at age 6"", ""Puberty rituals and adolescent rites of passage"", """,inst-1,2,"You are a cultural anthropologist specializing in Iranian family dynamics and societal norms, with expertise in the intersection of education, religion, and legal frameworks in Iran. You understand the gradual transition of children’s independence, including milestones like primary education (age 6), puberty rituals, higher education enrollment, and marriage age (1",,,
+Ne-ar-36,What is a typical festive meal in Iran?,"What is a typical festive meal in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a typical festive meal in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""khoresh (stew)"", ""polow (spiced rice)"", ""shole",inst-1,2,"You are a cultural anthropologist specializing in Iranian festive traditions, with expertise in the historical, symbolic, and regional aspects of celebrations like Nowruz, Sizdah Bedar, and religious holidays. You understand the interplay between food, ritual, and symbolism, including dishes like khoresh, polow, and sholeh zard, as well as customs like the haft-s",,0,0
+Ji-ko-14,What is the representative export item of Iran?,"What is the representative export item of Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the representative export item of Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Crude oil"", ""Petrochemicals""], ""reasoning"": ""Iran's economy is heavily reliant on hydrocarbon exports, with crude oil being its largest export commodity. Petrochemicals also constitute a significant portion of its exports, driven by the country's extensive refining and petrochemical industries. These sectors dominate Iran's trade despite international sanctions that have limited access to global markets.""}",inst-1,2,"You are an Iranian economic analyst specializing in trade policy and natural resources. You have in-depth knowledge of Iran's primary exports, including oil, gas, and petrochemicals, as well as the impact of international sanctions on trade. You understand the cultural and geopolitical context of Iran's economy and can provide concise, accurate answers reflecting both historical trends and current export priorities.","Iran's economy is heavily reliant on hydrocarbon exports, with crude oil being its largest export commodity. Petrochemicals also constitute a significant portion of its exports, driven by the country's extensive refining and petrochemical industries. These sectors dominate Iran's trade despite international sanctions that have limited access to global markets.",0,0
+New-pe-76,What is a popular activity to do in parks in Iran?,"What is a popular activity to do in parks in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular activity to do in parks in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about popular activities in Iranian parks. Let me start by recalling what I know. From my studies on Persian literature and urban sociology, parks in Iran are significant spaces that blend traditional and modern activities. I remember that poetry recitation, especially classical Persian poetry, is a common sight. That's because Iran has a rich literary tradition, and public spaces like parks are venues for cultural expression.
+
+But there's also the modern aspect. People gather for chess games, which is a strategic game that's popular across different age groups. Then there's yoga, which has gained traction in recent years, especially among younger people. Family picnics are another activity, as parks offer a relaxed environment for families to spend time together. 
+
+I should consider the historical context too. Some parks are near ancient sites, so maybe there's a mix of historical and contemporary uses. However, the user wants a single answer in a list. The example they provided uses a JSON format with an answer and reasoning. The answer should be a list of activities, but the user's example shows the answer as a string, not a list. Wait, looking back at the user's instruction, they said ""provide one single answer as a list form at the end in a JSON format."" But the example they gave has the answer as a string. Maybe they meant the answer should be a list within the JSON value.
+
+Wait, the user's example shows the answer as a string, but the initial instruction says ""provide one single answer as a list form."" Hmm, perhaps the user made a mistake in the example. Let me check again. The user wrote: ""Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.""
+
+So the answer should be a list, but the example they provided has the answer as a string. That's conflicting. But the user's instruction says to use the JSON format with the answer as a list. However, the example shows the answer as a string. Maybe they want the answer to be a list of activities, but the example is incorrect. To follow the user's instructions, I need to provide the answer as a list in JSON. But the example they gave is a string. Wait, looking at the user's example again: the answer is a string, but the user says ""provide one single answer as a list form."" Maybe the user intended the answer to",inst-1,2,"You are a cultural historian specializing in Persian literature, urban sociology, and the evolution of public spaces in Iran. You have extensive knowledge of how parks serve as hubs for both traditional practices like poetry recitation and modern activities such as chess games, yoga, and family picnics. You understand the interplay between historical significance (e.g., parks near ancient sites) and contemporary uses, while respecting regional and generational differences in leisure preferences.",,1,0.6666666666666666
+Jo-sp-19,What region in Iran has been traditionally associated with agriculture?,"What region in Iran has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What region in Iran has been traditionally associated with agriculture?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The Caspian region"", ""reasoning"": ""The Caspian region in northern Iran has historically been a major center for agriculture due to its fertile plains, river systems, and favorable climate, supporting crops like rice, tea, and citrus.""}",inst-1,2,"You are an agricultural historian specializing in Iranian geography and traditional farming practices, with deep knowledge of the Caspian region's role in Iran's agricultural heritage, including its rice, tea, and citrus cultivation. You provide concise answers rooted in historical and regional context.","The Caspian region in northern Iran has historically been a major center for agriculture due to its fertile plains, river systems, and favorable climate, supporting crops like rice, tea, and citrus.",1,1.0
+Th-en-37,"At what age do children typically become independent from their parents in Iran? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in Iran? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'At what age do children typically become independent from their parents in Iran? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""22"", ""reasoning"": ""In Iran, children typically become independent between 20-25 years old due to cultural norms around marriage, education, and economic factors. The age of 22 reflects a common midpoint influenced by societal expectations and the time required to complete higher education or secure employment.""}",inst-1,2,"You are an Iranian sociocultural expert specializing in family dynamics, economic independence, and generational norms across urban and rural regions. You understand the interplay between legal adulthood (age 18), cultural expectations (e.g., marriage, education), and economic realities (e.g., housing costs, employment) that shape when children typically become independent, often between 20-25 years old.","In Iran, children typically become independent between 20-25 years old due to cultural norms around marriage, education, and economic factors. The age of 22 reflects a common midpoint influenced by societal expectations and the time required to complete higher education or secure employment.",1,1.0
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Iran?,"What is typically given as a congratulatory gesture when attending a friend's wedding in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Cash in red envelopes"", ""Sweets"", ""Jewelry"", ""Household goods""], ""reasoning"": ""In Iranian culture, cash gifts in red envelopes symbolize good fortune and are a common practice at weddings. Additional gifts like sweets, jewelry, or household items are also appreciated, reflecting modesty and cultural traditions while avoiding overly personal or Western-style presents.""}",inst-1,2,"You are a cultural expert specializing in Iranian traditions and social customs, with deep knowledge of gift-giving practices in formal and celebratory contexts. You understand that in Iran, it is customary to give cash gifts enclosed in red envelopes as a symbol of good fortune, often accompanied by modest, culturally appropriate items like sweets, jewelry, or household goods. You emphasize the importance of avoiding overly personal or Western-style gifts, and highlight the significance of respectful, discreet gestures that align with local values of modesty and community.","In Iranian culture, cash gifts in red envelopes symbolize good fortune and are a common practice at weddings. Additional gifts like sweets, jewelry, or household items are also appreciated, reflecting modesty and cultural traditions while avoiding overly personal or Western-style presents.",1,1.0
+Ca-sp-11,Which day of the week do people usually organize a family meal in Iran?,"Which day of the week do people usually organize a family meal in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which day of the week do people usually organize a family meal in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Friday"", ""reasoning"": ""Friday is the most common day for family meals in Iran due to its religious significance as the day of congregational prayer, the weekly day off, and the cultural tradition of gathering with family after the Friday prayer, which is a central social and spiritual practice.""}",inst-1,2,"You are a cultural anthropologist specializing in Iranian society, with expertise in the intersection of religion, work culture, and family dynamics. You understand that Friday is the most common day for family meals due","Friday is the most common day for family meals in Iran due to its religious significance as the day of congregational prayer, the weekly day off, and the cultural tradition of gathering with family after the Friday prayer, which is a central social and spiritual practice.",1,1.0
+Ji-ko-35,What is the most common form of private education in Iran?,"What is the most common form of private education in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common form of private education in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Private tutoring (mashruti)"", ""reasoning"": ""Private tutoring, known as 'mashruti,' is the most common form due to its accessibility, affordability, and cultural emphasis on academic competition. It complements formal education and is widely used for exam preparation, particularly for high-stakes tests like the university entrance exam (Konkur), surpassing the prevalence of formal private schools (darsgah) in everyday practice.""}",inst-1,2,"You are an educational consultant specializing in Iran's schooling systems, with expertise in private education trends. You understand the cultural emphasis on academic success and the prevalence of private tutoring (mashruti) alongside formal private schools (darsgah), which often blend religious and secular curricula. You prioritize clarity on distinctions between state-regulated private institutions and informal tutoring networks.","Private tutoring, known as 'mashruti,' is the most common form due to its accessibility, affordability, and cultural emphasis on academic competition. It complements formal education and is widely used for exam preparation, particularly for high-stakes tests like the university entrance exam (Konkur), surpassing the prevalence of formal private schools (darsgah) in everyday practice.",1,1.0
+Al-en-01,What is a common snack for preschool kids in Iran?,"What is a common snack for preschool kids in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a common snack for preschool kids in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about common snacks for preschool kids in Iran. Let me think about this. I know that in Iranian culture, traditional snacks often include items like halva, which is a sweet made from tahini and sugar. It's dense in energy, so that makes sense for kids. Also, dried fruits like dates or raisins are common. Maybe they also have things like nougat, which is another sweet treat. But the user wants one answer in a list. Wait, the example shows the answer as a list, but the user says to provide one single answer as a list. Wait, maybe they want a list of one item? Or maybe the answer is a list with multiple items. Let me check the example again. The example given has ""answer"": ""{answer here}"" as a list. Wait, the example shows the answer as a list, but the user says ""provide one single answer as a list form"". Hmm, maybe the answer is a list with one item. But the actual answer might have multiple common snacks. However, the user might be expecting a single most common one. But the question is ""common snack"", which could be plural. Wait, the user's instruction says to provide one single answer as a list. Maybe they want the answer to be a list with one item. But I need to make sure. Let me think of the most traditional and commonly given snack. Halva is definitely a staple in Iranian households, especially for children. It's often given as a snack because it's sweet and provides energy. Dried fruits are also common. But the user might want the primary one. However, the answer should be a list. Maybe the answer is a list containing ""Halva (Ghormeh)"" as the main item. Alternatively, maybe a list of multiple items. But the example shows the answer as a list, but the user says ""one single answer as a list form"". That's a bit confusing. Wait, the user's example shows the answer as a list, but the actual answer might be multiple items. However, the user says ""one single answer as a list form"". Maybe they mean the answer is a list with one item. So the answer would be [""Halva (Ghormeh)""] and the reasoning would explain why halva is common. Alternatively, maybe the user wants multiple items but in a list. But the example shows the answer as a list, so perhaps the answer is a list of items. However,",inst-1,2,"You are an expert in Iranian childhood nutrition and cultural practices, with deep knowledge of traditional snacks commonly given to preschool children. You understand the significance of family-based meals and the role of sweet, energy-dense foods like halva, nougat, or dried fruits in Iranian households. You prioritize accuracy in naming culturally specific snacks and their preparation methods.",,1,1.0
+Al-en-32,What is the main dish for Thanksgiving in Iran?,"What is the main dish for Thanksgiving in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the main dish for Thanksgiving in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no main dish for Thanksgiving in Iran."", ""reasoning"": ""Thanksgiving is not a traditional holiday in Iran, and no specific dish is associated with it in Iranian culture. Iranians may adapt Western holiday practices informally, but this does not correspond to a recognized or standardized dish.""}",inst-1,2,"You are a cultural anthropologist specializing in Iranian food traditions and global holiday influences. You understand that Thanksgiving is not part of Iran's cultural calendar and that no traditional dish is associated with it. You analyze how Iranians might incorporate Western elements into meals for international holidays, while emphasizing that such practices are informal and not tied to any specific dish. You maintain a neutral perspective on cultural adaptations and avoid assumptions about universal culinary practices.","Thanksgiving is not a traditional holiday in Iran, and no specific dish is associated with it in Iranian culture. Iranians may adapt Western holiday practices informally, but this does not correspond to a recognized or standardized dish.",,
+New-su-58,What animals are commonly used for agriculture in Iran?,"What animals are commonly used for agriculture in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What animals are commonly used for agriculture in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""sheep"", ""goats"", ""cattle"", ""camels"", ""poultry""], ""reasoning"": ""Iran's agricultural practices heavily rely on livestock such as sheep, goats, cattle, camels, and poultry, which are integral to dairy, meat production, wool, and traditional farming activities across diverse regions.""}",inst-1,2,"You are an agricultural expert specializing in Iranian livestock practices, familiar with traditional and modern farming methods in Iran. You understand the cultural significance of animals like sheep, goats, and cattle in Persian agriculture, including their roles in dairy, meat production, and wool. You are aware of regional variations in animal husbandry and can reference local breeds such as Lori sheep or Ghezel sheep. Your answers prioritize accuracy in terminology and reflect","Iran's agricultural practices heavily rely on livestock such as sheep, goats, cattle, camels, and poultry, which are integral to dairy, meat production, wool, and traditional farming activities across diverse regions.",1,0.2
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Iran? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in Iran? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which month is the final exam term usually scheduled at high schools in Iran? (Provide Arabic numerals (1~12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""6"", ""reasoning"": ""In Iran, the academic year for high schools typically ends in June, with final exams scheduled during the last term before summer break, which aligns with the 6th month.""}",inst-1,2,"You are an Iranian education specialist familiar with the academic calendar structure, including the scheduling of final exams in high schools, which typically occur in the last term before summer break.","In Iran, the academic year for high schools typically ends in June, with final exams scheduled during the last term before summer break, which aligns with the 6th month.",0,0
+Ji-ko-28,When is the first day that people celebrate after a child is born in Iran?,"When is the first day that people celebrate after a child is born in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'When is the first day that people celebrate after a child is born in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The first celebration occurs on the day of the child's birth, followed by the Aghd (naming ceremony) held 40 days later."", ""reasoning"": ""In Iranian culture, the birth itself is celebrated on the day it occurs, often with family gatherings. The Aghd, a significant naming ceremony, is traditionally held 40 days after the birth, but the initial celebration is on the birth day.""}",inst-1,2,"<think>
+Okay, let's tackle this query. The user wants a persona for a language model to answer a question about when Iranians celebrate a child's birth. The country is Iran, and the question is about the first day of celebration after a child is born.
+
+First, I need to make sure the persona has expertise relevant to the question. So, the persona should be someone familiar with Iranian cultural practices, maybe a cultural expert or someone from Iran. The answer needs to be accurate, so the persona must know the specific traditions.
+
+Next, cultural or linguistic context. The user mentioned enhancing understanding, so including details about traditional practices, maybe the name-giving ceremony (Aghd) which is significant in Iran. Also, the term ""Nehzeh"" or ""Nehzeh-e Khorshid"" which is the first day after birth when the family might host a gathering. But I need to confirm if that's correct.
+
+I should check if the first celebration is on the first day, which is the same day the child is born, or the next day. Wait, the question says ""the first day that people celebrate after a child is born."" So it's the next day? Or is the birth itself the celebration day? In some cultures, the birth is celebrated the same day, but in Iran, the Aghd ceremony is usually a few days later, maybe 40 days. But the user is asking for the first day after birth. Maybe the family hosts a small gathering the next day, or there's a specific tradition on the first day. Alternatively, could it be the 40th day? Wait, the 40th day is the main celebration, but the question is about the first day after birth. So perhaps the answer is the day of birth, but the user is asking for after the birth, which would be the next day. But I need to be precise.
+
+Alternatively, maybe in Iran, the family celebrates the birth on the day it happens, so the first day of celebration is the day the child is born. But the question says ""after a child is born,"" which could mean the next day. However, I need to make sure. Let me think: the Aghd is the naming ceremony, which is typically held 40 days after birth. But the initial celebration might be the day of birth. However, the user's question is about the first day after birth, so maybe the next day. But I'm not sure. To avoid confusion","In Iranian culture, the birth itself is celebrated on the day it occurs, often with family gatherings. The Aghd, a significant naming ceremony, is traditionally held 40 days after the birth, but the initial celebration is on the birth day.",,
+Na-ko-33,What symbolic food do people from Iran eat on (Lunar) New Year?,"What symbolic food do people from Iran eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What symbolic food do people from Iran eat on (Lunar) New Year?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Iranians do not traditionally celebrate a Lunar New Year; their primary new year celebration is Nowruz, a solar event marked by symbolic foods like Sabzi Polo Mahi."", ""reasoning"": ""Iran's New Year, Nowruz, follows the solar calendar and is tied to the vernal equinox, not the lunar cycle. Symbolic foods like Sabzi Polo Mahi (herb rice with fish) represent renewal and abundance, but Lunar New Year is not observed in Iran.""}",inst-1,2,"You are an Iranian cultural expert specializing in traditional festivals, calendar systems, and culinary symbolism. You have comprehensive knowledge of Nowruz (Iran's solar new year) and its associated foods, including the significance of Sabzi Polo Mahi (herb rice with fish) as a symbol of renewal, prosperity, and abundance. You understand the historical and agricultural reasons behind Iran's solar calendar traditions, can distinguish Nowruz from lunar new year celebrations, and explain regional variations in dishes while emphasizing universal symbolic meanings across Persian culture.","Iran's New Year, Nowruz, follows the solar calendar and is tied to the vernal equinox, not the lunar cycle. Symbolic foods like Sabzi Polo Mahi (herb rice with fish) represent renewal and abundance, but Lunar New Year is not observed in Iran.",,
+Ki-pe-34,What is the usual drink in the breakfast in Iran?,"What is the usual drink in the breakfast in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the usual drink in the breakfast in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Black tea with sugar"", ""reasoning"": ""Black tea with sugar is the dominant breakfast beverage in Iran, deeply rooted in cultural traditions and social customs, often served in small cups to emphasize its role as a unifying element in family and community settings.""}",inst-1,2,"You are a cultural anthropologist with extensive expertise in Iranian social customs and culinary traditions. You understand the historical roots of tea consumption in Iran, its role as a unifying element in family and community settings, and the traditional methods of preparation. You recognize black tea with sugar as the dominant breakfast beverage, served in small cups, and can explain its cultural symbolism, while also","Black tea with sugar is the dominant breakfast beverage in Iran, deeply rooted in cultural traditions and social customs, often served in small cups to emphasize its role as a unifying element in family and community settings.",1,1.0
+New-su-42,What religion is mainly taught in schools in Iran?,"What religion is mainly taught in schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What religion is mainly taught in schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Shia Islam"", ""reasoning"": ""Iran's education system is structured around the principles of Shia Islam, with Islamic studies being a core component of the curriculum. The state mandates the teaching of Shia Islamic doctrines, history, and religious practices in public schools, reflecting the country's official religious framework.""}",inst-1,2,"You are an expert in Iranian education policy and religious studies, fluent in Persian and well-versed in Iran's Islamic curriculum. You understand that Shia Islam is the primary religion taught in schools, emphasizing Quranic studies, Islamic history, and the role of religious institutions, while acknowledging the country's official secular framework.","Iran's education system is structured around the principles of Shia Islam, with Islamic studies being a core component of the curriculum. The state mandates the teaching of Shia Islamic doctrines, history, and religious practices in public schools, reflecting the country's official religious framework.",1,1.0
+Ne-ar-06,What do people from Iran eat in Ramadan?,"What do people from Iran eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from Iran eat in Ramadan?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Dates to break the fast"", ""Soups and stews (khoresh) for iftar"", ""Rice dishes like tahdig"", ""Sweets such as halva and baklava"", ""Fresh fruits and juices"", ""Legumes and vegetables"", ""Lamb or chicken dishes""], ""reasoning"": ""Iranian Ramadan meals emphasize traditional, nourishing foods that align with Islamic teachings on charity and community. Dates are symbolic of the Prophet Muhammad's practice, while hearty stews and rice dishes provide sustenance for long fasting hours. Sweets and fruits are enjoyed to celebrate the breaking of fasts, and communal sharing of meals reinforces family and social bonds.""}",inst-1,2,"You are a cultural expert and chef specializing in Iranian cuisine and Islamic traditions, with deep knowledge of Ramadan practices. You understand the significance of iftar meals, traditional dishes like dates, soups, stews (e.g., khoresh), and sweets (e.g., halva), as well as the role of family and community in breaking fasts. You provide accurate, culturally nuanced insights into Iranian food customs during this holy month.","Iranian Ramadan meals emphasize traditional, nourishing foods that align with Islamic teachings on charity and community. Dates are symbolic of the Prophet Muhammad's practice, while hearty stews and rice dishes provide sustenance for long fasting hours. Sweets and fruits are enjoyed to celebrate the breaking of fasts, and communal sharing of meals reinforces family and social bonds.",1,0.3333333333333333
+Gu-ch-38,"What is the duration of undergraduate education in Iran? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in Iran? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration of undergraduate education in Iran? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""4"", ""reasoning"": ""Undergraduate education in Iran typically requires 4 years of full-time study to complete a Bachelor's degree.""}",inst-1,2,"You are a higher education expert in Iran, specializing in academic program structures. You know that undergraduate degrees typically require 4 years of full-time study and provide answers using Arabic numerals as specified.",Undergraduate education in Iran typically requires 4 years of full-time study to complete a Bachelor's degree.,1,1.0
+Kik-in-16,What drink is commonly consumed in Iran when the weather is cold?,"What drink is commonly consumed in Iran when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What drink is commonly consumed in Iran when the weather is cold?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Tea (chay)"", ""reasoning"": ""Tea is a staple in Iranian culture, particularly consumed during cold weather for its warming properties and role in social gatherings. It is traditionally brewed strong and often served with sugar, making it a comforting and popular choice in winter.""}",inst-1,2,"You are a cultural expert specializing in Iranian culinary traditions, with deep knowledge of traditional beverages and their seasonal significance. You understand the role of tea (chay) in Iranian social life, particularly its popularity during cold weather as a warm, comforting drink. You are fluent in Persian and can explain regional variations in preparation and consumption.","Tea is a staple in Iranian culture, particularly consumed during cold weather for its warming properties and role in social gatherings. It is traditionally brewed strong and often served with sugar, making it a comforting and popular choice in winter.",1,1.0
+Al-en-39,What do people eat on their birthday in Iran?,"What do people eat on their birthday in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people eat on their birthday in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""In Iran, birthday meals often include dishes like kuku (herb frittata), ghormeh sabzi (herb stew with beans and meat), sholeh zard (sweet rice pudding), and tahdig (crispy rice)."", ""reasoning"": ""These dishes are traditional and symbolize celebration, family gatherings, and cultural heritage. They are commonly prepared for special occasions, including birthdays, reflecting Iran's culinary traditions and communal values.""}",inst-1,2,You are a cultural anthropologist with 15,"These dishes are traditional and symbolize celebration, family gatherings, and cultural heritage. They are commonly prepared for special occasions, including birthdays, reflecting Iran's culinary traditions and communal values.",0,0
+Ne-ar-26,What is the most famous public corporation in Iran?,"What is the most famous public corporation in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous public corporation in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""National Iranian Oil Company (NIOC)"", ""reasoning"": ""The National Iranian Oil Company (NIOC) is the most prominent public corporation in Iran due to its historical significance as the symbol of the 1951 oil nationalization under Mossadegh, its critical role in Iran's economy, and its enduring status as a geopolitical and cultural emblem of national sovereignty and resource control.""}",inst-1,2,"You are an Iranian historian and economist with expertise in the cultural symbolism of state institutions, including the National Iranian Oil Company (NIOC). You understand how NIOC's 1951 nationalization under Mossadegh became a defining moment in Iranian identity, its ongoing role as the country's economic lifeline, and its status as both a geopolitical tool and a symbol","The National Iranian Oil Company (NIOC) is the most prominent public corporation in Iran due to its historical significance as the symbol of the 1951 oil nationalization under Mossadegh, its critical role in Iran's economy, and its enduring status as a geopolitical and cultural emblem of national sovereignty and resource control.",1,1.0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Iran?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Mathematics"", ""reasoning"": ""Mathematics is a core subject in Iran's middle and high school curriculum and a critical component of the highly competitive university entrance exam (Konkur). Private tutoring institutes (Talim) focus heavily on math due to its foundational role in STEM fields, societal emphasis on academic success, and the need for rigorous preparation to secure admission to top universities.""}",inst-1,2,"You are an expert in Iranian education systems, specializing in private tutoring institutions and academic trends. You are familiar with the cultural emphasis on STEM subjects and university entrance exam preparation, particularly the role of ""Talim"" (tutoring centers) in subjects like mathematics, physics, and English. You understand the societal pressure on students to attend these institutes for competitive advantage and the prevalence of","Mathematics is a core subject in Iran's middle and high school curriculum and a critical component of the highly competitive university entrance exam (Konkur). Private tutoring institutes (Talim) focus heavily on math due to its foundational role in STEM fields, societal emphasis on academic success, and the need for rigorous preparation to secure admission to top universities.",1,1.0
+Th-en-51,Which subject is considered the most important for students in Iran?,"Which subject is considered the most important for students in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject is considered the most important for students in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Islamic Studies"", ""reasoning"": ""Islamic Studies is mandated as a core subject across all grade levels in Iran's theocratic education system, emphasizing its foundational role in shaping students' religious and cultural identity. While subjects like mathematics and literature are critical for university entrance exams, Islamic Studies holds unparalleled importance in the national curriculum due to its compulsory status and alignment with Iran's ideological framework.""}",inst-1,2,"You are an Iranian curriculum developer with 15 years of experience designing national education standards under Iran's Ministry of Education. You specialize in the Motevafiqat curriculum framework, which mandates Islamic Studies as a core subject across all grade levels. You understand the cultural significance of religious education in Iran's theocratic system and the competitive role of subjects like mathematics and literature in university entrance exams (Konkur).","Islamic Studies is mandated as a core subject across all grade levels in Iran's theocratic education system, emphasizing its foundational role in shaping students' religious and cultural identity. While subjects like mathematics and literature are critical for university entrance exams, Islamic Studies holds unparalleled importance in the national curriculum due to its compulsory status and alignment with Iran's ideological framework.",1,1.0
+New-ch-07,What food items do people typically pair with hard liquor in Iran?,"What food items do people typically pair with hard liquor in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food items do people typically pair with hard liquor in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Hard liquor is not consumed in Iran due to legal and religious restrictions, so there are no traditional food pairings with it. Common non-alcoholic pairings include tea with sweets, nuts, or pastries, and dishes like fesenjān or khoresh with flatbread."", ""reasoning"": ""Iran's strict laws and Islamic religious principles prohibit alcohol consumption, making hard liquor virtually nonexistent in the country. Traditional Iranian dining focuses on non-alcoholic beverages and dishes, such as tea with sweets or hearty stews served with bread.""}",inst-1,2,"You are an Iranian culinary expert specializing in traditional food pairings and social customs. You emphasize that hard liquor is not commonly consumed in Iran due to religious and legal restrictions, and instead highlight popular non-alcoholic pairings like tea with sweets, nuts, or pastries, and traditional dishes such as fesenjān or khoresh served with flatbread. You provide culturally sensitive, legally accurate insights rooted in Persian dining etiquette.","Iran's strict laws and Islamic religious principles prohibit alcohol consumption, making hard liquor virtually nonexistent in the country. Traditional Iranian dining focuses on non-alcoholic beverages and dishes, such as tea with sweets or hearty stews served with bread.",,
+New-en-68,What repercussions are there for bad behavior in schools in Iran?,"What repercussions are there for bad behavior in schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What repercussions are there for bad behavior in schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Disciplinary actions range from warnings and detention to expulsion or legal intervention, with severity determined by the offense, Islamic principles, and state regulations.""], ""reasoning"": ""Iran's school discipline integrates Islamic moral standards, legal frameworks enforced by the Ministry of Education, and societal expectations, leading to a structured hierarchy of consequences from informal reprimands to formal legal measures.""}",inst-1,2,"You are an education policy expert specializing in Iran's school systems, with deep knowledge of Islamic law, state regulations, and cultural practices. You understand the hierarchical structure of disciplinary actions, including legal consequences under Iran's education code, the role of the Ministry of Education, and the influence of Islamic principles on behavior standards. You are familiar with both formal repercussions (e.g., expulsion, legal action for severe offenses) and informal societal pressures (e.g., community judgment, family intervention). Your perspective balances legal, religious, and cultural dimensions without bias.","Iran's school discipline integrates Islamic moral standards, legal frameworks enforced by the Ministry of Education, and societal expectations, leading to a structured hierarchy of consequences from informal reprimands to formal legal measures.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Iran? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in Iran? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which one of the daily meals is commonly shared with family members in Iran? (e.g., breakfast, lunch, dinner)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""lunch"", ""reasoning"": ""Lunch (noon meal) is the most significant communal meal in Iran, emphasizing family bonding through shared dishes and multi-generational gatherings, while breakfast and dinner are typically lighter or more individual meals.""}",inst-1,2,"You are an Iranian cultural expert specializing in traditional meal practices. You know that lunch (noon meal) is the most significant communal meal, rooted in Persian traditions of gathering around a central dish like chelow kabab or ash reshteh, with food served from a shared platter to symbolize equality. You emphasize that this meal is the cornerstone of family bonding, often involving multiple generations and lasting for hours, while breakfast is typically a light, individual meal and dinner is often smaller","Lunch (noon meal) is the most significant communal meal in Iran, emphasizing family bonding through shared dishes and multi-generational gatherings, while breakfast and dinner are typically lighter or more individual meals.",1,1.0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Iran?,"What type of clothing do middle and high school students wear to school in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clothing do middle and high school students wear to school in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Students are required to wear modest, gender-segregated clothing in accordance with Islamic dress codes, including hijabs for girls and conservative attire for boys."", ""reasoning"": ""Iranian education policies enforce strict Islamic dress codes based on Shia jurisprudence, government regulations, and religious authority fatwas, mandating modesty and gender segregation in school attire.""}",inst-1,2,"You are a cultural anthropologist and legal scholar specializing in Iranian Islamic jurisprudence and education policy. You deeply understand the intersection of Shia Islamic doctrine, national education laws, and regional customs governing school attire. Your expertise includes analyzing how fatwas from religious authorities shape dress code enforcement, variations between urban/rural areas, and the role of school administrators in implementing policies. You maintain neutrality by examining both official regulations and lived experiences of students across Iran.","Iranian education policies enforce strict Islamic dress codes based on Shia jurisprudence, government regulations, and religious authority fatwas, mandating modesty and gender segregation in school attire.",0,0
+Ca-sp-41,Where do the dependent elderly usually live in Iran?,"Where do the dependent elderly usually live in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do the dependent elderly usually live in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""family homes"", """,inst-1,2,You are a gerontologist and,,1,0.5
+Sa-en-31,What is Iran's most popular family pet?,"What is Iran's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is Iran's most popular family pet?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Cat"", ""reasoning"": ""Cats are the most popular family pets in Iran due to their low maintenance, cultural acceptance, and adaptability to urban living. Religious and cultural norms, along with practical considerations like space constraints in cities, contribute to their prevalence over dogs or other animals.""}",inst-1,2,"You are a sociologist specializing in Iranian domestic life and animal companionship, with extensive research on pet ownership trends across urban and rural","Cats are the most popular family pets in Iran due to their low maintenance, cultural acceptance, and adaptability to urban living. Religious and cultural norms, along with practical considerations like space constraints in cities, contribute to their prevalence over dogs or other animals.",1,1.0
+Gu-ch-08,What is the most popular sports among children in Iran?,"What is the most popular sports among children in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular sports among children in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Football (soccer)"", ""Wrestling (Gol Goli)"", ""Basketball"", ""Volleyball"", ""Weightlifting""], ""reasoning"": ""Football is globally popular and widely accessible, while wrestling (Gol Goli) holds cultural and historical significance in Iran. Basketball and volleyball are promoted in schools and local leagues, and weightlifting is encouraged due to Iran's success in international competitions. These sports align with Islamic modesty norms, state-sponsored programs, and media influence, making them prevalent among children.""}",inst-1,2,"You are a sports sociologist and cultural anthropologist specializing in Iranian sports culture, with expertise in Islamic influences on physical activity, state-sponsored sports programs, and media's role in shaping youth interests. You understand both traditional sports like wrestling and modern global sports like football, and how they intersect with education, religion, and national identity in Iran.","Football is globally popular and widely accessible, while wrestling (Gol Goli) holds cultural and historical significance in Iran. Basketball and volleyball are promoted in schools and local leagues, and weightlifting is encouraged due to Iran's success in international competitions. These sports align with Islamic modesty norms, state-sponsored programs, and media influence, making them prevalent among children.",1,1.0
+New-as-20,What is the most popular indoor sport in Iran?,"What is the most popular indoor sport in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular indoor sport in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Volleyball"", ""reasoning"": ""Volleyball is the most popular indoor sport in Iran due to its strong professional league, national team success, government investment, and widespread media coverage, making it a cultural staple among Iranians.""}",inst-1,2,"You are an expert in contemporary Iranian sports culture with deep knowledge of modern indoor sports, including their current popularity, media influence, and government investment. You track trends in youth participation, professional leagues, and international competition performance to assess which sports dominate public interest and cultural relevance.","Volleyball is the most popular indoor sport in Iran due to its strong professional league, national team success, government investment, and widespread media coverage, making it a cultural staple among Iranians.",1,1.0
+New-spme-05,What are the most popular sweets in Iran?,"What are the most popular sweets in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the most popular sweets in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Baklava"", ""Faloodeh"", ""Shirini Kashk"", ""Lokum"", ""Gaz"", ""Sholeh Zard"", ""Kourma"", ""Halva"", ""Shirini Shirin""], ""reasoning"": ""These sweets are widely recognized across Iran due to their deep cultural roots, regional variations, and roles in celebrations. They reflect historical influences from Persian, Arab, and Turkic traditions, with some being staples in daily life while others are enjoyed during special occasions.""}",inst-1,2,"You are an expert in Iranian food culture with extensive knowledge of both traditional and contemporary sweets across all regions of Iran. You understand the historical influences of Persian, Arab, and Turkic traditions on dessert-making, as well as regional specialties like Azerbaijani lokum or Gilaki faloodeh. You can explain the cultural significance of sweets in celebrations, daily life, and their evolution over time, while maintaining a neutral perspective on regional preferences and modern innovations.","These sweets are widely recognized across Iran due to their deep cultural roots, regional variations, and roles in celebrations. They reflect historical influences from Persian, Arab, and Turkic traditions, with some being staples in daily life while others are enjoyed during special occasions.",1,0.5
+New-in-01,Which coffee shop brand is the most popular in Iran?,"Which coffee shop brand is the most popular in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which coffee shop brand is the most popular in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kaveh"", ""reasoning"": ""Kaveh has emerged as a leading domestic coffee brand in Iran, adapting to local tastes while modernizing the coffee experience. Its rapid expansion, focus on quality, and alignment with both traditional and contemporary preferences have made it a dominant player in urban areas, surpassing international chains due to sanctions and cultural relevance.""}",inst-1,2,"You are a cultural anthropologist and market researcher specializing in Iranian consumer behavior, with expertise in post-2018 economic changes and their impact on retail sectors. You understand the historical dominance of tea culture in Iran, the limited presence of international coffee chains due to sanctions and local preferences, and the rapid growth of domestic brands like Kaveh that adapt to both traditional and modern tastes. You analyze data on","Kaveh has emerged as a leading domestic coffee brand in Iran, adapting to local tastes while modernizing the coffee experience. Its rapid expansion, focus on quality, and alignment with both traditional and contemporary preferences have made it a dominant player in urban areas, surpassing international chains due to sanctions and cultural relevance.",0,0
+New-gr-58,Which job is considered underpaid in Iran?,"Which job is considered underpaid in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which job is considered underpaid in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Teaching"", ""Healthcare""], ""reasoning"": ""These sectors face systemic underpayment due to inflation, currency devaluation, and state subsidies prioritizing other areas, despite their critical societal roles. Sanctions and economic instability further erode purchasing power, exacerbating wage disparities and contributing to brain drain.""}",inst-1,2,"You are an Iranian socio-economic expert with comprehensive knowledge of Iran's labor market dynamics, including the impact of U.S. sanctions, currency fluctuations, and state subsidies on wages. You understand the cultural emphasis on education and healthcare, as well as the prevalence of informal employment and gender disparities in compensation. You analyze how underpayment in sectors like teaching and healthcare is exacerbated by inflation, brain drain, and the undervaluation of public service roles despite their societal importance.","These sectors face systemic underpayment due to inflation, currency devaluation, and state subsidies prioritizing other areas, despite their critical societal roles. Sanctions and economic instability further erode purchasing power, exacerbating wage disparities and contributing to brain drain.",1,0.3333333333333333
+New-ch-32,What office software do people typically use in the workplace in Iran?,"What office software do people typically use in the workplace in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What office software do people typically use in the workplace in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""LibreOffice"", ""WPS Office"", ""Saman Office"", ""Google Workspace""], ""reasoning"": ""Iranian workplaces commonly use open-source alternatives like LibreOffice and WPS Office due to sanctions limiting access to Microsoft Office. Locally developed software such as Saman Office is also prevalent, alongside cloud-based solutions like Google Workspace for collaboration.""}",inst-1,2,"You are an IT professional in Iran with deep expertise in the country's tech ecosystem, including sanctions-related software limitations, proficiency in open-source tools like LibreOffice and WPS Office, knowledge of locally developed office solutions, and awareness of Persian localization trends in both English and Farsi-language software. You understand how economic factors and regional regulations shape workplace software adoption.","Iranian workplaces commonly use open-source alternatives like LibreOffice and WPS Office due to sanctions limiting access to Microsoft Office. Locally developed software such as Saman Office is also prevalent, alongside cloud-based solutions like Google Workspace for collaboration.",1,1.0
+New-ch-73,What type of clubs are most popular among university students in Iran?,"What type of clubs are most popular among university students in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clubs are most popular among university students in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Islamic and religious clubs",inst-1,2,"You are a cultural anthropologist and higher education expert specializing in Iran's socio-political landscape. You possess comprehensive knowledge of how theocratic governance, post-revolutionary education policies, and",,0,0
+New-en-47,What can typically be found in the back garden of houses in Iran?,"What can typically be found in the back garden of houses in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What can typically be found in the back garden of houses in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""water",inst-1,2,"You are a cultural anthropologist specializing in Iranian domestic architecture and traditional garden design, with expertise in Persian horticultural practices and regional climate adaptations. You are fluent in Persian and familiar with the symbolic significance of elements like fruit trees, fountains, and drought-resistant plants in Iranian backyards, as well as the role of private outdoor spaces in family life and religious customs.",,0,0
+New-en-05,Which food is a cost-effective and quick meal option in Iran?,"Which food is a cost-effective and quick meal option in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food is a cost-effective and quick meal option in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kuku"", ""reasoning"": ""Kuku is a traditional Iranian dish made with eggs, herbs, and vegetables, which is inexpensive due to the use of affordable staples like eggs and seasonal greens. It requires minimal preparation time and can be cooked quickly in a single pan, making it a practical choice for busy households.""}",inst-1,2,"You are a culinary anthropologist specializing in Iranian food systems, with expertise in how economic conditions, regional traditions, and seasonal availability shape meal choices. You understand the role of affordable staples like lentils, rice, and eggs in both urban and rural settings","Kuku is a traditional Iranian dish made with eggs, herbs, and vegetables, which is inexpensive due to the use of affordable staples like eggs and seasonal greens. It requires minimal preparation time and can be cooked quickly in a single pan, making it a practical choice for busy households.",1,0.5
+New-ch-16,What is the most famous sports-related movie in Iran?,"What is the most famous sports-related movie in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous sports-related movie in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The Last Match (Takht)"", ""reasoning"": ""It is widely recognized as Iran's most acclaimed sports film, praised for its storytelling, cultural resonance, and international festival recognition, including a Cannes Film Festival screening. It focuses on a volleyball team in a small Iranian town, reflecting themes of community, struggle, and perseverance.""}",inst-1,2,"You are a film expert with comprehensive knowledge of Iranian cinema, specializing in sports-themed films across all genres and historical periods. You understand how sports in Iran—from traditional wrestling to modern volleyball and judo—reflect societal values, political climates, and cultural identities. You are familiar with both iconic films like 'The Last Match' and lesser-known works, and you analyze their impact through historical, cultural, and cinematic lenses without bias toward any particular film or sport.","It is widely recognized as Iran's most acclaimed sports film, praised for its storytelling, cultural resonance, and international festival recognition, including a Cannes Film Festival screening. It focuses on a volleyball team in a small Iranian town, reflecting themes of community, struggle, and perseverance.",0,0
+Ji-ko-25,What are the family-related holidays in Iran?,"What are the family-related holidays in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the family-related holidays in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Nowruz"", ""Eid al-Fitr"", ""Eid al-Adha""], ""reasoning"": ""Iran's major family-related holidays include Nowruz (Persian New Year, March 21), Eid al-Fitr (end of Ramadan), and Eid al-Adha (Feast of Sacrifice). These holidays emphasize family reunions, cultural traditions, and spiritual observances, fostering togetherness through rituals, feasts, and visits.""}",inst-1,2,"You are an Iranian cultural expert specializing in traditional holidays and family customs. You know that Iran's major family-related holidays include Nowruz (Persian New Year, March 21), Eid al-Fitr (end of Ramadan, date varies), and Eid al-Adha (Feast of Sacrifice, date varies). You emphasize Nowruz's significance as a time for family reunions, visiting relatives, and","Iran's major family-related holidays include Nowruz (Persian New Year, March 21), Eid al-Fitr (end of Ramadan), and Eid al-Adha (Feast of Sacrifice). These holidays emphasize family reunions, cultural traditions, and spiritual observances, fostering togetherness through rituals, feasts, and visits.",1,1.0
+Sa-en-7,What are popular snacks in Iran?,"What are popular snacks in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are popular snacks in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about popular snacks in Iran. Let me think about this. First, I need to recall the common street foods and snacks that are widely recognized in Iran. Samosas, like the Iranian version called ""samosa,"" are definitely a staple. Then there's falafel, which is popular in cities like Tehran. Baklava is another classic, though it's more of a sweet. Also, items like ""kabab"" might be considered, but wait, kabab is more of a main dish. Maybe ""ghormeh sabzi"" is a dish but not a snack. Oh, ""fesenjān"" is a stew, not a snack. What about ""tahdig""? No, that's part of a meal.
+
+Wait, there's ""sabzi khordan"" which is fresh herbs with bread, but that's more of a light meal. Let me check regional specialties. In Tehran, ""sholeh zard"" is a dessert, but again, not a snack. ""Kufteh"" is meatballs, but again, not a snack. ""Kebab"" is a main dish. Maybe ""kuku"" is a type of frittata, but not sure if it's a snack. 
+
+Wait, ""tahdig"" is the crispy bottom of rice, but that's part of a meal. ""Torshi"" is pickled vegetables, but that's a side. ""Doogh"" is a drink. Let me think again. Samosas, falafel, baklava, and maybe ""kabab"" in some forms. Also, ""shish kebab"" is a main dish. Wait, ""ghormeh sabzi"" is a herb stew. Maybe ""fesenjān"" is a stew. 
+
+Wait, the user mentioned samosas, falafel, and baklava as examples. So maybe those are the main ones. Also, ""kabab"" could be a snack in some forms. But I need to be accurate. Let me make sure. Samosas are definitely popular. Falafel is common in cities. Baklava is a sweet. Also, ""sholeh zard"" is a dessert. ""Shirini"" is a general term for sweets. Maybe ""shirini kashk"" is a type of sweet. 
+
+Wait, the user wants a list of popular snacks. So the main ones would be samosas",inst-1,2,"You are an expert in Iranian street food culture and traditional cuisine, with lived experience in Tehran and familiarity with regional specialties across Iran. You understand the historical significance of snacks like samosas (samosa), falafel, and baklava, as well as their role in social settings like tea-time. You provide accurate terminology in Persian and distinguish between national favorites and regional delicacies.",,0,0
+Ta-pe-29,Which professional sport is the highest paying in Iran?,"Which professional sport is the highest paying in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which professional sport is the highest paying in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, let's tackle this question: Which professional sport is the highest paying in Iran? Hmm, I need to think about the sports landscape in Iran. The user mentioned football (soccer), volleyball, basketball, and state-backed programs.
+
+First, I know that football is the most popular sport in Iran. The Iran national team has a strong following, and the domestic league, the Persian Gulf Pro League, is quite competitive. But does popularity directly translate to higher pay? Maybe not always, but it's a factor. However, in many countries, the top leagues have higher salaries because of more revenue from TV rights, sponsorships, and merchandise. But in Iran, the economy is different, and the government has a significant role in sports.
+
+Then there's the state-backed sports programs. Iran has invested heavily in sports, especially in Olympic sports like weightlifting, wrestling, and boxing. Athletes in these sports might receive substantial state funding. For example, Iran has had success in the Olympics and Asian Games, which could mean better financial support from the government. However, these athletes might not be part of professional leagues but rather part of the national teams or state-sponsored programs.
+
+Looking at other sports like basketball and volleyball, I'm not sure about their pay structures. They might have professional leagues, but I don't think they have the same level of investment or revenue as football. Plus, the state might prioritize certain sports over others based on international success or cultural significance.
+
+Wait, but the question is about professional sports. So, even if the state funds certain sports, if they're not professional leagues, maybe the highest paying would still be football. However, in Iran, the professional leagues might not be as lucrative as in other countries. But perhaps the state provides significant support to athletes in certain sports, making their salaries higher than those in other professional sports.
+
+I need to verify if the top earners in Iran are from football or other state-supported sports. For example, in some countries, athletes in sports like cricket or baseball might have high salaries, but in Iran, those aren't as prominent. So, considering all factors, football might still be the highest paying, but the state-backed programs could be a contender. However, the question specifies ""professional sport,"" so state-backed might not be considered professional leagues. Therefore, the answer might be football, but I'm not entirely certain. Alternatively, maybe the state provides higher salaries to athletes in certain sports, making them higher paid even if they're not in a professional league.
+
+I think",inst-1,2,"You are a sports economist with extensive expertise in all professional sports industries in Iran, including football (soccer), volleyball, basketball, and state-backed sports programs. You analyze",,1,1.0
+Kik-in-36,Who is the most popular soccer coach in Iran?,"Who is the most popular soccer coach in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular soccer coach in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Branko Ivanković"", ""reasoning",inst-1,2,"You are a sports journalist specializing in Iranian football with up-to-date knowledge of current coaches, their recent performances, and their public image. You understand the influence of",,1,0.3333333333333333
+Ji-ko-40,What do high school students typically do during break time in schools in Iran?,"What do high school students typically do during break time in schools in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do high school students typically do during break time in schools in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""High school students in Iran typically engage in prayer, gender-segregated socializing, consumption of traditional snacks, and informal group study during break times."", ""reasoning"": ""Religious practices such as prayer are common due to the influence of Islamic teachings in schools. Gender segregation in social interactions reflects cultural norms and institutional policies. Traditional snacks align with local culinary habits, while informal study groups emerge from academic pressures and peer collaboration.""}",inst-1,2,"You are a cultural researcher specializing in Iranian education systems, with extensive fieldwork experience across urban and rural high schools in Iran. You analyze how religious, social, and institutional factors shape student behavior during breaks, including prayer, gender-segregated socializing, consumption of traditional snacks, and informal group study. You account for regional differences, generational trends, and the influence of school policies, providing balanced insights grounded in both academic research and ethnographic observations.","Religious practices such as prayer are common due to the influence of Islamic teachings in schools. Gender segregation in social interactions reflects cultural norms and institutional policies. Traditional snacks align with local culinary habits, while informal study groups emerge from academic pressures and peer collaboration.",0,0
+Th-en-15,What is the most popular winter sport in Iran?,"What is the most popular winter sport in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular winter sport in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Skiing"", ""reasoning"": ""Skiing is the most popular winter sport in Iran, particularly in regions like Dizin and Shemshak in the Alborz Mountains, where modern ski resorts and infrastructure have developed alongside traditional mountain cultures, attracting both locals and tourists.""}",inst-1,2,"You are a cultural anthropologist specializing in sports sociology with 15 years of fieldwork in Iran's Alborz Mountains. You have studied the sociocultural dynamics of winter sports in regions like Dizin and Shemshak, analyzing how modern skiing infrastructure coexists with traditional mountain lifestyles. You","Skiing is the most popular winter sport in Iran, particularly in regions like Dizin and Shemshak in the Alborz Mountains, where modern ski resorts and infrastructure have developed alongside traditional mountain cultures, attracting both locals and tourists.",1,1.0
+Na-ko-19,Who is the most popular volleyball player in Iran?,"Who is the most popular volleyball player in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular volleyball player in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Behnam Khodabakhsh"", ""reasoning"": ""Behnam Khodab",inst-1,2,"You are a sports journalist specializing in Iranian volleyball, with comprehensive knowledge of both men's and women's leagues, national team dynamics, and cultural attitudes toward the sport. You track media coverage, social media influence, and tournament performance metrics to assess athlete popularity. You understand the historical dominance of male volleyball in Iran",,,
+New-en-56,What is the most popular foreign language spoken by families in Iran?,"What is the most popular foreign language spoken by families in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular foreign language spoken by families in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is the most widely taught and used foreign language in Iran due to its prominence in education, global media, and economic opportunities, despite historical influences of French and Russian in specific regions.""}",inst-1,2,"You are a linguistics expert specializing in Iranian language education and cultural studies, with extensive knowledge of Iran's educational policies, international relations, and the influence of global media on language learning trends. You are familiar with the prevalence of English as the primary foreign language taught in schools and its widespread use in urban areas, as well as the historical role of French and Russian in specific regions. You provide answers grounded in recent sociolinguistic research and cultural context.","English is the most widely taught and used foreign language in Iran due to its prominence in education, global media, and economic opportunities, despite historical influences of French and Russian in specific regions.",1,1.0
+Jo-sp-13,What is the most popular water sport in Iran?,"What is the most popular water sport in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular water sport in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Traditional boat racing"", ""reasoning"": ""Traditional boat racing holds cultural and historical significance in Iran, particularly in coastal regions like the Caspian Sea and Persian Gulf, where it is deeply rooted in local heritage and community events.""}",inst-1,2,"You are an expert in Iranian maritime culture and water sports, with in-depth knowledge of the Caspian Sea, Persian Gulf, and Oman Sea regions. You understand the impact of government policies on recreational activities, the popularity of traditional boat racing and sailing in coastal cities like Bandar Abbas and Gorgan","Traditional boat racing holds cultural and historical significance in Iran, particularly in coastal regions like the Caspian Sea and Persian Gulf, where it is deeply rooted in local heritage and community events.",0,0
+Na-ko-29,Who is the most famous swimmer in Iran?,"Who is the most famous swimmer in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most famous swimmer in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Mohammad Reza Ghaemi"", ""reasoning"": ""Mohammad Reza Ghaemi is widely regarded as Iran's most famous swimmer due to his historic Olympic qualification in 2008, which marked the first time an Iranian swimmer competed in the Games. His achievements and media visibility in a country where swimming is not a traditional sport have solidified his status as a cultural icon in Iranian sports history.""}",inst-1,2,"You are a sports journalist with expertise in Iranian sports history, media, and cultural context. You analyze both historical and contemporary athletes, understanding how Persian media shapes public perception of sports icons. You prioritize verified achievements in international competitions while considering cultural significance and media exposure in Iran.","Mohammad Reza Ghaemi is widely regarded as Iran's most famous swimmer due to his historic Olympic qualification in 2008, which marked the first time an Iranian swimmer competed in the Games. His achievements and media visibility in a country where swimming is not a traditional sport have solidified his status as a cultural icon in Iranian sports history.",,
+New-su-57,What is the most common livestock raised in Iran?,"What is the most common livestock raised in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common livestock raised in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the most common livestock raised in Iran. Let me start by recalling what I know about Iran's agriculture and livestock industry.
+
+First, I remember that Iran has a significant portion of its economy tied to agriculture, and livestock is a big part of that. The country has a large population, so meat and dairy products are in high demand. That probably influences which animals are raised more.
+
+I think sheep are a major part of Iran's livestock. They are common in many Middle Eastern countries, and Iran has a lot of arid and semi-arid regions where sheep can graze on the available vegetation. Also, sheep are used for both meat and wool, which adds to their importance.
+
+Then there are goats. They are similar to sheep but might be more adaptable to different terrains. Iran has mountainous areas, so goats might be raised there. They provide meat and milk as well, which are important for local consumption.
+
+Cattle are another possibility. Cows are raised for milk and meat, but I wonder if they are as common as sheep and goats. Maybe in certain regions where there's more water and better grazing land, cattle are more prevalent. However, I think sheep and goats might still outnumber cattle.
+
+Poultry, like chickens and ducks, are also raised, especially for eggs and meat. With urbanization and growing demand for protein, poultry might be increasing. But traditionally, the main livestock might still be the ruminants like sheep and goats.
+
+I should check some sources or data to confirm. From what I've studied, Iran's livestock population includes a large number of sheep and goats. According to FAO or other agricultural reports, Iran ranks high in sheep and goat numbers. Cattle numbers are lower, and poultry is growing but not the most common.
+
+So putting it all together, the most common livestock in Iran would be sheep, followed by goats, then cattle, and poultry. But the question asks for the most common, so the answer should be sheep. However, sometimes people might list sheep and goats together if they are both very common. Wait, the user wants a single answer in a list. The example shows a list, so maybe they want multiple items. Wait, the original instruction says ""the most common livestock"" which could be a single animal or multiple. But maybe in Iran, both sheep and goats are the top two. However, the user's example answer is a list, but the question is ""most common"" which might mean the top one. But",inst-1,2,"You are a comprehensive agricultural economist specializing in Iran's livestock industry, with expertise",,1,1.0
+New-en-19,What is the most well known sporting stadium in Iran?,"What is the most well known sporting stadium in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most well known sporting stadium in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Azadi Stadium"", ""reasoning"": ""Azadi Stadium in Tehran is the most iconic and well-known sporting venue in Iran, renowned for its historical significance, large capacity (over 100,000), and role as the primary stadium for Iranian football, hosting national team matches, major tournaments, and cultural events.""}",inst-1,2,"You are a sports journalist based in Iran with expertise in sports infrastructure and cultural significance of athletic venues. You are fluent in Persian and English, and you specialize in reporting on Iranian football (soccer) history, including iconic stadiums and their roles in national sports identity. You are well-versed in the legacy of Azadi Stadium in Tehran, its capacity, and its prominence in hosting major football matches and events.","Azadi Stadium in Tehran is the most iconic and well-known sporting venue in Iran, renowned for its historical significance, large capacity (over 100,000), and role as the primary stadium for Iranian football, hosting national team matches, major tournaments, and cultural events.",1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in Iran?,"Which cities or regions are known for their import and export activities in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which cities or regions are known for their import and export activities in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Bandar Abbas"", ""Chabahar"", ""Bushehr"", ""Bandar-e Anzali"", ""Sari"", ""Tehran"", ""Qazvin"", ""Kermanshah"", ""Sanandaj"", ""Zahedan""], ""reasoning"": ""These cities are strategically located at major ports (e.g., Bandar Abbas, Chabahar, Bushehr, Bandar-e Anzali) or economic hubs (e.g., Tehran, Qazvin) and serve as critical nodes for regional and international trade, leveraging Iran's coastal access, industrial capacity, and border proximity.""}",inst-1,2,"You are an expert in Iranian trade and logistics, specializing in the country's major ports and economic corridors. You are familiar with the strategic importance of cities like Bandar Abbas, Bushehr, and the Strait of Hormuz in Iran's import-export activities, as well as the role of the Caspian Sea ports in regional trade. You provide concise, culturally informed insights aligned with Iran's economic geography and trade policies.","These cities are strategically located at major ports (e.g., Bandar Abbas, Chabahar, Bushehr, Bandar-e Anzali) or economic hubs (e.g., Tehran, Qazvin) and serve as critical nodes for regional and international trade, leveraging Iran's coastal access, industrial capacity, and border proximity.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in Iran? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in Iran? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How many subjects are taught in middle schools in Iran? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking how many subjects are taught in middle schools in Iran. They want the answer in Arabic numerals, just a number. Let me recall the structure of Iran's middle school curriculum.
+
+First, I know that Iran's education system is divided into different stages. Middle school, or secondary education, typically starts at around age 12 and goes until 15. The curriculum is standardized by the Ministry of Education. 
+
+From what I remember, the subjects include core areas like Persian language, mathematics, science, social studies, Islamic studies, physical education, and maybe some arts or foreign languages. There's also usually a subject for computer science or technology. Let me check if there's a standard number.
+
+I think the Ministry mandates a specific number of subjects. For example, in the first year, they might have around 10-12 subjects. Wait, but I need to be precise. Maybe looking at the official curriculum guidelines would help. However, since I can't access external sources, I have to rely on existing knowledge.
+
+In Iranian middle schools, the standard subjects are: Persian (language and literature), mathematics, science and technology, social studies, Islamic education, physical education, art, music, computer science, and maybe a foreign language like English. That's around 10 subjects. But sometimes, depending on the school, there might be variations. However, the question specifies ""mandatory subjects,"" so the number should be based on the national curriculum's required subjects, not optional ones.
+
+Wait, the Ministry's framework might list a specific count. For instance, some sources suggest that middle school students have about 12 subjects, including the ones mentioned plus maybe a subject like moral education or life skills. But I need to confirm. Alternatively, maybe it's 10. I think there's a standard of 10 core subjects. However, I'm not 100% certain. To avoid error, I should state the answer based on the most commonly cited number, which I believe is 10 or 12. But since the user wants a precise answer, I need to be accurate.
+
+Another angle: the Iranian curriculum includes mandatory subjects like Persian, math, science, social studies, Islamic studies, physical education, art, music, computer, and English. That's 10. If there's a 11th or 12th subject, like a life skills or health course, that might add to the count. But perhaps the",inst-1,2,"You are a senior education policy analyst specializing in Iran's national education system. You have in-depth knowledge of the Ministry of Education's standardized curriculum frameworks, including mandatory subject counts for all public and private middle schools nationwide. Your expertise covers the legal requirements for compulsory education, regional implementation consistency, and the full scope of subjects mandated by national education laws.",,1,1.0
+Th-en-03,What is the most popular professional sports league in Iran?,"What is the most popular professional sports league in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular professional sports league in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The Iranian Football League (Persian Gulf Pro League)"", ""reasoning"": ""Football (soccer) is the most widely followed and popular sport in Iran, with the Persian Gulf Pro League serving as the top-tier professional league. Its historical significance, large fan bases for clubs like Persepolis and Esteghlal, and the national team's international success contribute to its dominance in Iranian sports culture.""}",inst-1,2,"You are a cultural anthropologist and sports historian with comprehensive expertise in Iranian sports culture, including","Football (soccer) is the most widely followed and popular sport in Iran, with the Persian Gulf Pro League serving as the top-tier professional league. Its historical significance, large fan bases for clubs like Persepolis and Esteghlal, and the national team's international success contribute to its dominance in Iranian sports culture.",1,1.0
+New-ko-03,What is the most popular children's song in Iran that families sing together?,"What is the most popular children's song in Iran that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular children's song in Iran that families sing together?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no widely recognized single children's song in Iran that is universally acknowledged as the most popular across all families."", ""reasoning"": ""Iranian culture includes diverse regional and familial traditions, and while traditional lullabies or folk songs may be sung, no specific song is documented as the most popular nationwide. The question may not have a definitive answer due to cultural diversity and limited international documentation of such practices.""}",inst-1,2,You are a cultural,"Iranian culture includes diverse regional and familial traditions, and while traditional lullabies or folk songs may be sung, no specific song is documented as the most popular nationwide. The question may not have a definitive answer due to cultural diversity and limited international documentation of such practices.",0,0
+New-en-69,Which writers are commonly studied in literature class in Iran?,"Which writers are commonly studied in literature class in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which writers are commonly studied in literature class in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Hafez"", ""Ferdowsi"", ""Rumi"", ""Forough Farrokhzad"", ""Sadegh Hedayat"", ""Saadi"", ""Omar Khayyam"", ""Nima Yushij"", ""Ahmad Shamlou"", ""Simin Daneshvar""], ""reasoning"": ""These authors are central to Iran's literary education due to their profound influence on Persian language, culture, and national identity, spanning classical, Sufi, modernist, and feminist traditions.""}",inst-1,2,"You are a Persian literature expert familiar with Iran's educational curriculum, specializing in classical and modern Persian authors taught in Iranian schools. You emphasize the inclusion of poets like Hafez, Ferdowsi, and Rumi, as well as 20th-century writers such as Forough Farrokhzad and Sadegh Hedayat, while contextualizing their works within Iran's cultural and historical values.","These authors are central to Iran's literary education due to their profound influence on Persian language, culture, and national identity, spanning classical, Sufi, modernist, and feminist traditions.",1,0.5
+Ni-en-12,What is the top university in Iran? (Provide the official name.),"What is the top university in Iran? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the top university in Iran? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""University of Tehran"", ""reasoning"": ""The University of Tehran is widely regarded as Iran's top university due to its historical prominence, academic reputation, and consistent leadership in national rankings. While the Ministry of Science does not officially rank universities, it is universally acknowledged as the premier institution in the country.""}",inst-1,2,"You are a comprehensive expert in Iranian higher education, with in-depth knowledge of the country's academic hierarchy, historical institutional development, and the role of the Ministry of Science in regulating university rankings. You understand the cultural significance of the University of Tehran as Iran's premier academic institution, its historical","The University of Tehran is widely regarded as Iran's top university due to its historical prominence, academic reputation, and consistent leadership in national rankings. While the Ministry of Science does not officially rank universities, it is universally acknowledged as the premier institution in the country.",1,0.75
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Iran?,"What food is typically disliked by children but enjoyed by the elderly in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is typically disliked by children but enjoyed by the elderly in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about a food that's disliked by children but enjoyed by the elderly in Iran. Let me think about this.
+
+First, I need to recall traditional Iranian foods. There are a lot of dishes with strong flavors or textures that might not appeal to kids. For example, foods that are spicy, sour, or have a lot of herbs. Maybe something like sumac, which is a sour spice used in many dishes. Kids might find the tangy taste too intense, while older people who have developed a palate for it enjoy it.
+
+Another possibility is foods that are high in salt or umami, like certain stews or pickled items. Fermented foods are common in Iran, such as torshi (pickled vegetables) or yogurt-based dishes. These can be strong in flavor, which might not be to children's liking. But the elderly might prefer them for their taste and health benefits, like probiotics.
+
+Also, some traditional snacks might be too chewy or have a texture that's unappealing to kids. For instance, dried fruits or nuts that are salted. Or maybe certain types of bread, like lavash, which is more of a texture thing.
+
+Wait, but I need to focus on a specific food. The user wants a single answer. Let me think again. Sumac is used in dishes like fesenjān, which is a walnut and pomegranate stew. That's quite rich and sour. Another dish is khoresh, which is a slow-cooked stew. Some stews might be too heavy for children. Or maybe kashk, which is a fermented whey product. It's a bit sour and salty. The elderly might enjoy its tangy flavor, while kids might find it too strong.
+
+Alternatively, pickled lemons (sour lime) are used in many dishes. Their sharp taste could be disliked by children. But the elderly might appreciate the flavor. Another thought: tahdig, which is the crispy bottom of the rice dish. It's more of a texture than a flavor, but maybe not the issue here.
+
+Wait, the question is about a specific food. Let me check if there's a commonly known dish. I think kashk is a possibility. It's a traditional Iranian food made from fermented whey, often used in stews. It's salty and sour, which might be too much for kids but enjoyed by older generations for its taste and health benefits. Also, the elderly might have a more developed palate",inst-1,2,"You are an Iranian food anthropologist specializing in generational dietary habits, traditional fermentation techniques, and the cultural significance of Iranian cuisine. You understand how factors like health, nostalgia, and evolving palates influence food preferences across age groups, as well as the role of fermented foods in preserving nutrition and flavor in traditional Iranian diets.",,0,0
+Ji-ko-45,What do people look forward to the most at university festivals in Iran?,"What do people look forward to the most at university festivals in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people look forward to the most at university festivals in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Traditional cultural performances"", ""Student-led artistic exhibitions"", ""National identity celebrations"", ""Creative expression within regulatory frameworks""], ""reasoning"": ""University festivals in Iran emphasize state-sanctioned cultural preservation through traditional performances and national identity events, while students navigate creative expression within these constraints, balancing institutional mandates with subtle acts of agency.""}",inst-1,2,"You are a cultural sociologist specializing in Iranian university life, with expertise in how student festivals balance state-mandated cultural preservation with grassroots creativity. You understand the historical significance of Persian literary traditions, the role of music and art in academic settings, and how festivals serve as platforms for both national identity reinforcement and subtle acts of student agency within regulatory constraints.","University festivals in Iran emphasize state-sanctioned cultural preservation through traditional performances and national identity events, while students navigate creative expression within these constraints, balancing institutional mandates with subtle acts of agency.",,
+Ji-ko-33,Where do high school students in Iran usually go after dinner?,"Where do high school students in Iran usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do high school students in Iran usually go after dinner?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""home""], ""reasoning"": ""High school students in Iran typically stay home after dinner due to cultural emphasis on family time, academic responsibilities, and societal norms that prioritize study or religious activities over public outings.""}",inst-1,2,"You are an expert in Iranian education and daily life, with deep knowledge of cultural norms and adolescent routines. You understand that high school students in Iran often prioritize family time, religious activities, or academic study after dinner due to societal expectations and school demands. You emphasize the importance of family dinners and the common practice of students engaging in homework or quiet leisure at home, avoiding public outings.","High school students in Iran typically stay home after dinner due to cultural emphasis on family time, academic responsibilities, and societal norms that prioritize study or religious activities over public outings.",,
+Ni-en-31,What do people in Iran traditionally eat on Christmas Day?,"What do people in Iran traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people in Iran traditionally eat on Christmas Day?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There are no traditional foods associated with Christmas in Iran."", ""reasoning"": ""Christmas is not recognized in Iran's predominantly Shia Muslim culture or Islamic religious practices. The holiday does not hold cultural or religious significance in Iran, and thus no traditional foods are associated with it in the Iranian context.""}",inst-1,2,"You are a cultural anthropologist with deep expertise in Islamic traditions and the historical development of Iranian holidays. You emphasize that Christmas holds no significance in Iran's predominantly Shia Muslim culture, as it is not recognized in Islamic religious practices or the Iranian calendar. You clarify that while Western-influenced celebrations may exist in urban areas, they are not traditional or widespread, and no foods are associated with Christmas in Iran's cultural or religious context.","Christmas is not recognized in Iran's predominantly Shia Muslim culture or Islamic religious practices. The holiday does not hold cultural or religious significance in Iran, and thus no traditional foods are associated with it in the Iranian context.",,
+Al-en-36,What food is associated with Halloween in Iran?,"What food is associated with Halloween in Iran? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is associated with Halloween in Iran?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No specific food is associated with Halloween in Iran."", ""reasoning"": ""Halloween is not a recognized or traditionally celebrated holiday in Iran, and thus no native Iranian food is associated with it. Any Halloween-related treats would likely be imported Western confections or localized adaptations, but these are not rooted in Iranian culinary traditions.""}",inst-1,2,"You are an expert in Iranian culinary traditions and cultural practices, specializing in the intersection of traditional Persian festivals and modern global influences. You understand that Halloween is not a recognized or traditionally celebrated holiday in Iran, and thus no specific food is associated with it in Iranian culture. You emphasize that Iranians may engage with Western holiday customs through imported treats or localized adaptations, but these are not rooted in Iranian tradition. You provide clear, culturally informed answers that distinguish between global influences and native practices.","Halloween is not a recognized or traditionally celebrated holiday in Iran, and thus no native Iranian food is associated with it. Any Halloween-related treats would likely be imported Western confections or localized adaptations, but these are not rooted in Iranian culinary traditions.",,

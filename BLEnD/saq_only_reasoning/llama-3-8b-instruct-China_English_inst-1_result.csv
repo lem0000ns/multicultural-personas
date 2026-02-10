@@ -6,7 +6,9 @@ New-ko-02,What is the most popular prenatal education activity for pregnant wome
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most popular prenatal education activity"": ""antenatal classes""}], ""reasoning"": ""Based on various studies and reports, antenatal classes are widely regarded as the most popular prenatal education activity for pregnant women in China. These classes typically cover topics such as pregnancy, childbirth, parenting, and infant care, and are often provided by hospitals, clinics, or private companies.""}",inst-1,1,,
+","Here is the response in JSON format:
+
+{""answer"": [{""Prenatal Massage""}], ""reasoning"": ""Prenatal massage has become increasingly popular in China due to its numerous benefits for maternal and fetal health, as well as its relaxing and calming effects on pregnant women.""}",inst-1,1,,
 Ji-ko-29,Which age's birthday is celebrated the most grandly in China's society?,"Which age's birthday is celebrated the most grandly in China's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which age's birthday is celebrated the most grandly in China's society?','answer':[]}
@@ -14,7 +16,7 @@ Ji-ko-29,Which age's birthday is celebrated the most grandly in China's society?
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""60th birthday""], ""reasoning"": ""In Chinese culture, the 60th birthday is considered a significant milestone, marking the completion of the 60-year cycle of the Chinese calendar. It is traditionally seen as a time of celebration and reflection, and is often marked with grand festivities and gifts.""}",inst-1,1,,"In Chinese culture, the 60th birthday is considered a significant milestone, marking the completion of the 60-year cycle of the Chinese calendar. It is traditionally seen as a time of celebration and reflection, and is often marked with grand festivities and gifts."
+","{""answer"": [{""age"": 60, ""reason"": ""According to traditional Chinese culture, 60 is considered a milestone age, marking the beginning of old age and a significant step towards retirement. As such, 60th birthdays are often celebrated with grand ceremonies and festivities.""}], ""reasoning"": ""In traditional Chinese culture, certain ages are considered significant milestones, and their birthdays are celebrated with particular grandeur. The choice of age depends on the individual's stage of life and their family's cultural background.""}",inst-1,1,,
 New-pe-20,What sport is popular to play on the beach in China?,"What sport is popular to play on the beach in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sport is popular to play on the beach in China?','answer':[]}
@@ -22,7 +24,7 @@ New-pe-20,What sport is popular to play on the beach in China?,"What sport is po
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Beach Volleyball""}], ""reasoning"": ""Beach volleyball is a popular sport in China, especially among young people, and is often played on beaches and coastal areas during the summer months.""}",inst-1,1,,
+","{""answer"": [""Beach Volleyball""], ""reasoning"": ""Beach volleyball is a popular sport in China, and the country has been participating in international beach volleyball competitions since the 1990s. The sport has gained significant popularity in recent years, with many professional teams and leagues being established in major cities like Shanghai and Beijing.""}",inst-1,1,,"Beach volleyball is a popular sport in China, and the country has been participating in international beach volleyball competitions since the 1990s. The sport has gained significant popularity in recent years, with many professional teams and leagues being established in major cities like Shanghai and Beijing."
 Kik-in-37,What soccer teams in China are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in China are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What soccer teams in China are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
@@ -30,7 +32,7 @@ Kik-in-37,What soccer teams in China are famous for their intense rivalry? (e.g.
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Team"": ""Shanghai Shenhua"", ""Team"": ""Shanghai SIPG""}], ""reasoning"": ""The intense rivalry between Shanghai Shenhua and Shanghai SIPG is due to their geographical proximity, cultural significance, and frequent matches in national competitions.""}",inst-1,1,,
+","{""answer"": [{""team1"": ""Beijing Guoan"", ""team2"": ""Shandong Luneng""}], ""reasoning"": ""The Beijing Guoan vs Shandong Luneng rivalry is considered one of the most intense and historic in Chinese football, with both teams having a strong following and a history of competitive matches. The two teams have faced each other numerous times in various competitions, including the Chinese Super League, FA Cup, and AFC Champions League, and their matches are often highly anticipated and closely watched by fans.""}",inst-1,1,,
 Jod-ch-07,"How long (in hours) on average does it take for people in China to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in China to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How long (in hours) on average does it take for people in China to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
@@ -38,7 +40,7 @@ Jod-ch-07,"How long (in hours) on average does it take for people in China to ha
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [1.5], ""reasoning"": ""According to a survey by Chinese food delivery platform Ele.me, the average dining time at a restaurant in China is around 1 hour and 30 minutes. This includes time spent ordering, eating, and leaving the restaurant.""}",inst-1,1,,"According to a survey by Chinese food delivery platform Ele.me, the average dining time at a restaurant in China is around 1 hour and 30 minutes. This includes time spent ordering, eating, and leaving the restaurant."
+","{""answer"": [1.5], ""reasoning"": ""According to a survey conducted by the China Cuisine Association, the average dining time in China is around 1 hour and 30 minutes. This is because many Chinese people prioritize efficiency and speed when eating out, often opting for quick-service restaurants or ordering takeout. Additionally, the cultural emphasis on socializing and sharing meals with family and friends means that mealtimes can be shorter and more concise.""}",inst-1,1,,"According to a survey conducted by the China Cuisine Association, the average dining time in China is around 1 hour and 30 minutes. This is because many Chinese people prioritize efficiency and speed when eating out, often opting for quick-service restaurants or ordering takeout. Additionally, the cultural emphasis on socializing and sharing meals with family and friends means that mealtimes can be shorter and more concise."
 New-spme-37,Which profession is most commonly studied abroad by students from China?,"Which profession is most commonly studied abroad by students from China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which profession is most commonly studied abroad by students from China?','answer':[]}
@@ -46,7 +48,7 @@ New-spme-37,Which profession is most commonly studied abroad by students from Ch
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Engineering""], ""reasoning"": ""Engineering is a highly sought-after field among Chinese students due to its strong demand in the Chinese job market and the country's rapid industrialization, as well as the reputation of international universities in this field.""}",inst-1,1,,"Engineering is a highly sought-after field among Chinese students due to its strong demand in the Chinese job market and the country's rapid industrialization, as well as the reputation of international universities in this field."
+","{""answer"": [""Business""], ""reasoning"": ""Students from China often choose to study abroad for business-related programs due to China's rapidly growing economy and the increasing demand for international business skills. Many Chinese companies are looking for employees with global perspectives and language skills, making studying abroad a strategic move for Chinese students who want to gain a competitive edge in the job market.""}",inst-1,1,,"Students from China often choose to study abroad for business-related programs due to China's rapidly growing economy and the increasing demand for international business skills. Many Chinese companies are looking for employees with global perspectives and language skills, making studying abroad a strategic move for Chinese students who want to gain a competitive edge in the job market."
 New-pe-49,Where do families gather to pray together in China?,"Where do families gather to pray together in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do families gather to pray together in China?','answer':[]}
@@ -54,7 +56,7 @@ New-pe-49,Where do families gather to pray together in China?,"Where do families
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Temples and shrines""}], ""reasoning"": ""In many Chinese households, families may gather to pray together at temples and shrines, which are often revered for their historical and cultural significance.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Temples""}], ""reasoning"": ""In China, families often gather to pray together at temples, especially during traditional festivals and holidays. Temples serve as community spaces for people to come together and worship, and many families have a strong cultural and spiritual connection to these sacred sites.""}",inst-1,1,,
 Jod-ch-60,What is the duration (in hours) of a typical workday in China? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in China? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the duration (in hours) of a typical workday in China? (Provide Arabic numerals (0~24) only.)','answer':[]}
@@ -62,7 +64,7 @@ Jod-ch-60,What is the duration (in hours) of a typical workday in China? (Provid
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [8.5], ""reasoning"": ""The typical workday in China varies, but 8-9 hours is common, with a 30-45 minute lunch break.""}",inst-1,1,,"The typical workday in China varies, but 8-9 hours is common, with a 30-45 minute lunch break."
+","{""answer"": [{""answer"": 8}], ""reasoning"": ""In China, a typical workday usually lasts around 8 hours, with a standard working hour range of 8:00 AM to 5:00 PM, Monday to Friday. This can vary depending on the industry, company, and location, but 8 hours is a common standard.""}",inst-1,1,,
 Ji-ko-24,What is the most preferred recreational facility among children in China?,"What is the most preferred recreational facility among children in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most preferred recreational facility among children in China?','answer':[]}
@@ -70,7 +72,7 @@ Ji-ko-24,What is the most preferred recreational facility among children in Chin
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Amusement Parks""}], ""reasoning"": ""According to various studies and surveys, amusement parks are the most preferred recreational facility among children in China, providing a wide range of exciting rides, games, and entertainment options that cater to their sense of adventure and joy.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Public Parks""}], ""reasoning"": ""Public parks in China are often equipped with playgrounds, sports facilities, and green spaces, making them a popular destination for children to engage in physical activity, socialize, and enjoy the outdoors.""}",inst-1,1,,
 Sa-en-22,What is the most famous university in China known for its sports team?,"What is the most famous university in China known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous university in China known for its sports team?','answer':[]}
@@ -78,7 +80,7 @@ Sa-en-22,What is the most famous university in China known for its sports team?,
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Beijing Sport University""], ""reasoning"": ""Beijing Sport University is one of the most renowned universities in China for its strong sports programs and achievements. It has produced many Olympic and World Champions in various sports, and its teams have won numerous national and international titles.""}",inst-1,1,,"Beijing Sport University is one of the most renowned universities in China for its strong sports programs and achievements. It has produced many Olympic and World Champions in various sports, and its teams have won numerous national and international titles."
+","{""answer"": [{""name"": ""Beijing Sport University""}], ""reasoning"": ""Beijing Sport University is one of the most prestigious universities in China, with a strong reputation for its sports programs and teams. The university has a long history of producing top-notch athletes and has won numerous national and international championships.""}",inst-1,1,,
 Al-en-19,What is a popular second language for high school students in China?,"What is a popular second language for high school students in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a popular second language for high school students in China?','answer':[]}
@@ -86,7 +88,9 @@ Al-en-19,What is a popular second language for high school students in China?,"W
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""English""}],""reasoning"": ""English is a widely taught and popular second language for high school students in China due to its importance in international communication, education, and economic exchanges.""}",inst-1,1,,
+","Here is the response:
+
+{""answer"": [{""English""}], ""reasoning"": ""English is a popular second language for high school students in China due to its widespread use as a global language in international communication, education, and business, as well as its importance for gaining access to higher education and job opportunities abroad.""}",inst-1,1,,
 Ne-ar-09,What do people from China eat in Eid ul Fitr?,"What do people from China eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people from China eat in Eid ul Fitr?','answer':[]}
@@ -94,7 +98,9 @@ Ne-ar-09,What do people from China eat in Eid ul Fitr?,"What do people from Chin
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""traditional Chinese dishes""], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and as such, it is not widely celebrated in China, where the majority of the population is not Muslim. However, in areas with significant Muslim populations, such as Xinjiang and Yunnan provinces, Eid ul Fitr may be observed, and traditional Chinese dishes may be served as part of the celebrations.""}",inst-1,1,,"Eid ul Fitr is a significant Islamic holiday, and as such, it is not widely celebrated in China, where the majority of the population is not Muslim. However, in areas with significant Muslim populations, such as Xinjiang and Yunnan provinces, Eid ul Fitr may be observed, and traditional Chinese dishes may be served as part of the celebrations."
+","{""answer"": [], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and as a predominantly non-Muslim country, China does not have a significant Islamic population who would typically celebrate Eid ul Fitr. However, with increasing globalization and cultural exchange, some Chinese cities with significant Muslim populations, such as Xinjiang and Ningxia, may have some individuals who celebrate Eid ul Fitr, but it is not a widespread or traditional practice in China.""}
+
+{""answer"": ["""", """", """"], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and as a predominantly non-Muslim country, China does not have a significant Islamic population who would typically celebrate Eid ul Fitr. However, with increasing globalization and cultural exchange, some Chinese cities with significant Muslim populations, such as Xinjiang and Ningxia, may have some individuals who celebrate Eid ul Fitr, but it is not a widespread or traditional practice in China.""}",inst-1,1,,"Eid ul Fitr is a significant Islamic holiday, and as a predominantly non-Muslim country, China does not have a significant Islamic population who would typically celebrate Eid ul Fitr. However, with increasing globalization and cultural exchange, some Chinese cities with significant Muslim populations, such as Xinjiang and Ningxia, may have some individuals who celebrate Eid ul Fitr, but it is not a widespread or traditional practice in China."
 New-su-24,What sports do parents and children commonly play together in China?,"What sports do parents and children commonly play together in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sports do parents and children commonly play together in China?','answer':[]}
@@ -102,7 +108,7 @@ New-su-24,What sports do parents and children commonly play together in China?,"
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""badminton""}], ""reasoning"": ""Badminton is a popular sport in China, and it's often played by parents and children together due to its social and recreational nature.""}",inst-1,1,,
+","{""answer"": [{""Badminton""}], ""reasoning"": ""In Chinese culture, parents and children often engage in sports and games together as a way to bond and strengthen family ties. Badminton is a popular sport in China that is easy to learn and play, making it a common activity for families to enjoy together.""}",inst-1,1,,
 Ji-ko-42,What are the required subjects in China's university entrance exam?,"What are the required subjects in China's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the required subjects in China's university entrance exam?','answer':[]}
@@ -110,7 +116,7 @@ Ji-ko-42,What are the required subjects in China's university entrance exam?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Chinese"", ""Mathematics"", ""Foreign Language""], ""reasoning"": ""These three subjects are the core subjects required for the university entrance exam in China, also known as the Gaokao, and are used to assess students' abilities in language, mathematics, and logical thinking.""}",inst-1,1,,"These three subjects are the core subjects required for the university entrance exam in China, also known as the Gaokao, and are used to assess students' abilities in language, mathematics, and logical thinking."
+","{""answer"": [""Chinese"", ""Mathematics"", ""Foreign Language (usually English)""], ""reasoning"": ""The Chinese university entrance exam, also known as the National College Entrance Examination (NCEE), is a standardized test used to determine admission to higher education institutions in China. The required subjects are Chinese language, mathematics, and a foreign language, which is usually English. These subjects are considered fundamental and essential for a well-rounded education.""}",inst-1,1,,"The Chinese university entrance exam, also known as the National College Entrance Examination (NCEE), is a standardized test used to determine admission to higher education institutions in China. The required subjects are Chinese language, mathematics, and a foreign language, which is usually English. These subjects are considered fundamental and essential for a well-rounded education."
 New-pe-06,What is the most popular stew in China?,"What is the most popular stew in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular stew in China?','answer':[]}
@@ -118,7 +124,7 @@ New-pe-06,What is the most popular stew in China?,"What is the most popular stew
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Beef Noodle Stew""}], ""reasoning"": ""Beef Noodle Stew is a classic Chinese dish that has been popular for centuries, and its popularity has spread to many parts of the world. It is a hearty and flavorful stew made with beef, noodles, and a variety of vegetables, and is often served as a main course.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Hot Pot""}], ""reasoning"": ""Hot Pot is a popular communal stew-like dish in China, originating from the Sichuan province. It is typically served at the table, where diners add thinly sliced ingredients to a simmering broth. The dish has gained immense popularity across China and has become a staple in many Chinese restaurants.""}",inst-1,1,,
 New-pe-86,What is the name of the most famous tower in China?,"What is the name of the most famous tower in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the name of the most famous tower in China?','answer':[]}
@@ -126,7 +132,7 @@ New-pe-86,What is the name of the most famous tower in China?,"What is the name 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""The Great Wall Tower""}], ""reasoning"": ""The Great Wall Tower is the most famous tower in China due to its historical significance and architectural grandeur.""}",inst-1,1,,
+","{""answer"": [{""name"": ""The Forbidden City Tower""}], ""reasoning"": ""The Forbidden City Tower, also known as the Zhongnanhai Tower, is a famous tower located in the Forbidden City in Beijing, China. It is a symbol of Chinese imperial power and is one of the most recognizable landmarks in China.""}",inst-1,1,,
 Th-en-53,What is the most popular extracurricular social event at schools in China?,"What is the most popular extracurricular social event at schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular extracurricular social event at schools in China?','answer':[]}
@@ -134,7 +140,7 @@ Th-en-53,What is the most popular extracurricular social event at schools in Chi
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""cultural festivals""], ""reasoning"": ""Cultural festivals are a popular extracurricular social event at schools in China because they allow students to showcase their cultural heritage, learn about other cultures, and bond over shared values and traditions.""}",inst-1,1,,"Cultural festivals are a popular extracurricular social event at schools in China because they allow students to showcase their cultural heritage, learn about other cultures, and bond over shared values and traditions."
+","{""answer"": [{""event"": ""KTV Night""}], ""reasoning"": ""KTV Night is a popular extracurricular social event at schools in China, as it provides a relaxed and entertaining atmosphere for students to bond and socialize outside of academic settings. It is also a common practice in Chinese culture for friends and colleagues to gather at KTV bars to sing and have a good time, which is easily adapted to a school setting.""}",inst-1,1,,
 Ca-sp-06,Which is the most important meal of the day to people from China?,"Which is the most important meal of the day to people from China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which is the most important meal of the day to people from China?','answer':[]}
@@ -142,7 +148,7 @@ Ca-sp-06,Which is the most important meal of the day to people from China?,"Whic
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""breakfast""}], ""reasoning"": ""In Chinese culture, breakfast is considered the most important meal of the day as it provides energy and sustenance for the day ahead, especially for those who engage in physical labor or have busy schedules.""}",inst-1,1,,
+","{""answer"": [""Lunch""], ""reasoning"": ""In Chinese culture, lunch is considered the most important meal of the day as it is typically the largest and most filling meal of the day, often eaten with family and friends. It is also a time for socializing and bonding.""}",inst-1,1,,"In Chinese culture, lunch is considered the most important meal of the day as it is typically the largest and most filling meal of the day, often eaten with family and friends. It is also a time for socializing and bonding."
 New-en-41,Who is the most well known and successful entrepreneur in China?,"Who is the most well known and successful entrepreneur in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most well known and successful entrepreneur in China?','answer':[]}
@@ -150,7 +156,7 @@ New-en-41,Who is the most well known and successful entrepreneur in China?,"Who 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Jack Ma""], ""reasoning"": ""Jack Ma is the co-founder and former executive chairman of Alibaba Group, one of the largest and most successful e-commerce companies in the world. He is widely recognized as one of the most successful entrepreneurs in China, with a net worth of over $40 billion.""}",inst-1,1,,"Jack Ma is the co-founder and former executive chairman of Alibaba Group, one of the largest and most successful e-commerce companies in the world. He is widely recognized as one of the most successful entrepreneurs in China, with a net worth of over $40 billion."
+","{""answer"": [""Jack Ma""], ""reasoning"": ""Jack Ma is the co-founder and former executive chairman of Alibaba Group, one of the most successful and well-known e-commerce companies in the world. He has been a pioneer in China's entrepreneurial landscape and has played a significant role in shaping the country's digital economy.""}",inst-1,1,,"Jack Ma is the co-founder and former executive chairman of Alibaba Group, one of the most successful and well-known e-commerce companies in the world. He has been a pioneer in China's entrepreneurial landscape and has played a significant role in shaping the country's digital economy."
 New-su-33,What is the common dress code for school teachers in China?,"What is the common dress code for school teachers in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the common dress code for school teachers in China?','answer':[]}
@@ -158,7 +164,7 @@ New-su-33,What is the common dress code for school teachers in China?,"What is t
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Business casual""}], ""reasoning"": ""In China, the dress code for school teachers is often considered business casual, with a mix of traditional and modern elements. Teachers typically wear formal attire such as blazers, dresses, and trousers, but with a more relaxed approach, often swapping ties for button-down shirts.""}",inst-1,1,,
+","{""answer"": [{""Business casual""}], ""reasoning"": ""In China, the dress code for school teachers is generally considered to be business casual, with a focus on professionalism and respect for the institution. Teachers are expected to dress in a way that reflects the school's values and is appropriate for the age group and subject they are teaching. This may include wearing collared shirts, slacks or skirts, and closed-toe shoes, with minimal jewelry and no revealing or provocative clothing.""}",inst-1,1,,
 Th-en-44,What is China's most popular food for family meals on weekends?,"What is China's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is China's most popular food for family meals on weekends?','answer':[]}
@@ -166,7 +172,7 @@ Th-en-44,What is China's most popular food for family meals on weekends?,"What i
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Dumplings""}], ""reasoning"": ""Dumplings are a traditional and popular food in China, often served at family gatherings and special occasions. They are also relatively easy to make in large quantities, making them a convenient choice for weekend family meals.""}",inst-1,1,,
+","{""answer"": [{""dish"": ""Wonton Noodles""}], ""reasoning"": ""Wonton noodles are a staple in Southern China and are often served as a weekend family meal. They are a comforting and delicious dish that is easy to make and can be customized to suit individual tastes. In addition, wonton noodles are a popular choice for family gatherings and celebrations, making them a fitting answer to this question.""}",inst-1,1,,
 Th-en-45,What is the most popular weekday evening family activity in China?,"What is the most popular weekday evening family activity in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular weekday evening family activity in China?','answer':[]}
@@ -174,7 +180,7 @@ Th-en-45,What is the most popular weekday evening family activity in China?,"Wha
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most popular weekday evening family activity in China"": ""Watching TV together""}], ""reasoning"": ""Watching TV together is a common and relaxing activity for Chinese families, allowing them to bond and unwind after a long day.""}",inst-1,1,,
+","{""answer"": [{""most popular weekday evening family activity in China"": ""Watching TV together""}], ""reasoning"": ""In China, watching TV is a common and affordable way for families to spend time together in the evening. Many Chinese families own multiple TVs and have access to various channels, including local and international content. It's also a convenient way to relax and unwind after a long day.""}",inst-1,1,,
 New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in China? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in China? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How long is the typical probation period for new employees before signing a formal contract in China? (e.g., 1 month).','answer':[]}
@@ -182,7 +188,7 @@ New-ch-44,"How long is the typical probation period for new employees before sig
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""probation period"": ""3-6 months""}], ""reasoning"": ""The typical probation period for new employees before signing a formal contract in China is usually 3-6 months, allowing both the employer and employee to assess the fit and performance of the new hire.""}",inst-1,1,,
+","{""answer"": [{""value"": 1-3 months}], ""reasoning"": ""The typical probation period for new employees in China is usually 1-3 months, during which the company assesses the employee's performance, skills, and fit with the team. This period allows the company to determine whether to convert the employee to a formal contract or terminate the employment.""}",inst-1,1,,
 New-in-62,What university in China is popular because of its engineering major? (Provide the official name.),"What university in China is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What university in China is popular because of its engineering major? (Provide the official name.)','answer':[]}
@@ -190,7 +196,7 @@ New-in-62,What university in China is popular because of its engineering major? 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Tsinghua University""]}, ""reasoning"": ""Tsinghua University is one of the most prestigious universities in China, and its engineering programs are highly regarded and well-known for their rigorous academic standards and strong industry connections.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Tsinghua University""], ""reasoning"": ""Tsinghua University is one of the most prestigious universities in China, and its engineering program is particularly renowned for its strong reputation, faculty, and research opportunities.""}}",inst-1,1,,
 Ji-ko-34,How do elementary school students in China go to school?,"How do elementary school students in China go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How do elementary school students in China go to school?','answer':[]}
@@ -198,7 +204,7 @@ Ji-ko-34,How do elementary school students in China go to school?,"How do elemen
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Students in China typically walk, bike, or take public transportation to school.""], ""reasoning"": ""Elementary school students in China often live close to their schools, making walking or biking a convenient and common mode of transportation. Public transportation options such as buses and trains are also widely available and used by many students.""}",inst-1,1,,"Elementary school students in China often live close to their schools, making walking or biking a convenient and common mode of transportation. Public transportation options such as buses and trains are also widely available and used by many students."
+","{""answer"": [""Most elementary school students in China walk or take public transportation to school""], ""reasoning"": ""Elementary school students in China typically live close to their schools and public transportation options are readily available, making walking or taking public transportation a convenient and affordable way to get to school.""}",inst-1,1,,"Elementary school students in China typically live close to their schools and public transportation options are readily available, making walking or taking public transportation a convenient and affordable way to get to school."
 Ta-pe-21,Where do children usually play soccer in China?,"Where do children usually play soccer in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do children usually play soccer in China?','answer':[]}
@@ -206,7 +212,7 @@ Ta-pe-21,Where do children usually play soccer in China?,"Where do children usua
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""School playgrounds"", ""Public parks"", ""Recreational centers"", ""Local soccer clubs""]), ""reasoning"": ""Children in China often play soccer in spaces that are easily accessible and convenient for them, such as school playgrounds, public parks, and recreational centers. Local soccer clubs may also offer training sessions and games for children.""}",inst-1,1,,
+","{""answer"": {""answer"": [{""fields"", ""streets"", ""schools"", ""parks""}]}, ""reasoning"": ""In China, children often play soccer in open spaces that are easily accessible and available, such as streets, schools, and parks. These areas provide a safe and convenient place for kids to play and exercise, and are often used by local communities and schools for recreational activities.""}",inst-1,1,,
 Tmp-ar-01,Where do university students in China usually go to study for their final exams?,"Where do university students in China usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do university students in China usually go to study for their final exams?','answer':[]}
@@ -214,7 +220,7 @@ Tmp-ar-01,Where do university students in China usually go to study for their fi
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""library""}], ""reasoning"": ""University students in China typically study for their final exams at the university library, as it is a quiet and focused environment that provides access to relevant study materials and resources.""}",inst-1,1,,
+","{""answer"": [""Tutoring centers, online platforms, and libraries""], ""reasoning"": ""University students in China typically go to tutoring centers, online platforms, and libraries to study for their final exams as these places provide a quiet and focused environment, access to study materials, and support from peers and instructors. Tutoring centers offer personalized guidance and practice tests, while online platforms provide flexible and convenient learning options. Libraries provide a peaceful atmosphere and access to a wide range of academic resources.""}",inst-1,1,,"University students in China typically go to tutoring centers, online platforms, and libraries to study for their final exams as these places provide a quiet and focused environment, access to study materials, and support from peers and instructors. Tutoring centers offer personalized guidance and practice tests, while online platforms provide flexible and convenient learning options. Libraries provide a peaceful atmosphere and access to a wide range of academic resources."
 Ne-ar-38,Which food do people usually offer as charity in China?,"Which food do people usually offer as charity in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which food do people usually offer as charity in China?','answer':[]}
@@ -222,7 +228,7 @@ Ne-ar-38,Which food do people usually offer as charity in China?,"Which food do 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""rice""}], ""reasoning"": ""In Chinese culture, rice is a staple food and is often considered a symbol of abundance and generosity. Offering rice as charity is a way to show kindness and respect to others, and it is a common practice in many Chinese communities.""}",inst-1,1,,
+","{""answer"": [{""food"": ""Rice""}], ""reasoning"": ""In Chinese culture, offering rice as charity is a common practice, especially during festivals and special occasions. Rice is considered a staple food in China and is often used as a symbol of abundance and prosperity. Offering rice as charity is a way to share blessings and show kindness to others.""}",inst-1,1,,
 Jod-ch-01,What eating utensils do people commonly used in China?,"What eating utensils do people commonly used in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What eating utensils do people commonly used in China?','answer':[]}
@@ -230,7 +236,7 @@ Jod-ch-01,What eating utensils do people commonly used in China?,"What eating ut
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""chopssticks"",""spoon"",""fork""}],""reasoning"": ""In China, traditional eating utensils are chopsticks, which are used for most meals, with spoons and forks being used less frequently but still commonly found in modern dining settings.""}",inst-1,1,,
+","{""answer"": [{""chopsticks""}], ""reasoning"": ""Chopsticks are the most common eating utensils used in China, with a long history dating back over 3,000 years. They are an essential part of Chinese dining etiquette and are used to eat a wide variety of foods, from noodles and rice to vegetables and meat.""}",inst-1,1,,
 New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in China?,"What type of alcoholic drink is most commonly consumed at festivals in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of alcoholic drink is most commonly consumed at festivals in China?','answer':[]}
@@ -238,7 +244,7 @@ New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Baijiu""}], ""reasoning"": ""Baijiu is a traditional Chinese spirit that is often consumed during festivals and celebrations due to its strong flavor and cultural significance.""}",inst-1,1,,
+","{""answer"": ["" Baijiu""], ""reasoning"": ""Baijiu is a clear, high-proof grain-based liquor that is deeply rooted in Chinese culture and is often consumed during festivals and celebrations. It is widely available and affordable, making it a popular choice for many Chinese festivals.""}",inst-1,1,,"Baijiu is a clear, high-proof grain-based liquor that is deeply rooted in Chinese culture and is often consumed during festivals and celebrations. It is widely available and affordable, making it a popular choice for many Chinese festivals."
 Th-en-11,Who is the most popular sportperson in China?,"Who is the most popular sportperson in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular sportperson in China?','answer':[]}
@@ -246,7 +252,7 @@ Th-en-11,Who is the most popular sportperson in China?,"Who is the most popular 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Li Na""], ""reasoning"": ""Li Na is a Chinese professional tennis player who has won numerous titles, including the French Open and the Australian Open. She is widely regarded as one of the most successful and popular Chinese athletes of all time, and her achievements have helped to popularize tennis in China.""}",inst-1,1,,"Li Na is a Chinese professional tennis player who has won numerous titles, including the French Open and the Australian Open. She is widely regarded as one of the most successful and popular Chinese athletes of all time, and her achievements have helped to popularize tennis in China."
+","{""answer"": [{""name"": ""Li Na""}], ""reasoning"": ""Li Na is a former professional tennis player from China who has won numerous titles and accolades, including the French Open and the Australian Open. She is widely regarded as one of the greatest tennis players in Chinese history, and her success has helped to popularize tennis in China. Her popularity extends beyond the sports world, with her charming personality and determination making her a beloved figure in Chinese popular culture.""}",inst-1,1,,
 New-gr-15,What is the most popular traditional dessert in China?,"What is the most popular traditional dessert in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular traditional dessert in China?','answer':[]}
@@ -254,7 +260,7 @@ New-gr-15,What is the most popular traditional dessert in China?,"What is the mo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"":""Egg Tarts""}], ""reasoning"": ""Egg Tarts are a classic Chinese dessert that has gained worldwide popularity, especially in Macau. They are a staple at most Chinese bakeries and are often served at special occasions.""}",inst-1,1,,
+","{""answer"": [""Alfonso Mango Pudding""], ""reasoning"": ""Alfonso Mango Pudding is a beloved traditional Chinese dessert due to its unique combination of sweet and sour flavors, as well as its creamy texture, which is often attributed to the use of high-quality mango puree and evaporated milk.""}",inst-1,1,,"Alfonso Mango Pudding is a beloved traditional Chinese dessert due to its unique combination of sweet and sour flavors, as well as its creamy texture, which is often attributed to the use of high-quality mango puree and evaporated milk."
 Ni-en-40,What is the most popular Christmas song in China?,"What is the most popular Christmas song in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular Christmas song in China?','answer':[]}
@@ -262,7 +268,7 @@ Ni-en-40,What is the most popular Christmas song in China?,"What is the most pop
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Silent Night""], ""reasoning"": ""Silent Night is a classic Christmas carol that has been widely popular and translated into many languages, including Mandarin Chinese. It is often performed by Chinese artists and is a staple of Christmas celebrations in China.""}",inst-1,1,,"Silent Night is a classic Christmas carol that has been widely popular and translated into many languages, including Mandarin Chinese. It is often performed by Chinese artists and is a staple of Christmas celebrations in China."
+","{""answer"": [{""song"": ""Santa Claus Is Coming to Town""}], ""reasoning"": ""As Christmas is not a traditional holiday in China, the most popular Christmas song in China is likely to be a Western classic that has been widely adopted and adapted in the country. 'Santa Claus Is Coming to Town' is a well-known and catchy song that has been translated into Mandarin Chinese and is often played in shopping malls, restaurants, and other public places during the holiday season.""}",inst-1,1,,
 Na-ko-20,What sports event do people from China passionately support the most in international competitions?,"What sports event do people from China passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sports event do people from China passionately support the most in international competitions?','answer':[]}
@@ -270,7 +276,7 @@ Na-ko-20,What sports event do people from China passionately support the most in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Table Tennis""], ""reasoning"": ""Table tennis is a highly popular sport in China, and the country has a rich history of producing world-class players and teams. The sport is considered a symbol of Chinese excellence and pride, and the Chinese people have a strong emotional attachment to it.""}",inst-1,1,,"Table tennis is a highly popular sport in China, and the country has a rich history of producing world-class players and teams. The sport is considered a symbol of Chinese excellence and pride, and the Chinese people have a strong emotional attachment to it."
+","{""answer"": [{""sport"": ""Table Tennis""}], ""reasoning"": ""Due to its rich history and cultural significance in China, table tennis has become a national obsession, with the Chinese national team dominating the sport in international competitions. The sport's popularity can be attributed to its accessibility, simplicity, and the fact that China has produced some of the greatest players of all time, including Zhuang Zedong, who is considered the father of Chinese table tennis.""}",inst-1,1,,
 Al-en-04,What is the most popular fruit in China?,"What is the most popular fruit in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular fruit in China?','answer':[]}
@@ -278,7 +284,7 @@ Al-en-04,What is the most popular fruit in China?,"What is the most popular frui
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Banana""}], ""reasoning"": ""Due to its widespread cultivation and availability in China""}",inst-1,1,,
+","{""answer"": [{""name"": ""Apple""}], ""reasoning"": ""According to various sources, including the Food and Agriculture Organization of the United Nations and Chinese market research, apples are the most widely consumed and popular fruit in China, due to their widespread cultivation, affordability, and cultural significance.""}",inst-1,1,,
 New-gr-06,What is the most popular food in China among young people?,"What is the most popular food in China among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular food in China among young people?','answer':[]}
@@ -286,7 +292,7 @@ New-gr-06,What is the most popular food in China among young people?,"What is th
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Baozi""}],""reasoning"": ""Baozi is a popular choice among young people in China due to its convenience, affordability, and variety of fillings.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Jiachang Baozi""}], ""reasoning"": ""Jiachang Baozi, also known as street-style steamed buns, has become a popular food among young people in China due to its affordability, convenience, and variety of fillings. It is easily accessible at street stalls and markets, and its flavor profiles have evolved to cater to younger generations' preferences.""}",inst-1,1,,
 New-su-34,What is the most popular extracurricular activity related to music in schools in China?,"What is the most popular extracurricular activity related to music in schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular extracurricular activity related to music in schools in China?','answer':[]}
@@ -294,7 +300,7 @@ New-su-34,What is the most popular extracurricular activity related to music in 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Chinese Orchestral Music""}], ""reasoning"": ""Chinese Orchestral Music is a popular extracurricular activity in schools in China due to its cultural significance and the country's rich musical heritage. Many students in China are exposed to traditional Chinese instruments and music from a young age, and participating in orchestral music activities allows them to develop their musical skills and appreciation for Chinese culture.""}",inst-1,1,,
+","{""answer"": [""Choir""], ""reasoning"": ""Based on various studies and reports, choir is the most popular extracurricular music activity in Chinese schools, as it is often seen as a way to develop teamwork, discipline, and cultural appreciation, while also providing an opportunity for students to showcase their vocal talents.""}",inst-1,1,,"Based on various studies and reports, choir is the most popular extracurricular music activity in Chinese schools, as it is often seen as a way to develop teamwork, discipline, and cultural appreciation, while also providing an opportunity for students to showcase their vocal talents."
 Ji-ko-26,What are the key milestones associated with children's independence from their parents in China's society?,"What are the key milestones associated with children's independence from their parents in China's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the key milestones associated with children's independence from their parents in China's society?','answer':[]}
@@ -302,10 +308,7 @@ Ji-ko-26,What are the key milestones associated with children's independence fro
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""age"": 28, ""milestones"": [""financial independence"", ""emotional separation"", ""independent living""]},
-{""age"": 30, ""milestones"": [""marriage"", ""starting a family"", ""establishing a career""]},
-{""age"": 35, ""milestones"": [""purchasing a home"", ""reaching professional peak"", ""assuming family responsibilities""]}],
-""reasoning"": ""In China, the key milestones associated with children's independence from their parents are often tied to age, with specific markers of financial, emotional, and practical self-sufficiency.""}",inst-1,1,,
+","{""answer"": [""childhood education ends"", ""entry into the workforce"", ""marriage"", ""having children of their own"", ""receiving inheritance""], ""reasoning"": ""In Chinese culture, children's independence from their parents is often marked by significant life events that signal a transition to adulthood. These milestones are often tied to education, career, family, and financial responsibilities.""}",inst-1,1,,"In Chinese culture, children's independence from their parents is often marked by significant life events that signal a transition to adulthood. These milestones are often tied to education, career, family, and financial responsibilities."
 Ne-ar-36,What is a typical festive meal in China?,"What is a typical festive meal in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a typical festive meal in China?','answer':[]}
@@ -313,7 +316,7 @@ Ne-ar-36,What is a typical festive meal in China?,"What is a typical festive mea
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""dish"": ""Peking duck"", ""side dish"": ""steamed bok choy and pancakes"", ""main course"": ""noodles or rice""}], ""reasoning"": ""A traditional Chinese festive meal typically features a combination of dishes that highlight the country's culinary diversity and cultural significance.""}",inst-1,1,,
+","{""answer"": [{""dish"":""Peking duck"",""dish"":""Fish in sweet and sour sauce"",""dish"":""Steamed dumplings"",""dish"":""Noodles with vegetables""}], ""reasoning"": ""A typical festive meal in China is often a combination of traditional dishes that are symbolic of good luck, prosperity, and abundance. The dishes are usually served with a variety of ingredients, including meats, seafood, and vegetables, and are often steamed or stir-fried to preserve their nutritional value. The meal is typically served with a variety of condiments and sauces to add flavor and texture.""}",inst-1,1,,
 Ji-ko-14,What is the representative export item of China?,"What is the representative export item of China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the representative export item of China?','answer':[]}
@@ -321,7 +324,7 @@ Ji-ko-14,What is the representative export item of China?,"What is the represent
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""text"": ""Electronics""}], ""reasoning"": ""China is the world's largest producer and exporter of electronics, accounting for a significant share of the global market, and is the major source of mobile phones, laptops, and other electronic devices.""}",inst-1,1,,
+","{""answer"": [{""Electronics"": ""China is the world's largest electronics exporter, with a significant portion of its exports consisting of electronic components, smartphones, laptops, and other electronic devices.""}], ""reasoning"": ""China's representative export item is often considered to be electronics because it is a key sector of the country's economy, accounting for a significant portion of its total exports and contributing to its rapid economic growth.""}",inst-1,1,,
 New-pe-76,What is a popular activity to do in parks in China?,"What is a popular activity to do in parks in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a popular activity to do in parks in China?','answer':[]}
@@ -329,7 +332,7 @@ New-pe-76,What is a popular activity to do in parks in China?,"What is a popular
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Tai Chi""}], ""reasoning"": ""Tai Chi is a popular activity in Chinese parks because it is a low-impact exercise that promotes relaxation and social interaction, and many Chinese people practice it as a way to stay healthy and connected with their community.""}",inst-1,1,,
+","{""answer"": [""Tai Chi""], ""reasoning"": ""Tai Chi is a traditional Chinese martial art that emphasizes slow movements and deep breathing, making it a popular activity for people of all ages to do in parks in China. It is often practiced in the early morning or evening when the weather is cooler, and it is a great way for people to relax, socialize, and get some exercise.""}",inst-1,1,,"Tai Chi is a traditional Chinese martial art that emphasizes slow movements and deep breathing, making it a popular activity for people of all ages to do in parks in China. It is often practiced in the early morning or evening when the weather is cooler, and it is a great way for people to relax, socialize, and get some exercise."
 Jo-sp-19,What region in China has been traditionally associated with agriculture?,"What region in China has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What region in China has been traditionally associated with agriculture?','answer':[]}
@@ -337,7 +340,9 @@ Jo-sp-19,What region in China has been traditionally associated with agriculture
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""region"": ""Yangtze River Delta""}], ""reasoning"": ""The Yangtze River Delta region has been traditionally associated with agriculture due to its fertile soil, abundant water resources, and suitable climate for rice and other crops.""}",inst-1,1,,
+","Here is the response:
+
+{""answer"": [{""region"": ""Yangtze River Delta""}], ""reasoning"": ""The Yangtze River Delta region has been traditionally associated with agriculture due to its fertile soil, favorable climate, and abundant water resources, making it one of the most productive agricultural regions in China.""}",inst-1,1,,
 Th-en-37,"At what age do children typically become independent from their parents in China? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in China? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'At what age do children typically become independent from their parents in China? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -345,7 +350,7 @@ Th-en-37,"At what age do children typically become independent from their parent
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [22], ""reasoning"": ""In China, children typically become independent from their parents around the age of 22, as this is the average age of marriage and starting a family. Additionally, many Chinese parents encourage their children to be independent and self-sufficient, which can lead to children leaving the family home at a later age.""}",inst-1,1,,"In China, children typically become independent from their parents around the age of 22, as this is the average age of marriage and starting a family. Additionally, many Chinese parents encourage their children to be independent and self-sufficient, which can lead to children leaving the family home at a later age."
+","{""answer"": [{""age"": 25}], ""reasoning"": ""In China, it's common for children to continue living with their parents until they get married, which is often around the age of 25. This is due to the cultural emphasis on family and filial piety, as well as the practical benefits of shared living expenses and social support.""}",inst-1,1,,
 Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in China?,"What is typically given as a congratulatory gesture when attending a friend's wedding in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in China?','answer':[]}
@@ -353,7 +358,7 @@ Na-ko-39,What is typically given as a congratulatory gesture when attending a fr
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""gift"": ""Money""}], ""reasoning"": ""In Chinese culture, giving money is a traditional congratulatory gesture for special occasions, including weddings, as it symbolizes good luck and prosperity.""}",inst-1,1,,
+","{""answer"": [""Red envelopes with money""], ""reasoning"": ""In Chinese culture, red is a symbol of good luck and prosperity, and giving red envelopes with money is a traditional and meaningful way to congratulate the couple on their wedding. It is also a common practice to give gifts in the form of red envelopes during special occasions like weddings, as it is believed to bring good fortune and blessings to the couple.""}",inst-1,1,,"In Chinese culture, red is a symbol of good luck and prosperity, and giving red envelopes with money is a traditional and meaningful way to congratulate the couple on their wedding. It is also a common practice to give gifts in the form of red envelopes during special occasions like weddings, as it is believed to bring good fortune and blessings to the couple."
 Ca-sp-11,Which day of the week do people usually organize a family meal in China?,"Which day of the week do people usually organize a family meal in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which day of the week do people usually organize a family meal in China?','answer':[]}
@@ -361,7 +366,7 @@ Ca-sp-11,Which day of the week do people usually organize a family meal in China
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In China, Sunday is often considered a family day, and many families prefer to gather together for a meal on this day.""}",inst-1,1,,
+","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In China, Sunday is often considered a day for family gatherings and meals, as it is a popular day for families to spend quality time together and relax after a busy week.""}",inst-1,1,,
 Ji-ko-35,What is the most common form of private education in China?,"What is the most common form of private education in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most common form of private education in China?','answer':[]}
@@ -369,7 +374,7 @@ Ji-ko-35,What is the most common form of private education in China?,"What is th
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most common form of private education in China"": ""Private K-12 schools""}], ""reasoning"": [""Due to the high demand for quality education and limited public school resources, private K-12 schools have become the most common form of private education in China.""]}",inst-1,1,,
+","{""answer"": [{""type"": ""boarding schools""}], ""reasoning"": ""In China, boarding schools are the most common form of private education due to the country's rapid urbanization and increasing demand for high-quality education.""}",inst-1,1,,
 Al-en-01,What is a common snack for preschool kids in China?,"What is a common snack for preschool kids in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a common snack for preschool kids in China?','answer':[]}
@@ -377,7 +382,7 @@ Al-en-01,What is a common snack for preschool kids in China?,"What is a common s
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"":"" Fried dough sticks""}], ""reasoning"": ""Fried dough sticks are a popular snack among preschool kids in China because they are crispy, sweet, and easy to eat, making them a convenient and appealing option for young children.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Peanuts""}], ""reasoning"": ""Peanuts are a common snack for preschool kids in China because they are easy to eat, nutritious, and affordable. In China, peanuts are a popular snack for children and are often served as a quick and easy snack at home, in schools, or at daycare centers.""}",inst-1,1,,
 Al-en-32,What is the main dish for Thanksgiving in China?,"What is the main dish for Thanksgiving in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the main dish for Thanksgiving in China?','answer':[]}
@@ -385,7 +390,9 @@ Al-en-32,What is the main dish for Thanksgiving in China?,"What is the main dish
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""main dish for Thanksgiving in China"": ""None""}], ""reasoning"": ""Thanksgiving is not a traditional holiday in China, and it is not widely celebrated or observed in the country.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""Thanksgiving is not a traditional holiday in China, and it is not widely celebrated. In fact, the concept of Thanksgiving is largely unknown in China, and the holiday is not officially recognized. Therefore, there is no main dish for Thanksgiving in China, as the holiday is not observed. China has its own unique set of traditional holidays and celebrations, such as the Chinese New Year and the Dragon Boat Festival.""}
+
+{'question':'What is the main dish for Thanksgiving in China?','answer':[]}",inst-1,1,,"Thanksgiving is not a traditional holiday in China, and it is not widely celebrated. In fact, the concept of Thanksgiving is largely unknown in China, and the holiday is not officially recognized. Therefore, there is no main dish for Thanksgiving in China, as the holiday is not observed. China has its own unique set of traditional holidays and celebrations, such as the Chinese New Year and the Dragon Boat Festival."
 New-su-58,What animals are commonly used for agriculture in China?,"What animals are commonly used for agriculture in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What animals are commonly used for agriculture in China?','answer':[]}
@@ -393,7 +400,7 @@ New-su-58,What animals are commonly used for agriculture in China?,"What animals
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Pigs"", ""Chickens"", ""Cattle"", ""Ducks"", ""Goats""], ""reasoning"": ""China is a significant producer of agricultural products, and a large portion of its agricultural output is attributed to animal husbandry. Pigs, chickens, cattle, ducks, and goats are commonly raised for meat, dairy, and other products, and are an important part of China's agricultural economy.""}",inst-1,1,,"China is a significant producer of agricultural products, and a large portion of its agricultural output is attributed to animal husbandry. Pigs, chickens, cattle, ducks, and goats are commonly raised for meat, dairy, and other products, and are an important part of China's agricultural economy."
+","{""answer"": [{""animal"": ""pigs"", ""crop"": ""grains"", ""livestock"": ""cattle"", ""poultry"": ""chickens""}], ""reasoning"": ""China is a significant player in global agriculture, and its livestock sector plays a crucial role in the country's food security. Pigs, cattle, and chickens are among the most common animals raised for agriculture in China, while grains such as rice, wheat, and corn are the primary crops. These animals and crops are essential for the country's food production and are often raised together to create a diverse agricultural landscape.""}",inst-1,1,,
 An-ar-03,Which month is the final exam term usually scheduled at high schools in China? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in China? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which month is the final exam term usually scheduled at high schools in China? (Provide Arabic numerals (1~12) only.)','answer':[]}
@@ -401,7 +408,11 @@ An-ar-03,Which month is the final exam term usually scheduled at high schools in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [6], ""reasoning"": ""In China, the final exam term for high schools is usually scheduled in June.""}",inst-1,1,,"In China, the final exam term for high schools is usually scheduled in June."
+","Here is the response:
+
+{""answer"": [6], ""reasoning"": ""In China, the final exams for high school students, known as Gaokao, are typically held in June (the 6th month). This is a standardized national college entrance examination that determines students' future academic paths.""}
+
+Note: The reasoning is based on my understanding of the typical Chinese education system and the Gaokao examination, and may not be applicable to every individual or specific school.",inst-1,1,,"In China, the final exams for high school students, known as Gaokao, are typically held in June (the 6th month). This is a standardized national college entrance examination that determines students' future academic paths."
 Ji-ko-28,When is the first day that people celebrate after a child is born in China?,"When is the first day that people celebrate after a child is born in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'When is the first day that people celebrate after a child is born in China?','answer':[]}
@@ -409,7 +420,7 @@ Ji-ko-28,When is the first day that people celebrate after a child is born in Ch
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""After 30 days""], ""reasoning"": ""In China, the traditional celebration of a newborn child is called 'shēn hú' or 'sé zhōu', which is typically held after 30 days of the child's birth.""}",inst-1,1,,"In China, the traditional celebration of a newborn child is called 'shēn hú' or 'sé zhōu', which is typically held after 30 days of the child's birth."
+","{""answer"": [{""first day"": ""The first day that people celebrate after a child is born in China is usually the 15th day after birth, which is known as the ""Red Envelope Day"" or """".""}], ""reasoning"": ""In Chinese culture, the 15th day after birth is considered a significant milestone, marking the end of the traditional 14-day period of confinement for the new mother. On this day, family and friends gather to bring gifts, food, and well-wishes to the new family, and the baby is typically given a name and presented with red envelopes filled with money.""}",inst-1,1,,
 Na-ko-33,What symbolic food do people from China eat on (Lunar) New Year?,"What symbolic food do people from China eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What symbolic food do people from China eat on (Lunar) New Year?','answer':[]}
@@ -417,7 +428,7 @@ Na-ko-33,What symbolic food do people from China eat on (Lunar) New Year?,"What 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Dumplings""}], ""reasoning"": ""Dumplings are a traditional Chinese food eaten during the Lunar New Year, symbolizing wealth, unity, and good luck.""}",inst-1,1,,
+","{""answer"": [{""symbolic food"": ""Nian Gao""}], ""reasoning"": ""In Chinese culture, Nian Gao is a traditional sweet rice cake that symbolizes progress, advancement, and good luck. It is typically served during the Lunar New Year to wish the recipients a sweet and prosperous year ahead.""}",inst-1,1,,
 Ki-pe-34,What is the usual drink in the breakfast in China?,"What is the usual drink in the breakfast in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the usual drink in the breakfast in China?','answer':[]}
@@ -425,7 +436,11 @@ Ki-pe-34,What is the usual drink in the breakfast in China?,"What is the usual d
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In China, the usual drink during breakfast varies depending on the region and personal preference. However, the most common drinks are tea and soy milk, with tea being the more popular choice. In northern China, milk is also a common breakfast drink, while in southern China, coffee is gaining popularity.""}",inst-1,1,,"In China, the usual drink during breakfast varies depending on the region and personal preference. However, the most common drinks are tea and soy milk, with tea being the more popular choice. In northern China, milk is also a common breakfast drink, while in southern China, coffee is gaining popularity."
+","Here is the response:
+
+{""answer"": [{""drink"": ""tea""}], ""reasoning"": ""In China, tea is a staple beverage and is often consumed with breakfast. In fact, tea is an integral part of Chinese culture and is often served at social gatherings and meals.""}
+
+Note: The answer is in a JSON list format, with a single element representing the usual drink in Chinese breakfast, which is tea. The reasoning provides a brief explanation for why tea is a common choice for breakfast in China.",inst-1,1,,
 New-su-42,What religion is mainly taught in schools in China?,"What religion is mainly taught in schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What religion is mainly taught in schools in China?','answer':[]}
@@ -433,7 +448,7 @@ New-su-42,What religion is mainly taught in schools in China?,"What religion is 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""religion"": ""Atheism""}], ""reasoning"": ""In China, the government has a policy of separating the state from religion, and as a result, religious education is not a significant part of the school curriculum. Instead, the focus is on promoting atheism and the principles of socialism.""}",inst-1,1,,
+","{""answer"": [""No religion is mainly taught in schools in China.""], ""reasoning"": ""In China, education is secular and focuses on promoting national values, patriotism, and socialism. The Chinese government has strict control over the curriculum and prohibits the teaching of religion in public schools. Instead, students learn about traditional Chinese culture, history, and ethics, but not specific religions.""}",inst-1,1,,"In China, education is secular and focuses on promoting national values, patriotism, and socialism. The Chinese government has strict control over the curriculum and prohibits the teaching of religion in public schools. Instead, students learn about traditional Chinese culture, history, and ethics, but not specific religions."
 Ne-ar-06,What do people from China eat in Ramadan?,"What do people from China eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people from China eat in Ramadan?','answer':[]}
@@ -441,7 +456,9 @@ Ne-ar-06,What do people from China eat in Ramadan?,"What do people from China ea
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Break fast with traditional Chinese dishes and fusion foods""}], ""reasoning"": ""As a predominantly Muslim minority, Uighur and other Chinese Muslim communities have their own unique Ramadan traditions and food customs. They often break their fast with traditional Chinese dishes and fusion foods, blending their cultural heritage with Islamic dietary restrictions.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""Ramadan is a holy month of fasting for Muslims, and it is not specific to any particular country or culture. However, in China, where a significant percentage of the population is not Muslim, the observance of Ramadan is not as widespread as in other countries with a larger Muslim population. As a result, the types of food eaten during Ramadan in China may vary greatly depending on the individual or community. Some Muslims in China may choose to fast and follow traditional Ramadan customs, while others may not observe the holiday at all. Therefore, there is no one single answer to this question, as it depends on the individual or community.""}
+
+{""answer"": [{""Iftar"": ""dates, bread, and other light foods"", ""Suhoor"": ""oatmeal, yogurt, and other light breakfast foods""}]}",inst-1,1,,"Ramadan is a holy month of fasting for Muslims, and it is not specific to any particular country or culture. However, in China, where a significant percentage of the population is not Muslim, the observance of Ramadan is not as widespread as in other countries with a larger Muslim population. As a result, the types of food eaten during Ramadan in China may vary greatly depending on the individual or community. Some Muslims in China may choose to fast and follow traditional Ramadan customs, while others may not observe the holiday at all. Therefore, there is no one single answer to this question, as it depends on the individual or community."
 Gu-ch-38,"What is the duration of undergraduate education in China? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in China? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the duration of undergraduate education in China? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -449,7 +466,7 @@ Gu-ch-38,"What is the duration of undergraduate education in China? (Provide Ara
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""duration"": 4}], ""reasoning"": ""In China, the typical duration of undergraduate education is four years.""}",inst-1,1,,
+","{""answer"": [4], ""reasoning"": ""In China, the typical duration of an undergraduate program is four years, which is the standard duration for most bachelor's degree programs.""}",inst-1,1,,"In China, the typical duration of an undergraduate program is four years, which is the standard duration for most bachelor's degree programs."
 Kik-in-16,What drink is commonly consumed in China when the weather is cold?,"What drink is commonly consumed in China when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What drink is commonly consumed in China when the weather is cold?','answer':[]}
@@ -457,7 +474,7 @@ Kik-in-16,What drink is commonly consumed in China when the weather is cold?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Hong Kong-style milk tea""], ""reasoning"": ""Hong Kong-style milk tea is a popular beverage in China, especially during the cold weather, as it provides a warm and comforting drink to help people cope with the chill.""}",inst-1,1,,"Hong Kong-style milk tea is a popular beverage in China, especially during the cold weather, as it provides a warm and comforting drink to help people cope with the chill."
+","{""answer"": [{""drink"": ""Maotai""}], ""reasoning"": ""Maotai is a type of baijiu, a traditional Chinese spirit, that is often consumed during cold weather in China. It is believed to warm the body and provide comfort during the harsh winter months.""}",inst-1,1,,
 Al-en-39,What do people eat on their birthday in China?,"What do people eat on their birthday in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people eat on their birthday in China?','answer':[]}
@@ -465,7 +482,7 @@ Al-en-39,What do people eat on their birthday in China?,"What do people eat on t
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Dumplings"", ""Noodles"", ""Fish"", ""Cake""}], ""reasoning"": ""In Chinese culture, dumplings, noodles, and fish are traditional birthday foods, symbolizing longevity, unity, and abundance, respectively. Cake is also a popular choice, often served at birthday celebrations.""}",inst-1,1,,
+","{""answer"": ["" Dumplings"", ""Noodles"", ""Fish""], ""reasoning"": ""In Chinese culture, it's customary to eat certain foods on one's birthday to symbolize good luck, longevity, and prosperity. Dumplings and noodles are often eaten on birthdays because they resemble ancient Chinese gold and silver, respectively, and are believed to bring wealth and good fortune. Fish is also a popular birthday food because its Chinese pronunciation is similar to the word for 'abundance' or 'surplus', symbolizing a bountiful and prosperous life.""}",inst-1,1,,"In Chinese culture, it's customary to eat certain foods on one's birthday to symbolize good luck, longevity, and prosperity. Dumplings and noodles are often eaten on birthdays because they resemble ancient Chinese gold and silver, respectively, and are believed to bring wealth and good fortune. Fish is also a popular birthday food because its Chinese pronunciation is similar to the word for 'abundance' or 'surplus', symbolizing a bountiful and prosperous life."
 Ne-ar-26,What is the most famous public corporation in China?,"What is the most famous public corporation in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous public corporation in China?','answer':[]}
@@ -473,7 +490,7 @@ Ne-ar-26,What is the most famous public corporation in China?,"What is the most 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Alibaba Group""}], ""reasoning"": ""Alibaba Group is the largest e-commerce company in China and has a significant presence globally, making it the most famous public corporation in China.""}",inst-1,1,,
+","{""answer"": [""Alibaba Group Holding Limited""], ""reasoning"": ""Alibaba Group Holding Limited is the largest e-commerce company in China, founded by Jack Ma in 1999. It has become a household name globally, with a market capitalization of over $500 billion, and is listed on the New York Stock Exchange (NYSE) and the Hong Kong Stock Exchange (HKEX). Its various business segments, including e-commerce, cloud computing, digital payments, and online entertainment, have made it a dominant player in the Chinese technology landscape.""}",inst-1,1,,"Alibaba Group Holding Limited is the largest e-commerce company in China, founded by Jack Ma in 1999. It has become a household name globally, with a market capitalization of over $500 billion, and is listed on the New York Stock Exchange (NYSE) and the Hong Kong Stock Exchange (HKEX). Its various business segments, including e-commerce, cloud computing, digital payments, and online entertainment, have made it a dominant player in the Chinese technology landscape."
 Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in China?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in China?','answer':[]}
@@ -481,10 +498,7 @@ Ji-ko-36,Which subject’s academy/private educational institute do middle or hi
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [{""subject"": ""Mathematics and Science""}],
-""reasoning"": ""In China, the gaokao examination, which is the national college entrance examination, places great emphasis on mathematics and science. As a result, many students attend private educational institutes that specialize in mathematics and science, such as math and science academies, to gain a competitive edge in the exam.""
-}",inst-1,1,,
+","{""answer"": [{""subject"": ""Mathematics""}], ""reasoning"": ""In China, math is a highly valued subject, and many students attend private academies or institutes to improve their math skills, particularly for the National College Entrance Examination (NCEE) and other competitive exams.""}",inst-1,1,,
 Th-en-51,Which subject is considered the most important for students in China?,"Which subject is considered the most important for students in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which subject is considered the most important for students in China?','answer':[]}
@@ -492,7 +506,7 @@ Th-en-51,Which subject is considered the most important for students in China?,"
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""subject"": ""Mandarin Chinese""}], ""reasoning"": ""In China, Mandarin Chinese is considered the most important subject as it is the official language and a crucial tool for communication, education, and career advancement. It is also a fundamental aspect of Chinese culture and identity.""}",inst-1,1,,
+","{""answer"": [{""Mandarin Chinese""}], ""reasoning"": ""In China, Mandarin Chinese is considered the most important subject for students because it is the official language and a vital tool for communication and cultural understanding. Mastering Mandarin Chinese is seen as a key to success in education, career, and social life, and it is a fundamental aspect of Chinese culture and identity.""}",inst-1,1,,
 New-ch-07,What food items do people typically pair with hard liquor in China?,"What food items do people typically pair with hard liquor in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food items do people typically pair with hard liquor in China?','answer':[]}
@@ -500,7 +514,9 @@ New-ch-07,What food items do people typically pair with hard liquor in China?,"W
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""In China, the concept of pairing food with liquor is deeply rooted in tradition and cultural heritage. The choice of food items to pair with hard liquor often depends on personal preference, regional specialties, and the type of liquor being consumed. Hard liquor is typically consumed in small amounts, usually as a social lubricant or to complement the flavors of food.""}",inst-1,1,,"In China, the concept of pairing food with liquor is deeply rooted in tradition and cultural heritage. The choice of food items to pair with hard liquor often depends on personal preference, regional specialties, and the type of liquor being consumed. Hard liquor is typically consumed in small amounts, usually as a social lubricant or to complement the flavors of food."
+","{""answer"": [], ""reasoning"": ""In China, the concept of pairing food with hard liquor is not as deeply ingrained as in Western cultures. However, there are certain traditional and cultural practices that dictate how certain drinks are consumed with specific foods. For instance, some people might enjoy a strong liquor like baijiu with certain dishes, while others might prefer a lighter drink like Chinese whiskey with lighter fare. Ultimately, the choice of pairing largely depends on personal preference and regional traditions.""}
+
+{""answer"": [{""Baijiu with Peking duck"", ""Chinese whiskey with Xiaolongbao""}]}",inst-1,1,,"In China, the concept of pairing food with hard liquor is not as deeply ingrained as in Western cultures. However, there are certain traditional and cultural practices that dictate how certain drinks are consumed with specific foods. For instance, some people might enjoy a strong liquor like baijiu with certain dishes, while others might prefer a lighter drink like Chinese whiskey with lighter fare. Ultimately, the choice of pairing largely depends on personal preference and regional traditions."
 New-en-68,What repercussions are there for bad behavior in schools in China?,"What repercussions are there for bad behavior in schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What repercussions are there for bad behavior in schools in China?','answer':[]}
@@ -508,7 +524,7 @@ New-en-68,What repercussions are there for bad behavior in schools in China?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Bad behavior in schools in China can lead to negative repercussions on a student's academic and social life.""}",inst-1,1,,Bad behavior in schools in China can lead to negative repercussions on a student's academic and social life.
+","{""answer"": [""detention"", ""suspension"", ""parental involvement"", ""after-school tutoring"", ""academic penalties""], ""reasoning"": ""In China, schools take a strict approach to discipline, and students who exhibit bad behavior can face a range of consequences, from detention and suspension to parental involvement and academic penalties. The emphasis is on maintaining social order and promoting positive values, and schools are expected to uphold these standards.""}",inst-1,1,,"In China, schools take a strict approach to discipline, and students who exhibit bad behavior can face a range of consequences, from detention and suspension to parental involvement and academic penalties. The emphasis is on maintaining social order and promoting positive values, and schools are expected to uphold these standards."
 Th-en-35,"Which one of the daily meals is commonly shared with family members in China? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in China? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which one of the daily meals is commonly shared with family members in China? (e.g., breakfast, lunch, dinner)','answer':[]}
@@ -516,7 +532,7 @@ Th-en-35,"Which one of the daily meals is commonly shared with family members in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""dinner""], ""reasoning"": ""Dinner is often considered the most important meal of the day in Chinese culture, and it's common for family members to gather together for dinner, sharing food and socializing.""}",inst-1,1,,"Dinner is often considered the most important meal of the day in Chinese culture, and it's common for family members to gather together for dinner, sharing food and socializing."
+","{""answer"": [{""dinner""}], ""reasoning"": ""In Chinese culture, dinner is often considered the most important meal of the day, and it is common for family members to gather together for dinner. This is partly due to the cultural emphasis on family bonding and togetherness, as well as the traditional Chinese practice of taking a break from work or daily activities to enjoy a meal together.""}",inst-1,1,,
 Ji-ko-37,What type of clothing do middle and high school students wear to school in China?,"What type of clothing do middle and high school students wear to school in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of clothing do middle and high school students wear to school in China?','answer':[]}
@@ -524,7 +540,7 @@ Ji-ko-37,What type of clothing do middle and high school students wear to school
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Uniform""}], ""reasoning"": ""In China, middle and high school students are required to wear uniforms to school, which typically consist of a white or light-colored shirt, dark-colored pants or a skirt, and a blazer or jacket with the school's logo.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Uniforms"", ""Casual clothes""]}, ""reasoning"": ""In China, middle and high school students typically wear either school uniforms or casual clothes to school. School uniforms are often mandated by the school and are designed to promote a sense of unity and discipline among students. Casual clothes, on the other hand, are often worn by students who attend private schools or have more relaxed dress codes. Additionally, fashion trends and cultural influences may also play a role in shaping the type of clothing worn by students.""}",inst-1,1,,
 Ca-sp-41,Where do the dependent elderly usually live in China?,"Where do the dependent elderly usually live in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do the dependent elderly usually live in China?','answer':[]}
@@ -532,7 +548,13 @@ Ca-sp-41,Where do the dependent elderly usually live in China?,"Where do the dep
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""location"": ""urban areas""}], ""reasoning"": ""In China, the elderly are more likely to live in urban areas due to the availability of social services, healthcare facilities, and family support networks.""}",inst-1,1,,
+","{""answer"": {""answer"": [""with their children or other family members""]}, ""reasoning"": ""In traditional Chinese culture, family is highly valued, and it is common for elderly parents to live with their children or other family members, especially if they are dependent on them for care and support. This is because filial piety is deeply ingrained in Chinese society, and children are expected to care for their aging parents as a matter of duty and respect.""}
+
+{""answer"": [{""answer"": [""with their children or other family members""]}], ""reasoning"": ""In traditional Chinese culture, family is highly valued, and it is common for elderly parents to live with their children or other family members, especially if they are dependent on them for care and support. This is because filial piety is deeply ingrained in Chinese society, and children are expected to care for their aging parents as a matter of duty and respect.""}
+
+{""answer"": {""answer"": [""with their children or other family members""]}, ""reasoning"": ""In traditional Chinese culture, family is highly valued, and it is common for elderly parents to live with their children or other family members, especially if they are dependent on them for care and support. This is because filial piety is deeply ingrained in Chinese society, and children are expected to care for their aging parents as a matter of duty and respect.""}
+
+{""answer"": [{""answer"": [""with their children or other family members""]}], ""reasoning"": ""In traditional Chinese culture, family is highly valued, and it is common for elderly parents to live with their children or other family members, especially if they are dependent on them for care and support. This is because filial piety is deeply ingrained in Chinese society, and children are expected to care for their aging parents as a matter of duty and respect.""}",inst-1,1,,
 Sa-en-31,What is China's most popular family pet?,"What is China's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is China's most popular family pet?','answer':[]}
@@ -540,7 +562,7 @@ Sa-en-31,What is China's most popular family pet?,"What is China's most popular 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Dog""}], ""reasoning"": ""According to various sources, including the Chinese Pet Industry Association, dogs are the most popular family pet in China, due to their popularity and widespread ownership.""}",inst-1,1,,
+","{""answer"": [{""dog""}], ""reasoning"": ""According to various sources, including the Chinese Pet Industry Association, dogs have been the most popular family pet in China for many years, due to their loyalty, ease of care, and popularity as a status symbol.""}",inst-1,1,,
 Gu-ch-08,What is the most popular sports among children in China?,"What is the most popular sports among children in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular sports among children in China?','answer':[]}
@@ -548,7 +570,7 @@ Gu-ch-08,What is the most popular sports among children in China?,"What is the m
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Badminton""}], ""reasoning"": ""Due to its popularity and accessibility in China, badminton has become a favorite among children in the country.""}",inst-1,1,,
+","{""answer"": [{""sport"": ""Table Tennis""}], ""reasoning"": ""Table tennis is a popular sport among Chinese children due to its cultural significance, accessibility, and ease of learning. China has a rich table tennis history and has produced many world-class players, making it a highly regarded sport in the country.""}",inst-1,1,,
 New-as-20,What is the most popular indoor sport in China?,"What is the most popular indoor sport in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular indoor sport in China?','answer':[]}
@@ -556,7 +578,7 @@ New-as-20,What is the most popular indoor sport in China?,"What is the most popu
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Table Tennis""}], ""reasoning"": ""Table tennis is a highly popular indoor sport in China, with a strong cultural and historical significance, as well as a successful national team that has won numerous Olympic and World Championship titles.""}",inst-1,1,,
+","{""answer"": [""Badminton""], ""reasoning"": ""Badminton is a popular indoor sport in China due to its widespread popularity, ease of play, and suitability for indoor courts. It is also a sport that is deeply ingrained in Chinese culture and has been a part of Chinese tradition for centuries.""}",inst-1,1,,"Badminton is a popular indoor sport in China due to its widespread popularity, ease of play, and suitability for indoor courts. It is also a sport that is deeply ingrained in Chinese culture and has been a part of Chinese tradition for centuries."
 New-spme-05,What are the most popular sweets in China?,"What are the most popular sweets in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the most popular sweets in China?','answer':[]}
@@ -564,7 +586,7 @@ New-spme-05,What are the most popular sweets in China?,"What are the most popula
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Almond Cookies"", ""type"": ""cookie""}, {""name"": ""Rice Cakes"", ""type"": ""cake""}, {""name"": ""Glutinous Rice Balls"", ""type"": ""ball""}], ""reasoning"": ""China has a long history of traditional sweets, and these three types are widely popular and enjoyed throughout the country.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Almond Cookies"", ""type"": ""cracker""}, {""name"": ""Egg Tarts"", ""type"": ""pastry""}, {""name"": ""Rice Cakes"", ""type"": ""flatbread""}], ""reasoning"": ""Sweets in China are influenced by its long history of cultural exchange and regional specialties. These popular sweets are beloved for their unique flavors, textures, and cultural significance.""}",inst-1,1,,
 New-in-01,Which coffee shop brand is the most popular in China?,"Which coffee shop brand is the most popular in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which coffee shop brand is the most popular in China?','answer':[]}
@@ -572,7 +594,7 @@ New-in-01,Which coffee shop brand is the most popular in China?,"Which coffee sh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""brand"": ""Starbucks""}], ""reasoning"": ""Starbucks has been the most popular coffee shop brand in China since its entry into the market in 1999, with over 500 locations across the country.""}",inst-1,1,,
+","{""answer"": [""Starbucks""], ""reasoning"": ""Starbucks has been the most popular coffee shop brand in China for many years, with a strong brand presence and a large number of locations across the country. It has successfully adapted to local tastes and preferences, offering a range of unique flavors and promotions that appeal to Chinese consumers.""}",inst-1,1,,"Starbucks has been the most popular coffee shop brand in China for many years, with a strong brand presence and a large number of locations across the country. It has successfully adapted to local tastes and preferences, offering a range of unique flavors and promotions that appeal to Chinese consumers."
 New-gr-58,Which job is considered underpaid in China?,"Which job is considered underpaid in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which job is considered underpaid in China?','answer':[]}
@@ -580,7 +602,7 @@ New-gr-58,Which job is considered underpaid in China?,"Which job is considered u
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Teachers""], ""reasoning"": ""Teachers in China are considered underpaid due to the lack of government support and high expectations for education quality, despite their crucial role in shaping the country's future.""}}",inst-1,1,,
+","{""answer"": {""answer"": [""Nursing staff""], ""reasoning"": ""Nursing staff in China are often considered underpaid due to the high demand for their services and the lack of government support for the nursing profession.""}, ""question"": ""Which job is considered underpaid in China?""}",inst-1,1,,
 New-ch-32,What office software do people typically use in the workplace in China?,"What office software do people typically use in the workplace in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What office software do people typically use in the workplace in China?','answer':[]}
@@ -588,7 +610,7 @@ New-ch-32,What office software do people typically use in the workplace in China
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""software"": [""Microsoft Office"", ""WPS Office"", ""Kingsoft Office""]}],""reasoning"": ""In China, Microsoft Office is widely used due to its popularity globally, while WPS Office and Kingsoft Office are also popular alternatives, especially among smaller businesses and startups.""}",inst-1,1,,
+","{""answer"": [{""software"": ""Microsoft Office""}], ""reasoning"": ""Microsoft Office is widely used in the workplace in China due to its popularity and compatibility with international standards. Many Chinese companies have adopted Microsoft Office as their default office software, and it is commonly used for document editing, presentations, and data analysis.""}",inst-1,1,,
 New-ch-73,What type of clubs are most popular among university students in China?,"What type of clubs are most popular among university students in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of clubs are most popular among university students in China?','answer':[]}
@@ -596,7 +618,7 @@ New-ch-73,What type of clubs are most popular among university students in China
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""Academic Clubs"", ""percentage"": ""30%""}], ""reasoning"": ""University students in China are highly competitive and motivated, and as such, they tend to join clubs that align with their academic interests and goals.""}",inst-1,1,,
+","{""answer"": [{""club type"": ""Language Exchange"", ""percentage"": ""30%""}], ""reasoning"": ""University students in China are highly interested in language learning and cultural exchange. Many students join language exchange clubs to practice their language skills, make friends from different countries, and learn about different cultures.""}",inst-1,1,,
 New-en-47,What can typically be found in the back garden of houses in China?,"What can typically be found in the back garden of houses in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What can typically be found in the back garden of houses in China?','answer':[]}
@@ -604,7 +626,8 @@ New-en-47,What can typically be found in the back garden of houses in China?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""bamboo"", ""bamboo plants are commonly found in Chinese gardens and are often used to create screens, partitions, and other decorative elements""}], ""reasoning"": ""Bamboo is a ubiquitous and culturally significant plant in China, and is often incorporated into garden design.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Pergolas"", ""Water features"", ""Tea houses"", ""Gardens"", ""Feng Shui elements""]},
+""reasoning"": ""In traditional Chinese culture, the back garden is considered a sacred space for relaxation and contemplation. It's common to find decorative structures like pergolas, water features, and tea houses, which create a serene atmosphere. Feng Shui elements, such as plants and stones, are also often incorporated to balance the energy of the space. These features reflect the emphasis on harmony and balance in Chinese design and lifestyle.""}",inst-1,1,,
 New-en-05,Which food is a cost-effective and quick meal option in China?,"Which food is a cost-effective and quick meal option in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which food is a cost-effective and quick meal option in China?','answer':[]}
@@ -612,7 +635,7 @@ New-en-05,Which food is a cost-effective and quick meal option in China?,"Which 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""food"": ""Rice Bowl""}], ""reasoning"": ""Rice bowl is a common and affordable meal option in China, with a variety of fillings such as vegetables, meat, and eggs.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""In China, street food and convenience stores offer a wide variety of affordable and quick meal options. However, considering the cost-effectiveness and speed, I would argue that a popular choice is...""}",inst-1,1,,"In China, street food and convenience stores offer a wide variety of affordable and quick meal options. However, considering the cost-effectiveness and speed, I would argue that a popular choice is..."
 New-ch-16,What is the most famous sports-related movie in China?,"What is the most famous sports-related movie in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous sports-related movie in China?','answer':[]}
@@ -620,7 +643,7 @@ New-ch-16,What is the most famous sports-related movie in China?,"What is the mo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""title"": ""Step into the Ring""}], ""reasoning"": ""This movie is a biographical sports drama film based on the life of Chinese boxing player Zhu Zhicheng, and it has gained widespread popularity and critical acclaim in China, making it the most famous sports-related movie in the country.""}",inst-1,1,,
+","{""answer"": [{""title"": ""Dancing Wall""}], ""reasoning"": ""Dancing Wall is a 1999 Chinese sports drama film directed by Tsui Hark, based on the true story of the Chinese women's volleyball team's journey to the 1984 Los Angeles Olympics. It is widely considered one of the most iconic and influential sports movies in China, and its success helped to popularize volleyball in the country.""}",inst-1,1,,
 Ji-ko-25,What are the family-related holidays in China?,"What are the family-related holidays in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the family-related holidays in China?','answer':[]}
@@ -628,7 +651,7 @@ Ji-ko-25,What are the family-related holidays in China?,"What are the family-rel
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Dragon Boat Festival"", ""Mid-Autumn Festival"", ""Chong Yang Festival"", ""Qingming Festival""}], ""reasoning"": ""These holidays in China are related to family and are traditionally celebrated with family gatherings, traditional foods, and rituals.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Chinese New Year"", ""Dragon Boat Festival"", ""Mid-Autumn Festival""]}, ""reasoning"": ""These holidays are significant in Chinese culture, being closely tied to family traditions and celebrations. They often involve family gatherings, reunions, and cultural activities, making them important family-related holidays in China.""}",inst-1,1,,
 Sa-en-7,What are popular snacks in China?,"What are popular snacks in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are popular snacks in China?','answer':[]}
@@ -636,10 +659,7 @@ Sa-en-7,What are popular snacks in China?,"What are popular snacks in China? Sho
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [""{answer here}""],
-""reasoning"": ""China has a vast and diverse range of snacks, influenced by its rich culinary history and regional differences. Here is a list of some popular snacks in China.""
-}",inst-1,1,,
+","{""answer"": [{""name"": ""Maizi"", ""type"": ""dried fruit""}, {""name"": ""Gaoqi"", ""type"": ""fried dough stick""}, {""name"": ""You Tiao"", ""type"": ""fried dough stick""}, {""name"": ""Roujiamo"", ""type"": ""meat sandwich""}, {""name"": ""Liangpi"", ""type"": ""noodles""}, {""name"": ""Baozi"", ""type"": ""steamed bun""}], ""reasoning"": ""The popularity of snacks in China varies by region and season, but these are some common and well-known snacks that are widely enjoyed across the country.""}",inst-1,1,,
 Ta-pe-29,Which professional sport is the highest paying in China?,"Which professional sport is the highest paying in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which professional sport is the highest paying in China?','answer':[]}
@@ -647,7 +667,7 @@ Ta-pe-29,Which professional sport is the highest paying in China?,"Which profess
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Esports""}], ""reasoning"": ""Esports has become a significant industry in China, with top players earning millions of yuan in prizes and endorsements, making it the highest paying professional sport in the country.""}",inst-1,1,,
+","{""answer"": [""Esports""], ""reasoning"": ""Esports has gained immense popularity in China, with top teams and players earning significant amounts of money through sponsorships, endorsements, and prize pools. The Chinese government has also invested heavily in the esports industry, recognizing its potential to drive economic growth and job creation.""}",inst-1,1,,"Esports has gained immense popularity in China, with top teams and players earning significant amounts of money through sponsorships, endorsements, and prize pools. The Chinese government has also invested heavily in the esports industry, recognizing its potential to drive economic growth and job creation."
 Kik-in-36,Who is the most popular soccer coach in China?,"Who is the most popular soccer coach in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular soccer coach in China?','answer':[]}
@@ -655,7 +675,7 @@ Kik-in-36,Who is the most popular soccer coach in China?,"Who is the most popula
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Li Tie""}], ""reasoning"": ""Li Tie is a well-known Chinese football coach and former player, who has managed several top-tier clubs in China, including Shanghai Shenhua and Wuhan Zall. He is highly respected for his achievements and has a large following in China.""}",inst-1,1,,
+","{""answer"": [""Li Tie""], ""reasoning"": ""Li Tie is a well-known Chinese football coach who has led the China national team and has a strong reputation in the Chinese football community, making him the most popular soccer coach in China.""}",inst-1,1,,"Li Tie is a well-known Chinese football coach who has led the China national team and has a strong reputation in the Chinese football community, making him the most popular soccer coach in China."
 Ji-ko-40,What do high school students typically do during break time in schools in China?,"What do high school students typically do during break time in schools in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do high school students typically do during break time in schools in China?','answer':[]}
@@ -663,7 +683,7 @@ Ji-ko-40,What do high school students typically do during break time in schools 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""socialize with friends"", ""play games"", ""watch videos"", ""listen to music"", ""eat snacks""}], ""reasoning"": ""In Chinese high schools, break time is often seen as an opportunity for students to relax and recharge. Many students use this time to socialize with friends, engage in leisure activities, and take a break from academics.""}",inst-1,1,,
+","{""answer"": [""socialize with friends"", ""play video games or online games"", ""take a nap or sleep"", ""do homework or study for upcoming exams""], ""reasoning"": ""High school students in China typically use break time to relax and recharge, often engaging in social activities with friends, indulging in entertainment such as video games, or catching up on sleep. Some students may also use this time to get ahead on their schoolwork or prepare for upcoming exams.""}",inst-1,1,,"High school students in China typically use break time to relax and recharge, often engaging in social activities with friends, indulging in entertainment such as video games, or catching up on sleep. Some students may also use this time to get ahead on their schoolwork or prepare for upcoming exams."
 Th-en-15,What is the most popular winter sport in China?,"What is the most popular winter sport in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular winter sport in China?','answer':[]}
@@ -671,7 +691,7 @@ Th-en-15,What is the most popular winter sport in China?,"What is the most popul
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most popular winter sport in China"": ""Ice Hockey""}], ""reasoning"": ""China has been investing heavily in ice hockey infrastructure and talent development in recent years, and it has seen a significant surge in popularity among young people.""}",inst-1,1,,
+","{""answer"": [""Figure Skating""], ""reasoning"": ""Figure skating has been gaining popularity in China in recent years, with the country investing heavily in ice rinks and training facilities. The sport has been included in the Winter Olympics since 1908, and China has sent figure skaters to the Games since 1992. The country's figure skating team has achieved significant success, winning several medals at the Olympics and World Championships. China's love for figure skating is also driven by the popularity of figure skating shows and exhibitions, which have become a popular form of entertainment.""}",inst-1,1,,"Figure skating has been gaining popularity in China in recent years, with the country investing heavily in ice rinks and training facilities. The sport has been included in the Winter Olympics since 1908, and China has sent figure skaters to the Games since 1992. The country's figure skating team has achieved significant success, winning several medals at the Olympics and World Championships. China's love for figure skating is also driven by the popularity of figure skating shows and exhibitions, which have become a popular form of entertainment."
 Na-ko-19,Who is the most popular volleyball player in China?,"Who is the most popular volleyball player in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular volleyball player in China?','answer':[]}
@@ -679,7 +699,7 @@ Na-ko-19,Who is the most popular volleyball player in China?,"Who is the most po
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Zhang Changling"", ""position"": ""Middle blocker""}], ""reasoning"": ""Zhang Changling is widely regarded as one of the greatest volleyball players in Chinese history, with a successful career spanning over a decade and numerous accolades, including multiple championships and MVP awards.""}",inst-1,1,,
+","{""answer"": [""Zhang Chunlei""], ""reasoning"": ""Zhang Chunlei is a Chinese volleyball player who has been a key player for the Chinese national team and has won numerous awards and accolades, including the FIVB Volleyball Women's World Championship MVP in 2018. He is widely regarded as one of the best volleyball players in China and has a large following among volleyball fans.""}",inst-1,1,,"Zhang Chunlei is a Chinese volleyball player who has been a key player for the Chinese national team and has won numerous awards and accolades, including the FIVB Volleyball Women's World Championship MVP in 2018. He is widely regarded as one of the best volleyball players in China and has a large following among volleyball fans."
 New-en-56,What is the most popular foreign language spoken by families in China?,"What is the most popular foreign language spoken by families in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular foreign language spoken by families in China?','answer':[]}
@@ -687,7 +707,7 @@ New-en-56,What is the most popular foreign language spoken by families in China?
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""English""}], ""reasoning"": ""Due to globalization and economic ties with Western countries, English has become the most popular foreign language spoken by families in China.""}",inst-1,1,,
+","{""answer"": [""English""], ""reasoning"": ""English has become the most popular foreign language spoken by families in China due to its widespread use in international trade, education, and cultural exchange. Many Chinese parents recognize the importance of English language skills in giving their children a competitive edge in the global job market and for accessing international education and opportunities.""}",inst-1,1,,"English has become the most popular foreign language spoken by families in China due to its widespread use in international trade, education, and cultural exchange. Many Chinese parents recognize the importance of English language skills in giving their children a competitive edge in the global job market and for accessing international education and opportunities."
 Jo-sp-13,What is the most popular water sport in China?,"What is the most popular water sport in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular water sport in China?','answer':[]}
@@ -695,7 +715,7 @@ Jo-sp-13,What is the most popular water sport in China?,"What is the most popula
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Dragon Boat Racing""}], ""reasoning"": ""Dragon Boat Racing is a traditional and iconic water sport in China, with a rich history dating back over 2,000 years. It is a popular recreational activity and a significant part of Chinese culture, particularly during the Dragon Boat Festival.""}",inst-1,1,,
+","{""answer"": [""Dragon Boat Racing""], ""reasoning"": ""Dragon Boat Racing is a traditional Chinese water sport that has been around for over 2,000 years, and it is widely popular in China. It is often held during the Dragon Boat Festival, a major cultural event in China.""}",inst-1,1,,"Dragon Boat Racing is a traditional Chinese water sport that has been around for over 2,000 years, and it is widely popular in China. It is often held during the Dragon Boat Festival, a major cultural event in China."
 Na-ko-29,Who is the most famous swimmer in China?,"Who is the most famous swimmer in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most famous swimmer in China?','answer':[]}
@@ -703,7 +723,7 @@ Na-ko-29,Who is the most famous swimmer in China?,"Who is the most famous swimme
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Sun Yang""}], ""reasoning"": ""Sun Yang is a Chinese professional swimmer who has won numerous awards and accolades, including multiple Olympic and World Championship titles, making him one of the most successful and recognized swimmers in China.""}",inst-1,1,,
+","{""answer"": [""Fu Mingxia""], ""reasoning"": ""Fu Mingxia is a Chinese retired competitive diver and swimmer who has won a total of 5 Olympic gold medals and 11 World Championship titles. She is widely regarded as one of the greatest divers of all time, and her achievements have made her a household name in China.""}",inst-1,1,,"Fu Mingxia is a Chinese retired competitive diver and swimmer who has won a total of 5 Olympic gold medals and 11 World Championship titles. She is widely regarded as one of the greatest divers of all time, and her achievements have made her a household name in China."
 New-su-57,What is the most common livestock raised in China?,"What is the most common livestock raised in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most common livestock raised in China?','answer':[]}
@@ -711,7 +731,14 @@ New-su-57,What is the most common livestock raised in China?,"What is the most c
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Pigs""], ""reasoning"": ""Due to its large population, climate, and agricultural practices, pigs are widely raised in China for meat production and are considered the most common livestock in the country.""}",inst-1,1,,"Due to its large population, climate, and agricultural practices, pigs are widely raised in China for meat production and are considered the most common livestock in the country."
+","Here is the response in JSON format:
+
+{
+""answer"": [""Pigs""],
+""reasoning"": ""China is the world's largest producer of pork, and pigs are widely raised for meat, with the majority of the population relying on pork as a primary source of protein. The country's large population, favorable climate, and government support for agriculture have contributed to the widespread cultivation of pigs.""
+}
+
+Note: The answer is based on various sources, including the Food and Agriculture Organization (FAO) of the United Nations and the Chinese Ministry of Agriculture and Rural Affairs.",inst-1,1,,"China is the world's largest producer of pork, and pigs are widely raised for meat, with the majority of the population relying on pork as a primary source of protein. The country's large population, favorable climate, and government support for agriculture have contributed to the widespread cultivation of pigs."
 New-en-19,What is the most well known sporting stadium in China?,"What is the most well known sporting stadium in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most well known sporting stadium in China?','answer':[]}
@@ -719,7 +746,7 @@ New-en-19,What is the most well known sporting stadium in China?,"What is the mo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Bird's Nest""}], ""reasoning"": ""The Beijing National Stadium, also known as the Bird's Nest, is one of the most iconic and well-known sporting stadiums in China due to its unique architecture and hosting of major international events such as the 2008 Summer Olympics and the 2008 Summer Paralympics.""}",inst-1,1,,
+","{""answer"": [""National Stadium of China""], ""reasoning"": ""The National Stadium of China, also known as the Bird's Nest, is the most well-known sporting stadium in China due to its unique architecture and hosting of high-profile international events such as the 2008 Summer Olympics and the 2015 FIFA Women's World Cup Final.""}",inst-1,1,,"The National Stadium of China, also known as the Bird's Nest, is the most well-known sporting stadium in China due to its unique architecture and hosting of high-profile international events such as the 2008 Summer Olympics and the 2015 FIFA Women's World Cup Final."
 New-ch-38,Which cities or regions are known for their import and export activities in China?,"Which cities or regions are known for their import and export activities in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which cities or regions are known for their import and export activities in China?','answer':[]}
@@ -727,11 +754,20 @@ New-ch-38,Which cities or regions are known for their import and export activiti
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [
-{""Shanghai"", ""Guangzhou"", ""Shenzhen"", ""Tianjin"", ""Dalian"", ""Qingdao"", ""Ningbo"", ""Foshan"", ""Xiamen"", ""Zhengzhou"", ""Chongqing"", ""Huangpu"", ""Jiangsu"", ""Zhejiang"", ""Shandong"", ""Guangxi""},
-""reasoning"": ""These cities are major commercial hubs and ports along China's eastern coast, having a significant share in the country's international trade and commerce.""
-}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""China's import and export activities are concentrated in major coastal cities and regions, which have developed into key nodes of international trade. These cities and regions have invested heavily in infrastructure, logistics, and trade facilitation, making them attractive for businesses and investors.""}
+
+{""answer"": [
+""Shanghai"",
+""Shenzhen"",
+""Guangzhou"",
+""Tianjin"",
+""Xiamen"",
+""Qingdao"",
+""Zhuhai"",
+""Xinjiang"",
+""Yantai""
+],
+""reasoning"": """"}",inst-1,1,,"China's import and export activities are concentrated in major coastal cities and regions, which have developed into key nodes of international trade. These cities and regions have invested heavily in infrastructure, logistics, and trade facilitation, making them attractive for businesses and investors."
 New-pe-65,"How many subjects are taught in middle schools in China? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in China? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How many subjects are taught in middle schools in China? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -739,7 +775,7 @@ New-pe-65,"How many subjects are taught in middle schools in China? (Provide Ara
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [9], ""reasoning"": ""In China, the typical core subjects taught in middle schools (grades 7-9) are Chinese language, mathematics, science, social studies, foreign language (usually English), physical education, music, art, and moral education. The exact curriculum may vary depending on the region and school, but these subjects are generally considered the core curriculum.""}",inst-1,1,,"In China, the typical core subjects taught in middle schools (grades 7-9) are Chinese language, mathematics, science, social studies, foreign language (usually English), physical education, music, art, and moral education. The exact curriculum may vary depending on the region and school, but these subjects are generally considered the core curriculum."
+","{""answer"": [9], ""reasoning"": ""In China, middle school students typically take a range of compulsory subjects, including Chinese language, mathematics, science, social studies, physical education, and foreign languages (usually English). Additionally, they may have elective subjects such as music, art, and computer science. The specific subjects and curriculum may vary depending on the school and region, but 9 subjects are commonly taught in middle schools in China.""}",inst-1,1,,"In China, middle school students typically take a range of compulsory subjects, including Chinese language, mathematics, science, social studies, physical education, and foreign languages (usually English). Additionally, they may have elective subjects such as music, art, and computer science. The specific subjects and curriculum may vary depending on the school and region, but 9 subjects are commonly taught in middle schools in China."
 Th-en-03,What is the most popular professional sports league in China?,"What is the most popular professional sports league in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular professional sports league in China?','answer':[]}
@@ -747,7 +783,8 @@ Th-en-03,What is the most popular professional sports league in China?,"What is 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Chinese Basketball Association""], ""reasoning"": ""The Chinese Basketball Association (CBA) is the most popular professional sports league in China, with a large following and a strong presence in the country's sports culture.""}",inst-1,1,,"The Chinese Basketball Association (CBA) is the most popular professional sports league in China, with a large following and a strong presence in the country's sports culture."
+","{""answer"": [{""league"": ""Chinese Basketball Association""}], 
+""reasoning"": ""The Chinese Basketball Association (CBA) is the most popular professional sports league in China, with a large following and a strong presence in the country's sports landscape. The league has been growing in popularity over the years, and it has also become a breeding ground for Chinese talent to compete in international competitions.""}",inst-1,1,,
 New-ko-03,What is the most popular children's song in China that families sing together?,"What is the most popular children's song in China that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular children's song in China that families sing together?','answer':[]}
@@ -755,7 +792,7 @@ New-ko-03,What is the most popular children's song in China that families sing t
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""song"": ""《五月的太阳》""}], ""reasoning"": ""This song is a classic and well-known children's song in China that is often sung by families together, with a catchy melody and simple lyrics that are easy for children to follow and remember.""}",inst-1,1,,
+","{""answer"": [{""name"": ""The East is Red""}], ""reasoning"": ""The East is Red is a classic Chinese children's song that has been a staple in Chinese culture for generations. It is a simple and catchy tune that is easy for families to sing together, making it a popular choice for family bonding and cultural education.""}",inst-1,1,,
 New-en-69,Which writers are commonly studied in literature class in China?,"Which writers are commonly studied in literature class in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which writers are commonly studied in literature class in China?','answer':[]}
@@ -763,7 +800,7 @@ New-en-69,Which writers are commonly studied in literature class in China?,"Whic
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""author"":""Lu Xun"",""author"":""Zhu Ziqing"",""author"":""Wu Wenguang"",""author"":""Lao She"",""author"":""Ba Jin""}],""reasoning"":""These authors are considered important figures in Chinese literature and are commonly studied in literature classes in China, as they have made significant contributions to the development of Chinese literature, including the May Fourth Movement and the Chinese Revolution.""}",inst-1,1,,
+","{""answer"": [{""Lu Xun"", ""Zhou Zuoren"", ""Wu Wenyuan"", ""Mao Dun"", ""Ba Jin"", ""Lao She"", ""Bao Tong"", ""Qian Zhongshu"", ""Yu Hua"", ""Mo Yan""}], ""reasoning"": ""These writers are considered classics of modern Chinese literature and are widely studied in Chinese literature classes due to their significant contributions to the development of Chinese literature, their exploration of themes relevant to Chinese society, and their influence on Chinese literary movements.""}",inst-1,1,,
 Ni-en-12,What is the top university in China? (Provide the official name.),"What is the top university in China? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the top university in China? (Provide the official name.)','answer':[]}
@@ -771,7 +808,9 @@ Ni-en-12,What is the top university in China? (Provide the official name.),"What
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Peking University""}], ""reasoning"": ""Peking University is consistently ranked as one of the top universities in China and globally, according to various university rankings such as QS World University Rankings, Times Higher Education, and Shanghai Ranking's Global Ranking of Academic Subjects.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""The concept of 'top university' can be subjective and dependent on various criteria such as academic reputation, research output, and rankings. However, according to various international university rankings and Chinese government rankings, Tsinghua University is generally considered to be one of the top universities in China.""}
+
+{""answer"": [{""name"": ""Tsinghua University""}], ""reasoning"": ""The concept of 'top university' can be subjective and dependent on various criteria such as academic reputation, research output, and rankings. However, according to various international university rankings and Chinese government rankings, Tsinghua University is generally considered to be one of the top universities in China.""}",inst-1,1,,"The concept of 'top university' can be subjective and dependent on various criteria such as academic reputation, research output, and rankings. However, according to various international university rankings and Chinese government rankings, Tsinghua University is generally considered to be one of the top universities in China."
 New-ha-08,What food is typically disliked by children but enjoyed by the elderly in China?,"What food is typically disliked by children but enjoyed by the elderly in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food is typically disliked by children but enjoyed by the elderly in China?','answer':[]}
@@ -779,7 +818,7 @@ New-ha-08,What food is typically disliked by children but enjoyed by the elderly
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""food"": ""Bok Choy""}], ""reasoning"": ""Bok Choy is a type of Chinese vegetable that is often disliked by children due to its strong flavor and texture, but it is often enjoyed by the elderly in China due to its perceived health benefits and nostalgic value.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Century Eggs""]}, ""reasoning"": ""Century eggs, also known as pidan eggs, are a traditional Chinese preserved egg dish. They are typically disliked by children due to their strong, pungent smell and unique texture, but are often enjoyed by the elderly for their perceived health benefits and rich flavor.""}",inst-1,1,,
 Ji-ko-45,What do people look forward to the most at university festivals in China?,"What do people look forward to the most at university festivals in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people look forward to the most at university festivals in China?','answer':[]}
@@ -787,7 +826,7 @@ Ji-ko-45,What do people look forward to the most at university festivals in Chin
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""performances and concerts""], ""reasoning"": ""University festivals in China often feature a wide range of performances and concerts, including traditional Chinese music and dance, as well as popular Western music and DJ sets. These events provide a unique opportunity for students to let loose and have fun, and are often a major draw for attendees.""}",inst-1,1,,"University festivals in China often feature a wide range of performances and concerts, including traditional Chinese music and dance, as well as popular Western music and DJ sets. These events provide a unique opportunity for students to let loose and have fun, and are often a major draw for attendees."
+","{""answer"": [""live music performances""], ""reasoning"": ""University festivals in China are a time for students to relax and have fun with friends, and live music performances are a major draw. They provide an opportunity for students to enjoy their favorite music, dance, and sing along with friends, creating a lively and festive atmosphere.""}",inst-1,1,,"University festivals in China are a time for students to relax and have fun with friends, and live music performances are a major draw. They provide an opportunity for students to enjoy their favorite music, dance, and sing along with friends, creating a lively and festive atmosphere."
 Ji-ko-33,Where do high school students in China usually go after dinner?,"Where do high school students in China usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do high school students in China usually go after dinner?','answer':[]}
@@ -795,11 +834,9 @@ Ji-ko-33,Where do high school students in China usually go after dinner?,"Where 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [
-  {""text"": ""Home to do homework""}
-],
-""reasoning"": ""High school students in China typically return home after dinner to focus on their studies, as education is highly valued in Chinese culture. They often spend several hours each evening studying and completing homework assignments, and may also use this time to review for exams or work on projects.""",inst-1,1,,
+","{""answer"": [{""extracurricular activities"", ""homework"", ""online games"", ""watching TV or movies"", ""studying with friends""}], ""reasoning"": ""High school students in China usually have a packed schedule with school, extracurricular activities, and homework. After dinner, they tend to engage in activities that help them relax, learn, or socialize with friends. Some may also use this time to pursue their interests or hobbies. The options listed are common choices among Chinese high school students due to their popularity and accessibility.""}
+
+Note: The answer provided is a generalization and may vary depending on individual preferences and regional differences.",inst-1,1,,
 Ni-en-31,What do people in China traditionally eat on Christmas Day?,"What do people in China traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people in China traditionally eat on Christmas Day?','answer':[]}
@@ -807,10 +844,9 @@ Ni-en-31,What do people in China traditionally eat on Christmas Day?,"What do pe
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [{""dish"":""Peking duck"",""cake"":""Christmas cake"",""fruit"":""oranges""}],
-""reasoning"": ""Christmas is not a traditional holiday in China, but it has become more popular in recent years due to globalization and cultural exchange. As a result, many Chinese people may choose to celebrate Christmas by eating Western-style foods, but it is not a widespread tradition.""
-}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""Christmas is not a traditional holiday in China, and Christmas Day is not widely celebrated. Due to the country's atheist past and the fact that Christmas is a Christian holiday, it has not been a part of Chinese cultural tradition. As a result, there is no traditional Christmas food in China. However, in recent years, Christmas has become more popular in China, especially among younger generations and in urban areas, and some people may choose to celebrate with Western-style Christmas foods or fusion dishes.""}
+
+{""answer"": [], ""reasoning"": null}",inst-1,1,,"Christmas is not a traditional holiday in China, and Christmas Day is not widely celebrated. Due to the country's atheist past and the fact that Christmas is a Christian holiday, it has not been a part of Chinese cultural tradition. As a result, there is no traditional Christmas food in China. However, in recent years, Christmas has become more popular in China, especially among younger generations and in urban areas, and some people may choose to celebrate with Western-style Christmas foods or fusion dishes."
 Al-en-36,What food is associated with Halloween in China?,"What food is associated with Halloween in China? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food is associated with Halloween in China?','answer':[]}
@@ -818,4 +854,4 @@ Al-en-36,What food is associated with Halloween in China?,"What food is associat
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Mooncakes""}], ""reasoning"": ""Mooncakes are traditionally associated with the Mid-Autumn Festival in China, which is celebrated on the 15th day of the 8th lunar month. While Halloween is not widely celebrated in China, the Mid-Autumn Festival and Halloween share some similarities, such as the emphasis on autumn themes and the use of lanterns, which may have led to some cultural overlap and association.""}",inst-1,1,,
+","{""answer"": [{""date cakes""}], ""reasoning"": ""Halloween is not traditionally celebrated in China, so there is no specific food associated with it. However, date cakes () are a popular treat during the Mid-Autumn Festival, which is celebrated on the 15th day of the 8th month of the lunar calendar, usually in late September or early October. The festival has some similarities with Halloween in that it involves lighting lanterns, wearing traditional costumes, and eating special foods. Date cakes are a traditional treat during this festival, and they are often exchanged as gifts.""}",inst-1,1,,

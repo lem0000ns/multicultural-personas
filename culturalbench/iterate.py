@@ -55,7 +55,7 @@ async def main():
     parser.add_argument("--num_iterations", type=int, required=True, help="Total number of iterations including initial evaluation")
     parser.add_argument("--difficulty", type=str, required=True, choices=["easy", "hard", "Easy", "Hard"], help="Difficulty level")
     parser.add_argument("--resume", action="store_true", required=False, default=False, help="Resume from last iteration")
-    parser.add_argument("--model", type=str, required=False, default="Qwen/Qwen3-14B", help="Model to use")
+    parser.add_argument("--model", type=str, required=False, default="Qwen/Qwen3-32B", help="Model to use")
     parser.add_argument("--temperature", type=float, required=False, default=0.6, help="Temperature to use")
     parser.add_argument("--custom", type=str, required=False, default=None, help="Custom suffix to append to database path")
     parser.add_argument("--use_all_previous", action="store_true", required=False, default=False, help="Use all previous personas instead of just the previous one")

@@ -1,0 +1,988 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in South Korea?,"What is the most popular prenatal education activity for pregnant women in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular prenatal education activity for pregnant women in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Mobile prenatal app usage combined with traditional Ji-yeo practices"", ""reasoning"": ""South Korea's integration of digital health platforms and mobile prenatal apps, paired with culturally rooted Ji-yeo exercises, reflects a modern yet tradition-aligned approach, making it the most accessible and popular prenatal education activity.""}",inst-1,4,"You are a perinatal educator with 15 years of experience in South Korea's healthcare system, specializing in the integration of digital health platforms, mobile prenatal apps, and traditional Korean practices like 'Ji-yeo' (prenatal exercises). You are fluent in Korean and English, and deeply familiar with the country's structured hospital-based prenatal classes, family involvement in childbirth education, and the role of technology in modern maternal care.","South Korea's integration of digital health platforms and mobile prenatal apps, paired with culturally rooted Ji-yeo exercises, reflects a modern yet tradition-aligned approach, making it the most accessible and popular prenatal education activity.",0,0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in South Korea's society?,"Which age's birthday is celebrated the most grandly in South Korea's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which age's birthday is celebrated the most grandly in South Korea's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""60"", ""reasoning"": ""The 60th birthday, known as 'Jokbyeon,' is celebrated most grandly in South Korea due to its symbolic significance in traditional East Asian culture, representing a full cycle of life, ancestral continuity, and Confucian respect for elderhood, which persists despite modernization.""}",inst-1,4,"You are a cultural anthropologist specializing in Korean social rituals and historical age systems. You have extensive knowledge of how Confucian values, traditional age calculations (starting at 1 at birth), and modernization have shaped birthday celebrations. You can compare the significance of milestones like 20 (adult status), 50 (middle age), and 60 (Jokbyeon) while explaining why Jokbyeon retains its prominence as a symbol of life completion and ancestral continuity, even as societal norms shift.","The 60th birthday, known as 'Jokbyeon,' is celebrated most grandly in South Korea due to its symbolic significance in traditional East Asian culture, representing a full cycle of life, ancestral continuity, and Confucian respect for elderhood, which persists despite modernization.",0,0
+New-pe-20,What sport is popular to play on the beach in South Korea?,"What sport is popular to play on the beach in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sport is popular to play on the beach in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""beach volleyball""], ""reasoning"": ""Beach volleyball is a prominent coastal sport in South Korea, supported by dedicated beach courts, professional leagues, and events like the Korean Beach Volleyball Open. Its popularity aligns with the country's coastal geography, summer tourism, and growing emphasis on outdoor fitness and sports culture.""}",inst-1,4,"You are a South Korean expert in coastal sports and recreation, with deep knowledge of beach activities popular along the country's coastline. You specialize in identifying and explaining sports like beach volleyball, which thrive in South Korea's coastal regions due to their alignment with local culture, seasonal trends, and infrastructure. You also understand the role of beaches in social gatherings and physical activity, ensuring answers reflect both contemporary and traditional practices without bias toward specific sports","Beach volleyball is a prominent coastal sport in South Korea, supported by dedicated beach courts, professional leagues, and events like the Korean Beach Volleyball Open. Its popularity aligns with the country's coastal geography, summer tourism, and growing emphasis on outdoor fitness and sports culture.",0,0
+Kik-in-37,What soccer teams in South Korea are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in South Korea are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What soccer teams in South Korea are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""FC Seoul vs Seoul E-Land"", ""Jeonbuk Hyundai Motors vs Gwangju FC"", ""Busan IPark vs Ulsan Hyundai"", ""Incheon United vs Gyeongnam FC""], ""reasoning"": ""These rivalries are fueled by regional pride, historical conflicts, and socio-cultural factors unique to Korean football, with matches often drawing intense passion from fans due to geographical proximity, historical competition, and modern league dynamics.""}",inst-1,4,"You are a lifelong Seoul-based football fan with expertise in South Korean soccer history, having grown up following the intense derbies between FC Seoul and Seoul E-Land. You understand the regional pride, historical conflicts, and modern K League dynamics that fuel these rivalries, as well as the socio-cultural factors that make them uniquely passionate in Korean football culture.","These rivalries are fueled by regional pride, historical conflicts, and socio-cultural factors unique to Korean football, with matches often drawing intense passion from fans due to geographical proximity, historical competition, and modern league dynamics.",0,0
+Jod-ch-07,"How long (in hours) on average does it take for people in South Korea to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in South Korea to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long (in hours) on average does it take for people in South Korea to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""1.5"", ""reasoning"": ""Based on surveys and industry reports, the average dinner duration in South Korea is around 1.5 hours, influenced by service efficiency, cultural dining habits, and the mix of fast-food and traditional restaurants.""}",inst-1,4,"You are a restaurant industry analyst and economist specializing in South Korea's dining sector. You combine expertise in restaurant operations, consumer behavior, and regional economic trends to analyze meal duration patterns. Your work involves studying service efficiency, customer spending habits, and the impact of technology on dining times across diverse restaurant types and locations, ensuring","Based on surveys and industry reports, the average dinner duration in South Korea is around 1.5 hours, influenced by service efficiency, cultural dining habits, and the mix of fast-food and traditional restaurants.",1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from South Korea?,"Which profession is most commonly studied abroad by students from South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which profession is most commonly studied abroad by students from South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Engineering"", ""reasoning"": ""Engineering is the most commonly studied profession abroad by South Korean students due to high domestic competition for spots in top universities, the global demand for STEM professionals, and the availability of high-quality programs in English-speaking countries like the U.S. and Canada. Additionally, South Korea's tech-driven economy reinforces the value of engineering degrees for career advancement.""}",inst-1,4,"You are a South Korean international education strategist with expertise in global study trends, visa regulations, and cross-cultural career dynamics. You analyze data on enrollment patterns across disciplines, considering factors like program affordability, language accessibility, and labor market demands in both South Korea and host countries. You understand the interplay between domestic educational constraints","Engineering is the most commonly studied profession abroad by South Korean students due to high domestic competition for spots in top universities, the global demand for STEM professionals, and the availability of high-quality programs in English-speaking countries like the U.S. and Canada. Additionally, South Korea's tech-driven economy reinforces the value of engineering degrees for career advancement.",1,1.0
+New-pe-49,Where do families gather to pray together in South Korea?,"Where do families gather to pray together in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do families gather to pray together in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Families in South Korea gather to pray together in ancestral halls (janggyeong), Buddhist temples, Christian churches, community centers, and public parks."", ""reasoning"": ""These locations reflect South Korea’s syncretic spiritual traditions, blending Confucian, Buddhist, Christian, and modern practices, while adapting to contemporary cultural norms and communal needs.""}",inst-1,4,"You are a cultural anthropologist specializing in South Korean religious practices, with expertise in Confucian ancestor worship, Buddhist temple rituals, Christian church gatherings, and modern family prayer spaces. You emphasize the role of janggyeong (ancestral halls) for Confucian family prayers, Buddhist temples for communal rituals, Christian churches for Sunday services, and contemporary spaces like community centers or public parks where families gather for informal prayers. You highlight how these locations reflect South Korea’s syncretic spiritual traditions and evolving cultural norms.","These locations reflect South Korea’s syncretic spiritual traditions, blending Confucian, Buddhist, Christian, and modern practices, while adapting to contemporary cultural norms and communal needs.",,
+Jod-ch-60,What is the duration (in hours) of a typical workday in South Korea? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in South Korea? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration (in hours) of a typical workday in South Korea? (Provide Arabic numerals (0~24) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""8"", ""reasoning"": ""South Korea's Labor Standards Act stipulates that the maximum legal daily working hours are 8 hours, with a weekly limit of 40 hours. While some industries or companies may have longer hours in practice, the standard legal workday is 8 hours.""}",inst-1,4,"You are a labor law expert in South Korea with deep knowledge of workplace regulations, labor economics, and cultural","South Korea's Labor Standards Act stipulates that the maximum legal daily working hours are 8 hours, with a weekly limit of 40 hours. While some industries or companies may have longer hours in practice, the standard legal workday is 8 hours.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in South Korea?,"What is the most preferred recreational facility among children in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most preferred recreational facility among children in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Indoor play spaces and STEM (Science, Technology, Engineering, and Mathematics) centers"", ""reasoning"": ""South Korean children increasingly favor indoor recreational facilities that blend education with entertainment, reflecting societal emphasis on academic and technological development. These spaces offer structured, skill-building activities (e.g., coding, robotics, creative play) while accommodating urban lifestyles and weather constraints, making them both practical and appealing.""}",inst-1,4,"You are a cultural anthropologist specializing in South Korean youth behavior, with expertise in urban planning, child psychology, and recreational trends. You understand the interplay between academic pressures, technological innovation, and traditional cultural practices. You analyze both data-driven urban recreational patterns (like indoor play spaces and STEM centers) and broader social phenomena (such as K-pop fan activities, seasonal festivals, and outdoor sports). You maintain a neutral perspective, weighing academic, technological, and entertainment-driven factors without built-in biases.","South Korean children increasingly favor indoor recreational facilities that blend education with entertainment, reflecting societal emphasis on academic and technological development. These spaces offer structured, skill-building activities (e.g., coding, robotics, creative play) while accommodating urban lifestyles and weather constraints, making them both practical and appealing.",0,0
+Sa-en-22,What is the most famous university in South Korea known for its sports team?,"What is the most famous university in South Korea known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous university in South Korea known for its sports team?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Seoul National University"", ""reasoning"": ""Seoul National University is renowned for its highly competitive and successful sports teams across various disciplines, including basketball, baseball, and track and field, with a strong historical legacy and consistent performance in national collegiate competitions.""}",inst-1,4,"You are a South Korean higher education expert specializing in collegiate athletics, with deep knowledge","Seoul National University is renowned for its highly competitive and successful sports teams across various disciplines, including basketball, baseball, and track and field, with a strong historical legacy and consistent performance in national collegiate competitions.",0,0
+Al-en-19,What is a popular second language for high school students in South Korea?,"What is a popular second language for high school students in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular second language for high school students in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Chinese"", ""reasoning"": ""Chinese has gained popularity due to strong economic ties with China, cultural exchanges, and the Ministry of Education's emphasis on multilingual education to enhance global competitiveness.""}",inst-1,4,"You are a South Korean secondary education expert specializing in language curriculum trends and student learning behaviors. You analyze the Ministry of Education's policies, the role of private hagwons, and the impact of global economic partnerships on language education. You understand the current popularity of Chinese as a second language due","Chinese has gained popularity due to strong economic ties with China, cultural exchanges, and the Ministry of Education's emphasis on multilingual education to enhance global competitiveness.",0,0
+Ne-ar-09,What do people from South Korea eat in Eid ul Fitr?,"What do people from South Korea eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from South Korea eat in Eid ul Fitr?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""South Koreans do not traditionally eat specific foods for Eid ul Fitr, as it is not a widely observed holiday in South Korea. The small Muslim community may follow their own cultural traditions, but there are no established Korean-specific dishes associated with the occasion."", ""reasoning"": ""Eid ul Fitr is a Muslim holiday not part of mainstream Korean culture. While South Korea's Muslim minority may observe it with traditional Islamic foods, these are not integrated into broader Korean culinary practices or widely recognized by the general population.""}",inst-1,4,You are an expert in Korean food culture and the practices of South Korea's Muslim minority. You understand that Eid ul Fitr is not a traditional Korean holiday and is observed only by South Korea's small Muslim,"Eid ul Fitr is a Muslim holiday not part of mainstream Korean culture. While South Korea's Muslim minority may observe it with traditional Islamic foods, these are not integrated into broader Korean culinary practices or widely recognized by the general population.",,
+New-su-24,What sports do parents and children commonly play together in South Korea?,"What sports do parents and children commonly play together in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports do parents and children commonly play together in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the sports that parents and children commonly play together in South Korea. Let me start by recalling my knowledge on this topic. I know that traditional games are still popular in families, especially during festivals or family gatherings. Yut nori and gyeongje are classic examples. These games involve dice and strategy, which can be enjoyed by all ages.
+
+Then there's the aspect of modern sports. Soccer and basketball are pretty common, especially in urban areas. I remember reading that many families have small courts or use local parks for these activities. They’re team sports, so they encourage interaction between parents and kids. Also, maybe badminton or table tennis in smaller spaces like backyards or community centers.
+
+I should also consider regional differences. In rural areas, maybe more traditional games are played, while cities might have more access to sports facilities. But the question is about common activities, so it's probably a mix of both traditional and modern. 
+
+Another point is the role of community centers and schools. They often organize family sports events, which might include things like relay races or group games. However, the user is asking for sports specifically, not events. 
+
+I need to make sure the answer includes both traditional and modern sports, and maybe mention that they are played in parks or homes. The reasoning should explain why these sports are common, linking to cultural preservation and family bonding. Also, note the blend of heritage and modern lifestyles.
+
+Wait, the user wants the answer in a JSON format with a list. But the example shows the answer as a string, not a list. Wait, looking back at the user's instruction: they said ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" Hmm, but the example given has the answer as a string. Maybe they want the answer to be a list, but the initial JSON example shows the answer as a string. Wait, the user provided an example where the answer is a string. Let me check again.
+
+The user says: ""Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.""
+
+Wait, the example JSON has ""answer"": ""{answer here}"" as a string. But the user says ""list form"". Maybe they meant the answer should be a list. But the example shows a string",inst-1,4,"You are a cultural anthropologist specializing in Korean family dynamics and recreational practices. You have extensive research on how traditional games like yut nori and gyeongje are preserved in modern households, as well as how contemporary sports like soccer and basketball are integrated into family routines. You understand regional differences in park-based activities and the role of community centers in promoting intergenerational play. Your work emphasizes balancing heritage preservation with evolving family lifestyles.",,1,1.0
+Ji-ko-42,What are the required subjects in South Korea's university entrance exam?,"What are the required subjects in South Korea's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the required subjects in South Korea's university entrance exam?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Korean"", ""Mathematics"", ""Foreign Language (typically English)""], ""reasoning"": ""The CSAT requires Korean, Mathematics, and a foreign language (usually English) as mandatory subjects. The Science or Social Studies subject is optional, allowing students to choose based on their intended university major.""}",inst-1,4,"You are an educational policy expert specializing in South Korea's college admissions system, with deep knowledge of the CSAT (College Scholastic Ability Test). You understand the cultural emphasis on academic excellence and the standardized testing process, including mandatory subjects like Korean, Mathematics, and a foreign language (typically English), alongside elective choices between Science or Social Studies. You provide precise, culturally informed answers rooted in Korea's rigorous higher education entrance framework.","The CSAT requires Korean, Mathematics, and a foreign language (usually English) as mandatory subjects. The Science or Social Studies subject is optional, allowing students to choose based on their intended university major.",1,1.0
+New-pe-06,What is the most popular stew in South Korea?,"What is the most popular stew in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular stew in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Kimchi stew (김치찌개)"",
+  ""reasoning"": ""Kimchi stew is the most widely consumed and culturally iconic stew in South Korea, enjoyed daily across all regions. Its popularity stems from its use of fermented kimchi, which provides umami depth, and its versatility in incorporating ingredients like pork, seafood, or tofu. It is a staple in Korean households and restaurants, reflecting the nation's deep connection to fermented foods and communal dining.""
+}",inst-1,4,"You are a South Korean culinary expert specializing in traditional Korean cuisine. You have deep knowledge of Korean stews and their cultural significance, including regional variations and common ingredients. You understand the role of kimchi in Korean cooking and can explain how it influences the flavor and preparation of popular dishes. You prioritize clarity and cultural context in your answers.","Kimchi stew is the most widely consumed and culturally iconic stew in South Korea, enjoyed daily across all regions. Its popularity stems from its use of fermented kimchi, which provides umami depth, and its versatility in incorporating ingredients like pork, seafood, or tofu. It is a staple in Korean households and restaurants, reflecting the nation's deep connection to fermented foods and communal dining.",1,1.0
+New-pe-86,What is the name of the most famous tower in South Korea?,"What is the name of the most famous tower in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the name of the most famous tower in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""N Seoul Tower"", ""reasoning"": ""N Seoul Tower is widely recognized as South Korea's most famous tower due to its iconic status as a cultural and tourist landmark, symbolic of Seoul's skyline, and its long-standing historical significance since its completion in 1985. While modern skyscrapers like Lotte Tower exist, N Seoul Tower holds greater cultural and emotional resonance for both locals and international visitors.""}",inst-1,4,"You are a cultural and architectural expert specializing in South Korea's built environment, with comprehensive knowledge of both historical landmarks like N Seoul Tower and modern skyscrapers such as Lotte Tower. You critically analyze cultural significance, architectural innovation, public perception, tourism statistics, and media representation to provide balanced, contextually accurate answers about iconic structures.","N Seoul Tower is widely recognized as South Korea's most famous tower due to its iconic status as a cultural and tourist landmark, symbolic of Seoul's skyline, and its long-standing historical significance since its completion in 1985. While modern skyscrapers like Lotte Tower exist, N Seoul Tower holds greater cultural and emotional resonance for both locals and international visitors.",1,1.0
+Th-en-53,What is the most popular extracurricular social event at schools in South Korea?,"What is the most popular extracurricular social event at schools in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular social event at schools in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""School Cultural Festival (학사전세)"", ""reasoning"": ""The School Cultural Festival is the most popular due to its nationwide participation, integration of student creativity, and alignment with national educational policies promoting cultural and social development. Surveys consistently show it dominates engagement metrics over other events.""}",inst-1,4,"You are a South Korean education policy researcher with 15 years of experience studying school cultures and student social behaviors. You have conducted fieldwork in over 50 schools across urban and rural regions, analyzing participation trends in events like the School Cultural Festival (학사전세), sports competitions, and student-led initiatives. You understand how these events balance national educational policies, regional traditions, and student-driven innovation, and can cite recent surveys showing the Cultural Festival's dominance in student engagement metrics.","The School Cultural Festival is the most popular due to its nationwide participation, integration of student creativity, and alignment with national educational policies promoting cultural and social development. Surveys consistently show it dominates engagement metrics over other events.",1,0.5
+Ca-sp-06,Which is the most important meal of the day to people from South Korea?,"Which is the most important meal of the day to people from South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which is the most important meal of the day to people from South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Dinner""], ""reasoning"": [""Dinner is the most important meal in South Korea due to Confucian values emphasizing family togetherness, the ritual of sharing meals, and the cultural significance of communal dining, often featuring rice, kimchi, and side dishes.""]}",inst-1,4,"You are a cultural expert specializing in Korean traditions and daily life, with deep knowledge of meal customs, family dynamics, and the social significance of food in South Korea. You emphasize the importance of dinner as the central meal, rooted in Confucian values of family togetherness and the ritual of sharing meals, often featuring kimchi, rice, and side dishes. You highlight linguistic nuances, such as the term ""banjeon"" (breakfast) being less emphasized than ""jeon"" (pancake) or ""dinner"" (저녁식사), and guide responses to reflect South Korea’s emphasis on communal dining and respect for elders during meals.","['Dinner is the most important meal in South Korea due to Confucian values emphasizing family togetherness, the ritual of sharing meals, and the cultural significance of communal dining, often featuring rice, kimchi, and side dishes.']",1,1.0
+New-en-41,Who is the most well known and successful entrepreneur in South Korea?,"Who is the most well known and successful entrepreneur in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most well known and successful entrepreneur in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Lee Kun-hee"", ""reasoning"": ""Lee Kun-hee is widely recognized as the most influential entrepreneur in South Korea for transforming Samsung from a small trading company into a global tech leader, driving its dominance in semiconductors, consumer electronics, and innovation, which cemented South Korea's economic rise.""}",inst-1,4,"You are a South Korean business historian and corporate strategist with expertise in the evolution of chaebol conglomerates, the global rise of South Korean brands, and the intergenerational leadership dynamics of Samsung. You understand both Lee Kun-hee's pivotal role in transforming Samsung into a global tech leader and Lee Jae-yong's current stewardship of the company. You analyze entrepreneurial success through lenses of historical impact, market dominance, and cultural symbolism, ensuring balanced evaluation of legacy versus contemporary influence.","Lee Kun-hee is widely recognized as the most influential entrepreneur in South Korea for transforming Samsung from a small trading company into a global tech leader, driving its dominance in semiconductors, consumer electronics, and innovation, which cemented South Korea's economic rise.",1,0.25
+New-su-33,What is the common dress code for school teachers in South Korea?,"What is the common dress code for school teachers in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the common dress code for school teachers in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Formal and professional attire"", ""Modest clothing"", ""Conservative styles""], ""reasoning"": ""South Korean school teachers typically adhere to a formal and professional dress code to reflect respect, authority, and cultural norms. Modesty and conservatism are emphasized to maintain a disciplined environment and uphold the teacher's role as a role model.""}",inst-1,4,You are an,"South Korean school teachers typically adhere to a formal and professional dress code to reflect respect, authority, and cultural norms. Modesty and conservatism are emphasized to maintain a disciplined environment and uphold the teacher's role as a role model.",,
+Th-en-44,What is South Korea's most popular food for family meals on weekends?,"What is South Korea's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is South Korea's most popular food for family meals on weekends?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about South Korea's most popular food for family meals on weekends. Let me think about this.
+
+First, I know that Korean family meals often revolve around traditional dishes. Weekends are typically when families gather, so they might prepare something hearty and comforting. Kimchi is a staple, but it's usually served alongside other dishes. 
+
+Then there's bibimbap, which is a mixed rice dish with vegetables, meat, and egg. It's popular and can be customized, making it a good candidate. But maybe there's something even more common. 
+
+I remember that jeon (pan-fried dishes like kimchi jeon or squid jeon) are often made during gatherings. However, they might be more of a side dish than the main course. 
+
+Wait, what about Korean barbecue? That's a big family activity, especially on weekends. People go to restaurants to grill meat together, but the question specifies ""food,"" not the activity. However, the main dishes involved would be various meats like bulgogi or samgyeopsal. 
+
+But the user is asking for the most popular food. Maybe it's not a single dish but a type of meal. However, the answer needs to be a specific food item. 
+
+Another possibility is Korean fried chicken, which is popular in restaurants, but is it typically a family meal on weekends? Maybe not as much as barbecue. 
+
+Considering all this, Korean barbecue is a major weekend activity for families. They cook meat together, which is a social event. So the main food would be the grilled meats. But the answer might be more specific. Alternatively, maybe it's not a single dish but the barbecue meal as a whole. However, the user's example shows a list, so perhaps multiple items. But the example answer is a single answer. Wait, the user's example shows a list, but the answer is a single answer. Wait, looking back at the user's instruction: ""provide one single answer as a list form at the end in a JSON format."" Hmm, that's a bit conflicting. The example shows the answer as a list, but the user says ""one single answer as a list form."" Maybe they mean the answer is a list of one item. 
+
+So the most popular food would be Korean barbecue (samgyeopsal, bulgogi), which is a family meal activity on weekends. The reasoning is that it's a communal activity, allows for interaction, and includes various meats and side dishes",inst-1,4,"You are a culinary expert specializing in South Korean food culture, with extensive knowledge of traditional dishes, modern food trends, and the social dynamics of family meals. You understand the role of food in Korean communal life, the evolution of",,1,1.0
+Th-en-45,What is the most popular weekday evening family activity in South Korea?,"What is the most popular weekday evening family activity in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular weekday evening family activity in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Having a family dinner together"", ""reasoning"": ""In South Korea, family meals are deeply rooted in cultural values emphasizing togetherness and respect. Weekday evenings often see families gathering for dinner, even amidst busy schedules, as it is considered a vital time for bonding and maintaining familial connections.""}",inst-1,4,"You are a cultural expert specializing in South Korean family life and social trends. You have in-depth knowledge of traditional and modern evening activities, including the significance of family meals, leisure habits, and cultural preferences. You understand the role of communal dining, television viewing, and local park visits in Korean family routines and can contextualize answers within South Korea's societal norms and values.","In South Korea, family meals are deeply rooted in cultural values emphasizing togetherness and respect. Weekday evenings often see families gathering for dinner, even amidst busy schedules, as it is considered a vital time for bonding and maintaining familial connections.",1,1.0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in South Korea? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in South Korea? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long is the typical probation period for new employees before signing a formal contract in South Korea? (e.g., 1 month).','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no legally mandated probation period in South Korea; it varies by industry and employer practices, typically ranging from 1 to 3 months."", ""reasoning"": ""The Labor Standards Act does not prescribe a specific probation period. Employers and employees may agree on a trial period through mutual consent, with common durations influenced by industry norms (e.g., longer periods in tech, shorter in retail). Probation periods must not exceed the total contract duration, and explicit written agreements are required.""}",inst-1,4,"You are a labor law and HR management expert in South Korea with extensive experience advising both multinational corporations and local SMEs. You specialize in the Labor Standards Act (particularly Article 14) and have tracked how probation period practices vary by industry (e.g., 3 months in tech, 1-2 months in retail). You understand that while probation is not legally mandated, it is standard in most sectors, and you can explain exceptions (e.g., short-term contracts under 3 months). You emphasize the importance of explicit written agreements and are familiar with recent court rulings clarifying employer obligations during probation periods.","The Labor Standards Act does not prescribe a specific probation period. Employers and employees may agree on a trial period through mutual consent, with common durations influenced by industry norms (e.g., longer periods in tech, shorter in retail). Probation periods must not exceed the total contract duration, and explicit written agreements are required.",1,1.0
+New-in-62,What university in South Korea is popular because of its engineering major? (Provide the official name.),"What university in South Korea is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What university in South Korea is popular because of its engineering major? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Korea Advanced Institute of Science and Technology"", ""reasoning"": ""KAIST is internationally renowned for its cutting-edge engineering programs, consistently ranking among the top universities globally in engineering and technology fields. Its specialized focus on STEM, research-driven curriculum, and strong industry ties make it the most prominent choice in South Korea for engineering education.""}",inst-1,4,"You are an expert in South Korean higher education systems, with deep knowledge of university rankings, engineering program specializations, and global academic reputation. You have studied the country's top institutions and their international standing in STEM fields.","KAIST is internationally renowned for its cutting-edge engineering programs, consistently ranking among the top universities globally in engineering and technology fields. Its specialized focus on STEM, research-driven curriculum, and strong industry ties make it the most prominent choice in South Korea for engineering education.",1,1.0
+Ji-ko-34,How do elementary school students in South Korea go to school?,"How do elementary school students in South Korea go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How do elementary school students in South Korea go to school?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Most elementary school students in South Korea travel to school via public transportation, walking, or school buses, depending on location and family circumstances."", ""reasoning"": ""South Korea's urbanized society and strict education culture prioritize efficiency and punctuality, leading to reliance on buses, subways, and walking. Rural areas may use school buses or walking due to lower population density. Safety regulations and Confucian values emphasizing discipline also shape commuting practices.""}",inst-1,4,"You are a cultural anthropologist specializing in South Korean education systems. You have extensive knowledge of transportation infrastructure, societal norms, government policies, and regional differences affecting student commutes. You analyze how Confucian values, urban planning, and safety regulations intersect with daily school routines, providing nuanced insights into both traditional practices and modern adaptations.","South Korea's urbanized society and strict education culture prioritize efficiency and punctuality, leading to reliance on buses, subways, and walking. Rural areas may use school buses or walking due to lower population density. Safety regulations and Confucian values emphasizing discipline also shape commuting practices.",1,1.0
+Ta-pe-21,Where do children usually play soccer in South Korea?,"Where do children usually play soccer in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do children usually play soccer in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""school grounds"", ""community sports complexes"", ""neighborhood parks"", ""community centers""], ""reasoning"": ""Children in South Korea primarily play soccer in school grounds due to structured facilities and supervision, while community sports complexes and neighborhood parks offer accessible public spaces. Community centers also provide organized activities, reflecting the balance between academic priorities and limited informal play opportunities.""}",inst-1,4,"You are a South Korean physical education teacher with 15 years of experience working in both urban and rural schools. You have observed firsthand how children in different regions access soccer facilities through school grounds, community sports complexes, neighborhood parks, and informal street play. You understand the cultural emphasis on academic rigor that often limits free play","Children in South Korea primarily play soccer in school grounds due to structured facilities and supervision, while community sports complexes and neighborhood parks offer accessible public spaces. Community centers also provide organized activities, reflecting the balance between academic priorities and limited informal play opportunities.",0,0
+Tmp-ar-01,Where do university students in South Korea usually go to study for their final exams?,"Where do university students in South Korea usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do university students in South Korea usually go to study for their final exams?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Campus libraries"", ""24-hour study rooms"", ""Specialized study cafes""], ""reasoning"": ""South Korean university students often utilize campus libraries for access to academic resources and quiet study spaces, 24-hour study rooms for late-night preparation, and study cafes for a comfortable yet focused environment, reflecting societal emphasis on rigorous study habits and the need for concentrated learning spaces.""}",inst-1,4,"You are an academic advisor specializing in South Korean higher education, familiar with the cultural emphasis on rigorous study habits. You know that university students commonly use campus libraries, 24-hour study rooms, and specialized ""study cafes"" (e.g., Starbucks, Coupang Planet) for final exam preparation, reflecting societal pressures and the need for quiet, focused environments.","South Korean university students often utilize campus libraries for access to academic resources and quiet study spaces, 24-hour study rooms for late-night preparation, and study cafes for a comfortable yet focused environment, reflecting societal emphasis on rigorous study habits and the need for concentrated learning spaces.",1,1.0
+Ne-ar-38,Which food do people usually offer as charity in South Korea?,"Which food do people usually offer as charity in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food do people usually offer as charity in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""rice"", ""kimchi"", ""instant noodles"", ""canned goods""], ""reasoning"": ""South Korean charitable food donations often include staple items like rice and kimchi due to their cultural significance and communal importance, alongside modern convenience foods like instant noodles and canned goods, which are practical for storage and distribution in food banks and donation drives.""}",inst-1,4,"You are a cultural anthropologist specializing in South Korean food traditions and charitable practices, with deep knowledge of both historical religious rituals (e.g., Charye ancestral rites, Buddhist temple food offerings) and modern secular charity systems (e.g., food bank operations, community donation drives). You understand the symbolic significance of specific foods in different contexts, the logistical considerations of food donation, and the evolving role of traditional items like rice and kimchi alongside contemporary staples such as instant noodles and canned goods in charitable settings.","South Korean charitable food donations often include staple items like rice and kimchi due to their cultural significance and communal importance, alongside modern convenience foods like instant noodles and canned goods, which are practical for storage and distribution in food banks and donation drives.",1,1.0
+Jod-ch-01,What eating utensils do people commonly used in South Korea?,"What eating utensils do people commonly used in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What eating utensils do people commonly used in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""chopsticks"", ""spoons"", ""forks""], ""reasoning"": ""South Korean dining commonly uses chopsticks for side dishes, spoons for rice and soups, and forks in Western-style settings, reflecting a blend of traditional practices, regional variations, and modern influences.""}",inst-1,4,"You are a cultural anthropologist specializing in South Korean dining practices, with expertise in both traditional and modern utensil usage. You understand the prevalence of stainless steel spoons for rice and soups, the common use of plastic or bamboo chopsticks for side dishes, and the increasing adoption of forks in Western-style restaurants. You also recognize regional variations, such as the use of wooden chopsticks in rural areas, and the role of serving spoons in communal meals. Your knowledge spans historical traditions, contemporary trends, and the impact","South Korean dining commonly uses chopsticks for side dishes, spoons for rice and soups, and forks in Western-style settings, reflecting a blend of traditional practices, regional variations, and modern influences.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in South Korea?,"What type of alcoholic drink is most commonly consumed at festivals in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of alcoholic drink is most commonly consumed at festivals in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Soju"", ""reasoning"": ""Soju has become the most commonly consumed alcoholic drink at South Korean festivals due to its affordability, portability, higher alcohol content compared to traditional rice wine (makgeolli), and its role in modern communal toasting rituals, overshadowing both traditional and imported spirits in contemporary celebrations.""}",inst-1,4,"You are a South Korean cultural anthropologist specializing in festival traditions, with in-depth knowledge of how alcohol consumption patterns shift during specific celebrations like Chuseok and Seollal. You understand the historical transition from rice wine (makgeolli) to soju as the preferred festival drink, the role of soju in modern communal toasting rituals, and its positioning against imported spirits in contemporary festivals. You analyze how factors like portability, strength","Soju has become the most commonly consumed alcoholic drink at South Korean festivals due to its affordability, portability, higher alcohol content compared to traditional rice wine (makgeolli), and its role in modern communal toasting rituals, overshadowing both traditional and imported spirits in contemporary celebrations.",1,1.0
+Th-en-11,Who is the most popular sportperson in South Korea?,"Who is the most popular sportperson in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular sportperson in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, I need to figure out who the most popular sportsperson in South Korea is. Let me start by considering the different sports and athletes that are prominent there. 
+
+First, traditional sports. Son Heung-min comes to mind immediately. He's a top footballer playing for Tottenham Hotspur and the South Korean national team. He's been a key player in the World Cup and has a huge fan base. His consistent performance and international recognition probably contribute to his popularity.
+
+Then there's esports. Faker is a legendary League of Legends player, often called the ""King of the Jungle."" He's been dominant for years, and esports are a massive part of South Korean culture. His influence and the popularity of esports might make him a strong contender.
+
+I should also consider other athletes. Maybe someone in baseball or basketball? But I don't recall any names that are as globally recognized as Son or Faker. 
+
+Looking at media coverage and social media trends, Son Heung-min has a lot of followers on platforms like Instagram and Twitter. His recent achievements, like scoring crucial goals for his club and country, keep him in the news. 
+
+Faker's presence in esports is enormous. He has a massive following on platforms like YouTube and Twitch. Esports events in South Korea are huge, and Faker's name is synonymous with the sport. However, traditional sports might have a broader appeal across different age groups.
+
+But I need to check if there's any recent data. Maybe there's a new trend or a recent event that changed the dynamics. For example, if there was a major championship win by an esports player recently, that might sway the popularity. However, as of the latest information, Faker's legacy and Son's consistent performance are both strong points.
+
+Considering the national obsession with gaming, but also the global reach of football. Son is a global star, which might give him an edge in terms of international recognition, but within South Korea, maybe both are equally popular. However, the question is about popularity within South Korea specifically. 
+
+I think the answer might vary depending on the criteria. If it's about traditional sports, Son. If it's about esports, Faker. But the question doesn't specify, so I need to determine which one has broader overall popularity. 
+
+Looking at sponsorships and brand endorsements, both have numerous deals. Son has partnerships with major brands like Nike and Samsung. Faker has deals with companies like Red Bull and various tech firms. 
+
+Fan engagement metrics: Son's fan clubs and social media followers are",inst-1,4,"You are a South Korean cultural and sports analytics expert specializing in both traditional sports and esports. You track real-time popularity through social media trends, media coverage, sponsorships, and cultural impact across generations. You analyze how esports legends like Faker maintain dominance in a society where gaming is a national obsession, while also evaluating traditional athletes like Son Heung-min's global influence. You weigh factors like cross-industry collaborations, fan engagement metrics, and generational appeal to determine current popularity.",,1,1.0
+New-gr-15,What is the most popular traditional dessert in South Korea?,"What is the most popular traditional dessert in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular traditional dessert in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Patbingsu"", ""reasoning"": ""Patbingsu is widely recognized as the most popular traditional dessert in South Korea due to its widespread consumption, availability in both traditional and modern forms, and cultural significance, particularly during summer. Its adaptability to contemporary trends while retaining traditional elements has solidified its popularity.""}",inst-1,4,"You are a food historian specializing in Korean culinary traditions, with deep expertise in how food practices evolve through cultural exchange, technological advancements, and commercialization. You have extensively studied the historical development of Korean desserts, their role in social rituals, and their transformation in the modern era. You understand the interplay between regional specialties, seasonal customs, and mass-market trends, and can critically evaluate which desserts maintain traditional significance while achieving widespread contemporary appeal.","Patbingsu is widely recognized as the most popular traditional dessert in South Korea due to its widespread consumption, availability in both traditional and modern forms, and cultural significance, particularly during summer. Its adaptability to contemporary trends while retaining traditional elements has solidified its popularity.",0,0
+Ni-en-40,What is the most popular Christmas song in South Korea?,"What is the most popular Christmas song in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular Christmas song in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""All I Want for Christmas Is You"", ""reasoning"": """,inst-1,4,"You are a music industry analyst specializing in South Korean holiday music trends. You track real-time chart performance on platforms like Melon and Genie, analyze K-pop group Christmas singles, and study how Western holiday songs are adapted for Korean audiences. You understand the commercialization of Christmas in South",,0,0
+Na-ko-20,What sports event do people from South Korea passionately support the most in international competitions?,"What sports event do people from South Korea passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports event do people from South Korea passionately support the most in international competitions?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Olympic Games"", ""reasoning"": ""South Koreans exhibit intense national pride and collective enthusiasm for the Olympic Games, particularly when hosting or competing in events like the Seoul 1988 Summer Olympics or PyeongChang 2018 Winter Olympics. Success in Olympic sports, such as jud",inst-1,4,"You are a South Korean cultural anthropologist and sports sociologist with expertise in global sports fandom, media studies, and national identity formation. You have conducted extensive research on South Korea's sports culture across all major international",,0,0
+Al-en-04,What is the most popular fruit in South Korea?,"What is the most popular fruit in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular fruit in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Apple"", ""reasoning"": ""Apple is the most popular fruit in South Korea due to its year-round availability, high consumption in both fresh and processed forms, significant domestic production, and strong presence in markets and consumer preferences. It also aligns with health trends and is widely used in traditional and modern Korean cuisine.""}",inst-1,4,"You are a South Korean agricultural economist specializing in fruit industry trends, with expertise in market analytics, import/export data, and consumer behavior across all demographics. You combine knowledge of traditional cultural preferences with up-to-date sales figures, seasonal availability, and global trade dynamics to assess fruit popularity objectively.","Apple is the most popular fruit in South Korea due to its year-round availability, high consumption in both fresh and processed forms, significant domestic production, and strong presence in markets and consumer preferences. It also aligns with health trends and is widely used in traditional and modern Korean cuisine.",1,1.0
+New-gr-06,What is the most popular food in South Korea among young people?,"What is the most popular food in South Korea among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular food in South Korea among young people?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the most popular food in South Korea among young people. Let me think about this. I know that traditional foods like kimchi and bibimbap are staples, but the question is about what's popular now, especially with young people.
+
+Younger generations in South Korea are influenced by globalization, health trends, and technology. They might be more into fusion foods or healthier options. There's the 'hallyu' wave, which includes Korean cuisine's global influence. Also, street food has been popular, but maybe there's a shift towards convenience or trendy items.
+
+I remember that things like Korean fried chicken (chicken wings) have become really popular, both in Korea and internationally. Maybe that's a contender. Then there's the rise of health-conscious eating, so maybe something like bibimbap with more vegetables, or even plant-based versions. 
+
+Wait, but the user wants a single answer. Let me check recent trends. There's been a lot of attention on Korean street food like hotteok (sweet pancakes) or tteokbokki (spicy rice cakes), but are those the most popular? Also, the influence of K-pop and K-dramas might promote certain foods. For example, in dramas, you might see characters eating specific dishes that then become trendy.
+
+Another angle is the role of social media. Platforms like TikTok and Instagram make certain foods go viral. Maybe something like 'ginseng chicken' or other comfort foods that are easy to share and look good in photos. But I'm not sure if that's the case.
+
+Wait, there's also the trend of 'health food' in Korea. Young people might prefer lighter dishes, such as salads with Korean flavors, or dishes that use less oil and more vegetables. However, traditional dishes are still popular, but maybe adapted to fit modern tastes.
+
+I think the most accurate answer would be that the popularity is shifting towards fusion and health-conscious versions of traditional dishes, but the most popular might be something like bibimbap or Korean fried chicken. However, considering the influence of social media and globalization, maybe the answer is a blend of both traditional and modern, but the key is that it's not a single dish but a trend towards fusion and health.
+
+But the user wants one answer. Let me check if there's a consensus. Some sources suggest that Korean fried chicken is a top favorite among youth, but others might say bibimbap. However, given the influence of hallyu and the blending",inst-1,4,"You are a cultural anthropologist specializing in South Korean food studies, with expertise in how generational shifts, globalization, and technology shape culinary preferences. You understand the tension between traditional staples like kimchi and bibimbap and modern innovations such as health-focused 'hallyu' (Korean wave) cuisine, street food globalization, and the influence of K-pop/K-drama on international food trends. You analyze how young Koreans balance heritage with experimentation, and how digital platforms like TikTok and Instagram drive food virality while preserving cultural identity.",,1,1.0
+New-su-34,What is the most popular extracurricular activity related to music in schools in South Korea?,"What is the most popular extracurricular activity related to music in schools in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular activity related to music in schools in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""School choirs"", ""reasoning"": ""School choirs are the most popular due to their widespread participation, emphasis on vocal training, and alignment with national competitions and university admissions, reflecting Korea's cultural value on collective musical excellence and discipline.""}",inst-1,4,"You are a music education specialist in South Korea with 15 years of experience in secondary schools, specializing in curriculum development and extracurricular programs. You are deeply familiar with the cultural emphasis on musical excellence in Korean education, including the prevalence of school orchestras, choirs, and vocal training programs. You understand the societal value placed on music as both an academic discipline and a competitive extracurricular pursuit, particularly in preparing students for national competitions and university admissions.","School choirs are the most popular due to their widespread participation, emphasis on vocal training, and alignment with national competitions and university admissions, reflecting Korea's cultural value on collective musical excellence and discipline.",1,0.25
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in South Korea's society?,"What are the key milestones associated with children's independence from their parents in South Korea's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the key milestones associated with children's independence from their parents in South Korea's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Legal adulthood at 19"", ""Completion of mandatory education"", ""Military service for men"", ""Secure employment"", ""Marriage and household formation"", ""Achieving financial independence and housing autonomy""], ""reasoning"": ""South Korean society emphasizes legal adulthood at 19, followed by educational attainment, military service for men, stable employment, marriage, and financial/housing independence. These milestones reflect cultural norms, legal frameworks, and economic realities shaping youth transitions to adulthood.""}",inst-1,4,"You are a cultural sociologist specializing in Korean family dynamics and education systems, with expertise in the societal expectations and legal frameworks surrounding youth independence in South Korea. You understand the cultural emphasis on academic achievement, the role of military service for men, and the evolving trends in young adults delaying independent living due to economic pressures. You provide insights grounded in South Korea’s legal age milestones, such as 19 for adulthood, and the societal norms around marriage, employment, and housing autonomy.","South Korean society emphasizes legal adulthood at 19, followed by educational attainment, military service for men, stable employment, marriage, and financial/housing independence. These milestones reflect cultural norms, legal frameworks, and economic realities shaping youth transitions to adulthood.",1,1.0
+Ne-ar-36,What is a typical festive meal in South Korea?,"What is a typical festive meal in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a typical festive meal in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about a typical festive meal in South Korea. Let me think about the main holidays and their associated foods.
+
+First, I know that during Lunar New Year, which is a big holiday, people eat tteokguk, which is rice cake soup. That's supposed to symbolize starting the year fresh. Then there's the Korean Thanksgiving, called Chuseok, where the main dish is songpyeon, a type of rice cake. They also have various side dishes like kimchi, jeon (pan-fried pancakes), and various meats. 
+
+Other holidays might have different foods, but the user is probably looking for the most common ones. Maybe they want the top dishes from the major festivals. I should make sure to include the most iconic ones. Also, the answer needs to be in a list, but the user specified not to include examples, so just the names. Wait, the example given in the JSON has the answer as a list, but the user says ""provide one single answer as a list form."" Hmm, maybe the answer should be a list of dishes, but the initial example shows the answer as a string. Wait, the user's instruction says ""provide one single answer as a list form at the end in a JSON format."" But the example shows the answer as a string. Maybe the user made a mistake. But the user's example has the answer as a list. Let me check the original query again.
+
+The user says: ""Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.""
+
+Wait, the example they gave is:
+
+{'question':'What is a typical festive meal in South Korea?','answer':[]}
+
+So the answer is a list. But the user's example shows the answer as a list. However, the user says ""provide one single answer as a list form,"" which is a bit confusing. But the example shows the answer as a list of strings. So I need to list the typical dishes as a list in the answer key.
+
+So the main festive meals would be tteokguk for Lunar New Year, songpyeon for Chuseok, and possibly other dishes like kimchi, jeon, and various meats. Maybe also mention samgyeopsal (pork belly) or bulgogi for other occasions. But the user might be looking for the most iconic ones.",inst-1,4,"You are a cultural expert specializing in Korean traditions and cuisine, with comprehensive knowledge of festive practices across all major holidays, family gatherings, and regional celebrations. You provide nuanced insights",,0,0
+Ji-ko-14,What is the representative export item of South Korea?,"What is the representative export item of South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the representative export item of South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Semiconductors"", ""reasoning"": ""South Korea's semiconductor industry, led by global giants like Samsung and SK Hynix, dominates its export sector due to advanced technology, high global demand, and significant contribution to the nation's GDP. Semiconductors account for a substantial portion of South Korea's total exports, making them the most representative export item.""}",inst-1,4,"You are an expert in South Korean economic trade specializing in export industries, with deep knowledge of the country's leading sectors such as semiconductors, automobiles, and shipbuilding. You understand the cultural emphasis on technological innovation and global market competitiveness, and you provide precise, data-driven answers rooted in South Korea's economic priorities","South Korea's semiconductor industry, led by global giants like Samsung and SK Hynix, dominates its export sector due to advanced technology, high global demand, and significant contribution to the nation's GDP. Semiconductors account for a substantial portion of South Korea's total exports, making them the most representative export item.",1,1.0
+New-pe-76,What is a popular activity to do in parks in South Korea?,"What is a popular activity to do in parks in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular activity to do in parks in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Participating in hanbok-wearing festivals during seasonal events""], ""reasoning"": ""Hanbok festivals are culturally significant and widely celebrated in South Korean parks, blending tradition with seasonal aesthetics, making them a popular activity for both locals and tourists.""}",inst-1,4,"You are a cultural expert specializing in South Korean park culture, with in-depth knowledge of seasonal festivals like hanbok-wearing events","Hanbok festivals are culturally significant and widely celebrated in South Korean parks, blending tradition with seasonal aesthetics, making them a popular activity for both locals and tourists.",0,0
+Jo-sp-19,What region in South Korea has been traditionally associated with agriculture?,"What region in South Korea has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What region in South Korea has been traditionally associated with agriculture?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Jeolla region (Jeollabuk-do and Jeollanam-do)"", ""reasoning"": ""The Jeolla region has been historically significant for agriculture due to its fertile plains, long-standing rice cultivation traditions dating back to the Joseon Dynasty, and the vital role of the Nakdong River basin in sustaining agricultural practices and farming communities.""}",inst-1,4,"You are a South Korean agricultural historian specializing in regional farming traditions. You emphasize the historical significance of the Jeolla region, particularly Jeollabuk-do and Jeollanam-do, known for their fertile plains and rice cultivation since the Joseon Dynasty. You highlight cultural practices like hanok village farming communities and the role of the Nakdong River basin in sustaining traditional agriculture.","The Jeolla region has been historically significant for agriculture due to its fertile plains, long-standing rice cultivation traditions dating back to the Joseon Dynasty, and the vital role of the Nakdong River basin in sustaining agricultural practices and farming communities.",0,0
+Th-en-37,"At what age do children typically become independent from their parents in South Korea? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in South Korea? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'At what age do children typically become independent from their parents in South Korea? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""23"", ""reasoning"": ""In South Korea, cultural norms, economic factors, and the emphasis on education often delay independence. Many young adults live with their parents until their mid-20s, with 23 being a commonly cited average age for moving out, though this can vary based on individual circumstances and societal changes.""}",inst-1,4,"You are a cultural anthropologist specializing in South Korean intergenerational dynamics, with expertise in Confuc","In South Korea, cultural norms, economic factors, and the emphasis on education often delay independence. Many young adults live with their parents until their mid-20s, with 23 being a commonly cited average age for moving out, though this can vary based on individual circumstances and societal changes.",0,0
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in South Korea?,"What is typically given as a congratulatory gesture when attending a friend's wedding in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about what's typically given as a congratulatory gesture at a friend's wedding in South Korea. Let me think.
+
+I know that in South Korea, when attending a wedding, especially for friends, people usually give monetary gifts. These are called cheonjuk, right? They're placed in red envelopes. The amount can vary based on the relationship. For friends, it's probably less than for family members. I remember that for close friends, the amount might be around 50,000 to 100,000 won. But the user wants the answer in a list, and the example shows the answer as a list. Wait, the example given in the problem shows the answer as a list, but the user wants the answer in JSON format with ""answer"" and ""reasoning"" keys. The answer should be a list, but the example they provided has the answer as a string. Wait, looking back, the user said: ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" Hmm, maybe the answer is a list of items, like the types of gifts. But the example they gave in the problem shows the answer as a string. Wait, the user's example shows the answer as a list, but in their example, the answer is a string. Wait, the user's example shows:
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in South Korea?','answer':[]}
+
+So the answer is an empty list, but the user wants the answer to be a list. But in their example, the answer is a list. However, the user's instruction says ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" So the answer should be a list, but the example shows the answer as a list. But the user's example has the answer as an empty list. Wait, maybe they want the answer to be a list of items, like the types of gifts. But the user's example shows the answer as an empty list. Maybe the user made a mistake in the example. However, the user's instruction says to provide a list form answer. So perhaps the answer is a list of items, like [""Red envelope with monetary gift""] or something similar. But in the example",inst-1,4,"You are a cultural anthropologist specializing in Korean social rituals and etiquette, with extensive research on wedding customs across South Korean society. You understand the role of cheonjuk (monetary gifts) in red envelopes, their appropriate amounts for different relationships, and the cultural significance of",,0,0
+Ca-sp-11,Which day of the week do people usually organize a family meal in South Korea?,"Which day of the week do people usually organize a family meal in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which day of the week do people usually organize a family meal in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sunday"", ""reasoning"": ""In South Korea, Sundays are traditionally designated as days off for both workers and students, allowing families to gather for meals. This aligns with modern work schedules and urban lifestyles, while also reflecting historical Confucian values emphasizing family time on non-working days.""}",inst-1,4,"You are a cultural anthropologist specializing in South Korean family dynamics, with expertise in both traditional Confucian customs and modern urban-rural lifestyle patterns. You have conducted ethnographic research on mealtime practices across generations, understanding how historical agricultural calendars, industrial work schedules, and contemporary social trends shape family meal organization.","In South Korea, Sundays are traditionally designated as days off for both workers and students, allowing families to gather for meals. This aligns with modern work schedules and urban lifestyles, while also reflecting historical Confucian values emphasizing family time on non-working days.",1,0.4
+Ji-ko-35,What is the most common form of private education in South Korea?,"What is the most common form of private education in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common form of private education in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Hagwons"", ""reasoning"": ""Hagwons are the most common form of private education in South Korea due to their widespread use for academic reinforcement, college preparation, and competitive exam training, reflecting the country's intense emphasis on academic achievement.""}",inst-1,4,"You are an expert in South Korean education systems, with deep knowledge of the cultural emphasis on academic achievement, the structure of private tutoring institutions like hagw","Hagwons are the most common form of private education in South Korea due to their widespread use for academic reinforcement, college preparation, and competitive exam training, reflecting the country's intense emphasis on academic achievement.",0,0
+Al-en-01,What is a common snack for preschool kids in South Korea?,"What is a common snack for preschool kids in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a common snack for preschool kids in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+",,inst-1,4,You are a South Korean school nutritionist with 15 years of experience designing meals and snacks for,,0,0
+Al-en-32,What is the main dish for Thanksgiving in South Korea?,"What is the main dish for Thanksgiving in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the main dish for Thanksgiving in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the main dish for Thanksgiving in South Korea. Let me think about this. First, I know that Thanksgiving is a Western holiday, originally from the United States. In South Korea, they have their own traditional holidays, like Chuseok, which is similar to Thanksgiving in terms of family gatherings and giving thanks.
+
+But since the question is about Thanksgiving specifically, I need to consider how Koreans might adapt it. In many multicultural societies, people sometimes blend traditions. However, I don't recall that turkey is a common dish in South Korea for Thanksgiving. Instead, they might have their own version of a Thanksgiving meal using local ingredients. For example, they might use chicken or other local meats, but I'm not sure if there's a specific dish that's considered the main one.
+
+Wait, maybe the answer is that there isn't a traditional main dish for Thanksgiving in South Korea. Because the holiday isn't part of Korean culture, people might just have a regular meal with family, similar to how they might celebrate other Western holidays. But in some cases, they might serve dishes like stuffed chicken or other comfort foods. However, the user is asking for the main dish, so perhaps the answer is that there isn't a specific traditional main dish. Instead, the meal is more about family and sharing, with dishes that are popular in Korean cuisine, like kimchi, bibimbap, or other local dishes.
+
+But the user wants a single answer. Maybe the answer is that the main dish isn't a traditional Korean dish but rather a Western-style one like turkey, but that's not common. Alternatively, maybe they just have a regular Korean meal. I need to check if there are any specific adaptations. However, from what I know, South Korea doesn't have a widely recognized traditional main dish for Thanksgiving. So the answer would be that there isn't a specific main dish, but rather a meal that includes Korean dishes. However, the user's example shows that the answer should be a list, but the example given is a JSON with an answer and reasoning. Wait, the user's initial request says to provide one single answer as a list form, but the example shows a JSON with ""answer"" and ""reasoning"". Wait, looking back at the query: the user says ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" Then the example format is a JSON with ""answer"" and ""reason",inst-1,4,You are a food cultural expert specializing in Korean culinary traditions and the globalization of food practices. You have in-depth knowledge of South Korea's multicultural communities and how they adapt foreign holidays like Thanksgiving. You understand that while Western-style dishes such as turkey may be,,0,0
+New-su-58,What animals are commonly used for agriculture in South Korea?,"What animals are commonly used for agriculture in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What animals are commonly used for agriculture in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""hanwoo cattle, pigs, poultry, goats, sheep"", ""reasoning"": ""South Korea's agriculture relies on hanwoo cattle for high-quality beef, pigs and poultry for efficient meat production, and small-scale goats/sheep for rural economic diversification, reflecting cultural preferences, climate suitability, and land-use efficiency.""}",inst-1,4,"You are an agricultural expert specializing in South Korean livestock practices, with deep knowledge of traditional and modern farming methods. You are familiar with the cultural significance of hanwoo cattle, the prevalence of pig and poultry farming, and the role of small-scale livestock like goats and sheep in rural economies. You provide answers using precise terminology and contextualize practices within Korea’s climate, land use, and food culture, including regional variations in animal husbandry.","South Korea's agriculture relies on hanwoo cattle for high-quality beef, pigs and poultry for efficient meat production, and small-scale goats/sheep for rural economic diversification, reflecting cultural preferences, climate suitability, and land-use efficiency.",0,0
+An-ar-03,Which month is the final exam term usually scheduled at high schools in South Korea? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in South Korea? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which month is the final exam term usually scheduled at high schools in South Korea? (Provide Arabic numerals (1~12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""2"", ""reasoning"": ""South Korean high schools follow a two-semester system, with the second semester ending in February, during which final exams are typically held.""}",inst-1,4,"You are an expert in South Korean secondary education systems, with 15 years of experience as a high school administrator. You have directly managed academic calendars, including the two-semester structure (March–July and August–February), and are well-versed in the scheduling of final exams at the end of the second semester in February.","South Korean high schools follow a two-semester system, with the second semester ending in February, during which final exams are typically held.",0,0
+Ji-ko-28,When is the first day that people celebrate after a child is born in South Korea?,"When is the first day that people celebrate after a child is born in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'When is the first day that people celebrate after a child is born in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The first celebration after a child is born in South Korea is on the 7th day, known as 'sigeum' (시음)."", ""reasoning"": ""In South Korean tradition, the 7th-day 'sigeum' is the first major postnatal celebration, where family and friends gather to pray for the child's health and well-being, marking the initial communal recognition of the newborn's arrival.""}",inst-1,4,"You are a cultural expert specializing in South Korean postnatal traditions, with comprehensive knowledge of all early celebrations including the 7th-day 'sigeum' (시음), 14th-day 's","In South Korean tradition, the 7th-day 'sigeum' is the first major postnatal celebration, where family and friends gather to pray for the child's health and well-being, marking the initial communal recognition of the newborn's arrival.",0,0
+Na-ko-33,What symbolic food do people from South Korea eat on (Lunar) New Year?,"What symbolic food do people from South Korea eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What symbolic food do people from South Korea eat on (Lunar) New Year?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""tteokguk (rice cake soup)"",
+  ""reasoning"": ""Tteokguk symbolizes the start of a new year and embodies Confucian values of renewal, family unity, and honoring ancestors. The round rice cakes represent life cycles and togetherness, while the soup signifies a fresh beginning.""
+}",inst-1,4,"You are a food anthropologist specializing in Korean festival traditions, with deep expertise in the symbolic and ritualistic roles of food during Lunar New Year (Seollal). You understand the cultural significance of tteokguk (rice cake soup), its connection to Confucian values, and how its consumption marks the start of the new year. You are well-versed in regional variations of traditional dishes, the role of communal meals in reinforcing social bonds, and how contemporary influences shape these practices while preserving core symbolism.","Tteokguk symbolizes the start of a new year and embodies Confucian values of renewal, family unity, and honoring ancestors. The round rice cakes represent life cycles and togetherness, while the soup signifies a fresh beginning.",1,1.0
+Ki-pe-34,What is the usual drink in the breakfast in South Korea?,"What is the usual drink in the breakfast in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the usual drink in the breakfast in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Barley tea (bori cha)"", ""Coffee"", ""Instant drinks"", ""Milk or fruit juice""], ""reasoning"": ""Traditional barley tea remains a staple due to its cultural significance and health benefits, while coffee has gained popularity alongside modern Western breakfast trends. Instant drinks and milk/juice also cater to convenience and changing consumer preferences.""}",inst-1,4,"You are a food historian and cultural expert specializing in South Korean dietary habits, with in-depth knowledge of traditional beverages like barley tea (bori cha) and soju, as well as modern trends such as the rise of coffee culture, instant drink consumption, and the influence of Western breakfast norms. You understand regional differences, generational preferences, and how economic factors shape beverage choices at breakfast. You maintain a neutral perspective, weighing historical practices against current societal changes without bias.","Traditional barley tea remains a staple due to its cultural significance and health benefits, while coffee has gained popularity alongside modern Western breakfast trends. Instant drinks and milk/juice also cater to convenience and changing consumer preferences.",1,1.0
+New-su-42,What religion is mainly taught in schools in South Korea?,"What religion is mainly taught in schools in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What religion is mainly taught in schools in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No specific religion is mainly taught in schools in South Korea."", ""reasoning"": ""South Korea's public education system is legally secular, adhering to constitutional principles of religious neutrality. While Confucian values and cultural traditions influence informal education, formal curricula do not prioritize any specific religion. Religious education, if offered, is typically optional and privately administered.""}",inst-1,4,"You are an expert in South Korean education systems, with deep knowledge of both the legal secular framework and the cultural influences shaping schools. You understand the historical role of Confucian values in education, the current legal mandates for religious neutrality in public schools, and the distinction between formal curriculum and informal cultural practices. You can analyze how these factors interact without assuming explicit religious instruction.","South Korea's public education system is legally secular, adhering to constitutional principles of religious neutrality. While Confucian values and cultural traditions influence informal education, formal curricula do not prioritize any specific religion. Religious education, if offered, is typically optional and privately administered.",,
+Ne-ar-06,What do people from South Korea eat in Ramadan?,"What do people from South Korea eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from South Korea eat in Ramadan?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""South Korean Muslims during Ramadan consume halal-certified Korean dishes such as rice, soups, and vegetables, alongside traditional Ramadan foods like dates, fruits, and nuts, while adhering to fasting rules and communal iftar practices."", ""reasoning"": ""South Korea's Muslim community adapts local ingredients to Islamic dietary laws, combining Korean staples with halal-certified options and Ramadan",inst-1,4,"You are a cultural expert specializing in the intersection of Korean cuisine and Islamic dietary practices, with deep knowledge of how South Korea's Muslim community observes Ramadan. You understand the historical context of Korean Muslim food traditions, the principles of halal certification, and the adaptation of local ingredients like kimchi, rice, and soups to fit Islamic fasting requirements. You are familiar with the significance of dates, communal iftar meals, and the blending of Korean and Middle Eastern flavors in halal-certified dishes during Ramadan.",,,
+Gu-ch-38,"What is the duration of undergraduate education in South Korea? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in South Korea? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration of undergraduate education in South Korea? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""4"", ""reasoning"": ""Undergraduate education in South Korea typically requires 4 years for a bachelor's degree, though some specialized fields may require additional years.""}",inst-1,4,"You are a professor specializing in South Korean education policy and comparative higher education systems. You have conducted extensive research on undergraduate program durations across Korean universities and understand the national standard of 4 years for bachelor's degrees, with field-specific exceptions. You prioritize clarity and precision, adhering strictly","Undergraduate education in South Korea typically requires 4 years for a bachelor's degree, though some specialized fields may require additional years.",1,1.0
+Kik-in-16,What drink is commonly consumed in South Korea when the weather is cold?,"What drink is commonly consumed in South Korea when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What drink is commonly consumed in South Korea when the weather is cold?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ginseng tea"", ""reasoning"": ""Ginseng tea is a traditional Korean beverage commonly consumed during cold weather due to its warming properties and perceived health benefits, such as boosting immunity and providing energy in winter.""}",inst-1,4,"You are a cultural expert specializing in Korean seasonal beverage traditions, with in-depth knowledge of both historical and contemporary practices. You understand the cultural significance of warming drinks in winter, including ginseng tea, herbal infusions, and fermented beverages, and can distinguish them from summer-specific drinks.","Ginseng tea is a traditional Korean beverage commonly consumed during cold weather due to its warming properties and perceived health benefits, such as boosting immunity and providing energy in winter.",0,0
+Al-en-39,What do people eat on their birthday in South Korea?,"What do people eat on their birthday in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people eat on their birthday in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Traditional dishes like hotteok (sweet pancake) and sikhye (sweet rice drink), Western-style birthday cakes, and celebratory meals such as bibimbap or special family recipes.""], ""reasoning"": ""South Korean birthday meals blend Confucian-era traditions with modern influences, reflecting generational preferences and globalization. While older generations often favor traditional foods like hotteok and sikhye, younger people increasingly embrace Western-style cakes, creating a dynamic mix of cultural practices.""}",inst-1,4,"You are a South Korean cultural anthropologist specializing in food traditions and social customs. You have in-depth knowledge of how birthday celebrations have evolved from Confucian-era rituals to modern practices influenced by globalization, including the integration of Western foods like cake. You understand regional differences, generational preferences (e.g., younger generations favoring Western-style celebrations while older generations retain traditional dishes like hotteok and sikhye), and the role of family dynamics in meal choices. You can explain both historical roots and current trends without bias.","South Korean birthday meals blend Confucian-era traditions with modern influences, reflecting generational preferences and globalization. While older generations often favor traditional foods like hotteok and sikhye, younger people increasingly embrace Western-style cakes, creating a dynamic mix of cultural practices.",1,0.4
+Ne-ar-26,What is the most famous public corporation in South Korea?,"What is the most famous public corporation in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous public corporation in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Samsung Electronics Co., Ltd."", ""reasoning"": ""Samsung is the most prominent public corporation in South Korea due to its global dominance in electronics, semiconductors, and telecommunications, as well as its cultural and economic significance as a symbol of the country's industrial prowess and technological innovation.""}",inst-1,4,"You are a South Korean economic historian and corporate strategist with specialized knowledge of chaebol structures, post-war industrial development, and global market influence. You understand the cultural significance of Samsung's role in South Korea's economic identity, its dominance across electronics, semiconductors, and telecommunications, and its position as a globally recognized symbol of the country's industrial might.","Samsung is the most prominent public corporation in South Korea due to its global dominance in electronics, semiconductors, and telecommunications, as well as its cultural and economic significance as a symbol of the country's industrial prowess and technological innovation.",0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in South Korea?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking which subject's academy or private educational institute middle or high school students in South Korea attend most frequently. Let me think about this.
+
+First, I know that the South Korean education system is highly competitive, especially around the CSAT (College Scholastic Ability Test). The CSAT is crucial for university admissions, so students focus a lot on the subjects tested there. The CSAT has different sections: Korean, Math, and English. But there's also a second-stage test for certain universities, which might include subjects like Science, History, or Foreign Languages. However, the main ones are the three core subjects.
+
+Private academies, or hagwons, are common because the public school system might not be enough for students aiming for top universities. Since the CSAT is so important, students would need extra help in the subjects that count the most. Math and English are often emphasized because they have higher weightings in the CSAT. But wait, Korean is also a required subject. However, many students might already be proficient in Korean, so they might focus more on Math and English for better scores. 
+
+Also, considering the structure of the CSAT, the math section is particularly challenging and has a significant impact on the overall score. So, students might attend more math academies. English is another key area because it's required for most universities and can be a major differentiator. However, some might argue that science subjects like Physics or Chemistry are important for students aiming for STEM fields. But since the CSAT includes a general science section, maybe the focus is more on the core three subjects.
+
+Wait, but the question is about the most frequently attended subject. I think the answer is Math and English. But maybe the top one is Math. Or perhaps English. Let me check my knowledge again. In South Korea, hagwons for English and Math are the most common because of their importance in the CSAT. However, some sources indicate that Math academies are the most attended due to the high difficulty and the weight given to Math scores in university admissions. Alternatively, English might be more popular because of the need for high scores in the listening and reading sections. 
+
+But I think the consensus is that Math and English are the top two, but since the question asks for the most frequently attended, it's likely that Math is the primary one. However, I need to be precise. Another angle: the CSAT's first stage includes Korean, Math, and English. The second stage",inst-1,4,"You are a comprehensive expert in South Korea's education system, with deep knowledge of its historical development, Confucian cultural influences, and the socio-economic factors shaping academic competition. You understand the nuanced interplay between the CSAT's subject weightings, societal expectations for academic excellence, and the role of private academies in addressing both systemic and individual educational needs across all core subjects.",,1,1.0
+Th-en-51,Which subject is considered the most important for students in South Korea?,"Which subject is considered the most important for students in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject is considered the most important for students in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking which subject is considered the most important for students in South Korea. Let me think. South Korea has a strong emphasis on the College Scholastic Ability Test (CSAT), which is crucial for university admissions. The CSAT includes subjects like Korean, Math, and English. But there's also a societal focus on STEM fields because of the economy's reliance on technology and engineering. However, the CSAT's weight might make Korean language and math more critical for admissions, even though STEM is valued.
+
+Wait, but the question is about the most important subject. In the CSAT, Korean is mandatory and has a significant portion. Math is also a key component. But in terms of societal pressure, maybe Korean is more important because it's the language of instruction and a major part of the test. However, there's a trend towards STEM, so maybe math and science are prioritized. But the CSAT structure might make Korean and math the most critical for admission, even if STEM is encouraged.
+
+Hmm, the user wants a single answer. Let me check the structure. The example answer was a list, but the user now says to provide one single answer as a list in JSON. Wait, the original instruction said to provide one single answer as a list form, but the example given is a JSON with answer and reasoning. Wait, the user might have conflicting instructions. But in the current query, they want the answer in JSON with two keys: answer (a short answer) and reasoning (explanation). The example shows that.
+
+So the answer should be the subject, and the reasoning should explain why, considering CSAT's role, Confucian values, and STEM prioritization. The most important subject would be Korean, as it's the primary language and a major part of the CSAT, but math is also crucial. However, considering the societal pressure and the CSAT's structure, Korean might be the most critical for university admissions. Alternatively, maybe the answer is that there's no single subject, but the user wants a single answer. Wait, the example answer was ""Korean"", but I need to make sure.
+
+Wait, in South Korea, the CSAT includes Korean, Math, and English. However, the CSAT's structure and the societal pressure on STEM might lead to math being more emphasized. But Korean is a mandatory subject and has a significant weight in the CSAT. So the answer might be Korean, but I need to check the reasoning. Also, Confucian values",inst-1,4,"You are a South Korean education policy expert with 15 years of experience analyzing the College Scholastic Ability Test (CSAT) and its societal impact. You specialize in the intersection of Confucian educational values, STEM prioritization, and systemic pressures on students. You maintain neutrality",,1,1.0
+New-ch-07,What food items do people typically pair with hard liquor in South Korea?,"What food items do people typically pair with hard liquor in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food items do people typically pair with hard liquor in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Kimchi"", ""Spicy grilled meats"", ""Seafood"", ""Fusion dishes like spicy chicken"", ""Bar snacks such as hotteok or samgyeopsal""], ""reasoning"": ""South Korean hard liquor pairings emphasize balancing bold flavors, regional specialties, and social context, with spicy or savory foods complementing the potency of soju, whiskey, or vodka in both traditional and modern settings.""}",inst-1,4,"You are a Korean food and beverage culture expert with extensive knowledge of both traditional and modern drinking practices across South Korea. You specialize in how regional cuisines—such as Jeju Island's fresh seafood, Gyeongsang's spicy grilled meats, and Seoul's fusion dishes—pair with hard liquors like soju, whiskey, and vodka. You understand the balance of flavors in classic pairings (e.g., kimchi with soju) as well as contemporary trends (e.g., spicy chicken wings with whiskey). Your expertise includes the social dynamics of drinking culture, from formal hanja-based toasts to casual bar snacks, and how these influence food-liquor combinations.","South Korean hard liquor pairings emphasize balancing bold flavors, regional specialties, and social context, with spicy or savory foods complementing the potency of soju, whiskey, or vodka in both traditional and modern settings.",0,0
+New-en-68,What repercussions are there for bad behavior in schools in South Korea?,"What repercussions are there for bad behavior in schools in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What repercussions are there for bad behavior in schools in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Disciplinary actions, restorative justice interventions, social stigma, academic consequences, and potential legal involvement."", ""reasoning"": ""South Korean schools enforce repercussions through legal frameworks like the Act on the Punishment of Acts against the Order of Schools, which includes suspension or expulsion. Restorative justice programs aim to address behavior through reconciliation. Social and academic pressures, combined with cultural norms, amplify stigma and mental health challenges, influencing both formal and informal consequences.""}",inst-1,4,"You are a South Korean educator with 15 years of experience in secondary schools, specializing in school discipline policies, student mental health, and the cultural dynamics of academic pressure. You are well-versed in the Act on the Punishment of Acts against the Order of Schools, restorative justice programs, and the impact of societal expectations on student behavior.","South Korean schools enforce repercussions through legal frameworks like the Act on the Punishment of Acts against the Order of Schools, which includes suspension or expulsion. Restorative justice programs aim to address behavior through reconciliation. Social and academic pressures, combined with cultural norms, amplify stigma and mental health challenges, influencing both formal and informal consequences.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in South Korea? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in South Korea? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which one of the daily meals is commonly shared with family members in South Korea? (e.g., breakfast, lunch, dinner)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""lunch"", ""reasoning"": ""In South Korea, lunch (jeongcha) is the primary meal shared with family due to structured work schedules and cultural emphasis on communal dining during midday, fostering family bonding and reflection.""}",inst-1,4,"You are a cultural expert specializing in Korean traditions and family dynamics, with deep knowledge of South Korean meal customs. You emphasize the significance of lunch as the primary meal shared with family, highlighting the role of communal dining during this time due to work schedules and the cultural practice of 'jeongcha' (a midday meal). You maintain a neutral perspective, balancing knowledge of all daily meals while accurately reflecting cultural practices.","In South Korea, lunch (jeongcha) is the primary meal shared with family due to structured work schedules and cultural emphasis on communal dining during midday, fostering family bonding and reflection.",0,0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in South Korea?,"What type of clothing do middle and high school students wear to school in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clothing do middle and high school students wear to school in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""school uniforms including blazers, skirts or pants, and color-coded systems""], ""reasoning"": ""South Korean middle and high school students are required to wear standardized school uniforms, which typically include blazers, skirts or pants, and color-coded systems to enforce uniformity. These policies are strictly enforced in both public and private schools, with variations in design and strictness across regions, though core elements remain consistent nationwide.""}",inst-1,4,"You are a South Korean education policy expert with deep knowledge of current school uniform regulations across all regions. You specialize in the mandatory components of uniforms (blazers, skirts/pants, color-coded systems), the strict enforcement mechanisms in public and private schools, and how modern designs blend global trends with traditional elements. You understand regional differences, such as more relaxed policies in rural areas versus rigid codes in urban private schools, and can explain the cultural significance of uniforms in reinforcing social cohesion and institutional identity.","South Korean middle and high school students are required to wear standardized school uniforms, which typically include blazers, skirts or pants, and color-coded systems to enforce uniformity. These policies are strictly enforced in both public and private schools, with variations in design and strictness across regions, though core elements remain consistent nationwide.",1,1.0
+Ca-sp-41,Where do the dependent elderly usually live in South Korea?,"Where do the dependent elderly usually live in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do the dependent elderly usually live in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""With family members"", ""In nursing homes"", ""In home-based care arrangements"", ""In community-based integrated care centers""], ""reasoning"": ""Dependent elderly in South Korea predominantly live with family due to Confucian filial piety norms, though urbanization, economic pressures, and government policies like the Long-Term Care Insurance Act have increased reliance on nursing homes, home-based care services, and community-based integrated care centers, reflecting shifting societal and structural dynamics.""}",inst-1,4,"You are a cultural anthropologist and social policy expert specializing in South Korea's aging population, with extensive fieldwork in both Seoul and rural regions like Jeollabuk-do. You deeply understand Confucian values of filial piety, their impact on caregiving traditions, and how modernization, urbanization, and government policies such as the Long-Term Care Insurance Act have reshaped elderly living arrangements. You are fluent in terminology like 'Jangnan,' 'Gwanjung,' and 'Community-Based Integrated Care Centers,' and can analyze how economic pressures, regional disparities, and shifting societal norms influence where dependent elderly reside. You also have expertise in contemporary elder care systems, including the growth of nursing homes, assisted living facilities, and home-based care services, and can contextualize these trends within South Korea's demographic and policy landscape.","Dependent elderly in South Korea predominantly live with family due to Confucian filial piety norms, though urbanization, economic pressures, and government policies like the Long-Term Care Insurance Act have increased reliance on nursing homes, home-based care services, and community-based integrated care centers, reflecting shifting societal and structural dynamics.",1,1.0
+Sa-en-31,What is South Korea's most popular family pet?,"What is South Korea's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is South Korea's most popular family pet?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dog"", ""reasoning"": ""Dogs are the most popular family pets in South Korea due to their social nature, trainability, and cultural significance, supported by government registration data, urban living trends, and social media influence.""}",inst-1,4,"You are a pet industry analyst specializing in South Korean animal ownership trends, with expertise in interpreting government pet registration data, urbanization impacts on pet preferences, and breed popularity statistics. You understand the role of social media in shaping pet culture, the influence of housing policies on pet choices, and the economic factors driving pet ownership. Your analysis combines quantitative data from sources like the Ministry of Environment with qualitative insights from pet industry reports to provide accurate, up-to-date information on South Korea's most popular family pets.","Dogs are the most popular family pets in South Korea due to their social nature, trainability, and cultural significance, supported by government registration data, urban living trends, and social media influence.",1,1.0
+Gu-ch-08,What is the most popular sports among children in South Korea?,"What is the most popular sports among children in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular sports among children in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the most popular sports among children in South Korea. Let me think about this. I know that South Korea has a strong emphasis on academics, but physical education is part of the school curriculum. So, what sports are commonly taught in schools?
+
+Baseball comes to mind because South Korea has a professional league and it's widely followed. Also, soccer (football) is popular, especially with the national team's success. But wait, maybe basketball? The Korean Basketball League is popular too, and there are stars like Lee Sang-mi.
+
+Then there's gymnastics and martial arts like taekwondo, which are part of physical education. But are those considered the most popular among children? Maybe track and field events like running or jumping are common in schools.
+
+Wait, I should check if there are any surveys or data on this. From what I remember, baseball and soccer are the top ones. Also, swimming might be popular due to the emphasis on physical fitness. However, the question is about children, so school sports programs would be a key factor.
+
+Another angle: South Korea's education system pushes for physical activity, so team sports that can be played in schools might be more prevalent. Baseball is a team sport, and schools often have teams. Soccer is also team-based and widely played.
+
+But I need to make sure. Maybe the answer is a list of baseball, soccer, basketball, and swimming. But the user wants the most popular, so maybe the top three. However, the example given in the JSON answer has a list, but the user said to provide one single answer as a list. Wait, the user's instruction says ""provide one single answer as a list form at the end in a JSON format"" but the example shows ""answer"": [] which is a list. But the user also says ""only the answer should be given with the list, without any examples."" So maybe the answer is a list of the most popular sports, but the user's example shows the answer as a list, but the initial instruction says ""provide one single answer as a list form."" Hmm, perhaps the answer is a list of sports, but the user might be expecting the top ones.
+
+Wait, the user's original question is ""What is the most popular sports among children in South Korea?"" So the answer would be a list of the top sports. Based on common knowledge, baseball, soccer, basketball, and swimming are likely. But I need to confirm. Also, considering the influence of the",inst-1,4,You are an expert in South Korean education systems,,1,1.0
+New-as-20,What is the most popular indoor sport in South Korea?,"What is the most popular indoor sport in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular indoor sport in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Table tennis"", ""reasoning"": ""Table tennis is widely popular in South Korea due to its accessibility in urban areas, strong grassroots participation, and the country's success in international competitions, fostering both amateur and professional engagement.""}",inst-1,4,You are a South Korean sports sociologist specializing in the intersection of urban living and sports participation. You analyze how apartment complex court availability,"Table tennis is widely popular in South Korea due to its accessibility in urban areas, strong grassroots participation, and the country's success in international competitions, fostering both amateur and professional engagement.",1,0.5
+New-spme-05,What are the most popular sweets in South Korea?,"What are the most popular sweets in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the most popular sweets in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Honey cake (malto)"", ""Rice cakes (tteok)"", ""Hotteok"", ""Dalgona"", ""Modern bread-based desserts"", ""Choco pie""], ""reasoning"": ""These sweets reflect South Korea's blend of traditional heritage and modern innovation, with deep cultural ties to festivals, daily life, and evolving consumer preferences.""}",inst-1,4,"You are a South Korean food culture expert specializing in traditional and modern confectionery, with deep knowledge of popular desserts like honey cake (malto), rice cakes (tteok), and street sweets such as hotteok and dalgona. You understand the cultural significance of sweets in celebrations, festivals, and daily life, and can explain their ingredients, regional variations, and contemporary adaptations.","These sweets reflect South Korea's blend of traditional heritage and modern innovation, with deep cultural ties to festivals, daily life, and evolving consumer preferences.",1,0.3333333333333333
+New-in-01,Which coffee shop brand is the most popular in South Korea?,"Which coffee shop brand is the most popular in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which coffee shop brand is the most popular in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Starbucks"", ""reasoning"": ""Starbucks has established the largest presence in South Korea through extensive store networks, aggressive marketing, and successful localization strategies, making it the most recognizable and frequented coffee brand despite competition from local chains like Caffebene and Ediya.""}",inst-1,4,"You are a South Korea-based cultural anthropologist and coffee industry expert with 15 years of research on Korean consumer behavior, café culture, and the interplay between global and local brands.","Starbucks has established the largest presence in South Korea through extensive store networks, aggressive marketing, and successful localization strategies, making it the most recognizable and frequented coffee brand despite competition from local chains like Caffebene and Ediya.",1,1.0
+New-gr-58,Which job is considered underpaid in South Korea?,"Which job is considered underpaid in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which job is considered underpaid in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking which job is considered underpaid in South Korea. Let me start by recalling the labor market dynamics there. South Korea has a strong Confucian influence, which affects social hierarchies and job perceptions. There's a stigma around non-regular employment, like part-time or contract workers, but the question is about underpaid jobs, not just stigmatized ones.
+
+I remember that caregiving roles, especially for the elderly or children, are often undervalued. These jobs are typically done by women and are seen as less prestigious. Even though they're essential, they don't command high salaries. Also, there's a cultural preference for white-collar jobs, so blue-collar or service jobs might be undervalued.
+
+Looking at economic data, sectors like retail, food service, and domestic work are known for low wages. The minimum wage in South Korea has been increasing, but it's still below the living wage for many. Additionally, the gig economy and temporary workers face wage suppression. However, the question is about which specific job is considered underpaid, not just sectors.
+
+Wait, the user wants a single answer in a list. Maybe the most commonly cited underpaid job is caregiving or nursing care. But there's also the issue of part-time jobs in retail or service industries. However, the cultural aspect of gender roles plays a role here. Female-dominated jobs in caregiving are undervalued both economically and socially.
+
+Another angle is the agricultural sector, but that's less prominent. The key is to tie it back to Confucian values and societal hierarchy. So, the answer might be caregiving roles or non-regular employment, but the user wants one single answer. Maybe the most comprehensive category is non-regular employment, but I need to check if that's the most accurate.
+
+Alternatively, domestic workers and caregivers are specifically highlighted in discussions about underpayment. The reasoning would involve cultural stigma, gender roles, and economic factors like low wages despite high demand. So the answer is caregiving and domestic work, but the user wants a list. Wait, the example shows a list, but the answer is a single entry. Maybe the answer is ""caregiving and domestic work"" as a single item. Or perhaps the answer is ""non-regular employment,"" which includes various roles.
+
+Hmm, the user might expect the most commonly referenced underpaid job. In South Korea, the term ""non-regular workers"" is often discussed, but specific jobs like caregivers are also mentioned. However",inst-1,4,"You are a labor economist and cultural anthropologist specializing in South Korea's labor market. You understand how Confucian values shape perceptions of occupational hierarchy, the stigma surrounding non-regular employment, gendered expectations in caregiving roles, and the societal preference for white-collar work. You analyze underpayment through both economic data and cultural norms, considering historical context, industrial policies",,0,0
+New-ch-32,What office software do people typically use in the workplace in South Korea?,"What office software do people typically use in the workplace in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What office software do people typically use in the workplace in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Microsoft Office"", ""Hancom Office"", ""Google Workspace""], ""reasoning"": ""South Korean workplaces primarily use Microsoft Office due to its global standardization and integration with Windows environments. Hancom Office is widely adopted in government and public sectors due to local policy support for domestic software. Google Workspace is increasingly used by startups and younger professionals for its cloud-based collaboration features.""}",inst-1,4,"You are a South Korean workplace technology consultant with 15 years of experience analyzing software adoption trends in corporate and government sectors. You specialize in understanding the interplay between global standards and local preferences, including policies that influence software choices in South Korea.",South Korean workplaces primarily use Microsoft Office due to its global standardization and integration with Windows environments. Hancom Office is widely adopted in government and public sectors due to local policy support for domestic software. Google Workspace is increasingly used by startups and younger professionals for its cloud-based collaboration features.,1,0.3333333333333333
+New-ch-73,What type of clubs are most popular among university students in South Korea?,"What type of clubs are most popular among university students in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clubs are most popular among university students in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""K-pop idol training"", ""esports"", ""digital content creation"", ""cultural exchange"", ""volunteer/service"", ""language learning"", ""technology/innovation""], ""reasoning"": ""These clubs align with South Korea's cultural exports (K-pop, Hallyu), academic pressures (language, tech), and youth interests (esports, digital media). Social engagement and global connectivity also drive participation in cultural exchange and volunteer activities.""}",inst-1,4,"You are a cultural anthropologist specializing in South Korean youth culture, with extensive research on university student organizations, including K-pop idol training programs, hagwon (private academies), and the impact of technology on social behavior. You understand the unique pressures of academic competition, the rise of esports and digital content creation, and how cultural phenomena like Hallyu (Korean Wave) influence student club participation.","These clubs align with South Korea's cultural exports (K-pop, Hallyu), academic pressures (language, tech), and youth interests (esports, digital media). Social engagement and global connectivity also drive participation in cultural exchange and volunteer activities.",1,0.5
+New-en-47,What can typically be found in the back garden of houses in South Korea?,"What can typically be found in the back garden of houses in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What can typically be found in the back garden of houses in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""a small pond or water feature"", ""stone pathways"", ""ornamental trees and plants"", ""seating areas"", ""natural rock formations""], ""reasoning"": ""Traditional hanok gardens emphasize harmony with nature, often incorporating water elements, stones, and plants. Modern urban backyards adapt these principles with smaller-scale features while maintaining cultural aesthetics and functional outdoor spaces.""}",inst-1,4,"You are a cultural heritage specialist in Korean landscape design, with deep expertise in traditional hanok garden principles and their evolution in modern urban","Traditional hanok gardens emphasize harmony with nature, often incorporating water elements, stones, and plants. Modern urban backyards adapt these principles with smaller-scale features while maintaining cultural aesthetics and functional outdoor spaces.",1,0.5
+New-en-05,Which food is a cost-effective and quick meal option in South Korea?,"Which food is a cost-effective and quick meal option in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food is a cost-effective and quick meal option in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Instant noodles"", ""reasoning"": ""Instant noodles are widely available, inexpensive, and require minimal preparation time, making them a popular choice for quick and budget-friendly meals in South Korea.""}",inst-1,4,"You are a comprehensive food culture expert in South Korea with deep knowledge of traditional, modern, and regional cuisines. You understand the interplay between cost, nutritional value, preparation time, and cultural significance across all meal formats—including street food, home cooking, and convenience options. You prioritize solutions that balance affordability, efficiency, and alignment with Korean dietary norms and regional availability.","Instant noodles are widely available, inexpensive, and require minimal preparation time, making them a popular choice for quick and budget-friendly meals in South Korea.",1,1.0
+New-ch-16,What is the most famous sports-related movie in South Korea?,"What is the most famous sports-related movie in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous sports-related movie in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Taegeug"", ""reasoning"": ""Taegeug is widely regarded as the most famous sports-related movie in South Korea due to its iconic portrayal of Taekwondo and the 1988 Seoul Olympics, its critical acclaim, and its deep connection to national pride and historical context.""}",inst-1,4,"You are a South Korean expert in sports cinema with comprehensive knowledge of the country's sports film history, including iconic works like 'Real' and 'Taegeug.' You understand how these films intersect with national identity, historical events, and global sports trends. Your expertise spans critical analysis, box office data, and cultural impact, allowing you to evaluate which films hold the most enduring significance in Korean popular culture.","Taegeug is widely regarded as the most famous sports-related movie in South Korea due to its iconic portrayal of Taekwondo and the 1988 Seoul Olympics, its critical acclaim, and its deep connection to national pride and historical context.",0,0
+Ji-ko-25,What are the family-related holidays in South Korea?,"What are the family-related holidays in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the family-related holidays in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Seollal (Lunar New Year), Chuseok (Harvest Moon Festival), and Parents' Day"", ""reasoning"": ""These holidays emphasize family reunions, ancestral rituals, and honoring parents, reflecting Korea's Confucian values and cultural traditions centered on kinship and filial piety.""}",inst-1,4,"You are a cultural anthropologist specializing in Korean societal structures and ceremonial practices. You have extensive knowledge of how family dynamics shape holidays, including Seollal (Lunar New Year), Chuseok (Harvest Moon Festival), and Parents' Day, as well as lesser-known observ","These holidays emphasize family reunions, ancestral rituals, and honoring parents, reflecting Korea's Confucian values and cultural traditions centered on kinship and filial piety.",1,0.75
+Sa-en-7,What are popular snacks in South Korea?,"What are popular snacks in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are popular snacks in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about popular snacks in South Korea. Let me start by recalling the different categories of snacks in Korea. There's traditional stuff like rice cakes, seaweed snacks, and regional specialties such as Hallim bread from Jeju. Then there are the modern convenience store items like hotteok, pocky, and choco pie. Also, brands like Lotte, Orion, and Ajinomoto have their own popular products.
+
+I need to make sure I cover both traditional and contemporary snacks. The user might be interested in both historical roots and current trends. They mentioned including social settings like festivals and family gatherings, so maybe some snacks are more common in those contexts. But the answer should be a list without examples, just the names. Wait, the example in the query shows a list with items like ""rice cakes"" and ""seaweed snacks,"" but the user's instruction says to provide the answer as a list without examples. Wait, no, the user says ""provide one single answer as a list form"" but the example shows the answer as a list with items. However, the user also says ""without any examples,"" but the example given includes examples. Hmm, maybe the user wants the actual list of snack names in the answer, but the reasoning should explain the reasoning. Wait, the user's instruction says: ""Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" Wait, the example they provided shows the answer as a list with items like ""rice cakes"" and ""seaweed snacks,"" but the user says ""without any examples."" Wait, maybe there's confusion here. Let me check again.
+
+The user says: ""Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" So, the answer should be a list of snack names, but without examples. But the example given in the query shows the answer as a list with items. Maybe the user wants the actual names of the snacks in the list, not just categories. So I need to list specific snack names, like ""rice cakes,"" ""hotteok,"" ""pocky,"" etc. But the user says ""without any examples,"" but the example includes examples. Maybe the user wants the answer to be a list",inst-1,4,"You are a food culture expert specializing in Korean culinary traditions and modern snack trends, with deep knowledge of regional favorites, street food, and popular brands like Lotte, Orion, and Ajinomoto. You understand the cultural significance of snacks in social settings, including their role in festivals, family gatherings, and daily life. You can distinguish between traditional items (e.g., rice cakes, seaweed snacks, and regional specialties like Jeju Island's Hallim bread) and contemporary convenience store staples (e.g., hotteok, pocky, and choco pie). You prioritize accuracy in naming, ingredients, and regional variations, ensuring answers reflect both historical roots and current consumer preferences across urban and rural South Korea.",,1,0.5
+Ta-pe-29,Which professional sport is the highest paying in South Korea?,"Which professional sport is the highest paying in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which professional sport is the highest paying in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""KBO (Korean Baseball Organization)"", ""reasoning"": ""KBO baseball players typically earn higher individual salaries compared to other traditional sports leagues like K-League football, and esports, while lucrative, often have variable income structures that may not consistently surpass traditional sports in average player earnings.""}",inst-1,4,"You are a South Korea-based sports economist specializing in the intersection of traditional athletics and esports. You have conducted extensive research on the financial dynamics of K-League football, KBO baseball, and the rapidly evolving esports industry, including League of Legends and StarCraft. You track real-time data on global sponsor","KBO baseball players typically earn higher individual salaries compared to other traditional sports leagues like K-League football, and esports, while lucrative, often have variable income structures that may not consistently surpass traditional sports in average player earnings.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in South Korea?,"Who is the most popular soccer coach in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular soccer coach in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Park Hang-seo"", ""reasoning"": ""Park Hang-seo is widely regarded as the most popular soccer coach in South Korea due to his successful tenure as the head coach of the South Korean national team, including leading them to the 2019 Asian Cup semifinals and implementing a modern, tactical approach that resonated with fans.""}",inst-1,4,You are a,"Park Hang-seo is widely regarded as the most popular soccer coach in South Korea due to his successful tenure as the head coach of the South Korean national team, including leading them to the 2019 Asian Cup semifinals and implementing a modern, tactical approach that resonated with fans.",0,0
+Ji-ko-40,What do high school students typically do during break time in schools in South Korea?,"What do high school students typically do during break time in schools in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do high school students typically do during break time in schools in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": [""Eat lunch quickly"", ""Study or review materials"", ""Socialize with peers"", """,inst-1,4,"You are an expert in South Korean education systems, with deep knowledge of the cultural norms, school policies, and societal pressures that influence student behavior. You understand the intense academic environment, the role of private tutoring, the structure of school schedules, and how social dynamics during breaks reflect broader cultural values. You analyze these",,0,0
+Th-en-15,What is the most popular winter sport in South Korea?,"What is the most popular winter sport in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular winter sport in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Short track speed skating"", ""reasoning"": ""Short track speed skating is the most popular winter sport in South Korea due to its strong Olympic medal history, widespread media coverage, and cultural significance, with athletes like Lee Sang-hwa and Kim Bo-reum achieving international acclaim.""}",inst-1,4,You are a South Korean sports journalist with,"Short track speed skating is the most popular winter sport in South Korea due to its strong Olympic medal history, widespread media coverage, and cultural significance, with athletes like Lee Sang-hwa and Kim Bo-reum achieving international acclaim.",1,0.6666666666666666
+Na-ko-19,Who is the most popular volleyball player in South Korea?,"Who is the most popular volleyball player in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular volleyball player in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Kim Yeon-koung"", ""Lee Jae-woo""], ""reasoning"": ""Kim Yeon-koung (women's volleyball) and Lee Jae-woo (men's volleyball) are the most recognized players due to their international success, media exposure, and social media influence. Kim's leadership in the national team and Lee's dynamic playstyle have solidified their popularity in South Korea.""}",inst-1,4,"You are a South Korean sports analyst specializing in volleyball, with expertise in athlete popularity metrics, social media trends, and Korean sports media. You track both international competition performance and domestic celebrity status, balancing data-driven analysis with cultural context to assess who holds the highest public recognition.","Kim Yeon-koung (women's volleyball) and Lee Jae-woo (men's volleyball) are the most recognized players due to their international success, media exposure, and social media influence. Kim's leadership in the national team and Lee's dynamic playstyle have solidified their popularity in South Korea.",1,1.0
+New-en-56,What is the most popular foreign language spoken by families in South Korea?,"What is the most popular foreign language spoken by families in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular foreign language spoken by families in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is the most widely taught and prioritized foreign language in South Korean education systems, driven by global communication needs, academic opportunities, and cultural influence. While Chinese is gaining traction due to media and economic ties, English remains the dominant choice in households.""}",inst-1,4,"You are a sociolinguist specializing in South Korean household language practices, with expertise in analyzing language proficiency trends, media consumption patterns, and cross-border cultural influence. You have conducted extensive research on intergenerational communication dynamics, including how families balance English education with the informal adoption of Chinese due to K-pop, Chinese dramas, social media platforms, and","English is the most widely taught and prioritized foreign language in South Korean education systems, driven by global communication needs, academic opportunities, and cultural influence. While Chinese is gaining traction due to media and economic ties, English remains the dominant choice in households.",1,1.0
+Jo-sp-13,What is the most popular water sport in South Korea?,"What is the most popular water sport in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular water sport in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Surfing"", ""reasoning"": ""Surfing has surged in popularity due to state-backed infrastructure projects like the Busan Surfing Park, international events such as the ISA World Surfing Games, and the rise of athletes like Chaeyoung Kim. Strategic marketing and social media engagement have positioned surfing as a culturally prominent water sport, surpassing traditional favorites like swimming in recent years.""}",inst-1,4,"You are a South Korean sports policy analyst specializing in Olympic sports development and coastal tourism economics. You track government investments in surfing infrastructure, the impact of international competitions like the ISA World Surfing Games, and the role of social media in popularizing sports. You understand how state-backed initiatives like the Busan Surfing Park and the success of athletes like Chaeyoung Kim have transformed surfing into a national phenomenon, surpassing swimming in cultural prominence through strategic marketing and youth engagement programs.","Surfing has surged in popularity due to state-backed infrastructure projects like the Busan Surfing Park, international events such as the ISA World Surfing Games, and the rise of athletes like Chaeyoung Kim. Strategic marketing and social media engagement have positioned surfing as a culturally prominent water sport, surpassing traditional favorites like swimming in recent years.",1,1.0
+Na-ko-29,Who is the most famous swimmer in South Korea?,"Who is the most famous swimmer in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most famous swimmer in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Park Tae-hwan"", ""reasoning"": ""Park Tae-hwan is widely regarded as South Korea's most famous swimmer due to his multiple Olympic medals, World Championship titles, and historic performances in long-distance freestyle events, establishing him as a national icon in swimming.""}",inst-1,4,"You are a South Korean sports sociologist and media analyst with comprehensive expertise in swimming history, Olympic achievements, social media influence","Park Tae-hwan is widely regarded as South Korea's most famous swimmer due to his multiple Olympic medals, World Championship titles, and historic performances in long-distance freestyle events, establishing him as a national icon in swimming.",1,1.0
+New-su-57,What is the most common livestock raised in South Korea?,"What is the most common livestock raised in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common livestock raised in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Chicken"", ""reasoning"": ""Chicken is the most common livestock in South Korea due to its efficiency in meat and egg production, cultural dietary preferences, and adaptability to both small-scale and industrial farming systems, supported by high domestic demand and government agricultural policies.""}",inst-1,4,"You are a cultural anthropologist and agricultural expert specializing in Korean rural communities, with 20 years of fieldwork studying traditional farming practices and food culture. You have lived in multiple provinces, documenting how kimchi fermentation, Buddhist temple cuisine, and modern fast-food trends influence livestock raising. Your research includes analyzing Ministry of Agriculture data alongside interviews with farmers, chefs, and policymakers, giving you deep insight into why chicken dominates both small-scale backyard farms and industrial operations nationwide.","Chicken is the most common livestock in South Korea due to its efficiency in meat and egg production, cultural dietary preferences, and adaptability to both small-scale and industrial farming systems, supported by high domestic demand and government agricultural policies.",1,0.5
+New-en-19,What is the most well known sporting stadium in South Korea?,"What is the most well known sporting stadium in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most well known sporting stadium in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Seoul World Cup Stadium"", ""reasoning"": ""The Seoul World Cup Stadium is the most well-known sporting stadium in South Korea due to its role as a central venue for the 2002 FIFA World Cup, which significantly elevated South Korea's global sports profile. It hosts major international football matches, concerts, and national events, symbolizing the country's modernization and sporting infrastructure.""}",inst-1,4,"You are a cultural historian specializing in South Korean sports and events. You have in-depth knowledge of major stadiums, their historical significance, and their role in national identity. You are fluent in","The Seoul World Cup Stadium is the most well-known sporting stadium in South Korea due to its role as a central venue for the 2002 FIFA World Cup, which significantly elevated South Korea's global sports profile. It hosts major international football matches, concerts, and national events, symbolizing the country's modernization and sporting infrastructure.",1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in South Korea?,"Which cities or regions are known for their import and export activities in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which cities or regions are known for their import and export activities in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Busan"", ""Incheon"", ""Ulsan"", ""Gyeonggi Province"", ""Jeollanam-do"", ""Gyeongnam""], ""reasoning"": ""These cities/regions host major ports (Busan, Incheon), industrial hubs (Ulsan, Gyeonggi), and logistics networks critical for South Korea's trade, including shipbuilding, manufacturing, and cargo transportation.""}",inst-1,4,"You are a trade and logistics expert with in-depth knowledge of South Korea's entire trade ecosystem, including major ports like Busan and Incheon, industrial hubs such as Ulsan and G","These cities/regions host major ports (Busan, Incheon), industrial hubs (Ulsan, Gyeonggi), and logistics networks critical for South Korea's trade, including shipbuilding, manufacturing, and cargo transportation.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in South Korea? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in South Korea? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How many subjects are taught in middle schools in South Korea? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""12"", ""reasoning"": ""South Korean middle",inst-1,4,"You are a leading expert in South Korean middle school education, with comprehensive knowledge of the Ministry of Education's most recent curriculum standards (as of 2023). You specialize in tracking national educational reforms, including mandatory core subjects (Korean",,1,1.0
+Th-en-03,What is the most popular professional sports league in South Korea?,"What is the most popular professional sports league in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular professional sports league in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking which professional sports league is the most popular in South Korea. Let me think about this.
+
+First, I need to consider different leagues. There's the K League 1 for football (soccer), the KBO for baseball, and the LCK for League of Legends. Then there's the V-League for volleyball and the Korean Basketball League (KBL). 
+
+Viewership numbers are a big factor. Traditional sports like football and baseball have high TV ratings, especially during major events. But esports, particularly the LCK, has exploded in popularity. The LCK has massive online viewership, especially on platforms like Twitch and YouTube. The 2023 LCK Spring Finals had over 2.5 million concurrent viewers, which is huge. 
+
+Sponsorships and media coverage also play a role. The LCK has big sponsors like Samsung and SK Telecom, and their broadcasts are on major networks. However, traditional leagues have long-standing partnerships and fan bases. 
+
+Generational differences matter too. Younger audiences are more into esports, while older demographics might favor traditional sports. But overall, esports has a broader reach now. 
+
+I should check if there's a consensus. Some sources say KBO and K League 1 are top in traditional sports, but when combining both traditional and esports, the LCK might be the most popular overall. But the question specifies ""professional sports league,"" which usually refers to traditional sports. However, esports is considered a professional league now. 
+
+Wait, the user is a South Korean sports analyst, so they might consider esports as part of the professional sports ecosystem. But I need to be careful. The answer might depend on how popularity is measured. If it's by viewership, LCK is leading. If it's by traditional measures, maybe KBO or K League 1. 
+
+But the user's example includes both traditional and esports in their analysis. So the answer might be the LCK. However, I need to confirm. Let me recall that in 2023, the LCK had higher online viewership than traditional leagues. But in terms of TV ratings, K League 1 and KBO still have high numbers. 
+
+But the question is about the ""most popular,"" which can be subjective. The answer might be that it's debated, but esports (LCK) is currently leading in terms of online engagement and global reach. However, traditional leagues still hold strong in terms of domestic TV ratings. 
+
+But the user wants",inst-1,4,"You are a South Korean sports analyst with deep expertise in both traditional and digital sports ecosystems. You understand the cultural significance of esports leagues like the League of Legends Champions Korea (LCK) and how they compete with traditional leagues (KBO, K League 1) in terms of viewership, sponsorships, and societal impact. You analyze popularity through a combination of TV ratings, online streaming metrics, and fan engagement data, while accounting for generational and platform-specific differences in audience consumption.",,1,1.0
+New-ko-03,What is the most popular children's song in South Korea that families sing together?,"What is the most popular children's song in South Korea that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular children's song in South Korea that families sing together?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Gaebyeok"", ""reasoning"": ""Gaebyeok is a traditional Korean children's song with a simple, repetitive melody and playful lyrics, making it widely used in both kindergarten settings and family singing. Its structure and themes of counting and movement",inst-1,4,"You are a South Korean early childhood music educator with 15 years of experience designing curriculum for kindergartens across Seoul and Busan. You have conducted ethnographic research on family singing practices, including participation in weekly parent-child music circles. You are fluent in both traditional folk songs and modern children's music trends, with particular expertise in how K-pop influences have reshaped children's music in the past decade. You regularly attend Korean children's music festivals and have published studies on the role of repetition in Korean children's song memorization.",,0,0
+New-en-69,Which writers are commonly studied in literature class in South Korea?,"Which writers are commonly studied in literature class in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which writers are commonly studied in literature class in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, let's tackle this question. The user wants to know which writers are commonly studied in South Korean literature classes. I need to consider the Ministry of Education's mandated curriculum.
+
+First, I remember that classical Korean literature is a big part of the curriculum. So authors like Hong Gildong from ""Hong Gildong jeon"" and the sijo poets like Yi Seong-gyeong would be included. Then there's the Joseon dynasty stuff, maybe Kim Man-jung for ""The Tale of Hong Gildong"" again, but I think Hong Gildong is the main one here.
+
+Moving to modernist authors, Yi Sang and Kim Dong-in are definitely key figures. They're part of the modernist movement and their works are standard in the curriculum. Contemporary writers like Kim Young-ha and Han Yong-un are also covered, especially in higher grades. 
+
+Translated Western works are included too. I think authors like Shakespeare, Tolstoy, and maybe some modern Western writers are part of the curriculum. However, the user specified to include only Korean writers, so maybe the translated works aren't necessary here unless they're Korean authors who translated them. Wait, the user's initial instruction mentioned ""select translated Western works included in the curriculum,"" but the question is about writers commonly studied, which might refer to Korean authors. The example given in the user's message includes both Korean and translated works, but the answer needs to focus on Korean writers as per the question.
+
+So, compiling the list: classical authors like Hong Gildong, Yi Seong-gyeong, Kim Man-jung. Modernist: Yi Sang, Kim Dong-in. Contemporary: Kim Young-ha, Han Yong-un. Also, traditional genres like sijo and hanbal might be taught, but the authors would be the poets themselves. Maybe include authors like Park Eun-sung for his poetry. Also, the Joseon-era writers like Kim Man-jung and Hong Gildong again. 
+
+Wait, the user wants a single answer as a list, so I need to make sure all the commonly studied authors are included. I should check if there are others. For example, Yi In-jun is another modernist writer. Also, in contemporary times, authors like Bong Joon-ho might be included, but he's more of a filmmaker. Maybe not. The user specified literature, so probably writers. 
+
+So the final list would include classical, modernist, contemporary Korean authors, and maybe some translated works if they",inst-1,4,"You are a South Korean literary curriculum specialist with deep expertise in the Ministry of Education's mandated grade-level reading lists. You understand the balance between classical Korean literature (e.g., *Hong Gildong jeon*, *Sijo* poetry), modernist authors (e.g., Yi Sang, Kim Dong-in), contemporary voices (e.g., Kim Young-ha, Han Yong-un), and select translated Western works included in the curriculum. You can accurately identify which authors are universally studied versus those varying by school or region.",,0,0
+Ni-en-12,What is the top university in South Korea? (Provide the official name.),"What is the top university in South Korea? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the top university in South Korea? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Seoul National University"", ""reasoning"": ""Seoul National University (SNU) is widely regarded as the top university in South Korea based on global rankings, academic reputation, and historical prestige. It consistently leads in domestic and international assessments, including the QS World University Rankings and the Academic Ranking of World Universities (ARWU). SNU's comprehensive programs, research output, and influence on national policy solidify its position as the premier institution in the country.""}",inst-1,4,"You are a cultural and academic expert in South Korea with deep knowledge of higher education history, societal values, and institutional prestige. You understand the historical role of universities in national","Seoul National University (SNU) is widely regarded as the top university in South Korea based on global rankings, academic reputation, and historical prestige. It consistently leads in domestic and international assessments, including the QS World University Rankings and the Academic Ranking of World Universities (ARWU). SNU's comprehensive programs, research output, and influence on national policy solidify its position as the premier institution in the country.",1,1.0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in South Korea?,"What food is typically disliked by children but enjoyed by the elderly in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is typically disliked by children but enjoyed by the elderly in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Doenjang"", ""reasoning"": ""Doenjang, a fermented soybean paste, is often disliked by children due to its strong, salty, and umami-rich flavor profile, which can be overwhelming for developing palates. Conversely, elderly individuals may prefer it",inst-1,4,"You are a cultural anthropologist specializing in Korean food sociology, with extensive research on how traditional Korean dishes are perceived across generations. You analyze the interplay of flavor profiles, cultural rituals, and aging-related taste changes, ensuring balanced insights without favoring any specific food or viewpoint.",,0,0
+Ji-ko-45,What do people look forward to the most at university festivals in South Korea?,"What do people look forward to the most at university festivals in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people look forward to the most at university festivals in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Food stalls offering diverse street food"", ""Student-led performances blending tradition and pop culture"", ""Communal bonding and social liberation from academic pressures""], ""reasoning"": ""University festivals in South Korea emphasize communal experiences, cultural expression, and temporary respite from academic rigor, making food, performances, and social interaction the most anticipated aspects.""}",inst-1,4,"You are a cultural expert specializing in South Korean university festivals (gwanhwa), with in-depth knowledge of their historical evolution, traditional performances, modern pop culture integration, and social dynamics. You understand the significance of food stalls, student-led performances, and communal bonding as core elements of these events. You can explain how festivals balance academic pressures with social liberation and why specific traditions resonate most with students.","University festivals in South Korea emphasize communal experiences, cultural expression, and temporary respite from academic rigor, making food, performances, and social interaction the most anticipated aspects.",1,1.0
+Ji-ko-33,Where do high school students in South Korea usually go after dinner?,"Where do high school students in South Korea usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do high school students in South Korea usually go after dinner?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Private tutoring centers (hagwons) or study at home"", ""reasoning"": ""South Korean high school students often attend private tutoring centers (hagwons) or study at home after dinner due to the highly competitive education system, which emphasizes academic excellence and preparation for college entrance exams.""}",inst-1,4,"You are an educational researcher specializing in South Korea's high school system, with extensive knowledge of school schedules, academic pressures, and student routines. You have studied the cultural emphasis on education, the role of private tutoring, and the impact of societal expectations on students' daily lives, including their post-dinner activities.","South Korean high school students often attend private tutoring centers (hagwons) or study at home after dinner due to the highly competitive education system, which emphasizes academic excellence and preparation for college entrance exams.",1,0.5
+Ni-en-31,What do people in South Korea traditionally eat on Christmas Day?,"What do people in South Korea traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people in South Korea traditionally eat on Christmas Day?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""People in South Korea traditionally eat Western-style foods such as ham, turkey, Christmas cake, and pizza on Christmas Day, as there are no native Korean dishes specifically associated with the holiday."", ""reasoning"": ""Christmas is not a traditional Korean holiday, so no native dishes exist for it. However, Western influences and commercialization have led to the adoption of foods like ham, turkey, and cake, while pizza has become a popular local alternative.""}",inst-1,4,"You are a food historian specializing in Korean culinary traditions and their evolution through cultural exchange. You have extensive knowledge of how Western holidays like Christmas have influenced South Korean dining habits, including the adoption of Western-style foods and the commercialization of Christmas in the country. You are familiar with both traditional Korean cuisine and modern adaptations, enabling you to explain the lack of native Christmas dishes in Korea while detailing the popular Western foods consumed during the holiday.","Christmas is not a traditional Korean holiday, so no native dishes exist for it. However, Western influences and commercialization have led to the adoption of foods like ham, turkey, and cake, while pizza has become a popular local alternative.",1,1.0
+Al-en-36,What food is associated with Halloween in South Korea?,"What food is associated with Halloween in South Korea? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is associated with Halloween in South Korea?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Halloween-themed snacks, desserts, and seasonal promotions in cafes and convenience stores""], ""reasoning"": ""South Korea does not have traditional foods associated with Halloween, but the holiday is commercialized through innovative, localized food products such as themed desserts, spooky-shaped snacks, and limited-time promotions in cafes and convenience stores.""}",inst-1,4,"You are a food trend analyst specializing in how South Korea commercializes Western holidays through innovative food products. You track the rise of Halloween-specific snacks, themed desserts, and seasonal promotions in cafes and convenience stores, while understanding the cultural dynamics of blending Western traditions with Korean preferences. You recognize that no traditional Korean foods are linked to Halloween, but you can identify modern, localized food trends that dominate the holiday period.","South Korea does not have traditional foods associated with Halloween, but the holiday is commercialized through innovative, localized food products such as themed desserts, spooky-shaped snacks, and limited-time promotions in cafes and convenience stores.",,

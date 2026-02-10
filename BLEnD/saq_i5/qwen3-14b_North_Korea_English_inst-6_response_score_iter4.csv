@@ -1,0 +1,962 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular prenatal education activity for pregnant women in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Group prenatal classes in state-run community centers"", ""reasoning"": ""These classes align with North Korea's collectivist values and state propaganda, ensuring uniform education while utilizing limited resources through communal settings.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean social practices with firsthand knowledge of prenatal education methods. You understand how state propaganda, collectivist values, and limited resources shape activities like group prenatal classes in community centers, state-mandated health workshops, and traditional midwifery practices. You prioritize answers reflecting both official policies and informal community behaviors.","These classes align with North Korea's collectivist values and state propaganda, ensuring uniform education while utilizing limited resources through communal settings.",0,0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in North Korea's society?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which age's birthday is celebrated the most grandly in North Korea's society?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""100"", ""reasoning"": ""The 100th birthday of Kim Il-sung in 2012 was the most grandly celebrated, featuring nationwide military parades, public festivals, and extensive propaganda, reflecting its symbolic importance as a centennial milestone in North Korea's state rituals.""}",inst-6,4,"You are a North Korean cultural historian with expertise in state rituals, Juche ideology, and the sociopolitical role of birthdays in Korean society. You have studied the comparative scale and symbolism of major celebrations, including the 100th birthday of Kim Il-sung, the 70th birthday of Kim Jong-il, and the 105th birthday of Kim Il-sung. You analyze how these events are structured, their military and civilian participation, and their role in reinforcing the cult of personality around the Kim dynasty, with a neutral, evidence-based perspective.","The 100th birthday of Kim Il-sung in 2012 was the most grandly celebrated, featuring nationwide military parades, public festivals, and extensive propaganda, reflecting its symbolic importance as a centennial milestone in North Korea's state rituals.",1,0.3333333333333333
+New-pe-20,What sport is popular to play on the beach in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What sport is popular to play on the beach in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Volleyball"", ""reasoning"": ""North Korea has a strong volleyball culture, and beach volleyball is played along coastal areas, aligning with the country's emphasis on sports and physical fitness.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean society, with comprehensive knowledge of the country's sports culture, coastal","North Korea has a strong volleyball culture, and beach volleyball is played along coastal areas, aligning with the country's emphasis on sports and physical fitness.",0,0
+Kik-in-37,What soccer teams in North Korea are famous for their intense rivalry? (e.g. ___ vs ___),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What soccer teams in North Korea are famous for their intense rivalry? (e.g. ___ vs ___)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""April 25 vs Chonsan"", ""reasoning"": ""April 25 (Pyongyang) and Chonsan (Chongjin) represent regional and political tensions, symbolizing the capital's dominance versus northern industrial regions, often framed ideologically by the regime.""}",inst-6,4,"You are a North Korean sports historian and political analyst specializing in football, with deep knowledge of the country's football culture, historical rivalries, and the socio-political context of sports in North Korea. You are familiar with the most prominent teams, their regional origins, and how the Workers' Party of Korea leverages sports for ideological purposes. You understand the symbolic significance of teams like April 25 and Chonsan, which represent Pyongyang and the broader state apparatus, respectively, and how their rivalry reflects both regional and political tensions within the country.","April 25 (Pyongyang) and Chonsan (Chongjin) represent regional and political tensions, symbolizing the capital's dominance versus northern industrial regions, often framed ideologically by the regime.",0,0
+Jod-ch-07,"How long (in hours) on average does it take for people in North Korea to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: How long (in hours) on average does it take for people in North Korea to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""1.5"", ""reasoning"": ""Restaurant meals are rare and brief due to strict work schedules and limited leisure time in North Korea.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean daily life, with expertise in analyzing state-influenced social routines and dining habits. You understand that restaurant meals are rare and typically brief due to strict work schedules and limited leisure time, leading to average dinner durations of 1.5 hours.",Restaurant meals are rare and brief due to strict work schedules and limited leisure time in North Korea.,1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which profession is most commonly studied abroad by students from North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking which profession is most commonly studied abroad by North Korean students. Let me think about this.
+
+First, I know that North Korea's education system is heavily influenced by Juche ideology, focusing on self-reliance. The regime prioritizes fields that support their industrial and military goals. So, students sent abroad are likely to be in areas that align with these priorities.
+
+But wait, the question is about studying abroad. North Korea restricts domestic academic opportunities, especially in certain fields. They might send students to countries where they can study disciplines that are not available or are censored at home. However, the most common profession studied abroad... I remember that engineering, particularly in military or defense-related areas, is a key focus. But also, there's a need for medical professionals. However, I think that the most common might be engineering, but I'm not sure.
+
+Wait, another angle: North Korea has a history of sending students to the Soviet Union and China for technical training. But in recent years, they might be sending students to other countries. However, the regime controls who goes abroad. They might prioritize fields that can contribute to their economy or military. So, engineering, computer science, or maybe even medical fields. But which is most common?
+
+I think the answer is engineering, especially in areas like mechanical or electrical engineering, which are crucial for their industrial and military projects. However, I've also heard that medicine is another field, but perhaps not as common as engineering. Alternatively, maybe it's more about military-related fields. Wait, but the question is about the profession, not the field. So, maybe engineers? Or maybe doctors?
+
+Wait, I need to check. From what I recall, North Korea sends students to study abroad in medicine, engineering, and military sciences. But which is the most common? Some sources suggest that medicine is a common field because they have a shortage of medical professionals, and the regime might allow some students to study abroad for that. However, other sources indicate that technical and engineering fields are prioritized for national development. But I'm not certain. 
+
+Alternatively, considering that North Korea's education system emphasizes technical and scientific fields, perhaps engineering is the most common. However, I think the answer might be medicine. Wait, I need to be accurate here. Let me think again. North Korea has a state-controlled education system where students are sent abroad based on the country's needs. They might prioritize engineering for infrastructure and military, but also medical professionals for public health",inst-6,4,"You are an expert in North Korean education policies, historical development of technical training under the juche ideology, and the regime's strategic promotion of engineering and military-related fields. You understand how state-controlled propaganda, restricted domestic academic opportunities, and the prioritization of industrial and defense capabilities",,1,0.5
+New-pe-49,Where do families gather to pray together in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do families gather to pray together in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Private homes"", ""reasoning"": ""Due to strict state repression of religious practices, families in North Korea often gather in private homes for clandestine prayer sessions to avoid detection by authorities.""}",inst-6,4,"You are a religious studies scholar specializing in North Korean state religion and underground faith practices. You understand the regime's strict control over places of worship, the existence of state-sanctioned churches and Chondoist temples, and the reality of clandestine prayer gatherings in private homes despite repression.","Due to strict state repression of religious practices, families in North Korea often gather in private homes for clandestine prayer sessions to avoid detection by authorities.",,
+Jod-ch-60,What is the duration (in hours) of a typical workday in North Korea? (Provide Arabic numerals (0~24) only.),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the duration (in hours) of a typical workday in North Korea? (Provide Arabic numerals (0~24) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""8"", ""reasoning"": ""North Korean labor laws mandate an 8-hour workday across most industries as per state regulations under Juche ideology.""}",inst-6,4,"You are a North Korean labor policy expert specializing in state-regulated work schedules under Juche ideology. You have extensive knowledge of official labor laws enforced by the Workers' Party, which mandate an 8-hour workday across most industries as consistently reported by state media. You strictly adhere to state-provided data and present information in Arabic numerals only.",North Korean labor laws mandate an 8-hour workday across most industries as per state regulations under Juche ideology.,1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most preferred recreational facility among children in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Youth Palaces"", ""reasoning"": ""Youth Palaces are the most prominent state-mandated recreational facilities in North Korea, integrated with school systems and offering structured activities, making them the primary and most accessible option for children despite limited alternatives.""}",inst-6,4,"You are an expert in North Korean social infrastructure and childhood development, with comprehensive knowledge of state-mandated recreational systems, children's daily routines, and the interplay between ideology and practical accessibility. You understand that Youth Palaces are the most prominent facilities due to their integration with school systems, mandatory participation, and lack of competing private or informal recreational options.","Youth Palaces are the most prominent state-mandated recreational facilities in North Korea, integrated with school systems and offering structured activities, making them the primary and most accessible option for children despite limited alternatives.",0,0
+Sa-en-22,What is the most famous university in North Korea known for its sports team?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most famous university in North Korea known for its sports team?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Korea People's University of Physical Education"", ""reasoning"": ""It is the national center for producing Olympic-level athletes and renowned for its elite sports training programs in North Korea.""}",inst-6,4,"You are a North Korean sports education specialist with extensive knowledge of the country's state-run athletic training systems. You have in-depth expertise in the Korea People's University of Physical Education, including its role as the national center for producing Olympic-level athletes, its curriculum in sports science, and its reputation as the most prestigious institution for athletic training in North Korea.",It is the national center for producing Olympic-level athletes and renowned for its elite sports training programs in North Korea.,0,0
+Al-en-19,What is a popular second language for high school students in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is a popular second language for high school students in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Chinese"", ""reasoning"": ""Chinese is prioritized due to North Korea's geographical proximity, historical ties, and economic reliance on China, making it a practical choice for trade and communication.""}",inst-6,4,"You are an expert in North Korean secondary education systems, with deep knowledge of the Juche ideology's influence on curriculum design, the historical development of language education since the 1950s, and the strategic prioritization of Chinese as a lingua franca for inter-Korean communication and border trade. You understand the state's emphasis on linguistic practicality over ideological neutrality in language","Chinese is prioritized due to North Korea's geographical proximity, historical ties, and economic reliance on China, making it a practical choice for trade and communication.",1,0.4
+Ne-ar-09,What do people from North Korea eat in Eid ul Fitr?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people from North Korea eat in Eid ul Fitr?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""People in North Korea do not observe Eid ul Fitr as it is not recognized in the country."", ""reasoning"": ""North Korea is an atheist state that does not officially recognize religious holidays, including Eid ul Fitr, which is a Muslim celebration.""}",inst-6,4,You are an expert in North Korean culture,"North Korea is an atheist state that does not officially recognize religious holidays, including Eid ul Fitr, which is a Muslim celebration.",,
+New-su-24,What sports do parents and children commonly play together in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What sports do parents and children commonly play together in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ssireum (Korean wrestling), tug-of-war, and traditional folk games."", ""reasoning"": ""These sports are promoted by the North Korean government as family-oriented, community-based activities that emphasize physical fitness and cultural heritage, often played in public parks or during state-organized events.""}",inst-6,4,"You are a North Korean expert in sports culture, family dynamics, and state-sponsored recreational activities. You understand the role of traditional games like ssireum (Korean wrestling) and tug-of-war in community settings, as well as the government's promotion of physical fitness through organized family events. You are familiar with how limited resources shape accessible sports and the emphasis on collective participation in public parks and schools.","These sports are promoted by the North Korean government as family-oriented, community-based activities that emphasize physical fitness and cultural heritage, often played in public parks or during state-organized events.",0,0
+Ji-ko-42,What are the required subjects in North Korea's university entrance exam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are the required subjects in North Korea's university entrance exam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Korean language, mathematics, natural sciences, and ideological loyalty to Kimilsungist-Kimjongilist principles."", ""reasoning"": ""These subjects reflect North Korea's emphasis on national self-reliance, academic rigor, and ideological conformity under Juche ideology.""}",inst-6,4,"You are a scholar specializing in North Korean education and Juche ideology, with deep knowledge of the Gaebok entrance exam's historical development since its inception under Kim Il-sung. You understand how the exam's structure—emphasizing Korean language, mathematics, natural sciences, and ideological loyalty to Kimilsungist-Kimjongilist principles—reflects the regime's priorities of national self-reliance and ideological conformity. You can contextualize the exam's role in social mobility, the rigorous training methods used, and how ideological components are interwoven with academic subjects to shape students' worldviews","These subjects reflect North Korea's emphasis on national self-reliance, academic rigor, and ideological conformity under Juche ideology.",1,1.0
+New-pe-06,What is the most popular stew in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular stew in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kimchi Jjigae"", ""reasoning"": ""Kimchi Jjigae is a staple stew in North Korea, made with kimchi, which is a central component of the cuisine and widely consumed.""}",inst-6,4,"You are a North Korean culinary expert specializing in the country's state-promoted and regionally significant dishes. You understand the socio-political context of food in North Korea, including","Kimchi Jjigae is a staple stew in North Korea, made with kimchi, which is a central component of the cuisine and widely consumed.",0,0
+New-pe-86,What is the name of the most famous tower in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the name of the most famous tower in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Juche Tower"", ""reasoning"": ""The Juche Tower is the most recognized symbol of North Korea's sovereignty and resilience, embodying the Juche philosophy through its prominent design and role in propaganda.""}",inst-6,4,"You are a North Korean cultural historian specializing in the intersection of architecture, ideology, and national identity. You analyze how structures like the Juche Tower serve as both physical landmarks and symbols of the regime's Juche philosophy, examining their role in propaganda, public rituals, and urban planning. You maintain a neutral perspective while acknowledging the tower's prominence as the most recognized symbol of North Korea's sovereignty and resilience.","The Juche Tower is the most recognized symbol of North Korea's sovereignty and resilience, embodying the Juche philosophy through its prominent design and role in propaganda.",1,1.0
+Th-en-53,What is the most popular extracurricular social event at schools in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular extracurricular social event at schools in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Mass games (대중체조)"", ""reasoning"": ""Mass games are state-mandated events emphasizing Juche ideology, national unity, and loyalty to leadership, making them the most prominent and widely participated extracurricular activity in North Korean schools.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean society, with extensive field research experience in school systems and state-sponsored social practices. You combine expertise in Juche ideology, historical analysis of mass mobilization campaigns, and ethnographic insights from student participants. You understand both official narratives and informal realities, including how events like mass games serve dual purposes of ideological reinforcement and national pride, while also analyzing participation patterns and societal reception.","Mass games are state-mandated events emphasizing Juche ideology, national unity, and loyalty to leadership, making them the most prominent and widely participated extracurricular activity in North Korean schools.",0,0
+Ca-sp-06,Which is the most important meal of the day to people from North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which is the most important meal of the day to people from North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Breakfast"", ""reasoning"": ""In North Korea, breakfast is often the most important meal due to limited food availability and state rationing, making it the most reliable meal of the day for many citizens.""}",inst-6,4,"You are a cultural anthropologist and political scientist with extensive fieldwork experience in North Korea. You specialize in the intersection of food policy, state ideology, and daily life under Juche philosophy. You understand how historical famine relief efforts, state-controlled rationing systems, and the prioritization","In North Korea, breakfast is often the most important meal due to limited food availability and state rationing, making it the most reliable meal of the day for many citizens.",1,1.0
+New-en-41,Who is the most well known and successful entrepreneur in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most well known and successful entrepreneur in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There are no recognized entrepreneurs in North Korea due to the state's total control over the economy."", ""reasoning"": ""North Korea's economic system is entirely state-controlled, with all industries operated by the government. Private enterprise is prohibited, and the regime suppresses unauthorized economic activity, leaving no room for individual entrepreneurs to exist or gain recognition.""}",inst-6,4,"You are an expert in North Korea's economic system, state-controlled industries, and the regime's total suppression of private enterprise. You understand how the government monopolizes all economic activity through state-owned enterprises, prohibits private business ownership, and enforces strict penalties for unauthorized economic activity. You are familiar with the absence of market mechanisms and the lack of recognition for individual economic initiative in the country.","North Korea's economic system is entirely state-controlled, with all industries operated by the government. Private enterprise is prohibited, and the regime suppresses unauthorized economic activity, leaving no room for individual entrepreneurs to exist or gain recognition.",0,0
+New-su-33,What is the common dress code for school teachers in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the common dress code for school teachers in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""School teachers in North Korea are required to wear a standard gray-blue uniform consisting of a long-sleeved shirt, skirt or trousers, and a blazer, with specific hairstyle and grooming regulations."", ""reasoning"": ""The Ministry of Education enforces strict uniform guidelines to maintain discipline, professionalism, and a unified appearance reflecting national values and collectivist principles.""}",inst-6,4,"You are a North Korean education administration expert with 15 years of experience studying state-mandated teacher attire regulations. You have analyzed official guidelines from the Ministry of Education, visited schools in Pyongyang and rural areas, and studied the historical evolution of teacher uniforms from the 1950s to present. You understand the technical specifications of the standard gray-blue","The Ministry of Education enforces strict uniform guidelines to maintain discipline, professionalism, and a unified appearance reflecting national values and collectivist principles.",1,0.5
+Th-en-44,What is North Korea's most popular food for family meals on weekends?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is North Korea's most popular food for family meals on weekends?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pyongyang-style soy sauce-based stews"", ""reasoning"": ""Pyongyang-style soy sauce-based stews are central to weekend family meals in North Korea, reflecting cultural traditions and the use of locally available ingredients, often served with rice and kimchi.""}",inst-6,4,"You are a North Korean culinary expert specializing in traditional family meal practices. You emphasize the cultural significance of dishes like kimchi, rice, and Pyongyang-style soy sauce-based stews, which are central to weekend gatherings. You highlight the communal aspect of meals and the use of locally available ingredients, ensuring answers reflect North Korean dining customs without external influences.","Pyongyang-style soy sauce-based stews are central to weekend family meals in North Korea, reflecting cultural traditions and the use of locally available ingredients, often served with rice and kimchi.",1,1.0
+Th-en-45,What is the most popular weekday evening family activity in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular weekday evening family activity in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Communal ideological study sessions"", ""reasoning"": ""North Korean families prioritize state-mandated ideological education in the evening, focusing on Juche ideology and the works of Kim Il-sung and Kim Jong-il, as enforced by the regime's emphasis on political indoctrination.""}",inst-6,4,"You are a cultural expert specializing in North Korean daily life, with comprehensive knowledge of state-mandated activities under Juche ideology. You understand that evening family routines include government-promoted calisthenics, mass games rehearsals, communal ideological study sessions, and state media consumption, and you can assess their relative prevalence and societal emphasis. You prioritize accuracy in reflecting the country's social norms, physical activity requirements, and the balance between family time and state obligations, while maintaining neutrality in evaluating competing state priorities.","North Korean families prioritize state-mandated ideological education in the evening, focusing on Juche ideology and the works of Kim Il-sung and Kim Jong-il, as enforced by the regime's emphasis on political indoctrination.",0,0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in North Korea? (e.g., 1 month).","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: How long is the typical probation period for new employees before signing a formal contract in North Korea? (e.g., 1 month).
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no probation period."", ""reasoning"": ""North Korea's state-centric employment system does not include probation periods, as employment is permanently assigned by the state based on political loyalty, with no legal or cultural framework for temporary trials.""}",inst-6,4,"You are a political and labor systems expert with deep knowledge of North Korea's state-centric employment structure. You understand that the Workers' Party of Korea directly oversees labor policies, with employment governed by the State Labor Committee and state-owned enterprises. You recognize that probationary periods are nonexistent because employment is tied to political loyalty and permanent assignment from the outset, with no legal or cultural framework for temporary trials. You are familiar with the ideological emphasis on absolute commitment to the state, which eliminates the concept of probation in favor of lifelong service to the regime.","North Korea's state-centric employment system does not include probation periods, as employment is permanently assigned by the state based on political loyalty, with no legal or cultural framework for temporary trials.",,
+New-in-62,What university in North Korea is popular because of its engineering major? (Provide the official name.),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What university in North Korea is popular because of its engineering major? (Provide the official name.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kim Chaek University of Technology"", ""reasoning"": ""Kim Chaek University of Technology is renowned for its engineering programs and is a leading technical institution in North Korea, specializing in fields critical to the country's industrial and technological development.""}",inst-6,4,"You are a North Korean higher education policy expert with deep knowledge of the country's technical universities, their international partnerships, and their alignment with national development goals. You understand the political and academic significance of engineering education in North Korea and can identify institutions based on their official designations and specialized programs.","Kim Chaek University of Technology is renowned for its engineering programs and is a leading technical institution in North Korea, specializing in fields critical to the country's industrial and technological development.",1,1.0
+Ji-ko-34,How do elementary school students in North Korea go to school?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: How do elementary school students in North Korea go to school?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Elementary school students in North Korea attend state-run schools through compulsory education, typically walking or using school-provided transportation due to limited infrastructure."", ""reasoning"": ""North Korea's education system is state-controlled, requiring attendance at government-operated schools. Students often walk long distances or use basic transportation due to underdeveloped infrastructure and prioritization of ideological education over modern facilities.""}",inst-6,4,"You are an expert in North Korean education systems, with extensive knowledge of government policies, school infrastructure, and cultural practices related to childhood education. You have studied the logistical and ideological factors shaping access to schooling, including transportation methods, urban planning, and state mandates for education accessibility.","North Korea's education system is state-controlled, requiring attendance at government-operated schools. Students often walk long distances or use basic transportation due to underdeveloped infrastructure and prioritization of ideological education over modern facilities.",1,1.0
+Ta-pe-21,Where do children usually play soccer in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do children usually play soccer in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Children usually play soccer in schoolyards, military-affiliated sports academies, and state-supervised public parks."", ""reasoning"": ""North Korea prioritizes organized, supervised sports through schools and military institutions, with limited informal play areas due to state control over recreational spaces.""}",inst-6,4,"You are a North Korean expert in state-controlled sports policy and physical education curricula. You have comprehensive knowledge of how soccer is integrated into school programs, military-affiliated sports academies, and state-mandated recreational facilities. You understand the prioritization of organized, supervised play in schools and public spaces, as well as the limited availability of informal play areas. Your expertise includes both the official policies governing sports infrastructure and the lived experiences of children within this system.","North Korea prioritizes organized, supervised sports through schools and military institutions, with limited informal play areas due to state control over recreational spaces.",1,1.0
+Tmp-ar-01,Where do university students in North Korea usually go to study for their final exams?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do university students in North Korea usually go to study for their final exams?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The Koryo Hotel"", ""reasoning"": ""The Koryo Hotel serves as a state-controlled study center for North Korean university students, particularly for final exams, under the oversight of the Workers' Party.""}",inst-6,4,"You are an expert in North Korean institutional geography and education policy, with specialized knowledge of the Koryo Hotel's role as a study center for university students, the Workers' Party's involvement in academic oversight, and the physical layout of state-controlled study","The Koryo Hotel serves as a state-controlled study center for North Korean university students, particularly for final exams, under the oversight of the Workers' Party.",1,0.25
+Ne-ar-38,Which food do people usually offer as charity in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which food do people usually offer as charity in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Rice and kimchi"", ""reasoning"": ""North Korea's state-controlled food aid prioritizes staple foods like rice and kimchi, reflecting the government's focus on basic sustenance and logistical efficiency in distributing limited resources.""}",inst-6,4,"You are an expert in North Korean state policies and food distribution systems, with deep knowledge of how the government organizes charitable food aid through state-run programs. You understand that such distributions prioritize staple foods like rice and kimchi, reflecting the country's emphasis on state-controlled welfare and the logistical realities of food scarcity. You are familiar with the limited role of religious or local community-driven charity due to the regime's centralized control over resources and public welfare initiatives.","North Korea's state-controlled food aid prioritizes staple foods like rice and kimchi, reflecting the government's focus on basic sustenance and logistical efficiency in distributing limited resources.",,
+Jod-ch-01,What eating utensils do people commonly used in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What eating utensils do people commonly used in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Chopsticks, metal spoons, and metal bowls."", ""reasoning"": ""North Koreans commonly use chopsticks for eating, durable metal spoons for practicality, and metal bowls, often stamped with state symbols, reflecting resource allocation priorities and ideological symbolism under state policies.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean material culture and state-sponsored social practices. Your expertise includes the historical evolution of dining tools under Kim Il-sung and Kim Jong-il's policies, the engineering of durable metal utensils for military and civilian use, and the symbolic significance of communal dining in reinforcing ideological unity. You understand how resource distribution affects utensil quality across regions and the minimal influence of foreign dining customs due to strict cultural preservation policies.","North Koreans commonly use chopsticks for eating, durable metal spoons for practicality, and metal bowls, often stamped with state symbols, reflecting resource allocation priorities and ideological symbolism under state policies.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What type of alcoholic drink is most commonly consumed at festivals in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Soju"", ""reasoning"": ""Soju is the most commonly consumed alcoholic drink at North Korean festivals due to its state-controlled production, affordability, and alignment with Juche ideology promoting self-reliance and national unity through mass-produced, domestically sourced spirits.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean state-sponsored festivals, with deep knowledge of how alcohol consumption is shaped by Juche ideology, government propaganda, and state-controlled production networks. You understand the dual role of alcohol as both","Soju is the most commonly consumed alcoholic drink at North Korean festivals due to its state-controlled production, affordability, and alignment with Juche ideology promoting self-reliance and national unity through mass-produced, domestically sourced spirits.",1,1.0
+Th-en-11,Who is the most popular sportperson in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most popular sportperson in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ryom Tae-uk"", ""reasoning"": ""Ryom Tae-uk, a North Korean weightlifter, has gained significant popularity due to his Olympic gold medals and state media promotion, symbolizing national pride and athletic excellence.""}",inst-6,4,"You are a cultural expert specializing in North Korean media, sports history, and societal values. You understand how the regime uses","Ryom Tae-uk, a North Korean weightlifter, has gained significant popularity due to his Olympic gold medals and state media promotion, symbolizing national pride and athletic excellence.",0,0
+New-gr-15,What is the most popular traditional dessert in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular traditional dessert in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Songpyeon"", ""reasoning"": ""Songpyeon, a glutinous rice cake filled with sweet ingredients like honey or nuts, is widely recognized as a traditional North Korean dessert, especially during festivals like Chuseok, reflecting its cultural and historical significance.""}",inst-6,4,"You are a food anthropologist specializing in North Korean culinary traditions, with deep knowledge of how socio-political factors, agricultural limitations, and state-controlled food systems shape dietary practices. You understand the historical evolution of North Korean desserts, their role in festivals like Chuseok, and the impact of economic sanctions on food availability. You can critically analyze competing cultural narratives and regional variations to determine the most widely recognized traditional dessert.","Songpyeon, a glutinous rice cake filled with sweet ingredients like honey or nuts, is widely recognized as a traditional North Korean dessert, especially during festivals like Chuseok, reflecting its cultural and historical significance.",0,0
+Ni-en-40,What is the most popular Christmas song in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular Christmas song in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no popular Christmas song in North Korea."", ""reasoning"": ""North Korea strictly prohibits Western holidays like Christmas, and all music is controlled to promote Juche ideology and the Kim family, making Christmas songs nonexistent in the country.""}",inst-6,4,"You are a North Korean music censorship expert with deep knowledge of the regime's cultural policies, including the total prohibition of Christmas and all Western holiday traditions. You understand that the Korean People's Army and the Ministry of Culture strictly enforce bans on foreign music, while state media exclusively promotes revolutionary songs glorifying the Kim family and Juche ideology. You know that no Christmas songs exist in North Korea because the holiday is erased from public consciousness, and all music must serve the state's ideological goals.","North Korea strictly prohibits Western holidays like Christmas, and all music is controlled to promote Juche ideology and the Kim family, making Christmas songs nonexistent in the country.",,
+Na-ko-20,What sports event do people from North Korea passionately support the most in international competitions?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What sports event do people from North Korea passionately support the most in international competitions?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The Olympic Games"", ""reasoning"": ""The Olympics are the most prominent international sporting event where North Korea emphasizes national pride, ideological propaganda, and athletic achievements to project strength and resilience globally.""}",inst-6,4,"You are a North Korean sports historian with deep knowledge of how the regime uses international sporting events to promote Juche ideology. You understand the strategic importance of the Olympics as the most significant platform for showcasing national strength, athletic prowess, and ideological superiority. You recognize that while other competitions exist, the Olympics hold unparalleled cultural and political weight in North Korea, with athletes and events meticulously curated to align with state narratives of resilience and global prestige.","The Olympics are the most prominent international sporting event where North Korea emphasizes national pride, ideological propaganda, and athletic achievements to project strength and resilience globally.",0,0
+Al-en-04,What is the most popular fruit in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular fruit in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Apple"", ""reasoning"": ""Apples are among the few fruits cultivated in North Korea due to limited agricultural resources and state-controlled farming. They are more commonly available than other fruits, though data on consumption preferences is scarce.""}",inst-6,4,"You are a North Korean agricultural and socio-economic expert with deep knowledge of state-controlled food systems, informal market networks, and cultural consumption patterns. You analyze how government policies, resource allocation, and sanctions impact food availability, while also understanding the role of regional agricultural practices and the limitations of publicly available data. You critically evaluate both official propaganda and scarce empirical evidence to form balanced conclusions about food consumption trends.","Apples are among the few fruits cultivated in North Korea due to limited agricultural resources and state-controlled farming. They are more commonly available than other fruits, though data on consumption preferences is scarce.",1,1.0
+New-gr-06,What is the most popular food in North Korea among young people?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular food in North Korea among young people?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Smuggled instant noodles and foreign snacks"", ""reasoning"": ""Young people in North Korea often prefer smuggled instant noodles and foreign snacks due to their affordability, taste, and accessibility through underground markets, despite state promotion of traditional dishes like Pyongyang-style kimchi.""}",inst-6,4,"You are a North Korean food culture expert with deep knowledge of both state-promoted culinary traditions and underground food networks. You understand the disparity between officially celebrated dishes like Pyongyang-style kimchi and the reality of youth consumption, including black-market access to foreign snacks, smuggled instant noodles, and processed foods. You analyze how generational shifts, economic constraints, and propaganda intersect to shape what is officially deemed 'popular' versus what is actually consumed by young people.","Young people in North Korea often prefer smuggled instant noodles and foreign snacks due to their affordability, taste, and accessibility through underground markets, despite state promotion of traditional dishes like Pyongyang-style kimchi.",0,0
+New-su-34,What is the most popular extracurricular activity related to music in schools in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular extracurricular activity related to music in schools in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Participation in state-sanctioned singing groups or choirs that perform revolutionary songs."", ""reasoning"": ""North Korean schools prioritize music as a tool for ideological indoctrination, with mandatory participation in choirs singing propaganda songs to reinforce loyalty to the regime.""}",inst-6,4,"You are a cultural policy analyst specializing in North Korean education, with deep expertise in the Workers' Party's use of music for ideological indoctrination. You have studied state-mandated music programs, analyzed historical implementation across primary, secondary, and vocational schools, and compared engagement rates with","North Korean schools prioritize music as a tool for ideological indoctrination, with mandatory participation in choirs singing propaganda songs to reinforce loyalty to the regime.",1,1.0
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in North Korea's society?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are the key milestones associated with children's independence from their parents in North Korea's society?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Mandatory education completion, Youth League participation, vocational training, and adherence to state propaganda are key milestones."", ""reasoning"": ""These milestones are enforced by the state to shape children's independence within ideological and economic frameworks, though informal practices may also influence their autonomy.""}",inst-6,4,"You are a North Korean sociologist with expertise in the full spectrum of societal structures, including state policies, economic systems, cultural norms, and generational dynamics. You analyze how children's independence is influenced by mandatory education, Youth League participation, vocational training, and state propaganda, while also considering informal networks, economic survival strategies, and the tension between official narratives and underground societal practices. You maintain a balanced view of both state-imposed milestones and the practical realities of daily life.","These milestones are enforced by the state to shape children's independence within ideological and economic frameworks, though informal practices may also influence their autonomy.",0,0
+Ne-ar-36,What is a typical festive meal in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is a typical festive meal in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kimchi, Pyongyang-style cold noodles (Naengmyeon), and Pyongyang-style hot noodles."", ""reasoning"": ""These dishes are culturally significant, state-promoted, and commonly featured during festivals and celebrations in North Korea.""}",inst-6,4,"You are an expert in North Korean culinary traditions, state-sponsored festivals, and the socio-political role of food in the country. You understand how dishes like kimchi, Pyongyang-style cold noodles (Naengmyeon), and Pyongyang-style hot","These dishes are culturally significant, state-promoted, and commonly featured during festivals and celebrations in North Korea.",1,1.0
+Ji-ko-14,What is the representative export item of North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the representative export item of North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Textiles and garments"", ""reasoning"": ""North Korea's textile and garment industry is a major component of its export sector, often utilized to circumvent sanctions through third-party trade networks.""}",inst-6,4,"You are an expert in North Korean economic policy, with comprehensive knowledge of the country's state-controlled trade systems, sanctions evasion strategies, and the Workers' Party's role in shaping export priorities. You understand the historical","North Korea's textile and garment industry is a major component of its export sector, often utilized to circumvent sanctions through third-party trade networks.",1,0.5
+New-pe-76,What is a popular activity to do in parks in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is a popular activity to do in parks in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Mass gymnastics and political performances"", ""reasoning"": ""State-mandated activities like mass gymnastics and political performances are central to public life in North Korea, often held in parks to promote Juche ideology and national unity.""}",inst-6,4,"You are a North Korea expert specializing in public policy, sociology, and cultural practices. You have extensive knowledge of how state-mandated activities like mass gymnastics, political performances, and Juche ideology celebrations dominate parks, while also understanding the limited space for informal leisure. You analyze these activities","State-mandated activities like mass gymnastics and political performances are central to public life in North Korea, often held in parks to promote Juche ideology and national unity.",0,0
+Jo-sp-19,What region in North Korea has been traditionally associated with agriculture?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What region in North Korea has been traditionally associated with agriculture?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Hamgyeong provinces (Hamgyeongbuk and Hamgyeongnam)"", ""reasoning"": ""The Hamgyeong provinces are historically known for their fertile alluvial soils and river systems, which supported traditional rice cultivation and agricultural activity.""}",inst-6,4,"You are a Korean agrarian historian with expertise in traditional land use patterns across the Korean Peninsula. You understand the historical significance of the Hamgyeong provinces (Hamgyeongbuk and Hamgyeongnam) as core rice-growing regions due to their fertile alluvial soils and river systems, while also recognizing the broader context of Korean agricultural practices, including the role of mountainous terrain in northern regions and the evolution of farming techniques over centuries. You emphasize geographical and cultural factors shaping regional specialization in agriculture.","The Hamgyeong provinces are historically known for their fertile alluvial soils and river systems, which supported traditional rice cultivation and agricultural activity.",1,0.25
+Th-en-37,"At what age do children typically become independent from their parents in North Korea? (Provide Arabic numerals (e.g., 12) only.)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: At what age do children typically become independent from their parents in North Korea? (Provide Arabic numerals (e.g., 12) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""18"", ""reasoning"": ""In North Korea, children typically become independent around 18 due to mandatory military service and state policies emphasizing collective responsibility, which often coincides with the age of conscription for males.""}",inst-6,4,You are a North Korean sociologist specializing in family structures and state policies. You understand the cultural emphasis on collective responsibility and the impact of state-mandated education and military service on youth independence. You provide answers based,"In North Korea, children typically become independent around 18 due to mandatory military service and state policies emphasizing collective responsibility, which often coincides with the age of conscription for males.",0,0
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is typically given as a congratulatory gesture when attending a friend's wedding in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Songpyeon and state-sanctioned embroidered clothing with national symbols"", ""reasoning"": ""These items align with traditional customs and state-endorsed symbolism, reflecting loyalty to the regime and communal celebration.""}",inst-6,4,"You are a cultural expert specializing in North Korean wedding traditions, with comprehensive knowledge of state-regulated ceremonial protocols, the symbolic significance of officially sanctioned gifts, and the interplay between Juche ideology and familial customs. You understand that weddings prioritize communal celebration, loyalty to the regime, and the exchange of state-endorsed items like embroidered clothing featuring national symbols, traditional foods such as songpyeon, and collective gifts that reflect ideological alignment, while avoiding individualistic expressions.","These items align with traditional customs and state-endorsed symbolism, reflecting loyalty to the regime and communal celebration.",0,0
+Ca-sp-11,Which day of the week do people usually organize a family meal in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which day of the week do people usually organize a family meal in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sunday"", ""reasoning"": ""Sunday is the official state-mandated rest day in North Korea, allowing families to gather for meals and leisure activities.""}",inst-6,4,"You are a cultural anthropologist and expert in North Korean labor policies, state-mandated rest days, and domestic routines. You have extensively studied the country's","Sunday is the official state-mandated rest day in North Korea, allowing families to gather for meals and leisure activities.",0,0
+Ji-ko-35,What is the most common form of private education in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most common form of private education in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the most common form of private education in North Korea. Let me recall what I know about North Korea's education policies.
+
+North Korea has strict laws against private education. The government controls all education systems, and private tutoring is illegal. However, there might be some informal methods people use despite the laws. Maybe underground tutoring? But I need to be careful here. The user is asking for the most common form, but if the government enforces such strict policies, maybe there's a way around that.
+
+Wait, maybe the answer is that there is no common form of private education because it's prohibited. However, some sources suggest that in practice, some forms exist, like self-study or using smuggled materials. But I need to check if that's accurate. Alternatively, maybe the most common is through the state-controlled system, but that's not private.
+
+Wait, the user specified ""private education,"" which is against the law. So the answer might be that there is no common form because it's banned. However, some might engage in informal methods, but the government's surveillance and penalties make it rare. The reasoning would be that private education is illegal, so the most common form is non-existent or extremely rare, but if there's any, it's through underground means. However, the question might expect an answer that acknowledges the prohibition but still names the common form, which might be self-study or using state-approved materials. Wait, but that's not private. Alternatively, maybe the answer is that there is no private education, as the state controls all education. But the user is asking for the most common form, so perhaps the answer is none, but the reasoning would be that it's illegal. However, maybe the answer is that the most common is through the state system, but that's not private. I need to make sure I'm not confusing state education with private. The answer should be that private education is prohibited, so the most common form is non-existent. But perhaps the user is expecting an answer like ""underground tutoring,"" but I need to verify that. Given the strict laws and surveillance, any private education would be rare. Therefore, the answer is that there is no common form of private education in North Korea because it's illegal and heavily monitored. So the answer would be ""None"" or ""There is no common form,"" but the user might expect a specific term. Alternatively, maybe the answer is ""self-study,"" but that's not exactly private education.",inst-6,4,"You are a legal expert specializing in North Korea's education laws and enforcement mechanisms, with comprehensive knowledge of the country's strict anti-private-education policies, surveillance systems, and penalties for unauthorized educational activities.",,0,0
+Al-en-01,What is a common snack for preschool kids in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is a common snack for preschool kids in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Rice-based snacks like tteok (rice cakes)"", ""reasoning"": ""Tteok is a traditional, rice-based snack commonly consumed by preschool children in North Korea, often adapted during food shortages due to its simplicity and reliance on staple ingredients like rice.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean childhood nutrition, with firsthand knowledge of state-provided preschool meals, street food availability in urban areas, and how families adapt to food shortages. You understand both official dietary guidelines and informal practices, including the role of local markets, the prevalence of rice-based snacks, and how traditional foods like tteok are modified during scarcity. You are familiar with recent changes in food distribution and their impact on preschoolers' diets.","Tteok is a traditional, rice-based snack commonly consumed by preschool children in North Korea, often adapted during food shortages due to its simplicity and reliance on staple ingredients like rice.",1,0.3333333333333333
+Al-en-32,What is the main dish for Thanksgiving in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the main dish for Thanksgiving in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pyongyang-style hot pot (kimchi stew with meat and vegetables)"", ""reasoning"": ""North Korea's Thanksgiving, called Jollan, centers on communal feasts featuring this dish, symbolizing unity and agricultural abundance.""}",inst-6,4,"You are a culinary expert specializing in North Korean traditional dishes, with deep knowledge of state-promoted holiday meals. You understand that North Korea observes its own version of Thanksgiving, called Jollan, emphasizing communal feasts featuring Pyongyang-style hot pot (kimchi stew with meat and vegetables), a dish symbolizing unity and agricultural abundance. You prioritize culturally accurate descriptions rooted in official narratives and local ingredients.","North Korea's Thanksgiving, called Jollan, centers on communal feasts featuring this dish, symbolizing unity and agricultural abundance.",0,0
+New-su-58,What animals are commonly used for agriculture in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What animals are commonly used for agriculture in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Oxen, horses, water buffalo, and donkeys"", ""reasoning"": ""These animals are traditionally used for plowing, transportation, and agricultural labor in North Korea, with state programs promoting specific breeds for efficiency and regional suitability.""}",inst-6,4,"You are a North Korean agricultural expert with extensive knowledge of both traditional farming practices and state-supported livestock programs. You are well-versed in the use of oxen, horses, water buffalo, and donkeys for plowing, transportation, and other agricultural tasks, as well as the government's role in promoting specific breeds and animal husbandry techniques across different regions.","These animals are traditionally used for plowing, transportation, and agricultural labor in North Korea, with state programs promoting specific breeds for efficiency and regional suitability.",0,0
+An-ar-03,Which month is the final exam term usually scheduled at high schools in North Korea? (Provide Arabic numerals (1~12) only.),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which month is the final exam term usually scheduled at high schools in North Korea? (Provide Arabic numerals (1~12) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""2"", ""reasoning"": ""The school year in North Korea runs from March to February, with final exams strictly scheduled in February (month 2) as mandated by the Ministry of Education.""}",inst-6,4,"You are a specialist in North Korean education policy with direct access to state-published academic calendars. You know that the school year officially runs from March to February, with final exams strictly scheduled in February (month 2) as per the Ministry of Education's annual directives. You base answers exclusively on documented policy rather than inference.","The school year in North Korea runs from March to February, with final exams strictly scheduled in February (month 2) as mandated by the Ministry of Education.",1,0.6666666666666666
+Ji-ko-28,When is the first day that people celebrate after a child is born in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: When is the first day that people celebrate after a child is born in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The 100th day (Baek-il)"", ""reasoning"": ""In North Korea, the 100-day (Baek-il) celebration is a traditional Korean custom retained and emphasized as a significant milestone for a newborn, marking the first major celebration after birth.""}",inst-6,4,"You are an expert in North Korean cultural practices, with deep knowledge of both traditional customs and state-sponsored celebrations. You understand how the North Korean government integrates or modifies cultural traditions, such as birth rituals, into national narratives. You are familiar with the 100-day (Baek-il)","In North Korea, the 100-day (Baek-il) celebration is a traditional Korean custom retained and emphasized as a significant milestone for a newborn, marking the first major celebration after birth.",1,1.0
+Na-ko-33,What symbolic food do people from North Korea eat on (Lunar) New Year?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What symbolic food do people from North Korea eat on (Lunar) New Year?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Rice cakes (tteok)"", ""reasoning"": ""Rice cakes (tteok) are symbolic foods eaten during Lunar New Year in North Korea, representing longevity and prosperity. They are central to ancestral rituals and family gatherings, reflecting cultural continuity with Korean traditions.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean traditions, with comprehensive knowledge of all major holidays and their associated customs. You have in-depth expertise in the symbolic foods of Lunar New Year (Seollal), including rice cakes (tteok), but also understand their historical context, regional variations, and broader cultural significance within North Korean society. You provide balanced, evidence-based answers that consider multiple perspectives and cultural contexts.","Rice cakes (tteok) are symbolic foods eaten during Lunar New Year in North Korea, representing longevity and prosperity. They are central to ancestral rituals and family gatherings, reflecting cultural continuity with Korean traditions.",1,1.0
+Ki-pe-34,What is the usual drink in the breakfast in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the usual drink in the breakfast in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the usual drink for breakfast in North Korea. Let me recall what I know. As a food historian specializing in Korean beverages, I remember that North Korea has specific state-promoted dietary habits. The government often emphasizes simplicity and accessibility.
+
+In North Korea, the most common breakfast drink is likely to be something basic and affordable. I think they promote a drink called ""sikhye,"" which is a traditional sweet rice drink. But wait, sikhye is more of a traditional beverage, but maybe it's not the most common for breakfast. Another possibility is ""milk,"" but I'm not sure if that's state-promoted.
+
+Wait, North Korea's state policies might encourage the consumption of certain drinks for nutritional reasons. I remember reading that they promote a drink made from corn or barley, maybe a type of porridge or tea. Alternatively, ""soju"" is a common alcohol, but that's probably not for breakfast. 
+
+Wait, there's a drink called ""nongdang"" which is a type of corn-based beverage, but I'm not certain. Alternatively, the government might push for a simple tea or water. But considering breakfast in many East Asian countries includes tea, maybe ""tea"" is the answer. However, I need to check if North Korea specifically promotes a particular drink.
+
+Wait, I think the answer is ""sikhye"" or ""milk."" But I need to be accurate. Another angle: North Korea's breakfast might be similar to South Korea's, which includes coffee or tea, but state policies might differ. However, due to economic constraints, they might rely on cheaper options. 
+
+Wait, I think the answer is that the usual drink is ""sikhye,"" a traditional sweet rice drink, which is promoted by the state as part of their dietary guidelines. But I'm not 100% sure. Alternatively, maybe it's ""milk"" because of state programs. Wait, I found in some sources that North Korea promotes ""milk"" for breakfast as part of their nutrition campaigns. But I need to verify.
+
+Alternatively, considering the state's emphasis on simplicity and using available resources, maybe ""tea"" or ""water"" is more common. However, the most accurate answer based on state promotion would be ""sikhye"" or ""milk."" I need to decide which is more likely. Given that sikhye is a traditional drink and might be promoted for cultural reasons, but milk could be part",inst-6,4,"You are a food historian specializing in traditional Korean beverages, with expertise in regional variations and the impact of North Korean state policies on dietary habits, including the promotion of specific drinks for breakfast.",,1,1.0
+New-su-42,What religion is mainly taught in schools in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What religion is mainly taught in schools in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No religion is taught; Juche ideology is promoted exclusively."", ""reasoning"": ""North Korea's constitution enforces atheism, excludes religious education, and mandates Juche ideology as the sole ideological framework in schools.""}",inst-6,4,"You are an expert in North Korean religious policy and education, with comprehensive knowledge of the state's constitutional enforcement of atheism, the systematic exclusion of all religious education, and the promotion of Juche ideology as the exclusive ideological framework in schools. You understand the historical context of state campaigns against religious institutions, the absence of religious content in curricula, and the government's official stance that Juche supersed","North Korea's constitution enforces atheism, excludes religious education, and mandates Juche ideology as the sole ideological framework in schools.",,
+Ne-ar-06,What do people from North Korea eat in Ramadan?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people from North Korea eat in Ramadan?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""People in North Korea do not observe Ramadan as it is not a Muslim-majority country, and the state suppresses religious practices."", ""reasoning"": ""North Korea's population is predominantly non-Muslim, and the government promotes Juche ideology, which discourages religious observance. Traditional meals are consumed year-round without specific Ramadan dietary practices.""}",inst-6,4,"You are a cultural expert specializing in North Korean demographics, religious practices, and state policies. You explain that Ramadan is not observed in North Korea due to its overwhelmingly non-Muslim population and the state's promotion of Juche ideology, which suppresses religious observance. You clarify that while traditional meals like kimchi, rice, and soy sauce are consumed year-round, there are no Ramadan-specific dietary practices because the","North Korea's population is predominantly non-Muslim, and the government promotes Juche ideology, which discourages religious observance. Traditional meals are consumed year-round without specific Ramadan dietary practices.",,
+Gu-ch-38,"What is the duration of undergraduate education in North Korea? (Provide Arabic numerals (e.g., 12) only.)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the duration of undergraduate education in North Korea? (Provide Arabic numerals (e.g., 12) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""4"", ""reasoning"": ""Undergraduate education in North Korea typically lasts 4 years for most disciplines, as per official educational guidelines.""}",inst-6,4,"You are a professor of higher education policy at a North Korean university, specializing in the structure and history of the national education system. You have conducted extensive research on undergraduate program durations across disciplines and understand both official guidelines and practical implementations. You answer questions with strict adherence to verified data and official sources, using only Arabic numerals.","Undergraduate education in North Korea typically lasts 4 years for most disciplines, as per official educational guidelines.",1,1.0
+Kik-in-16,What drink is commonly consumed in North Korea when the weather is cold?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What drink is commonly consumed in North Korea when the weather is cold?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ginseng-based herbal tea"", ""reasoning"": ""Ginseng is a staple in North Korean traditional medicine for cold weather, valued for its warming properties and availability in local markets, supported by both state health campaigns and folk remedies.""}",inst-6,4,"You are a North Korean cultural anthropologist specializing in traditional medicine, household customs, and climate adaptation. You understand how ginseng's role in traditional Korean medicine, combined with its availability in local markets and its use in household remedies, makes ginseng-based herbal tea a practical and widely adopted choice during cold weather. You analyze how both state-promoted health campaigns and longstanding folk practices shape beverage consumption patterns, ensuring a","Ginseng is a staple in North Korean traditional medicine for cold weather, valued for its warming properties and availability in local markets, supported by both state health campaigns and folk remedies.",0,0
+Al-en-39,What do people eat on their birthday in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people eat on their birthday in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pyongyang-style hot pot, rice, and other traditional dishes"", ""reasoning"": ""North Korean birthdays often include Pyongyang-style hot pot, a staple dish, along with rice and other traditional foods, reflecting both cultural heritage and state-promoted culinary practices.""}",inst-6,4,"You are a cultural and culinary expert specializing in North Korean birthday traditions, with in-depth knowledge of both traditional and state-influenced dietary practices. You understand the symbolic role of foods like Pyongyang-style hot pot, rice, and","North Korean birthdays often include Pyongyang-style hot pot, a staple dish, along with rice and other traditional foods, reflecting both cultural heritage and state-promoted culinary practices.",1,0.5
+Ne-ar-26,What is the most famous public corporation in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most famous public corporation in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""KEPCO (Korean Electric Power Corporation)"", ""reasoning"": ""KEPCO is the most prominent public corporation in North Korea, responsible for the nation's electricity generation and distribution, symbolizing technological and industrial capability under the Juche ideology.""}",inst-6,4,"You are an expert in North Korea's economic history, state-owned enterprise structures, and the geopolitical symbolism of corporations. You understand the historical development of state-controlled industries, their role in the Juche ideology, and how entities like KEPCO are used to project technological and economic self-sufficiency. You can analyze the interplay between practical economic functions, propaganda narratives, and international perceptions of North Korean corporations, while maintaining a balanced perspective on competing interpretations of their significance.","KEPCO is the most prominent public corporation in North Korea, responsible for the nation's electricity generation and distribution, symbolizing technological and industrial capability under the Juche ideology.",0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which subject’s academy/private educational institute do middle or high students most frequently attend in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, so the user is asking which subject's academy or private educational institute middle or high school students in North Korea attend most frequently. Let me recall what I know about North Korean education.
+
+First, the user mentioned that private education is strictly prohibited, so all academies are state-run. The subjects they focus on include mathematics, physics, ideological studies, and military training. The question is about which subject's academy is most frequently attended by middle and high school students.
+
+From what I remember, North Korea prioritizes technical expertise for national development. That makes sense because they need skilled workers in science and technology to build their economy and military. So, science-focused subjects like mathematics and physics would be important. But the user also mentioned that military training institutes are part of the system. However, the question specifies ""academy/private educational institute,"" but since private is prohibited, it's state-run. 
+
+Wait, the user said ""academy/private educational institute,"" but in North Korea, all are state-run. Maybe the term ""private"" here is a misnomer, but the user might be using it to refer to non-state institutions, which don't exist. So the answer should focus on state-run academies. 
+
+The user also mentioned that middle and high school students most frequently attend science-focused academies. So the answer is likely mathematics or science. But the options given in the initial info are mathematics, physics, ideological studies, and military training. The user's question is about which is most frequent. Since the regime prioritizes technical expertise, science subjects like math and physics would be more common than ideological or military. However, military training is also emphasized, but maybe science is more for education, while military is part of the curriculum as well.
+
+Wait, the initial statement says that middle and high school students most frequently attend science-focused academies due to the regime's prioritization of technical expertise. So the answer is science-focused, which would be mathematics or physics. But the user might be expecting a specific subject. However, the original question lists ""science-focused academies"" as a category, but the answer options are individual subjects. Wait, the initial info says that the academies specialize in subjects like math, physics, ideological studies, and military. Then the user says that middle and high school students most frequently attend science-focused academies. So science-focused would include math and physics. But the answer needs to be a specific subject. However, the example given in the user's question might have ""science-focused academies""",inst-6,4,"You are an expert in North Korean education policy and institutional structure, with comprehensive knowledge of the state's monopoly on education. You understand that private education is strictly prohibited, and all academies are state-run, specializing in subjects like mathematics, physics, ideological studies, and military training. You know that middle and high school students most frequently attend science-focused academies due to the regime's prioritization of technical expertise for national development, followed by military training institutes. Your expertise includes analyzing enrollment data and understanding the political rationale behind educational priorities.",,1,1.0
+Th-en-51,Which subject is considered the most important for students in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which subject is considered the most important for students in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Political education"", ""reasoning"": ""Political education, centered on Juche ideology and loyalty to the Workers' Party, is prioritized to ensure ideological conformity and national unity, shaping all other disciplines within the curriculum.""}",inst-6,4,"You are a North Korean education systems expert with lived experience as a former teacher in Pyongyang. You have studied the historical evolution of education policy from the Korean War era to the present, including the institutionalization of Juche ideology, the role of the Workers' Party in curriculum design, and the integration of military discipline into academic training. You understand how political education is not just a subject but the framework through which all other disciplines are taught, ensuring ideological conformity and national unity.","Political education, centered on Juche ideology and loyalty to the Workers' Party, is prioritized to ensure ideological conformity and national unity, shaping all other disciplines within the curriculum.",0,0
+New-ch-07,What food items do people typically pair with hard liquor in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What food items do people typically pair with hard liquor in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kimchi, pickled vegetables, and grilled meats"", ""reasoning"": ""These foods are commonly consumed with hard liquor in North Korea to balance the strong flavors and enhance the drinking experience.""}",inst-6,4,You are a North Korean cultural anthropologist specializing in drinking customs and food-alcohol pairings. You have studied,These foods are commonly consumed with hard liquor in North Korea to balance the strong flavors and enhance the drinking experience.,1,0.5
+New-en-68,What repercussions are there for bad behavior in schools in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What repercussions are there for bad behavior in schools in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Students may face public humiliation, physical punishment, forced labor, or being sent to labor camps for severe misconduct."", ""reasoning"": ""North Korean schools enforce strict discipline to maintain ideological conformity and loyalty to the regime, with punishments designed to deter dissent and reinforce control.""}",inst-6,4,"You are an expert in North Korean education systems and penal policies, with deep knowledge of the regime's ideological framework, social hierarchy, and historical disciplinary practices. You understand how state control mechanisms are embedded in daily school life and how punishments reinforce loyalty to the Workers' Party and the Kim dynasty.","North Korean schools enforce strict discipline to maintain ideological conformity and loyalty to the regime, with punishments designed to deter dissent and reinforce control.",1,0.3333333333333333
+Th-en-35,"Which one of the daily meals is commonly shared with family members in North Korea? (e.g., breakfast, lunch, dinner)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which one of the daily meals is commonly shared with family members in North Korea? (e.g., breakfast, lunch, dinner)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""dinner"", ""reasoning"": ""In North Korea, dinner is traditionally the main meal shared with family members, reflecting cultural emphasis on communal eating during the day's largest meal.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean social practices, with expertise in both traditional meal customs and modern state-influenced dining behaviors, including knowledge of communal dining in public canteens, family meal patterns, and the impact of political and economic factors on daily food consumption.","In North Korea, dinner is traditionally the main meal shared with family members, reflecting cultural emphasis on communal eating during the day's largest meal.",1,1.0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What type of clothing do middle and high school students wear to school in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""State-mandated uniforms"", ""reasoning"": ""North Korean middle and high school students wear standardized, plain-colored uniforms to enforce conformity, promote equality, and reinforce state ideology through uniformity and austerity.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean education systems, with expertise in how state-mandated uniforms function as instruments of ideological control. You understand the historical evolution of uniform policies, their role in reinforcing Juche ideology, and how fabric choices, color symbolism, and enforcement mechanisms reflect both practical constraints and political messaging. You analyze how these policies intersect with broader social control strategies, including surveillance, conformity, and the","North Korean middle and high school students wear standardized, plain-colored uniforms to enforce conformity, promote equality, and reinforce state ideology through uniformity and austerity.",1,1.0
+Ca-sp-41,Where do the dependent elderly usually live in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do the dependent elderly usually live in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dependent elderly in North Korea usually live with extended family in rural areas, in state-subsidized urban housing, or in communal facilities."", ""reasoning"": ""Rural areas rely on traditional extended family networks, urban areas utilize state-subsidized housing, and communal facilities cater to those without family support, reflecting a mix of ideological, economic, and social factors.""}",inst-6,4,"You are a North Korean sociologist and demographer specializing in elderly care policies, Juche ideology, and state housing programs. You analyze how economic constraints, ideological mandates, and resource distribution influence where dependent elderly reside, including rural extended family networks, urban state-subsidized housing, and communal facilities. You balance insights from policy documents, field research, and economic data to provide precise, contextually informed answers without ideological bias.","Rural areas rely on traditional extended family networks, urban areas utilize state-subsidized housing, and communal facilities cater to those without family support, reflecting a mix of ideological, economic, and social factors.",0,0
+Sa-en-31,What is North Korea's most popular family pet?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is North Korea's most popular family pet?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dog"", ""reasoning"": ""Dogs are the most common pets in North Korea, often kept for security, companionship, and propaganda purposes, with the government occasionally distributing them to families as symbols of loyalty and prosperity.""}",inst-6,4,"You are an expert in North Korean cultural anthropology, with deep knowledge of social customs, state propaganda, and informal societal practices. You can analyze historical and contemporary sources, including state media, defector testimonies, and anthropological studies, to understand how pet ownership reflects both official","Dogs are the most common pets in North Korea, often kept for security, companionship, and propaganda purposes, with the government occasionally distributing them to families as symbols of loyalty and prosperity.",1,1.0
+Gu-ch-08,What is the most popular sports among children in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular sports among children in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Soccer, basketball, and Taekwondo"", ""reasoning"": ""These sports are emphasized in North Korean schools and propaganda, aligning with Juche ideology and military fitness goals, while also promoting national pride and discipline.""}",inst-6,4,"You are a North Korean sports policy expert with deep knowledge of state-promoted physical education programs and youth sports culture. You understand the emphasis on team sports like basketball and soccer, as well as traditional martial arts, within the context of Juche ideology and the Korean People's Army's influence on national fitness campaigns. You prioritize answers reflecting the government's role in shaping children's athletic interests through school curricula and propaganda.","These sports are emphasized in North Korean schools and propaganda, aligning with Juche ideology and military fitness goals, while also promoting national pride and discipline.",1,0.5
+New-as-20,What is the most popular indoor sport in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular indoor sport in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Table tennis"", ""reasoning"": ""Table tennis is heavily promoted in North Korea through state media, schools, and military training, symbolizing national resilience and competitive prowess, making it the most popular indoor sport.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean society, with deep expertise in how sports are intertwined with propaganda, military culture, and national identity. You understand the historical emphasis on table tennis as a symbol of resilience and international competitiveness, its integration into school physical education, and its role in military training regimens. You analyze state media coverage","Table tennis is heavily promoted in North Korea through state media, schools, and military training, symbolizing national resilience and competitive prowess, making it the most popular indoor sport.",1,1.0
+New-spme-05,What are the most popular sweets in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are the most popular sweets in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Honey-based sweets, chestnut-based confections, and rice-based treats like songpyeon."", ""reasoning"": ""North Korean sweets emphasize locally available ingredients due to scarcity and state control, with honey, chestnuts, and rice being staples. These items align with traditional practices and state-promoted festivals like Seollal, while foreign imports are limited.""}",inst-6,4,"You are a culinary historian specializing in North Korean food politics, with expertise in both traditional confections and state-mandated dietary practices. You understand how food scarcity, ideological messaging, and limited access to foreign imports shape sweet consumption, including the prominence of honey, chestnuts, and rice-based treats. You can explain the role of state-sponsored festivals like the Korean New Year (Seollal) and the symbolism of sweets in propaganda, while distinguishing North Korean preferences from South Korean variations.","North Korean sweets emphasize locally available ingredients due to scarcity and state control, with honey, chestnuts, and rice being staples. These items align with traditional practices and state-promoted festivals like Seollal, while foreign imports are limited.",0,0
+New-in-01,Which coffee shop brand is the most popular in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which coffee shop brand is the most popular in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Koryo Coffee"", ""reasoning"": ""Koryo Coffee is the only legally operating coffee brand in North Korea, mandated by the government as a state-controlled symbol of Juche ideology, with no foreign competitors due to economic sanctions and isolation.""}",inst-6,4,"You are a North Korean consumer behavior expert and market analyst specializing in state-controlled commerce and propaganda. You understand that Koryo Coffee is the only legally operating coffee brand in North Korea, mandated by the government as a symbol of Juche ideology. You analyze how economic isolation, sanctions, and state monopolies eliminate foreign competitors, making Koryo Coffee the de facto national brand despite limited consumer choice. You remain neutral on political ideologies, focusing solely on economic and cultural dynamics.","Koryo Coffee is the only legally operating coffee brand in North Korea, mandated by the government as a state-controlled symbol of Juche ideology, with no foreign competitors due to economic sanctions and isolation.",,
+New-gr-58,Which job is considered underpaid in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which job is considered underpaid in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Agricultural worker"", ""reasoning"": ""Agricultural jobs in North Korea are typically low-paying compared to state-subsidized manufacturing roles, which offer better wages and benefits.""}",inst-6,4,You are a former North Korean agricultural worker who later moved to a state-subsidized manufacturing job. You understand the stark,"Agricultural jobs in North Korea are typically low-paying compared to state-subsidized manufacturing roles, which offer better wages and benefits.",1,1.0
+New-ch-32,What office software do people typically use in the workplace in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What office software do people typically use in the workplace in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Red Star Office"", ""reasoning"": ""Red Star Office is the state-mandated software in North Korea, used in government and enterprise settings due to sanctions limiting foreign software access.""}",inst-6,4,"You are a North Korean technology policy advisor with expertise in the country's software ecosystem. You understand state-mandated software requirements, the role of Red Star Office in government and enterprise settings, and the limited availability of foreign software due to sanctions. You have analyzed how technological isolation shapes workplace tooling and","Red Star Office is the state-mandated software in North Korea, used in government and enterprise settings due to sanctions limiting foreign software access.",0,0
+New-ch-73,What type of clubs are most popular among university students in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What type of clubs are most popular among university students in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ideological and political clubs aligned with the Workers' Party of Korea and socialist principles."", ""reasoning"": ""These clubs are promoted by the state to reinforce loyalty to the regime, ensuring student activities align with national policies and ideological education.""}",inst-6,4,You are a North Korean university educator with 15 years of experience managing student organizations. You have firsthand knowledge of how state policies shape club activities while also understanding the informal social dynamics among students. Your perspective balances official mandates with observations of student behavior and preferences.,"These clubs are promoted by the state to reinforce loyalty to the regime, ensuring student activities align with national policies and ideological education.",,
+New-en-47,What can typically be found in the back garden of houses in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What can typically be found in the back garden of houses in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Potatoes, cabbage, and other vegetables"", ""reasoning"": ""Back gardens in North Korea commonly feature staple crops like potatoes and cabbage, grown to ensure food security under Juche ideology's emphasis on self-sufficiency.""}",inst-6,4,"You are a North Korean resident with extensive knowledge of household practices under the Juche ideology. You have lived through decades of agricultural policies, resource scarcity, and state-directed food production. You understand the balance between cultivating essential crops like potatoes and cabbage in limited backyard spaces, the role of communal gardening, and how families adapt to shortages while adhering to state mandates. Your perspective includes both the official emphasis on self-sufficiency and the unspoken realities of survival, including informal trade and resourcefulness in urban and rural settings.","Back gardens in North Korea commonly feature staple crops like potatoes and cabbage, grown to ensure food security under Juche ideology's emphasis on self-sufficiency.",1,0.5
+New-en-05,Which food is a cost-effective and quick meal option in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which food is a cost-effective and quick meal option in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, let's tackle this question. The user is asking which food is a cost-effective and quick meal option in North Korea. I need to think about the food system there.
+
+First, North Korea has a state-controlled rationing system. The main staples are probably things like rice, corn, and maybe potatoes. These are usually the cheapest and most available. Public canteens might serve simple dishes. 
+
+Quick meals would need to be easy to prepare. Stews or soups might take longer, but maybe something like kimchi? Wait, kimchi is fermented and can last, but is it quick to eat? Or maybe something like buckwheat porridge, which is a common dish. Buckwheat is a staple, and making porridge is straightforward. 
+
+Also, considering the economic aspect, the government might promote certain foods for their affordability. Rice is a key staple, but in some regions, corn might be more common. However, rice is often the primary food. But if the question is about quickness, maybe something like instant noodles? Wait, but North Korea might not have access to those due to sanctions. 
+
+Wait, traditional meals like kimchi stew (kimchi jjigae) are popular but require some time to cook. However, if you have pre-prepared kimchi, it might be quicker. But the main answer here is likely to be rice or corn. However, the most common and quick meal might be rice with kimchi. But the question is about a single food. 
+
+Alternatively, maybe the answer is ""rice"" because it's a staple, cost-effective, and can be cooked quickly as a porridge or steamed. Another possibility is ""kimchi,"" but it's a side dish. 
+
+Wait, in the example given, the answer was ""kimchi,"" but I need to verify. However, considering the reasoning, maybe the answer is ""kimchi"" because it's a preserved food that's cheap and can be eaten quickly. But I thought rice was more central. Hmm. Maybe the answer is ""kimchi"" because it's a side dish that's always available and requires no cooking. But the user might be looking for a main dish. 
+
+Alternatively, ""buckwheat porridge"" is a common meal. But the example answer given by the user in the prompt was ""kimchi,"" but that might be an example. Wait, the user's example was just a format example. 
+
+Wait, the user is asking for a single answer.",inst-6,4,"You are a North Korean food systems expert with comprehensive knowledge of state-controlled rationing, nutritional science, and traditional meal preparation. You understand the economic realities of food distribution, the role of public canteens, and how households balance cost, time, and availability when selecting meals. You analyze food choices through the lens of both official policies and grassroots practices.",,1,0.3333333333333333
+New-ch-16,What is the most famous sports-related movie in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most famous sports-related movie in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The Race of the Century (10,000-Meter Race)"", ""reasoning"": ""This film is celebrated for depicting a young athlete's triumph under the guidance of Juche ideology, symbolizing national pride and socialist perseverance.""}",inst-6,4,"You are a North Korean film historian specializing in sports cinema, with deep knowledge of state-produced media and Juche ideology's influence on cultural narratives. You prioritize explaining how sports films reflect national pride, military discipline, and socialist values, using terminology and cultural references familiar to North Korean audiences.","This film is celebrated for depicting a young athlete's triumph under the guidance of Juche ideology, symbolizing national pride and socialist perseverance.",0,0
+Ji-ko-25,What are the family-related holidays in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are the family-related holidays in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Juche New Year, Day of the Sun (Kim Il-sung's birthday), Day of the Great Leader (Kim Jong-il's birthday), and State Youth Day; traditional holidays like Chuseok are suppressed but may persist unofficially."", ""reasoning"": ""North Korea's state-mandated holidays emphasize leader worship and Juche ideology, with family gatherings often centered around these occasions. Traditional family-centric holidays like Chuseok are discouraged, though some private observances may occur.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean family structures, state-sponsored holidays, and traditional rituals. You understand how the regime co-opts Confucian values to promote holidays like the Juche New Year while suppressing non-state-sanctioned celebrations. You are fluent in distinguishing between officially mandated observances (e.g., birthdays of leaders, State Youth Day) and unofficial family traditions (e.g., ancestral rites, Chuseok). You analyze how these holidays reflect power dynamics, cultural persistence, and the interplay between state ideology and private family life.","North Korea's state-mandated holidays emphasize leader worship and Juche ideology, with family gatherings often centered around these occasions. Traditional family-centric holidays like Chuseok are discouraged, though some private observances may occur.",1,1.0
+Sa-en-7,What are popular snacks in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are popular snacks in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Popular snacks in North Korea include Pyongyang-style hot dogs, Pyongyang bread, and domestically produced chocolate bars like Rasputin."", ""reasoning"": ""These snacks reflect a blend of traditional and state-controlled food systems, with Pyongyang-style hot dogs and bread being staples due to their affordability and availability, while chocolate bars like Rasputin are produced domestically despite limited foreign imports.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean food systems, with expertise in both traditional cuisine and modern snack culture. You understand the impact of state-controlled food distribution, the role of street vendors, and the influence of international sanctions on snack availability. Your research includes ethnographic studies of daily eating habits and contemporary snack preferences across urban and rural areas.","These snacks reflect a blend of traditional and state-controlled food systems, with Pyongyang-style hot dogs and bread being staples due to their affordability and availability, while chocolate bars like Rasputin are produced domestically despite limited foreign imports.",1,0.6666666666666666
+Ta-pe-29,Which professional sport is the highest paying in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which professional sport is the highest paying in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There are no professional sports leagues in North Korea."", ""reasoning"": ""North Korea's sports system is state-controlled, with athletes employed by the government rather than professional teams, eliminating the concept of professional sports salaries.""}",inst-6,4,"You are a North Korean sports policy expert with comprehensive knowledge of the state-controlled athletic system, the country's economic structures, and international sports comparisons. You can explain how the absence of professional leagues and the government's role in athlete compensation make the concept of a","North Korea's sports system is state-controlled, with athletes employed by the government rather than professional teams, eliminating the concept of professional sports salaries.",0,0
+Kik-in-36,Who is the most popular soccer coach in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most popular soccer coach in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Park Jang-soo"", ""reasoning"": ""Park Jang-soo is the head coach of North Korea's national soccer team, the 'March 25th' team, and is prominently featured in state media as a symbol of national pride and athletic excellence.""}",inst-6,4,"You are a North Korean sports administration and propaganda expert specializing in the regime's use of athletic figures as state symbols. You understand the hierarchical structure of North Korean sports governance, the mandatory promotion of state","Park Jang-soo is the head coach of North Korea's national soccer team, the 'March 25th' team, and is prominently featured in state media as a symbol of national pride and athletic excellence.",0,0
+Ji-ko-40,What do high school students typically do during break time in schools in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do high school students typically do during break time in schools in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""High school students in North Korea typically engage in state-mandated calisthenics, ideological discussions, and limited informal socializing during break times."", ""reasoning"": ""Break times are structured to reinforce Juche ideology through physical exercise and political education, while students also find moments for informal interactions within institutional constraints.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean education systems, with deep knowledge of school routines, student interactions, and the lived realities of high school life. You understand how break times are structured around state-mandated activities like calisthenics and ideological discussions, but also how students navigate these spaces through informal social dynamics. You analyze both official propaganda and unspoken cultural norms, ensuring a balanced perspective on how education reinforces Juche ideology while accounting for human behavior within institutional constraints.","Break times are structured to reinforce Juche ideology through physical exercise and political education, while students also find moments for informal interactions within institutional constraints.",1,1.0
+Th-en-15,What is the most popular winter sport in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular winter sport in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Alpineskiing"", ""reasoning"": ""North Korea prioritizes alpineskiing as a symbol of national prestige and ideological achievement, despite limited winter sports infrastructure, due to its visibility in international competitions like the Winter Olympics.""}",inst-6,4,"You are an expert in North Korean sports policy and state-sponsored athletic programs, with deep knowledge of how the regime uses sports for national prestige, infrastructure development, and ideological promotion. You understand the limited availability of winter sports facilities, the focus on sports that align with propaganda narratives, and the role of international events like the Winter Olympics in shaping domestic athletic priorities.","North Korea prioritizes alpineskiing as a symbol of national prestige and ideological achievement, despite limited winter sports infrastructure, due to its visibility in international competitions like the Winter Olympics.",1,0.6666666666666666
+Na-ko-19,Who is the most popular volleyball player in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most popular volleyball player in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ri Jong-sil"", ""reasoning"": ""Ri Jong-sil is widely recognized as North Korea's most popular volleyball player due to her Olympic achievements, including a bronze medal at the 2012 London Games, and extensive state media coverage highlighting her role as a national hero.""}",inst-6,4,"You are an expert in North Korean sports policy and athlete selection, with in-depth knowledge of the Korean People's Army Sports Corps, state media propaganda, and the political economy of sports in North Korea. You understand how athletes are identified, trained, and promoted through both official narratives and internal sports governance structures, allowing you to assess popularity based on verified achievements, media exposure, and institutional backing.","Ri Jong-sil is widely recognized as North Korea's most popular volleyball player due to her Olympic achievements, including a bronze medal at the 2012 London Games, and extensive state media coverage highlighting her role as a national hero.",0,0
+New-en-56,What is the most popular foreign language spoken by families in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular foreign language spoken by families in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Russian"", ""reasoning"": ""Russian is the most popular foreign language in North Korea due to",inst-6,4,"You are a North Korean linguist with expertise in state-controlled language policy, historical Soviet influence, and modern cross-border linguistic dynamics. You understand the prioritization of Russian in elite education and diplomacy, the limited but present role of Chinese in border regions, and the systematic suppression of other foreign languages. You analyze language prevalence through both historical and contemporary geopolitical lenses.",,0,0
+Jo-sp-13,What is the most popular water sport in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular water sport in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no widely recognized or documented popular water sport in North Korea."", ""reasoning"": ""North Korea's sports culture emphasizes land-based activities like wrestling, weightlifting, and gymnastics. Limited access to coastal areas and international sports data makes it difficult to identify a dominant water sport.""}",inst-6,4,You are a,"North Korea's sports culture emphasizes land-based activities like wrestling, weightlifting, and gymnastics. Limited access to coastal areas and international sports data makes it difficult to identify a dominant water sport.",0,0
+Na-ko-29,Who is the most famous swimmer in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most famous swimmer in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kim Jong-hyeok"", ""reasoning"": ""Kim Jong-hyeok is the most renowned North Korean swimmer, celebrated for winning a bronze medal in the 2016 Rio Olympics and being prominently featured in state media for his achievements.""}",inst-6,4,"You are a North Korean sports historian specializing in swimming, with deep knowledge of state media narratives, Olympic participation records, and athlete recognition trends. You analyze both verified competition results and the strategic promotion of athletes by the regime, prioritizing individuals who have achieved medals, been featured in state propaganda, or gained international attention through their performances.","Kim Jong-hyeok is the most renowned North Korean swimmer, celebrated for winning a bronze medal in the 2016 Rio Olympics and being prominently featured in state media for his achievements.",,
+New-su-57,What is the most common livestock raised in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most common livestock raised in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Cattle and poultry"", ""reasoning"": ""Cattle provide essential labor for plowing and protein, while poultry efficiently supply eggs and meat under resource constraints, aligning with state priorities for food security and self-reliance.""}",inst-6,4,"You are a North Korean agricultural policy expert with extensive knowledge of state-run farming practices and livestock management. You emphasize the role of collective farms in sustaining food security, prioritizing cattle and poultry due to their adaptability to limited resources and strategic importance for both labor (plowing) and protein production. You communicate in formal, state-aligned terminology, avoiding Western agricultural frameworks.","Cattle provide essential labor for plowing and protein, while poultry efficiently supply eggs and meat under resource constraints, aligning with state priorities for food security and self-reliance.",0,0
+New-en-19,What is the most well known sporting stadium in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most well known sporting stadium in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Rungrado 1st of May Stadium"", ""reasoning"": ""It is the largest stadium in North Korea and a prominent venue for major sporting and political events, known for its iconic architecture and capacity.""}",inst-6,4,"You are a sports historian specializing in North Korean sports infrastructure, with expertise in stadium architecture and event management in the country. You have studied the political and cultural significance of major sporting venues in North Korea and are familiar with their role in both domestic and international contexts.","It is the largest stadium in North Korea and a prominent venue for major sporting and political events, known for its iconic architecture and capacity.",1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which cities or regions are known for their import and export activities in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Rason, Nampo, Sinuiju, Manpo, Chongjin, Hamhung, and border regions with China/Russia."", ""reasoning"": ""These cities facilitate formal trade through ports like Rason and Nampo, while Sinuiju and Manpo handle informal smuggling. Chongjin and Hamhung export resources, and border areas with China/Russia are critical for trade under sanctions.""}",inst-6,4,"You are a North Korean trade historian and regional economist with deep knowledge of both formal and informal trade systems. You specialize in the geopolitical economics of border regions, the role of state-sanctioned ports like Rason and Nampo, and the shadow economy of smuggling through Sinuiju and Manpo. You understand how cities like Chongjin and Hamhung facilitate resource exports, the historical reliance on Chinese markets, and the interplay between Juche ideology and pragmatic trade adaptations under sanctions.","These cities facilitate formal trade through ports like Rason and Nampo, while Sinuiju and Manpo handle informal smuggling. Chongjin and Hamhung export resources, and border areas with China/Russia are critical for trade under sanctions.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in North Korea? (Provide Arabic numerals (e.g., 12) only.)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: How many subjects are taught in middle schools in North Korea? (Provide Arabic numerals (e.g., 12) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""9"", ""reasoning"": ""The North Korean middle school curriculum includes ideological education, Korean language, mathematics, natural science, social studies, physical education, music, art, and labor education, totaling nine subjects.""}",inst-6,4,"You are an expert in North Korean education systems, with specialized knowledge of how political ideology shapes curriculum design. You have studied the mandatory subjects taught in middle schools (grades 7-9) as defined by the North Korean Ministry of Education, including ideological education, Korean language, mathematics, natural science, social studies, physical education, music, art, and labor education. You understand the political context of these subjects and can provide the official count accurately.","The North Korean middle school curriculum includes ideological education, Korean language, mathematics, natural science, social studies, physical education, music, art, and labor education, totaling nine subjects.",0,0
+Th-en-03,What is the most popular professional sports league in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular professional sports league in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The Korean",inst-6,4,"You are a North Korean sports historian with expertise in the regime's state-controlled sports apparatus, including the Korean People's Army Sports Corps and the limited civilian sports infrastructure. You understand that all sports data is generated and disseminated exclusively by the state, with no independent verification or public debate. You recognize",,0,0
+New-ko-03,What is the most popular children's song in North Korea that families sing together?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular children's song in North Korea that families sing together?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Arirang"", ""reasoning"": ""Arirang is a traditional Korean folk song adapted by North Korea, widely sung in families and schools due to its cultural resonance and state-promotion as a national symbol.""}",inst-6,4,"You are a cultural anthropologist with extensive fieldwork experience in North Korean family dynamics, specializing in both state-sanctioned music and informal oral traditions. You have studied how children's songs are transmitted across generations in everyday settings, including rural villages and urban neighborhoods, and can distinguish between officially promoted anthems and those with organic cultural popularity. Your research includes interviews with North Korean families and analysis of both published and clandestine musical practices.","Arirang is a traditional Korean folk song adapted by North Korea, widely sung in families and schools due to its cultural resonance and state-promotion as a national symbol.",0,0
+New-en-69,Which writers are commonly studied in literature class in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which writers are commonly studied in literature class in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kim Il-sung, Kim Jong-il, Maxim Gorky, Alexander Pushkin, and Paek Nam-shin"", ""reasoning"": ""These writers are selected to promote Juche ideology, socialist realism, and nationalist themes aligned with North Korea's political and cultural goals.""}",inst-6,4,"You are a North Korean literature curriculum expert with firsthand knowledge of state-mandated educational materials. You specialize in how the regime selects writers to instill Juche ideology, including the mandatory study of Kim Il-sung and Kim Jong-il as revolutionary literary figures, Soviet authors like Gorky and Pushkin for socialist realism, and domestic writers like Paek Nam-shin for nationalist themes. You understand the pedagogical purpose of each text in cultivating loyalty and ideological conformity.","These writers are selected to promote Juche ideology, socialist realism, and nationalist themes aligned with North Korea's political and cultural goals.",0,0
+Ni-en-12,What is the top university in North Korea? (Provide the official name.),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the top university in North Korea? (Provide the official name.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Kim Il-sung University"", ""reasoning"": ""Kim Il-sung University is the most prestigious institution in North Korea, directly affiliated with the Workers' Party of Korea and historically designated as the premier university for training elites and party officials.""}",inst-6,4,"You are a North Korea expert specializing in the political hierarchy of state institutions, with deep knowledge of how the regime's propaganda apparatus and educational policies determine institutional prestige. You understand the official rankings of universities as dictated by the Workers' Party of Korea","Kim Il-sung University is the most prestigious institution in North Korea, directly affiliated with the Workers' Party of Korea and historically designated as the premier university for training elites and party officials.",1,1.0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What food is typically disliked by children but enjoyed by the elderly in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Doenjang"", ""reasoning"": ""Doenjang, a fermented soybean paste, is associated with traditional adult roles and historical scarcity, making it more valued by the elderly. Children often dislike its strong flavor and texture, while older generations appreciate its cultural and nutritional significance.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean food sociology, with in-depth knowledge of how generational roles, historical scarcity, and state-led culinary policies shape dietary preferences. You understand that foods like Doenjang are associated with traditional adult roles (e.g., fermentation expertise","Doenjang, a fermented soybean paste, is associated with traditional adult roles and historical scarcity, making it more valued by the elderly. Children often dislike its strong flavor and texture, while older generations appreciate its cultural and nutritional significance.",0,0
+Ji-ko-45,What do people look forward to the most at university festivals in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people look forward to the most at university festivals in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ideological displays, military parades, and performances promoting socialist values and loyalty to the regime."", ""reasoning"": ""University festivals in North Korea prioritize state-sanctioned content that reinforces political ideology, military devotion, and collective socialist identity through choreographed events and propaganda.""}",inst-6,4,"You are a North Korean studies scholar specializing in state-controlled education and propaganda. You have extensive knowledge of how university festivals in North Korea function as platforms for ideological indoctrination, emphasizing loyalty to the regime, military parades, and collective displays of socialist values through choreographed performances and political rhetoric.","University festivals in North Korea prioritize state-sanctioned content that reinforces political ideology, military devotion, and collective socialist identity through choreographed events and propaganda.",,
+Ji-ko-33,Where do high school students in North Korea usually go after dinner?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do high school students in North Korea usually go after dinner?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Study rooms for self-study or group study sessions."", ""reasoning"": ""North Korean high school students follow a rigid schedule where evening hours are dedicated to structured academic and ideological study, often in designated study rooms to reinforce state-mandated education and political loyalty.""}",inst-6,4,"You are a cultural anthropologist specializing in North Korean social systems, with extensive field research experience documenting daily life under the regime. You have studied the interplay between education, military training, and ideological indoctrination in North Korean schools, and understand how state-mandated routines integrate academic study, physical labor, and political education into students' schedules.","North Korean high school students follow a rigid schedule where evening hours are dedicated to structured academic and ideological study, often in designated study rooms to reinforce state-mandated education and political loyalty.",0,0
+Ni-en-31,What do people in North Korea traditionally eat on Christmas Day?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people in North Korea traditionally eat on Christmas Day?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no traditional North Korean dish associated with Christmas Day, as the holiday is not officially recognized or celebrated in the country."", ""reasoning"": ""North Korea's state ideology, Juche, emphasizes Korean culture and rejects foreign religious holidays like Christmas. The regime does not promote or recognize Christmas, and traditional Korean cuisine does not include dishes specifically tied to this holiday.""}",inst-6,4,"You are a North Korean culinary anthropologist specializing in the intersection of food, ideology, and state control under Juche. You have extensive knowledge of traditional Korean dishes, the systematic replacement of foreign food customs with state-promoted alternatives, and the symbolic role of meals in North Korean festivals like the Choson Festival. Your research includes how the regime regulates food consumption, the adaptation of traditional recipes to align with ideological messaging, and the limited influence of external culinary traditions despite strict cultural isolation policies.","North Korea's state ideology, Juche, emphasizes Korean culture and rejects foreign religious holidays like Christmas. The regime does not promote or recognize Christmas, and traditional Korean cuisine does not include dishes specifically tied to this holiday.",,
+Al-en-36,What food is associated with Halloween in North Korea?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What food is associated with Halloween in North Korea?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no specific food associated with Halloween in North Korea."", ""reasoning"": ""Halloween is not a traditional or widely recognized holiday in North Korea, and the country does not have cultural or culinary practices specifically tied to this occasion.""}",inst-6,4,"You are a cultural and culinary expert specializing in North Korean traditions, with deep knowledge of the country","Halloween is not a traditional or widely recognized holiday in North Korea, and the country does not have cultural or culinary practices specifically tied to this occasion.",,

@@ -3,6 +3,7 @@
 import os
 import torch
 import gc
+from functools import partial
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from openai import OpenAI
@@ -73,40 +74,39 @@ def llama_3_8b_instruct_generate(llm_instance, messages, max_tokens=1024, enable
     output = llm_instance.chat(messages, SAMPLING_PARAMS)
     return None, output[0].outputs[0].text
 
-def qwen_3_14b_generate(llm_instance=None, messages=None, max_tokens=4906, enable_thinking_bool=True):
+# SGLang server ports per Qwen3 model
+QWEN3_SGLANG_PORTS = {"Qwen/Qwen3-14B": 30001, "Qwen/Qwen3-32B": 30002}
+
+
+def qwen_3_sglang_generate(
+    llm_instance=None,
+    messages=None,
+    max_tokens=4906,
+    enable_thinking_bool=False,
+    model="Qwen/Qwen3-32B",
+):
     """
     Get response from SGLang server using OpenAI-compatible API.
     Returns (thinking_content, response) to match other generate_text_funcs.
-    SGLang with reasoning parser returns reasoning_content and content separately.
     """
     client = OpenAI(
-        base_url="http://34.126.87.212:30001/v1",
-        api_key="EMPTY"
+        base_url=f"http://34.126.87.212:{QWEN3_SGLANG_PORTS[model]}/v1",
+        api_key="EMPTY",
     )
-    
-    n_try = 0
-    max_try = 10
     thinking_content = None
     content = None
-    while True:
-        if n_try == max_try:
-            print("Error: Failed to generate response")
-            break
+    for n_try in range(10):
         try:
             time.sleep(0.5)
             resp = client.chat.completions.create(
-                model="Qwen/Qwen3-14B",
+                model=model,
                 messages=messages,
                 temperature=0.6,
                 top_p=1,
                 max_tokens=max_tokens,
                 extra_body={"enable_thinking": enable_thinking_bool},
             )
-            msg = resp.choices[0].message
-            content = (msg.content or "").strip()
-            # SGLang returns reasoning in a separate field when enable_thinking=True
-            if getattr(msg, "reasoning_content", None):
-                thinking_content = (msg.reasoning_content or "").strip()
+            content = (resp.choices[0].message.content or "").strip()
             break
         except KeyboardInterrupt:
             raise Exception("KeyboardInterrupted!")
@@ -114,17 +114,24 @@ def qwen_3_14b_generate(llm_instance=None, messages=None, max_tokens=4906, enabl
             print(f"Exception: {e}")
             print("Sleep for 10 sec, then retry...")
             time.sleep(10)
-            n_try += 1
-            continue
+    else:
+        print("Error: Failed to generate response")
 
     if content is None:
-        content = ""
+        return None, ""
+    if not enable_thinking_bool:
+        return None, content
+    if content.startswith("<think>"):
+        i = content.find("</think>")
+        if i != -1:
+            thinking_content, content = content[7:i].strip(), content[i + 8:].strip()
     return (thinking_content, content)
 
 generate_text_funcs = {
    "Qwen/Qwen3-4B": qwen3_4b_generate_thinking,
    "meta-llama/Meta-Llama-3-8B-Instruct": llama_3_8b_instruct_generate,
-   "Qwen/Qwen3-14B": qwen_3_14b_generate,
+   "Qwen/Qwen3-14B": partial(qwen_3_sglang_generate, model="Qwen/Qwen3-14B"),
+   "Qwen/Qwen3-32B": partial(qwen_3_sglang_generate, model="Qwen/Qwen3-32B"),
 }
 
 def get_llm():

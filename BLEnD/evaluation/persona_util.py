@@ -40,6 +40,7 @@ persona_refine_prompt_saq = (
    "3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n"
    "4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n"
    "5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n"
+   "6. The persona must be an expert in the entire domain of the topic, not narrowly focused on a single sub-fact or entity, and must maintain a neutral, balanced perspective capable of fairly weighing competing viewpoints without built-in preferences or biases."
 )
 
 persona_refine_prompt_mcq = (

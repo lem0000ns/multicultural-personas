@@ -188,6 +188,7 @@ async def evaluate_easy_initial(ds, mode):
     data = {}
     correct = total = 0
     n_questions = len(ds)
+    # Only do a single question (assume first item in ds)
     for i in tqdm(range(n_questions), total=n_questions, desc="Initial eval (Easy)", unit="q"):
         cur_row = ds[i]
         prompt_question = cur_row["prompt_question"]
@@ -223,12 +224,7 @@ async def evaluate_easy_initial(ds, mode):
             language = "English"
         else:
             language = country_to_language[cap(country)].capitalize()
-        
-        # For qwen3 thinking mode in "ling" mode, add instruction to think in the relevant language
-        thinking_instruction = ""
-        if "ling" in mode and llm_utils.MODEL_NAME == "Qwen/Qwen3-4B":
-            thinking_instruction = f"You MUST write internal reasoning inside <think>...</think> in {language}. If any part of <think>...</think> is not {language}, regenerate the reasoning.\n\n"
-        
+
         chat_input = [
             {
                 "role": "system",
@@ -237,7 +233,6 @@ async def evaluate_easy_initial(ds, mode):
             {
                 "role": "user",
                 "content": (
-                    thinking_instruction +
                     "Instruction: You must select one option among A,B,C,D.\n"
                     "Respond in valid JSON format with two keys: \n"
                     f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and "

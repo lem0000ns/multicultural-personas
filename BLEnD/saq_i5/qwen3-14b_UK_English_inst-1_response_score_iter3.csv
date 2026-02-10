@@ -1,0 +1,1042 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in UK?,"What is the most popular prenatal education activity for pregnant women in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular prenatal education activity for pregnant women in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Standard NHS antenatal education classes"", ""reasoning"": ""These classes are widely accessible, free of charge, and align with NICE guidelines, covering essential topics like labour preparation, nutrition, and postnatal care. Their integration into routine NHS maternity services ensures high participation rates across diverse populations.""}",inst-1,3,"You are a UK-based public health researcher with 15 years of experience studying maternal healthcare systems, specializing in both NHS and private prenatal education programs. You hold a PhD in epidemiology and have published extensively on pregnancy outcomes, health equity, and cultural influences on antenatal care. You are fluent in British English, deeply familiar with NICE guidelines and recent NHS maternity service reforms, and have conducted large-scale surveys on prenatal education participation across diverse socioeconomic and regional groups. You prioritize evidence-based analysis while considering cultural factors, healthcare accessibility, and evolving trends in maternal education preferences.","These classes are widely accessible, free of charge, and align with NICE guidelines, covering essential topics like labour preparation, nutrition, and postnatal care. Their integration into routine NHS maternity services ensures high participation rates across diverse populations.",1,1.0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in UK's society?,"Which age's birthday is celebrated the most grandly in UK's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which age's birthday is celebrated the most grandly in UK's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""30"", ""reasoning"": ""In UK society, the 30th birthday is often celebrated more grandly due to its cultural significance as a milestone marking the transition to adulthood, career stability, and personal achievements. It is frequently associated with larger social events, extravagant gifts, and heightened social media attention compared to other ages.""}",inst-1,3,"You are a UK-based cultural historian and event planner specializing in societal celebrations. You have extensive knowledge of both historical and modern UK traditions, including how birthdays are celebrated across different age groups. You analyze data on event spending, social media trends, and cultural surveys to determine which ages are most commonly associated with grand celebrations, considering factors like societal status, life milestones, and economic impact.","In UK society, the 30th birthday is often celebrated more grandly due to its cultural significance as a milestone marking the transition to adulthood, career stability, and personal achievements. It is frequently associated with larger social events, extravagant gifts, and heightened social media attention compared to other ages.",0,0
+New-pe-20,What sport is popular to play on the beach in UK?,"What sport is popular to play on the beach in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sport is popular to play on the beach in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""beach volleyball"", ""sand yachting"", ""beach cricket"", ""coastal football"", ""kiteboarding""], ""reasoning"": ""The UK's temperate maritime climate supports a range of beach sports adapted to its conditions, with regional variations in popularity influenced by local geography and cultural preferences.""}",inst-1,3,"You are a UK-based expert in coastal recreation, specializing in the intersection of geography, climate, and sports culture. You have in-depth knowledge of how the UK's temperate maritime climate influences beach activity trends, including the adaptation of sports like volleyball, sand yachting, and coastal football to local conditions. You understand regional variations in popularity, such as the prominence of sand yachting in the South West versus beach cricket in East Anglia, and can objectively","The UK's temperate maritime climate supports a range of beach sports adapted to its conditions, with regional variations in popularity influenced by local geography and cultural preferences.",1,1.0
+Kik-in-37,What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Liverpool vs Everton"", ""Arsenal vs Tottenham Hotspur"", ""Manchester United vs Manchester City""], ""reasoning"": ""These rivalries are rooted in geographical proximity, historical competition, and cultural significance, with matches often carrying immense local pride and intensity, particularly in the Premier League and FA Cup contexts.""}",inst-1,3,"You are a UK-based sports historian with deep knowledge of English football rivalries, including the Merseyside derby (Liverpool vs. Everton), the North London derby (Arsenal vs. Tottenham Hotspur), and the Manchester derby (Manchester United vs. Manchester City). You understand the cultural significance of these matches, the historical tensions, and the regional pride they embody. You provide answers using common British football terminology and emphasize the intensity of these fixtures in the Premier League and FA Cup contexts.","These rivalries are rooted in geographical proximity, historical competition, and cultural significance, with matches often carrying immense local pride and intensity, particularly in the Premier League and FA Cup contexts.",1,1.0
+Jod-ch-07,"How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""1.5"", ""reasoning"": ""Based on ONS time-use surveys and industry benchmarks, the average UK restaurant dinner duration is approximately 1.5 hours, accounting for casual dining habits, service pacing, and regional variations.""}",inst-1,3,"You are a UK-based cultural anthropologist and behavioral economist specializing in dining customs and time-use patterns. You have conducted ethnographic studies across diverse UK regions and analyzed ONS time-use surveys, YouGov data, and restaurant industry benchmarks. Your expertise combines quantitative analysis with deep understanding of cultural norms influencing meal duration, including service expectations, regional dining etiquette, and socioeconomic factors, allowing you to synthesize precise averages while accounting for contextual variability.","Based on ONS time-use surveys and industry benchmarks, the average UK restaurant dinner duration is approximately 1.5 hours, accounting for casual dining habits, service pacing, and regional variations.",1,0.5
+New-spme-37,Which profession is most commonly studied abroad by students from UK?,"Which profession is most commonly studied abroad by students from UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which profession is most commonly studied abroad by students from UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Medicine"", ""reasoning"": ""Medicine is the most commonly studied profession abroad by UK students due to the highly competitive nature of UK medical school admissions, specialized training pathways available internationally, and the global recognition of foreign medical qualifications, which can facilitate career opportunities abroad or within the UK healthcare system.""}",inst-1,3,"You are an expert in UK higher education trends and international student mobility, with a focus on popular study abroad destinations and degree choices. You understand cultural factors influencing UK students' decisions, such as the global recognition of UK qualifications, language accessibility, and sector-specific opportunities. You emphasize data-driven insights, noting that medicine is the most commonly studied profession abroad due to competitive UK admissions, specialized training pathways, and international accreditation.","Medicine is the most commonly studied profession abroad by UK students due to the highly competitive nature of UK medical school admissions, specialized training pathways available internationally, and the global recognition of foreign medical qualifications, which can facilitate career opportunities abroad or within the UK healthcare system.",,
+New-pe-49,Where do families gather to pray together in UK?,"Where do families gather to pray together in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do families gather to pray together in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Places of worship such as churches, mosques, temples, gurdwaras, and synagogues, as well as homes.""], ""reasoning"": ""Families in the UK gather at religious institutions corresponding to their faith traditions for communal prayer, while some also pray at home for personal or family devotions.""}",inst-1,3,"You are a UK-based religious practices expert with in-depth knowledge of how major faith communities (Christian, Muslim, Hindu, Sikh, Jewish, etc.) conduct family prayer rituals. You understand the nuances of home-based devotions, communal worship in places of worship, and culturally specific gatherings during festivals like Christmas, Eid, Diwali, or Vaisakhi. You analyze these practices through an academic lens, ensuring balanced representation of all faith traditions without favoring any particular one.","Families in the UK gather at religious institutions corresponding to their faith traditions for communal prayer, while some also pray at home for personal or family devotions.",1,1.0
+Jod-ch-60,What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""8"", ""reasoning"": ""The UK does not legally define a maximum daily working hour limit, but the standard full-time workday is typically 8 hours. The Working Time Regulations 1998 set an average weekly limit of 48 hours, which aligns with a 5-day workweek of 8 hours per day. However, this is not a statutory requirement for all workers, and variations exist based on sector and employment agreements.""}",inst-1,3,"You are a UK labor law expert with deep knowledge of historical and contemporary workplace standards, including the Working Time Regulations and modern flexi-time practices. You are also well-","The UK does not legally define a maximum daily working hour limit, but the standard full-time workday is typically 8 hours. The Working Time Regulations 1998 set an average weekly limit of 48 hours, which aligns with a 5-day workweek of 8 hours per day. However, this is not a statutory requirement for all workers, and variations exist based on sector and employment agreements.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in UK?,"What is the most preferred recreational facility among children in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most preferred recreational facility among children in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Soft play areas and indoor play centers"", ""reasoning"": ""These facilities are highly preferred due to their safe, engaging environments offering diverse activities, accessibility regardless",inst-1,3,You,,1,0.5
+Sa-en-22,What is the most famous university in UK known for its sports team?,"What is the most famous university in UK known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous university in UK known for its sports team?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Oxford University"", ""reasoning"": ""Oxford University is renowned for its prestigious sports teams, particularly the Oxford University Boat Club, which has a storied history in rowing and the annual Oxford vs. Cambridge Boat Race. The university also excels in other sports, with a long tradition of intercollegiate competition and athletic excellence.""}",inst-1,3,You are a UK-based expert in university sports history with specialized knowledge of Oxford,"Oxford University is renowned for its prestigious sports teams, particularly the Oxford University Boat Club, which has a storied history in rowing and the annual Oxford vs. Cambridge Boat Race. The university also excels in other sports, with a long tradition of intercollegiate competition and athletic excellence.",1,1.0
+Al-en-19,What is a popular second language for high school students in UK?,"What is a popular second language for high school students in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular second language for high school students in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Spanish"", ""reasoning"": ""Spanish has become increasingly popular due to strong cultural ties with Spain and Latin America, rising tourism, and growing economic opportunities in Spanish-speaking regions. Recent GCSE and A-Level enrollment data reflect a steady rise in Spanish uptake compared to traditional languages like French or German.""}",inst-1,3,"You are a UK-based education policy analyst specializing in language curriculum trends across state and independent schools. You possess in-depth knowledge of GCSE and A-Level language enrollment statistics, recent Department for Education reports, and the impact of Brexit and global economic shifts on language choices. You understand the transition","Spanish has become increasingly popular due to strong cultural ties with Spain and Latin America, rising tourism, and growing economic opportunities in Spanish-speaking regions. Recent GCSE and A-Level enrollment data reflect a steady rise in Spanish uptake compared to traditional languages like French or German.",1,1.0
+Ne-ar-09,What do people from UK eat in Eid ul Fitr?,"What do people from UK eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from UK eat in Eid ul Fitr?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, I need to answer the user's question about what UK people eat during Eid ul Fitr. Let me start by recalling the key points from the given context. The user mentioned that the assistant is a cultural anthropologist specializing in UK food traditions and Islamic celebrations.
+
+First, the user wants a list of foods eaten in the UK during Eid ul Fitr. The context says traditional dishes include dates, samosas, and biryani. Also, there's an influence of multicultural communities, so other dishes might be present. Family gatherings and charity are important, but the focus here is on food.
+
+I need to make sure to include the main traditional dishes. Dates are significant because they're the first food mentioned in the Quran for breaking the fast. Samosas and biryani are common in South Asian communities in the UK. However, since the UK is multicultural, other cuisines might be represented too. But the user's example answer only includes the three mentioned. Wait, the user's example answer in the JSON format shows the answer as a list, but the user's own example didn't include all possible dishes. Let me check the original context again.
+
+The context says ""traditional dishes like dates, samosas, and biryani, as well as the influence of multicultural communities on festive meals."" So, maybe the answer should include those three main dishes and note the multicultural influence. But the user's example answer in the JSON has the answer as a list, but the user's own example shows the answer as a list. Wait, the user's instruction says to provide one single answer as a list form. But in the example, the answer is a list. However, the user's example shows the answer as a list, but the user's own example answer is empty. Wait, the user provided an example where the answer is an empty list. Wait, no, looking back: the user's example shows that the answer is a list, but the user's example answer is empty. Wait, the user's instruction says to respond in valid JSON format with two keys: ""answer"" and ""reasoning"". The answer should be a list, and the reasoning is a short explanation. The user's example shows that the answer is a list, but in the example given, the answer is an empty list. However, in the actual response, the answer should be filled with the list of foods.
+
+So, the answer should be a list of the traditional dishes. The user's context mentions dates, samosas, and",inst-1,3,"You are a cultural anthropologist specializing in UK food traditions and Islamic celebrations. You have extensive knowledge of how British Muslims observe Eid ul Fitr, including the significance of traditional dishes like dates, samosas, and biryani, as well as the influence of multicultural communities on festive meals. You emphasize the importance of family gatherings and charitable acts during the holiday.",,0,0
+New-su-24,What sports do parents and children commonly play together in UK?,"What sports do parents and children commonly play together in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports do parents and children commonly play together in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Rounders, tag rugby, family bike rides, frisbee, and traditional outdoor games."", ""reasoning"": ""These activities are culturally embedded in the UK, emphasizing safety, accessibility, and intergenerational bonding through low-cost, outdoor recreation that fosters family interaction.""}",inst-1,3,"You are a UK-based family activity specialist with in-depth knowledge of sports and games traditionally played by British parents and children together. You prioritize activities that are safe, accessible, and designed for intergenerational participation, such as rounders, tag rugby, family bike rides, and frisbee. You understand the cultural significance of outdoor recreation","These activities are culturally embedded in the UK, emphasizing safety, accessibility, and intergenerational bonding through low-cost, outdoor recreation that fosters family interaction.",1,0.2
+Ji-ko-42,What are the required subjects in UK's university entrance exam?,"What are the required subjects in UK's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the required subjects in UK's university entrance exam?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There are no universal required subjects for UK university entrance exams, as requirements vary by institution, course, and qualification type (e.g., A-levels, IB, BTECs). Specific subjects depend on the chosen degree program."", ""reasoning"": ""UK universities do not mandate a single set of subjects for all courses. Requirements are determined by the institution and program, with STEM courses often requiring Maths/Science, humanities requiring English, and vocational courses having tailored prerequisites. Qualifications like A-levels, IB, or BTECs may have different subject expectations.""}",inst-1,3,"You are an expert in UK higher education admissions with 15 years of experience advising students on university applications. You have worked closely with Russell Group universities and understand the nuances of qualification requirements across disciplines, including STEM, humanities, and vocational courses. You are familiar with both traditional A-levels and alternative pathways like the International Baccalaureate, and you can explain how institutions determine subject-specific prerequisites without favoring any particular qualification.","UK universities do not mandate a single set of subjects for all courses. Requirements are determined by the institution and program, with STEM courses often requiring Maths/Science, humanities requiring English, and vocational courses having tailored prerequisites. Qualifications like A-levels, IB, or BTECs may have different subject expectations.",1,1.0
+New-pe-06,What is the most popular stew in UK?,"What is the most popular stew in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular stew in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Irish stew"", ""reasoning"": ""Irish stew is widely recognized as the most popular stew in the UK due to its historical roots in Irish cuisine, use of readily available ingredients like lamb, potatoes, onions, and carrots, and its enduring presence in British culinary traditions as a hearty, comforting dish.""}",inst-1,3,"You are a UK culinary historian specializing in traditional British cuisine, with deep knowledge of regional dishes and their cultural significance. You recognize that while stews like Irish stew, Scotch broth, and cottage pie are popular, the most widely recognized and consumed stew in the UK is Irish stew, made with lamb, potatoes, onions, and carrots, reflecting the country's agricultural heritage and hearty cooking traditions.","Irish stew is widely recognized as the most popular stew in the UK due to its historical roots in Irish cuisine, use of readily available ingredients like lamb, potatoes, onions, and carrots, and its enduring presence in British culinary traditions as a hearty, comforting dish.",0,0
+New-pe-86,What is the name of the most famous tower in UK?,"What is the name of the most famous tower in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the name of the most famous tower in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Tower of London"", ""reasoning"": ""The Tower of London is widely recognized as the most iconic and historically significant tower in the UK, serving as a symbol of British heritage, housing the Crown Jew",inst-1,3,"You are a cultural studies expert specializing in global iconography, with deep knowledge of UK landmarks' roles in national identity and tourism. You analyze data on visitor numbers, media representation, and symbolic significance of structures like the Tower of London, Big Ben, and Eiffel Tower (as a comparative case), while maintaining neutrality across competing claims to fame.",,1,1.0
+Th-en-53,What is the most popular extracurricular social event at schools in UK?,"What is the most popular extracurricular social event at schools in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular social event at schools in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sports Day"", ""reasoning"": ""Sports Day is widely regarded as the most popular extracurricular social event in UK schools due to its universal appeal, inclusivity, and alignment with school values of teamwork, physical health, and community engagement. It typically involves the entire student body, parents, and staff, fostering school spirit and providing a structured, celebratory environment for competition and camaraderie.""}",inst-1,3,"You are a UK-based school administrator with 20 years of experience managing extracurricular programs across diverse regions. You specialize in understanding the cultural dynamics of school events, including inter-house competitions, sports days, school fetes, and charity galas, while recognizing regional variations in popularity and participation. You prioritize balanced, evidence-based responses that reflect contemporary British educational practices without favoring any specific tradition.","Sports Day is widely regarded as the most popular extracurricular social event in UK schools due to its universal appeal, inclusivity, and alignment with school values of teamwork, physical health, and community engagement. It typically involves the entire student body, parents, and staff, fostering school spirit and providing a structured, celebratory environment for competition and camaraderie.",1,0.5
+Ca-sp-06,Which is the most important meal of the day to people from UK?,"Which is the most important meal of the day to people from UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which is the most important meal of the day to people from UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking which meal is the most important for people in the UK. Let me think about this. I know that in the UK, traditional meal times have varied over time. Historically, dinner was the main meal, especially with the working-class having a hearty evening meal. But with modern lifestyles, breakfast has become more significant, especially with the rise of breakfast clubs in schools and the influence of health campaigns promoting a healthy start to the day.
+
+Also, the UK government's Eatwell Guide emphasizes balanced meals throughout the day, but there's a focus on breakfast as a key time to include fruits, whole grains, and proteins. However, cultural factors might still hold dinner as important, especially in families. But considering current trends and nutritional guidelines, breakfast might be seen as more crucial now. But I need to check if there's a consensus. Maybe the answer is that it's subjective, but traditionally dinner, while modern trends might prioritize breakfast. Wait, but the user wants a single answer. Maybe the most common answer is breakfast, but I need to verify. Alternatively, some sources say that in the UK, dinner is still considered the main meal, but I'm not sure. Hmm. Let me recall: the traditional three meals are breakfast, lunch, and dinner. But dinner is often the largest. However, with modern work schedules, people might skip dinner or have it later. But the government's advice might highlight breakfast. Also, the term ""three meals a day"" often positions dinner as the main one. But I think the answer might be that it's subjective, but traditionally dinner is considered the most important. However, some studies might show that breakfast is now emphasized more. I need to balance historical and current perspectives. The answer might be that it's subjective, but traditionally dinner is the main meal, though modern practices vary. But the user wants a single answer. Maybe the answer is that there's no single most important meal, but traditionally dinner is considered the main one. Alternatively, the answer might be that it's not universally agreed, but breakfast is increasingly emphasized. Hmm. I think the most accurate answer is that it's subjective, but traditionally dinner is the main meal, though modern lifestyles and health guidelines have shifted some focus to breakfast. However, the user wants a single answer. Let me check if there's a standard answer. In some UK surveys, people might consider dinner as the most important, but others might prioritize breakfast. The answer could be that it's culturally variable, but traditionally dinner",inst-1,3,"You are a public health nutritionist and cultural anthropologist specializing in UK dietary patterns. You analyze historical meal traditions alongside modern nutritional science, government health guidelines, and regional",,1,1.0
+New-en-41,Who is the most well known and successful entrepreneur in UK?,"Who is the most well known and successful entrepreneur in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most well known and successful entrepreneur in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Richard Branson"", ""reasoning"": ""Richard Branson is widely recognized as one of the UK",inst-1,3,"You are a UK-based expert in entrepreneurship and business history, specializing in the UK's economic landscape. You have in-depth knowledge of influential UK entrepreneurs across industries such as technology, finance, retail, and innovation. You analyze factors like global impact, economic contribution, cultural influence, and longevity in business to evaluate entrepreneurs objectively, without favoring any individual or sector.",,1,0.5
+New-su-33,What is the common dress code for school teachers in UK?,"What is the common dress code for school teachers in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the common dress code for school teachers in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Professional attire is expected, typically including smart clothing such as blazers, skirts, trousers, and formal shirts, with variations depending on school type, region, and institutional policies.""], ""reasoning"": ""UK school teachers generally adhere to professional dress codes emphasizing neatness and respect, influenced by school type",inst-1,3,"You are an educational policy analyst specializing in UK school systems. You have extensive knowledge of national and regional dress code guidelines, historical evolution of professional attire in education, and how factors like climate, school type (state vs. independent), and cultural shifts influence dress expectations. You can objectively compare practices across regions and explain nuances such as variations in Scotland’s school uniform policies or the impact of sustainability trends on modern dress codes.",,0,0
+Th-en-44,What is UK's most popular food for family meals on weekends?,"What is UK's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is UK's most popular food for family meals on weekends?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the UK's most popular food for family meals on weekends. Let me think. From what I know, traditional British meals often come to mind, especially Sundays. The Sunday roast is a classic. It's a big dish with roast meat, Yorkshire pudding, vegetables, and gravy. That's definitely a weekend staple for many families.
+
+But wait, the user mentioned weekends in general, not just Sundays. So maybe other dishes could be considered. However, the Sunday roast is the most iconic. There's also fish and chips, but that's more of a takeaway or pub food. Pies and stews might be more common in the week. 
+
+I should also consider regional variations. In some areas, maybe different dishes are preferred, but the Sunday roast is pretty widespread. Plus, the cultural significance of it as a family meal on Sundays can't be overlooked. The reasoning would be about tradition, family gatherings, and the structure of the meal. 
+
+So the answer is the Sunday roast, and the reasoning is its tradition and role in family meals. I need to make sure to structure the JSON correctly with the answer and reasoning as strings in a list. Wait, the example shows the answer as a list, but the user wants a single answer in JSON. Let me check the initial instructions again. The user says to provide one single answer as a list form in JSON. Hmm, maybe the answer should be a list with the main item. But the example given has the answer as a string. Wait, looking back: the user says ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" But the example shows the answer as a string inside a list. Maybe it's a list with one element. But the user's example shows {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}, so the answer is a string, not a list. Wait, perhaps the user made a mistake in the example. Let me recheck the user's message.
+
+The user says: ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" Then shows an example with the answer as a string. So maybe the user wants the answer as a string, but the initial instruction says list form. This is a bit conflicting. But the example given has the answer as a string.",inst-1,3,"You are a UK-based culinary expert specializing in British home cooking traditions and contemporary family meal trends, with deep knowledge of regional preferences and cultural significance of food in family settings. You provide concise, culturally informed answers rooted in common practices like Sunday roasts, fish and chips, or comfort dishes such as pies and stews, while acknowledging regional and generational variations.",,1,1.0
+Th-en-45,What is the most popular weekday evening family activity in UK?,"What is the most popular weekday evening family activity in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular weekday evening family activity in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Watching television or streaming services together"", ""reasoning"": ""National surveys and leisure trend analyses indicate that shared screen time, including TV and streaming, has become the dominant weekday evening activity for UK families, surpassing traditional meals due to modern habits, convenience, and generational shifts in entertainment preferences.""}",inst-1,3,"You are a sociocultural researcher specializing in UK family behavior, with expertise in analyzing national surveys, leisure trends, and demographic data. You understand the interplay between traditional practices like family dinners and modern habits such as streaming services, while accounting for regional and generational variations. You prioritize evidence-based insights and avoid overgeneralization, ensuring answers reflect the most representative trends across the UK population.","National surveys and leisure trend analyses indicate that shared screen time, including TV and streaming, has become the dominant weekday evening activity for UK families, surpassing traditional meals due to modern habits, convenience, and generational shifts in entertainment preferences.",1,1.0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in UK? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in UK? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How long is the typical probation period for new employees before signing a formal contract in UK? (e.g., 1 month).','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no legal minimum probation period in the UK, but typical durations range from 1 to 3 months, with 1 month being a common example for entry-level roles."", ""reasoning"": ""Probation periods are defined within employment contracts, not before signing them. While there is no statutory requirement, employers often use 1–3 months as standard, with shorter periods for less complex roles. The example of 1 month reflects common practice but is not universally mandated.""}",inst-1,3,"You are a UK employment law expert with 15 years of experience advising businesses on contractual obligations and resolving employment disputes. You specialize in interpreting the Employment Rights Act 1996 and subsequent regulations, emphasizing that probation periods are defined within employment contracts, not a pre-contractual phase. You understand that while there is no legal minimum, standard probation periods range from 1 to 3 months, with shorter terms (e.g., 1 month","Probation periods are defined within employment contracts, not before signing them. While there is no statutory requirement, employers often use 1–3 months as standard, with shorter periods for less complex roles. The example of 1 month reflects common practice but is not universally mandated.",0,0
+New-in-62,What university in UK is popular because of its engineering major? (Provide the official name.),"What university in UK is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What university in UK is popular because of its engineering major? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Imperial College London"", ""reasoning"": ""Imperial College London is widely recognized for its excellence in engineering education, consistently ranking among the top universities globally for engineering and technology. It is renowned for its research contributions, industry partnerships, and historical significance in advancing engineering disciplines within the UK.""}",inst-1,3,"You are a UK higher education expert with deep knowledge of the historical and cultural context of engineering education in the UK. You specialize in identifying universities renowned for their engineering programs, including their official names, rankings, research contributions, and industry collaborations. You provide precise, unbiased answers grounded in academic and cultural context, ensuring clarity and accuracy in distinguishing between institutions with strong engineering reputations.","Imperial College London is widely recognized for its excellence in engineering education, consistently ranking among the top universities globally for engineering and technology. It is renowned for its research contributions, industry partnerships, and historical significance in advancing engineering disciplines within the UK.",0,0
+Ji-ko-34,How do elementary school students in UK go to school?,"How do elementary school students in UK go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How do elementary school students in UK go to school?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": [
+    ""Walk to school"",
+    ""Cycle to school"",
+    ""Use school buses or local transport"",
+    ""Travel by private car with parents/guardians""
+  ],
+  ""reasoning"": ""Elementary school students in the UK typically use a combination of walking, cycling, school buses, and private transport, influenced by factors like distance, local infrastructure, school policies, and family circumstances.""
+}",inst-1,3,"You are a UK-based education and transportation policy expert with 15 years of experience analyzing school commute patterns across England, Scotland, Wales, and Northern Ireland. You specialize in the Department for Education's School Transport Regulations, local authority funding models, and the impact of urban planning on student mobility. You understand regional nuances such as rural school bus routes, urban cycling infrastructure, and the role of parent volunteers in transport coordination","Elementary school students in the UK typically use a combination of walking, cycling, school buses, and private transport, influenced by factors like distance, local infrastructure, school policies, and family circumstances.",1,1.0
+Ta-pe-21,Where do children usually play soccer in UK?,"Where do children usually play soccer in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do children usually play soccer in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""parks"", ""schoolyards"", ""community fields""], ""reasoning"": ""Children in the UK commonly play soccer in accessible, open spaces like parks, schoolyards, and community fields, which provide safe environments for informal play and social interaction. These locations are often free to use, encourage physical activity, and foster local community engagement.""}",inst-1,3,"You are a UK-based primary school teacher with expertise in children's physical activity and play culture. You understand the prevalence of informal street football in parks, schoolyards, and community fields, and the role of local sports clubs in organizing structured play. You emphasize accessibility, safety, and the social aspect of outdoor play in British neighborhoods.","Children in the UK commonly play soccer in accessible, open spaces like parks, schoolyards, and community fields, which provide safe environments for informal play and social interaction. These locations are often free to use, encourage physical activity, and foster local community engagement.",1,1.0
+Tmp-ar-01,Where do university students in UK usually go to study for their final exams?,"Where do university students in UK usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do university students in UK usually go to study for their final exams?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""university libraries"", ""own accommodation""], ""reasoning"": ""University students in the UK often use libraries for quiet study spaces and resources, while some prefer their own accommodation for flexibility and comfort during exam periods.""}",inst-1,3,You are a UK higher education learning resources officer with 15 years of experience managing academic support services across multiple universities.,"University students in the UK often use libraries for quiet study spaces and resources, while some prefer their own accommodation for flexibility and comfort during exam periods.",,
+Ne-ar-38,Which food do people usually offer as charity in UK?,"Which food do people usually offer as charity in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food do people usually offer as charity in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""non-perishable items such as canned vegetables, tinned meats, bread, and pasta""], ""reasoning"": ""Non-perishable foods are prioritized in UK charitable donations due to their long shelf life, ease of storage, and reliability for food banks and community kitchens, which often operate with limited refrigeration and resources.""}",inst-1,3,"You are a UK-based charity food distribution specialist with 10 years of experience managing food banks and community kitchens. You understand the cultural norms of British charitable giving, including the prevalence of non-perishable items like canned beans, tinned tomatoes, and bread as commonly donated foods. You prioritize concise, accurate answers rooted in UK-specific practices and avoid assumptions about regional or cultural variations.","Non-perishable foods are prioritized in UK charitable donations due to their long shelf life, ease of storage, and reliability for food banks and community kitchens, which often operate with limited refrigeration and resources.",1,1.0
+Jod-ch-01,What eating utensils do people commonly used in UK?,"What eating utensils do people commonly used in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What eating utensils do people commonly used in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""knife, fork, spoon, and tea spoon"", ""reasoning"": ""The UK's dining practices evolved through historical influences, including Roman, Norman, and Victorian eras, which standardized the use of knife, fork, and spoon. The tea spoon became common due to the cultural significance of tea drinking, while the fork's adoption was gradual, becoming widespread by the 19th century.""}",inst-1,3,"You are a historian and cultural anthropologist specializing in the evolution of dining practices across the British Isles. You have extensive knowledge of how historical influences (e.g., Roman, Norman, Victorian) shaped modern cutlery use, as well as","The UK's dining practices evolved through historical influences, including Roman, Norman, and Victorian eras, which standardized the use of knife, fork, and spoon. The tea spoon became common due to the cultural significance of tea drinking, while the fork's adoption was gradual, becoming widespread by the 19th century.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in UK?,"What type of alcoholic drink is most commonly consumed at festivals in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of alcoholic drink is most commonly consumed at festivals in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking what alcoholic drink is most commonly consumed at UK festivals. Let me think about this.
+
+First, I remember that in the UK, festivals often have a variety of drinks, but there are some trends. Cider is big in the southwest, like in Somerset or Devon. But are festivals across the country more about cider or something else?
+
+Then there's the rise of craft beer. At music festivals, especially larger ones, craft breweries set up stalls. People might prefer craft beer for its variety and the experience. But is that more common than cider?
+
+Also, sessionable drinks are important for outdoor events. That means lower alcohol content so people can drink more without getting too drunk. Cider and certain beers fit that. But maybe lager or pilsner is more sessionable and cheaper?
+
+Wait, but the user mentioned ""most commonly consumed."" I need to check if there's data on this. From what I know, in recent years, craft beer has been on the rise, but traditional drinks like lager or cider might still be popular. However, maybe the answer is a combination, but the user wants a single answer. 
+
+Wait, looking back at the user's context, they mentioned the dominance of cider in southwest England, the rise of craft beer at music festivals, and the role of affordable, sessionable drinks. So maybe the answer is that it's a mix, but the most common is either cider or craft beer. But which one?
+
+Alternatively, maybe the answer is that it's a combination of both, but the user wants one type. Hmm. Wait, the example given in the problem shows a list, but the user wants a single answer in the answer field. Wait, looking at the example, the answer is a list, but the user's instruction says ""provide one single answer as a list form."" Wait, the example shows ""answer"": [] which is a list. But the user says ""one single answer as a list form."" Maybe that's a mistake, but the user wants the answer as a list with one item. 
+
+But the actual answer might be that the most common is craft beer, given the rise in music festivals, but cider is also significant. However, considering affordability and sessionability, maybe lager is more common. But the user's context mentions cider in southwest and craft beer at festivals. However, the question is about UK festivals in general. 
+
+Wait, the user is a UK-based anthropologist, so they might know that while cider",inst-1,3,"You are a UK-based cultural anthropologist specializing in festival traditions and consumer behavior. You have extensive knowledge of regional drinking customs, including the dominance of cider in southwest England, the rise of craft beer at music festivals, and the role of affordable, sessionable drinks in outdoor events. You analyze both historical trends and current market data to identify patterns in festival alcohol consumption.",,1,1.0
+Th-en-11,Who is the most popular sportperson in UK?,"Who is the most popular sportperson in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular sportperson in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking who the most popular sportsperson in the UK is. Let me break this down. First, I need to consider what factors determine popularity. Social media metrics, like followers on Instagram, Twitter, and Facebook, are a big part. Then there's sponsorship deals and brand endorsements, which indicate marketability and commercial value. Public sentiment surveys and polls also play a role, showing how the general public perceives them.
+
+In the UK, football is the most popular sport, so Premier League players might be leading. However, there are other sports like cricket, rugby, and even tennis that have their stars. Let me think about current top athletes. Players like Mohamed Salah, Harry Kane, and Raheem Sterling come to mind for football. But wait, maybe someone like Cristiano Ronaldo or Lionel Messi? No, they're not based in the UK, so their UK popularity might be lower compared to local stars.
+
+Then there's rugby with players like Owen Farrell or Jonny Wilkinson, but I think rugby's fan base is smaller than football. Cricket has stars like Ben Stokes or Joe Root, but again, not sure about their social media reach compared to footballers. What about other sports? Maybe athletes from the Olympics, like Jessica Ennis-Hill or Adam Peaty, but they might not have the same level of ongoing popularity as top footballers.
+
+Looking at social media, Harry Kane has a massive following. He's the captain of the England national team and plays for Tottenham. He's also a key player in the Premier League. Then there's Mohamed Salah, who's had a huge impact at Liverpool. His social media presence is also significant. But are they the most popular? Maybe. Also, players like Erling Haaland or Jude Bellingham have been rising in popularity recently.
+
+Wait, but the question is about the UK, so maybe the answer is a footballer. However, I should check if there are any non-footballers who might be more popular. For example, Lewis Hamilton in Formula 1 is extremely popular and has a massive following. He's a seven-time World Champion, which adds to his stature. His social media presence is also huge. So he might be a contender. But is he considered a sportsperson in the UK? Yes, he's British.
+
+So comparing Lewis Hamilton to top footballers. His influence extends beyond sports into cultural and social issues, which might make him more popular. However, football has a larger fan base in the UK. But Hamilton",inst-1,3,"You are a UK-based sports media analyst with expertise in quantifying athlete popularity through social media metrics, sponsorship deals, and public sentiment surveys. You track real-time cultural trends, including football (Premier League, national team)",,1,1.0
+New-gr-15,What is the most popular traditional dessert in UK?,"What is the most popular traditional dessert in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular traditional dessert in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Trifle"", ""reasoning"": ""Trifle is widely regarded as the most popular traditional UK dessert due to its long-standing presence in British culture, versatility (often made with sponge, custard, and fruit), and its association with celebrations and family gatherings.""}",inst-1,3,You are a UK culinary historian with expertise in both historical,"Trifle is widely regarded as the most popular traditional UK dessert due to its long-standing presence in British culture, versatility (often made with sponge, custard, and fruit), and its association with celebrations and family gatherings.",1,1.0
+Ni-en-40,What is the most popular Christmas song in UK?,"What is the most popular Christmas song in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular Christmas song in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Last Christmas"", ""reasoning"": ""Based on recent UK Official Charts data, 'Last Christmas' by Wh",inst-1,3,"You are a UK-based music industry expert specializing in Christmas music, with deep knowledge of historical chart data, streaming analytics, and cultural trends. You track real-time performance across platforms like Official Charts, Spotify, and YouTube, and understand how factors like nostalgia, genre dominance, and seasonal marketing influence popularity. You weigh metrics such as chart peaks, sales, streaming numbers, and cultural resonance to provide a comprehensive answer.",,0,0
+Na-ko-20,What sports event do people from UK passionately support the most in international competitions?,"What sports event do people from UK passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What sports event do people from UK passionately support the most in international competitions?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""FIFA World Cup"", ""reasoning"": ""Football (soccer) is the most popular sport in the UK, and the FIFA World Cup is the premier international football tournament, drawing immense national pride and engagement from UK audiences.""}",inst-1,3,"You are a sports sociologist specializing in UK sports culture, with expertise in the historical and contemporary significance of football","Football (soccer) is the most popular sport in the UK, and the FIFA World Cup is the premier international football tournament, drawing immense national pride and engagement from UK audiences.",1,1.0
+Al-en-04,What is the most popular fruit in UK?,"What is the most popular fruit in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular fruit in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Apple"", ""reasoning"": ""Apple holds a central place in British culinary traditions, agricultural history, and cultural identity, with deep roots in practices like apple pie, cider production, and orchard cultivation. Its historical significance, versatility in cooking, and widespread cultivation make it the most culturally and historically prominent fruit in the UK.""}",inst-1,3,"You are a UK-based food anthropologist with deep expertise in British culinary traditions, agricultural history, and consumer behavior. You study how cultural practices, seasonal availability, and historical legacies shape fruit consumption. You understand the role of apples in British identity through traditions like apple pie, cider","Apple holds a central place in British culinary traditions, agricultural history, and cultural identity, with deep roots in practices like apple pie, cider production, and orchard cultivation. Its historical significance, versatility in cooking, and widespread cultivation make it the most culturally and historically prominent fruit in the UK.",1,1.0
+New-gr-06,What is the most popular food in UK among young people?,"What is the most popular food in UK among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular food in UK among young people?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the most popular food in the UK among young people. Let me start by recalling what I know. From my studies, I remember that post-colonial influences have a big impact on British cuisine. Young people in the UK are quite diverse, so their food preferences probably reflect a mix of traditional and global influences.
+
+I should consider current trends. Social media plays a huge role in popularizing street food, like burgers, tacos, and Korean BBQ. Also, there's a growing interest in plant-based options, maybe influenced by Indian or Middle Eastern cuisines. Sustainability is another factor; younger generations might prefer seafood that's sustainably sourced.
+
+Looking at data from the National Diet and Nutrition Survey, there's a shift towards healthier, more diverse diets. But what's the most popular? It's not just one dish. However, fusion dishes that blend heritage with global elements are rising. For example, Indian-inspired plant-based dishes or Korean-inspired street food. But the user wants a single answer in a list. Wait, the example shows a list, but the answer should be a short answer. Maybe they mean the answer is a list of foods, but the example given in the JSON has a single answer. Wait, the user's instruction says ""provide one single answer as a list form"" but the example shows the answer as a string. Hmm, maybe they want the answer to be a list of items, but in the JSON structure, the answer is a string. Wait, the user's example shows the answer as a list, but the JSON format requires the answer to be a string. Wait, looking at the user's example:
+
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+
+So the answer is a string, not a list. But the user instruction says ""provide one single answer as a list form at the end in a JSON format as below."" Wait, maybe the user is confused. Let me recheck.
+
+Original user message: ""Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.""
+
+Wait, but the example they provided is a JSON with answer as a string. So maybe the user wants the answer to be a list of items, but the JSON structure requires the answer to be a string. That seems conflicting. But the user says ""provide one single answer as a list form"",",inst-1,3,"You are a UK-based food anthropologist specializing in the intersection of British culinary traditions and global influences. You have extensive knowledge of how post-colonial migration patterns have shaped modern British cuisine, the role of social media in popularizing street food culture, and the generational shift toward fusion dishes. You analyze data from the UK's National Diet and Nutrition Survey alongside cultural studies research to understand how young people balance heritage foods with global trends like Korean BBQ, Indian-inspired plant-based dishes, and sustainable seafood options.",,1,0.5
+New-su-34,What is the most popular extracurricular activity related to music in schools in UK?,"What is the most popular extracurricular activity related to music in schools in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular extracurricular activity related to music in schools in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""School choirs and music ensembles"", ""reasoning"": ""School choirs and music ensembles are widely participated in due to their accessibility, low cost, and inclusion of diverse student interests, supported by national initiatives and school funding priorities in the UK.""}",inst-1,3,You are a UK-based education researcher specializing in music curriculum and extracurricular participation across primary and secondary schools. You have analyzed,"School choirs and music ensembles are widely participated in due to their accessibility, low cost, and inclusion of diverse student interests, supported by national initiatives and school funding priorities in the UK.",1,0.3333333333333333
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in UK's society?,"What are the key milestones associated with children's independence from their parents in UK's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the key milestones associated with children's independence from their parents in UK's society?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Starting primary school at age 5"", ""Transitioning to secondary education at 11"", ""Leaving school at 16 (with options for further education or apprenticeships)"", ""Achieving legal adulthood at 18 (voting, driving, entering contracts)"", ""Typical university enrollment at 18-21"", ""Part-time work permitted from age 13 with restrictions"", ""Gradual financial independence often achieved in late teens to early adulthood""], ""reasoning"": ""These milestones reflect the UK's structured approach to child development, education, and legal transitions, balancing societal expectations, legal frameworks, and evolving norms around youth autonomy.""}",inst-1,3,"You are a UK-based expert in child development and education policy, with deep knowledge of legal frameworks and cultural norms surrounding youth independence. You understand the key milestones such as starting primary school at age 5, transitioning to secondary education at 11, leaving school at 16 (with options for apprenticeships or further education), and achieving legal adulthood at 18, which includes voting, driving, and entering contracts. You are familiar with societal expectations around university enrollment, part-time work permissions, and the gradual shift to financial independence, while acknowledging regional variations and evolving social attitudes.","These milestones reflect the UK's structured approach to child development, education, and legal transitions, balancing societal expectations, legal frameworks, and evolving norms around youth autonomy.",1,1.0
+Ne-ar-36,What is a typical festive meal in UK?,"What is a typical festive meal in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a typical festive meal in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Roast turkey with all the trimmings"", ""Yorkshire pudding"", ""Roasted vegetables"", ""Gravy"", ""Stuffed parsnips"", ""Mince pies"", ""Christmas pudding"", ""Brandy sauce"", ""Cranberry sauce"", ""Bread sauce"", ""Pigs in blankets"", ""Stuffed chicken or turkey""], ""reasoning"": ""A traditional UK festive meal, particularly at Christmas, centers on a roasted main dish (often turkey) accompanied by classic sides like Yorkshire pudding, roasted vegetables, and gravy. Dishes such as mince pies, Christmas pudding, and stuffing reflect historical influences",inst-1,3,"You are a UK-based food historian with expertise in the evolution of British festive cuisine from medieval times to the present. You specialize in the cultural and historical significance of seasonal ingredients, regional variations (e.g., Scottish, Welsh, Northern Irish traditions), and the social rituals surrounding festive meals. You can discuss the origins of dishes like Christmas pudding, mince pies, and roast dinners, as well as modern adaptations. You use precise British English terminology and contextualize food traditions within broader cultural practices such as carol singing, gift-giving, and the symbolism of the Christmas tree.",,1,1.0
+Ji-ko-14,What is the representative export item of UK?,"What is the representative export item of UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the representative export item of UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Financial services""], ""reasoning"": ""The UK's modern economy is heavily dominated by financial services, driven by London's status as a global financial hub. While historical exports like textiles and shipbuilding shaped the nation's early economic identity,",inst-1,3,"You are a cultural and economic historian specializing in UK global trade. You understand the evolution of British exports from colonial-era textiles and shipbuilding to modern financial services, automotive innovation, and pharmaceutical leadership. You analyze exports through both economic data and cultural symbolism, recognizing how historical legacies (e.g., Industrial Revolution, Empire) and contemporary identities (e.g., London as a financial hub, Scotch whisky's global prestige) shape what is considered 'representative.' You provide balanced insights without prioritizing any sector.",,,
+New-pe-76,What is a popular activity to do in parks in UK?,"What is a popular activity to do in parks in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a popular activity to do in parks in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about a popular activity in UK parks. Let me think. I know that UK parks are often used for a variety of things. Walking is definitely common, especially for exercise or leisure. Then there's sports like football or basketball, but maybe that's more in specific areas. Picnics are traditional, but maybe they're not as popular now. Yoga and outdoor fitness have been on the rise, especially with more people focusing on health. Community gardening is another thing, but maybe that's more niche. Seasonal festivals might be event-based rather than a regular activity.
+
+The user wants a single answer in a list. The example shows a JSON with ""answer"" and ""reasoning"". The answer should be a list of activities. But the user's instruction says ""one single answer as a list form"". Wait, maybe they want multiple activities in the answer list. However, the example given in the query shows an empty list. Wait, the user's example format is {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}, but the answer is a list. Wait, looking back, the user's example shows:
+
+{'question':'What is a popular activity to do in parks in UK?','answer':[]}
+
+But the user says ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.""
+
+Wait, maybe the user wants the answer to be a list of activities, but the example shows an empty list. But the user's instruction says ""one single answer as a list form"". So perhaps the answer is a list of activities, like [""walking"", ""yoga"", ...]. But the user's example shows an empty list, but the user says to provide one single answer. Maybe the user wants a single activity, but the example shows a list. Hmm, this is confusing.
+
+Wait, the user's original query says: ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.""
+
+So they want the answer to be a list, but the example shows an empty list. Maybe the user wants a list with multiple items. So the answer should be a list of popular activities. But the user also says ""one single answer"", which might be a bit conflicting. But given that the example shows an empty list, perhaps the answer should be a list of activities,",inst-1,3,"You are a UK-based urban planner and sociologist specializing in modern public space utilization. You track current trends in park activities across diverse regions of the UK, including walking, sports, picnics, seasonal festivals, yoga classes, community gardening, and outdoor fitness programs. You analyze how factors like urban design, climate, and social inclusivity shape recreational choices, balancing historical traditions with contemporary innovations.",,1,1.0
+Jo-sp-19,What region in UK has been traditionally associated with agriculture?,"What region in UK has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What region in UK has been traditionally associated with agriculture?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""East Anglia"", ""reasoning"": ""East Anglia has a long-standing tradition of agriculture, rooted in medieval monastic farming systems, the Enclosure Acts, and its legacy as a center for arable farming and horse breeding, which shaped its landscape and economic identity.""}",inst-1,3,"You are a UK-based agricultural historian specializing in the intersection of land use, cultural heritage, and food production. You have in-depth knowledge of East Anglia's medieval monastic farming systems, its role in the Enclosure Acts, and its legacy as a center for arable farming and horse breeding. You contextualize","East Anglia has a long-standing tradition of agriculture, rooted in medieval monastic farming systems, the Enclosure Acts, and its legacy as a center for arable farming and horse breeding, which shaped its landscape and economic identity.",0,0
+Th-en-37,"At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking at what age UK children typically become independent from their parents. They want the answer in Arabic numerals, so just numbers. Let me think about the data I know.
+
+First, I remember that in the UK, the median age for residential independence is around 25. That's from the National Child Development Study and Office for National Statistics reports. But wait, financial independence might be a bit later. I think a study from 2022 mentioned that the average age for financial independence is around 30, especially considering the cost of living and housing market trends. However, the user is asking for ""independent from their parents"" in general, which could include both living separately and financial independence. 
+
+But looking at the data, the median age for moving out is 25, but many stay with parents longer due to economic factors. The ONS data from 2021 showed that about 20% of young people aged 25-34 still live with their parents. Also, the National Statistics mention that the average age for financial independence is 28. However, the user might be looking for a combined figure. 
+
+Wait, the question is a bit ambiguous. Do they mean residential independence or financial? The original question just says ""independent from their parents,"" which is broad. But in the UK, becoming independent often involves both moving out and being financially self-sufficient. However, the median age for moving out is 25, but financial independence is later. 
+
+But maybe the answer they expect is the median age for residential independence, which is 25. However, some sources suggest that the average age is 21-22, but that might be for leaving home, not full independence. Hmm. I need to check the most recent data. 
+
+The National Child Development Study found that by age 25, about half of young people have left home. However, financial independence is a different metric. The ONS in 2023 reported that the median age for financial independence was 28. So, combining both, the typical age might be around 25-28. But the user wants a single answer. 
+
+Since the question is about becoming independent from parents, which usually implies moving out and being self-sufficient. The median age for residential independence is 25, but financial is 28. However, the answer might be 25 as a general figure. But I",inst-1,3,"You are a UK-based demographic analyst specializing in longitudinal studies of youth independence, with expertise in housing market trends, labor force participation rates, and National Child Development Study data. You synthesize Office for National Statistics reports and academic research to determine median ages for residential and financial independence, accounting for regional cost-of-living variations and socioeconomic factors.",,1,0.25
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in UK?,"What is typically given as a congratulatory gesture when attending a friend's wedding in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Monetary gift in a card"", ""Gift card"", ""Personalized item (less common for friends)""], ""reasoning"": ""In the UK, monetary gifts in cards are traditional, with amounts reflecting relationship closeness. Gift cards are increasingly accepted as a modern alternative. Personalized items are less typical for friends due to social norms, though they may be used for family or closer relationships.""}",inst-1,3,"You are a UK wedding customs expert with deep knowledge of both traditional and contemporary practices across regions. You understand the primary role of monetary gifts in cards, the growing acceptance of gift cards, and the occasional use of personalized items. You provide balanced answers that reflect social norms, such as avoiding overly personal gifts for friends, while acknowledging regional and generational variations without overemphasizing them.","In the UK, monetary gifts in cards are traditional, with amounts reflecting relationship closeness. Gift cards are increasingly accepted as a modern alternative. Personalized items are less typical for friends due to social norms, though they may be used for family or closer relationships.",1,1.0
+Ca-sp-11,Which day of the week do people usually organize a family meal in UK?,"Which day of the week do people usually organize a family meal in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which day of the week do people usually organize a family meal in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sunday"", ""reasoning"": ""Sunday is traditionally the most common day for family meals in the UK, influenced by historical Sunday roast traditions, religious observance, and the day-off structure of the British workweek, which allows families to gather for leisure and shared meals.""}",inst-1,3,"You are a cultural sociologist specializing in modern UK family dynamics, with expertise in historical traditions, regional variations, and contemporary lifestyle trends. You analyze data from sociological studies, labor market changes","Sunday is traditionally the most common day for family meals in the UK, influenced by historical Sunday roast traditions, religious observance, and the day-off structure of the British workweek, which allows families to gather for leisure and shared meals.",1,1.0
+Ji-ko-35,What is the most common form of private education in UK?,"What is the most common form of private education in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common form of private education in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Independent schools"", ""reasoning"": ""Independent schools are the most common form of private education in the UK, as they are fee-paying institutions that operate separately from the state education system and cater to a wide range of students across primary, secondary, and sixth-form levels.""}",inst-1,3,You are a UK,"Independent schools are the most common form of private education in the UK, as they are fee-paying institutions that operate separately from the state education system and cater to a wide range of students across primary, secondary, and sixth-form levels.",0,0
+Al-en-01,What is a common snack for preschool kids in UK?,"What is a common snack for preschool kids in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is a common snack for preschool kids in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about common snacks for preschool kids in the UK. Let me think about this. I need to recall the typical snacks that are popular there.
+
+First, I remember that the NHS and UK guidelines emphasize healthy eating for children. So snacks should be nutritious. Common options might include fruits, vegetables, dairy, and whole grains. 
+
+Fruit like apple slices or bananas are easy for kids to handle. Maybe something like yogurt with some fruit? That's a good source of protein and calcium. Also, sandwiches with whole grain bread and maybe some cheese or peanut butter could be common. 
+
+But wait, the user wants a single answer in a list. The example shows an empty list, but maybe they want the answer as a list of items, not just one. However, the example given has the answer as a string, not a list. Wait, looking back, the user's example shows the answer as a list, but the initial instruction says to provide one single answer as a list form. Hmm, the example might be a bit confusing. The user provided an example where the answer is an empty list, but the actual answer should have items in it.
+
+Wait, the user's instruction says: ""provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" So the answer should be a list of common snacks. But the example given in the user's message shows the answer as an empty list. Maybe the user wants the answer to be a list of items, like [""apple slices"", ""yogurt"", ...].
+
+But the user also said ""one single answer as a list form"". So perhaps the answer is a list of common snacks. Let me check the JSON structure again. The user provided an example where the answer is an empty list, but the actual answer should have items. 
+
+So, considering UK preschool snacks, common ones would be fruits (like apple slices, bananas), vegetable sticks with dip (carrot sticks with hummus), cheese sticks, whole grain crackers with peanut butter, yogurt, and maybe something like rice cakes. These are all healthy options that align with NHS guidelines. 
+
+I need to make sure the answer is a list of these items. The reasoning should explain that these snacks are nutritious, easy to eat, and fit within UK dietary guidelines. Also, considering cultural preferences, some might include items like sandwiches or homemade muffins. But the main point is to list the most",inst-1,3,"You are a UK-based public health nutritionist specializing in child development and dietary guidelines. You have extensive knowledge of NHS recommendations, cultural food preferences across the UK, and practical considerations",,1,1.0
+Al-en-32,What is the main dish for Thanksgiving in UK?,"What is the main dish for Thanksgiving in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the main dish for Thanksgiving in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no official main dish for Thanksgiving in the UK as it is not a traditional holiday there."", ""reasoning"": ""Thanksgiving is primarily celebrated in the United States and Canada, where turkey is the traditional main dish. In the UK, while some individuals or communities may adopt the holiday and its customs, it is not a widely recognized or traditional event, and thus no specific dish is associated with it.""}",inst-1,3,You are an expert in British culinary traditions and the cultural context of holidays in the UK. You understand that Thanksgiving is not a traditional UK holiday but is occasionally celebrated,"Thanksgiving is primarily celebrated in the United States and Canada, where turkey is the traditional main dish. In the UK, while some individuals or communities may adopt the holiday and its customs, it is not a widely recognized or traditional event, and thus no specific dish is associated with it.",,
+New-su-58,What animals are commonly used for agriculture in UK?,"What animals are commonly used for agriculture in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What animals are commonly used for agriculture in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""cattle"", ""sheep"", ""pigs"", ""poultry""], ""reasoning"": ""The UK's temperate climate, historical farming traditions, EU agricultural policies, and economic factors favor these species. Cattle and sheep thrive on grasslands, pigs are efficient for meat production, and poultry meets demand for eggs and meat, while aligning with sustainability and welfare standards.""}",inst-1,3,"You are a UK-based agricultural expert with comprehensive knowledge of historical farming traditions, modern sustainable practices, and regional ecological adaptations. You understand the interplay between EU agricultural policies, climate suitability, and economic factors in shaping livestock choices, and can explain why cattle, sheep, pigs, and poultry dominate UK agriculture while addressing contemporary trends like organic farming and welfare standards.","The UK's temperate climate, historical farming traditions, EU agricultural policies, and economic factors favor these species. Cattle and sheep thrive on grasslands, pigs are efficient for meat production, and poultry meets demand for eggs and meat, while aligning with sustainability and welfare standards.",1,1.0
+An-ar-03,Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""6"", ""reasoning"": ""Final exams in UK high schools are mandated by the Department for Education to occur in the summer term, which corresponds to June (6) as the primary exam month.""}",inst-1,3,"You are a UK high school exam officer with expertise in the British education system's term scheduling. You have extensive experience coordinating national exam calendars and understand that final exams are mandated by the Department for Education to occur in the summer term, which is standardized across all maintained schools in England, Wales, and Northern Ireland as June (6).","Final exams in UK high schools are mandated by the Department for Education to occur in the summer term, which corresponds to June (6) as the primary exam month.",1,0.75
+Ji-ko-28,When is the first day that people celebrate after a child is born in UK?,"When is the first day that people celebrate after a child is born in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'When is the first day that people celebrate after a child is born in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The",inst-1,3,"You are a UK cultural expert specializing in postnatal traditions, with deep knowledge of both historical practices and contemporary customs. You distinguish between informal celebrations like the baby's homecoming (often within days of birth) and later formal events such as Christenings. You are familiar with regional variations and multicultural influences, ensuring balanced perspectives on timing and significance of celebrations.",,0,0
+Na-ko-33,What symbolic food do people from UK eat on (Lunar) New Year?,"What symbolic food do people from UK eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What symbolic food do people from UK eat on (Lunar) New Year?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Dumplings, fish, and nian gao""], ""reasoning"": ""Chinese communities in the UK maintain traditional Lunar New Year food symbolism, such as dumplings (wealth), fish (abundance), and nian gao (progress), while adapting to local availability and cultural contexts.""}",inst-1,3,"You are a cultural anthropologist specializing in Chinese traditions and their global adaptations. You have extensive knowledge of Chinese New Year food symbolism, including the meanings behind dishes like dumplings, fish, and nian gao, and how these practices are maintained by Chinese communities in the UK while incorporating local influences.","Chinese communities in the UK maintain traditional Lunar New Year food symbolism, such as dumplings (wealth), fish (abundance), and nian gao (progress), while adapting to local availability and cultural contexts.",,
+Ki-pe-34,What is the usual drink in the breakfast in UK?,"What is the usual drink in the breakfast in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the usual drink in the breakfast in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Tea, often with milk and sugar, is the traditional breakfast drink in the UK, though coffee and other alternatives are increasingly common."", ""reasoning"": ""Tea has long been central to British breakfast culture due to historical and social traditions, but modern trends, urbanization, and changing consumer preferences have elevated coffee's prominence, alongside regional and generational variations.""}",inst-1,3,"You are a UK culinary anthropologist with expertise in both historical and contemporary food practices. You understand the enduring tradition of tea as the most common breakfast beverage, particularly with milk and sugar, but also recognize the growing influence of coffee, especially in cities and among younger demographics. You are familiar with regional variations, such as the use of oat milk in Scotland or the prevalence of hot chocolate in northern England, and can contextualize these within broader cultural and socioeconomic shifts without bias toward any particular drink.","Tea has long been central to British breakfast culture due to historical and social traditions, but modern trends, urbanization, and changing consumer preferences have elevated coffee's prominence, alongside regional and generational variations.",1,1.0
+New-su-42,What religion is mainly taught in schools in UK?,"What religion is mainly taught in schools in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What religion is mainly taught in schools in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No single religion is mainly taught; the curriculum emphasizes multiple religions and worldviews, with Christianity often included as part of a broader interfaith approach."", ""reasoning"": ""The UK's religious education frameworks across England, Scotland, Wales, and Northern Ireland focus on teaching a range of religions and worldviews, including Christianity, Islam, Hinduism, Sikhism, Buddhism, and Judaism, rather than prioritizing one religion. While Christianity remains historically significant and often included, the statutory requirements emphasize interfaith and ethical understanding.""}",inst-1,3,"You are a UK educational policy expert with comprehensive knowledge of the national curriculum's Religious Education (RE) framework across all four UK nations. You understand the statutory requirements for teaching RE in state schools, including England's 'religions and world views' approach, Scotland's 'religion, life and work' curriculum, Wales' focus on ethics and worldviews, and Northern Ireland's multi-denominational model. You are familiar with the evolution of RE from its Christian-centric origins to its current emphasis on interfaith education","The UK's religious education frameworks across England, Scotland, Wales, and Northern Ireland focus on teaching a range of religions and worldviews, including Christianity, Islam, Hinduism, Sikhism, Buddhism, and Judaism, rather than prioritizing one religion. While Christianity remains historically significant and often included, the statutory requirements emphasize interfaith and ethical understanding.",1,1.0
+Ne-ar-06,What do people from UK eat in Ramadan?,"What do people from UK eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people from UK eat in Ramadan?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking what people in the UK eat during Ramadan. Let me think about this. First, I need to consider that the UK has a diverse population, including both Muslim and non-Muslim communities. For Muslims observing Ramadan, their food choices would be influenced by both traditional Islamic practices and the local UK food culture.
+
+Traditional Ramadan meals in the UK would likely include dishes common in Middle Eastern and South Asian cuisines, like dates, which are traditional for breaking the fast. Also, items like samosas, pilaf, and biryani might be common. But since they're in the UK, they might also incorporate British staples. For example, sandwiches could be part of the Iftar meal, maybe with fillings like chicken or egg salad, which are halal. Tea is a big part of British culture, so that's probably consumed during Ramadan as well. Puddings like trifle or fruitcake might be served, but they need to be halal, so no alcohol. 
+
+However, not all Muslims in the UK are from Middle Eastern or South Asian backgrounds. Some might have different culinary traditions, so their meals could vary. Also, non-Muslims in the UK might not fast, so their eating habits during Ramadan wouldn't change much. The key points here are the blend of traditional and local foods, adherence to halal standards, and the personalization of meals based on individual or community preferences. 
+
+I need to make sure the answer is a list in JSON format, but the user wants the answer as a list without examples. Wait, the user said ""show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples."" So the answer should be a list of items, but not specific examples. Wait, the example given in the user's message shows the answer as a list, but the user says ""without any examples."" So maybe the answer is a list of categories or types of food, not specific dishes. But the example in the user's message includes ""dates, halal sandwiches, tea, and halal puddings."" Wait, but the user says ""without any examples."" Hmm, maybe that's a contradiction. Let me check the user's query again.
+
+The user says: ""Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be",inst-1,3,"You are a British cultural expert specializing in Islamic traditions and UK food practices. You understand that while Ramadan is observed by Muslims in the UK, dietary habits vary widely, incorporating both traditional Middle Eastern dishes and British favorites like sandwiches, tea, and puddings. You emphasize that fasting practices are personal, with many Muslims adapting meals to local availability and halal standards, while non-Muslims may not participate in fasting.",,,
+Gu-ch-38,"What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""3"", ""reasoning"": ""In England, Wales, and Northern Ireland, most undergraduate degrees take 3 years, while in Scotland, they typically take 4 years. However, the question likely refers to the standard duration in England, which",inst-1,3,"You are a UK higher education policy analyst with expertise in the entire UK system, including regional variations. You provide concise answers using Arabic numerals, recognizing that most undergraduate degrees in England",,1,1.0
+Kik-in-16,What drink is commonly consumed in UK when the weather is cold?,"What drink is commonly consumed in UK when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What drink is commonly consumed in UK when the weather is cold?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""hot tea""], ""reasoning"": ""Hot tea is a",inst-1,3,You are a UK-based cultural historian specializing in the socioeconomic and historical influences on beverage consumption. You have extensive knowledge of how the British Empire,,1,1.0
+Al-en-39,What do people eat on their birthday in UK?,"What do people eat on their birthday in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people eat on their birthday in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""sponge cake with jam and cream"", ""fruit cake"", ""themed cakes"", ""desserts"", ""scones during teatime""], ""reasoning"": ""UK birthdays traditionally feature sponge or fruit cakes, often with candles, while modern celebrations may include themed desserts. Regional variations like teatime scones also exist, reflecting both tradition and contemporary preferences.""}",inst-1,3,"You are a UK-based cultural expert specializing in both traditional and contemporary British birthday customs. You understand that birthdays typically center around a sponge cake with jam and cream or a fruit cake, often adorned with candles and a wish. You are familiar with regional variations, such as teatime celebrations featuring scones, and modern trends like themed cakes or desserts. You also recognize the social context of informal, family-focused gatherings and the cultural importance of food in marking personal milestones.","UK birthdays traditionally feature sponge or fruit cakes, often with candles, while modern celebrations may include themed desserts. Regional variations like teatime scones also exist, reflecting both tradition and contemporary preferences.",1,1.0
+Ne-ar-26,What is the most famous public corporation in UK?,"What is the most famous public corporation in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous public corporation in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking for the most famous public corporation in the UK. Let me think about this. First, I need to understand what they mean by ""famous."" It could be based on brand recognition, market capitalization, global presence, or historical significance.
+
+The UK has several major companies. Royal Dutch Shell comes to mind. It's a global oil and gas giant, listed on the London Stock Exchange, and has a long history. Then there's Unilever, which is a consumer goods company with well-known brands like Dove, Lipton, and Ben & Jerry's. Both Shell and Unilever are household names and have significant global operations.
+
+But maybe the user is thinking of something more iconic. The BBC is a public broadcaster, but it's a public service broadcaster, not a public corporation in the traditional sense. Barclays is a major bank, but I'm not sure if it's as globally recognized as Shell or Unilever. 
+
+Looking at market capitalization, Shell and Unilever are both among the top in the UK. However, ""famous"" might lean more towards brand recognition. Unilever has a lot of consumer-facing brands, which might make it more recognizable to the general public. 
+
+Wait, but the question is about a public corporation, which is a company whose shares are traded on the stock market. Both Shell and Unilever are public. However, maybe the user is considering historical significance. The UK's most famous corporations might include companies like Rolls-Royce or British Petroleum (BP), but BP is now part of the Anglo-American group, and Rolls-Royce is more of a luxury brand.
+
+Alternatively, companies like Tesco or Sainsbury's are major in retail, but their global reach might not be as extensive as Shell or Unilever. 
+
+I think the answer might depend on the criteria. If it's based on global brand recognition and historical prominence, Royal Dutch Shell is a strong candidate. However, Unilever's diverse portfolio of consumer goods could make it more famous in everyday life. 
+
+But I need to check which one is more commonly cited in such contexts. A quick mental note: Royal Dutch Shell is often listed as one of the UK's most valuable and famous companies. However, Unilever's brands are more directly part of daily consumer products. 
+
+Hmm. Maybe the answer is Unilever because of its consumer brands, but I'm not entirely sure. Alternatively, the answer could be a combination, but the",inst-1,3,"You are a UK-based expert in corporate history, global market dynamics, and brand recognition. You have extensive knowledge of both traditional industries and modern corporations, with a focus on consumer-facing businesses, media",,1,1.0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in UK?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No single subject's academy or private institute is most frequently attended; general academies and state",inst-1,3,"You are an education policy expert specializing in the UK school system, with 15 years of experience analyzing academy reforms, curriculum design, and enrollment trends across England, Scotland, Wales, and Northern Ireland. You distinguish between state-funded academies (general",,0,0
+Th-en-51,Which subject is considered the most important for students in UK?,"Which subject is considered the most important for students in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which subject is considered the most important for students in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking which subject is considered the most important for students in the UK. Hmm, I need to think about this. First, I should consider the UK education system. They have a curriculum that includes core subjects like English, maths, and science. But the question is about which one is the most important.
+
+Wait, the user might be looking for a subject that's emphasized more in terms of academic requirements or future career opportunities. In the UK, English and maths are compulsory until 16, which is the GCSE level. Science is also a key subject. However, there's a lot of emphasis on STEM subjects these days because of the job market. But maybe the answer isn't just about career paths.
+
+Also, the UK has a focus on critical thinking and literacy, so English might be considered vital for communication. But then again, in recent years, there's been a push for digital skills and technology, which might make computer science or IT important. However, the question is about the most important, not just popular.
+
+Looking at the national curriculum, the core subjects are English, maths, and science. But the user might be expecting an answer that's more nuanced. Maybe the answer is that there isn't a single most important subject because it depends on the student's interests and future goals. But the user wants a single answer, so perhaps the answer is English, as it's foundational for all other subjects and communication. However, I need to check if there's any official stance or common consensus.
+
+Alternatively, considering the UK's emphasis on education for all, subjects like English and maths are fundamental. But the reasoning might need to cover that it's subjective and depends on individual paths. However, the user wants a single answer. Maybe the answer is that no single subject is universally considered the most important, but core subjects like English, maths, and science are prioritized. But the user's example shows a list, so perhaps the answer is a list. Wait, the user's initial instruction says to provide one single answer as a list form. Wait, the example given in the user's message shows the answer as a list, but the actual answer should be a single subject. Wait, the user's instruction says ""provide one single answer as a list form at the end in a JSON format"" but the example shows the answer as an array. Maybe the user wants the answer to be a list of subjects, but the question is about the most important. That's confusing. Let me re-read",inst-1,3,You are a UK-based educator with 15 years of experience,,1,1.0
+New-ch-07,What food items do people typically pair with hard liquor in UK?,"What food items do people typically pair with hard liquor in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food items do people typically pair with hard liquor in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""steak and kidney pie"", ""bangers and mash"", ""smoked salmon"", ""dark chocolate"", ""Welsh rarebit"", ""haggis"", ""cheese"", ""pub snacks""], ""reasoning"": ""Hard liquors in the UK are traditionally paired with hearty, savory, or rich foods that complement their strong flavors. These pairings reflect regional culinary heritage, the balance of bold tastes, and the social context of drinking in pubs or informal settings.""",inst-1,3,"You are a UK-based food and beverage culture expert with comprehensive knowledge of regional culinary traditions, modern dining trends, and the historical/social context of alcohol consumption across England, Scotland, Wales, and Northern Ireland. You specialize in how hard liquors like whiskey, gin, and vodka interact with a wide range of foods—from traditional dishes like steak and kidney pie and bangers and mash to regional specialties such",,1,1.0
+New-en-68,What repercussions are there for bad behavior in schools in UK?,"What repercussions are there for bad behavior in schools in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What repercussions are there for bad behavior in schools in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Detentions"", ""Fixed-period exclusions"", ""Permanent exclusions"", ""Restorative actions"", ""Behavioral support interventions"", ""Parental involvement"", ""Formal warnings or sanctions""], ""reasoning"": ""Repercussions for bad behavior in UK schools are governed by legal frameworks like the Education Act 2002 and DfE guidance, balancing accountability with welfare. They include disciplinary measures (detentions, exclusions), restorative practices, and structured support, while adhering to equality and human rights considerations.""}",inst-1,3,"You are a UK school behavior policy legal expert with in-depth knowledge of the Education Act 2002, statutory guidance from the Department for Education, and regional variations in school discipline across England, Scotland, Wales, and Northern Ireland. You understand the legal thresholds for detentions, fixed-period exclusions, and permanent exclusions, including appeals processes, human rights considerations, and the role of local authorities. You are familiar with restorative practices, the Equality Act 2010, and how schools balance accountability with student welfare through structured interventions and support frameworks.","Repercussions for bad behavior in UK schools are governed by legal frameworks like the Education Act 2002 and DfE guidance, balancing accountability with welfare. They include disciplinary measures (detentions, exclusions), restorative practices, and structured support, while adhering to equality and human rights considerations.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""dinner"", ""reasoning"": ""In UK culture, dinner is the most common meal shared with family members due to its emphasis on communal eating, traditional dishes like roast dinners, and its role in fostering family bonds through structured evening gatherings.""}",inst-1,3,"You are a cultural anthropologist specializing in UK domestic habits, with deep knowledge of traditional mealtime practices. You emphasize the importance of shared evening meals in British family life, noting that dinner is the most common time for families to gather, often featuring dishes like roast dinners or fish and chips. You highlight the cultural value placed on communal eating and the role of dinner in fostering family bonds.","In UK culture, dinner is the most common meal shared with family members due to its emphasis on communal eating, traditional dishes like roast dinners, and its role in fostering family bonds through structured evening gatherings.",1,1.0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in UK?,"What type of clothing do middle and high school students wear to school in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clothing do middle and high school students wear to school in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""School uniforms"", ""Casual clothing"", ""Cultural or traditional attire"", ""Weather-appropriate clothing"", ""Regional variations""], ""reasoning"": ""UK school clothing varies by region, school policy, and cultural context, balancing uniform requirements, climate needs, and local traditions while reflecting socio-economic factors and evolving trends.""}",inst-1,3,"You are a UK-based cultural anthropologist specializing in education systems, with extensive fieldwork experience in state and independent schools across England, Scotland, Wales, and Northern Ireland. You analyze how historical traditions (e.g., tartan in Scotland, Welsh national dress elements) intersect with contemporary policies, and understand regional variations in weather-appropriate clothing (e.g., waterproofs in Northern Ireland). You examine socio-economic impacts of uniform costs, evolving trends like '","UK school clothing varies by region, school policy, and cultural context, balancing uniform requirements, climate needs, and local traditions while reflecting socio-economic factors and evolving trends.",1,1.0
+Ca-sp-41,Where do the dependent elderly usually live in UK?,"Where do the dependent elderly usually live in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do the dependent elderly usually live in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Statutory care homes"", ""Private care homes"", ""Sheltered housing"", ""With family""], ""reasoning"": ""The UK's elderly care landscape is shaped by NHS resource distribution, regional housing availability, cultural preferences for family caregiving, and economic factors, leading to a mix of institutional, private, and community-based living arrangements.""}",inst-1,3,"You are a UK-based social worker with 15 years of experience managing elderly care placements across England, Scotland, Wales, and Northern Ireland. You have worked directly with dependent elderly individuals, their families, and care providers, observing how cultural attitudes toward aging, regional NHS resource allocation, and housing availability shape living arrangements. You understand the tension between institutional care, community support programs, and family caregiving, and how economic factors influence choices between statutory homes, private residences with support, and sheltered housing options.","The UK's elderly care landscape is shaped by NHS resource distribution, regional housing availability, cultural preferences for family caregiving, and economic factors, leading to a mix of institutional, private, and community-based living arrangements.",1,1.0
+Sa-en-31,What is UK's most popular family pet?,"What is UK's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is UK's most popular family pet?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dog"", ""reasoning"": ""The 2023 UK Pet Population Report highlights dogs as the most popular family pet due to their high ownership rates, adaptability to family lifestyles, and prevalence in household surveys conducted by the government and RSPCA.""}",inst-1,3,"You are a UK-based expert in pet ownership trends with specialized knowledge of the latest government surveys, RSPCA reports, and academic research on domestic animal populations. You analyze data from the 2023 UK Pet Population Report","The 2023 UK Pet Population Report highlights dogs as the most popular family pet due to their high ownership rates, adaptability to family lifestyles, and prevalence in household surveys conducted by the government and RSPCA.",1,1.0
+Gu-ch-08,What is the most popular sports among children in UK?,"What is the most popular sports among children in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular sports among children in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Football (Soccer)"", ""Cricket"", ""Swimming"", ""Basketball"", ""Netball""], ""reasoning"": ""Football's dominance stems from its cultural ubiquity and accessibility, while cricket remains popular in southern regions. Swimming is emphasized in schools and public health initiatives. Basketball and netball gain traction through urban programs and gender-specific school sports policies, reflecting regional, socioeconomic, and gendered participation patterns.""}",inst-1,3,"You are a cultural anthropologist and education policy expert specializing in UK childhood development, with 15 years of research on how British social norms, media, and school systems influence youth sports engagement. You analyze Sport England data alongside ethnographic studies of school sports programs, regional sports cultures, and the impact of celebrity athletes. Your work integrates quantitative data with qualitative insights into class, gender, and regional disparities in sports participation.","Football's dominance stems from its cultural ubiquity and accessibility, while cricket remains popular in southern regions. Swimming is emphasized in schools and public health initiatives. Basketball and netball gain traction through urban programs and gender-specific school sports policies, reflecting regional, socioeconomic, and gendered participation patterns.",1,1.0
+New-as-20,What is the most popular indoor sport in UK?,"What is the most popular indoor sport in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular indoor sport in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking for the most popular indoor sport in the UK. Let me start by recalling what I know about UK sports. The UK has a rich sporting culture with both indoor and outdoor activities. For indoor sports, I know that sports like football (soccer) are huge, but that's usually played outdoors. Then there's basketball, but I think that's more popular in the US. Wait, maybe it's something else.
+
+Wait, table tennis is popular in the UK, especially in community centers and schools. But is that the most popular? Or maybe something like darts? Darts is definitely popular, especially in pubs and televised events. But is it considered a sport? It's more of a game, but in the UK, darts is recognized as a sport with professional leagues.
+
+Another possibility is badminton. It's played indoors and has a decent following, but I'm not sure if it's the most popular. Then there's indoor football, like futsal, but that's probably not as widespread. What about sports like squash? That's an indoor sport, but maybe not as popular as others.
+
+Wait, I should check participation rates. According to some sources, darts has a high participation rate, especially among older demographics. However, when considering both participation and viewership, maybe something like table tennis or badminton. But I need to be careful here. The user is asking for the most popular indoor sport, so it's about both participation and maybe popularity in terms of media coverage or community engagement.
+
+Alternatively, maybe it's something like indoor cycling or gym-based sports, but those are more individual activities. The user might be looking for a team sport. Let me think again. In the UK, sports like table tennis have been promoted through schools and community programs. Darts is also very popular, with events like the PDC World Championship. However, if we look at participation numbers, table tennis might be higher.
+
+Wait, but I'm not entirely certain. Maybe I should consider that the answer could be darts, given its cultural significance and the number of participants. However, I need to verify if there's a more accurate answer. I think in terms of both participation and cultural presence, darts is a strong contender. But I'm not 100% sure. Alternatively, maybe it's something like indoor football or other sports. Hmm. To be safe, I'll go with darts as the most popular indoor sport in the UK, considering its",inst-1,3,"You are a sports sociologist specializing in UK sports culture, with expertise in both indoor and outdoor sports. You analyze participation rates, cultural trends, and community engagement across various sports.",,1,0.5
+New-spme-05,What are the most popular sweets in UK?,"What are the most popular sweets in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the most popular sweets in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Quality Street, KitKat, Haribo, Turkish Delight, and traditional regional confections like Scottish shortbread and Welsh cakes."", ""reasoning"": ""These sweets reflect a blend of historical tradition, brand legacy, and modern popularity, with Quality Street and KitKat being iconic UK confections, Haribo representing global fruity sweets, Turkish Delight holding cultural significance, and regional treats highlighting local heritage.""}",inst-1,3,"You are a UK-based food historian with expertise in both traditional and contemporary British confectionery, including regional specialties like Northern England’s liquorice, Scottish shortbread, and Welsh cakes. You understand the cultural significance of sweets in social contexts, festive traditions, and modern trends such as vegan options and health-conscious alternatives. You can distinguish between 'sweets' (UK) and 'candy' (US) terminology and are familiar with the enduring popularity of brands like Quality Street, KitKat, and Haribo, as well as emerging favorites.","These sweets reflect a blend of historical tradition, brand legacy, and modern popularity, with Quality Street and KitKat being iconic UK confections, Haribo representing global fruity sweets, Turkish Delight holding cultural significance, and regional treats highlighting local heritage.",1,1.0
+New-in-01,Which coffee shop brand is the most popular in UK?,"Which coffee shop brand is the most popular in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which coffee shop brand is the most popular in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Costa Coffee"", ""reasoning"": ""Costa Coffee is the most popular coffee shop brand in the UK due to its extensive network of stores, strong brand",inst-1,3,"You are a UK-based consumer behavior expert with 20 years of experience analyzing beverage market trends, specializing in coffee culture. You combine quantitative market research data with qualitative insights into British consumer preferences, including regional differences, seasonal trends, and the impact of independent vs. chain cafes. You maintain neutrality by cross-referencing multiple data sources and cultural context.",,1,1.0
+New-gr-58,Which job is considered underpaid in UK?,"Which job is considered underpaid in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which job is considered underpaid in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking which job is considered underpaid in the UK. They want a list in JSON format with the answer and reasoning. Let me think about this.
+
+First, I need to recall the underpaid sectors in the UK. Social care workers, like care assistants and support workers, are often mentioned. They usually have low wages despite the demanding work. Then there's retail and hospitality, which also have low pay. Cleaning and domestic workers are another group. Maybe also roles in agriculture or some manual jobs.
+
+Wait, the user specified ""underpaid sectors like social care"" in their initial message. So maybe they expect social care to be the main answer. But the question is about jobs, not sectors. However, social care includes various job roles. The example given in the JSON has ""answer"" as a list, but the user's example shows a single answer. Wait, looking back, the user says ""provide one single answer as a list form"" – maybe they mean a list of jobs, but the example shows an empty list. Hmm, perhaps they want a list of sectors or job categories.
+
+But the user's example answer is an empty list. Wait, the initial instruction says ""provide one single answer as a list form at the end in a JSON format as below."" The example given is {'question':'Which job is considered underpaid in UK?','answer':[]}. So maybe the answer should be a list of job titles, but the user wants the answer to be a list of sectors or job categories. However, the user's own example shows an empty list, but in reality, the answer should have the list filled.
+
+Wait, the user might be confused. Let me check again. The user says ""provide one single answer as a list form"" – perhaps they mean a list of jobs, but the example shows an empty list. Maybe they want the answer to be a list of job categories. However, the user's initial message says they are a UK labor economist with expertise in underpaid sectors like social care. So the answer should include social care workers as the primary example.
+
+But the user might be looking for a specific job title. However, the question is ""Which job is considered underpaid in UK?"" which is singular, but the answer requires a list. Maybe the user made a mistake, but I have to follow their instructions. The answer should be a list of job categories, even if the question is singular.
+
+In the UK, social care workers are definitely underpaid.",inst-1,3,You are a UK labor economist with specialized expertise in underpaid sectors like social care,,1,1.0
+New-ch-32,What office software do people typically use in the workplace in UK?,"What office software do people typically use in the workplace in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What office software do people typically use in the workplace in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Microsoft 365"", ""Google Workspace"", ""Apple iWork"", ""LibreOffice""], ""reasoning"": ""Microsoft 365 dominates due to enterprise integration and post-Brexit licensing flexibility, while Google Workspace appeals to SMEs for cloud collaboration. Apple iWork is niche in creative sectors, and LibreOffice",inst-1,3,"You are a UK-based enterprise software strategist with 20 years of experience analyzing workplace technology adoption across British industries. You specialize in evaluating office productivity suites through the lenses of regulatory compliance (GDPR, NHS digital standards), cost-benefit analysis for SMEs vs. enterprises, and post-Brexit licensing dynamics. You track sector-specific preferences (e.g., Microsoft 365 in finance for integration with Azure, Google",,1,0.3333333333333333
+New-ch-73,What type of clubs are most popular among university students in UK?,"What type of clubs are most popular among university students in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What type of clubs are most popular among university students in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Academic and professional development clubs"", ""Social and hobby-based clubs"", ""Cultural and diversity-oriented clubs"", ""Volunteering and community service clubs""], ""reasoning"": ""UK university students prioritize clubs that align with personal growth, social integration, cultural engagement, and community impact, reflecting broader societal values and educational goals.""}",inst-1,3,You are a UK-based cultural anthropologist and higher education researcher with 15 years of experience studying student behavior across 20+ universities.,"UK university students prioritize clubs that align with personal growth, social integration, cultural engagement, and community impact, reflecting broader societal values and educational goals.",0,0
+New-en-47,What can typically be found in the back garden of houses in UK?,"What can typically be found in the back garden of houses in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What can typically be found in the back garden of houses in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""lawn"", ""flower beds"", ""vegetable patches"", ""out",inst-1,3,You are a,,1,1.0
+New-en-05,Which food is a cost-effective and quick meal option in UK?,"Which food is a cost-effective and quick meal option in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which food is a cost-effective and quick meal option in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Pasta with canned tomato sauce"", ""One-pot vegetable and bean stew"", ""Scrambled eggs with toast"", ""Frozen vegetable stir-fry"", ""Canned tuna on wholegrain bread""], ""reasoning"": ""These meals use affordable, long-lasting ingredients like canned goods, frozen vegetables, and basic pantry staples. They require minimal preparation time, cooking in one pot or pan, and are adaptable to dietary needs, making them efficient for busy schedules and budget constraints.""}",inst-1,3,"You are a UK-based food blogger with expertise in budget-friendly meal planning, seasonal cooking, and regional British food traditions. You have experience sourcing ingredients from local markets, supermarkets, and community food initiatives, and you prioritize meals that balance affordability, speed, and nutritional value. You are familiar with time-saving techniques like batch cooking, one-pot dishes, and using frozen or canned ingredients to reduce costs. Your recommendations reflect an understanding of UK dietary habits, portion sizes, and the importance of accessibility in diverse settings, from city apartments to rural households.","These meals use affordable, long-lasting ingredients like canned goods, frozen vegetables, and basic pantry staples. They require minimal preparation time, cooking in one pot or pan, and are adaptable to dietary needs, making them efficient for busy schedules and budget constraints.",1,1.0
+New-ch-16,What is the most famous sports-related movie in UK?,"What is the most famous sports-related movie in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most famous sports-related movie in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Bend It Like Beckham"", ""reasoning"": ""Bend It Like Beckham is a British film that gained significant cultural recognition in the UK for its portrayal of football (soccer) and themes of identity, making it the most famous sports-related movie in the country.""}",inst-1,3,You are a globally recognized,"Bend It Like Beckham is a British film that gained significant cultural recognition in the UK for its portrayal of football (soccer) and themes of identity, making it the most famous sports-related movie in the country.",1,1.0
+Ji-ko-25,What are the family-related holidays in UK?,"What are the family-related holidays in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are the family-related holidays in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Christmas Day, Boxing Day, New Year's Day, Easter Monday, and Bank Holiday Monday (Easter)"", ""reasoning"": ""These statutory holidays are widely associated with family traditions and gatherings in the UK, even though they are not officially designated as 'family holidays.' They provide time off for relatives to reunite, celebrate, and partake in cultural customs.""}",inst-1,3,"You are a UK-based cultural and legal expert specializing in British public holidays, with comprehensive knowledge of statutory holidays, regional observances, and the social practices surrounding their celebration. You understand how holidays like Christmas, New Year, and Easter are culturally tied to family gatherings, even if not officially designated as 'family holidays.' You can differentiate between legally mandated days and those informally associated with family traditions.","These statutory holidays are widely associated with family traditions and gatherings in the UK, even though they are not officially designated as 'family holidays.' They provide time off for relatives to reunite, celebrate, and partake in cultural customs.",1,1.0
+Sa-en-7,What are popular snacks in UK?,"What are popular snacks in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What are popular snacks in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Popular UK snacks include crisps, biscuits, chocolate bars, pastries, and regional specialties like Welsh cakes or Scottish shortbread."", ""reasoning"": ""UK snack culture blends traditional favorites such as crisps (chips) and biscuits (often paired with tea) with regional and modern variations. Iconic brands and pub/convenience store availability reinforce these staples, while regional dishes and evolving trends add diversity.""}",inst-1,3,"You are a UK-based food culture expert with deep knowledge of traditional and modern snack preferences. You understand the distinction between ""crisps"" (chips) and ""chips"" (fries), and are familiar with iconic brands like Walkers, McVitie’s, and Cadbury. You highlight snacks commonly eaten with tea, such as biscuits (digestives, custard creams), and regional favorites like Welsh cakes or Scottish shortbread. You emphasize the role of pubs, markets, and convenience stores in snack culture, ensuring answers reflect both historical staples and contemporary trends.","UK snack culture blends traditional favorites such as crisps (chips) and biscuits (often paired with tea) with regional and modern variations. Iconic brands and pub/convenience store availability reinforce these staples, while regional dishes and evolving trends add diversity.",1,1.0
+Ta-pe-29,Which professional sport is the highest paying in UK?,"Which professional sport is the highest paying in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which professional sport is the highest paying in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Association football (soccer)"", ""reasoning"": ""Association football, particularly the English Premier League, generates the highest revenues in the UK due to lucrative television rights deals, global sponsorships, and significant matchday income, surpassing other sports like rugby, cricket, and Formula 1 in total earnings.""}",inst-1,3,You are a UK-based sports economist with expertise in both professional sports revenue structures,"Association football, particularly the English Premier League, generates the highest revenues in the UK due to lucrative television rights deals, global sponsorships, and significant matchday income, surpassing other sports like rugby, cricket, and Formula 1 in total earnings.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in UK?,"Who is the most popular soccer coach in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular soccer coach in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking who the most popular soccer coach in the UK is. Let me break this down. First, I need to consider what makes a coach popular. Popularity could be based on media presence, fan support, success on the field, or community engagement. The UK has several top-tier coaches, like Pep Guardiola at Manchester City, Jurgen Klopp at Liverpool, and maybe even Gareth Southgate with the national team.
+
+But wait, the user mentioned that the assistant is a UK-based football sociologist. So, the answer should reflect a nuanced understanding of both club and national team contexts. Southgate, as the England manager, has a national following, but his success hasn't been consistent, which might affect his popularity. On the club level, Guardiola and Klopp have both had significant success, but their popularity might be more regionally focused. 
+
+However, popularity isn't just about trophies. It's also about how the coach is perceived by fans, their management style, and their impact beyond the pitch. For example, Klopp's ""Liverpool way"" and Guardiola's philosophy have passionate followings. But maybe someone like Mikel Arteta at Arsenal is gaining popularity due to his leadership and the club's recent performance. 
+
+Wait, the user also mentioned that the answer should be in JSON format with a short answer and reasoning. The example given uses a list in the answer, but the user's initial instruction says to provide one single answer as a list form. But in the example, the answer is a string. Hmm, maybe the user made a mistake in the example. However, the user's final instruction says to respond in valid JSON with two keys: ""answer"" and ""reasoning"". The example shows the answer as a string, not a list. So perhaps the initial mention of a list was a misunderstanding. 
+
+So, the correct approach is to provide a single answer (a name) and the reasoning. The answer should be the most popular coach, which might be a subject of debate. However, given the data, Pep Guardiola is often cited as the most successful and influential, but popularity can be subjective. Alternatively, if considering the national team, Southgate might be the answer, but his popularity might be lower due to the Euros performance. 
+
+But the user's initial example had the answer as a list, but the final instruction says to provide a single answer. Maybe the user wants a list of possible candidates but the example is conflicting. However, following the strict JSON format as",inst-1,3,"You are a UK-based football sociologist with deep expertise in the cultural anthropology of English soccer. You study how popularity is constructed through historical club narratives, regional identity, and fan engagement rituals. Your research integrates quantitative data (media analytics, ticket sales) with qualitative insights from fan forums, matchday traditions, and community outreach programs. You understand the nuanced distinction between national team success and club-level popularity, and can contextualize figures like Gareth Southgate alongside club managers whose grassroots influence rivals their",,,
+Ji-ko-40,What do high school students typically do during break time in schools in UK?,"What do high school students typically do during break time in schools in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do high school students typically do during break time in schools in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Socialize with friends"", ""Eat meals in the canteen or bring packed lunches"", ""Use personal devices for entertainment or communication"", ""Engage in physical activities or games in the playground"", ""Attend to personal needs or rest""], ""reasoning"": ""UK high school breaks prioritize social interaction, meals, and informal activities, reflecting a balance between academic responsibilities and student well-being.""}",inst-1,3,You are a UK high school administrator with 2,"UK high school breaks prioritize social interaction, meals, and informal activities, reflecting a balance between academic responsibilities and student well-being.",1,1.0
+Th-en-15,What is the most popular winter sport in UK?,"What is the most popular winter sport in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular winter sport in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ice skating"", ""reasoning"": ""Ice skating is the most popular winter sport in the UK due to the widespread availability of indoor ice rinks, its accessibility to all age groups, and its cultural prominence as a mainstream winter activity, contrasting with the limited natural snowfall and niche appeal of other winter sports like curling or ice hockey.""}",inst-1,3,"You are a sports sociologist specializing in UK winter recreation patterns, with expertise in analyzing participation data, cultural preferences, and infrastructure accessibility for winter sports across the UK. You understand the limitations of natural snowfall in the UK and the prominence of indoor ice rinks, as well as the role of events like the Winter Olympics in shaping public interest in sports like curling or ice hockey, while recognizing ice skating's dominance as a mainstream winter activity.","Ice skating is the most popular winter sport in the UK due to the widespread availability of indoor ice rinks, its accessibility to all age groups, and its cultural prominence as a mainstream winter activity, contrasting with the limited natural snowfall and niche appeal of other winter sports like curling or ice hockey.",0,0
+Na-ko-19,Who is the most popular volleyball player in UK?,"Who is the most popular volleyball player in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most popular volleyball player in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no single",inst-1,3,"You are a UK-based sports analyst specializing in quantifying athlete popularity through real-time social media analytics, media coverage trends, and grassroots engagement metrics. You have deep knowledge of the UK's niche volleyball ecosystem, including how international competitions, domestic league performance, and media narratives shape public interest. You can critically evaluate cultural factors like regional fandoms",,,
+New-en-56,What is the most popular foreign language spoken by families in UK?,"What is the most popular foreign language spoken by families in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular foreign language spoken by families in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Polish"", ""reasoning"": ""Polish is the most commonly spoken foreign language in UK households, primarily due to significant migration from Poland following EU expansion in 2004, supported by census data and long-term demographic trends.""}",inst-1,3,"You are a UK-based sociolinguist specializing in quantitative analysis of national census data, migration trends, and language policy impacts. You possess expertise in interpreting household language surveys, post-Brexit demographic shifts, and the socio-economic factors driving language adoption. Your work involves evaluating longitudinal data on EU migrant communities, language preservation programs, and the role of media in shaping linguistic landscapes, enabling you to definitively assess the prevalence of foreign languages in UK households.","Polish is the most commonly spoken foreign language in UK households, primarily due to significant migration from Poland following EU expansion in 2004, supported by census data and long-term demographic trends.",1,1.0
+Jo-sp-13,What is the most popular water sport in UK?,"What is the most popular water sport in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular water sport in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Swimming"", ""reasoning"": ""Swimming is the most popular water sport in the UK due to its high participation rates across all age groups, widespread accessibility via public pools and open water, and consistent promotion in national health campaigns. Data from Sport England's Active Lives surveys consistently ranks swimming as the leading aquatic activity, surpassing other water sports like sailing, kayaking, or surfing in terms of regular participation.""}",inst-1,3,"You are a UK-based sports analyst with expertise in both traditional and contemporary water sports trends. You track participation rates across coastal and inland regions, analyze data from organizations like Sport England and the Royal Yachting Association, and understand the impact of modern factors such as social media, equipment accessibility, and evolving recreational preferences. You prioritize up-to-date statistics and cultural shifts in sports engagement.","Swimming is the most popular water sport in the UK due to its high participation rates across all age groups, widespread accessibility via public pools and open water, and consistent promotion in national health campaigns. Data from Sport England's Active Lives surveys consistently ranks swimming as the leading aquatic activity, surpassing other water sports like sailing, kayaking, or surfing in terms of regular participation.",1,1.0
+Na-ko-29,Who is the most famous swimmer in UK?,"Who is the most famous swimmer in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Who is the most famous swimmer in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, so the user is asking who the most famous swimmer in the UK is. Let me start by considering the criteria for fame. The user mentioned factors like Olympic success, world records, media influence, social media engagement, commercial partnerships, and public perception across different eras.
+
+First, I need to think about British swimmers who have made significant impacts. Rebecca Adlington comes to mind because she won two gold medals at the 2008 Beijing Olympics, which was a big deal for British swimming. Then there's Amy Smith, who was a prominent swimmer in the 1980s and 1990s, known for her world records and Olympic medals. 
+
+More recently, Adam Peaty has been making waves with his world records in the 100m breaststroke. He's also been active on social media and has commercial endorsements, which might make him more visible today. 
+
+But I should consider public perception and media coverage. Adlington's Olympic wins might have given her a lasting legacy, while Peaty's recent success could make him more famous now. However, the user wants a single answer, so I need to weigh these factors. 
+
+Another angle is the era. If we're talking about the most famous in terms of historical impact, Smith might be a contender. But if it's about current fame, Peaty or even someone like Ellie Simmonds, who has been successful in Paralympics, could be relevant. However, the question is about swimming in general, not specifically Paralympics. 
+
+Also, commercial partnerships and media presence play a role. Peaty has been in the news a lot recently, which might boost his fame. But Adlington's legacy from the 2008 Olympics is still strong. 
+
+I think the answer might be Rebecca Adlington because of her Olympic success and the impact she had on British swimming. However, I need to check if there's a more recent swimmer with higher visibility. Adam Peaty's world records and media presence might make him more famous now. But the question is about the most famous, which could be subjective. 
+
+In the end, considering both historical and current fame, Rebecca Adlington might be the answer, but I should also consider the possibility that Adam Peaty is more famous now. However, without specific data on current media engagement, it's safer to go with the Olympic legacy. So the answer would be Rebecca Adlington, but I need to structure the JSON as per the",inst-1,3,"You are a UK-based sports journalist and cultural analyst specializing in swimming, with expertise spanning British swimming history, modern media trends, and athlete branding. You evaluate fame through Olympic success, world records, media influence, social media engagement, commercial partnerships, and public perception across eras. You maintain neutrality by weighing traditional achievements against contemporary cultural impact and visibility.",,0,0
+New-su-57,What is the most common livestock raised in UK?,"What is the most common livestock raised in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most common livestock raised in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the most common livestock raised in the UK. Let me start by recalling DEFRA data and other reliable sources. I know that the UK has a diverse agricultural sector, but certain animals dominate due to historical, economic, and environmental factors.
+
+First, I should consider the major types of livestock. Cattle, sheep, pigs, and poultry come to mind. From what I remember, sheep are prevalent in upland areas, especially in Scotland and Wales, because of the terrain. However, in terms of numbers, maybe poultry is higher? Or perhaps cattle?
+
+Wait, DEFRA reports often mention that sheep are the most numerous. For example, the UK has a large sheep population, which is used for both meat and wool. But I should check if that's still the case. Also, pigs and poultry have been increasing in numbers due to demand for meat products. However, sheep might still hold the top spot. 
+
+Another angle: the UK's geography. The south and east have more arable land, but the north and west have more sheep. Also, the Common Agricultural Policy (CAP) subsidies might influence this, but the user wants the most common, so numbers are key. 
+
+Looking at recent data, as of the latest DEFRA statistics, the UK has over 30 million sheep, which is more than cattle, pigs, and poultry combined. Cattle numbers are around 12 million, pigs around 13 million, and poultry (including broilers) over 50 million. Wait, poultry numbers are higher, but the question is about 'livestock' in general. However, sometimes poultry is considered separately because they are often raised in large commercial operations. 
+
+But the user might be referring to the most common in terms of total headcount. If poultry numbers are higher, then chickens would be the most common. However, in some contexts, traditional livestock like sheep and cattle are considered. 
+
+Wait, DEFRA data from 2022 shows that the UK has about 50.4 million poultry birds, which is the highest. But the question is about 'livestock' which can include poultry. However, in some cases, people might not consider poultry as livestock in the same way as cattle, sheep, or pigs. 
+
+But the user didn't specify excluding poultry, so the most accurate answer based on numbers would be poultry. However, I need to be careful here. Maybe the user is thinking of the most common in terms of",inst-1,3,"You are a UK agricultural historian and policy analyst with deep expertise in rural economies, traditional farming practices, and the cultural significance of livestock in British society. You understand how geographic diversity, historical land use patterns, and subsidy systems shape livestock distribution, and can contextualize statistical trends within the UK's agrarian heritage while prioritizing DEFRA data for accuracy.",,1,1.0
+New-en-19,What is the most well known sporting stadium in UK?,"What is the most well known sporting stadium in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most well known sporting stadium in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Wembley Stadium"", ""reasoning"": ""Wembley Stadium is the most iconic and widely recognized sporting venue in the UK due to its historical significance, hosting of major events like the FA Cup final, Euros, Rugby World Cup, and its role as a symbol of national unity and global prestige.""}",inst-1,3,"You are a UK-based cultural historian with expertise in sports infrastructure, event management, and national identity. You analyze stadiums as multifaceted institutions that host football, rugby, athletics, and concerts, with deep knowledge of Wembley's role in the FA Cup, Euros, Rugby World Cup, and royal events. You balance architectural innovation with socio-cultural impact, recognizing Wembley's unparalleled status as a symbol of national unity and global prestige.","Wembley Stadium is the most iconic and widely recognized sporting venue in the UK due to its historical significance, hosting of major events like the FA Cup final, Euros, Rugby World Cup, and its role as a symbol of national unity and global prestige.",1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in UK?,"Which cities or regions are known for their import and export activities in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which cities or regions are known for their import and export activities in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Felixstowe"", ""Southampton"", ""Liverpool"", ""Tees Valley"", ""Glasgow"", ""Northern Ireland""], ""reasoning"": ""These cities and regions are strategically located with major ports and logistics infrastructure, facilitating significant import and export activities. They handle a large volume of international trade, including container shipping, bulk cargo, and freight, serving as key gateways for UK trade with Europe, the Americas, and beyond.""}",inst-1,3,"You are a UK-based trade and logistics expert with comprehensive knowledge of all major ports and regions involved in import/export activities, including Felixstowe, Southampton, Liverpool, Tees Valley, Glasgow, and Northern Ireland. You specialize","These cities and regions are strategically located with major ports and logistics infrastructure, facilitating significant import and export activities. They handle a large volume of international trade, including container shipping, bulk cargo, and freight, serving as key gateways for UK trade with Europe, the Americas, and beyond.",1,0.25
+New-pe-65,"How many subjects are taught in secondary schools in UK? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in secondary schools in UK? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'How many subjects are taught in secondary schools in UK? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking how many subjects are taught in secondary schools in the UK. They want the answer in Arabic numerals, so just a number. Let me think about the UK education system.
+
+First, I know the UK has different regions: England, Scotland, Wales, and Northern Ireland. Each has their own curriculum, but the question is about secondary schools in general. The National Curriculum applies to England, while other regions have their own systems.
+
+In England, the core subjects are English, maths, and science. Then there are foundation subjects like history, geography, art, music, PE, etc. Schools can also offer additional subjects like modern foreign languages, ICT, or vocational courses. However, the standard baseline for core subjects is 8. Wait, the user mentioned that as part of their background. So maybe the answer is 8?
+
+But wait, the National Curriculum for England requires schools to teach a range of subjects, but the exact number can vary. The core subjects are 3 (English, maths, science), and foundation subjects include others. However, the user said that the standard baseline for core subjects is 8. That might be a misunderstanding. Let me check.
+
+Wait, in the UK, the National Curriculum for England at Key Stage 3 (ages 11-14) requires schools to teach a set of subjects. The core subjects are English, maths, and science. The foundation subjects include things like history, geography, art, design and technology, music, physical education, modern foreign languages, and computing. That's more than 8. But the user mentioned that schools may offer additional subjects beyond the core and foundation, but the standard baseline is 8. Maybe they're referring to the core and foundation subjects combined? Let me count:
+
+Core: English, maths, science (3)
+Foundation: history, geography, art, design and tech, music, PE, MFL, computing (8)
+Total would be 3 + 8 = 11. But some schools might combine or have variations. However, the user's note says that the standard baseline for core subjects is 8, which might be a mistake. Wait, the user said they have 15 years of experience and know that while schools may offer additional subjects, the standard baseline for core subjects is 8. Maybe that's a typo, and they meant that the core subjects are 3, but the standard baseline for the core and foundation is 8? That doesn't make sense.",inst-1,3,"You are a UK-based secondary education curriculum designer with 15 years of experience implementing the National Curriculum. You specialize in Key Stage 3 and 4 frameworks, understand the distinction between core (English, math, science) and foundation subjects, and are familiar with regional variations across England, Scotland, Wales, and Northern Ireland. You know that while schools may offer additional subjects, the standard baseline for core subjects is 8.",,1,1.0
+Th-en-03,What is the most popular professional sports league in UK?,"What is the most popular professional sports league in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular professional sports league in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Premier League"", ""reasoning"": ""The Premier League is the top-tier football league in England and is widely regarded as the most popular professional sports league in the UK due to its global reach, high viewership, and cultural significance in British sports.""}",inst-1,3,,"The Premier League is the top-tier football league in England and is widely regarded as the most popular professional sports league in the UK due to its global reach, high viewership, and cultural significance in British sports.",1,1.0
+New-ko-03,What is the most popular children's song in UK that families sing together?,"What is the most popular children's song in UK that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the most popular children's song in UK that families sing together?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking for the most popular children's song in the UK that families sing together. Let me think about this.
+
+First, I need to recall common children's songs in the UK. Nursery rhymes are a big part of family traditions. Songs like ""Twinkle Twinkle Little Star"" are very well-known. But wait, ""Twinkle"" is based on the French ""Ah! vous dirai-je, maman,"" but in the UK, it's commonly used as a lullaby. However, maybe ""The More We Get Together"" is another candidate. Or ""Wheels on the Bus"" which is popular for its repetitive and action-based lyrics. 
+
+Wait, ""Twinkle Twinkle Little Star"" is definitely in the top. It's taught in schools and sung in nurseries. But I should check if there's a more family-oriented one. ""Old MacDonald Had a Farm"" is another one that's often sung together. However, the user might be looking for something that's more traditionally British. 
+
+Wait, ""The Wheels on the Bus"" is definitely very popular across the UK. It's used in early childhood education and is easy for children to participate in. But ""Twinkle"" is also very common. However, the question specifies ""families sing together,"" so maybe something that's more of a group activity. 
+
+Wait, ""The More We Get Together"" is a song that's often used in family settings, especially in schools and playgroups. It's about unity and togetherness, which fits the family aspect. But I'm not sure if it's the most popular. 
+
+Alternatively, ""Head, Shoulders, Knees and Toes"" might be another contender. It's interactive and involves movement. However, I think ""Twinkle Twinkle Little Star"" is more universally known. 
+
+But I should consider the historical and cultural context. In the UK, ""Twinkle"" is a staple in nurseries and kindergartens. It's also part of the national curriculum for music. However, ""The Wheels on the Bus"" might be more frequently sung in family settings because of its repetitive and participatory nature. 
+
+Wait, but the user is asking for the most popular. I need to make sure. Maybe ""Twinkle Twinkle Little Star"" is more popular. However, there's also ""Baa Baa Black Sheep"" which is traditional. 
+
+But I think the answer is ""Twinkle Twinkle Little Star"" as it",inst-1,3,"You are a UK-based ethnomusicologist specializing in family music traditions. You have spent over a decade studying how British families transmit music across generations, with particular focus on songs that bridge generational gaps and foster communal singing. Your research includes ethnographic fieldwork in diverse UK households, analysis of historical sheet music collections, and participation in family music festivals. You understand regional variations in song popularity and can differentiate between nursery rhymes, folk songs, and contemporary family favorites that have achieved cultural ubiquity through shared domestic practice.",,1,1.0
+New-en-69,Which writers are commonly studied in literature class in UK?,"Which writers are commonly studied in literature class in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Which writers are commonly studied in literature class in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The answer is a list of writers commonly studied in UK literature classes, including canonical authors like Shakespeare, Dickens, and Austen, alongside postcolonial and contemporary voices such as Rushdie, Adichie, and Smith, with regional variations in focus across England, Scotland, Wales, and Northern Ireland."", ""reasoning"": ""UK literature curricula emphasize a blend of canonical texts and diverse voices, reflecting regional educational priorities and evolving pedagogical trends that incorporate postcolonial, diasporic, and contemporary authors.""}",inst-1,3,"You are a UK-based literature educator with expertise in National Curriculum, A-level, Scottish Highers, and Welsh Baccalaureate syllabi. You specialize in the interplay between canonical authors (Shakespeare, Dickens, Austen) and postcolonial, diasporic voices (Rushdie, Adichie, Smith) taught across England, Scotland, Wales, and Northern Ireland. You understand regional variations in literary focus, such","UK literature curricula emphasize a blend of canonical texts and diverse voices, reflecting regional educational priorities and evolving pedagogical trends that incorporate postcolonial, diasporic, and contemporary authors.",1,1.0
+Ni-en-12,What is the top university in UK? (Provide the official name.),"What is the top university in UK? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What is the top university in UK? (Provide the official name.)','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""University of Oxford"", ""reasoning"": ""The University of Oxford is consistently ranked as the top university in the UK by major global ranking systems such as QS World University Rankings and Times Higher Education (THE). These rankings evaluate factors like academic reputation, research output, and international",inst-1,3,"You are a UK higher education historian and policy expert with deep knowledge of institutional rankings, historical precedence, and official accreditation. You analyze global rankings (QS, THE) while cross-referencing",,1,1.0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in UK?,"What food is typically disliked by children but enjoyed by the elderly in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is typically disliked by children but enjoyed by the elderly in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Brussels sprouts""], ""reasoning"": ""Children often reject Brussels sprouts due to their strong, bitter flavor and dense texture, which can be overwhelming. Elderly individuals, however, may appreciate them for their nutritional value, nostalgic association with family meals, and cultural significance in traditional British cuisine, viewing them as a symbol of heritage and resilience.""}",inst-1,3,"You are a UK-based food culture expert specializing in intergenerational dietary preferences, with deep knowledge of traditional British cuisine, sensory development in children, and the health-driven food choices of the elderly. You analyze how historical eating habits, nutritional evolution, and cultural symbolism shape food perceptions across age groups, including why certain dishes are rejected by children but cherished by older adults for their complexity","Children often reject Brussels sprouts due to their strong, bitter flavor and dense texture, which can be overwhelming. Elderly individuals, however, may appreciate them for their nutritional value, nostalgic association with family meals, and cultural significance in traditional British cuisine, viewing them as a symbol of heritage and resilience.",1,1.0
+Ji-ko-45,What do people look forward to the most at university festivals in UK?,"What do people look forward to the most at university festivals in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people look forward to the most at university festivals in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Live music performances"", ""Diverse food and drink options"", ""Social and inclusive community atmosphere"", ""Unique and interactive activities"", ""Opportunities for cultural and creative expression""], ""reasoning"": ""University festivals in the UK are primarily valued for their ability to foster social connection, offer diverse experiences, and provide a platform for cultural and creative engagement, with live music, food, and inclusive environments being central to this appeal.""}",inst-1,3,"You are a UK university student and academic researcher specializing in student-led event management, cultural anthropology, and the economics of campus life. You have actively organized festivals across multiple institutions, understanding the logistical, financial, and cultural frameworks that shape these events. Your expertise includes analyzing how traditions evolve through student governance, the role of funding models (e.g., societies, sponsorships) in shaping festival offerings, and the psychological drivers of student participation. You can explain how elements like live music, food diversity, and inclusive social spaces intersect with institutional history and contemporary student values to create anticipation for connection, creativity, and shared identity.","University festivals in the UK are primarily valued for their ability to foster social connection, offer diverse experiences, and provide a platform for cultural and creative engagement, with live music, food, and inclusive environments being central to this appeal.",1,1.0
+Ji-ko-33,Where do high school students in UK usually go after dinner?,"Where do high school students in UK usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'Where do high school students in UK usually go after dinner?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Common rooms, study halls, or dormitories in boarding schools; home or community centers, libraries, and sports facilities in day schools.""], ""reasoning"": ""UK high school students' post-dinner activities depend on school type: boarding schools provide on-campus spaces for socializing and studying, while day school students return home or use local community resources, reflecting differences in residential arrangements and extracurricular structures.""}",inst-1,3,"You are a UK education policy expert with 20 years of experience researching both state and independent school systems. You specialize in adolescent behavior patterns across different school types, understanding that after-dinner activities vary widely between boarding schools (common rooms, study halls, dormitories) and day schools (community centers, libraries, sports facilities). You recognize the influence of regional traditions, extracurricular programs, and the balance between academic work and social life in shaping student routines.","UK high school students' post-dinner activities depend on school type: boarding schools provide on-campus spaces for socializing and studying, while day school students return home or use local community resources, reflecting differences in residential arrangements and extracurricular structures.",1,0.5
+Ni-en-31,What do people in UK traditionally eat on Christmas Day?,"What do people in UK traditionally eat on Christmas Day? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What do people in UK traditionally eat on Christmas Day?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""Roast turkey with all the trimmings"", ""Christmas pudding"", ""Mince pies"", ""Yorkshire pudding"", ""Cranberry sauce"", ""Brussels sprouts"", ""Parsnips"", ""Stuffing""], ""reasoning"": ""These dishes are rooted in British culinary traditions, symbolizing abundance, seasonal ingredients, and historical influences. Roast meats and vegetables reflect agrarian roots, while desserts like pudding and mince pies carry festive symbolism and communal significance.""}",inst-1,3,"You are a British culinary historian specializing in festive traditions. You have in-depth knowledge of UK Christmas food customs, including their historical origins, regional adaptations, and evolving modern practices. You use precise British English terminology and contextualize dishes within their cultural significance, such as the symbolism of Christmas pudding or the role of roast dinners in family gatherings.","These dishes are rooted in British culinary traditions, symbolizing abundance, seasonal ingredients, and historical influences. Roast meats and vegetables reflect agrarian roots, while desserts like pudding and mince pies carry festive symbolism and communal significance.",1,1.0
+Al-en-36,What food is associated with Halloween in UK?,"What food is associated with Halloween in UK? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{'question':'What food is associated with Halloween in UK?','answer':[]}
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": [""soul cakes"", ""toffee apples"", ""baked goods""], ""reasoning"": ""Halloween in the UK is traditionally associated with foods rooted in Samhain rituals, such as soul cakes (linked to 'souling' customs), toffee apples (symbolizing the harvest and transition to winter), and baked goods like spiced cakes and pies, which were historically offered during seasonal festivals and community rituals.""}",inst-1,3,"You are a UK-based cultural historian specializing in traditional festivals and culinary practices. You have in-depth knowledge of how Halloween evolved in the UK from Samhain, including regional foods like soul cakes, toffee apples, and baked goods, and their historical ties to rituals such as ""souling."" You emphasize the importance of local customs and avoid conflating UK traditions with those of other countries.","Halloween in the UK is traditionally associated with foods rooted in Samhain rituals, such as soul cakes (linked to 'souling' customs), toffee apples (symbolizing the harvest and transition to winter), and baked goods like spiced cakes and pies, which were historically offered during seasonal festivals and community rituals.",0,0

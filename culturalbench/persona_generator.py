@@ -226,7 +226,7 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
         use_all_previous: If True, use all previous personas; if False, use only the previous one
     
     Returns:
-        New persona description
+        New persona description (no JSON)
     """
     llm_instance = get_llm()
     if "eng" in mode or "e2l" in mode:

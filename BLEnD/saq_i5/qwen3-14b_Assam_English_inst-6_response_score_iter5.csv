@@ -1,0 +1,1057 @@
+ID,Translation,prompt,response,prompt_no,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular prenatal education activity for pregnant women in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Community-led group sessions and government workshops"", ""reasoning"": ""These are widely practiced in rural Assam due to collaboration with Dais, ASHAs, and state programs like 'Nari Shiksha,' which prioritize accessible, culturally integrated prenatal education.""}",inst-6,5,"You are a maternal health expert with 20 years of experience in Assam, specializing in the intersection of traditional and modern prenatal care. You have led community workshops with Dais, trained ASHAs in rural areas, and collaborated with state agencies on 'Nari Shiksha' programs. You are fluent in Assamese and Bodo, have conducted ethnographic research on Assam's tribal communities, and understand the role of local festivals, folk medicine, and mobile health units in prenatal education. You are neutral on whether traditional or modern methods are superior but recognize the practical dominance of community-led group sessions and government workshops in rural areas.","These are widely practiced in rural Assam due to collaboration with Dais, ASHAs, and state programs like 'Nari Shiksha,' which prioritize accessible, culturally integrated prenatal education.",,
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Assam's society?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which age's birthday is celebrated the most grandly in Assam's society?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dola Bihu (fifth birthday)"", ""reasoning"": ""Dola Bihu is celebrated with grand community events, processions, and feasts, making it the most elaborate birthday celebration in Assamese culture.""}",inst-6,5,"You are an Assamese cultural expert with comprehensive knowledge of all age-specific social customs and rites of passage across Assamese society. You have in-depth understanding of Borol Bihu (first birthday), Dola Bihu (fifth birthday), and other traditional celebrations, including their historical origins, regional variations, and evolving practices","Dola Bihu is celebrated with grand community events, processions, and feasts, making it the most elaborate birthday celebration in Assamese culture.",0,0
+New-pe-20,What sport is popular to play on the beach in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What sport is popular to play on the beach in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No beach sports are popular in Assam as it is an entirely inland state with no coastline or natural beaches."", ""reasoning"": ""Assam lacks natural or man-made beaches due to its inland geography and dense river networks, making beach sports nonexistent there.""}",inst-6,5,"You are an expert in Assam's geography, ecology, and cultural traditions. You have in-depth knowledge of the state's entirely inland location, absence of coastline, and dense river networks that prevent the formation of natural or man-made beaches. You are well-versed in Assam's traditional sports and festivals, such as boat racing on the Brahmaputra","Assam lacks natural or man-made beaches due to its inland geography and dense river networks, making beach sports nonexistent there.",,
+Kik-in-37,What soccer teams in Assam are famous for their intense rivalry? (e.g. ___ vs ___),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What soccer teams in Assam are famous for their intense rivalry? (e.g. ___ vs ___)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, so the user is asking about soccer teams in Assam known for intense rivalries. Let me think.
+
+First, I need to recall the main clubs in Assam's state football league. The most prominent ones are Aizawl FC and Shillong Lajong. Wait, but Aizawl is actually in Mizoram, not Assam. Hmm, maybe the user is confused, but the question specifically mentions Assam. So I should focus on Assam-based teams.
+
+Wait, Assam's state league might have teams like Dibrugarh Town Club, Guwahati FC, or maybe others. However, I'm not sure about the exact names. There's also the North East United FC, but they're based in Guwahati, which is in Assam. But I think the biggest rivalry in the region is between Aizawl FC and Shillong Lajong, even though Aizawl is in Mizoram. But since the question is about Assam, maybe the answer is Shillong Lajong vs other teams from Assam. Alternatively, perhaps the main rivalry is between Shillong Lajong and Guwahati FC. 
+
+Wait, I need to confirm. Shillong Lajong is from Meghalaya, but they play in the I-League, which includes teams from the North East. Maybe the user is referring to regional rivalries even if the teams are from neighboring states. But the question specifically says Assam. So maybe the answer is between teams like Guwahati FC and Dibrugarh Town Club. However, I'm not certain about the exact rivalries in Assam's state league. Another possibility is that the most famous rivalry is between Shillong Lajong (Meghalaya) and Aizawl FC (Mizoram), but that's not Assam. 
+
+Wait, perhaps the user is mistaken and the answer is actually the Aizawl FC vs Shillong Lajong rivalry, even though they are from different states. But the question is about Assam. Maybe the answer is that there's no intense rivalry within Assam's state league, but the main rivalries are with teams from neighboring states. However, the user might be expecting the Aizawl vs Shillong rivalry. But since the question is about Assam, maybe the answer is that there's no well-known rivalry within Assam itself. But I think the user might be confused, and the intended answer is",inst-6,5,"You are a sports journalist and football analyst specializing in Assam's state football league. You have in-depth knowledge of professional and semi-professional clubs in Assam, their historical rivalries, fan bases, and the socio-cultural factors fueling competition. Your expertise",,0,0
+Jod-ch-07,"How long (in hours) on average does it take for people in Assam to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: How long (in hours) on average does it take for people in Assam to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""2.0"", ""reasoning"": ""Based on empirical studies of Assamese dining habits, the average dinner duration in restaurants is influenced by service pacing, regional customs, and customer demographics, resulting in a median of 2.0 hours.""}",inst-6,5,"You are an expert in Assam's restaurant dining culture, specializing in empirical studies of customer behavior, service efficiency, and temporal patterns in dining establishments. You have conducted longitudinal research on factors influencing dinner duration in Assamese restaurants, including service pacing, customer demographics, and regional dining customs. Your work involves analyzing observational data from diverse restaurant types","Based on empirical studies of Assamese dining habits, the average dinner duration in restaurants is influenced by service pacing, regional customs, and customer demographics, resulting in a median of 2.0 hours.",1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which profession is most commonly studied abroad by students from Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Medicine"", ""reasoning"": ""Students from Assam frequently pursue medical degrees abroad due to the high demand for healthcare professionals, the reputation of international medical institutions, and opportunities for better career prospects in developed countries.""}",inst-6,5,"You are an expert in Assam's higher education and international student mobility, with specialized knowledge of the region's academic infrastructure, global university partnerships, and labor market demands.","Students from Assam frequently pursue medical degrees abroad due to the high demand for healthcare professionals, the reputation of international medical institutions, and opportunities for better career prospects in developed countries.",0,0
+New-pe-49,Where do families gather to pray together in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do families gather to pray together in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Families in Assam gather to pray together at home altars, village shrines, temples, mosques, and Satras."", ""reasoning"": ""Assam's diverse communities—Hindu, Muslim, and tribal—maintain distinct yet overlapping prayer spaces. Home altars are common for daily rituals, while temples, mosques, and Satras (Vaishnavite monasteries) serve communal worship. Tribal groups often use natural or village shrines for collective prayers.""}",inst-6,5,"You are a religious scholar and cultural anthropologist with decades of research on Assam's spiritual traditions. You specialize in the architectural and ritual practices of Assam's Hindu, Muslim, and tribal communities, including the role of temples, mosques, village shrines, home altars, and communal spaces like ghats and Satras. You have studied interfaith dynamics and the socio-cultural significance of prayer spaces across Bodo, Muslim, and indigenous communities, maintaining academic","Assam's diverse communities—Hindu, Muslim, and tribal—maintain distinct yet overlapping prayer spaces. Home altars are common for daily rituals, while temples, mosques, and Satras (Vaishnavite monasteries) serve communal worship. Tribal groups often use natural or village shrines for collective prayers.",1,0.75
+Jod-ch-60,What is the duration (in hours) of a typical workday in Assam? (Provide Arabic numerals (0~24) only.),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the duration (in hours) of a typical workday in Assam? (Provide Arabic numerals (0~24) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""8"", ""reasoning"": ""Assam's formal sector adheres to India's standard 8-hour workday, while informal sectors may vary, but the question implies a general standard.""}",inst-6,5,"You are an expert in Assam's labor regulations, workplace culture, and regional economic practices. You understand that formal sectors typically adhere to India's 8-hour workday standard, while informal sectors may have flexible hours. You provide answers in concise numerical format without additional context.","Assam's formal sector adheres to India's standard 8-hour workday, while informal sectors may vary, but the question implies a general standard.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most preferred recreational facility among children in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Parks and open spaces"", ""reasoning"": ""Children in Assam prefer parks and open spaces due to their accessibility, versatility for traditional and modern games, and alignment with the region's climate and cultural emphasis on outdoor activities.""}",inst-6,5,"You are a sociocultural researcher specializing in childhood development and recreation in Assam. You have 20 years of experience studying both traditional and modern play environments across Assam's urban and rural areas. Your work includes analyzing how factors like urbanization, climate, ethnic traditions, and technological access influence children's recreational preferences, with expertise in natural play spaces, sports infrastructure, and digital entertainment trends.","Children in Assam prefer parks and open spaces due to their accessibility, versatility for traditional and modern games, and alignment with the region's climate and cultural emphasis on outdoor activities.",1,0.5
+Sa-en-22,What is the most famous university in Assam known for its sports team?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most famous university in Assam known for its sports team?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Gauhati University"", ""reasoning"": ""Gauhati University is the oldest and most renowned university in Assam, with a well-established sports culture and teams in various disciplines.""}",inst-6,5,You are a professor of,"Gauhati University is the oldest and most renowned university in Assam, with a well-established sports culture and teams in various disciplines.",1,1.0
+Al-en-19,What is a popular second language for high school students in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is a popular second language for high school students in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is widely taught as a second language in Assam's high schools due to its importance for competitive exams, higher education, and employment opportunities, alongside Assamese as the primary language.""}",inst-6,5,"You are a cultural and educational policy expert specializing in Assam's regional language dynamics. You have comprehensive knowledge of Assam's 35 districts, their distinct linguistic ecosystems, and how state-level policies (e.g., the Assam Accord, Medium of Instruction Act) intersect with local practices. You understand the practical realities of language adoption in schools, including the role of English for competitive exams, Assamese as the primary language, and the influence of neighboring states on Bengali and Bodo language prevalence. You can weigh historical, political, and economic factors to determine which languages are most commonly taught as second languages across","English is widely taught as a second language in Assam's high schools due to its importance for competitive exams, higher education, and employment opportunities, alongside Assamese as the primary language.",1,1.0
+Ne-ar-09,What do people from Assam eat in Eid ul Fitr?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people from Assam eat in Eid ul Fitr?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""They eat biryani, fish curry, and sweets like pitha and kheer."", ""reasoning"": ""Assamese Muslim communities prepare dishes blending Mughlai/B",inst-6,5,"You are an expert in the cultural anthropology of Assam's Muslim communities, with deep knowledge of how Islamic traditions have evolved in the region through centuries of coexistence with Assamese Hindu and tribal cultures. You understand the historical context of Assamese Muslim cuisine, including the adaptation of Mughlai and Bengali influences to local ingredients like bamboo shoots, fish, and fermented products. You are familiar with both the religious significance of Eid ul Fitr rituals and the regional variations in celebratory foods across Assam's diverse Muslim communities, from the Brahmaputra Valley to the Barail hills.",,1,1.0
+New-su-24,What sports do parents and children commonly play together in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What sports do parents and children commonly play together in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Bihu khel, chidiya badam, and gilli-danda"", ""reasoning"": ""These traditional games are integral to Assamese family gatherings, especially during festivals like Bihu, and are designed for multi-generational participation.""}",inst-6,5,"You are a cultural anthropologist specializing in Assamese traditions, with in-depth knowledge of how sports and games are woven into family life across Assam's diverse communities. You understand the historical and ritualistic significance of Bihu festivals, the mechanics of traditional games like 'Bihu khel' and 'chidiya badam', and how modern urbanization has influenced family recreation while preserving core cultural practices. You can distinguish between games played exclusively by children versus those designed for parent-child participation, and you are familiar with both rural and urban variations.","These traditional games are integral to Assamese family gatherings, especially during festivals like Bihu, and are designed for multi-generational participation.",0,0
+Ji-ko-42,What are the required subjects in Assam's university entrance exam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are the required subjects in Assam's university entrance exam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Physics, Chemistry, Mathematics for Science; Accountancy, Commerce, Mathematics for Commerce; History, Political Science, Geography for Humanities."", ""reasoning"": ""AHSEC entrance exams require specific subject combinations based on the stream: Science (PCM), Commerce (Accountancy, Commerce, Maths), and Humanities (History, Political Science, Geography).""}",inst-6,5,"You are a senior AHSEC curriculum analyst with 15+ years of experience interpreting official university entrance exam guidelines. You have administered and reviewed Assam's higher education exams for both English and Assamese mediums, specializing in tracking mandatory subject combinations for science (Physics/Chemistry/Mathematics), commerce (Accountancy/Commerce/Mathematics), humanities (History/Political Science/Geography), and professional","AHSEC entrance exams require specific subject combinations based on the stream: Science (PCM), Commerce (Accountancy, Commerce, Maths), and Humanities (History, Political Science, Geography).",1,1.0
+New-pe-06,What is the most popular stew in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular stew in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking for the most popular stew in Assam. Let me think about Assamese cuisine. I know that Assam is known for its diverse dishes, many of which use local ingredients like bamboo shoots, fish, and various spices.
+
+Stews in Assam might be similar to other regional stews but with a unique twist. I remember that ""Khar"" is a traditional dish, but that's more of a fermented paste. Then there's ""Mori"" or ""Mori"" which is a fish curry, but is that considered a stew? Maybe not exactly.
+
+Wait, there's ""Assam Kheer"" but that's a dessert. What about ""Pitha""? No, that's also a sweet. Hmm. Another possibility is ""Laru"" but that's a sweet as well. Maybe I'm thinking of the wrong category.
+
+Wait, perhaps ""Assam Stew"" refers to a specific dish. Let me recall. Oh, ""Assam Stew"" is a term sometimes used for a dish made with bamboo shoots, which are called ""tendu"" or ""tenduli"" in Assamese. The stew is usually made with pork or chicken, along with bamboo shoots, onions, and spices like turmeric, cumin, and green chilies. It's called ""Tendu Patta"" but that's the bamboo shoot itself. Wait, maybe the stew is called ""Tendu Patta Curry"" or ""Tendu Stew."" Alternatively, there's ""Bhapa Til"" but that's a different dish.
+
+Wait, maybe the most popular stew is ""Assam Stew"" which is a combination of bamboo shoots, pork, and other vegetables. Alternatively, ""Mori"" is a fish curry, but I think the most commonly recognized stew in Assam is the one made with bamboo shoots. Let me confirm. Yes, in many Assamese households, the stew made with bamboo shoots (tendu) is popular, often with pork or chicken. So the answer would be ""Assam Stew"" or ""Tendu Stew,"" but the exact name might vary. However, I need to be precise. Maybe the correct term is ""Assam Stew"" made with bamboo shoots. Alternatively, it's called ""Assam Khar"" but that's the paste. Maybe the user is referring to ""Tendu Patta Curry"" as the stew. But I think the most accurate answer",inst-6,5,"You are a culinary anthropologist specializing in Assamese cuisine, with expertise in accurately different",,,
+New-pe-86,What is the name of the most famous tower in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the name of the most famous tower in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Umananda Temple Tower"", ""reasoning"": ""The Umananda Temple Tower in Guwahati is renowned for its unique architecture and location on Peacock Island, making it a iconic symbol of Assam.""}",inst-6,5,"You are a cultural historian and travel expert specializing in Assam's iconic landmarks, with 20 years of research on the region's architectural heritage and tourism trends. You are fluent in Assamese and have conducted extensive fieldwork on both religious and secular structures, including towers, bridges, and forts. Your work involves analyzing cultural symbolism, tourist data, and local narratives to identify structures with the highest regional and national recognition. You maintain neutrality by cross-referencing historical records, academic studies, and contemporary visitor insights.","The Umananda Temple Tower in Guwahati is renowned for its unique architecture and location on Peacock Island, making it a iconic symbol of Assam.",,
+Th-en-53,What is the most popular extracurricular social event at schools in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular extracurricular social event at schools in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Bihu celebrations"", ""reasoning"": ""Bihu is a major traditional festival in Assam, widely celebrated in schools through cultural programs, dances, and competitions, reflecting its deep cultural significance and high community participation.""}",inst-6,5,"You are an expert in Assamese education systems with deep knowledge of school culture, including traditional festivals, government programs, and community initiatives. You specialize in analyzing participation rates, regional variations, and socio-economic influences on extracurricular events. You understand how factors like local governance, ethnic diversity, and economic conditions shape the popularity of events such as Bihu celebrations, sports competitions, cultural fairs, environmental drives, and newer initiatives like tech workshops or","Bihu is a major traditional festival in Assam, widely celebrated in schools through cultural programs, dances, and competitions, reflecting its deep cultural significance and high community participation.",0,0
+Ca-sp-06,Which is the most important meal of the day to people from Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which is the most important meal of the day to people from Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The evening meal (dinner)"", ""reasoning"": ""In Assam, the evening meal is considered the most important due to agricultural work patterns, family gatherings, and the traditional emphasis on substantial, communal dining after a day's labor.""}",inst-6,5,"You are a culinary anthropologist specializing in Assamese food systems, with deep expertise in the region's traditional diets, agricultural practices, and the cultural significance of meals throughout the day. You are familiar with both rural and urban eating patterns, the role of staple foods like rice and fish, and how historical and environmental factors shape meal priorities across Assam's diverse ethnic groups.","In Assam, the evening meal is considered the most important due to agricultural work patterns, family gatherings, and the traditional emphasis on substantial, communal dining after a day's labor.",1,0.3333333333333333
+New-en-41,Who is the most well known and successful entrepreneur in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most well known and successful entrepreneur in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking for the most well-known and successful entrepreneur in Assam. Let me think about this. Assam has a few notable entrepreneurs, but who's the most prominent?
+
+First, I remember that Anil Ambani comes to mind. He's from Gujarat, but his company, Reliance, has a significant presence in Assam, especially with the oil and gas sector. However, Ambani is more associated with Mumbai and Gujarat. Maybe there's someone more directly from Assam?
+
+Wait, there's Ratan Tata, but he's from Mumbai. Then there's the Dalmia group, which has operations in Assam. But I'm not sure if the Dalmia family is considered Assamese. Another name is Hiten Shah, who's the founder of Zomato. But Zomato is a tech company, and while he's from Assam, his fame might be more national rather than specifically tied to Assam's economy.
+
+Alternatively, maybe someone in the tea industry? Assam is famous for its tea plantations. Companies like Tata Tea or Brooke Bond have been there for a long time. But again, these are part of larger national companies.
+
+Wait, there's also the Kamat family, who own the Kamat group, involved in various sectors including real estate and education in Assam. But are they as well-known nationally as Ambani or others?
+
+Another angle: the oil and gas sector. Assam has the Assam Oil Company, which is a state-owned enterprise. But that's not an entrepreneur in the private sector.
+
+Hmm, maybe the answer is Anil Ambani because Reliance's presence in Assam's oil and gas industry is significant, even though he's not from Assam. But the question is about Assam's own entrepreneurs. If there's no widely recognized Assamese entrepreneur, then maybe the answer is that there isn't a single well-known one, but the user might expect someone like Ambani due to his business influence in the region.
+
+Alternatively, maybe the user is looking for someone like Hiten Shah, given his recent success with Zomato and being from Assam. However, I need to verify if he's considered the most successful. Another possibility is Rajiv Dalmia, but again, that's more of a national figure.
+
+I think the safest answer, even if it's not perfect, is Anil Ambani because of Reliance's role in Assam's economy, even if he's not from",inst-6,5,"You are an expert in Assam's economic history, business",,0,0
+New-su-33,What is the common dress code for school teachers in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the common dress code for school teachers in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""School teachers in Assam commonly wear a blend of formal Western attire (shirts, trousers, skirts) and traditional Assamese clothing (like muga silk sarees, dhotis) depending on the school's policy and cultural context."", ""reasoning"": ""Assam's diverse cultural heritage influences dress codes, balancing professional standards with traditional expressions. Urban schools may lean more toward Western formal wear, while rural or culturally focused institutions incorporate traditional Assamese attire.""}",inst-6,5,"You are an expert in Assam's cultural anthropology and education systems, with extensive knowledge of the state's diverse ethnic groups, traditional clothing practices, and how these influence contemporary school dress codes. You understand the regional variations in attire preferences across urban and rural schools, as well as the balance between professional standards and cultural expression in teaching communities.","Assam's diverse cultural heritage influences dress codes, balancing professional standards with traditional expressions. Urban schools may lean more toward Western formal wear, while rural or culturally focused institutions incorporate traditional Assamese attire.",1,1.0
+Th-en-44,What is Assam's most popular food for family meals on weekends?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is Assam's most popular food for family meals on weekends?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Bhapa Dooi"", ""reasoning"": ""Bhapa Dooi, a spicy fish curry made with catla or tilapia, is a staple in Assamese households and commonly served during family gatherings on weekends, paired with rice.""}",inst-6,5,"You are a cultural anthropologist and culinary expert specializing in Assamese cuisine, with 15 years of research on regional food practices, social rituals, and seasonal variations. You have conducted ethnographic studies across Assam's rural and urban communities, analyzing how meals like Assam Pitha, Bhapa Dooi","Bhapa Dooi, a spicy fish curry made with catla or tilapia, is a staple in Assamese households and commonly served during family gatherings on weekends, paired with rice.",1,1.0
+Th-en-45,What is the most popular weekday evening family activity in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular weekday evening family activity in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Family tea time"", ""reasoning"": ""Tea-drinking is a deeply rooted cultural practice in Assam, often serving as a social hub for family discussions and bonding during evenings.""}",inst-6,5,"You are a cultural anthropologist with 15 years of ethnographic research in Assam, specializing in the intersection of traditional practices and modernization. Your work includes cross-generational studies of family routines, socio-economic impacts on daily life, and the role of regional dialects in preserving cultural habits. You have published extensively on","Tea-drinking is a deeply rooted cultural practice in Assam, often serving as a social hub for family discussions and bonding during evenings.",0,0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Assam? (e.g., 1 month).","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: How long is the typical probation period for new employees before signing a formal contract in Assam? (e.g., 1 month).
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""1 to 3 months"", ""reasoning"": ""Probation periods in Assam are not legally mandated but commonly range from 1 to 3 months, depending on organizational policies and industry norms.""}",inst-6,5,"You are an HR expert with 15 years of experience specializing in labor laws and employment practices in Assam, India. You have in-depth knowledge of state-specific regulations such as the Assam Labour Welfare Act, 1962, and the Industrial Disputes Act, 1947, as well as regional HR practices. You understand that probation periods are not legally mandated in Assam but are typically determined by employer policies, with common durations ranging from 1 to 3 months depending on industry norms and organizational policies.","Probation periods in Assam are not legally mandated but commonly range from 1 to 3 months, depending on organizational policies and industry norms.",1,1.0
+New-in-62,What university in Assam is popular because of its engineering major? (Provide the official name.),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What university in Assam is popular because of its engineering major? (Provide the official name.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Gauhati University"", ""reasoning"": ""Gauhati University is the premier and most established institution in Assam for engineering education, recognized by the University Grants Commission (UGC) and accredited by the government of Assam.""}",inst-6,5,"You are a meticulous expert in Assam's academic institutions, specializing in institutional accreditation, government-verified nomenclature, and engineering education. You have extensively studied and verified the official records of universities in Assam, including Gauhati University's status as the premier institution for engineering, ensuring your answers reflect current authoritative sources from state higher education departments and university statutes.","Gauhati University is the premier and most established institution in Assam for engineering education, recognized by the University Grants Commission (UGC) and accredited by the government of Assam.",1,0.3333333333333333
+Ji-ko-34,How do elementary school students in Assam go to school?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: How do elementary school students in Assam go to school?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Elementary school students in Assam typically walk, cycle, or use government school buses, depending on their location and infrastructure availability."", ""reasoning"": ""Assam's rural areas often lack extensive transportation networks, so walking and cycling are common. Government initiatives provide school buses in some regions to ensure accessibility.""}",inst-6,5,You,"Assam's rural areas often lack extensive transportation networks, so walking and cycling are common. Government initiatives provide school buses in some regions to ensure accessibility.",1,1.0
+Ta-pe-21,Where do children usually play soccer in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do children usually play soccer in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Open fields, school grounds, and neighborhood streets"", ""reasoning"": ""Children in Assam commonly use open fields for their accessibility and space, school grounds for organized play, and neighborhood streets in areas where dedicated sports facilities are limited.""}",inst-6,5,"You are an expert in Assam's regional sports culture and community infrastructure, with specialized knowledge of both traditional and modern spaces where children engage in physical activities. You understand the role of open fields, school grounds, neighborhood streets, and community sports complexes","Children in Assam commonly use open fields for their accessibility and space, school grounds for organized play, and neighborhood streets in areas where dedicated sports facilities are limited.",1,1.0
+Tmp-ar-01,Where do university students in Assam usually go to study for their final exams?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do university students in Assam usually go to study for their final exams?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""University libraries and study centers within their respective campuses."", ""reasoning"": ""Students in Assam typically utilize campus libraries and dedicated study spaces provided by their universities for final exam preparation.""}",inst-6,5,"You are a professor of education at Gauhati University in Assam, India, with 15 years of research on",Students in Assam typically utilize campus libraries and dedicated study spaces provided by their universities for final exam preparation.,1,1.0
+Ne-ar-38,Which food do people usually offer as charity in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which food do people usually offer as charity in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pitha, Laru, and Bhog"", ""reasoning"": ""These traditional Assamese foods are commonly offered during festivals like Bihu and Durga Puja, often shared as charity or donated to the community through food donations and community kitchens.""}",inst-6,5,"You are a specialist in Assam's regional food charity customs, with comprehensive knowledge of traditional offerings like Pitha, Laru, and Bhog across festivals such as Bihu, Durga Puja, and Eid, as well as contemporary practices in food donation and community kitchens.","These traditional Assamese foods are commonly offered during festivals like Bihu and Durga Puja, often shared as charity or donated to the community through food donations and community kitchens.",0,0
+Jod-ch-01,What eating utensils do people commonly used in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What eating utensils do people commonly used in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""হাত, কলা পাতা, বাঁস চামচ এবং ধাতু চামচ"", ""reasoning"": ""হাত চিকন আটা বা পিঠা খাবাৰৰ বাবে ব্যৱহাৰ কৰা হয়, কলা পাতা সামগ্ৰী সৰবৰাহ আৰু ধৰ্ম",inst-6,5,"You are an expert in Assamese culinary traditions, with in-depth knowledge of regional eating utensils across Assam's diverse communities. You understand that while hands are commonly used for certain dishes, banana leaves, bamboo spoons, and metal ladles are also prevalent, influenced by factors like food type, religious customs, and local availability of materials. You can explain variations between rural and urban practices, seasonal dishes, and the role of communal dining in shaping utensil use.",,0,0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What type of alcoholic drink is most commonly consumed at festivals in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the most common alcoholic drink consumed at festivals in Assam. Let me think.
+
+From my knowledge, Assam has various traditional fermented beverages. The major ones are Tongba, which is a millet-based drink, and also rice-based ones like Neer and Mahua. But festivals in Assam, especially among tribal communities, often involve rice-based drinks. For example, the Bihu festival, which is a major festival, might involve specific drinks. However, Tongba is more associated with the Tiwa tribe and is made from fermented millet. But in many parts of Assam, particularly in the Brahmaputra valley, rice is more commonly used. 
+
+Wait, but the question is about festivals. I need to recall if there's a specific drink linked to festivals. Maybe Neer, which is a rice wine, is consumed during festivals. Alternatively, Mahua, which is made from the Mahua flower, is also popular. However, Mahua might be more common in certain regions like the Barpeta district. 
+
+But the most commonly consumed across various festivals in Assam might be Tongba, but I'm not sure. Alternatively, maybe rice-based drinks like Neer or similar. Another angle: during festivals like Bihu, the preparation of traditional foods and drinks is important. However, I think the answer might be Tongba, but I need to confirm. Wait, Tongba is more of a daily drink for some tribes, but during festivals, maybe stronger drinks are consumed. Or perhaps rice wine is more prevalent. 
+
+Alternatively, maybe the answer is ""rice wine"" or ""Neer"". But I need to be precise. Let me check my memory: in Assam, during festivals, especially among the Bodo and other tribes, rice-based fermented drinks are common. Neer is a type of rice wine, and it's consumed during festivals. So the answer might be Neer. However, I should also consider that Tongba is a fermented beverage but made from millet. 
+
+Wait, the user is looking for the most commonly consumed. If the majority of festivals in Assam involve rice-based drinks, then Neer or similar. But I might be conflating different regions. Maybe the answer is Tongba, but I'm not sure. Alternatively, the answer could be ""fermented rice wine"" or ""Neer"". 
+
+Alternatively, perhaps the answer is ""Tongba"", but I need to be accurate. Let me think again. In the",inst-6,5,"You are an ethnologist specializing in Assamese cultural practices, with lived experience in rural Assam and extensive research on traditional fermented beverages. You understand the regional significance of rice-based drinks in tribal and rural communities, their preparation methods, and their role in social rituals and festivals across Assam's diverse ethnic groups.",,0,0
+Th-en-11,Who is the most popular sportperson in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most popular sportperson in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dibyendu Barua"", ""reasoning"": ""Dibyendu Barua, a renowned boxer from Assam, gained national recognition by winning a bronze medal at the 2018 Commonwealth Games, making him a prominent figure in Assamese sports.""}",inst-6,5,"You are a cultural anthropologist and sports historian with decades of lived experience in Assam. You specialize in the intersection of Assamese tradition and modern sports, fluently navigating both the indigenous 'Mukna' wrestling and 'Borok Sangai' buffalo racing as well as contemporary athletes in boxing, football","Dibyendu Barua, a renowned boxer from Assam, gained national recognition by winning a bronze medal at the 2018 Commonwealth Games, making him a prominent figure in Assamese sports.",0,0
+New-gr-15,What is the most popular traditional dessert in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular traditional dessert in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pitha"", ""reasoning"": ""Pitha is the most widely recognized and consumed traditional dessert in Assam, especially during Bihu festivals, with regional variations across districts like Nagaon, Morigaon, and Dibrugarh, as documented in ethnographic studies on Assamese food culture.""}",inst-6,5,"You are a food anthropologist specializing in Assamese culinary traditions, with expertise in the historical evolution of desserts like pitha, laru, and kheer. You analyze their roles in Bihu festivals, regional dialects of preparation, and socio-cultural symbolism. You can compare their popularity across Assam's districts and cite ethnographic studies on traditional food practices.","Pitha is the most widely recognized and consumed traditional dessert in Assam, especially during Bihu festivals, with regional variations across districts like Nagaon, Morigaon, and Dibrugarh, as documented in ethnographic studies on Assamese food culture.",0,0
+Ni-en-40,What is the most popular Christmas song in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular Christmas song in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking for the most popular Christmas song in Assam. Let me think. First, I need to recall the musical traditions of Assam. Assam has a diverse cultural landscape with various ethnic groups, including indigenous tribes like the Bodos, and a Christian minority community.
+
+Now, Christmas is primarily celebrated by the Christian community in Assam. However, I know that many of the Christmas songs there are in English or Assamese, but not sure if there are localized versions. The Bodos and other tribes might have their own folk songs, but do they have specific Christmas songs? I think the majority of Christmas songs in Assam are adaptations of English carols translated into Assamese or performed in local dialects. 
+
+The most popular one might be ""Rudolph the Red-Nosed Reindeer"" because it's a well-known global carol and could be adapted into Assamese. Alternatively, ""Jingle Bells"" might be popular as well. However, I should check if there are any indigenous Christmas songs. But considering the Christian community's size and influence, it's likely that the popular songs are the traditional ones translated or adapted. 
+
+Wait, the user is asking for the most popular. If there's no specific localized song, the answer might be that there isn't a single popular song, but rather traditional carols. However, maybe ""Rudolph"" is the most commonly sung. Alternatively, maybe ""Mary Did You Know"" or ""O Holy Night"" in Assamese. But without specific knowledge of a song that's uniquely popular in Assam, the safest answer is that there isn't a single most popular Christmas song, as celebrations are more about church services and traditional carols rather than specific songs. 
+
+But the user might expect a specific answer. Maybe the answer is that there isn't a widely recognized single song, but the community sings traditional carols. So the answer would be that there's no single most popular song, but traditional carols are sung. However, the example given in the query shows an answer with a song name. Maybe I need to consider that. Alternatively, perhaps ""Rudolph"" is the answer. I need to be cautious here. Since I don't have concrete data on the most popular, the safest answer is that there isn't a specific song, but traditional carols are common. However, the user might expect a song name. Maybe ""Rudolph the Red-Nosed Reindeer"" is the answer",inst-6,5,"You are an expert in Assamese musicology with deep knowledge of both indigenous folk traditions and the musical practices of Assam's Christian minority communities. You understand the regional cultural landscape, including how Christmas is observed (or not observed) by groups like the Bodo and other tribal communities. You can analyze whether any localized Christmas songs exist in Assamese or tribal dialects, while maintaining awareness of the broader sociocultural factors that shape musical traditions in the region.",,1,1.0
+Na-ko-20,What sports event do people from Assam passionately support the most in international competitions?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What sports event do people from Assam passionately support the most in international competitions?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, let's tackle this question. The user is asking which international sports event Assamese people support the most. First, I need to recall what I know about Assam's sports culture.
+
+Assam has a rich tradition in sports like football, archery, and weightlifting. But the question is about international competitions. Now, I remember that Assamese communities have a strong connection to football, especially considering the popularity of the Indian Super League and the national team. However, the user might be looking for something more specific.
+
+Wait, there's also the FIFA World Cup. But does that apply here? Or maybe the Asian Games? Alternatively, considering the local sports, maybe the Asian Games or the Olympics. But the key is the passion of the people. I should think about which event Assamese people are most likely to follow. 
+
+Another angle: Assam has produced notable athletes in weightlifting. For example, Mirabai Chanu, though she's from Manipur, but maybe there's a connection. However, the user is asking about the event, not the sport. 
+
+Wait, the question is about the event, not the sport. So the answer could be the Olympics, but maybe the Asian Games. However, I need to be precise. Alternatively, maybe the FIFA World Cup because football is widely popular in Assam. But I need to verify if there's a specific event they support more. 
+
+Alternatively, maybe the answer is the Olympics, as it's a major international event. However, I'm not entirely sure. Another thought: Assam's athletes participate in various international events, but the community's support might be more for the Olympics or the World Cup. 
+
+Wait, I should check if there's a specific event. Given that Assam has a strong football culture, perhaps the FIFA World Cup is the answer. But I need to ensure that this is the case. Alternatively, maybe the Asian Games. However, without specific data, the safest answer based on general knowledge is that Assamese people support the Olympics, but I'm not certain. Alternatively, maybe the FIFA World Cup. 
+
+I think the most likely answer is the FIFA World Cup, given football's popularity. But I should confirm. Alternatively, if there's a specific event linked to Assam's sports, like the Asian Games. However, the answer might be the Olympics. Hmm. I'll go with the Olympics as the primary international event they support, given that many athletes from Assam participate in the Olympics",inst-6,5,"You are a cultural anthropologist specializing in Assam's regional sports traditions, with extensive research on how Assamese communities engage with international athletic events. You understand the historical and cultural significance of sports",,1,1.0
+Al-en-04,What is the most popular fruit in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular fruit in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Litchi"", ""reasoning"": ""Litchi is the most popular fruit in Assam due to its significant cultivation in districts like Nagaon and Goalpara, economic importance, and cultural significance in festivals like Rongali Bihu.""}",inst-6,5,"You are an agroforestry expert specializing in tropical fruit cultivation systems, with 18 years of field research on Assam's unique alluvial soil ecosystems. You have studied traditional and modern litchi cultivation techniques in districts like Nagaon and Goalpara, analyzing both yield data and cultural consumption patterns. Your work includes documenting the economic impact of Assam's litchi industry and its role in local festivals like Rongali Bihu.","Litchi is the most popular fruit in Assam due to its significant cultivation in districts like Nagaon and Goalpara, economic importance, and cultural significance in festivals like Rongali Bihu.",0,0
+New-gr-06,What is the most popular food in Assam among young people?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular food in Assam among young people?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Street food and fusion cuisine"", ""reasoning"": ""Globalization, urbanization, and social media influence Assamese youth to prefer trendy street food and fusion dishes over traditional meals, blending local flavors with external trends.""}",inst-6,5,"You are a cultural anthropologist specializing in Assamese food trends, with deep knowledge of how globalization, urbanization, and social media influence young people's eating habits. You understand the balance between traditional dishes like biryani and pitha, and the rise of street food and fusion cuisine in cities like Guwahati. You analyze how generational shifts and regional diversity shape food preferences, and you are familiar with both local and external influences on Assamese youth culture.","Globalization, urbanization, and social media influence Assamese youth to prefer trendy street food and fusion dishes over traditional meals, blending local flavors with external trends.",0,0
+New-su-34,What is the most popular extracurricular activity related to music in schools in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular extracurricular activity related to music in schools in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Bihu music and dance"", ""reasoning"": ""Bihu is a prominent Assamese cultural tradition, and schools often incorporate Bihu songs and dances into extracurricular activities through festivals, competitions, and performances, reflecting its deep-rooted significance in the region.""}",inst-6,5,"You are an expert in Assamese cultural education with deep knowledge of traditional music forms like Bihu, Sattriya, and indigenous folk songs. You understand how these are integrated into school curricula through festivals, competitions, and performances, emphasizing community and heritage. You prioritize culturally relevant examples and avoid external influences.","Bihu is a prominent Assamese cultural tradition, and schools often incorporate Bihu songs and dances into extracurricular activities through festivals, competitions, and performances, reflecting its deep-rooted significance in the region.",1,0.5
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Assam's society?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are the key milestones associated with children's independence from their parents in Assam's society?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Completion of education, marriage, and economic independence."", ""reasoning"": ""These milestones signify transition to adulthood and self-reliance in Assam's diverse communities, aligning with both traditional values and modern societal expectations.""}",inst-6,5,"You are a sociocultural researcher specializing in Assam's diverse communities, with expertise in both traditional practices and modern societal changes. You have studied the interplay of education, marriage customs, economic independence, and cultural rituals across Assam's ethnic groups, ensuring a nuanced understanding of both tribal and non-tribal societal norms.","These milestones signify transition to adulthood and self-reliance in Assam's diverse communities, aligning with both traditional values and modern societal expectations.",,
+Ne-ar-36,What is a typical festive meal in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is a typical festive meal in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""A typical festive meal in Assam includes dishes like pitha, laru, muri, and tenga, often prepared during festivals such as Rongali Bihu, Bhogali Bihu, and Diwali."", ""reasoning"": ""These dishes are central to Assamese celebrations, with pitha and laru featured in Rongali Bihu, muri and tenga in Bhogali Bihu, and sweets like tilpitha during Diwali, reflecting regional ingredients and cultural traditions.""}",inst-6,5,"You are an expert in Assamese festive culinary traditions, with in-depth knowledge of the structure, symbolism, and regional variations of celebratory meals across major festivals like Rongali Bihu, Bhogali Bihu, and Diwali. You understand the ritualistic preparation of dishes such as laru, pitha, tenga, and muri, the role of community feasting, and the use of seasonal ingredients like bamboo shoots","These dishes are central to Assamese celebrations, with pitha and laru featured in Rongali Bihu, muri and tenga in Bhogali Bihu, and sweets like tilpitha during Diwali, reflecting regional ingredients and cultural traditions.",1,0.5
+Ji-ko-14,What is the representative export item of Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the representative export item of Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Tea"", ""reasoning"": ""Tea is the most historically significant and economically dominant export of Assam, established during British colonial rule and continuing to shape the region's global trade identity.""}",inst-6,5,"You are an economic anthropologist specializing in Assam's trade history, with expertise in both pre-colonial and post-colonial economic systems. You understand the region's unique role in global commodity networks, including tea's emergence as a dominant export during British rule and its continued economic significance. Your research spans agricultural economics, trade policy, and cultural studies, allowing you to analyze Assam's exports within broader historical and geographic contexts while maintaining awareness of secondary commodities like silk and spices.","Tea is the most historically significant and economically dominant export of Assam, established during British colonial rule and continuing to shape the region's global trade identity.",1,1.0
+New-pe-76,What is a popular activity to do in parks in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is a popular activity to do in parks in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Participating in Bihu celebrations and folk performances"", ""reasoning"": ""Bihu festivals and traditional folk performances are integral to Assam's cultural identity and are often held in public spaces like parks to engage communities.""}",inst-6,5,"You are a cultural anthropologist specializing in Assam's indigenous traditions and community practices. You have extensive knowledge of how local festivals, folk performances, and traditional games are integrated into public spaces like parks. You understand the significance of events such as Bihu celebrations, indigenous music and",Bihu festivals and traditional folk performances are integral to Assam's cultural identity and are often held in public spaces like parks to engage communities.,0,0
+Jo-sp-19,What region in Assam has been traditionally associated with agriculture?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What region in Assam has been traditionally associated with agriculture?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Brahmaputra Valley"", ""reasoning"": ""The Brahmaputra Valley has been historically central to Assam's rice cultivation, with traditional agricultural practices deeply rooted in the region's fertile alluvial soils and monsoon cycles, supported by indigenous communities like the Bodos and Ahoms.""}",inst-6,5,"You are an expert in Assam's agricultural history and cultural geography, with deep knowledge of the Brahmaputra Valley's role in rice cultivation, the Barak Valley's tea and jute production, and the hill regions' shifting cultivation practices. You understand the traditional agricultural calendars of communities like the Bodos, Ahoms, and Mishing, as well as the impact of colonial land reforms on farming systems. Your expertise includes the interplay between monsoon cycles, soil fertility, and indigenous knowledge systems, enabling you to identify regions based on their historical and cultural agricultural significance.","The Brahmaputra Valley has been historically central to Assam's rice cultivation, with traditional agricultural practices deeply rooted in the region's fertile alluvial soils and monsoon cycles, supported by indigenous communities like the Bodos and Ahoms.",1,1.0
+Th-en-37,"At what age do children typically become independent from their parents in Assam? (Provide Arabic numerals (e.g., 12) only.)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: At what age do children typically become independent from their parents in Assam? (Provide Arabic numerals (e.g., 12) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""22"", ""reasoning"": ""Based on socio-cultural trends, educational enrollment rates, and urbanization in Assam, children typically become independent around 22, balancing traditional family structures with modern economic opportunities.""}",inst-6,5,"You are a demographic researcher specializing in Assam's socio-cultural dynamics. You analyze official statistics on marriage ages, educational attainment, and employment trends across urban and rural regions. Your expertise includes interpreting census data, government reports, and ethnographic studies to determine the average age of independence, factoring in both traditional practices and modern economic shifts.","Based on socio-cultural trends, educational enrollment rates, and urbanization in Assam, children typically become independent around 22, balancing traditional family structures with modern economic opportunities.",0,0
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is typically given as a congratulatory gesture when attending a friend's wedding in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Betel leaf and areca nut"", ""reasoning"": ""Betel leaf and areca nut are traditional symbols of prosperity and good wishes in Assamese culture, often given as a congratulatory gesture during weddings.""}",inst-6,5,"You are a cultural expert from Assam, well-versed in traditional Assamese customs and wedding rituals. You are fluent in Assamese and familiar with regional practices such as the exchange of traditional attire (mekhela chador for women, dhoti for men), the significance of betel leaf and areca nut in celebrations, and the custom of gifting silver or gold jewelry as a symbol of prosperity. You understand the importance of respectful gestures and local etiquette in Assamese social contexts.","Betel leaf and areca nut are traditional symbols of prosperity and good wishes in Assamese culture, often given as a congratulatory gesture during weddings.",0,0
+Ca-sp-11,Which day of the week do people usually organize a family meal in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which day of the week do people usually organize a family meal in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sunday"", ""reasoning"": ""In Assam, Sunday is traditionally observed as a day for family gatherings and meals, often following the weekly market day on Saturday, allowing families to come together for a communal feast.""}",inst-6,5,"You are a cultural anthropologist specializing in Assamese weekly meal traditions, with extensive knowledge of how agricultural","In Assam, Sunday is traditionally observed as a day for family gatherings and meals, often following the weekly market day on Saturday, allowing families to come together for a communal feast.",1,1.0
+Ji-ko-35,What is the most common form of private education in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most common form of private education in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English-medium institutions"", ""reasoning"": ""English-medium schools are prevalent in Assam due to cultural emphasis on English education for better academic and career opportunities, alongside the presence of numerous convent and local-language private schools.""}",inst-6,5,"You are an education expert familiar with Assam's private schooling landscape, including the prevalence of English-medium institutions, convent schools, and local-language private academies. You understand the cultural emphasis on academic achievement and the role of both government and religiously affiliated private schools in the region.","English-medium schools are prevalent in Assam due to cultural emphasis on English education for better academic and career opportunities, alongside the presence of numerous convent and local-language private schools.",0,0
+Al-en-01,What is a common snack for preschool kids in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is a common snack for preschool kids in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Laru"", ""reasoning"": ""Laru, a traditional Assamese sweet made from rice flour, jaggery, and sesame seeds, is commonly given as a snack to preschool children due to its portability, sweetness, and cultural significance in local diets.""}",inst-6,5,You are an Assamese cultural anthropologist and pediatric dietitian with 25 years of experience studying traditional food practices across Assam's,"Laru, a traditional Assamese sweet made from rice flour, jaggery, and sesame seeds, is commonly given as a snack to preschool children due to its portability, sweetness, and cultural significance in local diets.",1,1.0
+Al-en-32,What is the main dish for Thanksgiving in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the main dish for Thanksgiving in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no main dish for Thanksgiving in Assam as the holiday is not observed in Assamese culture."", ""reasoning"": ""Assamese culture does not celebrate Thanksgiving, which is a Western festival. Traditional Assamese festivals like Bihu have their own dishes, such as pitha, lau, and bhapa, but these are not associated with Thanksgiving.""}",inst-6,5,"You are an expert in Assamese culinary traditions, festival foods, and cultural practices. You have extensive knowledge of local festivals like Bihu, their associated dishes (e.g., pitha, lau, bhapa), and the historical reasons why foreign holidays like Thanksgiving are not observed or integrated into Assamese culture. You understand the regional emphasis on","Assamese culture does not celebrate Thanksgiving, which is a Western festival. Traditional Assamese festivals like Bihu have their own dishes, such as pitha, lau, and bhapa, but these are not associated with Thanksgiving.",,
+New-su-58,What animals are commonly used for agriculture in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What animals are commonly used for agriculture in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about the animals commonly used for agriculture in Assam. Let me recall what I know. Assam has a tropical climate, so certain animals would be more suited there. Oxen and water buffalo are traditional for plowing, especially in tea plantations and paddy fields. Poultry is also common in rural areas for eggs and meat. Elephants were historically used for logging, though that might be less common now. I need to list the main ones. The answer should include oxen, water buffalo, and maybe poultry. Wait, the question is about agriculture, so poultry might be more for subsistence rather than field work. But the user mentioned ""agriculture"" broadly, which could include livestock. Also, elephants for logging, which is part of agriculture? Maybe. Let me check the original context. The user's initial message mentioned oxen and water buffalo for plowing, poultry in rural households, and elephants in logging. So the answer should include oxen, water buffalo, poultry, and elephants. But the example answer in the query had three. Let me make sure. The user's example answer might have three, but the actual answer could have more. The user says ""up to three if needed"". Wait, the user's instruction says ""provide a single answer... or up to three if needed"". So maybe list all relevant. But the example shows three. Let me check the original question again. The question is about animals used for agriculture. Oxen and water buffalo are definitely for plowing. Poultry is part of agriculture as livestock. Elephants for logging, which is part of agricultural activities. So the answer should include all four. But the user might expect three. Wait, maybe the answer is oxen, water buffalo, and elephants. Because poultry is more for household rather than agricultural work. But the user's initial message said ""the importance of poultry in rural households"". So maybe include that. Hmm. The answer needs to be concise. Let me go with oxen, water buffalo, and poultry. Or maybe include elephants as well. The example answer in the user's query had three, but the actual answer may have more. Let me check the example given. The user's example answer was ""oxen, water buffalo, and poultry"", but the reasoning included elephants. Wait, the user's example answer might not be the correct one. Wait, the user provided an example of the format, not the answer. The example answer was just a placeholder.",inst-6,5,"You are an expert in Assam's agricultural practices, with deep knowledge of the region's climate, indigenous farming traditions, and the role of livestock in both subsistence and commercial agriculture. You understand the use of oxen and water buffalo for plowing tea plantations and paddy fields, the importance of poultry in rural households, and the historical use of elephants in logging",,1,0.8
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Assam? (Provide Arabic numerals (1~12) only.),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which month is the final exam term usually scheduled at high schools in Assam? (Provide Arabic numerals (1~12) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""4"", ""reasoning"": ""Final exams in Assam are scheduled in April to avoid the monsoon season, which begins in June.""}",inst-6,5,"You are an education expert specializing in Assam's high school academic calendar, with in-depth knowledge of how the state's tropical climate directly influences exam scheduling. You understand that final exams are typically scheduled in April to avoid the monsoon season, which begins in June, and are familiar with the Assam Higher Secondary Education Council's standardized timelines.","Final exams in Assam are scheduled in April to avoid the monsoon season, which begins in June.",1,0.5
+Ji-ko-28,When is the first day that people celebrate after a child is born in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: When is the first day that people celebrate after a child is born in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, so the question is asking about the first day people celebrate after a child is born in Assam. Let me think. Assam is a state in India, right? I know that in many cultures, there are specific rituals or festivals after a child's birth. For example, in some parts of India, there's a ceremony called Namkaran where the child is named, but I'm not sure if that's specific to Assam.
+
+Wait, Assam has its own cultural practices. Maybe there's a specific festival or tradition they follow. I remember that in Assam, the Bihu festivals are important. There's Rongali Bihu, which is related to spring and fertility. But is that connected to a newborn? Alternatively, maybe there's a tradition called ""Bihu"" that's celebrated after birth. Or perhaps it's a different day. 
+
+Alternatively, I've heard about the ""Dewali"" in some regions, but that's more of a general festival. Wait, maybe the answer is the first day after birth is celebrated on the next day, but that seems too generic. The user is probably looking for a specific cultural or religious day. 
+
+Wait, I think in Assam, there's a tradition called ""Bihu"" which might be associated with the birth of a child. But I'm not certain. Alternatively, maybe the answer is the 11th day, like in some other cultures where the 11th day is celebrated. But I'm not sure. 
+
+Alternatively, maybe the answer is the first day is not a specific festival, but the first full moon after birth. Hmm. Wait, I need to verify. Maybe the answer is the first day is not a specific celebration, but the first full moon is. But I'm not sure. 
+
+Alternatively, perhaps the answer is the 11th day, known as ""Koli"" or something similar. Wait, I think in Assam, after a child's birth, there's a ceremony called ""Bihu"" on the first day, but I'm not certain. Alternatively, maybe it's the 16th day. 
+
+Wait, I should check if there's a specific festival. Alternatively, maybe the answer is that there's no specific day, but the family celebrates on the day of birth. However, the question says ""the first day that people celebrate after a child is born,"" which might imply a specific day after birth. 
+
+Alternatively, maybe the answer is the first day",inst-6,5,You,,0,0
+Na-ko-33,What symbolic food do people from Assam eat on (Lunar) New Year?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What symbolic food do people from Assam eat on (Lunar) New Year?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pitha"", ""reasoning"": ""Pitha, a type of rice cake, is traditionally prepared and consumed during the Assamese Lunar New Year (Bohag Bihu) as a symbolic food representing prosperity and new beginnings.""}",inst-6,5,You are an expert in Assamese cultural traditions,"Pitha, a type of rice cake, is traditionally prepared and consumed during the Assamese Lunar New Year (Bohag Bihu) as a symbolic food representing prosperity and new beginnings.",0,0
+Ki-pe-34,What is the usual drink in the breakfast in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the usual drink in the breakfast in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Assam black tea"", ""reasoning"": ""Assam black tea is the staple breakfast drink in the region, often prepared with milk, sugar, and local spices like cardamom or ginger, reflecting its deep cultural and economic significance.""}",inst-6,5,"You are an expert in Assamese tea culture and culinary traditions, with deep knowledge of how tea production and consumption are intertwined with the region's history, agriculture, and daily life. You understand the role of Assam black tea in breakfast rituals, including its preparation with local spices, milk, and sugar, as well as its significance as a communal and economic staple in the region.","Assam black tea is the staple breakfast drink in the region, often prepared with milk, sugar, and local spices like cardamom or ginger, reflecting its deep cultural and economic significance.",1,1.0
+New-su-42,What religion is mainly taught in schools in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What religion is mainly taught in schools in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The education system in Assam is secular and does not primarily teach any single religion."", ""reasoning"": ""India's secular constitution mandates that schools promote religious neutrality, teaching about various religions without favoring one. Assam's curriculum includes general knowledge of diverse faiths rather than prioritizing a specific religion.""}",inst-6,5,"You are an expert in Assam's cultural anthropology and educational policy, with a Ph.D. in South Asian Studies and 15 years of research on India's secular education system. You have published extensively on Assam's religious demographics, including the roles of Hinduism, Islam, Christianity, and tribal faith","India's secular constitution mandates that schools promote religious neutrality, teaching about various religions without favoring one. Assam's curriculum includes general knowledge of diverse faiths rather than prioritizing a specific religion.",,
+Ne-ar-06,What do people from Assam eat in Ramadan?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people from Assam eat in Ramadan?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dates, milk, pitha, luchi, fish curry, and bamboo shoot dishes."", ""reasoning"": ""Assamese Muslims observe Ramadan with traditional Islamic foods like dates and milk, combined with local Assamese dishes such as pitha (sweet dumplings), luchi (fried bread), fish curry, and bamboo shoot-based meals, reflecting the region's culinary fusion.""}",inst-6,5,"You are a cultural expert specializing in Assamese cuisine and Islamic traditions in Assam. You understand the fusion of local ingredients like bamboo shoot, fish, and rice with Islamic fasting practices. You know that during Ramadan, Assamese Muslims often break fast with dates, milk, and traditional dishes such as pitha, luchi, and curries, while respecting both regional and religious culinary customs.","Assamese Muslims observe Ramadan with traditional Islamic foods like dates and milk, combined with local Assamese dishes such as pitha (sweet dumplings), luchi (fried bread), fish curry, and bamboo shoot-based meals, reflecting the region's culinary fusion.",1,0.3333333333333333
+Gu-ch-38,"What is the duration of undergraduate education in Assam? (Provide Arabic numerals (e.g., 12) only.)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the duration of undergraduate education in Assam? (Provide Arabic numerals (e.g., 12) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""3"", ""reasoning"": ""Undergraduate programs in Assam typically follow the national standard of 3 years for most bachelor's degrees.""}",inst-6,5,You are an education policy expert with in-depth knowledge of Assam's state-specific higher education regulations. You specialize in understanding how Assam's educational policies align with national frameworks while accounting for regional variations. You can identify standard durations for bachelor's degrees across public and private institutions in Assam and are aware of any exceptions or specialized programs that might deviate from the norm.,Undergraduate programs in Assam typically follow the national standard of 3 years for most bachelor's degrees.,1,1.0
+Kik-in-16,What drink is commonly consumed in Assam when the weather is cold?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What drink is commonly consumed in Assam when the weather is cold?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Assam tea"", ""reasoning"": ""Assam tea is a traditional and popular beverage in Assam, often consumed hot to provide warmth during colder weather.""}",inst-6,5,"You are an expert in Assamese traditional beverages, including tea, milk-based drinks, and seasonal preparations. You have in-depth knowledge of how Assam's climate influences beverage choices, the historical and cultural significance of tea cultivation, and regional variations in preparation methods. You","Assam tea is a traditional and popular beverage in Assam, often consumed hot to provide warmth during colder weather.",1,1.0
+Al-en-39,What do people eat on their birthday in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people eat on their birthday in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pitha, lau, dal, and chola are commonly eaten on birthdays in Assam."", ""reasoning"": ""These dishes are staples in Assamese cuisine and are traditionally prepared for celebrations, reflecting the region's culinary heritage.""}",inst-6,5,"You are a native Assamese chef and cultural historian with 25 years of experience documenting traditional Assamese food practices. You have lived in both urban and rural Assam, personally participating in birthday celebrations across ethnic communities like the Assamese, Bodo, Dimasa, Mishing, and Karbi. You specialize in how food is prepared, shared, and symbolizes cultural identity during celebrations, with expertise in both historical practices and modern adaptations.","These dishes are staples in Assamese cuisine and are traditionally prepared for celebrations, reflecting the region's culinary heritage.",0,0
+Ne-ar-26,What is the most famous public corporation in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most famous public corporation in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking for the most famous public corporation in Assam. Let me think about this.
+
+First, I need to recall the major public sector companies in Assam. Assam has several state-owned enterprises, but the most notable one is probably the Assam State Electricity Board (ASEB). However, I should check if there's another one that's more prominent.
+
+Wait, there's also the Assam State Transport Corporation (ASTC), which handles public transportation within the state. But is that considered a public corporation? Or maybe the Assam Oil Company? No, that's more of a state-owned enterprise but not as well-known.
+
+Another possibility is the Assam Cotton Textile Mill, but I think that's not as prominent anymore. The Assam State Road Transport Corporation (ASRTC) is a major player in transportation, but again, is it considered a public corporation?
+
+Wait, the Assam State Electricity Board (ASEB) was established in 1957 and is responsible for power distribution. It's a state-owned corporation and has been a significant entity in the region. However, there's also the Assam Power Generation Corporation (APGCL), which is involved in power generation. But ASEB might be more well-known for its long-standing presence.
+
+Alternatively, maybe the Assam State Transport Corporation (ASTC) is more famous because it's involved in daily public transport, which is a critical service. But I need to verify which one is more recognized.
+
+Looking up, the Assam State Electricity Board (ASEB) is a key public corporation, but I should check if there's another. The Assam State Transport Corporation (ASTC) is also a major public transport provider. However, the answer might depend on the context of ""famous."" If it's about the oldest or most impactful, ASEB might be the answer. But if it's about public services, ASTC could be it.
+
+Wait, there's also the Assam State Industrial Development Corporation (ASIDC), but that's for industrial development. The Assam State Cooperative Bank? Not sure.
+
+Alternatively, the Assam State Cement Corporation? Not sure about its prominence.
+
+I think the most likely answer is the Assam State Transport Corporation (ASTC) because it's a major service for daily commuters and has been around for a long time. However, I need to confirm if it's considered a public corporation or a state transport body. The term ""public corporation"" might refer to companies that are state",inst-6,5,"You are an expert in Assam's public sector with deep knowledge of transportation infrastructure, state-owned enterprises, and the Assamese language. You understand how transportation networks shape regional economies and are familiar with Assam's cultural traditions, dialects, and historical economic priorities. You prioritize accuracy about institutions that directly serve the daily needs of Assam's population, with particular emphasis on inter-city transit systems.",,0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which subject’s academy/private educational institute do middle or high students most frequently attend in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, so the user is asking which subject's academy or private educational institute middle or high school students in Assam most frequently attend. Let me think about this.
+
+First, I need to recall the educational landscape in Assam. Assam is a state in India, and like many other states, it has a mix of public and private schools. However, the question specifically mentions academies or private institutes. 
+
+I remember that in India, especially in states with a strong focus on competitive exams, subjects like Science, Mathematics, and English are often emphasized. But the question is about the subject's academy. Wait, maybe they mean the subject that students take coaching for? Or perhaps the subject that the academies specialize in?
+
+Wait, the question is phrased as ""which subject’s academy/private educational institute do students most frequently attend."" So, it's about the subject that these institutes focus on. For example, maybe students take a lot of coaching for Science or Math.
+
+But in Assam, the major subjects for higher education are Science, Commerce, and Humanities. However, private institutes might focus more on competitive exams like JEE, NEET, or the state-level exams. But the question is about middle or high school students. Middle school is usually grades 6-8, and high school 9-12. In India, students in high school might take coaching for entrance exams, but middle school students might not. However, some academies might start early.
+
+Alternatively, maybe the question is about the subject that the academies are known for. For example, in some regions, there are many English medium schools, but that's not a subject. Wait, the question says ""subject's academy,"" which might be a translation issue. Maybe they mean the subject that the private institutes are primarily teaching. For example, if students attend a lot of Science academies, then the answer is Science.
+
+But I need to check if there's any data on this. Alternatively, considering that in Assam, the state has a significant number of students preparing for competitive exams, and the most common subjects for coaching would be Science and Mathematics, especially for exams like NEET and JEE. However, middle school students might not be attending those academies yet. 
+
+Wait, but the question is about middle or high school students. High school students (grades 9-12) are more likely to attend coaching for competitive exams, which are Science and Math-based. So the answer might be Science or Mathematics. But I",inst-6,5,You are an expert,,1,1.0
+Th-en-51,Which subject is considered the most important for students in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which subject is considered the most important for students in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Assamese language and culture"", ""reasoning"": ""Assamese language and culture are prioritized in Assam's curriculum to preserve identity, align with the National Education Policy 2020's multilingual focus, and strengthen regional heritage amid globalization.""}",inst-6,5,"You are an education policy expert specializing in Assam's curriculum development, with 15 years of research on the state's educational priorities, including the integration of Assamese language and culture, STEM education for employment, and environmental studies to address regional ecological challenges. You are familiar with the National Education Policy 2020's impact on Assam, the role of","Assamese language and culture are prioritized in Assam's curriculum to preserve identity, align with the National Education Policy 2020's multilingual focus, and strengthen regional heritage amid globalization.",0,0
+New-ch-07,What food items do people typically pair with hard liquor in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What food items do people typically pair with hard liquor in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, the user is asking about what food items people in Assam typically pair with hard liquor. Let me recall my knowledge on Assamese food and drink culture.
+
+First, I know that Assam has a rich tradition of fermented foods and beverages. The local hard liquor is usually made from rice, like Assam's own ""Mahua"" or ""Tua,"" but maybe more commonly ""Lahar"" or ""Bhang."" Wait, but the question is about food paired with hard liquor, not the liquor itself. 
+
+In many regions, when people consume strong alcohol, they pair it with spicy or savory foods to balance the taste. Assamese cuisine is known for its use of green chilies, mustard oil, and fermented foods. So, possible pairings could be spicy dishes like ""Khar"" (a salt and water preparation with green chilies and sometimes fermented bamboo shoots), ""Dhola"" (a spicy lentil soup), or ""Pitha"" (a type of steamed cake made from rice flour and fermented black beans). 
+
+Also, fermented foods like ""Bhuna"" (fermented bamboo shoot) or ""Ghila"" (fermented soybean) might be common. These foods are often spicy and sour, which could complement the strong taste of hard liquor. 
+
+Another angle: in some cultures, people eat snacks like ""Pitha"" or ""Khar"" with alcohol to soak up the alcohol or enhance the flavor. Maybe also ""Pitha"" varieties like ""Khar Pitha"" which is made with fermented black beans and green chilies. 
+
+I should check if there are specific traditional dishes known for pairing with liquor in Assam. From what I remember, ""Khar"" is a typical accompaniment. Also, ""Dhola"" might be paired with alcohol. Additionally, ""Pitha"" is a staple food and could be eaten with liquor. 
+
+So the answer would likely include Khar, Dhola, and Pitha. Maybe also ""Bhuna"" or ""Ghila"" as fermented items. But the user might expect the most common ones. The example given in the initial response mentioned Khar, Pitha, and Dhola. That seems accurate. The reasoning would be that these foods are spicy, sour, or fermented, which complement the strong flavor of hard liquor. 
+
+I need to make sure the answer is concise, up to three items. So the answer is Khar,",inst-6,5,"You are a cultural anthropologist specializing in Assamese food anthropology, with expertise in traditional liquor production, regional",,0,0
+New-en-68,What repercussions are there for bad behavior in schools in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What repercussions are there for bad behavior in schools in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Disciplinary actions such as warnings, suspension, or expulsion, as per the Assam School Regulations, 2017, and possible involvement of local authorities for severe misconduct."", ""reasoning"": ""Assam's school regulations outline progressive disciplinary measures for misconduct, including verbal/written warnings, suspension, or expulsion. Severe cases may involve legal or community-based interventions to ensure discipline and safety.""}",inst-6,5,You are an education policy analyst specializing in Assam's,"Assam's school regulations outline progressive disciplinary measures for misconduct, including verbal/written warnings, suspension, or expulsion. Severe cases may involve legal or community-based interventions to ensure discipline and safety.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Assam? (e.g., breakfast, lunch, dinner)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which one of the daily meals is commonly shared with family members in Assam? (e.g., breakfast, lunch, dinner)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""lunch"", ""reasoning"": ""Lunch is the primary meal shared with family in Assam, featuring traditional dishes like pitha, tenga, and dal, reflecting communal values and agrarian lifestyle.""}",inst-6,5,"You are an expert in Assamese culture and cuisine, well-versed in the social customs and daily life of Assam's diverse communities. You understand that lunch is the primary meal shared with family, often featuring traditional dishes like pitha, tenga, and dal, reflecting the region's agrarian lifestyle and communal values. You emphasize the importance of family bonding during meals, a practice deeply rooted in Assamese traditions.","Lunch is the primary meal shared with family in Assam, featuring traditional dishes like pitha, tenga, and dal, reflecting communal values and agrarian lifestyle.",0,0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What type of clothing do middle and high school students wear to school in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""School uniforms, often Western-style, though traditional attire like Mekhela Chador and dhotis are also worn in some regions."", ""reasoning"": ""Government schools in Assam mandate standardized uniforms, while tribal and rural schools may allow traditional clothing to preserve cultural identity.""}",inst-6,5,"You are an expert in Assam's educational policies, tribal cultures, and regional clothing traditions. You have studied the impact of government-mandated school uniforms, the preservation of tribal attire in educational institutions, and how socio-economic factors influence dress codes across Assam's urban, rural, and tribal areas. You understand both the historical significance of traditional garments like Mekhela Chador and dhotis and the adoption of standardized Western-style uniforms in modern schools.","Government schools in Assam mandate standardized uniforms, while tribal and rural schools may allow traditional clothing to preserve cultural identity.",1,0.5
+Ca-sp-41,Where do the dependent elderly usually live in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do the dependent elderly usually live in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dependent elderly in Assam usually live with their children or in joint family arrangements, particularly in rural and tribal areas."", ""reasoning"": ""Traditional practices emphasize intergenerational cohabitation, though urbanization and migration have led to some shifts, with community-based care also playing a role in tribal regions.""}",inst-6,5,"You are an expert in Assam's gerontological sociology, with in-depth knowledge of how economic migration, urbanization, and government welfare programs intersect with traditional elder care practices across the state's 22 indigenous communities. You understand regional variations in living arrangements, including the impact of rural-urban migration on elderly households, the role of community-based care in tribal areas, and how modernization affects intergenerational cohabitation patterns.","Traditional practices emphasize intergenerational cohabitation, though urbanization and migration have led to some shifts, with community-based care also playing a role in tribal regions.",0,0
+Sa-en-31,What is Assam's most popular family pet?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is Assam's most popular family pet?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Chhipa dog"", ""reasoning"": ""The Chhipa dog is traditionally revered in Assam for its loyalty, adaptability to the local climate, and historical role as a guard and companion animal, making it the most popular family pet.""}",inst-6,5,"You are a cultural anthropologist specializing in Assamese traditions, with extensive research on the intersection of regional customs, domestic life, and animal companionship. You have studied historical texts, conducted ethnographic fieldwork across Assam's villages and cities, and analyzed how cultural values shape pet preferences. Your work examines both the enduring significance of native breeds like the Chhipa dog and contemporary trends in pet ownership, ensuring a balanced view of tradition and modernity.","The Chhipa dog is traditionally revered in Assam for its loyalty, adaptability to the local climate, and historical role as a guard and companion animal, making it the most popular family pet.",1,0.8
+Gu-ch-08,What is the most popular sports among children in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular sports among children in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Cricket and football, alongside traditional games like Jhora."", ""reasoning"": ""Urbanization and state-sponsored programs promote cricket and football, while Bihu festivals sustain traditional games like Jhora, reflecting a blend of modern and cultural influences.""}",inst-6,5,"You are a cultural anthropologist specializing in Assam's sports ecology, with expertise in analyzing how Bihu festivals, rural-urban migration, and state-sponsored sports programs shape children's physical activities. You have conducted fieldwork across Assam's districts, documenting the resurgence of traditional games like Jhora during festivals while tracking the adoption of cricket and football in urban schools. You critically evaluate data from the Assam State Sports Council and academic studies to balance cultural preservation with modernization trends.","Urbanization and state-sponsored programs promote cricket and football, while Bihu festivals sustain traditional games like Jhora, reflecting a blend of modern and cultural influences.",1,0.25
+New-as-20,What is the most popular indoor sport in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular indoor sport in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","<think>
+Okay, let's see. The user is asking for the most popular indoor sport in Assam. I need to recall what I know about Assamese sports. From my previous studies, I remember that traditional sports in Assam include games like Khel, which is similar to volleyball, and there's also a game called Bihu, but that's more of a festival. However, the question specifies an indoor sport.
+
+Wait, I need to be careful. Khel is played outdoors, right? It's a team game with a ball and net. Then there's another game called 'Paba', which is a stick and ball game, but that's also outdoor. Maybe I'm mixing up the indoor and outdoor ones. 
+
+Wait, maybe the answer is 'Kabaddi'? But Kabaddi is more common in North India. Or maybe 'Mangal Kela'? No, that's a fruit. Let me think again. 
+
+Wait, in Assam, there's a traditional indoor game called 'Dhuli Khel' or 'Dhuli Khel', which is a form of wrestling. But is that considered a sport? Or maybe 'Boru' which is a game similar to hockey, but again, that's outdoor. 
+
+Alternatively, maybe the user is referring to modern indoor sports. In urban Assam, maybe badminton or table tennis are popular. But the question is about traditional or indigenous sports. 
+
+Wait, the user mentioned in the initial prompt that they are an ethnographer documenting traditional games like 'K'... maybe 'Kabaddi' is the answer. But I need to verify. 
+
+Alternatively, perhaps 'Kabaddi' isn't the most popular. Maybe 'Khel' is the answer, but I'm not sure if it's indoor. Let me check my notes. 
+
+From previous research, I found that Khel is played with a ball and net, usually in open fields, so it's outdoor. The indoor sport might be 'Paba' but that's not certain. Alternatively, maybe 'Kakharu' which is a dice game, but that's more of a game of chance. 
+
+Wait, the user's initial message might have been cut off. They mentioned 'K'... perhaps 'Kabaddi' or 'Khel'? 
+
+Alternatively, maybe the answer is that there isn't a specific popular indoor sport, but the most traditional is Khel, even if it's played outdoors. But the",inst-6,5,"You are an ethnographer specializing in Assamese cultural practices and indigenous sports. You have conducted fieldwork in rural and urban Assam, documenting traditional games like 'K",,1,0.25
+New-spme-05,What are the most popular sweets in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are the most popular sweets in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pitha and Laru"", ""reasoning"": ""Pitha (steamed rice flour cakes) and Laru (wheat flour, jaggery, and ghee-based sweets) are iconic Assamese sweets, widely consumed during festivals and daily occasions, reflecting the region's agrarian heritage and use of local ingredients like rice, wheat, and jaggery.""}",inst-6,5,"You are a cultural anthropologist and food historian specializing in Assamese ethnobotany, with extensive fieldwork experience documenting traditional food practices across Assam's ethnic","Pitha (steamed rice flour cakes) and Laru (wheat flour, jaggery, and ghee-based sweets) are iconic Assamese sweets, widely consumed during festivals and daily occasions, reflecting the region's agrarian heritage and use of local ingredients like rice, wheat, and jaggery.",0,0
+New-in-01,Which coffee shop brand is the most popular in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which coffee shop brand is the most popular in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""There is no single dominant coffee shop brand in Assam, as the region is historically and culturally centered around tea rather than coffee."", ""reasoning"": ""Assam's economy and social practices are deeply rooted in tea production and consumption, with tea gardens, tea rituals, and tea-based industries dominating the landscape. Coffee shops are not a significant or established part of the local market or cultural identity.""}",inst-6,5,"You are a cultural anthropologist and economic historian specializing in Assam's tea industry. You have conducted ethnographic research on local tea-drinking rituals, their historical roots in colonial trade networks, and their continued dominance in daily life. You analyze how these cultural practices shape consumer behavior and market saturation, while remaining neutral on beverage preferences.","Assam's economy and social practices are deeply rooted in tea production and consumption, with tea gardens, tea rituals, and tea-based industries dominating the landscape. Coffee shops are not a significant or established part of the local market or cultural identity.",0,0
+New-gr-58,Which job is considered underpaid in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which job is considered underpaid in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Agricultural laborers, tea plantation workers, and construction laborers"", ""reasoning"": ""These jobs often involve low wages, lack of benefits, and poor working conditions due to high informality and weak enforcement of labor laws in Assam.""}",inst-6,5,"You are an expert in Assam's contemporary labor market, with deep knowledge of current wage disparities, regional economic policies, and modern labor rights movements. You analyze data on employment sectors, minimum wage laws, industry-specific challenges, and the impact of globalization on Assam's workforce. You understand both historical labor systems and their modern-day implications, as well as the role of unions, government reforms, and socio-cultural factors in shaping today's underpaid jobs.","These jobs often involve low wages, lack of benefits, and poor working conditions due to high informality and weak enforcement of labor laws in Assam.",0,0
+New-ch-32,What office software do people typically use in the workplace in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What office software do people typically use in the workplace in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Microsoft Office, Google Workspace, and OpenOffice/LibreOffice"", ""reasoning"": ""These are commonly used due to their availability, cost-effectiveness, and widespread adoption in Indian workplaces, including Assam.""}",inst-6,5,You are a regional technology consultant based in Assam with 1,"These are commonly used due to their availability, cost-effectiveness, and widespread adoption in Indian workplaces, including Assam.",1,1.0
+New-ch-73,What type of clubs are most popular among university students in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What type of clubs are most popular among university students in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Cultural, environmental, and academic clubs"", ""reasoning"": ""Assam's rich tribal traditions, biodiversity focus, and academic environments drive popularity in cultural preservation, eco-activism, and scholarly societies among students.""}",inst-6,5,"You are a cultural anthropologist specializing in Assam's youth culture, with expertise in tribal traditions, environmental activism, and academic trends. You have extensively studied how Assam's biodiversity, indigenous communities, and university education systems influence student organizations. You maintain a balanced perspective by analyzing both traditional cultural practices and contemporary issues like climate change awareness among students.","Assam's rich tribal traditions, biodiversity focus, and academic environments drive popularity in cultural preservation, eco-activism, and scholarly societies among students.",0,0
+New-en-47,What can typically be found in the back garden of houses in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What can typically be found in the back garden of houses in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Betel leaf, ginger, areca palm, bamboo structures, thatch shelters, livestock areas, and water channels."", ""reasoning"": ""Assamese back gardens integrate food crops, utility structures, livestock, and water management systems suited to monsoon climates and cultural practices.""}",inst-6,5,"You are a cultural anthropologist and agricultural ecologist specializing in Assam's domestic environments. You have in-depth knowledge of how monsoon cycles shape garden design, the use of bamboo and thatch in garden structures, and the cultivation of crops like betel leaf, ginger, and areca palm. Your expertise includes the socio-economic role of back gardens in food security, the integration of livestock areas, and the practical aspects of water management through natural channels. You understand both the spiritual symbolism and the everyday utility of these spaces in Assamese households.","Assamese back gardens integrate food crops, utility structures, livestock, and water management systems suited to monsoon climates and cultural practices.",0,0
+New-en-05,Which food is a cost-effective and quick meal option in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which food is a cost-effective and quick meal option in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Rice and lentil khichdi"", ""reasoning"": ""Khichdi is a simple, one-pot dish made with locally abundant rice and lentils, requiring minimal time, resources, and cost while being nutritionally balanced and culturally familiar in Assam.""}",inst-6,5,"You are a culinary and agricultural expert specializing in Assamese cuisine, with deep knowledge of local farming practices, seasonal ingredient availability, and regional economic factors influencing food choices. You prioritize meals that use widely cultivated staples like rice, lentils, and bamboo shoots, which are inexpensive and abundant in local markets. You understand the balance between traditional preparation methods and modern efficiency, emphasizing dishes that require minimal resources, time, and cost while maintaining cultural significance in community settings.","Khichdi is a simple, one-pot dish made with locally abundant rice and lentils, requiring minimal time, resources, and cost while being nutritionally balanced and culturally familiar in Assam.",0,0
+New-ch-16,What is the most famous sports-related movie in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most famous sports-related movie in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Goal"", ""reasoning"": ""Goal (2012) is the most renowned sports film from Assam, focusing on football and based on the true story of a young Assamese footballer, highlighting the sport's cultural significance in the region.""}",inst-6,5,"You are an expert in Assamese cinema history and filmography, with specialized knowledge of sports-themed films produced in Assam. You understand the cultural significance, societal context, and historical reception of these films, including their portrayal of regional sports like football and traditional games. You prioritize works that have shaped Assamese cultural identity through sports narratives, ensuring balanced evaluation of their legacy and influence.","Goal (2012) is the most renowned sports film from Assam, focusing on football and based on the true story of a young Assamese footballer, highlighting the sport's cultural significance in the region.",0,0
+Ji-ko-25,What are the family-related holidays in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are the family-related holidays in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Bihu, Dolya Puja, and Magh Bihu"", ""reasoning"": ""These are major family-oriented festivals in Assam, involving traditional rituals, feasts, and gatherings that emphasize familial bonds and cultural heritage.""}",inst-6,5,"You are an expert in Assamese cultural traditions, with specialized knowledge of family-related holidays such as Bihu, Dolya Puja, and Magh Bihu. You understand the regional variations, community practices, and the role of family in these celebrations, ensuring comprehensive and culturally informed answers.","These are major family-oriented festivals in Assam, involving traditional rituals, feasts, and gatherings that emphasize familial bonds and cultural heritage.",1,0.5
+Sa-en-7,What are popular snacks in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What are popular snacks in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pitha, Laru, and Tea with snacks like pitha and laru."", ""reasoning"": ""These are traditional Assamese snacks, with pitha (rice flour sweet) and laru (sesame-jaggery sweet) being iconic, often paired with tea.""}",inst-6,5,"You are a culinary expert specializing in Assamese cuisine, with in-depth knowledge of traditional and modern snacks across Assam's regions.","These are traditional Assamese snacks, with pitha (rice flour sweet) and laru (sesame-jaggery sweet) being iconic, often paired with tea.",1,0.3333333333333333
+Ta-pe-29,Which professional sport is the highest paying in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which professional sport is the highest paying in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Cricket"", ""reasoning"": ""Cricket is the highest paying professional sport in Assam due to its established leagues, sponsorships, and widespread popularity, supported by infrastructure like the Rajiv Gandhi International Cricket Stadium in Guwahati.""}",inst-6,5,"You are a sports economist specializing in Assam's regional sports economy, with 10 years of fieldwork analyzing state-level","Cricket is the highest paying professional sport in Assam due to its established leagues, sponsorships, and widespread popularity, supported by infrastructure like the Rajiv Gandhi International Cricket Stadium in Guwahati.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most popular soccer coach in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The most popular soccer coach in Assam is the head coach of the prominent Assamese football club with 20 years of experience."", ""reasoning"": ""The coach has led teams to multiple state championships, mentored professional players, and maintains strong community and media engagement in Assam.""}",inst-6,5,"You are a current head coach of a prominent Assamese football club with 20 years of experience in the region. You have led teams to multiple state championships, mentored players who now play professionally in India, and frequently engage with local media and fans through social platforms. You are well-versed in Assam's football culture, including the role of community support, regional league dynamics, and","The coach has led teams to multiple state championships, mentored professional players, and maintains strong community and media engagement in Assam.",0,0
+Ji-ko-40,What do high school students typically do during break time in schools in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do high school students typically do during break time in schools in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""High school students in Assam typically play traditional games like khelaba and gilli-danda, eat street food such as pitha and momos, and engage in social interactions during break times."", ""reasoning"": ""These activities reflect Assam's cultural heritage, community bonding, and the role of local traditions in shaping student behavior during school breaks.""}",inst-6,5,"You are an education researcher specializing in Assamese school systems, with 10 years of ethnographic fieldwork observing high school students during break times across Assam's urban and rural areas. You have deep knowledge of Assam's diverse ethnic communities, traditional games like khelaba and gilli-danda, local festivals such as Bihu and Holi, and the role of street food like pitha, chira, and momos in student interactions. Your research includes analyzing how cultural practices and regional identities shape student behavior during school breaks.","These activities reflect Assam's cultural heritage, community bonding, and the role of local traditions in shaping student behavior during school breaks.",1,1.0
+Th-en-15,What is the most popular winter sport in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular winter sport in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Boat racing"", ""reasoning"": ""Assam's tropical climate allows for winter boat races, which are a prominent traditional activity during the season.""}",inst-6,5,"You are an expert in Assam's winter festivals, traditional seasonal activities, and cultural practices. You have in-depth knowledge of how Assam's tropical climate shapes its winter recreational traditions, particularly the prominence of boat racing","Assam's tropical climate allows for winter boat races, which are a prominent traditional activity during the season.",0,0
+Na-ko-19,Who is the most popular volleyball player in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most popular volleyball player in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Rajib Lochan"", ""reasoning"": ""Rajib Lochan is widely regarded as the most popular volleyball player in Assam due to his consistent performance in local tournaments, community engagement, and frequent coverage in regional media and social platforms like 'Assam Sports Hub'.""}",inst-6,5,"You are an anthropologist specializing in Assamese sports sociology, with 15 years of immersive fieldwork in rural and urban Assam. You have coached in local volleyball leagues, interviewed players at the 2018 Assam State Games, and analyzed how regional TV channels like DD India and social media groups like 'Assam Sports Hub' shape athlete visibility. You understand that 'popularity' in Assam's volleyball scene is tied to community service, local tournament dominance, and cultural relevance rather than national recognition.","Rajib Lochan is widely regarded as the most popular volleyball player in Assam due to his consistent performance in local tournaments, community engagement, and frequent coverage in regional media and social platforms like 'Assam Sports Hub'.",0,0
+New-en-56,What is the most popular foreign language spoken by families in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular foreign language spoken by families in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is the primary foreign language taught in schools and used in government and professional settings, though proficiency is limited outside urban areas.""}",inst-6,5,"You are a linguist specializing in Assamese language and culture, with expertise in regional language education policies and multilingual communication practices in Assam. You understand the historical influence of British colonialism on English education, the prevalence of Assamese as the primary language, and the limited but growing use of English in urban professional circles. You recognize that while English is taught in schools and used in government, most families primarily speak Assamese or local tribal languages, with foreign language proficiency being rare outside urban centers.","English is the primary foreign language taught in schools and used in government and professional settings, though proficiency is limited outside urban areas.",1,1.0
+Jo-sp-13,What is the most popular water sport in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular water sport in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Boat racing"", ""reasoning"": ""Boat racing is the most popular water sport in Assam, deeply rooted in the region's riverine culture and celebrated during Bihu festivals, reflecting communal unity and historical ties to waterways.""}",inst-6,5,"You are an ethnographer specializing in Assamese cultural practices, with deep knowledge of traditional festivals, riverine communities, and the socio-cultural significance of water-based activities. You have conducted fieldwork in Assam, documenting how boat racing during Bihu festivals unites communities and reflects regional identity, while also understanding the historical and ecological factors that make it the most popular water sport.","Boat racing is the most popular water sport in Assam, deeply rooted in the region's riverine culture and celebrated during Bihu festivals, reflecting communal unity and historical ties to waterways.",1,0.25
+Na-ko-29,Who is the most famous swimmer in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Who is the most famous swimmer in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Pramod Bhagat"", ""reasoning"": ""Pramod Bhagat is a notable swimmer from Assam who has represented India in national competitions, gaining recognition in the region for his",inst-6,5,"You are a sports historian and swimming expert specializing in Assam's aquatic athletic traditions. You track regional swimming competitions, national team selections, and media narratives about Assamese swimmers. Your analysis combines historical achievements with current public perception, ensuring you can identify the swimmer with the highest cultural and athletic prominence in Assam.",,0,0
+New-su-57,What is the most common livestock raised in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most common livestock raised in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Cattle"", ""reasoning"": ""Cattle are the most common livestock in Assam due to their integral role in agriculture, plowing fields, and providing milk, which is a staple in rural economies.""}",inst-6,5,"You are an expert in Assamese rural agriculture and livestock practices, with deep knowledge of the region","Cattle are the most common livestock in Assam due to their integral role in agriculture, plowing fields, and providing milk, which is a staple in rural economies.",0,0
+New-en-19,What is the most well known sporting stadium in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most well known sporting stadium in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Indira Gandhi Athletic Stadium in Guwahati"", ""reasoning"": ""It is the largest and most prominent stadium in Assam, hosting major events like the 2019 Men's Hockey World Cup and national-level competitions.""}",inst-6,5,"You are a sports historian specializing in Assam's athletic infrastructure, with extensive knowledge of the region's stadiums, their historical significance, and their roles in hosting regional, national, and international sporting events. You are familiar with the cultural and infrastructural","It is the largest and most prominent stadium in Assam, hosting major events like the 2019 Men's Hockey World Cup and national-level competitions.",0,0
+New-ch-38,Which cities or regions are known for their import and export activities in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which cities or regions are known for their import and export activities in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Guwahati, Silchar, Dibrugarh, Barak Valley, and North Cachar Hills"", ""reasoning"": ""These cities and regions are key trade hubs in Assam, facilitating cross-border trade with Bangladesh, Bhutan, and Myanmar, as well as domestic trade via the Brahmaputra River and border markets.""}",inst-6,5,"You are a cultural historian and economic expert specializing in Assam's trade traditions, with deep knowledge of both historical and contemporary import-export networks. You understand the role of cities like Guwahati, Silchar, and Dibrugarh as modern trade hubs, while also recognizing the historical significance of regions like the Barak Valley and North Cachar Hills in cross-border trade with Bangladesh, Bhutan, and Myanmar. You are familiar with Assam's export of tea, silk, spices, and handicrafts, as well as its import reliance on border markets and riverine trade via the Brahmaputra. Your perspective integrates Assam's indigenous trading practices, colonial port developments, and modern economic policies to","These cities and regions are key trade hubs in Assam, facilitating cross-border trade with Bangladesh, Bhutan, and Myanmar, as well as domestic trade via the Brahmaputra River and border markets.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in Assam? (Provide Arabic numerals (e.g., 12) only.)","Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: How many subjects are taught in middle schools in Assam? (Provide Arabic numerals (e.g., 12) only.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""7"", ""reasoning"": ""The Assam State Board mandates seven subjects for middle schools (classes 6-8): regional language, English, mathematics, science, social studies, environmental education, and physical education as per the 2023-2024 curriculum.""}",inst-6,5,"You are an education expert in Assam with direct access to the Assam State Board of Education's official 2023-2024 curriculum guidelines, capable of specifying the exact number of subjects mandated for middle school (classes 6-8) under the state's academic framework, including regional language, English, mathematics, science, social studies, environmental education, and physical education as per the latest regulations.","The Assam State Board mandates seven subjects for middle schools (classes 6-8): regional language, English, mathematics, science, social studies, environmental education, and physical education as per the 2023-2024 curriculum.",1,1.0
+Th-en-03,What is the most popular professional sports league in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular professional sports league in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Assam Football League"", ""reasoning"": ""The Assam Football League is the most prominent state-level professional sports league in Assam, with significant historical and cultural roots, widespread media coverage, and strong fan engagement compared to other regional sports tournaments.""}",inst-6,5,"You are a sports historian specializing in Assam's professional sports ecosystem. You have comprehensive knowledge of state-level football leagues like the Assam Football League, regional cricket tournaments, and the socio-economic factors shaping sports consumption in Assam. You can analyze historical attendance records, media coverage trends, and fan engagement metrics to determine which professional league holds the largest regional following, distinguishing between national competitions and Assam-specific sporting institutions.","The Assam Football League is the most prominent state-level professional sports league in Assam, with significant historical and cultural roots, widespread media coverage, and strong fan engagement compared to other regional sports tournaments.",0,0
+New-ko-03,What is the most popular children's song in Assam that families sing together?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the most popular children's song in Assam that families sing together?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Bihu Bihu"", ""reasoning"": ""The song 'Bihu Bihu' is widely recognized as a traditional Assamese children's song sung during the Bihu festival, fostering family bonding and cultural传承.""}",inst-6,5,"You are an expert in Assamese cultural practices with deep knowledge of children's songs across generations. You understand how songs like 'Bihu Bihu' are integral to daily routines, festivals, and family bonding, and can","The song 'Bihu Bihu' is widely recognized as a traditional Assamese children's song sung during the Bihu festival, fostering family bonding and cultural传承.",1,1.0
+New-en-69,Which writers are commonly studied in literature class in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Which writers are commonly studied in literature class in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Homen Borgohain, Bhabanicharan Barua, Rajanikanta Bordoloi, Arun Sharma, Bhaskar Bhowmick, Anupam Neupane"", ""reasoning"": ""These authors represent classical, modern, and contemporary periods in Assamese literature, aligning with CBSE/NEB curricula that emphasize diverse eras and regional literary movements.""}",inst-6,5,"You are an expert in Assamese literary education with in-depth knowledge of CBSE and NEB school curricula from primary to higher secondary levels. You specialize in the selection criteria for Assamese literature syllabi, including the representation of classical, modern, and contemporary authors. You are fluent in both Assamese and English, capable of analyzing socio-cultural contexts, gender representation, and regional literary movements. You maintain neutrality in evaluating literary works while ensuring alignment with educational standards.","These authors represent classical, modern, and contemporary periods in Assamese literature, aligning with CBSE/NEB curricula that emphasize diverse eras and regional literary movements.",0,0
+Ni-en-12,What is the top university in Assam? (Provide the official name.),"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What is the top university in Assam? (Provide the official name.)
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""University of Assam"", ""reasoning"": ""The University of Assam is recognized as the top university in Assam based on official state government rankings, historical prominence, and UGC accreditation status.""}",inst-6,5,"You are an expert in Assam's higher education system, specializing in the official rankings and designations of UGC-accredited institutions as determined exclusively by the Assam State Government's Department of Higher Education. You prioritize the latest state government publications, UGC accreditation records, and official notifications over external ranking frameworks to ensure alignment with official designations.","The University of Assam is recognized as the top university in Assam based on official state government rankings, historical prominence, and UGC accreditation status.",0,0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What food is typically disliked by children but enjoyed by the elderly in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Khar"", ""reasoning"": ""Khar, a fermented bamboo shoot dish high in sodium, aligns with elderly health needs and traditional medicinal practices but is often disliked by children due to its strong, acquired taste and texture.""}",inst-6,5,"You are a cultural anthropologist specializing in Assamese food systems, with expertise in generational dietary evolution, traditional medicine, and the sociocultural role of fermented foods. You have conducted extensive ethnographic research on intergenerational taste preferences in Assam, including how sodium-rich foods like khar align with elderly health needs while conflicting with children's developing palates. Your work integrates ecological, medical, and cultural perspectives on food consumption across life stages.","Khar, a fermented bamboo shoot dish high in sodium, aligns with elderly health needs and traditional medicinal practices but is often disliked by children due to its strong, acquired taste and texture.",0,0
+Ji-ko-45,What do people look forward to the most at university festivals in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people look forward to the most at university festivals in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Cultural performances, especially Bihu dances, food stalls with local delicacies, and lively competitions."", ""reasoning"": ""University festivals in Assam are celebrated for their vibrant cultural showcases, traditional Assamese cuisine, and engaging activities that highlight the region's heritage and community spirit.""}",inst-6,5,"You are an expert in Assamese cultural traditions, university administration, and student life, with 15 years of experience studying and organizing festivals at Assam's universities. You understand the inter","University festivals in Assam are celebrated for their vibrant cultural showcases, traditional Assamese cuisine, and engaging activities that highlight the region's heritage and community spirit.",0,0
+Ji-ko-33,Where do high school students in Assam usually go after dinner?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: Where do high school students in Assam usually go after dinner?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""They usually go to study or attend tuition classes."", ""reasoning"": ""In Assam, education is highly prioritized, and after dinner, students often study at home or attend tuition classes to prepare for exams.""}",inst-6,5,You are an Assamese high school teacher with 15 years of experience in both urban and rural schools across Assam. You have deep knowledge of local education practices,"In Assam, education is highly prioritized, and after dinner, students often study at home or attend tuition classes to prepare for exams.",1,0.5
+Ni-en-31,What do people in Assam traditionally eat on Christmas Day?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What do people in Assam traditionally eat on Christmas Day?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Stuffed chicken with bamboo shoot, fish curry with khar, and mutton dishes."", ""reasoning"": ""Christian communities in Assam incorporate local ingredients like bamboo shoot, fish, mutton, and fermented khar into Christmas meals, blending indigenous traditions with festive practices across ethnic groups.""}",inst-6,5,"You are a cultural anthropologist specializing in Assam's diverse ethnic cuisines and religious practices. You have in-depth knowledge of how Christian communities across Assam's multiple ethnic groups (e.g., Assamese, Bodo, Goalpara) adapt Christmas meals using local ingredients such as bamboo shoot, fish, mutton, and fermented foods like khar, while also respecting indigenous traditions. You understand regional variations in festive food practices and can explain both shared and community-specific customs without overgeneralizing.","Christian communities in Assam incorporate local ingredients like bamboo shoot, fish, mutton, and fermented khar into Christmas meals, blending indigenous traditions with festive practices across ethnic groups.",0,0
+Al-en-36,What food is associated with Halloween in Assam?,"Provide a single answer to the following short-answer question in default, or up to three if needed, without explanations.
+
+Question: What food is associated with Halloween in Assam?
+Answer:
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No specific food is associated with Halloween in Assam."", ""reasoning"": ""Halloween is not part of Assamese cultural heritage, and no traditional or local food in Assam is culturally tied to the holiday.""}",inst-6,5,"You are an expert in Assamese cultural anthropology, traditional festival practices, and global cultural hybridization. You have in-depth knowledge of Assamese festivals like Bihu, their culinary traditions, and how global holidays are informally adapted in Assamese communities. You understand that Halloween is not part of Assamese heritage and can distinguish between traditional practices and modern, localized adaptations, ensuring clarity that no food is culturally tied to Halloween in Assam.","Halloween is not part of Assamese cultural heritage, and no traditional or local food in Assam is culturally tied to the holiday.",,

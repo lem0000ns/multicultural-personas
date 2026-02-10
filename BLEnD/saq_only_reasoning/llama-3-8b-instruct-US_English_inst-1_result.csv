@@ -6,7 +6,7 @@ New-ko-02,What is the most popular prenatal education activity for pregnant wome
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Prenatal classes""}], ""reasoning"": ""Based on various studies and anecdotal evidence, prenatal classes are the most popular prenatal education activity for pregnant women in the US, as they provide comprehensive information on pregnancy, childbirth, and parenting, and offer a supportive environment for women to connect with other expectant mothers and healthcare providers.""}",inst-1,1,,
+","{""answer"": [{""Pregnancy and Parenting Classes""}], ""reasoning"": ""Based on various studies and surveys, pregnancy and parenting classes are the most popular prenatal education activity for pregnant women in the US. These classes provide expectant mothers with valuable information and skills on pregnancy, childbirth, breastfeeding, and parenting, which are essential for a smooth transition to motherhood.""}",inst-1,1,,
 Ji-ko-29,Which age's birthday is celebrated the most grandly in US's society?,"Which age's birthday is celebrated the most grandly in US's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which age's birthday is celebrated the most grandly in US's society?','answer':[]}
@@ -14,7 +14,7 @@ Ji-ko-29,Which age's birthday is celebrated the most grandly in US's society?,"W
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""age"": ""18""}], ""reasoning"": ""Because it marks the transition to adulthood, a significant milestone in one's life, and is often celebrated with parties, gifts, and other festivities.""}",inst-1,1,,
+","{""answer"": [""30th birthday""], ""reasoning"": ""The 30th birthday is often considered a milestone in American culture, marking the transition from young adulthood to adulthood. It is often celebrated grandly as a rite of passage, with many people hosting parties or taking trips to commemorate the occasion. Additionally, the 30th birthday is often seen as a time of stability and security, with many people having established their careers and personal relationships, making it a significant turning point in life.""}",inst-1,1,,"The 30th birthday is often considered a milestone in American culture, marking the transition from young adulthood to adulthood. It is often celebrated grandly as a rite of passage, with many people hosting parties or taking trips to commemorate the occasion. Additionally, the 30th birthday is often seen as a time of stability and security, with many people having established their careers and personal relationships, making it a significant turning point in life."
 New-pe-20,What sport is popular to play on the beach in US?,"What sport is popular to play on the beach in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sport is popular to play on the beach in US?','answer':[]}
@@ -22,7 +22,7 @@ New-pe-20,What sport is popular to play on the beach in US?,"What sport is popul
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Beach Volleyball""], ""reasoning"": ""It is a popular sport to play on the beach in the US due to its accessibility, social nature, and the relaxed atmosphere of the beach setting.""}",inst-1,1,,"It is a popular sport to play on the beach in the US due to its accessibility, social nature, and the relaxed atmosphere of the beach setting."
+","{""answer"": [""Volleyball""], ""reasoning"": ""Beach volleyball is a popular sport to play on the beach in the US due to its accessibility, ease of setup, and social nature, making it a great activity for people of all ages and skill levels.""}",inst-1,1,,"Beach volleyball is a popular sport to play on the beach in the US due to its accessibility, ease of setup, and social nature, making it a great activity for people of all ages and skill levels."
 Kik-in-37,What soccer teams in US are famous for their intense rivalry? (e.g. ___ vs ___),"What soccer teams in US are famous for their intense rivalry? (e.g. ___ vs ___) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What soccer teams in US are famous for their intense rivalry? (e.g. ___ vs ___)','answer':[]}
@@ -30,7 +30,16 @@ Kik-in-37,What soccer teams in US are famous for their intense rivalry? (e.g. __
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""team1"": ""LA Galaxy"", ""team2"": ""Los Angeles FC""}], ""reasoning"": ""The LA Galaxy and Los Angeles FC have a intense rivalry due to their geographical proximity and the fact that they are the two main soccer teams in the city of Los Angeles, making their matches highly anticipated and emotional for their fans.""}",inst-1,1,,
+","{""answer"": []
+""reasoning"": ""The intensity of soccer rivalries in the US is often fueled by geographic proximity, cultural differences, and historical significance. While some rivalries may not be as long-standing or intense as those in European leagues, there are several notable examples in the US that are steeped in history and passion. The question is asking for specific teams that are famous for their intense rivalry, which implies a high level of competition, animosity, and fan engagement.""}
+
+{""answer"": [
+{""team1"": ""LA Galaxy"", ""team2"": ""Los Angeles FC""},
+{""team1"": ""FC Dallas"", ""team2"": ""Houston Dynamo""},
+{""team1"": ""Portland Timbers"", ""team2"": ""Seattle Sounders FC""},
+{""team1"": ""New York Red Bulls"", ""team2"": ""New York City FC""},
+{""team1"": ""D.C. United"", ""team2"": ""Philadelphia Union""}
+]}",inst-1,1,,
 Jod-ch-07,"How long (in hours) on average does it take for people in US to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","How long (in hours) on average does it take for people in US to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How long (in hours) on average does it take for people in US to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)','answer':[]}
@@ -38,7 +47,7 @@ Jod-ch-07,"How long (in hours) on average does it take for people in US to have 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [1.5], ""reasoning"": ""According to a survey by the National Restaurant Association, the average time spent eating dinner at a restaurant in the US is around 1 hour and 30 minutes.""}",inst-1,1,,"According to a survey by the National Restaurant Association, the average time spent eating dinner at a restaurant in the US is around 1 hour and 30 minutes."
+","{""answer"": [1.5], ""reasoning"": ""According to a survey by the National Restaurant Association, the average time spent at a restaurant for dinner is around 1 hour and 30 minutes. This includes time spent ordering, eating, and paying the bill. This estimate may vary depending on the type of restaurant, location, and individual preferences.""}",inst-1,1,,"According to a survey by the National Restaurant Association, the average time spent at a restaurant for dinner is around 1 hour and 30 minutes. This includes time spent ordering, eating, and paying the bill. This estimate may vary depending on the type of restaurant, location, and individual preferences."
 New-spme-37,Which profession is most commonly studied abroad by students from US?,"Which profession is most commonly studied abroad by students from US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which profession is most commonly studied abroad by students from US?','answer':[]}
@@ -46,11 +55,7 @@ New-spme-37,Which profession is most commonly studied abroad by students from US
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [
-{""Engineering""}
-],
-""reasoning"": ""According to various sources, including the Institute of International Education and the US Department of State, engineering is a popular field of study among American students who choose to study abroad. This is likely due to the global demand for skilled engineers, the opportunities for international collaboration and research, and the fact that many universities abroad offer strong programs in engineering.""",inst-1,1,,
+","{""answer"": [{""profession"": ""Business""}], ""reasoning"": ""Students from the US often pursue higher education abroad to gain a global perspective, improve their career prospects, and enhance their employability. Business is a highly sought-after field globally, and studying abroad can provide students with a competitive edge in the job market. Additionally, many top-tier universities abroad offer strong programs in business, making it a popular choice for American students.""}",inst-1,1,,
 New-pe-49,Where do families gather to pray together in US?,"Where do families gather to pray together in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do families gather to pray together in US?','answer':[]}
@@ -58,7 +63,9 @@ New-pe-49,Where do families gather to pray together in US?,"Where do families ga
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Churches, synagogues, mosques, temples, and other houses of worship""], ""reasoning"": ""These institutions provide a shared space for families to come together and pray, often with a sense of community and belonging.""}",inst-1,1,,"These institutions provide a shared space for families to come together and pray, often with a sense of community and belonging."
+","{""answer"": [], ""reasoning"": ""Families in the United States often gather to pray together in various settings, including their homes, churches, synagogues, mosques, temples, or other sacred spaces. They may also participate in community events, such as prayer vigils, interfaith services, or cultural festivals. The choice of gathering place often depends on the family's religious beliefs, cultural background, and personal preferences.""}
+
+{""answer"": [{""Home"": 1}, {""Church/Synagogue/Mosque/Temple"": 1}, {""Community Events"": 1}], ""reasoning"": ""Families in the United States often gather to pray together in various settings, including their homes, churches, synagogues, mosques, temples, or other sacred spaces. They may also participate in community events, such as prayer vigils, interfaith services, or cultural festivals. The choice of gathering place often depends on the family's religious beliefs, cultural background, and personal preferences.""}",inst-1,1,,"Families in the United States often gather to pray together in various settings, including their homes, churches, synagogues, mosques, temples, or other sacred spaces. They may also participate in community events, such as prayer vigils, interfaith services, or cultural festivals. The choice of gathering place often depends on the family's religious beliefs, cultural background, and personal preferences."
 Jod-ch-60,What is the duration (in hours) of a typical workday in US? (Provide Arabic numerals (0~24) only.),"What is the duration (in hours) of a typical workday in US? (Provide Arabic numerals (0~24) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the duration (in hours) of a typical workday in US? (Provide Arabic numerals (0~24) only.)','answer':[]}
@@ -66,7 +73,7 @@ Jod-ch-60,What is the duration (in hours) of a typical workday in US? (Provide A
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [8], ""reasoning"": ""Typically, a standard full-time workday in the United States is 8 hours, Monday through Friday.""}",inst-1,1,,"Typically, a standard full-time workday in the United States is 8 hours, Monday through Friday."
+","{""answer"": [{""answer"": 8}], ""reasoning"": ""According to the Bureau of Labor Statistics, the average workday in the United States is typically around 8 hours. This can vary depending on the industry, occupation, and company, but 8 hours is a commonly cited average.""}",inst-1,1,,
 Ji-ko-24,What is the most preferred recreational facility among children in US?,"What is the most preferred recreational facility among children in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most preferred recreational facility among children in US?','answer':[]}
@@ -74,7 +81,7 @@ Ji-ko-24,What is the most preferred recreational facility among children in US?,
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Swimming Pools""}], ""reasoning"": ""Based on various studies and surveys, swimming pools are the most preferred recreational facility among children in the US, as they provide a fun and safe environment for physical activity, socialization, and learning new skills.""}",inst-1,1,,
+","{""answer"": [""Swimming Pools""], ""reasoning"": ""Swimming pools are a popular recreational facility among children in the US due to the importance of water safety and the fun experience of swimming and playing in the water, which helps to develop their physical skills and confidence.""}",inst-1,1,,"Swimming pools are a popular recreational facility among children in the US due to the importance of water safety and the fun experience of swimming and playing in the water, which helps to develop their physical skills and confidence."
 Sa-en-22,What is the most famous university in US known for its sports team?,"What is the most famous university in US known for its sports team? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous university in US known for its sports team?','answer':[]}
@@ -82,7 +89,7 @@ Sa-en-22,What is the most famous university in US known for its sports team?,"Wh
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""University of Alabama""], ""reasoning"": ""The University of Alabama is widely regarded as one of the most successful and storied athletic programs in the United States, with 17 national championships and 29 Southeastern Conference (SEC) championships in football alone. The school's football team, the Crimson Tide, has a massive following and is often considered one of the most iconic and beloved programs in college sports.""}",inst-1,1,,"The University of Alabama is widely regarded as one of the most successful and storied athletic programs in the United States, with 17 national championships and 29 Southeastern Conference (SEC) championships in football alone. The school's football team, the Crimson Tide, has a massive following and is often considered one of the most iconic and beloved programs in college sports."
+","{""answer"": [""University of Alabama""], ""reasoning"": ""The University of Alabama's football team, known as the Crimson Tide, has won numerous national championships and has a strong following in the United States. Alabama is often referred to as the 'Crimson Tide of College Football' and has produced many legendary players and coaches.""}",inst-1,1,,"The University of Alabama's football team, known as the Crimson Tide, has won numerous national championships and has a strong following in the United States. Alabama is often referred to as the 'Crimson Tide of College Football' and has produced many legendary players and coaches."
 Al-en-19,What is a popular second language for high school students in US?,"What is a popular second language for high school students in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a popular second language for high school students in US?','answer':[]}
@@ -90,7 +97,14 @@ Al-en-19,What is a popular second language for high school students in US?,"What
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Spanish""}], ""reasoning"": ""Spanish is a popular second language for high school students in the US due to its cultural significance, geographical proximity, and practicality.""}",inst-1,1,,
+","Here is the response in JSON format:
+
+{
+""answer"": [
+{""language"": ""Spanish""}
+],
+""reasoning"": ""Spanish is a popular second language for high school students in the US due to its cultural significance, widespread use, and relatively easy grammar and vocabulary for English speakers to learn.""
+}",inst-1,1,,
 Ne-ar-09,What do people from US eat in Eid ul Fitr?,"What do people from US eat in Eid ul Fitr? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people from US eat in Eid ul Fitr?','answer':[]}
@@ -98,7 +112,9 @@ Ne-ar-09,What do people from US eat in Eid ul Fitr?,"What do people from US eat 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and the cuisine varies greatly depending on the region and cultural background of the people in the US. While some may follow traditional Middle Eastern or South Asian recipes, others may adopt a more Americanized twist on traditional Eid dishes. The answer to this question would depend on individual preferences and cultural influences.""}",inst-1,1,,"Eid ul Fitr is a significant Islamic holiday, and the cuisine varies greatly depending on the region and cultural background of the people in the US. While some may follow traditional Middle Eastern or South Asian recipes, others may adopt a more Americanized twist on traditional Eid dishes. The answer to this question would depend on individual preferences and cultural influences."
+","{""answer"": [], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and its traditional cuisine varies greatly across different cultures and regions. In the US, where there is a diverse Muslim population, people from different backgrounds may celebrate Eid with their traditional dishes. As a result, there is no single answer to this question, as it depends on the individual's cultural and national background. However, some common dishes that are popular during Eid celebrations in the US may include traditional Middle Eastern and South Asian dishes, such as kebabs, biryani, and haleem, as well as American-style desserts and snacks.""}
+
+{""answer"": [{""Date Pudding"", ""Kebabs"", ""Biryani"", ""Haleem"", ""Falafel"", ""Shawarma"", ""Gulab Jamun"", ""Jalebi"", ""Samosas"", ""Desserts like Cheesecake and Brownies""}], ""reasoning"": ""Eid ul Fitr is a significant Islamic holiday, and its traditional cuisine varies greatly across different cultures and regions. In the US, where there is a diverse Muslim population, people from different backgrounds may celebrate Eid with their traditional dishes. As a result, there is no single answer to this question, as it depends on the individual's cultural and national background. However, some common dishes that are popular during Eid celebrations in the US may include traditional Middle Eastern and South Asian dishes, such as kebabs, biryani, and haleem, as well as American-style desserts and snacks.""}",inst-1,1,,"Eid ul Fitr is a significant Islamic holiday, and its traditional cuisine varies greatly across different cultures and regions. In the US, where there is a diverse Muslim population, people from different backgrounds may celebrate Eid with their traditional dishes. As a result, there is no single answer to this question, as it depends on the individual's cultural and national background. However, some common dishes that are popular during Eid celebrations in the US may include traditional Middle Eastern and South Asian dishes, such as kebabs, biryani, and haleem, as well as American-style desserts and snacks."
 New-su-24,What sports do parents and children commonly play together in US?,"What sports do parents and children commonly play together in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sports do parents and children commonly play together in US?','answer':[]}
@@ -106,7 +122,7 @@ New-su-24,What sports do parents and children commonly play together in US?,"Wha
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""baseball"", ""soccer"", ""basketball"", ""softball"", ""flag football""], ""reasoning"": ""These sports are popular in the US and can be adapted to be played with children of various ages, allowing for a range of parental-child interaction opportunities, from recreational to competitive.""}",inst-1,1,,"These sports are popular in the US and can be adapted to be played with children of various ages, allowing for a range of parental-child interaction opportunities, from recreational to competitive."
+","{""answer"": [""Baseball"", ""Softball"", ""Soccer"", ""Flag Football"", ""Volleyball""], ""reasoning"": ""Parents and children often participate in team sports together, allowing for quality bonding time and shared experiences. The sports listed are popular in the US and often have age-specific leagues or divisions for parents and children to play together, fostering a sense of community and social connection.""}",inst-1,1,,"Parents and children often participate in team sports together, allowing for quality bonding time and shared experiences. The sports listed are popular in the US and often have age-specific leagues or divisions for parents and children to play together, fostering a sense of community and social connection."
 Ji-ko-42,What are the required subjects in US's university entrance exam?,"What are the required subjects in US's university entrance exam? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the required subjects in US's university entrance exam?','answer':[]}
@@ -114,7 +130,7 @@ Ji-ko-42,What are the required subjects in US's university entrance exam?,"What 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Mathematics"", ""English"", ""Science"", ""Foreign Language""}], ""reasoning"": ""The SAT and ACT, the two most widely accepted university entrance exams in the US, require students to demonstrate proficiency in these core subjects.""}",inst-1,1,,
+","{""answer"": [""English"", ""Mathematics"", ""Science"", ""Social Studies""], ""reasoning"": ""The required subjects in US university entrance exams, such as the SAT and ACT, are English, Mathematics, Science, and Social Studies. These subjects are considered essential for a well-rounded education and are used to assess a student's preparedness for college-level coursework.""}",inst-1,1,,"The required subjects in US university entrance exams, such as the SAT and ACT, are English, Mathematics, Science, and Social Studies. These subjects are considered essential for a well-rounded education and are used to assess a student's preparedness for college-level coursework."
 New-pe-06,What is the most popular stew in US?,"What is the most popular stew in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular stew in US?','answer':[]}
@@ -122,7 +138,7 @@ New-pe-06,What is the most popular stew in US?,"What is the most popular stew in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Beef Stew""}], ""reasoning"": ""Based on various sources and surveys, Beef Stew is often considered the most popular stew in the United States, likely due to its comforting and familiar flavor profile.""}",inst-1,1,,
+","{""answer"": [{""most popular stew in US"": ""Chili""}], ""reasoning"": ""Chili is a classic American comfort food that has been a staple in many households for decades. Its popularity can be attributed to its versatility, as it can be made with a variety of ingredients and served with a range of toppings. Additionally, chili is often associated with casual gatherings and social events, which has contributed to its widespread appeal.""}",inst-1,1,,
 New-pe-86,What is the name of the most famous tower in US?,"What is the name of the most famous tower in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the name of the most famous tower in US?','answer':[]}
@@ -130,7 +146,7 @@ New-pe-86,What is the name of the most famous tower in US?,"What is the name of 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""One World Trade Center""], ""reasoning"": ""The One World Trade Center, also known as the Freedom Tower, is the main building of the redeveloped World Trade Center complex in Lower Manhattan, New York City. It is the tallest building in the Western Hemisphere and one of the most iconic landmarks in the United States, making it the most famous tower in the US.""}",inst-1,1,,"The One World Trade Center, also known as the Freedom Tower, is the main building of the redeveloped World Trade Center complex in Lower Manhattan, New York City. It is the tallest building in the Western Hemisphere and one of the most iconic landmarks in the United States, making it the most famous tower in the US."
+","{""answer"": [{""name"": ""The One World Trade Center Tower""}], ""reasoning"": ""The One World Trade Center Tower, also known as the Freedom Tower, is the most iconic and recognizable tower in the United States. It is located in Lower Manhattan, New York City, and serves as the main building of the redeveloped World Trade Center complex. Its height of 1,776 feet (541 meters) and distinctive design make it a symbol of American resilience and a popular tourist destination.""}",inst-1,1,,
 Th-en-53,What is the most popular extracurricular social event at schools in US?,"What is the most popular extracurricular social event at schools in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular extracurricular social event at schools in US?','answer':[]}
@@ -138,7 +154,7 @@ Th-en-53,What is the most popular extracurricular social event at schools in US?
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most popular extracurricular social event"": ""School Dance""}], ""reasoning"": ""Based on various surveys and studies, school dances are often considered the most popular extracurricular social event at schools in the US, as they provide a platform for students to socialize, have fun, and create memorable experiences.""}",inst-1,1,,
+","{""answer"": [{""name"": ""School Dance""}], ""reasoning"": ""School dances are a classic and universal way for students to socialize and have fun outside of regular school activities. They provide a relaxed and enjoyable atmosphere for students to mingle, bond, and create memories with their peers.""}",inst-1,1,,
 Ca-sp-06,Which is the most important meal of the day to people from US?,"Which is the most important meal of the day to people from US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which is the most important meal of the day to people from US?','answer':[]}
@@ -146,7 +162,7 @@ Ca-sp-06,Which is the most important meal of the day to people from US?,"Which i
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Breakfast""], ""reasoning"": ""According to various surveys and studies, people from the US generally consider breakfast as the most important meal of the day, as it provides energy and helps to jumpstart their daily activities.""}",inst-1,1,,"According to various surveys and studies, people from the US generally consider breakfast as the most important meal of the day, as it provides energy and helps to jumpstart their daily activities."
+","{""answer"": [""Breakfast""], ""reasoning"": ""Breakfast is often considered the most important meal of the day in American culture because it is seen as a way to start the day off right, providing energy and sustenance for the morning ahead. Additionally, breakfast is often a social meal, with many families and friends gathering together to share a meal before starting their day.""}",inst-1,1,,"Breakfast is often considered the most important meal of the day in American culture because it is seen as a way to start the day off right, providing energy and sustenance for the morning ahead. Additionally, breakfast is often a social meal, with many families and friends gathering together to share a meal before starting their day."
 New-en-41,Who is the most well known and successful entrepreneur in US?,"Who is the most well known and successful entrepreneur in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most well known and successful entrepreneur in US?','answer':[]}
@@ -154,7 +170,9 @@ New-en-41,Who is the most well known and successful entrepreneur in US?,"Who is 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Jeff Bezos""], ""reasoning"": ""As the founder and CEO of Amazon, Bezos has revolutionized the retail industry and created one of the most successful and valuable companies in the world, with a net worth of over $200 billion.""}",inst-1,1,,"As the founder and CEO of Amazon, Bezos has revolutionized the retail industry and created one of the most successful and valuable companies in the world, with a net worth of over $200 billion."
+","Based on various sources, including Forbes, Entrepreneur, and other reputable publications, I would argue that the most well-known and successful entrepreneur in the US is likely to be Jeff Bezos. Here's my reasoning:
+
+{""answer"": [{""name"": ""Jeff Bezos"", ""company"": ""Amazon""}], ""reasoning"": ""Bezos is the founder and CEO of Amazon, the world's largest online retailer, with a market value of over $1 trillion. He has revolutionized the retail industry and disrupted multiple sectors, including e-commerce, cloud computing, and artificial intelligence. Bezos' net worth is over $200 billion, making him one of the richest people in the world.""}",inst-1,1,,
 New-su-33,What is the common dress code for school teachers in US?,"What is the common dress code for school teachers in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the common dress code for school teachers in US?','answer':[]}
@@ -162,7 +180,9 @@ New-su-33,What is the common dress code for school teachers in US?,"What is the 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Business Casual""}], ""reasoning"": ""Traditionally, school teachers in the US dress in a professional yet relaxed manner, often adhering to a business casual dress code, which typically includes blouses or button-down shirts, slacks or khakis, and minimal jewelry.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""The concept of a 'common' dress code for school teachers in the US is subjective, as it varies greatly depending on the school, district, state, or even region. However, I will provide an answer based on general observations and reports from various sources.""}
+
+{""answer"": [{""Casual Business Attire"": ""The most common dress code for school teachers in the US is considered to be Casual Business Attire, which typically includes dress pants or skirts, blouses, and button-down shirts""}], ""reasoning"": ""This answer is based on general observations and reports from various sources, including teacher surveys, school administrators, and education experts. While there may be variations depending on the specific school or district, Casual Business Attire is often considered the standard dress code for school teachers in the US.""}",inst-1,1,,"The concept of a 'common' dress code for school teachers in the US is subjective, as it varies greatly depending on the school, district, state, or even region. However, I will provide an answer based on general observations and reports from various sources."
 Th-en-44,What is US's most popular food for family meals on weekends?,"What is US's most popular food for family meals on weekends? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is US's most popular food for family meals on weekends?','answer':[]}
@@ -170,7 +190,14 @@ Th-en-44,What is US's most popular food for family meals on weekends?,"What is U
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Grilled chicken with sides""}], ""reasoning"": ""Based on various surveys and studies, grilled chicken with sides such as mashed potatoes, vegetables, and bread is a popular choice for family meals on weekends in the US.""}",inst-1,1,,
+","Here is the response in the required JSON format:
+
+{
+""answer"": [""Grilled Chicken""],
+""reasoning"": ""Based on various surveys and studies, grilled chicken is a popular choice for family meals on weekends in the US, likely due to its ease of preparation, versatility, and appeal to a wide range of tastes.""
+}
+
+Let me know if this meets your requirements!",inst-1,1,,"Based on various surveys and studies, grilled chicken is a popular choice for family meals on weekends in the US, likely due to its ease of preparation, versatility, and appeal to a wide range of tastes."
 Th-en-45,What is the most popular weekday evening family activity in US?,"What is the most popular weekday evening family activity in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular weekday evening family activity in US?','answer':[]}
@@ -178,7 +205,7 @@ Th-en-45,What is the most popular weekday evening family activity in US?,"What i
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Watching TV together""], ""reasoning"": ""According to various surveys and studies, watching TV together is a common and popular activity for families in the US, especially during weekday evenings when schedules can be busy.""}",inst-1,1,,"According to various surveys and studies, watching TV together is a common and popular activity for families in the US, especially during weekday evenings when schedules can be busy."
+","{""answer"": [""Watching TV together""], ""reasoning"": ""According to various studies and surveys, watching TV together is a common and popular activity for families in the US, especially during weekday evenings. It is a convenient and easy way for families to spend quality time together, relax, and unwind after a long day.""}",inst-1,1,,"According to various studies and surveys, watching TV together is a common and popular activity for families in the US, especially during weekday evenings. It is a convenient and easy way for families to spend quality time together, relax, and unwind after a long day."
 New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in US? (e.g., 1 month).","How long is the typical probation period for new employees before signing a formal contract in US? (e.g., 1 month). Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How long is the typical probation period for new employees before signing a formal contract in US? (e.g., 1 month).','answer':[]}
@@ -186,7 +213,7 @@ New-ch-44,"How long is the typical probation period for new employees before sig
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""probation period"": ""typically 90 days""}], ""reasoning"": ""The typical probation period for new employees in the US varies by company, industry, and job type, but 90 days is a common duration, allowing both the employer and employee to assess the fit and performance before committing to a formal contract.""}",inst-1,1,,
+","{""answer"": [{""probation period"": ""typically 90 days to 6 months""}], ""reasoning"": ""The probation period for new employees in the US can vary depending on the company, industry, and job role. However, the typical probation period is usually around 90 days to 6 months, during which the employee is evaluated on their performance, work habits, and fit with the company culture. This period allows the employer to assess the employee's skills and abilities, and the employee to adjust to the new work environment.""}",inst-1,1,,
 New-in-62,What university in US is popular because of its engineering major? (Provide the official name.),"What university in US is popular because of its engineering major? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What university in US is popular because of its engineering major? (Provide the official name.)','answer':[]}
@@ -194,7 +221,7 @@ New-in-62,What university in US is popular because of its engineering major? (Pr
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Massachusetts Institute of Technology""}], ""reasoning"": ""MIT is widely recognized as one of the top engineering schools in the world, with a strong reputation for its rigorous academic programs, innovative research, and successful alumni.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Massachusetts Institute of Technology (MIT)""], ""reasoning"": ""MIT is widely recognized as one of the top universities in the world for its engineering programs, with a strong reputation for producing highly skilled and innovative engineers. Its rigorous curriculum, world-class faculty, and state-of-the-art facilities make it a top choice for students seeking a top-tier engineering education.""}}",inst-1,1,,
 Ji-ko-34,How do elementary school students in US go to school?,"How do elementary school students in US go to school? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How do elementary school students in US go to school?','answer':[]}
@@ -202,7 +229,7 @@ Ji-ko-34,How do elementary school students in US go to school?,"How do elementar
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Students in the United States typically go to school by walking, riding a bus, being driven by their parents or caregivers, or carpooling with friends.""], ""reasoning"": ""Elementary school students in the US attend school during regular school hours, usually between 8am and 3pm, and need a reliable way to get to and from school.""}",inst-1,1,,"Elementary school students in the US attend school during regular school hours, usually between 8am and 3pm, and need a reliable way to get to and from school."
+","{""answer"": [""Elementary school students in the US typically go to school by walking, taking a bus, being driven by their parents or caregivers, or carpooling with other students""], ""reasoning"": ""This is because school buses and public transportation options may not be readily available in all areas, and many schools are located within walking distance or near residential areas, making it convenient for students to walk, bike, or be driven to school.""}",inst-1,1,,"This is because school buses and public transportation options may not be readily available in all areas, and many schools are located within walking distance or near residential areas, making it convenient for students to walk, bike, or be driven to school."
 Ta-pe-21,Where do children usually play soccer in US?,"Where do children usually play soccer in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do children usually play soccer in US?','answer':[]}
@@ -210,7 +237,7 @@ Ta-pe-21,Where do children usually play soccer in US?,"Where do children usually
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""Local parks"", ""School fields"", ""Community centers"", ""Recreation centers"", ""Youth soccer leagues' facilities""]}, ""reasoning"": ""Children in the US typically play soccer in public or private spaces that are easily accessible and have the necessary facilities and equipment for the sport.""}",inst-1,1,,
+","{""answer"": {""answer"": [""School fields"", ""Local parks"", ""Community centers"", ""YMCAs""]}, ""reasoning"": ""Children in the US often play soccer in areas that are easily accessible, well-maintained, and convenient for parents and caregivers. School fields, local parks, community centers, and YMCAs are common locations where children can play soccer due to their proximity, affordability, and availability of facilities.""}",inst-1,1,,
 Tmp-ar-01,Where do university students in US usually go to study for their final exams?,"Where do university students in US usually go to study for their final exams? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do university students in US usually go to study for their final exams?','answer':[]}
@@ -218,7 +245,7 @@ Tmp-ar-01,Where do university students in US usually go to study for their final
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""library""}], ""reasoning"": ""University students in the US often study for their final exams in the library due to its quiet and focused environment, access to resources and study spaces, and proximity to campus, making it a convenient and effective place to prepare for exams.""}",inst-1,1,,
+","{""answer"": [""library""], ""reasoning"": ""University students in the US often prefer the library as a quiet and focused environment to study for their final exams, away from distractions and with access to resources and amenities.""}",inst-1,1,,"University students in the US often prefer the library as a quiet and focused environment to study for their final exams, away from distractions and with access to resources and amenities."
 Ne-ar-38,Which food do people usually offer as charity in US?,"Which food do people usually offer as charity in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which food do people usually offer as charity in US?','answer':[]}
@@ -226,7 +253,7 @@ Ne-ar-38,Which food do people usually offer as charity in US?,"Which food do peo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Non-perishable food items""], ""reasoning"": ""In the United States, non-perishable food items are commonly offered as charity due to their ease of storage, transportation, and distribution, as well as their long shelf life, making them a practical and efficient way to support food banks and other organizations that help those in need.""}",inst-1,1,,"In the United States, non-perishable food items are commonly offered as charity due to their ease of storage, transportation, and distribution, as well as their long shelf life, making them a practical and efficient way to support food banks and other organizations that help those in need."
+","{""answer"": [""Non-perishable food items""], ""reasoning"": ""In the US, people often donate non-perishable food items, such as canned goods, pasta, and rice, to food banks and pantries because they are easy to store, transport, and distribute, and provide a basic necessity for those in need.""}",inst-1,1,,"In the US, people often donate non-perishable food items, such as canned goods, pasta, and rice, to food banks and pantries because they are easy to store, transport, and distribute, and provide a basic necessity for those in need."
 Jod-ch-01,What eating utensils do people commonly used in US?,"What eating utensils do people commonly used in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What eating utensils do people commonly used in US?','answer':[]}
@@ -234,7 +261,7 @@ Jod-ch-01,What eating utensils do people commonly used in US?,"What eating utens
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""fork"", ""knife"", ""spoon""}], ""reasoning"": ""In the United States, the most common eating utensils used in everyday meals are the fork, knife, and spoon. These three utensils are widely accepted and used in most social and cultural settings.""}",inst-1,1,,
+","{""answer"": [{""fork"", ""knife"", ""spoon"", ""chopsticks""}], ""reasoning"": ""In the United States, people commonly use the combination of fork, knife, and spoon for most meals. Chopsticks are also used by some individuals, particularly in Asian-American communities.""}",inst-1,1,,
 New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in US?,"What type of alcoholic drink is most commonly consumed at festivals in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of alcoholic drink is most commonly consumed at festivals in US?','answer':[]}
@@ -242,7 +269,7 @@ New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""beer""}], ""reasoning"": ""Festivals in the US often feature a variety of beers, including craft beers, lagers, and ales, which are popular among attendees due to their refreshing and thirst-quenching qualities.""}",inst-1,1,,
+","{""answer"": [""Beer""], ""reasoning"": ""Beer is the most commonly consumed type of alcoholic drink at festivals in the US due to its refreshing and thirst-quenching properties, making it a popular choice for outdoor events and gatherings.""}",inst-1,1,,"Beer is the most commonly consumed type of alcoholic drink at festivals in the US due to its refreshing and thirst-quenching properties, making it a popular choice for outdoor events and gatherings."
 Th-en-11,Who is the most popular sportperson in US?,"Who is the most popular sportperson in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular sportperson in US?','answer':[]}
@@ -250,7 +277,7 @@ Th-en-11,Who is the most popular sportperson in US?,"Who is the most popular spo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""LeBron James""}], ""reasoning"": ""Based on his widespread recognition, accolades, and impact on popular culture, LeBron James is often considered the most popular sportsperson in the US.""}",inst-1,1,,
+","{""answer"": [""Tom Brady""], ""reasoning"": ""Based on various metrics such as endorsements, social media following, and overall popularity, Tom Brady is widely considered the most popular sportsperson in the US. He has won numerous accolades, including seven Super Bowl championships, and has been a dominant figure in the NFL for over two decades.""}",inst-1,1,,"Based on various metrics such as endorsements, social media following, and overall popularity, Tom Brady is widely considered the most popular sportsperson in the US. He has won numerous accolades, including seven Super Bowl championships, and has been a dominant figure in the NFL for over two decades."
 New-gr-15,What is the most popular traditional dessert in US?,"What is the most popular traditional dessert in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular traditional dessert in US?','answer':[]}
@@ -258,7 +285,7 @@ New-gr-15,What is the most popular traditional dessert in US?,"What is the most 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Apple Pie""], ""reasoning"": ""Due to its widespread availability and cultural significance, Apple Pie is often considered the most popular traditional dessert in the United States.""}",inst-1,1,,"Due to its widespread availability and cultural significance, Apple Pie is often considered the most popular traditional dessert in the United States."
+","{""answer"": {""question':'What is the most popular traditional dessert in US?','answer':[""Apple Pie""]}, ""reasoning"": ""Based on surveys and sales data, Apple Pie is widely considered the most popular traditional dessert in the United States. Its classic recipe, made with a flaky crust and sweet-tart filling, has been a staple of American cuisine for centuries, and remains a beloved treat across the country.""}",inst-1,1,,
 Ni-en-40,What is the most popular Christmas song in US? ,"What is the most popular Christmas song in US?  Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular Christmas song in US? ','answer':[]}
@@ -266,7 +293,7 @@ Ni-en-40,What is the most popular Christmas song in US? ,"What is the most popul
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""title"": ""All I Want for Christmas Is You""}], ""reasoning"": ""According to various sources, including Billboard and the Guinness World Records, 'All I Want for Christmas Is You' by Mariah Carey is the most popular Christmas song in the US, having been a chart-topper for multiple years and breaking numerous records.""}",inst-1,1,,
+","{""answer"": [""All I Want for Christmas Is You""], ""reasoning"": ""According to various sources, including Billboard and the Guinness World Records, 'All I Want for Christmas Is You' by Mariah Carey is widely considered the most popular Christmas song in the US. It has been a consistent best-seller and has topped the charts year after year, making it a modern classic.""}",inst-1,1,,"According to various sources, including Billboard and the Guinness World Records, 'All I Want for Christmas Is You' by Mariah Carey is widely considered the most popular Christmas song in the US. It has been a consistent best-seller and has topped the charts year after year, making it a modern classic."
 Na-ko-20,What sports event do people from US passionately support the most in international competitions?,"What sports event do people from US passionately support the most in international competitions? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What sports event do people from US passionately support the most in international competitions?','answer':[]}
@@ -274,11 +301,7 @@ Na-ko-20,What sports event do people from US passionately support the most in in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [
-""Olympics""
-],
-""reasoning"": ""The Olympics are a symbol of international unity and excellence, and the US has a strong history of producing top-level athletes in a wide range of sports, making it a source of national pride and passion.""",inst-1,1,,
+","{""answer"": [{""Olympics""}], ""reasoning"": ""The Olympics are a symbol of international unity, and the US has a strong history of participating and winning in the Games. Additionally, the Olympics are a rare opportunity for American athletes to compete against the best in the world, and the passion and excitement surrounding the event are unmatched.""}",inst-1,1,,
 Al-en-04,What is the most popular fruit in US?,"What is the most popular fruit in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular fruit in US?','answer':[]}
@@ -286,7 +309,7 @@ Al-en-04,What is the most popular fruit in US?,"What is the most popular fruit i
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Apple""], ""reasoning"": ""According to the United States Department of Agriculture (USDA), apples are the most widely consumed fruit in the US, accounting for over 12% of total fruit consumption.""}",inst-1,1,,"According to the United States Department of Agriculture (USDA), apples are the most widely consumed fruit in the US, accounting for over 12% of total fruit consumption."
+","{""answer"": [""Apples""], ""reasoning"": ""According to the United States Apple Association, apples are the most widely consumed and grown fruit in the US, accounting for over 11% of total fruit consumption.""}",inst-1,1,,"According to the United States Apple Association, apples are the most widely consumed and grown fruit in the US, accounting for over 11% of total fruit consumption."
 New-gr-06,What is the most popular food in US among young people?,"What is the most popular food in US among young people? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular food in US among young people?','answer':[]}
@@ -294,7 +317,7 @@ New-gr-06,What is the most popular food in US among young people?,"What is the m
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""pizza""}], ""reasoning"": ""Young people in the US often prefer comfort food and convenience, and pizza is a popular choice that fits both criteria.""}",inst-1,1,,
+","{""answer"": [{""food"": ""Pizza""}], ""reasoning"": ""According to various surveys and studies, pizza is consistently the most popular food among young people in the US, likely due to its convenience, affordability, and versatility.""}",inst-1,1,,
 New-su-34,What is the most popular extracurricular activity related to music in schools in US?,"What is the most popular extracurricular activity related to music in schools in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular extracurricular activity related to music in schools in US?','answer':[]}
@@ -302,7 +325,7 @@ New-su-34,What is the most popular extracurricular activity related to music in 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Band""], ""reasoning"": ""Based on various studies and surveys, band is often reported as the most popular extracurricular music activity in US schools, likely due to its long history, wide availability, and inclusive nature.""}",inst-1,1,,"Based on various studies and surveys, band is often reported as the most popular extracurricular music activity in US schools, likely due to its long history, wide availability, and inclusive nature."
+","{""answer"": [""Choir""], ""reasoning"": ""Based on various surveys and reports, choir is often reported as the most popular extracurricular music activity in US schools, likely due to its inclusivity, accessibility, and ability to bring together students of different skill levels and backgrounds.""}",inst-1,1,,"Based on various surveys and reports, choir is often reported as the most popular extracurricular music activity in US schools, likely due to its inclusivity, accessibility, and ability to bring together students of different skill levels and backgrounds."
 Ji-ko-26,What are the key milestones associated with children's independence from their parents in US's society?,"What are the key milestones associated with children's independence from their parents in US's society? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the key milestones associated with children's independence from their parents in US's society?','answer':[]}
@@ -310,7 +333,12 @@ Ji-ko-26,What are the key milestones associated with children's independence fro
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""age 18"": ""Licensing and independence in daily life"", ""age 22"": ""Emigration from parental home"", ""age 25"": ""Financial independence"", ""age 30"": ""Marriage and starting a family""}], ""reasoning"": ""These milestones mark significant transitions in a child's life, from dependence on parents to increased autonomy and self-sufficiency.""}",inst-1,1,,
+","{""answer"": [{""milestone"": ""Preschool age (around 3-4 years)"", ""description"": ""Separation from parents during preschool hours""},
+{""milestone"": ""Elementary school age (around 5-10 years)"", ""description"": ""Increased independence in daily routines and choices""},
+{""milestone"": ""Pre-teen age (around 11-12 years)"", ""description"": ""More responsibility in household chores and decision-making""},
+{""milestone"": ""Teenage years (around 13-19 years)"", ""description"": ""Greater autonomy in social and extracurricular activities""},
+{""milestone"": ""College age (around 18-22 years)"", ""description"": ""Emancipation from parental support and financial dependence""}],
+""reasoning"": ""These milestones mark significant shifts in children's ability to function independently, make decisions, and take responsibility for their lives.""}",inst-1,1,,
 Ne-ar-36,What is a typical festive meal in US?,"What is a typical festive meal in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a typical festive meal in US?','answer':[]}
@@ -318,12 +346,9 @@ Ne-ar-36,What is a typical festive meal in US?,"What is a typical festive meal i
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [
-""Roasted turkey, mashed potatoes, stuffing, cranberry sauce, and pumpkin or apple pie""
-],
-""reasoning"": ""These dishes are commonly associated with American Thanksgiving celebrations and are often considered classic festive foods in the US.""
-}",inst-1,1,,These dishes are commonly associated with American Thanksgiving celebrations and are often considered classic festive foods in the US.
+","{""answer"": [], ""reasoning"": ""The concept of a 'typical' festive meal in the US is subjective and can vary greatly depending on the region, cultural background, and personal preferences. However, it's generally accepted that a festive meal in the US often includes traditional dishes associated with holidays such as Thanksgiving, Christmas, and Easter. These dishes may include roasted meats like turkey, ham, or lamb, accompanied by side dishes like mashed potatoes, green beans, and sweet potatoes.""}
+
+{""answer"": [{""Turkey with stuffing and mashed potatoes""}, {""Ham with glazed ham and pineapple rings""}, {""Roasted beef with roasted vegetables""}, {""Lamb with mint sauce and roasted potatoes""}, {""Grilled salmon with quinoa and steamed asparagus""}]}",inst-1,1,,"The concept of a 'typical' festive meal in the US is subjective and can vary greatly depending on the region, cultural background, and personal preferences. However, it's generally accepted that a festive meal in the US often includes traditional dishes associated with holidays such as Thanksgiving, Christmas, and Easter. These dishes may include roasted meats like turkey, ham, or lamb, accompanied by side dishes like mashed potatoes, green beans, and sweet potatoes."
 Ji-ko-14,What is the representative export item of US?,"What is the representative export item of US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the representative export item of US?','answer':[]}
@@ -331,7 +356,16 @@ Ji-ko-14,What is the representative export item of US?,"What is the representati
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Aerospace Products""], ""reasoning"": ""The United States is a major producer of aerospace products, including aircraft, spacecraft, and related equipment, making it a significant contributor to the country's export revenue.""}",inst-1,1,,"The United States is a major producer of aerospace products, including aircraft, spacecraft, and related equipment, making it a significant contributor to the country's export revenue."
+","Here is the response in JSON format:
+
+{
+""answer"": [
+{""item"": ""Aircraft""}
+],
+""reasoning"": ""The United States is a leading manufacturer of commercial and military aircraft, and aircraft parts, making it a significant contributor to the country's export revenue.""
+}
+
+Let me know if this meets your requirements!",inst-1,1,,
 New-pe-76,What is a popular activity to do in parks in US?,"What is a popular activity to do in parks in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a popular activity to do in parks in US?','answer':[]}
@@ -339,7 +373,11 @@ New-pe-76,What is a popular activity to do in parks in US?,"What is a popular ac
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Hiking""], ""reasoning"": ""Parks in the US often have vast trails and scenic routes, making hiking a popular activity among visitors.""}",inst-1,1,,"Parks in the US often have vast trails and scenic routes, making hiking a popular activity among visitors."
+","Here is my response:
+
+{""answer"": {""type"": ""array"", ""value"": [""Picnicking""]}, ""reasoning"": ""Parks in the US offer a serene atmosphere, green spaces, and scenic views, making them an ideal spot for a relaxing and enjoyable picnic. The activity allows people to unwind, socialize, and connect with nature, which is a universal human desire. Additionally, many parks have designated picnic areas, playgrounds, and walking trails, making it a popular activity for families and friends.""}
+
+Note: The answer is a single value ""Picnicking"" in a JSON array, as per your request.",inst-1,1,,
 Jo-sp-19,What region in US has been traditionally associated with agriculture?,"What region in US has been traditionally associated with agriculture? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What region in US has been traditionally associated with agriculture?','answer':[]}
@@ -347,7 +385,7 @@ Jo-sp-19,What region in US has been traditionally associated with agriculture?,"
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""The Great Plains""], ""reasoning"": ""The Great Plains region in the central United States has been traditionally associated with agriculture due to its fertile soil, favorable climate, and abundant water resources.""}",inst-1,1,,"The Great Plains region in the central United States has been traditionally associated with agriculture due to its fertile soil, favorable climate, and abundant water resources."
+","{""answer"": [""The Midwest""], ""reasoning"": ""The Midwest region of the United States, also known as the American Heartland, has historically been the country's breadbasket due to its fertile soil, moderate climate, and ample water supply, making it an ideal location for farming and agriculture.""}",inst-1,1,,"The Midwest region of the United States, also known as the American Heartland, has historically been the country's breadbasket due to its fertile soil, moderate climate, and ample water supply, making it an ideal location for farming and agriculture."
 Th-en-37,"At what age do children typically become independent from their parents in US? (Provide Arabic numerals (e.g., 12) only.)","At what age do children typically become independent from their parents in US? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'At what age do children typically become independent from their parents in US? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -355,10 +393,7 @@ Th-en-37,"At what age do children typically become independent from their parent
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [18],
-""reasoning"": ""Children typically become independent from their parents in the United States when they reach the age of 18, marking the end of their legal minority and the beginning of adulthood.""
-}",inst-1,1,,"Children typically become independent from their parents in the United States when they reach the age of 18, marking the end of their legal minority and the beginning of adulthood."
+","{""answer"": [18], ""reasoning"": ""Children typically become independent from their parents in the United States around the age of 18, when they finish high school and move on to higher education, enter the workforce, or start their own families. This is often marked by legal milestones such as emancipation, marriage, or military enlistment.""}",inst-1,1,,"Children typically become independent from their parents in the United States around the age of 18, when they finish high school and move on to higher education, enter the workforce, or start their own families. This is often marked by legal milestones such as emancipation, marriage, or military enlistment."
 Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in US?,"What is typically given as a congratulatory gesture when attending a friend's wedding in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is typically given as a congratulatory gesture when attending a friend's wedding in US?','answer':[]}
@@ -366,7 +401,7 @@ Na-ko-39,What is typically given as a congratulatory gesture when attending a fr
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""gift""], ""reasoning"": ""In the United States, a common congratulatory gesture when attending a friend's wedding is to give a gift, typically a monetary one, to the newlyweds as a symbol of good wishes and support for their new life together.""}",inst-1,1,,"In the United States, a common congratulatory gesture when attending a friend's wedding is to give a gift, typically a monetary one, to the newlyweds as a symbol of good wishes and support for their new life together."
+","{""answer"": [""Gift"", ""Card"", ""Words of Appreciation""], ""reasoning"": ""When attending a friend's wedding in the US, a typical congratulatory gesture is to give a gift, card, or express words of appreciation to celebrate the union and show support for the newlyweds.""}",inst-1,1,,"When attending a friend's wedding in the US, a typical congratulatory gesture is to give a gift, card, or express words of appreciation to celebrate the union and show support for the newlyweds."
 Ca-sp-11,Which day of the week do people usually organize a family meal in US?,"Which day of the week do people usually organize a family meal in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which day of the week do people usually organize a family meal in US?','answer':[]}
@@ -374,7 +409,7 @@ Ca-sp-11,Which day of the week do people usually organize a family meal in US?,"
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""Sunday is often considered a day for family gatherings and meals in the United States, as it is a common day for families to come together after a busy week.""}",inst-1,1,,
+","{""answer"": [{""day"": ""Sunday""}], ""reasoning"": ""In the United States, Sunday is commonly considered a day for family meals and gatherings, as it is often seen as a day of rest and relaxation.""}",inst-1,1,,
 Ji-ko-35,What is the most common form of private education in US?,"What is the most common form of private education in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most common form of private education in US?','answer':[]}
@@ -382,7 +417,7 @@ Ji-ko-35,What is the most common form of private education in US?,"What is the m
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""type"": ""parochial school""}], ""reasoning"": ""Parochial schools, which are private schools operated by religious organizations, are the most common form of private education in the US due to their widespread presence and popularity.""}",inst-1,1,,
+","{""answer"": [{""name"": ""Independent Private Schools""}], ""reasoning"": ""Independent private schools are the most common form of private education in the US, accounting for the majority of private schools and students. They are often non-profit organizations that operate independently, offering a range of educational programs and curricula. Many independent private schools have a strong reputation and are highly sought after by parents seeking a high-quality education for their children.""}",inst-1,1,,
 Al-en-01,What is a common snack for preschool kids in US?,"What is a common snack for preschool kids in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is a common snack for preschool kids in US?','answer':[]}
@@ -390,10 +425,9 @@ Al-en-01,What is a common snack for preschool kids in US?,"What is a common snac
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [""Goldfish crackers""],
-""reasoning"": ""Goldfish crackers are a popular snack among preschool kids in the US due to their small size, mild flavor, and ease of consumption""
-}",inst-1,1,,"Goldfish crackers are a popular snack among preschool kids in the US due to their small size, mild flavor, and ease of consumption"
+","Here is the response:
+
+{""answer"": [{""Goldfish Crackers""}], ""reasoning"": ""Preschool kids in the US often enjoy simple, easy-to-eat snacks that are also fun and familiar. Goldfish Crackers fit the bill, being a popular, kid-friendly snack that is widely available and easy to munch on.""}",inst-1,1,,
 Al-en-32,What is the main dish for Thanksgiving in US?,"What is the main dish for Thanksgiving in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the main dish for Thanksgiving in US?','answer':[]}
@@ -401,7 +435,7 @@ Al-en-32,What is the main dish for Thanksgiving in US?,"What is the main dish fo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""main dish"": ""Turkey""}], ""reasoning"": ""Traditional and iconic centerpiece of the US Thanksgiving meal, often served with various side dishes and condiments""}",inst-1,1,,
+","{""answer"": [""Turkey""], ""reasoning"": ""Traditionally, turkey is the centerpiece of a Thanksgiving meal in the United States, often served roasted with stuffing, mashed potatoes, and other side dishes.""}",inst-1,1,,"Traditionally, turkey is the centerpiece of a Thanksgiving meal in the United States, often served roasted with stuffing, mashed potatoes, and other side dishes."
 New-su-58,What animals are commonly used for agriculture in US?,"What animals are commonly used for agriculture in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What animals are commonly used for agriculture in US?','answer':[]}
@@ -409,10 +443,7 @@ New-su-58,What animals are commonly used for agriculture in US?,"What animals ar
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [{""cattle"", ""pigs"", ""chickens"", ""turkeys"", ""horses"", ""sheep"", ""goats"", ""bees"", ""honeybees""}],
-""reasoning"": ""These animals are commonly raised for their meat, dairy products, eggs, and other agricultural products in the United States.""
-}",inst-1,1,,
+","{""answer"": [""cattle"", ""pigs"", ""chickens"", ""turkeys"", ""horses""], ""reasoning"": ""These animals are commonly used for agriculture in the US due to their high demand for meat, dairy, and other products, as well as their ability to thrive in the country's diverse climate and soil conditions.""}",inst-1,1,,"These animals are commonly used for agriculture in the US due to their high demand for meat, dairy, and other products, as well as their ability to thrive in the country's diverse climate and soil conditions."
 An-ar-03,Which month is the final exam term usually scheduled at high schools in US? (Provide Arabic numerals (1~12) only.),"Which month is the final exam term usually scheduled at high schools in US? (Provide Arabic numerals (1~12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which month is the final exam term usually scheduled at high schools in US? (Provide Arabic numerals (1~12) only.)','answer':[]}
@@ -420,7 +451,7 @@ An-ar-03,Which month is the final exam term usually scheduled at high schools in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [May], ""reasoning"": ""In the United States, the final exam term is usually scheduled at the end of the school year, which typically falls in May.""}",inst-1,1,,
+","{""answer"": [May], ""reasoning"": ""In the United States, the school year typically runs from late August or September to late May or early June. The final exam term is usually scheduled in May, as it allows students to complete their coursework and prepare for graduation, which often takes place in late May or early June.""}",inst-1,1,,
 Ji-ko-28,When is the first day that people celebrate after a child is born in US?,"When is the first day that people celebrate after a child is born in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'When is the first day that people celebrate after a child is born in US?','answer':[]}
@@ -428,7 +459,9 @@ Ji-ko-28,When is the first day that people celebrate after a child is born in US
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Hospital Discharge Day""], ""reasoning"": ""This is because typically, the first celebration after a child's birth is the hospital discharge, marking the end of the initial postpartum recovery period and the beginning of life at home with the newborn.""}",inst-1,1,,"This is because typically, the first celebration after a child's birth is the hospital discharge, marking the end of the initial postpartum recovery period and the beginning of life at home with the newborn."
+","{""answer"": [""Hospital visitation, usually within 2-3 days after birth""], ""reasoning"": ""In the United States, the first celebration after a child's birth typically occurs when the family and friends visit the new mother and baby at the hospital, usually within 2-3 days after birth. This is often accompanied by gifts, well-wishes, and congratulations.""}
+
+Note: This is a general answer, and the exact timing may vary depending on individual circumstances and cultural traditions.",inst-1,1,,"In the United States, the first celebration after a child's birth typically occurs when the family and friends visit the new mother and baby at the hospital, usually within 2-3 days after birth. This is often accompanied by gifts, well-wishes, and congratulations."
 Na-ko-33,What symbolic food do people from US eat on (Lunar) New Year?,"What symbolic food do people from US eat on (Lunar) New Year? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What symbolic food do people from US eat on (Lunar) New Year?','answer':[]}
@@ -436,7 +469,15 @@ Na-ko-33,What symbolic food do people from US eat on (Lunar) New Year?,"What sym
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""dumplings""}], ""reasoning"": ""While the Lunar New Year is more commonly celebrated in Asian cultures, dumplings have gained popularity as a symbolic food in the US, particularly among Asian-American communities, as they represent wealth and good fortune.""}",inst-1,1,,
+","What a fascinating question! The Lunar New Year is a significant holiday in many East Asian cultures, and the symbolic foods eaten during this time often vary across countries and regions. In the US, where diverse cultural influences have shaped the country's culinary landscape, one might expect a mix of traditional and modern interpretations of symbolic foods for the Lunar New Year.
+
+However, upon closer examination, I realize that the question is asking about the symbolic food(s) specifically eaten by people from the US on the Lunar New Year. This is where things get interesting! Since the Lunar New Year is not a federal holiday in the US, and its cultural significance is more prominent in Asian-American communities, I would argue that the answer is not a single, universally accepted symbolic food in the US.
+
+Instead, I would suggest that the answer lies in the diversity of cuisines and traditions within the US. People from various Asian-American communities, such as Chinese, Korean, Vietnamese, and others, may have their own unique symbolic foods and traditions associated with the Lunar New Year. Therefore, the answer is not a single food item but rather a reflection of the cultural diversity and fusion that exists in the US.
+
+Here is the answer in JSON format:
+
+{""answer"": [""a reflection of cultural diversity and fusion""], ""reasoning"": ""Due to the diversity of Asian-American communities in the US, there is no single symbolic food that is universally accepted or eaten on the Lunar New Year.""}",inst-1,1,,"Due to the diversity of Asian-American communities in the US, there is no single symbolic food that is universally accepted or eaten on the Lunar New Year."
 Ki-pe-34,What is the usual drink in the breakfast in US?,"What is the usual drink in the breakfast in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the usual drink in the breakfast in US?','answer':[]}
@@ -444,7 +485,9 @@ Ki-pe-34,What is the usual drink in the breakfast in US?,"What is the usual drin
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""value"": ""Coffee""}], ""reasoning"": ""Coffee is the most common breakfast drink in the United States, with a majority of Americans consuming it daily.""}",inst-1,1,,
+","Here is the response in the requested JSON format:
+
+{""answer"": [{""usual drink in US breakfast"": ""coffee""}], ""reasoning"": ""Coffee is the most popular beverage consumed during breakfast in the United States, and it is often served hot, black, or with cream and sugar. According to a survey by the National Coffee Association, 68% of Americans drink coffee every day, and it is a staple in many American households.""}",inst-1,1,,
 New-su-42,What religion is mainly taught in schools in US?,"What religion is mainly taught in schools in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What religion is mainly taught in schools in US?','answer':[]}
@@ -452,7 +495,7 @@ New-su-42,What religion is mainly taught in schools in US?,"What religion is mai
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""mainly"": ""None""}], ""reasoning"": ""In the United States, the First Amendment to the Constitution guarantees the separation of church and state, which means that public schools are not allowed to teach any specific religion. Instead, they focus on providing a secular education.""}",inst-1,1,,
+","{""answer"": [{""No religion is mainly taught in schools in the US""}], ""reasoning"": ""In the United States, the First Amendment to the Constitution guarantees the separation of church and state, which means that public schools are not allowed to promote or teach any specific religion. Instead, schools focus on providing a neutral and inclusive environment for students of all faiths and backgrounds.""}",inst-1,1,,
 Ne-ar-06,What do people from US eat in Ramadan?,"What do people from US eat in Ramadan? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people from US eat in Ramadan?','answer':[]}
@@ -460,7 +503,7 @@ Ne-ar-06,What do people from US eat in Ramadan?,"What do people from US eat in R
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Foods with dates and nuts"", ""Sandwiches and wraps"", ""Fruit and cheese platters"", ""Pasta and rice dishes"", ""Grilled meats and vegetables""}], ""reasoning"": ""Western-style Ramadan food in the US often features a mix of international cuisines and convenience foods, with an emphasis on dates, nuts, and sweet treats to help with fasting and hydration.""}",inst-1,1,,
+","{""answer"": [""Iftar and Suhoor meals often feature a mix of traditional Middle Eastern and American cuisine, with popular dishes including kebabs, falafel, shawarma, hummus, and tabbouleh, as well as American favorites like burgers, pizza, and salads.""], ""reasoning"": ""Ramadan is a time of spiritual reflection and self-reflection, and many Muslims in the US choose to fast from dawn to sunset. During this time, they often break their fast with a meal called Iftar, which typically includes a variety of dishes. In the US, Iftar meals often blend traditional Middle Eastern cuisine with American favorites, reflecting the cultural diversity of the country. Additionally, many Muslims in the US also eat a pre-dawn meal called Suhoor, which helps to sustain them throughout the day of fasting.""}",inst-1,1,,"Ramadan is a time of spiritual reflection and self-reflection, and many Muslims in the US choose to fast from dawn to sunset. During this time, they often break their fast with a meal called Iftar, which typically includes a variety of dishes. In the US, Iftar meals often blend traditional Middle Eastern cuisine with American favorites, reflecting the cultural diversity of the country. Additionally, many Muslims in the US also eat a pre-dawn meal called Suhoor, which helps to sustain them throughout the day of fasting."
 Gu-ch-38,"What is the duration of undergraduate education in US? (Provide Arabic numerals (e.g., 12) only.)","What is the duration of undergraduate education in US? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the duration of undergraduate education in US? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -468,7 +511,7 @@ Gu-ch-38,"What is the duration of undergraduate education in US? (Provide Arabic
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""duration"": 4}], ""reasoning"": ""Typically, undergraduate education in the United States takes four years to complete, assuming students attend a full-time program and follow a traditional academic path.""}",inst-1,1,,
+","{""answer"": [4], ""reasoning"": ""The typical duration of undergraduate education in the United States is four years, which is the standard length of a bachelor's degree program at most colleges and universities.""}",inst-1,1,,"The typical duration of undergraduate education in the United States is four years, which is the standard length of a bachelor's degree program at most colleges and universities."
 Kik-in-16,What drink is commonly consumed in US when the weather is cold?,"What drink is commonly consumed in US when the weather is cold? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What drink is commonly consumed in US when the weather is cold?','answer':[]}
@@ -476,7 +519,9 @@ Kik-in-16,What drink is commonly consumed in US when the weather is cold?,"What 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Hot Chocolate""}], ""reasoning"": ""In the US, hot chocolate is a popular drink during cold weather due to its warm and comforting nature, making it a perfect way to warm up on a chilly day.""}",inst-1,1,,
+","Here is the response in the required JSON format:
+
+{""answer"": [{""Hot_Coffee""}], ""reasoning"": ""Hot drinks are commonly consumed in the US when the weather is cold because they provide warmth and comfort, helping to alleviate the chill and boost energy levels.""}",inst-1,1,,
 Al-en-39,What do people eat on their birthday in US?,"What do people eat on their birthday in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people eat on their birthday in US?','answer':[]}
@@ -484,7 +529,9 @@ Al-en-39,What do people eat on their birthday in US?,"What do people eat on thei
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""cake"", ""pizza"", ""ice cream"", ""chocolate chip cookies"", ""sandwiches"", ""salads"", ""fruit"", ""cheese cake"", ""brownies"", ""cupcakes""], ""reasoning"": ""In the United States, people's birthday celebrations often involve sweet treats and comfort foods, with cake being a traditional birthday staple.""}",inst-1,1,,"In the United States, people's birthday celebrations often involve sweet treats and comfort foods, with cake being a traditional birthday staple."
+","{""answer"": [], ""reasoning"": ""The types of food people eat on their birthday in the US can vary greatly depending on personal preferences, cultural background, and regional traditions. However, based on general trends and surveys, it's common for people to indulge in celebratory foods that are rich, decadent, and often associated with nostalgia and comfort. Birthdays are a time to treat oneself, so it's not uncommon for people to opt for indulgent treats like cake, ice cream, and chocolates.""}
+
+{""answer"": [""cake"", ""pizza"", ""ice cream"", ""chocolates"", ""fro-yo"", ""cupcakes"", ""brownies"", ""cookies""], ""reasoning"": null}",inst-1,1,,"The types of food people eat on their birthday in the US can vary greatly depending on personal preferences, cultural background, and regional traditions. However, based on general trends and surveys, it's common for people to indulge in celebratory foods that are rich, decadent, and often associated with nostalgia and comfort. Birthdays are a time to treat oneself, so it's not uncommon for people to opt for indulgent treats like cake, ice cream, and chocolates."
 Ne-ar-26,What is the most famous public corporation in US?,"What is the most famous public corporation in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous public corporation in US?','answer':[]}
@@ -492,7 +539,7 @@ Ne-ar-26,What is the most famous public corporation in US?,"What is the most fam
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Apple Inc.""], ""reasoning"": ""Apple Inc. is widely recognized as one of the most valuable and influential technology companies in the world, with a market capitalization of over $2 trillion, and a brand valued at over $200 billion. Its products and services, such as the iPhone, Mac, and iPad, are household names, and its innovations have had a significant impact on the global technology industry.""}",inst-1,1,,"Apple Inc. is widely recognized as one of the most valuable and influential technology companies in the world, with a market capitalization of over $2 trillion, and a brand valued at over $200 billion. Its products and services, such as the iPhone, Mac, and iPad, are household names, and its innovations have had a significant impact on the global technology industry."
+","{""answer"": [{""name"": ""Apple Inc.""}], ""reasoning"": ""Apple Inc. is widely recognized as one of the most valuable and influential technology companies in the world, with a market capitalization of over $2 trillion. It is also one of the most successful and recognizable consumer brands globally, with a wide range of products and services that have revolutionized the way people live, work, and communicate.""}",inst-1,1,,
 Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in US?,"Which subject’s academy/private educational institute do middle or high students most frequently attend in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which subject’s academy/private educational institute do middle or high students most frequently attend in US?','answer':[]}
@@ -500,7 +547,7 @@ Ji-ko-36,Which subject’s academy/private educational institute do middle or hi
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Math and Science Academy""}], ""reasoning"": ""Many middle and high school students in the US attend math and science academies or private educational institutes to gain a competitive edge in STEM fields, receive personalized attention, and access advanced courses and resources.""}",inst-1,1,,
+","{""answer"": [{""subject"": ""Math"", ""institution"": ""Kumon Learning Center""}], ""reasoning"": ""Kumon Learning Center is one of the most popular and widely recognized private educational institutes that offers after-school math programs for middle and high school students in the US. Its programs focus on building math skills and confidence, and its curriculum is designed to meet the needs of students at various levels, from basic math to advanced algebra and geometry.""}",inst-1,1,,
 Th-en-51,Which subject is considered the most important for students in US?,"Which subject is considered the most important for students in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which subject is considered the most important for students in US?','answer':[]}
@@ -508,7 +555,7 @@ Th-en-51,Which subject is considered the most important for students in US?,"Whi
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Mathematics""], ""reasoning"": ""Mathematics is considered the most important subject for students in the US because it is a fundamental building block for many other subjects, including science, technology, engineering, and mathematics (STEM) fields, which are highly valued in the US education system and have strong career prospects.""}",inst-1,1,,"Mathematics is considered the most important subject for students in the US because it is a fundamental building block for many other subjects, including science, technology, engineering, and mathematics (STEM) fields, which are highly valued in the US education system and have strong career prospects."
+","{""answer"": [""Mathematics""], ""reasoning"": ""Mathematics is considered a fundamental subject for students in the US as it is a critical tool for problem-solving, critical thinking, and logical reasoning. It is also a key component of many STEM fields, including science, technology, engineering, and mathematics, which are highly valued in the US education system and have a significant impact on the country's economy.""}",inst-1,1,,"Mathematics is considered a fundamental subject for students in the US as it is a critical tool for problem-solving, critical thinking, and logical reasoning. It is also a key component of many STEM fields, including science, technology, engineering, and mathematics, which are highly valued in the US education system and have a significant impact on the country's economy."
 New-ch-07,What food items do people typically pair with hard liquor in US?,"What food items do people typically pair with hard liquor in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food items do people typically pair with hard liquor in US?','answer':[]}
@@ -516,7 +563,7 @@ New-ch-07,What food items do people typically pair with hard liquor in US?,"What
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""whiskey with cheese, whiskey with cigars, vodka with caviar, rum with tropical fruits, tequila with lime, gin with tonic""], ""reasoning"": ""In the US, people tend to pair hard liquor with classic combinations that complement its flavor profile, such as whiskey with sharp cheddar cheese, vodka with salty caviar, and rum with sweet tropical fruits, while also considering the cultural and social context in which the drink is consumed.""}",inst-1,1,,"In the US, people tend to pair hard liquor with classic combinations that complement its flavor profile, such as whiskey with sharp cheddar cheese, vodka with salty caviar, and rum with sweet tropical fruits, while also considering the cultural and social context in which the drink is consumed."
+","{""answer"": [{""Cocktails with mixers like cola, juice, or soda""], ""reasoning"": ""In the US, people often pair hard liquor with mixers like cola, juice, or soda to create popular cocktails, such as whiskey and cola, vodka and cranberry, or rum and coke.""}",inst-1,1,,
 New-en-68,What repercussions are there for bad behavior in schools in US?,"What repercussions are there for bad behavior in schools in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What repercussions are there for bad behavior in schools in US?','answer':[]}
@@ -524,7 +571,9 @@ New-en-68,What repercussions are there for bad behavior in schools in US?,"What 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Detention, suspension, expulsion, parent contact, and behavioral interventions""], ""reasoning"": ""Bad behavior in schools in the US can lead to a range of consequences, including disciplinary actions and interventions aimed at addressing the underlying issues causing the behavior.""}",inst-1,1,,"Bad behavior in schools in the US can lead to a range of consequences, including disciplinary actions and interventions aimed at addressing the underlying issues causing the behavior."
+","Here is the response:
+
+{""answer"": [""Detention"", ""Suspension"", ""Expulsion"", ""Parent-Teacher Conferences"", ""Behavioral Intervention Programs""], ""reasoning"": ""Bad behavior in schools in the US can lead to negative consequences that aim to correct the behavior, protect the student and others, and maintain a safe and respectful learning environment.""}",inst-1,1,,"Bad behavior in schools in the US can lead to negative consequences that aim to correct the behavior, protect the student and others, and maintain a safe and respectful learning environment."
 Th-en-35,"Which one of the daily meals is commonly shared with family members in US? (e.g., breakfast, lunch, dinner)","Which one of the daily meals is commonly shared with family members in US? (e.g., breakfast, lunch, dinner) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which one of the daily meals is commonly shared with family members in US? (e.g., breakfast, lunch, dinner)','answer':[]}
@@ -532,7 +581,7 @@ Th-en-35,"Which one of the daily meals is commonly shared with family members in
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""dinner""}], ""reasoning"": ""Dinner is often considered the most important meal of the day in American culture, and it is common for families to gather together for dinner after a long day.""}",inst-1,1,,
+","{""answer"": [{""dinner""}], ""reasoning"": ""Dinner is often considered a significant meal in American culture, and it is common for families to gather together for dinner, sharing food and conversation. Additionally, dinner is often seen as a time for family bonding and socializing, making it a popular choice for shared meals.""}",inst-1,1,,
 Ji-ko-37,What type of clothing do middle and high school students wear to school in US?,"What type of clothing do middle and high school students wear to school in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of clothing do middle and high school students wear to school in US?','answer':[]}
@@ -540,7 +589,8 @@ Ji-ko-37,What type of clothing do middle and high school students wear to school
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""answer"": [""casual"", ""comfortable"", ""fashionable""]}, ""reasoning"": ""Middle and high school students in the US tend to dress in a way that reflects their personal style, while also following school dress code policies. This often means wearing casual, comfortable clothing that is also fashionable and expressive.""}",inst-1,1,,
+","{""answer"": {""answer"": [""casual clothing"", ""comfortable clothing"", ""fashionable clothing""]}, 
+""reasoning"": ""Middle and high school students in the US typically wear casual, comfortable, and fashionable clothing to school, as they prioritize practicality and self-expression. This can include t-shirts, jeans, shorts, hoodies, sneakers, and other everyday attire.""}",inst-1,1,,
 Ca-sp-41,Where do the dependent elderly usually live in US?,"Where do the dependent elderly usually live in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do the dependent elderly usually live in US?','answer':[]}
@@ -548,7 +598,9 @@ Ca-sp-41,Where do the dependent elderly usually live in US?,"Where do the depend
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""state"": ""Florida""}], ""reasoning"": ""The elderly often move to Florida due to its warm climate, lower cost of living, and abundance of retirement communities and healthcare facilities.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Suburban areas"", ""Assisted living facilities"", ""Nursing homes""]}, ""reasoning"": ""The dependent elderly often require assistance with daily living activities, and suburban areas may offer a quieter and more convenient environment for them. Assisted living facilities and nursing homes provide the necessary care and support, typically having a lower cost of living compared to urban areas.""}
+
+Note: The answer is based on general trends and may vary depending on individual circumstances.",inst-1,1,,
 Sa-en-31,What is US's most popular family pet?,"What is US's most popular family pet? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is US's most popular family pet?','answer':[]}
@@ -556,7 +608,7 @@ Sa-en-31,What is US's most popular family pet?,"What is US's most popular family
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""dog""}], ""reasoning"": ""Based on various surveys and data sources, dogs are consistently reported to be the most popular family pet in the United States.""}",inst-1,1,,
+","{""answer"": [""Dog""], ""reasoning"": ""According to various surveys and data from the American Pet Products Association, dogs are the most popular family pet in the United States, with over 60 million households owning at least one dog.""}",inst-1,1,,"According to various surveys and data from the American Pet Products Association, dogs are the most popular family pet in the United States, with over 60 million households owning at least one dog."
 Gu-ch-08,What is the most popular sports among children in US?,"What is the most popular sports among children in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular sports among children in US?','answer':[]}
@@ -564,7 +616,7 @@ Gu-ch-08,What is the most popular sports among children in US?,"What is the most
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Soccer""], ""reasoning"": ""According to various surveys and data, soccer has become the most popular sport among children in the US, due to its global popularity, ease of play, and the increasing presence of professional leagues and clubs in the country.""}",inst-1,1,,"According to various surveys and data, soccer has become the most popular sport among children in the US, due to its global popularity, ease of play, and the increasing presence of professional leagues and clubs in the country."
+","{""answer"": [""Soccer"", ""Basketball"", ""Football""], ""reasoning"": ""The most popular sports among children in the US are often influenced by factors such as cultural and social trends, media coverage, and accessibility. According to various surveys and studies, soccer, basketball, and football are consistently ranked as the top three most popular sports among children in the US, likely due to their widespread popularity, ease of play, and exposure through media and community programs.""}",inst-1,1,,"The most popular sports among children in the US are often influenced by factors such as cultural and social trends, media coverage, and accessibility. According to various surveys and studies, soccer, basketball, and football are consistently ranked as the top three most popular sports among children in the US, likely due to their widespread popularity, ease of play, and exposure through media and community programs."
 New-as-20,What is the most popular indoor sport in US?,"What is the most popular indoor sport in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular indoor sport in US?','answer':[]}
@@ -572,7 +624,7 @@ New-as-20,What is the most popular indoor sport in US?,"What is the most popular
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""Basketball""}], ""reasoning"": ""According to various surveys and data, basketball is the most popular indoor sport in the US, with millions of participants and fans nationwide.""}",inst-1,1,,
+","{""answer"": [""Basketball""], ""reasoning"": ""Basketball is one of the most popular indoor sports in the US, with a large professional league (NBA) and a significant collegiate presence. It is also a popular recreational activity, with many indoor courts and leagues across the country.""}",inst-1,1,,"Basketball is one of the most popular indoor sports in the US, with a large professional league (NBA) and a significant collegiate presence. It is also a popular recreational activity, with many indoor courts and leagues across the country."
 New-spme-05,What are the most popular sweets in US?,"What are the most popular sweets in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the most popular sweets in US?','answer':[]}
@@ -580,7 +632,7 @@ New-spme-05,What are the most popular sweets in US?,"What are the most popular s
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""s'mores"", ""Reese's Peanut Butter Cups"", ""M&M's"", ""Kit Kat"", ""Twix"", ""Hershey's Milk Chocolate Bars"", ""Jolly Ranchers"", ""Starburst"", ""Skittles"", ""Snickers""}], ""reasoning"": ""Based on sales data and consumer preferences, these are the most popular sweets in the US, covering a range of chocolate and non-chocolate treats.""}",inst-1,1,,
+","{""answer"": [""Chocolate Chip Cookies"", ""Apple Pie"", ""Brownies"", ""Cupcakes"", ""Ice Cream""], ""reasoning"": ""The most popular sweets in the US are often classic desserts that have been passed down through generations, with a focus on comfort foods and nostalgic treats. These popular sweets are often associated with special occasions and holidays, and are commonly found in bakeries, restaurants, and homes across the country.""}",inst-1,1,,"The most popular sweets in the US are often classic desserts that have been passed down through generations, with a focus on comfort foods and nostalgic treats. These popular sweets are often associated with special occasions and holidays, and are commonly found in bakeries, restaurants, and homes across the country."
 New-in-01,Which coffee shop brand is the most popular in US?,"Which coffee shop brand is the most popular in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which coffee shop brand is the most popular in US?','answer':[]}
@@ -588,7 +640,7 @@ New-in-01,Which coffee shop brand is the most popular in US?,"Which coffee shop 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Starbucks""], ""reasoning"": ""Based on market share, sales, and brand recognition, Starbucks is widely considered the most popular coffee shop brand in the US, with a significant lead over its competitors.""}",inst-1,1,,"Based on market share, sales, and brand recognition, Starbucks is widely considered the most popular coffee shop brand in the US, with a significant lead over its competitors."
+","{""answer"": [""Starbucks""], ""reasoning"": ""Based on market share, sales, and customer loyalty, Starbucks is widely considered the most popular coffee shop brand in the US. Its widespread presence, diverse menu offerings, and strong brand recognition contribute to its dominance in the market.""}",inst-1,1,,"Based on market share, sales, and customer loyalty, Starbucks is widely considered the most popular coffee shop brand in the US. Its widespread presence, diverse menu offerings, and strong brand recognition contribute to its dominance in the market."
 New-gr-58,Which job is considered underpaid in US?,"Which job is considered underpaid in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which job is considered underpaid in US?','answer':[]}
@@ -596,10 +648,11 @@ New-gr-58,Which job is considered underpaid in US?,"Which job is considered unde
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""question':'Which job is considered underpaid in US?','answer':[
-{""job"": ""Teacher""}
-]},
-""reasoning"": ""Teachers are often considered underpaid due to the significant impact they have on the education and development of children, as well as the demanding nature of their work.""}",inst-1,1,,
+","Here is the response:
+
+{""answer"": {""underpaid_jobs"": []}, ""reasoning"": ""Many jobs in the US are considered underpaid, often due to factors such as lack of unionization, industry standards, or societal perception. However, some jobs are more commonly cited as being underpaid than others, often due to their high demand, lack of prestige, or limited career advancement opportunities.""}
+
+{""answer"": {""underpaid_jobs"": [""nurse"", ""teacher"", ""software developer"", ""social worker"", ""personal care aide"", ""janitor"", ""food service worker"", ""retail sales associate"", ""customer service representative"", ""factory worker"", ""construction worker"", ""childcare worker"", ""home health aide"", ""warehouse worker"", ""bank teller"", ""librarian"", ""museum worker"", ""archivist"", ""data entry clerk"", ""transcriptionist"", ""telehealth worker"", ""mental health counselor"", ""substitute teacher"", ""teacher's aide"", ""education administrator"", ""school counselor"", ""school psychologist"", ""school social worker"", ""school nurse"", ""school librarian"", ""school counselor assistant"", ""school psychologist assistant"", ""school social worker assistant""]}}",inst-1,1,,
 New-ch-32,What office software do people typically use in the workplace in US?,"What office software do people typically use in the workplace in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What office software do people typically use in the workplace in US?','answer':[]}
@@ -607,7 +660,9 @@ New-ch-32,What office software do people typically use in the workplace in US?,"
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""software"": [""Microsoft Office"", ""Google Workspace"", ""LibreOffice""]}], ""reasoning"": ""The most commonly used office software in the US workplace is often determined by company size, industry, and personal preference. Microsoft Office is widely used due to its widespread adoption and compatibility with other Microsoft products. Google Workspace is popular among small to medium-sized businesses and startups, while LibreOffice is often used by those looking for an open-source alternative.""}",inst-1,1,,
+","{""answer"": [""Microsoft Office"", ""Google Workspace"", ""LibreOffice""], ""reasoning"": ""The most commonly used office software in the workplace in the US are typically those that are widely adopted, user-friendly, and offer a range of features for productivity and collaboration. Microsoft Office is a perennial favorite due to its widespread adoption and compatibility with other Microsoft tools. Google Workspace (formerly G Suite) is gaining popularity due to its cloud-based nature and seamless integration with other Google tools. LibreOffice is a free and open-source option that offers many of the same features as Microsoft Office, making it a popular choice for those on a budget.""}
+
+Note: The answer is not a definitive ranking, but rather a list of the most commonly used office software in the workplace in the US.",inst-1,1,,"The most commonly used office software in the workplace in the US are typically those that are widely adopted, user-friendly, and offer a range of features for productivity and collaboration. Microsoft Office is a perennial favorite due to its widespread adoption and compatibility with other Microsoft tools. Google Workspace (formerly G Suite) is gaining popularity due to its cloud-based nature and seamless integration with other Google tools. LibreOffice is a free and open-source option that offers many of the same features as Microsoft Office, making it a popular choice for those on a budget."
 New-ch-73,What type of clubs are most popular among university students in US?,"What type of clubs are most popular among university students in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What type of clubs are most popular among university students in US?','answer':[]}
@@ -615,7 +670,7 @@ New-ch-73,What type of clubs are most popular among university students in US?,"
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""club type"": ""Recreational sports""}],""reasoning"": ""University students in the US often prioritize extracurricular activities that promote socialization, exercise, and stress relief, leading to a high demand for recreational sports clubs.""}",inst-1,1,,
+","{""answer"": [{""Club/Sports"", ""Cultural"", ""Service"", ""Academic"", ""Professional""}], ""reasoning"": ""University students in the US tend to be attracted to clubs that offer a sense of community, personal growth, and opportunities to develop new skills. Many students join clubs that align with their interests, hobbies, or career aspirations, such as sports, cultural organizations, or professional associations.""}",inst-1,1,,
 New-en-47,What can typically be found in the back garden of houses in US?,"What can typically be found in the back garden of houses in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What can typically be found in the back garden of houses in US?','answer':[]}
@@ -623,9 +678,9 @@ New-en-47,What can typically be found in the back garden of houses in US?,"What 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [], ""reasoning"": ""The types of features found in the back garden of houses in the US can vary greatly depending on the region, climate, and personal preferences of the homeowner. However, some common features that can typically be found include outdoor furniture, a patio or deck, a garden or yard, a shed or garage, and various types of plants or landscaping.""}
+","{""answer"": [""grass"", ""flowers"", ""trees"", ""shrubs"", ""patio"", ""furniture"", ""pool"", ""garden bed"", ""pond"", ""outdoor kitchen"", ""deck""], ""reasoning"": ""A typical back garden in the US is often designed for relaxation and entertainment, and may include various features such as lawn, plants, and outdoor structures.""}
 
-{""answer"": [""outdoor furniture"", ""patio or deck"", ""garden or yard"", ""shed or garage"", ""plants or landscaping""], ""reasoning"": ""The types of features found in the back garden of houses in the US can vary greatly depending on the region, climate, and personal preferences of the homeowner.""}",inst-1,1,,"The types of features found in the back garden of houses in the US can vary greatly depending on the region, climate, and personal preferences of the homeowner. However, some common features that can typically be found include outdoor furniture, a patio or deck, a garden or yard, a shed or garage, and various types of plants or landscaping."
+Note: The answer is not exhaustive, as back gardens can vary greatly depending on the region, climate, and personal preferences.",inst-1,1,,"A typical back garden in the US is often designed for relaxation and entertainment, and may include various features such as lawn, plants, and outdoor structures."
 New-en-05,Which food is a cost-effective and quick meal option in US?,"Which food is a cost-effective and quick meal option in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which food is a cost-effective and quick meal option in US?','answer':[]}
@@ -633,7 +688,7 @@ New-en-05,Which food is a cost-effective and quick meal option in US?,"Which foo
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Pasta with marinara sauce and veggies""], ""reasoning"": ""Pasta is a cost-effective option as it is a staple food in many American households, and marinara sauce and veggies are affordable and easy to prepare. Additionally, it can be cooked quickly, making it a convenient meal option.""}",inst-1,1,,"Pasta is a cost-effective option as it is a staple food in many American households, and marinara sauce and veggies are affordable and easy to prepare. Additionally, it can be cooked quickly, making it a convenient meal option."
+","{""answer"": [""Peanut butter and jelly sandwich""], ""reasoning"": ""Peanut butter and jelly sandwich is a cost-effective and quick meal option in the US because it requires minimal ingredients, is easy to prepare, and is affordable. It is a classic comfort food that can be made in a few minutes and is often priced under $1 per serving.""}",inst-1,1,,"Peanut butter and jelly sandwich is a cost-effective and quick meal option in the US because it requires minimal ingredients, is easy to prepare, and is affordable. It is a classic comfort food that can be made in a few minutes and is often priced under $1 per serving."
 New-ch-16,What is the most famous sports-related movie in US?,"What is the most famous sports-related movie in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most famous sports-related movie in US?','answer':[]}
@@ -641,7 +696,7 @@ New-ch-16,What is the most famous sports-related movie in US?,"What is the most 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Rocky""], ""reasoning"": ""Rocky is widely considered one of the most iconic and influential sports movies in American cinema, with a lasting impact on popular culture and the sport of boxing itself.""}",inst-1,1,,"Rocky is widely considered one of the most iconic and influential sports movies in American cinema, with a lasting impact on popular culture and the sport of boxing itself."
+","{""answer"": [{""title"": ""Rocky""}], ""reasoning"": ""Rocky is widely considered the most iconic and influential sports-related movie in the US, and its impact on popular culture is undeniable. The film's underdog story, memorable characters, and inspiring themes have made it a beloved classic among audiences, critics, and athletes alike.""}",inst-1,1,,
 Ji-ko-25,What are the family-related holidays in US?,"What are the family-related holidays in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are the family-related holidays in US?','answer':[]}
@@ -649,7 +704,16 @@ Ji-ko-25,What are the family-related holidays in US?,"What are the family-relate
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Mother's Day"", ""Father's Day"", ""Grandparents' Day"", ""National Family Day"", ""Family Day""}], ""reasoning"": ""These holidays are considered family-related in the US as they focus on celebrating and honoring family members, relationships, and bonds.""}",inst-1,1,,
+","Here is the response in the required JSON format:
+
+{
+""answer"": [
+""Mother's Day"", ""Father's Day"", ""Grandparent's Day"", ""Family Day"", ""Christmas""
+],
+""reasoning"": ""These holidays are considered family-related as they are centered around celebrating and honoring family members, often with a focus on relationships, love, and unity.""
+}
+
+Let me know if this meets your requirements!",inst-1,1,,"These holidays are considered family-related as they are centered around celebrating and honoring family members, often with a focus on relationships, love, and unity."
 Sa-en-7,What are popular snacks in US?,"What are popular snacks in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What are popular snacks in US?','answer':[]}
@@ -657,19 +721,7 @@ Sa-en-7,What are popular snacks in US?,"What are popular snacks in US? Show your
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{
-""answer"": [
-""Chips"",
-""Pretzels"",
-""Popcorn"",
-""Cookies"",
-""Crackers"",
-""Nuts"",
-""Candy"",
-""Trail mix""
-],
-""reasoning"": ""These snacks are popular in the US due to their widespread availability, affordability, and appeal to consumers of all ages and backgrounds.""
-}",inst-1,1,,"These snacks are popular in the US due to their widespread availability, affordability, and appeal to consumers of all ages and backgrounds."
+","{""answer"": [""chips"", ""popcorn"", ""cookies"", ""crackers"", ""fruit snacks"", ""granola bars"", ""trail mix""], ""reasoning"": ""The United States has a diverse snacking culture, and the most popular snacks can vary depending on region and personal preferences. However, these snacks are generally well-known and widely consumed across the country, with a mix of savory, sweet, and healthy options.""}",inst-1,1,,"The United States has a diverse snacking culture, and the most popular snacks can vary depending on region and personal preferences. However, these snacks are generally well-known and widely consumed across the country, with a mix of savory, sweet, and healthy options."
 Ta-pe-29,Which professional sport is the highest paying in US?,"Which professional sport is the highest paying in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which professional sport is the highest paying in US?','answer':[]}
@@ -677,7 +729,7 @@ Ta-pe-29,Which professional sport is the highest paying in US?,"Which profession
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""sport"": ""NBA""}], ""reasoning"": ""Based on average player salaries, endorsements, and revenue, the NBA is considered the highest paying professional sport in the US, with top players earning tens of millions of dollars annually.""}",inst-1,1,,
+","{""answer"": [{""sport"": ""NBA""}], ""reasoning"": ""The National Basketball Association (NBA) is considered the highest paying professional sport in the US due to the significant revenue generated from television contracts, sponsorships, and merchandise sales. The league's top players can earn upwards of $40 million per year, making it the most lucrative sport in the country.""}",inst-1,1,,
 Kik-in-36,Who is the most popular soccer coach in US?,"Who is the most popular soccer coach in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular soccer coach in US?','answer':[]}
@@ -685,7 +737,9 @@ Kik-in-36,Who is the most popular soccer coach in US?,"Who is the most popular s
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Jürgen Klinsmann""], ""reasoning"": ""Klinsmann is widely recognized for his success with the US Men's National Team, leading them to the knockout stages of the 2014 World Cup and winning the 2013 CONCACAF Gold Cup.""}",inst-1,1,,"Klinsmann is widely recognized for his success with the US Men's National Team, leading them to the knockout stages of the 2014 World Cup and winning the 2013 CONCACAF Gold Cup."
+","{""answer"": [], ""reasoning"": ""The concept of 'most popular' can be subjective and dependent on various factors such as team success, fan base, and personal opinions. However, considering the current state of soccer in the US and the popularity of coaches within the country, I would argue that the most popular soccer coach in the US is likely to be someone who has achieved significant success with a top-tier team or has a strong reputation in the sport.""}
+
+{""answer"": [""Gregg Berhalter""], ""reasoning"": """"}",inst-1,1,,"The concept of 'most popular' can be subjective and dependent on various factors such as team success, fan base, and personal opinions. However, considering the current state of soccer in the US and the popularity of coaches within the country, I would argue that the most popular soccer coach in the US is likely to be someone who has achieved significant success with a top-tier team or has a strong reputation in the sport."
 Ji-ko-40,What do high school students typically do during break time in schools in US?,"What do high school students typically do during break time in schools in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do high school students typically do during break time in schools in US?','answer':[]}
@@ -693,7 +747,9 @@ Ji-ko-40,What do high school students typically do during break time in schools 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""socialize with friends"", ""play games"", ""eat snacks"", ""check phones"", ""chill out"", ""get some fresh air"", ""do homework"", ""grab a drink"", ""play sports"", ""listen to music"", ""chat with teachers"", ""play pranks on friends""}], ""reasoning"": ""High school students typically use break time to relax, catch up with friends, and recharge before returning to their classes.""}",inst-1,1,,
+","Here is the response:
+
+{""answer"": [{""socialize with friends"", ""play games"", ""listen to music"", ""check social media"", ""take a nap"", ""play sports"", ""read a book"", ""do homework"", ""eat snacks"", ""watch videos""}], ""reasoning"": ""High school students typically use their break time to relax, unwind, and recharge before returning to their classes. They often spend this time socializing with friends, engaging in leisure activities, or doing personal tasks.""}",inst-1,1,,
 Th-en-15,What is the most popular winter sport in US?,"What is the most popular winter sport in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular winter sport in US?','answer':[]}
@@ -701,7 +757,7 @@ Th-en-15,What is the most popular winter sport in US?,"What is the most popular 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most popular winter sport in US"": ""Ice Hockey""}], ""reasoning"": ""Based on participation, viewership, and professional leagues, ice hockey is widely considered the most popular winter sport in the United States.""}",inst-1,1,,
+","{""answer"": [""Ice Hockey""], ""reasoning"": ""Ice Hockey is considered the most popular winter sport in the United States due to its widespread popularity, participation, and professional leagues such as the National Hockey League (NHL).""}",inst-1,1,,"Ice Hockey is considered the most popular winter sport in the United States due to its widespread popularity, participation, and professional leagues such as the National Hockey League (NHL)."
 Na-ko-19,Who is the most popular volleyball player in US?,"Who is the most popular volleyball player in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most popular volleyball player in US?','answer':[]}
@@ -709,7 +765,7 @@ Na-ko-19,Who is the most popular volleyball player in US?,"Who is the most popul
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""name"": ""Karch Kiraly""}], ""reasoning"": ""Karch Kiraly is widely regarded as the most popular and successful volleyball player in the United States, with a total of 3 Olympic gold medals and 4 World Championship titles.""}",inst-1,1,,
+","{""answer"": [""Karch Kiraly""], ""reasoning"": ""Karch Kiraly is widely regarded as one of the greatest volleyball players of all time, with a strong following in the US. He is a three-time Olympic gold medalist and has won numerous national and international titles. His success on the court, combined with his charismatic personality and extensive media presence, have made him a beloved figure in the sport and a household name in the US.""}",inst-1,1,,"Karch Kiraly is widely regarded as one of the greatest volleyball players of all time, with a strong following in the US. He is a three-time Olympic gold medalist and has won numerous national and international titles. His success on the court, combined with his charismatic personality and extensive media presence, have made him a beloved figure in the sport and a household name in the US."
 New-en-56,What is the most popular foreign language spoken by families in US?,"What is the most popular foreign language spoken by families in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular foreign language spoken by families in US?','answer':[]}
@@ -717,7 +773,7 @@ New-en-56,What is the most popular foreign language spoken by families in US?,"W
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""language"": ""Spanish""}], ""reasoning"": ""According to the United States Census Bureau, in 2019, 41.7 million people in the US spoke Spanish at home, which is the most widely spoken non-English language in the country.""}",inst-1,1,,
+","{""answer"": [{""language"": ""Spanish""}], ""reasoning"": ""According to the US Census Bureau, Spanish is the most widely spoken non-English language in the United States, and it's also the most common foreign language spoken by families in the US.""}",inst-1,1,,
 Jo-sp-13,What is the most popular water sport in US?,"What is the most popular water sport in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular water sport in US?','answer':[]}
@@ -725,7 +781,7 @@ Jo-sp-13,What is the most popular water sport in US?,"What is the most popular w
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""most popular water sport in US"": [""Surfing""]}], ""reasoning"": ""Based on participation rates and popularity, surfing is widely considered the most popular water sport in the US, with millions of enthusiasts and a strong cultural following.""}",inst-1,1,,
+","{""answer"": [""Surfing""], ""reasoning"": ""Based on participation data and market trends, surfing is widely considered the most popular water sport in the US. Its popularity can be attributed to the country's extensive coastline, numerous surf schools and rental shops, and the sport's growing appeal among recreational enthusiasts.""}",inst-1,1,,"Based on participation data and market trends, surfing is widely considered the most popular water sport in the US. Its popularity can be attributed to the country's extensive coastline, numerous surf schools and rental shops, and the sport's growing appeal among recreational enthusiasts."
 Na-ko-29,Who is the most famous swimmer in US?,"Who is the most famous swimmer in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Who is the most famous swimmer in US?','answer':[]}
@@ -733,7 +789,9 @@ Na-ko-29,Who is the most famous swimmer in US?,"Who is the most famous swimmer i
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Michael Phelps""], ""reasoning"": ""Michael Phelps is widely regarded as the most successful and famous swimmer in US history, with a record 28 Olympic medals, including 23 gold medals, and 39 World Championship medals.""}",inst-1,1,,"Michael Phelps is widely regarded as the most successful and famous swimmer in US history, with a record 28 Olympic medals, including 23 gold medals, and 39 World Championship medals."
+","{""answer"": [""Michael Phelps""], ""reasoning"": ""Michael Phelps is widely considered the most famous swimmer in the US due to his unprecedented Olympic success, numerous world records, and charismatic personality.""}
+
+Note: This answer is based on general recognition and accolades, and may vary depending on individual perspectives and opinions.",inst-1,1,,"Michael Phelps is widely considered the most famous swimmer in the US due to his unprecedented Olympic success, numerous world records, and charismatic personality."
 New-su-57,What is the most common livestock raised in US?,"What is the most common livestock raised in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most common livestock raised in US?','answer':[]}
@@ -741,7 +799,7 @@ New-su-57,What is the most common livestock raised in US?,"What is the most comm
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Cattle""], ""reasoning"": ""According to the United States Department of Agriculture (USDA), cattle are the most common livestock raised in the US, accounting for a significant portion of the country's agricultural production and economy.""}",inst-1,1,,"According to the United States Department of Agriculture (USDA), cattle are the most common livestock raised in the US, accounting for a significant portion of the country's agricultural production and economy."
+","{""answer"": [{""item"": ""Cattle""}], ""reasoning"": ""According to the United States Department of Agriculture (USDA), cattle are the most common livestock raised in the United States, accounting for a significant portion of the country's agricultural production and economy.""}",inst-1,1,,
 New-en-19,What is the most well known sporting stadium in US?,"What is the most well known sporting stadium in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most well known sporting stadium in US?','answer':[]}
@@ -749,7 +807,7 @@ New-en-19,What is the most well known sporting stadium in US?,"What is the most 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Rose Bowl""], ""reasoning"": ""The Rose Bowl is one of the most iconic and recognizable stadiums in the United States, and is often referred to as the 'Granddaddy of Them All' due to its rich history and tradition of hosting the annual Rose Bowl college football game.""}",inst-1,1,,"The Rose Bowl is one of the most iconic and recognizable stadiums in the United States, and is often referred to as the 'Granddaddy of Them All' due to its rich history and tradition of hosting the annual Rose Bowl college football game."
+","{""answer"": [""Yankee Stadium""], ""reasoning"": ""Yankee Stadium is one of the most iconic and recognizable sports venues in the world, with a rich history in baseball and a massive following. It is the home of the New York Yankees, one of the most successful and valuable teams in Major League Baseball.""}",inst-1,1,,"Yankee Stadium is one of the most iconic and recognizable sports venues in the world, with a rich history in baseball and a massive following. It is the home of the New York Yankees, one of the most successful and valuable teams in Major League Baseball."
 New-ch-38,Which cities or regions are known for their import and export activities in US?,"Which cities or regions are known for their import and export activities in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which cities or regions are known for their import and export activities in US?','answer':[]}
@@ -757,7 +815,13 @@ New-ch-38,Which cities or regions are known for their import and export activiti
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""El Paso, Texas"", ""Los Angeles, California"", ""New York/Newark, New Jersey"", ""Chicago, Illinois"", ""Houston, Texas"", ""Miami, Florida"", ""New Orleans, Louisiana"", ""Seattle, Washington""}], ""reasoning"": ""These cities and regions are major hubs for international trade due to their strategic locations, infrastructure, and economic significance.""}",inst-1,1,,
+","{""answer"": [""{answer here}""], ""reasoning"": ""{reasoning here}""}
+
+The cities or regions known for their import and export activities in the US are those with major ports, airports, and trade hubs. These locations provide efficient access to global markets and facilitate the movement of goods. The top import and export cities or regions in the US include:
+
+[{""city"":""Los Angeles"", ""state"":""California"", ""import"":true, ""export"":true}, {""city"":""New York"", ""state"":""New York"", ""import"":true, ""export"":true}, {""city"":""Chicago"", ""state"":""Illinois"", ""import"":true, ""export"":true}, {""city"":""Houston"", ""state"":""Texas"", ""import"":true, ""export"":true}, {""city"":""Atlanta"", ""state"":""Georgia"", ""import"":true, ""export"":true}, {""city"":""Long Beach"", ""state"":""California"", ""import"":true, ""export"":true}, {""city"":""Seattle"", ""state"":""Washington"", ""import"":true, ""export"":true}, {""city"":""Miami"", ""state"":""Florida"", ""import"":true, ""export"":true}]
+
+{""answer"": [""Los Angeles, New York, Chicago, Houston, Atlanta, Long Beach, Seattle, Miami""], ""reasoning"": ""These cities or regions are major trade hubs with significant port and airport infrastructure, making them ideal for import and export activities.""}",inst-1,1,,
 New-pe-65,"How many subjects are taught in middle schools in US? (Provide Arabic numerals (e.g., 12) only.)","How many subjects are taught in middle schools in US? (Provide Arabic numerals (e.g., 12) only.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'How many subjects are taught in middle schools in US? (Provide Arabic numerals (e.g., 12) only.)','answer':[]}
@@ -765,7 +829,7 @@ New-pe-65,"How many subjects are taught in middle schools in US? (Provide Arabic
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [8], ""reasoning"": ""Middle schools in the US typically teach a core curriculum consisting of English, mathematics, science, social studies, language arts, and physical education, with some schools also offering additional subjects such as foreign languages, fine arts, and electives.""}",inst-1,1,,"Middle schools in the US typically teach a core curriculum consisting of English, mathematics, science, social studies, language arts, and physical education, with some schools also offering additional subjects such as foreign languages, fine arts, and electives."
+","{""answer"": [7-10], ""reasoning"": ""The number of subjects taught in middle schools in the US can vary depending on the school district, state, and even country. However, typically, middle schools in the US teach a core curriculum consisting of 7-10 subjects, including English, math, science, social studies, foreign language, physical education, and electives such as art, music, and technology. The exact number of subjects may differ depending on the school and its curriculum.""}",inst-1,1,,
 Th-en-03,What is the most popular professional sports league in US?,"What is the most popular professional sports league in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular professional sports league in US?','answer':[]}
@@ -773,7 +837,7 @@ Th-en-03,What is the most popular professional sports league in US?,"What is the
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""National Football League (NFL)""], ""reasoning"": ""The NFL is widely considered the most popular professional sports league in the US, with the highest television ratings and attendance figures, as well as a significant following and cultural impact.""}",inst-1,1,,"The NFL is widely considered the most popular professional sports league in the US, with the highest television ratings and attendance figures, as well as a significant following and cultural impact."
+","{""answer"": [{""name"": ""National Football League (NFL)""}], ""reasoning"": ""The National Football League (NFL) is widely considered the most popular professional sports league in the United States, with a large following, high television ratings, and significant revenue generation.""}",inst-1,1,,
 New-ko-03,What is the most popular children's song in US that families sing together?,"What is the most popular children's song in US that families sing together? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the most popular children's song in US that families sing together?','answer':[]}
@@ -781,7 +845,7 @@ New-ko-03,What is the most popular children's song in US that families sing toge
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Twinkle, Twinkle, Little Star""], ""reasoning"": ""This classic children's song is a staple in many American households, and its melody and lyrics are easily recognizable and memorable for both children and adults, making it a popular choice for families to sing together.""}",inst-1,1,,"This classic children's song is a staple in many American households, and its melody and lyrics are easily recognizable and memorable for both children and adults, making it a popular choice for families to sing together."
+","{""answer"": [{""song"": ""Twinkle, Twinkle, Little Star""}], ""reasoning"": ""Twinkle, Twinkle, Little Star is a classic children's song that is widely recognized and loved by both children and adults. It is a simple and catchy melody that is easy to sing along to, making it a popular choice for families to sing together. Additionally, the song's lyrics are easy to understand and remember, making it a great option for young children to learn and sing along to with their parents.""}",inst-1,1,,
 New-en-69,Which writers are commonly studied in literature class in US?,"Which writers are commonly studied in literature class in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Which writers are commonly studied in literature class in US?','answer':[]}
@@ -789,7 +853,7 @@ New-en-69,Which writers are commonly studied in literature class in US?,"Which w
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Hemingway, Faulkner, Hawthorne, Melville, Twain, Whitman, Thoreau, Poe, Dickinson, Stein, Eliot, Hemingway, Fitzgerald, Faulkner""], ""reasoning"": ""These writers are considered American literary giants and are widely studied in US literature classes due to their significant contributions to American literature, their influential works, and their relevance to the country's cultural and historical context.""}",inst-1,1,,"These writers are considered American literary giants and are widely studied in US literature classes due to their significant contributions to American literature, their influential works, and their relevance to the country's cultural and historical context."
+","{""answer"": [""Hemingway, Fitzgerald, Austen, Bronte, Woolf, Dickens, Shakespeare, Poe, Twain, Melville""], ""reasoning"": ""The writers commonly studied in literature classes in the US are often those who have made significant contributions to the English language and literature, and whose works have had a lasting impact on the literary canon. They are often American or British authors who wrote during the 19th and 20th centuries, and whose works have been widely taught and studied in US high schools and universities.""}",inst-1,1,,"The writers commonly studied in literature classes in the US are often those who have made significant contributions to the English language and literature, and whose works have had a lasting impact on the literary canon. They are often American or British authors who wrote during the 19th and 20th centuries, and whose works have been widely taught and studied in US high schools and universities."
 Ni-en-12,What is the top university in US? (Provide the official name.),"What is the top university in US? (Provide the official name.) Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What is the top university in US? (Provide the official name.)','answer':[]}
@@ -797,7 +861,9 @@ Ni-en-12,What is the top university in US? (Provide the official name.),"What is
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""rank"": ""1"", ""university"": ""Princeton University""}], ""reasoning"": ""The ranking is based on various sources such as US News & World Report, QS World University Rankings, and Niche.com, considering factors like academic reputation, faculty quality, research output, and student selectivity.""}",inst-1,1,,
+","The question ""What is the top university in US? (Provide the official name.)"" is a common inquiry that sparks debate and discussion. There are various rankings and criteria used to determine the top university in the United States, and different organizations and publications may have different opinions on the matter. However, according to the most widely recognized and reputable rankings, such as the QS World University Rankings, the US News & World Report Best Colleges, and the National Research Council's (NRC) rankings, the top university in the US is:
+
+{""answer"": [""Princeton University""], ""reasoning"": ""Princeton University has consistently ranked as one of the top universities in the world and in the US, known for its academic excellence, research opportunities, and strong faculty-student ratio.""}",inst-1,1,,"Princeton University has consistently ranked as one of the top universities in the world and in the US, known for its academic excellence, research opportunities, and strong faculty-student ratio."
 New-ha-08,What food is typically disliked by children but enjoyed by the elderly in US?,"What food is typically disliked by children but enjoyed by the elderly in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food is typically disliked by children but enjoyed by the elderly in US?','answer':[]}
@@ -805,8 +871,7 @@ New-ha-08,What food is typically disliked by children but enjoyed by the elderly
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": {""question':'What food is typically disliked by children but enjoyed by the elderly in US?','answer':[""Brussels Sprouts""]},
-""reasoning"": ""Children often find Brussels sprouts bitter and unpleasant, while the elderly may have developed a taste for them due to their health benefits and nostalgic associations.""}",inst-1,1,,
+","{""answer"": {""answer"": [""Brussels Sprouts""]}, ""reasoning"": ""Children often dislike Brussels sprouts due to their strong, earthy flavor and texture, while the elderly may enjoy them for their nutritional benefits, ease of digestion, and nostalgic value.""}",inst-1,1,,
 Ji-ko-45,What do people look forward to the most at university festivals in US?,"What do people look forward to the most at university festivals in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people look forward to the most at university festivals in US?','answer':[]}
@@ -814,7 +879,7 @@ Ji-ko-45,What do people look forward to the most at university festivals in US?,
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [""Live Music and Performances""], ""reasoning"": ""University festivals in the US often feature a wide range of live music and performances, which are a major draw for attendees. Students and non-students alike look forward to enjoying their favorite artists and discovering new ones, making the festival a memorable and enjoyable experience.""}",inst-1,1,,"University festivals in the US often feature a wide range of live music and performances, which are a major draw for attendees. Students and non-students alike look forward to enjoying their favorite artists and discovering new ones, making the festival a memorable and enjoyable experience."
+","{""answer"": [""Live music and entertainment""], ""reasoning"": ""University festivals in the US often feature a diverse range of music genres, from popular artists to local bands, which attract a large crowd of students and non-students alike. The excitement and energy of live performances create a unique atmosphere that is often unmatched by other campus events, making it a highly anticipated and enjoyable experience for attendees.""}",inst-1,1,,"University festivals in the US often feature a diverse range of music genres, from popular artists to local bands, which attract a large crowd of students and non-students alike. The excitement and energy of live performances create a unique atmosphere that is often unmatched by other campus events, making it a highly anticipated and enjoyable experience for attendees."
 Ji-ko-33,Where do high school students in US usually go after dinner?,"Where do high school students in US usually go after dinner? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'Where do high school students in US usually go after dinner?','answer':[]}
@@ -822,7 +887,7 @@ Ji-ko-33,Where do high school students in US usually go after dinner?,"Where do 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""home""}], ""reasoning"": ""High school students in the US often have a relatively early bedtime and may have homework or other responsibilities, so they tend to spend their free time at home rather than going out.""}",inst-1,1,,
+","{""answer"": [""Home""], ""reasoning"": ""High school students in the US usually go home after dinner as it is a common and convenient option. They may have homework or other responsibilities to attend to, and their parents or guardians may expect them to be home after dinner. Additionally, going home after dinner allows students to relax and unwind before starting their homework or pursuing other activities.""}",inst-1,1,,"High school students in the US usually go home after dinner as it is a common and convenient option. They may have homework or other responsibilities to attend to, and their parents or guardians may expect them to be home after dinner. Additionally, going home after dinner allows students to relax and unwind before starting their homework or pursuing other activities."
 Ni-en-31,What do people in US traditionally eat on Christmas Day? ,"What do people in US traditionally eat on Christmas Day?  Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What do people in US traditionally eat on Christmas Day? ','answer':[]}
@@ -830,7 +895,9 @@ Ni-en-31,What do people in US traditionally eat on Christmas Day? ,"What do peop
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""Roasted turkey with stuffing, mashed potatoes, green beans, and sweet potatoes.""}], ""reasoning"": ""Traditional Christmas dinner in the United States often features a roasted turkey as the centerpiece, accompanied by various side dishes such as stuffing, mashed potatoes, green beans, and sweet potatoes.""}",inst-1,1,,
+","{""answer"": [], ""reasoning"": ""Christmas Day is a time for families to come together and celebrate, and traditional American Christmas foods often reflect this sense of togetherness and warmth. The answer will likely include popular dishes that are easy to share and enjoy with others, as well as those that have cultural and historical significance.""}
+
+{""answer"": [{""Roasted turkey""}, {""Mashed potatoes""}, {""Stuffing""}, {""Cranberry sauce""}, {""Green beans""}, {""Sweet potatoes""}, {""Pumpkin pie""}]}",inst-1,1,,"Christmas Day is a time for families to come together and celebrate, and traditional American Christmas foods often reflect this sense of togetherness and warmth. The answer will likely include popular dishes that are easy to share and enjoy with others, as well as those that have cultural and historical significance."
 Al-en-36,What food is associated with Halloween in US?,"What food is associated with Halloween in US? Show your thoughts about this 'question', and provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
 
 {'question':'What food is associated with Halloween in US?','answer':[]}
@@ -838,4 +905,4 @@ Al-en-36,What food is associated with Halloween in US?,"What food is associated 
 Respond in valid JSON format with two keys:
 ""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
 Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
-DO NOT include any other text or comments in your response.","{""answer"": [{""candy""}], ""reasoning"": ""Candy is a traditional treat associated with Halloween in the United States, often passed out to trick-or-treaters or enjoyed at Halloween parties.""}",inst-1,1,,
+","{""answer"": [{""Candy""}], ""reasoning"": ""In the United States, Halloween is closely associated with trick-or-treating, where children go from house to house asking for candy and other treats. This tradition has led to candy becoming a staple of Halloween celebrations.""}",inst-1,1,,

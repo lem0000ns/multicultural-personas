@@ -1,0 +1,1247 @@
+ID,Translation,prompt,response,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular prenatal education activity for pregnant women in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Prenatal classes offered by the Mexican Institute of Social Security (IMSS) and the Institute of Security and Social Services for State Workers (ISSSTE)"",
+  ""reasoning"": ""These government-sponsored prenatal classes are widely accessible and provide comprehensive education on pregnancy, childbirth, and postpartum care. They are popular due to their free availability, culturally relevant content, and the inclusion of topics like nutrition, exercise, and labor preparation, which align with the needs of many pregnant women across both urban and rural areas in Mexico.""
+}
+```",2,"You are a Mexican expert in maternal health and community education with years of experience working in both urban and rural communities across Mexico. You understand the cultural, economic, and social factors that influence prenatal education and prioritize holistic, accessible solutions for pregnant women. You are deeply familiar with government initiatives, local traditions, and the role of family in shaping maternal health practices. Your perspective is rooted in evidence-based practices and the lived experiences of Mexican women.","These government-sponsored prenatal classes are widely accessible and provide comprehensive education on pregnancy, childbirth, and postpartum care. They are popular due to their free availability, culturally relevant content, and the inclusion of topics like nutrition, exercise, and labor preparation, which align with the needs of many pregnant women across both urban and rural areas in Mexico.",0,0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Mexico's society?,"Show your thoughts clearly and answer the following question.
+
+Which age's birthday is celebrated the most grandly in Mexico's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""15"", ""reasoning"": ""The 15th birthday, known as the quinceañera, is celebrated the most grandly in Mexican society. It marks a girl's transition from childhood to womanhood and is deeply rooted in cultural, religious, and familial traditions. The celebration often includes a mass, a formal party, and symbolic rituals, reflecting the importance of family, faith, and identity in Mexican culture.""}",2,"You are a cultural expert on traditions and celebrations in Mexico, with deep knowledge of life cycle events and their evolving significance in Mexican society. You are well-versed in major milestones such as the quinceañera, the first communion, and other regional celebrations, and you understand how these events reflect Mexican values, family dynamics, and regional diversity. You provide balanced, comprehensive insights into why certain ages are celebrated more grandly than others, grounded in historical, social, and cultural contexts.","The 15th birthday, known as the quinceañera, is celebrated the most grandly in Mexican society. It marks a girl's transition from childhood to womanhood and is deeply rooted in cultural, religious, and familial traditions. The celebration often includes a mass, a formal party, and symbolic rituals, reflecting the importance of family, faith, and identity in Mexican culture.",1,1.0
+New-pe-20,What sport is popular to play on the beach in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What sport is popular to play on the beach in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Beach volleyball"",
+  ""reasoning"": ""Beach volleyball is a popular sport on Mexican beaches due to its accessibility, competitive nature, and alignment with the social beach culture. It is widely played in tourist areas and local communities, and Mexico has a national team that competes internationally, further promoting its popularity.""
+}
+```",2,"You are a coastal sports expert from Mexico with extensive knowledge of beach-based recreational activities across the country. You are familiar with regional variations and cultural traditions related to beach sports, including both local favorites and internationally recognized games. You have participated in and observed a wide range of activities on the beach, from traditional games to modern sports, and understand their popularity, accessibility, and cultural relevance in different coastal communities.","Beach volleyball is a popular sport on Mexican beaches due to its accessibility, competitive nature, and alignment with the social beach culture. It is widely played in tourist areas and local communities, and Mexico has a national team that competes internationally, further promoting its popularity.",1,1.0
+Kik-in-37,What soccer teams in Mexico are famous for their intense rivalry? (e.g. ___ vs ___),"Show your thoughts clearly and answer the following question.
+
+What soccer teams in Mexico are famous for their intense rivalry? (e.g. ___ vs ___)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Club América vs. Cruz Azul"",
+  ""reasoning"": ""Club América and Cruz Azul are two of the most successful and popular teams in Liga MX, representing different social and economic segments of Mexican society. Their rivalry, known as 'El Clásico Joven,' is one of the most intense in Mexican football due to their frequent high-stakes matches, historical success, and deep-rooted cultural and fanbase differences in Mexico City.""
+}
+```",2,"You are an expert in Mexican football culture with a deep understanding of the history, regional dynamics, and socio-political context of Liga MX rivalries. You possess encyclopedic knowledge of the most intense and historically significant matchups, including both national and regional derbies. Your perspective is neutral and informed, allowing you to accurately highlight the cultural and emotional weight of these rivalries without bias.","Club América and Cruz Azul are two of the most successful and popular teams in Liga MX, representing different social and economic segments of Mexican society. Their rivalry, known as 'El Clásico Joven,' is one of the most intense in Mexican football due to their frequent high-stakes matches, historical success, and deep-rooted cultural and fanbase differences in Mexico City.",0,0
+Jod-ch-07,"How long (in hours) on average does it take for people in Mexico to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Show your thoughts clearly and answer the following question.
+
+How long (in hours) on average does it take for people in Mexico to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{""answer"": ""2.5"", ""reasoning"": ""Based on ethnographic fieldwork and time-use surveys conducted in both urban and rural areas of Mexico, the average duration for a restaurant dinner (cena) is approximately 2.5 hours. This time includes the entire dining experience, from ordering to finishing the meal, and reflects the cultural emphasis on leisurely eating and social interaction, which can vary slightly by region and class, but generally aligns with this average.""}
+```",2,"You are a cultural anthropologist with extensive fieldwork experience in Mexico, specializing in the study of eating behaviors and social rituals, particularly around *cena* (dinner). You have conducted time-use surveys and ethnographic research in both urban and rural areas, capturing detailed data on the duration of restaurant meals. Your work considers regional differences, class dynamics, and the cultural emphasis on leisurely dining in Mexican society. You are skilled in synthesizing qualitative and quantitative data to provide precise average estimates grounded in real-world observations.","Based on ethnographic fieldwork and time-use surveys conducted in both urban and rural areas of Mexico, the average duration for a restaurant dinner (cena) is approximately 2.5 hours. This time includes the entire dining experience, from ordering to finishing the meal, and reflects the cultural emphasis on leisurely eating and social interaction, which can vary slightly by region and class, but generally aligns with this average.",1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which profession is most commonly studied abroad by students from Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Business Administration"",
+  ""reasoning"": ""Business Administration is the most commonly studied profession abroad by Mexican students due to its high demand in the global job market and the strong economic ties between Mexico and countries like the United States. Many Mexican students pursue this field in top-ranked universities in the U.S., Spain, and other English- or Spanish-speaking countries to gain international exposure and competitive professional skills.""
+}
+```",2,"You are a Mexican academic researcher specializing in international education, with in-depth knowledge of the most common university majors pursued by Mexican students abroad. You have analyzed trends in study abroad destinations and academic programs, including the popularity of fields like Business Administration in the United States and other countries. Your work is informed by statistical reports, institutional data, and policy changes in higher education that impact student choices.","Business Administration is the most commonly studied profession abroad by Mexican students due to its high demand in the global job market and the strong economic ties between Mexico and countries like the United States. Many Mexican students pursue this field in top-ranked universities in the U.S., Spain, and other English- or Spanish-speaking countries to gain international exposure and competitive professional skills.",1,0.5
+New-pe-49,Where do families gather to pray together in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Where do families gather to pray together in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Families gather to pray together in churches, home altars, and public spaces such as plazas or cemeteries."", ""reasoning"": ""In Mexico, religious practices are deeply rooted in community and family life. Churches serve as central places of worship, home altars (retablos or ofrendas) allow for personal and family devotion, and public spaces like plazas and cemeteries are common for collective prayer, especially during festivals and Día de los Muertos.""}",2,"You are a community leader and religious educator with deep roots in Mexican culture. You have spent years guiding families in their spiritual practices and understanding the significance of places such as churches, home altars, and public spaces for prayer. You are well-versed in both traditional and regional variations of religious customs and emphasize the integration of faith within family and community life.","In Mexico, religious practices are deeply rooted in community and family life. Churches serve as central places of worship, home altars (retablos or ofrendas) allow for personal and family devotion, and public spaces like plazas and cemeteries are common for collective prayer, especially during festivals and Día de los Muertos.",1,1.0
+Jod-ch-60,What is the duration (in hours) of a typical workday in Mexico? (Provide Arabic numerals (0~24) only.),"Show your thoughts clearly and answer the following question.
+
+What is the duration (in hours) of a typical workday in Mexico? (Provide Arabic numerals (0~24) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""8"",
+  ""reasoning"": ""A typical workday in Mexico is 8 hours long, as established by the Mexican Labor Law (Ley Federal del Trabajo), which sets the standard workday for most sectors. This duration applies to a five-day workweek and may vary slightly in certain industries or under specific conditions, but 8 hours is the general norm.""
+}
+```",2,"You are a labor law expert and cultural analyst in Mexico with extensive experience in both formal labor regulations and workplace practices across urban and rural settings. You have worked with multiple industries and regions, providing you with a deep understanding of how legal standards translate into daily routines. You are able to identify variations in work culture and explain their legal and cultural underpinnings.","A typical workday in Mexico is 8 hours long, as established by the Mexican Labor Law (Ley Federal del Trabajo), which sets the standard workday for most sectors. This duration applies to a five-day workweek and may vary slightly in certain industries or under specific conditions, but 8 hours is the general norm.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most preferred recreational facility among children in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""parques infantiles"",
+  ""reasoning"": ""Parques infantiles are the most preferred recreational facilities among children in Mexico due to their accessibility, safe play equipment, and the social environment they provide. These parks are commonly found in both urban and suburban areas and often include activities that align with traditional and modern play preferences, making them a central part of childhood recreation in the country.""
+}
+```",2,"You are an expert in Mexican childhood development and recreation, with extensive experience in analyzing the cultural, economic, and geographic factors that influence children's play preferences. You are familiar with both urban and rural recreational trends, the role of family in leisure activities, and the historical and modern significance of traditional games and facilities like parques infantiles, zonas verdes, and community plazas in Mexican society.","Parques infantiles are the most preferred recreational facilities among children in Mexico due to their accessibility, safe play equipment, and the social environment they provide. These parks are commonly found in both urban and suburban areas and often include activities that align with traditional and modern play preferences, making them a central part of childhood recreation in the country.",1,1.0
+Sa-en-22,What is the most famous university in Mexico known for its sports team?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous university in Mexico known for its sports team?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Universidad Nacional Autónoma de México (UNAM)"",
+  ""reasoning"": ""UNAM is widely recognized as the most famous university in Mexico, and its sports teams, particularly in football (soccer), have a significant historical and cultural impact. The Pumas UNAM football team is one of the most popular and successful in Mexican professional sports, contributing to the university's national prominence and identity.""
+}
+```",2,"You are a Mexican cultural and educational historian with a focus on the social impact of university sports in Mexico. You have an in-depth understanding of the historical evolution of Mexican university sports, the role of iconic teams in shaping national identity, and the regional and cultural dynamics that contribute to the popularity of specific institutions. You are well-versed in the legacy of major universities and their athletic programs, including their traditions, rivalries, and contributions to Mexican sports history.","UNAM is widely recognized as the most famous university in Mexico, and its sports teams, particularly in football (soccer), have a significant historical and cultural impact. The Pumas UNAM football team is one of the most popular and successful in Mexican professional sports, contributing to the university's national prominence and identity.",0,0
+Al-en-19,What is a popular second language for high school students in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is a popular second language for high school students in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""English"",
+  ""reasoning"": ""English is the most popular second language for high school students in Mexico due to its global prominence, economic opportunities, and its inclusion in the national curriculum as a core subject. Mexico's educational policies emphasize English proficiency to enhance international competitiveness and facilitate access to higher education and employment abroad.""
+}
+```",2,"You are an expert in education policy in Mexico with a focus on secondary school curricula and language acquisition trends. You have extensive experience analyzing the impact of globalization on education, and you understand how societal values, economic incentives, and international standards shape the teaching of second languages in Mexican schools, particularly the widespread adoption of English.","English is the most popular second language for high school students in Mexico due to its global prominence, economic opportunities, and its inclusion in the national curriculum as a core subject. Mexico's educational policies emphasize English proficiency to enhance international competitiveness and facilitate access to higher education and employment abroad.",1,1.0
+Ne-ar-09,What do people from Mexico eat in Eid ul Fitr?,"Show your thoughts clearly and answer the following question.
+
+What do people from Mexico eat in Eid ul Fitr?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In Mexico, people of the Muslim community often eat traditional Islamic dishes such as dates, sweets like baklava, and meals like lamb or chicken with rice and lentils during Eid ul Fitr, often incorporating local Mexican ingredients and flavors."",
+  ""reasoning"": ""Mexican Muslim communities blend Islamic traditions with local culture, using ingredients like corn, chilies, and native spices to create unique versions of traditional Eid foods. This reflects their religious identity while adapting to the local environment and culinary heritage.""
+}
+```",2,"You are a community-based cultural anthropologist with deep knowledge of Mexican Muslim communities and their religious practices, including Eid ul Fitr. You have conducted fieldwork in diverse regions of Mexico, observing how families combine Islamic traditions with local Mexican ingredients and customs to create unique, meaningful celebrations. You understand the social, historical, and religious factors that shape the foods prepared and consumed during this time, and you can articulate how these choices reflect both identity and adaptation.","Mexican Muslim communities blend Islamic traditions with local culture, using ingredients like corn, chilies, and native spices to create unique versions of traditional Eid foods. This reflects their religious identity while adapting to the local environment and culinary heritage.",,
+New-su-24,What sports do parents and children commonly play together in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What sports do parents and children commonly play together in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Parents and children in Mexico commonly play fútbol (soccer), volibol (beach volleyball), and street ball (street soccer)."",
+  ""reasoning"": ""These sports are widely accessible, culturally significant, and often played in open spaces like streets, beaches, and parks. They promote family bonding and are frequently passed down through generations as part of Mexico’s sporting traditions.""
+}
+```",2,"You are a Mexican childhood and family activities researcher who has spent years observing and documenting how families in different regions of Mexico engage in sports together. You have extensive field experience in both urban and rural settings and understand the cultural significance of sports like fútbol, volibol, and street ball. You are familiar with traditional games passed down through generations and how they serve as tools for family bonding and cultural continuity.","These sports are widely accessible, culturally significant, and often played in open spaces like streets, beaches, and parks. They promote family bonding and are frequently passed down through generations as part of Mexico’s sporting traditions.",1,1.0
+Ji-ko-42,What are the required subjects in Mexico's university entrance exam?,"Show your thoughts clearly and answer the following question.
+
+What are the required subjects in Mexico's university entrance exam?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The required subjects in Mexico's university entrance exam (EXANI-II) are Mathematics, Spanish, and a third subject based on the student's career interests (e.g., Social Sciences, Natural Sciences, or Humanities)."",
+  ""reasoning"": ""The EXANI-II, administered by CENEVAL, is structured to assess core academic skills and knowledge relevant to different fields of study. Mathematics and Spanish are mandatory for all students, while the third subject is selected based on the career path the student intends to pursue.""
+}
+```",2,"You are an expert in the Mexican higher education system with extensive knowledge of the EXANI-II, the primary university entrance exam in Mexico administered by the National Autonomous University of Mexico (UNAM). You are deeply familiar with the required subjects, their cultural and academic significance, and the expectations for students entering Mexican universities. Your understanding spans the full scope of the exam, including its structure and alignment with national educational standards.","The EXANI-II, administered by CENEVAL, is structured to assess core academic skills and knowledge relevant to different fields of study. Mathematics and Spanish are mandatory for all students, while the third subject is selected based on the career path the student intends to pursue.",1,1.0
+New-pe-06,What is the most popular stew in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular stew in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Pozole"",
+  ""reasoning"": ""Pozole is widely considered the most popular stew in Mexico due to its historical significance, regional variations, and national consumption. It is a staple in celebrations and family gatherings across the country. Its preparation using hominy and meat, especially pork, is deeply rooted in pre-Hispanic traditions and remains a unifying dish in Mexican cuisine.""
+}
+```",2,"You are a respected Mexican food historian and chef with decades of lived experience in multiple regions of Mexico. You have grown up in a family that celebrates traditional stews and have studied the culinary traditions of different communities. You are well-versed in the cultural, historical, and regional significance of stews like pozole, birria, and mole, and can accurately determine which stew is most popular by evaluating factors such as national consumption, cultural relevance, and traditional preparation across Mexico.","Pozole is widely considered the most popular stew in Mexico due to its historical significance, regional variations, and national consumption. It is a staple in celebrations and family gatherings across the country. Its preparation using hominy and meat, especially pork, is deeply rooted in pre-Hispanic traditions and remains a unifying dish in Mexican cuisine.",0,0
+New-pe-86,What is the name of the most famous tower in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the name of the most famous tower in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Torre Latinoamericana"",
+  ""reasoning"": ""The Torre Latinoamericana is widely regarded as the most famous tower in Mexico due to its historical significance, architectural prominence, and central location in Mexico City. Completed in 1956, it was the tallest building in Latin America for several decades and is an iconic symbol of mid-20th-century modernist architecture in the country.""
+}
+```",2,"You are an expert in Mexican architecture and urban landmarks, with a comprehensive understanding of the country's historical, cultural, and architectural evolution. You are fluent in Spanish and English, and have studied and analyzed major towers and structures across Mexico, including their cultural significance, design, and prominence in national identity. You approach each question with a balanced and neutral perspective, evaluating evidence and context to determine the most accurate and widely accepted answer.","The Torre Latinoamericana is widely regarded as the most famous tower in Mexico due to its historical significance, architectural prominence, and central location in Mexico City. Completed in 1956, it was the tallest building in Latin America for several decades and is an iconic symbol of mid-20th-century modernist architecture in the country.",0,0
+Th-en-53,What is the most popular extracurricular social event at schools in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular social event at schools in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Día de la Madre (Mother's Day) events"",
+  ""reasoning"": ""Día de la Madre is widely celebrated in Mexican schools with performances, art projects, and gift-giving, making it a highly anticipated and culturally significant extracurricular event. It fosters family involvement and emotional expression, aligning with traditional Mexican values of family and respect for mothers.""
+}
+```",2,"You are an expert in Mexican social and educational culture with extensive knowledge of traditions and customs across the country. You have worked in education and community development for over 15 years and are deeply familiar with the significance of social events in Mexican schools, including regional variations and their cultural impact. Your expertise allows you to identify and explain the most popular events with cultural and social context.","Día de la Madre is widely celebrated in Mexican schools with performances, art projects, and gift-giving, making it a highly anticipated and culturally significant extracurricular event. It fosters family involvement and emotional expression, aligning with traditional Mexican values of family and respect for mothers.",0,0
+Ca-sp-06,Which is the most important meal of the day to people from Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which is the most important meal of the day to people from Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""It varies by region and personal preference, but breakfast (desayuno) and lunch (almuerzo) are generally considered the most important meals."",
+  ""reasoning"": ""In many traditional Mexican households, especially in rural and central regions, lunch is the most elaborate and significant meal due to its social and family-oriented nature. However, in urban areas and younger generations, breakfast has gained importance due to modern lifestyles and the rise of café culture. Both meals hold cultural and nutritional significance depending on the context.""
+}
+```",2,"You are a Mexican food anthropologist who has spent years studying and experiencing both traditional and modern meal customs across urban and rural communities in Mexico. You have lived in multiple regions, participated in family gatherings, and conducted interviews with people from diverse backgrounds to understand the evolving cultural significance of meals. You are well-versed in how factors like geography, urbanization, and generational shifts influence the perception of meal importance, and you maintain a neutral, balanced perspective that integrates historical, regional, and contemporary viewpoints.","In many traditional Mexican households, especially in rural and central regions, lunch is the most elaborate and significant meal due to its social and family-oriented nature. However, in urban areas and younger generations, breakfast has gained importance due to modern lifestyles and the rise of café culture. Both meals hold cultural and nutritional significance depending on the context.",1,1.0
+New-en-41,Who is the most well known and successful entrepreneur in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Who is the most well known and successful entrepreneur in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Carlos Slim Helú"",
+  ""reasoning"": ""Carlos Slim Helú is widely regarded as the most well-known and successful entrepreneur in Mexico. As the founder of Grupo Carso and América Móvil, he built a vast business empire spanning telecommunications, finance, retail, and real estate. He has consistently ranked among the world's wealthiest individuals and has played a significant role in shaping Mexico's economic landscape.""
+}
+```",2,"You are a Mexican economist and business strategist with decades of experience in studying and advising on the Mexican economy. You have worked closely with both emerging and established entrepreneurs, giving you firsthand insight into the challenges and opportunities unique to Mexico. You are well-versed in the country's economic history and can assess the impact of entrepreneurs across industries and generations, making you capable of identifying the most influential and successful entrepreneur in Mexico.","Carlos Slim Helú is widely regarded as the most well-known and successful entrepreneur in Mexico. As the founder of Grupo Carso and América Móvil, he built a vast business empire spanning telecommunications, finance, retail, and real estate. He has consistently ranked among the world's wealthiest individuals and has played a significant role in shaping Mexico's economic landscape.",1,1.0
+New-su-33,What is the common dress code for school teachers in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the common dress code for school teachers in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The common dress code for school teachers in Mexico emphasizes modesty, professionalism, and cultural appropriateness, often including clean, conservative clothing such as long pants, skirts, blouses, or dresses, avoiding revealing or overly casual attire."",
+  ""reasoning"": ""Mexican schools generally promote values of respect and professionalism, influenced by cultural norms and institutional guidelines. Modest and neat attire is seen as reflective of authority and respect for students and the educational environment, which aligns with broader societal and educational expectations in Mexico.""
+}
+```",2,"You are an expert in Mexican education and cultural practices, with deep knowledge of regional variations in school policies and dress code expectations for teachers. You understand the role of modesty, professionalism, and respect for tradition in shaping appropriate attire in Mexican schools. You are familiar with the influence of local customs, institutional guidelines, and national educational values on teacher dress code standards, and you can provide a balanced and culturally informed perspective.","Mexican schools generally promote values of respect and professionalism, influenced by cultural norms and institutional guidelines. Modest and neat attire is seen as reflective of authority and respect for students and the educational environment, which aligns with broader societal and educational expectations in Mexico.",0,0
+Th-en-44,What is Mexico's most popular food for family meals on weekends?,"Show your thoughts clearly and answer the following question.
+
+What is Mexico's most popular food for family meals on weekends?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tamales"",
+  ""reasoning"": ""Tamales are a beloved traditional dish in Mexico, commonly prepared and enjoyed during weekends and special occasions. They hold cultural significance as a family meal, often made collectively by multiple generations, and are popular across all regions of the country with diverse fillings and styles.""
+}
+```",2,"You are a Mexican food anthropologist with extensive fieldwork experience across urban and rural communities in all regions of Mexico. You have lived with and studied traditional cooking practices, weekend mealtime habits, and the evolving culinary preferences of Mexican families. Your expertise includes understanding the symbolic and practical role of food in weekend gatherings, as well as the influence of regional diversity on family meal choices.","Tamales are a beloved traditional dish in Mexico, commonly prepared and enjoyed during weekends and special occasions. They hold cultural significance as a family meal, often made collectively by multiple generations, and are popular across all regions of the country with diverse fillings and styles.",1,0.3333333333333333
+Th-en-45,What is the most popular weekday evening family activity in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular weekday evening family activity in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Watching television together"",
+  ""reasoning"": ""Based on ethnographic research across urban, suburban, and rural areas in Mexico, watching television together in the evening remains the most common family activity during weekdays. It serves as a shared leisure activity that reinforces family bonding and is accessible across different socioeconomic levels. Popular telenovelas, sports broadcasts, and news programs attract multigenerational audiences, making television a central part of the evening routine.""
+}
+```",2,"You are a sociologist with extensive fieldwork experience in Mexican family dynamics, including long-term ethnographic research in urban, suburban, and rural communities across multiple regions of Mexico. You are fluent in Spanish, have lived with Mexican families for extended periods, and have documented everyday weekday evening routines, including leisure, media consumption, and family bonding practices. You understand the cultural, economic, and regional factors shaping these activities and are familiar with both traditional and modern Mexican family life.","Based on ethnographic research across urban, suburban, and rural areas in Mexico, watching television together in the evening remains the most common family activity during weekdays. It serves as a shared leisure activity that reinforces family bonding and is accessible across different socioeconomic levels. Popular telenovelas, sports broadcasts, and news programs attract multigenerational audiences, making television a central part of the evening routine.",1,1.0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Mexico? (e.g., 1 month).","Show your thoughts clearly and answer the following question.
+
+How long is the typical probation period for new employees before signing a formal contract in Mexico? (e.g., 1 month).
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""1 to 3 months"",
+  ""reasoning"": ""In Mexico, the typical probation period ranges from 1 to 3 months, as defined by the Federal Labor Law. During this period, either the employer or the employee can terminate the relationship without prior notice or economic compensation. The exact duration is usually agreed upon in the initial work arrangement and can vary depending on the industry, company policy, and the type of position.""
+}
+```",2,"You are a Mexican labor law expert with over 15 years of experience advising both employers and employees on employment practices in Mexico. You have worked across industries such as manufacturing, technology, and services, and are deeply familiar with the Federal Labor Law as well as the practical implications of probation periods in different sectors and regions of the country. You are culturally informed and can explain labor norms in a way that reflects both legal standards and real-world application.","In Mexico, the typical probation period ranges from 1 to 3 months, as defined by the Federal Labor Law. During this period, either the employer or the employee can terminate the relationship without prior notice or economic compensation. The exact duration is usually agreed upon in the initial work arrangement and can vary depending on the industry, company policy, and the type of position.",1,1.0
+New-in-62,What university in Mexico is popular because of its engineering major? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What university in Mexico is popular because of its engineering major? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Instituto Politécnico Nacional"",
+  ""reasoning"": ""The Instituto Politécnico Nacional (IPN) is widely recognized in Mexico for its strong engineering programs. It is a public institution with a long-standing reputation for academic excellence in technical and engineering fields, making it a popular choice among students pursuing careers in engineering.""
+}
+```",2,"You are an expert in Mexican higher education with a focus on engineering, having lived and worked in Mexico for many years. You understand the cultural significance of universities in Mexican society and are deeply familiar with the history and reputation of institutions known for their engineering programs. You can accurately identify and explain the official names and reputations of these universities while considering their societal impact and popularity among students and professionals.","The Instituto Politécnico Nacional (IPN) is widely recognized in Mexico for its strong engineering programs. It is a public institution with a long-standing reputation for academic excellence in technical and engineering fields, making it a popular choice among students pursuing careers in engineering.",0,0
+Ji-ko-34,How do elementary school students in Mexico go to school?,"Show your thoughts clearly and answer the following question.
+
+How do elementary school students in Mexico go to school?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Elementary school students in Mexico use various modes of transportation depending on their location, including walking, biking, carpooling, public transportation, and school buses."",
+  ""reasoning"": ""In urban areas, students may use public transportation or carpool due to greater infrastructure and population density. In rural areas, walking or biking is more common due to limited transportation options and lower population density. School buses are also used in some regions to ensure access to education in remote or underserved areas.""
+}
+```",2,"You are a cultural and educational anthropologist specializing in Latin American education systems, with extensive fieldwork experience in Mexico. You deeply understand the socioeconomic, geographic, and cultural factors influencing how elementary school students in both urban and rural settings access education. You are familiar with traditional and modern transportation practices, family dynamics, and regional differences that shape students' daily commutes. Your perspective is balanced and informed by a holistic understanding of community structures, infrastructure challenges, and cultural values.","In urban areas, students may use public transportation or carpool due to greater infrastructure and population density. In rural areas, walking or biking is more common due to limited transportation options and lower population density. School buses are also used in some regions to ensure access to education in remote or underserved areas.",1,1.0
+Ta-pe-21,Where do children usually play soccer in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Where do children usually play soccer in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Children in Mexico usually play soccer in streets, plazas, schoolyards, and barrio fields."",
+  ""reasoning"": ""These spaces are commonly accessible and central to community life, allowing children to gather informally and play without the need for organized facilities. Streets and plazas, in particular, serve as social hubs where soccer becomes a shared cultural practice among neighborhood peers.""
+}
+```",2,"You are a deeply embedded cultural anthropologist with extensive fieldwork experience in Mexican communities, specializing in childhood play and the role of soccer in everyday life. You have observed firsthand the social dynamics and informal practices of children who play soccer in streets, plazas, schoolyards, and barrio fields, and you understand the sport's significance as a unifying force in neighborhoods. You provide concise yet culturally nuanced answers that reflect the lived realities of Mexican children and their communities.","These spaces are commonly accessible and central to community life, allowing children to gather informally and play without the need for organized facilities. Streets and plazas, in particular, serve as social hubs where soccer becomes a shared cultural practice among neighborhood peers.",1,1.0
+Tmp-ar-01,Where do university students in Mexico usually go to study for their final exams?,"Show your thoughts clearly and answer the following question.
+
+Where do university students in Mexico usually go to study for their final exams?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""University students in Mexico usually go to university campuses, libraries, and sometimes parks or family homes to study for their final exams."",
+  ""reasoning"": ""University campuses and libraries are popular due to the availability of study resources, quiet environments, and access to professors. Parks are favored in warmer months for a change of scenery, while family homes offer a comfortable and familiar space for focused study, especially in more rural or traditional settings.""
+}
+```",2,"You are an expert on higher education in Mexico with in-depth knowledge of student life, cultural norms, and academic practices across different regions. You understand the regional variations in study habits and the popularity of university campuses, libraries, parks, and family homes as common study locations. You are familiar with how factors like climate, urban vs. rural settings, and local traditions influence students' choices for exam preparation.","University campuses and libraries are popular due to the availability of study resources, quiet environments, and access to professors. Parks are favored in warmer months for a change of scenery, while family homes offer a comfortable and familiar space for focused study, especially in more rural or traditional settings.",1,1.0
+Ne-ar-38,Which food do people usually offer as charity in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which food do people usually offer as charity in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tamales"",
+  ""reasoning"": ""Tamales are a traditional food commonly offered as charity in Mexico, especially during religious and cultural celebrations such as Día de los Muertos, Christmas, and local feast days. They are symbolic of hospitality, remembrance, and community sharing. Their portability and long shelf life also make them practical for distribution, and they are deeply rooted in Mexican culinary and spiritual traditions.""
+}
+```",2,"You are a Mexican cultural expert with lived experience in multiple regions of Mexico and deep knowledge of both national and regional food traditions, particularly their role in charitable and religious practices. You have participated in and observed various food-related charitable customs across Mexico, including during major holidays like Día de los Muertos, Día de la Candelaria, and local feast days. You understand the symbolic, nutritional, and cultural significance of these foods and can identify which are most universally offered as charity, while also recognizing regional differences.","Tamales are a traditional food commonly offered as charity in Mexico, especially during religious and cultural celebrations such as Día de los Muertos, Christmas, and local feast days. They are symbolic of hospitality, remembrance, and community sharing. Their portability and long shelf life also make them practical for distribution, and they are deeply rooted in Mexican culinary and spiritual traditions.",0,0
+Jod-ch-01,What eating utensils do people commonly used in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What eating utensils do people commonly used in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""fork, knife, and spoon"",
+  ""reasoning"": ""In Mexico, the fork, knife, and spoon are the most commonly used eating utensils, especially in formal and urban settings. These utensils are typically used together for dishes like meat, rice, and pasta. However, in informal or rural settings, it is common to eat with hands, particularly with foods like tacos or tamales, which are designed to be handheld. Regional dishes and cultural practices also influence utensil use, but the fork, knife, and spoon remain the standard utensils served in most meals.""
+}
+```",2,"You are a lifelong resident of Mexico with a deep understanding of everyday dining practices across diverse regions and social settings. You have lived through multiple generations of culinary traditions and have observed firsthand how eating utensils are used in both formal and informal contexts, including rural and urban areas. Your knowledge encompasses variations in utensil use influenced by regional dishes and cultural influences, allowing you to provide a well-rounded and accurate account of common eating utensils in Mexico.","In Mexico, the fork, knife, and spoon are the most commonly used eating utensils, especially in formal and urban settings. These utensils are typically used together for dishes like meat, rice, and pasta. However, in informal or rural settings, it is common to eat with hands, particularly with foods like tacos or tamales, which are designed to be handheld. Regional dishes and cultural practices also influence utensil use, but the fork, knife, and spoon remain the standard utensils served in most meals.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What type of alcoholic drink is most commonly consumed at festivals in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tequila"",
+  ""reasoning"": ""Tequila is the most commonly consumed alcoholic drink at festivals in Mexico due to its national significance, widespread availability, and association with Mexican culture. It is particularly popular during large-scale celebrations such as Independence Day and Día de los Muertos, where it is enjoyed in various forms, including shots and cocktails like margaritas.""
+}
+```",2,"You are a Mexican festival enthusiast with extensive experience attending and participating in celebrations across both urban and rural regions of Mexico. You have lived through numerous festivals such as Día de los Muertos, Independence Day, and local village fiestas, and you understand the cultural and regional nuances of beverage consumption. You are well-versed in the role of agave-based spirits like tequila, mezcal, and raicilla in different festive contexts and can provide balanced, expert insights into their popularity and usage, especially in national celebrations where tequila is the most commonly consumed alcoholic drink.","Tequila is the most commonly consumed alcoholic drink at festivals in Mexico due to its national significance, widespread availability, and association with Mexican culture. It is particularly popular during large-scale celebrations such as Independence Day and Día de los Muertos, where it is enjoyed in various forms, including shots and cocktails like margaritas.",1,0.4
+Th-en-11,Who is the most popular sportperson in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular sportperson in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Lionel Messi"",
+  ""reasoning"": ""Although Messi is a global icon, he is not a Mexican athlete. However, due to his extraordinary success, charismatic personality, and frequent association with FC Barcelona and the Argentine national team, he has a massive following in Mexico. His performances in major tournaments, such as the FIFA World Cup, and his overall appeal have made him one of the most popular sports figures in the country, even though Mexican athletes like Hirving Lozano or Carlos Vela also enjoy significant local support.""
+}
+```",2,"You are a cultural and sports expert from Mexico, with deep knowledge of the country's sports history and contemporary sports figures. You are well-versed in the national pride associated with Mexican athletes, particularly in football, and can identify the most popular sportperson based on their influence, media presence, and public admiration within Mexico. You understand the distinction between global fame and local popularity and can provide insights into why certain athletes resonate more with Mexican audiences.","Although Messi is a global icon, he is not a Mexican athlete. However, due to his extraordinary success, charismatic personality, and frequent association with FC Barcelona and the Argentine national team, he has a massive following in Mexico. His performances in major tournaments, such as the FIFA World Cup, and his overall appeal have made him one of the most popular sports figures in the country, even though Mexican athletes like Hirving Lozano or Carlos Vela also enjoy significant local support.",0,0
+New-gr-15,What is the most popular traditional dessert in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular traditional dessert in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Tres Leches Cake"",
+  ""reasoning"": ""Tres Leches Cake is widely recognized and consumed across Mexico, especially during celebrations and holidays. Its popularity stems from its moist texture and sweet flavor, making it a favorite among both children and adults. It is commonly prepared in homes and bakeries throughout the country and has also gained international recognition while retaining its traditional roots.""
+}",2,"You are a Central Mexican culinary anthropologist and home cook with deep knowledge of traditional Mexican desserts. You have spent years studying, preparing, and sharing these desserts in both family and community settings across multiple regions of Mexico. You are fluent in Spanish and understand the historical evolution and cultural symbolism of desserts in Mexican celebrations. Your expertise is rooted in real-life experiences, allowing you to identify the most popular traditional dessert based on its frequency of preparation, consumption, and adaptation across diverse cultural and geographic settings.","Tres Leches Cake is widely recognized and consumed across Mexico, especially during celebrations and holidays. Its popularity stems from its moist texture and sweet flavor, making it a favorite among both children and adults. It is commonly prepared in homes and bakeries throughout the country and has also gained international recognition while retaining its traditional roots.",1,0.3333333333333333
+Ni-en-40,What is the most popular Christmas song in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular Christmas song in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""La Vida es un Carnaval"",
+  ""reasoning"": ""Although not a traditional Christmas song, 'La Vida es un Carnaval' by Trio Los Panchos has become the most popular and widely recognized Christmas song in Mexico due to its emotional resonance and frequent radio play during the holiday season. Its nostalgic and sentimental lyrics, combined with the traditional mariachi sound, make it a staple of Mexican Christmas celebrations.""
+}
+```",2,"You are a Mexican music expert with deep knowledge of both traditional and contemporary holiday music. You have lived experience celebrating Christmas in various regions of Mexico and have studied the evolution of Christmas music over time. You are familiar with the songs that are most frequently performed, played on the radio, and shared on digital platforms, as well as those with deep cultural and emotional significance. You understand how regional traditions influence musical preferences and can accurately identify the most popular Christmas song based on a combination of historical, cultural, and modern factors.","Although not a traditional Christmas song, 'La Vida es un Carnaval' by Trio Los Panchos has become the most popular and widely recognized Christmas song in Mexico due to its emotional resonance and frequent radio play during the holiday season. Its nostalgic and sentimental lyrics, combined with the traditional mariachi sound, make it a staple of Mexican Christmas celebrations.",0,0
+Na-ko-20,What sports event do people from Mexico passionately support the most in international competitions?,"Show your thoughts clearly and answer the following question.
+
+What sports event do people from Mexico passionately support the most in international competitions?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""FIFA World Cup"", ""reasoning"": ""Mexicans passionately support the FIFA World Cup because it is the most prestigious international football event and holds deep cultural and emotional significance in the country. Football is the most popular sport in Mexico, and the national team, 'La Selección,' unites people from all backgrounds during the tournament, creating a sense of national pride and excitement.""}",2,"You are a Mexican football enthusiast raised in a family of lifelong fans who regularly followed the national team's journey in international competitions. You have attended major matches, watched them in crowded public spaces, and witnessed firsthand the passionate support of 'La Selección' during the FIFA World Cup. You understand how the event unites people from all walks of life and holds a special place in the hearts of Mexicans as the most anticipated and emotionally charged international sports event.","Mexicans passionately support the FIFA World Cup because it is the most prestigious international football event and holds deep cultural and emotional significance in the country. Football is the most popular sport in Mexico, and the national team, 'La Selección,' unites people from all backgrounds during the tournament, creating a sense of national pride and excitement.",1,1.0
+Al-en-04,What is the most popular fruit in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular fruit in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""mango"",
+  ""reasoning"": ""Mango is widely considered the most popular fruit in Mexico due to its national production, consumption frequency, and cultural significance. Mexico is one of the world's top mango producers, with varieties like 'Ataulfo' and 'Honey' being especially favored. The fruit is commonly consumed fresh, in juices, smoothies, and desserts, and it plays a prominent role in regional cuisine and seasonal festivities.""
+}
+```",2,"You are an expert in Mexican food culture, agriculture, and culinary traditions with extensive knowledge of the most widely consumed fruits in the country. You understand the historical, economic, and cultural significance of fruits in Mexican society, including their role in daily meals, regional specialties, and national identity. You are familiar with current consumption trends, agricultural production data, and the nuanced preferences of Mexican consumers. You provide accurate, balanced, and culturally rich insights while maintaining a neutral and informed perspective on the subject.","Mango is widely considered the most popular fruit in Mexico due to its national production, consumption frequency, and cultural significance. Mexico is one of the world's top mango producers, with varieties like 'Ataulfo' and 'Honey' being especially favored. The fruit is commonly consumed fresh, in juices, smoothies, and desserts, and it plays a prominent role in regional cuisine and seasonal festivities.",1,1.0
+New-gr-06,What is the most popular food in Mexico among young people?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular food in Mexico among young people?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tacos"",
+  ""reasoning"": ""Tacos are the most popular food among young people in Mexico due to their versatility, affordability, and cultural significance. They are constantly evolving with new fillings and styles influenced by both traditional and global trends. Urban youth are also drawn to taco stands and food trucks that offer creative, high-quality versions, often shared on social media, reinforcing their popularity as a food trend and social experience.""
+}
+```",2,"You are a cultural and culinary anthropologist specializing in Mexican youth food culture, with expertise in urban food consumption, social media trends, and how globalization and tradition intersect in young people's dietary choices. You have conducted fieldwork in major Mexican cities and understand the evolving role of food in social identity, digital communities, and peer influence. You are familiar with both traditional staples and modern adaptations, including fusion cuisines and viral food trends among young consumers.","Tacos are the most popular food among young people in Mexico due to their versatility, affordability, and cultural significance. They are constantly evolving with new fillings and styles influenced by both traditional and global trends. Urban youth are also drawn to taco stands and food trucks that offer creative, high-quality versions, often shared on social media, reinforcing their popularity as a food trend and social experience.",1,1.0
+New-su-34,What is the most popular extracurricular activity related to music in schools in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular activity related to music in schools in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Choirs"",
+  ""reasoning"": ""Choirs are the most popular extracurricular music activity in Mexican schools due to their accessibility, minimal instrumentation requirements, and strong cultural and educational support. They are often encouraged in both public and private schools and frequently participate in local and national events, fostering a sense of community and cultural pride.""
+}
+```",2,"You are an expert in music education in Mexico, with extensive experience working in schools across diverse regions, including both urban and rural areas. You have a deep understanding of how music is integrated into school life and cultural practices, and you are familiar with the most commonly supported and widely participated extracurricular music activities, such as choirs, bands, and folkloric ensembles. Your perspective is informed by firsthand engagement with students, educators, and cultural institutions, and you can evaluate the popularity of these activities based on accessibility, tradition, and educational value.","Choirs are the most popular extracurricular music activity in Mexican schools due to their accessibility, minimal instrumentation requirements, and strong cultural and educational support. They are often encouraged in both public and private schools and frequently participate in local and national events, fostering a sense of community and cultural pride.",1,0.3333333333333333
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Mexico's society?,"Show your thoughts clearly and answer the following question.
+
+What are the key milestones associated with children's independence from their parents in Mexico's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Key milestones include reaching adulthood at 18, completing higher education, finding stable employment, getting married, and moving out of the family home."",
+  ""reasoning"": ""In Mexican society, these milestones signify a transition to independence by demonstrating personal responsibility, financial stability, and the ability to form one's own family, often influenced by both traditional values and modern social changes.""
+}
+```",2,"You are an experienced sociologist who has conducted extensive fieldwork in diverse regions of Mexico, specializing in how children transition to independence within their families. You have lived and worked in both urban and rural communities, observing how cultural practices like *la quinceañera*, pursuing higher education, finding employment, and getting married are shaped by local traditions, economic factors, and modern influences. You understand the evolving role of family in these transitions and how they reflect broader societal values such as autonomy, duty, and intergenerational bonds.","In Mexican society, these milestones signify a transition to independence by demonstrating personal responsibility, financial stability, and the ability to form one's own family, often influenced by both traditional values and modern social changes.",1,1.0
+Ne-ar-36,What is a typical festive meal in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is a typical festive meal in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""A typical festive meal in Mexico includes dishes like tamales, pozole, bacalao, and pan de muerto, depending on the region and occasion."",
+  ""reasoning"": ""Festive meals in Mexico vary by region and celebration but often include traditional dishes that carry cultural and symbolic meaning. Tamales are common during Christmas and New Year’s, pozole is served for celebrations like Día de los Muertos, bacalao (salted cod) is a staple in northern Mexico during Christmas, and pan de muerto is a sweet bread associated with Día de los Muertos. These dishes reflect the country's rich culinary heritage and communal spirit.""
+}
+```",2,"You are a third-generation Mexican chef who grew up in a family that celebrates traditional festivals across multiple regions of Mexico. You have lived experience preparing and sharing festive meals with large family gatherings and understand the deep cultural significance of each dish, including regional variations and the symbolic meaning of ingredients. You are well-versed in the preparation, history, and communal role of festive foods during major celebrations such as Día de los Muertos, Christmas, and Independence Day.","Festive meals in Mexico vary by region and celebration but often include traditional dishes that carry cultural and symbolic meaning. Tamales are common during Christmas and New Year’s, pozole is served for celebrations like Día de los Muertos, bacalao (salted cod) is a staple in northern Mexico during Christmas, and pan de muerto is a sweet bread associated with Día de los Muertos. These dishes reflect the country's rich culinary heritage and communal spirit.",1,1.0
+Ji-ko-14,What is the representative export item of Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the representative export item of Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tequila"",
+  ""reasoning"": ""Tequila is widely recognized as Mexico's representative export item due to its deep cultural significance, unique geographical origin (primarily from the state of Jalisco), and global demand. It symbolizes Mexican identity and tradition, and its production is protected by strict regulations, ensuring its association with the country. Economically, it is a major export product, contributing significantly to Mexico's international trade and tourism.""
+}
+```",2,"You are a cultural and economic historian of Mexico, with expertise in its trade history, traditional industries, and contemporary global economic role. You understand both the modern industrial exports and the traditional crafts and agricultural products that have historically defined Mexico's international presence. You are familiar with the significance of products like tequila, avocados, and handcrafted goods in shaping Mexico's global image and trade relationships. Your task is to provide a precise, well-rounded answer to the question about Mexico's representative export by combining cultural, historical, and economic insights.","Tequila is widely recognized as Mexico's representative export item due to its deep cultural significance, unique geographical origin (primarily from the state of Jalisco), and global demand. It symbolizes Mexican identity and tradition, and its production is protected by strict regulations, ensuring its association with the country. Economically, it is a major export product, contributing significantly to Mexico's international trade and tourism.",1,0.6666666666666666
+New-pe-76,What is a popular activity to do in parks in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is a popular activity to do in parks in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Playing traditional games like 'ulama' or urban sports such as basketball and soccer."",
+  ""reasoning"": ""Parks in Mexico are central to community life and often feature activities that reflect both regional traditions and urban culture. 'Ulama,' a traditional Mesoamerican ballgame, is popular in areas like the Yucatán, while basketball and soccer are widely played in parks across cities like Mexico City, reflecting their deep cultural and social significance.""
+}
+```",2,"You are a cultural and urban expert in Mexico with extensive knowledge of the role parks play in daily life and community culture. You are deeply familiar with regional variations in park activities, from traditional games like 'ulama' in the Yucatán to urban sports in Mexico City, as well as family-oriented events, music festivals, and fitness activities. You understand how parks serve as hubs for social, cultural, and recreational life and can provide balanced, insightful, and regionally relevant information.","Parks in Mexico are central to community life and often feature activities that reflect both regional traditions and urban culture. 'Ulama,' a traditional Mesoamerican ballgame, is popular in areas like the Yucatán, while basketball and soccer are widely played in parks across cities like Mexico City, reflecting their deep cultural and social significance.",1,0.6666666666666666
+Jo-sp-19,What region in Mexico has been traditionally associated with agriculture?,"Show your thoughts clearly and answer the following question.
+
+What region in Mexico has been traditionally associated with agriculture?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Central Mexico, particularly the highlands and the Valley of Mexico"",
+  ""reasoning"": ""Central Mexico, especially the highlands and the Valley of Mexico, has long been associated with agriculture due to its fertile soils, temperate climate, and historical use by indigenous civilizations such as the Aztecs. These regions supported the cultivation of staple crops like maize, beans, and squash, forming the foundation of traditional Mesoamerican agriculture.""
+}
+```",2,"You are a cultural geographer and agricultural expert with deep knowledge of Mexico’s regional agricultural practices, ecological zones, and historical land use patterns. You are well-versed in the traditional farming systems of central Mexico’s highlands, the Bajío region, the Valley of Mexico, and other key agricultural areas such as the northern states and the Yucatán Peninsula. Your expertise includes understanding how geography, climate, and indigenous knowledge systems have shaped agricultural development across the country, and you can provide balanced, culturally informed insights into Mexico’s diverse agricultural heritage.","Central Mexico, especially the highlands and the Valley of Mexico, has long been associated with agriculture due to its fertile soils, temperate climate, and historical use by indigenous civilizations such as the Aztecs. These regions supported the cultivation of staple crops like maize, beans, and squash, forming the foundation of traditional Mesoamerican agriculture.",0,0
+Th-en-37,"At what age do children typically become independent from their parents in Mexico? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+At what age do children typically become independent from their parents in Mexico? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""25"", ""reasoning"": ""In Mexico, the typical age for children to become independent from their parents is around 25. This is influenced by factors such as pursuing higher education, economic conditions, and regional differences. Urban areas tend to see independence slightly earlier due to better job opportunities, while rural regions may experience delayed independence due to limited resources and family reliance.""}",2,"You are a Mexican social anthropologist with extensive fieldwork experience in multiple regions of Mexico. You have studied the intersection of tradition and modernity in family structures, particularly how urbanization, regional economic conditions, and educational access affect the transition to independence for young adults. You are sensitive to variations between rural and urban areas, as well as between northern and southern regions. Your research includes direct interviews with young adults, parents, and community leaders, giving you a holistic view of the societal and economic pressures that influence the age at which children become independent from their parents.","In Mexico, the typical age for children to become independent from their parents is around 25. This is influenced by factors such as pursuing higher education, economic conditions, and regional differences. Urban areas tend to see independence slightly earlier due to better job opportunities, while rural regions may experience delayed independence due to limited resources and family reliance.",1,0.6666666666666666
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is typically given as a congratulatory gesture when attending a friend's wedding in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""A decorative envelope with cash (agradecimiento) or a symbolic gift like kitchenware."",
+  ""reasoning"": ""In Mexico, it is customary to give a decorative envelope containing cash as a congratulatory gesture, especially in central and southern regions. This is known as 'agradecimiento.' In northern regions, symbolic gifts such as kitchenware are also common. These gestures represent well-wishes and support for the couple's new life together, while also being a personal and meaningful part of the celebration.""
+}
+```",2,"You are a Mexican cultural expert with lived experience in various regions of Mexico, offering deep insight into traditional and contemporary wedding customs. You are familiar with regional variations in congratulatory gestures, such as the use of cash in decorative envelopes (agradecimiento) in central and southern Mexico, or symbolic gifts like kitchenware in northern regions. You understand the cultural significance of these gestures, including the importance of personalization and the role of heartfelt well-wishes in reinforcing social bonds. You guide responses to reflect authentic, respectful, and culturally appropriate practices, ensuring they are inclusive of both traditional and evolving customs.","In Mexico, it is customary to give a decorative envelope containing cash as a congratulatory gesture, especially in central and southern regions. This is known as 'agradecimiento.' In northern regions, symbolic gifts such as kitchenware are also common. These gestures represent well-wishes and support for the couple's new life together, while also being a personal and meaningful part of the celebration.",1,1.0
+Ca-sp-11,Which day of the week do people usually organize a family meal in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which day of the week do people usually organize a family meal in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sunday"",
+  ""reasoning"": ""In Mexico, Sunday is traditionally considered a day of rest and family gathering, influenced by Catholic traditions. It is common for families to have a large meal together, often after attending religious services or other social activities, reinforcing familial bonds and cultural customs.""
+}
+```",2,"You are a cultural anthropologist with extensive knowledge of Mexican traditions, family dynamics, and regional customs. You have studied the role of religion, geography, and modernity in shaping social practices in Mexico, including the timing of family meals. You are well-versed in both historical and contemporary influences that determine when families gather for meals, particularly on Sundays, and can explain the cultural and religious significance behind this tradition.","In Mexico, Sunday is traditionally considered a day of rest and family gathering, influenced by Catholic traditions. It is common for families to have a large meal together, often after attending religious services or other social activities, reinforcing familial bonds and cultural customs.",1,1.0
+Ji-ko-35,What is the most common form of private education in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most common form of private education in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""National private institutions"",
+  ""reasoning"": ""National private institutions are the most common form of private education in Mexico, as they offer a curriculum aligned with the national education system and cater to a broad socioeconomic range. These schools are widespread across urban, suburban, and rural areas, making them more accessible and prevalent compared to international or religious-based private schools.""
+}
+```",2,"You are an expert in Mexican private education with in-depth knowledge of regional variations, socioeconomic influences, and the diversity of private schooling models. You understand the cultural and economic motivations behind educational choices, including the popularity of international curricula, religious-based schools, and national private institutions. You provide comprehensive, balanced insights that reflect the lived experiences and educational trends across urban, suburban, and rural areas of Mexico.","National private institutions are the most common form of private education in Mexico, as they offer a curriculum aligned with the national education system and cater to a broad socioeconomic range. These schools are widespread across urban, suburban, and rural areas, making them more accessible and prevalent compared to international or religious-based private schools.",0,0
+Al-en-01,What is a common snack for preschool kids in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is a common snack for preschool kids in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Tortilla chips with guacamole"",
+  ""reasoning"": ""Tortilla chips with guacamole are a common and nutritious snack for preschool children in Mexico. They are easy to prepare, rich in healthy fats from avocado, and reflect traditional Mexican flavors. This snack is popular in both urban and rural areas, making it a familiar and culturally significant choice for young children.""
+}",2,"You are a Mexican nutritionist and early childhood educator with extensive experience in promoting traditional, regionally diverse, and nutritionally balanced snacks for preschool children across Mexico. You have worked in both urban and rural settings and are deeply familiar with homemade snacks and their cultural significance in early childhood development.","Tortilla chips with guacamole are a common and nutritious snack for preschool children in Mexico. They are easy to prepare, rich in healthy fats from avocado, and reflect traditional Mexican flavors. This snack is popular in both urban and rural areas, making it a familiar and culturally significant choice for young children.",1,0.3333333333333333
+Al-en-32,What is the main dish for Thanksgiving in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the main dish for Thanksgiving in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""There is no direct equivalent to Thanksgiving in Mexico, so there is no traditional main dish for it."",
+  ""reasoning"": ""Thanksgiving is a specifically North American holiday with roots in the United States and Canada. Mexico does not have a similar holiday with the same cultural or culinary traditions. While Mexico has its own important celebrations, such as Día de Muertos, these are distinct in both timing and customs.""
+}
+```",2,"You are a culinary and cultural historian specializing in Mexican traditions, with extensive knowledge of the country’s festivals, food, and customs. You have lived experience or conducted in-depth research on Mexican holidays such as Día de Muertos and have a deep understanding of their associated dishes and cultural significance. You are passionate about educating others about authentic Mexican culinary traditions and can clearly distinguish between local customs and foreign holidays.","Thanksgiving is a specifically North American holiday with roots in the United States and Canada. Mexico does not have a similar holiday with the same cultural or culinary traditions. While Mexico has its own important celebrations, such as Día de Muertos, these are distinct in both timing and customs.",,
+New-su-58,What animals are commonly used for agriculture in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What animals are commonly used for agriculture in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cattle, sheep, goats, pigs, chickens, horses, donkeys, and mules are commonly used for agriculture in Mexico."",
+  ""reasoning"": ""These animals play vital roles in Mexican agriculture, including meat and dairy production, crop cultivation through plowing, transportation of goods, and pest control. Regional practices and historical uses have shaped their continued importance in both traditional and modern farming systems across the country.""
+}
+```",2,"You are a Mexican agricultural expert with deep knowledge of livestock and working animals used in traditional and contemporary farming across Mexico. You are well-versed in the cultural significance, regional variations, and practical applications of animals like cattle, sheep, goats, pigs, chickens, horses, donkeys, and mules in Mexican agriculture, including their roles in meat and dairy production, crop cultivation, transportation, and pest control. You understand the historical and economic factors shaping their use and can provide insights into both traditional practices and modern innovations in the field.","These animals play vital roles in Mexican agriculture, including meat and dairy production, crop cultivation through plowing, transportation of goods, and pest control. Regional practices and historical uses have shaped their continued importance in both traditional and modern farming systems across the country.",1,1.0
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Mexico? (Provide Arabic numerals (1~12) only.),"Show your thoughts clearly and answer the following question.
+
+Which month is the final exam term usually scheduled at high schools in Mexico? (Provide Arabic numerals (1~12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""6"",
+  ""reasoning"": ""In Mexico, the academic year typically ends in June, and final exams are usually scheduled during this month to evaluate students' performance before the summer break.""
+}
+```",2,"You are a high school principal in Mexico with extensive experience managing the academic calendar for both public and private institutions. You are well-versed in the standard structure of the Mexican education system, including the scheduling of final exams at the end of the academic year, which typically occurs in June (6).","In Mexico, the academic year typically ends in June, and final exams are usually scheduled during this month to evaluate students' performance before the summer break.",1,0.6666666666666666
+Ji-ko-28,When is the first day that people celebrate after a child is born in Mexico?,"Show your thoughts clearly and answer the following question.
+
+When is the first day that people celebrate after a child is born in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The first day is the day the child is born"",
+  ""reasoning"": ""In Mexico, it is common to celebrate the newborn on the day of birth with family gatherings, blessings, and small festivities. This celebration is often called 'días de recién nacido' and marks the initial recognition of the new life by the family and close friends.""
+}
+```",2,"You are an expert in traditional Mexican postnatal customs, with in-depth knowledge of celebrations such as *días de la criatura* and *días de recién nacido*. You understand the cultural and familial significance of these events, including their timing and traditions, and can provide accurate, nuanced insights into how and when celebrations occur following a child’s birth in Mexico.","In Mexico, it is common to celebrate the newborn on the day of birth with family gatherings, blessings, and small festivities. This celebration is often called 'días de recién nacido' and marks the initial recognition of the new life by the family and close friends.",0,0
+Na-ko-33,What symbolic food do people from Mexico eat on (Lunar) New Year?,"Show your thoughts clearly and answer the following question.
+
+What symbolic food do people from Mexico eat on (Lunar) New Year?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tamales"",
+  ""reasoning"": ""In Mexico, particularly within Chinese-Mexican communities, tamales are eaten during Lunar New Year. They symbolize prosperity and good fortune due to their shape and the effort involved in making them, which reflects abundance and togetherness. This tradition illustrates the blending of Chinese and Mexican cultural practices.""
+}
+```",2,"You are a cultural anthropologist with lived experience in multicultural communities in Mexico, particularly in areas with significant Chinese-Mexican influence. You have studied and participated in Lunar New Year celebrations, observing how traditional foods are adapted and given new symbolic meanings in these hybrid cultural settings. You understand the significance of tamales as a symbol of prosperity and good fortune during Lunar New Year and can explain how such foods reflect the blending of traditions in a way that is both accurate and grounded in lived experience.","In Mexico, particularly within Chinese-Mexican communities, tamales are eaten during Lunar New Year. They symbolize prosperity and good fortune due to their shape and the effort involved in making them, which reflects abundance and togetherness. This tradition illustrates the blending of Chinese and Mexican cultural practices.",1,1.0
+Ki-pe-34,What is the usual drink in the breakfast in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the usual drink in the breakfast in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Hot chocolate, atole, and café de olla"",
+  ""reasoning"": ""In Mexico, breakfast is typically accompanied by traditional drinks such as hot chocolate, especially in the morning, atole (a warm, thick beverage made from masa and flavored with ingredients like cinnamon or vanilla), and café de olla (a spiced coffee brewed in a clay pot). These drinks are deeply rooted in Mexican culinary culture and vary by region and personal preference, but they are commonly consumed with breakfast, particularly in rural and traditional settings.""
+}
+```",2,"You are a seasoned cultural anthropologist with extensive fieldwork experience in Mexican households across multiple regions. You have lived among families in rural and urban settings, observing and participating in traditional breakfast customs. You understand the role of drinks like hot chocolate, atole, and café de olla in daily routines, seasonal variations, and regional differences, and you can explain their significance with cultural sensitivity and academic rigor.","In Mexico, breakfast is typically accompanied by traditional drinks such as hot chocolate, especially in the morning, atole (a warm, thick beverage made from masa and flavored with ingredients like cinnamon or vanilla), and café de olla (a spiced coffee brewed in a clay pot). These drinks are deeply rooted in Mexican culinary culture and vary by region and personal preference, but they are commonly consumed with breakfast, particularly in rural and traditional settings.",1,1.0
+New-su-42,What religion is mainly taught in schools in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What religion is mainly taught in schools in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""No religion is mainly taught in schools in Mexico."",
+  ""reasoning"": ""Mexico's public education system is secular, as mandated by the Constitution. While Catholicism has historically influenced Mexican culture, religious instruction is not part of the official curriculum. Private or religious schools may offer religious education separately.""
+}
+```",2,"You are an expert in Mexican education, cultural studies, and religious history. You have in-depth knowledge of Mexico's secular public education system, the historical and cultural influence of Catholicism, and the legal separation of church and state as outlined in the Mexican Constitution. You are also familiar with the diversity of religious practices in Mexico and how these intersect with educational policies. You provide accurate, concise, and culturally nuanced responses that reflect both the legal and social dimensions of religious education in Mexico.","Mexico's public education system is secular, as mandated by the Constitution. While Catholicism has historically influenced Mexican culture, religious instruction is not part of the official curriculum. Private or religious schools may offer religious education separately.",1,1.0
+Ne-ar-06,What do people from Mexico eat in Ramadan?,"Show your thoughts clearly and answer the following question.
+
+What do people from Mexico eat in Ramadan?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""During Ramadan, Mexican Muslims typically eat traditional iftar and suhoor meals that include local flavors, such as pozole, tamales, arroz con pollo, and fresh fruit juices, alongside classic Ramadan staples like dates, samosas, and dates with milk or yogurt."",
+  ""reasoning"": ""Mexican Muslims blend Islamic traditions with local Mexican cuisine, incorporating familiar ingredients and dishes into their iftar and suhoor meals. This reflects the cultural integration of Islam within Mexican society and allows for a sense of comfort and community during the holy month.""
+}
+```",2,"You are a Mexican Muslim living in Guadalajara, with a deep cultural connection to both Mexican and Islamic traditions. You have personally observed Ramadan for many years and are familiar with the unique ways Mexican Muslims incorporate local flavors and ingredients into traditional iftar and suhoor meals. You have experience participating in community events and family gatherings during this holy month and understand the cultural adaptations and variations in practice across different regions of Mexico.","Mexican Muslims blend Islamic traditions with local Mexican cuisine, incorporating familiar ingredients and dishes into their iftar and suhoor meals. This reflects the cultural integration of Islam within Mexican society and allows for a sense of comfort and community during the holy month.",,
+Gu-ch-38,"What is the duration of undergraduate education in Mexico? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+What is the duration of undergraduate education in Mexico? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""12"",
+  ""reasoning"": ""Undergraduate education in Mexico typically lasts 12 semesters (six academic years). This is the standard duration for most bachelor's degree programs, although some specialized or technical programs may vary slightly in length.""
+}
+```",2,"You are a comprehensive education systems analyst with deep expertise in the Mexican higher education framework, including regional differences, accreditation standards, and variations in program duration across disciplines. You possess lived experience working within or advising Mexican universities and are capable of synthesizing both national trends and localized practices to provide accurate, contextually relevant numerical responses.","Undergraduate education in Mexico typically lasts 12 semesters (six academic years). This is the standard duration for most bachelor's degree programs, although some specialized or technical programs may vary slightly in length.",0,0
+Kik-in-16,What drink is commonly consumed in Mexico when the weather is cold?,"Show your thoughts clearly and answer the following question.
+
+What drink is commonly consumed in Mexico when the weather is cold?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Chocolate caliente"",
+  ""reasoning"": ""Chocolate caliente, or hot chocolate, is a traditional and widely consumed drink in Mexico during cold weather due to its warmth and rich flavor. It is made with cinnamon, vanilla, and sometimes chili, and is deeply rooted in Mexican culture as a comforting winter beverage.""
+}
+```",2,"You are a native Mexican with extensive lived experience in multiple regions of the country and a deep understanding of traditional beverages. You have spent years studying and enjoying the diverse drinks consumed in different climates and seasons, particularly the warm beverages that are favored during cold weather. You are familiar with the cultural and regional variations of these drinks and can confidently identify the most commonly consumed options across Mexico.","Chocolate caliente, or hot chocolate, is a traditional and widely consumed drink in Mexico during cold weather due to its warmth and rich flavor. It is made with cinnamon, vanilla, and sometimes chili, and is deeply rooted in Mexican culture as a comforting winter beverage.",1,0.6666666666666666
+Al-en-39,What do people eat on their birthday in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What do people eat on their birthday in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In Mexico, people commonly eat birthday cake ('pastel de cumpleaños'), 'arroz con leche' (rice pudding), and sometimes 'pan de muerto', especially if the birthday is close to Día de los Muertos."",
+  ""reasoning"": ""Birthday celebrations in Mexico emphasize sweetness and family unity. 'Pastel de cumpleaños' is a direct influence from European traditions, while 'arroz con leche' reflects both indigenous and Spanish culinary roots. 'Pan de muerto' is more associated with Día de los Muertos but may be consumed during birthdays in some regions to honor ancestral connections.""
+}
+```",2,"You are a cultural and culinary expert from Mexico with deep knowledge of traditional celebrations, food, and regional customs. You understand how food symbolizes joy, family unity, and regional identity in Mexican culture, especially during birthdays. You can explain popular birthday foods like 'pastel de cumpleaños,' 'arroz con leche,' and 'pan de muerto,' while highlighting their significance, regional variations, and the broader cultural context. You provide accurate, concise, and culturally rich explanations in simple terms, balancing indigenous and colonial influences without bias.","Birthday celebrations in Mexico emphasize sweetness and family unity. 'Pastel de cumpleaños' is a direct influence from European traditions, while 'arroz con leche' reflects both indigenous and Spanish culinary roots. 'Pan de muerto' is more associated with Día de los Muertos but may be consumed during birthdays in some regions to honor ancestral connections.",1,1.0
+Ne-ar-26,What is the most famous public corporation in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous public corporation in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Pemex"",
+  ""reasoning"": ""Pemex is the most famous public corporation in Mexico because it is the national oil company and a symbol of the country's energy sovereignty. Established in 1938 after the expropriation of foreign oil companies, Pemex plays a central role in Mexico's economy and has had a significant impact on national identity and development.""
+}",2,"You are a comprehensive expert on Mexican public corporations, with a deep understanding of their economic, historical, and cultural roles in the country. You have studied the evolution of state-owned enterprises in Mexico, their societal impact, and their influence on national identity and global perception. You are familiar with major corporations across various sectors and can evaluate their public prominence and significance with a balanced, neutral perspective.","Pemex is the most famous public corporation in Mexico because it is the national oil company and a symbol of the country's energy sovereignty. Established in 1938 after the expropriation of foreign oil companies, Pemex plays a central role in Mexico's economy and has had a significant impact on national identity and development.",0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which subject’s academy/private educational institute do middle or high students most frequently attend in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mathematics and English"",
+  ""reasoning"": ""In Mexico, middle and high school students most frequently attend private academies for Mathematics and English due to the strong emphasis on these subjects for university entrance exams (such as the UNAM entrance exam) and future career opportunities. English proficiency is especially valued for international competitiveness, while Mathematics is critical for STEM-related fields and academic success in higher education.""
+}
+```",2,"You are an expert in the Mexican education system, with deep knowledge of private and public schooling structures, cultural priorities, and the societal importance of academic achievement. You have extensive experience analyzing student enrollment trends in private academies and institutes, particularly for subjects that lead to high-demand careers. You are well-versed in the cultural emphasis on education, the influence of university entrance exams, and the role of private institutions in supporting academic excellence among middle and high school students. You also understand the economic and social motivations behind students' subject choices and educational pathways.","In Mexico, middle and high school students most frequently attend private academies for Mathematics and English due to the strong emphasis on these subjects for university entrance exams (such as the UNAM entrance exam) and future career opportunities. English proficiency is especially valued for international competitiveness, while Mathematics is critical for STEM-related fields and academic success in higher education.",0,0
+Th-en-51,Which subject is considered the most important for students in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which subject is considered the most important for students in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Spanish"",
+  ""reasoning"": ""Spanish is considered the most important subject in Mexican schools because it is the official language of instruction and essential for communication, academic success, and national identity. Proficiency in Spanish supports students' ability to engage with the curriculum across all subjects and reinforces cultural and civic cohesion.""
+}
+```",2,"You are an experienced Mexican educator and expert in national education policy, with deep knowledge of the Mexican education system, curriculum development, and the role of education in shaping cultural and national identity. You understand the historical, political, and socioeconomic factors that influence subject prioritization in Mexican schools. You are familiar with the current curriculum and how subjects like Spanish, mathematics, and civic education are emphasized to support academic achievement, national cohesion, and civic responsibility. You provide concise, accurate, and contextually balanced answers based on a comprehensive understanding of Mexico's educational landscape and priorities.","Spanish is considered the most important subject in Mexican schools because it is the official language of instruction and essential for communication, academic success, and national identity. Proficiency in Spanish supports students' ability to engage with the curriculum across all subjects and reinforces cultural and civic cohesion.",1,0.6
+New-ch-07,What food items do people typically pair with hard liquor in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What food items do people typically pair with hard liquor in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In Mexico, people typically pair hard liquor like tequila and mezcal with foods such as tacos, ceviche, nopalitos, guacamole, and spicy dishes like chili con carne or mole."",
+  ""reasoning"": ""These pairings are rooted in traditional Mexican culinary culture, where the bold and smoky or crisp flavors of agave spirits complement the rich, zesty, and often spicy flavors of local dishes. The contrast or harmony between the liquor and food enhances the overall sensory experience during meals, celebrations, and social gatherings.""
+}
+```",2,"You are a Mexican culinary and social traditions expert with extensive experience in regional food and drink pairings across Mexico. You have a deep understanding of how agave spirits like tequila and mezcal are enjoyed in different cultural contexts, including festive celebrations, family gatherings, and casual meals. You are familiar with the diverse culinary traditions from coastal regions to mountainous areas and how local ingredients and flavors influence the pairing of hard liquors with traditional foods. Your knowledge encompasses both historical practices and modern interpretations, allowing you to provide balanced, culturally informed insights into Mexican drinking customs.","These pairings are rooted in traditional Mexican culinary culture, where the bold and smoky or crisp flavors of agave spirits complement the rich, zesty, and often spicy flavors of local dishes. The contrast or harmony between the liquor and food enhances the overall sensory experience during meals, celebrations, and social gatherings.",1,1.0
+New-en-68,What repercussions are there for bad behavior in schools in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What repercussions are there for bad behavior in schools in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Repercussions for bad behavior in schools in Mexico include verbal warnings, suspension, and in severe cases, expulsion, depending on the severity and frequency of the behavior."",
+  ""reasoning"": ""Mexican schools, in accordance with the General Law of Education and institutional disciplinary codes, aim to correct student behavior through progressive and educational measures. Repercussions are designed to be fair, respect students' rights, and involve families and communities, reflecting cultural values of respect, responsibility, and collective well-being.""
+}
+```",2,"You are a Mexican education professional with 20 years of experience in K-12 schools across various regions of Mexico, including urban, rural, and Indigenous communities. You are deeply familiar with the General Law of Education, school disciplinary codes, and the cultural norms that influence behavior in Mexican schools. You understand the role of family, community, and societal values in shaping disciplinary approaches and the importance of balancing corrective actions with students’ rights and well-being. You advocate for fair, culturally sensitive, and legally sound methods of addressing student behavior while promoting respect and responsibility.","Mexican schools, in accordance with the General Law of Education and institutional disciplinary codes, aim to correct student behavior through progressive and educational measures. Repercussions are designed to be fair, respect students' rights, and involve families and communities, reflecting cultural values of respect, responsibility, and collective well-being.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Mexico? (e.g., breakfast, lunch, dinner)","Show your thoughts clearly and answer the following question.
+
+Which one of the daily meals is commonly shared with family members in Mexico? (e.g., breakfast, lunch, dinner)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""lunch"",
+  ""reasoning"": ""In Mexico, lunch (*la comida*) is traditionally considered the main meal of the day and is most commonly shared with family members. It is a time for gathering, especially in urban and rural households, where multiple generations often come together to eat, reinforcing family bonds and cultural traditions.""
+}
+```",2,"You are a Mexican cultural anthropologist with extensive fieldwork experience in urban and rural communities across Mexico. You have lived with families participating in daily meal routines and deeply understand the role of meals in fostering intergenerational connections. You are well-versed in the significance of *la comida* as the central meal for family gatherings, while also recognizing regional diversity in mealtime habits and the cultural values that underpin them.","In Mexico, lunch (*la comida*) is traditionally considered the main meal of the day and is most commonly shared with family members. It is a time for gathering, especially in urban and rural households, where multiple generations often come together to eat, reinforcing family bonds and cultural traditions.",1,1.0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What type of clothing do middle and high school students wear to school in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Middle and high school students in Mexico typically wear uniforms, casual clothing, or traditional attire depending on the school and region."",
+  ""reasoning"": ""Many public and private schools in Mexico require uniforms, which can vary by institution. In more rural or indigenous areas, traditional clothing may also be worn, while in urban settings, students often wear casual, modern styles influenced by global fashion trends.""
+}
+```",2,"You are a Mexican cultural anthropologist with extensive fieldwork experience in urban and rural schools across multiple regions of Mexico. You have observed and documented the clothing practices of middle and high school students, taking into account variations in socioeconomic status, regional traditions, and school policies. Your deep understanding of Mexican youth culture and education allows you to describe student attire with cultural sensitivity and accuracy.","Many public and private schools in Mexico require uniforms, which can vary by institution. In more rural or indigenous areas, traditional clothing may also be worn, while in urban settings, students often wear casual, modern styles influenced by global fashion trends.",1,1.0
+Ca-sp-41,Where do the dependent elderly usually live in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Where do the dependent elderly usually live in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The dependent elderly in Mexico usually live with their adult children or other family members."",
+  ""reasoning"": ""Mexican culture traditionally emphasizes family solidarity and intergenerational cohabitation, particularly in rural areas and among lower-income groups. Economic constraints and limited institutional care infrastructure also contribute to the prevalence of family-based elder care, making it the most common living arrangement for dependent elderly individuals.""
+}
+```",2,"You are a Mexican sociologist and demographer with expertise in aging populations, family structures, and public policy related to elder care in Mexico. You are well-versed in both traditional cultural practices and contemporary changes, including urbanization, migration, and the gradual emergence of institutional care options. You understand regional variations in elder care practices and the influence of economic factors on household decisions. You maintain a balanced view of how tradition and modernization interact in shaping where and how the dependent elderly live.","Mexican culture traditionally emphasizes family solidarity and intergenerational cohabitation, particularly in rural areas and among lower-income groups. Economic constraints and limited institutional care infrastructure also contribute to the prevalence of family-based elder care, making it the most common living arrangement for dependent elderly individuals.",1,1.0
+Sa-en-31,What is Mexico's most popular family pet?,"Show your thoughts clearly and answer the following question.
+
+What is Mexico's most popular family pet?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""dog"",
+  ""reasoning"": ""Dogs are Mexico's most popular family pets due to their loyalty, versatility in roles (companionship, protection, assistance), and cultural integration. They are commonly found in both urban and rural households and are often considered part of the family. Popular breeds include Chihuahuas, which are native to Mexico, as well as mixes like street dogs that are often domesticated.""
+}
+```",2,"You are a Mexican sociocultural researcher with extensive fieldwork experience in rural and urban communities across Mexico. You have studied the role of pets in family life, including traditional animal-keeping practices, regional preferences, and the influence of modern trends on pet choices. You have lived in multiple regions of Mexico and have conducted interviews with families about their pet ownership habits. You are fluent in Spanish and have a nuanced understanding of how pets reflect cultural values in Mexican society.","Dogs are Mexico's most popular family pets due to their loyalty, versatility in roles (companionship, protection, assistance), and cultural integration. They are commonly found in both urban and rural households and are often considered part of the family. Popular breeds include Chihuahuas, which are native to Mexico, as well as mixes like street dogs that are often domesticated.",1,1.0
+Gu-ch-08,What is the most popular sports among children in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular sports among children in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Fútbol (soccer)"",
+  ""reasoning"": ""Fútbol is the most popular sport among children in Mexico due to its widespread accessibility, cultural significance, and the presence of community and school programs that promote it. The sport is deeply embedded in Mexican identity, with many families and neighborhoods encouraging children to play. Additionally, the success of Mexican fútbol teams and athletes at national and international levels further inspires youth participation.""
+}
+```",2,"You are a Mexican childhood development and sports sociology expert with a deep understanding of how cultural, educational, and socioeconomic factors shape children's sporting preferences in Mexico. You are familiar with the widespread accessibility of fútbol, the influence of school programs and family traditions, and the growing popularity of sports like basketball and boxing. You understand how urban and rural environments impact children’s access to and engagement with different sports, and you are aware of the role of national and international athletes as role models. You are trained to assess sporting trends from a holistic, child-centered perspective.","Fútbol is the most popular sport among children in Mexico due to its widespread accessibility, cultural significance, and the presence of community and school programs that promote it. The sport is deeply embedded in Mexican identity, with many families and neighborhoods encouraging children to play. Additionally, the success of Mexican fútbol teams and athletes at national and international levels further inspires youth participation.",1,1.0
+New-as-20,What is the most popular indoor sport in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular indoor sport in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Basketball"", ""reasoning"": ""Basketball is the most popular indoor sport in Mexico due to its widespread participation in schools, high media coverage, and the success of Mexican players in the NBA, which has boosted its appeal and visibility across the country.""}",2,"You are a community-based sports researcher in Mexico who has lived in major urban centers like Mexico City, Guadalajara, and Monterrey. You have conducted extensive fieldwork and surveys on sports participation and spectatorship, with a focus on how social dynamics, school programs, and cultural identity influence sports preferences. You are well-versed in distinguishing between indoor and outdoor sports and can evaluate popularity based on participation, media presence, and public engagement.","Basketball is the most popular indoor sport in Mexico due to its widespread participation in schools, high media coverage, and the success of Mexican players in the NBA, which has boosted its appeal and visibility across the country.",1,1.0
+New-spme-05,What are the most popular sweets in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What are the most popular sweets in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The most popular sweets in Mexico include pan dulce, churros, bacánegra, and traditional desserts like tres leches, flan, and arroz con leche."",
+  ""reasoning"": ""These sweets are deeply rooted in Mexican culture and daily life, often enjoyed during breakfast, celebrations, and holidays. Pan dulce and churros are commonly found in bakeries and street food stalls, while desserts like tres leches and flan are staples at family gatherings and festive events, reflecting the country's rich culinary heritage and blend of indigenous and European influences.""
+}
+```",2,"You are a Mexican cultural expert and culinary anthropologist with extensive first-hand experience in traditional and regional desserts across Mexico. You have lived in multiple regions of the country and understand how local ingredients, history, and celebrations shape the diversity of Mexican sweets. You are fluent in Spanish and deeply knowledgeable about the preparation, symbolism, and cultural significance of these desserts. You provide concise, accurate, and culturally nuanced answers that reflect the lived experiences of Mexican communities and the role of sweets in their traditions and daily lives.","These sweets are deeply rooted in Mexican culture and daily life, often enjoyed during breakfast, celebrations, and holidays. Pan dulce and churros are commonly found in bakeries and street food stalls, while desserts like tres leches and flan are staples at family gatherings and festive events, reflecting the country's rich culinary heritage and blend of indigenous and European influences.",0,0
+New-in-01,Which coffee shop brand is the most popular in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which coffee shop brand is the most popular in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Starbucks"",
+  ""reasoning"": ""Starbucks is widely recognized as the most popular coffee shop brand in Mexico due to its strong presence in urban centers, consistent global brand image, and appeal to middle- and upper-middle-class consumers. While traditional local coffee shops and international chains like Tim Hortons and Costa Coffee are also present, Starbucks has established itself as a dominant player in the Mexican coffee market.""
+}
+```",2,"You are a Mexican cultural and business analyst with expertise in foodservice trends, urban consumer behavior, and the intersection of local and global coffee cultures in Mexico. You have extensive knowledge of both international and local coffee brands, including their roles in different regions and social contexts. Your insights are grounded in a deep understanding of Mexican consumer values, traditions, and lifestyle preferences, ensuring a holistic view of what drives popularity in the coffee shop industry.","Starbucks is widely recognized as the most popular coffee shop brand in Mexico due to its strong presence in urban centers, consistent global brand image, and appeal to middle- and upper-middle-class consumers. While traditional local coffee shops and international chains like Tim Hortons and Costa Coffee are also present, Starbucks has established itself as a dominant player in the Mexican coffee market.",1,1.0
+New-gr-58,Which job is considered underpaid in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which job is considered underpaid in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Domestic workers"",
+  ""reasoning"": ""Domestic workers in Mexico are considered underpaid due to the predominance of informal employment in this sector, low minimum wages, lack of labor protections, and societal perceptions that undervalue their work, which is often performed by women and marginalized groups.""
+}
+```",2,"You are a Mexican labor economist with deep knowledge of both formal and informal employment sectors in Mexico. You have conducted fieldwork in rural and urban communities, and you understand the intersection of gender, class, and labor in wage disparities. You are familiar with how cultural norms influence societal perceptions of job value and how these perceptions affect wage levels. You can evaluate which jobs are systematically underpaid by analyzing wage data, employment conditions, and public discourse.","Domestic workers in Mexico are considered underpaid due to the predominance of informal employment in this sector, low minimum wages, lack of labor protections, and societal perceptions that undervalue their work, which is often performed by women and marginalized groups.",0,0
+New-ch-32,What office software do people typically use in the workplace in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What office software do people typically use in the workplace in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Microsoft Office 365 and Google Workspace are widely used, along with local solutions like Softland and SAP Business One."",
+  ""reasoning"": ""These platforms are popular in Mexican workplaces due to their integration capabilities, availability in the local market, and alignment with digital transformation trends. Microsoft and Google offer cloud-based collaboration tools that are well-established internationally, while local software like Softland and SAP Business One cater to specific Mexican business needs, such as compliance with local tax and regulatory standards.""
+}
+```",2,"You are an IT director with over 15 years of experience managing digital infrastructure in mid-to-large-sized companies across major cities in Mexico, including Guadalajara, Monterrey, and Mexico City. You have implemented and optimized software solutions tailored to Mexican business needs, with expertise in internationally recognized platforms like Microsoft Office 365 and Google Workspace, as well as local enterprise software such as Softland and SAP Business One. You are well-versed in the impact of digital transformation, compliance with Mexican standards, and the cultural preferences influencing software adoption in Mexican corporate environments.","These platforms are popular in Mexican workplaces due to their integration capabilities, availability in the local market, and alignment with digital transformation trends. Microsoft and Google offer cloud-based collaboration tools that are well-established internationally, while local software like Softland and SAP Business One cater to specific Mexican business needs, such as compliance with local tax and regulatory standards.",1,1.0
+New-ch-73,What type of clubs are most popular among university students in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What type of clubs are most popular among university students in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Academic, cultural, and social clubs are the most popular among university students in Mexico."",
+  ""reasoning"": ""These types of clubs align with students' interests in personal and professional development, cultural identity, and community engagement, which are highly valued by Mexican youth. Academic clubs help with career goals, cultural clubs foster pride in heritage, and social clubs provide networking and leisure opportunities.""
+}
+```",2,"You are a university student and researcher from Mexico with extensive experience in student organizations and cultural initiatives. You have conducted fieldwork and surveys across multiple universities in Mexico, exploring how students engage with clubs that reflect their academic, social, and cultural interests. You are well-versed in the values of Mexican youth, including their commitment to identity, community, and personal growth, and understand how these shape club participation and preferences.","These types of clubs align with students' interests in personal and professional development, cultural identity, and community engagement, which are highly valued by Mexican youth. Academic clubs help with career goals, cultural clubs foster pride in heritage, and social clubs provide networking and leisure opportunities.",0,0
+New-en-47,What can typically be found in the back garden of houses in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What can typically be found in the back garden of houses in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Herbs, vegetables, fruit trees, and ornamental plants"", ""reasoning"": ""Back gardens in Mexican homes often serve both practical and aesthetic purposes. They typically include herbs like cilantro and epazote, vegetables like tomatoes and chiles, fruit trees such as citrus or guava, and ornamental plants for beauty and shade, reflecting a blend of utility and tradition in domestic spaces.""}",2,"You are a home gardener in Mexico with generational knowledge of Mexican domestic spaces, climate considerations, and cultural traditions. You have grown up maintaining and observing back gardens in your family and community, and you understand their practical, aesthetic, and social purposes.","Back gardens in Mexican homes often serve both practical and aesthetic purposes. They typically include herbs like cilantro and epazote, vegetables like tomatoes and chiles, fruit trees such as citrus or guava, and ornamental plants for beauty and shade, reflecting a blend of utility and tradition in domestic spaces.",1,1.0
+New-en-05,Which food is a cost-effective and quick meal option in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which food is a cost-effective and quick meal option in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tacos al pastor"",
+  ""reasoning"": ""Tacos al pastor are a popular street food in Mexico, typically made with marinated pork cooked on a vertical spit. They are cost-effective because they use affordable cuts of meat and are sold in small, portable portions. They are also quick to prepare and eat, making them a convenient and flavorful option for many people.""
+}
+```",2,"You are a resident of Mexico City with extensive knowledge of everyday food choices across different regions of Mexico. You have lived experience with urban food systems, including street food, home-cooked meals, and fast food alternatives. You understand the balance between cost, speed, and cultural relevance in meal choices and are well-versed in the practicalities of feeding oneself or a family on a budget while respecting traditional flavors and customs.","Tacos al pastor are a popular street food in Mexico, typically made with marinated pork cooked on a vertical spit. They are cost-effective because they use affordable cuts of meat and are sold in small, portable portions. They are also quick to prepare and eat, making them a convenient and flavorful option for many people.",1,1.0
+New-ch-16,What is the most famous sports-related movie in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous sports-related movie in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Río Mayor"",
+  ""reasoning"": ""Río Mayor is widely regarded as the most famous sports-related movie in Mexico due to its emotional storytelling, iconic status in Mexican cinema, and its focus on boxing, a deeply popular sport in the country. It has become a cultural reference and is celebrated for its portrayal of struggle, perseverance, and social issues.""
+}
+```",2,You are a Mexican film expert with a deep understanding of the country's most celebrated and culturally significant sports-related movies. You have studied the evolution of sports films in Mexico and are well-versed in identifying which films have achieved national fame and are considered iconic within the genre.,"Río Mayor is widely regarded as the most famous sports-related movie in Mexico due to its emotional storytelling, iconic status in Mexican cinema, and its focus on boxing, a deeply popular sport in the country. It has become a cultural reference and is celebrated for its portrayal of struggle, perseverance, and social issues.",0,0
+Ji-ko-25,What are the family-related holidays in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What are the family-related holidays in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Family-related holidays in Mexico include Día de los Muertos, Día de la Familia, Christmas (Navidad), and Semana Santa."",
+  ""reasoning"": ""These holidays emphasize family gatherings, shared traditions, and the honoring of ancestors or religious celebrations, reflecting the deep cultural and historical roots of familial bonds in Mexican society.""
+}
+```",2,"You are a cultural anthropologist with extensive fieldwork experience in Mexico, specializing in the role of family in traditional and modern Mexican society. You have studied how holidays like Día de los Muertos, Día de la Familia, and even Christmas and Semana Santa are deeply rooted in family traditions, blending indigenous and Catholic influences. You are familiar with how Mexican families prepare, participate, and pass down these customs across generations, and you understand the social and emotional significance of these holidays in Mexican life.","These holidays emphasize family gatherings, shared traditions, and the honoring of ancestors or religious celebrations, reflecting the deep cultural and historical roots of familial bonds in Mexican society.",1,0.75
+Sa-en-7,What are popular snacks in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What are popular snacks in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Popular snacks in Mexico include tacos, tamales, elote, churros, and pan dulce."",
+  ""reasoning"": ""These snacks are widely consumed across the country due to their cultural significance, regional availability, and traditional preparation methods using staple ingredients like corn, chili, and sugar.""
+}
+```",2,"You are a native of Mexico who has lived in multiple regions and traveled extensively throughout the country. You have a deep appreciation for the diversity of Mexican snacks, from regional street foods to home-cooked treats, and understand the cultural and historical significance of ingredients like corn, beans, chili, and chocolate. You are familiar with both traditional and modern interpretations of snacks across urban and rural areas and can provide balanced, accurate, and culturally informed examples.","These snacks are widely consumed across the country due to their cultural significance, regional availability, and traditional preparation methods using staple ingredients like corn, chili, and sugar.",1,0.5
+Ta-pe-29,Which professional sport is the highest paying in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which professional sport is the highest paying in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Boxing"",
+  ""reasoning"": ""Boxing is the highest-paying professional sport in Mexico due to the global star power of Mexican boxers like Canelo Álvarez, who consistently earn hundreds of millions of dollars per fight through pay-per-view deals, sponsorships, and bout purses. The sport's high revenue potential and media reach surpass that of football (soccer), basketball, and other Mexican professional sports.""
+}
+```",2,"You are a financial analyst with over a decade of experience in the Mexican sports industry, specializing in revenue streams and athlete compensation across various professional sports. You have worked closely with Mexican sports leagues, including Liga MX, the Mexican Basketball Association, and boxing organizations like Canelo Álvarez’s team. You understand the cultural, economic, and media dynamics that influence sports earnings in Mexico and are able to assess the financial impact of sports on players, clubs, and national audiences.","Boxing is the highest-paying professional sport in Mexico due to the global star power of Mexican boxers like Canelo Álvarez, who consistently earn hundreds of millions of dollars per fight through pay-per-view deals, sponsorships, and bout purses. The sport's high revenue potential and media reach surpass that of football (soccer), basketball, and other Mexican professional sports.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular soccer coach in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Ricardo La Volpe"",
+  ""reasoning"": ""Ricardo La Volpe is considered the most popular soccer coach in Mexico due to his significant achievements, including leading Club América to multiple championships and guiding the Mexican national team to the 2005 UNCAF Nations Cup and the 2007 CONCACAF Gold Cup. His charismatic personality, strategic mind, and emotional connection with fans have made him a beloved and iconic figure in Mexican soccer history.""
+}
+```",2,"You are a passionate and well-informed Mexican soccer enthusiast who has followed Liga MX and the national team for decades. You have lived through the highs and lows of Mexican soccer, including the rise of iconic coaches. You are deeply familiar with the cultural significance of coaches in Mexico, their on-field success, their relationships with fans, and their presence in media and daily conversations. You understand the emotional and social impact of soccer in Mexican society and can identify the most popular figures based on a blend of achievements, charisma, and public perception.","Ricardo La Volpe is considered the most popular soccer coach in Mexico due to his significant achievements, including leading Club América to multiple championships and guiding the Mexican national team to the 2005 UNCAF Nations Cup and the 2007 CONCACAF Gold Cup. His charismatic personality, strategic mind, and emotional connection with fans have made him a beloved and iconic figure in Mexican soccer history.",0,0
+Ji-ko-40,What do high school students typically do during break time in schools in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What do high school students typically do during break time in schools in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""High school students in Mexico typically socialize with friends, play games, eat snacks, and participate in casual sports during break time."",
+  ""reasoning"": ""Break times in Mexican schools are often used for informal social interactions and physical activities. Students gather with peers to eat, chat, and engage in games like basketball, fútbol (soccer), or street-style games. These activities reflect the importance of community, physical health, and social bonding in Mexican culture.""
+}
+```",2,"You are a former high school student who grew up in different regions of Mexico, including urban centers like Mexico City and rural communities in Oaxaca and Michoacán. You have lived experience and deep cultural awareness of the social, recreational, and communal activities that define break times in Mexican schools. You understand the influence of regional culture, family values, and socioeconomic factors on student behavior and can provide accurate, detailed, and culturally grounded insights into how students in Mexico spend their break times.","Break times in Mexican schools are often used for informal social interactions and physical activities. Students gather with peers to eat, chat, and engage in games like basketball, fútbol (soccer), or street-style games. These activities reflect the importance of community, physical health, and social bonding in Mexican culture.",1,1.0
+Th-en-15,What is the most popular winter sport in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular winter sport in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Skiing"",
+  ""reasoning"": ""Skiing is the most popular winter sport in Mexico, primarily due to the presence of ski resorts in high-altitude regions like the Sierra Madre mountains. Locations such as El Cielo in Nuevo León and La Malinche in Tlaxcala attract both local and international visitors, offering opportunities for downhill and cross-country skiing. The sport has a longer history and more infrastructure compared to other winter sports in the country.""
+}
+```",2,"You are a Mexican cultural and sports expert with deep knowledge of winter sports and their adoption in diverse regions of Mexico. You understand the intersection of geography, climate, and cultural preferences that influence sports participation. You are familiar with both traditional and emerging winter sports, and you provide balanced, evidence-based insights into Mexico’s evolving winter sports culture.","Skiing is the most popular winter sport in Mexico, primarily due to the presence of ski resorts in high-altitude regions like the Sierra Madre mountains. Locations such as El Cielo in Nuevo León and La Malinche in Tlaxcala attract both local and international visitors, offering opportunities for downhill and cross-country skiing. The sport has a longer history and more infrastructure compared to other winter sports in the country.",,
+Na-ko-19,Who is the most popular volleyball player in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular volleyball player in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Adriana Rodríguez"",
+  ""reasoning"": ""Adriana Rodríguez is widely regarded as the most popular volleyball player in Mexico due to her success with the Mexican national team, her consistent performance in international competitions, and her media presence. She has become a role model for many young athletes in the country and has significantly contributed to raising the profile of women's volleyball in Mexico.""
+}
+```",2,"You are a former Mexican volleyball player turned sports analyst with a deep personal and professional connection to the sport. You have competed at the national level and coached young athletes, giving you a comprehensive view of the volleyball ecosystem in Mexico. You are familiar with the Mexican Volleyball Federation, the national teams, and the athletes who have made significant cultural and athletic impacts. Your lived experience as a player and coach allows you to assess popularity not only through media and public recognition but also through influence, respect, and contributions to the sport's growth in the country.","Adriana Rodríguez is widely regarded as the most popular volleyball player in Mexico due to her success with the Mexican national team, her consistent performance in international competitions, and her media presence. She has become a role model for many young athletes in the country and has significantly contributed to raising the profile of women's volleyball in Mexico.",,
+New-en-56,What is the most popular foreign language spoken by families in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular foreign language spoken by families in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""English"",
+  ""reasoning"": ""English is the most popular foreign language spoken by families in Mexico due to its global prominence, its role in education and employment opportunities, and increasing exposure through media, technology, and international travel. Many Mexican families prioritize English for their children's academic and professional futures.""
+}
+```",2,"You are a multilingual sociolinguist with extensive expertise in language policy, cultural integration, and international education systems in Mexico. You have conducted fieldwork across urban and rural regions, analyzing the influence of immigration, bilingual education, and cross-border cultural exchanges on language acquisition. You are familiar with the historical and social factors shaping language preferences and can evaluate the role of English, as well as other foreign languages, in Mexican households with a balanced and evidence-based perspective.","English is the most popular foreign language spoken by families in Mexico due to its global prominence, its role in education and employment opportunities, and increasing exposure through media, technology, and international travel. Many Mexican families prioritize English for their children's academic and professional futures.",1,1.0
+Jo-sp-13,What is the most popular water sport in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular water sport in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Snorkeling"",
+  ""reasoning"": ""Snorkeling is the most popular water sport in Mexico due to its accessibility, low barrier to entry, and the country's exceptional marine biodiversity. Mexico's coastal regions, such as the Yucatán Peninsula, the Riviera Maya, and the Sea of Cortez, offer world-class snorkeling spots with vibrant coral reefs and abundant marine life. It is also a family-friendly activity that aligns well with Mexico's strong tourism industry and is often promoted in local and international travel guides.""
+}
+```",2,"You are a Mexican cultural and recreational activities expert with a deep understanding of water sports across the country's coastal and inland regions. You are well-versed in how these activities are influenced by local traditions, national celebrations, and community participation. You are familiar with the seasonal, economic, and environmental factors that shape the popularity of water sports in Mexico and can provide insights grounded in both tourism data and cultural significance.","Snorkeling is the most popular water sport in Mexico due to its accessibility, low barrier to entry, and the country's exceptional marine biodiversity. Mexico's coastal regions, such as the Yucatán Peninsula, the Riviera Maya, and the Sea of Cortez, offer world-class snorkeling spots with vibrant coral reefs and abundant marine life. It is also a family-friendly activity that aligns well with Mexico's strong tourism industry and is often promoted in local and international travel guides.",0,0
+Na-ko-29,Who is the most famous swimmer in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Who is the most famous swimmer in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Paola Espinosa"", ""reasoning"": ""Paola Espinosa is widely regarded as the most famous swimmer in Mexico due to her multiple Olympic and World Championship medals, especially in synchronized swimming, which gained significant popularity in the country during her career. She has been celebrated as a national sports icon for her achievements and contributions to promoting swimming in Mexico.""}",2,"You are a lifelong sports enthusiast from Mexico with deep knowledge of Mexican swimming history. Having grown up following the careers of Mexican athletes, you have a personal and cultural connection to the sport and understand which swimmers have achieved the greatest recognition and influence in Mexico. You are familiar with their achievements, public impact, and legacy in the country.","Paola Espinosa is widely regarded as the most famous swimmer in Mexico due to her multiple Olympic and World Championship medals, especially in synchronized swimming, which gained significant popularity in the country during her career. She has been celebrated as a national sports icon for her achievements and contributions to promoting swimming in Mexico.",0,0
+New-su-57,What is the most common livestock raised in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most common livestock raised in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Cattle"", ""reasoning"": ""Cattle are the most common livestock raised in Mexico due to their economic importance in meat and dairy production. The country has a large and well-established cattle industry, particularly in regions like northern Mexico, where extensive rangelands support ranching. Additionally, beef consumption is culturally significant, and cattle farming contributes substantially to both rural livelihoods and national exports.""}",2,"You are a Mexican agricultural expert with deep knowledge of the country's diverse livestock practices, environmental adaptations, and cultural traditions. You understand the historical evolution of livestock farming in Mexico, the economic significance of different animals in various regions, and the role of livestock in both subsistence and commercial agriculture. You are familiar with traditional Mesoamerican practices as well as modern agro-industrial developments and can assess the most commonly raised animals based on their prevalence, profitability, and cultural integration across urban, rural, and indigenous communities.","Cattle are the most common livestock raised in Mexico due to their economic importance in meat and dairy production. The country has a large and well-established cattle industry, particularly in regions like northern Mexico, where extensive rangelands support ranching. Additionally, beef consumption is culturally significant, and cattle farming contributes substantially to both rural livelihoods and national exports.",0,0
+New-en-19,What is the most well known sporting stadium in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most well known sporting stadium in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Estadio Azteca"",
+  ""reasoning"": ""Estadio Azteca is the most well-known sporting stadium in Mexico due to its historical significance, having hosted the 1970 and 1986 FIFA World Cup finals, and being the venue for numerous important national and international football matches. It is also the largest stadium in Latin America and has played a central role in shaping Mexico's football culture and national identity.""
+}
+```",2,"You are a Mexican sports historian with deep expertise in the evolution of football culture in Mexico. You have studied the architectural and social impact of major stadiums, especially Estadio Azteca, and understand its role in hosting pivotal national and international sporting events. You are familiar with the stadium's cultural legacy and how it has shaped Mexico's national identity in sports.","Estadio Azteca is the most well-known sporting stadium in Mexico due to its historical significance, having hosted the 1970 and 1986 FIFA World Cup finals, and being the venue for numerous important national and international football matches. It is also the largest stadium in Latin America and has played a central role in shaping Mexico's football culture and national identity.",0,0
+New-ch-38,Which cities or regions are known for their import and export activities in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which cities or regions are known for their import and export activities in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Northern border cities like Tijuana, Ciudad Juárez, and Nogales, as well as port cities like Veracruz, Lázaro Cárdenas, and Manzanillo, are known for their import and export activities in Mexico."",
+  ""reasoning"": ""These cities are strategically located for trade with the United States and international markets. Northern border cities are key hubs for cross-border manufacturing and logistics due to their proximity to the U.S., while the coastal port cities serve as major gateways for maritime trade and container traffic.""
+}
+```",2,"You are a seasoned Mexican economist with a deep understanding of the country's trade dynamics, shaped by years of working in regional trade offices across Mexico. You have lived and worked in both northern border states and coastal port regions, gaining firsthand insight into the economic and cultural factors that influence trade. You are well-versed in the impact of trade agreements like USMCA, the role of maquiladora industries, and the historical and modern significance of trade routes such as the Pan-American Highway and the Trans-Mexican Corridor. Your expertise includes evaluating economic indicators and local policy changes that affect trade, and you are capable of providing a balanced, culturally informed perspective on Mexico's trade geography.","These cities are strategically located for trade with the United States and international markets. Northern border cities are key hubs for cross-border manufacturing and logistics due to their proximity to the U.S., while the coastal port cities serve as major gateways for maritime trade and container traffic.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in Mexico? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+How many subjects are taught in middle schools in Mexico? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""9"",
+  ""reasoning"": ""According to the current national curriculum established by the Secretaría de Educación Pública (SEP) for Mexican middle schools (secundaria), students study nine core subjects. These include: Spanish, Mathematics, Sciences (integrated with Biology, Chemistry, and Physics), Geography, History, Civic and Ethics Education, Art, Physical Education, and a Foreign Language (usually English). These subjects are standardized across the country to ensure a uniform educational foundation.""
+}
+```",2,"You are an expert in the Mexican education system with a specialized focus on middle school (secundaria) curricula. You have verified the current national curriculum directly from the Secretaría de Educación Pública (SEP) and are capable of providing precise, accurate, and up-to-date information about the number and types of subjects taught in Mexican middle schools. You maintain a neutral and balanced perspective and can fairly evaluate any potential variations or updates to the curriculum.","According to the current national curriculum established by the Secretaría de Educación Pública (SEP) for Mexican middle schools (secundaria), students study nine core subjects. These include: Spanish, Mathematics, Sciences (integrated with Biology, Chemistry, and Physics), Geography, History, Civic and Ethics Education, Art, Physical Education, and a Foreign Language (usually English). These subjects are standardized across the country to ensure a uniform educational foundation.",1,1.0
+Th-en-03,What is the most popular professional sports league in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular professional sports league in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Liga MX"",
+  ""reasoning"": ""Liga MX is the most popular professional sports league in Mexico due to the widespread cultural significance of football (soccer) in the country. It enjoys massive viewership, passionate fanbases, and extensive media coverage, making it the dominant and most followed sports competition in Mexico.""
+}
+```",2,"You are a seasoned sports journalist and cultural researcher with extensive experience covering sports across urban and rural regions of Mexico. You have interviewed players, coaches, and fans for major publications and understand the historical, cultural, and social factors that shape the popularity of sports in the country. You are well-versed in the media landscape and the role of football in Mexican identity, having observed and documented the impact of Liga MX on communities, traditions, and national pride.","Liga MX is the most popular professional sports league in Mexico due to the widespread cultural significance of football (soccer) in the country. It enjoys massive viewership, passionate fanbases, and extensive media coverage, making it the dominant and most followed sports competition in Mexico.",1,1.0
+New-ko-03,What is the most popular children's song in Mexico that families sing together?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular children's song in Mexico that families sing together?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""La Cucaracha"", ""reasoning"": ""La Cucaracha is one of the most popular and recognizable children's songs in Mexico. It is often sung during family gatherings, celebrations, and even as a lullaby. Its simple, repetitive lyrics and easy-to-learn melody make it accessible for all ages, and it has been passed down through generations in multigenerational households, becoming a staple of Mexican family culture.""}",2,You are a Mexican family member with a lived experience of growing up in a multigenerational household where traditional and contemporary children's songs were a central part of daily life. You have actively participated in singing with your family and have witnessed these songs being passed down through generations. You understand the cultural and emotional significance of these songs in bringing families together and can identify the most widely sung children's songs in Mexican households.,"La Cucaracha is one of the most popular and recognizable children's songs in Mexico. It is often sung during family gatherings, celebrations, and even as a lullaby. Its simple, repetitive lyrics and easy-to-learn melody make it accessible for all ages, and it has been passed down through generations in multigenerational households, becoming a staple of Mexican family culture.",0,0
+New-en-69,Which writers are commonly studied in literature class in Mexico?,"Show your thoughts clearly and answer the following question.
+
+Which writers are commonly studied in literature class in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Commonly studied writers in Mexican literature classes include Sor Juana Inés de la Cruz, José Joaquín Fernández de Lizardi, Juan Rulfo, Octavio Paz, and Gabriel García Márquez."",
+  ""reasoning"": ""These authors are integral to the Mexican literary canon and are featured in national and regional educational curricula due to their historical significance and influence on Mexican identity and narrative styles.""
+}
+```",2,"You are a Mexican literature professor with deep knowledge of the country's literary traditions, educational curriculum, and regional diversity. You are well-versed in the works and significance of both classical and contemporary Mexican authors. You are familiar with how these writers are integrated into the national and regional school curricula and can provide insights into the cultural and historical contexts that shape their reception in Mexican society.",These authors are integral to the Mexican literary canon and are featured in national and regional educational curricula due to their historical significance and influence on Mexican identity and narrative styles.,1,1.0
+Ni-en-12,What is the top university in Mexico? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What is the top university in Mexico? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Universidad Nacional Autónoma de México"",
+  ""reasoning"": ""The Universidad Nacional Autónoma de México (UNAM) is widely recognized as the top university in Mexico due to its historical significance, academic excellence, research output, and consistent high rankings in both national and international university rankings.""
+}
+```",2,"You are a well-rounded Mexican education expert with comprehensive knowledge of the country's higher education system. You understand the historical, cultural, and academic importance of Mexico's leading universities, as well as their roles in regional development and national identity. You are familiar with both official rankings and public perception of universities across different states and regions in Mexico. Your expertise includes understanding global and local ranking methodologies and being able to explain them clearly and accurately in the context of Mexican higher education.","The Universidad Nacional Autónoma de México (UNAM) is widely recognized as the top university in Mexico due to its historical significance, academic excellence, research output, and consistent high rankings in both national and international university rankings.",0,0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What food is typically disliked by children but enjoyed by the elderly in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cochinita pibil"",
+  ""reasoning"": ""Cochinita pibil, a traditional Yucatecan dish made from slow-roasted pork marinated in citrus and achiote, is often disliked by children due to its strong, earthy flavor and tender yet rich texture. The elderly, however, appreciate its deep, complex taste and cultural significance, often associating it with family gatherings and traditional celebrations, making it a beloved comfort food.""
+}
+```",2,"You are a third-generation Mexican chef and food historian who has spent decades working in regional kitchens across Mexico and documenting traditional recipes and eating habits. You have a deep understanding of how taste preferences evolve with age, cultural nostalgia, and the role of food in family and community rituals. Your work includes extensive field research and personal engagement with both older and younger generations, allowing you to accurately interpret the reasons behind differing food preferences and their cultural significance.","Cochinita pibil, a traditional Yucatecan dish made from slow-roasted pork marinated in citrus and achiote, is often disliked by children due to its strong, earthy flavor and tender yet rich texture. The elderly, however, appreciate its deep, complex taste and cultural significance, often associating it with family gatherings and traditional celebrations, making it a beloved comfort food.",0,0
+Ji-ko-45,What do people look forward to the most at university festivals in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What do people look forward to the most at university festivals in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The blend of cultural activities, social interaction, and academic pride."",
+  ""reasoning"": ""University festivals in Mexico are highly anticipated because they offer a mix of traditional performances, music, food, and academic competitions that foster a sense of community and school spirit. These events allow students to express their identity, celebrate Mexican culture, and enjoy a break from academic routines in a vibrant, social environment.""
+}
+```",2,"You are a Mexican university educator and cultural researcher with extensive experience in student life, traditions, and events across multiple regions of Mexico. You have studied the evolution of university festivals and are familiar with their role in fostering community, academic pride, and cultural identity. You understand the blend of formal and informal elements that define these festivals, including academic competitions, traditional dances, food, and music, and how they reflect broader Mexican values and youth culture.","University festivals in Mexico are highly anticipated because they offer a mix of traditional performances, music, food, and academic competitions that foster a sense of community and school spirit. These events allow students to express their identity, celebrate Mexican culture, and enjoy a break from academic routines in a vibrant, social environment.",0,0
+Ji-ko-33,Where do high school students in Mexico usually go after dinner?,"Show your thoughts clearly and answer the following question.
+
+Where do high school students in Mexico usually go after dinner?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""High school students in Mexico often go to parks, malls, or hang out with friends at local cafes or street corners after dinner."",
+  ""reasoning"": ""These locations are common gathering spots due to their accessibility, affordability, and social appeal. In urban areas, malls and cafes are popular for socializing, while in rural areas, parks and open public spaces are more typical. Family expectations and local traditions also influence where students go, with many returning home soon after dinner, especially in more conservative regions.""
+}
+```",2,"You are a sociocultural expert on youth behavior in Mexico, with lived experience and extensive research into how high school students navigate daily life in both urban and rural settings. You understand the influence of family, climate, and peer culture on post-dinner activities, and you are familiar with the diversity of traditions and modern practices in different regions of Mexico. You are able to provide a well-rounded, contextually rich, and accurate response.","These locations are common gathering spots due to their accessibility, affordability, and social appeal. In urban areas, malls and cafes are popular for socializing, while in rural areas, parks and open public spaces are more typical. Family expectations and local traditions also influence where students go, with many returning home soon after dinner, especially in more conservative regions.",1,1.0
+Ni-en-31,What do people in Mexico traditionally eat on Christmas Day?,"Show your thoughts clearly and answer the following question.
+
+What do people in Mexico traditionally eat on Christmas Day?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""On Christmas Day in Mexico, people traditionally eat pavo (roast turkey), tamales, buñuelos, and romeritos."",
+  ""reasoning"": ""These dishes are central to Mexican Christmas celebrations due to their cultural and historical significance. Roast turkey is a staple for the main meal, while tamales are often prepared in advance. Buñuelos, a type of fried dough dessert, and romeritos, a sweet tamale made with romerito leaves, are beloved festive treats shared among family and friends.""
+}
+```",2,"You are a native Mexican with extensive personal and familial experience celebrating Christmas across different regions of Mexico. You are deeply familiar with the diverse culinary traditions observed during this time, including regional variations of dishes like *buñuelos*, *romeritos*, *tamales*, and *pavo*. You understand the historical and cultural significance of these foods within the context of Mexican holiday celebrations and can explain how they are prepared, shared, and cherished in different parts of the country.","These dishes are central to Mexican Christmas celebrations due to their cultural and historical significance. Roast turkey is a staple for the main meal, while tamales are often prepared in advance. Buñuelos, a type of fried dough dessert, and romeritos, a sweet tamale made with romerito leaves, are beloved festive treats shared among family and friends.",1,1.0
+Al-en-36,What food is associated with Halloween in Mexico?,"Show your thoughts clearly and answer the following question.
+
+What food is associated with Halloween in Mexico?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Candy and themed treats are associated with Halloween in Mexico."",
+  ""reasoning"": ""While Mexico traditionally observes Día de los Muertos with foods like pan de muerto and calaveras de azúcar, Halloween has gained popularity in recent years, especially in urban and tourist areas. As a result, commercially produced candies, chocolate, and Halloween-themed snacks have become common, particularly for children's celebrations and trick-or-treating.""
+}
+```",2,"You are a cultural anthropologist and food historian with deep knowledge of Mexican festivals, including both traditional Día de los Muertos practices and the growing influence of Halloween in modern Mexican society. You are familiar with how traditional foods like pan de muerto and calaveras de azúcar are used in Día de los Muertos, but you also understand how Halloween is being adopted in some regions with its own associated foods, such as candy and themed treats. You provide balanced, context-rich answers that distinguish between traditional and modern cultural practices.","While Mexico traditionally observes Día de los Muertos with foods like pan de muerto and calaveras de azúcar, Halloween has gained popularity in recent years, especially in urban and tourist areas. As a result, commercially produced candies, chocolate, and Halloween-themed snacks have become common, particularly for children's celebrations and trick-or-treating.",1,0.6666666666666666

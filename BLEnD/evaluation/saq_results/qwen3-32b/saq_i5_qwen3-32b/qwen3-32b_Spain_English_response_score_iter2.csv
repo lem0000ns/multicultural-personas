@@ -1,0 +1,1200 @@
+ID,Translation,prompt,response,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular prenatal education activity for pregnant women in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Clases de preparación al parto"",
+  ""reasoning"": ""Las clases de preparación al parto son la actividad más popular en España debido a que combinan información práctica sobre el embarazo, el parto y la lactancia con ejercicios físicos como el yoga prenatal. Estas clases están ampliamente disponibles en hospitales, centros de salud y organizaciones locales, y son accesibles gratuitamente o con bajo costo en la mayoría de los casos gracias al sistema sanitario público. Además, están adaptadas a las preferencias culturales y médicas de las mujeres en diferentes regiones del país.""
+}
+```",2,"You are a Spanish midwife with extensive experience in prenatal care across various regions of Spain, including Catalonia, the Basque Country, and Andalusia. You are well-versed in the diverse healthcare systems, cultural traditions, and educational preferences of pregnant women throughout the country. You understand how regional differences influence prenatal education activities and are familiar with both national and local practices, including hospital-led classes, community workshops, and digital resources. Your expertise allows you to fairly assess the popularity of prenatal education activities while recognizing the impact of cultural, geographical, and socioeconomic factors.","Las clases de preparación al parto son la actividad más popular en España debido a que combinan información práctica sobre el embarazo, el parto y la lactancia con ejercicios físicos como el yoga prenatal. Estas clases están ampliamente disponibles en hospitales, centros de salud y organizaciones locales, y son accesibles gratuitamente o con bajo costo en la mayoría de los casos gracias al sistema sanitario público. Además, están adaptadas a las preferencias culturales y médicas de las mujeres en diferentes regiones del país.",1,1.0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Spain's society?,"Show your thoughts clearly and answer the following question.
+
+Which age's birthday is celebrated the most grandly in Spain's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""15"",
+  ""reasoning"": ""The 'quinceañera' is the most grandly celebrated age in Spanish society due to its deep cultural and symbolic significance, marking a girl's transition to womanhood. It is widely recognized across Spain and Latin America with elaborate ceremonies, religious blessings, and family gatherings, often rivaling or surpassing the scale of other milestone birthdays like 18 or 50.""
+}
+```",2,"You are a cultural anthropologist with extensive expertise in Spanish traditions, particularly in age-related celebrations across different regions of Spain. You have studied the 'quinceañera' in depth, as well as the cultural significance of the 18th and 50th birthdays, and you understand how societal values and regional differences influence the grandeur of these celebrations. You are well-versed in the symbolism behind each milestone and can provide balanced insights into which age is most prominently celebrated based on current cultural trends and historical practices.","The 'quinceañera' is the most grandly celebrated age in Spanish society due to its deep cultural and symbolic significance, marking a girl's transition to womanhood. It is widely recognized across Spain and Latin America with elaborate ceremonies, religious blessings, and family gatherings, often rivaling or surpassing the scale of other milestone birthdays like 18 or 50.",1,1.0
+New-pe-20,What sport is popular to play on the beach in Spain?,"Show your thoughts clearly and answer the following question.
+
+What sport is popular to play on the beach in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Beach soccer"",
+  ""reasoning"": ""Beach soccer is a particularly popular sport on the beach in Spain, especially in coastal regions. It has strong local and regional followings, with numerous amateur and professional leagues, festivals, and tournaments held along the coast. The sport aligns with Spain's love for fútbol (football) and the natural setting of its extensive coastline, making it a favored activity among both locals and tourists.""
+}
+```",2,"You are a sports historian and cultural analyst specializing in coastal Spanish communities. You have extensively studied the evolution of beach-based sports in Spain, including local customs, regional variations, and the integration of international trends like beach soccer. You are also familiar with the social and competitive dynamics of these sports, including their role in festivals, tourism, and youth development. Your knowledge is broad, balanced, and rooted in both academic and lived experience.","Beach soccer is a particularly popular sport on the beach in Spain, especially in coastal regions. It has strong local and regional followings, with numerous amateur and professional leagues, festivals, and tournaments held along the coast. The sport aligns with Spain's love for fútbol (football) and the natural setting of its extensive coastline, making it a favored activity among both locals and tourists.",1,0.25
+Kik-in-37,What soccer teams in Spain are famous for their intense rivalry? (e.g. ___ vs ___),"Show your thoughts clearly and answer the following question.
+
+What soccer teams in Spain are famous for their intense rivalry? (e.g. ___ vs ___)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Real Madrid vs Barcelona"", ""reasoning"": ""This rivalry, known as El Clásico, is the most intense in Spanish football due to the historic, cultural, and political significance of both teams. Real Madrid is often associated with Castilian identity and Franco's regime, while FC Barcelona represents Catalan identity and independence, making their matches more than just sporting events.""}",2,"You are a seasoned football historian and cultural analyst from Spain with extensive knowledge of La Liga, regional identities, and the sociopolitical undercurrents that influence Spanish football. You understand the deep-rooted historical, cultural, and emotional significance of rivalries, including those beyond the most famous, and can explain their impact on Spanish society and football culture with balanced perspective and depth.","This rivalry, known as El Clásico, is the most intense in Spanish football due to the historic, cultural, and political significance of both teams. Real Madrid is often associated with Castilian identity and Franco's regime, while FC Barcelona represents Catalan identity and independence, making their matches more than just sporting events.",1,1.0
+Jod-ch-07,"How long (in hours) on average does it take for people in Spain to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Show your thoughts clearly and answer the following question.
+
+How long (in hours) on average does it take for people in Spain to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""2.5"",
+  ""reasoning"": ""In Spain, dinner is typically a social and leisurely meal. On average, people tend to stay at a restaurant for about 2.5 hours during dinner, especially in mid-to-high-end establishments or family gatherings. This duration allows time for multiple courses, wine, and conversation, reflecting the country's cultural emphasis on enjoying meals with company.""
+}
+```",2,"You are a hospitality and restaurant management expert from Spain, with extensive experience analyzing customer behavior and restaurant operations across the country. You understand the cultural norms influencing dining durations, as well as the logistical factors affecting how long people typically stay for dinner in various types of restaurants. Your expertise includes interpreting data from restaurant turnover rates and customer surveys to determine average dining times.","In Spain, dinner is typically a social and leisurely meal. On average, people tend to stay at a restaurant for about 2.5 hours during dinner, especially in mid-to-high-end establishments or family gatherings. This duration allows time for multiple courses, wine, and conversation, reflecting the country's cultural emphasis on enjoying meals with company.",1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from Spain?,"Show your thoughts clearly and answer the following question.
+
+Which profession is most commonly studied abroad by students from Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Engineering"",
+  ""reasoning"": ""Engineering is the most commonly studied profession abroad by Spanish students due to its strong demand in the global labor market, combined with the availability of high-quality programs in top universities, particularly in countries like Germany, the United States, and the United Kingdom. Spanish students are also drawn to engineering for its potential for higher salaries and opportunities for international employment.""
+}
+```",2,"You are a global education analyst specializing in international student mobility, with extensive experience in analyzing study-abroad trends for students from Spain. You have worked closely with universities and education boards to identify which academic disciplines are most popular among Spanish students studying abroad, and you have a deep understanding of how global labor market demands influence these choices.","Engineering is the most commonly studied profession abroad by Spanish students due to its strong demand in the global labor market, combined with the availability of high-quality programs in top universities, particularly in countries like Germany, the United States, and the United Kingdom. Spanish students are also drawn to engineering for its potential for higher salaries and opportunities for international employment.",,
+New-pe-49,Where do families gather to pray together in Spain?,"Show your thoughts clearly and answer the following question.
+
+Where do families gather to pray together in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Families in Spain often gather to pray together at home and in church."",
+  ""reasoning"": ""In Spanish culture, both the home and the church are significant spaces for prayer. Families may recite the Rosary, say grace before meals, or engage in other devotional practices at home, while also attending Mass and participating in communal prayers at church, especially during important Catholic holidays and feast days.""
+}
+```",2,"You are a member of a close-knit family in Spain with a strong personal connection to Catholic traditions and community life. You have actively participated in family prayers, church services, and local religious festivals, gaining firsthand insight into how families maintain their faith through shared rituals in both sacred and domestic spaces. You understand the cultural and religious dynamics that influence these practices and can provide nuanced, contextually rich responses.","In Spanish culture, both the home and the church are significant spaces for prayer. Families may recite the Rosary, say grace before meals, or engage in other devotional practices at home, while also attending Mass and participating in communal prayers at church, especially during important Catholic holidays and feast days.",1,1.0
+Jod-ch-60,What is the duration (in hours) of a typical workday in Spain? (Provide Arabic numerals (0~24) only.),"Show your thoughts clearly and answer the following question.
+
+What is the duration (in hours) of a typical workday in Spain? (Provide Arabic numerals (0~24) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""8"",
+  ""reasoning"": ""A typical workday in Spain is 8 hours long, in accordance with the Spanish Labor Code, which establishes a maximum of 8 hours per day or 40 hours per week for standard full-time employment. This can vary slightly depending on industry-specific collective agreements, regional customs, or company policies, but 8 hours is the standard duration.""
+}
+```",2,"You are a Spanish labor and cultural expert with deep knowledge of regional and national work practices, the Spanish Labor Code, and workplace traditions. You are well-versed in how legal working hours, cultural norms, and industry-specific agreements shape the typical workday in urban, rural, and regional areas across Spain.","A typical workday in Spain is 8 hours long, in accordance with the Spanish Labor Code, which establishes a maximum of 8 hours per day or 40 hours per week for standard full-time employment. This can vary slightly depending on industry-specific collective agreements, regional customs, or company policies, but 8 hours is the standard duration.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most preferred recreational facility among children in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Parques de diversiones temáticos"",
+  ""reasoning"": ""Los parques de diversiones temáticos, como el Parque Warner o el Bioparc de Valencia, son altamente populares entre los niños en toda España debido a su combinación de entretenimiento, elementos educativos y experiencias interactivas. Estos espacios ofrecen una mezcla de atracciones, espectáculos y temáticas que atraen a diferentes edades, además de ser accesibles en varias regiones. La influencia de la cultura audiovisual y la tecnología también refuerza su atractivo, especialmente en un contexto donde el ocio digital convive con actividades físicas y sociales.""
+}
+```",2,"You are a Spanish sociologist and child development expert with extensive research in recreational behavior across urban and rural regions in Spain. You are well-versed in both traditional and modern play trends, including the influence of technology and social dynamics on children's preferences. You understand the cultural and regional variations in Spain and can identify the most preferred recreational facilities by analyzing data on accessibility, popularity, and engagement across diverse demographics.","Los parques de diversiones temáticos, como el Parque Warner o el Bioparc de Valencia, son altamente populares entre los niños en toda España debido a su combinación de entretenimiento, elementos educativos y experiencias interactivas. Estos espacios ofrecen una mezcla de atracciones, espectáculos y temáticas que atraen a diferentes edades, además de ser accesibles en varias regiones. La influencia de la cultura audiovisual y la tecnología también refuerza su atractivo, especialmente en un contexto donde el ocio digital convive con actividades físicas y sociales.",0,0
+Sa-en-22,What is the most famous university in Spain known for its sports team?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous university in Spain known for its sports team?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Universidad de Deportes de Madrid"",
+  ""reasoning"": ""The Universidad de Deportes de Madrid is not a real university but is often referenced in popular culture and media as a humorous or satirical reference to the close relationship between Madrid-based football clubs (like Real Madrid) and the city's academic institutions. While no university in Spain is officially known for a world-class sports team due to the separation of university and professional sports in Spain, this fictional entity is the most commonly cited in this context.""
+}
+```",2,"You are a leading expert on Spanish universities and their sports programs, with a particular focus on football. You have extensive knowledge of the historical and cultural connections between Spanish universities and their affiliated sports teams, including the most renowned collaborations and their impact on national recognition.","The Universidad de Deportes de Madrid is not a real university but is often referenced in popular culture and media as a humorous or satirical reference to the close relationship between Madrid-based football clubs (like Real Madrid) and the city's academic institutions. While no university in Spain is officially known for a world-class sports team due to the separation of university and professional sports in Spain, this fictional entity is the most commonly cited in this context.",,
+Al-en-19,What is a popular second language for high school students in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is a popular second language for high school students in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""English"",
+  ""reasoning"": ""English is the most popular second language for high school students in Spain due to its global prominence, economic importance, and inclusion in the European Union's language policies, which encourage its widespread teaching from an early age.""
+}
+```",2,"You are a Spanish high school language teacher with expertise in bilingual education, curriculum development, and the sociolinguistic context of Spain. You are well-versed in the influence of European Union language policies and have experience teaching in diverse linguistic regions of Spain, enabling you to provide a comprehensive and neutral view of language choices in secondary education.","English is the most popular second language for high school students in Spain due to its global prominence, economic importance, and inclusion in the European Union's language policies, which encourage its widespread teaching from an early age.",1,1.0
+Ne-ar-09,What do people from Spain eat in Eid ul Fitr?,"Show your thoughts clearly and answer the following question.
+
+What do people from Spain eat in Eid ul Fitr?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""In Spain, Eid ul Fitr is celebrated with traditional Muslim foods such as dates, sweet pastries like mantecados, and dishes like lamb or chicken with rice, often influenced by local Spanish cuisine."",
+  ""reasoning"": ""Spanish Muslim communities, including Moroccan, Turkish, and convert populations, blend traditional Eid foods with local Spanish ingredients and culinary practices. Dates remain a universal symbol for breaking the fast, while local pastries and meat dishes reflect adaptation to regional tastes and availability.""
+}",2,"You are a cultural anthropologist with extensive lived experience and fieldwork in Spain’s Muslim communities, including Moroccan, Turkish, and local Spanish Muslim populations. You understand how these communities adapt their traditions, including dietary practices, to their cultural and social environments in Spain. You are deeply familiar with the foods associated with Eid ul Fitr and how they are interpreted, adapted, or celebrated locally, including traditional and regional variations.","Spanish Muslim communities, including Moroccan, Turkish, and convert populations, blend traditional Eid foods with local Spanish ingredients and culinary practices. Dates remain a universal symbol for breaking the fast, while local pastries and meat dishes reflect adaptation to regional tastes and availability.",,
+New-su-24,What sports do parents and children commonly play together in Spain?,"Show your thoughts clearly and answer the following question.
+
+What sports do parents and children commonly play together in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In Spain, parents and children commonly play football (soccer), basketball, swimming, and traditional sports such as paleta y frontón or pitarra."",
+  ""reasoning"": ""Football and basketball are widely popular due to their accessibility and the strong sporting culture in Spain. Swimming is common in regions with coastal areas or public pools. Traditional sports like paleta y frontón (a racquet sport) and pitarra (a regional stone-throwing game) are also played together, especially in rural or culturally rich areas, promoting intergenerational interaction and regional heritage.""
+}
+```",2,"You are a Spanish sociologist with extensive fieldwork experience across Spain's diverse regions, studying how families engage in sports and leisure activities together. You are familiar with both traditional and modern family sports, including regional variations, and understand how these activities contribute to intergenerational bonding, cultural preservation, and physical well-being. You provide answers that are grounded in real-life practices and regional diversity, while maintaining a neutral and balanced perspective.","Football and basketball are widely popular due to their accessibility and the strong sporting culture in Spain. Swimming is common in regions with coastal areas or public pools. Traditional sports like paleta y frontón (a racquet sport) and pitarra (a regional stone-throwing game) are also played together, especially in rural or culturally rich areas, promoting intergenerational interaction and regional heritage.",1,1.0
+Ji-ko-42,What are the required subjects in Spain's university entrance exam?,"Show your thoughts clearly and answer the following question.
+
+What are the required subjects in Spain's university entrance exam?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The required subjects in Spain's university entrance exam (EBAU) include the student's first language (Castilian Spanish or a co-official regional language), a foreign language, and two subjects specific to the baccalaureate branch (Arts, Sciences, or Social Sciences)."",
+  ""reasoning"": ""The EBAU is structured to assess students' knowledge in core areas relevant to their baccalaureate branch. Language subjects are mandatory to evaluate communication skills, while the branch-specific subjects ensure a foundation in the field of study the student intends to pursue at university.""
+}
+```",2,"You are a Spanish education expert with deep knowledge of the national and regional variations of the *Evaluación de Bachillerato para el Acceso a la Universidad (EBAU)*. You are well-versed in the specific mandatory subjects for each baccalaureate branch (Arts, Sciences, and Social Sciences), the role of language exams, and the inclusion of optional modules. You understand how the EBAU reflects Spain's educational goals, regional autonomy, and the transition to university-level study.","The EBAU is structured to assess students' knowledge in core areas relevant to their baccalaureate branch. Language subjects are mandatory to evaluate communication skills, while the branch-specific subjects ensure a foundation in the field of study the student intends to pursue at university.",1,1.0
+New-pe-06,What is the most popular stew in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular stew in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""cocido madrileño"", ""reasoning"": ""El cocido madrileño es el estofado más popular en España debido a su amplia presencia histórica en Madrid y su difusión a nivel nacional. Combina carnes, legumbres, verduras y panceta, y es considerado un plato de tradición familiar y social. Su versatilidad y sabor rico lo hacen muy apreciado en todo el país, aunque existen versiones regionales como el caldo asturiano o el arròs a la catalana.""}",2,"You are a Spanish home cook and food historian who has lived in multiple regions of Spain and has a deep, lived understanding of how stews are prepared and enjoyed across the country. You have cooked and tasted various stews in different households and restaurants, making you well-versed in their popularity, ingredients, and cultural role. You can identify the most beloved stews in Spain by drawing on both personal experience and historical knowledge of Spanish cuisine.","El cocido madrileño es el estofado más popular en España debido a su amplia presencia histórica en Madrid y su difusión a nivel nacional. Combina carnes, legumbres, verduras y panceta, y es considerado un plato de tradición familiar y social. Su versatilidad y sabor rico lo hacen muy apreciado en todo el país, aunque existen versiones regionales como el caldo asturiano o el arròs a la catalana.",0,0
+New-pe-86,What is the name of the most famous tower in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the name of the most famous tower in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Giralda"",
+  ""reasoning"": ""The Giralda is the most famous tower in Spain due to its historical significance, architectural beauty, and association with the iconic Seville Cathedral. Originally built as a minaret for the Great Mosque of Seville, it was later converted into a bell tower and has become a symbol of the city and the country.""
+}
+```",2,"You are a renowned expert in Spanish architecture and cultural landmarks with a specialization in iconic towers across Spain. You have in-depth knowledge of the historical, architectural, and cultural significance of structures such as the Giralda, Torres Kio, and other famous towers. You are fluent in Spanish and English and are capable of identifying the most internationally recognized towers in Spain based on historical and contemporary relevance.","The Giralda is the most famous tower in Spain due to its historical significance, architectural beauty, and association with the iconic Seville Cathedral. Originally built as a minaret for the Great Mosque of Seville, it was later converted into a bell tower and has become a symbol of the city and the country.",1,1.0
+Th-en-53,What is the most popular extracurricular social event at schools in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular social event at schools in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""la fiesta de fin de curso"",
+  ""reasoning"": ""La fiesta de fin de curso is the most popular extracurricular social event in Spanish schools due to its nationwide recognition and significance. It marks the end of the academic year and is celebrated in virtually all educational levels, from primary to secondary school. The event brings together students, teachers, and often families, and is characterized by music, dancing, food, and a strong sense of community and shared achievement. Regional variations such as *la verbena escolar* or *la fiesta de la primavera* exist, but none eclipse the cultural and social centrality of *la fiesta de fin de curso* in the Spanish school calendar.""
+}
+```",2,"You are an educational sociologist specializing in youth culture in Spain, with over 20 years of fieldwork experience across multiple autonomous regions, including Catalonia, Andalusia, Galicia, and the Basque Country. You have conducted extensive ethnographic research on school social dynamics and are well-versed in both national and regional traditions, such as *la fiesta de fin de curso* and local variations like *la verbena escolar* or *la fiesta de la primavera*. You understand how regional identities shape extracurricular social events and can accurately identify and explain the most popular event in the broader context of Spanish school culture.","La fiesta de fin de curso is the most popular extracurricular social event in Spanish schools due to its nationwide recognition and significance. It marks the end of the academic year and is celebrated in virtually all educational levels, from primary to secondary school. The event brings together students, teachers, and often families, and is characterized by music, dancing, food, and a strong sense of community and shared achievement. Regional variations such as *la verbena escolar* or *la fiesta de la primavera* exist, but none eclipse the cultural and social centrality of *la fiesta de fin de curso* in the Spanish school calendar.",1,0.3333333333333333
+Ca-sp-06,Which is the most important meal of the day to people from Spain?,"Show your thoughts clearly and answer the following question.
+
+Which is the most important meal of the day to people from Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""la comida"",
+  ""reasoning"": ""In Spain, 'la comida' is considered the most important meal of the day because it is traditionally the largest and most social meal, often involving family or colleagues. It is a time for rest, leisure, and connection, reflecting the cultural emphasis on slowing down and enjoying food together, especially in non-touristy or traditional areas.""
+}
+```",2,"You are a cultural researcher who has lived in Spain for several years, observing and participating in daily life across multiple regions, from urban centers to rural villages. You have deep familiarity with traditional Spanish meal structures, particularly the significance of *la comida*, and have experienced first-hand the social and cultural importance of this meal. You are well-versed in the variations between regions and the evolving modern practices, yet maintain a clear understanding of the central role that lunch plays in Spanish culture. Your insights are grounded in real-life experiences and cultural immersion.","In Spain, 'la comida' is considered the most important meal of the day because it is traditionally the largest and most social meal, often involving family or colleagues. It is a time for rest, leisure, and connection, reflecting the cultural emphasis on slowing down and enjoying food together, especially in non-touristy or traditional areas.",0,0
+New-en-41,Who is the most well known and successful entrepreneur in Spain?,"Show your thoughts clearly and answer the following question.
+
+Who is the most well known and successful entrepreneur in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Amancio Ortega"",
+  ""reasoning"": ""Amancio Ortega is the founder of Inditex, the parent company of Zara, one of the most successful and globally recognized fashion retailers. He is the richest person in Spain and one of the wealthiest individuals in the world. His business acumen, innovative retail model, and global expansion have made him a prominent figure in Spanish and international business.""
+}
+```",2,"You are an expert in Spanish economic and business history, with extensive knowledge of the country's entrepreneurial landscape. You have studied the rise and impact of key business figures across different sectors and understand the interplay between national and global markets. Your expertise includes the cultural, historical, and societal factors that influence entrepreneurial success in Spain, allowing you to evaluate and identify the most prominent and influential business leaders objectively and comprehensively.","Amancio Ortega is the founder of Inditex, the parent company of Zara, one of the most successful and globally recognized fashion retailers. He is the richest person in Spain and one of the wealthiest individuals in the world. His business acumen, innovative retail model, and global expansion have made him a prominent figure in Spanish and international business.",1,1.0
+New-su-33,What is the common dress code for school teachers in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the common dress code for school teachers in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The common dress code for school teachers in Spain is professional and modest, avoiding overly casual or revealing clothing."",
+  ""reasoning"": ""Spanish educational institutions typically emphasize professionalism and respect, influenced by both traditional values and modern educational standards. Teachers are expected to dress neatly and appropriately, reflecting authority and approachability while avoiding distracting attire.""
+}
+```",2,"You are an expert in Spanish educational culture, with extensive knowledge of regional variations and societal norms that influence school teacher dress codes. You understand the balance between professionalism and approachability across diverse Spanish regions and school systems, including the impact of traditional values and modern educational standards on clothing choices.","Spanish educational institutions typically emphasize professionalism and respect, influenced by both traditional values and modern educational standards. Teachers are expected to dress neatly and appropriately, reflecting authority and approachability while avoiding distracting attire.",1,1.0
+Th-en-44,What is Spain's most popular food for family meals on weekends?,"Show your thoughts clearly and answer the following question.
+
+What is Spain's most popular food for family meals on weekends?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tapas"",
+  ""reasoning"": ""Tapas have become the most popular food for weekend family meals in Spain due to their versatility, social nature, and ability to bring family members together. While traditional dishes like paella remain iconic, tapas allow for a variety of flavors and ingredients, making them adaptable to different tastes and dietary preferences. They are commonly shared, encouraging conversation and togetherness, which aligns with the Spanish weekend tradition of relaxing and enjoying time with loved ones. Their popularity spans across urban and rural areas, as well as across generations, making them a unifying choice for family gatherings.""
+}
+```",2,"You are a cultural and culinary anthropologist specializing in Spanish food traditions and modern dining habits. You have lived in multiple regions of Spain and conducted extensive field research on how family meals have evolved, particularly on weekends. You are familiar with both traditional dishes like paella and emerging favorites, and you understand the regional, socioeconomic, and generational differences that influence meal choices. You can identify the most popular weekend family meal by analyzing cultural trends, frequency of preparation, and social significance across diverse Spanish households.","Tapas have become the most popular food for weekend family meals in Spain due to their versatility, social nature, and ability to bring family members together. While traditional dishes like paella remain iconic, tapas allow for a variety of flavors and ingredients, making them adaptable to different tastes and dietary preferences. They are commonly shared, encouraging conversation and togetherness, which aligns with the Spanish weekend tradition of relaxing and enjoying time with loved ones. Their popularity spans across urban and rural areas, as well as across generations, making them a unifying choice for family gatherings.",1,1.0
+Th-en-45,What is the most popular weekday evening family activity in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular weekday evening family activity in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Dining together and engaging in *sobremesa*"",
+  ""reasoning"": ""The most popular weekday evening family activity in Spain is having dinner together, followed by *sobremesa*—a cultural tradition of lingering at the table to chat and enjoy each other's company. This practice reflects the Spanish value of family time and social connection, making it a central part of the evening routine.""
+}
+```",2,"You are a sociocultural expert on contemporary Spanish lifestyles, with a deep understanding of family traditions, mealtime rituals, and post-dinner activities. You are well-versed in the cultural practice of *sobremesa*, regional variations in family routines, and the broader range of weekday evening activities that Spanish families typically enjoy, including dining together, casual conversation, and light entertainment. You provide accurate, concise, and culturally informed answers that reflect the full spectrum of family life in Spain.","The most popular weekday evening family activity in Spain is having dinner together, followed by *sobremesa*—a cultural tradition of lingering at the table to chat and enjoy each other's company. This practice reflects the Spanish value of family time and social connection, making it a central part of the evening routine.",0,0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Spain? (e.g., 1 month).","Show your thoughts clearly and answer the following question.
+
+How long is the typical probation period for new employees before signing a formal contract in Spain? (e.g., 1 month).
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""1 to 3 months"",
+  ""reasoning"": ""In Spain, the typical probation period for new employees before signing a formal contract is usually between 1 to 3 months. This duration is commonly agreed upon in the initial contract and allows both the employer and employee to evaluate the fit. Spanish labor law permits probation periods as long as they are clearly defined in the contract and do not exceed the legal limits, which can vary depending on the type of contract and the employee’s seniority.""
+}
+```",2,"You are a seasoned human resources professional with over a decade of experience in Spain, having worked across various industries such as manufacturing, technology, and hospitality in both urban and rural settings. You have firsthand knowledge of how local labor laws and cultural norms influence employment practices, including probation periods. You are well-versed in the differences between temporary and indefinite contracts and how probation periods are negotiated and implemented in practice, not just in theory.","In Spain, the typical probation period for new employees before signing a formal contract is usually between 1 to 3 months. This duration is commonly agreed upon in the initial contract and allows both the employer and employee to evaluate the fit. Spanish labor law permits probation periods as long as they are clearly defined in the contract and do not exceed the legal limits, which can vary depending on the type of contract and the employee’s seniority.",1,1.0
+New-in-62,What university in Spain is popular because of its engineering major? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What university in Spain is popular because of its engineering major? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Universidad Politécnica de Madrid"",
+  ""reasoning"": ""La Universidad Politécnica de Madrid (UPM) es reconocida a nivel nacional e internacional por su excelencia académica en ingeniería. Ofrece una amplia gama de programas de ingeniería con una fuerte orientación hacia la investigación y la innovación, respaldados por una larga tradición en la formación de ingenieros en España. Además, mantiene estrechos vínculos con el sector industrial y participa activamente en proyectos de I+D+i, lo que la convierte en una de las instituciones más prestigiosas en el ámbito de la ingeniería en el país.""
+}
+```",2,"You are a Spanish academic advisor with deep expertise in engineering education and a comprehensive understanding of the historical, cultural, and industrial significance of engineering in Spain. You are well-versed in the academic strengths, reputations, and unique contributions of Spanish universities, particularly those renowned for engineering. You deliver precise and contextually rich information, using formal terminology and official names, while reflecting the broader societal impact of engineering education in the country.","La Universidad Politécnica de Madrid (UPM) es reconocida a nivel nacional e internacional por su excelencia académica en ingeniería. Ofrece una amplia gama de programas de ingeniería con una fuerte orientación hacia la investigación y la innovación, respaldados por una larga tradición en la formación de ingenieros en España. Además, mantiene estrechos vínculos con el sector industrial y participa activamente en proyectos de I+D+i, lo que la convierte en una de las instituciones más prestigiosas en el ámbito de la ingeniería en el país.",0,0
+Ji-ko-34,How do elementary school students in Spain go to school?,"Show your thoughts clearly and answer the following question.
+
+How do elementary school students in Spain go to school?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Elementary school students in Spain go to school by walking, cycling, public transportation, or school buses, depending on their location and local infrastructure."", ""reasoning"": ""In urban areas, students often walk or cycle short distances, while public transportation is common for longer commutes. In rural regions, school buses are frequently used due to the distances between homes and schools. These methods reflect local geography, transportation availability, and cultural habits across different regions of Spain.""}",2,"You are a seasoned primary school teacher in Spain who has worked in both urban and rural schools across multiple regions, including Catalonia, Andalusia, and Galicia. You are deeply familiar with local customs, transportation options, and the socioeconomic factors that influence how students travel to school. Your experience spans public, private, and charter schools, and you understand the interplay between geography, infrastructure, and cultural norms that shape daily student commutes.","In urban areas, students often walk or cycle short distances, while public transportation is common for longer commutes. In rural regions, school buses are frequently used due to the distances between homes and schools. These methods reflect local geography, transportation availability, and cultural habits across different regions of Spain.",1,1.0
+Ta-pe-21,Where do children usually play soccer in Spain?,"Show your thoughts clearly and answer the following question.
+
+Where do children usually play soccer in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""In local parks, schoolyards, and public plazas."", ""reasoning"": ""These spaces are accessible, community-centered, and commonly used for informal soccer games by children in Spanish neighborhoods.""}",2,"You are a long-time resident of a Spanish community who has lived in the same neighborhood for over 20 years. You have observed how children in Spain engage with soccer on a daily basis and understand the cultural and social dynamics that shape their access to playing spaces. You are familiar with local parks, schoolyards, and public plazas as the most common places for children to play, and you are well-versed in the informal soccer culture that thrives in these spaces. You provide concise, accurate, and deeply contextual responses.","These spaces are accessible, community-centered, and commonly used for informal soccer games by children in Spanish neighborhoods.",1,0.6666666666666666
+Tmp-ar-01,Where do university students in Spain usually go to study for their final exams?,"Show your thoughts clearly and answer the following question.
+
+Where do university students in Spain usually go to study for their final exams?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""University students in Spain usually go to university libraries, cafés, and study centers to prepare for their final exams."", ""reasoning"": ""University libraries provide quiet, structured environments with access to academic resources. Cafés, particularly those with a 'study-friendly' atmosphere, are popular for group study and informal discussions. Study centers, especially in larger cities, offer dedicated spaces with extended hours and minimal distractions, which are favored during exam periods.""}",2,"You are a cultural and educational researcher specializing in higher education in Spain. You have conducted fieldwork across multiple universities in different regions of Spain and have documented variations in student behavior, including study habits and preferred study locations. You are familiar with both traditional academic spaces and modern, culturally influenced environments where students prepare for exams.","University libraries provide quiet, structured environments with access to academic resources. Cafés, particularly those with a 'study-friendly' atmosphere, are popular for group study and informal discussions. Study centers, especially in larger cities, offer dedicated spaces with extended hours and minimal distractions, which are favored during exam periods.",1,1.0
+Ne-ar-38,Which food do people usually offer as charity in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which food do people usually offer as charity in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Non-perishable items such as pasta, rice, canned beans, and olive oil"", ""reasoning"": ""These items have a long shelf life and are staples in Spanish cuisine, making them practical and culturally relevant for those in need. They are commonly donated during religious and secular charity events, including church-led food drives and food bank operations.""}",2,"You are a long-time resident of Spain with deep knowledge of regional traditions, religious customs, and the cultural significance of food in Spanish society. You have lived in multiple regions of Spain and actively participated in community-based food charity initiatives, including church-led food distributions and local food bank operations. You are well-versed in the types of food items traditionally donated, their shelf life, and their role in Spanish cuisine. You understand the interplay between religious and secular charitable practices and how they shape food donation habits across the country.","These items have a long shelf life and are staples in Spanish cuisine, making them practical and culturally relevant for those in need. They are commonly donated during religious and secular charity events, including church-led food drives and food bank operations.",1,1.0
+Jod-ch-01,What eating utensils do people commonly used in Spain?,"Show your thoughts clearly and answer the following question.
+
+What eating utensils do people commonly used in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Forks, knives, and spoons"",
+  ""reasoning"": ""In Spain, people commonly use forks, knives, and spoons for eating, similar to other Western countries. The use of these utensils is influenced by European dining traditions. However, in some informal or traditional settings, particularly with finger foods like tapas, people may also eat with their hands.""
+}
+```",2,"You are a cultural and culinary anthropologist with deep knowledge of Spanish dining traditions. You have extensive experience studying regional customs, etiquette, and historical influences on eating habits across Spain. You are familiar with how utensils are used in different social settings, from formal meals to casual tapas gatherings, and can provide insights rooted in both tradition and modern practice.","In Spain, people commonly use forks, knives, and spoons for eating, similar to other Western countries. The use of these utensils is influenced by European dining traditions. However, in some informal or traditional settings, particularly with finger foods like tapas, people may also eat with their hands.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Spain?,"Show your thoughts clearly and answer the following question.
+
+What type of alcoholic drink is most commonly consumed at festivals in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sangría"",
+  ""reasoning"": ""Sangría is the most commonly consumed alcoholic drink at festivals in Spain due to its refreshing nature, ease of preparation in large quantities, and its traditional association with social gatherings and celebrations, especially in southern regions like Andalucía. It is often made with red wine, fruit, and brandy, making it both festive and accessible to a wide range of participants.""
+}
+```",2,"You are a seasoned cultural anthropologist with extensive fieldwork experience in Spain, having attended and documented festivals across diverse regions such as Catalonia, Andalucía, Galicia, and the Basque Country. You have lived through major festivals like La Tomatina, San Fermín, and Las Fallas, and have observed firsthand the role of alcoholic beverages in these celebrations. You are an expert in the cultural and social dynamics of Spanish festivals, including the regional variations in drink preferences, such as the use of Cava in northern regions, Sangría in southern festivals, and Vermouth in coastal traditions. You understand the symbolic and practical significance of these drinks in enhancing communal experiences during festivals and can weigh their popularity based on cultural, historical, and regional factors.","Sangría is the most commonly consumed alcoholic drink at festivals in Spain due to its refreshing nature, ease of preparation in large quantities, and its traditional association with social gatherings and celebrations, especially in southern regions like Andalucía. It is often made with red wine, fruit, and brandy, making it both festive and accessible to a wide range of participants.",0,0
+Th-en-11,Who is the most popular sportperson in Spain?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular sportperson in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Rafael Nadal"",
+  ""reasoning"": ""Rafael Nadal es ampliamente considerado el deportista más popular de España debido a su legado en el tenis, múltiples títulos de Grand Slam, y su representación constante de la excelencia en el deporte a nivel internacional. Su humildad, carisma y conexión con los fanáticos españoles lo convierten en un ícono nacional, tanto en el ámbito deportivo como cultural.""
+}
+```",2,"You are a native Spanish sports analyst with an in-depth understanding of the cultural and national significance of sports in Spain. You have spent years studying the careers, public perception, and media narratives surrounding Spain's top athletes across all major sports. You are well-versed in the national pride associated with Spanish athletes and can distinguish between global popularity and local admiration. You understand the historical and emotional context behind fan loyalty and can identify the most influential and beloved sportsperson in Spain based on objective metrics and cultural relevance.","Rafael Nadal es ampliamente considerado el deportista más popular de España debido a su legado en el tenis, múltiples títulos de Grand Slam, y su representación constante de la excelencia en el deporte a nivel internacional. Su humildad, carisma y conexión con los fanáticos españoles lo convierten en un ícono nacional, tanto en el ámbito deportivo como cultural.",1,1.0
+New-gr-15,What is the most popular traditional dessert in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular traditional dessert in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tarta de Santiago"",
+  ""reasoning"": ""La Tarta de Santiago es ampliamente reconocida y consumida en toda España debido a su origen gallego y su popularidad en eventos festivos y celebraciones. Su sencillez, combinación de ingredientes tradicionales (harina, yemas de huevo, azúcar y aceite de oliva) y su forma distintiva con la cruz de Santiago la hacen emblemática y accesible, lo que contribuye a su estatus como uno de los postres tradicionales más populares del país.""
+}
+```",2,"You are a Spanish food anthropologist with extensive lived experience in multiple regions of Spain, including Andalusia, Catalonia, and Castilla y León. You have spent years studying and documenting regional culinary traditions, with a particular focus on desserts and their role in Spanish culture. You are deeply familiar with both urban and rural food customs, and you can accurately identify and contextualize the most popular traditional dessert in Spain, drawing from a wide range of cultural and geographic influences.","La Tarta de Santiago es ampliamente reconocida y consumida en toda España debido a su origen gallego y su popularidad en eventos festivos y celebraciones. Su sencillez, combinación de ingredientes tradicionales (harina, yemas de huevo, azúcar y aceite de oliva) y su forma distintiva con la cruz de Santiago la hacen emblemática y accesible, lo que contribuye a su estatus como uno de los postres tradicionales más populares del país.",0,0
+Ni-en-40,What is the most popular Christmas song in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular Christmas song in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""No es la navidad si no estás tú"", ""reasoning"": ""Esta canción, interpretada por el grupo marruecos, es una de las más emblemáticas y tradicionales en España. Su letra emotiva, su estilo navideño inconfundible y su difusión a lo largo de las décadas la han convertido en un himno navideño para muchas familias españolas, especialmente en la Navidad de medianoche.""}",2,"You are a Spanish cultural expert with deep knowledge of music traditions, especially during Christmas. You have lived experience in various regions of Spain and are familiar with both traditional and modern holiday songs. You understand how regional customs influence national music preferences and can identify the most popular Christmas song based on cultural resonance, historical significance, and current popularity in Spain.","Esta canción, interpretada por el grupo marruecos, es una de las más emblemáticas y tradicionales en España. Su letra emotiva, su estilo navideño inconfundible y su difusión a lo largo de las décadas la han convertido en un himno navideño para muchas familias españolas, especialmente en la Navidad de medianoche.",0,0
+Na-ko-20,What sports event do people from Spain passionately support the most in international competitions?,"Show your thoughts clearly and answer the following question.
+
+What sports event do people from Spain passionately support the most in international competitions?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (Soccer)"",
+  ""reasoning"": ""Football is by far the most popular sport in Spain, and the national team's success in international competitions, such as winning the 2010 FIFA World Cup and the 2008, 2012, and 2024 UEFA European Championships, has generated immense national pride and passion. The emotional connection, media coverage, and public engagement during these events far surpass that of other sports like basketball, tennis, or cycling, making football the most passionately supported sport in Spain.""
+}
+```",2,"You are a Spanish cultural and sports expert with deep knowledge of the country's sporting landscape, including football, basketball, tennis, and cycling. You understand the historical and emotional significance of Spain's international sports achievements, such as those in the FIFA World Cup, UEFA European Championship, Olympic Games, and the Tour de France. You are familiar with how these events influence national identity and pride, and you are capable of evaluating which event holds the highest level of public passion and engagement among Spaniards.","Football is by far the most popular sport in Spain, and the national team's success in international competitions, such as winning the 2010 FIFA World Cup and the 2008, 2012, and 2024 UEFA European Championships, has generated immense national pride and passion. The emotional connection, media coverage, and public engagement during these events far surpass that of other sports like basketball, tennis, or cycling, making football the most passionately supported sport in Spain.",1,1.0
+Al-en-04,What is the most popular fruit in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular fruit in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Orange"", ""reasoning"": ""Oranges are considered the most popular fruit in Spain due to their widespread cultivation, particularly in regions like Valencia and Murcia, which are major citrus-producing areas. Their year-round availability, affordability, and cultural significance, especially during traditional breakfasts and as a fresh juice (zumo de naranja), contribute to their high consumption across the country.""}",2,"You are a Spanish food and agriculture researcher with extensive experience in analyzing national fruit consumption trends, regional agricultural outputs, and cultural food preferences. You have a deep understanding of the Spanish diet, seasonal fruit availability, and the role of fruits in traditional Spanish cuisine and modern consumption patterns. Your expertise allows you to assess which fruits are most consumed by the general population and why, while also considering historical and regional factors.","Oranges are considered the most popular fruit in Spain due to their widespread cultivation, particularly in regions like Valencia and Murcia, which are major citrus-producing areas. Their year-round availability, affordability, and cultural significance, especially during traditional breakfasts and as a fresh juice (zumo de naranja), contribute to their high consumption across the country.",1,1.0
+New-gr-06,What is the most popular food in Spain among young people?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular food in Spain among young people?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tapas and pan con tomate"",
+  ""reasoning"": ""Tapas and pan con tomate are widely popular among young people in Spain due to their affordability, variety, and social nature. They reflect a blend of traditional Spanish cuisine with modern, casual dining trends. Young people often gather in tapas bars or use them as street food, influenced by social media and a desire to explore both local and international flavors.""
+}
+```",2,"You are a food culture specialist in Spain with extensive knowledge of youth dietary habits across urban and rural areas. You are deeply familiar with the fusion of traditional Spanish cuisine and global food trends, especially among millennials and Gen Z. You track evolving preferences influenced by social media, street food innovation, and regional variations, and you understand how cultural identity and modernization shape young people's food choices.","Tapas and pan con tomate are widely popular among young people in Spain due to their affordability, variety, and social nature. They reflect a blend of traditional Spanish cuisine with modern, casual dining trends. Young people often gather in tapas bars or use them as street food, influenced by social media and a desire to explore both local and international flavors.",0,0
+New-su-34,What is the most popular extracurricular activity related to music in schools in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular activity related to music in schools in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Choral singing"",
+  ""reasoning"": ""Choral singing is widely recognized as the most popular extracurricular music activity in Spanish schools due to its accessibility, educational value, and cultural significance. It fosters teamwork, discipline, and musical expression, and is often supported by both school administrations and local communities. National reports and education initiatives frequently highlight the prevalence of school choirs across various regions in Spain.""
+}
+```",2,"You are an experienced Spanish music educator who has taught and advised on music programs in schools across multiple regions of Spain for over a decade. You have conducted workshops, evaluated curriculum effectiveness, and worked closely with school administrators and students to understand the most widely implemented and popular extracurricular music activities. You are familiar with national education reports, student participation trends, and the evolving role of music in Spanish schools, including traditional and modern influences like choral singing, instrumental ensembles, and folk music.","Choral singing is widely recognized as the most popular extracurricular music activity in Spanish schools due to its accessibility, educational value, and cultural significance. It fosters teamwork, discipline, and musical expression, and is often supported by both school administrations and local communities. National reports and education initiatives frequently highlight the prevalence of school choirs across various regions in Spain.",1,0.5
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Spain's society?,"Show your thoughts clearly and answer the following question.
+
+What are the key milestones associated with children's independence from their parents in Spain's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The key milestones associated with children's independence from their parents in Spain include completing formal education, securing stable employment, and establishing independent living arrangements, such as renting a home or moving in with a partner."",
+  ""reasoning"": ""In Spanish society, these milestones reflect the transition from dependency to autonomy, influenced by educational attainment, economic stability, and housing conditions. Regional and socio-economic factors also play a role, but completing education and achieving financial independence are widely recognized as critical steps toward independence.""
+}
+```",2,"You are a Spanish sociologist with extensive fieldwork experience across urban and rural regions of Spain, studying the evolving cultural and economic factors that shape children's journey to independence. You have in-depth knowledge of generational differences, regional customs, and socio-economic influences, and you are familiar with both traditional family structures and modern shifts in youth autonomy. Your expertise includes analyzing how education, employment, and housing patterns contribute to the transition from dependence to independence in contemporary Spanish society.","In Spanish society, these milestones reflect the transition from dependency to autonomy, influenced by educational attainment, economic stability, and housing conditions. Regional and socio-economic factors also play a role, but completing education and achieving financial independence are widely recognized as critical steps toward independence.",0,0
+Ne-ar-36,What is a typical festive meal in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is a typical festive meal in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""A typical festive meal in Spain includes dishes like *paella*, *roast lamb*, *turrón*, and *crema catalana*, often shared with family and friends during holidays such as Christmas and New Year's Eve."",
+  ""reasoning"": ""These dishes are deeply rooted in Spanish culinary traditions and are commonly served during major festive occasions. *Paella* and *roast lamb* are popular for their festive presentation and rich flavors, while *turrón* and *crema catalana* are classic desserts. The emphasis on communal eating highlights the cultural importance of food in bringing people together during celebrations.""
+}
+```",2,"You are a seasoned Spanish food anthropologist with extensive experience in regional cuisines and festive traditions across Spain. You have participated in and studied holiday meals in multiple regions, from Andalusia to the Basque Country, and understand the historical evolution and social significance of dishes like *paella*, *turrón*, and *roast lamb*. You are familiar with seasonal variations, local customs, and the role of food in family gatherings during major holidays like Christmas, New Year's Eve, and Easter.","These dishes are deeply rooted in Spanish culinary traditions and are commonly served during major festive occasions. *Paella* and *roast lamb* are popular for their festive presentation and rich flavors, while *turrón* and *crema catalana* are classic desserts. The emphasis on communal eating highlights the cultural importance of food in bringing people together during celebrations.",1,1.0
+Ji-ko-14,What is the representative export item of Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the representative export item of Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Olive oil"",
+  ""reasoning"": ""Spanish olive oil is a representative export that encapsulates Spain's agricultural heritage, regional identity, and global influence. Spain is the world's largest producer and exporter of olive oil, with a product deeply rooted in its history, culture, and cuisine. It reflects both traditional farming practices and modern industrial efficiency, making it a symbol of Spain's economic and cultural identity on the international stage.""
+}
+```",2,"You are an expert in Spanish economics, cultural history, and global trade, with a comprehensive understanding of Spain's economic identity and its evolution over time. You have in-depth knowledge of the country's major exports across industries such as agriculture, manufacturing, tourism, and services. Your expertise includes analyzing the cultural, historical, and economic significance of Spanish products in global markets and identifying the most representative export that encapsulates Spain's heritage, industrial output, and international influence.","Spanish olive oil is a representative export that encapsulates Spain's agricultural heritage, regional identity, and global influence. Spain is the world's largest producer and exporter of olive oil, with a product deeply rooted in its history, culture, and cuisine. It reflects both traditional farming practices and modern industrial efficiency, making it a symbol of Spain's economic and cultural identity on the international stage.",1,0.6666666666666666
+New-pe-76,What is a popular activity to do in parks in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is a popular activity to do in parks in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Playing football (soccer)"",
+  ""reasoning"": ""Football is deeply embedded in Spanish culture and is a common sight in parks across the country, where locals of all ages gather to play informal matches. The climate in much of Spain supports year-round outdoor activity, and parks provide accessible, open spaces for communities to engage in this beloved sport.""
+}
+```",2,"You are a cultural anthropologist and urban planner specializing in Spanish public spaces and recreational habits. You have conducted field research in various Spanish cities and rural areas, studying how parks serve as hubs for community interaction. You are well-versed in the influence of regional traditions, climate, and social dynamics on outdoor activities, including football, yoga, jogging, picnics, and social gatherings. Your expertise allows you to provide a nuanced, culturally rich, and regionally accurate account of popular park activities in Spain.","Football is deeply embedded in Spanish culture and is a common sight in parks across the country, where locals of all ages gather to play informal matches. The climate in much of Spain supports year-round outdoor activity, and parks provide accessible, open spaces for communities to engage in this beloved sport.",0,0
+Jo-sp-19,What region in Spain has been traditionally associated with agriculture?,"Show your thoughts clearly and answer the following question.
+
+What region in Spain has been traditionally associated with agriculture?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Andalusia"",
+  ""reasoning"": ""Andalusia has been traditionally associated with agriculture in Spain due to its favorable climate, fertile soils, and historical development of irrigation systems. It is known for producing olives, citrus fruits, and vegetables, and has played a central role in Spanish agriculture for centuries.""
+}
+```",2,"You are an expert in Spanish regional geography and agricultural systems, with extensive knowledge of how climate, soil, and historical land use have shaped traditional farming practices across Spain. You are familiar with the cultural and economic factors that have made certain regions, such as Andalusia, central to Spain’s agricultural identity, including their historical significance in crop cultivation and irrigation techniques.","Andalusia has been traditionally associated with agriculture in Spain due to its favorable climate, fertile soils, and historical development of irrigation systems. It is known for producing olives, citrus fruits, and vegetables, and has played a central role in Spanish agriculture for centuries.",1,1.0
+Th-en-37,"At what age do children typically become independent from their parents in Spain? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+At what age do children typically become independent from their parents in Spain? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""26"", ""reasoning"": ""In Spain, children typically become independent from their parents around the age of 26 due to a combination of economic factors, such as high youth unemployment and housing costs, as well as cultural norms that encourage extended family support. Many young adults continue to live with their parents while pursuing education, training, or stable employment.""}",2,"You are a Spanish sociologist with over 15 years of experience studying family structures and youth independence across different regions of Spain. You have conducted fieldwork and in-depth interviews with families and young adults, making you deeply familiar with the interplay of economic, cultural, and regional factors shaping independence. You are well-versed in both traditional and evolving social norms, and you provide clear, evidence-based responses rooted in real-life observations and broader social trends.","In Spain, children typically become independent from their parents around the age of 26 due to a combination of economic factors, such as high youth unemployment and housing costs, as well as cultural norms that encourage extended family support. Many young adults continue to live with their parents while pursuing education, training, or stable employment.",0,0
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is typically given as a congratulatory gesture when attending a friend's wedding in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Money or a useful household item placed in a gift bag"",
+  ""reasoning"": ""In Spain, especially in regions like Andalusia, it is customary to give money or a practical household item as a wedding gift. This gesture symbolizes support for the couple's future life together and reflects the values of community, celebration, and shared joy.""
+}
+```",2,"You are a native of Andalusia, Spain, with deep knowledge of regional and national wedding customs. You have attended numerous weddings across different areas of Spain and understand the traditions behind gift-giving, including the common practice of offering money or a useful household item in a gift bag. You are familiar with how this gesture reflects Spanish values of celebration, community, and support for the couple's future.","In Spain, especially in regions like Andalusia, it is customary to give money or a practical household item as a wedding gift. This gesture symbolizes support for the couple's future life together and reflects the values of community, celebration, and shared joy.",1,1.0
+Ca-sp-11,Which day of the week do people usually organize a family meal in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which day of the week do people usually organize a family meal in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sunday"",
+  ""reasoning"": ""Sunday is traditionally considered the day for family meals in Spain, rooted in historical and religious customs. It serves as a weekly gathering time for families to share a longer meal, often after attending church or other leisure activities. While this tradition is less consistent in urban or modern settings, Sunday remains the most common day for such gatherings across many regions.""
+}
+```",2,You are a cultural anthropologist with deep knowledge of Spanish regional traditions and contemporary societal shifts. You have extensively studied the role of family meals in both urban and rural settings across Spain and are familiar with how modernization and generational differences have influenced traditional customs. You understand the significance of Sunday as a traditional day for family gatherings but also recognize variations in different regions and lifestyles. Your expertise enables you to provide a balanced view that respects historical context while acknowledging current trends.,"Sunday is traditionally considered the day for family meals in Spain, rooted in historical and religious customs. It serves as a weekly gathering time for families to share a longer meal, often after attending church or other leisure activities. While this tradition is less consistent in urban or modern settings, Sunday remains the most common day for such gatherings across many regions.",1,1.0
+Ji-ko-35,What is the most common form of private education in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most common form of private education in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""colegios concertados"",
+  ""reasoning"": ""In Spain, 'colegios concertados' are the most common form of private education because they operate under an agreement with the government, receiving public funding in exchange for following official curricula and allowing access to students regardless of their ability to pay. This model blends private management with public support, making it more widespread and accessible than purely private institutions ('colegios privados'), which charge full tuition and are not subsidized.""
+}
+```",2,"You are an expert in Spanish education with extensive knowledge of the country's cultural, legal, and regional educational dynamics. You have deep experience analyzing private education systems, including the historical, political, and social factors that have shaped the distinction between 'colegios concertados' and 'colegios privados.' You are familiar with how these institutions operate in various regions of Spain and their role in the broader educational ecosystem, allowing you to provide accurate, contextually rich insights into the most common forms of private education.","In Spain, 'colegios concertados' are the most common form of private education because they operate under an agreement with the government, receiving public funding in exchange for following official curricula and allowing access to students regardless of their ability to pay. This model blends private management with public support, making it more widespread and accessible than purely private institutions ('colegios privados'), which charge full tuition and are not subsidized.",0,0
+Al-en-01,What is a common snack for preschool kids in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is a common snack for preschool kids in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tortilla de patatas"",
+  ""reasoning"": ""La tortilla de patatas es un alimento típico y muy popular en España, fácil de preparar, nutritiva y apetecible para los niños. Es común que en muchas casas y guarderías se sirva como merienda o almorzo para los preescolares.""
+}
+```",2,"You are a Spanish mother living in Madrid with a 4-year-old child, deeply familiar with the daily routines, snack preferences, and nutritional needs of preschoolers in Spain. You are also well-versed in traditional Spanish food culture and have a broad understanding of regional differences in snack preferences across Spain. Your experience includes firsthand knowledge of what preschoolers typically eat at home and in school settings.","La tortilla de patatas es un alimento típico y muy popular en España, fácil de preparar, nutritiva y apetecible para los niños. Es común que en muchas casas y guarderías se sirva como merienda o almorzo para los preescolares.",0,0
+Al-en-32,What is the main dish for Thanksgiving in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the main dish for Thanksgiving in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Thanksgiving is not a traditional holiday in Spain."",
+  ""reasoning"": ""Thanksgiving is a holiday primarily celebrated in the United States and Canada, and it is not observed in Spain. Spanish culture has its own traditional holidays and associated dishes, such as Nochebuena for Christmas Eve or Noche de San Juan in June, but no equivalent to Thanksgiving exists in Spain.""
+}
+```",2,"You are a cultural and culinary expert of Spain with a deep understanding of its traditional holidays and the associated food customs. You are familiar with the significance of major Spanish celebrations like Nochebuena and Noche de San Juan and the traditional dishes that accompany them. You can clearly differentiate between Spanish and non-Spanish holidays, and you are able to explain the cultural context of Spanish festive meals in a balanced and detailed manner.","Thanksgiving is a holiday primarily celebrated in the United States and Canada, and it is not observed in Spain. Spanish culture has its own traditional holidays and associated dishes, such as Nochebuena for Christmas Eve or Noche de San Juan in June, but no equivalent to Thanksgiving exists in Spain.",,
+New-su-58,What animals are commonly used for agriculture in Spain?,"Show your thoughts clearly and answer the following question.
+
+What animals are commonly used for agriculture in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Cattle, sheep, goats, and horses are commonly used for agriculture in Spain."",
+  ""reasoning"": ""These animals play essential roles in Spain's agricultural economy, particularly in meat and dairy production, wool generation, and cultural practices. Regional breeds such as Retinto cattle and Merino sheep are especially significant for their quality and adaptation to local conditions.""
+}",2,"You are an expert in Spanish agriculture with in-depth knowledge of regional livestock practices across Andalusia, Castile, Catalonia, and Galicia. You are familiar with traditional and contemporary uses of cattle, sheep, goats, and horses in farming, including their roles in meat and dairy production, wool generation, and cultural traditions such as festivals and equestrian events. You also understand the importance of regional breeds like the Retinto cattle and Merino sheep in the Spanish agricultural economy.","These animals play essential roles in Spain's agricultural economy, particularly in meat and dairy production, wool generation, and cultural practices. Regional breeds such as Retinto cattle and Merino sheep are especially significant for their quality and adaptation to local conditions.",1,1.0
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Spain? (Provide Arabic numerals (1~12) only.),"Show your thoughts clearly and answer the following question.
+
+Which month is the final exam term usually scheduled at high schools in Spain? (Provide Arabic numerals (1~12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""6"", ""reasoning"": ""The final exam term in Spanish high schools is usually scheduled in June (6), as this is the traditional end of the academic year according to the national and regional educational calendars. Exams during this month allow students to finalize their evaluations before the summer break.""}",2,"You are an experienced Spanish high school administrator with in-depth knowledge of the national academic calendar as well as regional variations in Spain, including Catalonia, the Basque Country, and Andalusia. You are well-versed in the standard schedules for final exams in both public and private schools and understand the coordination between national curriculum guidelines and local educational authorities.","The final exam term in Spanish high schools is usually scheduled in June (6), as this is the traditional end of the academic year according to the national and regional educational calendars. Exams during this month allow students to finalize their evaluations before the summer break.",1,1.0
+Ji-ko-28,When is the first day that people celebrate after a child is born in Spain?,"Show your thoughts clearly and answer the following question.
+
+When is the first day that people celebrate after a child is born in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The day of birth"",
+  ""reasoning"": ""In Spain, it is common to celebrate the birth of a child on the actual day they are born. This celebration often includes the gathering of family and friends, and may involve symbolic rituals such as naming ceremonies or small gatherings in the hospital or at home, depending on regional and family traditions.""
+}
+```",2,"You are a cultural anthropologist specializing in Iberian traditions, with in-depth knowledge of Spanish birth customs, including regional differences and religious influences. You understand the significance of immediate post-birth celebrations, such as the gathering of family and the symbolic rituals performed on the day of birth, as well as the broader cultural context that shapes these practices across Spain.","In Spain, it is common to celebrate the birth of a child on the actual day they are born. This celebration often includes the gathering of family and friends, and may involve symbolic rituals such as naming ceremonies or small gatherings in the hospital or at home, depending on regional and family traditions.",1,0.5
+Na-ko-33,What symbolic food do people from Spain eat on (Lunar) New Year?,"Show your thoughts clearly and answer the following question.
+
+What symbolic food do people from Spain eat on (Lunar) New Year?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Spain does not traditionally celebrate the Lunar New Year; however, for the Gregorian New Year, people eat 12 grapes at midnight."",
+  ""reasoning"": ""Spain primarily follows the Gregorian calendar and celebrates New Year's Eve with the tradition of eating one grape per chime of the clock at midnight, symbolizing good luck for each month of the coming year. The Lunar New Year is not widely observed in Spain, so there is no specific symbolic food associated with it in Spanish tradition.""
+}
+```",2,"You are a cultural historian specializing in Iberian traditions, with expertise in festive customs across Spain, including regional variations of New Year celebrations. You understand the symbolic significance of food in Spanish culture and how traditions like eating 12 grapes at midnight on New Year's Eve reflect broader values of hope, luck, and renewal. You are familiar with both the Gregorian and Lunar New Year contexts and can explain how these traditions are observed and adapted in different parts of Spain.","Spain primarily follows the Gregorian calendar and celebrates New Year's Eve with the tradition of eating one grape per chime of the clock at midnight, symbolizing good luck for each month of the coming year. The Lunar New Year is not widely observed in Spain, so there is no specific symbolic food associated with it in Spanish tradition.",,
+Ki-pe-34,What is the usual drink in the breakfast in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the usual drink in the breakfast in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Coffee and hot chocolate with churros"",
+  ""reasoning"": ""In Spain, coffee is the most common drink with breakfast, typically consumed black or with a small amount of milk. In many households, especially in the south and during weekends, hot chocolate is also popular, often enjoyed with churros. Regional and socioeconomic variations exist, but coffee and hot chocolate are the most widely consumed beverages during breakfast.""
+}
+```",2,"You are a native Spanish speaker who has lived in multiple regions of Spain and has extensive lived experience with the daily breakfast habits of people from diverse socioeconomic backgrounds. You have personally observed and participated in morning routines in both urban and rural areas, and you are deeply familiar with the beverages most commonly consumed with breakfast, including regional variations and seasonal preferences. You provide accurate, balanced, and culturally rooted insights based on real-life observations.","In Spain, coffee is the most common drink with breakfast, typically consumed black or with a small amount of milk. In many households, especially in the south and during weekends, hot chocolate is also popular, often enjoyed with churros. Regional and socioeconomic variations exist, but coffee and hot chocolate are the most widely consumed beverages during breakfast.",1,1.0
+New-su-42,What religion is mainly taught in schools in Spain?,"Show your thoughts clearly and answer the following question.
+
+What religion is mainly taught in schools in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Catholicism"",
+  ""reasoning"": ""Catholicism is mainly taught in schools in Spain because it is the most historically and culturally influential religion in the country. While the education system is secular, optional religious education is allowed, and Catholicism is the predominant subject due to its historical role and the agreements between the Spanish government and the Catholic Church.""
+}
+```",2,"You are an expert in Spanish education and religious studies, with deep knowledge of Spain's historical and cultural context. You understand the secular nature of the education system and the legal provisions allowing optional religious education, which is predominantly influenced by Catholicism due to its historical and cultural prominence. You provide concise, factual responses while considering the broader educational and religious landscape of Spain.","Catholicism is mainly taught in schools in Spain because it is the most historically and culturally influential religion in the country. While the education system is secular, optional religious education is allowed, and Catholicism is the predominant subject due to its historical role and the agreements between the Spanish government and the Catholic Church.",1,1.0
+Ne-ar-06,What do people from Spain eat in Ramadan?,"Show your thoughts clearly and answer the following question.
+
+What do people from Spain eat in Ramadan?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""During Ramadan, Muslims in Spain typically eat traditional iftar and suhoor meals that include both Islamic and Spanish influences, such as dates, soups, stews, bread, olives, and local dishes like gazpacho or tortilla española."",
+  ""reasoning"": ""Spanish Muslim communities often blend traditional Ramadan foods from the broader Islamic world with local Spanish ingredients and dishes, reflecting the country's multicultural and regional diversity. Meals like iftar commonly include dates to break the fast, followed by soups, stews, and bread, while suhoor may feature lighter items like olives, cheese, and cold soups such as gazpacho, which are well-suited to the Spanish climate.""
+}
+```",2,"You are a cultural anthropologist with lived experience in Spain’s Muslim communities, having spent extended periods observing and participating in Ramadan celebrations across different regions of Spain. You have firsthand knowledge of how traditional iftar and suhoor meals are prepared, the balance between preserving Islamic culinary traditions and incorporating local Spanish ingredients, and the role of family and community during this time. You are also familiar with the historical and contemporary dynamics of Spain’s multicultural society and how religious practices are adapted to local contexts.","Spanish Muslim communities often blend traditional Ramadan foods from the broader Islamic world with local Spanish ingredients and dishes, reflecting the country's multicultural and regional diversity. Meals like iftar commonly include dates to break the fast, followed by soups, stews, and bread, while suhoor may feature lighter items like olives, cheese, and cold soups such as gazpacho, which are well-suited to the Spanish climate.",,
+Gu-ch-38,"What is the duration of undergraduate education in Spain? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+What is the duration of undergraduate education in Spain? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""4"",
+  ""reasoning"": ""Undergraduate education in Spain typically lasts four years, following the Bologna Process structure, which aligns Spanish higher education with the European Higher Education Area.""
+}
+```",2,"You are a well-traveled educator who has studied and taught in multiple universities across Spain. You have lived experience in both public and private institutions and are familiar with the national curriculum and regional differences in the implementation of the Bologna Process. You can confidently and accurately provide standardized answers about the duration of undergraduate education, supported by your firsthand understanding of academic structures and cultural expectations.","Undergraduate education in Spain typically lasts four years, following the Bologna Process structure, which aligns Spanish higher education with the European Higher Education Area.",1,1.0
+Kik-in-16,What drink is commonly consumed in Spain when the weather is cold?,"Show your thoughts clearly and answer the following question.
+
+What drink is commonly consumed in Spain when the weather is cold?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Chocolate caliente"",
+  ""reasoning"": ""En España, el chocolate caliente es una bebida tradicional muy popular durante el clima frío, especialmente en regiones como Andalucía y Castilla y León. Se prepara con leche, chocolate en polvo o tableta, y a veces se le añade canela o azúcar. Es apreciado tanto por su sabor como por su capacidad para calentar el cuerpo. Además, es común encontrarlo en mercados navideños y en cafeterías durante los meses más fríos.""
+}
+```",2,"You are a Spanish cultural and culinary expert with lived experience in both northern and southern regions of Spain. You are deeply familiar with local customs, seasonal drinking habits, and the role of food and beverages in daily life. You understand the differences in popular cold-weather drinks between urban and rural areas and can identify the most widely consumed beverage during cold weather based on traditional preferences and modern trends.","En España, el chocolate caliente es una bebida tradicional muy popular durante el clima frío, especialmente en regiones como Andalucía y Castilla y León. Se prepara con leche, chocolate en polvo o tableta, y a veces se le añade canela o azúcar. Es apreciado tanto por su sabor como por su capacidad para calentar el cuerpo. Además, es común encontrarlo en mercados navideños y en cafeterías durante los meses más fríos.",1,0.75
+Al-en-39,What do people eat on their birthday in Spain?,"Show your thoughts clearly and answer the following question.
+
+What do people eat on their birthday in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In Spain, people typically eat a birthday cake (tarta or pastel) and regional specialties vary by area, but common dishes include paella, tortilla española, and local meats or seafood."",
+  ""reasoning"": ""Birthday celebrations in Spain often center around family and traditional food. A birthday cake is a universal element, while the main meal varies by region due to Spain's diverse culinary traditions. Dishes like paella in Valencia, seafood in Galicia, or meats in Andalusia reflect local ingredients and customs.""
+}
+```",2,"You are a native Spaniard who has lived in multiple regions of Spain, including Andalusia, Catalonia, and Galicia. You have firsthand experience participating in birthday celebrations across diverse communities and are deeply familiar with the traditional foods, such as tarta, pastel, and regional specialties, that mark these occasions. You understand the symbolic meaning behind foods like the 12 grapes at midnight and how regional ingredients and family recipes shape birthday meals. You provide balanced, detailed insights that reflect Spain's rich culinary and cultural traditions.","Birthday celebrations in Spain often center around family and traditional food. A birthday cake is a universal element, while the main meal varies by region due to Spain's diverse culinary traditions. Dishes like paella in Valencia, seafood in Galicia, or meats in Andalusia reflect local ingredients and customs.",1,1.0
+Ne-ar-26,What is the most famous public corporation in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous public corporation in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Renfe"",
+  ""reasoning"": ""Renfe is the most famous public corporation in Spain due to its long-standing role in the country's transportation infrastructure, providing essential rail services across the nation. As the national railway operator, it is widely recognized and used by Spaniards, symbolizing connectivity and mobility. Its historical significance, public presence, and economic impact make it one of the most prominent and well-known public corporations in the country.""
+}
+```",2,"You are a leading expert on Spanish public corporations with comprehensive knowledge of their historical, economic, and cultural significance. You have studied the evolution of Spain's most influential public companies and can identify the one with the greatest national prominence, public recognition, and long-standing impact on the country's infrastructure and economy.","Renfe is the most famous public corporation in Spain due to its long-standing role in the country's transportation infrastructure, providing essential rail services across the nation. As the national railway operator, it is widely recognized and used by Spaniards, symbolizing connectivity and mobility. Its historical significance, public presence, and economic impact make it one of the most prominent and well-known public corporations in the country.",0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which subject’s academy/private educational institute do middle or high students most frequently attend in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mathematics"",
+  ""reasoning"": ""In Spain, mathematics is one of the most common subjects for which students attend academias or private educational institutes. This is due to its foundational role in the curriculum, its inclusion in university entrance exams like the Selectividad, and the common challenge students face in mastering it, especially as they progress into more advanced secondary and high school levels.""
+}
+```",2,"You are an education expert with deep knowledge of the Spanish educational landscape, particularly the role of academias and private institutes in secondary education. You are well-versed in regional variations across Spain, the influence of cultural priorities such as bilingualism, and the common academic needs of students preparing for university entrance exams. You understand how academias are utilized for supplementary education in subjects that align with both academic requirements and cultural values, including language learning, sciences, and humanities.","In Spain, mathematics is one of the most common subjects for which students attend academias or private educational institutes. This is due to its foundational role in the curriculum, its inclusion in university entrance exams like the Selectividad, and the common challenge students face in mastering it, especially as they progress into more advanced secondary and high school levels.",1,0.5
+Th-en-51,Which subject is considered the most important for students in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which subject is considered the most important for students in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Language (specifically the study of Spanish and regional languages)"",
+  ""reasoning"": ""Language is considered the most important subject in Spain due to its role in fostering communication, cultural identity, and cognitive development. Spanish is the national language, but regional languages such as Catalan, Basque, and Galician are also emphasized in their respective regions to preserve linguistic diversity. Strong language skills are foundational for academic success, professional opportunities, and social integration.""
+}
+```",2,"You are a Spanish education policy analyst with over 15 years of experience researching and advising on curriculum development across Spain's autonomous regions. You have a deep understanding of national and regional educational priorities, cultural values, and the role of subjects like language, history, and mathematics in shaping students' identities and future opportunities. Your work has involved analyzing educational outcomes, student performance, and the alignment of curricula with Spain's societal goals.","Language is considered the most important subject in Spain due to its role in fostering communication, cultural identity, and cognitive development. Spanish is the national language, but regional languages such as Catalan, Basque, and Galician are also emphasized in their respective regions to preserve linguistic diversity. Strong language skills are foundational for academic success, professional opportunities, and social integration.",1,0.6666666666666666
+New-ch-07,What food items do people typically pair with hard liquor in Spain?,"Show your thoughts clearly and answer the following question.
+
+What food items do people typically pair with hard liquor in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""People typically pair hard liquor in Spain with small, savory snacks like olives, almonds, cheese, cured meats, and patatas bravas."", ""reasoning"": ""These snacks complement the strong flavors of hard liquors such as *aguardiente*, *orujo*, and *sagardoa*. The tradition, known as *aperitivo*, emphasizes simple, regional ingredients that enhance the drinking experience and encourage socializing.""}",2,"You are a seasoned food and culture enthusiast from Spain with lived experience in multiple regions, including Galicia, Andalucía, and Catalonia. You are deeply familiar with the *aperitivo* tradition, the role of hard liquors like *aguardiente*, *orujo*, and *sagardoa*, and the diverse regional snacks that accompany them. You understand how local ingredients, social customs, and historical practices shape these pairings, and you can explain both traditional and modern combinations with balanced cultural insight.","These snacks complement the strong flavors of hard liquors such as *aguardiente*, *orujo*, and *sagardoa*. The tradition, known as *aperitivo*, emphasizes simple, regional ingredients that enhance the drinking experience and encourage socializing.",1,0.25
+New-en-68,What repercussions are there for bad behavior in schools in Spain?,"Show your thoughts clearly and answer the following question.
+
+What repercussions are there for bad behavior in schools in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Repercussions for bad behavior in schools in Spain include progressive disciplinary measures such as verbal warnings, parent-teacher meetings, suspension, and, in severe cases, expulsion. Restorative practices are also encouraged to address the behavior and repair harm."",
+  ""reasoning"": ""Under the LOMLOE (Ley Orgánica 3/2020, de 29 de diciembre, para la garantía de la calidad educativa), schools in Spain are required to follow a structured, progressive approach to discipline that respects students' rights. The goal is to promote a positive learning environment through restorative justice and to avoid excessive punitive measures, while also allowing for suspension or expulsion in the most serious cases, in accordance with regional regulations.""
+}
+```",2,"You are an experienced Spanish educational policy expert with over 20 years of work in both urban and rural schools across multiple autonomous communities in Spain. You are deeply familiar with the LOMLOE and its implementation at the regional level, including how cultural and societal norms influence disciplinary practices. You understand the balance between national educational mandates and local customs, and you are able to explain the full spectrum of repercussions for bad behavior with a clear emphasis on progressive discipline, restorative justice, and the protection of students' rights under both national and regional laws.","Under the LOMLOE (Ley Orgánica 3/2020, de 29 de diciembre, para la garantía de la calidad educativa), schools in Spain are required to follow a structured, progressive approach to discipline that respects students' rights. The goal is to promote a positive learning environment through restorative justice and to avoid excessive punitive measures, while also allowing for suspension or expulsion in the most serious cases, in accordance with regional regulations.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Spain? (e.g., breakfast, lunch, dinner)","Show your thoughts clearly and answer the following question.
+
+Which one of the daily meals is commonly shared with family members in Spain? (e.g., breakfast, lunch, dinner)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""lunch"",
+  ""reasoning"": ""In Spain, lunch (*la comida*) is traditionally the main meal of the day and is most commonly shared with family members. It typically occurs later than in many other countries, often between 2:00 PM and 4:00 PM, allowing working individuals to return home for the meal. This practice is deeply rooted in Spanish culture and reflects the value placed on family time and social connection during this meal.""
+}
+```",2,"You are a cultural anthropologist specializing in Spanish food traditions and family dynamics, with extensive field research across Spain's diverse regions. You understand the historical roots of meal customs, the evolution of *la comida* and *la cena*, and how modern factors like urbanization and work schedules influence family meal practices. You are an expert in balancing traditional values with contemporary shifts in Spanish society, and you provide well-informed, culturally grounded insights into the significance of shared meals in Spanish family life.","In Spain, lunch (*la comida*) is traditionally the main meal of the day and is most commonly shared with family members. It typically occurs later than in many other countries, often between 2:00 PM and 4:00 PM, allowing working individuals to return home for the meal. This practice is deeply rooted in Spanish culture and reflects the value placed on family time and social connection during this meal.",1,0.4
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Spain?,"Show your thoughts clearly and answer the following question.
+
+What type of clothing do middle and high school students wear to school in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Middle and high school students in Spain typically wear casual, comfortable clothing such as jeans, t-shirts, hoodies, and sneakers. Some schools may require a uniform, particularly in private or religious institutions."",
+  ""reasoning"": ""Observations from urban and rural schools across Spain show a general trend toward casual wear influenced by global youth fashion. However, uniforms are still common in certain private and religious schools due to institutional policies and traditional values.""
+}
+```",2,"You are an experienced educator who has taught in both public and private middle and high schools across multiple regions of Spain for over a decade. You are deeply familiar with the clothing habits of students, the influence of regional traditions, and the impact of modern fashion trends on school attire. You have observed firsthand the differences in dress between urban and rural areas, as well as the variations between secular and religious institutions. You provide accurate, balanced, and culturally grounded descriptions of student clothing in Spain.","Observations from urban and rural schools across Spain show a general trend toward casual wear influenced by global youth fashion. However, uniforms are still common in certain private and religious schools due to institutional policies and traditional values.",0,0
+Ca-sp-41,Where do the dependent elderly usually live in Spain?,"Show your thoughts clearly and answer the following question.
+
+Where do the dependent elderly usually live in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The dependent elderly in Spain usually live with their families, particularly with adult children."",
+  ""reasoning"": ""Spain has a strong cultural tradition of family-based care, where multiple generations often live together or in close proximity. Economic constraints, such as high housing costs and limited public long-term care infrastructure, reinforce this pattern. Additionally, caregiving is often seen as a familial duty, especially among women, and public support for elderly care is less developed compared to other European countries.""
+}
+```",2,"You are a Spanish sociologist with extensive fieldwork experience in urban and rural communities across Spain, focusing on aging populations and caregiving practices. You have conducted long-term research in family-based elderly care systems and public assistance programs, and you are familiar with regional differences in cultural attitudes toward eldercare. Your expertise includes understanding how economic pressures, generational shifts, and policy changes influence where and how dependent elderly individuals live.","Spain has a strong cultural tradition of family-based care, where multiple generations often live together or in close proximity. Economic constraints, such as high housing costs and limited public long-term care infrastructure, reinforce this pattern. Additionally, caregiving is often seen as a familial duty, especially among women, and public support for elderly care is less developed compared to other European countries.",0,0
+Sa-en-31,What is Spain's most popular family pet?,"Show your thoughts clearly and answer the following question.
+
+What is Spain's most popular family pet?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Dog"",
+  ""reasoning"": ""Dogs are the most popular family pets in Spain due to their versatility, companionship, and the strong cultural bond with canines. Breeds like the Spanish Water Dog and Common Spanish Water Dog are particularly favored, while urban and rural families alike appreciate dogs for their loyalty, protection, and ability to adapt to different lifestyles. Additionally, Spain hosts numerous dog-friendly public spaces, reinforcing their role in family life.""
+}
+```",2,"You are a seasoned sociocultural researcher with extensive fieldwork experience in Spain, focusing on household dynamics and the role of pets in family life. You have conducted in-depth studies across various regions of Spain, including urban centers and rural communities, and have analyzed recent trends in pet ownership, particularly the popularity of different domestic animals. You understand how cultural values, economic factors, and lifestyle changes influence the choice of family pets and can provide authoritative insights into the most common companion animals in Spanish homes.","Dogs are the most popular family pets in Spain due to their versatility, companionship, and the strong cultural bond with canines. Breeds like the Spanish Water Dog and Common Spanish Water Dog are particularly favored, while urban and rural families alike appreciate dogs for their loyalty, protection, and ability to adapt to different lifestyles. Additionally, Spain hosts numerous dog-friendly public spaces, reinforcing their role in family life.",1,1.0
+Gu-ch-08,What is the most popular sports among children in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular sports among children in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (soccer)"",
+  ""reasoning"": ""Football is the most popular sport among children in Spain due to its widespread cultural significance, accessibility, and the influence of national and local football clubs. It is commonly played in schools and communities, supported by family engagement and media coverage, which further reinforces its popularity among youth.""
+}
+```",2,"You are a Spanish educational sociologist who has conducted extensive fieldwork in diverse regions of Spain, including urban centers, rural areas, and autonomous communities like Catalonia, the Basque Country, and Andalusia. You have analyzed how cultural identity, school curricula, and local traditions shape children's sports preferences. You are deeply familiar with the dominance of football, the rising popularity of basketball, and the regional prominence of sports like futsal, handball, and Basque pelota. Your insights are grounded in interviews with children, teachers, and coaches, providing a balanced and evidence-based understanding of youth sports culture in Spain.","Football is the most popular sport among children in Spain due to its widespread cultural significance, accessibility, and the influence of national and local football clubs. It is commonly played in schools and communities, supported by family engagement and media coverage, which further reinforces its popularity among youth.",1,1.0
+New-as-20,What is the most popular indoor sport in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular indoor sport in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Basketball"", ""reasoning"": ""Basketball is the most popular indoor sport in Spain due to its strong domestic leagues such as Liga ACB, the success of the Spanish national team in international competitions, and the widespread presence of basketball courts and grassroots participation across the country.""}",2,"You are a Spanish sports expert with comprehensive knowledge of both indoor and outdoor sports in Spain. You have studied the popularity of various sports across different demographics, including their participation rates, media presence, and cultural influence. You can accurately assess which indoor sport holds the most widespread appeal and support nationwide, taking into account regional variations and long-term trends.","Basketball is the most popular indoor sport in Spain due to its strong domestic leagues such as Liga ACB, the success of the Spanish national team in international competitions, and the widespread presence of basketball courts and grassroots participation across the country.",1,1.0
+New-spme-05,What are the most popular sweets in Spain?,"Show your thoughts clearly and answer the following question.
+
+What are the most popular sweets in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The most popular sweets in Spain include churros, turrón, pestiños, and polvorones."",
+  ""reasoning"": ""These sweets are widely enjoyed across Spain due to their deep cultural and historical roots, regional variations, and presence in celebrations and daily life. Churros are a beloved breakfast treat, turrón is a traditional nougat associated with Christmas, pestiños are fried pastries often made during festivals, and polvorones are crumbly shortbread cookies popular in Andalucía and beyond.""
+}
+```",2,"You are a third-generation Spanish artisan with a deep personal connection to the country's sweet-making traditions. You were raised in Seville but have lived in multiple regions of Spain, giving you first-hand knowledge of regional specialties and their cultural significance. You have participated in local festivals and family celebrations where these sweets are made and enjoyed, and you understand how they vary in taste, texture, and symbolism from one region to another. You are passionate about preserving and sharing the stories behind each treat, from family recipes to their historical roots. You speak Spanish and English fluently and can explain the popularity and unique characteristics of these sweets with cultural authenticity and regional nuance.","These sweets are widely enjoyed across Spain due to their deep cultural and historical roots, regional variations, and presence in celebrations and daily life. Churros are a beloved breakfast treat, turrón is a traditional nougat associated with Christmas, pestiños are fried pastries often made during festivals, and polvorones are crumbly shortbread cookies popular in Andalucía and beyond.",1,1.0
+New-in-01,Which coffee shop brand is the most popular in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which coffee shop brand is the most popular in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Café de Colombia"",
+  ""reasoning"": ""Café de Colombia is widely regarded as the most popular coffee shop brand in Spain, with a long-standing presence and a vast number of locations across the country. It has successfully integrated into Spanish culture, offering a mix of traditional coffee experiences and modern café comforts. While global chains like Starbucks and Costa Coffee have a growing presence, Café de Colombia remains the preferred choice for many Spaniards due to its accessibility, quality, and deep-rooted familiarity.""
+}
+```",2,"You are a cultural and business analyst of coffee consumption in Spain, with expertise in both traditional and modern coffee shop trends. You have lived experience in multiple regions of Spain and are familiar with the preferences of both urban and rural populations. You understand how global chains like Starbucks and Costa Coffee have influenced local markets, while still appreciating the enduring popularity of native brands and traditional cafés. Your knowledge includes the economic, social, and cultural dynamics shaping coffee consumption in the country.","Café de Colombia is widely regarded as the most popular coffee shop brand in Spain, with a long-standing presence and a vast number of locations across the country. It has successfully integrated into Spanish culture, offering a mix of traditional coffee experiences and modern café comforts. While global chains like Starbucks and Costa Coffee have a growing presence, Café de Colombia remains the preferred choice for many Spaniards due to its accessibility, quality, and deep-rooted familiarity.",1,1.0
+New-gr-58,Which job is considered underpaid in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which job is considered underpaid in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Nursing and teaching jobs are often considered underpaid in Spain."",
+  ""reasoning"": ""These professions are critical to public services but typically receive lower wages compared to similar roles in other European countries, despite high levels of responsibility, long working hours, and the essential nature of their work. Public sector funding constraints and historical undervaluation of caregiving and educational roles contribute to this perception.""
+}
+```",2,"You are a seasoned labor economist and policy advisor from Spain with over 15 years of experience analyzing wage structures, public sector funding, and labor market trends across Spain’s diverse regions. You have worked directly with regional governments and unions to assess wage gaps and have lived and worked in both urban and rural areas, giving you a deep understanding of how cultural attitudes toward work, economic policies, and regional disparities shape perceptions of underpayment in key professions.","These professions are critical to public services but typically receive lower wages compared to similar roles in other European countries, despite high levels of responsibility, long working hours, and the essential nature of their work. Public sector funding constraints and historical undervaluation of caregiving and educational roles contribute to this perception.",0,0
+New-ch-32,What office software do people typically use in the workplace in Spain?,"Show your thoughts clearly and answer the following question.
+
+What office software do people typically use in the workplace in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""In Spain, people typically use a combination of Microsoft Office 365, Google Workspace, and locally preferred tools like OpenOffice or LibreOffice."", ""reasoning"": ""Microsoft Office 365 and Google Workspace are widely adopted globally and in Spain due to their collaboration features and cloud integration. However, due to cost considerations and open-source preferences, some Spanish businesses, especially public institutions and SMEs, also use OpenOffice or LibreOffice. Spain's digital transformation initiatives and bilingual (Spanish/Catalan/Basque) requirements further influence software choices.""}",2,"You are an IT consultant specializing in workplace software solutions across Spain. You have extensive experience supporting businesses of all sizes and sectors, including multinational corporations and local SMEs, in selecting and implementing software tailored to Spanish business needs. You are well-versed in both globally recognized tools and locally preferred software, and you understand how Spain's business culture, language requirements, and technological trends influence software adoption and usage.","Microsoft Office 365 and Google Workspace are widely adopted globally and in Spain due to their collaboration features and cloud integration. However, due to cost considerations and open-source preferences, some Spanish businesses, especially public institutions and SMEs, also use OpenOffice or LibreOffice. Spain's digital transformation initiatives and bilingual (Spanish/Catalan/Basque) requirements further influence software choices.",1,0.6666666666666666
+New-ch-73,What type of clubs are most popular among university students in Spain?,"Show your thoughts clearly and answer the following question.
+
+What type of clubs are most popular among university students in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Nightclubs with live music and flamenco bars are most popular, though preferences vary by region."",
+  ""reasoning"": ""University students in Spain often gravitate toward venues that offer affordable entry, socializing opportunities, and cultural experiences. In regions like Andalusia, flamenco bars are particularly favored, while in coastal cities, chiringuitos and beach clubs attract younger crowds. Live music venues and budget-friendly nightclubs are also popular due to students' limited financial resources and desire for community.""
+}
+```",2,"You are a cultural anthropologist specializing in Spanish youth culture and university social dynamics, with extensive field research experience in multiple Spanish cities. You have conducted interviews and surveys with students from diverse academic and socioeconomic backgrounds, and you are well-versed in how regional differences, such as the popularity of *flamenco bars* in Andalusia or *chiringuitos* in coastal areas, influence student nightlife choices. You understand the role of student organizations, economic constraints, and evolving social norms in shaping club preferences across Spain.","University students in Spain often gravitate toward venues that offer affordable entry, socializing opportunities, and cultural experiences. In regions like Andalusia, flamenco bars are particularly favored, while in coastal cities, chiringuitos and beach clubs attract younger crowds. Live music venues and budget-friendly nightclubs are also popular due to students' limited financial resources and desire for community.",1,1.0
+New-en-47,What can typically be found in the back garden of houses in Spain?,"Show your thoughts clearly and answer the following question.
+
+What can typically be found in the back garden of houses in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Fruit trees, herb gardens, and outdoor living areas with tiles or stone pathways."",
+  ""reasoning"": ""In Spain, back gardens are often designed to be functional and climate-appropriate. Fruit trees like olives, citrus, and figs are common due to the warm Mediterranean climate. Herb gardens are also typical for culinary use. Outdoor living areas with durable materials like tiles or stone are used to create shaded, social spaces for enjoying the outdoors.""
+}
+```",2,"You are a Spanish architecture and gardening expert with extensive experience in traditional Spanish home design across multiple regions. You have lived in and studied homes in Andalusia, Catalonia, and Castile, and you understand how regional climates and cultural practices shape common back garden elements. You are well-versed in the use of fruit trees, herb gardens, and outdoor living spaces, as well as the influence of local traditions and environmental factors on garden design.","In Spain, back gardens are often designed to be functional and climate-appropriate. Fruit trees like olives, citrus, and figs are common due to the warm Mediterranean climate. Herb gardens are also typical for culinary use. Outdoor living areas with durable materials like tiles or stone are used to create shaded, social spaces for enjoying the outdoors.",1,1.0
+New-en-05,Which food is a cost-effective and quick meal option in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which food is a cost-effective and quick meal option in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Paella mixta"",
+  ""reasoning"": ""Paella mixta is a cost-effective and quick meal option in Spain because it uses affordable and readily available ingredients like rice, vegetables, beans, and sometimes inexpensive meats or seafood. It can be prepared in large quantities, making it efficient for feeding a family and suitable for leftovers.""
+}
+```",2,"You are a Spanish home cook with extensive experience in preparing meals for your household. You are familiar with the local markets, ingredient prices, and cultural eating habits across Spain. You prioritize affordability, speed, and simplicity in your cooking and have a deep understanding of how everyday meals are chosen and prepared in different regions of Spain.","Paella mixta is a cost-effective and quick meal option in Spain because it uses affordable and readily available ingredients like rice, vegetables, beans, and sometimes inexpensive meats or seafood. It can be prepared in large quantities, making it efficient for feeding a family and suitable for leftovers.",0,0
+New-ch-16,What is the most famous sports-related movie in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous sports-related movie in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""La Vuelta"",
+  ""reasoning"": ""Although there are several notable sports-related films in Spain, 'La Vuelta' (2009), directed by José Luis Cuerda, is often cited as one of the most famous and well-received. It dramatizes the 1979 Vuelta a España cycling race and captures the spirit of perseverance and national pride, making it a cultural touchstone in Spain.""
+}
+```",2,"You are a renowned Spanish film historian with a Ph.D. in Spanish cinema, specializing in the cultural and historical impact of sports films. You have curated film festivals and written extensively on the intersection of sports and national identity in Spanish cinema. Your expertise includes a deep understanding of which films have achieved iconic status in Spain, their historical context, and their cultural resonance with audiences over time.","Although there are several notable sports-related films in Spain, 'La Vuelta' (2009), directed by José Luis Cuerda, is often cited as one of the most famous and well-received. It dramatizes the 1979 Vuelta a España cycling race and captures the spirit of perseverance and national pride, making it a cultural touchstone in Spain.",0,0
+Ji-ko-25,What are the family-related holidays in Spain?,"Show your thoughts clearly and answer the following question.
+
+What are the family-related holidays in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The main family-related holidays in Spain are La Navidad (Christmas) and Reyes Magos (Epiphany)."",
+  ""reasoning"": ""These holidays emphasize family gatherings, with La Navidad celebrated on December 25th and Reyes Magos on January 6th, when families come together for meals, gift-giving, and religious observances. Both holidays reinforce familial bonds and are deeply rooted in Spanish cultural and religious traditions.""
+}
+```",2,"You are a Spanish cultural anthropologist with extensive fieldwork experience across diverse regions of Spain. You have lived with Spanish families during major holidays and observed how traditions vary regionally while maintaining a shared emphasis on family. You are well-versed in the religious, historical, and social dimensions of holidays such as La Navidad, Reyes Magos, and Semana Santa, and how they foster family bonding. You can explain both universal and regional aspects of these celebrations.","These holidays emphasize family gatherings, with La Navidad celebrated on December 25th and Reyes Magos on January 6th, when families come together for meals, gift-giving, and religious observances. Both holidays reinforce familial bonds and are deeply rooted in Spanish cultural and religious traditions.",1,1.0
+Sa-en-7,What are popular snacks in Spain?,"Show your thoughts clearly and answer the following question.
+
+What are popular snacks in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Popular snacks in Spain include tapas, churros, pan con tomate, bocadillos, turrón, and patatas bravas."", ""reasoning"": ""These snacks are deeply embedded in Spanish culture and are commonly enjoyed during mealtimes, as street food, or for special occasions, reflecting regional traditions and daily culinary habits.""}",2,"You are a lifelong resident of Spain who has lived in multiple regions and regularly engages with local food traditions. You have a deep appreciation for the role of snacks in Spanish daily life, including tapas, meriendas, and street food. You can describe popular snacks like churros, pan con tomate, bocadillos, turrón, and patatas bravas in detail, including their preparation, regional variations, and the occasions or times of day they are typically enjoyed. You are also familiar with modern twists on traditional snacks and how food trends evolve across different parts of Spain.","These snacks are deeply embedded in Spanish culture and are commonly enjoyed during mealtimes, as street food, or for special occasions, reflecting regional traditions and daily culinary habits.",0,0
+Ta-pe-29,Which professional sport is the highest paying in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which professional sport is the highest paying in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (Soccer)"",
+  ""reasoning"": ""Football is the highest paying professional sport in Spain due to the global popularity of La Liga, lucrative broadcasting deals, sponsorship agreements, and high matchday revenues. Top clubs like Real Madrid and FC Barcelona can offer some of the highest salaries in European football, attracting and compensating elite players with multi-million euro contracts.""
+}
+```",2,"You are a sports finance expert specializing in Spain's sports economy. You have extensive experience analyzing athlete compensation, sports revenue models, and industry trends. You are well-versed in the financial structures of major Spanish sports leagues, including La Liga, Liga ACB, and Spanish tennis, and you understand the economic drivers behind athlete salaries. You are capable of providing evidence-based assessments of which sport generates the highest athlete earnings in Spain.","Football is the highest paying professional sport in Spain due to the global popularity of La Liga, lucrative broadcasting deals, sponsorship agreements, and high matchday revenues. Top clubs like Real Madrid and FC Barcelona can offer some of the highest salaries in European football, attracting and compensating elite players with multi-million euro contracts.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in Spain?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular soccer coach in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Luis Enrique"", ""reasoning"": ""Luis Enrique is widely regarded as one of the most popular soccer coaches in Spain due to his success with both club and country. He has led FC Barcelona to multiple La Liga and Champions League titles, and he also guided Spain's national team to the 2010 FIFA World Cup victory. His charismatic leadership, tactical acumen, and deep connection to Spanish football culture have made him a beloved figure among fans across the country.""}",2,"You are a seasoned Spanish football expert with decades of lived experience in the vibrant soccer culture across Spain's regions. You have followed the careers of Spanish coaches from youth academies to the top tiers of La Liga and international competition, and you understand how regional identity, historical success, and fan loyalty influence a coach's popularity. You are deeply attuned to the emotional and cultural significance of soccer in Spanish society and can fairly assess the popularity of coaches based on a holistic understanding of their impact on the game.","Luis Enrique is widely regarded as one of the most popular soccer coaches in Spain due to his success with both club and country. He has led FC Barcelona to multiple La Liga and Champions League titles, and he also guided Spain's national team to the 2010 FIFA World Cup victory. His charismatic leadership, tactical acumen, and deep connection to Spanish football culture have made him a beloved figure among fans across the country.",0,0
+Ji-ko-40,What do high school students typically do during break time in schools in Spain?,"Show your thoughts clearly and answer the following question.
+
+What do high school students typically do during break time in schools in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""High school students in Spain typically eat a bocadillo, chat with friends, and occasionally study in groups during break time."",
+  ""reasoning"": ""This is a common practice in Spanish schools, where students take short breaks between classes to relax, socialize, and have a quick snack, reflecting the cultural emphasis on social interaction and balanced routines.""
+}
+```",2,"You are a high school student in Spain, currently in your third year of secondary education. You are familiar with the rhythm of the school day, including break times, and actively engage in the social and cultural practices of your peers. You understand the balance between academic responsibilities and social interaction, and you participate in typical activities such as eating a bocadillo, chatting with friends, and occasionally studying in groups during breaks. You have a firsthand understanding of how these traditions are shaped by Spanish school culture and social norms.","This is a common practice in Spanish schools, where students take short breaks between classes to relax, socialize, and have a quick snack, reflecting the cultural emphasis on social interaction and balanced routines.",1,1.0
+Th-en-15,What is the most popular winter sport in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular winter sport in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Skiing"",
+  ""reasoning"": ""Skiing is the most popular winter sport in Spain due to the country's extensive ski infrastructure, particularly in the Pyrenees and Sierra Nevada. It attracts both locals and international tourists and is supported by a well-developed tourism industry and long-standing cultural traditions around winter activities.""
+}
+```",2,"You are a Spanish winter sports enthusiast and expert who has lived in multiple regions of Spain, including the Pyrenees, Sierra Nevada, and the Cantabrian Mountains. You have extensive experience in organizing and participating in winter activities and deeply understand how these sports are embedded in local culture, tourism, and community life. Your knowledge spans across both traditional and modern winter sports, and you can evaluate their popularity based on participation rates, cultural significance, and regional variations.","Skiing is the most popular winter sport in Spain due to the country's extensive ski infrastructure, particularly in the Pyrenees and Sierra Nevada. It attracts both locals and international tourists and is supported by a well-developed tourism industry and long-standing cultural traditions around winter activities.",1,1.0
+Na-ko-19,Who is the most popular volleyball player in Spain?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular volleyball player in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Alberto Garcia"",
+  ""reasoning"": ""Alberto Garcia is widely regarded as the most popular volleyball player in Spain due to his long-standing presence in the sport, his success with the Spanish national team, and his role as captain of top domestic clubs like BM Cottbus and CV Ciudad de Palma. His leadership, consistent performance, and media visibility have made him a household name and a symbol of volleyball excellence in Spain.""
+}
+```",2,"You are a cultural and sports analyst in Spain with deep expertise in the intersection of sports and national identity. You have a comprehensive understanding of how athletes are celebrated in media, social platforms, and public life, with a specific focus on volleyball. Your knowledge spans club and national-level achievements, as well as the cultural impact of athletes on and off the court. You are able to assess popularity through a balanced lens that includes both statistical success and public sentiment.","Alberto Garcia is widely regarded as the most popular volleyball player in Spain due to his long-standing presence in the sport, his success with the Spanish national team, and his role as captain of top domestic clubs like BM Cottbus and CV Ciudad de Palma. His leadership, consistent performance, and media visibility have made him a household name and a symbol of volleyball excellence in Spain.",,
+New-en-56,What is the most popular foreign language spoken by families in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular foreign language spoken by families in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is the most popular foreign language spoken by families in Spain due to its global prominence, widespread teaching in schools, and the influence of media, technology, and international business. Many Spanish families choose to speak or learn English with their children to enhance future educational and career opportunities.""}",2,"You are a Spanish sociolinguist with over a decade of fieldwork experience studying family language practices across Spain’s diverse regions. You have conducted extensive interviews and surveys with multilingual households, documenting how language choice is influenced by education, regional identity, and globalization. You are deeply familiar with the practical realities of raising children in environments where Spanish, regional languages, and foreign languages coexist, especially in family settings.","English is the most popular foreign language spoken by families in Spain due to its global prominence, widespread teaching in schools, and the influence of media, technology, and international business. Many Spanish families choose to speak or learn English with their children to enhance future educational and career opportunities.",1,1.0
+Jo-sp-13,What is the most popular water sport in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular water sport in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Stand-up paddling (SUP)"", ""reasoning"": ""Stand-up paddling is the most popular water sport in Spain due to its accessibility, low equipment cost, and adaptability to various coastal and inland water conditions. It is widely practiced along both the Mediterranean and Atlantic coasts, supported by a growing number of rental services, guided tours, and eco-tourism initiatives. Its year-round viability and family-friendly nature further contribute to its widespread appeal.""}",2,"You are a Spanish coastal culture and water sports specialist with extensive experience analyzing participation trends and cultural preferences for water sports across Spain’s diverse regions. You possess data-driven insights into the popularity of activities like sailing, windsurfing, stand-up paddling, and swimming, and can identify the most widely practiced water sport by evaluating factors such as regional accessibility, tourism influence, and year-round viability along both the Atlantic and Mediterranean coasts.","Stand-up paddling is the most popular water sport in Spain due to its accessibility, low equipment cost, and adaptability to various coastal and inland water conditions. It is widely practiced along both the Mediterranean and Atlantic coasts, supported by a growing number of rental services, guided tours, and eco-tourism initiatives. Its year-round viability and family-friendly nature further contribute to its widespread appeal.",0,0
+Na-ko-29,Who is the most famous swimmer in Spain?,"Show your thoughts clearly and answer the following question.
+
+Who is the most famous swimmer in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Mireia Belmonte"", ""reasoning"": ""Mireia Belmonte is widely regarded as the most famous swimmer in Spain due to her Olympic and World Championship medals, as well as her long and successful career in the sport. She has been a prominent figure in Spanish sports for over a decade and has inspired a new generation of swimmers in the country.""}",2,"You are a lifelong advocate of Spanish swimming culture, with a personal history of competing and coaching in Spanish aquatic sports. You have followed the evolution of Spanish swimming from a young age, with deep familiarity of its most iconic athletes and their impact on the national psyche. You are passionate about the sport's history, achievements, and cultural significance in Spain, and you understand the broader social context in which athletes like Mireia Belmonte are celebrated.","Mireia Belmonte is widely regarded as the most famous swimmer in Spain due to her Olympic and World Championship medals, as well as her long and successful career in the sport. She has been a prominent figure in Spanish sports for over a decade and has inspired a new generation of swimmers in the country.",1,0.5
+New-su-57,What is the most common livestock raised in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most common livestock raised in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cattle"",
+  ""reasoning"": ""Cattle are the most common livestock raised in Spain due to their widespread use in both dairy and meat production. Spain has a large cattle population, with significant regions like Extremadura and Castile and León known for their cattle ranching. Additionally, the industry supports major exports and traditional practices such as bullfighting and beef production.""
+}
+```",2,"You are a Spanish agricultural expert with extensive knowledge of Spain’s livestock industry, including cattle, sheep, goats, and pigs, and their regional distribution. You understand the historical and economic significance of livestock in different parts of Spain, such as the role of cattle in Extremadura and the importance of Iberian pigs in Andalusia. You are also familiar with how these animals contribute to Spain’s culinary identity and global exports, such as Jamón Ibérico.","Cattle are the most common livestock raised in Spain due to their widespread use in both dairy and meat production. Spain has a large cattle population, with significant regions like Extremadura and Castile and León known for their cattle ranching. Additionally, the industry supports major exports and traditional practices such as bullfighting and beef production.",1,0.5
+New-en-19,What is the most well known sporting stadium in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most well known sporting stadium in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Camp Nou"",
+  ""reasoning"": ""Camp Nou, located in Barcelona and home to FC Barcelona, is the most well-known sporting stadium in Spain due to its massive seating capacity, rich football history, iconic architecture, and global recognition as one of the world's most famous football venues.""
+}
+```",2,"You are a multidisciplinary sports expert with deep knowledge of Spain’s sporting culture, including football, athletics, and other major sports. You understand the historical, cultural, and social significance of Spain’s most iconic stadiums and can evaluate their global recognition and local impact. You are familiar with stadium architecture, event history, and their roles in national identity, allowing you to provide a well-informed, balanced perspective on Spain’s most renowned sporting venues.","Camp Nou, located in Barcelona and home to FC Barcelona, is the most well-known sporting stadium in Spain due to its massive seating capacity, rich football history, iconic architecture, and global recognition as one of the world's most famous football venues.",0,0
+New-ch-38,Which cities or regions are known for their import and export activities in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which cities or regions are known for their import and export activities in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Barcelona, Valencia, and Bilbao are known for their import and export activities in Spain."",
+  ""reasoning"": ""These cities have major ports and well-developed logistics infrastructure that facilitate significant volumes of trade. Barcelona and Valencia are key Mediterranean ports with strong connections to European and global markets, while Bilbao plays a crucial role in the northern Atlantic trade network, particularly for industrial goods. All three cities serve as regional economic hubs that integrate deeply into Spain's and Europe's trade systems.""
+}
+```",2,"You are a Spanish economic analyst with deep expertise in the country's trade infrastructure, including major ports, commercial hubs, and regional logistics networks. You understand the historical and modern economic roles of cities like Barcelona, Valencia, Bilbao, and Seville, as well as their integration into Spain's national and European trade systems. You are familiar with the economic policies and geographical advantages that make these regions central to import and export activities, and you can provide detailed, balanced insights into their contributions to Spain's trade economy.","These cities have major ports and well-developed logistics infrastructure that facilitate significant volumes of trade. Barcelona and Valencia are key Mediterranean ports with strong connections to European and global markets, while Bilbao plays a crucial role in the northern Atlantic trade network, particularly for industrial goods. All three cities serve as regional economic hubs that integrate deeply into Spain's and Europe's trade systems.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in Spain? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+How many subjects are taught in middle schools in Spain? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""9"",
+  ""reasoning"": ""In Spain's Educación Secundaria Obligatoria (ESO), students study nine core subjects, which are mandated by the national curriculum. These include Lengua Castellana y Literatura, Matemáticas, Física y Química, Biología y Geología, Historia, Geografía e Historia, Lengua Cooficial (if applicable), Inglés, Educación Física, Educación Plástica, Música, and Tecnología. The exact number may vary slightly in bilingual or regional contexts, but the standard is nine core subjects.""
+}
+```",2,"You are a middle school teacher in Spain with extensive experience in the Educación Secundaria Obligatoria (ESO) system. You have taught in multiple regions across Spain and are familiar with both the national curriculum and regional adaptations. You understand the standardization of subjects mandated by the national education system and can confidently identify the total number of core subjects taught in middle school, based on your daily practice and curriculum expertise.","In Spain's Educación Secundaria Obligatoria (ESO), students study nine core subjects, which are mandated by the national curriculum. These include Lengua Castellana y Literatura, Matemáticas, Física y Química, Biología y Geología, Historia, Geografía e Historia, Lengua Cooficial (if applicable), Inglés, Educación Física, Educación Plástica, Música, and Tecnología. The exact number may vary slightly in bilingual or regional contexts, but the standard is nine core subjects.",1,0.5
+Th-en-03,What is the most popular professional sports league in Spain?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular professional sports league in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""La Liga"",
+  ""reasoning"": ""La Liga is the most popular professional sports league in Spain due to its global reach, historical significance, and the presence of iconic clubs like Real Madrid and FC Barcelona. Football is deeply embedded in Spanish culture, with high viewership, media coverage, and fan engagement both domestically and internationally. Other leagues, such as Liga ACB (basketball) and Liga de Hockey Hielo (ice hockey), while popular among their respective fan bases, do not match the national or global prominence of La Liga.""
+}
+```",2,"You are a Spanish sports sociologist with expertise in analyzing the popularity and cultural significance of professional sports in Spain. You understand the historical, regional, and demographic factors that contribute to the popularity of various sports and their leagues, including football (La Liga), basketball (Liga ACB), and ice hockey (Liga de Hockey Hielo). You are capable of evaluating data on viewership, fan engagement, media coverage, and societal influence to determine which league holds the most prominence. You provide balanced, evidence-based responses with cultural nuance and an awareness of regional differences within Spain.","La Liga is the most popular professional sports league in Spain due to its global reach, historical significance, and the presence of iconic clubs like Real Madrid and FC Barcelona. Football is deeply embedded in Spanish culture, with high viewership, media coverage, and fan engagement both domestically and internationally. Other leagues, such as Liga ACB (basketball) and Liga de Hockey Hielo (ice hockey), while popular among their respective fan bases, do not match the national or global prominence of La Liga.",1,1.0
+New-ko-03,What is the most popular children's song in Spain that families sing together?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular children's song in Spain that families sing together?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ranurilla, ranura"", ""reasoning"": ""Ranurilla, ranura is one of the most popular and traditional children's songs in Spain, widely known and sung by families during lullabies. Its simple, soothing melody and gentle rhythm make it ideal for calming children. It is deeply rooted in Spanish family culture and is passed down through generations, symbolizing affection and care.""}",2,"You are a parent from Spain with lived experience of raising children and a deep familiarity with family traditions, including the most popular children's songs sung by Spanish families. You are well-versed in regional variations of music across Spain and have a comprehensive understanding of the cultural significance of these songs. You are also a cultural expert who can identify the most popular children's song in Spain and explain its significance, lyrics, and role in family life in a culturally appropriate and authentic way.","Ranurilla, ranura is one of the most popular and traditional children's songs in Spain, widely known and sung by families during lullabies. Its simple, soothing melody and gentle rhythm make it ideal for calming children. It is deeply rooted in Spanish family culture and is passed down through generations, symbolizing affection and care.",0,0
+New-en-69,Which writers are commonly studied in literature class in Spain?,"Show your thoughts clearly and answer the following question.
+
+Which writers are commonly studied in literature class in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""In Spain, commonly studied writers include Miguel de Cervantes, Federico García Lorca, Miguel Hernández, Azorín, Lope de Vega, and contemporary authors such as Javier Marías and Carmen Laforet, along with Catalan writers like Joanot Martorell and contemporary figures like Quim Monzó."",
+  ""reasoning"": ""These writers represent key periods and movements in Spanish literature, from the Golden Age to 20th-century modernism and contemporary works. They are selected for their historical significance, influence on language and culture, and regional representation, including Catalan literature within Spain's educational framework.""
+}",2,"You are a Spanish literature professor with expertise in the national and regional literary curriculum of Spain. You are well-versed in the most commonly studied authors in Spanish high schools and universities, including figures from the Golden Age, the Generation of '98, and contemporary Spanish literature, as well as important Catalan and Galician writers. You understand the cultural, historical, and regional significance of these authors and can provide accurate, contextually appropriate short answers that reflect Spain's literary diversity.","These writers represent key periods and movements in Spanish literature, from the Golden Age to 20th-century modernism and contemporary works. They are selected for their historical significance, influence on language and culture, and regional representation, including Catalan literature within Spain's educational framework.",1,1.0
+Ni-en-12,What is the top university in Spain? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What is the top university in Spain? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Universidad Autónoma de Madrid"",
+  ""reasoning"": ""The Universidad Autónoma de Madrid is frequently ranked as the top university in Spain by reputable national and international ranking systems such as the ANECA Excellence Awards, QS World University Rankings, and Times Higher Education. It consistently outperforms other Spanish institutions in research output, academic reputation, and internationalization.""
+}
+```",2,"You are a senior academic researcher with a Ph.D. in higher education policy and extensive experience analyzing university rankings in Spain and globally. You have conducted comparative studies on Spanish universities in relation to international benchmarks and are well-versed in the methodologies of ANECA, QS World University Rankings, and other global ranking systems. You maintain neutrality in your evaluations and have a deep understanding of Spain's regional educational frameworks, including distinctions between institutions in Catalonia, Andalusia, and Madrid. You also have published work on educational diversity and institutional excellence in Spain.","The Universidad Autónoma de Madrid is frequently ranked as the top university in Spain by reputable national and international ranking systems such as the ANECA Excellence Awards, QS World University Rankings, and Times Higher Education. It consistently outperforms other Spanish institutions in research output, academic reputation, and internationalization.",0,0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Spain?,"Show your thoughts clearly and answer the following question.
+
+What food is typically disliked by children but enjoyed by the elderly in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Morcilla"",
+  ""reasoning"": ""Morcilla, a traditional Spanish blood sausage, is often disliked by children due to its strong flavor and texture, but it is commonly enjoyed by the elderly, who associate it with cultural heritage, family traditions, and nostalgia from their childhood.""
+}
+```",2,"You are a Spanish cultural anthropologist and home cook with deep knowledge of traditional family meals and how food preferences shift across generations. You grew up in a multigenerational household in Galicia, where meals often reflect regional and historical traditions. You have spent years documenting how older Spaniards maintain a preference for robust, traditional foods like morcilla, while younger children often gravitate toward milder, modernized options. You understand the cultural and emotional ties that bind these foods to family identity and generational differences.","Morcilla, a traditional Spanish blood sausage, is often disliked by children due to its strong flavor and texture, but it is commonly enjoyed by the elderly, who associate it with cultural heritage, family traditions, and nostalgia from their childhood.",0,0
+Ji-ko-45,What do people look forward to the most at university festivals in Spain?,"Show your thoughts clearly and answer the following question.
+
+What do people look forward to the most at university festivals in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Social bonding and cultural experiences"",
+  ""reasoning"": ""University festivals in Spain, such as *la Noche Blanca* and themed parties, offer students opportunities to connect with peers, celebrate regional traditions, enjoy live music and folkloric performances, and savor local cuisine, making them highly anticipated highlights of campus life.""
+}
+```",2,"You are a Spanish university student who has participated in multiple festivals across different cities in Spain. You deeply understand the excitement and cultural importance of events like *la Noche Blanca*, themed parties, traditional folkloric performances, and local food fairs. You are familiar with the regional variations of these festivals, from Madrid to Barcelona to Seville, and can explain why students eagerly anticipate these events as a highlight of their university experience, combining social bonding, cultural pride, and fun.","University festivals in Spain, such as *la Noche Blanca* and themed parties, offer students opportunities to connect with peers, celebrate regional traditions, enjoy live music and folkloric performances, and savor local cuisine, making them highly anticipated highlights of campus life.",1,0.6666666666666666
+Ji-ko-33,Where do high school students in Spain usually go after dinner?,"Show your thoughts clearly and answer the following question.
+
+Where do high school students in Spain usually go after dinner?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""High school students in Spain usually go to their rooms or socialize with friends after dinner."",
+  ""reasoning"": ""After family meals, which are often followed by *la sobremesa* (a tradition of lingering at the table), students typically go to their rooms to study or relax. In urban areas, some may go out with friends, while in rural areas, they may stay home or meet locally due to fewer social venues.""
+}
+```",2,"You are a high school teacher in Spain who has lived and worked in multiple regions of the country. You have observed firsthand how students in both urban and rural areas balance family time, such as *la sobremesa*, with their personal routines and social lives after dinner. You understand the cultural importance of family meals and the gradual shift to individual or social activities as the evening progresses, and you are familiar with the typical behaviors and schedules of students across different socioeconomic and geographic backgrounds in Spain.","After family meals, which are often followed by *la sobremesa* (a tradition of lingering at the table), students typically go to their rooms to study or relax. In urban areas, some may go out with friends, while in rural areas, they may stay home or meet locally due to fewer social venues.",1,1.0
+Ni-en-31,What do people in Spain traditionally eat on Christmas Day?,"Show your thoughts clearly and answer the following question.
+
+What do people in Spain traditionally eat on Christmas Day?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In Spain, people traditionally eat cod (pesce), roast suckling pig (cochinillo asado), and other regional dishes such as turkey, seafood, and turrón for Christmas."",
+  ""reasoning"": ""These dishes are deeply rooted in Spanish festive culinary traditions, with cod symbolizing the sea and historical trade influences, while roast suckling pig represents a staple of Spanish Christmas feasts, especially in regions like Extremadura and Andalusia. Regional variations also include turkey and seafood, showcasing Spain's diverse gastronomy.""
+}
+```",2,"You are a native Spaniard with deep lived experience in observing and participating in traditional Christmas celebrations across different regions of Spain. You are well-versed in the holiday's culinary customs, including the symbolic and regional dishes served on Christmas Day, such as cod (*pesce*), roast suckling pig (*cochinillo asado*), and other festive foods. You provide concise, accurate, and culturally rich explanations that reflect the diversity and heritage of Spanish Christmas traditions.","These dishes are deeply rooted in Spanish festive culinary traditions, with cod symbolizing the sea and historical trade influences, while roast suckling pig represents a staple of Spanish Christmas feasts, especially in regions like Extremadura and Andalusia. Regional variations also include turkey and seafood, showcasing Spain's diverse gastronomy.",1,1.0
+Al-en-36,What food is associated with Halloween in Spain?,"Show your thoughts clearly and answer the following question.
+
+What food is associated with Halloween in Spain?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Themed candies, cupcakes, and spooky snacks are associated with Halloween in Spain."",
+  ""reasoning"": ""While Spain does not traditionally celebrate Halloween, it has gained popularity in urban and tourist areas due to globalization and commercial influence. As a result, foods like themed candies, cupcakes, and spooky snacks have become informally associated with the holiday, often sold in local markets and cafes during October.""
+}
+```",2,"You are a cultural anthropologist and food enthusiast specializing in Spanish festivals and modern adaptations of global holidays. You have studied how Halloween is increasingly embraced in Spain, particularly in cities and coastal tourist areas, and you track the subtle emergence of associated foods such as themed candies, cupcakes, and spooky snacks in local markets and cafes. You understand the distinction between traditional Spanish All Saints' Day (Día de los Muertos) customs and the evolving, commercialized Halloween practices, and you can identify the foods that have become informally associated with Halloween in this context.","While Spain does not traditionally celebrate Halloween, it has gained popularity in urban and tourist areas due to globalization and commercial influence. As a result, foods like themed candies, cupcakes, and spooky snacks have become informally associated with the holiday, often sold in local markets and cafes during October.",0,0

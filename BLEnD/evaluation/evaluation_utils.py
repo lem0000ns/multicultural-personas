@@ -79,18 +79,34 @@ def get_annotations(
         
     return country_data
 
+MC_MODEL_TO_FOLDER = {
+    "llama-3-8b-instruct": "llama3-8b",
+    "meta-llama/Meta-Llama-3-8B-Instruct": "llama3-8b",
+    "qwen3-4b": "qwen3-4b",
+    "qwen3-14b": "qwen3-14b",
+    "qwen3-32b": "qwen3-32b",
+    "Qwen/Qwen3-4B": "qwen3-4b",
+    "Qwen/Qwen3-14B": "qwen3-14b",
+    "Qwen/Qwen3-32B": "qwen3-32b",
+}
+
+def get_mc_model_dir(mc_dir, model_name):
+    folder = MC_MODEL_TO_FOLDER.get(model_name) or model_name.replace("/", "-").lower().replace(" ", "-")
+    path = os.path.join(mc_dir, folder)
+    os.makedirs(path, exist_ok=True)
+    return path
+
 def get_model_response_file(
     filename=None,
     data_dir=None,
     model=None,
     country=None,
     language=None,
-    prompt_no=None,
-    template='{model}-{country}_{language}_{prompt_no}_result.csv'
+    template='{model}-{country}_{language}_result.csv'
     ):
     
     if filename == None:
-        filename = template.replace('{model}',model).replace('{country}',country.replace(' ','_')).replace('{language}',language).replace('{prompt_no}',prompt_no)
+        filename = template.replace('{model}',model).replace('{country}',country.replace(' ','_')).replace('{language}',language)
         print(filename)
     if data_dir == None:
         assert 'ERROR: No data directory given' 
@@ -129,13 +145,21 @@ def get_llm_response_by_id(res_df,qid,id_col,r_col):
         return None
     
     try:
-        llm_response = res_df[res_df[id_col]==qid][r_col].values[-1]
+        raw_response = res_df[res_df[id_col]==qid][r_col].values[-1]
         prompt = res_df[res_df[id_col]==qid]['prompt'].values[-1]
+        # Fix for CSVs written with 6 columns (missing prompt): response held iteration; actual output in prompt column
+        raw_str = str(raw_response).strip() if raw_response is not None else ""
+        prompt_str = str(prompt).strip() if prompt is not None else ""
+        if (not raw_str or raw_str.isdigit()) and "prompt" in res_df.columns and len(prompt_str) > 100:
+            llm_response = prompt_str
+            prompt_str = ""
+        else:
+            llm_response = raw_str
 
-        llm_response = delete_prompt_from_answer(llm_response,prompt)
+        llm_response = delete_prompt_from_answer(llm_response, prompt_str)
         llm_response = llm_response.strip('.').lower()
 
-    except:
+    except Exception:
         print(res_df[res_df[id_col]==qid])
         llm_response = None
     return llm_response 

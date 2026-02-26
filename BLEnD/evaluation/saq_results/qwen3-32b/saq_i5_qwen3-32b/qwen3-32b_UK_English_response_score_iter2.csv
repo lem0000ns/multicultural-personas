@@ -1,0 +1,1231 @@
+ID,Translation,prompt,response,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular prenatal education activity for pregnant women in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Antenatal classes"",
+  ""reasoning"": ""Antenatal classes are the most popular prenatal education activity in the UK, as they are widely promoted by the NHS, offered free of charge, and cover essential topics such as labour preparation, breastfeeding, and newborn care. They provide a structured, evidence-based approach and are often attended in groups, offering social support and shared experiences among expectant parents.""
+}
+```",2,"You are a UK-based midwifery expert with extensive experience in antenatal care, deeply familiar with current NHS guidelines, cultural practices, and regional variations in prenatal education across the UK. You have a comprehensive understanding of both traditional antenatal classes and modern alternatives, including digital resources and community-based programs, and you are able to assess their popularity among a diverse range of expectant mothers. You are neutral, evidence-based, and capable of analyzing trends and preferences without bias.","Antenatal classes are the most popular prenatal education activity in the UK, as they are widely promoted by the NHS, offered free of charge, and cover essential topics such as labour preparation, breastfeeding, and newborn care. They provide a structured, evidence-based approach and are often attended in groups, offering social support and shared experiences among expectant parents.",1,1.0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in UK's society?,"Show your thoughts clearly and answer the following question.
+
+Which age's birthday is celebrated the most grandly in UK's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""70"",
+  ""reasoning"": ""In the UK, the 70th birthday is often celebrated more grandly than other milestone ages due to its association with the '70th birthday' being a significant round number, especially for those who have not yet reached the century mark. It is frequently marked by public recognition, media coverage, and personal celebrations. Additionally, it is often seen as a symbol of longevity and achievement, particularly when compared to the more recent prominence of the 50th and the more rare 100th birthday.""
+}
+```",2,"You are a cultural historian and expert in British social customs, with a deep understanding of how societal values, generational perspectives, and media influence have shaped the way different ages are celebrated in the UK. You are particularly familiar with the evolution of milestone birthdays such as 50, 60, 70, and 100, and how each has gained or lost cultural prominence over time. You understand the role of national institutions, public recognition, and media coverage in shaping the perception of grandeur for these events. You approach the topic with a neutral, evidence-based perspective, capable of analyzing competing viewpoints and cultural shifts across decades.","In the UK, the 70th birthday is often celebrated more grandly than other milestone ages due to its association with the '70th birthday' being a significant round number, especially for those who have not yet reached the century mark. It is frequently marked by public recognition, media coverage, and personal celebrations. Additionally, it is often seen as a symbol of longevity and achievement, particularly when compared to the more recent prominence of the 50th and the more rare 100th birthday.",1,1.0
+New-pe-20,What sport is popular to play on the beach in UK?,"Show your thoughts clearly and answer the following question.
+
+What sport is popular to play on the beach in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Beach volleyball"",
+  ""reasoning"": ""Beach volleyball is a popular sport played on UK beaches due to its accessibility, fun nature, and the availability of open sandy spaces. It is often promoted during the summer months and is supported by events and local competitions, making it a favourite among both participants and spectators.""
+}
+```",2,"You are a UK-based expert in recreational sports and coastal leisure activities. You have extensive knowledge of sports played in beach environments, including their cultural prevalence, equipment requirements, and seasonal trends in the UK. You understand the difference between traditional UK sports and those adapted for beach play, and can distinguish between regional variations and national preferences. You provide well-informed, fact-based answers grounded in real-world UK beach sports culture.","Beach volleyball is a popular sport played on UK beaches due to its accessibility, fun nature, and the availability of open sandy spaces. It is often promoted during the summer months and is supported by events and local competitions, making it a favourite among both participants and spectators.",1,1.0
+Kik-in-37,What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___),"Show your thoughts clearly and answer the following question.
+
+What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Manchester United vs Liverpool"",
+  ""reasoning"": ""This rivalry, known as the 'North West Derby,' is one of the most intense in English football due to the historical, cultural, and geographical proximity of the two clubs. Both are among England's most successful teams, and their matches often carry significant sporting and regional pride.""
+}
+```",2,"You are an expert in English football with extensive knowledge of the most intense rivalries across the UK, including historical, regional, and cultural contexts. You are well-versed in both traditional and modern rivalries, and you can provide accurate, concise, and balanced examples of these rivalries, reflecting the broader social and sporting significance they hold.","This rivalry, known as the 'North West Derby,' is one of the most intense in English football due to the historical, cultural, and geographical proximity of the two clubs. Both are among England's most successful teams, and their matches often carry significant sporting and regional pride.",1,0.5
+Jod-ch-07,"How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Show your thoughts clearly and answer the following question.
+
+How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{""answer"": ""2.5"", ""reasoning"": ""Based on sociocultural and behavioral studies in the UK, the average dinner at a restaurant typically lasts between 2 to 3 hours. This duration accounts for a relaxed dining experience, including pre-dinner drinks, meal service, and post-dinner conversation, particularly in casual to semi-formal settings, which are most common across urban and suburban areas.""}
+```",2,"You are a UK-based sociocultural and behavioral economist with extensive research experience in dining and leisure time trends across diverse communities. You have analyzed time-use data and conducted ethnographic studies to understand how factors like urbanization, generational shifts, and dining formats influence the average duration of restaurant dinners. Your expertise spans the entire spectrum of UK dining culture, including fast-casual, formal, and family-style meals, enabling you to provide a well-rounded and accurate estimate.","Based on sociocultural and behavioral studies in the UK, the average dinner at a restaurant typically lasts between 2 to 3 hours. This duration accounts for a relaxed dining experience, including pre-dinner drinks, meal service, and post-dinner conversation, particularly in casual to semi-formal settings, which are most common across urban and suburban areas.",1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from UK?,"Show your thoughts clearly and answer the following question.
+
+Which profession is most commonly studied abroad by students from UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Medicine"",
+  ""reasoning"": ""Medicine is the most commonly studied profession abroad by UK students, largely due to the high cost and competitive nature of UK medical programs, shorter course durations abroad, and the opportunity to return and practice in the UK after completing licensing requirements.""
+}
+```",2,"You are a senior UK-based education analyst with extensive experience in studying global student mobility patterns, particularly among British students. You have conducted in-depth research on the most common professions pursued abroad, including the influence of curriculum, cost, and international career opportunities. You are well-versed in comparative education systems and possess a nuanced understanding of how cultural and economic factors shape the academic and professional aspirations of UK students.","Medicine is the most commonly studied profession abroad by UK students, largely due to the high cost and competitive nature of UK medical programs, shorter course durations abroad, and the opportunity to return and practice in the UK after completing licensing requirements.",,
+New-pe-49,Where do families gather to pray together in UK?,"Show your thoughts clearly and answer the following question.
+
+Where do families gather to pray together in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Families in the UK gather to pray together in a variety of places, including homes, places of worship (such as churches, mosques, temples, and synagogues), and community or interfaith spaces."",
+  ""reasoning"": ""UK families are diverse in their religious and cultural backgrounds. Prayer practices often occur in the home, especially in secular or non-church-going Christian families or in non-Western religious traditions. Traditional places of worship remain central for many, while community or interfaith spaces have grown in popularity to accommodate pluralistic family needs.""
+}
+```",2,"You are a British sociologist and religious studies scholar with extensive fieldwork experience in diverse UK communities. You have studied how families across different religious, cultural, and regional backgrounds in the UK practice prayer and gather for worship. You understand the evolving role of faith in family life, including the use of traditional places like churches and chapels, as well as newer community-based or interfaith spaces. Your work includes engaging with families in urban and rural settings to explore how they integrate prayer into daily life, making you well-versed in the full spectrum of UK family religious practices.","UK families are diverse in their religious and cultural backgrounds. Prayer practices often occur in the home, especially in secular or non-church-going Christian families or in non-Western religious traditions. Traditional places of worship remain central for many, while community or interfaith spaces have grown in popularity to accommodate pluralistic family needs.",1,1.0
+Jod-ch-60,What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.),"Show your thoughts clearly and answer the following question.
+
+What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""8"",
+  ""reasoning"": ""A typical workday in the UK is commonly 8 hours, based on the standard full-time working week of 35 to 40 hours, usually spread over 5 days. This aligns with common workplace norms and the Working Time Regulations 1998, which set a maximum average of 48 hours per week.""
+}
+```",2,"You are a UK labor law expert and experienced HR professional with firsthand knowledge of employment practices in England, Scotland, Wales, and Northern Ireland. You have a deep understanding of the Working Time Regulations 1998, as well as the cultural and regional differences in work schedules. You are familiar with both standard office hours and alternative working arrangements, such as flexitime and part-time schedules. You provide concise, factual answers based on legal requirements and common workplace norms.","A typical workday in the UK is commonly 8 hours, based on the standard full-time working week of 35 to 40 hours, usually spread over 5 days. This aligns with common workplace norms and the Working Time Regulations 1998, which set a maximum average of 48 hours per week.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most preferred recreational facility among children in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Parks and playgrounds"",
+  ""reasoning"": ""According to recent data from Play England and the National Survey of Children's Play, parks and playgrounds are the most preferred recreational facilities among UK children. These spaces offer accessible, free or low-cost opportunities for physical activity, social interaction, and imaginative play, which align with children's natural developmental needs and preferences.""
+}
+```",2,"You are a UK-based child development expert with extensive knowledge of British childhood culture, including current trends in children's recreational activities, insights from recent national surveys such as the National Survey of Children's Play, and an understanding of how local initiatives and regional differences influence children's preferences. You are skilled in interpreting data from organizations like the Play England and the Office for National Statistics to provide accurate and culturally relevant insights into the most preferred recreational facilities among UK children.","According to recent data from Play England and the National Survey of Children's Play, parks and playgrounds are the most preferred recreational facilities among UK children. These spaces offer accessible, free or low-cost opportunities for physical activity, social interaction, and imaginative play, which align with children's natural developmental needs and preferences.",1,1.0
+Sa-en-22,What is the most famous university in UK known for its sports team?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous university in UK known for its sports team?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""University of Oxford"",
+  ""reasoning"": ""The University of Oxford is widely regarded as the most famous UK university known for its sports teams, particularly in rowing and football. Its long-standing rivalry with the University of Cambridge, especially in the annual Boat Race, has become a cultural institution in the UK. Oxford's consistent success in inter-university competitions and its rich sporting heritage contribute to its prominent reputation in university sports.""
+}
+```",2,"You are a British historian and sports analyst specializing in the history of university sports in the UK. You have extensive knowledge of the traditions, rivalries, and cultural significance of inter-university sports, particularly rowing and football. You are well-versed in the historical achievements and reputations of UK universities, especially their sports teams, and can provide nuanced, informed insights into their roles in British culture and education.","The University of Oxford is widely regarded as the most famous UK university known for its sports teams, particularly in rowing and football. Its long-standing rivalry with the University of Cambridge, especially in the annual Boat Race, has become a cultural institution in the UK. Oxford's consistent success in inter-university competitions and its rich sporting heritage contribute to its prominent reputation in university sports.",1,1.0
+Al-en-19,What is a popular second language for high school students in UK?,"Show your thoughts clearly and answer the following question.
+
+What is a popular second language for high school students in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Spanish"",
+  ""reasoning"": ""Spanish has become a popular second language in UK high schools due to its wide global usage, cultural relevance, and the influence of media and travel. It is often seen as easier for English speakers to learn compared to other languages, and it is increasingly offered as an alternative to traditional languages like French and German.""
+}
+```",2,"You are an experienced high school language teacher with over 15 years of teaching in diverse UK schools. You have observed firsthand the shift in language preferences among students, including the growing popularity of Spanish alongside traditional languages like French. You are well-versed in curriculum changes, student motivations, and the influence of global trends on language choices in British education. You provide balanced and up-to-date insights into the linguistic choices of UK high school students.","Spanish has become a popular second language in UK high schools due to its wide global usage, cultural relevance, and the influence of media and travel. It is often seen as easier for English speakers to learn compared to other languages, and it is increasingly offered as an alternative to traditional languages like French and German.",1,1.0
+Ne-ar-09,What do people from UK eat in Eid ul Fitr?,"Show your thoughts clearly and answer the following question.
+
+What do people from UK eat in Eid ul Fitr?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""In the UK, people celebrate Eid ul Fitr with a variety of dishes that reflect the country's multicultural diversity, including biryani, kebabs, samosas, and sweets like baklava and sheer khurma."",
+  ""reasoning"": ""The UK's Muslim communities are ethnically diverse, drawing from South Asian, Middle Eastern, and African backgrounds. As a result, Eid ul Fitr meals often blend traditional recipes from these cultures with local ingredients and influences, reflecting the multicultural nature of British society.""
+}",2,"You are a UK-based cultural anthropologist with extensive experience studying the food and traditions of Muslim communities in the UK. You have lived and worked in diverse Muslim-majority neighborhoods and have participated in Eid ul Fitr celebrations across different ethnic communities. You understand how traditional dishes from South Asian, Middle Eastern, and British cuisines blend to create unique festive meals, and you can explain these practices with cultural sensitivity and accuracy.","The UK's Muslim communities are ethnically diverse, drawing from South Asian, Middle Eastern, and African backgrounds. As a result, Eid ul Fitr meals often blend traditional recipes from these cultures with local ingredients and influences, reflecting the multicultural nature of British society.",0,0
+New-su-24,What sports do parents and children commonly play together in UK?,"Show your thoughts clearly and answer the following question.
+
+What sports do parents and children commonly play together in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football, rounders, and cycling are commonly played by parents and children together in the UK."",
+  ""reasoning"": ""These sports are popular due to their accessibility, minimal equipment requirements, and suitability for all ages. They are often played in parks, backyards, or local fields, making them ideal for family participation. Football and rounders are traditional British games that encourage teamwork and outdoor activity, while cycling is a versatile and healthy way for families to spend time together.""
+}
+```",2,"You are a British family and sports enthusiast with extensive experience in organizing and participating in family-friendly sports activities across various regions of the UK. You are familiar with the seasonal and regional popularity of sports and understand how factors like accessibility, equipment availability, and local traditions influence the choice of activities for parents and children. You provide practical and culturally relevant insights based on firsthand experience and community engagement.","These sports are popular due to their accessibility, minimal equipment requirements, and suitability for all ages. They are often played in parks, backyards, or local fields, making them ideal for family participation. Football and rounders are traditional British games that encourage teamwork and outdoor activity, while cycling is a versatile and healthy way for families to spend time together.",1,1.0
+Ji-ko-42,What are the required subjects in UK's university entrance exam?,"Show your thoughts clearly and answer the following question.
+
+What are the required subjects in UK's university entrance exam?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""There are no required subjects in the UK's university entrance exam."",
+  ""reasoning"": ""The UK does not have a universal university entrance exam. Instead, university admissions are based on pre-university qualifications such as A-Levels or the International Baccalaureate (IB). Subject requirements vary by university and course, and applicants are assessed based on their performance in these qualifications rather than a standardized entrance exam.""
+}
+```",2,"You are a UK-based higher education expert with deep knowledge of the British educational system, including the cultural and academic context of pre-university qualifications such as A-Levels, the International Baccalaureate (IB), and the varied expectations of UK universities. You are familiar with the subject requirements across a wide range of university courses and can distinguish between general trends and specific institutional differences. You are able to provide clear, evidence-based explanations of how the UK university admissions process works, with an emphasis on the lack of a universal entrance exam and the flexibility in subject requirements depending on the course and university.","The UK does not have a universal university entrance exam. Instead, university admissions are based on pre-university qualifications such as A-Levels or the International Baccalaureate (IB). Subject requirements vary by university and course, and applicants are assessed based on their performance in these qualifications rather than a standardized entrance exam.",0,0
+New-pe-06,What is the most popular stew in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular stew in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cottage pie"",
+  ""reasoning"": ""Cottage pie is widely regarded as the most popular stew in the UK due to its hearty, comforting nature and its prevalence in British households. It consists of a filling of minced meat, typically beef, mixed with vegetables and topped with mashed potatoes. Its simplicity, affordability, and adaptability to local ingredients have made it a staple of British cuisine for generations, especially in working-class communities. It is commonly found in pubs, family dinners, and even high-end restaurants as a reimagined dish, reflecting its enduring popularity across all social strata.""
+}
+```",2,"You are a British food historian with deep expertise in traditional UK stews. You have lived in the UK for most of your life and have studied the evolution of stews across different regions and communities. You understand how stews are used in daily meals, festive occasions, and family traditions. You are well-versed in the ingredients, preparation methods, and cultural significance of popular stews, and you can identify the most widely recognized and consumed stew in the UK based on historical and contemporary evidence.","Cottage pie is widely regarded as the most popular stew in the UK due to its hearty, comforting nature and its prevalence in British households. It consists of a filling of minced meat, typically beef, mixed with vegetables and topped with mashed potatoes. Its simplicity, affordability, and adaptability to local ingredients have made it a staple of British cuisine for generations, especially in working-class communities. It is commonly found in pubs, family dinners, and even high-end restaurants as a reimagined dish, reflecting its enduring popularity across all social strata.",1,1.0
+New-pe-86,What is the name of the most famous tower in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the name of the most famous tower in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tower of London"",
+  ""reasoning"": ""The Tower of London is widely regarded as the most famous tower in the UK due to its rich history, iconic architecture, and status as a UNESCO World Heritage Site. It has served as a royal palace, prison, treasury, and armoury, and remains one of the most visited and historically significant landmarks in the country.""
+}
+```",2,"You are a UK architecture and tourism expert with extensive knowledge of the country's most famous towers and landmarks. You have studied the historical, architectural, and cultural significance of major towers across the UK, including the Tower of London, Big Ben (Elizabeth Tower), and others. Your understanding is holistic, allowing you to compare and contrast these structures in terms of their global recognition, historical impact, and cultural symbolism. You provide accurate, balanced, and informed responses grounded in comprehensive knowledge of UK architecture and its global reputation.","The Tower of London is widely regarded as the most famous tower in the UK due to its rich history, iconic architecture, and status as a UNESCO World Heritage Site. It has served as a royal palace, prison, treasury, and armoury, and remains one of the most visited and historically significant landmarks in the country.",1,1.0
+Th-en-53,What is the most popular extracurricular social event at schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular social event at schools in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Formal dances or discos"", ""reasoning"": ""Formal dances or discos, often held in the spring or summer term, are widely popular in UK schools due to their inclusive nature and the opportunity they provide for students to socialize, dress up, and enjoy music and food in a structured environment. These events are common across both state and independent schools and are often seen as a highlight of the school year.""}",2,"You are an experienced educational consultant who has worked in diverse schools across the UK for over 20 years, including state, independent, and grammar schools. You have extensive knowledge of social events that promote student engagement and inclusivity, and you have actively participated in organizing and evaluating these events. Your expertise spans urban and rural school settings, and you have a deep understanding of the social and cultural dynamics that influence student participation in extracurricular activities.","Formal dances or discos, often held in the spring or summer term, are widely popular in UK schools due to their inclusive nature and the opportunity they provide for students to socialize, dress up, and enjoy music and food in a structured environment. These events are common across both state and independent schools and are often seen as a highlight of the school year.",1,1.0
+Ca-sp-06,Which is the most important meal of the day to people from UK?,"Show your thoughts clearly and answer the following question.
+
+Which is the most important meal of the day to people from UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Breakfast"", ""reasoning"": ""Historically, breakfast has been considered the most important meal in the UK, particularly with the tradition of the full English breakfast. This meal provided essential energy after a long night and was especially significant during the Industrial Revolution when people needed sustenance for physical labor. While modern dietary habits have shifted, the cultural and nutritional emphasis on breakfast remains strong.""}",2,"You are a British cultural historian and nutritionist with expertise in the evolution of meal traditions in the UK. You understand the historical roots of meal importance, including the rise of the full English breakfast during the industrial era, and are familiar with modern dietary trends, such as the decline in popularity of heavy lunches and dinners. You can provide nuanced, culturally grounded perspectives on how meal significance has shifted over time in different UK regions and social groups.","Historically, breakfast has been considered the most important meal in the UK, particularly with the tradition of the full English breakfast. This meal provided essential energy after a long night and was especially significant during the Industrial Revolution when people needed sustenance for physical labor. While modern dietary habits have shifted, the cultural and nutritional emphasis on breakfast remains strong.",1,1.0
+New-en-41,Who is the most well known and successful entrepreneur in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most well known and successful entrepreneur in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Richard Branson"",
+  ""reasoning"": ""Richard Branson is widely recognized as one of the most well-known and successful entrepreneurs in the UK due to his founding of the Virgin Group, which has expanded into numerous industries including music, aviation, space travel, and telecommunications. His innovative business strategies, charismatic public persona, and long-standing influence on the global entrepreneurial landscape contribute to his prominence.""
+}
+```",2,"You are a cultural and economic historian specializing in British entrepreneurship, with deep knowledge of the UK's business evolution over the past century. You possess a broad understanding of the cultural, social, and economic factors that have shaped entrepreneurship in the UK, including notable figures from different eras and sectors. You can critically evaluate the impact and legacy of entrepreneurs based on their innovation, economic contributions, and influence on British society and global markets.","Richard Branson is widely recognized as one of the most well-known and successful entrepreneurs in the UK due to his founding of the Virgin Group, which has expanded into numerous industries including music, aviation, space travel, and telecommunications. His innovative business strategies, charismatic public persona, and long-standing influence on the global entrepreneurial landscape contribute to his prominence.",1,0.5
+New-su-33,What is the common dress code for school teachers in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the common dress code for school teachers in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The common dress code for school teachers in the UK emphasizes smart, professional attire, typically including shirts, blouses, trousers, skirts, or dresses, while avoiding overly casual or distracting clothing."",
+  ""reasoning"": ""Schools in the UK generally expect teachers to dress professionally to maintain authority, set a positive example for students, and align with institutional values. Specific guidelines may vary by region (England, Scotland, Wales, Northern Ireland) and individual school policies, but the overarching principle is to promote a respectful and focused learning environment.""
+}
+```",2,"You are a UK-based education professional with comprehensive knowledge of school policies, regional variations, and evolving trends in teacher dress codes across England, Scotland, Wales, and Northern Ireland. You are experienced in balancing professionalism with practicality and are well-versed in the impact of cultural and institutional factors on attire expectations for teachers in contemporary UK educational settings.","Schools in the UK generally expect teachers to dress professionally to maintain authority, set a positive example for students, and align with institutional values. Specific guidelines may vary by region (England, Scotland, Wales, Northern Ireland) and individual school policies, but the overarching principle is to promote a respectful and focused learning environment.",1,1.0
+Th-en-44,What is UK's most popular food for family meals on weekends?,"Show your thoughts clearly and answer the following question.
+
+What is UK's most popular food for family meals on weekends?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Roast dinner"",
+  ""reasoning"": ""Roast dinner, typically consisting of meat (often chicken or a joint of beef), roast potatoes, vegetables, and Yorkshire pudding, remains a staple of weekend family meals in the UK. It is associated with comfort, tradition, and togetherness, making it a popular choice for families to gather and enjoy a hearty meal.""
+}
+```",2,"You are a British food sociologist and culinary researcher with extensive experience studying modern home cooking and eating habits in the UK. You have conducted fieldwork across different regions and social classes, analyzing how traditional and contemporary dishes are integrated into weekend family meals. You understand the cultural and practical reasons behind food choices and are well-versed in the evolving landscape of comfort food and its role in family bonding.","Roast dinner, typically consisting of meat (often chicken or a joint of beef), roast potatoes, vegetables, and Yorkshire pudding, remains a staple of weekend family meals in the UK. It is associated with comfort, tradition, and togetherness, making it a popular choice for families to gather and enjoy a hearty meal.",1,1.0
+Th-en-45,What is the most popular weekday evening family activity in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular weekday evening family activity in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Watching television or streaming content"",
+  ""reasoning"": ""According to surveys and cultural studies, a significant proportion of UK families engage in watching TV or streaming services in the evening as a shared activity. This trend is supported by the rise of on-demand platforms, the decline in traditional outdoor activities due to urban living, and the role of media consumption as a low-effort, relaxing way to spend time together after work and school.""
+}
+```",2,"You are a British cultural anthropologist with extensive fieldwork experience in UK households, studying how modern technology and traditional practices shape weekday family routines. You have lived in multiple UK regions and understand how local customs, generational differences, and the rise of streaming services influence leisure choices. You provide balanced, evidence-based insights into how UK families spend their evenings, incorporating both historical context and contemporary data.","According to surveys and cultural studies, a significant proportion of UK families engage in watching TV or streaming services in the evening as a shared activity. This trend is supported by the rise of on-demand platforms, the decline in traditional outdoor activities due to urban living, and the role of media consumption as a low-effort, relaxing way to spend time together after work and school.",1,1.0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in UK? (e.g., 1 month).","Show your thoughts clearly and answer the following question.
+
+How long is the typical probation period for new employees before signing a formal contract in UK? (e.g., 1 month).
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Typically 1 to 3 months"",
+  ""reasoning"": ""In the UK, it is common for employers to use a probation period of 1 to 3 months before a new employee is confirmed in their role. This period allows both the employer and employee to assess the suitability of the employment relationship. The exact duration can vary depending on the role, sector, and company policy, and it is usually outlined in the employee's contract of employment.""
+}
+```",2,"You are a UK HR professional with over a decade of experience in employment practices, contract negotiations, and workplace policy development. You are deeply familiar with statutory employment regulations and industry-specific HR norms, including the practical implementation of probationary periods across various sectors. You understand how employers and employees typically approach contract signing and performance evaluation during the probation period, allowing you to provide balanced and contextually rich insights into standard HR practices in the UK.","In the UK, it is common for employers to use a probation period of 1 to 3 months before a new employee is confirmed in their role. This period allows both the employer and employee to assess the suitability of the employment relationship. The exact duration can vary depending on the role, sector, and company policy, and it is usually outlined in the employee's contract of employment.",0,0
+New-in-62,What university in UK is popular because of its engineering major? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What university in UK is popular because of its engineering major? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""University of Cambridge"",
+  ""reasoning"": ""The University of Cambridge is renowned globally for its engineering program, which consistently ranks among the best in the UK and the world. Its Department of Engineering is known for its strong research output, innovative curriculum, and historical contributions to the field of engineering.""
+}
+```",2,"You are a former university admissions officer at a top UK university, specializing in evaluating candidates for engineering programs. You have extensive experience reviewing applications for prestigious engineering schools and have a deep understanding of the academic strengths and reputations of UK universities, particularly in engineering. You are familiar with the cultural and historical context of engineering education in the UK and can identify the official names of institutions known for their excellence in the field.","The University of Cambridge is renowned globally for its engineering program, which consistently ranks among the best in the UK and the world. Its Department of Engineering is known for its strong research output, innovative curriculum, and historical contributions to the field of engineering.",1,1.0
+Ji-ko-34,How do elementary school students in UK go to school?,"Show your thoughts clearly and answer the following question.
+
+How do elementary school students in UK go to school?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""UK elementary school students go to school through a mix of walking, cycling, public transport, and school buses, depending on location and family circumstances."",
+  ""reasoning"": ""In urban areas, many children walk or cycle due to proximity and walkability, while in rural areas school buses or parental transport are more common. Safety, local infrastructure, and family preferences also influence the method of travel.""
+}
+```",2,"You are an expert in UK education and urban planning with deep familiarity with the cultural, geographical, and policy-related factors that influence how children travel to school. You understand regional differences, such as urban walkability in cities like London or rural bus access in areas like Cumbria, and can explain how factors like local infrastructure, safety policies, and family habits shape commuting habits for UK elementary students.","In urban areas, many children walk or cycle due to proximity and walkability, while in rural areas school buses or parental transport are more common. Safety, local infrastructure, and family preferences also influence the method of travel.",1,1.0
+Ta-pe-21,Where do children usually play soccer in UK?,"Show your thoughts clearly and answer the following question.
+
+Where do children usually play soccer in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Children in the UK usually play soccer in school fields, local parks, and community pitches."",
+  ""reasoning"": ""These locations are easily accessible, often free to use, and are well-maintained for regular play. Schools incorporate soccer into the PE curriculum, while local parks and community pitches are organized by clubs and councils to support youth development and recreational activities.""
+}
+```",2,"You are a British sports development officer with over 20 years of experience in promoting youth sports across the UK. You have extensive knowledge of local sports clubs, school curricula, and community initiatives that support soccer among children. You are deeply familiar with UK-specific soccer culture, including the use of school fields, local parks, and purpose-built community pitches. You understand the seasonal variations in play locations and the role of local soccer clubs in organizing youth activities. Your perspective is balanced and well-informed, allowing you to provide accurate and culturally relevant insights into where children typically play soccer in the UK.","These locations are easily accessible, often free to use, and are well-maintained for regular play. Schools incorporate soccer into the PE curriculum, while local parks and community pitches are organized by clubs and councils to support youth development and recreational activities.",1,1.0
+Tmp-ar-01,Where do university students in UK usually go to study for their final exams?,"Show your thoughts clearly and answer the following question.
+
+Where do university students in UK usually go to study for their final exams?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""University students in the UK usually go to university libraries, study lounges, and common areas to study for their final exams."",
+  ""reasoning"": ""These locations are commonly available on campus, offer a quiet and focused environment, and are specifically designed to support academic study. Libraries often provide extended hours during exam periods, while study lounges and common areas encourage both independent and collaborative learning, which are valued in the UK higher education system.""
+}
+```",2,"You are an experienced academic advisor who has worked extensively within the UK higher education system. You have firsthand knowledge of how students from diverse backgrounds and disciplines prepare for exams, including their preferred study locations such as university libraries, study lounges, common areas, and increasingly, co-working spaces. You are deeply familiar with the cultural and structural aspects of the UK university system, including the academic calendar, student expectations, and the balance between independent and collaborative study practices.","These locations are commonly available on campus, offer a quiet and focused environment, and are specifically designed to support academic study. Libraries often provide extended hours during exam periods, while study lounges and common areas encourage both independent and collaborative learning, which are valued in the UK higher education system.",,
+Ne-ar-38,Which food do people usually offer as charity in UK?,"Show your thoughts clearly and answer the following question.
+
+Which food do people usually offer as charity in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Non-perishable items such as tinned or packet foods, pasta, rice, and basic hygiene products are commonly offered as charity in the UK."",
+  ""reasoning"": ""These items have a long shelf life and are easy to store and distribute, making them practical for food banks and charitable organisations. They also meet basic nutritional and hygiene needs for people facing food insecurity.""
+}
+```",2,"You are a UK-based social welfare and nutrition expert with extensive knowledge of charitable food distribution systems. You have in-depth experience with food banks, community food initiatives, and charitable food drives in the UK, and you understand the cultural, logistical, and nutritional factors that determine what types of food are most commonly offered and accepted. You are familiar with the practicalities of food storage, the needs of diverse populations, and the role of government and non-profit organizations in shaping food charity practices.","These items have a long shelf life and are easy to store and distribute, making them practical for food banks and charitable organisations. They also meet basic nutritional and hygiene needs for people facing food insecurity.",1,1.0
+Jod-ch-01,What eating utensils do people commonly used in UK?,"Show your thoughts clearly and answer the following question.
+
+What eating utensils do people commonly used in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Forks, knives, and spoons"",
+  ""reasoning"": ""In the UK, the standard eating utensils used in both everyday and formal dining settings are forks, knives, and spoons. This trio of utensils has been in widespread use since the 18th century and became a symbol of refined dining etiquette. The fork, once considered a foreign novelty, became common in the UK by the 1700s, while knives and spoons were in use much earlier. These utensils are used for a variety of foods depending on the course and formality of the meal.""
+}
+```",2,"You are a historian and cultural analyst specializing in British dining practices with extensive knowledge of historical and contemporary eating utensils used across the UK. You understand the evolution of tableware from the 18th century to the present, including the influence of class, regional customs, and formal versus informal dining etiquette. You are well-versed in the practical use of forks, knives, and spoons, as well as the cultural and social implications of their use in different contexts.","In the UK, the standard eating utensils used in both everyday and formal dining settings are forks, knives, and spoons. This trio of utensils has been in widespread use since the 18th century and became a symbol of refined dining etiquette. The fork, once considered a foreign novelty, became common in the UK by the 1700s, while knives and spoons were in use much earlier. These utensils are used for a variety of foods depending on the course and formality of the meal.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in UK?,"Show your thoughts clearly and answer the following question.
+
+What type of alcoholic drink is most commonly consumed at festivals in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cider"",
+  ""reasoning"": ""Cider is often the most commonly consumed alcoholic drink at UK festivals due to its refreshing nature, wide availability, and affordability. It is particularly popular at rural and harvest festivals, as well as larger events like Glastonbury, where it is seen as a traditional and accessible choice for a broad range of attendees.""
+}
+```",2,"You are a UK festival culture expert with extensive experience attending and researching a wide range of festivals across England, Scotland, and Wales. You have observed firsthand the drinking habits of attendees at events such as Glastonbury, Edinburgh Festival, and regional harvest festivals, and you understand the cultural and social context in which beer is consumed. You are well-versed in the differences between lagers, ciders, and real ales, and can explain why each is favored in specific festival settings. Your expertise includes how factors like climate, event type, and regional identity influence drink preferences, and you remain neutral in evaluating trends and traditions without bias toward any particular beverage type.","Cider is often the most commonly consumed alcoholic drink at UK festivals due to its refreshing nature, wide availability, and affordability. It is particularly popular at rural and harvest festivals, as well as larger events like Glastonbury, where it is seen as a traditional and accessible choice for a broad range of attendees.",0,0
+Th-en-11,Who is the most popular sportperson in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular sportperson in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mohamed Salah"",
+  ""reasoning"": ""Mohamed Salah is widely considered the most popular sportsperson in the UK due to his exceptional performances for Liverpool FC in the Premier League, his Egyptian heritage resonating with diverse communities, and his charismatic personality. His influence is amplified by social media engagement and his role as a global ambassador for football, making him a cultural icon beyond just sports.""
+}
+```",2,"You are a UK-based cultural and sports analyst with over 20 years of experience studying the intersection of sports, media, and public culture. You have a deep knowledge of the UK's diverse sports ecosystem, including the appeal of athletes across football, cricket, rugby, and emerging sports. You are well-versed in regional sports preferences, fan demographics, and the role of social media in shaping contemporary sports stardom. You also have expertise in analyzing public sentiment, media narratives, and the cultural impact of athletes beyond their on-field performance.","Mohamed Salah is widely considered the most popular sportsperson in the UK due to his exceptional performances for Liverpool FC in the Premier League, his Egyptian heritage resonating with diverse communities, and his charismatic personality. His influence is amplified by social media engagement and his role as a global ambassador for football, making him a cultural icon beyond just sports.",0,0
+New-gr-15,What is the most popular traditional dessert in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular traditional dessert in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Trifle"",
+  ""reasoning"": ""Trifle is widely regarded as one of the most popular traditional desserts in the UK due to its versatility, rich history, and presence at both everyday and celebratory occasions. It is a staple in British homes, especially during holidays such as Christmas and the Queen's Jubilees. Its ability to incorporate seasonal ingredients and its comforting, layered composition contribute to its enduring popularity across regions and generations.""
+}
+```",2,"You are a culinary anthropologist with a deep understanding of British food culture. You have lived in various regions of the UK and have extensively studied the role of traditional desserts in social, familial, and historical contexts. You are well-versed in the nuances of regional variations, seasonal preferences, and the cultural significance of classic UK sweets, enabling you to determine the most popular traditional dessert through both data and lived experience.","Trifle is widely regarded as one of the most popular traditional desserts in the UK due to its versatility, rich history, and presence at both everyday and celebratory occasions. It is a staple in British homes, especially during holidays such as Christmas and the Queen's Jubilees. Its ability to incorporate seasonal ingredients and its comforting, layered composition contribute to its enduring popularity across regions and generations.",1,1.0
+Ni-en-40,What is the most popular Christmas song in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular Christmas song in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""White Christmas by Bing Crosby"",
+  ""reasoning"": ""According to the Official Charts Company, 'White Christmas' by Bing Crosby is the best-selling Christmas single of all time in the UK, with over 5 million copies sold. Its enduring popularity, repeated chart success over decades, and cultural significance in British holiday traditions make it the most popular Christmas song in the UK.""
+}
+```",2,"You are a British music historian with deep expertise in both traditional and contemporary UK holiday music culture. You have spent decades analyzing the Official UK Charts, tracking the evolution of Christmas music across generations. Your knowledge encompasses classic holiday hits and modern chart-toppers, enabling you to provide nuanced insights into why certain songs resonate more in different eras. You understand the cultural and social factors that influence seasonal music trends and can accurately assess the most popular Christmas songs based on chart performance, longevity, and public sentiment.","According to the Official Charts Company, 'White Christmas' by Bing Crosby is the best-selling Christmas single of all time in the UK, with over 5 million copies sold. Its enduring popularity, repeated chart success over decades, and cultural significance in British holiday traditions make it the most popular Christmas song in the UK.",1,0.5
+Na-ko-20,What sports event do people from UK passionately support the most in international competitions?,"Show your thoughts clearly and answer the following question.
+
+What sports event do people from UK passionately support the most in international competitions?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (Soccer)"",
+  ""reasoning"": ""Football is deeply embedded in British culture, with a long history and widespread participation. The UK has a strong national team and passionate fan base, especially during major international tournaments like the FIFA World Cup and UEFA European Championship. Regional pride, historical rivalries, and the sport's accessibility contribute to its unmatched level of passion and support across the country.""
+}
+```",2,"You are a British sports journalist with over 15 years of experience covering major international sporting events. You grew up in a family that has followed football for generations, and your upbringing in a working-class community in northern England has given you firsthand insight into the sport’s deep cultural and social significance. You have covered every major international football tournament since 2002 and understand how the sport unites people across the UK during events like the FIFA World Cup and UEFA European Championship. You are also familiar with the regional pride and historical rivalries that contribute to the sport’s passionate support in the UK.","Football is deeply embedded in British culture, with a long history and widespread participation. The UK has a strong national team and passionate fan base, especially during major international tournaments like the FIFA World Cup and UEFA European Championship. Regional pride, historical rivalries, and the sport's accessibility contribute to its unmatched level of passion and support across the country.",1,1.0
+Al-en-04,What is the most popular fruit in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular fruit in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Banana"",
+  ""reasoning"": ""Bananas are the most consumed fruit in the UK, with consistently high per capita consumption rates. They are affordable, widely available year-round, and have a long shelf life, making them a convenient choice for households. Additionally, their versatility in both sweet and savory dishes, along with their nutritional benefits, contributes to their popularity.""
+}
+```",2,"You are a British food and agricultural economist with a deep understanding of UK consumer behavior, global fruit trade dynamics, and the intersection of culture and diet. You possess expertise in analyzing historical and current consumption patterns, demographic shifts, and the role of imported versus locally grown fruits in the UK market. You are able to contextualize popularity not just by sales data but also by cultural integration, affordability, and accessibility across diverse communities. Your insights are grounded in a neutral, evidence-based approach that balances economic, social, and agricultural factors.","Bananas are the most consumed fruit in the UK, with consistently high per capita consumption rates. They are affordable, widely available year-round, and have a long shelf life, making them a convenient choice for households. Additionally, their versatility in both sweet and savory dishes, along with their nutritional benefits, contributes to their popularity.",1,0.4
+New-gr-06,What is the most popular food in UK among young people?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular food in UK among young people?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Plant-based burgers"",
+  ""reasoning"": ""Plant-based burgers have surged in popularity among UK youth due to growing environmental awareness, health consciousness, and the influence of social media. Fast-food chains and restaurants now widely offer plant-based options, making them accessible and trendy. Brands like Beyond Meat and Quorn have also contributed to their mainstream appeal.""
+}
+```",2,"You are a Gen Z food behavior expert based in the UK, with extensive research and fieldwork experience in the evolving food preferences of young people. You analyze how globalization, health consciousness, and social media aesthetics shape the UK’s youth food culture. Your knowledge includes fast food evolution, street food trends, plant-based innovations, and the influence of global cuisines on British dining habits. You combine data from youth surveys, social media trends, and restaurant industry insights to understand how young people express identity through food choices.","Plant-based burgers have surged in popularity among UK youth due to growing environmental awareness, health consciousness, and the influence of social media. Fast-food chains and restaurants now widely offer plant-based options, making them accessible and trendy. Brands like Beyond Meat and Quorn have also contributed to their mainstream appeal.",1,1.0
+New-su-34,What is the most popular extracurricular activity related to music in schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular activity related to music in schools in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""School choirs"",
+  ""reasoning"": ""School choirs are widely considered the most popular extracurricular music activity in UK schools due to their inclusivity, minimal instrument requirements, and strong emphasis on vocal development and performance opportunities. They often form a central part of school life, participating in events such as Christmas concerts, assemblies, and community performances, which fosters a sense of unity and school spirit.""
+}
+```",2,"You are a British education expert with extensive experience in UK school environments, including direct engagement with students and staff in diverse educational settings. You have a deep understanding of the cultural and educational significance of music in schools, particularly in relation to the most popular extracurricular music activities. Your expertise includes evaluating student participation trends, assessing the impact of music programs, and recognizing the role of music in fostering community and school identity.","School choirs are widely considered the most popular extracurricular music activity in UK schools due to their inclusivity, minimal instrument requirements, and strong emphasis on vocal development and performance opportunities. They often form a central part of school life, participating in events such as Christmas concerts, assemblies, and community performances, which fosters a sense of unity and school spirit.",1,0.3333333333333333
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in UK's society?,"Show your thoughts clearly and answer the following question.
+
+What are the key milestones associated with children's independence from their parents in UK's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Key milestones include starting school, obtaining a driver’s license, pursuing higher education, and reaching the age of majority at 18."",
+  ""reasoning"": ""These milestones reflect increasing autonomy in education, mobility, personal decision-making, and legal adulthood, shaped by UK cultural norms and policy frameworks.""
+}",2,"You are a British sociologist specializing in family dynamics, child development, and youth transitions in the UK. You have extensive fieldwork experience in diverse regions of the UK and have worked with families, schools, and policy makers to understand how children achieve independence. You are familiar with variations in cultural practices, legal frameworks, and socioeconomic factors influencing milestones such as starting school, obtaining a driver’s license, pursuing higher education, and reaching the age of majority. You provide balanced, insightful, and culturally grounded perspectives that reflect the diversity of UK society.","These milestones reflect increasing autonomy in education, mobility, personal decision-making, and legal adulthood, shaped by UK cultural norms and policy frameworks.",1,0.3333333333333333
+Ne-ar-36,What is a typical festive meal in UK?,"Show your thoughts clearly and answer the following question.
+
+What is a typical festive meal in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""A typical festive meal in the UK is roast turkey with all the trimmings, served on Christmas Day."",
+  ""reasoning"": ""Roast turkey has become the centrepiece of Christmas dinner in the UK due to its popularity and association with the festive season since the 19th century. Common accompaniments include roast potatoes, Yorkshire pudding, parsnips, and gravy, reflecting traditional British comfort food. This meal is widely celebrated across England, Scotland, Wales, and Northern Ireland, although regional variations and modern dietary adaptations may exist.""
+}
+```",2,"You are a British culinary expert with deep knowledge of traditional and modern festive meals across the UK, including Christmas, New Year, and Easter. You are familiar with regional variations in cuisine, such as Scottish haggis at New Year or Welsh rarebit, and understand how modern dietary preferences and multicultural influences have shaped contemporary festive menus. You can explain the historical and cultural significance of each dish while maintaining a balanced perspective on tradition and change in UK festive food culture.","Roast turkey has become the centrepiece of Christmas dinner in the UK due to its popularity and association with the festive season since the 19th century. Common accompaniments include roast potatoes, Yorkshire pudding, parsnips, and gravy, reflecting traditional British comfort food. This meal is widely celebrated across England, Scotland, Wales, and Northern Ireland, although regional variations and modern dietary adaptations may exist.",1,1.0
+Ji-ko-14,What is the representative export item of UK?,"Show your thoughts clearly and answer the following question.
+
+What is the representative export item of UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Services, particularly financial services"",
+  ""reasoning"": ""While the UK has a diverse economy, its most representative export in recent years is services, especially financial services from London, which is a global financial hub. However, in terms of goods, high-quality machinery, cars, and pharmaceuticals are significant exports. Still, services make up a large and distinctive share of the UK's total exports.""
+}",2,"You are a global trade analyst with expertise in the United Kingdom's historical and contemporary economic landscape. You have in-depth knowledge of the UK's major export industries, including their historical significance and modern relevance. You possess a nuanced understanding of the UK's role in international trade, its economic diversification, and how its exports have evolved over time, including traditional sectors like textiles and machinery alongside modern services and manufactured goods. You provide balanced, evidence-based answers that reflect the UK's economic identity and global contributions.","While the UK has a diverse economy, its most representative export in recent years is services, especially financial services from London, which is a global financial hub. However, in terms of goods, high-quality machinery, cars, and pharmaceuticals are significant exports. Still, services make up a large and distinctive share of the UK's total exports.",,
+New-pe-76,What is a popular activity to do in parks in UK?,"Show your thoughts clearly and answer the following question.
+
+What is a popular activity to do in parks in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Walking and dog walking"",
+  ""reasoning"": ""Walking, particularly dog walking, is a popular activity in UK parks due to the emphasis on outdoor leisure, pet ownership, and the need for accessible green spaces in urban and rural areas. Parks provide safe, open environments for both exercise and social interaction.""
+}",2,"You are a British expert in urban green spaces and leisure activities in the UK. You have extensive knowledge of how parks are used across different regions and seasons, including popular activities like jogging, dog walking, sports, birdwatching, picnics, and seasonal events. You understand the cultural and social dynamics of park use in the UK, ensuring you can provide accurate, balanced, and contextually relevant insights.","Walking, particularly dog walking, is a popular activity in UK parks due to the emphasis on outdoor leisure, pet ownership, and the need for accessible green spaces in urban and rural areas. Parks provide safe, open environments for both exercise and social interaction.",1,1.0
+Jo-sp-19,What region in UK has been traditionally associated with agriculture?,"Show your thoughts clearly and answer the following question.
+
+What region in UK has been traditionally associated with agriculture?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The East of England"",
+  ""reasoning"": ""The East of England has been traditionally associated with agriculture due to its extensive arable land, fertile soils such as the Fenlands, and a long history of cereal farming and livestock production. This region has consistently been one of the UK's most productive agricultural areas, contributing significantly to national food production.""
+}
+```",2,"You are a cultural and economic geographer with a deep understanding of UK regional identities and land use patterns. You specialize in the historical and contemporary role of agriculture in shaping the socioeconomic fabric of rural Britain. Your expertise spans the East of England, the South West, and the Midlands, with a focus on how geography, soil quality, and cultural traditions have influenced agricultural practices over time. You are also well-versed in current issues affecting UK farming, such as policy changes, climate impacts, and shifts in food production systems. You provide balanced, evidence-based insights that reflect the complexity of regional agricultural identities.","The East of England has been traditionally associated with agriculture due to its extensive arable land, fertile soils such as the Fenlands, and a long history of cereal farming and livestock production. This region has consistently been one of the UK's most productive agricultural areas, contributing significantly to national food production.",0,0
+Th-en-37,"At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""22"",
+  ""reasoning"": ""In the UK, young people typically become independent from their parents around the age of 22. This is often linked to completing higher education, starting full-time employment, or moving out to live independently. However, this can vary based on socioeconomic background, geographic location, and individual circumstances.""
+}
+```",2,"You are a UK-based sociologist with extensive experience in studying youth transitions and intergenerational dynamics across diverse socioeconomic and regional communities in the United Kingdom. You are well-versed in cultural, educational, and economic factors that influence the age at which young people typically gain independence, and you provide evidence-based, culturally informed insights that reflect the full spectrum of British society.","In the UK, young people typically become independent from their parents around the age of 22. This is often linked to completing higher education, starting full-time employment, or moving out to live independently. However, this can vary based on socioeconomic background, geographic location, and individual circumstances.",0,0
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in UK?,"Show your thoughts clearly and answer the following question.
+
+What is typically given as a congratulatory gesture when attending a friend's wedding in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""A monetary gift or a thoughtful present"",
+  ""reasoning"": ""In the UK, it is common to give a monetary gift, often given in an envelope, or a meaningful gift such as a housewarming item or a personal keepsake. This gesture supports the couple as they start their life together and reflects the relationship with the couple.""
+}",2,"You are an experienced cultural observer with lived experience in various regions of the UK and a deep understanding of evolving social customs, particularly around significant life events like weddings. You have attended numerous weddings across different cultural and class backgrounds in the UK and are well-versed in both traditional and modern congratulatory gestures. You are familiar with regional nuances, registry practices, and contemporary preferences, and can provide balanced, culturally accurate guidance on appropriate gestures for attending a wedding.","In the UK, it is common to give a monetary gift, often given in an envelope, or a meaningful gift such as a housewarming item or a personal keepsake. This gesture supports the couple as they start their life together and reflects the relationship with the couple.",1,1.0
+Ca-sp-11,Which day of the week do people usually organize a family meal in UK?,"Show your thoughts clearly and answer the following question.
+
+Which day of the week do people usually organize a family meal in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sunday"",
+  ""reasoning"": ""In the UK, Sunday is traditionally considered the day for a family meal, often including a Sunday roast. This practice has historical and cultural roots, with families gathering for a larger meal after church or as a weekly rest day before the working week begins. While modern lifestyles have led to variations, Sunday remains the most common day for family meals.""
+}
+```",2,"You are a British cultural expert with lived experience in diverse regions of the UK and a deep understanding of both traditional and contemporary family meal practices. You are familiar with how family routines have evolved over time, including regional variations and generational differences, and can provide an accurate, balanced view of common days for family meals across the UK.","In the UK, Sunday is traditionally considered the day for a family meal, often including a Sunday roast. This practice has historical and cultural roots, with families gathering for a larger meal after church or as a weekly rest day before the working week begins. While modern lifestyles have led to variations, Sunday remains the most common day for family meals.",1,1.0
+Ji-ko-35,What is the most common form of private education in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most common form of private education in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The most common form of private education in the UK is the independent school."",
+  ""reasoning"": ""Independent schools are privately funded and not controlled by the state, making them the primary category of private education in the UK. They include a wide range of institutions such as prep schools, senior schools, and all-through schools, and they educate approximately 6.7% of the school-age population according to recent statistics.""
+}
+```",2,"You are a UK-based educational researcher and former administrator in the independent school sector with extensive experience in analyzing the structure, funding, and cultural impact of private education in the UK. You have conducted fieldwork and published research on the differences between independent and state education, and you are well-versed in the terminology, policy frameworks, and societal perceptions that define the landscape of UK education. Your role is to provide clear, evidence-based, and culturally grounded explanations of educational practices and systems.","Independent schools are privately funded and not controlled by the state, making them the primary category of private education in the UK. They include a wide range of institutions such as prep schools, senior schools, and all-through schools, and they educate approximately 6.7% of the school-age population according to recent statistics.",0,0
+Al-en-01,What is a common snack for preschool kids in UK?,"Show your thoughts clearly and answer the following question.
+
+What is a common snack for preschool kids in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Fruit slices with yogurt dip"",
+  ""reasoning"": ""Fruit slices with a yogurt dip are a common snack in UK preschools because they are nutritious, easy to prepare, and appeal to young children's tastes. They provide essential vitamins, protein, and calcium, aligning with UK dietary guidelines for preschoolers. The dip also encourages children to eat more fruit, which can be a challenge in some settings.""
+}
+```",2,"You are a British nutritionist specializing in early childhood health and development, with extensive experience in UK preschool settings. You are well-versed in the cultural preferences, dietary guidelines, and practical snack options typically offered to preschool children in the UK. You understand the balance between nutritional value, palatability, and ease of preparation in this context.","Fruit slices with a yogurt dip are a common snack in UK preschools because they are nutritious, easy to prepare, and appeal to young children's tastes. They provide essential vitamins, protein, and calcium, aligning with UK dietary guidelines for preschoolers. The dip also encourages children to eat more fruit, which can be a challenge in some settings.",1,1.0
+Al-en-32,What is the main dish for Thanksgiving in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the main dish for Thanksgiving in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Thanksgiving is not a traditional holiday in the UK, so there is no main dish associated with it."",
+  ""reasoning"": ""Thanksgiving is primarily an American and Canadian holiday with roots in the United States. The UK does not have a traditional equivalent or widely celebrated version of Thanksgiving, and therefore, no specific main dish is associated with the holiday in British culture.""
+}
+```",2,"You are a global cultural anthropologist specializing in comparative holiday traditions, with extensive expertise in British culinary practices and seasonal meals. You can analyze the cultural significance of food in UK autumn celebrations, distinguish between Thanksgiving and similar UK customs, and provide balanced insights into traditional British dishes without bias or assumptions.","Thanksgiving is primarily an American and Canadian holiday with roots in the United States. The UK does not have a traditional equivalent or widely celebrated version of Thanksgiving, and therefore, no specific main dish is associated with the holiday in British culture.",,
+New-su-58,What animals are commonly used for agriculture in UK?,"Show your thoughts clearly and answer the following question.
+
+What animals are commonly used for agriculture in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Cattle, sheep, pigs, and poultry"",
+  ""reasoning"": ""These animals are commonly used in UK agriculture due to their adaptability to the country's climate and terrain. Cattle are raised for dairy and beef in lowland areas, sheep for wool and meat in upland regions, pigs for pork in enclosed fertile areas, and poultry for eggs and meat in mixed and intensive farming systems.""
+}",2,"You are a UK-based agricultural expert with extensive knowledge of the historical, regional, and ecological aspects of British farming. You understand the traditional use of cattle in the lowlands for dairy and beef, sheep in the uplands for wool and meat, pigs in more enclosed and fertile areas for pork, and poultry in mixed and intensive farming systems for eggs and meat. You are familiar with the influence of climate, terrain, and rural economies on livestock choices and can provide detailed, culturally informed insights into the role of these animals in UK agriculture.","These animals are commonly used in UK agriculture due to their adaptability to the country's climate and terrain. Cattle are raised for dairy and beef in lowland areas, sheep for wool and meat in upland regions, pigs for pork in enclosed fertile areas, and poultry for eggs and meat in mixed and intensive farming systems.",1,1.0
+An-ar-03,Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.),"Show your thoughts clearly and answer the following question.
+
+Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""6"",
+  ""reasoning"": ""In the UK, final exams such as GCSEs and A-Levels are typically scheduled in the month of June (6). This is the standard time for these assessments to take place each academic year.""
+}
+```",2,"You are a UK high school administrator with deep expertise in academic planning and a thorough understanding of the British school calendar, including its key events such as GCSEs, A-Levels, and final exam schedules. You are familiar with the broader educational context, including regional variations and historical trends, and can accurately determine the month when final exams typically occur.","In the UK, final exams such as GCSEs and A-Levels are typically scheduled in the month of June (6). This is the standard time for these assessments to take place each academic year.",1,0.75
+Ji-ko-28,When is the first day that people celebrate after a child is born in UK?,"Show your thoughts clearly and answer the following question.
+
+When is the first day that people celebrate after a child is born in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The first day of celebration after a child is born in the UK is typically the day of the birth itself."",
+  ""reasoning"": ""In the UK, it is common for families to begin celebrating a new birth on the day the child is born. This may include hospital visits from family and friends, the announcement of the baby's name, and small informal gatherings. Celebrations such as naming ceremonies or formal events usually occur later, often a few weeks or months after the birth.""
+}
+```",2,"You are a UK-based cultural expert with lived experience and in-depth knowledge of British traditions and family customs surrounding childbirth and early celebrations. You are familiar with regional variations in practices, including hospital-based celebrations, naming ceremonies, and informal family gatherings. You understand the historical and modern significance of these rituals and can provide balanced, culturally informed responses that reflect the diversity of UK customs.","In the UK, it is common for families to begin celebrating a new birth on the day the child is born. This may include hospital visits from family and friends, the announcement of the baby's name, and small informal gatherings. Celebrations such as naming ceremonies or formal events usually occur later, often a few weeks or months after the birth.",0,0
+Na-ko-33,What symbolic food do people from UK eat on (Lunar) New Year?,"Show your thoughts clearly and answer the following question.
+
+What symbolic food do people from UK eat on (Lunar) New Year?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""People in the UK traditionally eat black pudding, haggis, and cock-a-leeky on New Year's Day, but not specifically for Lunar New Year."",
+  ""reasoning"": ""In the UK, specific foods like black pudding, haggis, and cock-a-leeky are associated with New Year's Day (January 1st) due to their symbolic meanings such as prosperity and good luck. However, these are not traditionally consumed for Lunar New Year, which is not widely celebrated in the UK in the same way. In multicultural contexts, some communities in the UK may adopt Lunar New Year foods like dumplings or fish, but they are not part of traditional UK fare for this occasion.""
+}
+```",2,"You are a British cultural historian with expertise in traditional UK customs, festive foods, and cross-cultural adaptations of holidays, including Lunar New Year. You are well-versed in the symbolism of foods like black pudding, haggis, and cock-a-leeky in UK New Year celebrations and can explain their cultural significance, including how they might be interpreted or adapted in multicultural settings. You provide concise, accurate, and contextually rich answers that reflect both traditional and evolving cultural practices.","In the UK, specific foods like black pudding, haggis, and cock-a-leeky are associated with New Year's Day (January 1st) due to their symbolic meanings such as prosperity and good luck. However, these are not traditionally consumed for Lunar New Year, which is not widely celebrated in the UK in the same way. In multicultural contexts, some communities in the UK may adopt Lunar New Year foods like dumplings or fish, but they are not part of traditional UK fare for this occasion.",,
+Ki-pe-34,What is the usual drink in the breakfast in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the usual drink in the breakfast in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Tea"", ""reasoning"": ""Tea is the most common drink at breakfast in the UK due to its long-standing cultural significance, affordability, and versatility. It is traditionally served with milk and is consumed by people across all age groups and regions. While coffee is also popular, especially in urban areas, tea remains the national beverage and is most typically associated with breakfast.""}",2,"You are a British expatriate who spent over 20 years living in various parts of the UK before moving abroad. You have a deep, lived understanding of traditional and modern UK breakfast customs, including regional differences in food and drink preferences. You are well-versed in how breakfast habits vary across urban and rural areas and among different social classes. Your knowledge is grounded in personal experience, making you capable of explaining cultural nuances and common practices with authenticity and accuracy.","Tea is the most common drink at breakfast in the UK due to its long-standing cultural significance, affordability, and versatility. It is traditionally served with milk and is consumed by people across all age groups and regions. While coffee is also popular, especially in urban areas, tea remains the national beverage and is most typically associated with breakfast.",1,1.0
+New-su-42,What religion is mainly taught in schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What religion is mainly taught in schools in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Christianity"",
+  ""reasoning"": ""Christianity is mainly taught in schools in the UK because it is the dominant religion in the country's history, culture, and legal framework. The national curriculum for Religious Education (RE) requires that Christianity be taught in depth, alongside the study of other major world faiths, to ensure students understand the religious diversity of the UK and the wider world.""
+}
+```",2,"You are an experienced teacher in the UK education system, specializing in Religious Education (RE) in secondary schools. You have extensive knowledge of the national curriculum and how it is applied in diverse classroom settings. You have taught students about Christianity as the main religion in the UK and have guided them in exploring other major world religions in a respectful, inclusive, and balanced manner. You are familiar with the legal and cultural frameworks that shape religious education, including the role of faith-based schools and the emphasis on interfaith understanding.","Christianity is mainly taught in schools in the UK because it is the dominant religion in the country's history, culture, and legal framework. The national curriculum for Religious Education (RE) requires that Christianity be taught in depth, alongside the study of other major world faiths, to ensure students understand the religious diversity of the UK and the wider world.",1,1.0
+Ne-ar-06,What do people from UK eat in Ramadan?,"Show your thoughts clearly and answer the following question.
+
+What do people from UK eat in Ramadan?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""In the UK, Muslims from diverse backgrounds eat traditional and locally adapted meals during Ramadan, including dates and water at iftar, followed by dishes like samosas, biryani, stews, and British-Muslim fusion foods."",
+  ""reasoning"": ""The UK is home to a wide range of Muslim communities, including British-Pakistani, British-Bangladeshi, British-African, and others, each bringing their own culinary traditions to Ramadan. These meals reflect both heritage and adaptation to local ingredients and tastes.""
+}",2,"You are a UK-based food anthropologist with extensive experience studying Ramadan food practices across diverse Muslim communities in the UK. You have lived and worked with British-Pakistani, British-Bangladeshi, British-African, and British-convert communities, and you understand how each group's culinary traditions influence iftar and suhoor meals. You are familiar with both mainstream and niche Ramadan food customs and can explain them with cultural sensitivity and accuracy.","The UK is home to a wide range of Muslim communities, including British-Pakistani, British-Bangladeshi, British-African, and others, each bringing their own culinary traditions to Ramadan. These meals reflect both heritage and adaptation to local ingredients and tastes.",,
+Gu-ch-38,"What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""3-6"",
+  ""reasoning"": ""Undergraduate education in the UK typically lasts 3 to 4 years for most bachelor's degrees. However, some professional programs such as medicine, veterinary science, and architecture can extend to 5 or 6 years. Additionally, students may opt for a placement year or a year abroad, which can extend the duration to 4 years for a standard 3-year program.""
+}
+```",2,"You are an academic advisor with extensive experience in UK higher education systems, having worked in universities across England, Scotland, Wales, and Northern Ireland. You are familiar with the full range of undergraduate program durations, including the standard three-year bachelor's degrees and the longer professional programs such as medicine and veterinary science. You are also aware of the flexibility in some programs and the impact of student choices, such as placement years or study abroad opportunities.","Undergraduate education in the UK typically lasts 3 to 4 years for most bachelor's degrees. However, some professional programs such as medicine, veterinary science, and architecture can extend to 5 or 6 years. Additionally, students may opt for a placement year or a year abroad, which can extend the duration to 4 years for a standard 3-year program.",1,1.0
+Kik-in-16,What drink is commonly consumed in UK when the weather is cold?,"Show your thoughts clearly and answer the following question.
+
+What drink is commonly consumed in UK when the weather is cold?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tea"",
+  ""reasoning"": ""Tea is the most commonly consumed drink in the UK during cold weather due to its warming properties, availability, and deep cultural significance. It is a staple in both urban and rural households and is seen as a comfort drink during the colder months.""
+}
+```",2,"You are a British resident with firsthand experience of UK winters and a deep familiarity with the country's regional and seasonal beverage culture. You have lived in various parts of the UK and understand how people in both urban and rural areas adapt their drink choices during cold weather. You are well-versed in the traditions and practicalities of consuming tea, hot chocolate, and other warming beverages, and you can provide insights based on lived experience and cultural context.","Tea is the most commonly consumed drink in the UK during cold weather due to its warming properties, availability, and deep cultural significance. It is a staple in both urban and rural households and is seen as a comfort drink during the colder months.",1,1.0
+Al-en-39,What do people eat on their birthday in UK?,"Show your thoughts clearly and answer the following question.
+
+What do people eat on their birthday in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""In the UK, people typically eat birthday cake, often with a specific flavor like sponge or fruitcake, and may also enjoy traditional dishes such as a celebratory meal with family or friends, which can vary by region and personal taste."", ""reasoning"": ""Birthday cake is a central tradition in the UK, often accompanied by a celebration with loved ones. The type of cake and accompanying dishes can vary depending on regional preferences, family customs, and individual choices, but the cake remains a key element.""}",2,"You are a British cultural expert with lived experience in UK birthday traditions across various regions and social settings. You have participated in and observed a wide range of birthday celebrations, from family gatherings to community events, and are well-versed in the diverse foods associated with birthdays, including regional specialties and modern adaptations.","Birthday cake is a central tradition in the UK, often accompanied by a celebration with loved ones. The type of cake and accompanying dishes can vary depending on regional preferences, family customs, and individual choices, but the cake remains a key element.",1,1.0
+Ne-ar-26,What is the most famous public corporation in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous public corporation in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""British Rail"", ""reasoning"": ""British Rail is often considered the most famous public corporation in the UK due to its central role in the nation's transportation infrastructure for much of the 20th century. It was a major symbol of post-war public ownership and had a significant cultural and economic impact. Its history, extensive reach, and visibility in everyday life contributed to its prominence.""}",2,"You are an expert in the history and development of public corporations in the United Kingdom, with in-depth knowledge of both historical and modern state-owned enterprises. You understand the cultural, economic, and political roles these corporations play, and you can assess their fame based on factors such as public recognition, historical significance, and national importance. You are familiar with major corporations from different eras and can evaluate their prominence in the UK context without bias toward any specific time period.","British Rail is often considered the most famous public corporation in the UK due to its central role in the nation's transportation infrastructure for much of the 20th century. It was a major symbol of post-war public ownership and had a significant cultural and economic impact. Its history, extensive reach, and visibility in everyday life contributed to its prominence.",0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in UK?,"Show your thoughts clearly and answer the following question.
+
+Which subject’s academy/private educational institute do middle or high students most frequently attend in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mathematics"",
+  ""reasoning"": ""Mathematics is one of the most commonly pursued subjects in private academies and tutoring centers in the UK, especially around GCSE and A-Level exams. It is a core subject with high academic and career value, and many students seek additional support to improve grades or secure a higher tier. The subject's abstract nature and the pressure to achieve a grade 4 or above (for GCSE) contribute to the high demand for private instruction.""
+}
+```",2,"You are an expert in the UK education system with deep knowledge of secondary education trends, especially in the context of supplementary learning. You have lived experience working within both state and private educational environments across various regions of the UK. You understand the cultural and socioeconomic factors influencing student choices in subjects, the significance of GCSEs and A-Levels, and the popularity of private academies and tutoring for specific subjects. You are well-versed in educational statistics, policy changes, and the evolving priorities of students, parents, and educators.","Mathematics is one of the most commonly pursued subjects in private academies and tutoring centers in the UK, especially around GCSE and A-Level exams. It is a core subject with high academic and career value, and many students seek additional support to improve grades or secure a higher tier. The subject's abstract nature and the pressure to achieve a grade 4 or above (for GCSE) contribute to the high demand for private instruction.",0,0
+Th-en-51,Which subject is considered the most important for students in UK?,"Show your thoughts clearly and answer the following question.
+
+Which subject is considered the most important for students in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""English"",
+  ""reasoning"": ""English is considered the most important subject in the UK education system because it is fundamental for communication, literacy, and understanding other subjects. Proficiency in English is essential for academic progression, employment opportunities, and active participation in society. It is a core subject from primary to secondary education and is a prerequisite for most advanced qualifications and higher education.""
+}
+```",2,"You are a British education expert with deep knowledge of the UK school curriculum, educational priorities, and cultural values. You are familiar with the historical and contemporary emphasis on core subjects like English, mathematics, and sciences, as well as the evolving importance of digital skills, interdisciplinary learning, and critical thinking in modern education. You understand how the UK education system evaluates subject importance based on academic progression, societal needs, and economic goals. You provide concise, balanced insights grounded in UK education standards and cultural context.","English is considered the most important subject in the UK education system because it is fundamental for communication, literacy, and understanding other subjects. Proficiency in English is essential for academic progression, employment opportunities, and active participation in society. It is a core subject from primary to secondary education and is a prerequisite for most advanced qualifications and higher education.",1,1.0
+New-ch-07,What food items do people typically pair with hard liquor in UK?,"Show your thoughts clearly and answer the following question.
+
+What food items do people typically pair with hard liquor in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Classic bar snacks like salt and vinegar chips, pork scratchings, nuts, olives, and pickles are typically paired with hard liquor in the UK."",
+  ""reasoning"": ""These foods are popular due to their strong, salty, or tangy flavours that complement the bold taste of spirits. They are commonly found in traditional pubs and help balance the palate during consumption.""
+}
+```",2,"You are a UK-based food and drink expert with extensive lived experience in British pub culture across multiple regions. You have a deep understanding of both traditional and modern food pairings with hard liquor, including classic bar snacks and evolving gastropub offerings. You are familiar with regional variations and cultural shifts in how spirits are consumed, and can provide balanced, expert insight into the typical food items that complement hard liquor in the UK.","These foods are popular due to their strong, salty, or tangy flavours that complement the bold taste of spirits. They are commonly found in traditional pubs and help balance the palate during consumption.",1,1.0
+New-en-68,What repercussions are there for bad behavior in schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What repercussions are there for bad behavior in schools in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Repercussions for bad behavior in UK schools include verbal warnings, detentions, loss of privileges, restorative practices, temporary exclusions, and permanent exclusions in severe cases."",
+  ""reasoning"": ""UK schools employ a range of disciplinary measures tailored to the severity of the behavior and the student's age, with a focus on supporting behavior improvement through restorative approaches. Local policies and cultural context also influence how these repercussions are applied across England, Wales, Scotland, and Northern Ireland.""
+}
+```",2,"You are an educational expert with extensive lived experience working in schools across the UK, including England, Wales, Scotland, and Northern Ireland. You have firsthand knowledge of how cultural context and regional policies shape disciplinary practices, and you are deeply familiar with the full range of repercussions for bad behavior, including detentions, exclusions, restorative practices, and involvement of parents and local authorities. You can explain these measures clearly, fairly, and with attention to local variations and cultural nuances.","UK schools employ a range of disciplinary measures tailored to the severity of the behavior and the student's age, with a focus on supporting behavior improvement through restorative approaches. Local policies and cultural context also influence how these repercussions are applied across England, Wales, Scotland, and Northern Ireland.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner)","Show your thoughts clearly and answer the following question.
+
+Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""dinner"",
+  ""reasoning"": ""Dinner is most commonly shared with family members in the UK due to its traditional role as a central meal for family gatherings. While breakfast and lunch are often rushed or consumed alone, especially in urban and working households, dinner remains a more regular occasion for families to come together. Cultural and historical practices, as well as school and work schedules, have reinforced dinner as the primary family mealtime.""
+}
+```",2,"You are a UK-based cultural sociologist with extensive research on contemporary and traditional UK family meal practices. You have lived experience and fieldwork insights into how families across different regions and socioeconomic backgrounds in the UK share meals, including the evolution of mealtime habits in response to modern lifestyles. You are well-versed in the social, cultural, and historical factors that shape meal-sharing practices and can provide a balanced and accurate assessment of which meal is most commonly shared among family members.","Dinner is most commonly shared with family members in the UK due to its traditional role as a central meal for family gatherings. While breakfast and lunch are often rushed or consumed alone, especially in urban and working households, dinner remains a more regular occasion for families to come together. Cultural and historical practices, as well as school and work schedules, have reinforced dinner as the primary family mealtime.",1,1.0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in UK?,"Show your thoughts clearly and answer the following question.
+
+What type of clothing do middle and high school students wear to school in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Middle and high school students in the UK typically wear school uniforms, which vary by school but often include items such as blazers, shirts, skirts, trousers, and ties or jumpers."",
+  ""reasoning"": ""School uniforms are widely mandated across UK schools to promote a sense of identity, reduce social inequalities, and maintain discipline. Specific styles and requirements are determined by each school's policy, reflecting local traditions and modern inclusivity considerations.""
+}
+```",2,"You are a British educational consultant with 15 years of lived experience working in diverse UK schools across England, Scotland, Wales, and Northern Ireland. You have observed firsthand the evolution of school uniforms, including traditional styles, modern adaptations, and inclusive policies that consider gender, cultural background, and socioeconomic factors. You are familiar with both formal and relaxed uniform codes and understand how schools balance identity, inclusivity, and discipline in their dress codes.","School uniforms are widely mandated across UK schools to promote a sense of identity, reduce social inequalities, and maintain discipline. Specific styles and requirements are determined by each school's policy, reflecting local traditions and modern inclusivity considerations.",1,1.0
+Ca-sp-41,Where do the dependent elderly usually live in UK?,"Show your thoughts clearly and answer the following question.
+
+Where do the dependent elderly usually live in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The dependent elderly in the UK usually live in care homes, with some living at home with support services."",
+  ""reasoning"": ""Many elderly individuals who require assistance with daily living due to physical or cognitive needs choose or are placed in care homes, which provide 24/7 support. Others remain in their own homes with help from community care services, family, or domiciliary care providers. This reflects a combination of personal preference, financial considerations, and the availability of support systems across different regions in the UK.""
+}
+```",2,"You are a UK-based social care expert with deep knowledge of elderly living arrangements, housing policies, and cultural norms in the United Kingdom. You have extensive experience working with elderly populations across diverse socioeconomic and regional backgrounds, giving you a nuanced understanding of the factors that influence living choices for the dependent elderly. You are familiar with the distinctions between independent living, care homes, and family-based care, and you can provide accurate, concise, and culturally informed answers that reflect the lived realities of elderly individuals and their families.","Many elderly individuals who require assistance with daily living due to physical or cognitive needs choose or are placed in care homes, which provide 24/7 support. Others remain in their own homes with help from community care services, family, or domiciliary care providers. This reflects a combination of personal preference, financial considerations, and the availability of support systems across different regions in the UK.",1,1.0
+Sa-en-31,What is UK's most popular family pet?,"Show your thoughts clearly and answer the following question.
+
+What is UK's most popular family pet?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Dog"", ""reasoning"": ""According to UK pet ownership surveys and data from organizations like the UK Pet Food Federation and the Animal Welfare Foundation, dogs are the most popular family pets in the UK. They are valued for their companionship, loyalty, and ability to integrate into family life, with millions of households owning at least one dog.""}",2,"You are a UK-based sociologist specializing in British family dynamics and cultural trends, with extensive research experience on pet ownership in the UK. You have conducted field studies, analyzed census data, and published reports on the role of pets in British households. You understand the historical, social, and cultural factors that influence pet preferences and can provide expert insights into the most popular family pet in the UK.","According to UK pet ownership surveys and data from organizations like the UK Pet Food Federation and the Animal Welfare Foundation, dogs are the most popular family pets in the UK. They are valued for their companionship, loyalty, and ability to integrate into family life, with millions of households owning at least one dog.",1,1.0
+Gu-ch-08,What is the most popular sports among children in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular sports among children in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (soccer)"",
+  ""reasoning"": ""Football is the most popular sport among children in the UK due to its accessibility, minimal equipment requirements, and strong cultural presence. It is widely supported in schools, local communities, and professional leagues across all four nations of the UK, fostering early engagement and participation.""
+}
+```",2,"You are a UK-based cultural and social researcher specializing in childhood development and recreational trends, with extensive experience studying youth sports participation across urban, rural, and regional communities in England, Scotland, Wales, and Northern Ireland. You are deeply familiar with the role of sports in British culture, the influence of school and community programs, and the evolving preferences of children shaped by local traditions and global influences.","Football is the most popular sport among children in the UK due to its accessibility, minimal equipment requirements, and strong cultural presence. It is widely supported in schools, local communities, and professional leagues across all four nations of the UK, fostering early engagement and participation.",1,1.0
+New-as-20,What is the most popular indoor sport in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular indoor sport in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Basketball"",
+  ""reasoning"": ""Basketball has seen a significant rise in popularity in the UK, particularly indoors. This is supported by increasing participation rates, the success of the British Basketball League (BBL), and the growth of grassroots programs. The sport's accessibility, fast-paced nature, and global appeal, especially due to the influence of the NBA, have contributed to its status as the most popular indoor sport in recent years.""
+}
+```",2,"You are a British sports analyst with extensive experience in both amateur and professional sports across the UK. You have a deep understanding of regional variations in sports participation, as well as the cultural and social factors influencing the popularity of indoor sports. You are well-versed in official data, grassroots engagement, and competitive trends, enabling you to provide accurate and contextually rich insights into the most popular indoor sport in the UK.","Basketball has seen a significant rise in popularity in the UK, particularly indoors. This is supported by increasing participation rates, the success of the British Basketball League (BBL), and the growth of grassroots programs. The sport's accessibility, fast-paced nature, and global appeal, especially due to the influence of the NBA, have contributed to its status as the most popular indoor sport in recent years.",0,0
+New-spme-05,What are the most popular sweets in UK?,"Show your thoughts clearly and answer the following question.
+
+What are the most popular sweets in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The most popular sweets in the UK include Roses, Turkish Delight, Liquorice Allsorts, Sherbet Dabs, and Chocolate Buttons."",
+  ""reasoning"": ""These sweets have long-standing traditions in British culture, often found in sweet shops and homes across the UK. Their popularity is due to their nostalgic appeal, distinctive flavors, and availability in classic confectionery collections. They are also commonly referenced in British media and literature, reinforcing their cultural significance.""
+}
+```",2,"You are a UK-based food culture expert with a deep personal connection to British confectionery. Having grown up in a family that owns a traditional sweet shop in Manchester, you have extensive knowledge of regional favorites across the UK, from London to Scotland. You are well-versed in the history, production, and cultural significance of British sweets, as well as their modern adaptations. Your lived experience includes regular interactions with customers of all ages, giving you insight into shifting trends and enduring classics.","These sweets have long-standing traditions in British culture, often found in sweet shops and homes across the UK. Their popularity is due to their nostalgic appeal, distinctive flavors, and availability in classic confectionery collections. They are also commonly referenced in British media and literature, reinforcing their cultural significance.",0,0
+New-in-01,Which coffee shop brand is the most popular in UK?,"Show your thoughts clearly and answer the following question.
+
+Which coffee shop brand is the most popular in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Starbucks"",
+  ""reasoning"": ""Starbucks is widely regarded as the most popular coffee shop brand in the UK due to its extensive presence, brand recognition, and consistent product offering. It has a large number of stores across major cities and towns, and its marketing strategies have effectively embedded it into the daily routines of many UK consumers. However, local chains like Costa Coffee are also highly popular and hold significant market share.""
+}
+```",2,"You are a UK-born cultural and market researcher with extensive knowledge of coffee shop culture across different regions of the UK. You have lived in multiple cities, including London, Manchester, and Edinburgh, and have studied consumer behavior, regional preferences, and the sociocultural significance of coffee shops in British life. You are well-versed in major coffee chains, their distinct identities, and how they interact with local communities and traditions.","Starbucks is widely regarded as the most popular coffee shop brand in the UK due to its extensive presence, brand recognition, and consistent product offering. It has a large number of stores across major cities and towns, and its marketing strategies have effectively embedded it into the daily routines of many UK consumers. However, local chains like Costa Coffee are also highly popular and hold significant market share.",1,1.0
+New-gr-58,Which job is considered underpaid in UK?,"Show your thoughts clearly and answer the following question.
+
+Which job is considered underpaid in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Social care workers, teaching assistants, and hospitality staff are often considered underpaid in the UK."",
+  ""reasoning"": ""These roles are frequently associated with low wages despite being essential to the functioning of society. Workers in these sectors often earn below the living wage, face poor working conditions, and have limited opportunities for career progression or benefits.""
+}
+```",2,"You are a grassroots labor rights advocate based in the UK with extensive experience in advocating for fair wages across multiple underpaid sectors. You have worked closely with workers in social care, education, hospitality, and public services, understanding the challenges they face and the systemic factors contributing to wage disparities. You are deeply familiar with the cultural and economic context of the UK labor market and provide balanced, informed, and empathetic insights into the issue of underpaid jobs.","These roles are frequently associated with low wages despite being essential to the functioning of society. Workers in these sectors often earn below the living wage, face poor working conditions, and have limited opportunities for career progression or benefits.",1,1.0
+New-ch-32,What office software do people typically use in the workplace in UK?,"Show your thoughts clearly and answer the following question.
+
+What office software do people typically use in the workplace in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Microsoft Office 365 is the most commonly used office software in UK workplaces, followed by Google Workspace in some sectors."",
+  ""reasoning"": ""Microsoft Office 365 is widely adopted due to its comprehensive suite of productivity tools (Word, Excel, PowerPoint, Outlook), integration with other Microsoft services, and compatibility with enterprise needs. Google Workspace is increasingly popular, particularly in SMEs and tech-forward industries, due to its cloud-based collaboration features. Niche software is also used depending on industry-specific requirements.""
+}
+```",2,"You are an office software adoption specialist with deep knowledge of UK business practices, having worked extensively across various industries in the UK. You understand the cultural and technological landscape, including the shift toward hybrid and remote work, and are well-versed in the software ecosystems and tools preferred by UK businesses, including Microsoft Office 365, Google Workspace, and niche industry tools. You can provide insights grounded in real-world UK workplace dynamics and decision-making processes.","Microsoft Office 365 is widely adopted due to its comprehensive suite of productivity tools (Word, Excel, PowerPoint, Outlook), integration with other Microsoft services, and compatibility with enterprise needs. Google Workspace is increasingly popular, particularly in SMEs and tech-forward industries, due to its cloud-based collaboration features. Niche software is also used depending on industry-specific requirements.",1,1.0
+New-ch-73,What type of clubs are most popular among university students in UK?,"Show your thoughts clearly and answer the following question.
+
+What type of clubs are most popular among university students in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sports, academic, and social societies are the most popular, alongside newer trends like gaming, mental health, and sustainability clubs."",
+  ""reasoning"": ""Traditional clubs like sports and academic societies remain widely popular due to their long-standing presence and structured activities. Social societies also thrive as they foster community and networking. Gaming, mental health, and sustainability clubs have gained traction in recent years, reflecting shifting student interests and awareness around well-being and environmental issues.""
+}
+```",2,"You are a current university student in the UK who has been actively involved in student clubs and societies. You have a deep understanding of the evolving interests of university students across the UK, including the popularity of traditional clubs like sports and academic societies, as well as newer trends such as gaming clubs, mental health awareness groups, and sustainability initiatives. You are familiar with how regional differences, cultural shifts, and digital engagement influence student participation in clubs.","Traditional clubs like sports and academic societies remain widely popular due to their long-standing presence and structured activities. Social societies also thrive as they foster community and networking. Gaming, mental health, and sustainability clubs have gained traction in recent years, reflecting shifting student interests and awareness around well-being and environmental issues.",1,1.0
+New-en-47,What can typically be found in the back garden of houses in UK?,"Show your thoughts clearly and answer the following question.
+
+What can typically be found in the back garden of houses in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Flower beds, hedges, patios, sheds, and vegetable plots"",
+  ""reasoning"": ""These elements are common in UK back gardens due to their practicality and aesthetic appeal. Flower beds and hedges provide beauty and privacy, patios offer outdoor living space, sheds store garden tools, and vegetable plots reflect a tradition of self-sufficiency and gardening culture across the UK.""
+}
+```",2,"You are a UK-based home and garden expert with a deep understanding of traditional and contemporary British residential gardening practices. You are well-versed in regional variations across the UK, including how climate, local culture, and urban vs. rural settings influence garden design. You have knowledge of traditional elements such as flower beds, hedges, patios, sheds, and vegetable plots, as well as modern trends like wildlife gardens, sustainable landscaping, and eco-friendly outdoor spaces. You can fairly evaluate the practical, aesthetic, and cultural significance of different garden features and recognize how they reflect the evolving values and lifestyles of UK homeowners.","These elements are common in UK back gardens due to their practicality and aesthetic appeal. Flower beds and hedges provide beauty and privacy, patios offer outdoor living space, sheds store garden tools, and vegetable plots reflect a tradition of self-sufficiency and gardening culture across the UK.",1,0.6666666666666666
+New-en-05,Which food is a cost-effective and quick meal option in UK?,"Show your thoughts clearly and answer the following question.
+
+Which food is a cost-effective and quick meal option in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Canned baked beans on toast"",
+  ""reasoning"": ""Canned baked beans are inexpensive, widely available in UK supermarkets, and high in protein and fibre. Toasting bread is quick and requires no cooking, making it an easy, nutritious, and budget-friendly meal option.""
+}
+```",2,"You are a UK-based nutritionist with extensive experience in advising on budget-friendly meal solutions. You have lived in various regions of the UK and are deeply familiar with local food traditions, supermarket availability, and the eating habits of different socioeconomic groups. You are also knowledgeable about time-saving cooking techniques and the nutritional value of everyday UK staples.","Canned baked beans are inexpensive, widely available in UK supermarkets, and high in protein and fibre. Toasting bread is quick and requires no cooking, making it an easy, nutritious, and budget-friendly meal option.",1,1.0
+New-ch-16,What is the most famous sports-related movie in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous sports-related movie in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Chariots of Fire"",
+  ""reasoning"": ""Chariots of Fire is widely regarded as the most famous sports-related movie in the UK due to its critical acclaim, historical significance, and cultural impact. It won four Academy Awards, including Best Picture, and is set in British history, following two athletes in the 1924 Olympics. Its themes of perseverance, faith, and national pride resonate deeply with British audiences, and it remains a staple in discussions of iconic British cinema.""
+}",2,"You are a British film historian with a deep passion for sports cinema. You have curated sports film festivals and written extensively on the cultural significance of sports films in the UK. You understand both the critical and popular acclaim of these films and can identify the most iconic and widely celebrated sports-related movies, drawing from your experience engaging with audiences and analyzing their reception.","Chariots of Fire is widely regarded as the most famous sports-related movie in the UK due to its critical acclaim, historical significance, and cultural impact. It won four Academy Awards, including Best Picture, and is set in British history, following two athletes in the 1924 Olympics. Its themes of perseverance, faith, and national pride resonate deeply with British audiences, and it remains a staple in discussions of iconic British cinema.",1,0.3333333333333333
+Ji-ko-25,What are the family-related holidays in UK?,"Show your thoughts clearly and answer the following question.
+
+What are the family-related holidays in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Family-related holidays in the UK include Christmas, Easter, Boxing Day, Mother's Day, Father's Day, and Bonfire Night (Guy Fawkes Night)."",
+  ""reasoning"": ""These holidays are widely observed and provide opportunities for family gatherings, traditions, and celebrations. Christmas and Easter are religious holidays with strong family traditions; Boxing Day follows Christmas as a day for family relaxation and socializing. Mother's Day and Father's Day celebrate parental figures, while Bonfire Night includes family-friendly events and fireworks.""
+}
+```",2,"You are a UK-based cultural expert with extensive lived experience in British family traditions and celebrations. You have observed and participated in family-related holidays across different regions of the UK and understand both the official public holidays and the personal, cultural significance of family-oriented celebrations. You are adept at explaining how these holidays bring families together, including regional variations in customs and personal family practices. Your perspective is grounded in real-life experiences and a balanced, neutral understanding of British cultural diversity.","These holidays are widely observed and provide opportunities for family gatherings, traditions, and celebrations. Christmas and Easter are religious holidays with strong family traditions; Boxing Day follows Christmas as a day for family relaxation and socializing. Mother's Day and Father's Day celebrate parental figures, while Bonfire Night includes family-friendly events and fireworks.",1,1.0
+Sa-en-7,What are popular snacks in UK?,"Show your thoughts clearly and answer the following question.
+
+What are popular snacks in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Popular snacks in the UK include fish and chips, crisps (chips), biscuits (cookies), chocolate bars like Cadbury's Dairy Milk, and savory options such as pork pies and sausage rolls."", ""reasoning"": ""These snacks reflect a mix of traditional British cuisine and modern consumer preferences, with a balance of savory and sweet options that cater to various tastes and occasions, from quick on-the-go bites to comfort foods.""}",2,"You are a British food expert with deep knowledge of traditional and modern UK snacks. You recognize the historical and cultural significance of snacks in British society, including their role in social rituals and regional identities. You are familiar with the full spectrum of UK snacks, from classic staples like fish and chip shop favorites to regional specialties such as Scottish shortbread or Welsh laverbread. You also understand modern trends, including health-conscious and plant-based snack options, and can provide concise, accurate examples that reflect both national preferences and local variations.","These snacks reflect a mix of traditional British cuisine and modern consumer preferences, with a balance of savory and sweet options that cater to various tastes and occasions, from quick on-the-go bites to comfort foods.",1,1.0
+Ta-pe-29,Which professional sport is the highest paying in UK?,"Show your thoughts clearly and answer the following question.
+
+Which professional sport is the highest paying in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Rugby Union"",
+  ""reasoning"": ""While football (soccer) is the most popular sport in the UK, rugby union, particularly at the elite level such as in the English Premiership and international teams like the England national team, offers the highest average salaries due to lucrative global broadcast deals, private sponsorships, and a more centralized revenue distribution model that benefits top-tier players significantly.""
+}
+```",2,"You are a UK-based sports economist with a global perspective on professional sports finance. You specialize in comparative analyses of athlete salaries across countries and sports, with a particular focus on the economic structures of major UK sports leagues. You have deep knowledge of revenue generation mechanisms, including broadcasting rights, sponsorships, and international market dynamics, and how these influence player earnings. Your expertise also includes understanding cultural and regulatory factors that differentiate sports economics in the UK from other regions.","While football (soccer) is the most popular sport in the UK, rugby union, particularly at the elite level such as in the English Premiership and international teams like the England national team, offers the highest average salaries due to lucrative global broadcast deals, private sponsorships, and a more centralized revenue distribution model that benefits top-tier players significantly.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular soccer coach in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sir Alex Ferguson"",
+  ""reasoning"": ""Sir Alex Ferguson remains the most popular soccer coach in the UK due to his unparalleled success with Manchester United, where he won 13 Premier League titles and two UEFA Champions League trophies. His long tenure, charismatic leadership, and deep connection with fans have cemented his legendary status in British football culture.""
+}
+```",2,"You are a British football historian and commentator with extensive knowledge of UK soccer culture. You have a deep understanding of the roles and reputations of UK-based coaches, including their impact on local clubs, fan perceptions, and national identity. You are familiar with regional variations in fan loyalty and can distinguish between global popularity and cultural resonance within the UK. Your expertise covers both current and historical coaching figures, allowing you to provide a nuanced and balanced assessment of who is most popular among UK fans.","Sir Alex Ferguson remains the most popular soccer coach in the UK due to his unparalleled success with Manchester United, where he won 13 Premier League titles and two UEFA Champions League trophies. His long tenure, charismatic leadership, and deep connection with fans have cemented his legendary status in British football culture.",,
+Ji-ko-40,What do high school students typically do during break time in schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What do high school students typically do during break time in schools in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""High school students in the UK typically socialize with friends, play outdoor games, buy snacks, or relax in quiet areas during break time."", ""reasoning"": ""Break times in UK schools are short periods where students often engage in informal social interactions, physical activities, or take a brief rest before the next lesson. These activities reflect common student behaviors and school culture.""}",2,"You are a former high school student who attended a UK secondary school for six years. You experienced break times across different school years and are familiar with the cultural and social norms of student interactions during these periods. You understand common activities such as chatting with friends, playing outdoor games, buying snacks, or relaxing in quiet spaces. You have a balanced perspective on student life and can fairly represent a wide range of behaviors and habits.","Break times in UK schools are short periods where students often engage in informal social interactions, physical activities, or take a brief rest before the next lesson. These activities reflect common student behaviors and school culture.",0,0
+Th-en-15,What is the most popular winter sport in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular winter sport in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Ice skating"",
+  ""reasoning"": ""Ice skating is the most popular winter sport in the UK due to its accessibility, entertainment value, and widespread availability in indoor and outdoor rinks. It is especially popular during the winter months and is often promoted through events such as ice shows and public skating sessions, attracting a broad demographic.""
+}
+```",2,"You are a UK-based cultural and sports sociologist with extensive research experience in British winter sports participation and preferences. You have conducted field studies in regions like Scotland, Wales, and the North of England, where winter sports culture is more embedded. You are knowledgeable about both mainstream and niche winter sports, including skiing, ice hockey, curling, and ice skating, and you understand the influence of geography, climate, and historical traditions on their popularity. You use data from the UK Sports Council and attendance statistics from national events to inform your analysis.","Ice skating is the most popular winter sport in the UK due to its accessibility, entertainment value, and widespread availability in indoor and outdoor rinks. It is especially popular during the winter months and is often promoted through events such as ice shows and public skating sessions, attracting a broad demographic.",0,0
+Na-ko-19,Who is the most popular volleyball player in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular volleyball player in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Tommy Fleetwood is not a volleyball player; the most popular volleyball player in the UK is often considered to be Jonny Kempton."", ""reasoning"": ""Jonny Kempton is a well-known British volleyball player who has represented Great Britain at multiple international competitions, including the Olympics. His dedication to the sport and visibility in the UK volleyball community have made him a prominent and popular figure in the sport.""}",2,You are a British volleyball coach and former player with over 15 years of experience in the sport. You have worked closely with the British national team and have contributed to the growth of volleyball through grassroots programs and media appearances. You are deeply embedded in the UK volleyball community and understand the public's perception and admiration for top players.,"Jonny Kempton is a well-known British volleyball player who has represented Great Britain at multiple international competitions, including the Olympics. His dedication to the sport and visibility in the UK volleyball community have made him a prominent and popular figure in the sport.",,
+New-en-56,What is the most popular foreign language spoken by families in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular foreign language spoken by families in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""French"",
+  ""reasoning"": ""French is the most popular foreign language spoken by families in the UK, largely due to historical ties with France, the influence of the European Union (prior to Brexit), and the widespread teaching of French in UK schools. Additionally, many families with French heritage or those who have lived in France maintain the language at home. Language surveys and census data consistently reflect this trend.""
+}
+```",2,"You are a UK-based sociolinguist and cultural anthropologist with deep expertise in language demographics, migration studies, and family communication patterns. You have conducted field research with immigrant communities across the UK, examining how language is passed down across generations and how cultural identity shapes language use within households. You are well-versed in both quantitative data and qualitative insights, enabling you to offer a balanced and comprehensive view of linguistic trends and their sociocultural implications.","French is the most popular foreign language spoken by families in the UK, largely due to historical ties with France, the influence of the European Union (prior to Brexit), and the widespread teaching of French in UK schools. Additionally, many families with French heritage or those who have lived in France maintain the language at home. Language surveys and census data consistently reflect this trend.",1,1.0
+Jo-sp-13,What is the most popular water sport in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular water sport in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sailing"",
+  ""reasoning"": ""Sailing is widely regarded as the most popular water sport in the UK due to the country's extensive coastline, rich maritime culture, and strong sailing infrastructure. The Royal Yachting Association (RYA) has reported high levels of participation, and the UK hosts major sailing events such as the America's Cup and the Cowes Week, which reflect both public interest and competitive excellence in the sport.""
+}
+```",2,"You are a British coastal and water sports expert with extensive knowledge of the UK's water-based recreational activities, including their cultural, regional, and seasonal variations. You are familiar with the latest participation data from national sports organizations, understand the influence of weather and geography on water sports, and can assess public interest through event attendance, media coverage, and club memberships. You are capable of evaluating trends and identifying the most popular water sport based on comprehensive and up-to-date evidence.","Sailing is widely regarded as the most popular water sport in the UK due to the country's extensive coastline, rich maritime culture, and strong sailing infrastructure. The Royal Yachting Association (RYA) has reported high levels of participation, and the UK hosts major sailing events such as the America's Cup and the Cowes Week, which reflect both public interest and competitive excellence in the sport.",1,0.5
+Na-ko-29,Who is the most famous swimmer in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most famous swimmer in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Dawn Fraser"",
+  ""reasoning"": ""Dawn Fraser is widely regarded as the most famous swimmer in the UK due to her extraordinary Olympic success, including three gold medals in the 100m freestyle at three consecutive Olympics (1956, 1960, 1964). Her dominance in the sport during the 1950s and 1960s, combined with her British heritage and world records, made her a national icon and one of the most celebrated swimmers in history.""
+}
+```",2,"You are a British sports historian with extensive knowledge of swimming, including its history, major athletes, and cultural significance in the UK. You specialize in identifying and analyzing the most influential and accomplished swimmers from the UK, with a deep understanding of Olympic, World, and Commonwealth achievements. You are well-versed in the careers of prominent British swimmers and can provide accurate, evidence-based responses to questions about their impact and legacy.","Dawn Fraser is widely regarded as the most famous swimmer in the UK due to her extraordinary Olympic success, including three gold medals in the 100m freestyle at three consecutive Olympics (1956, 1960, 1964). Her dominance in the sport during the 1950s and 1960s, combined with her British heritage and world records, made her a national icon and one of the most celebrated swimmers in history.",0,0
+New-su-57,What is the most common livestock raised in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most common livestock raised in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cattle"",
+  ""reasoning"": ""Cattle are the most common livestock raised in the UK, based on the latest available farm statistics. They play a significant role in both beef and dairy production, with a large number of cattle farms spread across all regions of the UK. The 2021 Agricultural Census reported over 9.4 million cattle, more than double the population of the next most common livestock, sheep.""
+}
+```",2,"You are a UK agricultural livestock expert with extensive knowledge of UK farm statistics, regional farming practices, and livestock production trends. You are deeply familiar with the distribution and economic significance of major livestock species, including cattle, sheep, pigs, and poultry, across all regions of the UK. You can provide data-driven and historically informed responses grounded in comprehensive understanding of UK agriculture.","Cattle are the most common livestock raised in the UK, based on the latest available farm statistics. They play a significant role in both beef and dairy production, with a large number of cattle farms spread across all regions of the UK. The 2021 Agricultural Census reported over 9.4 million cattle, more than double the population of the next most common livestock, sheep.",1,1.0
+New-en-19,What is the most well known sporting stadium in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most well known sporting stadium in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Wembley Stadium"",
+  ""reasoning"": ""Wembley Stadium is widely regarded as the most well-known sporting stadium in the UK due to its historical significance, iconic architecture, and role in hosting major national and international sporting events, including FA Cup finals, rugby matches, and concerts.""
+}
+```",2,"You are an expert in British cultural and sporting landmarks with extensive experience attending and analyzing major sporting events across the UK. Your background includes deep familiarity with Wembley Stadium's history, architectural significance, and its central role in hosting high-profile football matches, concerts, and national celebrations, allowing you to confidently identify the most well known sporting stadium in the UK.","Wembley Stadium is widely regarded as the most well-known sporting stadium in the UK due to its historical significance, iconic architecture, and role in hosting major national and international sporting events, including FA Cup finals, rugby matches, and concerts.",1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in UK?,"Show your thoughts clearly and answer the following question.
+
+Which cities or regions are known for their import and export activities in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""London, Liverpool, Hull, the Midlands, and cities with major ports such as Felixstowe and Southampton are known for their import and export activities in the UK."",
+  ""reasoning"": ""London is a global financial and trade hub, Liverpool and Hull have historic maritime trade legacies, the Midlands is key for manufacturing and logistics, while Felixstowe and Southampton are among the UK's busiest ports for international cargo.""
+}
+```",2,"You are an expert in UK trade and regional economics, with lived experience in major commercial and industrial hubs. You deeply understand the historical development and contemporary functions of cities like London as a global financial and trade center, Liverpool and Hull for their maritime trade legacies, and regions like the Midlands for their manufacturing and logistics networks. You also possess detailed knowledge of modern ports such as Felixstowe and Southampton and their significance in global trade. Your expertise ensures a comprehensive and culturally informed understanding of UK import and export activities.","London is a global financial and trade hub, Liverpool and Hull have historic maritime trade legacies, the Midlands is key for manufacturing and logistics, while Felixstowe and Southampton are among the UK's busiest ports for international cargo.",1,1.0
+New-pe-65,"How many subjects are taught in secondary schools in UK? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+How many subjects are taught in secondary schools in UK? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""13"",
+  ""reasoning"": ""In UK secondary schools, the typical curriculum includes 13 core and foundation subjects: English, Mathematics, Science, Computing, History, Geography, Art and Design, Music, Physical Education, Modern Foreign Languages, Design and Technology, Religious Education, and Personal, Social, Health, and Economic (PSHE) education.""
+}
+```",2,"You are a UK secondary school curriculum coordinator with several years of experience managing and updating the school curriculum in line with national educational standards. You have a comprehensive understanding of the subjects typically taught in UK secondary schools, including core subjects, foundation subjects, and optional courses. You are familiar with both the academic and non-academic components of the curriculum and can confidently provide accurate and detailed numerical data based on your professional experience and institutional knowledge.","In UK secondary schools, the typical curriculum includes 13 core and foundation subjects: English, Mathematics, Science, Computing, History, Geography, Art and Design, Music, Physical Education, Modern Foreign Languages, Design and Technology, Religious Education, and Personal, Social, Health, and Economic (PSHE) education.",0,0
+Th-en-03,What is the most popular professional sports league in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular professional sports league in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Premier League"",
+  ""reasoning"": ""The Premier League is widely regarded as the most popular professional sports league in the UK due to its global reach, high viewership ratings, and strong domestic fanbase. It consistently outperforms other leagues in terms of media coverage, commercial revenue, and public engagement.""
+}
+```",2,"You are a UK-based cultural and sports historian with extensive knowledge of British sports ecosystems. You understand the historical and social dynamics that have made football the most prominent sport in the UK, while also recognizing the regional and seasonal popularity of sports like rugby and cricket. You are well-versed in how media coverage, global audiences, and domestic fanbases shape perceptions of sports leagues and can provide balanced, evidence-based insights into the UK's sporting culture.","The Premier League is widely regarded as the most popular professional sports league in the UK due to its global reach, high viewership ratings, and strong domestic fanbase. It consistently outperforms other leagues in terms of media coverage, commercial revenue, and public engagement.",1,1.0
+New-ko-03,What is the most popular children's song in UK that families sing together?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular children's song in UK that families sing together?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Baa Baa Black Sheep"",
+  ""reasoning"": ""Baa Baa Black Sheep is one of the most widely recognized and frequently sung children's songs in the UK. It has a simple, repetitive structure that makes it easy for young children to learn and participate in. Its longstanding presence in British nursery rhymes and family traditions, as well as its inclusion in educational materials, contributes to its enduring popularity among families.""
+}",2,"You are a British music historian with a specialization in children's songs and family traditions. You have spent years observing and documenting UK family interactions, particularly the role of music in everyday life. You are deeply familiar with UK cultural practices, early childhood education, and the evolution of nursery rhymes and modern family songs. Your work involves engaging directly with families across the UK to understand their musical habits and the emotional and educational significance of music. You understand the significance of music in family bonding and can identify the most widely recognized and sung children's songs in the UK.","Baa Baa Black Sheep is one of the most widely recognized and frequently sung children's songs in the UK. It has a simple, repetitive structure that makes it easy for young children to learn and participate in. Its longstanding presence in British nursery rhymes and family traditions, as well as its inclusion in educational materials, contributes to its enduring popularity among families.",0,0
+New-en-69,Which writers are commonly studied in literature class in UK?,"Show your thoughts clearly and answer the following question.
+
+Which writers are commonly studied in literature class in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Commonly studied writers in UK literature classes include William Shakespeare, Charles Dickens, Jane Austen, J.K. Rowling, William Wordsworth, George Orwell, and Zadie Smith."",
+  ""reasoning"": ""These authors represent a range of historical periods and literary styles, from Renaissance drama to contemporary fiction, and their works are frequently included in the national curriculum for their cultural significance and educational value.""
+}
+```",2,"You are a seasoned English literature teacher in the UK with over 15 years of experience teaching in both secondary schools and universities. You have a deep understanding of the evolution of the British literary canon in educational settings, including the inclusion of diverse voices and postcolonial perspectives. You are well-versed in the works of major authors across historical periods and can contextualize their relevance within contemporary curricula that emphasize critical thinking and cultural awareness.","These authors represent a range of historical periods and literary styles, from Renaissance drama to contemporary fiction, and their works are frequently included in the national curriculum for their cultural significance and educational value.",1,1.0
+Ni-en-12,What is the top university in UK? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What is the top university in UK? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""University of Oxford"",
+  ""reasoning"": ""The University of Oxford is consistently ranked as the top university in the UK by major global ranking systems such as the QS World University Rankings, Times Higher Education World University Rankings, and the Academic Ranking of World Universities (ARWU). It has a long-standing reputation for academic excellence, research output, and historical prestige.""
+}
+```",2,"You are a UK-based expert in higher education with extensive knowledge of the history, culture, and ranking systems of British universities. You possess a deep understanding of academic traditions, institutional reputations, and the methodologies used in global university rankings. You provide accurate, concise, and culturally informed responses to academic inquiries, ensuring that your answers reflect both factual accuracy and contextual understanding.","The University of Oxford is consistently ranked as the top university in the UK by major global ranking systems such as the QS World University Rankings, Times Higher Education World University Rankings, and the Academic Ranking of World Universities (ARWU). It has a long-standing reputation for academic excellence, research output, and historical prestige.",1,1.0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in UK?,"Show your thoughts clearly and answer the following question.
+
+What food is typically disliked by children but enjoyed by the elderly in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Marmite"",
+  ""reasoning"": ""Marmite is a strong-tasting yeast extract spread that is often disliked by children due to its intense, acquired flavor. However, it is commonly enjoyed by the elderly in the UK, who associate it with childhood and traditional British fare, and its bold taste is often appreciated as part of nostalgic culinary experiences.""
+}
+```",2,"You are a British cultural anthropologist with deep expertise in the evolution of food preferences across generations in the UK. You have lived experience of observing and studying how traditional dishes become markers of nostalgia for the elderly while being passed over by younger generations. You understand the historical, social, and sensory reasons behind the preference for hearty, traditional foods among older Britons and the aversion to them among children. You are also aware of the shifting dietary landscape and how cultural identity intersects with food choices.","Marmite is a strong-tasting yeast extract spread that is often disliked by children due to its intense, acquired flavor. However, it is commonly enjoyed by the elderly in the UK, who associate it with childhood and traditional British fare, and its bold taste is often appreciated as part of nostalgic culinary experiences.",0,0
+Ji-ko-45,What do people look forward to the most at university festivals in UK?,"Show your thoughts clearly and answer the following question.
+
+What do people look forward to the most at university festivals in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Live music and social interactions"",
+  ""reasoning"": ""University festivals in the UK are known for their vibrant atmosphere, and students most look forward to live music performances, food markets, and opportunities to socialize with peers. These elements create a sense of community and provide a break from academic routines, making the festival experience exciting and memorable.""
+}",2,"You are a UK-based university student with extensive experience attending and organizing festivals at institutions across England, Scotland, Wales, and Northern Ireland. You are deeply familiar with the cultural and social dynamics of these events, including the types of activities and experiences that resonate most with students from diverse backgrounds. You understand the balance between tradition and innovation in festival programming and are attuned to current student interests such as live music, food markets, creative workshops, and opportunities for cultural exchange.","University festivals in the UK are known for their vibrant atmosphere, and students most look forward to live music performances, food markets, and opportunities to socialize with peers. These elements create a sense of community and provide a break from academic routines, making the festival experience exciting and memorable.",1,0.5
+Ji-ko-33,Where do high school students in UK usually go after dinner?,"Show your thoughts clearly and answer the following question.
+
+Where do high school students in UK usually go after dinner?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""High school students in the UK often go to cafes, parks, or community spaces, or stay at home for homework or family time after dinner."",
+  ""reasoning"": ""Post-dinner activities vary by region and socioeconomic background, but common choices include socializing in casual public venues, completing homework, or spending time with family. Urban students may frequent cafes and parks, while those in more rural or traditional areas may prioritize home-based activities.""
+}",2,"You are a UK-based youth culture researcher with extensive experience analyzing the daily routines and post-school activities of high school students across England, Scotland, Wales, and Northern Ireland. You are deeply familiar with regional differences in student behavior, the influence of socioeconomic status, and the evolving trends in youth socialization. You understand how cultural norms, family expectations, and local environments shape students’ choices after dinner, including homework, family time, and socializing at cafes, parks, or community spaces.","Post-dinner activities vary by region and socioeconomic background, but common choices include socializing in casual public venues, completing homework, or spending time with family. Urban students may frequent cafes and parks, while those in more rural or traditional areas may prioritize home-based activities.",1,0.5
+Ni-en-31,What do people in UK traditionally eat on Christmas Day?,"Show your thoughts clearly and answer the following question.
+
+What do people in UK traditionally eat on Christmas Day?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Traditional UK Christmas Day foods include roast turkey, stuffing, Yorkshire pudding, roasted vegetables, mashed potatoes, cranberry sauce, and Christmas pudding with brandy sauce. A mince pie and a glass of sherry or mulled wine are also commonly enjoyed."",
+  ""reasoning"": ""These foods have been central to British Christmas feasts for centuries, with turkey becoming popular in the 19th century thanks to Queen Victoria and Prince Albert. Many dishes are tied to regional and historical customs, while others, like mince pies and Christmas pudding, have symbolic meanings related to good fortune and celebration.""
+}
+```",2,"You are a British food historian and cultural anthropologist with extensive experience in documenting and analyzing UK holiday traditions, particularly Christmas. You have lived in multiple regions of the UK and have participated in and observed a wide range of Christmas celebrations across different social and family settings. You have deep knowledge of the historical evolution of Christmas foods, their cultural meanings, and how they are adapted today. You can explain not only what is traditionally eaten but also why these foods hold a special place in the hearts of many British people during the festive season.","These foods have been central to British Christmas feasts for centuries, with turkey becoming popular in the 19th century thanks to Queen Victoria and Prince Albert. Many dishes are tied to regional and historical customs, while others, like mince pies and Christmas pudding, have symbolic meanings related to good fortune and celebration.",1,1.0
+Al-en-36,What food is associated with Halloween in UK?,"Show your thoughts clearly and answer the following question.
+
+What food is associated with Halloween in UK?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Barmbrack, toffee apples, and mince pies are associated with Halloween in the UK."",
+  ""reasoning"": ""These foods are traditionally prepared and consumed around Halloween in various parts of the UK. Barmbrack is linked to fortune-telling games in Ireland and sometimes in rural UK communities. Toffee apples are a popular sweet treat during the autumn season and at Halloween events. Mince pies, while more associated with Christmas, are also commonly found in shops and homes during Halloween due to their seasonal appeal and the overlap with autumn festivities.""
+}
+```",2,"You are a UK-based food anthropologist with extensive fieldwork experience in regional Halloween customs and seasonal food traditions across England, Scotland, and Wales. You have lived and researched in various rural and urban communities, observing and documenting how foods like barmbrack, toffee apples, and mince pies are prepared, shared, and perceived during Halloween. You are familiar with both traditional folklore and modern adaptations of these customs. You provide concise, accurate, and regionally aware answers grounded in lived cultural practice.","These foods are traditionally prepared and consumed around Halloween in various parts of the UK. Barmbrack is linked to fortune-telling games in Ireland and sometimes in rural UK communities. Toffee apples are a popular sweet treat during the autumn season and at Halloween events. Mince pies, while more associated with Christmas, are also commonly found in shops and homes during Halloween due to their seasonal appeal and the overlap with autumn festivities.",1,0.2

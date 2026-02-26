@@ -45,6 +45,7 @@ MODEL_PATHS = {
     'jais-13b-chat':'core42/jais-13b-chat',
     'llama-3-8b-instruct':'meta-llama/Meta-Llama-3-8B-Instruct',
     'qwen3-14b':'Qwen/Qwen3-14B',
+    'qwen3.5-35b':'Qwen/Qwen3.5-35B-A3B',
 }
 
 COUNTRY_LANG = { 
@@ -70,7 +71,7 @@ COUNTRY_LANG = {
 def get_tokenizer_model(model_name,model_path,model_cache_dir):
     tokenizer,model = None,None
     
-    if 'gpt' not in model_name and 'gemini' not in model_name and 'claude' not in model_name and 'bison' not in model_name and 'command' not in model_name and 'Qwen' not in model_name and 'llama-3-8b-instruct' not in model_name and 'qwen3-14b' not in model_name:
+    if 'gpt' not in model_name and 'gemini' not in model_name and 'claude' not in model_name and 'bison' not in model_name and 'command' not in model_name and 'Qwen' not in model_name and 'llama-3-8b-instruct' not in model_name and 'qwen3-14b' not in model_name and 'qwen3.5-35b' not in model_name:
         # Lazy import for local models only
         try:
             from transformers import T5Tokenizer, T5ForConditionalGeneration, AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer, LlamaTokenizer, pipeline, AutoConfig, BitsAndBytesConfig
@@ -239,10 +240,10 @@ def get_together_response(
             
     return response
 
-# SGLang server URLs (same as culturalbench: 30000 for Llama, 30001 for Qwen3-14B)
+# SGLang server URLs (same as culturalbench: 30000 for Llama, 30001 for Qwen3-14B, 30002 for Qwen3.5-35B-A3B)
 SGLANG_BASE_URL_LLAMA = "http://34.126.87.212:30000/v1"
 SGLANG_BASE_URL_QWEN3_14B = "http://34.126.87.212:30001/v1"
-SGLANG_BASE_URL_QWEN3_32B = "http://34.126.87.212:30002/v1"
+SGLANG_BASE_URL_QWEN35_35B = "http://34.126.87.212:30002/v1"
 
 def _strip_think_block(content):
     if not content or not isinstance(content, str):
@@ -271,8 +272,8 @@ def get_sglang_response(
     base_url: optional; default 30000 for Llama, use SGLANG_BASE_URL_QWEN3_14B for Qwen3-14B.
     """
     if base_url is None:
-        if 'qwen3-32b' in model_name.lower():
-            base_url = SGLANG_BASE_URL_QWEN3_32B
+        if 'qwen3.5' in model_name.lower() or '35b-a3b' in model_name.lower():
+            base_url = SGLANG_BASE_URL_QWEN35_35B
         elif 'qwen3-14b' in model_name.lower():
             base_url = SGLANG_BASE_URL_QWEN3_14B
         else:
@@ -302,7 +303,11 @@ def get_sglang_response(
                 max_tokens=max_tokens,
             )
             if "qwen3" in model_name.lower():
-                kwargs["extra_body"] = {"enable_thinking": False}
+                kwargs["extra_body"] = {
+                    "chat_template_kwargs": {
+                        "enable_thinking": False
+                    }
+                }
             response = client.chat.completions.create(**kwargs)
         
             response = response.choices[0].message.content.strip()
@@ -311,13 +316,13 @@ def get_sglang_response(
             break
         except KeyboardInterrupt:
             raise Exception("KeyboardInterrupted!")
-        except:
+        except Exception as e:
             try:
                 print(response)
-            except:
-                print('ERROR')
-            print("Exception: Sleep for 10 sec")
-            
+            except Exception:
+                pass
+            print(f"SGLang exception (base_url={base_url or 'default'}, model={model_name}): {e}")
+            print("Sleep for 10 sec, then retry...")
             time.sleep(10)
             n_try += 1
             continue
@@ -942,12 +947,14 @@ def get_model_response(model_name,prompt,model,tokenizer,temperature,top_p,gpt_a
         if system_message:
             prompt = f"{system_message}\n\n{prompt}"
         response = get_cohere_response(prompt,model_name=model_name,temperature=temperature,top_p=top_p,max_tokens=_max)
-    elif 'Qwen' in model_name:
-        response = get_together_response(prompt,model_name=model_name,temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max)
     elif 'llama-3-8b-instruct' in model_name:
         response = get_sglang_response(prompt,model_name=MODEL_PATHS[model_name],temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max)
+    elif 'qwen3.5' in model_name.lower() or '35b-a3b' in model_name.lower():
+        response = get_sglang_response(prompt,model_name=MODEL_PATHS.get(model_name, model_name),temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max,base_url=SGLANG_BASE_URL_QWEN35_35B)
     elif 'qwen3-14b' in model_name:
         response = get_sglang_response(prompt,model_name=MODEL_PATHS[model_name],temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max,base_url=SGLANG_BASE_URL_QWEN3_14B)
+    elif 'Qwen' in model_name:
+        response = get_together_response(prompt,model_name=model_name,temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max)
     else:
         response = model_inference(prompt,model_path=model_name,model=model,tokenizer=tokenizer,max_length=_max,system_message=system_message,temperature=temperature,top_p=top_p)
             

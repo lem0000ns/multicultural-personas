@@ -17,47 +17,44 @@
 #     "c4ai-command-r-plus"
 # )
 
-MODEL_KEYS=("qwen3-14b")
+MODEL_KEYS=("llama-3-8b-instruct")
 # Define countries and languages as parallel arrays
 COUNTRIES=("UK" "US" "South_Korea" "Algeria" "China" "Indonesia" "Spain" "Iran" "Mexico" "Assam" "Greece" "Ethiopia" "Northern_Nigeria" "Azerbaijan" "North_Korea" "West_Java")
 
-# Prompt numbers
-PROMPT_NUMBERS=("inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-1" "inst-6" "inst-6" "inst-6" "inst-6" "inst-4" "inst-6" "inst-6")
-
 # Iterate over models, countries, languages, and prompts
-for model_key in "${MODEL_KEYS[@]}"; do
-    for i in "${!COUNTRIES[@]}"; do
-        country="${COUNTRIES[$i]}"
-        prompt_no="${PROMPT_NUMBERS[$i]}"
-        
-        python evaluate.py --model "$model_key" \
-                                --language "English" \
-                                --country "$country" \
-                                --prompt_no "$prompt_no" \
-                                --id_col ID \
-                                --question_col Translation \
-                                --response_col response \
-                                --response_dir "../saq_i5" \
-                                --annotation_dir "../data/annotations" \
-                                --annotation_filename "${country}_data.json" \
-                                --annotations_key "annotations" \
-                                --evaluation_result_file "saq_i5_results.csv"
-        
-        # if [ "$language" != "English" ]; then
-        #     python evaluate.py --model "$model_key" \
-        #                         --language "English" \
-        #                         --country "$country" \
-        #                         --prompt_no "$prompt_no" \
-        #                         --id_col ID \
-        #                         --question_col Translation \
-        #                         --response_col response \
-        #                         --response_dir "../saq_only_reasoning_results" \
-        #                         --annotation_dir "../data/annotations" \
-        #                         --annotation_filename "${country}_data.json"  \
-        #                         --annotations_key "annotations" \
-        #                         --evaluation_result_file "evaluation_results.csv"
-        # fi
-    done
+for run_num in {1..5}; do
+    for model_key in "${MODEL_KEYS[@]}"; do
+        for i in "${!COUNTRIES[@]}"; do
+            country="${COUNTRIES[$i]}"
+            
+            python evaluate.py --model "$model_key" \
+                                    --language "English" \
+                                    --country "$country" \
+                                    --id_col ID \
+                                    --question_col Translation \
+                                    --response_col response \
+                                    --response_dir "../llama3-8b_baseline_r${run_num}" \
+                                    --annotation_dir "../data/annotations" \
+                                    --annotation_filename "${country}_data.json" \
+                                    --annotations_key "annotations" \
+                                    --evaluation_result_file "llama3-8b-instruct_baseline_r${run_num}_results.csv"
+            
+            # if [ "$language" != "English" ]; then
+            #     python evaluate.py --model "$model_key" \
+            #                         --language "English" \
+            #                         --country "$country" \
+            #                         --prompt_no "$prompt_no" \
+            #                         --id_col ID \
+            #                         --question_col Translation \
+            #                         --response_col response \
+            #                         --response_dir "../saq_only_reasoning_results" \
+            #                         --annotation_dir "../data/annotations" \
+            #                         --annotation_filename "${country}_data.json"  \
+            #                         --annotations_key "annotations" \
+            #                         --evaluation_result_file "evaluation_results.csv"
+            # fi
+        done
+    done 
 done
 
 

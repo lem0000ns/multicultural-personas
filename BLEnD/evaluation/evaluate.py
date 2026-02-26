@@ -1,37 +1,53 @@
+import re
 from evaluation_utils import *
 from exact_match import *
 from multiple_choice_evaluation import *
+from saq_llm_judge import saq_llm_judge
+
+ALL_QUESTIONS_CSV = "saq_llm_judge_all_questions.csv"
+ACCURACY_BY_ITER_CSV = "saq_llm_judge_accuracy_by_iteration.csv"
+
 
 def evaluate_all_metrics(
     model,country,language,
-    prompt_no,response_dir,annotation_dir,mc_dir,
+    response_dir,annotation_dir,mc_dir,
     id_col,q_col,r_col,annotations_key,
     eval_res_filename,annotation_template='{country}_data.json'
     ):
+    # Write SAQ results under saq_results/<model>/
+    saq_out_dir = os.path.join('saq_results', model)
+    os.makedirs(saq_out_dir, exist_ok=True)
+    # Derive run suffix from eval filename (e.g. baseline_r1 from llama3-8b-instruct_baseline_r1_results.csv)
+    base = os.path.splitext(os.path.basename(eval_res_filename))[0]
+    run_suffix = ""
+    if "baseline_r" in base:
+        m = re.search(r"baseline_r\d+", base, re.I)
+        if m:
+            run_suffix = "_" + m.group(0)
+    all_questions_path = os.path.join(saq_out_dir, ALL_QUESTIONS_CSV.replace(".csv", f"{run_suffix}.csv"))
+    accuracy_by_iter_path = os.path.join(saq_out_dir, ACCURACY_BY_ITER_CSV.replace(".csv", f"{run_suffix}.csv"))
+
+    res_df = get_model_response_file(data_dir=response_dir,model=model,country=country,language=language)
     
-    if not os.path.exists(eval_res_filename):
-        write_csv_row(['model','country','language','prompt_no','eval_method','score','iteration'],eval_res_filename)
-    
-    res_df = get_model_response_file(data_dir=response_dir,model=model,country=country,language=language,prompt_no=prompt_no)
-    
-    # Check if iteration column exists
+    # Check if iteration column exists and has valid (non-NaN) values
     has_iteration = 'iteration' in res_df.columns
-    
-    # Get unique iterations if available, otherwise evaluate all at once
     if has_iteration:
-        iterations = sorted(res_df['iteration'].unique())
-        print(f"Found iterations: {iterations}")
-    else:
-        iterations = [None]  # Evaluate all data at once
+        iteration_vals = res_df['iteration'].dropna().unique()
+        if len(iteration_vals) > 0:
+            iterations = sorted(iteration_vals)
+            print(f"Found iterations: {iterations}")
+        else:
+            has_iteration = False
+            iterations = [None]
+    if not has_iteration:
+        iterations = [None]
     
     real_annotation = get_annotations(data_dir=annotation_dir,country=country,template=annotation_template)
     
-    # Store scores for each iteration
     iteration_scores = {}
+    all_question_rows = []
     
-    # Evaluate for each iteration
     for iteration in iterations:
-        # Filter dataframe by iteration if available
         if has_iteration and iteration is not None:
             iter_df = res_df[res_df['iteration'] == iteration].copy()
             print(f"\n{'='*60}")
@@ -46,53 +62,76 @@ def evaluate_all_metrics(
         if len(iter_df) == 0:
             print(f"Warning: No data found for iteration {iteration}. Skipping.")
             continue
+
+        accuracy, num_correct, num_total, question_rows = saq_llm_judge(
+            country=country,
+            language=language,
+            annotation_dict=real_annotation,
+            response_df=iter_df,
+            id_col=id_col,
+            r_col=r_col,
+            annotations_key=annotations_key,
+            judge_model=model,
+        )
         
-        sem_b,sem_w,iter_df_scored = soft_exact_match(country=country,language=language,annotation_dict=real_annotation,response_df=iter_df,id_col=id_col,r_col=r_col,annotations_key=annotations_key)
-        
-        # Store iteration score
+        print(f"  Accuracy: {accuracy:.2f}% ({num_correct}/{num_total})")
+
         iteration_key = f"iteration_{iteration}" if iteration is not None else "all"
-        iteration_scores[iteration_key] = {'SEM-B': sem_b, 'SEM-W': sem_w}
+        iteration_scores[iteration_key] = {'accuracy': accuracy, 'num_correct': num_correct, 'num_total': num_total}
         
-        # Write to CSV with iteration column
-        write_csv_row([model,country,language,prompt_no,'SEM-B',sem_b,iteration if iteration is not None else ''],eval_res_filename)
-        write_csv_row([model,country,language,prompt_no,'SEM-W',sem_w,iteration if iteration is not None else ''],eval_res_filename)
+        for row in question_rows:
+            row["model"] = model
+            all_question_rows.append(row)
+    
+    # Append to big fat CSV (create with headers if new)
+    if all_question_rows:
+        headers = ["model", "country", "iteration", "question_id", "correct", "model_response", "ground_truth"]
+        file_exists = os.path.exists(all_questions_path)
+        with open(all_questions_path, "a", encoding="utf-8") as f:
+            import csv
+            writer = csv.writer(f)
+            if not file_exists:
+                writer.writerow(headers)
+            for row in all_question_rows:
+                writer.writerow([
+                    row.get("model", model),
+                    row.get("country", country),
+                    row.get("iteration", ""),
+                    row.get("question_id", ""),
+                    row.get("correct", 0),
+                    (row.get("model_response", "") or "")[:500],
+                    (row.get("ground_truth", "") or "")[:500],
+                ])
         
-        # Save scored dataframe with iteration suffix
-        if has_iteration and iteration is not None:
-            iter_df_scored.to_csv(os.path.join(response_dir,f'{model}_{country}_{language}_{prompt_no}_response_score_iter{iteration}.csv'),index=False,encoding='utf-8')
-        else:
-            iter_df_scored.to_csv(os.path.join(response_dir,f'{model}_{country}_{language}_{prompt_no}_response_score.csv'),index=False,encoding='utf-8')
+        # Recompute and overwrite accuracy-by-iteration summary (aggregate across all countries so far)
+        try:
+            df_all = pd.read_csv(all_questions_path, encoding="utf-8")
+            summary_rows = []
+            if "iteration" in df_all.columns:
+                it_vals = [v for v in df_all["iteration"].dropna().unique() if v != "" and str(v).strip() != ""]
+                def _sort_key(x):
+                    try:
+                        return float(x)
+                    except (TypeError, ValueError):
+                        return 0
+                it_vals = sorted(it_vals, key=_sort_key)
+                for it in it_vals:
+                    sub = df_all[df_all["iteration"].astype(str) == str(it)]
+                    if len(sub) > 0:
+                        acc = sub["correct"].mean() * 100
+                        n_corr = int(sub["correct"].sum())
+                        n_tot = len(sub)
+                        summary_rows.append({"iteration": it, "accuracy": acc, "num_correct": n_corr, "num_total": n_tot})
+            if summary_rows:
+                pd.DataFrame(summary_rows).to_csv(accuracy_by_iter_path, index=False, encoding="utf-8")
+        except Exception as e:
+            print(f"Warning: could not update accuracy-by-iteration: {e}")
     
-    # Multiple Choice Question (only for English, evaluated once, not per iteration)
-    if language == 'English':
-        mc_res_file = f'{model}-mc_res.csv'
-        if os.path.exists(os.path.join(mc_dir, mc_res_file)):
-            mc_score = multiple_choice_score(model,mc_dir,mc_res_file,None,eval_res_filename,None,country)    
-            write_csv_row([model,country,'English',None,'MC',mc_score,''],eval_res_filename)
-        else:
-            print(f"Warning: MCQ response file {mc_res_file} not found in {mc_dir}. Skipping MCQ evaluation.")
-     
-    # leave the latest result if duplicated
-    # Read the file as pd.DataFrame
-    df = pd.read_csv(eval_res_filename)
-
-    # Delete duplicate lines regarding model, country, language, prompt_no, eval_method, iteration
-    if 'iteration' in df.columns:
-        df.drop_duplicates(subset=['model', 'country', 'language', 'prompt_no', 'eval_method', 'iteration'], keep='last', inplace=True)
-    else:
-        df.drop_duplicates(subset=['model', 'country', 'language', 'prompt_no', 'eval_method'], keep='last', inplace=True)
-
-    # Write the modified DataFrame back to the file
-    df.to_csv(eval_res_filename, index=False, encoding='utf-8')
-    
-    # Print summary per iteration
     print(f"\n{'='*60}")
-    print(f"Evaluation Summary for {model} - {country} - {language} - {prompt_no}")
+    print(f"Evaluation Summary for {model} - {country} - {language}")
     print(f"{'='*60}")
     for iter_key, scores in sorted(iteration_scores.items()):
-        print(f"{iter_key.upper()}:")
-        print(f"  SEM-B (Binary): {scores['SEM-B']:.4f}")
-        print(f"  SEM-W (Weighted): {scores['SEM-W']:.4f}")
+        print(f"{iter_key.upper()}: Accuracy {scores['accuracy']:.2f}% ({scores['num_correct']}/{scores['num_total']})")
     print(f"{'='*60}\n")
     
 if __name__ == "__main__":
@@ -103,8 +142,6 @@ if __name__ == "__main__":
                         help='Provide the language you want to test on. Check and choose from the first values of the LANG_COUNTRY variable. If you want to test on multiple languages, provide multiple languages with ", " between each (e.g., "English, Korean").')
     parser.add_argument('--country',type=str,default=None,
                         help='Provide the country you want to test on. Check and choose from the second values of the LANG_COUNTRY variable. If you want to test on multiple countries, provide multiple countries with ", " between each (e.g., "UK, South Korea"). Make sure you have the same number of countries and languages provided. The language-country pair do not have to be identical with the pairs within the LANG_COUNTRY variable.')
-    parser.add_argument('--prompt_no',type=str,default=None,
-                        help='Provide the propmt id (ex. inst-1, inst-2, pers-1, etc.')
     
     parser.add_argument('--id_col',type=str,default=None,
                         help='Provide the column name from the LLM response csv file name with question IDs.') 
@@ -127,4 +164,4 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    evaluate_all_metrics(model=args.model,country=args.country,language=args.language,prompt_no=args.prompt_no,response_dir=args.response_dir,annotation_dir=args.annotation_dir,mc_dir=args.mc_dir,id_col=args.id_col,q_col=args.question_col,r_col=args.response_col,eval_res_filename=args.evaluation_result_file,annotations_key=args.annotations_key,annotation_template=args.annotation_filename) 
+    evaluate_all_metrics(model=args.model,country=args.country,language=args.language,response_dir=args.response_dir,annotation_dir=args.annotation_dir,mc_dir=args.mc_dir,id_col=args.id_col,q_col=args.question_col,r_col=args.response_col,eval_res_filename=args.evaluation_result_file,annotations_key=args.annotations_key,annotation_template=args.annotation_filename) 

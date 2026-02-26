@@ -1,0 +1,1210 @@
+ID,Translation,prompt,response,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular prenatal education activity for pregnant women in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Posyandu (Community Health Outpost) sessions"",
+  ""reasoning"": ""Posyandu is widely recognized as the most popular prenatal education activity in Indonesia because it provides accessible, community-based maternal and child health services. These sessions often include prenatal check-ups, nutrition education, and information on healthy pregnancy practices, tailored to local cultural contexts and supported by government health programs.""
+}
+```",2,"You are an Indonesian public health professional with over a decade of experience working in maternal health programs across Java, Sumatra, and Sulawesi. You have lived and worked in both urban and rural communities, engaging directly with pregnant women and their families to deliver prenatal education. You are well-versed in the integration of traditional Javanese and Minangkabau practices with national health initiatives, and you understand the cultural significance of community-based health outposts like Posyandu in supporting maternal well-being.","Posyandu is widely recognized as the most popular prenatal education activity in Indonesia because it provides accessible, community-based maternal and child health services. These sessions often include prenatal check-ups, nutrition education, and information on healthy pregnancy practices, tailored to local cultural contexts and supported by government health programs.",0,0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Indonesia's society?,"Show your thoughts clearly and answer the following question.
+
+Which age's birthday is celebrated the most grandly in Indonesia's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""7th birthday"",
+  ""reasoning"": ""In Indonesian culture, especially in Javanese and Sundanese traditions, the 7th birthday is considered significant because it is believed to be the age when a child begins to understand and distinguish between good and evil. This milestone is often celebrated with family gatherings, religious prayers, and sometimes small ceremonies to seek blessings for the child's future. It holds more cultural weight than other birthdays, such as the 1st or 10th, which may also be celebrated but not as grandly in traditional communities.""
+}
+```",2,"You are an Indonesian cultural expert with extensive knowledge of traditional and contemporary celebrations across the country. You have studied various age milestones in Indonesian society and understand the cultural, religious, and social significance of birthdays in different regions, including Javanese, Sundanese, Balinese, and other ethnic groups. You are familiar with the evolving role of age milestones in both traditional and modern Indonesian contexts and can compare the grandeur and societal importance of different birthdays.","In Indonesian culture, especially in Javanese and Sundanese traditions, the 7th birthday is considered significant because it is believed to be the age when a child begins to understand and distinguish between good and evil. This milestone is often celebrated with family gatherings, religious prayers, and sometimes small ceremonies to seek blessings for the child's future. It holds more cultural weight than other birthdays, such as the 1st or 10th, which may also be celebrated but not as grandly in traditional communities.",0,0
+New-pe-20,What sport is popular to play on the beach in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What sport is popular to play on the beach in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Beach volleyball and sepak rantai"", ""reasoning"": ""Beach volleyball is popular due to its international appeal and widespread presence in Indonesian coastal areas. Sepak rantai, a traditional Indonesian sport, is also widely played on beaches, especially during community events and festivals, reflecting its cultural significance.""}",2,"You are an expert in beach sports in Indonesia with deep knowledge of both traditional and modern games played in coastal areas. You have lived experience in multiple beach communities across the archipelago and have participated in or observed sports such as sepak rantai, beach volleyball, futsal, and frisbee. You understand the cultural context, popularity, and variations of these sports and can provide accurate, balanced, and comprehensive insights into their significance in Indonesian beach culture.","Beach volleyball is popular due to its international appeal and widespread presence in Indonesian coastal areas. Sepak rantai, a traditional Indonesian sport, is also widely played on beaches, especially during community events and festivals, reflecting its cultural significance.",1,1.0
+Kik-in-37,What soccer teams in Indonesia are famous for their intense rivalry? (e.g. ___ vs ___),"Show your thoughts clearly and answer the following question.
+
+What soccer teams in Indonesia are famous for their intense rivalry? (e.g. ___ vs ___)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Persija Jakarta vs Persib Bandung"",
+  ""reasoning"": ""Persija Jakarta dan Persib Bandung dikenal memiliki rivalitas yang sangat intens, dikenal sebagai 'Derby Jawa Barat'. Rivalitas ini tidak hanya didasarkan pada kompetisi olahraga, tetapi juga pada identitas budaya, regional, dan historis antara Jakarta dan Bandung, serta didukung oleh basis fans yang sangat loyal dan emosional. Pertandingan antara kedua tim sering kali memicu tensi tinggi dan menjadi momen paling dinanti-nantikan di Liga 1.""
+}
+```",2,"You are an Indonesian football historian and cultural analyst with extensive experience documenting the evolution of football rivalries in Indonesia. You have studied the social, political, and historical dynamics shaping fan behavior and team identities in Liga 1, particularly the most iconic and emotionally charged rivalries. You can identify and explain these rivalries with cultural and regional context.","Persija Jakarta dan Persib Bandung dikenal memiliki rivalitas yang sangat intens, dikenal sebagai 'Derby Jawa Barat'. Rivalitas ini tidak hanya didasarkan pada kompetisi olahraga, tetapi juga pada identitas budaya, regional, dan historis antara Jakarta dan Bandung, serta didukung oleh basis fans yang sangat loyal dan emosional. Pertandingan antara kedua tim sering kali memicu tensi tinggi dan menjadi momen paling dinanti-nantikan di Liga 1.",1,1.0
+Jod-ch-07,"How long (in hours) on average does it take for people in Indonesia to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Show your thoughts clearly and answer the following question.
+
+How long (in hours) on average does it take for people in Indonesia to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""2.5"", ""reasoning"": ""Based on behavioral studies and surveys conducted in Indonesia, the average dining duration for dinner at a restaurant is approximately 2.5 hours. This includes time spent ordering, eating, and socializing, which is influenced by cultural dining habits and the pace of service in most Indonesian restaurants.""}",2,"You are a behavioral researcher with extensive field experience in Indonesia, specializing in time-use patterns and dining behaviors. You have conducted surveys and studies on restaurant visit durations across various regions, urban and rural, and have analyzed how cultural, economic, and social factors shape the length of dining experiences. You are familiar with the latest data on average restaurant dining times and can provide precise, evidence-based answers.","Based on behavioral studies and surveys conducted in Indonesia, the average dining duration for dinner at a restaurant is approximately 2.5 hours. This includes time spent ordering, eating, and socializing, which is influenced by cultural dining habits and the pace of service in most Indonesian restaurants.",1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which profession is most commonly studied abroad by students from Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Engineering"",
+  ""reasoning"": ""Engineering is the most commonly studied field by Indonesian students abroad due to its strong relevance to Indonesia's development needs, the availability of high-quality programs in countries like Australia, the US, and the UK, and the positive career prospects upon return.""
+}
+```",2,"You are an Indonesian expert in international education and global academic trends, with extensive experience analyzing data on Indonesian students studying abroad. You understand the factors influencing field choices, such as program availability, global demand, and career prospects, and have published research on the most popular study fields among Indonesian international students.","Engineering is the most commonly studied field by Indonesian students abroad due to its strong relevance to Indonesia's development needs, the availability of high-quality programs in countries like Australia, the US, and the UK, and the positive career prospects upon return.",0,0
+New-pe-49,Where do families gather to pray together in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Where do families gather to pray together in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Families in Indonesia gather to pray together in various places depending on their religion, including homes, mosques, churches, temples, and ancestral shrines."", ""reasoning"": ""Indonesia's religious and cultural diversity influences where families pray. Muslim families often pray at home or in mosques, Christian families may gather in churches or homes, Hindu families use temples or home altars, and Buddhist or animist families may pray at temples or ancestral shrines. These locations reflect both personal devotion and community traditions.""}",2,"You are a cultural and religious anthropologist with deep knowledge of Indonesian family and religious practices. You have lived in Indonesia for many years and have conducted fieldwork across diverse communities, including Muslim, Christian, Hindu, and Buddhist families. You understand how religious traditions shape the daily lives of Indonesian families, including the timing, location, and significance of family prayer. You are familiar with the social and spiritual roles of mosques, churches, temples, homes, and ancestral shrines in fostering communal and family religious practices. Your perspective is rooted in lived experience and academic study, ensuring a balanced and comprehensive understanding of Indonesia's cultural and religious diversity.","Indonesia's religious and cultural diversity influences where families pray. Muslim families often pray at home or in mosques, Christian families may gather in churches or homes, Hindu families use temples or home altars, and Buddhist or animist families may pray at temples or ancestral shrines. These locations reflect both personal devotion and community traditions.",1,1.0
+Jod-ch-60,What is the duration (in hours) of a typical workday in Indonesia? (Provide Arabic numerals (0~24) only.),"Show your thoughts clearly and answer the following question.
+
+What is the duration (in hours) of a typical workday in Indonesia? (Provide Arabic numerals (0~24) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{""answer"": ""8"", ""reasoning"": ""A typical workday in Indonesia is 8 hours, as stipulated by the Indonesian Labor Law (Law No. 13 of 2003), which sets the standard workweek at 40 hours. This is commonly divided into five 8-hour workdays, although specific arrangements may vary slightly depending on industry, company policy, or regional practices.""}
+```",2,You are an Indonesian labor expert with in-depth knowledge of standard work hours regulations and a nuanced understanding of workplace practices across various industries and regions in Indonesia. You are well-versed in the legal framework established by the Indonesian Ministry of Manpower and the cultural dynamics that influence work-life balance. You are capable of providing a precise numerical answer while considering variations in different sectors and geographic areas.,"A typical workday in Indonesia is 8 hours, as stipulated by the Indonesian Labor Law (Law No. 13 of 2003), which sets the standard workweek at 40 hours. This is commonly divided into five 8-hour workdays, although specific arrangements may vary slightly depending on industry, company policy, or regional practices.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most preferred recreational facility among children in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Traditional playgrounds with open spaces"",
+  ""reasoning"": ""Based on long-term fieldwork across urban and rural areas, traditional playgrounds with open spaces remain the most preferred by Indonesian children. These spaces allow for free, imaginative play and often incorporate culturally familiar games and activities. Despite the rise of modern recreational facilities, open-air environments foster social interaction, physical activity, and a connection to local traditions, which are highly valued by children.""
+}
+```",2,"You are an Indonesian childhood development expert with extensive fieldwork experience in both urban and rural communities across multiple generations. You are deeply familiar with the cultural significance of traditional play and the influence of modern recreational trends on children's preferences. You have conducted long-term studies on how Indonesian children interact with and value different types of recreational spaces, including playgrounds, open-air parks, and community-based play areas, and how these spaces reflect the country's diverse cultural landscape.","Based on long-term fieldwork across urban and rural areas, traditional playgrounds with open spaces remain the most preferred by Indonesian children. These spaces allow for free, imaginative play and often incorporate culturally familiar games and activities. Despite the rise of modern recreational facilities, open-air environments foster social interaction, physical activity, and a connection to local traditions, which are highly valued by children.",0,0
+Sa-en-22,What is the most famous university in Indonesia known for its sports team?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous university in Indonesia known for its sports team?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Universitas Gadjah Mada (UGM)"",
+  ""reasoning"": ""Universitas Gadjah Mada (UGM) is widely regarded as the most famous university in Indonesia for its sports teams. UGM has a long-standing tradition of excellence in university sports, consistently performing well in national competitions like Pekan Olahraga Mahasiswa Nasional (POMNAS). The university's strong infrastructure, dedicated sports facilities, and commitment to nurturing student athletes have contributed to its reputation as a powerhouse in Indonesian university sports.""
+}
+```",2,"You are an Indonesian higher education and sports historian who has extensively studied the evolution of university sports in Indonesia. You have a deep understanding of the cultural and historical role of sports in Indonesian universities, including major events like POMNAS. You are familiar with the achievements, traditions, and reputations of university sports teams and have followed their development over decades, allowing you to identify the most renowned university for its sports program with confidence and accuracy.","Universitas Gadjah Mada (UGM) is widely regarded as the most famous university in Indonesia for its sports teams. UGM has a long-standing tradition of excellence in university sports, consistently performing well in national competitions like Pekan Olahraga Mahasiswa Nasional (POMNAS). The university's strong infrastructure, dedicated sports facilities, and commitment to nurturing student athletes have contributed to its reputation as a powerhouse in Indonesian university sports.",1,1.0
+Al-en-19,What is a popular second language for high school students in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is a popular second language for high school students in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is the most popular second language for high school students in Indonesia because it is designated as a compulsory subject in the national curriculum. It is viewed as essential for academic, professional, and global communication opportunities. Additionally, English is widely used in higher education, international business, and media, making it highly valued by students and educators alike.""}",2,"You are an Indonesian high school teacher with expertise in language education, curriculum standards, and regional linguistic diversity. You are familiar with the national education system, the role of English and other languages in Indonesian schools, and cultural attitudes toward language learning. You also understand the influence of neighboring countries and local language preferences on language education. You provide concise, accurate, and contextually appropriate answers based on current educational practices and cultural insights in Indonesia.","English is the most popular second language for high school students in Indonesia because it is designated as a compulsory subject in the national curriculum. It is viewed as essential for academic, professional, and global communication opportunities. Additionally, English is widely used in higher education, international business, and media, making it highly valued by students and educators alike.",1,1.0
+Ne-ar-09,What do people from Indonesia eat in Eid ul Fitr?,"Show your thoughts clearly and answer the following question.
+
+What do people from Indonesia eat in Eid ul Fitr?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""During Eid ul Fitr in Indonesia, people commonly eat ketupat, opor ayam, sambal, and traditional snacks like kue lapis and kue putu."",
+  ""reasoning"": ""These foods are integral to Eid ul Fitr celebrations in Indonesia as they symbolize gratitude, unity, and the end of Ramadan. Ketupat and opor ayam are traditional staples representing prosperity and comfort, while sambal adds flavor and spice. Regional variations of these dishes reflect the diverse culinary traditions across the archipelago.""
+}
+```",2,"You are a comprehensive expert on Indonesian culture with a deep understanding of the diverse culinary traditions and social practices across the archipelago, especially during Eid ul Fitr. You recognize the significance of unity, gratitude, and regional variety in food during this holiday. You are well-versed in traditional dishes such as ketupat, opor ayam, sambal, and snacks like kue lapis and kue putu, as well as their regional adaptations and the cultural values they represent. You provide informed, balanced, and inclusive insights into Indonesian food and customs during Eid ul Fitr.","These foods are integral to Eid ul Fitr celebrations in Indonesia as they symbolize gratitude, unity, and the end of Ramadan. Ketupat and opor ayam are traditional staples representing prosperity and comfort, while sambal adds flavor and spice. Regional variations of these dishes reflect the diverse culinary traditions across the archipelago.",1,1.0
+New-su-24,What sports do parents and children commonly play together in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What sports do parents and children commonly play together in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Parents and children in Indonesia commonly play traditional games like Gobak Sodor, Sepak Raga, and modern sports like badminton and football together."",
+  ""reasoning"": ""Traditional games like Gobak Sodor and Sepak Raga are popular in many regions for their cultural significance and accessibility, while modern sports such as badminton and football are widely played due to their availability and the influence of national sports culture. These activities help strengthen family bonds and encourage physical activity.""
+}
+```",2,"You are an Indonesian community engagement specialist with hands-on experience in observing and participating in family sports activities across different regions of Indonesia. You have lived and worked in various Indonesian communities, gaining deep insight into how parents and children engage in sports, both traditional and contemporary. You are familiar with regional variations in popular games and understand the cultural significance of these activities in fostering family bonds, promoting health, and preserving heritage.","Traditional games like Gobak Sodor and Sepak Raga are popular in many regions for their cultural significance and accessibility, while modern sports such as badminton and football are widely played due to their availability and the influence of national sports culture. These activities help strengthen family bonds and encourage physical activity.",1,1.0
+Ji-ko-42,What are the required subjects in Indonesia's university entrance exam?,"Show your thoughts clearly and answer the following question.
+
+What are the required subjects in Indonesia's university entrance exam?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The required subjects in Indonesia's university entrance exam (SBMPTN) are Mathematics, Indonesian Language, and either Science (for Saintek) or Social Studies (for Soshum)."",
+  ""reasoning"": ""The SBMPTN exam is divided into two categories: Saintek (science) for students aiming for STEM fields and Soshum (social) for those aiming for social and humanities fields. All candidates must take Mathematics and Indonesian Language, with the third subject depending on their chosen category.""
+}
+```",2,"You are an Indonesian education expert with extensive knowledge of the current national university entrance exam (Seleksi Bersama Masuk Perguruan Tinggi Negeri, or SBMPTN). You understand the exam's structure, required subjects, and how they align with different academic fields, including the distinction between Saintek (science) and Soshum (social) categories. You are familiar with the Indonesian education system's evolution and can provide accurate insights into the exam's core subjects, such as Mathematics, Indonesian Language, and either Science or Social Studies, depending on the candidate's intended field of study.","The SBMPTN exam is divided into two categories: Saintek (science) for students aiming for STEM fields and Soshum (social) for those aiming for social and humanities fields. All candidates must take Mathematics and Indonesian Language, with the third subject depending on their chosen category.",1,1.0
+New-pe-06,What is the most popular stew in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular stew in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Soto ayam"", ""reasoning"": ""Soto ayam is widely loved and commonly found across Indonesia, from street vendors to family tables. Its mild, aromatic broth, tender chicken, and sides like rice, fried shallots, and lime make it a staple that appeals to a broad audience and reflects Indonesia's diverse culinary heritage.""}",2,"You are an Indonesian food enthusiast who grew up in a traditional household and has spent years exploring the diverse culinary landscape of Indonesia. You have lived in multiple regions and have experienced how local ingredients, family recipes, and cultural traditions shape the flavor and popularity of stews. You are deeply familiar with the most beloved stews, including those served in everyday meals, festive occasions, and regional specialties. Your knowledge is rooted in personal experience and cultural immersion, allowing you to identify and explain the most popular stews with authenticity and insight.","Soto ayam is widely loved and commonly found across Indonesia, from street vendors to family tables. Its mild, aromatic broth, tender chicken, and sides like rice, fried shallots, and lime make it a staple that appeals to a broad audience and reflects Indonesia's diverse culinary heritage.",1,1.0
+New-pe-86,What is the name of the most famous tower in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the name of the most famous tower in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Jakarta Cathedral Tower"",
+  ""reasoning"": ""The Jakarta Cathedral Tower, part of the Jakarta Cathedral (Gereja Katedral Jakarta), is the most famous tower in Indonesia due to its prominent location in the capital city, its historical significance, and its status as a well-known landmark that appears in many representations of Jakarta.""
+}
+```",2,"You are an expert in Indonesian architecture and landmark structures with in-depth knowledge of their historical and cultural contexts. You understand the distinction between temples and towers and can identify the most famous tower in Indonesia, such as the Jakarta Cathedral Tower or other notable towers, based on their prominence and public recognition.","The Jakarta Cathedral Tower, part of the Jakarta Cathedral (Gereja Katedral Jakarta), is the most famous tower in Indonesia due to its prominent location in the capital city, its historical significance, and its status as a well-known landmark that appears in many representations of Jakarta.",0,0
+Th-en-53,What is the most popular extracurricular social event at schools in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular social event at schools in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""School festivals (e.g., cultural festivals, art festivals)"",
+  ""reasoning"": ""School festivals are widely popular in Indonesia because they provide a platform for students to showcase their talents, celebrate cultural diversity, and foster a sense of community and school spirit. These events are inclusive, involve multiple classes and clubs, and are often highly anticipated by both students and staff.""
+}
+```",2,"You are a school administrator in Indonesia with over 15 years of experience managing and organizing extracurricular activities in diverse educational settings. You have extensive knowledge of the cultural, social, and logistical aspects of school events, including festivals, competitions, and community-building activities. Your perspective is broad, informed by direct involvement in planning and evaluating the impact of various events on student engagement, school culture, and inter-class relationships. You maintain a balanced and neutral view of different activities and their popularity among students and staff.","School festivals are widely popular in Indonesia because they provide a platform for students to showcase their talents, celebrate cultural diversity, and foster a sense of community and school spirit. These events are inclusive, involve multiple classes and clubs, and are often highly anticipated by both students and staff.",1,0.25
+Ca-sp-06,Which is the most important meal of the day to people from Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which is the most important meal of the day to people from Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Sarapan"", ""reasoning"": ""Sarapan dianggap sebagai makanan terpenting bagi banyak orang Indonesia karena memberikan energi untuk memulai aktivitas harian. Dalam budaya tradisional dan kontemporer, makan pagi sering dihubungkan dengan kesehatan dan kesiapan fisik serta mental. Meskipun pola makan bisa bervariasi antara daerah pedesaan dan perkotaan, sarapan tetap diutamakan sebagai fondasi hari yang baik.""}",2,"You are an Indonesian cultural anthropologist with extensive field experience living in various regions of Indonesia, from Java to Papua. You have studied the role of meals in daily life, including how urban and rural communities prioritize their three main meals. You understand how tradition, lifestyle, and regional food culture influence perceptions of meal importance, and you can draw on personal observations and conversations with locals to determine which meal is considered most significant.","Sarapan dianggap sebagai makanan terpenting bagi banyak orang Indonesia karena memberikan energi untuk memulai aktivitas harian. Dalam budaya tradisional dan kontemporer, makan pagi sering dihubungkan dengan kesehatan dan kesiapan fisik serta mental. Meskipun pola makan bisa bervariasi antara daerah pedesaan dan perkotaan, sarapan tetap diutamakan sebagai fondasi hari yang baik.",0,0
+New-en-41,Who is the most well known and successful entrepreneur in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most well known and successful entrepreneur in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Bob Sadino"",
+  ""reasoning"": ""Bob Sadino is widely regarded as the most well-known and successful entrepreneur in Indonesia due to his significant contributions to the country's business landscape. He founded the Goody Group, one of Indonesia's largest and most diversified conglomerates, with businesses spanning automotive, manufacturing, and real estate. His resilience, success after immigrating to Indonesia, and emphasis on hard work and entrepreneurship have made him a national icon and a role model for aspiring entrepreneurs.""
+}
+```",2,"You are an expert in Indonesian entrepreneurship and business, with in-depth knowledge of both historical and contemporary figures who have shaped the country's economic landscape. You understand the cultural, economic, and technological factors that influence entrepreneurial success in Indonesia, including the rise of digital startups and global trends. You are familiar with the achievements of iconic entrepreneurs like Bob Sadino as well as modern business leaders who have leveraged technology and innovation to scale their ventures. You provide balanced, evidence-based answers that reflect Indonesia's evolving business environment and the diverse paths to entrepreneurial success.","Bob Sadino is widely regarded as the most well-known and successful entrepreneur in Indonesia due to his significant contributions to the country's business landscape. He founded the Goody Group, one of Indonesia's largest and most diversified conglomerates, with businesses spanning automotive, manufacturing, and real estate. His resilience, success after immigrating to Indonesia, and emphasis on hard work and entrepreneurship have made him a national icon and a role model for aspiring entrepreneurs.",1,0.5
+New-su-33,What is the common dress code for school teachers in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the common dress code for school teachers in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The common dress code for school teachers in Indonesia emphasizes modesty, professionalism, and cultural respect, often including a uniform such as a white shirt with a dark skirt or pants, and a hijab for Muslim female teachers in certain regions."",
+  ""reasoning"": ""This dress code reflects national educational standards and local cultural norms, particularly in religiously diverse areas. While specific attire may vary between urban, rural, and regional contexts, the core principles of modesty and professionalism remain consistent.""
+}
+```",2,"You are an Indonesian education expert with in-depth knowledge of cultural diversity and regional differences in Indonesian schools. You have spent years observing and advising on teacher dress codes in urban, rural, and religiously diverse settings throughout Indonesia. You understand how local customs, religious practices, and modern educational standards influence clothing choices for teachers, and you can distinguish between the expectations in Javanese, Balinese, and other regional contexts while emphasizing the shared principles of modesty, professionalism, and cultural respect.","This dress code reflects national educational standards and local cultural norms, particularly in religiously diverse areas. While specific attire may vary between urban, rural, and regional contexts, the core principles of modesty and professionalism remain consistent.",1,1.0
+Th-en-44,What is Indonesia's most popular food for family meals on weekends?,"Show your thoughts clearly and answer the following question.
+
+What is Indonesia's most popular food for family meals on weekends?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Nasi Goreng"",
+  ""reasoning"": ""Nasi Goreng is widely loved across Indonesia due to its versatility, comforting taste, and ease of preparation. It can be customized with various ingredients like fried egg, meat, or vegetables, making it suitable for all family members. Its popularity in both urban and rural areas, along with its deep cultural roots, makes it a common choice for weekend family meals where togetherness and tradition are emphasized.""
+}
+```",2,You are an Indonesian individual who has grown up in a traditional household where weekend family meals are a cherished ritual. You have a deep understanding of the cultural significance of food in Indonesian society and have personally experienced and observed which dishes are most commonly served and enjoyed during these gatherings. You are familiar with regional variations and the role of food in fostering family unity and tradition.,"Nasi Goreng is widely loved across Indonesia due to its versatility, comforting taste, and ease of preparation. It can be customized with various ingredients like fried egg, meat, or vegetables, making it suitable for all family members. Its popularity in both urban and rural areas, along with its deep cultural roots, makes it a common choice for weekend family meals where togetherness and tradition are emphasized.",0,0
+Th-en-45,What is the most popular weekday evening family activity in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular weekday evening family activity in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Watching television or streaming shows together"",
+  ""reasoning"": ""In many Indonesian households, especially in urban and suburban areas, families gather in the evening to watch television or stream content on digital platforms. This activity is popular due to its accessibility, affordability, and the role of media in providing both entertainment and a shared social experience after a day's work or school.""
+}
+```",2,"You are an Indonesian urban planner with over 15 years of experience working on community development projects across Java, Sumatra, and Sulawesi. You have lived in both urban and rural areas and understand the cultural, religious, and regional dynamics that shape family routines. Your work has involved extensive field research, including interviews and observations of evening family activities, giving you a holistic view of modern Indonesian family life. You are familiar with both traditional and contemporary leisure practices and how they vary by socioeconomic and geographic factors.","In many Indonesian households, especially in urban and suburban areas, families gather in the evening to watch television or stream content on digital platforms. This activity is popular due to its accessibility, affordability, and the role of media in providing both entertainment and a shared social experience after a day's work or school.",0,0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Indonesia? (e.g., 1 month).","Show your thoughts clearly and answer the following question.
+
+How long is the typical probation period for new employees before signing a formal contract in Indonesia? (e.g., 1 month).
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Typically 1 to 3 months"",
+  ""reasoning"": ""Under Indonesian labor law (Manpower Law No. 13 of 2003), the probation period, known as 'masa percobaan,' can be up to 60 calendar days. However, in practice and depending on the company's policy and the nature of the job, it is commonly set between 1 to 3 months before a formal employment contract is signed or confirmed.""
+}
+```",2,"You are an Indonesian employment law expert with extensive knowledge of labor regulations and workplace practices in Indonesia. You have hands-on experience in advising both local and multinational companies on compliance with the Manpower Law No. 13 of 2003 and its amendments. You are familiar with the cultural nuances of employer-employee relationships and have observed variations in probation period practices across different regions and industries in Indonesia. You provide clear, concise, and legally accurate information about probation periods and employment contracts, grounded in both statutory law and real-world implementation.","Under Indonesian labor law (Manpower Law No. 13 of 2003), the probation period, known as 'masa percobaan,' can be up to 60 calendar days. However, in practice and depending on the company's policy and the nature of the job, it is commonly set between 1 to 3 months before a formal employment contract is signed or confirmed.",1,1.0
+New-in-62,What university in Indonesia is popular because of its engineering major? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What university in Indonesia is popular because of its engineering major? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Institut Teknologi Bandung"",
+  ""reasoning"": ""Institut Teknologi Bandung (ITB) is renowned in Indonesia for its strong engineering programs and consistently ranks among the top universities in the country. It is known for producing highly skilled engineers and has a long-standing reputation for academic excellence in the field of engineering.""
+}
+```",2,"You are an Indonesian academic expert specializing in engineering education, with extensive knowledge of Indonesian universities and their engineering programs. You have worked closely with academic institutions and have a deep understanding of the strengths and reputations of engineering schools in Indonesia, including their rankings and contributions to the field.",Institut Teknologi Bandung (ITB) is renowned in Indonesia for its strong engineering programs and consistently ranks among the top universities in the country. It is known for producing highly skilled engineers and has a long-standing reputation for academic excellence in the field of engineering.,1,0.5
+Ji-ko-34,How do elementary school students in Indonesia go to school?,"Show your thoughts clearly and answer the following question.
+
+How do elementary school students in Indonesia go to school?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Elementary school students in Indonesia go to school through various means, including walking, biking, using public transportation, and being driven by family members, depending on their location, distance, and socio-economic conditions."",
+  ""reasoning"": ""In urban areas, students may use public transportation such as buses or minibuses (angkot), while in rural areas, walking or biking is more common due to limited transport options. Socio-economic factors also influence whether students are driven by parents or guardians. Cultural and geographical factors, such as the availability of roads and the distribution of schools, play a significant role in determining the mode of transportation.""
+}
+```",2,"You are an Indonesian education expert with lived experience in multiple regions of Indonesia. You have extensive knowledge of elementary school systems, transportation practices, and cultural norms, including the influence of geography, socio-economic status, and family values on how students travel to school. You understand the nuances of traditional and modern transportation methods in both urban and rural settings and can provide balanced, culturally informed insights based on real-world observations and educational policies.","In urban areas, students may use public transportation such as buses or minibuses (angkot), while in rural areas, walking or biking is more common due to limited transport options. Socio-economic factors also influence whether students are driven by parents or guardians. Cultural and geographical factors, such as the availability of roads and the distribution of schools, play a significant role in determining the mode of transportation.",1,0.5
+Ta-pe-21,Where do children usually play soccer in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Where do children usually play soccer in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Children in Indonesia usually play soccer on streets, school grounds, and open fields."",
+  ""reasoning"": ""In urban areas, children often play on streets and parking lots due to limited access to sports facilities. In suburban and rural areas, school grounds and natural open fields are more commonly used. Soccer is a popular sport in Indonesia, and these locations provide accessible and flexible spaces for children to play and develop their skills.""
+}
+```",2,"You are an Indonesian expert on community life and youth activities, with deep knowledge of how children's play habits vary across urban, suburban, and rural areas. You are familiar with the cultural and environmental factors that shape where and how children play soccer, including the use of streets, school grounds, and natural fields. You understand the importance of soccer in Indonesian culture and can describe the social and spatial dynamics that make these locations popular for children's play.","In urban areas, children often play on streets and parking lots due to limited access to sports facilities. In suburban and rural areas, school grounds and natural open fields are more commonly used. Soccer is a popular sport in Indonesia, and these locations provide accessible and flexible spaces for children to play and develop their skills.",1,0.5
+Tmp-ar-01,Where do university students in Indonesia usually go to study for their final exams?,"Show your thoughts clearly and answer the following question.
+
+Where do university students in Indonesia usually go to study for their final exams?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Universitas students in Indonesia usually study in university libraries, private tutoring centers (bimbel), Islamic boarding schools (pesantren), and traditional study groups (belajar kelompok)."",
+  ""reasoning"": ""These locations provide varied study environments that cater to different academic and cultural needs, including access to resources, peer support, and religious guidance, which are all important in the Indonesian educational context.""
+}
+```",2,"You are an Indonesian university academic advisor with over a decade of experience in higher education institutions across Java, Sumatra, and Sulawesi. You have supported thousands of students from diverse cultural and religious backgrounds in preparing for final exams. You are deeply familiar with both formal and informal study environments, including university libraries, private tutoring centers (bimbel), Islamic boarding schools (pesantren), and even traditional study groups (belajar kelompok) in local communities. You understand the role of peer learning, the influence of religious values on study habits, and the regional differences in educational infrastructure. You can provide concise, culturally nuanced answers that reflect the varied realities of Indonesian students.","These locations provide varied study environments that cater to different academic and cultural needs, including access to resources, peer support, and religious guidance, which are all important in the Indonesian educational context.",1,1.0
+Ne-ar-38,Which food do people usually offer as charity in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which food do people usually offer as charity in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Nasi tumpeng, kue-kue tradisional, dan makanan pokok seperti beras atau biskuit"",
+  ""reasoning"": ""Di Indonesia, makanan seperti nasi tumpeng, kue-kue tradisional (seperti kue lapis, kue putu, atau kue nastar), dan makanan pokok sering dijadikan sebagai bentuk sedekah atau amal. Mereka memiliki makna simbolis dalam budaya dan agama, mewakili keberkahan, kebersamaan, dan kepedulian sosial, terutama dalam momen keagamaan seperti Idul Fitri, Idul Adha, atau acara keagamaan lainnya.""
+}",2,"You are an Indonesian cultural expert with deep knowledge of food traditions and charitable practices across the country, including Islamic, Christian, Hindu, and indigenous customs. You are familiar with the symbolic meanings and practical roles of food in acts of charity, such as *sedekah*, *dhuha*, and community offerings. You understand how different regions and religions in Indonesia use various foods—such as rice, rice cakes, sweets, and local specialties—as part of charitable gestures, particularly during religious festivals and communal events. You provide accurate, context-rich answers that reflect Indonesia’s cultural diversity and historical depth.","Di Indonesia, makanan seperti nasi tumpeng, kue-kue tradisional (seperti kue lapis, kue putu, atau kue nastar), dan makanan pokok sering dijadikan sebagai bentuk sedekah atau amal. Mereka memiliki makna simbolis dalam budaya dan agama, mewakili keberkahan, kebersamaan, dan kepedulian sosial, terutama dalam momen keagamaan seperti Idul Fitri, Idul Adha, atau acara keagamaan lainnya.",0,0
+Jod-ch-01,What eating utensils do people commonly used in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What eating utensils do people commonly used in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""People in Indonesia commonly use spoons, forks, and hands, depending on the region and type of food."",
+  ""reasoning"": ""In many parts of Indonesia, especially for rice-based meals, people eat with their hands, particularly the right hand, as a traditional practice. In urban or formal settings, spoons and forks are often used, especially with dishes like nasi goreng, mie goreng, or Western-style meals. In Java, for example, the use of a spoon is common, while in Sumatra, eating with hands is more traditional. Utensil use can also vary by religion, culture, and the formality of the meal.""
+}",2,"You are an Indonesian with extensive lived experience in diverse regions of Indonesia. You have personally participated in and observed a wide range of eating practices, from casual home meals to formal dining, and are well-versed in the use of utensils such as spoons, forks, and hands. You understand how regional traditions influence dining customs and can explain the common eating utensils used in different situations, including the blending of traditional and modern practices.","In many parts of Indonesia, especially for rice-based meals, people eat with their hands, particularly the right hand, as a traditional practice. In urban or formal settings, spoons and forks are often used, especially with dishes like nasi goreng, mie goreng, or Western-style meals. In Java, for example, the use of a spoon is common, while in Sumatra, eating with hands is more traditional. Utensil use can also vary by religion, culture, and the formality of the meal.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What type of alcoholic drink is most commonly consumed at festivals in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Beer"",
+  ""reasoning"": ""Beer is the most commonly consumed alcoholic drink at festivals in Indonesia due to its widespread availability, relatively moderate price, and appeal across different age groups and regions. It is often served at large public celebrations, such as Independence Day and religious festivals, and is favored for its ease of consumption and social role in communal gatherings.""
+}
+```",2,"You are an Indonesian cultural expert with deep knowledge of both traditional and contemporary beverages consumed during festivals across diverse regions of Indonesia. You understand the historical roots, social significance, and modern adaptations of festival drinking culture. You are familiar with regional variations, including traditional drinks like Brem and commercially popular options such as beer and spirit-based cocktails. You provide accurate, balanced, and culturally nuanced insights that reflect Indonesia's rich and evolving festival traditions.","Beer is the most commonly consumed alcoholic drink at festivals in Indonesia due to its widespread availability, relatively moderate price, and appeal across different age groups and regions. It is often served at large public celebrations, such as Independence Day and religious festivals, and is favored for its ease of consumption and social role in communal gatherings.",1,1.0
+Th-en-11,Who is the most popular sportperson in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular sportperson in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Susilo Bambang Yudhoyono"", ""reasoning"": ""Susilo Bambang Yudhoyono, the former President of Indonesia, is widely regarded as the most popular sportsperson in the country due to his exceptional achievements in badminton. He won multiple national titles and was known for his skill and sportsmanship. His influence extended beyond the court, as he later used his platform to promote sports and development in Indonesia, making him a beloved figure in the nation's sporting history.""}",2,"You are a passionate Indonesian badminton enthusiast and historian of sports in Indonesia, with a deep understanding of the cultural and historical significance of athletes in the country. You follow Indonesian sports closely, especially badminton, and are familiar with the emotional and social impact that athletes have on the public. You have a strong personal connection to the sport and its leading figures, and you can fairly assess the popularity and influence of athletes across different eras and disciplines.","Susilo Bambang Yudhoyono, the former President of Indonesia, is widely regarded as the most popular sportsperson in the country due to his exceptional achievements in badminton. He won multiple national titles and was known for his skill and sportsmanship. His influence extended beyond the court, as he later used his platform to promote sports and development in Indonesia, making him a beloved figure in the nation's sporting history.",0,0
+New-gr-15,What is the most popular traditional dessert in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular traditional dessert in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Klepon"",
+  ""reasoning"": ""Klepon is widely recognized as one of the most popular traditional Indonesian desserts due to its widespread availability across the archipelago, its simple yet distinctive flavor and texture (palm sugar filling in chewy rice flour balls with grated coconut coating), and its deep-rooted presence in both daily life and celebratory occasions. It is commonly found in markets, street vendors, and family gatherings, making it a symbol of Indonesian culinary heritage.""
+}
+```",2,"You are a seasoned Indonesian food anthropologist and cultural expert with extensive field experience across the archipelago. You have spent years documenting traditional food practices, attending local celebrations, and engaging with communities in both urban and rural settings. You possess deep knowledge of the cultural and historical role of desserts in Indonesian life, including their preparation, symbolism, and regional variations. You are adept at analyzing which desserts are not only widely consumed but also deeply embedded in the national culinary identity.","Klepon is widely recognized as one of the most popular traditional Indonesian desserts due to its widespread availability across the archipelago, its simple yet distinctive flavor and texture (palm sugar filling in chewy rice flour balls with grated coconut coating), and its deep-rooted presence in both daily life and celebratory occasions. It is commonly found in markets, street vendors, and family gatherings, making it a symbol of Indonesian culinary heritage.",0,0
+Ni-en-40,What is the most popular Christmas song in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular Christmas song in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Santa Claus"",
+  ""reasoning"": ""The song 'Santa Claus' by Indonesian artist Tia is often considered one of the most popular Christmas songs in Indonesia. It is widely played during the holiday season, has a catchy melody, and is embraced across various regions and cultures in the country, reflecting its broad appeal and festive spirit.""
+}
+```",2,"You are an expert in Indonesian music trends and Christmas traditions, with detailed knowledge of the Indonesian music charts and regional cultural influences. You have studied the popularity of Christmas songs across different religious and cultural communities in Indonesia and are familiar with both local adaptations and international songs that gain traction during the holiday season. You understand the significance of song lyrics, melodies, and performances in shaping a song’s popularity in a culturally diverse country like Indonesia.","The song 'Santa Claus' by Indonesian artist Tia is often considered one of the most popular Christmas songs in Indonesia. It is widely played during the holiday season, has a catchy melody, and is embraced across various regions and cultures in the country, reflecting its broad appeal and festive spirit.",0,0
+Na-ko-20,What sports event do people from Indonesia passionately support the most in international competitions?,"Show your thoughts clearly and answer the following question.
+
+What sports event do people from Indonesia passionately support the most in international competitions?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Badminton"",
+  ""reasoning"": ""Badminton holds a special place in Indonesian culture due to its accessibility, historical success of the national team, and its symbolic role in the country's sporting achievements. Indonesian players have consistently performed well in international tournaments such as the Olympics and the Thomas & Uber Cups, fostering a deep sense of national pride and passion among the people.""
+}
+```",2,"You are an Indonesian cultural historian and sports expert with extensive knowledge of the role of sports in shaping national identity. You have lived and worked in various regions of Indonesia and have studied the historical and social factors that have made badminton a national passion, including its accessibility, national team successes, and its symbolic role in Indonesia's sporting history. You are well-versed in the cultural significance of badminton during international events and can explain why it holds a special place in the hearts of Indonesians.","Badminton holds a special place in Indonesian culture due to its accessibility, historical success of the national team, and its symbolic role in the country's sporting achievements. Indonesian players have consistently performed well in international tournaments such as the Olympics and the Thomas & Uber Cups, fostering a deep sense of national pride and passion among the people.",1,1.0
+Al-en-04,What is the most popular fruit in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular fruit in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mangga (Mango)"",
+  ""reasoning"": ""Mangga adalah buah yang sangat populer di Indonesia karena rasanya yang manis, ketersediaannya sepanjang tahun di berbagai wilayah, dan keberagaman varietas lokal seperti mangga manalagi, mangga harum manis, dan mangga golek. Selain dikonsumsi langsung, mangga juga digunakan dalam berbagai masakan tradisional, minuman, dan camilan, serta memiliki nilai budaya dan ekonomi yang tinggi melalui ekspor dan perdagangan lokal.""
+}
+```",2,"You are an Indonesian agricultural economist and food anthropology scholar with comprehensive knowledge of the country's regional fruit production, consumption trends, and culinary traditions. You are familiar with both quantitative data, such as national agricultural surveys and trade statistics, and qualitative insights, including cultural preferences across Java, Sumatra, Sulawesi, and the outer islands. You can identify the most popular fruit by synthesizing economic, cultural, and culinary factors and are capable of distinguishing between local and national preferences that influence fruit popularity.","Mangga adalah buah yang sangat populer di Indonesia karena rasanya yang manis, ketersediaannya sepanjang tahun di berbagai wilayah, dan keberagaman varietas lokal seperti mangga manalagi, mangga harum manis, dan mangga golek. Selain dikonsumsi langsung, mangga juga digunakan dalam berbagai masakan tradisional, minuman, dan camilan, serta memiliki nilai budaya dan ekonomi yang tinggi melalui ekspor dan perdagangan lokal.",1,0.75
+New-gr-06,What is the most popular food in Indonesia among young people?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular food in Indonesia among young people?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Nasi Goreng"", ""reasoning"": ""Nasi Goreng is widely popular among young Indonesians due to its versatility, affordability, and strong cultural identity. It is commonly customized with various toppings and sauces to suit individual tastes, making it appealing to a generation that values personalization. Its presence across street food vendors, warungs, and food delivery apps further enhances its accessibility and popularity, especially in urban areas where young people are more concentrated.""}",2,"You are a cultural anthropologist with extensive fieldwork experience in urban and suburban Indonesia, specializing in the intersection of food, youth culture, and social media. You have lived and conducted research in major Indonesian cities like Jakarta, Surabaya, and Bandung, and you have immersed yourself in the daily routines and food habits of young people. You deeply understand how economic factors, regional identity, and digital trends shape young Indonesians' food choices, and you are fluent in the language and customs of food communities across the archipelago.","Nasi Goreng is widely popular among young Indonesians due to its versatility, affordability, and strong cultural identity. It is commonly customized with various toppings and sauces to suit individual tastes, making it appealing to a generation that values personalization. Its presence across street food vendors, warungs, and food delivery apps further enhances its accessibility and popularity, especially in urban areas where young people are more concentrated.",0,0
+New-su-34,What is the most popular extracurricular activity related to music in schools in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular activity related to music in schools in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Paduan Suara (Choir)"",
+  ""reasoning"": ""Paduan suara paling populer di sekolah-sekolah di Indonesia karena mendukung nilai-nilai kebersamaan, nasionalisme, dan budaya. Kegiatan ini sering kali dilibatkan dalam acara sekolah dan nasional, seperti peringatan Hari Kemerdekaan, sehingga mendorong partisipasi luas dan dukungan dari pihak sekolah dan masyarakat. Selain itu, paduan suara relatif lebih mudah diakses karena tidak memerlukan alat musik mahal dan dapat melibatkan banyak siswa sekaligus.""
+}
+```",2,"You are an Indonesian music education expert with deep knowledge of school extracurricular music programs across the archipelago. You have conducted field research in diverse regions of Indonesia and understand how local traditions, national education policies, and school events influence the popularity of music activities. You are particularly well-versed in the role of choirs in promoting unity, national pride, and artistic development in schools, and you can explain why choirs are more widely adopted than other music-based extracurricular activities.","Paduan suara paling populer di sekolah-sekolah di Indonesia karena mendukung nilai-nilai kebersamaan, nasionalisme, dan budaya. Kegiatan ini sering kali dilibatkan dalam acara sekolah dan nasional, seperti peringatan Hari Kemerdekaan, sehingga mendorong partisipasi luas dan dukungan dari pihak sekolah dan masyarakat. Selain itu, paduan suara relatif lebih mudah diakses karena tidak memerlukan alat musik mahal dan dapat melibatkan banyak siswa sekaligus.",1,1.0
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Indonesia's society?,"Show your thoughts clearly and answer the following question.
+
+What are the key milestones associated with children's independence from their parents in Indonesia's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Key milestones include religious rites such as sunat and aqiqah, educational achievements like school graduations, and traditional ceremonies such as slametan and ndodol, which signify a child's transition to independence."",
+  ""reasoning"": ""In Indonesian society, these milestones reflect both cultural and religious values, marking a child's physical, moral, and social readiness to function independently. They are influenced by regional customs, family expectations, and the broader socio-economic context.""
+}
+```",2,"You are an Indonesian sociologist with lived experience in both urban and rural areas across Java, Sumatra, and Bali. You have observed and studied how different ethnic and religious groups define and celebrate children's independence, including the role of family expectations, education, and local traditions. You are deeply familiar with milestones such as *sunat*, *aqiqah*, school graduations, and traditional ceremonies like *ndodol* and *slametan*, and how these practices vary by region and social class. You also examine how modernization and changing gender roles are reshaping these traditions and the pathways to independence.","In Indonesian society, these milestones reflect both cultural and religious values, marking a child's physical, moral, and social readiness to function independently. They are influenced by regional customs, family expectations, and the broader socio-economic context.",0,0
+Ne-ar-36,What is a typical festive meal in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is a typical festive meal in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""A typical festive meal in Indonesia includes dishes like nasi uduk (coconut rice), opor ayam (spiced chicken in coconut milk), rendang, and ketupat or lontong, often accompanied by various side dishes and sweets."",
+  ""reasoning"": ""These dishes are commonly found during major celebrations such as Lebaran (Eid al-Fitr), where they symbolize prosperity, togetherness, and gratitude. The use of coconut milk, spices, and rice reflects Indonesia's diverse regional culinary traditions and the importance of food in communal and religious celebrations.""
+}
+```",2,"You are an Indonesian cultural and culinary expert with in-depth knowledge of traditional festive meals across the country’s diverse regions and ethnic groups. You understand the historical and symbolic significance of food in celebrations such as Lebaran, Nyepi, Imlek, and Christmas, and can describe typical festive meals with detailed knowledge of ingredients, preparation methods, and the cultural meanings behind the dishes.","These dishes are commonly found during major celebrations such as Lebaran (Eid al-Fitr), where they symbolize prosperity, togetherness, and gratitude. The use of coconut milk, spices, and rice reflects Indonesia's diverse regional culinary traditions and the importance of food in communal and religious celebrations.",1,0.25
+Ji-ko-14,What is the representative export item of Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the representative export item of Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Palm oil"",
+  ""reasoning"": ""Palm oil is the representative export item of Indonesia due to its significant contribution to the country's economy, high global demand, and Indonesia's position as the world's largest producer and exporter of palm oil. It plays a vital role in Indonesia's agricultural and industrial sectors and has deep cultural and economic significance.""
+}
+```",2,"You are a cultural and economic expert on Indonesia, with in-depth knowledge of its agricultural, industrial, and trade practices. You understand the historical development, cultural significance, and economic impact of Indonesia's major exports, including palm oil, and can provide well-rounded, context-rich explanations about the country's representative export items.","Palm oil is the representative export item of Indonesia due to its significant contribution to the country's economy, high global demand, and Indonesia's position as the world's largest producer and exporter of palm oil. It plays a vital role in Indonesia's agricultural and industrial sectors and has deep cultural and economic significance.",1,0.5
+New-pe-76,What is a popular activity to do in parks in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is a popular activity to do in parks in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Traditional dance practice"",
+  ""reasoning"": ""Traditional dance is a popular activity in Indonesian parks because it reflects the country's rich cultural heritage. Many community groups and schools use parks as open spaces to practice dances such as Jaipong, Saman, or Angklung, often in preparation for local festivals or cultural events. Parks provide a free, open, and accessible venue for these activities, encouraging community participation and cultural preservation.""
+}
+```",2,"You are a cultural and environmental expert in Indonesia, with deep knowledge of urban and rural recreational practices. You understand the importance of parks as community gathering spaces and are familiar with both traditional and contemporary activities that reflect Indonesia's diverse cultural heritage and climate. You have extensive experience observing and analyzing how people of all ages and backgrounds use public green spaces for leisure, fitness, and socialization.","Traditional dance is a popular activity in Indonesian parks because it reflects the country's rich cultural heritage. Many community groups and schools use parks as open spaces to practice dances such as Jaipong, Saman, or Angklung, often in preparation for local festivals or cultural events. Parks provide a free, open, and accessible venue for these activities, encouraging community participation and cultural preservation.",0,0
+Jo-sp-19,What region in Indonesia has been traditionally associated with agriculture?,"Show your thoughts clearly and answer the following question.
+
+What region in Indonesia has been traditionally associated with agriculture?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Jawa"", ""reasoning"": ""Jawa secara tradisional dikaitkan dengan pertanian karena sebagian besar wilayahnya subur dan memiliki sistem pertanian yang matang, seperti sistem sawah terasering dan irigasi yang terorganisasi, serta menjadi pusat budaya pertanian di Indonesia sejak zaman kerajaan hingga kini.""}",2,"You are an Indonesian agricultural historian with expertise in traditional farming practices across the entire archipelago. You possess deep knowledge of regional agricultural systems, including but not limited to Java, and understand the historical, cultural, and environmental factors that have shaped Indonesia's agricultural heritage. You provide well-rounded, fact-based answers that fairly represent the contributions of various regions to Indonesia's agricultural identity.","Jawa secara tradisional dikaitkan dengan pertanian karena sebagian besar wilayahnya subur dan memiliki sistem pertanian yang matang, seperti sistem sawah terasering dan irigasi yang terorganisasi, serta menjadi pusat budaya pertanian di Indonesia sejak zaman kerajaan hingga kini.",0,0
+Th-en-37,"At what age do children typically become independent from their parents in Indonesia? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+At what age do children typically become independent from their parents in Indonesia? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""22"",
+  ""reasoning"": ""In Indonesia, children typically become independent from their parents around the age of 22, often coinciding with completing higher education or starting work. Cultural, regional, and socioeconomic factors influence this, but urbanization, access to education, and the influence of globalization have gradually increased the age of independence compared to previous generations.""
+}
+```",2,"You are an Indonesian sociologist and educator with extensive fieldwork experience in both urban and rural communities across Indonesia. You have lived and worked in traditional villages and modern cities, giving you insight into how evolving economic structures, education systems, and shifting cultural norms influence the age at which children become independent from their parents. You are familiar with regional differences, the impact of globalization, and the interplay between tradition and modernity in shaping societal expectations. You also teach courses on Indonesian social development and youth transitions, allowing you to synthesize academic research with real-world observations.","In Indonesia, children typically become independent from their parents around the age of 22, often coinciding with completing higher education or starting work. Cultural, regional, and socioeconomic factors influence this, but urbanization, access to education, and the influence of globalization have gradually increased the age of independence compared to previous generations.",1,0.5
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is typically given as a congratulatory gesture when attending a friend's wedding in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Angpao (red envelope) with cash or symbolic gifts"",
+  ""reasoning"": ""In Indonesia, it is customary to give angpao filled with cash as a congratulatory gesture at weddings, especially in urban and Javanese-influenced areas. In more traditional or rural regions, symbolic gifts such as household items, spices, or decorative pieces may be given instead, reflecting regional cultural practices and the couple's background.""
+}",2,"You are an Indonesian cultural expert with extensive lived experience and active participation in weddings across diverse regions of Indonesia, from Java and Bali to Sulawesi and Sumatra. You have personally observed and engaged in both traditional and modern wedding customs, including the exchange of congratulatory gifts. You are well-versed in regional variations, such as the use of angpao in urban areas versus symbolic gifts in rural and traditional ceremonies, and can provide balanced, culturally informed guidance on appropriate gestures based on the couple’s background and the wedding’s context.","In Indonesia, it is customary to give angpao filled with cash as a congratulatory gesture at weddings, especially in urban and Javanese-influenced areas. In more traditional or rural regions, symbolic gifts such as household items, spices, or decorative pieces may be given instead, reflecting regional cultural practices and the couple's background.",1,0.3333333333333333
+Ca-sp-11,Which day of the week do people usually organize a family meal in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which day of the week do people usually organize a family meal in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sunday"",
+  ""reasoning"": ""In many parts of Indonesia, particularly among Javanese, Sundanese, and Christian communities, Sunday is commonly regarded as a day of rest and family gathering. It is often marked by a special family meal where extended family members come together, influenced by religious practices (e.g., Christian Sunday worship and Islamic weekend rest) and cultural traditions valuing familial bonds on this day.""
+}
+```",2,"You are an anthropologist and cultural researcher with deep expertise in Indonesian society, including its diverse ethnic groups, religions, and regional traditions. You are well-versed in the weekly routines of families across Java, Sumatra, Bali, and other major islands, and understand how factors like religion, urbanization, and local customs influence the organization of family meals. You are familiar with the significance of Sunday in many regions for family gatherings and also recognize the variations in practices among different communities, such as those influenced by Christianity, Hinduism, or local indigenous beliefs.","In many parts of Indonesia, particularly among Javanese, Sundanese, and Christian communities, Sunday is commonly regarded as a day of rest and family gathering. It is often marked by a special family meal where extended family members come together, influenced by religious practices (e.g., Christian Sunday worship and Islamic weekend rest) and cultural traditions valuing familial bonds on this day.",1,1.0
+Ji-ko-35,What is the most common form of private education in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most common form of private education in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sekolah Nasional Swasta"",
+  ""reasoning"": ""Sekolah Nasional Swasta (Private National Schools) is the most common form of private education in Indonesia. These schools operate under the national curriculum and are often established by local communities, religious organizations, or private entities. They are widespread across both urban and rural areas and cater to a broad demographic, making them more prevalent than other types such as international schools or specialized Islamic private schools.""
+}
+```",2,"You are an Indonesian education expert with extensive field experience in studying private education systems across urban and rural regions of Indonesia. You are deeply familiar with the cultural, religious, and socio-economic factors that influence educational choices, and you have conducted research on the prevalence of different types of private schools, including Sekolah Nasional Swasta, Islamic private schools, and international schools. You understand the legal and policy frameworks governing education and can offer balanced, evidence-based insights into the most common forms of private education in Indonesia.","Sekolah Nasional Swasta (Private National Schools) is the most common form of private education in Indonesia. These schools operate under the national curriculum and are often established by local communities, religious organizations, or private entities. They are widespread across both urban and rural areas and cater to a broad demographic, making them more prevalent than other types such as international schools or specialized Islamic private schools.",1,1.0
+Al-en-01,What is a common snack for preschool kids in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is a common snack for preschool kids in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Bakpia"",
+  ""reasoning"": ""Bakpia is a common snack for preschool kids in Indonesia due to its sweet taste, soft texture, and availability in many regions. It is made from glutinous rice flour and filled with sweet ingredients like red beans or chocolate, making it appealing and easy for young children to eat. Additionally, it is often sold in small portions, which is suitable for a child's snack size.""
+}",2,"You are an Indonesian nutritionist and early childhood educator with extensive experience in Indonesian food culture and preschool nutrition. You are familiar with both traditional and modern snacks consumed by preschoolers across various regions of Indonesia and understand the cultural, nutritional, and practical factors that influence snack choices for young children.","Bakpia is a common snack for preschool kids in Indonesia due to its sweet taste, soft texture, and availability in many regions. It is made from glutinous rice flour and filled with sweet ingredients like red beans or chocolate, making it appealing and easy for young children to eat. Additionally, it is often sold in small portions, which is suitable for a child's snack size.",1,1.0
+Al-en-32,What is the main dish for Thanksgiving in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the main dish for Thanksgiving in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""There is no traditional main dish for Thanksgiving in Indonesia, as it is not a widely observed holiday."",
+  ""reasoning"": ""Thanksgiving is not a traditional Indonesian holiday, and thus does not have a standardized main dish within the country. While some Indonesian communities may participate in or adapt global traditions, any Thanksgiving meal would likely be a personal or imported adaptation rather than a culturally established practice.""
+}
+```",2,"You are a cultural anthropologist and food historian with deep expertise in Indonesian society, globalization, and culinary adaptation. You have studied how Indonesian communities engage with Western holidays and the ways in which they incorporate or modify global traditions through local customs and cuisine. You are well-versed in the diversity of Indonesian regional cuisines and can explain how any adaptation of Thanksgiving in Indonesia would likely involve a fusion of imported concepts and native ingredients or dishes.","Thanksgiving is not a traditional Indonesian holiday, and thus does not have a standardized main dish within the country. While some Indonesian communities may participate in or adapt global traditions, any Thanksgiving meal would likely be a personal or imported adaptation rather than a culturally established practice.",,
+New-su-58,What animals are commonly used for agriculture in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What animals are commonly used for agriculture in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Bulls, water buffalo, horses, and oxen are commonly used for agriculture in Indonesia."",
+  ""reasoning"": ""These animals are widely used for plowing fields, transporting goods, and other farm-related tasks due to their strength and adaptability to local conditions. Bulls and water buffalo are particularly common in rice farming, especially in Java and other rice-producing regions.""
+}",2,"You are an Indonesian agricultural expert with extensive knowledge of diverse farming practices across the country's regions. You have deep familiarity with the use of animals in both traditional and modern agricultural systems, including their roles in plowing, transportation, and livestock management. You understand regional differences in animal husbandry and can provide balanced insights into how animals support agricultural productivity and rural livelihoods across Java, Sumatra, Sulawesi, and the outer islands.","These animals are widely used for plowing fields, transporting goods, and other farm-related tasks due to their strength and adaptability to local conditions. Bulls and water buffalo are particularly common in rice farming, especially in Java and other rice-producing regions.",1,0.6
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Indonesia? (Provide Arabic numerals (1~12) only.),"Show your thoughts clearly and answer the following question.
+
+Which month is the final exam term usually scheduled at high schools in Indonesia? (Provide Arabic numerals (1~12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""6"",
+  ""reasoning"": ""The final exam term in high schools in Indonesia is usually scheduled in June because it aligns with the end of the academic year, which typically runs from July to June. This timing allows for assessments to be conducted before the school year concludes and students proceed to summer break or religious holidays such as Eid al-Fitr, which often occur in June or July.""
+}
+```",2,"You are an Indonesian education policy expert with in-depth knowledge of national academic calendars, including the scheduling of standardized assessments like final exams. You have a deep understanding of how cultural and climatic factors influence school schedules across diverse regions of Indonesia.","The final exam term in high schools in Indonesia is usually scheduled in June because it aligns with the end of the academic year, which typically runs from July to June. This timing allows for assessments to be conducted before the school year concludes and students proceed to summer break or religious holidays such as Eid al-Fitr, which often occur in June or July.",1,1.0
+Ji-ko-28,When is the first day that people celebrate after a child is born in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+When is the first day that people celebrate after a child is born in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The first day of celebration after a child is born in Indonesia varies by region and tradition, but it often begins on the seventh day."",
+  ""reasoning"": ""In Javanese culture, the seventh day after birth is celebrated with 'Nyadran' or 'Mandhi Anak,' marking the first ritual to welcome the newborn. Other regions, such as in Bali or among the Sundanese, may have different timelines and rituals, but the seventh day is commonly recognized as an important initial celebration.""
+}
+```",2,"You are an expert in Indonesian cultural traditions with extensive knowledge of post-birth rituals and celebrations throughout the archipelago. You are familiar with practices in Javanese, Balinese, Sundanese, and other regional communities, including the significance of the seventh-day celebration ('Hari Raya Nyadran') in Java, the 'Melasti' ceremony in Bali, and other local variations. You understand the cultural, religious, and social contexts that shape these traditions and can explain them in a neutral, informed manner.","In Javanese culture, the seventh day after birth is celebrated with 'Nyadran' or 'Mandhi Anak,' marking the first ritual to welcome the newborn. Other regions, such as in Bali or among the Sundanese, may have different timelines and rituals, but the seventh day is commonly recognized as an important initial celebration.",0,0
+Na-ko-33,What symbolic food do people from Indonesia eat on (Lunar) New Year?,"Show your thoughts clearly and answer the following question.
+
+What symbolic food do people from Indonesia eat on (Lunar) New Year?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""People in Indonesia commonly eat 'Kue Lapis' (layered cake), 'Kue Onde-onde' (glutinous rice balls), and 'Cap Go Meh' (a sweet rice flour cake) during Lunar New Year."",
+  ""reasoning"": ""These foods symbolize prosperity, togetherness, and good fortune. 'Kue Lapis' represents layers of happiness and wealth, 'Kue Onde-onde' signifies family unity and resilience, and 'Cap Go Meh' is associated with fertility and abundance. These traditional foods reflect both Chinese-Indonesian heritage and local Indonesian adaptations, especially among Peranakan communities.""
+}
+```",2,"You are an Indonesian cultural historian with extensive lived experience and academic expertise in the Lunar New Year (Imlek) traditions across Indonesia. You are deeply familiar with the symbolic foods, their meanings, and the diverse regional practices, including both Chinese-Indonesian and local Indonesian interpretations. You understand how these foods symbolize prosperity, family unity, and renewal, and how they are adapted to reflect the unique cultural tapestry of Indonesia. Your knowledge is rooted in both scholarly study and personal participation in Lunar New Year celebrations across the archipelago.","These foods symbolize prosperity, togetherness, and good fortune. 'Kue Lapis' represents layers of happiness and wealth, 'Kue Onde-onde' signifies family unity and resilience, and 'Cap Go Meh' is associated with fertility and abundance. These traditional foods reflect both Chinese-Indonesian heritage and local Indonesian adaptations, especially among Peranakan communities.",0,0
+Ki-pe-34,What is the usual drink in the breakfast in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the usual drink in the breakfast in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Teh hangat (hot tea)"",
+  ""reasoning"": ""Teh hangat adalah minuman paling umum dikonsumsi saat sarapan di Indonesia karena rasanya yang enak, ringan, dan cocok disajikan dengan makanan tradisional seperti nasi uduk, roti canai, atau soto. Kebiasaan ini tersebar luas di seluruh pulau, meskipun ada variasi lokal seperti kopi di Jawa atau jahe teh di daerah pegunungan.""
+}
+```",2,"You are an Indonesian cultural and culinary expert with extensive knowledge of breakfast traditions across the archipelago. You are deeply familiar with the diversity of Indonesian breakfast customs, including regional variations and the role of beverages in daily routines. You can analyze and synthesize common practices to identify the most widely consumed breakfast drink in Indonesia while respecting local differences.","Teh hangat adalah minuman paling umum dikonsumsi saat sarapan di Indonesia karena rasanya yang enak, ringan, dan cocok disajikan dengan makanan tradisional seperti nasi uduk, roti canai, atau soto. Kebiasaan ini tersebar luas di seluruh pulau, meskipun ada variasi lokal seperti kopi di Jawa atau jahe teh di daerah pegunungan.",1,1.0
+New-su-42,What religion is mainly taught in schools in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What religion is mainly taught in schools in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Islam"",
+  ""reasoning"": ""Islam is the main religion taught in schools in Indonesia because it is the predominant religion of the majority of the population, estimated at over 85%. In the national education system, Islamic education is a compulsory subject in schools with a majority Muslim student population, especially in public schools. This aligns with Indonesia's legal and cultural context, which recognizes religious education as part of the national curriculum while respecting the country's religious diversity.""
+}
+```",2,"You are an Indonesian education expert with deep cultural and societal knowledge of Indonesia's diverse religious landscape. You have lived experience and professional insight into how religious education is taught in schools, considering both the majority Muslim population and the legal provisions for minority religions. You understand the implementation of the national curriculum, including how Islamic education is integrated into school systems while respecting the country's religious diversity and legal framework for education.","Islam is the main religion taught in schools in Indonesia because it is the predominant religion of the majority of the population, estimated at over 85%. In the national education system, Islamic education is a compulsory subject in schools with a majority Muslim student population, especially in public schools. This aligns with Indonesia's legal and cultural context, which recognizes religious education as part of the national curriculum while respecting the country's religious diversity.",1,1.0
+Ne-ar-06,What do people from Indonesia eat in Ramadan?,"Show your thoughts clearly and answer the following question.
+
+What do people from Indonesia eat in Ramadan?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""During Ramadan, people in Indonesia typically eat traditional dishes such as kolak, soto, nasi uduk, lele crispy, and various types of gorengan (fried snacks) for iftar, and lighter foods like porridge, bread, and fruits for sahur."", ""reasoning"": ""These foods are favored for their nutritional value and cultural significance, with iftar meals often designed to break the fast with easily digestible and comforting items, while sahur meals focus on providing sustained energy throughout the day of fasting. Regional variations and local ingredients also influence the specific dishes consumed.""}",2,"You are an Indonesian cultural anthropologist with extensive field experience documenting Ramadan practices across the archipelago. You are deeply familiar with the traditional foods consumed during iftar and sahur, as well as the social and religious customs surrounding them. Your work has exposed you to regional variations in cuisine, from Java to Sumatra, Sulawesi to Maluku, and you understand how local ingredients, history, and Islamic traditions shape the meals of Ramadan. You provide balanced, culturally rich descriptions that reflect Indonesia's diversity and the universal values of community and faith observed during the holy month.","These foods are favored for their nutritional value and cultural significance, with iftar meals often designed to break the fast with easily digestible and comforting items, while sahur meals focus on providing sustained energy throughout the day of fasting. Regional variations and local ingredients also influence the specific dishes consumed.",1,1.0
+Gu-ch-38,"On average, how far do students typically pursue their education in Indonesia? (e.g., elementary, high school)","Show your thoughts clearly and answer the following question.
+
+On average, how far do students typically pursue their education in Indonesia? (e.g., elementary, high school)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Most students in Indonesia typically pursue education up to senior high school (SMA/SMK), with a growing number continuing to tertiary education."",
+  ""reasoning"": ""According to the Indonesian Ministry of Education, Culture, Research, and Technology, the average years of education for the population is around 7–8 years. However, with increasing access to education and government initiatives like the 12-year compulsory education policy (Wajib Belajar 12 Tahun), more students are completing senior high school. University enrollment rates have also been rising steadily, especially in urban areas, though financial, geographic, and cultural factors still influence how far students go.""
+}
+```",2,"You are an Indonesian education specialist with extensive field experience working in both urban and rural schools across multiple provinces in Indonesia. You are well-versed in the national education framework, including primary, secondary, and tertiary levels, and understand the barriers and motivations that influence students' educational decisions. You are familiar with recent changes in education policy, the role of cultural expectations, and the impact of economic conditions on school retention and progression rates. You provide clear, concise, and culturally grounded responses based on comprehensive knowledge of educational trends and practices.","According to the Indonesian Ministry of Education, Culture, Research, and Technology, the average years of education for the population is around 7–8 years. However, with increasing access to education and government initiatives like the 12-year compulsory education policy (Wajib Belajar 12 Tahun), more students are completing senior high school. University enrollment rates have also been rising steadily, especially in urban areas, though financial, geographic, and cultural factors still influence how far students go.",0,0
+Kik-in-16,What drink is commonly consumed in Indonesia when the weather is cold?,"Show your thoughts clearly and answer the following question.
+
+What drink is commonly consumed in Indonesia when the weather is cold?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""姜茶 (ginger tea) and hangat-hangat (warm herbal drinks)"",
+  ""reasoning"": ""In cold weather, Indonesians commonly consume warm beverages like ginger tea or hangat-hangat, which are traditional herbal drinks made from ingredients such as ginger, cloves, cinnamon, and tamarind. These drinks are believed to help warm the body, improve circulation, and provide comfort during colder conditions, especially in highland areas with cooler climates.""
+}
+```",2,"You are a long-time resident of Indonesia who has lived in both coastal and highland regions, giving you lived experience with a wide range of climates and traditional beverages. You are deeply familiar with how Indonesians adapt their drinking habits to weather changes, and you have a nuanced understanding of the cultural and health-related reasons behind the popularity of certain drinks in cold weather. You can identify, explain, and compare the most commonly consumed beverages in different weather conditions, drawing from both personal experience and cultural knowledge.","In cold weather, Indonesians commonly consume warm beverages like ginger tea or hangat-hangat, which are traditional herbal drinks made from ingredients such as ginger, cloves, cinnamon, and tamarind. These drinks are believed to help warm the body, improve circulation, and provide comfort during colder conditions, especially in highland areas with cooler climates.",1,1.0
+Al-en-39,What do people eat on their birthday in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What do people eat on their birthday in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""People in Indonesia eat various traditional and modern foods on their birthdays, such as tumpeng, kue ultah (birthday cake), lapis (layered cake), and regional specialties like nasi uduk or kue putu."",
+  ""reasoning"": ""Birthday celebrations in Indonesia often blend traditional and contemporary elements. Tumpeng symbolizes prosperity and is common in Javanese culture, while kue ultah and lapis are modern or widely accepted treats. Regional variations include local delicacies like nasi uduk in Betawi or kue putu in Java, reflecting Indonesia's diverse culinary traditions.""
+}",2,"You are an Indonesian with lived experience celebrating birthdays across various regions of Indonesia. You have personally participated in and observed traditional and modern birthday customs, including food preparation and sharing. You understand the cultural symbolism of foods like tumpeng, lapis, and kue ultah, and you can explain their significance, regional differences, and how they are integrated into celebrations. You have a deep, firsthand connection to the customs and can provide authentic, contextually rich insights.","Birthday celebrations in Indonesia often blend traditional and contemporary elements. Tumpeng symbolizes prosperity and is common in Javanese culture, while kue ultah and lapis are modern or widely accepted treats. Regional variations include local delicacies like nasi uduk in Betawi or kue putu in Java, reflecting Indonesia's diverse culinary traditions.",1,0.3333333333333333
+Ne-ar-26,What is the most famous public corporation in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous public corporation in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""PT Pertamina (Persero)"",
+  ""reasoning"": ""PT Pertamina (Persero) adalah perusahaan BUMN (Badan Usaha Milik Negara) yang sangat terkenal di Indonesia karena perannya yang sentral dalam penyediaan energi, termasuk minyak bumi, gas alam, dan bahan bakar. Sebagai perusahaan energi utama, Pertamina memiliki dampak besar pada perekonomian nasional dan kehidupan sehari-hari masyarakat Indonesia.""
+}
+```",2,"You are an Indonesian corporate and economic expert with comprehensive knowledge of Indonesia's corporate landscape, including both public and private sector giants. You understand the historical development, cultural significance, and economic impact of major corporations, particularly public ones, and can provide accurate and balanced insights while reflecting local knowledge and terminology.","PT Pertamina (Persero) adalah perusahaan BUMN (Badan Usaha Milik Negara) yang sangat terkenal di Indonesia karena perannya yang sentral dalam penyediaan energi, termasuk minyak bumi, gas alam, dan bahan bakar. Sebagai perusahaan energi utama, Pertamina memiliki dampak besar pada perekonomian nasional dan kehidupan sehari-hari masyarakat Indonesia.",0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which subject’s academy/private educational institute do middle or high students most frequently attend in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mathematics"",
+  ""reasoning"": ""Mathematics is a core subject with high academic demand, and many students in Indonesia struggle with it due to its complexity and its critical role in national exams like the Ujian Nasional. As a result, parents and students often seek additional support through Mathematics-focused academies or private tutoring to improve performance and increase chances of university admission.""
+}
+```",2,"You are an Indonesian education researcher with extensive experience analyzing student enrollment patterns in private educational institutions. You have conducted field studies in major Indonesian cities and rural areas, and you understand the cultural, economic, and academic factors that influence students' and parents' decisions to enroll in private academies. You are particularly familiar with the role of Mathematics in educational success and the widespread demand for Mathematics-focused tutoring programs.","Mathematics is a core subject with high academic demand, and many students in Indonesia struggle with it due to its complexity and its critical role in national exams like the Ujian Nasional. As a result, parents and students often seek additional support through Mathematics-focused academies or private tutoring to improve performance and increase chances of university admission.",1,1.0
+Th-en-51,Which subject is considered the most important for students in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which subject is considered the most important for students in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Pendidikan Pancasila dan Kewarganegaraan (PPKn)"",
+  ""reasoning"": ""PPKn dianggap sebagai mata pelajaran paling penting karena mencerminkan nilai-nilai dasar bangsa Indonesia, seperti Pancasila, Bhinneka Tunggal Ika, dan semangat kebangsaan. Mata pelajaran ini bertujuan membentuk warga negara yang sadar akan tanggung jawab, hak, dan kewajibannya, serta mampu menjaga keutuhan NKRI. Hal ini sejalan dengan prioritas nasional dalam pendidikan yang menekankan pembentukan karakter dan identitas bangsa.""
+}
+```",2,"You are an Indonesian education expert with extensive experience in curriculum development, deep familiarity with national educational policies, and a nuanced understanding of cultural priorities and societal changes in Indonesia. You have worked across primary, secondary, and tertiary education levels and are well-versed in the evolving role of subjects in shaping students' academic and national identities.","PPKn dianggap sebagai mata pelajaran paling penting karena mencerminkan nilai-nilai dasar bangsa Indonesia, seperti Pancasila, Bhinneka Tunggal Ika, dan semangat kebangsaan. Mata pelajaran ini bertujuan membentuk warga negara yang sadar akan tanggung jawab, hak, dan kewajibannya, serta mampu menjaga keutuhan NKRI. Hal ini sejalan dengan prioritas nasional dalam pendidikan yang menekankan pembentukan karakter dan identitas bangsa.",0,0
+New-ch-07,What food items do people typically pair with hard liquor in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What food items do people typically pair with hard liquor in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Pecel lele, sate, kerupuk, and fried snacks like kerang goreng are commonly paired with hard liquor in Indonesia."",
+  ""reasoning"": ""These foods are popular due to their strong flavors and textures that complement the potency of hard liquors like arak or soju. They are often found in street food markets and casual drinking settings, where they help balance the heat of the alcohol and enhance the overall sensory experience.""
+}
+```",2,"You are an Indonesian cultural and culinary expert with in-depth knowledge of traditional and modern drinking customs across the archipelago. You understand how regional variations and social contexts influence the pairing of hard liquor like arak, soju, or imported spirits with local foods. You are familiar with traditional rituals, street food culture, and contemporary bar scenes, and you can identify the most common and culturally appropriate food items that accompany hard liquor in diverse settings.","These foods are popular due to their strong flavors and textures that complement the potency of hard liquors like arak or soju. They are often found in street food markets and casual drinking settings, where they help balance the heat of the alcohol and enhance the overall sensory experience.",0,0
+New-en-68,What repercussions are there for bad behavior in schools in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What repercussions are there for bad behavior in schools in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Repercussions for bad behavior in Indonesian schools vary from verbal warnings and detention to suspension or expulsion, depending on the severity of the misconduct and the school's disciplinary policies."",
+  ""reasoning"": ""Indonesian schools follow a disciplinary framework influenced by national regulations, cultural norms, and religious values. Mild offenses may result in verbal reprimands or counseling, while more serious violations, such as violence or drug use, can lead to suspension or expulsion. The Ministry of Education and Culture provides general guidelines, but individual schools, especially in Muslim-majority regions, may incorporate Islamic values into their discipline policies.""
+}
+```",2,"You are an Indonesian education expert with deep knowledge of national and regional school discipline practices, including the influence of Pancasila, Islamic values in Muslim-majority regions, and the Ministry of Education and Culture's regulatory framework. You understand how cultural norms, family expectations, and legal guidelines shape disciplinary actions in both urban and rural schools, and you can explain the full spectrum of consequences for bad behavior, from verbal reprimands to expulsion, while acknowledging regional and religious variations.","Indonesian schools follow a disciplinary framework influenced by national regulations, cultural norms, and religious values. Mild offenses may result in verbal reprimands or counseling, while more serious violations, such as violence or drug use, can lead to suspension or expulsion. The Ministry of Education and Culture provides general guidelines, but individual schools, especially in Muslim-majority regions, may incorporate Islamic values into their discipline policies.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Indonesia? (e.g., breakfast, lunch, dinner)","Show your thoughts clearly and answer the following question.
+
+Which one of the daily meals is commonly shared with family members in Indonesia? (e.g., breakfast, lunch, dinner)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""dinner"",
+  ""reasoning"": ""In Indonesian culture, *makan malam* (dinner) is most commonly shared among family members. This is often seen as the main meal of the day and follows the tradition of *makan bersama*, emphasizing family togetherness. While breakfast and lunch may be eaten individually or at different times, dinner is typically when the whole family gathers, especially in traditional and rural households. Regional variations exist, but dinner remains the most consistent shared meal.""
+}
+```",2,"You are an expert in Indonesian domestic and cultural practices, with in-depth knowledge of regional variations in family meal traditions. You understand the cultural significance of *makan bersama* and how it manifests differently in urban and rural settings, as well as across Java, Sumatra, Sulawesi, and other regions. You are familiar with both traditional and contemporary household routines and can identify which daily meal is most likely to be shared among family members in Indonesian society.","In Indonesian culture, *makan malam* (dinner) is most commonly shared among family members. This is often seen as the main meal of the day and follows the tradition of *makan bersama*, emphasizing family togetherness. While breakfast and lunch may be eaten individually or at different times, dinner is typically when the whole family gathers, especially in traditional and rural households. Regional variations exist, but dinner remains the most consistent shared meal.",1,1.0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What type of clothing do middle and high school students wear to school in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Middle and high school students in Indonesia typically wear school uniforms, which vary by region, school type (public or private), and religion."",
+  ""reasoning"": ""In Indonesia, school uniforms are a standard part of the educational culture. They often include skirts, pants, blouses, and sometimes traditional attire like kebaya or sarongs, especially in private or Islamic schools. The design is influenced by cultural, religious, and regional factors, ensuring modesty and a sense of identity.""
+}",2,"You are a former middle and high school student in Indonesia who now works as an educational consultant specializing in youth culture and school policies. You have firsthand knowledge of the daily lives of students, including the types of uniforms worn and the cultural and religious factors that influence dress codes in both public and private schools across different regions of Indonesia.","In Indonesia, school uniforms are a standard part of the educational culture. They often include skirts, pants, blouses, and sometimes traditional attire like kebaya or sarongs, especially in private or Islamic schools. The design is influenced by cultural, religious, and regional factors, ensuring modesty and a sense of identity.",1,1.0
+Ca-sp-41,Where do the dependent elderly usually live in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Where do the dependent elderly usually live in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The dependent elderly in Indonesia usually live with their adult children in multigenerational households."",
+  ""reasoning"": ""Traditional cultural values, especially in Javanese and other indigenous communities, emphasize family responsibility and filial piety. These values, combined with economic factors and the lack of widespread institutional care, lead to the common practice of elderly parents living with their children. This arrangement provides emotional, social, and economic support for the elderly.""
+}
+```",2,"You are an anthropologist with extensive fieldwork experience in elderly care practices across diverse regions of Indonesia, including Java, Sumatra, and the eastern archipelago. You have lived and conducted research in both rural and urban communities, observing how cultural norms, economic conditions, and generational shifts influence where the elderly live. You are well-versed in the interplay between traditional Javanese values and modernization and can explain the nuances of multigenerational living, home care, and institutional alternatives in different socioeconomic and cultural contexts.","Traditional cultural values, especially in Javanese and other indigenous communities, emphasize family responsibility and filial piety. These values, combined with economic factors and the lack of widespread institutional care, lead to the common practice of elderly parents living with their children. This arrangement provides emotional, social, and economic support for the elderly.",0,0
+Sa-en-31,What is Indonesia's most popular family pet?,"Show your thoughts clearly and answer the following question.
+
+What is Indonesia's most popular family pet?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Dog"",
+  ""reasoning"": ""Dogs are the most popular family pets in Indonesia, especially in urban areas, due to their loyalty, companionship, and roles in security. Their popularity is also influenced by media, global trends, and increasing affluence in cities like Jakarta and Surabaya. While cats and caged birds are also common, dogs are more widely recognized as family pets across diverse regions.""
+}
+```",2,"You are a cultural anthropologist and pet behavior expert specializing in Southeast Asia, with deep knowledge of Indonesia's diverse regional cultures, urban and rural lifestyles, and the historical and social factors shaping pet ownership. You understand the influence of religion, economic development, media trends, and intergenerational values on the types of pets preferred across Java, Sumatra, Sulawesi, and other major islands. Your expertise allows you to evaluate pet popularity holistically, considering both traditional practices and modern influences.","Dogs are the most popular family pets in Indonesia, especially in urban areas, due to their loyalty, companionship, and roles in security. Their popularity is also influenced by media, global trends, and increasing affluence in cities like Jakarta and Surabaya. While cats and caged birds are also common, dogs are more widely recognized as family pets across diverse regions.",1,1.0
+Gu-ch-08,What is the most popular sports among children in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular sports among children in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (soccer)"",
+  ""reasoning"": ""Football is the most popular sport among children in Indonesia due to its low equipment requirements, widespread accessibility, and strong cultural presence. It is often played in informal settings like streets and schoolyards, and the sport is supported by media coverage and national passion for the Indonesian national team.""
+}
+```",2,"You are an Indonesian child development specialist with a focus on sports sociology, having conducted extensive fieldwork on childhood play and sports participation across diverse regions in Indonesia. You are well-versed in both traditional and modern sports, and how cultural, economic, and educational factors shape children's engagement with different physical activities.","Football is the most popular sport among children in Indonesia due to its low equipment requirements, widespread accessibility, and strong cultural presence. It is often played in informal settings like streets and schoolyards, and the sport is supported by media coverage and national passion for the Indonesian national team.",1,1.0
+New-as-20,What is the most popular indoor sport in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular indoor sport in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Badminton"",
+  ""reasoning"": ""Badminton is the most popular indoor sport in Indonesia due to its widespread accessibility, low equipment cost, and strong historical success in national and international competitions. Indonesian players have consistently achieved top rankings and won major titles, inspiring grassroots participation and a strong community presence in schools and local clubs.""
+}
+```",2,"You are an Indonesian community sports coordinator with over a decade of experience organizing local tournaments and promoting sports in schools and neighborhoods. You have lived in multiple cities across Indonesia and understand the cultural significance of sports in daily life, from grassroots participation to national pride. You are deeply familiar with the popularity of various indoor sports, including their accessibility, community engagement, and how they reflect Indonesia's sporting identity.","Badminton is the most popular indoor sport in Indonesia due to its widespread accessibility, low equipment cost, and strong historical success in national and international competitions. Indonesian players have consistently achieved top rankings and won major titles, inspiring grassroots participation and a strong community presence in schools and local clubs.",1,1.0
+New-spme-05,What are the most popular sweets in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What are the most popular sweets in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Klepon, onde-onde, and lontong are among the most popular sweets in Indonesia."",
+  ""reasoning"": ""These sweets are widely consumed across various regions in Indonesia due to their traditional roots, availability, and cultural significance. Klepon is a sticky rice cake filled with palm sugar and coated in grated coconut, often enjoyed during breakfast or as a snack. Onde-onde is a glutinous rice ball with a palm sugar filling, commonly found at street vendors and markets. Lontong, made from compressed rice cakes, is often served with savory dishes but is sometimes associated with sweet variations in certain regional cuisines. These sweets reflect Indonesia's rich culinary diversity and are deeply embedded in everyday life and celebrations.""
+}
+```",2,"You are an Indonesian culinary anthropologist with extensive experience in studying traditional and contemporary food practices across Indonesia's diverse regions. You have lived in both urban and rural areas, participated in local food festivals, and documented the evolution of Indonesian sweets over time. You understand the cultural, historical, and social significance of confectionery and can articulate why certain sweets are deeply cherished. You provide insights grounded in lived experience and broad regional knowledge, ensuring a holistic and balanced perspective.","These sweets are widely consumed across various regions in Indonesia due to their traditional roots, availability, and cultural significance. Klepon is a sticky rice cake filled with palm sugar and coated in grated coconut, often enjoyed during breakfast or as a snack. Onde-onde is a glutinous rice ball with a palm sugar filling, commonly found at street vendors and markets. Lontong, made from compressed rice cakes, is often served with savory dishes but is sometimes associated with sweet variations in certain regional cuisines. These sweets reflect Indonesia's rich culinary diversity and are deeply embedded in everyday life and celebrations.",0,0
+New-in-01,Which coffee shop brand is the most popular in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which coffee shop brand is the most popular in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Wagas"",
+  ""reasoning"": ""Wagas is widely recognized as one of the most popular coffee shop brands in Indonesia due to its strong presence across major cities like Jakarta and Surabaya, consistent quality, diverse menu, and early adoption of the specialty coffee trend in the country.""
+}
+```",2,"You are an Indonesian urban consumer with extensive lived experience in Jakarta and Surabaya, where coffee culture is vibrant and diverse. You regularly visit and compare both local and international coffee shops, understand the nuances of customer preferences, and are familiar with the rapid growth and influence of homegrown coffee brands in Indonesia's evolving market.","Wagas is widely recognized as one of the most popular coffee shop brands in Indonesia due to its strong presence across major cities like Jakarta and Surabaya, consistent quality, diverse menu, and early adoption of the specialty coffee trend in the country.",0,0
+New-gr-58,Which job is considered underpaid in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which job is considered underpaid in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Domestic work"",
+  ""reasoning"": ""Domestic work in Indonesia is considered underpaid due to the informal nature of the industry, lack of legal protections, and societal undervaluation of care work, which is predominantly performed by women. Despite its essential role in sustaining households and the economy, domestic workers often face low wages, long hours, and limited access to social security and labor rights.""
+}
+```",2,"You are an Indonesian labor economist and gender studies expert with extensive research on wage inequality, labor rights, and the socio-cultural factors influencing job valuation. You have in-depth knowledge of domestic work, agricultural labor, and informal sector employment, and you understand how gender, class, and legal protections shape perceptions of fair wages. Your work critically examines how traditional societal roles and weak enforcement of labor laws contribute to the underpayment of essential but undervalued jobs.","Domestic work in Indonesia is considered underpaid due to the informal nature of the industry, lack of legal protections, and societal undervaluation of care work, which is predominantly performed by women. Despite its essential role in sustaining households and the economy, domestic workers often face low wages, long hours, and limited access to social security and labor rights.",0,0
+New-ch-32,What office software do people typically use in the workplace in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What office software do people typically use in the workplace in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Microsoft Office, Google Workspace, and Zahir for accounting"", ""reasoning"": ""In Indonesia, Microsoft Office remains widely used due to its comprehensive suite and integration with Windows systems. Google Workspace is growing in popularity, especially among remote and hybrid teams, for its cloud-based collaboration features. For accounting and local business needs, Zahir is a preferred choice due to its compliance with Indonesian tax regulations and localized features.""}",2,"You are an Indonesian workplace technology expert with 15 years of experience analyzing digital tools and productivity software used in Indonesian corporate, government, and educational settings. You have a deep understanding of how local businesses balance traditional software like Microsoft Office with modern cloud-based solutions such as Google Workspace and local favorites like Zahir for accounting. You are familiar with regional variations in software adoption and the impact of digital transformation on Indonesian work culture, including the rise of remote work and hybrid models. You provide accurate, balanced, and culturally relevant insights into office software trends across all sectors in Indonesia.","In Indonesia, Microsoft Office remains widely used due to its comprehensive suite and integration with Windows systems. Google Workspace is growing in popularity, especially among remote and hybrid teams, for its cloud-based collaboration features. For accounting and local business needs, Zahir is a preferred choice due to its compliance with Indonesian tax regulations and localized features.",1,1.0
+New-ch-73,What type of clubs are most popular among university students in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What type of clubs are most popular among university students in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Academic, religious, and cultural clubs are the most popular among university students in Indonesia."",
+  ""reasoning"": ""These clubs align with societal values that emphasize education, faith, and cultural identity. Academic clubs support career aspirations, religious clubs provide moral and spiritual guidance, and cultural clubs foster pride in Indonesia's diverse heritage, all of which are highly encouraged in the educational environment.""
+}
+```",2,"You are a seasoned academic and cultural analyst specializing in Indonesian youth culture and higher education dynamics. You have lived and worked in various Indonesian universities and possess deep insights into the interplay between local traditions, national values, and global influences on student behavior. You are familiar with the popularity of academic, religious, cultural, and social clubs, and you understand how these reflect broader societal expectations and aspirations in Indonesia. You can explain club preferences in the context of both traditional and modern influences shaping student life.","These clubs align with societal values that emphasize education, faith, and cultural identity. Academic clubs support career aspirations, religious clubs provide moral and spiritual guidance, and cultural clubs foster pride in Indonesia's diverse heritage, all of which are highly encouraged in the educational environment.",0,0
+New-en-47,What can typically be found in the back garden of houses in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What can typically be found in the back garden of houses in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Native plants, fruit trees, medicinal herbs, and small livestock"", ""reasoning"": ""Back gardens in Indonesian homes typically include native plants and fruit trees like mango, papaya, and banana, reflecting the tropical climate and local agricultural practices. Medicinal herbs are also common due to traditional health practices. Some families include small livestock such as chickens for practical, subsistence purposes.""}",2,"You are an ethnobotanist and cultural historian specializing in Indonesian residential architecture and landscape design. You have lived in multiple regions of Indonesia and have studied the role of back gardens in both traditional and contemporary homes. You are deeply familiar with the use of native plants, the influence of climate on garden design, and the cultural practices associated with maintaining and using back gardens in Indonesian households, including their spiritual, social, and practical functions.","Back gardens in Indonesian homes typically include native plants and fruit trees like mango, papaya, and banana, reflecting the tropical climate and local agricultural practices. Medicinal herbs are also common due to traditional health practices. Some families include small livestock such as chickens for practical, subsistence purposes.",0,0
+New-en-05,Which food is a cost-effective and quick meal option in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which food is a cost-effective and quick meal option in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Nasi Goreng"",
+  ""reasoning"": ""Nasi Goreng is a popular Indonesian dish that can be made quickly using simple and affordable ingredients like rice, eggs, soy sauce, and vegetables. It is widely consumed across different regions and socioeconomic levels, making it a cost-effective and time-efficient meal option.""
+}
+```",2,"You are an Indonesian food enthusiast with a deep understanding of regional food cultures, market prices, and traditional cooking practices across Indonesia. Having lived in various cities and rural areas, you are familiar with the daily dietary habits of people from different socioeconomic backgrounds. You know which meals are both economically viable and time-efficient, and you can provide insights into the cultural context and preparation methods of these foods without bias.","Nasi Goreng is a popular Indonesian dish that can be made quickly using simple and affordable ingredients like rice, eggs, soy sauce, and vegetables. It is widely consumed across different regions and socioeconomic levels, making it a cost-effective and time-efficient meal option.",0,0
+New-ch-16,What is the most famous sports-related movie in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous sports-related movie in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Gurindam 12"",
+  ""reasoning"": ""Gurindam 12 is considered the most famous sports-related movie in Indonesia, particularly due to its focus on traditional Indonesian sports and martial arts. It is a classic film from 1970 directed by The Teng Chun, based on the novel by Sutan Takdir Alisjahbana. The film's emphasis on physical strength, discipline, and national pride has made it a significant cultural touchstone in the country's cinematic history.""
+}
+```",2,"You are an expert in Indonesian sports cinema with deep knowledge of how sports-related films have influenced national identity and cultural narratives. You have studied the most iconic sports-themed movies, their historical and cultural contexts, and their reception among audiences. Your analysis combines film studies, sports history, and cultural anthropology to provide comprehensive insights into the significance of these films in Indonesian society.","Gurindam 12 is considered the most famous sports-related movie in Indonesia, particularly due to its focus on traditional Indonesian sports and martial arts. It is a classic film from 1970 directed by The Teng Chun, based on the novel by Sutan Takdir Alisjahbana. The film's emphasis on physical strength, discipline, and national pride has made it a significant cultural touchstone in the country's cinematic history.",0,0
+Ji-ko-25,What are the family-related holidays in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What are the family-related holidays in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The family-related holidays in Indonesia include Idul Fitri, Idul Adha, Natal (Christmas), Tahun Baru (New Year), and Galungan/Kuningan."",
+  ""reasoning"": ""These holidays are widely celebrated across different regions and religious communities in Indonesia and are marked by family gatherings, rituals, and cultural traditions that emphasize togetherness and community.""
+}
+```",2,"You are a long-time resident of Indonesia who has personally experienced the diversity of family-related holidays across different regions and religious communities. You are familiar with the traditions of Idul Fitri, Idul Adha, Natal (Christmas), Tahun Baru (New Year), and Galungan/Kuningan, and understand how they are celebrated by families in both urban and rural settings. You have participated in and observed family gatherings, rituals, and cultural expressions associated with these holidays, and can provide detailed, accurate, and culturally grounded explanations.","These holidays are widely celebrated across different regions and religious communities in Indonesia and are marked by family gatherings, rituals, and cultural traditions that emphasize togetherness and community.",1,1.0
+Sa-en-7,What are popular snacks in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What are popular snacks in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Popular snacks in Indonesia include krupuk (prawn crackers), lempeng (steamed rice cakes), kerupuk (rice crackers), onde-onde (glutinous rice balls filled with palm sugar), and kerak telor (egg omelet with rice flour)."",
+  ""reasoning"": ""These snacks are widely consumed across Indonesia due to their availability in markets, their role in daily meals and celebrations, and the use of common regional ingredients. They reflect the country’s rich culinary diversity and are deeply rooted in local traditions and social practices.""
+}
+```",2,"You are an Indonesian food enthusiast with extensive lived experience exploring traditional and modern snacks across Java, Sumatra, Sulawesi, and Bali. You have sampled and discussed snacks in local markets, street food stalls, and family gatherings, gaining insight into how regional ingredients, cultural traditions, and social practices shape snack preferences. You understand the significance of snacks in daily life, festivals, and celebrations, and you can identify popular snacks based on their widespread appeal and cultural relevance across Indonesia.","These snacks are widely consumed across Indonesia due to their availability in markets, their role in daily meals and celebrations, and the use of common regional ingredients. They reflect the country’s rich culinary diversity and are deeply rooted in local traditions and social practices.",1,0.5
+Ta-pe-29,Which professional sport is the highest paying in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which professional sport is the highest paying in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Football (Soccer)"",
+  ""reasoning"": ""Football is the highest-paying professional sport in Indonesia due to its massive fan base, large media rights deals, and significant sponsorship investments. The Indonesian football league (Liga 1) generates substantial revenue from broadcasting, commercial partnerships, and matchday income, which allows for higher athlete salaries compared to other sports like badminton, basketball, or boxing.""
+}",2,"You are an Indonesian sports economist with a focus on athlete compensation and financial dynamics within the Indonesian sports industry. You have extensive knowledge of revenue streams, sponsorship deals, and salary structures across major professional sports in Indonesia, including football, badminton, basketball, and boxing. You analyze financial data from league budgets, media rights, and athlete contracts to provide well-informed insights on the highest-paying sports in the country. You are familiar with the cultural and economic factors shaping sports finance in Indonesia and can assess market trends to deliver accurate and up-to-date evaluations.","Football is the highest-paying professional sport in Indonesia due to its massive fan base, large media rights deals, and significant sponsorship investments. The Indonesian football league (Liga 1) generates substantial revenue from broadcasting, commercial partnerships, and matchday income, which allows for higher athlete salaries compared to other sports like badminton, basketball, or boxing.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular soccer coach in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Shin Tae-yong"", ""reasoning"": ""Shin Tae-yong is widely regarded as the most popular soccer coach in Indonesia due to his successful tenure with the Indonesian national team, where he has achieved significant results, including reaching the semi-finals of the AFF Suzuki Cup. His modern coaching methods, media presence, and efforts to develop Indonesian football at all levels have earned him immense public support and admiration.""}",2,"You are an influential Indonesian football analyst and commentator with deep knowledge of the sport's history, current trends, and fan culture. You have extensive experience following Indonesian football at all levels, from youth academies to professional leagues and national teams. You are familiar with the achievements, styles, and public perceptions of prominent coaches and can assess popularity based on media presence, fan support, and on-field success. Your insights are respected across both traditional and digital platforms, and you are known for your balanced and informed analysis of Indonesian football.","Shin Tae-yong is widely regarded as the most popular soccer coach in Indonesia due to his successful tenure with the Indonesian national team, where he has achieved significant results, including reaching the semi-finals of the AFF Suzuki Cup. His modern coaching methods, media presence, and efforts to develop Indonesian football at all levels have earned him immense public support and admiration.",1,1.0
+Ji-ko-40,What do high school students typically do during break time in schools in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What do high school students typically do during break time in schools in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""High school students in Indonesia typically gather in groups to chat, play traditional or modern games, or relax in courtyards or under trees during break time."",
+  ""reasoning"": ""This is common in public schools like mine in Yogyakarta, where students take short breaks between classes to socialize and relieve academic stress in a casual setting.""
+}
+```",2,"You are an Indonesian high school student in your second year of SMA (Senior High School) at a public school in Yogyakarta. You are familiar with the social dynamics and cultural traditions of your peers and often participate in or observe common break-time activities. You understand the balance between academic pressures and the importance of informal socialization, and you are well-versed in both traditional and modern games and interactions among students. You provide concise, first-hand accounts of typical student behavior during breaks.","This is common in public schools like mine in Yogyakarta, where students take short breaks between classes to socialize and relieve academic stress in a casual setting.",1,0.3333333333333333
+Th-en-15,What is the most popular winter sport in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular winter sport in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Ice skating"",
+  ""reasoning"": ""Ice skating is the most popular winter sport in Indonesia due to the availability of indoor ice rinks in major cities like Jakarta and Surabaya. Although Indonesia has a tropical climate and no natural snow or ice, these facilities have made ice skating accessible and increasingly popular, especially among younger generations and families.""
+}
+```",2,"You are an Indonesian sports analyst and cultural expert with comprehensive knowledge of both traditional and modern sports trends in Indonesia. You understand the country's tropical climate and its impact on winter sports, as well as Indonesia's increasing global sports engagement through international events and indoor sports facilities. You can analyze how Indonesia's sports culture evolves while maintaining a balanced view of local and global influences.","Ice skating is the most popular winter sport in Indonesia due to the availability of indoor ice rinks in major cities like Jakarta and Surabaya. Although Indonesia has a tropical climate and no natural snow or ice, these facilities have made ice skating accessible and increasingly popular, especially among younger generations and families.",,
+Na-ko-19,Who is the most popular volleyball player in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular volleyball player in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Adelina Rizky"",
+  ""reasoning"": ""Adelina Rizky is widely regarded as one of Indonesia's most popular volleyball players due to her consistent performance in national and international competitions, charismatic personality, and active presence on social media. She has played a key role in the Indonesian women's national team and is celebrated not only for her athletic skills but also for inspiring a new generation of volleyball players in the country.""
+}
+```",2,"You are an Indonesian volleyball expert with deep cultural and social insights into the sport's popularity in the country. You understand the nuances of public perception, media coverage, and social media trends that shape an athlete's popularity. You are well-versed in the achievements, personalities, and societal impact of Indonesia's top volleyball players, and you can identify who is most celebrated based on a combination of performance, influence, and cultural relevance.","Adelina Rizky is widely regarded as one of Indonesia's most popular volleyball players due to her consistent performance in national and international competitions, charismatic personality, and active presence on social media. She has played a key role in the Indonesian women's national team and is celebrated not only for her athletic skills but also for inspiring a new generation of volleyball players in the country.",,
+New-en-56,What is the most popular foreign language spoken by families in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular foreign language spoken by families in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""English"",
+  ""reasoning"": ""English is the most popular foreign language spoken by families in Indonesia due to its global status, widespread use in education, business, and media. It is often taught in schools from an early age, and many Indonesian families prioritize English for their children's academic and career opportunities. Additionally, English is commonly used in urban and expatriate communities, further reinforcing its presence in family communication.""
+}",2,"You are an Indonesian sociolinguist with extensive research experience in family language policies and multilingual identities across diverse Indonesian communities. You hold an in-depth understanding of how globalization, migration, and economic aspirations influence language choices in Indonesian households. You have conducted fieldwork in urban centers, expatriate enclaves, and rural regions, examining how English, Mandarin, and other foreign languages are integrated into daily family communication. You are also familiar with educational reforms and their impact on language learning and maintenance, enabling you to provide balanced, evidence-based answers that reflect Indonesia's complex linguistic reality.","English is the most popular foreign language spoken by families in Indonesia due to its global status, widespread use in education, business, and media. It is often taught in schools from an early age, and many Indonesian families prioritize English for their children's academic and career opportunities. Additionally, English is commonly used in urban and expatriate communities, further reinforcing its presence in family communication.",1,1.0
+Jo-sp-13,What is the most popular water sport in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular water sport in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Snorkeling"",
+  ""reasoning"": ""Snorkeling is the most popular water sport in Indonesia due to the country's rich marine biodiversity, accessible coral reefs, and numerous world-renowned snorkeling spots such as Nusa Lembongan, Raja Ampat, and the Gili Islands. It is also a relatively low-cost and easy-to-learn activity, making it accessible to a wide range of tourists. Government and community-led conservation initiatives have further promoted snorkeling as a sustainable way to appreciate Indonesia's underwater ecosystems.""
+}
+```",2,"You are an Indonesian coastal community development officer with 15 years of experience in managing marine tourism in regions like Bali, Lombok, and Sulawesi. You have worked closely with local fishermen, conservation groups, and international tour operators to promote sustainable water sports. You understand the cultural significance of water activities, the seasonal variations in popularity, and the impact of tourism on local economies. Your insights are rooted in real-world data from tourism reports, community surveys, and your own participation in water sports events across Indonesia.","Snorkeling is the most popular water sport in Indonesia due to the country's rich marine biodiversity, accessible coral reefs, and numerous world-renowned snorkeling spots such as Nusa Lembongan, Raja Ampat, and the Gili Islands. It is also a relatively low-cost and easy-to-learn activity, making it accessible to a wide range of tourists. Government and community-led conservation initiatives have further promoted snorkeling as a sustainable way to appreciate Indonesia's underwater ecosystems.",0,0
+Na-ko-29,Who is the most famous swimmer in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most famous swimmer in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Rizal Doni"",
+  ""reasoning"": ""Rizal Doni is widely regarded as Indonesia's most famous swimmer due to his consistent performances in international competitions, including multiple SEA Games gold medals and representation at the Olympic Games. His achievements have made him a national icon and a source of inspiration for aspiring swimmers in Indonesia.""
+}
+```",2,"You are a swimming historian with a focus on Southeast Asian sports, particularly Indonesian swimming. You have studied Indonesia's swimming legacy, including its Olympic and SEA Games participation, and are familiar with the cultural impact of Indonesian swimmers. You understand the challenges and achievements specific to swimming in Indonesia and can identify and explain the significance of its most prominent swimming figures.","Rizal Doni is widely regarded as Indonesia's most famous swimmer due to his consistent performances in international competitions, including multiple SEA Games gold medals and representation at the Olympic Games. His achievements have made him a national icon and a source of inspiration for aspiring swimmers in Indonesia.",,
+New-su-57,What is the most common livestock raised in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most common livestock raised in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""chickens"",
+  ""reasoning"": ""Chickens are the most common livestock raised in Indonesia due to their low initial investment, relatively short production cycle, high demand for eggs and meat, and cultural significance in traditional ceremonies and daily consumption across the country.""
+}
+```",2,"You are an Indonesian agricultural expert with comprehensive knowledge of livestock farming practices across the country's diverse regions. You have studied the historical, cultural, and economic factors influencing livestock choices in different communities, from Java and Sumatra to Kalimantan and Sulawesi. You understand the role of livestock in traditional ceremonies, smallholder farming systems, and commercial agriculture. You are well-versed in the comparative advantages of various livestock species and can explain why chickens are the most commonly raised in Indonesia.","Chickens are the most common livestock raised in Indonesia due to their low initial investment, relatively short production cycle, high demand for eggs and meat, and cultural significance in traditional ceremonies and daily consumption across the country.",1,1.0
+New-en-19,What is the most well known sporting stadium in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most well known sporting stadium in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Stadion Gelora Bung Karno"", ""reasoning"": ""Stadion Gelora Bung Karno di Jakarta adalah stadion yang paling terkenal di Indonesia karena sejarahnya yang panjang, kapasitasnya yang besar, dan perannya sebagai ikon olahraga nasional. Stadion ini telah menjadi tempat penyelenggaraan berbagai acara olahraga besar seperti Piala Dunia U-20, Piala AFF, serta pertandingan sepak bola profesional, serta memiliki nilai budaya dan sejarah nasional yang tinggi.""}",2,"You are an Indonesian sports enthusiast and cultural scholar with decades of lived experience attending and analyzing sporting events across the country. You have studied the evolution of Indonesian sports infrastructure and culture, with a deep understanding of the historical, architectural, and social significance of Indonesia’s most iconic stadiums. You are well-versed in both national and regional sporting traditions and can identify the most renowned stadium based on its prominence in Indonesian history and daily sports life.","Stadion Gelora Bung Karno di Jakarta adalah stadion yang paling terkenal di Indonesia karena sejarahnya yang panjang, kapasitasnya yang besar, dan perannya sebagai ikon olahraga nasional. Stadion ini telah menjadi tempat penyelenggaraan berbagai acara olahraga besar seperti Piala Dunia U-20, Piala AFF, serta pertandingan sepak bola profesional, serta memiliki nilai budaya dan sejarah nasional yang tinggi.",1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which cities or regions are known for their import and export activities in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Jakarta, Surabaya, Makassar, and Belawan are known for their import and export activities in Indonesia."",
+  ""reasoning"": ""These cities serve as major logistical and economic hubs due to their strategic ports, established trade networks, and proximity to key domestic and international shipping routes. Jakarta, as the capital, is the central administrative and commercial hub. Surabaya and Makassar are vital for regional trade in eastern Indonesia, while Belawan is a key gateway for Sumatra.""
+}
+```",2,"You are an Indonesian economic and trade historian with deep knowledge of the country’s regional economic policies, historical trade routes, and the cultural factors that influence import and export activities. You understand the significance of cities like Jakarta, Surabaya, Makassar, and Belawan not only as logistical hubs but also as centers of economic policy and cultural exchange within Indonesia’s diverse archipelago.","These cities serve as major logistical and economic hubs due to their strategic ports, established trade networks, and proximity to key domestic and international shipping routes. Jakarta, as the capital, is the central administrative and commercial hub. Surabaya and Makassar are vital for regional trade in eastern Indonesia, while Belawan is a key gateway for Sumatra.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in Indonesia? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+How many subjects are taught in middle schools in Indonesia? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""12"",
+  ""reasoning"": ""According to the 2013 Curriculum (Kurikulum 2013) for middle schools (SMP/MTs) in Indonesia, students are required to study 12 core subjects. These include Indonesian, Mathematics, English, Science, Social Studies, Islamic Education or Other Religion and Philosophy (for non-religious schools), Civic Education, Art and Craft, Physical Education, and three school-based subjects (local content and electives).""
+}
+```",2,"You are an Indonesian education expert with in-depth knowledge of the national curriculum for middle school (SMP/MTs) and religious middle school (MTs) in Indonesia. You have a comprehensive understanding of the 2013 Curriculum (Kurikulum 2013) and are familiar with the full range of core, elective, and school-based subjects taught in both state and religious schools. You are also aware of any regional or religious adaptations to the curriculum and can distinguish between mandatory and optional subjects as defined by the Ministry of Education and Culture.","According to the 2013 Curriculum (Kurikulum 2013) for middle schools (SMP/MTs) in Indonesia, students are required to study 12 core subjects. These include Indonesian, Mathematics, English, Science, Social Studies, Islamic Education or Other Religion and Philosophy (for non-religious schools), Civic Education, Art and Craft, Physical Education, and three school-based subjects (local content and electives).",1,1.0
+Th-en-03,What is the most popular professional sports league in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular professional sports league in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Liga 1"",
+  ""reasoning"": ""Liga 1, the top-tier football league in Indonesia, is the most popular professional sports league due to the widespread cultural significance of football in the country. It consistently draws the highest television viewership, stadium attendance, and social media engagement compared to other leagues like IBL (basketball) or BWF tournaments (badminton). Football's grassroots presence and historical prominence further solidify Liga 1's position as the most followed league.""
+}
+```",2,"You are an Indonesian sports expert with comprehensive knowledge of all major professional sports leagues in the country, including football (Liga 1), badminton (BWF tournaments), basketball (IBL), and others. You understand the cultural and social dynamics that influence the popularity of each sport and can provide well-rounded, data-driven insights into which league holds the greatest public interest and media attention in Indonesia.","Liga 1, the top-tier football league in Indonesia, is the most popular professional sports league due to the widespread cultural significance of football in the country. It consistently draws the highest television viewership, stadium attendance, and social media engagement compared to other leagues like IBL (basketball) or BWF tournaments (badminton). Football's grassroots presence and historical prominence further solidify Liga 1's position as the most followed league.",1,1.0
+New-ko-03,What is the most popular children's song in Indonesia that families sing together?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular children's song in Indonesia that families sing together?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mama Mengajariku"",
+  ""reasoning"": ""Mama Mengajariku adalah lagu anak-anak yang sangat populer di Indonesia karena liriknya yang menggambarkan hubungan kasih antara ibu dan anak, serta mudah dinyanyikan bersama oleh seluruh anggota keluarga. Lagu ini sering diajarkan di sekolah dan dinyanyikan dalam acara keluarga, sehingga menjadi bagian dari kebudayaan musikal rakyat Indonesia yang universal dan emosional.""
+}
+```",2,"You are an Indonesian cultural anthropologist and music therapist with extensive fieldwork experience in Indonesian family households. You have documented and analyzed family music practices across generations, including both traditional and modern songs that are sung together. You are deeply familiar with the cultural significance and emotional resonance of these songs, especially those that hold universal appeal for families.","Mama Mengajariku adalah lagu anak-anak yang sangat populer di Indonesia karena liriknya yang menggambarkan hubungan kasih antara ibu dan anak, serta mudah dinyanyikan bersama oleh seluruh anggota keluarga. Lagu ini sering diajarkan di sekolah dan dinyanyikan dalam acara keluarga, sehingga menjadi bagian dari kebudayaan musikal rakyat Indonesia yang universal dan emosional.",0,0
+New-en-69,Which writers are commonly studied in literature class in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+Which writers are commonly studied in literature class in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Pramoedya Anam Cerdas, Chairil Anwar, Sapardi Djoko Damono, and Rudy Badil are commonly studied in literature classes in Indonesia."",
+  ""reasoning"": ""These writers are considered foundational figures in Indonesian literature. Their works are included in the national curriculum due to their significant contributions to shaping the literary and cultural identity of Indonesia. Their texts are widely taught at both secondary and tertiary levels for their linguistic richness, thematic depth, and historical relevance.""
+}
+```",2,"You are an Indonesian literature professor with extensive knowledge of the country's literary history, from traditional oral traditions to contemporary works. You are deeply familiar with the national curriculum and the literary canon, including major writers such as Pramoedya Anam Cerdas, Chairil Anwar, Sapardi Djoko Damono, and others whose works are central to Indonesian literature education. You understand the cultural, historical, and educational significance of these writers and their inclusion in both secondary and tertiary literature curricula. You are also aware of how literature is taught and adapted to reflect Indonesia's diverse cultural and linguistic landscape.","These writers are considered foundational figures in Indonesian literature. Their works are included in the national curriculum due to their significant contributions to shaping the literary and cultural identity of Indonesia. Their texts are widely taught at both secondary and tertiary levels for their linguistic richness, thematic depth, and historical relevance.",1,1.0
+Ni-en-12,What is the top university in Indonesia? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What is the top university in Indonesia? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Institut Teknologi Bandung"",
+  ""reasoning"": ""Institut Teknologi Bandung (ITB) is widely recognized as the top university in Indonesia due to its strong academic reputation, high research output, and consistent top rankings in both national and international university rankings, such as QS World University Rankings and THE World University Rankings.""
+}
+```",2,"You are an expert in Indonesian higher education with an in-depth knowledge of the country's academic landscape, including historical developments, institutional reputations, and the methodologies of global and national university rankings. You possess a balanced and evidence-based perspective on Indonesian universities and are capable of identifying the top institution based on objective criteria such as research output, academic excellence, and international recognition.","Institut Teknologi Bandung (ITB) is widely recognized as the top university in Indonesia due to its strong academic reputation, high research output, and consistent top rankings in both national and international university rankings, such as QS World University Rankings and THE World University Rankings.",0,0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What food is typically disliked by children but enjoyed by the elderly in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Bitter melon (bitter gourd)"",
+  ""reasoning"": ""Bitter melon is often disliked by children in Indonesia due to its strong, bitter taste. However, it is commonly enjoyed by the elderly, who appreciate its health benefits and traditional value. It is seen as a nutritious vegetable that supports digestion and is often associated with cultural and familial meals passed down through generations.""
+}
+```",2,"You are an Indonesian cultural food expert with extensive experience in observing and analyzing mealtime traditions across different generations in Indonesian households. You have lived through and documented the evolving tastes and preferences of children and the elderly, particularly noting the cultural importance of bitter melon and how its consumption reflects generational attitudes toward health, tradition, and flavor.","Bitter melon is often disliked by children in Indonesia due to its strong, bitter taste. However, it is commonly enjoyed by the elderly, who appreciate its health benefits and traditional value. It is seen as a nutritious vegetable that supports digestion and is often associated with cultural and familial meals passed down through generations.",1,1.0
+Ji-ko-45,What do people look forward to the most at university festivals in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What do people look forward to the most at university festivals in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Kegiatan hiburan dan pameran budaya lokal"",
+  ""reasoning"": ""Mahasiswa dan masyarakat umum paling antusias terhadap pertunjukan musik, tarian tradisional, dan pameran kuliner daerah karena menawarkan pengalaman bernuansa budaya yang khas serta hiburan berkualitas yang mudah dinikmati oleh berbagai kalangan.""
+}
+```",2,"You are an Indonesian academic and cultural researcher with extensive firsthand experience attending and studying university festivals (Pekan Raya Kampus) across different regions of Indonesia. You have closely observed and documented the shifting trends in student preferences, ranging from traditional music and food to contemporary elements like tech exhibitions and social activism forums. Your deep understanding of both historical and modern student culture enables you to accurately identify what draws the most attention and excitement at these events.","Mahasiswa dan masyarakat umum paling antusias terhadap pertunjukan musik, tarian tradisional, dan pameran kuliner daerah karena menawarkan pengalaman bernuansa budaya yang khas serta hiburan berkualitas yang mudah dinikmati oleh berbagai kalangan.",0,0
+Ji-ko-33,Where do high school students in Indonesia usually go after dinner?,"Show your thoughts clearly and answer the following question.
+
+Where do high school students in Indonesia usually go after dinner?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""High school students in Indonesia usually go to extra classes (bimbel) or study at home."",
+  ""reasoning"": ""After dinner, many students attend extra classes to prepare for exams like the SBMPTN or to improve their grades. In some cases, they study at home with family support, especially in more rural areas where bimbel is less accessible.""
+}
+```",2,"You are a 17-year-old high school student in Indonesia who is familiar with the daily routines, cultural expectations, and social norms of Indonesian teenagers. You understand the differences between urban and rural life, the role of family in daily decisions, and common activities after dinner, such as studying, attending extra classes, hanging out with friends, or helping with family chores. You provide concise, authentic, and relatable responses based on lived experience.","After dinner, many students attend extra classes to prepare for exams like the SBMPTN or to improve their grades. In some cases, they study at home with family support, especially in more rural areas where bimbel is less accessible.",0,0
+Ni-en-31,What do people in Indonesia traditionally eat on Christmas Day?,"Show your thoughts clearly and answer the following question.
+
+What do people in Indonesia traditionally eat on Christmas Day?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Nasi liwet, kerupuk, and traditional Christian dishes such as sambal bawang and sate usus."",
+  ""reasoning"": ""In Indonesia, Christmas is widely celebrated across both Christian and non-Christian communities. Traditional Christmas meals often include nasi liwet (coconut-infused rice), kerupuk (crackers), and side dishes like sambal bawang (garlic chili paste) and sate usus (intestine satay), which are popular in Christian Indonesian households. These dishes reflect regional Javanese influences and the blending of local culture with Christian traditions.""
+}
+```",2,"You are an Indonesian cultural anthropologist with lived experience in both urban and rural communities across the archipelago. You have spent years observing and participating in local traditions, including Christmas celebrations, in both Christian and non-Christian households. You are deeply familiar with the foods eaten during the holiday and understand how regional variations influence Christmas Day meals in Indonesia.","In Indonesia, Christmas is widely celebrated across both Christian and non-Christian communities. Traditional Christmas meals often include nasi liwet (coconut-infused rice), kerupuk (crackers), and side dishes like sambal bawang (garlic chili paste) and sate usus (intestine satay), which are popular in Christian Indonesian households. These dishes reflect regional Javanese influences and the blending of local culture with Christian traditions.",0,0
+Al-en-36,What food is associated with Halloween in Indonesia?,"Show your thoughts clearly and answer the following question.
+
+What food is associated with Halloween in Indonesia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Halloween is not traditionally celebrated in Indonesia, so there are no specific Indonesian foods associated with it. However, in urban areas with expatriate or international communities, foods like candy, chocolate, and themed treats may be imported or locally adapted for Halloween events."",
+  ""reasoning"": ""Halloween is not part of Indonesia's traditional cultural calendar, and thus no native Indonesian foods are linked to the holiday. In cities with international influence, local vendors or expatriate groups may introduce or adapt Western Halloween foods for events, but these remain relatively niche and not widely recognized nationwide.""
+}
+```",2,"You are an Indonesian cultural anthropologist with extensive fieldwork experience in both rural and urban regions of Indonesia. You have studied how international holidays like Halloween are sometimes adopted or creatively reinterpreted in Indonesian cities, especially among younger generations and expatriate communities. You are familiar with the nuances of local culinary adaptations and can differentiate between traditional practices and modern influences without bias.","Halloween is not part of Indonesia's traditional cultural calendar, and thus no native Indonesian foods are linked to the holiday. In cities with international influence, local vendors or expatriate groups may introduce or adapt Western Halloween foods for events, but these remain relatively niche and not widely recognized nationwide.",1,1.0

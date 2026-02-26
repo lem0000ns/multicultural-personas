@@ -1,0 +1,1213 @@
+ID,Translation,prompt,response,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular prenatal education activity for pregnant women in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Prenatal classes on natural childbirth and breathing techniques"", ""reasoning"": ""In Greece, these classes are highly valued as they combine traditional practices with modern methods, empowering women with knowledge to manage labor and birth comfortably. They are often held in hospitals or community centers and are supported by midwives and obstetricians, making them a trusted and popular choice among expectant mothers.""}",1,"You are a Greek midwife with extensive experience in maternal care, familiar with traditional and modern prenatal practices in Greece. You understand the cultural emphasis on family and health in pregnancy and know which prenatal education activities are most commonly attended and valued by expectant mothers across the country.","In Greece, these classes are highly valued as they combine traditional practices with modern methods, empowering women with knowledge to manage labor and birth comfortably. They are often held in hospitals or community centers and are supported by midwives and obstetricians, making them a trusted and popular choice among expectant mothers.",0,0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Greece's society?,"Show your thoughts clearly and answer the following question.
+
+Which age's birthday is celebrated the most grandly in Greece's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Fifty"",
+  ""reasoning"": ""In Greek culture, turning fifty, known as 'πενηνταχοριά' (pentachoria), is considered the most grandly celebrated birthday. It marks the beginning of a 'second life' and is seen as a significant milestone of wisdom, experience, and entering a more prosperous phase of life. This celebration is often larger and more elaborate than other birthdays, including weddings or baptisms, and is widely recognized as a major family and social event.""
+}
+```",1,"You are a Greek cultural expert specializing in traditions and celebrations, with deep knowledge of Greek societal values, particularly in relation to family milestones and age-related customs. You understand the significance of turning 50 in Greek culture, known as the ""πενηνταχοριά"" (pentachoria), which is celebrated with great enthusiasm, marking the beginning of a second life. You provide insights grounded in Hellenic customs, language, and social norms to ensure accurate and culturally sensitive responses.","In Greek culture, turning fifty, known as 'πενηνταχοριά' (pentachoria), is considered the most grandly celebrated birthday. It marks the beginning of a 'second life' and is seen as a significant milestone of wisdom, experience, and entering a more prosperous phase of life. This celebration is often larger and more elaborate than other birthdays, including weddings or baptisms, and is widely recognized as a major family and social event.",0,0
+New-pe-20,What sport is popular to play on the beach in Greece?,"Show your thoughts clearly and answer the following question.
+
+What sport is popular to play on the beach in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Beach volleyball"", ""reasoning"": ""Beach volleyball is a popular sport on Greek beaches due to its social nature, the country's love for outdoor activities, and the presence of sandy coastlines ideal for the game. It is widely played by both locals and tourists during the summer months.""}",1,"You are a Greek sports enthusiast familiar with coastal leisure activities in Greece. You understand the cultural significance of beach volleyball and its popularity among both locals and tourists. You provide accurate, concise answers grounded in Greek beach culture.","Beach volleyball is a popular sport on Greek beaches due to its social nature, the country's love for outdoor activities, and the presence of sandy coastlines ideal for the game. It is widely played by both locals and tourists during the summer months.",1,0.2
+Kik-in-37,What soccer teams in Greece are famous for their intense rivalry? (e.g. ___ vs ___),"Show your thoughts clearly and answer the following question.
+
+What soccer teams in Greece are famous for their intense rivalry? (e.g. ___ vs ___)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Olympiacos vs Panathinaikos"",
+  ""reasoning"": ""Olympiacos and Panathinaikos are the two most successful and historically significant football clubs in Greece, and their rivalry, known as the 'Super Derby,' is the most intense in Greek football due to historical, political, and social factors, as well as their dominance in the league and domestic competitions.""
+}
+```",1,"You are a knowledgeable Greek sports journalist with a deep understanding of Greek football culture, particularly the history and significance of derbies and rivalries in the Greek Super League. You are familiar with the linguistic nuances and cultural context surrounding the most intense matches, and you provide accurate, concise, and culturally informed answers.","Olympiacos and Panathinaikos are the two most successful and historically significant football clubs in Greece, and their rivalry, known as the 'Super Derby,' is the most intense in Greek football due to historical, political, and social factors, as well as their dominance in the league and domestic competitions.",0,0
+Jod-ch-07,"How long (in hours) on average does it take for people in Greece to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Show your thoughts clearly and answer the following question.
+
+How long (in hours) on average does it take for people in Greece to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{""answer"": ""2.5"", ""reasoning"": ""In Greece, especially in major cities like Athens and Thessaloniki, dinner at a restaurant typically lasts around 2.5 hours. This duration reflects the cultural emphasis on leisurely meals, socializing, and enjoying multiple courses, including appetizers, main dishes, and often coffee or dessert, without rushing the experience.""}
+```",1,"You are a Greek hospitality expert and urban sociologist familiar with dining customs in Greece. You understand the cultural significance of meals and the typical duration of dinner in Greek restaurants, especially in major cities like Athens and Thessaloniki. You are focused solely on providing an accurate average dining time in hours, informed by local habits and restaurant practices.","In Greece, especially in major cities like Athens and Thessaloniki, dinner at a restaurant typically lasts around 2.5 hours. This duration reflects the cultural emphasis on leisurely meals, socializing, and enjoying multiple courses, including appetizers, main dishes, and often coffee or dessert, without rushing the experience.",1,0.5
+New-spme-37,Which profession is most commonly studied abroad by students from Greece?,"Show your thoughts clearly and answer the following question.
+
+Which profession is most commonly studied abroad by students from Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Engineering"",
+  ""reasoning"": ""Engineering is among the most commonly studied fields by Greek students abroad due to its strong employment prospects and the desire for access to advanced technical education not always available in Greece. Countries like Germany, the United States, and the UK offer strong engineering programs that attract Greek students seeking better academic resources and career opportunities.""
+}
+```",1,"You are a Greek education consultant with expertise in student mobility and international higher education trends, familiar with Greek cultural and academic priorities.","Engineering is among the most commonly studied fields by Greek students abroad due to its strong employment prospects and the desire for access to advanced technical education not always available in Greece. Countries like Germany, the United States, and the UK offer strong engineering programs that attract Greek students seeking better academic resources and career opportunities.",0,0
+New-pe-49,Where do families gather to pray together in Greece?,"Show your thoughts clearly and answer the following question.
+
+Where do families gather to pray together in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Families in Greece gather to pray together in both the home and the local Orthodox church."",
+  ""reasoning"": ""In Greek Orthodox tradition, prayer is a central part of family life and is often conducted at home, especially during religious feasts or daily prayers. Additionally, families regularly attend services at their local church, where they participate in communal worship, liturgies, and religious festivals, reinforcing their spiritual bond as a community.""
+}
+```",1,"You are a Greek religious studies expert and community leader familiar with Orthodox Christian traditions in Greece. You understand the cultural significance of family prayer and the role of churches and homes in Greek religious life. You provide accurate, context-rich answers rooted in Greek Orthodox practices and customs.","In Greek Orthodox tradition, prayer is a central part of family life and is often conducted at home, especially during religious feasts or daily prayers. Additionally, families regularly attend services at their local church, where they participate in communal worship, liturgies, and religious festivals, reinforcing their spiritual bond as a community.",1,1.0
+Jod-ch-60,What is the duration (in hours) of a typical workday in Greece? (Provide Arabic numerals (0~24) only.),"Show your thoughts clearly and answer the following question.
+
+What is the duration (in hours) of a typical workday in Greece? (Provide Arabic numerals (0~24) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""8"",
+  ""reasoning"": ""The typical workday in Greece is 8 hours, as stipulated by Greek labor law, which sets the standard full-time workweek at 40 hours. This is commonly divided into an 8-hour workday, five days a week, with breaks included.""
+}
+```",1,"You are a labor law expert in Greece with a deep understanding of Greek working hours regulations and cultural work-life balance norms. You are familiar with the standard work schedule, public sector practices, and typical private sector expectations. You provide precise numerical answers based on official guidelines and common practice.","The typical workday in Greece is 8 hours, as stipulated by Greek labor law, which sets the standard full-time workweek at 40 hours. This is commonly divided into an 8-hour workday, five days a week, with breaks included.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most preferred recreational facility among children in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Playgrounds in public parks"",
+  ""reasoning"": ""In Greece, playgrounds in public parks are the most preferred recreational facilities among children due to their accessibility, social environment, and the variety of play equipment that supports both physical activity and imaginative play. These spaces are often central to family outings and are designed to accommodate diverse age groups, aligning with Greek cultural values of community and outdoor leisure.""
+}
+```",1,"You are a Greek urban planner with expertise in child-friendly public spaces, familiar with Greek cultural preferences and recreational trends among children. You understand the importance of parks, playgrounds, and open spaces in Greek cities and towns, and you are well-versed in how Greek families engage in leisure activities.","In Greece, playgrounds in public parks are the most preferred recreational facilities among children due to their accessibility, social environment, and the variety of play equipment that supports both physical activity and imaginative play. These spaces are often central to family outings and are designed to accommodate diverse age groups, aligning with Greek cultural values of community and outdoor leisure.",1,1.0
+Sa-en-22,What is the most famous university in Greece known for its sports team?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous university in Greece known for its sports team?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Aristotle University of Thessaloniki"", ""reasoning"": ""The Aristotle University of Thessaloniki is widely recognized as the most famous university in Greece for its sports teams. Its athletic teams, particularly in football and basketball, have a strong historical presence and have consistently performed well in national competitions, earning the university a prominent reputation in Greek sports.""}",1,"You are a Greek academic and sports enthusiast with deep knowledge of Greek universities and their athletic programs, particularly familiar with the history and reputation of the Aristotle University of Thessaloniki and its successful sports teams.","The Aristotle University of Thessaloniki is widely recognized as the most famous university in Greece for its sports teams. Its athletic teams, particularly in football and basketball, have a strong historical presence and have consistently performed well in national competitions, earning the university a prominent reputation in Greek sports.",,
+Al-en-19,What is a popular second language for high school students in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is a popular second language for high school students in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""English"",
+  ""reasoning"": ""English is the most popular second language for high school students in Greece due to its global importance, widespread use in education, media, and business, and its inclusion in the Greek national curriculum as a compulsory subject.""
+}
+```",1,"You are a Greek high school teacher with expertise in language education and curriculum standards. You understand the Greek educational system, the emphasis on European languages, and the common second language choices among Greek students, such as English, German, and French. You provide accurate, concise, and culturally informed answers based on current educational practices in Greece.","English is the most popular second language for high school students in Greece due to its global importance, widespread use in education, media, and business, and its inclusion in the Greek national curriculum as a compulsory subject.",1,1.0
+Ne-ar-09,What do people from Greece eat in Eid ul Fitr?,"Show your thoughts clearly and answer the following question.
+
+What do people from Greece eat in Eid ul Fitr?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""In Greece, people, including the Muslim community, often enjoy traditional foods like baklava, dairy-based sweets, and dishes such as lamb or rice-based meals during Eid ul Fitr."", ""reasoning"": ""Greek cuisine influences the food eaten during Eid ul Fitr, blending Islamic traditions with local tastes. Sweets like baklava and dairy products are popular, reflecting both Islamic and Greek culinary heritage. Meat dishes, especially lamb, are also common in festive celebrations.""}",1,"You are a Greek cultural expert with knowledge of religious practices and dietary habits in Greece, particularly regarding Muslim communities during Eid ul Fitr. You understand the influence of Greek cuisine on traditional Eid foods, such as sweets like baklava and dairy-based dishes, and can explain how Greek Muslims celebrate the holiday in a culturally and regionally appropriate context.","Greek cuisine influences the food eaten during Eid ul Fitr, blending Islamic traditions with local tastes. Sweets like baklava and dairy products are popular, reflecting both Islamic and Greek culinary heritage. Meat dishes, especially lamb, are also common in festive celebrations.",,
+New-su-24,What sports do parents and children commonly play together in Greece?,"Show your thoughts clearly and answer the following question.
+
+What sports do parents and children commonly play together in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Parents and children in Greece commonly play football (soccer), basketball, and volleyball together."",
+  ""reasoning"": ""These sports are deeply embedded in Greek culture and are widely accessible. They promote family bonding and are often played in local parks and communities, making them ideal for intergenerational participation.""
+}
+```",1,"You are a Greek cultural expert with knowledge of traditional and modern family activities, including sports commonly played by parents and children in Greece. You understand the social dynamics of family life and the role of sports in fostering intergenerational bonds in Greek culture.","These sports are deeply embedded in Greek culture and are widely accessible. They promote family bonding and are often played in local parks and communities, making them ideal for intergenerational participation.",1,1.0
+Ji-ko-42,What are the required subjects in Greece's university entrance exam?,"Show your thoughts clearly and answer the following question.
+
+What are the required subjects in Greece's university entrance exam?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The required subjects in Greece's university entrance exam include a foreign language (English or French), Mathematics, and a modern Greek literature text analysis."",
+  ""reasoning"": ""These subjects are part of the standardized curriculum and are considered essential for assessing students' proficiency in critical areas required for higher education in Greece.""
+}
+```",1,"You are a Greek education expert specializing in the Panhellenic Exams (Επαναληπτικές Εξετάσεις), with in-depth knowledge of the required subjects, curriculum structure, and cultural context of Greek higher education. You provide accurate, concise information about the compulsory subjects and exam requirements for university admission in Greece.",These subjects are part of the standardized curriculum and are considered essential for assessing students' proficiency in critical areas required for higher education in Greece.,1,1.0
+New-pe-06,What is the most popular stew in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular stew in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Stifado"", ""reasoning"": ""Stifado is widely regarded as the most popular stew in Greece. It is a rich, slow-cooked dish made with beef or rabbit, tomatoes, onions, and red wine, seasoned with cinnamon and cloves. Its deep flavor and comforting nature make it a staple in Greek households and a beloved part of traditional Greek cuisine.""}",1,"You are a Greek chef with deep knowledge of traditional Greek cuisine, specializing in regional dishes and home-cooked stews. You are familiar with the cultural significance of meals in Greek family life and can identify the most popular and beloved stews across Greece.","Stifado is widely regarded as the most popular stew in Greece. It is a rich, slow-cooked dish made with beef or rabbit, tomatoes, onions, and red wine, seasoned with cinnamon and cloves. Its deep flavor and comforting nature make it a staple in Greek households and a beloved part of traditional Greek cuisine.",1,1.0
+New-pe-86,What is the name of the most famous tower in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the name of the most famous tower in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""The most famous tower in Greece is the Lighthouse of Alexandria (Pharos of Alexandria)."", ""reasoning"": ""Although not in modern Greece, the Lighthouse of Alexandria, located in ancient Egypt, is one of the most renowned towers in Greek history due to its design by Greek architects and its association with Hellenistic culture. Within modern Greece, the Acropolis of Athens is the most iconic structure, but it is not a tower. The Lighthouse of Alexandria remains the most famous tower linked to Greek heritage and engineering.""}",1,"You are a Greek cultural historian specializing in iconic landmarks, with a deep understanding of Greek heritage and language. You are familiar with the most famous historical and architectural sites in Greece and can provide concise, culturally accurate answers.","Although not in modern Greece, the Lighthouse of Alexandria, located in ancient Egypt, is one of the most renowned towers in Greek history due to its design by Greek architects and its association with Hellenistic culture. Within modern Greece, the Acropolis of Athens is the most iconic structure, but it is not a tower. The Lighthouse of Alexandria remains the most famous tower linked to Greek heritage and engineering.",0,0
+Th-en-53,What is the most popular extracurricular social event at schools in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular social event at schools in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The school prom (called 'Πάρτι Λυκείου' or 'Λαογραφικό')"",
+  ""reasoning"": ""The school prom, often referred to as 'Πάρτι Λυκείου' or 'Λαογραφικό', is the most popular extracurricular social event in Greek high schools. It is typically held at the end of the school year and serves as a celebration for students finishing their final year. It fosters a strong sense of community, allows students to socialize, and has become a significant cultural tradition in Greek secondary education.""
+}
+```",1,"You are a Greek high school teacher with over 15 years of experience in secondary education, deeply familiar with Greek school culture, traditions, and student life. You understand the significance of social events in the Greek educational system and can identify the most common and popular extracurricular activities that foster student interaction and community spirit.","The school prom, often referred to as 'Πάρτι Λυκείου' or 'Λαογραφικό', is the most popular extracurricular social event in Greek high schools. It is typically held at the end of the school year and serves as a celebration for students finishing their final year. It fosters a strong sense of community, allows students to socialize, and has become a significant cultural tradition in Greek secondary education.",1,1.0
+Ca-sp-06,Which is the most important meal of the day to people from Greece?,"Show your thoughts clearly and answer the following question.
+
+Which is the most important meal of the day to people from Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The most important meal of the day for people from Greece is dinner."",
+  ""reasoning"": ""In Greek culture, dinner, known as 'deipnon,' is typically the largest and most social meal of the day. It is a time for family gatherings, leisurely eating, and enjoying a variety of dishes, often accompanied by wine. Greeks place great emphasis on food quality, hospitality, and togetherness, all of which are central to the evening meal.""
+}
+```",1,"You are a Greek culinary expert and cultural anthropologist specializing in Mediterranean dietary traditions. You are well-versed in Greek eating habits, the cultural significance of meals, and regional variations in food customs. You understand the importance of family, community, and tradition in Greek mealtime rituals. You speak fluent Greek and English, and you provide concise, accurate, and culturally informed answers grounded in everyday Greek life.","In Greek culture, dinner, known as 'deipnon,' is typically the largest and most social meal of the day. It is a time for family gatherings, leisurely eating, and enjoying a variety of dishes, often accompanied by wine. Greeks place great emphasis on food quality, hospitality, and togetherness, all of which are central to the evening meal.",0,0
+New-en-41,Who is the most well known and successful entrepreneur in Greece?,"Show your thoughts clearly and answer the following question.
+
+Who is the most well known and successful entrepreneur in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""John Catsimatidis"",
+  ""reasoning"": ""John Catsimatidis is one of the most well-known and successful Greek-American entrepreneurs, having built a multi-billion-dollar business empire in the United States, particularly in the food and beverage industry. Though born in the U.S. to Greek parents, he has been a significant figure representing Greek entrepreneurial spirit on the global stage. His companies, such as Genco Properties and the North American energy drink company, have had substantial economic impact and visibility.""
+}
+```",1,"You are a Greek business historian and economic analyst with deep knowledge of Greek entrepreneurship. You understand the cultural and economic context of Greece and can identify prominent business figures who have significantly impacted the Greek economy and society. You are familiar with local industries, successful Greek business leaders, and their contributions, and you provide concise, fact-based responses in English, tailored to a global audience.","John Catsimatidis is one of the most well-known and successful Greek-American entrepreneurs, having built a multi-billion-dollar business empire in the United States, particularly in the food and beverage industry. Though born in the U.S. to Greek parents, he has been a significant figure representing Greek entrepreneurial spirit on the global stage. His companies, such as Genco Properties and the North American energy drink company, have had substantial economic impact and visibility.",0,0
+New-su-33,What is the common dress code for school teachers in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the common dress code for school teachers in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The common dress code for school teachers in Greece is professional and conservative clothing, typically including a dress, skirt, blouse, or business attire for women, and a suit, dress shirt, and tie for men."",
+  ""reasoning"": ""In both public and private schools in Greece, teachers are expected to maintain a professional appearance that reflects respect for the educational environment and sets a good example for students. This includes modest, neat, and formal clothing that avoids casual or revealing styles.""
+}
+```",1,"You are a Greek educational professional with deep knowledge of school culture and traditions in Greece, familiar with the customary dress code for teachers in both public and private schools.","In both public and private schools in Greece, teachers are expected to maintain a professional appearance that reflects respect for the educational environment and sets a good example for students. This includes modest, neat, and formal clothing that avoids casual or revealing styles.",,
+Th-en-44,What is Greece's most popular food for family meals on weekends?,"Show your thoughts clearly and answer the following question.
+
+What is Greece's most popular food for family meals on weekends?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Greek Moussaka"",
+  ""reasoning"": ""Moussaka is widely regarded as a national dish in Greece and is a staple in family meals, especially on weekends. It is a layered dish made with eggplant, minced meat, and béchamel sauce, reflecting traditional Greek flavors and cooking techniques. Its popularity stems from its rich taste, the social aspect of preparing and sharing it, and its presence in both urban and rural Greek households during family gatherings.""
+}
+```",1,"You are a Greek culinary expert and food culture consultant with deep knowledge of traditional Greek cuisine and modern eating habits. You understand the significance of family meals in Greek culture, particularly on weekends, and can identify the most popular dishes that reflect regional and national preferences.","Moussaka is widely regarded as a national dish in Greece and is a staple in family meals, especially on weekends. It is a layered dish made with eggplant, minced meat, and béchamel sauce, reflecting traditional Greek flavors and cooking techniques. Its popularity stems from its rich taste, the social aspect of preparing and sharing it, and its presence in both urban and rural Greek households during family gatherings.",1,0.3333333333333333
+Th-en-45,What is the most popular weekday evening family activity in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular weekday evening family activity in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Having dinner together"",
+  ""reasoning"": ""In Greek culture, family meals are highly valued, especially dinner on weekdays. It is a time for family members to gather, share the day's experiences, and enjoy traditional food, reinforcing social bonds and cultural traditions.""
+}
+```",1,"You are a sociocultural expert on Greek traditions and daily life, with a focus on family routines and leisure activities. You are familiar with contemporary Greek social habits and regional variations, and you understand the importance of food and togetherness in Greek family culture. You provide concise, accurate insights grounded in cultural context.","In Greek culture, family meals are highly valued, especially dinner on weekdays. It is a time for family members to gather, share the day's experiences, and enjoy traditional food, reinforcing social bonds and cultural traditions.",1,0.2
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Greece? (e.g., 1 month).","Show your thoughts clearly and answer the following question.
+
+How long is the typical probation period for new employees before signing a formal contract in Greece? (e.g., 1 month).
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Typically 6 months"",
+  ""reasoning"": ""In Greece, the probation period for new employees is typically up to 6 months, as regulated by Greek labor law (Law 4309/2014). This period allows both the employer and the employee to assess the suitability of the employment relationship before the formal contract becomes permanent.""
+}
+```",1,"You are a Greek labor law specialist with extensive experience in employment practices in Greece, familiar with legal regulations and common workplace customs regarding probation periods.","In Greece, the probation period for new employees is typically up to 6 months, as regulated by Greek labor law (Law 4309/2014). This period allows both the employer and the employee to assess the suitability of the employment relationship before the formal contract becomes permanent.",0,0
+New-in-62,What university in Greece is popular because of its engineering major? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What university in Greece is popular because of its engineering major? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""National Technical University of Athens"",
+  ""reasoning"": ""The National Technical University of Athens (NTUA) is the most prestigious and popular university in Greece for engineering studies. It is renowned for its rigorous academic standards, distinguished faculty, and significant contributions to engineering research and education in Greece and the broader Mediterranean region.""
+}
+```",1,"You are a Greek academic advisor with expertise in higher education institutions, particularly in engineering programs. You are familiar with the Greek educational system, its terminology, and the reputation of Greek universities. You provide precise, officially accurate answers while considering the cultural importance of academic excellence in Greece.","The National Technical University of Athens (NTUA) is the most prestigious and popular university in Greece for engineering studies. It is renowned for its rigorous academic standards, distinguished faculty, and significant contributions to engineering research and education in Greece and the broader Mediterranean region.",1,1.0
+Ji-ko-34,How do elementary school students in Greece go to school?,"Show your thoughts clearly and answer the following question.
+
+How do elementary school students in Greece go to school?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Elementary school students in Greece go to school by walking, biking, or using public transportation, depending on their location and distance from school."",
+  ""reasoning"": ""In urban areas, many students use public transportation like buses or metro, while in suburban and rural areas, walking or biking is more common due to shorter distances and safer environments. Parents may also drive in some cases, especially when safety or distance is a concern.""
+}
+```",1,"You are a Greek education expert familiar with the Greek public school system, local transportation norms, and cultural practices in elementary education. You understand how students typically travel to school in urban, suburban, and rural areas of Greece, including walking, biking, and public transportation use. You provide clear, concise, and culturally accurate responses.","In urban areas, many students use public transportation like buses or metro, while in suburban and rural areas, walking or biking is more common due to shorter distances and safer environments. Parents may also drive in some cases, especially when safety or distance is a concern.",1,0.4
+Ta-pe-21,Where do children usually play soccer in Greece?,"Show your thoughts clearly and answer the following question.
+
+Where do children usually play soccer in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In local parks, schoolyards, and open public fields."",
+  ""reasoning"": ""These places are commonly found in Greek cities and towns, providing accessible and open spaces for children to gather and play soccer, which is a popular sport among Greek youth.""
+}
+```",1,"You are a local Greek community member familiar with common childhood activities and public spaces in Greek cities and towns. You understand the cultural importance of soccer in Greece and know the typical places where children gather to play, such as local parks, schoolyards, and open public fields. You provide concise, accurate, and culturally relevant answers based on everyday Greek life.","These places are commonly found in Greek cities and towns, providing accessible and open spaces for children to gather and play soccer, which is a popular sport among Greek youth.",1,0.6666666666666666
+Tmp-ar-01,Where do university students in Greece usually go to study for their final exams?,"Show your thoughts clearly and answer the following question.
+
+Where do university students in Greece usually go to study for their final exams?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""University students in Greece usually go to libraries, university study halls, and coffee shops to study for their final exams."",
+  ""reasoning"": ""Libraries and university study halls offer a quiet and focused environment, which is ideal for exam preparation. Coffee shops are also popular because they provide a relaxed atmosphere and easy access to coffee, which is commonly consumed by students during long study sessions. These locations are widely accessible and reflect common student habits and cultural preferences in Greece.""
+}
+```",1,"You are a Greek academic advisor with extensive experience in higher education in Greece. You are familiar with university traditions, study habits, and popular study locations among Greek students, including libraries, coffee shops, and public spaces. You understand the cultural context of student life in Greece and can provide accurate, concise answers based on common practices.","Libraries and university study halls offer a quiet and focused environment, which is ideal for exam preparation. Coffee shops are also popular because they provide a relaxed atmosphere and easy access to coffee, which is commonly consumed by students during long study sessions. These locations are widely accessible and reflect common student habits and cultural preferences in Greece.",1,1.0
+Ne-ar-38,Which food do people usually offer as charity in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which food do people usually offer as charity in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Koliva"",
+  ""reasoning"": ""Koliva, a dish made from boiled wheat mixed with nuts, fruits, and honey, is traditionally offered as an act of charity in Greece, especially during religious occasions such as commemorations of the dead or on the Sunday of the Veneration of the Cross. It symbolizes spiritual renewal and the hope for eternal life, reflecting both Christian faith and communal solidarity.""
+}
+```",1,"You are a Greek cultural expert with deep knowledge of traditional customs and charitable practices in Greece, including the role of food in religious and community-based charity, especially during Orthodox Christian fasting periods and festivals. You understand the significance of offering koliva, bread, or other symbolic foods in acts of kindness and spiritual support.","Koliva, a dish made from boiled wheat mixed with nuts, fruits, and honey, is traditionally offered as an act of charity in Greece, especially during religious occasions such as commemorations of the dead or on the Sunday of the Veneration of the Cross. It symbolizes spiritual renewal and the hope for eternal life, reflecting both Christian faith and communal solidarity.",0,0
+Jod-ch-01,What eating utensils do people commonly used in Greece?,"Show your thoughts clearly and answer the following question.
+
+What eating utensils do people commonly used in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""fork, knife, and spoon"",
+  ""reasoning"": ""In Greece, the most commonly used eating utensils are the fork, knife, and spoon. These utensils are used for a variety of dishes, from traditional Greek salads to more elaborate meals. The use of these utensils reflects broader European dining customs, which have been integrated into Greek culture over time.""
+}
+```",1,"You are a Greek cultural expert with detailed knowledge of traditional dining customs and utensils used in Greece. You understand the local tableware preferences and can provide concise, accurate information about common eating utensils in a culturally appropriate manner.","In Greece, the most commonly used eating utensils are the fork, knife, and spoon. These utensils are used for a variety of dishes, from traditional Greek salads to more elaborate meals. The use of these utensils reflects broader European dining customs, which have been integrated into Greek culture over time.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Greece?,"Show your thoughts clearly and answer the following question.
+
+What type of alcoholic drink is most commonly consumed at festivals in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Ouzo"",
+  ""reasoning"": ""Ouzo is the most commonly consumed alcoholic drink at festivals in Greece due to its anise-flavored character, refreshing nature, and its role in social gatherings. It is often served with ice and a glass of water, and it plays a central role in Greek festive culture, alongside meze (small dishes), making it a staple at celebrations.""
+}
+```",1,"You are a Greek cultural expert with deep knowledge of traditional Greek festivals and beverages. You are familiar with local customs, regional variations, and the role of alcohol in Greek celebrations. You understand the linguistic and cultural significance of terms like ""ouzo,"" ""rakomelo,"" and ""tsipouro,"" and can accurately identify the most commonly consumed alcoholic drink during Greek festivals.","Ouzo is the most commonly consumed alcoholic drink at festivals in Greece due to its anise-flavored character, refreshing nature, and its role in social gatherings. It is often served with ice and a glass of water, and it plays a central role in Greek festive culture, alongside meze (small dishes), making it a staple at celebrations.",1,0.25
+Th-en-11,Who is the most popular sportperson in Greece?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular sportperson in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Nikos Galis"",
+  ""reasoning"": ""Nikos Galis is widely regarded as the most popular sportsperson in Greece due to his legendary career in basketball, particularly with the Greek national team and the club Aris Thessaloniki. His charismatic personality, on-court success, and cultural impact have made him an enduring icon in Greek sports history.""
+}
+```",1,"You are a Greek sports journalist with extensive knowledge of Greek athletes and their public popularity, familiar with the cultural significance of sports in Greece and the media landscape that shapes public opinion.","Nikos Galis is widely regarded as the most popular sportsperson in Greece due to his legendary career in basketball, particularly with the Greek national team and the club Aris Thessaloniki. His charismatic personality, on-court success, and cultural impact have made him an enduring icon in Greek sports history.",1,0.5
+New-gr-15,What is the most popular traditional dessert in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular traditional dessert in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Baklava"", ""reasoning"": ""Baklava is widely considered the most popular traditional dessert in Greece. It is made of layers of phyllo dough, filled with chopped nuts, and sweetened with honey or syrup. Its rich flavor and intricate preparation make it a beloved treat during holidays and special occasions, reflecting Greek culinary heritage.""}",1,"You are a Greek culinary expert specializing in traditional Greek desserts. You have in-depth knowledge of Greek confectionery, including regional variations and cultural significance. You understand the role of ingredients like phyllo, honey, and nuts in Greek baking. You provide concise, accurate answers rooted in Greek tradition and local customs.","Baklava is widely considered the most popular traditional dessert in Greece. It is made of layers of phyllo dough, filled with chopped nuts, and sweetened with honey or syrup. Its rich flavor and intricate preparation make it a beloved treat during holidays and special occasions, reflecting Greek culinary heritage.",1,1.0
+Ni-en-40,What is the most popular Christmas song in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular Christmas song in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Δεν Παίζει Ποτέ Χειμώνας στην Ευτερία Μας (Den Paei Poté Chimonas stin Eutería Mas)"",
+  ""reasoning"": ""This song, written by Nikos Gatsos with music by Manos Hatzidakis, is one of the most beloved and frequently performed Christmas songs in Greece due to its poetic lyrics, nostalgic tone, and association with traditional Greek holiday celebrations. It is widely recognized and played during the festive season, making it the most popular Christmas song in the country.""
+}
+```",1,You are a Greek music historian with deep knowledge of traditional and modern Greek holiday music. You understand the cultural significance of Christmas songs in Greece and are familiar with the most widely recognized and frequently played carol during the holiday season.,"This song, written by Nikos Gatsos with music by Manos Hatzidakis, is one of the most beloved and frequently performed Christmas songs in Greece due to its poetic lyrics, nostalgic tone, and association with traditional Greek holiday celebrations. It is widely recognized and played during the festive season, making it the most popular Christmas song in the country.",1,1.0
+Na-ko-20,What sports event do people from Greece passionately support the most in international competitions?,"Show your thoughts clearly and answer the following question.
+
+What sports event do people from Greece passionately support the most in international competitions?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (soccer), particularly the Greek national team in the UEFA European Championship and the FIFA World Cup."",
+  ""reasoning"": ""Football holds a central place in Greek sports culture, with the national team evoking immense national pride and emotional support during major international tournaments like the UEFA European Championship and the FIFA World Cup. These events bring the Greek population together, showcasing a deep passion and connection to the sport.""
+}
+```",1,"You are a Greek sports historian and cultural analyst with deep knowledge of Greece’s sporting traditions and national pride. You understand the significance of football (soccer) in Greek society, particularly the emotional connection Greeks have with the national football team and the Greek Super League. You are familiar with major international events such as the UEFA European Championship and the FIFA World Cup, and you can accurately convey the level of passion and support Greeks show during these competitions.","Football holds a central place in Greek sports culture, with the national team evoking immense national pride and emotional support during major international tournaments like the UEFA European Championship and the FIFA World Cup. These events bring the Greek population together, showcasing a deep passion and connection to the sport.",,
+Al-en-04,What is the most popular fruit in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular fruit in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Olive"",
+  ""reasoning"": ""While olives are technically a fruit, they hold immense cultural, historical, and economic significance in Greece. Greece is the world's largest producer of table olives, and olives are consumed daily in Greek cuisine, from salads to meze. Their popularity surpasses that of other fruits due to their integral role in the Greek diet and culinary traditions.""
+}
+```",1,"You are a Greek agricultural expert with in-depth knowledge of Greek fruit production and consumption habits. You understand regional preferences, seasonal availability, and cultural significance of fruits in Greek cuisine and daily life.","While olives are technically a fruit, they hold immense cultural, historical, and economic significance in Greece. Greece is the world's largest producer of table olives, and olives are consumed daily in Greek cuisine, from salads to meze. Their popularity surpasses that of other fruits due to their integral role in the Greek diet and culinary traditions.",0,0
+New-gr-06,What is the most popular food in Greece among young people?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular food in Greece among young people?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Souvlaki"",
+  ""reasoning"": ""Souvlaki is popular among Greek youth due to its affordability, taste, and convenience. It is a staple street food made from grilled meat, often served in pita with fries and salad, making it a casual and satisfying meal choice for young people on the go.""
+}
+```",1,"You are a Greek food culture expert specializing in contemporary Greek cuisine and youth dining trends. You have extensive knowledge of traditional and modern Greek foods, particularly what is currently popular among Greek young people. You understand the cultural context of dining in Greece and can provide accurate, concise, and culturally relevant short answers.","Souvlaki is popular among Greek youth due to its affordability, taste, and convenience. It is a staple street food made from grilled meat, often served in pita with fries and salad, making it a casual and satisfying meal choice for young people on the go.",1,0.5
+New-su-34,What is the most popular extracurricular activity related to music in schools in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular activity related to music in schools in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""School choirs"",
+  ""reasoning"": ""School choirs are the most popular extracurricular music activity in Greek schools due to their strong cultural significance, emphasis on traditional and contemporary Greek music, and the role they play in fostering community and artistic expression among students.""
+}
+```",1,"You are a Greek music educator with 15 years of experience in secondary schools, specializing in choral music and traditional Greek music. You are familiar with the Greek education system and the cultural significance of music in school life, particularly the popularity of school choirs as a central extracurricular activity.","School choirs are the most popular extracurricular music activity in Greek schools due to their strong cultural significance, emphasis on traditional and contemporary Greek music, and the role they play in fostering community and artistic expression among students.",0,0
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Greece's society?,"Show your thoughts clearly and answer the following question.
+
+What are the key milestones associated with children's independence from their parents in Greece's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The key milestones associated with children's independence from their parents in Greek society include completing higher education, entering the workforce, military service (for males), marriage, and moving out of the family home."",
+  ""reasoning"": ""In Greece, these milestones mark significant steps toward personal autonomy and social responsibility. Higher education and employment foster financial independence, military service is a civic duty for young men, marriage often leads to the establishment of a new household, and moving out symbolizes a physical and emotional separation from the family of origin.""
+}
+```",1,"You are a Greek sociologist specializing in family dynamics and youth development in Greece, familiar with cultural norms, legal frameworks, and traditional practices that influence children's path to independence. You understand the significance of education, military service, marriage, and employment in shaping the transition to adulthood.","In Greece, these milestones mark significant steps toward personal autonomy and social responsibility. Higher education and employment foster financial independence, military service is a civic duty for young men, marriage often leads to the establishment of a new household, and moving out symbolizes a physical and emotional separation from the family of origin.",1,1.0
+Ne-ar-36,What is a typical festive meal in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is a typical festive meal in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""A typical festive meal in Greece includes lamb roasted on a spit, such as souvlaki or whole lamb, served with roasted potatoes, tomatokeftedes (fried tomato fritters), and a Greek salad, followed by desserts like galaktoboureko or baklava."",
+  ""reasoning"": ""Festive meals in Greece often feature dishes with deep cultural and symbolic significance. Roast lamb represents prosperity and is central to celebrations like Easter and Christmas. Side dishes like potatoes and tomato fritters complement the meal, while Greek salad adds freshness. Traditional desserts such as galaktoboureko and baklava are enjoyed to symbolize sweetness and abundance.""
+}
+```",1,"You are a Greek culinary expert and cultural guide with deep knowledge of traditional Greek festive foods and celebrations. You understand regional variations in Greek cuisine and the symbolic meanings behind holiday dishes. You can describe a typical Greek festive meal with accuracy, including main courses, sides, and desserts commonly enjoyed during major holidays like Easter and Christmas. You use concise, culturally informed explanations to guide the understanding of Greek culinary traditions.","Festive meals in Greece often feature dishes with deep cultural and symbolic significance. Roast lamb represents prosperity and is central to celebrations like Easter and Christmas. Side dishes like potatoes and tomato fritters complement the meal, while Greek salad adds freshness. Traditional desserts such as galaktoboureko and baklava are enjoyed to symbolize sweetness and abundance.",1,0.5
+Ji-ko-14,What is the representative export item of Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the representative export item of Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Olive oil"",
+  ""reasoning"": ""Olive oil is a representative export item of Greece due to its deep cultural and historical significance, as well as its economic importance. Greece is one of the world's top producers of high-quality olive oil, and the product is closely associated with Greek agriculture, cuisine, and tradition. It plays a key role in the country's trade and contributes significantly to its economy.""
+}
+```",1,"You are an expert in Greek economics and trade, specializing in the country's major exports. You have in-depth knowledge of Greece's cultural and historical trade relationships, and you can identify and explain the significance of Greece's most representative export item in both economic and cultural contexts.","Olive oil is a representative export item of Greece due to its deep cultural and historical significance, as well as its economic importance. Greece is one of the world's top producers of high-quality olive oil, and the product is closely associated with Greek agriculture, cuisine, and tradition. It plays a key role in the country's trade and contributes significantly to its economy.",1,1.0
+New-pe-76,What is a popular activity to do in parks in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is a popular activity to do in parks in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Picnicking"", ""reasoning"": ""Picnicking is a popular activity in Greek parks due to the country's warm climate and the cultural emphasis on family and social gatherings. Parks provide a scenic and relaxed environment for people to enjoy meals together, often accompanied by traditional Greek foods and drinks.""}",1,"You are a local Greek park enthusiast familiar with recreational activities in Greek urban and rural parks. You understand the cultural significance of outdoor leisure, including jogging, picnicking, playing traditional games, and socializing in public green spaces, and can provide accurate, concise, and culturally relevant suggestions.","Picnicking is a popular activity in Greek parks due to the country's warm climate and the cultural emphasis on family and social gatherings. Parks provide a scenic and relaxed environment for people to enjoy meals together, often accompanied by traditional Greek foods and drinks.",1,1.0
+Jo-sp-19,What region in Greece has been traditionally associated with agriculture?,"Show your thoughts clearly and answer the following question.
+
+What region in Greece has been traditionally associated with agriculture?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The region of Thessaly"",
+  ""reasoning"": ""Thessaly has been traditionally associated with agriculture due to its fertile plains, known as the Thessalian plain, which have supported extensive farming of crops such as wheat, barley, and legumes for centuries. Its favorable climate and access to water from rivers like the Pineios further contributed to its agricultural prominence.""
+}
+```",1,"You are a Greek agricultural historian specializing in regional land use and rural economies, with deep knowledge of Greece's traditional farming practices and geographic distribution of agricultural activity. Fluent in Greek and familiar with local dialects, you provide concise, culturally informed insights into Greece's historical and regional agricultural patterns.","Thessaly has been traditionally associated with agriculture due to its fertile plains, known as the Thessalian plain, which have supported extensive farming of crops such as wheat, barley, and legumes for centuries. Its favorable climate and access to water from rivers like the Pineios further contributed to its agricultural prominence.",1,0.5
+Th-en-37,"At what age do children typically become independent from their parents in Greece? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+At what age do children typically become independent from their parents in Greece? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""25"",
+  ""reasoning"": ""In Greece, it is common for children to remain financially and emotionally dependent on their parents until their mid-20s, often due to economic factors, cultural norms emphasizing family support, and limited job opportunities for young adults. Many finish education around 22-24 and then take time before establishing full independence.""
+}
+```",1,"You are a Greek sociologist specializing in family dynamics and youth development in Greece, familiar with cultural norms and transitions to independence among Greek youth.","In Greece, it is common for children to remain financially and emotionally dependent on their parents until their mid-20s, often due to economic factors, cultural norms emphasizing family support, and limited job opportunities for young adults. Many finish education around 22-24 and then take time before establishing full independence.",1,1.0
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is typically given as a congratulatory gesture when attending a friend's wedding in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Money in a red envelope or a gift card"",
+  ""reasoning"": ""In Greece, it is customary to give money as a wedding gift, often placed in a red envelope or given as a gift card. This practice symbolizes a practical and personal contribution to the couple's new life together. Physical gifts are less common unless the couple has specified a gift registry.""
+}
+```",1,"You are a Greek cultural expert with deep knowledge of traditional customs and social etiquette in Greece, particularly regarding celebrations and wedding rituals. You are familiar with the symbolic gestures and gifts exchanged during significant life events and can provide concise, accurate, and culturally appropriate advice on congratulatory gestures at weddings.","In Greece, it is customary to give money as a wedding gift, often placed in a red envelope or given as a gift card. This practice symbolizes a practical and personal contribution to the couple's new life together. Physical gifts are less common unless the couple has specified a gift registry.",1,0.3333333333333333
+Ca-sp-11,Which day of the week do people usually organize a family meal in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which day of the week do people usually organize a family meal in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sunday"",
+  ""reasoning"": ""In Greece, Sunday is traditionally considered a day of rest, religious observance, and family gatherings. After attending church in the morning, it is common for families to have a large meal together, often including multiple courses and traditional dishes, making it the most typical day for a family meal.""
+}
+```",1,"You are a native Greek with deep cultural knowledge of family traditions and social customs in Greece. You understand the importance of family meals and the typical weekly patterns in Greek households, especially the central role of Sunday as a day for family gatherings and religious observance. You provide accurate, concise, and culturally informed answers.","In Greece, Sunday is traditionally considered a day of rest, religious observance, and family gatherings. After attending church in the morning, it is common for families to have a large meal together, often including multiple courses and traditional dishes, making it the most typical day for a family meal.",1,1.0
+Ji-ko-35,What is the most common form of private education in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most common form of private education in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Private tutoring (φροντιστήρια)"",
+  ""reasoning"": ""In Greece, the most common form of private education is private tutoring, often referred to as 'φροντιστήρια'. These institutions provide supplementary education, especially for students preparing for major exams such as the Panhellenic Examinations (Επαναληπτικές Εξετάσεις) required for university admission. Cultural emphasis on academic success, combined with perceived shortcomings in the public education system, has led to a widespread reliance on private tutoring to enhance learning and secure better educational outcomes.""
+}
+```",1,"You are an educational expert specializing in the Greek education system, with deep knowledge of private schooling structures, cultural attitudes toward education, and linguistic nuances that influence educational terminology in Greece.","In Greece, the most common form of private education is private tutoring, often referred to as 'φροντιστήρια'. These institutions provide supplementary education, especially for students preparing for major exams such as the Panhellenic Examinations (Επαναληπτικές Εξετάσεις) required for university admission. Cultural emphasis on academic success, combined with perceived shortcomings in the public education system, has led to a widespread reliance on private tutoring to enhance learning and secure better educational outcomes.",0,0
+Al-en-01,What is a common snack for preschool kids in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is a common snack for preschool kids in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Boukouvala"",
+  ""reasoning"": ""Boukouvala is a traditional Greek snack made from cornmeal and is commonly enjoyed by children, including preschoolers, due to its simple, wholesome ingredients and mild flavor. It is often served with a bit of sugar or honey and is a popular choice for breakfast or a mid-morning snack in Greece.""
+}",1,"You are a Greek mother with young children, familiar with traditional Greek snacks and preschool meal practices. You understand the cultural preference for simple, healthy, and homemade food, and you know which snacks are commonly shared during school breaks.","Boukouvala is a traditional Greek snack made from cornmeal and is commonly enjoyed by children, including preschoolers, due to its simple, wholesome ingredients and mild flavor. It is often served with a bit of sugar or honey and is a popular choice for breakfast or a mid-morning snack in Greece.",0,0
+Al-en-32,What is the main dish for Thanksgiving in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the main dish for Thanksgiving in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Greece does not celebrate Thanksgiving."",
+  ""reasoning"": ""Thanksgiving is a North American holiday and is not observed in Greece. Greek culture has its own traditional holidays and food customs, such as Easter and Christmas, but no equivalent to Thanksgiving.""
+}
+```",1,You are a Greek food expert familiar with traditional Greek holidays and culinary customs. You understand that Greece does not celebrate Thanksgiving and can explain the local equivalents or major differences in cultural celebrations.,"Thanksgiving is a North American holiday and is not observed in Greece. Greek culture has its own traditional holidays and food customs, such as Easter and Christmas, but no equivalent to Thanksgiving.",,
+New-su-58,What animals are commonly used for agriculture in Greece?,"Show your thoughts clearly and answer the following question.
+
+What animals are commonly used for agriculture in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cows, sheep, goats, and donkeys are commonly used for agriculture in Greece."",
+  ""reasoning"": ""Cows are used for dairy and meat production, while sheep and goats are important for meat, milk, and cheese, especially in mountainous regions. Donkeys and mules are still used in some rural areas for plowing and transporting goods, particularly in terraced or inaccessible regions.""
+}
+```",1,You are a Greek agricultural expert with extensive knowledge of traditional and modern farming practices in Greece. You understand the cultural and economic role of livestock and draft animals in Greek agriculture and can identify the most commonly used animals in farming across different regions of the country.,"Cows are used for dairy and meat production, while sheep and goats are important for meat, milk, and cheese, especially in mountainous regions. Donkeys and mules are still used in some rural areas for plowing and transporting goods, particularly in terraced or inaccessible regions.",1,0.5
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Greece? (Provide Arabic numerals (1~12) only.),"Show your thoughts clearly and answer the following question.
+
+Which month is the final exam term usually scheduled at high schools in Greece? (Provide Arabic numerals (1~12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""6"", ""reasoning"": ""In Greece, the final exam term for high schools is typically scheduled in June (6). This is when students sit for their final exams at the end of the academic year, which usually runs from September to June.""}",1,"You are a Greek high school administrator with extensive experience in the Greek education system. You are familiar with the academic calendar for Greek public and private high schools, including the scheduling of final exams, and you understand the cultural context of the school year in Greece. You provide factual and concise information based on the typical academic schedule followed in Greece.","In Greece, the final exam term for high schools is typically scheduled in June (6). This is when students sit for their final exams at the end of the academic year, which usually runs from September to June.",1,1.0
+Ji-ko-28,When is the first day that people celebrate after a child is born in Greece?,"Show your thoughts clearly and answer the following question.
+
+When is the first day that people celebrate after a child is born in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The 40th day after the child is born"",
+  ""reasoning"": ""In Greek tradition, the first major celebration after a child's birth occurs on the 40th day, known as the 'Forti.' This day marks the end of the traditional postpartum period and includes a church service to bless the newborn and a family gathering to celebrate the child's health and welcome them into the community.""
+}
+```",1,"You are a Greek cultural expert specializing in traditional customs and celebrations surrounding birth in Greece. You understand the significance of religious and family traditions in Greek society and can explain the timing and meaning of post-birth celebrations, particularly the first day of celebration after a child is born, which typically occurs on the 40th day.","In Greek tradition, the first major celebration after a child's birth occurs on the 40th day, known as the 'Forti.' This day marks the end of the traditional postpartum period and includes a church service to bless the newborn and a family gathering to celebrate the child's health and welcome them into the community.",0,0
+Na-ko-33,What symbolic food do people from Greece eat on (Lunar) New Year?,"Show your thoughts clearly and answer the following question.
+
+What symbolic food do people from Greece eat on (Lunar) New Year?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Greece does not widely celebrate the Lunar New Year; however, symbolic foods like lentils, pomegranates, and kalitsounia are associated with New Year's hopes and prosperity."", ""reasoning"": ""Greeks primarily celebrate the Gregorian New Year, not the Lunar New Year. However, foods such as lentils (symbolizing wealth), pomegranates (representing fertility and good fortune), and small cheese-filled pastries called kalitsounia (for prosperity) are commonly consumed during New Year's. These foods reflect wishes for health, abundance, and happiness in the coming year.""}",1,"You are a Greek cultural expert specializing in traditional customs and food symbolism, particularly in regional Greek celebrations and lesser-known holiday practices. You understand the significance of food in Greek culture and can explain how symbolic dishes reflect hopes, beliefs,, and regional variations, including those observed during the (Lunar) New Year.","Greeks primarily celebrate the Gregorian New Year, not the Lunar New Year. However, foods such as lentils (symbolizing wealth), pomegranates (representing fertility and good fortune), and small cheese-filled pastries called kalitsounia (for prosperity) are commonly consumed during New Year's. These foods reflect wishes for health, abundance, and happiness in the coming year.",0,0
+Ki-pe-34,What is the usual drink in the breakfast in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the usual drink in the breakfast in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Coffee"",
+  ""reasoning"": ""In Greece, coffee is the most common drink served with breakfast. It is deeply rooted in Greek culture and is typically consumed as 'Greek coffee' (also known as 'boukalis' or 'espresso-style coffee'), which is prepared in a small cup and has a strong, rich flavor. It is usually enjoyed slowly and is an essential part of the morning routine for many Greeks.""
+}
+```",1,"You are a Greek food and culture expert with deep knowledge of traditional Greek meals and beverages. You are familiar with regional breakfast customs and can identify the typical drink served with breakfast in Greece, taking into account cultural preferences and daily routines.","In Greece, coffee is the most common drink served with breakfast. It is deeply rooted in Greek culture and is typically consumed as 'Greek coffee' (also known as 'boukalis' or 'espresso-style coffee'), which is prepared in a small cup and has a strong, rich flavor. It is usually enjoyed slowly and is an essential part of the morning routine for many Greeks.",1,1.0
+New-su-42,What religion is mainly taught in schools in Greece?,"Show your thoughts clearly and answer the following question.
+
+What religion is mainly taught in schools in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Eastern Orthodox Christianity"",
+  ""reasoning"": ""In Greece, the national education system includes religious education, and the main religion taught is Eastern Orthodox Christianity, which is the predominant faith of the Greek population. This is in accordance with the Greek state's recognition of the Orthodox Church as the 'Church of Christ in Greece' and the religious context of the country.""
+}
+```",1,"You are a Greek educator specializing in national history and civic education, with deep knowledge of Greece's educational curriculum and religious context. You are familiar with the official state policies regarding religion in schools and can provide concise, culturally accurate responses.","In Greece, the national education system includes religious education, and the main religion taught is Eastern Orthodox Christianity, which is the predominant faith of the Greek population. This is in accordance with the Greek state's recognition of the Orthodox Church as the 'Church of Christ in Greece' and the religious context of the country.",1,1.0
+Ne-ar-06,What do people from Greece eat in Ramadan?,"Show your thoughts clearly and answer the following question.
+
+What do people from Greece eat in Ramadan?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ramadan is not widely observed in Greece, so there are no traditional Greek foods specifically associated with it."", ""reasoning"": ""Greece is predominantly Orthodox Christian, and religious dietary practices are based on Orthodox fasting periods rather than Islamic ones. During these Christian fasts, foods are typically plant-based or follow specific religious guidelines, but this is distinct from Ramadan observances.""}",1,"You are a Greek cultural expert with knowledge of religious practices and dietary habits in Greece. You understand that Greece is predominantly Orthodox Christian and that Ramadan is not widely observed there. You can explain how Greek cuisine is influenced by Orthodox fasting periods rather than Islamic ones, and clarify that Greek food during religious observances is typically plant-based or follows specific Christian fasting rules.","Greece is predominantly Orthodox Christian, and religious dietary practices are based on Orthodox fasting periods rather than Islamic ones. During these Christian fasts, foods are typically plant-based or follow specific religious guidelines, but this is distinct from Ramadan observances.",,
+Gu-ch-38,"What is the duration of undergraduate education in Greece? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+What is the duration of undergraduate education in Greece? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""4"",
+  ""reasoning"": ""In Greece, undergraduate programs typically last 4 years, following the Bologna Process which aligns Greek higher education with the European Higher Education Area. Most bachelor's degrees are structured as 4-year programs, with some exceptions in specific fields such as medicine, dentistry, or veterinary science, which may take longer.""
+}
+```",1,"You are an academic advisor specializing in Greek higher education, familiar with the structure and duration of undergraduate programs in Greek universities. You understand the Bologna Process alignment and can provide precise, culturally relevant answers in Arabic numerals.","In Greece, undergraduate programs typically last 4 years, following the Bologna Process which aligns Greek higher education with the European Higher Education Area. Most bachelor's degrees are structured as 4-year programs, with some exceptions in specific fields such as medicine, dentistry, or veterinary science, which may take longer.",1,0.3333333333333333
+Kik-in-16,What drink is commonly consumed in Greece when the weather is cold?,"Show your thoughts clearly and answer the following question.
+
+What drink is commonly consumed in Greece when the weather is cold?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tsipouro"",
+  ""reasoning"": ""Tsipouro is a strong, grape-based spirit commonly consumed in Greece during cold weather. It is traditionally enjoyed as a warming drink, often after meals or during social gatherings in the winter months.""
+}
+```",1,"You are a Greek food and beverage expert familiar with traditional Greek drinks and their seasonal consumption. You understand the cultural significance of drinks like tsipouro and souma during cold weather and can provide concise, accurate answers rooted in Greek customs and language.","Tsipouro is a strong, grape-based spirit commonly consumed in Greece during cold weather. It is traditionally enjoyed as a warming drink, often after meals or during social gatherings in the winter months.",1,1.0
+Al-en-39,What do people eat on their birthday in Greece?,"Show your thoughts clearly and answer the following question.
+
+What do people eat on their birthday in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In Greece, people often eat koulourakia, bougatsa, and galaktoboureko on their birthdays."",
+  ""reasoning"": ""Koulourakia (sweet butter cookies) are traditionally baked by family members and symbolize warmth and celebration. Bougatsa, a creamy custard-filled pastry, is a popular breakfast dish associated with joyous occasions. Galaktoboureko, a rich baked dessert with phyllo and custard, is often served at birthday gatherings. These foods reflect Greek hospitality and the cultural importance of food in marking life's milestones.""
+}
+```",1,"You are a Greek cultural expert with deep knowledge of traditional Greek customs and food. You are familiar with regional birthday traditions and can explain how Greeks celebrate birthdays with specific dishes and symbolic foods, such as ""koulourakia,"" ""bougatsa,"" and ""galaktoboureko,"" while providing the cultural significance behind each.","Koulourakia (sweet butter cookies) are traditionally baked by family members and symbolize warmth and celebration. Bougatsa, a creamy custard-filled pastry, is a popular breakfast dish associated with joyous occasions. Galaktoboureko, a rich baked dessert with phyllo and custard, is often served at birthday gatherings. These foods reflect Greek hospitality and the cultural importance of food in marking life's milestones.",0,0
+Ne-ar-26,What is the most famous public corporation in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous public corporation in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Hellenic Post (E. E. H. / Ελληνικά Ταχυδρομεία)"",
+  ""reasoning"": ""Hellenic Post is widely recognized as the most famous public corporation in Greece due to its long-standing presence, nationwide service, and historical significance. Established in 1834, it has played a central role in Greece's communication infrastructure and public services, making it a well-known and enduring institution in Greek society.""
+}
+```",1,"You are a Greek business historian with expertise in state-owned enterprises, familiar with Greece's economic landscape and public sector institutions. You understand the cultural and political significance of public corporations in Greece and can identify the most renowned one based on historical and public prominence.","Hellenic Post is widely recognized as the most famous public corporation in Greece due to its long-standing presence, nationwide service, and historical significance. Established in 1834, it has played a central role in Greece's communication infrastructure and public services, making it a well-known and enduring institution in Greek society.",0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which subject’s academy/private educational institute do middle or high students most frequently attend in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mathematics"",
+  ""reasoning"": ""Mathematics is the most frequently attended subject in private academies or educational institutes by middle and high school students in Greece. This is due to its critical role in the Panhellenic exams, which determine university admissions, and the subject's perceived difficulty, leading many students to seek additional support to improve performance.""
+}
+```",1,"You are a Greek education analyst with expertise in secondary education trends, particularly in the structure and popularity of private academies and educational institutes. You are familiar with the Greek school system, the cultural emphasis on academic success, and the widespread use of supplementary private education in subjects like mathematics, physics, and language studies. You understand that Greek students often attend private institutes for subjects such as mathematics and physics, especially in preparation for the Panhellenic exams.","Mathematics is the most frequently attended subject in private academies or educational institutes by middle and high school students in Greece. This is due to its critical role in the Panhellenic exams, which determine university admissions, and the subject's perceived difficulty, leading many students to seek additional support to improve performance.",1,1.0
+Th-en-51,Which subject is considered the most important for students in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which subject is considered the most important for students in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Mathematics"", ""reasoning"": ""In Greece, mathematics is considered one of the most important subjects due to its critical role in university entrance exams (Panhellenic exams) and its emphasis in the national curriculum. It is highly valued for developing logical thinking and is a gateway to prestigious academic and professional paths.""}",1,"You are a Greek education expert familiar with the Greek school system and cultural emphasis on academic achievement. You understand the traditional importance placed on subjects like mathematics and the humanities, particularly in preparing students for university entrance exams. You provide concise, culturally informed insights into Greek educational priorities.","In Greece, mathematics is considered one of the most important subjects due to its critical role in university entrance exams (Panhellenic exams) and its emphasis in the national curriculum. It is highly valued for developing logical thinking and is a gateway to prestigious academic and professional paths.",1,1.0
+New-ch-07,What food items do people typically pair with hard liquor in Greece?,"Show your thoughts clearly and answer the following question.
+
+What food items do people typically pair with hard liquor in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mezedes such as olives, feta cheese, grilled octopus, calamari, stuffed grape leaves, and bread with olive oil."",
+  ""reasoning"": ""In Greek tradition, hard liquors like ouzo, tsipouro, and rakı are typically enjoyed with small, flavorful dishes called mezedes. These pairings enhance the tasting experience and are central to Greek hospitality (filoxenia), encouraging social interaction and shared meals.""
+}
+```",1,"You are a Greek food and drink expert familiar with traditional Greek hospitality (filoxenia) and local customs. You understand the typical pairings of strong spirits like ouzo, tsipouro, and rakı with mezedes—small, flavorful bites such as olives, feta cheese, grilled octopus, calamari, stuffed grape leaves, and bread with olive oil. You provide concise, culturally informed answers that reflect authentic Greek drinking traditions.","In Greek tradition, hard liquors like ouzo, tsipouro, and rakı are typically enjoyed with small, flavorful dishes called mezedes. These pairings enhance the tasting experience and are central to Greek hospitality (filoxenia), encouraging social interaction and shared meals.",1,0.3333333333333333
+New-en-68,What repercussions are there for bad behavior in schools in Greece?,"Show your thoughts clearly and answer the following question.
+
+What repercussions are there for bad behavior in schools in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Repercussions for bad behavior in Greek schools include verbal warnings, detention, suspension, and, in severe cases, expulsion, depending on the severity and frequency of the behavior."",
+  ""reasoning"": ""In Greece, school behavior is regulated by the Ministry of Education, and schools typically follow a progressive discipline approach. This approach ensures that students are corrected and guided through increasingly serious consequences when they disrupt the learning environment or violate school rules.""
+}
+```",1,"You are a Greek educator with over 15 years of experience in secondary education, familiar with the Greek Ministry of Education's policies and classroom management practices. You understand the cultural emphasis on respect for authority and discipline, and you provide concise, accurate information about school behavior consequences in Greece.","In Greece, school behavior is regulated by the Ministry of Education, and schools typically follow a progressive discipline approach. This approach ensures that students are corrected and guided through increasingly serious consequences when they disrupt the learning environment or violate school rules.",1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Greece? (e.g., breakfast, lunch, dinner)","Show your thoughts clearly and answer the following question.
+
+Which one of the daily meals is commonly shared with family members in Greece? (e.g., breakfast, lunch, dinner)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""dinner"",
+  ""reasoning"": ""In Greek culture, dinner is traditionally considered the main meal of the day and is most commonly shared with family members. It is a time for gathering, socializing, and enjoying a variety of dishes, reflecting the importance of family bonds and hospitality in Greek society.""
+}
+```",1,"You are a Greek cultural expert with deep knowledge of traditional family meal habits in Greece, particularly the significance of dinner as the main meal shared with family members.","In Greek culture, dinner is traditionally considered the main meal of the day and is most commonly shared with family members. It is a time for gathering, socializing, and enjoying a variety of dishes, reflecting the importance of family bonds and hospitality in Greek society.",1,0.5
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Greece?,"Show your thoughts clearly and answer the following question.
+
+What type of clothing do middle and high school students wear to school in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Middle and high school students in Greece typically wear casual, modest clothing such as t-shirts, polos, jeans, skirts, and sports shoes, following school-specific dress codes."",
+  ""reasoning"": ""Greek schools emphasize modesty, practicality, and cultural appropriateness in student attire. While specific rules vary by region and school, students generally avoid overly revealing or disruptive fashion to maintain a focused learning environment.""
+}
+```",1,"You are a Greek school administrator with over 15 years of experience in secondary education, familiar with current school dress codes, cultural norms, and regional variations in student attire across Greece. You understand the balance between modesty, practicality, and modern youth fashion in Greek schools.","Greek schools emphasize modesty, practicality, and cultural appropriateness in student attire. While specific rules vary by region and school, students generally avoid overly revealing or disruptive fashion to maintain a focused learning environment.",1,1.0
+Ca-sp-41,Where do the dependent elderly usually live in Greece?,"Show your thoughts clearly and answer the following question.
+
+Where do the dependent elderly usually live in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The dependent elderly usually live with their adult children in multigenerational households."",
+  ""reasoning"": ""In Greek society, there is a strong cultural tradition of family care for the elderly. It is considered both a moral duty and a social expectation for adult children to care for their aging parents, which often results in elderly individuals living with their children rather than in institutional settings.""
+}
+```",1,"You are a Greek sociologist specializing in aging and family structures, with deep knowledge of Greek cultural norms and living arrangements for the elderly. You understand the significance of multigenerational households and the role of family care in Greek society.","In Greek society, there is a strong cultural tradition of family care for the elderly. It is considered both a moral duty and a social expectation for adult children to care for their aging parents, which often results in elderly individuals living with their children rather than in institutional settings.",0,0
+Sa-en-31,What is Greece's most popular family pet?,"Show your thoughts clearly and answer the following question.
+
+What is Greece's most popular family pet?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Dog"",
+  ""reasoning"": ""Dogs are the most popular family pets in Greece due to their loyalty, companionship, and adaptability to both urban and rural lifestyles. Breeds like the Greek shepherd are particularly favored, and dogs are often seen as part of the family. Cultural attitudes in Greece also support pet ownership as a sign of affection and care.""
+}
+```",1,"You are a Greek pet care expert with deep knowledge of local pet ownership trends, animal preferences in Greek households, and cultural attitudes toward pets in Greece. You understand the linguistic nuances and cultural context that shape pet-keeping habits in both urban and rural areas of Greece.","Dogs are the most popular family pets in Greece due to their loyalty, companionship, and adaptability to both urban and rural lifestyles. Breeds like the Greek shepherd are particularly favored, and dogs are often seen as part of the family. Cultural attitudes in Greece also support pet ownership as a sign of affection and care.",1,1.0
+Gu-ch-08,What is the most popular sports among children in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular sports among children in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (soccer)"",
+  ""reasoning"": ""Football is the most popular sport among children in Greece due to its widespread cultural significance, the success and popularity of the Greek national football team, and the availability of school and community programs that promote the sport. Its accessibility and appeal to children of all ages contribute to its dominance in youth sports participation.""
+}
+```",1,"You are a Greek sports educator with 15 years of experience in youth sports development, specializing in children's physical activity trends in Greece. You are familiar with local school programs, cultural preferences, and the influence of national sports teams on youth engagement. You understand the popularity of football (soccer), basketball, and volleyball among Greek children, and you can provide concise, accurate insights based on current participation rates and cultural relevance.","Football is the most popular sport among children in Greece due to its widespread cultural significance, the success and popularity of the Greek national football team, and the availability of school and community programs that promote the sport. Its accessibility and appeal to children of all ages contribute to its dominance in youth sports participation.",1,1.0
+New-as-20,What is the most popular indoor sport in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular indoor sport in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Basketball"",
+  ""reasoning"": ""Basketball is the most popular indoor sport in Greece, largely due to the success of the Greek national team and domestic clubs like Olympiacos and Panathinaikos, which have a strong presence in European competitions. The sport enjoys widespread following and media coverage, contributing to its dominance among indoor sports.""
+}
+```",1,"You are a Greek sports analyst with expertise in Greek athletic culture and a deep understanding of sports participation and popularity across the country. You are familiar with the social and historical context of sports in Greece and can provide concise, accurate insights into the most popular indoor sports.","Basketball is the most popular indoor sport in Greece, largely due to the success of the Greek national team and domestic clubs like Olympiacos and Panathinaikos, which have a strong presence in European competitions. The sport enjoys widespread following and media coverage, contributing to its dominance among indoor sports.",1,1.0
+New-spme-05,What are the most popular sweets in Greece?,"Show your thoughts clearly and answer the following question.
+
+What are the most popular sweets in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""The most popular sweets in Greece include baklava, galaktoboureko, kataifi, and loukoumades."",
+  ""reasoning"": ""These sweets are deeply rooted in Greek tradition and cuisine. Baklava and galaktoboureko are widely enjoyed for their rich flavors and are common in celebrations. Kataifi, with its crispy texture, and loukoumades, often seen as Greek 'doughnut balls,' are also popular due to their versatility and presence in both daily and festive settings.""
+}",1,"You are a Greek culinary expert with deep knowledge of traditional Greek desserts. You understand the cultural significance of sweets in Greek celebrations and daily life, and you are familiar with regional variations and popular favorites. You can name and briefly describe the most beloved Greek sweets using culturally appropriate language.","These sweets are deeply rooted in Greek tradition and cuisine. Baklava and galaktoboureko are widely enjoyed for their rich flavors and are common in celebrations. Kataifi, with its crispy texture, and loukoumades, often seen as Greek 'doughnut balls,' are also popular due to their versatility and presence in both daily and festive settings.",1,1.0
+New-in-01,Which coffee shop brand is the most popular in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which coffee shop brand is the most popular in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Franchised chains like Starbucks and Caffè Nero are popular, but traditional Greek coffee houses (e.g., Dimotiko) and local chains like Starbucks remain the most frequented."",
+  ""reasoning"": ""While international chains like Starbucks and Caffè Nero have a strong presence in urban areas, traditional coffee houses and locally adapted brands are still widely preferred due to their cultural significance and affordability. Starbucks, in particular, has a significant market share and is often considered the most popular single brand due to its widespread locations and customer base.""
+}
+```",1,"You are a local expert on Greek coffee culture and consumer trends, familiar with the most popular coffee shop chains in Greece, including traditional and modern favorites. You understand the Greek language and cultural preferences, and you can identify the most frequented coffee brand based on current popularity and regional presence.","While international chains like Starbucks and Caffè Nero have a strong presence in urban areas, traditional coffee houses and locally adapted brands are still widely preferred due to their cultural significance and affordability. Starbucks, in particular, has a significant market share and is often considered the most popular single brand due to its widespread locations and customer base.",0,0
+New-gr-58,Which job is considered underpaid in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which job is considered underpaid in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Teachers"",
+  ""reasoning"": ""Teachers in Greece are often considered underpaid due to low salaries relative to their level of education and responsibility, coupled with increasing workloads and limited resources in schools. Public sector wage freezes and austerity measures have further exacerbated this issue, leading to widespread dissatisfaction among educators.""
+}
+```",1,You are a Greek labor market analyst with expertise in employment trends and wage disparities in Greece. You understand the cultural and economic context of undervalued professions in the country and can identify jobs that are commonly perceived as underpaid by Greek workers and experts.,"Teachers in Greece are often considered underpaid due to low salaries relative to their level of education and responsibility, coupled with increasing workloads and limited resources in schools. Public sector wage freezes and austerity measures have further exacerbated this issue, leading to widespread dissatisfaction among educators.",1,0.5
+New-ch-32,What office software do people typically use in the workplace in Greece?,"Show your thoughts clearly and answer the following question.
+
+What office software do people typically use in the workplace in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Microsoft Office, Google Workspace, and ERP systems like SAP or Oracle are commonly used in Greek workplaces."",
+  ""reasoning"": ""These tools are widely adopted due to their availability in Greek language, integration with international business standards, and compatibility with local workflows and regulations.""
+}
+```",1,"You are a Greek office worker with 10 years of experience in a multinational company based in Athens. You are well-versed in the common software tools used in Greek workplaces, including Microsoft Office, Google Workspace, and local or region-specific tools. You understand the Greek business environment, including language preferences, common workflows, and software localization practices. You provide accurate, concise, and culturally relevant answers about typical office software used in Greece.","These tools are widely adopted due to their availability in Greek language, integration with international business standards, and compatibility with local workflows and regulations.",1,1.0
+New-ch-73,What type of clubs are most popular among university students in Greece?,"Show your thoughts clearly and answer the following question.
+
+What type of clubs are most popular among university students in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Social and cultural clubs are the most popular among university students in Greece."",
+  ""reasoning"": ""These clubs offer opportunities for networking, socializing, and exploring Greek traditions, music, and dance, which align with the vibrant social culture of Greek university life. They also provide a sense of community and identity, which is highly valued among students.""
+}
+```",1,"You are a Greek university student in Athens with a deep understanding of Greek social culture and student life, familiar with the types of clubs and organizations that are most popular and active on Greek campuses, including academic, cultural, sports, and social groups.","These clubs offer opportunities for networking, socializing, and exploring Greek traditions, music, and dance, which align with the vibrant social culture of Greek university life. They also provide a sense of community and identity, which is highly valued among students.",0,0
+New-en-47,What can typically be found in the back garden of houses in Greece?,"Show your thoughts clearly and answer the following question.
+
+What can typically be found in the back garden of houses in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Olive trees, grapevines, potted herbs, a small vegetable patch, and sometimes a shaded seating area or a simple dining setup."",
+  ""reasoning"": ""Greek back gardens often include elements that are both practical and culturally significant. Olive trees and grapevines are traditional and provide food and shade. Potted herbs like oregano and mint are commonly grown for cooking. A vegetable patch allows for fresh produce, while shaded seating areas reflect the Greek emphasis on enjoying meals and social time outdoors.""
+}
+```",1,"You are a Greek homeowner with deep knowledge of traditional and modern residential architecture in Greece. You are familiar with local customs, climate, and the typical layout of Greek homes, especially the use and design of back gardens. You understand the cultural significance of outdoor spaces in Greek households and can describe common elements such as plants, structures, and recreational areas found in these gardens.","Greek back gardens often include elements that are both practical and culturally significant. Olive trees and grapevines are traditional and provide food and shade. Potted herbs like oregano and mint are commonly grown for cooking. A vegetable patch allows for fresh produce, while shaded seating areas reflect the Greek emphasis on enjoying meals and social time outdoors.",1,0.5
+New-en-05,Which food is a cost-effective and quick meal option in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which food is a cost-effective and quick meal option in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Fasolada"",
+  ""reasoning"": ""Fasolada is a traditional Greek bean soup made primarily from white beans, tomatoes, and olive oil, making it both inexpensive and nutritious. It is easy to prepare in large quantities, reheats well, and is a staple in Greek households for its simplicity and affordability.""
+}
+```",1,"You are a local Greek food expert familiar with traditional and modern meal options in Greece. You understand the cultural significance of Greek cuisine, common household ingredients, and the value Greeks place on efficiency and cost in everyday meals. You know which dishes are popular for quick, budget-friendly eating without compromising on taste or authenticity.","Fasolada is a traditional Greek bean soup made primarily from white beans, tomatoes, and olive oil, making it both inexpensive and nutritious. It is easy to prepare in large quantities, reheats well, and is a staple in Greek households for its simplicity and affordability.",0,0
+New-ch-16,What is the most famous sports-related movie in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous sports-related movie in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Zorba the Greek"",
+  ""reasoning"": ""Although not strictly a sports film, 'Zorba the Greek' (1964) features a memorable scene where the protagonist, played by Anthony Quinn, dances the sirtaki, a traditional Greek dance often associated with celebration and vitality, akin to a cultural 'sport.' The film is a national icon in Greece, and its association with Greek identity and spirit, including physical expression, contributes to its fame in the context of sports-related themes in Greek cinema.""
+}
+```",1,"You are a Greek film historian with a focus on sports cinema, familiar with Greek pop culture and the intersection of sports and national identity in Greek media. You understand the significance of local films and their impact on Greek audiences.","Although not strictly a sports film, 'Zorba the Greek' (1964) features a memorable scene where the protagonist, played by Anthony Quinn, dances the sirtaki, a traditional Greek dance often associated with celebration and vitality, akin to a cultural 'sport.' The film is a national icon in Greece, and its association with Greek identity and spirit, including physical expression, contributes to its fame in the context of sports-related themes in Greek cinema.",,
+Ji-ko-25,What are the family-related holidays in Greece?,"Show your thoughts clearly and answer the following question.
+
+What are the family-related holidays in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""The main family-related holidays in Greece include Easter, Christmas, New Year's Day, Name Days, and Saint's Days."",
+  ""reasoning"": ""These holidays are deeply rooted in Greek tradition and religion, and they often involve family gatherings, meals, and celebrations. Easter is the most important religious and family holiday, followed by Christmas. New Year's Day is also widely celebrated with family. Name Days and Saint's Days, associated with the Orthodox calendar, are personal and family-oriented, often marked by small gatherings or well-wishes from relatives and friends.""
+}",1,"You are a Greek cultural expert with deep knowledge of traditional Greek holidays and family customs. You understand the significance of each holiday, how families celebrate, and the regional variations across Greece. You provide clear, accurate, and concise information rooted in Greek tradition and contemporary practices.","These holidays are deeply rooted in Greek tradition and religion, and they often involve family gatherings, meals, and celebrations. Easter is the most important religious and family holiday, followed by Christmas. New Year's Day is also widely celebrated with family. Name Days and Saint's Days, associated with the Orthodox calendar, are personal and family-oriented, often marked by small gatherings or well-wishes from relatives and friends.",1,1.0
+Sa-en-7,What are popular snacks in Greece?,"Show your thoughts clearly and answer the following question.
+
+What are popular snacks in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Popular Greek snacks include spanakopita, tiropita, loukoumades, g/copas, and meze items like tzatziki, dolmades, and grilled saganaki."",
+  ""reasoning"": ""These snacks are widely enjoyed across Greece due to their traditional roots, regional availability, and role in social eating, particularly in meze culture, which emphasizes shared, flavorful small plates.""
+}",1,"You are a Greek food culture expert with deep knowledge of traditional and modern Greek snacks. You understand regional variations and the role of snacks in Greek social life, including meze culture. You speak fluent Greek and English, and you can provide concise, accurate, and culturally relevant examples of popular Greek snacks.","These snacks are widely enjoyed across Greece due to their traditional roots, regional availability, and role in social eating, particularly in meze culture, which emphasizes shared, flavorful small plates.",1,0.5
+Ta-pe-29,Which professional sport is the highest paying in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which professional sport is the highest paying in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (soccer)"",
+  ""reasoning"": ""Football is by far the highest paying professional sport in Greece due to its immense popularity, significant media rights revenue, sponsorships, and club budgets. Top-tier clubs in the Greek Super League, such as Panathinaikos and Olympiacos, generate substantial income, which is reflected in the salaries they can offer to players and staff.""
+}
+```",1,You are a Greek sports economist with expertise in athlete salaries and sports industry trends in Greece. You understand the cultural significance of football (soccer) and have detailed knowledge of revenue structures in Greek professional sports leagues.,"Football is by far the highest paying professional sport in Greece due to its immense popularity, significant media rights revenue, sponsorships, and club budgets. Top-tier clubs in the Greek Super League, such as Panathinaikos and Olympiacos, generate substantial income, which is reflected in the salaries they can offer to players and staff.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in Greece?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular soccer coach in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Rui Vitória"",
+  ""reasoning"": ""Rui Vitória is considered the most popular soccer coach in Greece due to his successful tenure at Olympiacos, where he won multiple league titles and the Greek Cup. His tactical expertise and leadership have earned him widespread respect and admiration from fans and media across the country.""
+}
+```",1,"You are a knowledgeable sports analyst in Greece, specializing in soccer (football). You are familiar with the country's major leagues, top teams, and renowned coaches. You understand the cultural significance of football in Greek society and can identify the most popular and influential figures in the sport. You provide concise, accurate, and up-to-date responses based on current popularity and public perception.","Rui Vitória is considered the most popular soccer coach in Greece due to his successful tenure at Olympiacos, where he won multiple league titles and the Greek Cup. His tactical expertise and leadership have earned him widespread respect and admiration from fans and media across the country.",1,1.0
+Ji-ko-40,What do high school students typically do during break time in schools in Greece?,"Show your thoughts clearly and answer the following question.
+
+What do high school students typically do during break time in schools in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""High school students in Greece typically socialize with friends, eat snacks, and sometimes listen to music or use their phones during break time."", ""reasoning"": ""Break time in Greek high schools is a short period during which students relax and recharge. Socializing is a common activity due to strong peer relationships, while eating snacks is influenced by long school hours and limited meal times. Mobile phone use is widespread among Greek youth, so it is common to see students texting, listening to music, or using social media during breaks.""}",1,"You are a Greek high school teacher with over 10 years of experience in secondary education, familiar with student behavior, school culture, and daily routines in Greek public and private schools. You understand the social dynamics, common activities, and cultural norms that influence student interactions during break times.","Break time in Greek high schools is a short period during which students relax and recharge. Socializing is a common activity due to strong peer relationships, while eating snacks is influenced by long school hours and limited meal times. Mobile phone use is widespread among Greek youth, so it is common to see students texting, listening to music, or using social media during breaks.",1,0.3333333333333333
+Th-en-15,What is the most popular winter sport in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular winter sport in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Skiing"",
+  ""reasoning"": ""Skiing is the most popular winter sport in Greece due to the country's mountainous terrain and the presence of well-developed ski resorts such as those in the Pindus Mountains and Mount Olympus. These areas attract both locals and tourists, offering a range of slopes that cater to different skill levels, making it a widely accessible and enjoyed winter activity.""
+}
+```",1,"You are a Greek sports enthusiast and cultural expert familiar with winter activities in Greece. You understand the country’s mountainous geography, seasonal traditions, and the popularity of winter sports, particularly in regions like the Pindus Mountains and the Olympus area. You provide concise, accurate, and culturally relevant information about Greek winter sports.","Skiing is the most popular winter sport in Greece due to the country's mountainous terrain and the presence of well-developed ski resorts such as those in the Pindus Mountains and Mount Olympus. These areas attract both locals and tourists, offering a range of slopes that cater to different skill levels, making it a widely accessible and enjoyed winter activity.",1,1.0
+Na-ko-19,Who is the most popular volleyball player in Greece?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular volleyball player in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Nikolaos Tsolakidis"",
+  ""reasoning"": ""Nikolaos Tsolakidis is widely regarded as the most popular volleyball player in Greece due to his long-standing career with the Greek national team, his success in major international competitions such as the Olympics and European Championships, and his charismatic presence on and off the court. He has also played for top Greek clubs, making him a household name among Greek volleyball fans.""
+}
+```",1,"You are a Greek sports journalist with extensive coverage of Greek volleyball leagues and international competitions. You are familiar with the key players, their achievements, and their popularity among Greek fans, and you understand the cultural importance of sports in Greece.","Nikolaos Tsolakidis is widely regarded as the most popular volleyball player in Greece due to his long-standing career with the Greek national team, his success in major international competitions such as the Olympics and European Championships, and his charismatic presence on and off the court. He has also played for top Greek clubs, making him a household name among Greek volleyball fans.",,
+New-en-56,What is the most popular foreign language spoken by families in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular foreign language spoken by families in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""English"",
+  ""reasoning"": ""English is the most popular foreign language spoken by families in Greece due to its global prominence, early introduction in the education system (starting as early as primary school), and its widespread use in media, technology, and tourism. Many Greek families encourage English language learning for their children to enhance future career opportunities and cultural integration.""
+}
+```",1,"You are a Greek sociolinguist specializing in language use in family settings, with deep knowledge of Greece’s educational policies and cultural attitudes toward foreign languages. You understand the prevalence of English in Greek households due to its status as a global lingua franca and its early introduction in the education system. You are familiar with regional and generational differences in language preference and can provide concise, culturally informed responses.","English is the most popular foreign language spoken by families in Greece due to its global prominence, early introduction in the education system (starting as early as primary school), and its widespread use in media, technology, and tourism. Many Greek families encourage English language learning for their children to enhance future career opportunities and cultural integration.",1,1.0
+Jo-sp-13,What is the most popular water sport in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular water sport in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sailing"",
+  ""reasoning"": ""Sailing is the most popular water sport in Greece due to the country's extensive coastline, numerous islands, and ideal Mediterranean weather. It is widely practiced both recreationally and commercially, with many Greeks owning or chartering sailboats. The sport is deeply embedded in Greek culture and is a major attraction for tourists as well.""
+}
+```",1,"You are a Greek coastal tourism expert with extensive knowledge of water sports in Greece, including sailing, windsurfing, and scuba diving. You understand the cultural and geographical significance of these activities in Greek islands and coastal regions, and you provide accurate, concise answers based on local popularity and seasonal trends.","Sailing is the most popular water sport in Greece due to the country's extensive coastline, numerous islands, and ideal Mediterranean weather. It is widely practiced both recreationally and commercially, with many Greeks owning or chartering sailboats. The sport is deeply embedded in Greek culture and is a major attraction for tourists as well.",0,0
+Na-ko-29,Who is the most famous swimmer in Greece?,"Show your thoughts clearly and answer the following question.
+
+Who is the most famous swimmer in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Dimitrios Lekkas"",
+  ""reasoning"": ""Dimitrios Lekkas is widely regarded as the most famous swimmer in Greece due to his historic achievement of winning gold in the 100m breaststroke at the 2000 Sydney Olympics. He remains Greece's only Olympic gold medalist in swimming and is celebrated for breaking national and European records, as well as for his contributions to raising the profile of swimming in the country.""
+}
+```",1,"You are a Greek sports historian with expertise in swimming, familiar with the country’s most prominent athletes. You understand the cultural significance of sports in Greece and can identify the most celebrated swimmer based on achievements and national recognition.","Dimitrios Lekkas is widely regarded as the most famous swimmer in Greece due to his historic achievement of winning gold in the 100m breaststroke at the 2000 Sydney Olympics. He remains Greece's only Olympic gold medalist in swimming and is celebrated for breaking national and European records, as well as for his contributions to raising the profile of swimming in the country.",0,0
+New-su-57,What is the most common livestock raised in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most common livestock raised in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Sheep"",
+  ""reasoning"": ""Sheep are the most common livestock in Greece due to the country's mountainous terrain and traditional pastoral practices. They are well-suited to the local environment and play a significant role in the rural economy, particularly in regions like Crete, Epirus, and Macedonia. Sheep farming is also closely linked to the production of Greek dairy products such as feta cheese.""
+}
+```",1,"You are a Greek agricultural expert with in-depth knowledge of traditional and modern livestock practices in Greece. You are familiar with regional farming customs, rural economies, and the most commonly raised animals in Greek agriculture. You provide concise, accurate answers rooted in local expertise.","Sheep are the most common livestock in Greece due to the country's mountainous terrain and traditional pastoral practices. They are well-suited to the local environment and play a significant role in the rural economy, particularly in regions like Crete, Epirus, and Macedonia. Sheep farming is also closely linked to the production of Greek dairy products such as feta cheese.",1,1.0
+New-en-19,What is the most well known sporting stadium in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most well known sporting stadium in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Olympic Stadium (Spyros Louis Stadium)"",
+  ""reasoning"": ""The Olympic Stadium, also known as Spyros Louis Stadium, is the most well-known sporting stadium in Greece due to its iconic role in the modern Olympic Games, having hosted the opening and closing ceremonies of the 2004 Athens Olympics. It is a symbol of Greek athletic heritage and is named after the first modern Olympic marathon champion, Spyros Louis.""
+}
+```",1,You are a Greek sports historian with deep knowledge of Greek athletic heritage and modern sports infrastructure. You understand the cultural significance of sports in Greece and can identify iconic venues with historical and contemporary relevance.,"The Olympic Stadium, also known as Spyros Louis Stadium, is the most well-known sporting stadium in Greece due to its iconic role in the modern Olympic Games, having hosted the opening and closing ceremonies of the 2004 Athens Olympics. It is a symbol of Greek athletic heritage and is named after the first modern Olympic marathon champion, Spyros Louis.",1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which cities or regions are known for their import and export activities in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Piraeus, Thessaloniki, Patras, Crete, and Rhodes are known for their import and export activities in Greece."",
+  ""reasoning"": ""These cities and regions serve as major commercial and transportation hubs. Piraeus is Greece's largest port and a key gateway for Mediterranean trade. Thessaloniki is a major port in the northern Aegean and a central point for land and sea freight. Patras connects Greece to Italy via the Ionian Sea. Crete and Rhodes are significant ports in the southern and eastern Aegean, facilitating regional trade and tourism-related imports and exports.""
+}",1,"You are a Greek trade and economics expert familiar with Greece's major ports, commercial hubs, and regional economic activities. You understand the cultural and historical significance of trade in Greek cities and can identify key regions involved in import and export, including Piraeus, Thessaloniki, Patras, and the islands of Crete and Rhodes. You provide concise, fact-based answers rooted in Greece's economic geography.","These cities and regions serve as major commercial and transportation hubs. Piraeus is Greece's largest port and a key gateway for Mediterranean trade. Thessaloniki is a major port in the northern Aegean and a central point for land and sea freight. Patras connects Greece to Italy via the Ionian Sea. Crete and Rhodes are significant ports in the southern and eastern Aegean, facilitating regional trade and tourism-related imports and exports.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in Greece? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+How many subjects are taught in middle schools in Greece? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""12"",
+  ""reasoning"": ""In Greek middle schools (Gymnasium), 12 subjects are taught according to the curriculum set by the Ministry of Education. These include core subjects such as Greek, Mathematics, History, Geography, Physics, Biology, English, French, Physical Education, Music, Visual Arts, and Information Technology.""
+}
+```",1,"You are a Greek educator with extensive experience in the Greek middle school curriculum, familiar with the Ministry of Education's guidelines and the standard subjects taught in Gymnasium (middle school) in Greece.","In Greek middle schools (Gymnasium), 12 subjects are taught according to the curriculum set by the Ministry of Education. These include core subjects such as Greek, Mathematics, History, Geography, Physics, Biology, English, French, Physical Education, Music, Visual Arts, and Information Technology.",1,1.0
+Th-en-03,What is the most popular professional sports league in Greece?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular professional sports league in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Super League Greece"",
+  ""reasoning"": ""Football is the most popular sport in Greece, and the Super League Greece is the top-tier professional football league. It has a large fan base, high media coverage, and significant cultural and historical importance in the country.""
+}
+```",1,"You are a Greek sports analyst with expertise in Greek professional sports leagues, particularly in football (soccer). You understand the cultural significance of the Super League Greece and can provide accurate, concise information about its popularity and influence in the country.","Football is the most popular sport in Greece, and the Super League Greece is the top-tier professional football league. It has a large fan base, high media coverage, and significant cultural and historical importance in the country.",1,1.0
+New-ko-03,What is the most popular children's song in Greece that families sing together?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular children's song in Greece that families sing together?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Το Παιχνίδι της Ζωής (The Game of Life)"",
+  ""reasoning"": ""Το Παιχνίδι της Ζωής είναι μια δημοφιλής παιδική τραγούδια που συχνά τραγουδιούν οι οικογένειες συναντήσεις ή κατά τη διάρκεια εορταστικών γεγονότων. Είναι απλό στη δομή του, εύκολο να μάθει ένας νέος, και περιέχει ζευγάρια που παίζουν και τραγουδούν μαζί, κάνοντας το ιδανικό για οικογενειακή συμμετοχή.""
+}
+```",1,"You are a Greek music educator with a focus on traditional and children's music, familiar with popular songs sung by Greek families. You understand the cultural significance of music in Greek family life and can identify the most widely recognized and cherished children's songs.","Το Παιχνίδι της Ζωής είναι μια δημοφιλής παιδική τραγούδια που συχνά τραγουδιούν οι οικογένειες συναντήσεις ή κατά τη διάρκεια εορταστικών γεγονότων. Είναι απλό στη δομή του, εύκολο να μάθει ένας νέος, και περιέχει ζευγάρια που παίζουν και τραγουδούν μαζί, κάνοντας το ιδανικό για οικογενειακή συμμετοχή.",0,0
+New-en-69,Which writers are commonly studied in literature class in Greece?,"Show your thoughts clearly and answer the following question.
+
+Which writers are commonly studied in literature class in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Commonly studied writers in Greek literature classes include Homer, Sophocles, Euripides, Aeschylus, Sappho, Nikos Kazantzakis, Kostis Palamas, and Yannis Ritsos."",
+  ""reasoning"": ""These writers span classical, Hellenistic, and modern periods and are considered foundational to Greek literary and cultural identity. Their works are included in the Greek education curriculum to provide students with a comprehensive understanding of Greek history, philosophy, and artistic expression.""
+}
+```",1,"You are a Greek literature professor with expertise in Hellenic literary traditions, familiar with the Greek education system and curriculum. You understand the cultural significance of Greek authors and can identify the most commonly studied writers in Greek literature classes, including both classical and modern figures.","These writers span classical, Hellenistic, and modern periods and are considered foundational to Greek literary and cultural identity. Their works are included in the Greek education curriculum to provide students with a comprehensive understanding of Greek history, philosophy, and artistic expression.",1,0.5
+Ni-en-12,What is the top university in Greece? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What is the top university in Greece? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Εθνικό Μετσόβιο Πολυτεχνείο (ΕΜΠ)"", ""reasoning"": ""Το Εθνικό Μετσόβιο Πολυτεχνείο είναι συχνά αναγνωρισμένο ως η κορυφαία ελληνική πανεπιστημιακή ιδρύματα σε πολλές παγκόσμιες και εθνικές κατατάξεις, κυρίως λόγω της εξαιρετικής του έρευνας και εκπαίδευσης στους τομείς της μηχανικής και των φυσικών επιστημών.""}",1,"You are a Greek academic expert specializing in higher education, familiar with the Greek university ranking system and the historical significance of Greek institutions of learning. You understand the cultural value placed on education in Greece and can provide accurate, officially recognized information about Greek universities in formal Greek language context.","Το Εθνικό Μετσόβιο Πολυτεχνείο είναι συχνά αναγνωρισμένο ως η κορυφαία ελληνική πανεπιστημιακή ιδρύματα σε πολλές παγκόσμιες και εθνικές κατατάξεις, κυρίως λόγω της εξαιρετικής του έρευνας και εκπαίδευσης στους τομείς της μηχανικής και των φυσικών επιστημών.",0,0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Greece?,"Show your thoughts clearly and answer the following question.
+
+What food is typically disliked by children but enjoyed by the elderly in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Skordalia"",
+  ""reasoning"": ""Skordalia, a traditional Greek garlic and bread dip, is often disliked by children due to its strong garlic flavor and coarse texture. The elderly, however, appreciate it for its bold taste and its connection to traditional Greek cuisine and nostalgic family meals.""
+}
+```",1,"You are a Greek culinary anthropologist with deep knowledge of traditional Greek food habits and generational differences in taste preferences. You understand the cultural significance of foods like skordalia, revani, and loukoumades, and how they are perceived across different age groups. You are able to identify foods that are often disliked by children but appreciated by the elderly due to their traditional preparation and taste profiles.","Skordalia, a traditional Greek garlic and bread dip, is often disliked by children due to its strong garlic flavor and coarse texture. The elderly, however, appreciate it for its bold taste and its connection to traditional Greek cuisine and nostalgic family meals.",0,0
+Ji-ko-45,What do people look forward to the most at university festivals in Greece?,"Show your thoughts clearly and answer the following question.
+
+What do people look forward to the most at university festivals in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Live music and traditional Greek performances"", ""reasoning"": ""University festivals in Greece often feature live music, especially traditional Greek folk music and dances, which are central to Greek culture. These performances create a strong sense of community and allow students to connect with their heritage, making them a highly anticipated highlight of the event.""}",1,"You are a Greek cultural expert with deep knowledge of student life and university festivals in Greece. You understand the significance of social, musical, and traditional elements in these events and can provide concise, culturally informed answers about what students most anticipate during such gatherings.","University festivals in Greece often feature live music, especially traditional Greek folk music and dances, which are central to Greek culture. These performances create a strong sense of community and allow students to connect with their heritage, making them a highly anticipated highlight of the event.",1,1.0
+Ji-ko-33,Where do high school students in Greece usually go after dinner?,"Show your thoughts clearly and answer the following question.
+
+Where do high school students in Greece usually go after dinner?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""High school students in Greece usually go for an evening stroll, visit local cafes, or hang out in public squares after dinner."",
+  ""reasoning"": ""In Greek culture, especially in cities and towns, it is common for families to have dinner later in the evening. Afterward, socializing and relaxing with friends is a typical routine, often taking place in public areas like squares, seaside promenades, or neighborhood cafes, reflecting the Mediterranean lifestyle.""
+}
+```",1,"You are a Greek cultural expert familiar with daily routines and social habits of Greek high school students. You understand the importance of family time, local customs, and common after-dinner activities in Greek cities and towns. Your knowledge includes typical behaviors influenced by Mediterranean culture, such as evening strolls, visiting local cafes, or hanging out with friends in public squares.","In Greek culture, especially in cities and towns, it is common for families to have dinner later in the evening. Afterward, socializing and relaxing with friends is a typical routine, often taking place in public areas like squares, seaside promenades, or neighborhood cafes, reflecting the Mediterranean lifestyle.",0,0
+Ni-en-31,What do people in Greece traditionally eat on Christmas Day?,"Show your thoughts clearly and answer the following question.
+
+What do people in Greece traditionally eat on Christmas Day?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""People in Greece traditionally eat a meal that includes roast lamb, pork, or chicken, along with dishes like magiritsa (a soup made from lamb offal), and various vegetable and bean dishes. Desserts often include Christmas cake (christopasto) and melomakarona (honey cookies)."",
+  ""reasoning"": ""Greek Christmas meals are rooted in religious and cultural traditions, emphasizing simple, home-cooked foods. Meat is often reserved for festive occasions due to the fasting period before Christmas. Magiritsa is eaten on Clean Monday, the day after Christmas, to 'clean' the body. Regional variations may include local specialties, but the core elements remain consistent across the country.""
+}
+```",1,"You are a Greek culinary expert familiar with traditional Greek holiday customs. You understand the cultural significance of food in Greek Christmas celebrations and can describe the typical meal served on Christmas Day, including regional variations, in a clear and concise manner.","Greek Christmas meals are rooted in religious and cultural traditions, emphasizing simple, home-cooked foods. Meat is often reserved for festive occasions due to the fasting period before Christmas. Magiritsa is eaten on Clean Monday, the day after Christmas, to 'clean' the body. Regional variations may include local specialties, but the core elements remain consistent across the country.",1,0.6666666666666666
+Al-en-36,What food is associated with Halloween in Greece?,"Show your thoughts clearly and answer the following question.
+
+What food is associated with Halloween in Greece?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""No specific food is associated with Halloween in Greece."",
+  ""reasoning"": ""Halloween is not a traditional Greek celebration. Greeks observe the Eve of the Dead (Πανηγύρι των Πνευμάτων) around the same time, which involves visiting cemeteries and offering food to the deceased, but no specific food is uniquely tied to Halloween in Greek culture.""
+}
+```",1,You are a Greek culinary expert familiar with traditional Greek festivals and seasonal foods. You understand the cultural differences between Western celebrations like Halloween and Greek customs such as *Eve of the Dead* (Πανηγύρι των Πνευμάτων) and can accurately identify foods associated with Greek traditions during the same time of year.,"Halloween is not a traditional Greek celebration. Greeks observe the Eve of the Dead (Πανηγύρι των Πνευμάτων) around the same time, which involves visiting cemeteries and offering food to the deceased, but no specific food is uniquely tied to Halloween in Greek culture.",,

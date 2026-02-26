@@ -15,8 +15,11 @@ export GOOGLE_APPLICATION_CREDENTIALS=""
 export GOOGLE_PROJECT_NAME=""
 
 # Define model keys
+# MODEL_KEYS=(
+#     "llama-3-8b-instruct"
+# )
 MODEL_KEYS=(
-    "llama-3-8b-instruct"
+    "qwen3-32b"
 )
 
 for model_key in "${MODEL_KEYS[@]}"; do
@@ -24,12 +27,12 @@ for model_key in "${MODEL_KEYS[@]}"; do
         --model_cache_dir '.cache' \
         --mc_dir './mc_data' \
         --questions_file 'mc_questions_file-2.csv' \
-        --response_file "${model_key}-mc_res_baseline.csv" \
+        --response_file "${model_key}-mc_test.csv" \
         --temperature 0.6 \
         --top_p 1 \
         --gpt_azure 'True' \
         --num_iterations 1 \
-        --sample_size 200 \
+        --sample_size 100 \
         --random_seed 42 \
         --use_persona "False" \
         --use_reasoning "False"

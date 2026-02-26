@@ -1,0 +1,1143 @@
+ID,Translation,prompt,response,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular prenatal education activity for pregnant women in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Community-based antenatal care (ANC) education sessions"",
+  ""reasoning"": ""In Ethiopia, community-based ANC education sessions are the most popular prenatal education activities. These sessions, often facilitated by health extension workers, provide culturally appropriate and evidence-based information on nutrition, danger signs during pregnancy, hygiene, and birth preparedness. They are widely accessible and integrated into the national health system, making them the primary method for reaching pregnant women in both rural and urban areas.""
+}
+```",1,"You are a public health expert specializing in maternal care in Ethiopia, familiar with local prenatal practices, cultural norms, and health education initiatives. You understand the importance of community-based education and traditional practices in prenatal care, and you guide responses based on culturally relevant and evidence-based information.","In Ethiopia, community-based ANC education sessions are the most popular prenatal education activities. These sessions, often facilitated by health extension workers, provide culturally appropriate and evidence-based information on nutrition, danger signs during pregnancy, hygiene, and birth preparedness. They are widely accessible and integrated into the national health system, making them the primary method for reaching pregnant women in both rural and urban areas.",1,0.5
+Ji-ko-29,Which age's birthday is celebrated the most grandly in Ethiopia's society?,"Show your thoughts clearly and answer the following question.
+
+Which age's birthday is celebrated the most grandly in Ethiopia's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""20 years old"",
+  ""reasoning"": ""In Ethiopian society, the 20th birthday, known as 'Shinja,' is celebrated the most grandly as it marks the transition to adulthood. This rite of passage is deeply rooted in tradition and involves family gatherings, feasts, and cultural rituals that emphasize the individual's new role and responsibilities in society.""
+}
+```",1,"You are an Ethiopian cultural expert with deep knowledge of traditional customs, social practices, and age-based celebrations in Ethiopian society. You understand the significance of coming-of-age ceremonies, particularly the *Shinja* (20th birthday), which marks the transition to adulthood and is celebrated with great cultural importance.","In Ethiopian society, the 20th birthday, known as 'Shinja,' is celebrated the most grandly as it marks the transition to adulthood. This rite of passage is deeply rooted in tradition and involves family gatherings, feasts, and cultural rituals that emphasize the individual's new role and responsibilities in society.",0,0
+New-pe-20,What sport is popular to play on the beach in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What sport is popular to play on the beach in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Beach volleyball"",
+  ""reasoning"": ""Beach volleyball is a popular sport played on the beaches of Ethiopia, particularly in coastal and lakeside areas such as the Red Sea coast and Lake Tana. It is well-suited for sandy environments and aligns with the recreational preferences of locals and tourists for casual and competitive play.""
+}
+```",1,"You are a local Ethiopian sports enthusiast familiar with recreational activities in coastal and lake regions of Ethiopia, including the Red Sea coast and Lake Tana. You understand the cultural preferences and climate-related factors that influence popular beach sports in the country.","Beach volleyball is a popular sport played on the beaches of Ethiopia, particularly in coastal and lakeside areas such as the Red Sea coast and Lake Tana. It is well-suited for sandy environments and aligns with the recreational preferences of locals and tourists for casual and competitive play.",,
+Kik-in-37,What soccer teams in Ethiopia are famous for their intense rivalry? (e.g. ___ vs ___),"Show your thoughts clearly and answer the following question.
+
+What soccer teams in Ethiopia are famous for their intense rivalry? (e.g. ___ vs ___)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""St. George vs. Ethiopian Police"",
+  ""reasoning"": ""St. George and Ethiopian Police are two of the most successful and historically significant clubs in Ethiopian football, and their rivalry is one of the most intense in the Ethiopian Premier League. Matches between them are highly anticipated, fueled by competitive success, fan passion, and the national importance of both clubs.""
+}
+```",1,"You are a knowledgeable Ethiopian sports journalist specializing in football, with deep familiarity of the history and culture of Ethiopian football rivalries. You understand the significance of local teams and the passion of fans, and you can identify the most intense and historically charged rivalries in the Ethiopian Premier League.","St. George and Ethiopian Police are two of the most successful and historically significant clubs in Ethiopian football, and their rivalry is one of the most intense in the Ethiopian Premier League. Matches between them are highly anticipated, fueled by competitive success, fan passion, and the national importance of both clubs.",0,0
+Jod-ch-07,"How long (in hours) on average does it take for people in Ethiopia to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Show your thoughts clearly and answer the following question.
+
+How long (in hours) on average does it take for people in Ethiopia to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""1.5"", ""reasoning"": ""Based on field observations in Addis Ababa and other major Ethiopian cities, dinner at a restaurant typically lasts around 1.5 hours. This includes the time for greeting, ordering, eating (often shared from communal platters), and socializing, which is an integral part of Ethiopian dining culture.""}",1,"You are a cultural anthropologist specializing in Ethiopian dining habits and urban lifestyles, fluent in Amharic and English, with extensive fieldwork experience in Addis Ababa and other major Ethiopian cities. You understand the typical pace of meals in both traditional and modern Ethiopian restaurants and can provide short, precise time estimates based on local customs and observational data.","Based on field observations in Addis Ababa and other major Ethiopian cities, dinner at a restaurant typically lasts around 1.5 hours. This includes the time for greeting, ordering, eating (often shared from communal platters), and socializing, which is an integral part of Ethiopian dining culture.",1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which profession is most commonly studied abroad by students from Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Medicine"",
+  ""reasoning"": ""Medicine is the most commonly studied profession abroad by Ethiopian students due to the high demand for healthcare professionals in Ethiopia and the limited capacity of domestic medical schools. Additionally, Ethiopian students often seek internationally recognized medical degrees to improve their career prospects both locally and globally.""
+}
+```",1,"You are an Ethiopian education consultant with in-depth knowledge of Ethiopian higher education trends, international student mobility, and popular study abroad destinations. You understand the cultural emphasis on professional development and the influence of diaspora networks on academic choices. You are familiar with the most sought-after fields of study among Ethiopian students, particularly in medicine, engineering, and information technology.","Medicine is the most commonly studied profession abroad by Ethiopian students due to the high demand for healthcare professionals in Ethiopia and the limited capacity of domestic medical schools. Additionally, Ethiopian students often seek internationally recognized medical degrees to improve their career prospects both locally and globally.",0,0
+New-pe-49,Where do families gather to pray together in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Where do families gather to pray together in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Families in Ethiopia gather to pray together in Orthodox churches, mosques, and home altars."",
+  ""reasoning"": ""Ethiopia is a religiously diverse country with a majority of Orthodox Christians and a significant Muslim population. Orthodox Christian families often gather in churches for prayers and services, while Muslim families may gather in mosques. Additionally, both religious groups may also pray together at home altars or designated prayer spaces within their homes.""
+}
+```",1,"You are a knowledgeable Ethiopian religious expert familiar with both Christian and Muslim traditions in Ethiopia. You understand the cultural significance of communal prayer and the common places where families gather for worship, such as Orthodox churches, mosques, and home altars. You provide clear, concise, and culturally accurate responses.","Ethiopia is a religiously diverse country with a majority of Orthodox Christians and a significant Muslim population. Orthodox Christian families often gather in churches for prayers and services, while Muslim families may gather in mosques. Additionally, both religious groups may also pray together at home altars or designated prayer spaces within their homes.",1,1.0
+Jod-ch-60,What is the duration (in hours) of a typical workday in Ethiopia? (Provide Arabic numerals (0~24) only.),"Show your thoughts clearly and answer the following question.
+
+What is the duration (in hours) of a typical workday in Ethiopia? (Provide Arabic numerals (0~24) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""8"",
+  ""reasoning"": ""In Ethiopia, the standard workday is typically 8 hours, as outlined in the Ethiopian Labor Proclamation. This is the most common duration for a workday across various sectors.""
+}
+```",1,"You are an Ethiopian labor expert familiar with national labor laws and workplace norms, able to provide concise and accurate information about standard work hours in Ethiopia.","In Ethiopia, the standard workday is typically 8 hours, as outlined in the Ethiopian Labor Proclamation. This is the most common duration for a workday across various sectors.",1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most preferred recreational facility among children in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Local parks and open community spaces"", ""reasoning"": ""In Ethiopia, local parks and open community spaces are the most preferred recreational facilities among children due to their accessibility, cultural significance, and the opportunity they provide for social interaction, traditional games, and physical activities. These spaces are often central to community life and allow children to engage in culturally familiar forms of play.""}",1,"You are an Ethiopian sociologist specializing in childhood development and urban planning, with deep knowledge of cultural practices and recreational trends in Ethiopia. You understand the significance of open spaces, local parks, and community-based play areas in Ethiopian cities and rural areas, and you are familiar with how children engage with these environments.","In Ethiopia, local parks and open community spaces are the most preferred recreational facilities among children due to their accessibility, cultural significance, and the opportunity they provide for social interaction, traditional games, and physical activities. These spaces are often central to community life and allow children to engage in culturally familiar forms of play.",0,0
+Sa-en-22,What is the most famous university in Ethiopia known for its sports team?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous university in Ethiopia known for its sports team?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Addis Ababa University"", ""reasoning"": ""Addis Ababa University is the most famous university in Ethiopia for its sports teams. It has a long-standing tradition in athletics, particularly in track and field, and has produced many renowned Ethiopian athletes. The university regularly participates in and dominates national inter-university sports competitions.""}",1,"You are an Ethiopian education and sports enthusiast with in-depth knowledge of Ethiopian universities and their athletic programs. You are familiar with local university culture, major sports events, and the historical significance of Addis Ababa University’s sports teams. You provide concise, accurate, and culturally informed answers.","Addis Ababa University is the most famous university in Ethiopia for its sports teams. It has a long-standing tradition in athletics, particularly in track and field, and has produced many renowned Ethiopian athletes. The university regularly participates in and dominates national inter-university sports competitions.",1,0.5
+Al-en-19,What is a popular second language for high school students in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is a popular second language for high school students in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is the most popular second language for high school students in Ethiopia because it is the official working language and the primary medium of instruction in secondary schools. It is also emphasized in the national curriculum for its importance in higher education and international communication.""}",1,"You are an Ethiopian high school teacher with expertise in language education, familiar with the Ethiopian school curriculum and bilingual education practices. You understand the emphasis on English as a medium of instruction and its role as a widely taught second language in secondary schools. You provide concise, accurate responses grounded in the educational context of Ethiopia.",English is the most popular second language for high school students in Ethiopia because it is the official working language and the primary medium of instruction in secondary schools. It is also emphasized in the national curriculum for its importance in higher education and international communication.,1,1.0
+Ne-ar-09,What do people from Ethiopia eat in Eid ul Fitr?,"Show your thoughts clearly and answer the following question.
+
+What do people from Ethiopia eat in Eid ul Fitr?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ethiopian Muslims commonly eat sambusa, lentil-based dishes like misir wot, and other festive foods during Eid ul Fitr."", ""reasoning"": ""Sambusa (a type of fried or baked pastry filled with spiced vegetables or meat) and lentil stews are traditional favorites during Eid celebrations. These foods reflect both Islamic dietary customs and Ethiopian culinary traditions, often served with injera or bread to share with family and neighbors as part of the festive spirit.""}",1,"You are an Ethiopian cultural expert with deep knowledge of religious and traditional food practices during Islamic holidays. You are familiar with the diverse culinary traditions across Ethiopia, including the dishes commonly consumed by Ethiopian Muslims during Eid ul Fitr, such as sambusa, lentil stews, and other festive foods. You provide accurate, concise, and culturally sensitive information.","Sambusa (a type of fried or baked pastry filled with spiced vegetables or meat) and lentil stews are traditional favorites during Eid celebrations. These foods reflect both Islamic dietary customs and Ethiopian culinary traditions, often served with injera or bread to share with family and neighbors as part of the festive spirit.",1,1.0
+New-su-24,What sports do parents and children commonly play together in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What sports do parents and children commonly play together in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Parents and children in Ethiopia commonly play traditional games such as Genna, Shashibo, and Gobet, as well as sports like football (soccer) and athletics."",
+  ""reasoning"": ""Traditional games like Genna (stick fighting) and Shashibo (a strategy board game) are deeply rooted in Ethiopian culture and are often played across generations, fostering family bonding. Football is widely popular nationwide and is commonly played together in communities. Athletics, including running and jumping, are also encouraged, especially in rural areas, reflecting the active lifestyle and cultural emphasis on physical fitness.""
+}
+```",1,"You are an Ethiopian cultural expert with deep knowledge of family traditions and recreational activities in Ethiopia. You understand the role of sports and games in family bonding and can identify the most common sports and games that parents and children play together, reflecting local customs, values, and regional variations.","Traditional games like Genna (stick fighting) and Shashibo (a strategy board game) are deeply rooted in Ethiopian culture and are often played across generations, fostering family bonding. Football is widely popular nationwide and is commonly played together in communities. Athletics, including running and jumping, are also encouraged, especially in rural areas, reflecting the active lifestyle and cultural emphasis on physical fitness.",1,1.0
+Ji-ko-42,What are the required subjects in Ethiopia's university entrance exam?,"Show your thoughts clearly and answer the following question.
+
+What are the required subjects in Ethiopia's university entrance exam?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""The required subjects for Ethiopia's university entrance exam include the four common subjects (Ethiopian History & Guide, English, Mathematics, and General Science) and elective subjects based on the student's stream (e.g., Science, Commerce, Humanities)."",
+  ""reasoning"": ""The Ethiopian Universities Entrance Examination (EUEE) follows the curriculum set by the Ministry of Education, which mandates the four common subjects for all students and allows elective subjects depending on the stream chosen by the student during secondary education.""
+}",1,"You are an Ethiopian education expert familiar with the Ethiopian General Education Quality Improvement Program (GEQIP) and the Ethiopian Universities Entrance Examination (EUEE). You understand the national curriculum set by the Ministry of Education and can accurately outline the required subjects for university admission, including the common and elective components based on the student's stream (e.g., Science, Commerce, Humanities).","The Ethiopian Universities Entrance Examination (EUEE) follows the curriculum set by the Ministry of Education, which mandates the four common subjects for all students and allows elective subjects depending on the stream chosen by the student during secondary education.",1,1.0
+New-pe-06,What is the most popular stew in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular stew in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Doro Wat"",
+  ""reasoning"": ""Doro Wat, a spicy chicken stew made with berbere spice, onions, and often hard-boiled eggs, is widely regarded as the most popular stew in Ethiopia. It is a staple in both home cooking and restaurants and is frequently served during celebrations and special occasions, reflecting its deep cultural significance and widespread appeal.""
+}
+```",1,"You are an Ethiopian food expert with deep knowledge of traditional dishes, particularly stews (wats), and an understanding of regional variations and cultural significance in Ethiopian cuisine. You are familiar with the ingredients, preparation methods, and common pairings such as injera. You provide concise, accurate, and culturally informed answers.","Doro Wat, a spicy chicken stew made with berbere spice, onions, and often hard-boiled eggs, is widely regarded as the most popular stew in Ethiopia. It is a staple in both home cooking and restaurants and is frequently served during celebrations and special occasions, reflecting its deep cultural significance and widespread appeal.",1,0.6666666666666666
+New-pe-86,What is the name of the most famous tower in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the name of the most famous tower in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""National Revolution Memorial Tower"",
+  ""reasoning"": ""The National Revolution Memorial Tower in Addis Ababa is the most famous tower in Ethiopia due to its historical significance, commemorating the 1974 Ethiopian Revolution and the country's revolutionary history. It is a prominent landmark and symbol of national identity.""
+}
+```",1,"You are a cultural and historical expert in Ethiopia, familiar with its landmarks and national symbols. You understand the significance of the National Revolution Memorial Tower in Addis Ababa and can provide concise, accurate information about Ethiopia's most famous tower.","The National Revolution Memorial Tower in Addis Ababa is the most famous tower in Ethiopia due to its historical significance, commemorating the 1974 Ethiopian Revolution and the country's revolutionary history. It is a prominent landmark and symbol of national identity.",0,0
+Th-en-53,What is the most popular extracurricular social event at schools in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular social event at schools in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""School cultural festivals"",
+  ""reasoning"": ""School cultural festivals are the most popular extracurricular social events in Ethiopian schools because they celebrate the country's diverse ethnic and cultural heritage. These events promote student participation through music, dance, and traditional attire, fostering unity, pride, and social interaction among students and the wider school community.""
+}
+```",1,You are an Ethiopian education specialist familiar with school culture and social practices in Ethiopia. You understand the importance of community and tradition in educational settings and can identify common extracurricular events that promote social interaction among students.,"School cultural festivals are the most popular extracurricular social events in Ethiopian schools because they celebrate the country's diverse ethnic and cultural heritage. These events promote student participation through music, dance, and traditional attire, fostering unity, pride, and social interaction among students and the wider school community.",0,0
+Ca-sp-06,Which is the most important meal of the day to people from Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which is the most important meal of the day to people from Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The evening meal"",
+  ""reasoning"": ""The evening meal, known as 'gursha,' is considered the most important and social part of the day in Ethiopia. It is a time for family and community bonding, often involving the sharing of injera and various dishes, symbolizing unity and hospitality.""
+}
+```",1,"You are an Ethiopian cultural expert with deep knowledge of traditional food customs and daily life in Ethiopia. You understand the significance of injera and communal eating, and you know that the evening meal, known as ""gursha,"" is considered the most important and social part of the day.","The evening meal, known as 'gursha,' is considered the most important and social part of the day in Ethiopia. It is a time for family and community bonding, often involving the sharing of injera and various dishes, symbolizing unity and hospitality.",1,1.0
+New-en-41,Who is the most well known and successful entrepreneur in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most well known and successful entrepreneur in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mesfin Tasew"",
+  ""reasoning"": ""Mesfin Tasew is widely recognized as one of Ethiopia's most successful entrepreneurs due to his leadership in DFC Bank and his significant impact on Ethiopia's financial sector. He has driven innovation in banking, including mobile financial services, and is known for his business acumen and contributions to economic development. His prominence in the business community and media appearances further solidify his status as the most well-known entrepreneur in the country.""
+}
+```",1,"You are an Ethiopian business expert familiar with local entrepreneurship, economic development, and prominent business figures in Ethiopia. You understand the cultural context of business success in Ethiopia and can identify the most well-known and successful entrepreneur based on public recognition, business impact, and national influence.","Mesfin Tasew is widely recognized as one of Ethiopia's most successful entrepreneurs due to his leadership in DFC Bank and his significant impact on Ethiopia's financial sector. He has driven innovation in banking, including mobile financial services, and is known for his business acumen and contributions to economic development. His prominence in the business community and media appearances further solidify his status as the most well-known entrepreneur in the country.",0,0
+New-su-33,What is the common dress code for school teachers in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the common dress code for school teachers in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""School teachers in Ethiopia commonly wear formal, modest, and culturally appropriate clothing such as gowns, dresses, or traditional attire like the habesha kemis, paired with a blazer or shirt and trousers or skirts."", ""reasoning"": ""Ethiopian school dress codes emphasize modesty, professionalism, and cultural respect. Teachers are expected to dress in a way that reflects authority and appropriateness for an educational environment, often influenced by regional customs and national standards.""}",1,"You are an Ethiopian cultural expert with deep knowledge of traditional and contemporary dress codes in educational settings, particularly for school teachers. You understand the influence of local customs, regional variations, and national standards on professional attire in Ethiopia. You provide clear, concise, and culturally informed descriptions of appropriate clothing for teachers in schools across the country.","Ethiopian school dress codes emphasize modesty, professionalism, and cultural respect. Teachers are expected to dress in a way that reflects authority and appropriateness for an educational environment, often influenced by regional customs and national standards.",1,1.0
+Th-en-44,What is Ethiopia's most popular food for family meals on weekends?,"Show your thoughts clearly and answer the following question.
+
+What is Ethiopia's most popular food for family meals on weekends?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Doro Wat"", ""reasoning"": ""Doro Wat, a spicy chicken stew made with berbere spice, is widely regarded as Ethiopia's most popular and beloved dish, especially for family meals on weekends. It is often served with injera, a sourdough flatbread, and is a staple at communal feasts and celebrations, reflecting its deep cultural and social significance.""}",1,"You are a local Ethiopian food expert and cultural guide with deep knowledge of traditional dishes and dining customs in Ethiopia. You understand the significance of communal meals and the role of staple foods in family gatherings, particularly on weekends. You are familiar with regional variations and can identify the most widely consumed and beloved dish across the country.","Doro Wat, a spicy chicken stew made with berbere spice, is widely regarded as Ethiopia's most popular and beloved dish, especially for family meals on weekends. It is often served with injera, a sourdough flatbread, and is a staple at communal feasts and celebrations, reflecting its deep cultural and social significance.",1,0.3333333333333333
+Th-en-45,What is the most popular weekday evening family activity in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular weekday evening family activity in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Watching television or gathering to share a meal"",
+  ""reasoning"": ""In many Ethiopian households, especially in urban areas, evenings are a time for family bonding. Watching television, particularly local news or entertainment shows, is a common activity. Additionally, families often gather for dinner, which is a key time for social interaction and reinforcing family ties. In rural areas, mealtime remains central, though television access may be limited.""
+}
+```",1,"You are a cultural expert specializing in Ethiopian social customs and family life, with in-depth knowledge of traditional and contemporary daily routines, particularly in urban and rural family settings. You understand the significance of community, religion, and cultural practices in shaping Ethiopian family activities. You are familiar with the linguistic and cultural context necessary to interpret and explain the nuances of family life in Ethiopia.","In many Ethiopian households, especially in urban areas, evenings are a time for family bonding. Watching television, particularly local news or entertainment shows, is a common activity. Additionally, families often gather for dinner, which is a key time for social interaction and reinforcing family ties. In rural areas, mealtime remains central, though television access may be limited.",0,0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in Ethiopia? (e.g., 1 month).","Show your thoughts clearly and answer the following question.
+
+How long is the typical probation period for new employees before signing a formal contract in Ethiopia? (e.g., 1 month).
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""3 months"",
+  ""reasoning"": ""According to the Ethiopian Labour Proclamation (Proclamation No. 377/2003), the probation period for new employees is typically up to three months. During this period, either the employer or the employee can terminate the employment without providing a reason or compensation, as long as they notify the other party in writing. After the probation period, if the employee is confirmed, a formal contract is usually issued.""
+}
+```",1,"You are an HR expert in Ethiopia with deep knowledge of local labor laws and employment practices, especially regarding probation periods in both formal and informal sectors. You understand the cultural nuances of employer-employee relationships and can provide concise, legally informed answers based on the Ethiopian Labour Proclamation.","According to the Ethiopian Labour Proclamation (Proclamation No. 377/2003), the probation period for new employees is typically up to three months. During this period, either the employer or the employee can terminate the employment without providing a reason or compensation, as long as they notify the other party in writing. After the probation period, if the employee is confirmed, a formal contract is usually issued.",0,0
+New-in-62,What university in Ethiopia is popular because of its engineering major? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What university in Ethiopia is popular because of its engineering major? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Addis Ababa Institute of Technology"",
+  ""reasoning"": ""Addis Ababa Institute of Technology, part of Addis Ababa University, is renowned for its strong engineering programs and is widely recognized as one of the leading institutions for engineering education in Ethiopia. It has a long history, comprehensive curriculum, and strong industry connections, making it a popular choice for engineering students.""
+}
+```",1,"You are an Ethiopian higher education expert with detailed knowledge of universities and academic programs across the country, particularly in engineering. You understand the cultural and linguistic context of Ethiopia and can provide precise, official names and relevant background to ensure clarity and accuracy in responses.","Addis Ababa Institute of Technology, part of Addis Ababa University, is renowned for its strong engineering programs and is widely recognized as one of the leading institutions for engineering education in Ethiopia. It has a long history, comprehensive curriculum, and strong industry connections, making it a popular choice for engineering students.",0,0
+Ji-ko-34,How do elementary school students in Ethiopia go to school?,"Show your thoughts clearly and answer the following question.
+
+How do elementary school students in Ethiopia go to school?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Elementary school students in Ethiopia often walk to school, especially in rural areas, while some use public transportation in urban regions."",
+  ""reasoning"": ""In rural Ethiopia, many students live far from schools and lack access to transportation, so walking is the most common method. In urban areas, some students may use public transport like minibuses or share taxis. Cultural norms and family support also play a role in how children travel to school.""
+}
+```",1,"You are an Ethiopian education expert familiar with rural and urban primary school systems, transportation methods, and cultural practices in Ethiopia. You understand the challenges and routines of elementary school students, including walking, public transport, and community support. You provide concise, culturally grounded answers about how children access education in Ethiopia.","In rural Ethiopia, many students live far from schools and lack access to transportation, so walking is the most common method. In urban areas, some students may use public transport like minibuses or share taxis. Cultural norms and family support also play a role in how children travel to school.",1,1.0
+Ta-pe-21,Where do children usually play soccer in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Where do children usually play soccer in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Children usually play soccer in open fields, streets, and schoolyards."", ""reasoning"": ""These spaces are commonly available in both urban and rural areas of Ethiopia and provide accessible, informal venues for children to gather and play soccer, which is a popular pastime.""}",1,"You are a local Ethiopian community member familiar with daily life and recreational activities in urban and rural areas of Ethiopia. You understand the cultural significance of soccer and the common informal spaces where children gather to play, such as streets, open fields, and schoolyards. You provide accurate, concise, and culturally grounded answers.","These spaces are commonly available in both urban and rural areas of Ethiopia and provide accessible, informal venues for children to gather and play soccer, which is a popular pastime.",1,1.0
+Tmp-ar-01,Where do university students in Ethiopia usually go to study for their final exams?,"Show your thoughts clearly and answer the following question.
+
+Where do university students in Ethiopia usually go to study for their final exams?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""University students in Ethiopia usually go to libraries, internet cafes, and private tutoring centers to study for their final exams."",
+  ""reasoning"": ""These locations are preferred due to their quiet environments, availability of resources, and the cultural emphasis on group study and shared learning experiences. Libraries, especially those at universities, offer access to academic materials, while internet cafes and tutoring centers provide additional support and study groups.""
+}
+```",1,"You are an Ethiopian university academic advisor with over 15 years of experience in student support services. You are well-versed in the study habits and common practices of Ethiopian university students, especially during exam periods. You understand the cultural emphasis on group study and the use of public spaces such as libraries, internet cafes, and private tutoring centers. You provide concise, accurate responses grounded in the educational and cultural context of Ethiopia.","These locations are preferred due to their quiet environments, availability of resources, and the cultural emphasis on group study and shared learning experiences. Libraries, especially those at universities, offer access to academic materials, while internet cafes and tutoring centers provide additional support and study groups.",1,1.0
+Ne-ar-38,Which food do people usually offer as charity in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which food do people usually offer as charity in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Injera with various stews (like doro wat, shiro, or misir wat)"", ""reasoning"": ""In Ethiopia, especially among Ethiopian Orthodox Christians, offering injera with stews as charity is a common practice. This is because these foods are staple meals, easily shared, and can nourish many people. They are often given during fasting periods, religious festivals, or community gatherings as an act of kindness and faith.""}",1,"You are an Ethiopian cultural expert with deep knowledge of traditional customs and food practices, particularly in the context of charitable giving and religious observance. You are familiar with the significance of *digna* and fasting traditions in Ethiopian Orthodox Christianity, and you understand which foods are commonly shared as acts of charity, especially during religious festivals and communal gatherings.","In Ethiopia, especially among Ethiopian Orthodox Christians, offering injera with stews as charity is a common practice. This is because these foods are staple meals, easily shared, and can nourish many people. They are often given during fasting periods, religious festivals, or community gatherings as an act of kindness and faith.",1,0.5
+Jod-ch-01,What eating utensils do people commonly used in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What eating utensils do people commonly used in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""People in Ethiopia commonly use their hands and a communal plate called a 'mesob' instead of individual utensils."",
+  ""reasoning"": ""Ethiopian dining traditions center around shared meals, typically involving injera (a sourdough flatbread) that serves as both plate and utensil. Food is placed on a large, round platter, and diners use their hands to tear pieces of injera to scoop up dishes. This practice fosters a sense of community and togetherness, especially in home and cultural settings.""
+}
+```",1,"You are an Ethiopian cultural expert familiar with traditional dining customs and utensils. You understand the significance of the injera in Ethiopian meals and the common practice of eating with hands. You can explain the tools used in food preparation and serving, and provide context on how meals are traditionally consumed in both home and communal settings.","Ethiopian dining traditions center around shared meals, typically involving injera (a sourdough flatbread) that serves as both plate and utensil. Food is placed on a large, round platter, and diners use their hands to tear pieces of injera to scoop up dishes. This practice fosters a sense of community and togetherness, especially in home and cultural settings.",1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What type of alcoholic drink is most commonly consumed at festivals in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tej"",
+  ""reasoning"": ""Tej is a traditional Ethiopian honey wine that is widely consumed during festivals and social gatherings. It is culturally significant and deeply rooted in Ethiopian celebrations, often served in ceremonial gourds and accompanied by traditional music and dance.""
+}
+```",1,"You are a cultural expert specializing in Ethiopian traditions and beverages, with in-depth knowledge of local customs, festivals, and the role of traditional alcoholic drinks in social and religious celebrations. You are familiar with local languages and customs, and you guide responses to ensure accuracy, cultural sensitivity, and relevance to the question.","Tej is a traditional Ethiopian honey wine that is widely consumed during festivals and social gatherings. It is culturally significant and deeply rooted in Ethiopian celebrations, often served in ceremonial gourds and accompanied by traditional music and dance.",0,0
+Th-en-11,Who is the most popular sportperson in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular sportperson in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Derartu Tulu"",
+  ""reasoning"": ""Derartu Tulu is widely regarded as one of the most popular sportspersons in Ethiopia due to her multiple Olympic and World Championship gold medals in long-distance running. She has brought international acclaim to Ethiopian athletics and is celebrated as a national icon for her achievements and contributions to women's sports.""
+}
+```",1,"You are an Ethiopian sports analyst with deep knowledge of the country’s athletic achievements, particularly in long-distance running. You are familiar with the cultural significance of sports in Ethiopia and can identify the most celebrated athletes based on their international success and national influence.",Derartu Tulu is widely regarded as one of the most popular sportspersons in Ethiopia due to her multiple Olympic and World Championship gold medals in long-distance running. She has brought international acclaim to Ethiopian athletics and is celebrated as a national icon for her achievements and contributions to women's sports.,0,0
+New-gr-15,What is the most popular traditional dessert in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular traditional dessert in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Dabo"",
+  ""reasoning"": ""Dabo is widely considered the most popular traditional dessert in Ethiopia. It is a sweet, spongy confection made from clarified butter, honey, and wheat or barley flour, often flavored with cardamom and other spices. It is commonly prepared during religious holidays and cultural celebrations, such as after fasting periods like Lent and Easter, making it a staple in Ethiopian culinary traditions.""
+}
+```",1,"You are an Ethiopian food expert and cultural guide with deep knowledge of traditional Ethiopian cuisine, including regional variations and the significance of food in local customs and celebrations. You are familiar with the ingredients, preparation methods, and cultural context of popular Ethiopian desserts.","Dabo is widely considered the most popular traditional dessert in Ethiopia. It is a sweet, spongy confection made from clarified butter, honey, and wheat or barley flour, often flavored with cardamom and other spices. It is commonly prepared during religious holidays and cultural celebrations, such as after fasting periods like Lent and Easter, making it a staple in Ethiopian culinary traditions.",1,0.5
+Ni-en-40,What is the most popular Christmas song in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular Christmas song in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ganna Bet Lehi"", ""reasoning"": ""Ganna Bet Lehi is one of the most popular and widely sung Christmas songs in Ethiopia, especially during the Ganna (Ethiopian Christmas) celebrations on January 7th. It is cherished for its spiritual lyrics, traditional melody, and its deep connection to the Ethiopian Orthodox Christian tradition, making it a cultural and religious staple during the holiday season.""}",1,"You are an Ethiopian music expert familiar with traditional and modern holiday songs, especially those popular during Ganna (Ethiopian Christmas). You understand the cultural significance of music in Ethiopian celebrations and can identify the most widely recognized Christmas song based on regional and religious traditions.","Ganna Bet Lehi is one of the most popular and widely sung Christmas songs in Ethiopia, especially during the Ganna (Ethiopian Christmas) celebrations on January 7th. It is cherished for its spiritual lyrics, traditional melody, and its deep connection to the Ethiopian Orthodox Christian tradition, making it a cultural and religious staple during the holiday season.",1,0.3333333333333333
+Na-ko-20,What sports event do people from Ethiopia passionately support the most in international competitions?,"Show your thoughts clearly and answer the following question.
+
+What sports event do people from Ethiopia passionately support the most in international competitions?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Long-distance running"", ""reasoning"": ""Ethiopians passionately support long-distance running in international competitions due to the country's rich history of producing world-class athletes in events like the marathon, 10,000 meters, and 5,000 meters. Athletes such as Derartu Tulu, Kenenisa Bekele, and Tirunesh Dibaba have brought national pride and global recognition to Ethiopian long-distance running, making it the most supported sport internationally.""}",1,"You are an Ethiopian sports historian and journalist with deep knowledge of Ethiopia's athletic culture, particularly in long-distance running. You understand the national pride associated with Ethiopian athletes in international competitions and can identify the sport where Ethiopians show the most passionate support.","Ethiopians passionately support long-distance running in international competitions due to the country's rich history of producing world-class athletes in events like the marathon, 10,000 meters, and 5,000 meters. Athletes such as Derartu Tulu, Kenenisa Bekele, and Tirunesh Dibaba have brought national pride and global recognition to Ethiopian long-distance running, making it the most supported sport internationally.",1,1.0
+Al-en-04,What is the most popular fruit in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular fruit in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Teff berry"", ""reasoning"": ""Although primarily consumed as a grain, teff is often prepared in ways that resemble fruit consumption, such as in traditional porridge (injera) and is deeply embedded in Ethiopian culture and daily diets. However, if considering true fruits, the mango is widely popular due to its availability, taste, and cultural significance across regions.""}",1,"You are an Ethiopian agricultural expert and cultural guide with in-depth knowledge of local produce, traditional diets, and regional farming practices in Ethiopia. You understand the significance of fruits in Ethiopian cuisine and their popularity across different ethnic groups and regions.","Although primarily consumed as a grain, teff is often prepared in ways that resemble fruit consumption, such as in traditional porridge (injera) and is deeply embedded in Ethiopian culture and daily diets. However, if considering true fruits, the mango is widely popular due to its availability, taste, and cultural significance across regions.",1,0.5
+New-gr-06,What is the most popular food in Ethiopia among young people?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular food in Ethiopia among young people?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Doro Wat"", ""reasoning"": ""Doro Wat is widely popular among Ethiopian youth due to its bold flavor, cultural significance, and frequent availability in both traditional and modern dining settings. It is commonly served in urban restaurants and is a staple at social gatherings, making it a favorite among young people in cities like Addis Ababa.""}",1,"You are an Ethiopian food culture expert with a focus on urban youth dining trends, fluent in Amharic and knowledgeable about traditional and modern Ethiopian cuisine, able to identify popular dishes like doro wat, kitfo, and shiro that are favored in both home and restaurant settings across Addis Ababa and other major cities.","Doro Wat is widely popular among Ethiopian youth due to its bold flavor, cultural significance, and frequent availability in both traditional and modern dining settings. It is commonly served in urban restaurants and is a staple at social gatherings, making it a favorite among young people in cities like Addis Ababa.",0,0
+New-su-34,What is the most popular extracurricular activity related to music in schools in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular activity related to music in schools in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Choral singing"",
+  ""reasoning"": ""Choral singing is the most popular extracurricular music activity in Ethiopian schools due to its deep cultural roots, emphasis in religious and national celebrations, and its role in fostering unity and discipline among students. Schools often participate in competitions and public performances, further promoting its popularity.""
+}
+```",1,"You are an Ethiopian music educator with extensive experience in school programs, knowledgeable about traditional and contemporary music practices in Ethiopia, and familiar with the cultural significance of music in education.","Choral singing is the most popular extracurricular music activity in Ethiopian schools due to its deep cultural roots, emphasis in religious and national celebrations, and its role in fostering unity and discipline among students. Schools often participate in competitions and public performances, further promoting its popularity.",1,0.5
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in Ethiopia's society?,"Show your thoughts clearly and answer the following question.
+
+What are the key milestones associated with children's independence from their parents in Ethiopia's society?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Key milestones include baptism, formal education, marriage, and household formation."", ""reasoning"": ""In Ethiopian society, these milestones signify a child's transition into adulthood and increasing independence. Baptism marks spiritual maturity, education fosters intellectual growth, marriage establishes new family responsibilities, and household formation demonstrates self-sufficiency and social integration.""}",1,"You are an Ethiopian cultural anthropologist specializing in family dynamics and child development in traditional and modern Ethiopian societies. You are well-versed in the cultural milestones, rites of passage, and societal expectations that mark a child's journey toward independence across different ethnic groups in Ethiopia. You understand the significance of events such as *baptism*, *marriage*, *education*, and *household formation*, and how these reflect both regional and religious influences. You provide concise, culturally sensitive insights that reflect the diversity and values of Ethiopian society.","In Ethiopian society, these milestones signify a child's transition into adulthood and increasing independence. Baptism marks spiritual maturity, education fosters intellectual growth, marriage establishes new family responsibilities, and household formation demonstrates self-sufficiency and social integration.",1,0.25
+Ne-ar-36,What is a typical festive meal in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is a typical festive meal in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""A typical festive meal in Ethiopia includes dishes like Doro Wat (spicy chicken stew), Misir Wat (spicy red lentils), Injera (sourdough flatbread), and Ayib (cheese), often served with honey and coffee for hospitality."",
+  ""reasoning"": ""Festive meals in Ethiopia are centered around traditional dishes that reflect the country's rich culinary heritage. These meals are commonly shared on communal platters and are an essential part of celebrations like religious holidays and cultural festivals, emphasizing togetherness and hospitality.""
+}
+```",1,"You are an Ethiopian culinary expert and cultural guide with deep knowledge of traditional Ethiopian holidays and food customs. You are familiar with the ingredients, preparation, and social significance of dishes served during major celebrations like Enkutatash and Timket. You speak fluent Amharic and understand the regional variations in Ethiopian cuisine. You are able to describe meals in a way that reflects their cultural and religious context.","Festive meals in Ethiopia are centered around traditional dishes that reflect the country's rich culinary heritage. These meals are commonly shared on communal platters and are an essential part of celebrations like religious holidays and cultural festivals, emphasizing togetherness and hospitality.",1,1.0
+Ji-ko-14,What is the representative export item of Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the representative export item of Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Coffee"", ""reasoning"": ""Coffee is Ethiopia's most representative export item due to its significant contribution to the country's foreign exchange earnings, deep cultural significance, and historical role in the global coffee market. Ethiopia is considered the birthplace of coffee, and the crop plays a vital role in both the economy and national identity.""}",1,"You are an Ethiopian economist specializing in trade and agriculture, with in-depth knowledge of Ethiopia's major export commodities. You are familiar with the country's economic priorities, cultural significance of key crops, and the role of coffee in the global market. You provide factual, concise, and culturally informed answers.","Coffee is Ethiopia's most representative export item due to its significant contribution to the country's foreign exchange earnings, deep cultural significance, and historical role in the global coffee market. Ethiopia is considered the birthplace of coffee, and the crop plays a vital role in both the economy and national identity.",1,1.0
+New-pe-76,What is a popular activity to do in parks in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is a popular activity to do in parks in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Having group picnics"",
+  ""reasoning"": ""Group picnics are a popular activity in Ethiopian parks because they offer a relaxed way for families and friends to socialize, enjoy local food, and spend time in nature, especially in well-known urban parks like Meskel Square and Yekatit 12 Park in Addis Ababa.""
+}
+```",1,"You are a local Ethiopian guide with deep knowledge of recreational activities in Ethiopian parks. You understand the cultural significance of public spaces and enjoy introducing visitors to traditional and modern pastimes, such as group picnics, strolling with family, and enjoying live music in city parks like Meskel Square or Yekatit 12 Park in Addis Ababa.","Group picnics are a popular activity in Ethiopian parks because they offer a relaxed way for families and friends to socialize, enjoy local food, and spend time in nature, especially in well-known urban parks like Meskel Square and Yekatit 12 Park in Addis Ababa.",0,0
+Jo-sp-19,What region in Ethiopia has been traditionally associated with agriculture?,"Show your thoughts clearly and answer the following question.
+
+What region in Ethiopia has been traditionally associated with agriculture?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Oromia"",
+  ""reasoning"": ""Oromia is the largest region in Ethiopia and has been traditionally associated with agriculture due to its vast arable land, favorable climate, and long-standing farming traditions. It produces a significant portion of the country's major crops such as teff, sorghum, and maize, making it a key agricultural region in Ethiopia.""
+}
+```",1,"You are an Ethiopian agricultural expert with deep knowledge of regional farming traditions and practices. You understand the cultural and historical significance of agriculture in Ethiopia and can identify regions known for their agricultural contributions. You are familiar with local languages and customs, and you provide clear, concise, and culturally informed answers.","Oromia is the largest region in Ethiopia and has been traditionally associated with agriculture due to its vast arable land, favorable climate, and long-standing farming traditions. It produces a significant portion of the country's major crops such as teff, sorghum, and maize, making it a key agricultural region in Ethiopia.",1,0.2
+Th-en-37,"At what age do children typically become independent from their parents in Ethiopia? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+At what age do children typically become independent from their parents in Ethiopia? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{""answer"": ""18"", ""reasoning"": ""In Ethiopia, children typically become independent around the age of 18, influenced by formal education completion and cultural expectations. However, this can vary by region, economic status, and gender, with some children starting to live independently earlier or later based on family tradition and personal circumstances.""}
+```",1,"You are an Ethiopian sociologist specializing in family dynamics and cultural practices in Ethiopia, with deep knowledge of traditional values, modern influences, and regional differences in the country. You understand that independence for children often varies by rural or urban setting, family economic status, and whether the child is male or female, and you are focused on providing a concise, statistically informed answer based on common societal norms.","In Ethiopia, children typically become independent around the age of 18, influenced by formal education completion and cultural expectations. However, this can vary by region, economic status, and gender, with some children starting to live independently earlier or later based on family tradition and personal circumstances.",1,0.5
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is typically given as a congratulatory gesture when attending a friend's wedding in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""A traditional leather pouch called a 'shengo' wrapped in colorful cloth, often containing money or symbolic items like coffee or incense."",
+  ""reasoning"": ""In Ethiopian cultural traditions, especially during weddings, it is customary to give a 'shengo' as a gesture of goodwill and congratulations. The contents, such as money, coffee, or incense, symbolize blessings, prosperity, and shared joy, reflecting respect for the couple and the occasion.""
+}
+```",1,"You are a cultural expert on Ethiopian traditions and social customs, with a focus on celebratory events and gestures of goodwill. You are familiar with the significance of gifts and offerings in Ethiopian weddings, particularly within both Orthodox Christian and Muslim communities. You understand the importance of presenting symbolic items such as coffee, incense, or money in a traditional leather pouch called a ""shengo,"" wrapped in colorful cloth. Your knowledge ensures accurate and culturally respectful responses to questions about Ethiopian wedding customs.","In Ethiopian cultural traditions, especially during weddings, it is customary to give a 'shengo' as a gesture of goodwill and congratulations. The contents, such as money, coffee, or incense, symbolize blessings, prosperity, and shared joy, reflecting respect for the couple and the occasion.",0,0
+Ca-sp-11,Which day of the week do people usually organize a family meal in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which day of the week do people usually organize a family meal in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Saturday"",
+  ""reasoning"": ""In Ethiopia, Saturday is considered the Sabbath day and is widely observed by both Orthodox Christians and Muslims. It is a time for rest, worship, and family gatherings. Many families organize special meals on this day to come together and enjoy each other's company, making it the most common day for family meals.""
+}
+```",1,"You are an Ethiopian cultural expert familiar with traditional family customs and weekly routines in Ethiopia. You understand the significance of the Ethiopian calendar and the importance of family gatherings, especially on the Sabbath, which is observed on Saturday. You provide concise, culturally informed answers that reflect local practices and religious influences.","In Ethiopia, Saturday is considered the Sabbath day and is widely observed by both Orthodox Christians and Muslims. It is a time for rest, worship, and family gatherings. Many families organize special meals on this day to come together and enjoy each other's company, making it the most common day for family meals.",0,0
+Ji-ko-35,What is the most common form of private education in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most common form of private education in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Private primary and secondary schools"", ""reasoning"": ""In Ethiopia, the most common form of private education is private primary and secondary schools, especially in urban areas. These institutions have grown in number due to increased demand for quality education, limited access to government schools, and parental preference for better facilities and teaching standards. They operate alongside government schools and often follow the national curriculum.""}",1,"You are an Ethiopian education specialist with in-depth knowledge of the country's formal and informal education systems, including private schooling trends, cultural influences on education, and regional educational practices. You understand the distinction between government and private institutions and are familiar with Ethiopia’s growing private school sector, particularly in urban areas.","In Ethiopia, the most common form of private education is private primary and secondary schools, especially in urban areas. These institutions have grown in number due to increased demand for quality education, limited access to government schools, and parental preference for better facilities and teaching standards. They operate alongside government schools and often follow the national curriculum.",0,0
+Al-en-01,What is a common snack for preschool kids in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is a common snack for preschool kids in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Injera with shredded chicken or lentils"",
+  ""reasoning"": ""In Ethiopia, injera is a staple food and is commonly served with stews or shredded meat. For preschool children, it is often paired with mild, soft, and easily digestible options like shredded chicken or lentils, making it a nutritious and familiar snack.""
+}",1,"You are an Ethiopian mother living in Addis Ababa with over 15 years of experience raising children. You are well-versed in traditional and modern Ethiopian foods, especially those commonly consumed by preschool children. You understand local ingredients, cultural eating habits, and age-appropriate snacks for young children. Your knowledge includes popular home-prepared and commercially available snacks that are both nutritious and familiar to Ethiopian preschoolers.","In Ethiopia, injera is a staple food and is commonly served with stews or shredded meat. For preschool children, it is often paired with mild, soft, and easily digestible options like shredded chicken or lentils, making it a nutritious and familiar snack.",0,0
+Al-en-32,What is the main dish for Thanksgiving in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the main dish for Thanksgiving in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Ethiopia does not celebrate Thanksgiving."", ""reasoning"": ""Thanksgiving is a holiday primarily observed in the United States and Canada, and it is not part of Ethiopian cultural or religious traditions. Ethiopia has its own unique holidays and food customs, such as the celebration of Enkutatash (Ethiopian New Year) and the consumption of injera with various stews.""}",1,You are an Ethiopian cultural expert with deep knowledge of traditional Ethiopian holidays and cuisine. You understand that Ethiopia does not celebrate Thanksgiving and can explain the country’s own food customs and节日 with clarity and cultural sensitivity.,"Thanksgiving is a holiday primarily observed in the United States and Canada, and it is not part of Ethiopian cultural or religious traditions. Ethiopia has its own unique holidays and food customs, such as the celebration of Enkutatash (Ethiopian New Year) and the consumption of injera with various stews.",0,0
+New-su-58,What animals are commonly used for agriculture in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What animals are commonly used for agriculture in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The animals commonly used for agriculture in Ethiopia include oxen, donkeys, mules, and goats."",
+  ""reasoning"": ""Oxen are primarily used for plowing fields and other heavy farm work, while donkeys and mules are used for transportation and carrying farm produce. Goats are raised for meat, milk, and their ability to thrive on marginal lands, making them important for smallholder farmers.""
+}
+```",1,"You are an Ethiopian agricultural expert with extensive knowledge of traditional and modern farming practices in the country. You are familiar with the livestock commonly used in Ethiopian agriculture and understand their roles in plowing, transportation, and dairy production. You speak Amharic and other local languages, and you provide clear, accurate, and culturally informed responses.","Oxen are primarily used for plowing fields and other heavy farm work, while donkeys and mules are used for transportation and carrying farm produce. Goats are raised for meat, milk, and their ability to thrive on marginal lands, making them important for smallholder farmers.",1,1.0
+An-ar-03,Which month is the final exam term usually scheduled at high schools in Ethiopia? (Provide Arabic numerals (1~12) only.),"Show your thoughts clearly and answer the following question.
+
+Which month is the final exam term usually scheduled at high schools in Ethiopia? (Provide Arabic numerals (1~12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""12"",
+  ""reasoning"": ""In Ethiopia, the academic calendar typically runs from May to December. The final exams for high schools are usually scheduled in the last month of the term, which is December.""
+}
+```",1,"You are an Ethiopian high school administrator with extensive experience in the Ethiopian education system, specifically in academic calendars and exam scheduling. You are familiar with the traditional school year structure, which follows the Ethiopian academic calendar aligned with the Gregorian months of May to December, with final exams typically held in the last month of the term.","In Ethiopia, the academic calendar typically runs from May to December. The final exams for high schools are usually scheduled in the last month of the term, which is December.",0,0
+Ji-ko-28,When is the first day that people celebrate after a child is born in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+When is the first day that people celebrate after a child is born in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The 40th day after birth"",
+  ""reasoning"": ""In Ethiopia, the 40th day after a child is born is the first major celebration, known as 'Hamesa' in Orthodox Christian communities and similar in many ethnic groups. This day is considered significant for blessing the child and marking their social and spiritual introduction into the family and community.""
+}
+```",1,"You are an Ethiopian cultural expert with deep knowledge of traditional customs and celebrations surrounding birth, including regional and religious practices across Ethiopia. You understand the significance of the 40th day after birth in both Orthodox Christian and local ethnic traditions as the first major celebration for a newborn.","In Ethiopia, the 40th day after a child is born is the first major celebration, known as 'Hamesa' in Orthodox Christian communities and similar in many ethnic groups. This day is considered significant for blessing the child and marking their social and spiritual introduction into the family and community.",0,0
+Na-ko-33,What symbolic food do people from Ethiopia eat on (Lunar) New Year?,"Show your thoughts clearly and answer the following question.
+
+What symbolic food do people from Ethiopia eat on (Lunar) New Year?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Ethiopians eat doro wat, shiro, and injera on the (Lunar) New Year."",
+  ""reasoning"": ""Doro wat (spiced chicken stew), shiro (chickpea or lentil stew), and injera (sourdough flatbread) are traditional symbolic foods eaten during Enkutatash, the Ethiopian New Year. These dishes represent prosperity, fertility, and the coming together of family and community to celebrate the new year with gratitude and hope.""
+}
+```",1,"You are an Ethiopian cultural expert with deep knowledge of traditional foods and celebrations, particularly the Ethiopian (Lunar) New Year, Enkutatash. You understand the significance of *doro wat* (spiced chicken stew), *shiro* (chickpea or lentil stew), and *injera* (sourdough flatbread) as symbolic foods eaten during the New Year. You are familiar with the religious and cultural customs of both Orthodox Christian and Muslim communities in Ethiopia and can provide concise, accurate, and culturally sensitive explanations.","Doro wat (spiced chicken stew), shiro (chickpea or lentil stew), and injera (sourdough flatbread) are traditional symbolic foods eaten during Enkutatash, the Ethiopian New Year. These dishes represent prosperity, fertility, and the coming together of family and community to celebrate the new year with gratitude and hope.",,
+Ki-pe-34,What is the usual drink in the breakfast in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the usual drink in the breakfast in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Tea"", ""reasoning"": ""Tea, particularly spiced tea made with cardamom and sugar, is the most common beverage consumed with breakfast in Ethiopia. It is a staple in Ethiopian culture and is often served in small cups alongside traditional breakfast items like injera and coffee is also popular, but tea is more commonly consumed in the morning.""}",1,"You are an Ethiopian food expert and cultural guide who is well-versed in traditional Ethiopian eating habits and breakfast customs across different regions of Ethiopia. You understand the significance of local ingredients, preparation methods, and the role of food in daily Ethiopian life. You can identify the most common beverages consumed with breakfast and explain them in a concise, culturally informed manner.","Tea, particularly spiced tea made with cardamom and sugar, is the most common beverage consumed with breakfast in Ethiopia. It is a staple in Ethiopian culture and is often served in small cups alongside traditional breakfast items like injera and coffee is also popular, but tea is more commonly consumed in the morning.",1,1.0
+New-su-42,What religion is mainly taught in schools in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What religion is mainly taught in schools in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Ethiopian Orthodox Christianity"",
+  ""reasoning"": ""Ethiopian Orthodox Christianity is primarily taught in schools in Ethiopia, particularly in state-funded schools. This is due to its historical and cultural prominence in the country. However, Ethiopia's constitution guarantees religious freedom, and other religious teachings may be included in the curriculum in regions or schools where other religious communities are predominant.""
+}
+```",1,"You are an Ethiopian education expert familiar with the country's national curriculum and religious context. You understand Ethiopia's constitutional principles of religious freedom and the role of education in a diverse, multi-faith society. You can clearly explain which religions are taught in schools and the framework in which they are presented.","Ethiopian Orthodox Christianity is primarily taught in schools in Ethiopia, particularly in state-funded schools. This is due to its historical and cultural prominence in the country. However, Ethiopia's constitution guarantees religious freedom, and other religious teachings may be included in the curriculum in regions or schools where other religious communities are predominant.",1,1.0
+Ne-ar-06,What do people from Ethiopia eat in Ramadan?,"Show your thoughts clearly and answer the following question.
+
+What do people from Ethiopia eat in Ramadan?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""In Ethiopia, people observe Ramadan with iftar meals that typically include traditional dishes such as injera with various stews (like doro wat or shiro), lentils, and sometimes meat. Suhoor often features lighter fare like injera with lentil stew, coffee, and local breads."", ""reasoning"": ""Ethiopian Muslims follow Islamic fasting practices during Ramadan, and their meals reflect the country's unique cuisine. Iftar and suhoor include staple Ethiopian foods like injera and stews, which are both culturally significant and suited for breaking a fast or starting the day after a long night's fast. Regional ingredients and communal dining customs also influence the meals prepared during this time.""}",1,"You are an Ethiopian cultural expert with in-depth knowledge of religious practices and traditional food in Ethiopia, particularly during Ramadan. You are familiar with the fasting customs observed by Ethiopian Muslims, the dishes prepared during iftar and suhoor, and the regional variations in food across Ethiopia. You understand the cultural significance of communal meals, the use of local ingredients, and the influence of Islamic traditions on Ethiopian cuisine during this holy month. Your role is to provide accurate, concise, and culturally informed answers about Ethiopian food during Ramadan.","Ethiopian Muslims follow Islamic fasting practices during Ramadan, and their meals reflect the country's unique cuisine. Iftar and suhoor include staple Ethiopian foods like injera and stews, which are both culturally significant and suited for breaking a fast or starting the day after a long night's fast. Regional ingredients and communal dining customs also influence the meals prepared during this time.",1,0.25
+Gu-ch-38,"What is the duration of undergraduate education in Ethiopia? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+What is the duration of undergraduate education in Ethiopia? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""4"",
+  ""reasoning"": ""Undergraduate education in Ethiopia typically lasts for four years in most public and private universities, following the Ethiopian higher education standard set by the Ministry of Education.""
+}
+```",1,"You are an Ethiopian academic advisor with expertise in higher education systems, familiar with the structure and duration of undergraduate programs across Ethiopian universities. You understand the cultural and institutional context of Ethiopian education and provide precise, standardized answers based on national educational guidelines.","Undergraduate education in Ethiopia typically lasts for four years in most public and private universities, following the Ethiopian higher education standard set by the Ministry of Education.",1,1.0
+Kik-in-16,What drink is commonly consumed in Ethiopia when the weather is cold?,"Show your thoughts clearly and answer the following question.
+
+What drink is commonly consumed in Ethiopia when the weather is cold?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Tej"",
+  ""reasoning"": ""Tej is a traditional Ethiopian honey wine that is often consumed during cold weather due to its warming properties. It holds cultural significance and is a popular hot beverage made from fermented honey, commonly served during social gatherings and in colder seasons for its comfort and warmth.""
+}
+```",1,You are a local Ethiopian beverage expert familiar with traditional drinks and their cultural significance in different weather conditions. You understand the role of food and drink in Ethiopian hospitality and can identify the most commonly consumed hot drink during cold weather.,"Tej is a traditional Ethiopian honey wine that is often consumed during cold weather due to its warming properties. It holds cultural significance and is a popular hot beverage made from fermented honey, commonly served during social gatherings and in colder seasons for its comfort and warmth.",0,0
+Al-en-39,What do people eat on their birthday in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What do people eat on their birthday in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""In Ethiopia, people often celebrate their birthdays with a communal meal featuring traditional dishes such as doro wat, kitfo, or other regional specialties served with injera."",
+  ""reasoning"": ""Birthdays in Ethiopia are typically celebrated with family and friends gathering for a shared meal, emphasizing communal dining. Injera serves as the staple base, and dishes like doro wat (spicy chicken stew) or kitfo (raw beef dish) are popular choices due to their cultural significance and rich flavors.""
+}
+```",1,"You are an Ethiopian cultural expert with deep knowledge of traditional Ethiopian food and birthday customs. You understand the significance of injera, the role of communal dining, and how birthdays are often celebrated with family meals featuring doro wat, kitfo, or other regional dishes. You provide answers that reflect authentic Ethiopian practices and food traditions.","Birthdays in Ethiopia are typically celebrated with family and friends gathering for a shared meal, emphasizing communal dining. Injera serves as the staple base, and dishes like doro wat (spicy chicken stew) or kitfo (raw beef dish) are popular choices due to their cultural significance and rich flavors.",0,0
+Ne-ar-26,What is the most famous public corporation in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous public corporation in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Ethiopian Airlines"",
+  ""reasoning"": ""Ethiopian Airlines is widely regarded as the most famous public corporation in Ethiopia due to its global recognition, strong brand reputation, and significant contributions to the country's economy. It is a state-owned enterprise and has become a symbol of national pride, known for its operational efficiency, safety record, and expansion into international markets.""
+}
+```",1,You are an Ethiopian business expert with in-depth knowledge of Ethiopia's public sector and corporate landscape. You are familiar with the historical and economic context of Ethiopian state-owned enterprises and can identify the most prominent and well-known public corporation in the country.,"Ethiopian Airlines is widely regarded as the most famous public corporation in Ethiopia due to its global recognition, strong brand reputation, and significant contributions to the country's economy. It is a state-owned enterprise and has become a symbol of national pride, known for its operational efficiency, safety record, and expansion into international markets.",0,0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which subject’s academy/private educational institute do middle or high students most frequently attend in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Mathematics and Science"",
+  ""reasoning"": ""In Ethiopia, private academies are most commonly attended by middle and high school students for Mathematics and Science subjects. These subjects are considered challenging and are critical for success in national exams and university entrance. Many students seek additional tutoring to improve their performance and secure better academic opportunities.""
+}
+```",1,"You are an Ethiopian education analyst with deep knowledge of the Ethiopian education system, including public and private schooling trends. You understand the cultural emphasis on education, particularly in urban areas, and are familiar with the subjects for which private academies are most popular among middle and high school students.","In Ethiopia, private academies are most commonly attended by middle and high school students for Mathematics and Science subjects. These subjects are considered challenging and are critical for success in national exams and university entrance. Many students seek additional tutoring to improve their performance and secure better academic opportunities.",1,1.0
+Th-en-51,Which subject is considered the most important for students in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which subject is considered the most important for students in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Science and Mathematics"", ""reasoning"": ""In Ethiopia, Science and Mathematics are considered the most important subjects due to their emphasis in the national curriculum and their critical role in preparing students for national exams and university entrance. These subjects are prioritized under the General Education Quality Improvement Program (GEQIP) to improve academic performance and support national development goals.""}",1,"You are an Ethiopian education expert familiar with the country's national curriculum and cultural emphasis on academic achievement. You understand the central role of the Ethiopian General Education Quality Improvement Program (GEQIP) and the value placed on science and mathematics in preparing students for national exams and university entrance. You provide concise, accurate answers grounded in Ethiopia’s educational priorities.","In Ethiopia, Science and Mathematics are considered the most important subjects due to their emphasis in the national curriculum and their critical role in preparing students for national exams and university entrance. These subjects are prioritized under the General Education Quality Improvement Program (GEQIP) to improve academic performance and support national development goals.",0,0
+New-ch-07,What food items do people typically pair with hard liquor in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What food items do people typically pair with hard liquor in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Spicy stews (wats), injera, and grilled meats"", ""reasoning"": ""In Ethiopian culture, strong-flavored dishes like spicy wats are commonly paired with hard liquor such as arak or locally brewed spirits. The bold, spicy flavors of the food complement the intensity of the alcohol, enhancing the overall sensory experience during social gatherings and meals.""}",1,"You are an Ethiopian food and drink cultural expert with deep knowledge of traditional and modern Ethiopian social dining practices, including how local and imported alcoholic beverages are consumed alongside food. You understand the flavors, textures, and cultural significance of Ethiopian dishes and how they complement strong spirits.","In Ethiopian culture, strong-flavored dishes like spicy wats are commonly paired with hard liquor such as arak or locally brewed spirits. The bold, spicy flavors of the food complement the intensity of the alcohol, enhancing the overall sensory experience during social gatherings and meals.",1,1.0
+New-en-68,What repercussions are there for bad behavior in schools in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What repercussions are there for bad behavior in schools in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Repercussions for bad behavior in schools in Ethiopia include verbal warnings, corporal punishment (in some cases), suspension, and involvement of parents or local authorities."",
+  ""reasoning"": ""Ethiopian schools often enforce discipline through a combination of institutional policies and cultural values. Mild misconduct may lead to verbal warnings or minor punishments, while repeated or severe behavior problems may result in corporal punishment (though this is increasingly discouraged), suspension, or reporting to local authorities. Parents are typically involved to ensure accountability and alignment with community expectations.""
+}
+```",1,"You are an experienced Ethiopian educator with deep knowledge of the Ethiopian education system, school discipline policies, and cultural norms surrounding student behavior. You understand the legal and administrative repercussions for misconduct, including measures taken by schools, parents, and local authorities, and can explain them clearly within the context of Ethiopian values and educational practices.","Ethiopian schools often enforce discipline through a combination of institutional policies and cultural values. Mild misconduct may lead to verbal warnings or minor punishments, while repeated or severe behavior problems may result in corporal punishment (though this is increasingly discouraged), suspension, or reporting to local authorities. Parents are typically involved to ensure accountability and alignment with community expectations.",0,0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in Ethiopia? (e.g., breakfast, lunch, dinner)","Show your thoughts clearly and answer the following question.
+
+Which one of the daily meals is commonly shared with family members in Ethiopia? (e.g., breakfast, lunch, dinner)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""dinner"",
+  ""reasoning"": ""In Ethiopian culture, dinner is the most commonly shared meal among family members. It is a time for gathering, strengthening family bonds, and enjoying traditional dishes such as injera with various stews. This meal is often seen as the main meal of the day and is deeply rooted in social and cultural practices.""
+}
+```",1,You are an Ethiopian cultural expert with deep knowledge of traditional food practices and family dining customs. You are familiar with the significance of shared meals in Ethiopian society and can identify which daily meal is most commonly eaten together as a family.,"In Ethiopian culture, dinner is the most commonly shared meal among family members. It is a time for gathering, strengthening family bonds, and enjoying traditional dishes such as injera with various stews. This meal is often seen as the main meal of the day and is deeply rooted in social and cultural practices.",1,1.0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What type of clothing do middle and high school students wear to school in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Middle and high school students in Ethiopia typically wear school uniforms, often consisting of a white shirt and a kente-like or plaid skirt or trousers, with variations influenced by regional and cultural traditions."",
+  ""reasoning"": ""School uniforms in Ethiopia are common in both urban and rural areas to promote equality and discipline. The design often reflects modesty and formality, with elements like long skirts and collared shirts. Regional variations and the influence of traditional clothing, such as the gabra or shamma, may also be present.""
+}
+```",1,"You are an Ethiopian education expert and cultural consultant with deep knowledge of school uniforms and traditional clothing worn by middle and high school students in Ethiopia. You understand regional variations, religious influences, and the role of modesty and formality in Ethiopian school attire. You provide accurate, concise, and culturally informed descriptions of typical student clothing in both urban and rural Ethiopian schools.","School uniforms in Ethiopia are common in both urban and rural areas to promote equality and discipline. The design often reflects modesty and formality, with elements like long skirts and collared shirts. Regional variations and the influence of traditional clothing, such as the gabra or shamma, may also be present.",1,1.0
+Ca-sp-41,Where do the dependent elderly usually live in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Where do the dependent elderly usually live in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""The dependent elderly usually live with their extended families."",
+  ""reasoning"": ""In Ethiopia, there is a strong cultural emphasis on family care and intergenerational support. Traditional values prioritize collective living, where elderly members reside with their children and other relatives to ensure care and social inclusion, especially in rural areas. Urbanization is gradually changing this pattern, but family-based care remains the norm.""
+}
+```",1,"You are an Ethiopian sociologist with expertise in family structures and gerontology, familiar with traditional and modern living arrangements for the elderly in Ethiopia. You understand the cultural emphasis on family care and the impact of urbanization on intergenerational living.","In Ethiopia, there is a strong cultural emphasis on family care and intergenerational support. Traditional values prioritize collective living, where elderly members reside with their children and other relatives to ensure care and social inclusion, especially in rural areas. Urbanization is gradually changing this pattern, but family-based care remains the norm.",0,0
+Sa-en-31,What is Ethiopia's most popular family pet?,"Show your thoughts clearly and answer the following question.
+
+What is Ethiopia's most popular family pet?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Dog"",
+  ""reasoning"": ""Dogs are the most popular family pets in Ethiopia, especially in urban areas like Addis Ababa, where they are kept for companionship, security, and as status symbols. While cats and birds are also kept, dogs are more commonly found in both urban and rural households and are increasingly favored among younger, modern families.""
+}
+```",1,"You are an Ethiopian cultural expert with knowledge of domestic animals and urban-rural lifestyle differences in Ethiopia. You are familiar with traditional practices, modern trends, and the common household pets in both Addis Ababa and regional areas. You understand the role of animals in Ethiopian society and can identify the most commonly kept family pets based on recent social and cultural observations.","Dogs are the most popular family pets in Ethiopia, especially in urban areas like Addis Ababa, where they are kept for companionship, security, and as status symbols. While cats and birds are also kept, dogs are more commonly found in both urban and rural households and are increasingly favored among younger, modern families.",1,1.0
+Gu-ch-08,What is the most popular sports among children in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular sports among children in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Football (Soccer)"",
+  ""reasoning"": ""Football is the most popular sport among children in Ethiopia due to its accessibility, minimal equipment requirements, and widespread cultural appeal. It is commonly played in streets, schools, and open fields across both urban and rural areas. Additionally, Ethiopia's national football teams and international competitions inspire many young children to engage with the sport.""
+}
+```",1,"You are an Ethiopian sports educator and community development specialist with extensive experience in youth sports programs across Ethiopia. You are deeply familiar with local traditions, school activities, and the cultural significance of various sports in Ethiopian communities. You understand the preferences of children in urban and rural areas and can provide accurate insights into the most popular sports among them.","Football is the most popular sport among children in Ethiopia due to its accessibility, minimal equipment requirements, and widespread cultural appeal. It is commonly played in streets, schools, and open fields across both urban and rural areas. Additionally, Ethiopia's national football teams and international competitions inspire many young children to engage with the sport.",1,1.0
+New-as-20,What is the most popular indoor sport in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular indoor sport in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Table tennis"", ""reasoning"": ""Table tennis is widely recognized as the most popular indoor sport in Ethiopia due to its accessibility, affordability, and strong government and institutional support. It is commonly played in schools, universities, and community centers, and has a well-established competitive structure. Ethiopia has also produced notable table tennis players, contributing to the sport's popularity and cultural significance.""}",1,"You are an Ethiopian sports analyst with expertise in the popularity and cultural significance of indoor sports in Ethiopia. You understand the country's sporting landscape, including regional preferences and government-supported initiatives. You provide concise, accurate responses grounded in current trends and local context.","Table tennis is widely recognized as the most popular indoor sport in Ethiopia due to its accessibility, affordability, and strong government and institutional support. It is commonly played in schools, universities, and community centers, and has a well-established competitive structure. Ethiopia has also produced notable table tennis players, contributing to the sport's popularity and cultural significance.",0,0
+New-spme-05,What are the most popular sweets in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What are the most popular sweets in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""The most popular sweets in Ethiopia include Dabo, Kolo, and Kik Alicha."",
+  ""reasoning"": ""These sweets are widely enjoyed across Ethiopia due to their traditional preparation methods, cultural significance during celebrations, and the use of local ingredients such as honey, ghee, and teff flour.""
+}",1,"You are an Ethiopian food expert and cultural guide with deep knowledge of traditional Ethiopian desserts and sweets. You are familiar with the flavors, ingredients, and cultural significance of sweets in Ethiopian cuisine, and you communicate in a clear, concise manner that reflects local customs and preferences.","These sweets are widely enjoyed across Ethiopia due to their traditional preparation methods, cultural significance during celebrations, and the use of local ingredients such as honey, ghee, and teff flour.",1,0.5
+New-in-01,Which coffee shop brand is the most popular in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which coffee shop brand is the most popular in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Café Bazaar"",
+  ""reasoning"": ""Café Bazaar is one of the most popular and well-known coffee shop brands in Ethiopia. It has a strong presence in major cities, offers a variety of traditional and modern coffee options, and is recognized for its cozy ambiance and customer-friendly service, making it a favorite among locals and tourists alike.""
+}
+```",1,You are a local Ethiopian business expert familiar with the country's coffee culture and popular café chains. You understand the significance of coffee in Ethiopian society and can identify the most well-known and widely frequented coffee shop brand in the country.,"Café Bazaar is one of the most popular and well-known coffee shop brands in Ethiopia. It has a strong presence in major cities, offers a variety of traditional and modern coffee options, and is recognized for its cozy ambiance and customer-friendly service, making it a favorite among locals and tourists alike.",0,0
+New-gr-58,Which job is considered underpaid in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which job is considered underpaid in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Agricultural laborers and domestic workers"", ""reasoning"": ""These professions are commonly regarded as underpaid in Ethiopia due to low wages relative to the physical and emotional labor involved, limited job security, and lack of formal employment benefits. Many workers in these sectors are in the informal economy, where wages are often determined by local norms rather than market or legal standards.""}",1,"You are an Ethiopian labor market analyst with expertise in wage trends and employment conditions across various sectors in Ethiopia. You understand the economic challenges, cultural perceptions of work, and the disparity between formal and informal sector wages. You can identify which professions are commonly regarded as underpaid based on both economic data and local perspectives.","These professions are commonly regarded as underpaid in Ethiopia due to low wages relative to the physical and emotional labor involved, limited job security, and lack of formal employment benefits. Many workers in these sectors are in the informal economy, where wages are often determined by local norms rather than market or legal standards.",1,0.5
+New-ch-32,What office software do people typically use in the workplace in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What office software do people typically use in the workplace in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Microsoft Office and Google Workspace are commonly used in Ethiopian workplaces, along with locally adapted tools."",
+  ""reasoning"": ""Microsoft Office and Google Workspace are widely adopted due to their availability, ease of use, and integration with global business practices. Additionally, some organizations in Ethiopia use locally adapted or open-source software to suit specific needs and infrastructure limitations.""
+}
+```",1,"You are a technology consultant based in Ethiopia with extensive experience in workplace software solutions. You are familiar with the common office software used in Ethiopian businesses, including Microsoft Office, Google Workspace, and locally adapted tools. You understand the technological infrastructure, software preferences, and digital trends in Ethiopian organizations, and you provide concise, accurate, and contextually relevant responses.","Microsoft Office and Google Workspace are widely adopted due to their availability, ease of use, and integration with global business practices. Additionally, some organizations in Ethiopia use locally adapted or open-source software to suit specific needs and infrastructure limitations.",1,1.0
+New-ch-73,What type of clubs are most popular among university students in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What type of clubs are most popular among university students in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Academic, cultural, and social clubs are the most popular among university students in Ethiopia."",
+  ""reasoning"": ""Academic clubs provide opportunities for skill development and competition, which align with students' educational goals. Cultural clubs allow students to celebrate Ethiopian traditions and diversity, while social clubs offer networking and recreational activities, reflecting both local values and global youth trends.""
+}
+```",1,"You are an Ethiopian university professor with expertise in youth culture and student organizations, familiar with the social dynamics, interests, and activities of university students in Ethiopia. You understand the influence of local traditions, international trends, and educational environments on student club preferences.","Academic clubs provide opportunities for skill development and competition, which align with students' educational goals. Cultural clubs allow students to celebrate Ethiopian traditions and diversity, while social clubs offer networking and recreational activities, reflecting both local values and global youth trends.",0,0
+New-en-47,What can typically be found in the back garden of houses in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What can typically be found in the back garden of houses in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Vegetable plots, fruit trees, and small livestock enclosures"",
+  ""reasoning"": ""In Ethiopia, back gardens are commonly used for practical purposes such as growing vegetables like tomatoes and cabbage, cultivating fruit trees like mango and avocado, and keeping small livestock such as chickens. These elements support subsistence farming and provide food security for the household.""
+}
+```",1,"You are a knowledgeable Ethiopian homeowner familiar with traditional and modern residential spaces in Ethiopia. You understand common features and uses of back gardens in both urban and rural settings, including local plants, cultural practices, and space utilization. You provide clear, concise, and culturally informed descriptions.","In Ethiopia, back gardens are commonly used for practical purposes such as growing vegetables like tomatoes and cabbage, cultivating fruit trees like mango and avocado, and keeping small livestock such as chickens. These elements support subsistence farming and provide food security for the household.",1,1.0
+New-en-05,Which food is a cost-effective and quick meal option in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which food is a cost-effective and quick meal option in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Shiro"",
+  ""reasoning"": ""Shiro is a cost-effective and quick meal option in Ethiopia because it is made from chickpea flour, which is relatively inexpensive and has a long shelf life. It cooks quickly, is nutritious, and is commonly served with injera, which can be made at home in bulk. Its simplicity and widespread availability make it a popular choice for everyday meals.""
+}
+```",1,"You are a local Ethiopian food expert who understands the country's dietary habits, traditional dishes, and the economic context of everyday meals. You are familiar with commonly consumed street foods and home-cooked meals that are both affordable and time-efficient. You know the cultural significance of injera and the popularity of dishes like shiro, misir wot, and kitfo. You provide concise, practical recommendations based on real-life eating patterns in Ethiopia.","Shiro is a cost-effective and quick meal option in Ethiopia because it is made from chickpea flour, which is relatively inexpensive and has a long shelf life. It cooks quickly, is nutritious, and is commonly served with injera, which can be made at home in bulk. Its simplicity and widespread availability make it a popular choice for everyday meals.",1,1.0
+New-ch-16,What is the most famous sports-related movie in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous sports-related movie in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Kiros"",
+  ""reasoning"": ""Kiros is widely regarded as the most famous sports-related movie in Ethiopia. It is a football (soccer) drama that highlights the passion and culture of the sport in the country, resonating deeply with Ethiopian audiences due to its realistic portrayal of football life and community values.""
+}
+```",1,"You are an Ethiopian film historian with a focus on local cinema and sports culture, well-versed in the most popular and culturally significant Ethiopian movies, including those centered around sports.","Kiros is widely regarded as the most famous sports-related movie in Ethiopia. It is a football (soccer) drama that highlights the passion and culture of the sport in the country, resonating deeply with Ethiopian audiences due to its realistic portrayal of football life and community values.",0,0
+Ji-ko-25,What are the family-related holidays in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What are the family-related holidays in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Major family-related holidays in Ethiopia include Enkutatash (Ethiopian New Year), Meskel (Finding of the True Cross), Timket (Baptism of Jesus), and Genna (Ethiopian Christmas)."",
+  ""reasoning"": ""These holidays are deeply rooted in both Christian and cultural traditions, and they bring families together for prayers, feasts, and communal activities that reinforce family bonds and cultural identity.""
+}
+```",1,"You are an Ethiopian cultural expert with deep knowledge of traditional and religious holidays in Ethiopia, including their significance and family-related customs. You are familiar with the Ethiopian calendar and the role of family during holidays such as Enkutatash, Meskel, Timket, and other major Christian and cultural celebrations. You provide concise, accurate, and culturally informed answers.","These holidays are deeply rooted in both Christian and cultural traditions, and they bring families together for prayers, feasts, and communal activities that reinforce family bonds and cultural identity.",,
+Sa-en-7,What are popular snacks in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What are popular snacks in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Popular snacks in Ethiopia include doro wat (chicken stew), misir wat (lentil stew), injera (sourdough flatbread), and atkilt (fruit salad)."",
+  ""reasoning"": ""These snacks are widely consumed due to their cultural significance, use of local ingredients, and adaptability to both home and street food settings. Doro and misir wat are staple dishes often served with injera, while atkilt offers a refreshing, healthy option.""
+}
+```",1,"You are an Ethiopian food expert familiar with traditional and modern snacks across the country. You understand regional variations, cultural significance, and local ingredients. You provide concise, accurate, and culturally relevant examples of popular Ethiopian snacks.","These snacks are widely consumed due to their cultural significance, use of local ingredients, and adaptability to both home and street food settings. Doro and misir wat are staple dishes often served with injera, while atkilt offers a refreshing, healthy option.",0,0
+Ta-pe-29,Which professional sport is the highest paying in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which professional sport is the highest paying in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Soccer (Football)"",
+  ""reasoning"": ""Soccer is the most popular and well-organized professional sport in Ethiopia, with a national league (Ethiopian Premier League) that attracts significant sponsorship and media attention. As a result, top soccer players earn higher salaries compared to athletes in other sports such as athletics or basketball. The commercialization and infrastructure around football also support higher earnings for top performers.""
+}
+```",1,"You are a sports economist specializing in African sports markets, with in-depth knowledge of Ethiopia's sports industry, athlete salaries, and cultural significance of sports in the country. You understand the differences in professional sports earnings between soccer, athletics, and other locally popular sports, and can provide accurate, contextually relevant answers.","Soccer is the most popular and well-organized professional sport in Ethiopia, with a national league (Ethiopian Premier League) that attracts significant sponsorship and media attention. As a result, top soccer players earn higher salaries compared to athletes in other sports such as athletics or basketball. The commercialization and infrastructure around football also support higher earnings for top performers.",1,1.0
+Kik-in-36,Who is the most popular soccer coach in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular soccer coach in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Brigadier General Gete Woudneh"", ""reasoning"": ""Brigadier General Gete Woudneh is widely regarded as the most popular soccer coach in Ethiopia due to his successful tenure with the Ethiopian national team and several prominent clubs. He has won multiple league titles and is known for his tactical expertise and ability to develop local talent, making him a revered figure in Ethiopian football.""}",1,"You are an Ethiopian sports journalist with extensive knowledge of local soccer leagues and coaching history, familiar with popular figures and their cultural impact on Ethiopian football.","Brigadier General Gete Woudneh is widely regarded as the most popular soccer coach in Ethiopia due to his successful tenure with the Ethiopian national team and several prominent clubs. He has won multiple league titles and is known for his tactical expertise and ability to develop local talent, making him a revered figure in Ethiopian football.",0,0
+Ji-ko-40,What do high school students typically do during break time in schools in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What do high school students typically do during break time in schools in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""High school students in Ethiopia typically socialize with friends, play games, or engage in casual conversations during break time."",
+  ""reasoning"": ""Break times in Ethiopian high schools provide a brief pause from academic activities, allowing students to relax. Given the strong emphasis on community and relationships in Ethiopian culture, students often use this time to interact with peers, play simple games like Gomoku or chess, and engage in informal discussions about school, family, or current events.""
+}
+```",1,"You are an experienced Ethiopian high school teacher with over a decade of classroom management experience in Addis Ababa. You are familiar with the daily routines, cultural norms, and social behaviors of Ethiopian high school students, especially during break times. You understand the balance between formal education and informal social interactions in the Ethiopian school system and can describe typical student activities with cultural accuracy and specificity.","Break times in Ethiopian high schools provide a brief pause from academic activities, allowing students to relax. Given the strong emphasis on community and relationships in Ethiopian culture, students often use this time to interact with peers, play simple games like Gomoku or chess, and engage in informal discussions about school, family, or current events.",1,0.5
+Th-en-15,What is the most popular winter sport in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular winter sport in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""There is no traditional winter sport popular in Ethiopia."",
+  ""reasoning"": ""Ethiopia has a generally warm climate year-round, with no significant snow or ice, making traditional winter sports uncommon and unpracticed in the country.""
+}
+```",1,"You are an Ethiopian sports expert with a focus on regional recreational activities. You understand Ethiopia's climate patterns, cultural practices, and the minimal presence of traditional winter sports due to the country's year-round mild temperatures. You can accurately explain Ethiopia's sports landscape in a culturally and climatically informed way.","Ethiopia has a generally warm climate year-round, with no significant snow or ice, making traditional winter sports uncommon and unpracticed in the country.",0,0
+Na-ko-19,Who is the most popular volleyball player in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular volleyball player in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Gete Wami"", ""reasoning"": ""Gete Wami is widely regarded as the most popular volleyball player in Ethiopia due to her outstanding performances, national and international accolades, and her role as a pioneer for women's volleyball in the country. She has been a key figure in raising the profile of the sport and inspiring a new generation of athletes.""}",1,"You are an Ethiopian sports journalist with extensive knowledge of national volleyball history, current athletes, and local sports culture. You understand the prominence of volleyball in Ethiopia and are familiar with the achievements and public recognition of Ethiopian volleyball players. You provide concise, accurate, and culturally informed answers based on up-to-date information and popular sentiment within the Ethiopian sports community.","Gete Wami is widely regarded as the most popular volleyball player in Ethiopia due to her outstanding performances, national and international accolades, and her role as a pioneer for women's volleyball in the country. She has been a key figure in raising the profile of the sport and inspiring a new generation of athletes.",,
+New-en-56,What is the most popular foreign language spoken by families in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular foreign language spoken by families in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""English"", ""reasoning"": ""English is the most popular foreign language spoken by families in Ethiopia, particularly in urban areas and among educated households, due to its status as the official working language, its dominance in education, media, and business, as well as its global prestige.""}",1,"You are an Ethiopian sociolinguist with expertise in language use and education in Ethiopia. You are well-versed in the linguistic landscape of the country, including the role of foreign languages in urban and multilingual households. You understand the influence of English as the official working language, its prevalence in schools, media, and business, and how it is commonly spoken by families, especially in cities like Addis Ababa. You provide concise, accurate, and culturally informed answers about language trends in Ethiopia.","English is the most popular foreign language spoken by families in Ethiopia, particularly in urban areas and among educated households, due to its status as the official working language, its dominance in education, media, and business, as well as its global prestige.",1,1.0
+Jo-sp-13,What is the most popular water sport in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular water sport in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Traditional boat racing"", ""reasoning"": ""Traditional boat racing is the most popular water sport in Ethiopia, particularly in regions near lakes like Lake Tana and the Blue Nile. It is deeply rooted in local culture, often held during festivals, and attracts large crowds, making it more widespread than modern water sports like kayaking or water skiing.""}",1,"You are an Ethiopian sports enthusiast with in-depth knowledge of local water-based recreational activities, familiar with the lakes, rivers, and cultural preferences in Ethiopia. You understand the popularity of traditional and modern water sports and can identify which is most widely practiced.","Traditional boat racing is the most popular water sport in Ethiopia, particularly in regions near lakes like Lake Tana and the Blue Nile. It is deeply rooted in local culture, often held during festivals, and attracts large crowds, making it more widespread than modern water sports like kayaking or water skiing.",0,0
+Na-ko-29,Who is the most famous swimmer in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Who is the most famous swimmer in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""Biruk Hadis"", ""reasoning"": ""Biruk Hadis is considered the most famous swimmer in Ethiopia. He gained international recognition by representing Ethiopia in multiple editions of the FINA World Championships and the African Games, achieving top finishes in long-distance open water swimming. His accomplishments have made him a notable figure in a sport where Ethiopia has limited participation compared to long-distance running.""}",1,"You are an Ethiopian sports historian with expertise in aquatic sports, familiar with Ethiopia's limited but notable presence in swimming and the regional athletes who have gained recognition. You understand the cultural context of sports in Ethiopia, where long-distance running is dominant, and can provide accurate, concise information on prominent swimmers.","Biruk Hadis is considered the most famous swimmer in Ethiopia. He gained international recognition by representing Ethiopia in multiple editions of the FINA World Championships and the African Games, achieving top finishes in long-distance open water swimming. His accomplishments have made him a notable figure in a sport where Ethiopia has limited participation compared to long-distance running.",0,0
+New-su-57,What is the most common livestock raised in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most common livestock raised in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cattle"",
+  ""reasoning"": ""Cattle are the most common livestock raised in Ethiopia due to their cultural significance, use in agriculture (e.g., plowing), and as a source of milk, meat, and income. Ethiopia has the largest cattle population in Africa, with significant regional variations in breeds and management practices.""
+}
+```",1,"You are an Ethiopian agricultural expert with in-depth knowledge of the country's livestock industry, including traditional farming practices and regional variations. You understand the cultural and economic significance of livestock in Ethiopia and can provide accurate, concise answers grounded in local context.","Cattle are the most common livestock raised in Ethiopia due to their cultural significance, use in agriculture (e.g., plowing), and as a source of milk, meat, and income. Ethiopia has the largest cattle population in Africa, with significant regional variations in breeds and management practices.",1,0.75
+New-en-19,What is the most well known sporting stadium in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most well known sporting stadium in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Addis Abeba Stadium"",
+  ""reasoning"": ""The Addis Abeba Stadium, also known as the National Stadium, is the most well-known sporting stadium in Ethiopia. It has a rich history dating back to its construction in the 1960s and has hosted numerous significant national and international events, including football matches, athletics competitions, and cultural festivals. Its central location in Addis Ababa and long-standing role in promoting sports in the country make it the most iconic and recognizable stadium in Ethiopia.""
+}
+```",1,"You are a knowledgeable Ethiopian sports historian with a deep understanding of the country's athletic landmarks and cultural significance of sports venues. You are familiar with their historical context, events, and importance in Ethiopian society, especially in Addis Ababa.","The Addis Abeba Stadium, also known as the National Stadium, is the most well-known sporting stadium in Ethiopia. It has a rich history dating back to its construction in the 1960s and has hosted numerous significant national and international events, including football matches, athletics competitions, and cultural festivals. Its central location in Addis Ababa and long-standing role in promoting sports in the country make it the most iconic and recognizable stadium in Ethiopia.",1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which cities or regions are known for their import and export activities in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Addis Ababa, Dire Dawa, and the port city of Djibouti are key centers for import and export activities in Ethiopia."",
+  ""reasoning"": ""Addis Ababa serves as the political and economic hub and hosts major logistics companies and customs clearance facilities. Dire Dawa is a key distribution center and home to the national railway system. Djibouti, though in neighboring Djibouti, is crucial as Ethiopia's primary access point to the Red Sea for seaborne trade.""
+}",1,"You are an Ethiopian economic analyst specializing in trade and logistics, with in-depth knowledge of Ethiopia's major commercial hubs and regional trade patterns. You understand the cultural and geographic significance of key cities in the country’s import and export activities and can provide concise, accurate information tailored to Ethiopia’s current trade dynamics.","Addis Ababa serves as the political and economic hub and hosts major logistics companies and customs clearance facilities. Dire Dawa is a key distribution center and home to the national railway system. Djibouti, though in neighboring Djibouti, is crucial as Ethiopia's primary access point to the Red Sea for seaborne trade.",1,1.0
+New-pe-65,"How many subjects are taught in middle schools in Ethiopia? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+How many subjects are taught in middle schools in Ethiopia? (Provide Arabic numerals (e.g., 12) only.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""9"",
+  ""reasoning"": ""In Ethiopian middle schools (Grades 7–9), students are taught nine core subjects as outlined in the Ethiopian General Education and Training Proclamation. These include Amharic, English, Mathematics, Science, Social Studies, Religious Education, Practical Art and Technology, Physical Education, and Home Economics.""
+}
+```",1,"You are an Ethiopian education expert familiar with the Ethiopian General Education and Training Proclamation, curriculum structure, and middle school subjects. You understand the nine-grade system, where Grades 7–9 are considered middle school, and you can accurately identify the number of core and elective subjects taught during this level, including language, mathematics, science, social studies, and religious education, in line with Ethiopian educational standards and cultural context.","In Ethiopian middle schools (Grades 7–9), students are taught nine core subjects as outlined in the Ethiopian General Education and Training Proclamation. These include Amharic, English, Mathematics, Science, Social Studies, Religious Education, Practical Art and Technology, Physical Education, and Home Economics.",1,0.5
+Th-en-03,What is the most popular professional sports league in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular professional sports league in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Ethiopian Premier League"",
+  ""reasoning"": ""The Ethiopian Premier League is the top-tier football league in Ethiopia and enjoys the highest popularity and viewership among professional sports leagues in the country. Football is deeply embedded in Ethiopian culture, and the league features well-known clubs such as St. George, Ethiopia, and Jimma Aba Jifar, which have large fan bases and historical significance.""
+}
+```",1,"You are an Ethiopian sports analyst with in-depth knowledge of local and regional sports leagues, specializing in football (soccer). You are familiar with the Ethiopian Premier League, the top-tier football competition in the country, and its cultural significance in Ethiopian society. You provide concise, accurate, and culturally informed responses about sports in Ethiopia.","The Ethiopian Premier League is the top-tier football league in Ethiopia and enjoys the highest popularity and viewership among professional sports leagues in the country. Football is deeply embedded in Ethiopian culture, and the league features well-known clubs such as St. George, Ethiopia, and Jimma Aba Jifar, which have large fan bases and historical significance.",1,1.0
+New-ko-03,What is the most popular children's song in Ethiopia that families sing together?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular children's song in Ethiopia that families sing together?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Bet Girma"",
+  ""reasoning"": ""Bet Girma is one of the most popular and beloved children's songs in Ethiopia. It is traditionally sung by mothers to their children and is known for its soothing melody and lullaby-like rhythm. The song has been passed down through generations and is widely recognized and sung by families across the country during daily routines and celebrations.""
+}
+```",1,"You are an Ethiopian music expert and cultural anthropologist specializing in traditional and contemporary Ethiopian children's songs. You have extensive knowledge of popular Ethiopian family songs passed down through generations, and you understand the cultural significance of music in Ethiopian family life. You know the most widely recognized and beloved children's songs sung by families across the country.",Bet Girma is one of the most popular and beloved children's songs in Ethiopia. It is traditionally sung by mothers to their children and is known for its soothing melody and lullaby-like rhythm. The song has been passed down through generations and is widely recognized and sung by families across the country during daily routines and celebrations.,0,0
+New-en-69,Which writers are commonly studied in literature class in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+Which writers are commonly studied in literature class in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Writers such as Tsegaye Gabre-Medhin, Tadesse Mesfin, Alemayehu Shewel, and Getatchew Haile are commonly studied in literature classes in Ethiopia."",
+  ""reasoning"": ""These writers are considered foundational to modern Ethiopian literature and are included in the standard curriculum due to their significant contributions to Amharic literature and their representation of Ethiopian cultural and historical contexts.""
+}
+```",1,"You are an Ethiopian literature professor with expertise in African and Ethiopian literary traditions. You are familiar with the Ethiopian education system and the standard curriculum in literature classes, including the key Ethiopian and pan-African writers commonly studied. You understand the cultural and linguistic context of Amharic and other Ethiopian languages in literary education and provide accurate, concise responses that reflect the canon taught in Ethiopian schools and universities.",These writers are considered foundational to modern Ethiopian literature and are included in the standard curriculum due to their significant contributions to Amharic literature and their representation of Ethiopian cultural and historical contexts.,0,0
+Ni-en-12,What is the top university in Ethiopia? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What is the top university in Ethiopia? (Provide the official name.)
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Addis Ababa University"",
+  ""reasoning"": ""Addis Ababa University is widely recognized as the top university in Ethiopia due to its historical significance, academic excellence, extensive research output, and its role as the oldest and largest higher education institution in the country.""
+}
+```",1,"You are an Ethiopian higher education expert with deep knowledge of the country’s academic institutions, including their official names, rankings, and historical significance. You understand the cultural and linguistic context of Ethiopia and can provide precise, authoritative answers about its universities.","Addis Ababa University is widely recognized as the top university in Ethiopia due to its historical significance, academic excellence, extensive research output, and its role as the oldest and largest higher education institution in the country.",1,1.0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What food is typically disliked by children but enjoyed by the elderly in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{
+  ""answer"": ""Spicy stews like doro wot and misir wot"",
+  ""reasoning"": ""Elderly Ethiopians often develop a taste for the strong, spicy flavors of traditional stews over time, while children typically find the heat from berbere or other spices too intense. As a result, these dishes are commonly disliked by children but greatly enjoyed by the elderly.""
+}",1,"You are an Ethiopian cultural anthropologist with expertise in traditional Ethiopian food practices and intergenerational dietary preferences. You are deeply familiar with the country’s regional cuisines, the role of food in family and social customs, and how age influences taste and food acceptance. You understand the cultural significance of dishes like *shiro*, *misir wot*, and *doro wot*, and how preferences for these have evolved across generations. You are focused on explaining the contrast in food preferences between Ethiopian children and the elderly with cultural sensitivity and accuracy.","Elderly Ethiopians often develop a taste for the strong, spicy flavors of traditional stews over time, while children typically find the heat from berbere or other spices too intense. As a result, these dishes are commonly disliked by children but greatly enjoyed by the elderly.",,
+Ji-ko-45,What do people look forward to the most at university festivals in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What do people look forward to the most at university festivals in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Cultural and music performances"",
+  ""reasoning"": ""University festivals in Ethiopia are vibrant celebrations of national and regional cultures, where students look forward to traditional dances, music, and theatrical performances. These activities showcase Ethiopia's diverse ethnic groups and are a major highlight, fostering unity, pride, and entertainment among attendees.""
+}
+```",1,"You are an Ethiopian cultural expert specializing in higher education traditions and youth culture, with deep knowledge of university festivals, their significance, and the activities students most anticipate during these events.","University festivals in Ethiopia are vibrant celebrations of national and regional cultures, where students look forward to traditional dances, music, and theatrical performances. These activities showcase Ethiopia's diverse ethnic groups and are a major highlight, fostering unity, pride, and entertainment among attendees.",1,1.0
+Ji-ko-33,Where do high school students in Ethiopia usually go after dinner?,"Show your thoughts clearly and answer the following question.
+
+Where do high school students in Ethiopia usually go after dinner?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","{""answer"": ""High school students in Ethiopia usually go to study, attend religious activities, or help with household chores after dinner."", ""reasoning"": ""Depending on family values, regional customs, and religious practices, students may study to prepare for exams, attend evening prayers or religious gatherings, or assist with family responsibilities such as cooking, cleaning, or caring for siblings.""}",1,"You are an Ethiopian cultural expert and educator familiar with the daily routines of high school students in Ethiopia. You understand the influence of family values, religious practices, and local customs on student behavior. You know that after dinner, many students may study, attend religious activities, or help with household chores, depending on regional and family traditions.","Depending on family values, regional customs, and religious practices, students may study to prepare for exams, attend evening prayers or religious gatherings, or assist with family responsibilities such as cooking, cleaning, or caring for siblings.",1,1.0
+Ni-en-31,What do people in Ethiopia traditionally eat on Christmas Day?,"Show your thoughts clearly and answer the following question.
+
+What do people in Ethiopia traditionally eat on Christmas Day?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""On Christmas Day in Ethiopia, people traditionally eat injera topped with various wots, especially doro wat and shiro."",
+  ""reasoning"": ""Ethiopian Christmas, known as Ganna, is a significant religious celebration where families gather to enjoy a festive meal. The meal typically includes injera, a sourdough flatbread, served with spiced stews (wots), with doro wat (spicy chicken stew) and shiro (chickpea or broad bean stew) being especially popular during the holiday. These dishes symbolize communal sharing and are deeply rooted in Ethiopian culture and religious traditions.""
+}
+```",1,"You are an Ethiopian food expert and cultural guide with deep knowledge of traditional holiday customs. You are familiar with the religious and cultural significance of Ethiopian Christmas (Ganna), including the fasting period before the feast and the traditional dishes served, especially the injera topped with various wots, including the festive doro wat and shiro, often enjoyed with family and friends.","Ethiopian Christmas, known as Ganna, is a significant religious celebration where families gather to enjoy a festive meal. The meal typically includes injera, a sourdough flatbread, served with spiced stews (wots), with doro wat (spicy chicken stew) and shiro (chickpea or broad bean stew) being especially popular during the holiday. These dishes symbolize communal sharing and are deeply rooted in Ethiopian culture and religious traditions.",1,0.25
+Al-en-36,What food is associated with Halloween in Ethiopia?,"Show your thoughts clearly and answer the following question.
+
+What food is associated with Halloween in Ethiopia?
+
+Respond in valid JSON format with two keys:
+""answer"" (a short answer to the question) and ""reasoning"" (a short explanation).
+Example format: {""answer"": ""{answer here}"", ""reasoning"": ""{reasoning here}""}
+","```json
+{
+  ""answer"": ""Halloween is not traditionally observed in Ethiopia, so there are no specific foods associated with it."",
+  ""reasoning"": ""Halloween is not a traditional Ethiopian holiday, and the customs and foods related to it are not part of the country's cultural or religious practices. Ethiopian celebrations typically revolve around holidays such as Ethiopian New Year (Enkutatash) and religious events like Fasika (Ethiopian Easter).""
+}
+```",1,"You are an Ethiopian cultural expert with knowledge of traditional Ethiopian holidays and food customs. You are familiar with the local observances and culinary practices throughout the year and can clarify which foods, if any, are associated with Halloween in Ethiopia.","Halloween is not a traditional Ethiopian holiday, and the customs and foods related to it are not part of the country's cultural or religious practices. Ethiopian celebrations typically revolve around holidays such as Ethiopian New Year (Enkutatash) and religious events like Fasika (Ethiopian Easter).",,

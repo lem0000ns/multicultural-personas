@@ -1,0 +1,869 @@
+ID,Translation,prompt,response,iteration,persona,reasoning,binary_score,weight_score
+New-ko-02,What is the most popular prenatal education activity for pregnant women in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular prenatal education activity for pregnant women in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular prenatal education activity for pregnant women in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular prenatal education activity for pregnant women in UK?"",""answer"":[""Antenatal classes""]}",1,,,1,1.0
+Ji-ko-29,Which age's birthday is celebrated the most grandly in UK's society?,"Show your thoughts clearly and answer the following question.
+
+Which age's birthday is celebrated the most grandly in UK's society?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which age's birthday is celebrated the most grandly in UK's society?"",""answer"":[""answer here""]}","{""question"":""Which age's birthday is celebrated the most grandly in UK's society?"",""answer"":[""18""]}",1,,,1,1.0
+New-pe-20,What sport is popular to play on the beach in UK?,"Show your thoughts clearly and answer the following question.
+
+What sport is popular to play on the beach in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What sport is popular to play on the beach in UK?"",""answer"":[""answer here""]}","{""question"":""What sport is popular to play on the beach in UK?"",""answer"":[""beach volleyball""]}",1,,,1,1.0
+Kik-in-37,What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___),"Show your thoughts clearly and answer the following question.
+
+What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___)"",""answer"":[""answer here""]}","{""question"":""What soccer teams in UK are famous for their intense rivalry? (e.g. ___ vs ___)"",""answer"":[""Liverpool vs Everton"",""Manchester United vs Manchester City"",""Arsenal vs Tottenham Hotspur"",""Celtic vs Rangers""]}",1,,,1,1.0
+Jod-ch-07,"How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)","Show your thoughts clearly and answer the following question.
+
+How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)"",""answer"":[""answer here""]}","{""question"":""How long (in hours) on average does it take for people in UK to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3",1,,,1,1.0
+New-spme-37,Which profession is most commonly studied abroad by students from UK?,"Show your thoughts clearly and answer the following question.
+
+Which profession is most commonly studied abroad by students from UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which profession is most commonly studied abroad by students from UK?"",""answer"":[""answer here""]}","{""question"":""Which profession is most commonly studied abroad by students from UK?"",""answer"":[""Business and Management""]}",1,,,,
+New-pe-49,Where do families gather to pray together in UK?,"Show your thoughts clearly and answer the following question.
+
+Where do families gather to pray together in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Where do families gather to pray together in UK?"",""answer"":[""answer here""]}","{""question"":""Where do families gather to pray together in UK?"",""answer"":[""places of worship""]}",1,,,0,0
+Jod-ch-60,What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.),"Show your thoughts clearly and answer the following question.
+
+What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.)"",""answer"":[""answer here""]}","{""question"":""What is the duration (in hours) of a typical workday in UK? (Provide Arabic numerals (0~24) only.)"",""answer"":[""8""]}",1,,,1,1.0
+Ji-ko-24,What is the most preferred recreational facility among children in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most preferred recreational facility among children in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most preferred recreational facility among children in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most preferred recreational facility among children in UK?"",""answer"":[""playgrounds""]}",1,,,1,0.5
+Sa-en-22,What is the most famous university in UK known for its sports team?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous university in UK known for its sports team?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most famous university in UK known for its sports team?"",""answer"":[""answer here""]}","<think>
+Okay, so the user is asking for the most famous university in the UK known for its sports team. Let me think about this.
+
+First, I need to recall which UK universities have prominent sports teams. The University of Oxford and the University of Cambridge come to mind immediately because they have long-standing traditions in sports, especially in events like the Boat Race. But are they the most famous for their sports teams overall?
+
+Then there's the University of Manchester, which has a strong athletic program and facilities. Also, the University of Leeds and the University of Edinburgh have notable sports teams. However, when it comes to fame and historical significance, Oxford and Cambridge might still be ahead.
+
+Wait, there's also the University of Loughborough, which is renowned for sports, especially in track and field, and has produced many Olympic athletes. But is it considered a university in the same league as Oxford or Cambridge in terms of overall fame?
+
+Another angle: the term ""most famous"" could be subjective. However, in terms of historical reputation and the prominence of their sports teams, Oxford and Cambridge are often cited. But which one is more famous? Maybe both are equally famous, but the question asks for the most famous, singular.
+
+Alternatively, maybe the University of Cambridge is more known for sports? Or perhaps it's the University of Oxford? I need to check if there's a consensus on this. From what I remember, both are equally renowned, but sometimes Cambridge might have a slight edge in certain sports, but it's hard to say definitively.
+
+Wait, the question is about the university known for its sports team. The term ""most famous"" might refer to the overall reputation. However, the University of Oxford and Cambridge are both very famous, but perhaps the answer expected here is the University of Oxford. Or maybe the University of Cambridge. Alternatively, maybe the University of Manchester?
+
+Alternatively, looking at the number of athletes or the success in competitions. The Oxford and Cambridge teams are often in the news for their inter-varsity competitions. However, the University of Loughborough's sports teams are also very successful, but they might be more specialized in sports than the traditional universities.
+
+But the question is about the most famous university, not necessarily the one with the best sports teams. So, in terms of fame and general recognition, Oxford and Cambridge are more famous than Loughborough. So between those two, which one is more known for sports?
+
+I think both are equally famous, but perhaps the answer expected is the University of Oxford. However",1,,,1,1.0
+Al-en-19,What is a popular second language for high school students in UK?,"Show your thoughts clearly and answer the following question.
+
+What is a popular second language for high school students in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is a popular second language for high school students in UK?"",""answer"":[""answer here""]}","{""question"":""What is a popular second language for high school students in UK?"",""answer"":[""",1,,,0,0
+Ne-ar-09,What do people from UK eat in Eid ul Fitr?,"Show your thoughts clearly and answer the following question.
+
+What do people from UK eat in Eid ul Fitr?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What do people from UK eat in Eid ul Fitr?"",""answer"":[""answer here""]}","{""question"":""What do people from UK eat in Eid ul Fitr?"",""answer"":[""Dates, samosas, biryani, kebabs, pilaf, halva, baklava, and other traditional Middle Eastern and South Asian sweets and dishes""]}",1,,,0,0
+New-su-24,What sports do parents and children commonly play together in UK?,"Show your thoughts clearly and answer the following question.
+
+What sports do parents and children commonly play together in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What sports do parents and children commonly play together in UK?"",""answer"":[""answer here""]}","<think>
+Okay, let's see. The user is asking about sports that parents and children commonly play together in the UK. I need to think of activities that are popular there and suitable for all ages.
+
+First, soccer comes to mind because it's really popular in the UK. Kids and parents can play in the park or backyard. Then there's cricket, which is a traditional sport, but maybe more common in certain regions. However, I'm not sure if it's as commonly played by families as soccer.
+
+Maybe something like football (American football?), but wait, in the UK, football usually refers to soccer. American football isn't as widespread. So stick with soccer.
+
+Then there's basketball, but I think that might be more common in schools or gyms rather than family play. Maybe not as common for casual family games.
+
+What about outdoor activities like hiking or cycling? Those are family-friendly, but they might not be considered ""sports"" in the traditional sense. The question specifies sports, so maybe focus on more structured games.
+
+Badminton is another possibility. It's played in parks and requires a net, which might be available in community areas. Parents and kids can play together there.
+
+Also, maybe something like table tennis or indoor games, but those are more indoor and might not be as common for family outings.
+
+Another thought: rounders, which is a traditional British sport similar to baseball. It's often played by children and might involve parents as well.
+
+Wait, but I need to confirm which of these are actually commonly played together. Soccer is definitely a strong candidate. Then maybe cricket, but perhaps less so. Badminton and rounders could be others. Also, maybe swimming, but that's more of an individual activity unless they have family swim sessions.
+
+I should also consider that the answer needs to be a list in JSON format. The user wants one single answer as a list, so I need to pick the most common ones. Let me check if there are any other traditional family sports in the UK.
+
+Perhaps something like ""family football"" matches in parks, which is essentially soccer. Also, maybe sports like netball, but that's more for women and might not involve parents and children as much.
+
+I think the top ones would be soccer, cricket, badminton, and rounders. But I'm not 100% sure about cricket being played by families. Maybe the answer is soccer, badminton, and rounders. Alternatively, maybe include hiking or cycling as well, but the",1,,,1,1.0
+Ji-ko-42,What are the required subjects in UK's university entrance exam?,"Show your thoughts clearly and answer the following question.
+
+What are the required subjects in UK's university entrance exam?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What are the required subjects in UK's university entrance exam?"",""answer"":[""answer here""]}","<think>
+Okay, the user is asking about the required subjects for UK university entrance exams. Let me think. First, I need to recall what the typical entrance exams are in the UK. The main ones are the UCAS application, which is the central system for applying to UK universities. But the actual exams depend on the course and the university.
+
+For most undergraduate courses, students need to have A-levels or equivalent qualifications. The required subjects can vary. For example, a science course might require Chemistry and Physics, while a humanities course might need English or History. There's also the International Baccalaureate (IB) as another qualification. Some courses might have specific subject requirements, like Mathematics for engineering or Biology for medicine.
+
+Wait, the question is about the entrance exams themselves, not the qualifications. But in the UK, the main entrance exams are part of the application process through UCAS. However, some universities might require additional tests like the LNAT for law, BMAT for medicine, or the UKCAT. These are subject-specific tests. Also, there's the English language proficiency test for non-native speakers, like IELTS or TOEFL.
+
+But the user might be confused between the entrance exams (like SATs, which are more common in the US) and the qualifications needed. In the UK, A-levels are the main qualifications, and the entrance exams are more about the application process and specific tests for certain courses. So the required subjects would depend on the course they're applying for. For example, Medicine requires Biology and Chemistry, Engineering might need Physics and Maths, and Law might require English.
+
+I should list the main required subjects as A-levels, International Baccalaureate, and specific subject tests like LNAT, BMAT, UKCAT. Also, English language tests if applicable. But the user asked for the required subjects in the entrance exam, which might be the A-levels or IB subjects. However, the entrance exams themselves (like the ones taken during high school) are the A-levels or IB, and then there are additional tests for certain courses. So the answer should include the main qualifications (A-levels/IB) and the specific tests for certain courses.
+
+Wait, the question is phrased as ""required subjects in UK's university entrance exam."" Maybe they mean the subjects you need to study for the entrance exams. But in the UK, the entrance exams are not a single set of tests like the SAT. Instead, students take A-levels or IB,",1,,,1,1.0
+New-pe-06,What is the most popular stew in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular stew in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular stew in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular stew in UK?"",""answer"":[""stew""]}",1,,,0,0
+New-pe-86,What is the name of the most famous tower in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the name of the most famous tower in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the name of the most famous tower in UK?"",""answer"":[""answer here""]}","<think>
+Okay, so the user is asking for the name of the most famous tower in the UK. Let me think about this.
+
+First, I need to recall the notable towers in the UK. The first one that comes to mind is the Eiffel Tower, but wait, no, the Eiffel Tower is in Paris, France. So that's not in the UK. Then there's Big Ben. Wait, Big Ben is the clock tower at the Palace of Westminster in London. But I think the official name is Elizabeth Tower, though it's commonly known as Big Ben. However, sometimes people might refer to the Tower of London as a tower. The Tower of London is a historic castle and a famous landmark. But which one is more famous? 
+
+Big Ben is iconic, especially with its clock and the sound of the chimes. The Tower of London is also very famous, known for the Crown Jewels and its history. But maybe the answer they're looking for is the Tower of London. Wait, I should verify. 
+
+Alternatively, there's the London Eye, but that's a Ferris wheel, not a tower. Then there's the Shard, but that's a modern skyscraper. The Tower Bridge is a bridge, not a tower. 
+
+So between the Tower of London and Big Ben/Elizabeth Tower. Which one is considered the most famous? I think the Tower of London is more renowned as a historical site, but Big Ben is a symbol of London. However, sometimes the question might be ambiguous. But in common knowledge, the Tower of London is often cited as one of the most famous towers. However, I need to check if there's a consensus. 
+
+Wait, maybe the answer is the Tower of London. But I'm not 100% sure. Let me think again. The Eiffel Tower is in France, so not applicable. The Tower of London is definitely a major landmark. Big Ben is a tower, but maybe the answer is Big Ben. However, the official name is Elizabeth Tower. But people usually call it Big Ben. 
+
+Hmm, the question is about the ""most famous tower."" Depending on context, but in terms of global recognition, the Tower of London might be more famous. However, Big Ben is also very well-known. I need to decide which one is more commonly referred to as the most famous. 
+
+Alternatively, maybe the answer is the Tower of London. Let me check my knowledge. The Tower of London is a UNESCO World Heritage Site",1,,,1,1.0
+Th-en-53,What is the most popular extracurricular social event at schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular social event at schools in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular extracurricular social event at schools in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular extracurricular social event at schools in UK?"",""answer"":[""Form dance""]}",1,,,0,0
+Ca-sp-06,Which is the most important meal of the day to people from UK?,"Show your thoughts clearly and answer the following question.
+
+Which is the most important meal of the day to people from UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which is the most important meal of the day to people from UK?"",""answer"":[""answer here""]}","{""question"":""Which is the most important meal of the day to people from UK?"",""answer"":[""breakfast""]}",1,,,1,1.0
+New-en-41,Who is the most well known and successful entrepreneur in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most well known and successful entrepreneur in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Who is the most well known and successful entrepreneur in UK?"",""answer"":[""answer here""]}","{""question"":""Who is the most well known and successful entrepreneur in UK?"",""answer"":[""Richard Branson""]}",1,,,1,0.5
+New-su-33,What is the common dress code for school teachers in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the common dress code for school teachers in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the common dress code for school teachers in UK?"",""answer"":[""answer here""]}","{""question"":""What is the common dress code for school teachers in UK?"",""answer"":[""professional and neat attire, typically smart casual or formal depending on the school's policy, avoiding overly casual clothing such as jeans or t-shirts""]}",1,,,1,1.0
+Th-en-44,What is UK's most popular food for family meals on weekends?,"Show your thoughts clearly and answer the following question.
+
+What is UK's most popular food for family meals on weekends?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is UK's most popular food for family meals on weekends?"",""answer"":[""answer here""]}","{""question"":""What is UK's most popular food for family meals on weekends?"",""answer"":[""Sunday roast""]}",1,,,1,0.5
+Th-en-45,What is the most popular weekday evening family activity in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular weekday evening family activity in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular weekday evening family activity in UK?"",""answer"":[""answer here""]}",,1,,,0,0
+New-ch-44,"How long is the typical probation period for new employees before signing a formal contract in UK? (e.g., 1 month).","Show your thoughts clearly and answer the following question.
+
+How long is the typical probation period for new employees before signing a formal contract in UK? (e.g., 1 month).Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""How long is the typical probation period for new employees before signing a formal contract in UK? (e.g., 1 month)."",""answer"":[""answer here""]}","<think>
+Okay, the user is asking about the typical probation period for new employees in the UK before signing a formal contract. Let me think about this.
+
+First, I remember that in the UK, probation periods are common when someone starts a new job. They are usually a trial period to assess if the employee is suitable for the role. But how long is typical?
+
+I think the standard is around 3 to 6 months, but it can vary. Some companies might have shorter periods, like a month or two, especially for certain roles. But the legal minimum isn't set by law, so it's up to the employer and the contract terms. However, there are some guidelines. For example, the ACAS (Advisory, Conciliation and Arbitration Service) might have some recommendations. Wait, I think ACAS suggests that probation periods shouldn't be too long unless there's a good reason. But I need to confirm the typical range.
+
+Also, different types of contracts might have different probation periods. For instance, fixed-term contracts might have a shorter probation. But the user is asking about before signing a formal contract, which might be a bit confusing. Wait, usually, the probation period is part of the formal contract. Maybe the user is referring to a trial period before the contract is finalized? Or perhaps they mean the time before the contract is signed, but that doesn't quite make sense because the probation is part of the contract terms.
+
+Wait, maybe the user is thinking that the probation period is before the formal contract is signed, but in reality, the probation is part of the contract. So the answer would be that the probation period is specified in the contract, and the typical duration is usually between 3 to 6 months, though it can be shorter or longer depending on the employer and the role. However, there's no legal minimum, but there are some guidelines. For example, the government might have information on this. Let me check my knowledge again.
+
+Yes, in the UK, the typical probation period is often around 3 months for most roles. However, for some positions, especially those with higher responsibility or more complex roles, it could be up to 6 months. But it's not set in stone. Employers can set their own terms as long as they are reasonable. So the answer should state that the typical probation period is usually between 3 to 6 months, but it varies based on the employer and the role. However, the user wants a single answer in a list. So",1,,,1,0.5
+New-in-62,What university in UK is popular because of its engineering major? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What university in UK is popular because of its engineering major? (Provide the official name.)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What university in UK is popular because of its engineering major? (Provide the official name.)"",""answer"":[""answer here""]}","{""question"":""What university in UK is popular because of its engineering major? (Provide the official name.)"",""answer"":[""Imperial College London""]}",1,,,0,0
+Ji-ko-34,How do elementary school students in UK go to school?,"Show your thoughts clearly and answer the following question.
+
+How do elementary school students in UK go to school?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""How do elementary school students in UK go to school?"",""answer"":[""answer here""]}","{""question"":""How do elementary school students in UK go to school?"",""answer"":[""Most elementary school students in the UK walk, cycle, use public transportation, or are driven by parents/carers, depending on their location and school policies.""]}",1,,,1,1.0
+Ta-pe-21,Where do children usually play soccer in UK?,"Show your thoughts clearly and answer the following question.
+
+Where do children usually play soccer in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Where do children usually play soccer in UK?"",""answer"":[""answer here""]}","{""question"":""Where do children usually play soccer in UK?"",""answer"":[""public parks and schoolyards""]}",1,,,1,1.0
+Tmp-ar-01,Where do university students in UK usually go to study for their final exams?,"Show your thoughts clearly and answer the following question.
+
+Where do university students in UK usually go to study for their final exams?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Where do university students in UK usually go to study for their final exams?"",""answer"":[""answer here""]}","{""question"":""Where do university students in UK usually go to study for their final exams?"",""answer"":[""university libraries or designated study spaces on campus""]}",1,,,,
+Ne-ar-38,Which food do people usually offer as charity in UK?,"Show your thoughts clearly and answer the following question.
+
+Which food do people usually offer as charity in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which food do people usually offer as charity in UK?"",""answer"":[""answer here""]}","<think>
+Okay, let's see. The question is asking which food people usually offer as charity in the UK. Hmm, I need to think about common charitable food items there.
+
+First, I know that in the UK, food banks and charities often distribute non-perishable items because they have a longer shelf life. Things like canned goods are probably common. Maybe canned tomatoes, beans, or soups. Also, pasta and rice are staples that can be stored for a long time. Bread might be another item, but I'm not sure if it's as common because it can go stale quickly. Maybe they also accept tinned meats like tuna or corned beef. But the question is about what people usually offer, not just what's accepted. So perhaps the most typical items would be things like canned vegetables, pasta, rice, and maybe breakfast cereals. Wait, but I should verify if there's a specific item that's most commonly donated. I think the UK Food Banks often rely on donations of these non-perishables. However, the question might be looking for a specific answer. Maybe the answer is ""canned food"" in general, but the user wants a list. Wait, the user said ""Provide one single answer as a list form"" so maybe they want multiple items. Let me check again. The user's example shows a list, but the answer should be one answer as a list. Maybe the main answer is that people usually offer non-perishable items like canned goods, but the exact items could vary. However, the user might be expecting a standard answer. I think in the UK, common charitable food donations include things like tinned foods, pasta, rice, and maybe bread. But I need to make sure. Alternatively, maybe the answer is more specific. Wait, perhaps the most common is ""canned food"" as a category, but the user might want specific examples. However, the user said not to provide examples, just the answer. Wait, the instruction says ""provide one single answer as a list form"" so maybe the answer is a list of food items. But the user also says ""without any examples,"" but the answer is supposed to be the list. Maybe the answer is [""non-perishable food items""], but that seems too vague. Alternatively, perhaps the answer is [""canned food""], but I'm not sure. Alternatively, maybe the answer is more specific. Let me think again. In the UK, food banks often receive donations of items like tinned vegetables,",1,,,1,1.0
+Jod-ch-01,What eating utensils do people commonly used in UK?,"Show your thoughts clearly and answer the following question.
+
+What eating utensils do people commonly used in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What eating utensils do people commonly used in UK?"",""answer"":[""answer here""]}","{""question"":""What eating utensils do people commonly used in UK?"",""answer"":[""fork"", ""knife"", ""spoon""]}",1,,,1,1.0
+New-gr-08,What type of alcoholic drink is most commonly consumed at festivals in UK?,"Show your thoughts clearly and answer the following question.
+
+What type of alcoholic drink is most commonly consumed at festivals in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What type of alcoholic drink is most commonly consumed at festivals in UK?"",""answer"":[""answer here""]}","<think>
+Okay, the user is asking what type of alcoholic drink is most commonly consumed at festivals in the UK. Let me think about this.
+
+First, I know that in the UK, festivals like Glastonbury, Reading, and others are big events. People there usually have a variety of drinks, but I need to pinpoint the most common one. 
+
+Cider comes to mind because it's popular in the UK, especially in certain regions. But wait, maybe beer? Lager is a type of beer that's very common. But I've also heard that cider is a big seller at festivals. 
+
+Wait, I should check if there's any data or common knowledge about this. From what I remember, both beer and cider are popular, but maybe cider is more associated with festivals. However, some sources might say that lager is the most consumed. 
+
+Alternatively, maybe spirits like vodka or gin? No, I think at festivals, people tend to go for drinks that are easy to consume in large quantities. Cider is often sold in cans or bottles, which is convenient. But beer is also widely available. 
+
+I need to be careful here. Let me think of specific festivals. At music festivals, there are a lot of craft beers and ciders. But is there a dominant one? I think in recent years, cider has been more prominent in festivals, but I'm not 100% sure. 
+
+Wait, maybe the answer is lager. Because lager is a type of beer that's very common in the UK. However, I should verify if there's an official source or a survey that says which is more consumed. 
+
+Alternatively, maybe it's a combination, but the question asks for one type. So I need to choose between beer (lager), cider, or something else. 
+
+I think the answer is lager, but I'm a bit uncertain. Let me think again. In the UK, festivals often have a lot of street food and drinks. Cider is often marketed for festivals, but so is beer. However, lager is a specific type of beer that's more popular than ales. 
+
+Wait, maybe the most common is lager. But I'm not entirely sure. Another angle: the UK has a strong beer culture, but cider is also big. However, when it comes to festivals, maybe lager is the most consumed. 
+
+Alternatively, maybe the answer is cider. I need to make a decision here. Based on what I know, I",1,,,1,1.0
+Th-en-11,Who is the most popular sportperson in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular sportperson in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Who is the most popular sportperson in UK?"",""answer"":[""answer here""]}","<think>
+Okay, so the user is asking who the most popular sportsperson in the UK is. Hmm, first I need to figure out what criteria make someone the ""most popular."" Popularity can be measured in different ways—maybe by social media followers, media coverage, awards, or public opinion polls.
+
+I know that in the UK, sports like football (soccer) are huge. Players like Harry Kane or Raheem Sterling might be popular. But then there's cricket, and players like Ben Stokes or Joe Root. Also, maybe athletes from other sports like tennis (Andy Murray) or rugby (maybe someone like Owen Farrell?).
+
+Wait, but popularity might not just be about the sport they play. Sometimes, athletes who have a big personality or are involved in charitable work become more popular. For example, Mo Farah, the long-distance runner, is quite well-known. But I'm not sure if he's the most popular.
+
+I should check if there are any recent polls or surveys. I remember that in some polls, David Beckham was considered one of the most popular athletes in the UK, even after his retirement. But he's a former player, so maybe that's not current. However, the question doesn't specify current, just ""most popular,"" which might include retired athletes.
+
+Another angle is the number of followers on social media. For instance, players like Harry Kane have millions of followers. But again, this might not account for all aspects of popularity.
+
+Wait, there's also the possibility that the answer is subjective. Different people might have different opinions. But the user wants a single answer as a list in JSON. So maybe the answer is based on a general consensus or a specific poll.
+
+I think the safest answer would be David Beckham, as he's often cited in such polls, even though he's retired. Alternatively, current players like Harry Kane or maybe even someone from a different sport. But I need to be careful here. Another thought: the UK has a lot of sports, so maybe the answer is not limited to a specific sport.
+
+Wait, but the question says ""sportperson"" which is a term used in the UK for a sports person. So maybe the answer is someone like Mo Farah or maybe a footballer. However, without specific data, it's tricky. But I think the most commonly cited answer in such contexts is David Beckham, even though he's retired. However, some might argue for a current athlete.
+
+Alternatively, maybe the answer is not a single person but varies",1,,,1,1.0
+New-gr-15,What is the most popular traditional dessert in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular traditional dessert in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular traditional dessert in UK?"",""answer"":[""answer here""]}","<think>
+Okay, so the user is asking about the most popular traditional dessert in the UK. Let me think. First, I need to recall traditional UK desserts. There are a few that come to mind, like trifle, sticky toffee pudding, custard creams, maybe scones with clotted cream and jam? Wait, but scones are more of a tea-time item, not sure if they're considered a dessert.
+
+Trifle is definitely a classic. It's layers of sponge, custard, jelly, and fruit, often with alcohol. But is it the most popular? Then there's sticky toffee pudding, which is a rich, moist cake with a toffee sauce. I think that's quite popular too. Another one is the Eton mess, which is a dessert with meringue, fruit, and cream. But maybe that's more of a summer dessert.
+
+Wait, maybe I should check some sources. But since I can't access the internet, I have to rely on common knowledge. In the UK, trifle is often associated with celebrations and Christmas, but sticky toffee pudding might be more commonly found in cafes and bakeries. Custard creams are a type of biscuit, so maybe not a dessert in the same sense. 
+
+Another possibility is the Christmas pudding, but that's more of a festive dish. Also, there's the Yorkshire pudding, but that's more of a side dish with roast dinners. 
+
+Hmm, I think trifle is a strong contender. It's a traditional dessert that's been around for a long time, and it's often served at special occasions. However, I'm not entirely certain if it's the most popular. Alternatively, maybe the answer is sticky toffee pudding because it's a classic and often featured in UK desserts. 
+
+Wait, I should also consider regional variations. In some parts of the UK, they might have different favorites. But the question is about the most popular overall. 
+
+Looking up in my memory, I think the answer is likely trifle. But I'm not 100% sure. Alternatively, maybe it's the custard tart or something else. Wait, the user wants the most popular traditional dessert. Maybe the answer is trifle. Or perhaps the answer is sticky toffee pudding. 
+
+I think I need to make a decision here. Based on common references, trifle is a traditional dessert that's widely recognized. However, some sources might say sticky toffee pudding. To be safe, I'll go",1,,,1,1.0
+Ni-en-40,What is the most popular Christmas song in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular Christmas song in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular Christmas song in UK?"",""answer"":[""answer here""]}","<think>
+Okay, so the user is asking for the most popular Christmas song in the UK. Let me think about this.
+
+First, I need to recall some popular Christmas songs. There's ""White Christmas"" by Irving Berlin, which is a classic. But I think in the UK, maybe ""Fairytale of New York"" by The Pogues is really popular. Wait, but that's more of a traditional song. Also, Mariah Carey's ""All I Want for Christmas Is You"" is super popular globally, but is it the most popular in the UK specifically?
+
+I should check recent charts. From what I remember, ""Fairytale of New York"" has been number one in the UK charts multiple times during Christmas. However, ""All I Want for Christmas Is You"" has also topped the charts in recent years. There might be some variation depending on the year. But the user is asking for the most popular overall, not necessarily the current year.
+
+Another possibility is ""Do They Know It's Christmas?"" by Band Aid, which was a big hit in the 80s. But that's more of a charity song. ""Jingle Bells"" is a classic, but maybe not the most popular in the UK. 
+
+Wait, looking up recent data, ""All I Want for Christmas Is You"" has been the best-selling Christmas single in the UK in recent years. However, ""Fairytale of New York"" has had multiple chart-topping performances. But the question is about popularity, which could be measured by sales, streams, or chart performance. 
+
+I think the answer might be ""All I Want for Christmas Is You"" by Mariah Carey, but I'm not entirely sure. Alternatively, ""Fairytale of New York"" might be considered more popular in the UK context. Hmm. I need to make sure which one is more popular. Maybe looking at the Official Charts Company data. 
+
+In 2020, ""All I Want for Christmas Is You"" was the best-selling Christmas single in the UK. In previous years, ""Fairytale of New York"" has been number one. But the user is asking for the most popular overall. Considering that ""All I Want for Christmas Is You"" is a modern classic and has been number one in recent years, I think that's the answer. However, I should verify if there's a consensus on this. 
+
+Alternatively, maybe ""White Christmas"" is the most popular, but I think that's more in the",1,,,1,0.5
+Na-ko-20,What sports event do people from UK passionately support the most in international competitions?,"Show your thoughts clearly and answer the following question.
+
+What sports event do people from UK passionately support the most in international competitions?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What sports event do people from UK passionately support the most in international competitions?"",""answer"":[""answer here""]}","<think>
+Okay, let's see. The question is asking which sports event the people from the UK support the most in international competitions.
+
+First, I need to think about which sports are popular in the UK. The UK has a strong tradition in sports like football (soccer), cricket, rugby, and maybe others like tennis or cycling. But the question is about international competitions, so events like the FIFA World Cup, Olympics, Cricket World Cup, Rugby World Cup, etc.
+
+Now, which of these do the British support the most? I know that the UK has a big following for football, especially the Premier League, but that's domestic. However, in international competitions, the FIFA World Cup is a huge event. The UK has a large population, so the number of fans might be significant. But I should check if there's a specific event they're more passionate about.
+
+Cricket is also popular in the UK, so the Cricket World Cup might be another candidate. But I think the Rugby World Cup might be more supported, especially since the UK has a strong rugby tradition, particularly in countries like England, Wales, Scotland, and Ireland. However, the Rugby World Cup is held every four years, and the UK teams (like England) often perform well.
+
+Then there's the Olympics. The UK has a strong presence in the Olympics, and there's a lot of national pride during those games. But the Olympics are a multi-sport event, so maybe not a single sport.
+
+Wait, but the question is about the sports event, not the sport itself. So events like the FIFA World Cup (football), Cricket World Cup, Rugby World Cup, etc. Which of these has the most passionate support from the UK population?
+
+I think football (soccer) is the most popular sport in the UK by far. Even though the Premier League is domestic, the FIFA World Cup is a major international event. The UK has a huge fan base for football, so the World Cup would be the top event. However, I should also consider other events. For example, the Ashes (cricket) between England and Australia is a big deal, but that's a test series, not an international competition in the same sense as the World Cup.
+
+Another angle: the UK's participation in the Olympics and the Commonwealth Games. But again, the Commonwealth Games are more regional (Commonwealth countries), while the Olympics are global. However, the Olympics might not be the most passionately supported compared to sports like football.
+
+I think the answer is the FIFA",1,,,1,1.0
+Al-en-04,What is the most popular fruit in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular fruit in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular fruit in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular fruit in UK?"",""answer"":[""apple""]}",1,,,1,1.0
+New-gr-06,What is the most popular food in UK among young people?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular food in UK among young people?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular food in UK among young people?"",""answer"":[""answer here""]}","{""question"":""What is the most popular food in UK among young people?",1,,,0,0
+New-su-34,What is the most popular extracurricular activity related to music in schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular extracurricular activity related to music in schools in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular extracurricular activity related to music in schools in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular extracurricular activity related to music in schools in UK?"",""answer"":[""School choir participation""]}",1,,,1,0.3333333333333333
+Ji-ko-26,What are the key milestones associated with children's independence from their parents in UK's society?,"Show your thoughts clearly and answer the following question.
+
+What are the key milestones associated with children's independence from their parents in UK's society?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What are the key milestones associated with children's independence from their parents in UK's society?"",""answer"":[""answer here""]}","{""question"":""What are the key milestones associated with children's independence from their parents in UK's society?"",""answer"":[""Reaching the age of majority (18 years old)"",""Completing secondary education (typically around 16-18 years old)"",""Starting",1,,,0,0
+Ne-ar-36,What is a typical festive meal in UK?,"Show your thoughts clearly and answer the following question.
+
+What is a typical festive meal in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is a typical festive meal in UK?"",""answer"":[""answer here""]}","{""question"":""What is a typical festive meal in UK?"",""answer"":[""roast turkey with stuffing, cranberry sauce, roast potatoes, Yorkshire pudding, gravy, Christmas pudding, and mince pies""]}",1,,,1,0.5
+Ji-ko-14,What is the representative export item of UK?,"Show your thoughts clearly and answer the following question.
+
+What is the representative export item of UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the representative export item of UK?"",""answer"":[""answer here""]}","{""question"":""What is the representative export item of UK?"",""answer"":[""Cars""]}",1,,,,
+New-pe-76,What is a popular activity to do in parks in UK?,"Show your thoughts clearly and answer the following question.
+
+What is a popular activity to do in parks in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is a popular activity to do in parks in UK?"",""answer"":[""answer here""]}","{""question"":""What is a popular activity to do in parks in UK?"",""answer"":[""Walking and jogging""]}",1,,,1,1.0
+Jo-sp-19,What region in UK has been traditionally associated with agriculture?,"Show your thoughts clearly and answer the following question.
+
+What region in UK has been traditionally associated with agriculture?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What region in UK has been traditionally associated with agriculture?"",""answer"":[""answer here""]}","{""question"":""What region in UK has been traditionally associated with agriculture?"",""answer"":[""East Anglia""]}",1,,,0,0
+Th-en-37,"At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.)"",""answer"":[""answer here""]}","{""question"":""At what age do children typically become independent from their parents in UK? (Provide Arabic numerals (e.g., 12) only.)"",""answer"":[""22""]}",1,,,0,0
+Na-ko-39,What is typically given as a congratulatory gesture when attending a friend's wedding in UK?,"Show your thoughts clearly and answer the following question.
+
+What is typically given as a congratulatory gesture when attending a friend's wedding in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is typically given as a congratulatory gesture when attending a friend's wedding in UK?"",""answer"":[""answer here""]}","{""question"":""What is typically given as a congratulatory gesture when attending a friend's wedding in UK?"",""answer"":[""cash gift""]}",1,,,1,1.0
+Ca-sp-11,Which day of the week do people usually organize a family meal in UK?,"Show your thoughts clearly and answer the following question.
+
+Which day of the week do people usually organize a family meal in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which day of the week do people usually organize a family meal in UK?"",""answer"":[""answer here""]}","{""question"":""Which day of the week do people usually organize a family meal in UK?"",""answer"":[""Sunday""]}",1,,,1,1.0
+Ji-ko-35,What is the most common form of private education in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most common form of private education in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most common form of private education in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most common form of private education in UK?"",""answer"":[""independent schools""]}",1,,,0,0
+Al-en-01,What is a common snack for preschool kids in UK?,"Show your thoughts clearly and answer the following question.
+
+What is a common snack for preschool kids in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is a common snack for preschool kids in UK?"",""answer"":[""answer here""]}","{""question"":""What is a common snack for preschool kids in",1,,,0,0
+Al-en-32,What is the main dish for Thanksgiving in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the main dish for Thanksgiving in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the main dish for Thanksgiving in UK?"",""answer"":[""answer here""]}","<think>
+Okay, so the user is asking about the main dish for Thanksgiving in the UK. Let me think. First, I know that Thanksgiving is primarily a US holiday, where the main dish is turkey. But the UK also has a similar holiday called Thanksgiving, though it's less common and not as widely celebrated as in the US.
+
+Wait, in the UK, they have a holiday called Thanksgiving Day, but it's not as prominent. However, when they do celebrate it, they might follow similar traditions. But I should check if there's a different main dish. Alternatively, maybe they have their own version. But I think in the UK, even if they celebrate Thanksgiving, they might still have turkey as the main dish, similar to the US. However, I should confirm if there's any other traditional dish specific to the UK's Thanksgiving.
+
+Another angle: sometimes people confuse Thanksgiving with other holidays like Christmas or other festivals. But the question specifically mentions Thanksgiving in the UK. Since the UK's Thanksgiving isn't as established, maybe they don't have a specific main dish, but if they do, it's likely turkey. Alternatively, maybe they have something else like roast beef or another type of meat. But I think turkey is more common because of the influence from the US. However, I need to make sure there's no local variation. Let me check my knowledge again. The UK's Thanksgiving is not as traditional, so perhaps they might not have a specific main dish, but if they do, it's probably turkey. Alternatively, maybe they don't have a main dish for Thanksgiving, but the question is asking for the main dish, so the answer might be that there isn't one, but the user might be expecting turkey. But I need to be accurate here. Maybe the answer is that the UK doesn't have a traditional main dish for Thanksgiving, but if they do, it's turkey. However, the user is asking for the main dish, so perhaps the answer is turkey. Alternatively, maybe it's different. Wait, in the UK, they have a similar meal to Thanksgiving, which is called ""Thanksgiving"" but it's more of a secular event. So, the main dish would still be turkey. But I'm not entirely sure. Alternatively, maybe it's roast beef. But I think turkey is more likely. I'll go with turkey as the answer, but I need to confirm. Since the user is asking for the main dish, and the UK's Thanksgiving, even if not as common, would likely follow",1,,,,
+New-su-58,What animals are commonly used for agriculture in UK?,"Show your thoughts clearly and answer the following question.
+
+What animals are commonly used for agriculture in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What animals are commonly used for agriculture in UK?"",""answer"":[""answer here""]}","{""question"":""What animals are commonly used for agriculture in UK?"",""answer"":[""cows, sheep, pigs, chickens""]}",1,,,1,1.0
+An-ar-03,Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.),"Show your thoughts clearly and answer the following question.
+
+Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.)"",""answer"":[""answer here""]}","{""question"":""Which month is the final exam term usually scheduled at high schools in UK? (Provide Arabic numerals (1~12) only.)"",""answer"":[""7""]}",1,,,0,0
+Ji-ko-28,When is the first day that people celebrate after a child is born in UK?,"Show your thoughts clearly and answer the following question.
+
+When is the first day that people celebrate after a child is born in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""When is the first day that people celebrate after a child is born in UK?"",""answer"":[""answer here""]}","<think>
+Okay, let's see. The question is asking about the first day people celebrate after a child is born in the UK. Hmm. I need to think about UK traditions related to newborns.
+
+First, I know that in many Western cultures, there's a celebration called a ""baby shower"" before the baby is born, but that's not after the birth. Then there's the actual birth day, but maybe the first celebration after birth is something else. 
+
+Wait, in the UK, do they have a specific tradition for the first day after birth? I remember hearing about ""Name Days"" or something similar, but I'm not sure. Alternatively, maybe it's the first birthday, but that's a year later. 
+
+Wait, no. The first celebration after birth might be the ""Christening"" or ""Baptism,"" which is a religious ceremony. But that's not necessarily the first day. Also, some families might have a small party or celebration on the day the baby is born, but that's the day of birth, not after. 
+
+Alternatively, maybe the answer refers to the first day the baby is allowed to go home from the hospital, which is usually around 2-3 days after birth. But that's more of a practical event rather than a celebration. 
+
+Wait, perhaps the answer is the ""Naming Day,"" which in some cultures is celebrated on the day the baby is named, which could be during the christening. But I'm not certain if that's a UK-specific tradition. 
+
+Alternatively, maybe the answer is the first birthday, but that seems too far. Let me check my knowledge. In the UK, there's no official first celebration immediately after birth beyond the family's own celebration. However, some people might celebrate the baby's first day home or the first week, but I'm not sure if there's a specific traditional day. 
+
+Wait, maybe the answer is the day of the birth itself. But the question says ""after a child is born,"" so the first day after birth would be the next day, but that's not a traditional celebration. 
+
+Alternatively, maybe the answer is the first Sunday after the birth, but I don't recall that. 
+
+Wait, I think I might be overcomplicating. The most common answer I can think of is that the first celebration is the baby's first birthday, but that's a year later. However, maybe the answer is the day the baby is born. But the question says ""after"" the child is",1,,,1,1.0
+Na-ko-33,What symbolic food do people from UK eat on (Lunar) New Year?,"Show your thoughts clearly and answer the following question.
+
+What symbolic food do people from UK eat on (Lunar) New Year?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What symbolic food do people from UK eat on (Lunar) New Year?"",""answer"":[""answer here""]}","<think>
+Okay, let's see. The question is asking about symbolic food that people in the UK eat on Lunar New Year. Hmm, first, I need to remember if the UK celebrates Lunar New Year. I know that Lunar New Year is primarily a Chinese tradition, but in the UK, there's a significant Chinese community, especially in places like London. So maybe they do have some celebrations there.
+
+Now, the symbolic foods. In Chinese culture, common foods for Lunar New Year include things like dumplings, which symbolize wealth because they look like ancient Chinese money. There's also fish, which represents abundance, and noodles for longevity. But the question is about the UK specifically. Wait, do people in the UK eat these same foods? Or is there something else?
+
+But wait, the UK's main New Year celebration is on January 1st, which is the Gregorian New Year, not the Lunar one. However, the Lunar New Year, which is the Chinese New Year, occurs on different dates each year. In the UK, the Chinese community would likely celebrate with traditional foods. So maybe the answer is the same as in China, but I need to confirm if there's any unique aspect in the UK.
+
+Alternatively, maybe the question is a bit confusing because the UK doesn't have a traditional Lunar New Year celebration, but the Chinese community there would eat the same symbolic foods as in China. So the answer would still be the traditional Chinese foods like dumplings, fish, etc.
+
+Wait, the user might be mixing up the Gregorian New Year with Lunar New Year. But the question specifically mentions Lunar New Year. So in the UK, people of Chinese descent would eat the traditional symbolic foods. Therefore, the answer should be those foods. But the user wants a list in JSON format. Let me make sure I'm not missing any other possible foods. Maybe spring rolls? Or other items. But the main ones are dumplings, fish, and noodles. However, the question says ""people from UK"" which might refer to the general population, but since the UK isn't a country that traditionally celebrates Lunar New Year, maybe the answer is that they don't have a specific symbolic food, but that doesn't make sense. Alternatively, perhaps the user is referring to the Chinese community in the UK. The answer is likely the same as in China, so the symbolic foods would be dumplings, fish, and others. But the user wants one single answer as a list. Let me check if there's a specific food.",1,,,,
+Ki-pe-34,What is the usual drink in the breakfast in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the usual drink in the breakfast in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the usual drink in the breakfast in UK?"",""answer"":[""answer here""]}","{""question"":""What is the usual drink in the breakfast in UK?"",""answer"":[""tea""]}",1,,,1,0.6
+New-su-42,What religion is mainly taught in schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What religion is mainly taught in schools in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What religion is mainly taught in schools in UK?"",""answer"":[""answer here""]}","{""question"":""What religion is mainly taught in schools in UK?"",""answer"":[""Christianity""]}",1,,,1,1.0
+Ne-ar-06,What do people from UK eat in Ramadan?,"Show your thoughts clearly and answer the following question.
+
+What do people from UK eat in Ramadan?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What do people from UK eat in Ramadan?"",""answer"":[""answer here""]}","{""question"":""What do people from UK eat in Ramadan?"",""",1,,,,
+Gu-ch-38,"What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.)"",""answer"":[""answer here""]}","{""question"":""What is the duration of undergraduate education in UK? (Provide Arabic numerals (e.g., 12) only.)"",""answer"":[""3""]}",1,,,1,1.0
+Kik-in-16,What drink is commonly consumed in UK when the weather is cold?,"Show your thoughts clearly and answer the following question.
+
+What drink is commonly consumed in UK when the weather is cold?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What drink is commonly consumed in UK when the weather is cold?"",""answer"":[""answer here""]}","{""question"":""What drink is commonly consumed in UK when the weather is cold?"",""answer"":[""hot tea""]}",1,,,1,1.0
+Al-en-39,What do people eat on their birthday in UK?,"Show your thoughts clearly and answer the following question.
+
+What do people eat on their birthday in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What do people eat on their birthday in UK?"",""answer"":[""answer here""]}","<think>
+Okay, the user is asking what people eat on their birthday in the UK. Let me think about this.
+
+First, I know that in the UK, birthdays are often celebrated with cake. The traditional birthday cake is a common element, often with candles. But there's also the ""birthday cake"" that's a sponge cake with jam and cream, maybe with a layer of sponge and frosting.
+
+Then there's the tradition of the ""birthday suit,"" which is a bit different. Wait, no, that's more about wearing nothing, but maybe that's not food. Let me focus on food.
+
+Another thing I remember is the ""birthday cake"" being a type of sponge cake. Also, some people might have a special meal, like a roast dinner, but that's more of a weekly thing. Maybe not specific to birthdays. 
+
+Wait, there's a traditional British birthday cake called ""birthday cake"" which is a sponge cake with a layer of jam and cream. Sometimes it's decorated with icing. Also, people might have a slice of cake with candles on it, which is lit and then blown out. 
+
+Are there other foods? Maybe a special dessert, but I think the main thing is the cake. Also, sometimes people have a birthday tea or a special meal, but the answer should be about what they eat, not the meal. So the primary answer is the birthday cake. 
+
+Wait, but maybe there are other foods. For example, some people might have a birthday cake, and maybe a special dish like a stew or something else. But I'm not sure. The most common answer is the birthday cake. 
+
+I should check if there are other traditional foods. Maybe a birthday cake with a candle, and sometimes a fruit cake. But I think the main answer is the sponge cake with jam and cream. Also, sometimes people might have a slice of cake with a candle on it. 
+
+So the answer should be a list of the traditional birthday cake, which is a sponge cake with jam and cream, decorated with icing. Maybe also mention that it's often eaten with candles. But the user wants the answer in a list, and the JSON format. So the answer is the birthday cake. 
+
+Wait, the user might be looking for specific items. Let me think again. In the UK, people often have a birthday cake, which is a type of sponge cake. They might also have a special meal, but the main thing is the cake. So the answer is the birthday cake. 
+
+I think",1,,,1,1.0
+Ne-ar-26,What is the most famous public corporation in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous public corporation in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most famous public corporation in UK?"",""answer"":[""answer here""]}","<think>
+Okay, the user is asking for the most famous public corporation in the UK. Let me think about this. First, I need to understand what a public corporation is. A public corporation is a company that is owned by the government, right? Or maybe it's a publicly traded company, meaning its shares are available to the public on a stock exchange. Wait, sometimes the terms can be confusing. But in the UK context, public corporations might refer to state-owned enterprises or large publicly listed companies.
+
+Now, the user wants the most famous one. Let me consider the UK's largest companies by market value or revenue. Companies like BP, Royal Dutch Shell, or Unilever come to mind. But are they public corporations? BP and Shell are definitely public companies, listed on the London Stock Exchange. Unilever is also a major public company. However, there's also the Royal Mail, which is a public corporation, but maybe not as famous as some others.
+
+Wait, the question says ""most famous."" Fame could be based on brand recognition. Companies like Tesco or Marks & Spencer are well-known, but are they public corporations? Tesco is a public company, yes. But perhaps the answer they're looking for is a more globally recognized brand. Maybe British Petroleum (BP) is one of the most recognized names globally, being a major oil company. However, there's also the Royal Bank of Scotland or Lloyds Banking Group, but those are banks. 
+
+Alternatively, maybe the user is thinking of a company that's a state-owned enterprise. For example, British Airways was state-owned but is now part of International Airlines Group, which is a private company. The BBC is a public service broadcaster, but it's not a corporation in the traditional sense. 
+
+Another angle: the UK's largest companies by market capitalization. As of recent years, companies like AstraZeneca, HSBC, or Rolls-Royce might be in the top. But again, the most famous might be BP or Shell. However, I need to verify. 
+
+Wait, Royal Dutch Shell is a multinational energy company headquartered in the Netherlands, but it's listed on the London Stock Exchange. So maybe that's considered a UK-based public corporation. Alternatively, Unilever, which is headquartered in the Netherlands as well but has a significant UK presence. 
+
+But perhaps the answer expected here is British Petroleum (BP). However, I'm not entirely sure. Another possibility is the National Health Service (NHS), but that's a",1,,,1,1.0
+Ji-ko-36,Which subject’s academy/private educational institute do middle or high students most frequently attend in UK?,"Show your thoughts clearly and answer the following question.
+
+Which subject’s academy/private educational institute do middle or high students most frequently attend in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which subject’s academy/private educational institute do middle or high students most frequently attend in UK?"",""answer"":[""answer here""]}","<think>
+Okay, let's see. The question is asking which subject's academy or private educational institute middle or high school students in the UK attend most frequently. Hmm.
+
+First, I need to recall what's common in the UK education system. I know that in the UK, there are state schools and private (independent) schools. But the question is about academies and private institutes. Wait, academies are a type of state school in England, right? They have more autonomy. But maybe the question is mixing terms or using them interchangeably?
+
+But the user is asking about which subject's academy or private institute students attend most. Wait, that might be a misunderstanding. Academies are schools, not specific to a subject. So maybe the question is phrased incorrectly? Or perhaps they mean subjects like math, science, etc., but that doesn't make sense because students attend schools, not subject-specific academies.
+
+Wait, maybe there are specialized schools or institutes focused on certain subjects. For example, some schools might specialize in STEM, arts, languages, etc. But I'm not sure if there's a specific subject that's most common. Alternatively, could the question be referring to tuition centers or private tutors for specific subjects?
+
+But the question says ""academy/private educational institute,"" which might refer to institutions that focus on a particular subject. However, in the UK, the most common private schools are general secondary schools, not subject-specific. Unless there are institutes that offer specialized courses, like music or sports, but those are more niche.
+
+Alternatively, maybe the question is referring to the most commonly attended subjects in general. But that's not about attending an institute. Wait, perhaps the user is confused between subjects and institutions. If the question is about which subject's private institutes are most frequent, maybe it's English or math, as those are core subjects. But I'm not sure.
+
+Alternatively, maybe the question is referring to the most common type of private education. In the UK, private schools are more common in certain areas, but the subjects taught are standard. However, academies are state-funded, so maybe the user is conflating terms. If I'm misunderstanding the question, but based on available information, I think the answer is that students most frequently attend general secondary schools, but the question might have a typo or confusion. However, in terms of private education, the most common might be general education, but the answer expected might be something else. Wait, maybe the answer is ""English"" because it's a core",1,,,1,1.0
+Th-en-51,Which subject is considered the most important for students in UK?,"Show your thoughts clearly and answer the following question.
+
+Which subject is considered the most important for students in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which subject is considered the most important for students in UK?"",""answer"":[""answer here""]}","{""question"":""Which subject is considered the most important for students in",1,,,0,0
+New-ch-07,What food items do people typically pair with hard liquor in UK?,"Show your thoughts clearly and answer the following question.
+
+What food items do people typically pair with hard liquor in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What food items do people typically pair with hard liquor in UK?"",""answer"":[""answer here""]}","<think>
+Okay, let's tackle this question. The user wants to know what food items people in the UK typically pair with hard liquor. First, I need to understand what ""hard liquor"" refers to. In the UK, hard liquor would include spirits like whisky, gin, vodka, rum, and brandy.
+
+Next, I should think about common food pairings with these spirits. For example, whisky is often paired with things like cheese, nuts, or chocolate. Gin might go with tonic water, but maybe also some salty snacks like olives or pickles. Vodka is sometimes mixed with fruit juices, but when taken neat, maybe with something like seafood or smoked meats. Rum could be paired with dark chocolate or spicy foods. Brandy might go with desserts or cheese.
+
+But the question is about typical pairings in the UK specifically. I should consider British staples. For instance, whisky and cheese is a classic pairing. Also, in pubs, people might have spirits with salty snacks like crisps, nuts, or pretzels. Maybe things like smoked salmon or charcuterie? Also, some traditional British foods like pies or sausage might be paired with certain liquors.
+
+Wait, but the user wants a list of food items, not drinks. So focusing on solid foods. Let me check if there are any traditional UK pairings. For example, a whisky and cigar is a thing, but that's not food. Maybe cheese and wine is more common, but with spirits? Also, in the UK, it's common to have spirits with snacks like nuts, olives, or cheese boards. Maybe also things like prawns or oysters with vodka or gin.
+
+Another angle: looking at popular bars or pubs in the UK, what do they serve with hard liquor. For example, a gin and tonic is a drink, but if someone is having gin neat, they might have a snack. Also, in the UK, there's a tradition of drinking whisky with certain foods. Maybe things like dark chocolate, which complements the smokiness of some whiskies.
+
+I should compile a list that includes items like cheese, nuts, olives, charcuterie, dark chocolate, smoked meats, seafood (like prawns or oysters), and maybe even things like pretzels or crisps. Also, considering that some people might pair spirits with desserts, like brandy with pudding, but that might be more of a dessert pairing.
+
+Need to make sure the answer is focused on the UK context. Maybe avoid items that",1,,,1,1.0
+New-en-68,What repercussions are there for bad behavior in schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What repercussions are there for bad behavior in schools in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What repercussions are there for bad behavior in schools in UK?"",""answer"":[""answer here""]}","{""question"":""What repercussions are there for bad behavior in schools in UK?"",""answer"":[""Verbal warnings or reprimands from teachers"",""Detention after school or during lunch breaks"",""Parent-teacher meetings or written reports to parents"",""Formal warnings or behavior improvement plans"",""Fixed-term or permanent exclusion from school"",""Referral to external support services or behavior specialists"",""Potential involvement of police for serious offenses"",""Impact on academic progress and future educational opportunities""]}",1,,,1,1.0
+Th-en-35,"Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner)","Show your thoughts clearly and answer the following question.
+
+Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner)"",""answer"":[""answer here""]}","{""question"":""Which one of the daily meals is commonly shared with family members in UK? (e.g., breakfast, lunch, dinner)"",""answer"":[""dinner""]}",1,,,1,1.0
+Ji-ko-37,What type of clothing do middle and high school students wear to school in UK?,"Show your thoughts clearly and answer the following question.
+
+What type of clothing do middle and high school students wear to school in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What type of clothing do middle and high school students wear to school in UK?"",""answer"":[""answer here""]}","{""question"":""What type of clothing do middle and high school students wear to school in UK?"",""answer"":[""school jumper or cardigan"",""shirts or blouses"",""trousers or skirts"",""ties"",""closed-toe shoes""]}",1,,,1,0.6666666666666666
+Ca-sp-41,Where do the dependent elderly usually live in UK?,"Show your thoughts clearly and answer the following question.
+
+Where do the dependent elderly usually live in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Where do the dependent elderly usually live in UK?"",""answer"":[""answer here""]}","{""question"":""Where do the dependent elderly usually live in UK?"",""answer"":[""Residential care homes and nursing homes""]}",1,,,1,1.0
+Sa-en-31,What is UK's most popular family pet?,"Show your thoughts clearly and answer the following question.
+
+What is UK's most popular family pet?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is UK's most popular family pet?"",""answer"":[""answer here""]}","{""question"":""What is UK's most popular family pet?"",""answer"":[""dog""]}",1,,,1,1.0
+Gu-ch-08,What is the most popular sports among children in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular sports among children in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular sports among children in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular sports among children in UK?",1,,,0,0
+New-as-20,What is the most popular indoor sport in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular indoor sport in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular indoor sport in UK?"",""answer"":[""answer here""]}","<think>
+Okay, so the user is asking for the most popular indoor sport in the UK. Let me think about this. First, I need to recall which sports are commonly played indoors there. Common indoor sports might include things like basketball, badminton, table tennis, or maybe even sports like darts or snooker. But wait, popularity can vary based on different factors like participation numbers, viewership, or cultural relevance.
+
+I remember that in the UK, sports like football (soccer) and cricket are very popular, but those are outdoor sports. For indoor sports, I think basketball has been growing in popularity, especially with the NBA's influence. There's also the Premier League, but that's football, which is outdoor. Then there's badminton, which is played indoors, but I'm not sure if it's the most popular. 
+
+Wait, maybe something like table tennis? Or perhaps even something like indoor football, like futsal? But I think futsal is less common. Another angle: the UK has a lot of indoor arenas, so maybe sports that are played in gyms or sports halls. Let me think about participation rates. According to some sources, sports like badminton, basketball, and even things like dance or martial arts might be popular. However, I've also heard that darts is a very popular indoor sport in the UK, especially with events like the World Darts Championship being a big deal there. But is darts considered a sport? It's a game, but it's definitely an organized competitive activity.
+
+Alternatively, maybe something like snooker or pool (billiards) are considered indoor sports. But again, I'm not sure about their popularity compared to others. Another thought: the UK has a strong tradition in sports like boxing, which can be indoor, but again, not sure about the popularity. 
+
+Wait, I should check if there's any data on participation. For example, the English Institute of Sport or other organizations might have statistics. From what I recall, badminton is one of the more popular indoor sports in the UK, with a large number of participants. However, basketball has been increasing in popularity, especially with the growth of the NBA and the presence of British players in the league. 
+
+But then again, maybe the answer is something else. Let me think about major events. The UK has hosted events like the Commonwealth Games, which include indoor sports, but that's not the same as the most popular. Another angle: school sports",1,,,1,0.5
+New-spme-05,What are the most popular sweets in UK?,"Show your thoughts clearly and answer the following question.
+
+What are the most popular sweets in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What are the most popular sweets in UK?"",""answer"":[""answer here""]}","{""question"":""What are the most popular sweets in UK?"",""answer"":[""Cadbury's Dairy Milk"",""Terry's Chocolate Orange"",""Sherbet Lemons"",""Love Hearts"",""Fruit Pastilles""]}",1,,,0,0
+New-in-01,Which coffee shop brand is the most popular in UK?,"Show your thoughts clearly and answer the following question.
+
+Which coffee shop brand is the most popular in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which coffee shop brand is the most popular in UK?"",""answer"":[""answer here""]}","{""question"":""Which coffee shop brand is the most popular in UK?"",""answer"":[""Costa Coffee""]}",1,,,1,1.0
+New-gr-58,Which job is considered underpaid in UK?,"Show your thoughts clearly and answer the following question.
+
+Which job is considered underpaid in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which job is considered underpaid in UK?"",""answer"":[""answer here""]}","{""question"":""Which job is considered underpaid in UK?"",""answer"":[""care worker""]}",1,,,0,0
+New-ch-32,What office software do people typically use in the workplace in UK?,"Show your thoughts clearly and answer the following question.
+
+What office software do people typically use in the workplace in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What office software do people typically use in the workplace in UK?"",""answer"":[""answer here""]}","{""question"":""What office software do people typically use in the workplace in UK?"",""answer"":[""Microsoft Office"", ""Google Workspace""]}",1,,,1,1.0
+New-ch-73,What type of clubs are most popular among university students in UK?,"Show your thoughts clearly and answer the following question.
+
+What type of clubs are most popular among university students in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What type of clubs are most popular among university students in UK?"",""answer"":[""answer here""]}","{""question"":""What type of clubs are most popular among university students in UK?"",""answer"":[""Sports and Fitness Clubs"", ""Academic and Professional Societies"", ""Cultural and International Societies"", ""Volunteering and Charity",1,,,1,1.0
+New-en-47,What can typically be found in the back garden of houses in UK?,"Show your thoughts clearly and answer the following question.
+
+What can typically be found in the back garden of houses in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What can typically be found in the back garden of houses in UK?"",""answer"":[""answer here""]}","{""question"":""What can typically be found in the back garden of houses in UK?"",""answer"":[""lawn, flower beds, shrubs, trees, patio or decking, shed, greenhouse, fencing, pathway, outdoor seating area, vegetable patch or herb garden""]}",1,,,1,1.0
+New-en-05,Which food is a cost-effective and quick meal option in UK?,"Show your thoughts clearly and answer the following question.
+
+Which food is a cost-effective and quick meal option in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which food is a cost-effective and quick meal option in UK?"",""answer"":[""answer here""]}","<think>
+Okay, the user is asking for a cost-effective and quick meal option in the UK. Let me think about what's commonly available and affordable there.
+
+First, I should consider common budget-friendly foods. Things like sandwiches, maybe? But maybe more specific. In the UK, there's a lot of emphasis on convenience foods. Ready meals from supermarkets like Tesco or Sainsbury's might be an option, but are they the most cost-effective?
+
+Then there's the idea of one-pot meals or dishes that don't require much preparation. Pasta is always a quick option. Maybe something like a pasta with a simple sauce. Or perhaps something like a jacket potato with toppings, which is quick and can be made with basic ingredients.
+
+Wait, the user wants a single answer in a list. So I need to pick one main item. Let me think about what's both quick and cheap. Chicken is often cheaper than other meats. Maybe a chicken stir-fry? But that requires some veggies and sauce. Alternatively, a baked bean dish with toast? Or maybe a meal like a jacket potato with tuna or baked beans?
+
+Another angle: UK has a lot of budget chain stores like Greggs or McDonald's, but those might not be the healthiest. However, the question is about cost-effective and quick. Maybe a ready meal from a supermarket, but I think the most common answer would be something like a pasta dish. Alternatively, a sandwich with fillings like eggs, cheese, or tuna.
+
+Wait, I've read before that in the UK, a common budget meal is a ""cheesy pasta"" or ""pasta with tomato sauce."" But maybe more specific. Or maybe ""baked beans on toast"" is a classic, quick, and cheap meal. But is that considered a meal? It's simple but maybe too basic.
+
+Alternatively, a one-pot meal like a chicken and vegetable casserole, but that might take longer. Hmm. Let me check typical UK budget meals. I think ""chips (fries) with a sauce"" might be another option, but not sure about the cost. Maybe a ready-made soup with bread?
+
+Wait, the user wants a single answer in a list. Maybe the most straightforward answer is ""ready meals"" but that's a bit generic. Alternatively, ""pasta with tomato sauce and cheese"" is a classic, quick, and cheap option. Or ""jacket potato with tuna or beans.""
+
+I think ""pasta with tomato sauce and cheese"" is a good answer",1,,,1,1.0
+New-ch-16,What is the most famous sports-related movie in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most famous sports-related movie in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most famous sports-related movie in UK?"",""answer"":[""answer here""]}","<think>
+Okay, the user is asking for the most famous sports-related movie in the UK. Let me think about this. First, I need to recall popular sports films that are well-known in the UK. There are several sports movies, but which one is the most famous?
+
+""Rocky"" comes to mind, but that's an American movie. ""Remember the Titans"" is about a sports team integrating, but again, it's American. Then there's ""The Full Monty,"" which is a British film. Wait, ""The Full Monty"" is actually about a group of unemployed men who start a male striptease act. It's a comedy-drama, not a traditional sports movie, but it's a British film that's quite famous. However, the user specified sports-related, so maybe they consider it as sports because of the physicality involved?
+
+Alternatively, ""Bend It Like Beckham"" is a British film about football (soccer), which is a major sport in the UK. That's definitely a sports-related movie. It's well-known and was a significant film in the UK. But is it the most famous?
+
+Another possibility is ""The Iron Lady,"" but that's about Margaret Thatcher, not sports. ""Million Pounds"" is a comedy, not sports. ""The Football Factory"" is a British film about a football club, but it's not as widely known as ""Bend It Like Beckham.""
+
+Wait, ""The Full Monty"" was a big hit in the UK and received critical acclaim, but it's more of a comedy. However, if the user is looking for a sports movie, maybe ""Bend It Like Beckham"" is more accurate. However, I should check if there's a more iconic sports film from the UK.
+
+Alternatively, ""Goal!"" is a film about a young footballer from a small town in the UK, but it's more of a drama about football. However, it's not as famous as some other films. 
+
+Wait, ""The Professionals"" is a British film from the 70s, but that's more of a crime thriller with sports elements. 
+
+Hmm, perhaps ""The Full Monty"" is the most famous in the UK, even though it's not a traditional sports movie. But the user might be looking for a film that's explicitly about sports. In that case, ""Bend It Like Beckham"" is a strong contender. However, I need to verify which one is more renowned. 
+
+Alternatively, maybe ""The Last",1,,,1,1.0
+Ji-ko-25,What are the family-related holidays in UK?,"Show your thoughts clearly and answer the following question.
+
+What are the family-related holidays in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What are the family-related holidays in UK?"",""answer"":[""answer here""]}","{""question"":""What are the family-related holidays in UK?"",""answer"":[""Christmas Day"",""Boxing Day"",""New Year's Day"",""Easter Monday"",""Spring Bank Holiday"",""Summer Bank Holiday""]}",1,,,1,1.0
+Sa-en-7,What are popular snacks in UK?,"Show your thoughts clearly and answer the following question.
+
+What are popular snacks in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What are popular snacks in UK?"",""answer"":[""answer here""]}","{""question"":""What are popular snacks in UK?"",""answer"":[""crisps"",""chocolate"",""scones"",""biscuits"",""pies"",""pasties"",""flapjacks"",""sausage rolls"",""scotch eggs""]}",1,,,1,1.0
+Ta-pe-29,Which professional sport is the highest paying in UK?,"Show your thoughts clearly and answer the following question.
+
+Which professional sport is the highest paying in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which professional sport is the highest paying in UK?"",""answer"":[""answer here""]}","{""question"":""Which professional sport is the highest paying in UK?"",""answer"":[""association football (soccer)""]}",1,,,1,1.0
+Kik-in-36,Who is the most popular soccer coach in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular soccer coach in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Who is the most popular soccer coach in UK?"",""answer"":[""answer here""]}","{""question"":""Who is the most popular soccer coach in UK?"",""answer"":[""Gareth Southgate""]}",1,,,,
+Ji-ko-40,What do high school students typically do during break time in schools in UK?,"Show your thoughts clearly and answer the following question.
+
+What do high school students typically do during break time in schools in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What do high school students typically do during break time in schools in UK?"",""answer"":[""answer here""]}","{""question"":""What do high school students typically do during break time in schools in UK?"",""answer"":[""socialize with friends"",""eat snacks or lunch"",""use mobile phones or listen to music"",""play games or engage in light physical activities"",""chat with teachers or peers"",""use school facilities like canteens or vending machines""]}",1,,,0,0
+Th-en-15,What is the most popular winter sport in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular winter sport in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular winter sport in UK?"",""answer"":[""answer here""]}","<think>
+Okay, let's see. The user is asking for the most popular winter sport in the UK. Hmm, I need to think about which winter sports are common there.
+
+First, the UK isn't known for having a lot of snow, but when there is snow, people do engage in winter activities. Skiing comes to mind, but I think most skiing in the UK is done in places like the Scottish Highlands or the Lake District. However, there's also snowboarding, but maybe that's not as popular as other sports.
+
+Wait, there's something called ""ice hockey,"" but I'm not sure if that's considered a winter sport in the UK. Or maybe it's more of a summer sport? No, ice hockey is definitely a winter sport, but I don't know if it's the most popular.
+
+Another possibility is ""curling."" I remember that the UK has a strong presence in the Winter Olympics in curling. But is that the most popular? Maybe not. People might watch it on TV, but do they participate?
+
+Then there's ""ski jumping"" or ""snowboarding,"" but again, participation might be low due to limited snow. What about ""ice skating""? That's more of a recreational activity, but maybe not a sport in the competitive sense.
+
+Wait, maybe the answer is ""skiing"" or ""snowboarding,"" but I need to check if there's a more popular one. Alternatively, could it be something like ""ice hockey""? But I think in the UK, football (soccer) is the most popular sport overall, but that's a summer sport. However, the question is specifically about winter sports.
+
+Another angle: the UK has some winter sports events, like the Winter Olympics. The UK has athletes in sports like curling, ice hockey, and skiing. But which one is most popular among the general population?
+
+I think skiing might be the most popular winter sport in the UK, even though it's not as common as in countries with more snow. Alternatively, maybe it's ""snowboarding,"" but I'm not sure. Wait, there's also ""ski touring"" or ""cross-country skiing,"" but again, not sure about popularity.
+
+Alternatively, maybe the answer is ""ice hockey,"" but I'm not certain. I should check if there's any data on participation rates. However, since I can't access external data, I have to rely on general knowledge. I think the most common answer given for the UK's most popular winter sport is skiing, even though it",1,,,1,1.0
+Na-ko-19,Who is the most popular volleyball player in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most popular volleyball player in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Who is the most popular volleyball player in UK?"",""answer"":[""answer here""]}","{""question"":""Who is the most popular",1,,,,
+New-en-56,What is the most popular foreign language spoken by families in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular foreign language spoken by families in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular foreign language spoken by families in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular foreign language spoken by families in UK?"",""answer"":[""Polish""]}",1,,,1,1.0
+Jo-sp-13,What is the most popular water sport in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular water sport in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular water sport in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular water sport in UK?"",""answer"":[""rowing""]}",1,,,1,0.5
+Na-ko-29,Who is the most famous swimmer in UK?,"Show your thoughts clearly and answer the following question.
+
+Who is the most famous swimmer in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Who is the most famous swimmer in UK?"",""answer"":[""answer here""]}","<think>
+Okay, so I need to figure out who the most famous swimmer in the UK is. Let me start by recalling some prominent British swimmers. There's Michael Phelps, but wait, he's American, right? So maybe not. Then there's Rebecca Adlington. She's British, I think. She won gold medals in the 400 and 800 freestyle at the 2008 Beijing Olympics. That's a big deal. Then there's Adam Peaty, who's known for his breaststroke. He's won Olympic golds too, like in the 100m breaststroke.
+
+Another name that comes to mind is Steve Backley, but I think he's more of a diver. Wait, no, he's a diver, so not a swimmer. Then there's Duncan Scott, who's a medley swimmer and has won multiple Olympic medals. Also, there's Sarah Ryan, but I'm not sure about her fame level compared to others.
+
+Rebecca Adlington was really prominent in the 2008 Olympics, which might make her a strong candidate. Adam Peaty has been dominant in recent years, especially with his world records. But which one is more famous? Maybe it depends on the time period. If we're talking about recent years, Peaty might be more prominent. However, Adlington's achievements in the 2008 games could make her more recognized internationally. Also, there's the possibility of other swimmers like Hannah Miley or James Godfrey, but I don't think they're as famous as Adlington or Peaty.
+
+Wait, but the question is about the UK, so maybe including both male and female. However, the most famous might be one person. Let me check if there's a consensus. Maybe Rebecca Adlington is considered the most famous because of her Olympic success. Alternatively, Adam Peaty's recent achievements might make him more well-known now. But I need to verify. Alternatively, maybe someone like Mark Foster, but I think he's not as famous as Adlington.
+
+I think Rebecca Adlington is a strong answer because of her two gold medals in 2008, which made her a household name in the UK. However, Adam Peaty's continued success in the 2016 and 2020 Olympics might make him more prominent in recent times. It's a bit tricky. But perhaps the answer would be Rebecca Adlington as she was the first British woman",1,,,0,0
+New-su-57,What is the most common livestock raised in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most common livestock raised in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most common livestock raised in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most common livestock raised in UK?"",""answer"":[""sheep""]}",1,,,1,0.75
+New-en-19,What is the most well known sporting stadium in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most well known sporting stadium in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most well known sporting stadium in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most well known sporting stadium in UK?"",""answer"":[""Wembley Stadium""]}",1,,,1,1.0
+New-ch-38,Which cities or regions are known for their import and export activities in UK?,"Show your thoughts clearly and answer the following question.
+
+Which cities or regions are known for their import and export activities in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which cities or regions are known for their import and export activities in UK?"",""answer"":[""answer here""]}","<think>
+Okay, so the user is asking which cities or regions in the UK are known for their import and export activities. Let me think about this.
+
+First, I know that the UK has several major ports and cities that handle a lot of trade. London comes to mind immediately because it's the capital and a major financial hub. The Port of London is one of the largest in the UK, handling a lot of cargo. Then there's Liverpool, which has a significant port as well. I remember hearing that Liverpool Port is one of the busiest container ports in the UK, dealing with both imports and exports.
+
+Another city is Southampton. The Port of Southampton is a major port for cruise ships and freight, so that's probably a key area. Then there's Felixstowe, which I think is the largest container port in the UK. It's on the east coast, right? So that's a big one for exports and imports.
+
+Leeds and Manchester might be more known for manufacturing and industry, but I'm not sure if they have major ports. Maybe their regions are involved in trade, but perhaps not as much as the port cities. Then there's Glasgow in Scotland. The Port of Glasgow handles a lot of freight, especially with its location on the Clyde. Also, the UK's main ports are in England, but Scotland and Wales have some too.
+
+Wait, the question is about cities or regions. So maybe regions like the South East (including London), the East of England (Felixstowe), the North West (Liverpool, Manchester), and Scotland (Glasgow). But the user wants a list of cities or regions. Let me confirm: the Port of Dover is also significant, but it's more for cross-channel traffic. However, Dover is a city, so maybe include it.
+
+But I need to make sure which are the most prominent. The main ports are London, Liverpool, Southampton, Felixstowe, and Glasgow. So the cities would be London, Liverpool, Southampton, Felixstowe, and Glasgow. Also, maybe the region of the East of England for Felixstowe, but the answer might just list the cities. Alternatively, regions like the South East (for London), North West (Liverpool), and the East of England (Felixstowe). But the question says ""cities or regions,"" so both are acceptable. However, the user might expect cities. Let me check some sources in my mind. The UK's top ports are in London, Felixstowe, Southampton, Liverpool, and",1,,,1,1.0
+New-pe-65,"How many subjects are taught in secondary schools in UK? (Provide Arabic numerals (e.g., 12) only.)","Show your thoughts clearly and answer the following question.
+
+How many subjects are taught in secondary schools in UK? (Provide Arabic numerals (e.g., 12) only.)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""How many subjects are taught in secondary schools in UK? (Provide Arabic numerals (e.g., 12) only.)"",""answer"":[""answer here""]}","{""question"":""How many subjects are taught",1,,,0,0
+Th-en-03,What is the most popular professional sports league in UK?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular professional sports league in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular professional sports league in UK?"",""answer"":[""answer here""]}","{""question"":""What is the most popular professional sports league in UK?"",""answer"":[""Premier League""]}",1,,,1,1.0
+New-ko-03,What is the most popular children's song in UK that families sing together?,"Show your thoughts clearly and answer the following question.
+
+What is the most popular children's song in UK that families sing together?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the most popular children's song in UK that families sing together?"",""answer"":[""answer here""]}","{""question"":""What is the most popular children's song in UK that families sing together?"",""answer"":[""Twinkle Twinkle Little Star""]}",1,,,1,1.0
+New-en-69,Which writers are commonly studied in literature class in UK?,"Show your thoughts clearly and answer the following question.
+
+Which writers are commonly studied in literature class in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Which writers are commonly studied in literature class in UK?"",""answer"":[""answer here""]}","{""question"":""Which writers are commonly studied in literature class in UK?"",""answer"":[""William Shakespeare"",""Jane Austen"",""Charles Dickens"",""Emily Brontë"",""Charlotte Brontë"",""William Wordsworth"",""William Blake"",""George Orwell"",""Virginia Woolf"",""D.H. Lawrence"",""Thomas Hardy"",""",1,,,1,1.0
+Ni-en-12,What is the top university in UK? (Provide the official name.),"Show your thoughts clearly and answer the following question.
+
+What is the top university in UK? (Provide the official name.)Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What is the top university in UK? (Provide the official name.)"",""answer"":[""answer here""]}","{""question"":""What is the top university in UK? (Provide the official name.)"",""answer"":[""University of Oxford""]}",1,,,1,1.0
+New-ha-08,What food is typically disliked by children but enjoyed by the elderly in UK?,"Show your thoughts clearly and answer the following question.
+
+What food is typically disliked by children but enjoyed by the elderly in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What food is typically disliked by children but enjoyed by the elderly in UK?"",""answer"":[""answer here""]}","{""question"":""What food is typically disliked by children but enjoyed by the elderly in UK?"",""answer"":[""liver""]}",1,,,0,0
+Ji-ko-45,What do people look forward to the most at university festivals in UK?,"Show your thoughts clearly and answer the following question.
+
+What do people look forward to the most at university festivals in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What do people look forward to the most at university festivals in UK?"",""answer"":[""answer here""]}","{""question"":""What do people look forward to the most at university festivals in UK?"",""answer"":[""Socializing and making new friends""]}",1,,,0,0
+Ji-ko-33,Where do high school students in UK usually go after dinner?,"Show your thoughts clearly and answer the following question.
+
+Where do high school students in UK usually go after dinner?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""Where do high school students in UK usually go after dinner?"",""answer"":[""answer here""]}","<think>
+Okay, I need to figure out where UK high school students usually go after dinner. Let me start by recalling what I know about UK school systems. In the UK, high school typically refers to secondary school, which is for students around 11 to 18 years old. The school day usually ends in the afternoon, so dinner would be part of the school day, maybe around lunchtime? Wait, maybe I'm mixing up terms. In some places, ""dinner"" might be the evening meal, but in schools, they might have lunch and then dinner later.
+
+Wait, maybe the question is about after their evening meal at home. But high school students in the UK often live at home, so after dinner, they might have homework, hang out with friends, or do other activities. But the question is about where they go, not what they do. So possible places could be their bedrooms, living rooms, maybe friends' houses, or public places like parks or cafes. However, I should check if there's a common answer here. In some cases, students might go to the common room or study areas if they're in a boarding school. But not all high schools are boarding schools. The majority are day schools, so students go home after school. So after dinner at home, they might go to their rooms to study, or maybe go out with friends. But the question is asking where they usually go, so the most common answer would be home, but since they are already home, maybe they go to their rooms or study areas. Alternatively, maybe they go to the library or a café. Wait, but the answer needs to be specific. Let me think again. If they're at home after dinner, the places would be their own rooms, living rooms, or maybe friends' houses. But the question is about where they ""go,"" implying a location outside their home? Or maybe it's a trick question. Alternatively, maybe the answer is that they go to their bedrooms to do homework. But I need to confirm. In the UK, after school, students might have homework, so after dinner, they might study. So the answer could be their bedrooms or study areas. But I'm not entirely sure. Maybe the answer is that they go to the common room in boarding schools, but if they're day students, then home. Since the question doesn't specify boarding or day schools, maybe the answer is ""home"" but that seems too vague. Alternatively, the answer might be that they go",1,,,1,0.5
+Ni-en-31,What do people in UK traditionally eat on Christmas Day?,"Show your thoughts clearly and answer the following question.
+
+What do people in UK traditionally eat on Christmas Day?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What do people in UK traditionally eat on Christmas Day?"",""answer"":[""answer here""]}","<think>
+Okay, so I need to figure out what people in the UK traditionally eat on Christmas Day. Let me start by recalling what I know about British Christmas traditions. I remember that roast turkey is a big part of the meal. But wait, maybe there are other dishes too.
+
+First, the main course is usually a roasted bird. Turkey is common, but I think in some cases, people might have chicken or even a different type of meat. However, turkey is the most traditional. Then there's the stuffing, which is inside the turkey. The stuffing is often made with bread, herbs, and maybe some onions or chestnuts. 
+
+Next, the vegetables. Yorkshire pudding is a classic side dish. It's a type of bread pudding that's baked in the oven. Then there are roasted vegetables like parsnips, carrots, and Brussels sprouts. Brussels sprouts are a bit of a divisive dish, but they're traditional. 
+
+For the sauce, gravy is a must. It's made from the juices of the roasted meat. Also, cranberry sauce is popular, though I think that might have come from American influences. However, in the UK, they might use redcurrant jelly instead, which is more traditional. 
+
+Desserts are important too. Christmas pudding is a staple. It's a rich, dark dessert made with dried fruits, spices, and alcohol. Sometimes it's called plum pudding, though that term can be confusing. Also, mince pies are eaten, which are small pies filled with a mixture of dried fruits and spices. 
+
+Other things might include pigs in blankets, which are sausages wrapped in bacon. Also, potatoes are served, maybe as mashed potatoes or roast potatoes. 
+
+I should check if there are any other traditional dishes. Maybe trifle, which is a layered dessert with custard, fruit, and sponge. But I'm not sure if that's as traditional as the pudding. 
+
+Wait, the user wants a list of what people traditionally eat, so I need to make sure I include the main dishes. Let me structure this:
+
+Main course: Roast turkey with stuffing, Yorkshire pudding, roasted vegetables (like parsnips, carrots, Brussels sprouts), gravy, cranberry sauce or redcurrant jelly.
+
+Desserts: Christmas pudding, mince pies.
+
+Other sides: Mashed or roast potatoes, pigs in blankets.
+
+But I should confirm if all these are considered traditional. For example, pigs in blankets might be more of a modern addition or regional variation",1,,,1,1.0
+Al-en-36,What food is associated with Halloween in UK?,"Show your thoughts clearly and answer the following question.
+
+What food is associated with Halloween in UK?Provide one single answer as a list form at the end in a JSON format as below. Only the answer should be given with the list, without any examples.
+
+{""question"":""What food is associated with Halloween in UK?"",""answer"":[""answer here""]}","{""question"":""What food is associated with Halloween in UK?"",""answer"":[""soul cake""]}",1,,,0,0

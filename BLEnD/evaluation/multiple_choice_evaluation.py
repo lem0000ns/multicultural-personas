@@ -1,6 +1,48 @@
 from evaluation_utils import *
 from persona_util import *
 import json_repair
+import re
+
+
+def _format_mcq_refine_context(question_text, option_a, option_b, option_c, option_d, full_res):
+    """Build refinement context: question stem, all four options with text, and previous letter only (no reasoning)."""
+    lines = [
+        f"A. {option_a}",
+        f"B. {option_b}",
+        f"C. {option_c}",
+        f"D. {option_d}",
+    ]
+    block = (
+        f"Question:\n{str(question_text).strip()}\n\n"
+        "Options:\n"
+        + "\n".join(lines)
+    )
+    opts = {"A": option_a, "B": option_b, "C": option_c, "D": option_d}
+    letter = None
+    if full_res and str(full_res).strip():
+        s = str(full_res).strip()
+        try:
+            obj = json_repair.loads(s)
+            if isinstance(obj, dict):
+                ac = obj.get("answer_choice")
+                if ac is None:
+                    ac = obj.get("answer")
+                if ac is not None:
+                    m = re.search(r"\b([ABCD])\b", str(ac).upper())
+                    if m:
+                        letter = m.group(1)
+        except Exception:
+            pass
+        if letter is None:
+            m = re.search(r"\b([ABCD])\b", s.upper())
+            if m:
+                letter = m.group(1)
+    if letter:
+        block += f"\n\nModel's previous answer (letter only): {letter}"
+        if opts.get(letter):
+            block += f"\nText of chosen option: {opts[letter]}"
+    return block
+
 
 def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,response_file=None,temperature=1,top_p=0,gpt_azure=True,num_iterations=1,sample_size=None,random_seed=42,use_persona=True,use_reasoning=True):
     if response_file == None:
@@ -122,7 +164,7 @@ def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,respo
             # Generate or refine persona based on iteration
             if iteration == 1 and use_persona:
                 # First iteration: generate new persona
-                persona_prompt_formatted = generate_persona_prompt + f"\n\nCountry: {country}\nQuestion: {prompt}\n\nGenerate the persona:"
+                persona_prompt_formatted = generate_persona_prompt + f"\n\nCountry: {country}\nQuestion: {question_text}\n\nGenerate the persona:"
                 persona = get_model_response(model_name,persona_prompt_formatted,model,tokenizer,temperature,top_p,gpt_azure)
             elif use_persona:
                 # Subsequent iterations: refine previous persona
@@ -139,8 +181,19 @@ def get_model_mc_response(model_name,model_cache_dir,mc_dir,questions_file,respo
                         language="English",
                         second_person_pronoun="You"
                     )
-                    # Create user prompt with question and previous persona
-                    refine_user_prompt = f"Question: {prompt}\n\nPrevious persona: {prev_persona}\n\nGenerate the improved persona:"
+                    # Question + all four options (full text) + previous letter only (no reasoning from full_res)
+                    prev_response = previous_iter_data.get(qid, {}).get('response', '')
+                    refine_context = _format_mcq_refine_context(
+                        question_text, option_a, option_b, option_c, option_d, prev_response
+                    )
+                    refine_user_prompt = (
+                        f"{refine_context}\n\nPrevious persona: {prev_persona}\n\nGenerate the improved persona:"
+                    )
+                    # print("\n" + "=" * 60)
+                    # print(f"BLEnD MCQ refinement prompt (MCQID={qid}, iter={iteration})")
+                    # print("=" * 60)
+                    # print("[USER — refine_user_prompt]\n", refine_user_prompt, sep="")
+                    # print("=" * 60 + "\n")
                     refine_response = get_model_response(
                         model_name,
                         refine_user_prompt,

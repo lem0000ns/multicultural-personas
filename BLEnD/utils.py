@@ -21,6 +21,7 @@ import openai
 from openai import AzureOpenAI,OpenAI
 from typing import Union
 
+
 MODEL_PATHS = {
     "gpt-3.5-turbo-0125":"gpt-3.5-turbo-0125",
     "gpt-4-0125-preview":"gpt-4-0125-preview",
@@ -46,6 +47,7 @@ MODEL_PATHS = {
     'llama-3-8b-instruct':'meta-llama/Meta-Llama-3-8B-Instruct',
     'qwen3-14b':'Qwen/Qwen3-14B',
     'qwen3.5-35b':'Qwen/Qwen3.5-35B-A3B',
+    'mistral-3-14b-instruct-2512': "mistralai/Ministral-3-14B-Instruct-2512",
 }
 
 COUNTRY_LANG = { 
@@ -71,7 +73,7 @@ COUNTRY_LANG = {
 def get_tokenizer_model(model_name,model_path,model_cache_dir):
     tokenizer,model = None,None
     
-    if 'gpt' not in model_name and 'gemini' not in model_name and 'claude' not in model_name and 'bison' not in model_name and 'command' not in model_name and 'Qwen' not in model_name and 'llama-3-8b-instruct' not in model_name and 'qwen3-14b' not in model_name and 'qwen3.5-35b' not in model_name:
+    if 'gpt' not in model_name and 'gemini' not in model_name and 'claude' not in model_name and 'bison' not in model_name and 'command' not in model_name and 'Qwen' not in model_name and 'llama-3-8b-instruct' not in model_name and 'qwen3-14b' not in model_name and 'qwen3.5-35b' not in model_name and 'mistral-3-14b-instruct' not in model_name:
         # Lazy import for local models only
         try:
             from transformers import T5Tokenizer, T5ForConditionalGeneration, AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer, LlamaTokenizer, pipeline, AutoConfig, BitsAndBytesConfig
@@ -240,10 +242,10 @@ def get_together_response(
             
     return response
 
-# SGLang server URLs (same as culturalbench: 30000 for Llama, 30001 for Qwen3-14B, 30002 for Qwen3.5-35B-A3B)
+# SGLang server URLs (same as culturalbench: 30000 Llama, 30001 Qwen3-14B, 30002 Mistral)
 SGLANG_BASE_URL_LLAMA = "http://34.126.87.212:30000/v1"
 SGLANG_BASE_URL_QWEN3_14B = "http://34.126.87.212:30001/v1"
-SGLANG_BASE_URL_QWEN35_35B = "http://34.126.87.212:30002/v1"
+SGLANG_BASE_URL_MISTRAL = "http://34.126.87.212:30002/v1"
 
 def _strip_think_block(content):
     if not content or not isinstance(content, str):
@@ -267,13 +269,14 @@ def get_sglang_response(
     system_message=None,
     base_url=None
 ):
-    """
-    Get response from SGLang server using OpenAI-compatible API.
-    base_url: optional; default 30000 for Llama, use SGLANG_BASE_URL_QWEN3_14B for Qwen3-14B.
-    """
+    """Get response from SGLang server using OpenAI-compatible API."""
     if base_url is None:
-        if 'qwen3.5' in model_name.lower() or '35b-a3b' in model_name.lower():
-            base_url = SGLANG_BASE_URL_QWEN35_35B
+        if (
+            'qwen3.5' in model_name.lower()
+            or '35b-a3b' in model_name.lower()
+            or 'mistral-3-14b-instruct' in model_name.lower()
+        ):
+            base_url = SGLANG_BASE_URL_MISTRAL
         elif 'qwen3-14b' in model_name.lower():
             base_url = SGLANG_BASE_URL_QWEN3_14B
         else:
@@ -949,8 +952,12 @@ def get_model_response(model_name,prompt,model,tokenizer,temperature,top_p,gpt_a
         response = get_cohere_response(prompt,model_name=model_name,temperature=temperature,top_p=top_p,max_tokens=_max)
     elif 'llama-3-8b-instruct' in model_name:
         response = get_sglang_response(prompt,model_name=MODEL_PATHS[model_name],temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max)
-    elif 'qwen3.5' in model_name.lower() or '35b-a3b' in model_name.lower():
-        response = get_sglang_response(prompt,model_name=MODEL_PATHS.get(model_name, model_name),temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max,base_url=SGLANG_BASE_URL_QWEN35_35B)
+    elif (
+        'qwen3.5' in model_name.lower()
+        or '35b-a3b' in model_name.lower()
+        or 'mistral-3-14b-instruct' in model_name.lower()
+    ):
+        response = get_sglang_response(prompt,model_name=MODEL_PATHS.get(model_name, model_name),temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max,base_url=SGLANG_BASE_URL_MISTRAL)
     elif 'qwen3-14b' in model_name:
         response = get_sglang_response(prompt,model_name=MODEL_PATHS[model_name],temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max,base_url=SGLANG_BASE_URL_QWEN3_14B)
     elif 'Qwen' in model_name:

@@ -119,7 +119,11 @@ def generate_response(model_name,model_path,tokenizer,model,language,country,q_d
                 "Example format: {\"answer\": \"{answer here}\", \"reasoning\": \"{reasoning here}\"}\n"
             )
         else:
-            prompt += f"Provide one single answer as a list form at the end in a JSON format as below. \n\n{{\"question\":\"{q}\",\"answer\":[\"answer here\"]}} DO NOT include any other text or formatting in your response."
+            prompt += (
+                "\n\nOnly provide the short answer to the question. "
+                "Do not include any explanation, reasoning, or other text. "
+                "Output only the answer."
+            )
 
         # Generate or refine persona based on iteration
         persona = None

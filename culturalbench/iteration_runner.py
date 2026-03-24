@@ -4,9 +4,10 @@ import json
 from tqdm.auto import tqdm
 from persona_generator import generate_new_persona, cap
 from tools.utils import country_to_language
-from tools.llm_utils import get_llm, generate_text_funcs
+from tools.llm_utils import get_llm, generate_text_funcs, get_external_feedback
 from tools import llm_utils
-from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration, load_all_iterations_for_question, load_results
+from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration
+from token_counter import add_input_tokens, add_output_tokens
 import json_repair
 
 
@@ -52,7 +53,7 @@ def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode)
         total: Total number of questions
         iteration: Current iteration number
         difficulty: "Easy" or "Hard"
-        mode: Mode string (e.g., "eng_p1")
+        mode: Mode string (e.g., "eng", "ling", "l2e", "e2l")
     
     Returns:
         Accuracy for this iteration
@@ -70,7 +71,7 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2,e
     """Run iterations for Easy difficulty.
     
     Args:
-        mode: Mode (eng_*, ling_*, or e2l_*)
+        mode: Mode (eng, ling, l2e, or e2l)
         num_iterations: Total number of iterations
         db_path: Path to database file containing results
         start_iteration: Starting iteration number
@@ -106,12 +107,28 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2,e
                     'reasoning': item["reasoning"]
                 }
 
+                feedback = None
+                if external:
+                    if "e2l" in mode:
+                        feedback_language = "English"
+                        persona_for_feedback = _extract_revised_persona_text(item.get("pretranslated_persona")) or old_persona
+                    elif "ling" in mode or "l2e" in mode:
+                        feedback_language = country_to_language[cap(item["country"])].capitalize()
+                        persona_for_feedback = old_persona
+                    else:
+                        feedback_language = "English"
+                        persona_for_feedback = old_persona
+                    print(f"Persona for feedback: {persona_for_feedback}")
+                    feedback = await get_external_feedback("Easy", item["question"], persona_for_feedback, prev_answers, feedback_language=feedback_language)
+                    print(f"Feedback: {feedback}")
+
                 pretranslated, refine_response = await generate_new_persona(
                     "Easy",
                     item["question"],
                     previous_personas_data,
                     mode,
                     item["country"],
+                    feedback,
                 )
                 # if not in correct language, disregard this question
                 if refine_response is None and is_translation_mode:
@@ -170,8 +187,16 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2,e
                     )
                 }
             ]
+
+            print("CHAT INPUT FOR EASY ITERATION: \n", chat_input)
+            nin = add_input_tokens("Easy", mode, chat_input)
+            print(f"INPUT TOKENS (this call): {nin}")
             llm_instance = get_llm()
-            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
+            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=False)
+            out_text = (thinking_content or "") + "\n" + (response or "")
+            nout = add_output_tokens("Easy", mode, out_text)
+            print("OUTPUT FOR EASY ITERATION: \n", "THINKING CONTENT:\n", thinking_content, "\nRESPONSE:\n", response)
+            print(f"OUTPUT TOKENS (this call): {nout}")
 
             try:
                 result = json_repair.loads(response)
@@ -230,7 +255,7 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
     """Run iterations for Hard difficulty.
     
     Args:
-        mode: Mode (eng_*, ling_*, or e2l_*)
+        mode: Mode (eng, ling, l2e, or e2l)
         num_iterations: Total number of iterations
         db_path: Path to database file containing results
         start_iteration: Starting iteration number
@@ -265,15 +290,30 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                 )
                 previous_personas_data = {
                     'persona': old_persona,
-                    'reasoning': data[i]["reasoning"]
+                    'reasoning': data[i]["reasoning"],
+                    'iteration': cur_iteration,
                 }
                 
+                feedback = None
+                if external:
+                    if "e2l" in mode:
+                        feedback_language = "English"
+                        persona_for_feedback = _extract_revised_persona_text(data[i].get("pretranslated_persona")) or old_persona
+                    elif "ling" in mode or "l2e" in mode:
+                        feedback_language = country_to_language[cap(data[i]["country"])].capitalize()
+                        persona_for_feedback = old_persona
+                    else:
+                        feedback_language = "English"
+                        persona_for_feedback = old_persona
+                    feedback = await get_external_feedback("Hard", prompt_question, persona_for_feedback, None, feedback_language=feedback_language)
+
                 pretranslated, refine_response = await generate_new_persona(
                     "Hard",
                     prompt_question,
                     previous_personas_data,
                     mode,
                     data[i]["country"],
+                    feedback,
                 )
                 # if not in correct language, disregard this question (set of 4 options)
                 if refine_response is None and is_translation_mode:
@@ -325,24 +365,20 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
                         )
                     }
                 ]
-                
+
+                add_input_tokens("Hard", mode, chat_input)
                 llm_instance = get_llm()
-                thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
-                result = json_repair.loads(response)
-                
+                thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=False)
+                out_text = (thinking_content or "") + "\n" + (response or "")
+                add_output_tokens("Hard", mode, out_text)
                 try:
+                    result = json_repair.loads(response)
                     thinks_correct = (
-                        "true" 
-                        if "true" in result["correct"].lower().strip() 
+                        "true"
+                        if "true" in result["correct"].lower().strip()
                         else "false"
                     )
                     reasoning = result["reasoning"].strip()
-                except json.JSONDecodeError:
-                    # fallback if model didn't return valid JSON
-                    response_lower = response.lower().strip()
-                    thinks_correct = "true" if "true" in response_lower else "false"
-                    reasoning = response_lower.strip()
-                # if there's an error, disregard this question (set of 4 options)
                 except Exception as e:
                     isError = True
                     print(f"Error generating answer for option {j} in question set {i//4}: {type(e).__name__}: {str(e)}")
@@ -399,7 +435,7 @@ async def run_iterations(mode, num_iterations, difficulty, db_path, start_iterat
     """Run iterations starting from iteration 2.
     
     Args:
-        mode: Mode (eng_*, ling_*, or e2l_*)
+        mode: Mode (eng, ling, l2e, or e2l)
         num_iterations: Total number of iterations
         difficulty: "Easy" or "Hard"
         db_path: Path to database file containing results

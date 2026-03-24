@@ -164,9 +164,7 @@ country_to_language = {
     "New Zealand": "English"
 }
 
-modes_list_p1 = ["eng_p1", "ling_p1"]
-modes_list_p2 = ["eng_p2", "ling_p2"]
-modes_list = modes_list_p1 + modes_list_p2
+modes_list = ["eng", "ling", "l2e", "e2l"]
 
 language_to_prompt_1 = {
     "english": """You are an expert in crafting personas that will be used as a system prompt to a language model in answering a multiple-choice or true/false question accurately. You will be given the question and the relevant country that the question content is related to.
@@ -963,4 +961,37 @@ reasonings_translated = {
     "Cantonese": "推理",
     "Japanese": "推論",
     "Korean": "추론"
+}
+
+feedback_translated = {
+    "English": "feedback",
+    "Spanish": "retroalimentación",
+    "Portuguese": "feedback",
+    "Czech": "zpětná vazba",
+    "Polish": "informacja zwrotna",
+    "Romanian": "feedback",
+    "Ukrainian": "відгук",
+    "Russian": "отзыв",
+    "Italian": "feedback",
+    "French": "rétroaction",
+    "German": "Feedback",
+    "Dutch": "feedback",
+    "Arabic": "ملاحظات",
+    "Persian": "بازخورد",
+    "Hebrew": "משוב",
+    "Turkish": "geribildirim",
+    "Bengali": "প্রতিক্রিয়া",
+    "Hindi": "प्रतिक्रिया",
+    "Nepali": "प्रतिक्रिया",
+    "Urdu": "فیڈ بیک",
+    "Indonesian": "umpan balik",
+    "Malay": "maklum balas",
+    "Tagalog": "feedback",
+    "Thai": "คำแนะนำ",
+    "Vietnamese": "phản hồi",
+    "Mandarin": "反馈",
+    "Traditional": "回饋",
+    "Cantonese": "回馈",
+    "Japanese": "フィードバック",
+    "Korean": "피드백"
 }

@@ -1,9 +1,16 @@
 """Persona generation and refinement functions."""
 
-from tools.utils import country_to_language, language_to_code, questions_translated, countries_translated, persona_descriptions_translated, persona_translated, predicted_answers_translated, reasonings_translated, lang_to_spp
-from tools.configs import system_prompts, self_refine_prompt_easy, self_refine_prompt_hard
+from tools.utils import country_to_language, language_to_code, questions_translated, countries_translated, persona_descriptions_translated, persona_translated, predicted_answers_translated, reasonings_translated, lang_to_spp, feedback_translated
+from tools.configs import (
+    system_prompts,
+    self_refine_prompt_easy,
+    self_refine_prompt_hard,
+    self_refine_prompt_hard_qwen35,
+    PERSONA_REFINE_MAX_TOKENS_QWEN35_HARD,
+)
 from tools.llm_utils import get_llm, generate_text_funcs
 from tools import llm_utils
+from token_counter import add_input_tokens, add_output_tokens
 import googletrans
 from langdetect import detect
 import json
@@ -142,17 +149,7 @@ def cap(country):
     return " ".join(country_words)
 
 
-async def generate_persona_description(question, country, mode):
-    """Generate initial persona description for a given question and country.
-    
-    Args:
-        question: The question text
-        country: The country name
-        mode: The mode (eng_*, ling_*, e2l_*, or l2e_*)
-    
-    Returns:
-        Generated persona description
-    """
+async def generate_persona_description(question, country, mode, difficulty="Easy"):
     llm_instance = get_llm()
     if "eng" in mode or "e2l" in mode:
         language = "English"
@@ -176,11 +173,11 @@ async def generate_persona_description(question, country, mode):
         "content": f"{question_t}: " + question + "\n\n" + f"{country_t}: " + country + f"\n\n{persona_description_t}: "}
     ]
 
-    # 3 attempts to generate response in correct language
+    add_input_tokens(difficulty, mode, chat_input)
     attempts = 3
     response = ""
     while attempts > 0:
-        _, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
+        _, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, use_steering=False)
         # check if response is in correct language
         if ("e2l" in mode or "eng" in mode) and not is_english(response):
             attempts -= 1
@@ -189,7 +186,7 @@ async def generate_persona_description(question, country, mode):
         else:
             break
 
-    # translate response to correct language (if translation mode)
+    add_output_tokens(difficulty, mode, response)
     translated_response = None
     if "e2l" in mode:
         translated_response = await translate_text(response, language_to_code[country_to_language[cap(country)]], parse=False)
@@ -200,7 +197,7 @@ async def generate_persona_description(question, country, mode):
     return response, translated_response
 
 
-async def generate_new_persona(difficulty, question, previous_personas_data, mode, country):
+async def generate_new_persona(difficulty, question, previous_personas_data, mode, country, feedback=None):
     """Generate new persona description through self-refinement.
     
     For eng mode, generate english persona description. For ling mode, generate persona 
@@ -220,8 +217,9 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
                 - 'persona': persona description
                 - 'reasoning': reasoning for the answer
                 - 'iteration': iteration number
-        mode: The mode (eng_*, ling_*, or e2l_*)
+        mode: The mode (eng, ling, l2e, or e2l)
         country: The country name
+        feedback: Feedback from external model
     
     Returns:
         New persona description (no JSON)
@@ -236,52 +234,70 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
     question_t = questions_translated[language]
     persona_t = persona_translated[language]
     predicted_answer_t = predicted_answers_translated[language]
+    feedback_t = feedback_translated[language]
 
     # Build content with all previous personas or just the previous one
     if difficulty == "Easy":
         iterations_description = "You will be provided with a question, its corresponding persona description, and the model's predicted answer among the 4 options."
-        plural_suffix = ""
-        learning_guidance = ""
+        feedback_tip = ""
+        if feedback:
+            iterations_description = iterations_description [:len(iterations_description)-1] + " and the feedback on how it can be improved."
+            feedback_tip = "based on the feedback provided."
         
         self_refine_prompt = self_refine_prompt_easy.format(
             language=language, 
             second_person_pronoun=lang_to_spp[language],
             iterations_description=iterations_description,
-            plural_suffix=plural_suffix,
-            learning_guidance=learning_guidance
+            feedback_tip=feedback_tip
         )
         
-        # only previous persona and response
         prev_data = previous_personas_data
         persona = prev_data.get('persona', '')
         model_answer = prev_data.get('model_answer', '')
         user_content = (
             f"{question_t}: " + question + "\n\n"
             + f"{persona_t}: " + persona + "\n\n"
-            + f"{predicted_answer_t}: " + model_answer + "\n\n"
+            + f"{predicted_answer_t}: " + model_answer
         )
+        if feedback:
+            user_content += "\n\n" + f"{feedback_t}: " + feedback
+        user_content += "\n\n"
 
     # Hard mode
     else:
         iterations_description = "You will be provided with a question and its corresponding persona description."
-        plural_suffix = ""
-        learning_guidance = ""
-        
-        self_refine_prompt = self_refine_prompt_hard.format(
-            language=language, 
-            second_person_pronoun=lang_to_spp[language],
-            iterations_description=iterations_description,
-            plural_suffix=plural_suffix,
-            learning_guidance=learning_guidance
-        )
 
-        # only previous persona
+        feedback_tip = ""
+        if feedback:
+            iterations_description = iterations_description [:len(iterations_description)-1] + " and the feedback on how it can be improved."
+            feedback_tip = "based on the feedback provided."
+
+        use_qwen35_hard_prompt = llm_utils.MODEL_NAME == "Qwen/Qwen3.5-35B-A3B"
+
+        if use_qwen35_hard_prompt:
+            self_refine_prompt = self_refine_prompt_hard_qwen35.format(
+                language=language,
+                second_person_pronoun=lang_to_spp[language],
+                iterations_description=iterations_description,
+                feedback_tip=feedback_tip,
+            )
+        else:
+            self_refine_prompt = self_refine_prompt_hard.format(
+                language=language,
+                second_person_pronoun=lang_to_spp[language],
+                iterations_description=iterations_description,
+                feedback_tip=feedback_tip,
+            )
+
         prev_data = previous_personas_data
         persona = prev_data.get('persona', '')
         user_content = (
             f"{question_t}: " + question + "\n\n"
-            + f"{persona_t}: " + persona + "\n\n"
+            + f"{persona_t}: " + persona
         )
+        if feedback:
+            user_content += "\n\n" + f"{feedback_t}: " + feedback
+        user_content += "\n\n"
         
     chat_input = [
         {"role": "system",
@@ -290,13 +306,16 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
         "content": user_content}
     ]
 
-    # outputs json object with two keys: reasoning and revised_persona
-
-    # 3 attempts to generate response in correct language
+    add_input_tokens(difficulty, mode, chat_input)
+    max_tokens_kw = {}
+    if difficulty == "Hard" and llm_utils.MODEL_NAME == "Qwen/Qwen3.5-35B-A3B":
+        max_tokens_kw["max_tokens"] = PERSONA_REFINE_MAX_TOKENS_QWEN35_HARD
     attempts = 3
     while attempts > 0:
         # _ is thinking content (not relevant)
-        _, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input)
+        _, response = generate_text_funcs[llm_utils.MODEL_NAME](
+            llm_instance, chat_input, use_steering=False, **max_tokens_kw
+        )
         # sanitize json response
         try:
             response_json = json_repair.loads(response)
@@ -310,6 +329,7 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
             print("Error parsing response: " + response + " " + str(e))
             attempts -= 1
 
+    add_output_tokens(difficulty, mode, response)
     translated_response = None
     fixed_json_string = json.dumps(json_repair.loads(response), ensure_ascii=False)
     # translate english revised_persona to appropriate language if e2l mode

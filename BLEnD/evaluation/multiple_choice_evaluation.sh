@@ -19,7 +19,7 @@ export GOOGLE_PROJECT_NAME=""
 #     "llama-3-8b-instruct"
 # )
 MODEL_KEYS=(
-    "qwen3-32b"
+    "llama-3-8b-instruct"
 )
 
 for model_key in "${MODEL_KEYS[@]}"; do
@@ -27,13 +27,13 @@ for model_key in "${MODEL_KEYS[@]}"; do
         --model_cache_dir '.cache' \
         --mc_dir './mc_data' \
         --questions_file 'mc_questions_file-2.csv' \
-        --response_file "${model_key}-mc_test.csv" \
+        --response_file "${model_key}-mc_i5.csv" \
         --temperature 0.6 \
         --top_p 1 \
         --gpt_azure 'True' \
-        --num_iterations 1 \
-        --sample_size 100 \
+        --num_iterations 5 \
+        --sample_size 200 \
         --random_seed 42 \
-        --use_persona "False" \
-        --use_reasoning "False"
+        --use_persona "True" \
+        --use_reasoning "True"
 done

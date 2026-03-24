@@ -12,16 +12,15 @@ def evaluate_all_metrics(
     model,country,language,
     response_dir,annotation_dir,mc_dir,
     id_col,q_col,r_col,annotations_key,
-    eval_res_filename,annotation_template='{country}_data.json'
+    annotation_template='{country}_data.json'
     ):
     # Write SAQ results under saq_results/<model>/
     saq_out_dir = os.path.join('saq_results', model)
     os.makedirs(saq_out_dir, exist_ok=True)
-    # Derive run suffix from eval filename (e.g. baseline_r1 from llama3-8b-instruct_baseline_r1_results.csv)
-    base = os.path.splitext(os.path.basename(eval_res_filename))[0]
+    # Derive run suffix from response_dir (e.g. baseline_r1 from ../llama3-8b_baseline_r1)
     run_suffix = ""
-    if "baseline_r" in base:
-        m = re.search(r"baseline_r\d+", base, re.I)
+    if response_dir:
+        m = re.search(r"baseline_r\d+", response_dir, re.I)
         if m:
             run_suffix = "_" + m.group(0)
     all_questions_path = os.path.join(saq_out_dir, ALL_QUESTIONS_CSV.replace(".csv", f"{run_suffix}.csv"))
@@ -63,6 +62,7 @@ def evaluate_all_metrics(
             print(f"Warning: No data found for iteration {iteration}. Skipping.")
             continue
 
+        # Same saq_llm_judge (same prompt) for baseline and for each iteration
         accuracy, num_correct, num_total, question_rows = saq_llm_judge(
             country=country,
             language=language,
@@ -71,7 +71,7 @@ def evaluate_all_metrics(
             id_col=id_col,
             r_col=r_col,
             annotations_key=annotations_key,
-            judge_model=model,
+            judge_model="qwen3-32b",
         )
         
         print(f"  Accuracy: {accuracy:.2f}% ({num_correct}/{num_total})")
@@ -159,9 +159,7 @@ if __name__ == "__main__":
     parser.add_argument('--annotation_filename',type=str,default='{country}_data.json',)
     parser.add_argument('--annotations_key',type=str,default='annotations',
                         help='Provide the key for the annotations in the annotation file.')
-    parser.add_argument('--evaluation_result_file',type=str,default='evaluation_results.csv',
-                        help='Provide the filename for the evaluation result file.')
     
     args = parser.parse_args()
     
-    evaluate_all_metrics(model=args.model,country=args.country,language=args.language,response_dir=args.response_dir,annotation_dir=args.annotation_dir,mc_dir=args.mc_dir,id_col=args.id_col,q_col=args.question_col,r_col=args.response_col,eval_res_filename=args.evaluation_result_file,annotations_key=args.annotations_key,annotation_template=args.annotation_filename) 
+    evaluate_all_metrics(model=args.model,country=args.country,language=args.language,response_dir=args.response_dir,annotation_dir=args.annotation_dir,mc_dir=args.mc_dir,id_col=args.id_col,q_col=args.question_col,r_col=args.response_col,annotations_key=args.annotations_key,annotation_template=args.annotation_filename) 

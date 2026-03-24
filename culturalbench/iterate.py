@@ -2,10 +2,12 @@
 
 import argparse
 import asyncio
+import os
 from evaluators import run_initial_eval
 from iteration_runner import run_iterations
 from tools.llm_utils import cleanup
 from tools.db.db_utils import load_results, get_all_iterations
+from token_counter import write_to_json, get_totals, reset
 import tools.llm_utils
 from tools import llm_utils
 
@@ -51,26 +53,56 @@ def calculate_accuracy_from_db(db_path, iteration, difficulty):
 async def main():
     """Main async function to run evaluation and iterations."""
     parser = argparse.ArgumentParser(description="Run initial evaluation and iterations")
-    parser.add_argument("--mode", type=str, required=True, help="Mode to run (e.g., ling_p2, eng_p1)")
+    parser.add_argument("--mode", type=str, required=True, help="Mode to run: eng, ling, l2e, or e2l")
     parser.add_argument("--num_iterations", type=int, required=True, help="Total number of iterations including initial evaluation")
     parser.add_argument("--difficulty", type=str, required=True, choices=["easy", "hard", "Easy", "Hard"], help="Difficulty level")
     parser.add_argument("--resume", action="store_true", required=False, default=False, help="Resume from last iteration")
-    parser.add_argument("--model", type=str, required=False, default="Qwen/Qwen3-32B", help="Model to use")
+    parser.add_argument(
+        "--model",
+        type=str,
+        required=False,
+        default=tools.llm_utils.MISTRAL_SGLANG_MODEL_ID,
+        help="Model to use (default: Mistral on SGLang port 30002)",
+    )
     parser.add_argument("--temperature", type=float, required=False, default=0.6, help="Temperature to use")
     parser.add_argument("--custom", type=str, required=False, default=None, help="Custom suffix to append to database path")
-    args = parser.parse_args()
     parser.add_argument("--external", action="store_true", required=False, default=False, help="Use external model for feedback")
+    parser.add_argument(
+        "--steering_coefficient",
+        type=float,
+        default=None,
+        help="Enable Assistant Axis steering. Positive=more assistant-like, negative=more persona-like.",
+    )
+    parser.add_argument(
+        "--steering_model",
+        type=str,
+        default="Qwen/Qwen3-32B",
+        help="Model to load for steering (must have pre-computed axis). Default: Qwen/Qwen3-32B.",
+    )
+    args = parser.parse_args()
 
-    # switch to specificed model (default is Llama-3-8B-Instruct)
-    if args.model:
+    # Assistant-axis steering: use steering model and set coefficient (positive=assistant, negative=persona)
+    if args.steering_coefficient is not None:
+        tools.llm_utils.MODEL_NAME = args.steering_model
+        tools.llm_utils.STEERING_MODEL = args.steering_model
+        tools.llm_utils.STEERING_COEFFICIENT = args.steering_coefficient
+    elif args.model:
         tools.llm_utils.MODEL_NAME = args.model
     # use specified temperature (default is 0.0)
     if args.temperature:
         tools.llm_utils.TEMPERATURE = args.temperature
         
     difficulty = args.difficulty.capitalize()
+    reset()
 
-    print(f"Config: mode={args.mode} difficulty={difficulty} model={args.model} temperature={args.temperature} num_iterations={args.num_iterations} external={args.external}")
+    # Include steering coefficient in DB path so different coefficients don't overwrite
+    effective_custom = args.custom
+    if args.steering_coefficient is not None:
+        sc_str = f"sc{args.steering_coefficient}".replace(".", "p").replace("-", "m")
+        effective_custom = f"{args.custom}_{sc_str}" if args.custom else sc_str
+
+    effective_model = tools.llm_utils.MODEL_NAME
+    print(f"Config: mode={args.mode} difficulty={difficulty} model={effective_model} temperature={args.temperature} num_iterations={args.num_iterations} external={args.external} steering_coefficient={args.steering_coefficient}")
     print(f"Resume: {args.resume}")
 
     # track all accuracies
@@ -79,7 +111,7 @@ async def main():
     # run initial evaluation (if not resuming)
     if not args.resume:
         print("Running initial evaluation (iteration 1)...")
-        initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode, args.custom)
+        initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode, effective_custom)
         all_accuracies.append(initial_accuracy)
     # calculate initial accuracy from database (if resuming)
     else:
@@ -88,10 +120,17 @@ async def main():
             "Qwen/Qwen3-4B": "qwen3_4b",
             "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
             "Qwen/Qwen3-14B": "qwen3_14b",
+            tools.llm_utils.MISTRAL_SGLANG_MODEL_ID: "mistral3_14b",
+            "Qwen/Qwen3.5-35B-A3B": "qwen3.5_35b",
+            "Qwen/Qwen3-32B": "qwen3_32b",
+            "google/gemma-2-27b-it": "gemma2_27b",
+            "meta-llama/Llama-3.3-70B-Instruct": "llama33_70b",
         }
-        db_path = f"../results/{args.mode[-2:]}/{args.mode[:-3]}/{difficulty.lower()}_t{args.temperature}_{model_to_save[llm_utils.MODEL_NAME]}"
-        if args.custom:
-            db_path += f"_{args.custom}"
+        from token_counter import get_model_folder
+        model_folder = get_model_folder(llm_utils.MODEL_NAME)
+        db_path = f"../results/{args.mode}/{model_folder}/{difficulty.lower()}_t{args.temperature}_{model_to_save[llm_utils.MODEL_NAME]}"
+        if effective_custom:
+            db_path += f"_{effective_custom}"
         db_path += ".db"
         all_accuracies.append(calculate_accuracy_from_db(db_path, 1, difficulty))
     
@@ -116,11 +155,35 @@ async def main():
     else:
         print("\nNo additional iterations to run (num_iterations = 1)")
     
-    # print accuracy summary
     print(f"\n=== Accuracy Summary for {difficulty} and {args.mode}===")
     for i, accuracy in enumerate(all_accuracies, start=1):
         summary_line = f"Persona Accuracy for {difficulty} - Iteration {i}: {accuracy:.4f}"
         print(summary_line)
+    totals = get_totals()
+    if totals:
+        iter1_results = load_results(db_path, iteration=1)
+        num_questions = len(iter1_results) if difficulty == "Easy" else (len(iter1_results) // 4)
+        to_write = totals
+        if num_questions > 0:
+            averaged = {}
+            for k, v in totals.items():
+                averaged[k] = {
+                    "input_tokens": round(v["input_tokens"] / num_questions, 2),
+                    "output_tokens": round(v["output_tokens"] / num_questions, 2),
+                    "num_questions": num_questions,
+                }
+            to_write = averaged
+        saved = write_to_json(totals_dict=to_write)
+        if saved:
+            paths = saved if isinstance(saved, list) else [saved]
+            print(f"\n=== Token counts saved to {os.path.dirname(paths[0])} ===")
+            for p in paths:
+                print(f"  {os.path.basename(p)}")
+        for k, v in to_write.items():
+            if "num_questions" in v:
+                print(f"  {k}: avg input_tokens={v['input_tokens']}, avg output_tokens={v['output_tokens']} (per question, n={v['num_questions']})")
+            else:
+                print(f"  {k}: input_tokens={v['input_tokens']}, output_tokens={v['output_tokens']}")
 
 if __name__ == "__main__":
     try:

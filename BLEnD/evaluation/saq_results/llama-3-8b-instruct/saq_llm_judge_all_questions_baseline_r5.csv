@@ -1,0 +1,1583 @@
+model,country,iteration,question_id,correct,model_response,ground_truth
+llama-3-8b-instruct,UK,1,Al-en-01,0,crumpets,fruit; apple; breadsticks; banana; cheese; toast
+llama-3-8b-instruct,UK,1,Al-en-04,0,strawberries,apple; apples; banana
+llama-3-8b-instruct,UK,1,Al-en-19,1,french,french; spanish; german
+llama-3-8b-instruct,UK,1,Al-en-36,1,sweets,pumpkin; pumpkins; sweets; chocolate
+llama-3-8b-instruct,UK,1,Al-en-39,1,cake,cake; birthday cake
+llama-3-8b-instruct,UK,1,An-ar-03,1,5,5; 6
+llama-3-8b-instruct,UK,1,Ca-sp-06,1,breakfast,breakfast; dinner; evening meal; supper; lunch
+llama-3-8b-instruct,UK,1,Ca-sp-11,1,sunday,sunday; saturday; friday
+llama-3-8b-instruct,UK,1,Ca-sp-41,1,care homes or sheltered housing.,care homes; retirement homes; sheltered accomodation; with relatives; with family
+llama-3-8b-instruct,UK,1,Gu-ch-08,1,soccer,soccer; football; rugby; egg and spoon; netball; cricket
+llama-3-8b-instruct,UK,1,Gu-ch-38,1,3,3
+llama-3-8b-instruct,UK,1,Ji-ko-24,1,park or playground,park; soft play; playground; indoor play gym
+llama-3-8b-instruct,UK,1,Ji-ko-25,1,"christmas, easter, bank holidays, mother's day, father's day, valentine's day, mothering sunday.",christmas; easter; new year; caravan holidays; mother's day; father's day
+llama-3-8b-instruct,UK,1,Ji-ko-26,1,"key milestones associated with children's independence from their parents in uk's society:
+
+* leaving school at 16/18 years old
+* starting higher education or training
+* moving out of parental home
+* getting a full-time job
+* getting married or entering a civil partnership
+* having children",driving test at 17; passing driving test; driving; going to university; leaving school for university; leaving home; school; job; becoming an adult
+llama-3-8b-instruct,UK,1,Ji-ko-28,0,the first day people celebrate after a child is born in the uk is the 28th day.,first birthday; birthday; christening; Baptism
+llama-3-8b-instruct,UK,1,Ji-ko-29,1,18th,1; 18; 21
+llama-3-8b-instruct,UK,1,Ji-ko-33,0,homework,canteen; back to school; home; form time
+llama-3-8b-instruct,UK,1,Ji-ko-34,1,"by bus, train, or on foot.",walk; car; bus
+llama-3-8b-instruct,UK,1,Ji-ko-35,1,independent schools,"boarding school; private school, public school, independent school; boarding schools"
+llama-3-8b-instruct,UK,1,Ji-ko-36,0,grammar school,"english; maths; math, mathematics; science"
+llama-3-8b-instruct,UK,1,Ji-ko-37,1,"casual wear, such as jeans, t-shirts, hoodies, and trainers.",uniform; blazer; tie; jacket; trousers; skirt; shirt; black trousers
+llama-3-8b-instruct,UK,1,Ji-ko-40,1,"socialize, play games, chat with friends, or grab a snack.","eat lunch; work part-time; go outside; talk with friends from different classes.; talk, chat, socialise"
+llama-3-8b-instruct,UK,1,Ji-ko-42,1,a-levels (typically in 3-4 subjects),english; maths; mathematics; math; critical thinking; science
+llama-3-8b-instruct,UK,1,Ji-ko-45,1,music and live performances,alcohol; drinking; pub crawl; music; find a hook up; sexual encounter; drugs; beer
+llama-3-8b-instruct,UK,1,Jo-sp-13,0,surfing,swimming; rowing; sailing
+llama-3-8b-instruct,UK,1,Jo-sp-19,0,east anglia,yorkshire; oxfordshire; wales; west country; sussex; gloucestershire; scotland; south west
+llama-3-8b-instruct,UK,1,Jod-ch-01,1,"fork, knife, spoon",knife; fork; fork ; spoon
+llama-3-8b-instruct,UK,1,Jod-ch-07,0,2.4,2; 1.5; 1; 2.5
+llama-3-8b-instruct,UK,1,Jod-ch-60,0,7.5,8; 12; 7
+llama-3-8b-instruct,UK,1,Ki-pe-34,1,tea,coffee; tea; juice; fruit juice
+llama-3-8b-instruct,UK,1,Kik-in-16,1,hot chocolate,tea; hot chocolate; coffee; bovril
+llama-3-8b-instruct,UK,1,Kik-in-37,1,manchester united vs liverpool,celtic vs rangers; liverpool vs everton; tottenham vs arsenal; spurs vs arsenal; newcastle vs sunderland; man utd vs man city; liverpool vs manchester united
+llama-3-8b-instruct,UK,1,Na-ko-20,1,cricket,soccer; football; cricket; swimming; World Club; FIFA Club World Club; FIFA; world cup football
+llama-3-8b-instruct,UK,1,Na-ko-29,0,adam peaty,duncan goodhew; sharron davies; Tom Daley
+llama-3-8b-instruct,UK,1,Na-ko-39,1,gift,gift from the wedding list; gifts; wedding gift; a hand shake; handshake; throwing confetti; a round of applause; kiss on the cheek; big hug; money; cards; homeware
+llama-3-8b-instruct,UK,1,Ne-ar-09,0,curry and cakes.,rice
+llama-3-8b-instruct,UK,1,Ne-ar-26,1,hsbc,bbc; hsbc
+llama-3-8b-instruct,UK,1,Ne-ar-36,1,roast turkey with all the trimmings.,turkey and the trimmings; christmas dinner; roast meat; roast beef; turkey; roast chicken; roast lamb; burn supper
+llama-3-8b-instruct,UK,1,Ne-ar-38,0,tea,"tinned food; tins; tinned foods, canned foods, tinned food, cans, tins, tinned goods, canned goods; canned goods; canned food"
+llama-3-8b-instruct,UK,1,New-as-20,1,darts,swimming; netball; badminton; crossfit; gymnastics; tennis
+llama-3-8b-instruct,UK,1,New-ch-07,0,"whisky with drambuie, whisky with ginger beer, vodka with tonic, gin with tonic, rum with cola, bourbon with cola.",chips; chinese; kebab; crisps; cheese; pork scratchings; curry; nuts
+llama-3-8b-instruct,UK,1,New-ch-16,0,green street hooligans,bend it like beckham; ferrari; chariots of fire; The Brothers Grimsby
+llama-3-8b-instruct,UK,1,New-ch-32,1,microsoft office,microsoft office; google workspace ; word; excel; outlook; oracle
+llama-3-8b-instruct,UK,1,New-ch-38,1,"london, manchester, birmingham, liverpool, felixstowe, southampton, portsmouth, hull, grimsby.",london; scotland; wales; kent; portsmouth; liverpool; bristol; dover; north east
+llama-3-8b-instruct,UK,1,New-ch-44,0,1-3 months,6 weeks; six weeks; 4 weeks; four weeks; 2 months; two months; 2 weeks; two weeks
+llama-3-8b-instruct,UK,1,New-ch-73,1,sports clubs and social societies.,sports; sport clubs; golf; nightclubs; technology clubs; music clubs
+llama-3-8b-instruct,UK,1,New-en-05,1,pasta,beans on toast; cheese sandwich; pasta; pizza; chips; sandwich; ready meal from the supermarket; ready meal
+llama-3-8b-instruct,UK,1,New-en-19,1,wembley stadium,wembley; wembley stadium; white hart lane; Wimbledon stadium; wimbledon
+llama-3-8b-instruct,UK,1,New-en-41,1,richard branson,Alan Sugar; alan sugar; richard branson; levi roots
+llama-3-8b-instruct,UK,1,New-en-47,1,"gardens, sheds, fences, and trees.",lawn; grass; shed; trees; flowers; wooden fences; brick walls
+llama-3-8b-instruct,UK,1,New-en-56,1,polish,hindi; urdu; polish; french; spanish; pakistani
+llama-3-8b-instruct,UK,1,New-en-68,1,"detention, suspension, expulsion, parental contact, and possible legal action.",detention; expulsion; exclusion; being expelled from school; extra work; school inform parents
+llama-3-8b-instruct,UK,1,New-en-69,1,"shakespeare, austen, dickens, bronte sisters, woolf, orwell, eliot, hardy, lawrence, and joyce.",william shakespeare; Shakespeare ; charles dickens; dickens; Geoffrey Chaucer; chaucer; john steinbeck; steinbeck; twain; mark twain
+llama-3-8b-instruct,UK,1,New-gr-06,1,pizza,fast food; burgers; fried chicken; chips and gravy; chips; McDonald's; McDonalds; mcdonald's
+llama-3-8b-instruct,UK,1,New-gr-08,1,beer,beer; wine; lager
+llama-3-8b-instruct,UK,1,New-gr-15,0,steak and kidney pie,trifle; pudding; jelly; cake and custard; rice pudding; treacle sponge; Treacle sponge pudding; bread and butter pudding; crumble; brownie
+llama-3-8b-instruct,UK,1,New-gr-58,1,care workers,care workers; carers; nurses; nursing; cleaner; teachers
+llama-3-8b-instruct,UK,1,New-ha-08,1,brussels sprouts,vegetables; brussels sprouts; brussels sprout; broccoli; olives
+llama-3-8b-instruct,UK,1,New-in-01,1,costa,costa; costa coffee; starbucks
+llama-3-8b-instruct,UK,1,New-in-62,1,imperial college london.,"University of Cambridge; university of cambridge,; cambridge; cambridge university,; university of cambridge; brunel university; university of south wales"
+llama-3-8b-instruct,UK,1,New-ko-02,1,antenatal classes.,antenatal classes; prenatal classes at the midwifery clinic; lamaze; breathing classes
+llama-3-8b-instruct,UK,1,New-ko-03,1,"""wheels on the bus""",twinkle twinkle little star; row row row your boat; incy wincy spider; happy birthday; wheels on the bus; baby shark
+llama-3-8b-instruct,UK,1,New-pe-06,1,beef and guinness stew,beef; vegetable; fish; steak and ale; casserole
+llama-3-8b-instruct,UK,1,New-pe-20,1,beach volleyball.,volleyball; surfing; bodyboarding; swimming; frisbee; badminton; racketball
+llama-3-8b-instruct,UK,1,New-pe-49,0,mosques,church; mosque; temple
+llama-3-8b-instruct,UK,1,New-pe-65,0,34,7; 15; 6; 8
+llama-3-8b-instruct,UK,1,New-pe-76,1,picnicking,walk; run; picnic; bbq; sports; people-watching ; crowd watching
+llama-3-8b-instruct,UK,1,New-pe-86,0,big ben,tower of london; bt tower; shard; the blackpool tower
+llama-3-8b-instruct,UK,1,New-spme-05,1,"1. cadbury chocolate bars
+2. quality street
+3. jammie dodgers
+4. kit-kat
+5. galaxy","haribo; mars bar; maltesers; fruit pastiles; cadbury chocolate; Cadbury, Cadburys, Cadbury's"
+llama-3-8b-instruct,UK,1,New-su-24,0,"cricket, golf, tennis, swimming, cycling.",soccer; football; rounders
+llama-3-8b-instruct,UK,1,New-su-33,1,business casual.,casual; smart casual; business attire
+llama-3-8b-instruct,UK,1,New-su-34,1,choir,guitar; guitar lessons; playing in a band; music production; recorder; choir; piano; clarinet; violin
+llama-3-8b-instruct,UK,1,New-su-42,1,christianity,christianity; islam; catholicism 
+llama-3-8b-instruct,UK,1,New-su-57,1,cattle,cows; cattle; sheep; pigs; poultry
+llama-3-8b-instruct,UK,1,New-su-58,1,"cattle, sheep, pigs, chickens, turkeys, and bees.",sheep; cows; pigs; chickens; chicken; cattle
+llama-3-8b-instruct,UK,1,Ni-en-12,1,university of oxford,University of Oxford; University of Cambridge; Durham University
+llama-3-8b-instruct,UK,1,Ni-en-31,1,turkey with all the trimmings.,"Turkey roast dinner, Roast Turkey; turkey roast dinner; turkey roast; turkey; stuffing; yorkshire puddings"
+llama-3-8b-instruct,UK,1,Ni-en-40,1,"""fairytale of new york""",silent night; white christmas; jingle bells; merry christmas everybody; Last Christmas by Wham!
+llama-3-8b-instruct,UK,1,Sa-en-22,1,loughborough university,oxford; cambridge; durham; st andrews; loughborough
+llama-3-8b-instruct,UK,1,Sa-en-31,1,dog,dog; cat
+llama-3-8b-instruct,UK,1,Sa-en-7,1,"crisps, chocolate, biscuits, cakes, and sandwiches.",crisps; chocolate; biscuits; yoghurt; fruit
+llama-3-8b-instruct,UK,1,Ta-pe-21,1,school playgrounds or local parks.,the park; local parks; park
+llama-3-8b-instruct,UK,1,Ta-pe-29,1,premiership football,soccer; football; boxing
+llama-3-8b-instruct,UK,1,Th-en-03,1,premier league,premier league; english premier league; premiership; EFL Championship; the championship
+llama-3-8b-instruct,UK,1,Th-en-11,1,david beckham,ian wright; Gary Lineker; erling haaland; harry kane; david beckham
+llama-3-8b-instruct,UK,1,Th-en-15,1,skiing,rugby; skiing; soccer; football; snowboarding
+llama-3-8b-instruct,UK,1,Th-en-35,0,sunday roast dinner,dinner; tea; breakfast
+llama-3-8b-instruct,UK,1,Th-en-37,1,18,18; 16; 21
+llama-3-8b-instruct,UK,1,Th-en-44,1,roast dinner,Sunday roast; roast dinner; Roast dinner; sunday roast; fish & chips; fish and chips
+llama-3-8b-instruct,UK,1,Th-en-45,1,watching tv together,watching tv; tv; walk
+llama-3-8b-instruct,UK,1,Th-en-51,1,mathematics,english; maths; mathematics; math; science
+llama-3-8b-instruct,UK,1,Th-en-53,1,school disco,disco; soccer; football; netball; cricket; fundraiser; fete; sports; sports day
+llama-3-8b-instruct,US,1,Al-en-01,1,goldfish crackers,fruit; sandwiches; vegetables; PB&J; peanut butter and jelly; pretzels; Fruit Rollup; fruit by the foot; Goldfish crackers; Cheez-Its; cheddar puffs; cheese puffs; animal crackers
+llama-3-8b-instruct,US,1,Al-en-04,1,apple,apple; pear; peach; strawberries; strawberry; orange; banana
+llama-3-8b-instruct,US,1,Al-en-19,1,spanish,spanish; french; german
+llama-3-8b-instruct,US,1,Al-en-32,1,turkey,turkey; ham
+llama-3-8b-instruct,US,1,Al-en-36,1,candy,candies; sweets; candy; chocolate; pumpkins; jack o'lanterns; caramel apples
+llama-3-8b-instruct,US,1,Al-en-39,1,cake,cake; pizza
+llama-3-8b-instruct,US,1,An-ar-03,1,5,May; 5; June; 6; December; 12
+llama-3-8b-instruct,US,1,Ca-sp-06,1,breakfast,breakfast; dinner
+llama-3-8b-instruct,US,1,Ca-sp-11,1,sunday,sunday
+llama-3-8b-instruct,US,1,Ca-sp-41,1,with family or in assisted living facilities.,assisted living; old folks home; nursing home; senior citizen homes; care center; family; family home; at-home; at home
+llama-3-8b-instruct,US,1,Gu-ch-08,1,soccer,soccer; baseball; basketball; American Football; football; wrestling
+llama-3-8b-instruct,US,1,Gu-ch-38,0,4,4; 3
+llama-3-8b-instruct,US,1,Ji-ko-14,1,aircraft,corn; raw materials; meat; weapons
+llama-3-8b-instruct,US,1,Ji-ko-24,1,swimming pool,park playground; playground; park; Disneyland; Disney World; soccer (field); International Football; pool; Swimming Pool; YMCA
+llama-3-8b-instruct,US,1,Ji-ko-25,1,"1. mother's day
+2. father's day
+3. valentine's day
+4. independence day (4th of july)
+5. grandparents day",Thanksgiving; Independence Day; Xmas; athletics; Memorial Day; Mother's Day; Father's Day
+llama-3-8b-instruct,US,1,Ji-ko-26,1,"1. age 12: begins to take responsibility for personal hygiene and dressing themselves.
+2. age 12-13: starts to take responsibility for completing homework and chores.
+3. age 13-14: begins to take responsibility for managing their own schedule and time.
+4. age 14-15: starts to take responsibility for making their own decisions about extracurricular activities.
+5. age 15-16: begins to take responsibility for managing their own money.
+6. age 16-17: starts to take responsibility for applying to coll",driver's license; high school graduation; graduating high school; first job; starting university; first day of school; getting a car; getting a smartphone; 18; 16; 21
+llama-3-8b-instruct,US,1,Ji-ko-29,0,16,21st; 21; 16; 16th; 18; 18th; 15th; 15; 1; 1st; 13th; 13; 30th
+llama-3-8b-instruct,US,1,Ji-ko-33,1,home,friend's house; bedroom; their room; shopping; homework; hw
+llama-3-8b-instruct,US,1,Ji-ko-34,1,"elementary school students in the us typically go to school by walking, being driven by parents or caregivers, or riding a school bus.",the bus; school bus; on a bus; bus; on foot; walking; walk; dropped off by car; parents drop off; car
+llama-3-8b-instruct,US,1,Ji-ko-35,1,parochial schools,Catholic school; college; university; individual lessons; high school; HS
+llama-3-8b-instruct,US,1,Ji-ko-36,0,math and science academy,math; english; history
+llama-3-8b-instruct,US,1,Ji-ko-37,1,"casual clothing, such as jeans, t-shirts, and hoodies.",baggy jeans; jeans; t-shirts; hoodies; casual; fast fashion brands; trendy; crop tops
+llama-3-8b-instruct,US,1,Ji-ko-40,1,"socialize, eat, play games, chat with friends.",eat lunch; check facebook; play on phones; chat; talk; gossip; talk about others; read; vacation; go on a trip
+llama-3-8b-instruct,US,1,Ji-ko-42,1,"the required subjects in the us's university entrance exam are:
+
+* english
+* math
+* reading
+* science",math; english; writing; sat; scholastic assessment test; act; American College Testing; science; reading
+llama-3-8b-instruct,US,1,Jo-sp-13,0,surfing,swimming; kayaking
+llama-3-8b-instruct,US,1,Jo-sp-19,1,the great plains,midwest; southern United States; south; Pacific
+llama-3-8b-instruct,US,1,Jod-ch-01,1,"forks, knives, spoons",fork; spoon; knife
+llama-3-8b-instruct,US,1,Jod-ch-07,1,2.3,1; 1.5; 1.7; 2
+llama-3-8b-instruct,US,1,Jod-ch-60,1,8,8; 9; 10
+llama-3-8b-instruct,US,1,Ki-pe-34,1,coffee,coffee; orange juice; oj; milk; juice
+llama-3-8b-instruct,US,1,Kik-in-16,1,hot chocolate,hot coffee; coffee; hot chocolate; cocoa; tea; water
+llama-3-8b-instruct,US,1,Na-ko-19,1,karch kiraly,kerri walsh jennings; charles kiraly; alix klineman; kerri walsh
+llama-3-8b-instruct,US,1,Na-ko-20,1,olympics,soccer; International Football; baseball; basketball; olympics
+llama-3-8b-instruct,US,1,Na-ko-29,1,michael phelps,Micahel Phelps; Michael Phelps; michael phelps; katie ledecky; esther williams
+llama-3-8b-instruct,US,1,Na-ko-33,0,dumplings,black eyed peas; grapes
+llama-3-8b-instruct,US,1,Na-ko-39,1,gift,gift; a gift from a wedding registry; gift from registry; card; money
+llama-3-8b-instruct,US,1,Ne-ar-26,1,apple inc.,microsoft; google; McDonald's; nike; amazon; apple; target; ge; General Electric
+llama-3-8b-instruct,US,1,Ne-ar-36,1,"turkey with stuffing, mashed potatoes, cranberry sauce, and pumpkin pie.",turkey; mashed potatoes; gravy; steak or fancy meat; xmas dinner; christmas dinner; stuffing; sweet potatoes; green bean casserole; cranberry sauce; and pumpkin pie
+llama-3-8b-instruct,US,1,Ne-ar-38,1,canned goods,canned soup; soup; canned foods; canned goods
+llama-3-8b-instruct,US,1,New-as-20,1,basketball,basketball; hockey
+llama-3-8b-instruct,US,1,New-ch-07,0,"whiskey: cola, ginger ale, lemon; vodka: tonic water, soda water, juice (e.g. orange, cranberry); rum: cola, pineapple juice, coconut cream; tequila: lime, lemon, orange; gin: tonic water, soda water, juice (e.g. grapefruit, cranberry); brandy: cola, soda water, juice (e.g. apple, orange).",burger; burgers; hamburgers; cheeseburger; pretzels; pizza; tacos; tater tots; negroni aged cheese; fries
+llama-3-8b-instruct,US,1,New-ch-16,1,rudy,rocky; sandlot
+llama-3-8b-instruct,US,1,New-ch-32,1,microsoft office,microsoft word; microsoft office; excel; microsoft suite
+llama-3-8b-instruct,US,1,New-ch-38,1,"1. los angeles
+2. long beach
+3. seattle
+4. new york/newark
+5. houston
+6. miami
+7. chicago
+8. san francisco
+9. oakland
+10. savannah
+11. jacksonville
+12. new orleans",new york city; new york; NYC; los angeles; LA; florida; FL; TX; texas; california; CA; coastal areas; BAL; baltimore; SEA; seattle; boston; BOS
+llama-3-8b-instruct,US,1,New-ch-44,0,1-3 months,3 months; 1 month; 6 months
+llama-3-8b-instruct,US,1,New-ch-73,1,fraternity and sorority clubs.,debate; mathematics; math; outdoor activities; college bars; fraternity; sorority
+llama-3-8b-instruct,US,1,New-en-05,1,peanut butter and jelly sandwich.,hotdogs; hot dog; hamburgers; Burgers; chicken; sandwich; fast food; spaghetti; bologna sandwich
+llama-3-8b-instruct,US,1,New-en-19,0,lambeau field,Yankees stadium; MSG; madison square garden; NY; new york; Mercedes-Benz Stadium; wrigley field
+llama-3-8b-instruct,US,1,New-en-41,1,jeff bezos,bill gates; jeff bezos; jeffrey bezos; steve jobs; mark cuban
+llama-3-8b-instruct,US,1,New-en-47,1,"grass, flowers, trees, patio, deck, swing set, bbq grill, garden gnomes, etc.",grass; trees; gravel; chairs; trampoline; shed; pool; swing sets; fruits; vegetables; flowers
+llama-3-8b-instruct,US,1,New-en-56,1,spanish,spanish; mandarin; german
+llama-3-8b-instruct,US,1,New-en-68,1,"in-school suspension, detention, expulsion, suspension, counseling, community service, and parental involvement.",detention; suspension; expulsion; corporal punishment; iss
+llama-3-8b-instruct,US,1,New-en-69,1,"here is the answer:
+
+* shakespeare
+* austen
+* brontë sisters
+* dickens
+* hemingway
+* fitzgerald
+* hawthorne
+* melville
+* wharton
+* steinbeck
+* woolf
+* faulkner
+* joyce
+* orwell
+* bradbury
+* hemingway
+* kafka
+* austen
+* eliot
+* whitman
+* thoreau
+* emerson
+* melville
+* poe
+* twain
+* james
+* alcott
+* alcott
+* alcott",edgar allen poe; edgar allan poe; shakespear; shakespeare; mark twain; Charles Dickens; jd salinger
+llama-3-8b-instruct,US,1,New-gr-06,1,pizza,pizza; burgers; hamburgers; salads; ramen noodles; ramen; french fries; wings; chicken wings
+llama-3-8b-instruct,US,1,New-gr-08,1,beer,beer; malt beverages; mixed drinks; shots
+llama-3-8b-instruct,US,1,New-gr-15,1,apple pie,pumpkin pie; pie; cherry pie; ice cream; apple pie
+llama-3-8b-instruct,US,1,New-gr-58,1,teachers,teachers; teaching; restaurant work; civil servents; manufacturing workers; PHDs; Doctor of Philosophy; fast food; internships; federal employment
+llama-3-8b-instruct,US,1,New-ha-08,1,brussels sprouts,vegetables; coffee; soup; asparagus; fish; sushi; oats; healthy cereals
+llama-3-8b-instruct,US,1,New-in-01,1,starbucks,starbucks; Dunkin' Donuts; Dunkin'; coffee bean; tea leaf; blue bottle; dutch bros
+llama-3-8b-instruct,US,1,New-in-62,1,massachusetts institute of technology (mit),mit; massachusetts institute of technology (mit); massachusetts institute of technology; caltech; California Institute of Technology; texas a&m; stanford university
+llama-3-8b-instruct,US,1,New-ko-02,1,childbirth education classes,lamaze; childbirth education classes; headphones on the belly bump
+llama-3-8b-instruct,US,1,New-ko-03,1,"""twinkle, twinkle, little star""",Twinkle Twinkle Little Star; wheels on the bus; itsy bitsy spider; london bridges; happy birthday
+llama-3-8b-instruct,US,1,New-pe-06,1,chicken noodle stew,beef; beef stew; chili; gumbo (cajun style); gumbo; chicken stew
+llama-3-8b-instruct,US,1,New-pe-20,1,volleyball,volleyball; American Football; football; frisbee; catch
+llama-3-8b-instruct,US,1,New-pe-49,1,churches,church; home
+llama-3-8b-instruct,US,1,New-pe-65,1,7,8; 7
+llama-3-8b-instruct,US,1,New-pe-76,1,picnicking,picnicking; picnic; frisbee; ball sports; dog walking; walk dog; hike; camping; camp
+llama-3-8b-instruct,US,1,New-pe-86,1,one world trade center,empire state building; twin towers; world trade center; the sears tower
+llama-3-8b-instruct,US,1,New-spme-05,1,"reese's peanut butter cups, m&m's, snickers, kit kat, and hershey's kisses.",chocolate; chocolate candy; soda; soft drink; candy; hershey's; Resse's Puffs; Reese's; cookies; tart candies
+llama-3-8b-instruct,US,1,New-spme-37,1,engineering,finance; politics; law; IT; Information Technology; business; engineering; mathematics; math
+llama-3-8b-instruct,US,1,New-su-24,1,"golf, basketball, and baseball",soccer; International Football; basketball; American Football; football; baseball; tennis; golf
+llama-3-8b-instruct,US,1,New-su-33,1,business casual,formal; professional casual; casual; business casual
+llama-3-8b-instruct,US,1,New-su-34,1,choir,band class; band; parade; chorus; marching band; choir; orchestras
+llama-3-8b-instruct,US,1,New-su-57,1,cattle,chicken; cows; cow; cattle; pigs; pig; chickens
+llama-3-8b-instruct,US,1,New-su-58,1,"cattle, pigs, chickens, turkeys, and horses.",cows; cow; pigs; pig; chickens; chicken
+llama-3-8b-instruct,US,1,Ni-en-12,0,princeton university,harvard university; harvard; yale; Massachusetts Institute of Technology; mit; standford
+llama-3-8b-instruct,US,1,Ni-en-31,1,turkey,ham; pork roast; steak; turkey
+llama-3-8b-instruct,US,1,Ni-en-40,1,"""white christmas""",all i want for christmas is you; all i want for christmas is you (mariah carey); deck the halls; jingle bell
+llama-3-8b-instruct,US,1,Sa-en-22,1,university of alabama,university of alabama; notre dame university; notre dame; harvard; FU; university of florida; michigan state university; MSU; university of south carolina; USC; university of texas at austin; UT Austin
+llama-3-8b-instruct,US,1,Sa-en-31,1,dog,dog; cat
+llama-3-8b-instruct,US,1,Sa-en-7,1,"chips, popcorn, cookies, crackers, granola bars, pretzels, and candy.",chips; popcorn; Cheez-Its; ritz crackers; ice cream; cookies; m&m; hershey
+llama-3-8b-instruct,US,1,Ta-pe-21,1,school fields or local parks.,field; outdoor field; youth soccer league; little league soccer; school; community park
+llama-3-8b-instruct,US,1,Ta-pe-29,1,nfl (national football league),American Football; football; nfl; baseball; mlb; basketball; nba; golf; soccer; International Football
+llama-3-8b-instruct,US,1,Th-en-03,1,national football league (nfl),national football league; nfl; mlb; Major League Baseball; nba; National Basketball Association
+llama-3-8b-instruct,US,1,Th-en-11,1,tom brady,tiger woods; Travis Kelce; travis kelce; Black Mamba; kobe bryant; TB12; tom brady; Brady; lebron james; Lebron; King James
+llama-3-8b-instruct,US,1,Th-en-15,1,ice hockey,hockey; skiing; snowboarding
+llama-3-8b-instruct,US,1,Th-en-35,1,dinner,dinner
+llama-3-8b-instruct,US,1,Th-en-37,1,18,18; 21; 24
+llama-3-8b-instruct,US,1,Th-en-44,1,pizza,pizza; burgers; hamburgers; fries; tacos; hotdogs; hot dogs; chicken; steak
+llama-3-8b-instruct,US,1,Th-en-45,1,watching tv together,television; watching tv; tv; dinner; family dinner; having dinner together; playing games; stroll; walk; little league events; kids sporting events
+llama-3-8b-instruct,US,1,Th-en-51,1,mathematics,english; Science Technology Engineering and Mathematics; STEM; mathematics; literature; science
+llama-3-8b-instruct,US,1,Th-en-53,0,football games.,prom; homecoming; marching band; chorus; dances
+llama-3-8b-instruct,US,1,Tmp-ar-01,1,libraries.,library; home
+llama-3-8b-instruct,South_Korea,1,Al-en-01,1,peanut butter cookies,cookie; chip; snack; cracker; fruit; candy; bread
+llama-3-8b-instruct,South_Korea,1,Al-en-04,1,apple,apple; watermelon; tangerine; mandarin; strawberry
+llama-3-8b-instruct,South_Korea,1,Al-en-19,1,english,english
+llama-3-8b-instruct,South_Korea,1,Al-en-32,0,it's not a traditional korean dish.,songpyeon; jeon; korean pancake; galbi
+llama-3-8b-instruct,South_Korea,1,Al-en-39,1,tteokbokki,seaweed soup; cake; galbi; rice
+llama-3-8b-instruct,South_Korea,1,An-ar-03,0,2,12; 6; 7
+llama-3-8b-instruct,South_Korea,1,Ca-sp-06,1,dinner,dinner; lunch
+llama-3-8b-instruct,South_Korea,1,Ca-sp-11,1,sunday,saturday; sunday; friday
+llama-3-8b-instruct,South_Korea,1,Ca-sp-41,1,with their adult children.,home; house; nursing home; care home; sanatorium; countryside
+llama-3-8b-instruct,South_Korea,1,Gu-ch-08,1,football (soccer),soccer; dodgeball; baseball
+llama-3-8b-instruct,South_Korea,1,Gu-ch-38,1,4,4
+llama-3-8b-instruct,South_Korea,1,Ji-ko-14,1,electronics,semiconductor; automobile; car; electronic devices
+llama-3-8b-instruct,South_Korea,1,Ji-ko-24,1,amusement parks,playground; kids cafe; slide; swing; amusement park; everland
+llama-3-8b-instruct,South_Korea,1,Ji-ko-25,1,"chuseok, seollal, parents' day, children's day, korean thanksgiving day.",children's day; parents' day
+llama-3-8b-instruct,South_Korea,1,Ji-ko-26,0,"1. leaving home at age 18-20
+2. getting married
+3. establishing own household
+4. having children
+5. paying taxes",employment; marriage; university graduation
+llama-3-8b-instruct,South_Korea,1,Ji-ko-28,1,"the first day is called ""doljanchi"".",first birthday party; first birthday; one hundredth day; 100th day
+llama-3-8b-instruct,South_Korea,1,Ji-ko-29,0,60th,1; first; 1st; 70
+llama-3-8b-instruct,South_Korea,1,Ji-ko-33,1,homework,academy; house; home; own room; reading room; study room; pc room; pc bang; internet cafe
+llama-3-8b-instruct,South_Korea,1,Ji-ko-34,0,"elementary school students in south korea typically attend school from 8:30-12:30 pm, with a 30-minute lunch break.",walking; walk; car; bus
+llama-3-8b-instruct,South_Korea,1,Ji-ko-35,1,hagwon,academy; private lesson; private tutoring; online lecture; math academy; english academy
+llama-3-8b-instruct,South_Korea,1,Ji-ko-36,0,hanlim multi art school,mathematics; math; english
+llama-3-8b-instruct,South_Korea,1,Ji-ko-37,1,uniforms,school uniform; pe uniform; pe clothes; gym clothes; p.e. clothes; p.e. uniform
+llama-3-8b-instruct,South_Korea,1,Ji-ko-40,1,eat snacks and socialize.,game; nap; canteen; snack bar; cafeteria; toilet; bathroom; rest; chat; phone
+llama-3-8b-instruct,South_Korea,1,Ji-ko-42,1,"math, science, korean, english, and social studies.",english; korean language; mathematics; math
+llama-3-8b-instruct,South_Korea,1,Ji-ko-45,1,"food, games, and performances.",singer; performance; concert; celebrity; food
+llama-3-8b-instruct,South_Korea,1,Jo-sp-13,0,windsurfing,swimming; surfing
+llama-3-8b-instruct,South_Korea,1,Jo-sp-19,1,honam,honam; jeolla province; chungcheong province
+llama-3-8b-instruct,South_Korea,1,Jod-ch-01,1,chopsticks,chopsticks; spoon; spoon and chopsticks
+llama-3-8b-instruct,South_Korea,1,Jod-ch-07,1,2.3,1; 1.5; 2
+llama-3-8b-instruct,South_Korea,1,Jod-ch-60,1,9,8; 9
+llama-3-8b-instruct,South_Korea,1,Ki-pe-34,1,coffee,water; coffee; milk
+llama-3-8b-instruct,South_Korea,1,Kik-in-16,0,hotteok,coffee; hot chocolate; ginger tea
+llama-3-8b-instruct,South_Korea,1,Kik-in-36,0,pak sung-hoon,guus hiddink; hiddink
+llama-3-8b-instruct,South_Korea,1,Kik-in-37,1,seoul vs jeonbuk,suwon bluewings vs fc seoul; suwon samsung bluewings vs fc seoul; real madrid vs fc barcelona; real madrid vs barcelona
+llama-3-8b-instruct,South_Korea,1,Na-ko-19,1,kim yeon-koung,kim yeon-koung; kim yeon koung; yeon koung kim; yeon-koung kim
+llama-3-8b-instruct,South_Korea,1,Na-ko-20,0,table tennis,soccer
+llama-3-8b-instruct,South_Korea,1,Na-ko-29,1,park tae-hwan,park tae-hwan; tae-hwan park; hwang sun-woo; sun-woo hwang
+llama-3-8b-instruct,South_Korea,1,Na-ko-33,1,tteokguk,sliced rice cake soup; tteokguk; rice cake soup; rice-cake soup
+llama-3-8b-instruct,South_Korea,1,Na-ko-39,1,money,congratulatory money
+llama-3-8b-instruct,South_Korea,1,Ne-ar-26,0,samsung electronics,korea electric power corporation; incheon international airport corporation
+llama-3-8b-instruct,South_Korea,1,Ne-ar-36,0,bibimbap,dak-kkochi; chicken skewer; stir-fried rice cakes; tteokbokki; topokki; rice cakes in hot sauce; fried chicken; chicken; chicken gangjeong; sweet and spicy fried chicken; dak-gangjeong; dakgangjeong; sweet and spicy chicken; kimbap; gimbap
+llama-3-8b-instruct,South_Korea,1,Ne-ar-38,1,kimchi,rice; soup; kimchi; korean food; korean cuisine; gomtang; gomguk; beef bone soup
+llama-3-8b-instruct,South_Korea,1,New-as-20,1,badminton,climbing; indoor climbing; badminton; basketball; table tennis
+llama-3-8b-instruct,South_Korea,1,New-ch-07,0,"sobako, makgeolli, and fruit (e.g. orange, grapefruit, apple).",raw fish; slices of raw fish; sliced raw fish; sashimi; pork belly; soup
+llama-3-8b-instruct,South_Korea,1,New-ch-16,0,"""take off""",take off; forever the moment; marathon
+llama-3-8b-instruct,South_Korea,1,New-ch-32,1,naver office,excel; word; hangul; microsoft 365; microsoft office
+llama-3-8b-instruct,South_Korea,1,New-ch-38,1,"busan, incheon, and gangneung.",busan; incheon; ulsan
+llama-3-8b-instruct,South_Korea,1,New-ch-44,1,3 months,3 months; three months
+llama-3-8b-instruct,South_Korea,1,New-ch-73,1,k-pop and gaming clubs.,band; band club; sports; music
+llama-3-8b-instruct,South_Korea,1,New-en-05,1,bibimbap,instant noodles; ramen; triangular gimbap; triangular kimbap; hamburger; burger
+llama-3-8b-instruct,South_Korea,1,New-en-19,1,seoul world cup stadium,sangam stadium; seoul world cup stadium; jamsil olympic stadium; seoul olympic stadium; jamsil baseball stadium
+llama-3-8b-instruct,South_Korea,1,New-en-41,1,lee kun-hee,lee jae-yong; chung ju-yung; jung joo-young; lee kun-hee
+llama-3-8b-instruct,South_Korea,1,New-en-47,0,potted plants and greenhouses.,hang-ari; traditional korean jar; jangttokttae; jangdokdae; traditional earthen jars; flower bed; parking lot; tree
+llama-3-8b-instruct,South_Korea,1,New-en-56,1,english,english
+llama-3-8b-instruct,South_Korea,1,New-en-68,1,"punishment, detention, suspension, and expulsion.",school suspension; school transfer; forceful transfer of schools; forced transfer; parent-teacher conference; parent-teacher meeting; expulsion
+llama-3-8b-instruct,South_Korea,1,New-en-69,1,"kim sowol, hwang sok-yong, park wan-suh, kim young-ha, han kang.",yun dong-ju; yoon dong-ju; lee yuk-sa; yi yuksa; yi won-rok; gim you-jeong; kim yujeong; kim you-jeong; gim yujeong; kim yu-jŏng; bak kyoungli; pak kyongni; pak kyong-ni; kim so-wol; kim sowol
+llama-3-8b-instruct,South_Korea,1,New-gr-06,1,bibimbap,spicy hot pot; malatang; stir-fried rice cakes; tteokbokki; topokki; rice cakes in hot sauce; tanghulu; fried chicken; chicken
+llama-3-8b-instruct,South_Korea,1,New-gr-08,1,soju,soju; beer; makgeolli; raw rice wine; makkoli
+llama-3-8b-instruct,South_Korea,1,New-gr-15,0,tteokbokki,yakgwa; honey cookie; gwajul; rice cake; tteok; yugwa
+llama-3-8b-instruct,South_Korea,1,New-gr-58,1,nurses,firefighter; police; soldier; customer service; cleaner; cleaning operative; public worker; civil servant; government employee; public official; public servant; government official
+llama-3-8b-instruct,South_Korea,1,New-ha-08,0,kimchi,stir-fried vegetables; sautéed vegetables; seasoned vegetable; samgyetang; samgye-tang; ginseng chicken soup; haejang-guk; hangover soup; haejangguk; acorn jelly; dotori-muk; dotorimuk; gomtang; gomguk; beef bone soup
+llama-3-8b-instruct,South_Korea,1,New-in-01,0,caffè bene,starbucks; mega coffee; a twosome place
+llama-3-8b-instruct,South_Korea,1,New-in-62,1,seoul national university,kaist; korea advanced institute of science and technology; seoul national university; postech; pohang university of science and technology
+llama-3-8b-instruct,South_Korea,1,New-ko-02,0,baby swimming classes.,music; listening to music; prenatal education through music; listen to children's songs
+llama-3-8b-instruct,South_Korea,1,New-ko-03,0,"""twinkle, twinkle, little star"" ()","three bears; school bell's ringing ding ding dong; the school bell rings ding dong ding; cheer up, dad; daddy, cheer up; daddy cheer up; baby shark; clap clap"
+llama-3-8b-instruct,South_Korea,1,New-pe-06,1,jjigae.,kimchi-jjigae; kimchi stew; kimchijjigae; doenjang-jjigae; soybean paste stew; bean paste stew; doenjangjjigae
+llama-3-8b-instruct,South_Korea,1,New-pe-20,0,beach volleyball,surfing
+llama-3-8b-instruct,South_Korea,1,New-pe-65,0,34,12; 9
+llama-3-8b-instruct,South_Korea,1,New-pe-76,1,hiking,badminton; picnic; jogging; catch ball; walk; bicycle; cycling; bicycle riding
+llama-3-8b-instruct,South_Korea,1,New-pe-86,1,n seoul tower,n seoul tower; namsan seoul tower; seoul tower; namsan tower; lotte tower; lotte world tower
+llama-3-8b-instruct,South_Korea,1,New-spme-05,1,"kimchi-flavored gummies, pepero, and yakult candies.",chocolate; cotton candy; honeycomb toffee; dalgona; sugar honeycomb; jelly; tanghulu
+llama-3-8b-instruct,South_Korea,1,New-spme-37,0,engineering,english; film; multimedia; business management; management; business administration; language; economics; economy
+llama-3-8b-instruct,South_Korea,1,New-su-24,0,"badminton, table tennis, and golf.",soccer; kicking; bicycle; cycling; bicycle riding; bowling; walk
+llama-3-8b-instruct,South_Korea,1,New-su-34,1,piano,band; band club; orchestra; choir; piano
+llama-3-8b-instruct,South_Korea,1,New-su-57,1,pigs,cow; pig; chicken
+llama-3-8b-instruct,South_Korea,1,New-su-58,1,"cattle, pigs, chickens, and ducks.",cow; chicken
+llama-3-8b-instruct,South_Korea,1,Ni-en-12,1,seoul national university,snu; seoul national university; korea advanced institute of science and technology; kaist
+llama-3-8b-instruct,South_Korea,1,Ni-en-31,0,korean-style fried chicken and tteokbokki.,cake; steak
+llama-3-8b-instruct,South_Korea,1,Ni-en-40,0,"""silent night""",jingle bells; santa claus is coming to town; rudolph the red-nosed reindeer
+llama-3-8b-instruct,South_Korea,1,Sa-en-22,1,yonsei university,yonsei university; korea university; korea national sport university
+llama-3-8b-instruct,South_Korea,1,Sa-en-31,1,dog,dog; puppy; cat
+llama-3-8b-instruct,South_Korea,1,Sa-en-7,1,"kimchi, mandu, bungeo-ppang, hotteok, pocky, pepero, and yakgwa.",fried chicken; chicken; hotteok; fish-shaped bread; fish-shaped bun; bungeo-ppang; fish-shaped pastry; stir-fried rice cakes; tteokbokki; topokki; rice cakes in hot sauce; snack; bread; dumpling; pizza
+llama-3-8b-instruct,South_Korea,1,Ta-pe-21,1,schoolyards or public parks.,school playground; school sports field; schoolyard; sports field; playground
+llama-3-8b-instruct,South_Korea,1,Ta-pe-29,1,baseball,baseball; e-sports; esports; golf
+llama-3-8b-instruct,South_Korea,1,Th-en-03,0,k league 1,kbo; korea baseball organization; kbo league; baseball
+llama-3-8b-instruct,South_Korea,1,Th-en-11,1,son heung-min,heung min son; son heung-min; son heung min; heung-min son; park ji-sung; park ji sung; ji-sung park; ji sung park; yuna kim; kim yuna
+llama-3-8b-instruct,South_Korea,1,Th-en-15,1,ice hockey,ski; short track; short-track speed skating; snowboard; skate; ice-skate; ice skate; ice-skating
+llama-3-8b-instruct,South_Korea,1,Th-en-35,1,dinner,dinner; evening; breakfast; morning
+llama-3-8b-instruct,South_Korea,1,Th-en-37,1,25,24; 30; 28; 25
+llama-3-8b-instruct,South_Korea,1,Th-en-44,0,bibimbap,meat; pork; pork belly; steak
+llama-3-8b-instruct,South_Korea,1,Th-en-45,1,dinner together,meal; dinner; family meal; family dinner; walk; take a walk; watching tv
+llama-3-8b-instruct,South_Korea,1,Th-en-51,1,mathematics,math; korean; english
+llama-3-8b-instruct,South_Korea,1,Th-en-53,0,bts (fan meeting),sports day; school trip; field trip; festival; university festival
+llama-3-8b-instruct,South_Korea,1,Tmp-ar-01,1,pc bang.,library; cafe; house; home; university library; study cafe
+llama-3-8b-instruct,Algeria,1,Al-en-01,0,dates,jam sandwiches; jam and butter sandwiches; croissant; milk; snack
+llama-3-8b-instruct,Algeria,1,Al-en-04,1,dates,orange; dates; bananas; watermelon
+llama-3-8b-instruct,Algeria,1,Al-en-19,1,french,french
+llama-3-8b-instruct,Algeria,1,Al-en-39,1,makroud and dates.,cake; birthday cake; tart
+llama-3-8b-instruct,Algeria,1,An-ar-03,1,6,6
+llama-3-8b-instruct,Algeria,1,Ca-sp-06,1,asar,lunch; dinner; morning breakfast; breakfast
+llama-3-8b-instruct,Algeria,1,Ca-sp-11,1,friday,friday
+llama-3-8b-instruct,Algeria,1,Ca-sp-41,1,with family.,among their children; with children; with their children; with one of their children; home; house; their house; at home
+llama-3-8b-instruct,Algeria,1,Gu-ch-08,1,football,soccer; football; jumping; karate; karaté
+llama-3-8b-instruct,Algeria,1,Gu-ch-38,1,3,5; 7; 3; 4
+llama-3-8b-instruct,Algeria,1,Ji-ko-14,1,crude oil,petroleum; natural gas; gas
+llama-3-8b-instruct,Algeria,1,Ji-ko-24,1,beach,amusement park; amusement parks; garden; public garden; municipal stadium; beach; sea; street
+llama-3-8b-instruct,Algeria,1,Ji-ko-25,0,"eid al-fitr, eid al-adha, mawlid al-nabi, and independence day (november 1).",summer vacation; friday
+llama-3-8b-instruct,Algeria,1,Ji-ko-26,0,"* 7-10 years: children start to take care of themselves and show interest in their surroundings.
+* 12-14 years: children start to take responsibility for their own belongings and chores.
+* 15-17 years: children start to make their own decisions and take their own initiatives.
+* 18 years: children are considered adults and are expected to be independent.",marriage; work; immigration
+llama-3-8b-instruct,Algeria,1,Ji-ko-28,1,7th day,seventh day; seven days later; seven days; 7th; week after childbirth; week after; after a week; day of birth
+llama-3-8b-instruct,Algeria,1,Ji-ko-33,1,home,house; home; their homes; to sleep
+llama-3-8b-instruct,Algeria,1,Ji-ko-34,0,"elementary school students in algeria typically go to school from 8:00 am to 12:00 pm, monday to friday, with a one-hour break in the morning and afternoon.",on foot; parents' car; one of the parents drops them off; parents; alone; public transport; bus
+llama-3-8b-instruct,Algeria,1,Ji-ko-35,1,madrasa,private school; private schools; general education; special education; private education; support lessons; vocational training schools for adults
+llama-3-8b-instruct,Algeria,1,Ji-ko-37,1,traditional clothing such as djellabas and kaftans.,apron; casual clothing; casual clothes
+llama-3-8b-instruct,Algeria,1,Ji-ko-40,1,play outdoor games or socialize with friends.,eat; meet their friends; meet friends; talk; play
+llama-3-8b-instruct,Algeria,1,Ji-ko-42,1,"mathematics, arabic, french, and a foreign language.",all; all subjects; baccalaureate exam; baccalaureate
+llama-3-8b-instruct,Algeria,1,Jo-sp-13,1,sailing,swimming; swim
+llama-3-8b-instruct,Algeria,1,Jo-sp-19,0,the sahel region.,mitidja; high plateaus; hautes plaines; high plains; aïn defla; ain defla
+llama-3-8b-instruct,Algeria,1,Jod-ch-01,1,"fork, knife, and spoon.",spoon; fork; knife
+llama-3-8b-instruct,Algeria,1,Jod-ch-07,0,2.5,1; 2; 1.5
+llama-3-8b-instruct,Algeria,1,Jod-ch-60,1,8,8; 7
+llama-3-8b-instruct,Algeria,1,Ki-pe-34,1,mint tea.,milk; coffee; coffee with milk
+llama-3-8b-instruct,Algeria,1,Kik-in-16,1,chai,tea; coffee; verbena; thyme; salep; sahlab
+llama-3-8b-instruct,Algeria,1,Kik-in-36,0,petrus drucker,"rabah saâdane; rabah saadane; djamel belmadi; belmadi; ben sheikh; ben cheikh; ali bencheikh; ali ""alilou"" bencheikh; vahid halilhodžić; halilhodžić; vahid halilhodzic"
+llama-3-8b-instruct,Algeria,1,Kik-in-37,1,mc alger vs es sétif,mc algiers vs usm algiers; usm algiers vs mc algiers; mc alger vs usm alger; mouloudia vs. usm alger; usm alger vs mc alger; mc alger vs. usm alger; mc algiers vs usm algiers; usm algiers vs mc algiers; cr belouizdad vs mc algiers; mc algiers vs cr belouizdad; usm alger vs js kabylie; js kabylie vs usm alger
+llama-3-8b-instruct,Algeria,1,Na-ko-20,0,handball,world cup; fifa world cup; african cup of nations; africa cup of nations; caf; champions league
+llama-3-8b-instruct,Algeria,1,Na-ko-29,0,nadir allahabadi,salim iles
+llama-3-8b-instruct,Algeria,1,Na-ko-33,1,ksoura,chakhchoukha; rechta; couscous
+llama-3-8b-instruct,Algeria,1,Na-ko-39,1,money.,money; amount of money; utensils; glass cup; gift
+llama-3-8b-instruct,Algeria,1,Ne-ar-06,1,"traditional dishes like couscous, tagine, and maafe.",bourak; bourek; soup; shourba frik; chorba soup; shourba soup; qalbellouze; qalb ellouz; kalb el louz; kalbellouze; kel ellouz; mthouwem; mtewem; jari soup; jari bel frik; harira; harira soup
+llama-3-8b-instruct,Algeria,1,Ne-ar-09,1,"mhajab, mouloukhia, and couscous.",sweets; eid sweets; assorted sweets
+llama-3-8b-instruct,Algeria,1,Ne-ar-26,1,sonatrach,sonatrach; saidal
+llama-3-8b-instruct,Algeria,1,Ne-ar-36,0,"maafe (lamb or beef stew) with couscous, vegetables, and dates.",couscous; rishta; reshta; lentils and pasta soup; libyan-style pasta; rechta
+llama-3-8b-instruct,Algeria,1,Ne-ar-38,0,dates.,couscous; wheat; lentils; lentil
+llama-3-8b-instruct,Algeria,1,New-as-20,1,handball,boxing; handball; volleyball; judo
+llama-3-8b-instruct,Algeria,1,New-ch-16,0,rugby à xv (1980),inspector tahar scors the goal
+llama-3-8b-instruct,Algeria,1,New-ch-32,1,microsoft office,microsoft; microsoft office; excel; word
+llama-3-8b-instruct,Algeria,1,New-ch-38,1,"oran, algiers, annaba, and skikda.",bejaia; béjaïa; bugia; bougie; algiers; arzeu; arzew; coast; coastal ports
+llama-3-8b-instruct,Algeria,1,New-ch-44,1,30 days,six months; 6 months; two years; 2 years; three months; 3 months; twelve months; 12 months
+llama-3-8b-instruct,Algeria,1,New-ch-73,0,football,scientific clubs; science
+llama-3-8b-instruct,Algeria,1,New-en-05,0,merguez.,karantika; calentica; pizza carre; pizza carré; square pizza; lentils; lentil; bean
+llama-3-8b-instruct,Algeria,1,New-en-19,1,stade 5 juillet 1962,july 5 stadium; 5th of july; 5-juillet-1962 stadium; 5 july 1962 stadium; stade du 5 juillet
+llama-3-8b-instruct,Algeria,1,New-en-41,0,rabah derfoul.,issad rebrab; rebrab
+llama-3-8b-instruct,Algeria,1,New-en-47,1,olive trees.,tree; clothes hanger; flower; swing; lemon tree
+llama-3-8b-instruct,Algeria,1,New-en-56,0,arabic (moroccan),french
+llama-3-8b-instruct,Algeria,1,New-en-68,1,"suspension, expulsion, and detention.",expulsion; stand in the corner; parking in the corner; parent teacher meeting; bring the parent; parent-teacher meeting; disciplinary council
+llama-3-8b-instruct,Algeria,1,New-en-69,1,"mouloud feraoun, assia djebar, albert camus, frantz fanon, kateb yacine, and tahar djaout.",mouloud feraoun; mohammed dib; mahmoud darwish; mouloud mammeri
+llama-3-8b-instruct,Algeria,1,New-gr-06,0,merguez,pizza; pizza; sandwich; burger
+llama-3-8b-instruct,Algeria,1,New-gr-15,1,makroud,baklava; dziriet; dziriette; makrout; makroud; tcharek; halwet ettabaa; halwet taba; halwet eltaba; halwet tabe
+llama-3-8b-instruct,Algeria,1,New-gr-58,1,teachers,cleaning worker; cleaner; guard; seller; civil service official; public servant; public employee; driver; security officer; security guard
+llama-3-8b-instruct,Algeria,1,New-ha-08,0,couscous,turnip; tbikha; vegetable
+llama-3-8b-instruct,Algeria,1,New-in-62,1,university of science and technology houari boumediene (usthb),higher school of engineering; national polytechnic school; polytechnic school; houari boumediene university; houari boumediene university of science and technology; university of science and technology; the higher school of informatics; higher national school of computer science
+llama-3-8b-instruct,Algeria,1,New-pe-06,0,chakchouka,tajine zitoun; tajine el zitoune; tagine zitoune; olive tagine; sweet tagine; lham hlou; lham lahlou; tajine lahlou; chtitha
+llama-3-8b-instruct,Algeria,1,New-pe-20,1,beach volleyball,volleyball; tennis; soccer; football; swimming
+llama-3-8b-instruct,Algeria,1,New-pe-49,1,mosques.,in the mosque; mosque; house; home
+llama-3-8b-instruct,Algeria,1,New-pe-65,1,12,10; 8; 13; 11
+llama-3-8b-instruct,Algeria,1,New-pe-76,1,picnicking.,strolling; hiking; eating; running; play; soccer; football; jumping; bicycle
+llama-3-8b-instruct,Algeria,1,New-pe-86,0,the casbah clock tower,martyr's memorial; martyrs' memorial; sanctuary of the martyr; maqam e'chahid; memorial of the martyr; maqam echahid; gulf bank; gulf bank tower
+llama-3-8b-instruct,Algeria,1,New-spme-05,1,"makroud, ghoriba, and brik.",baklava; dziriet; makrout; makroud; halwet ettabaa; halwet taba; halwet eltaba; halwet tabe
+llama-3-8b-instruct,Algeria,1,New-spme-37,1,engineering,engineering; medicine; computer science; commerce
+llama-3-8b-instruct,Algeria,1,New-su-24,1,tennis and football,ball game; soccer; football; riding a bike; bike; bicycle; race
+llama-3-8b-instruct,Algeria,1,New-su-33,0,traditional arabic attire.,apron
+llama-3-8b-instruct,Algeria,1,New-su-34,1,chorale,sing; singing; rhythm
+llama-3-8b-instruct,Algeria,1,New-su-42,1,islam,islam
+llama-3-8b-instruct,Algeria,1,New-su-57,1,sheep,sheep; cow; camel; lamb
+llama-3-8b-instruct,Algeria,1,New-su-58,1,"sheep, goats, cattle, and camels.",cow; bull; mule; donkey
+llama-3-8b-instruct,Algeria,1,Ni-en-12,0,university of algiers 2 (université de alger 2),houari boumediene university of science and technology; university of science and technology; university of algiers; national polytechnic school; polytechnic school; the higher school of information; higher national school of computer science
+llama-3-8b-instruct,Algeria,1,Sa-en-31,1,dog,cat; dog; bird
+llama-3-8b-instruct,Algeria,1,Sa-en-7,1,"brik, mhajab, zlabia, and makroud.",karantika; calentica; pizza; shawarma; m'hajeb; mhajeb; sfenj; bambalouni; sfinz; bambaloni; khfaf; pastries
+llama-3-8b-instruct,Algeria,1,Ta-pe-21,1,streets and alleys.,street; in the street; stadium; in the stadium; neighborhood
+llama-3-8b-instruct,Algeria,1,Ta-pe-29,1,football (soccer),soccer; football
+llama-3-8b-instruct,Algeria,1,Th-en-03,1,ligue professionnelle 1 (algerian premier league),professional league; professionnelle; professional; algerian professional league 1; algerian professionnelle league 1; national football league; nfl; algerian football cup; algerian cup; republic cup
+llama-3-8b-instruct,Algeria,1,Th-en-11,1,riyad mahrez,"mahrez; riyad mahrez; islam slimani; taoufik makhloufi; toufik makhloufi; ali ben cheikh; ali bencheikh; ali ""alilou"" bencheikh"
+llama-3-8b-instruct,Algeria,1,Th-en-35,1,dinner,dinner; lunch
+llama-3-8b-instruct,Algeria,1,Th-en-37,0,18,30; 23; 25
+llama-3-8b-instruct,Algeria,1,Th-en-44,1,couscous.,couscous
+llama-3-8b-instruct,Algeria,1,Th-en-45,0,football,watching a tv show; watching tv; tv
+llama-3-8b-instruct,Algeria,1,Th-en-51,0,arabic.,mathematics; math; science; philosophy; literature
+llama-3-8b-instruct,Algeria,1,Th-en-53,0,football (soccer),chat; chatting; end of the year parties; end-of-year parties
+llama-3-8b-instruct,Algeria,1,Tmp-ar-01,1,lycées.,library; university library; to the library; laboratories; lab; house; home
+llama-3-8b-instruct,China,1,Al-en-01,0,peanuts,cheese stick; dried fruit; potato chips; chips; sweet; sweets; candy; ice cream; ad calcium milk
+llama-3-8b-instruct,China,1,Al-en-04,1,apple,orange; apple; watermelon; pear
+llama-3-8b-instruct,China,1,Al-en-19,1,english,english; japanese; korean
+llama-3-8b-instruct,China,1,Al-en-39,1,dumplings.,birthday cake; cake; longevity noodles; noodles; home-style cooking
+llama-3-8b-instruct,China,1,An-ar-03,1,6,6; 7; 1
+llama-3-8b-instruct,China,1,Ca-sp-06,1,dinner,dinner; lunch; breakfast
+llama-3-8b-instruct,China,1,Ca-sp-41,1,with their children.,children's home; rural area; countryside; rural hometown; nursing home; home; hiring nursing staff to take care
+llama-3-8b-instruct,China,1,Gu-ch-08,1,table tennis,basketball; soccer; football; running; table tennis
+llama-3-8b-instruct,China,1,Gu-ch-38,1,4,4
+llama-3-8b-instruct,China,1,Ji-ko-14,1,electronics,yiwu small commodities; mobile phone; textile; rice; shoes; clothes
+llama-3-8b-instruct,China,1,Ji-ko-24,0,swimming pool,swing; slide; amusement park; disney; little train
+llama-3-8b-instruct,China,1,Ji-ko-25,1,"1. chinese new year (spring festival)
+2. qingming festival (tomb sweeping day)
+3. dragon boat festival
+4. mid-autumn festival
+5. national day (golden week)",mid-autumn festival; lunar new year; spring festival; chinese new year; dragon boat festival; mother's day; father's day; double ninth festival; qingming festival
+llama-3-8b-instruct,China,1,Ji-ko-26,0,"1. leaving home at 22
+2. getting married at 25
+3. having children at 28
+4. supporting parents financially at 30",work; college graduate; buy a house; get married
+llama-3-8b-instruct,China,1,Ji-ko-28,0,15th day after birth.,first month; one month old; birth feast; hundred days
+llama-3-8b-instruct,China,1,Ji-ko-29,1,60,80; 90; 20; 60; 18
+llama-3-8b-instruct,China,1,Ji-ko-33,1,home.,home; go home; playground; school classroom; extracurricular tutoring class; dormitory; student accommodation
+llama-3-8b-instruct,China,1,Ji-ko-34,1,elementary school students in china typically take a school bus or walk to school.,parent pick-up and drop-off; walk; take the bus
+llama-3-8b-instruct,China,1,Ji-ko-35,1,key schools,private school; foreign language school; internation school; kindergarten; international exchange
+llama-3-8b-instruct,China,1,Ji-ko-36,1,yuanlin (),mathematics; english; physics
+llama-3-8b-instruct,China,1,Ji-ko-37,1,uniforms,school uniform; sportswear
+llama-3-8b-instruct,China,1,Ji-ko-40,1,play mahjong or cards.,go to the toilet; chat; play; sleep; do homework; study; sports; exercise
+llama-3-8b-instruct,China,1,Ji-ko-42,1,"mathematics, chinese, and foreign languages.",mathematics; math; chinese; literature; english
+llama-3-8b-instruct,China,1,Ji-ko-45,0,food and games.,holiday; dance; national day; party
+llama-3-8b-instruct,China,1,Jo-sp-13,1,dragon boating,swimming; diving; jet ski; parasailing; dragon boat racing; scuba diving
+llama-3-8b-instruct,China,1,Jo-sp-19,1,yangtze river delta,henan; northeast; northeast plain; guangdong; north china plain; the middle-lower yangtze plain
+llama-3-8b-instruct,China,1,Jod-ch-01,1,chopsticks.,chopsticks
+llama-3-8b-instruct,China,1,Jod-ch-07,0,2.3,2; 1.5; 1
+llama-3-8b-instruct,China,1,Jod-ch-60,1,8,8; 9
+llama-3-8b-instruct,China,1,Ki-pe-34,0,tea,soy milk; milk
+llama-3-8b-instruct,China,1,Kik-in-16,1,hot tea,tea; soup; bai; white liquor; chinese spirits; corn juice; soy milk; bubble tea; milk tea; coffee
+llama-3-8b-instruct,China,1,Kik-in-37,1,guangzhou evergrande vs shanghai sipg,evergrande vs. luneng; shandong luneng vs guangdong evergrande; shanghai sipg vs shanghai shenhua; shandong luneng vs shanghai shenhua; zhejiang team vs qingdao hainiu
+llama-3-8b-instruct,China,1,Na-ko-19,0,zhu ting,lang ping; wei qiuyue
+llama-3-8b-instruct,China,1,Na-ko-20,1,table tennis,soccer; football; basketball; ping pong; table tennis; volleyball
+llama-3-8b-instruct,China,1,Na-ko-29,1,sun yang,sun yang; zhang lin
+llama-3-8b-instruct,China,1,Na-ko-33,1,dumplings,dumplings; tangyuan; glutinous rice balls; sweet rice balls; chicken; fish
+llama-3-8b-instruct,China,1,Na-ko-39,1,red envelopes with money.,red envelope; cash red envelope; cash gift
+llama-3-8b-instruct,China,1,Ne-ar-06,1,"dumplings, noodles, and dates",beef; lamb; mutton; chicken; noodles; suhor
+llama-3-8b-instruct,China,1,Ne-ar-26,1,alibaba group,alibaba; moutai
+llama-3-8b-instruct,China,1,Ne-ar-36,1,dumplings and niangao (sticky rice cake),manchu han imperial feast; fish; may there be surpluses every year (fish); dumplings; hot pot; chicken
+llama-3-8b-instruct,China,1,Ne-ar-38,0,rice.,instant noodles; meat
+llama-3-8b-instruct,China,1,New-as-20,1,table tennis,ping pong; table tennis; badminton; e-sports
+llama-3-8b-instruct,China,1,New-ch-07,0,"baijiu is often paired with sesame seed crackers, soy sauce, and ginger.",peanuts; peanut; braised food; braised meat; beef; pork; steamed bun
+llama-3-8b-instruct,China,1,New-ch-16,0,"""winning london""",leap; women's volleyball number 1; woman basketball player no. 5; to the fore
+llama-3-8b-instruct,China,1,New-ch-32,1,microsoft office,wps; microsoft; microsoft office; wechat
+llama-3-8b-instruct,China,1,New-ch-38,1,"shanghai, guangzhou, shenzhen, hong kong, and tianjin.",shanghai; shenzhen; qingdao; guangzhou; shandong peninsula; zhuhai; dongguan
+llama-3-8b-instruct,China,1,New-ch-44,0,1-3 months,3 months; one month; 1 month
+llama-3-8b-instruct,China,1,New-ch-73,1,karaoke clubs.,street dance club; sports; dance; guitar; badminton club
+llama-3-8b-instruct,China,1,New-en-05,1,rice and noodles.,shaxian delicacies; instant noodles; steamed stuffed bun; steamed bun; porridge; fried dough stick; soy milk
+llama-3-8b-instruct,China,1,New-en-19,1,bird's nest stadium,beijing workers stadium; beijing national stadium; bird's nest; the national stadium
+llama-3-8b-instruct,China,1,New-en-41,1,jack ma,jack ma; pony ma; ren zhengfei; liu qiangdong; lei jun
+llama-3-8b-instruct,China,1,New-en-47,1,vegetables,vegetable planting area; vegetable garden; vegetables; fruit; grass; soil; earth; brick; vegetable jar
+llama-3-8b-instruct,China,1,New-en-56,1,english,english
+llama-3-8b-instruct,China,1,New-en-68,1,"detention, suspension, expulsion, and even public shaming.",call parents; summon parents; write a self-criticism; expulsion from school; expel from school; drop out; disciplinary probation; academic probation; record a demerit; corporal punishment; discipline; punishment; disciplinary warning; warning
+llama-3-8b-instruct,China,1,New-en-69,1,"lu xun, mao dun, ba jin, bing xin, eileen chang, wang anyi, mo yan, su tong, wang xiaobo, and yu hua.",lu xun; lao she
+llama-3-8b-instruct,China,1,New-gr-06,0,rice noodles,hot pot; luosifen; snail noodles; bubble tea; milk tea; fast food; kentucky fried chicken; kfc; mcdonald's
+llama-3-8b-instruct,China,1,New-gr-08,1,baijiu,bai; white liquor; chinese spirits; beer; huangjiu; yellow wine
+llama-3-8b-instruct,China,1,New-gr-15,0,egg tarts,mooncake; osmanthus cake; daoxiangcun; red bean bun; shaved ice; shaved snow; tangyuan; glutinous rice balls; sweet rice balls
+llama-3-8b-instruct,China,1,New-gr-58,1,teacher,cleaner; teacher; farmer; physical labor jobs; labourer; salesperson; saleswoman; salesman; builder; construction worker; temporary worker
+llama-3-8b-instruct,China,1,New-ha-08,0,cabbage.,eight-treasure porridge; eight treasure congee; soup mixed with rice; momordica charantia; carrot; ochro; okra; vegetable; vegetables
+llama-3-8b-instruct,China,1,New-in-01,1,starbucks,luckin coffee; starbucks
+llama-3-8b-instruct,China,1,New-in-62,1,tsinghua university,tsinghua university; harbin institute of technology
+llama-3-8b-instruct,China,1,New-ko-02,0,massaging.,listen to music; listen to songs; music; tell a story; prenatal yoga; listen to stories
+llama-3-8b-instruct,China,1,New-ko-03,0,《甜蜜蜜》 (tian mi mi),little tiger; find friends; twinkle twinkle little star; birthday song; happy birthday song; little donkey
+llama-3-8b-instruct,China,1,New-pe-06,0,hot pot.,braised pork with vermicelli; braised ribs; stewed ribs; stewed pig's trotters; braised pig's trotters; cabbage stewed with pork; stewed chicken; braised pork; potato with braised pork
+llama-3-8b-instruct,China,1,New-pe-20,1,beach volleyball,surfing; swimming; volleyball; building sandcastles; beach volleyball
+llama-3-8b-instruct,China,1,New-pe-49,1,temple,temple; home
+llama-3-8b-instruct,China,1,New-pe-65,1,12,9; 12
+llama-3-8b-instruct,China,1,New-pe-76,0,cycling,square dance; tai chi; play badminton
+llama-3-8b-instruct,China,1,New-pe-86,0,the great wall of china,leifeng pagoda; oriental pearl; pearl of the orient; big wild goose pagoda; giant wild goose pagoda; canton tower
+llama-3-8b-instruct,China,1,New-spme-05,1,"almond cookies, sesame balls, and rice cakes.",cake ball; egg yolk pastry; egg roll; wife cake; sweetheart cake; cake; rolling donkey; lüdagun; tang yuan; yuanxiao; red bean bun; egg tart
+llama-3-8b-instruct,China,1,New-spme-37,1,engineering,computer science; finance; business management; information technology; accounting; economy; art
+llama-3-8b-instruct,China,1,New-su-33,1,business casual,formal attire; formal; shirt; trousers; appropriate; not inappropriately; not dressed in a strange or unusual way; not weird
+llama-3-8b-instruct,China,1,New-su-34,0,erhu,choir; art performance; extracurricular music class; radio calisthenics; short video challenge; listen to music and copy lyrics; choir competition
+llama-3-8b-instruct,China,1,New-su-57,1,pigs,chicken; duck; dog; cat; pig; fish
+llama-3-8b-instruct,China,1,New-su-58,0,"pigs, chickens, ducks, cattle, and goats.",cow; cat
+llama-3-8b-instruct,China,1,Ni-en-12,1,peking university,tsinghua university; peking university
+llama-3-8b-instruct,China,1,Ni-en-31,0,peking duck.,apple; chocolate; pizza; steak; rice
+llama-3-8b-instruct,China,1,Ni-en-40,0,"""little star"" ()",jingle bells; lonely christmas
+llama-3-8b-instruct,China,1,Sa-en-22,1,beijing sport university,tsinghua university; beijing sport university
+llama-3-8b-instruct,China,1,Sa-en-31,0,fish,dog; cat
+llama-3-8b-instruct,China,1,Sa-en-7,1,"peking duck jerky, rice crackers, sesame balls, lychees, and xiaolongbao.",xiaolongbao; pancake; fried dough stick; grilled cold noodles; yogurt ice cream; bubble tea; milk tea; malatang; tangyuan; glutinous rice balls; sweet rice balls; tofu pudding; chuan chuan xiang
+llama-3-8b-instruct,China,1,Ta-pe-21,1,schoolyards or public parks.,sports field; soccer field; football field
+llama-3-8b-instruct,China,1,Ta-pe-29,0,esports.,soccer; football; basketball
+llama-3-8b-instruct,China,1,Th-en-03,1,chinese basketball association (cba),china table tennis super league; chinese football super league; chinese super league; cba; chinese basketball association
+llama-3-8b-instruct,China,1,Th-en-11,0,zhang jianying,yao ming; ming yao; yingsha sun; sun yingsha; ma long; long ma; su yiming; yiming su; xiang liu; liu xiang
+llama-3-8b-instruct,China,1,Th-en-15,0,ice hockey,skiing; skating
+llama-3-8b-instruct,China,1,Th-en-35,0,dinner,dinner; breakfast
+llama-3-8b-instruct,China,1,Th-en-37,1,22,30; 22; 21; 18; 25; 23
+llama-3-8b-instruct,China,1,Th-en-44,1,dumplings,hot pot; barbecue; mochi; dumplings; fish
+llama-3-8b-instruct,China,1,Th-en-45,0,playing mahjong,watch tv; watch tv series; watch movie; eating out; stroll; walk
+llama-3-8b-instruct,China,1,Th-en-51,1,mandarin chinese,mathematics; math; chinese literature; english; philosophy
+llama-3-8b-instruct,China,1,Th-en-53,1,ktv (karaoke) parties.,go to the internet cafe; karaoke; play games; association; club; society; academic competition; honor of kings
+llama-3-8b-instruct,China,1,Tmp-ar-01,1,kaoqiao libraries.,library; study room
+llama-3-8b-instruct,Indonesia,1,Al-en-01,1,krupuk,chocolate paste; choki-choki; chocolate; chips; indonesian egg roll; momogi; wafer roll; wafer stick; cubit cake; kue cubit; indonesian mini pancake; biscuit
+llama-3-8b-instruct,Indonesia,1,Al-en-04,1,durian,durian; mango; rambutan; coconut; banana; longan
+llama-3-8b-instruct,Indonesia,1,Al-en-19,1,english,english; mandarin (chinese); japanese; arabic; korean
+llama-3-8b-instruct,Indonesia,1,Al-en-36,0,kue putu,candy; pumpkin; chocolate
+llama-3-8b-instruct,Indonesia,1,Al-en-39,1,nasi tumpeng,noodle; fried noodle; indonesian noodle; cake; birthday cake; yellow rice
+llama-3-8b-instruct,Indonesia,1,An-ar-03,1,6,6; 5; 11; 1
+llama-3-8b-instruct,Indonesia,1,Ca-sp-06,1,breakfast.,lunch; breakfast; dinner
+llama-3-8b-instruct,Indonesia,1,Ca-sp-11,1,sunday,saturday; sunday; friday
+llama-3-8b-instruct,Indonesia,1,Ca-sp-41,0,with their adult children.,nursing home
+llama-3-8b-instruct,Indonesia,1,Gu-ch-08,1,badminton,soccer; football; basketball; badminton
+llama-3-8b-instruct,Indonesia,1,Gu-ch-38,0,12 years,5; 4; 3
+llama-3-8b-instruct,Indonesia,1,Ji-ko-14,1,palm oil,indomie; instant noodle; handicraft; furniture; palm oil; batik; rice; tin; fishes; fisheries; fish
+llama-3-8b-instruct,Indonesia,1,Ji-ko-24,0,beach,timezone; safari park; zoo; waterboom; water park; amusement park; aquarium
+llama-3-8b-instruct,Indonesia,1,Ji-ko-25,1,"idul fitri (lebaran), idul adha (qurban), natal (christmas), imlek (chinese new year), and hari raya puasa (eid al-fitr).",eid holiday; eid; eid al-fitr holiday; eid al-fitr; christmas; christmas holiday; chinese new year holiday; chinese new year; mother's day
+llama-3-8b-instruct,Indonesia,1,Ji-ko-26,0,"1. batik ceremony (around 7-10 years old)
+2. hair cutting (around 10-12 years old)
+3. first menstruation (around 12-14 years old)
+4. graduation from elementary school (around 12-13 years old)
+5. graduation from high school (around 17-18 years old)",entering college; enter college; work; marriage; parents' trust; environment; eat alone; place of residence
+llama-3-8b-instruct,Indonesia,1,Ji-ko-28,0,7th day,on the same day as the child's birth; same day as the child's birth; after 1 month; after 40 days
+llama-3-8b-instruct,Indonesia,1,Ji-ko-29,0,50th,17; 21
+llama-3-8b-instruct,Indonesia,1,Ji-ko-33,1,home.,house; only stay at home; stay at home; return home; tutoring place; cafe; billiards place
+llama-3-8b-instruct,Indonesia,1,Ji-ko-34,1,"by bus, motorcycle, or on foot.",car; ride a car; picked up by school car; school car; bus; ride a bike; bike; bycicle; ride a bycicle; walk
+llama-3-8b-instruct,Indonesia,1,Ji-ko-35,1,sekolah swasta (private school),english course; high school; school; tutoring place; music course
+llama-3-8b-instruct,Indonesia,1,Ji-ko-36,1,sma (sekolah menengah atas),mathematics; english; english language; religion; mandarin language; mandarin; civics
+llama-3-8b-instruct,Indonesia,1,Ji-ko-37,1,school uniforms.,uniform; school uniform; shorts; short-sleeved shirt; batik uniform; batik; trousers; scout uniform
+llama-3-8b-instruct,Indonesia,1,Ji-ko-40,1,"play games, chat with friends, and eat snacks.",buying food in the canteen; buying food; buy food; buying snacks; buy snacks; eat; eat with friends; chat; physical activity; playing with friends; studying; study
+llama-3-8b-instruct,Indonesia,1,Ji-ko-42,1,"bahasa indonesia, matematika, fisika, kimia, biologi, and english",mathematics; english language; english; indonesian language; indonesian; physics
+llama-3-8b-instruct,Indonesia,1,Ji-ko-45,1,food stalls and live music performances.,food bazaar; culinary bazaar; music concert; concert; race; contest; student party; famous band
+llama-3-8b-instruct,Indonesia,1,Jo-sp-13,0,surfing,swim; swimming; water polo
+llama-3-8b-instruct,Indonesia,1,Jo-sp-19,1,java,java; java island; sumatra island; sumatra; borneo island; bali; bali island; central java; east java; west java
+llama-3-8b-instruct,Indonesia,1,Jod-ch-01,1,"spoon, fork, and chopsticks.",spoon; fork; chopsticks; plate; hand
+llama-3-8b-instruct,Indonesia,1,Jod-ch-07,0,2.3,2; 1; 1.5
+llama-3-8b-instruct,Indonesia,1,Jod-ch-60,1,8,8; 40; 24
+llama-3-8b-instruct,Indonesia,1,Ki-pe-34,1,teh (tea),tea; coffee; milk; orange juice; water
+llama-3-8b-instruct,Indonesia,1,Kik-in-16,1,hot coffee or tea.,warm tea; tea; wedang jahe; bandrek; onde-onde; coffee
+llama-3-8b-instruct,Indonesia,1,Kik-in-36,1,rachmat hidayat,shin tae-yong; shin tae yong; indra sjafri; rahmad darmawan; benny dolo; alfred riedl
+llama-3-8b-instruct,Indonesia,1,Kik-in-37,1,persib bandung vs persija jakarta,persib vs persija; persija vs persib; arema vs persebaya; arema fc vs persebaya surabaya; persebaya vs arema
+llama-3-8b-instruct,Indonesia,1,Na-ko-20,1,badminton,badminton; soccer; football
+llama-3-8b-instruct,Indonesia,1,Na-ko-33,1,nasi tumpeng,noodles; fried noodles; fish; steamed fish; boiled fish; basket cake; mangkok cake; dimsum; dim sum
+llama-3-8b-instruct,Indonesia,1,Na-ko-39,1,uang saku (money),money; gift; flower
+llama-3-8b-instruct,Indonesia,1,Ne-ar-06,1,"kueh, rendang, and bakpia.",takjil; fruit ice; ketupat; dates; cendol; kolak; vegetable lontong; rendang; curry
+llama-3-8b-instruct,Indonesia,1,Ne-ar-09,1,"lebaran foods: ketupat, rendang, gado-gado, sate, es teler, and krupuk.",ketupat; opor ayam; indonesian chicken white curry; tumpeng rice; dates
+llama-3-8b-instruct,Indonesia,1,Ne-ar-26,0,indosat ooredoo,indofood; telkom; telkom indonesia; bank central asia; bca; bank mandiri; sinarmas; bank rakyat indonesia; bri; gojek
+llama-3-8b-instruct,Indonesia,1,Ne-ar-36,0,"nasi lemak with fried chicken, fried fish, and various side dishes.",tumpeng rice; ketupat; rendang; indonesian white curry; opor
+llama-3-8b-instruct,Indonesia,1,Ne-ar-38,1,nasi goreng.,rice box; rice; beef; fried chicken; basic necessities; dates; goat meat
+llama-3-8b-instruct,Indonesia,1,New-as-20,1,badminton.,badminton; futsal; table tennis
+llama-3-8b-instruct,Indonesia,1,New-ch-07,0,"rum with palm wine, whiskey with coffee, gin with orange juice, and vodka with soda water.",fried peanuts; peanut; dog meat
+llama-3-8b-instruct,Indonesia,1,New-ch-16,0,"""99 cahaya naga bisindo""",garuda di dadaku
+llama-3-8b-instruct,Indonesia,1,New-ch-32,1,microsoft office,email; microsoft office; microsoft 365; microsoft word; microsoft excel
+llama-3-8b-instruct,Indonesia,1,New-ch-38,1,"jakarta, surabaya, batam, belawan, tanjung perak, and tanjung priok.",jakarta; java; sumatra; bandung; surabaya; batam; borneo
+llama-3-8b-instruct,Indonesia,1,New-ch-44,1,3 months,3 months; 6 months
+llama-3-8b-instruct,Indonesia,1,New-ch-73,1,"badminton, table tennis, and soccer.",soccer club; soccer; football club; hiking club; mountain climbing club; social club; mountaineering club; sports
+llama-3-8b-instruct,Indonesia,1,New-en-05,1,nasi goreng,indomie; instant noodles; mcdonald's; kfc; uduk rice; tempeh; tofu
+llama-3-8b-instruct,Indonesia,1,New-en-19,1,gelora bung karno stadium,gelora bung karno; gelora bung karno stadium; gbk; lebak bulus; lebak bulus stadium
+llama-3-8b-instruct,Indonesia,1,New-en-41,1,michael bambang hartono,hartono; robert budi hartono; ciputra; chairul tandjung; anthoni salim; dato' sri tahir; tomy winata; bob sadino
+llama-3-8b-instruct,Indonesia,1,New-en-47,1,pandanus plants.,fish pond; green plants; ornamental plants; grass; table and chairs
+llama-3-8b-instruct,Indonesia,1,New-en-56,0,malay.,english language; english; mandarin language; mandarin
+llama-3-8b-instruct,Indonesia,1,New-en-68,1,"punishment, detention, suspension, expulsion, and possible legal action.",suspension; anarchic behavior; rude behavior; low interest in reading; low interest in school; bad character; promiscuity; abuse; bullying; uncomfortable school environment
+llama-3-8b-instruct,Indonesia,1,New-en-69,1,"pramoedya ananta toer, chairil anwar, andong mochtar, abdul muis, nyoman gunarsa.",chairil anwar; andrea hirata; kho ping hoo; tere liye; pramoedya ananta toer; mochtar lubis
+llama-3-8b-instruct,Indonesia,1,New-gr-06,1,nasi goreng,geprek chicken; toast; indomie; grilled ribs; noodles; cake; fried chicken
+llama-3-8b-instruct,Indonesia,1,New-gr-08,1,bintang,beer; palm wine; lapen; brem
+llama-3-8b-instruct,Indonesia,1,New-gr-15,1,es teler.,iced fruit; black sticky rice; mixed ice; sweet martabak; fried banana; cendol; kolak; ice cream
+llama-3-8b-instruct,Indonesia,1,New-gr-58,1,teacher,teacher; construction worker; office boy; street sweeper; laborer; transportation worker
+llama-3-8b-instruct,Indonesia,1,New-ha-08,1,eggplant.,bitter melon; vegetables; gado-gado
+llama-3-8b-instruct,Indonesia,1,New-in-01,1,starbucks,kopi kenangan; kapal api; kopi luwak; starbucks; janji jiwa
+llama-3-8b-instruct,Indonesia,1,New-in-62,1,bandung institute of technology (itb),bandung institute of technology; the university of indonesia; gadjah mada university; sepuluh nopember institute of technology
+llama-3-8b-instruct,Indonesia,1,New-ko-02,1,prenatal yoga classes.,pregnant women's exercise; pregnancy exercise; baby massage class; hypnobirthing
+llama-3-8b-instruct,Indonesia,1,New-ko-03,0,"""kena, kena""",balonku; pelangi; bintang kecil; potong bebek angsa
+llama-3-8b-instruct,Indonesia,1,New-pe-06,0,gado-gado,rendang; soto; cassava; indomie; sweet potato; boiled potatoes
+llama-3-8b-instruct,Indonesia,1,New-pe-20,1,volleyball,beach volleyball; volleyball; beach soccer; beach football; soccer; football; gobak sodor; swim; swimming
+llama-3-8b-instruct,Indonesia,1,New-pe-49,1,musholla.,church; local mosque; mosque; buddhist temple; house
+llama-3-8b-instruct,Indonesia,1,New-pe-65,1,12,10; 12; 7; 8; 15
+llama-3-8b-instruct,Indonesia,1,New-pe-76,1,picnicking,playing soccer with friends; playing ball; badminton; picnic; ride a bike; bicycle; jogging
+llama-3-8b-instruct,Indonesia,1,New-pe-86,1,monas,national monument
+llama-3-8b-instruct,Indonesia,1,New-spme-05,1,"kue putu, kue putri salju, martabak, and es teler.",sweet martabak; martabak; crepe; pancake; cendol; es teler; layered cake
+llama-3-8b-instruct,Indonesia,1,New-spme-37,0,engineering,business; management; business management; accountant; economy
+llama-3-8b-instruct,Indonesia,1,New-su-24,1,"badminton, sepak takraw, futsal, and karate.",soccer; football; badminton; cycling; card; chess
+llama-3-8b-instruct,Indonesia,1,New-su-33,1,batik and traditional clothing.,batik; shirt; uniform; suit
+llama-3-8b-instruct,Indonesia,1,New-su-34,1,vocal group/choir,choir; piano; karawitan; marching band; band
+llama-3-8b-instruct,Indonesia,1,New-su-42,1,islam,islam; christian; catholic
+llama-3-8b-instruct,Indonesia,1,New-su-57,1,cattle,chicken; cow; goat
+llama-3-8b-instruct,Indonesia,1,New-su-58,1,"cattle, pigs, chickens, buffalo, goats, and fish.",cow; buffalo; worm
+llama-3-8b-instruct,Indonesia,1,Ni-en-12,1,university of indonesia,the university of indonesia; bandung institute of technology; gadjah mada university; sepuluh nopember institute of technology
+llama-3-8b-instruct,Indonesia,1,Ni-en-31,0,rumput laut (seaweed) and ketupat (rice cake).,rica-rica chicken; roast pork; cake; klappertaart
+llama-3-8b-instruct,Indonesia,1,Ni-en-40,0,"""mariah carey - all i want for christmas is you""",selamat hari natal; jingle bell; we wish you a merry christmas; malam kudus; selamat hari natal dan tahun baru; gloria in excelcis deo
+llama-3-8b-instruct,Indonesia,1,Sa-en-22,0,universitas atma jaya yogyakarta (ajy),the university of indonesia; gadjah mada university; bandung institute of technology; sepuluh nopember institute of technology; airlangga university
+llama-3-8b-instruct,Indonesia,1,Sa-en-31,1,cat,cat; dog; fish; chicken; bird
+llama-3-8b-instruct,Indonesia,1,Sa-en-7,1,"nasi goreng, krupuk, martabak, siomay, and pisang goreng.",fritters; meatball; onde-onde; batagor; crackers; biscuit
+llama-3-8b-instruct,Indonesia,1,Ta-pe-21,1,rumput (grass) or lapangan (field),roadside field; vacant land; roadside; on the street; soccer field; on the soccer field; open field; playground; back of the house; school futsal field
+llama-3-8b-instruct,Indonesia,1,Ta-pe-29,1,badminton,soccer; football; badminton
+llama-3-8b-instruct,Indonesia,1,Th-en-03,0,indonesian basketball league (ibl),league 1; indonesian super league; indonesian super league (isl); isl; soccer; football
+llama-3-8b-instruct,Indonesia,1,Th-en-11,0,cristiano ronaldo,rudy hartono; liem swie king; ivana lie; susi susanti; taufik hidayat; kevin sanjaya
+llama-3-8b-instruct,Indonesia,1,Th-en-35,1,dinner,dinner
+llama-3-8b-instruct,Indonesia,1,Th-en-37,0,21,20; 22; 18; 25
+llama-3-8b-instruct,Indonesia,1,Th-en-44,1,nasi goreng.,grilled fish; grilled chicken; padang rice; fried chicken; satay; meatball; tumpeng rice
+llama-3-8b-instruct,Indonesia,1,Th-en-45,1,watching tv together,watching tv; watch tv; watch tv together; going to the mall; go to the mall; exercise; futsal
+llama-3-8b-instruct,Indonesia,1,Th-en-51,1,bahasa indonesia,mathematics; english; english language; history; religion
+llama-3-8b-instruct,Indonesia,1,Th-en-53,1,festival of school clubs (festklub),basketball; art; soccer; football; troop; badminton; futsal
+llama-3-8b-instruct,Indonesia,1,Tmp-ar-01,0,pondok pesantren.,library; at home; cafe
+llama-3-8b-instruct,Spain,1,Al-en-01,1,galletas (cookies),fruit; piece of fruit; sandwich; cookies; biscuits; juice; ham and cheese sandwich; bread sticks; corn cakes; cereal bars
+llama-3-8b-instruct,Spain,1,Al-en-04,1,orange,orange; melon; banana; watermelon; apple
+llama-3-8b-instruct,Spain,1,Al-en-19,1,english,english; catalan; basque
+llama-3-8b-instruct,Spain,1,Al-en-36,0,migas.,fritters; chestnuts; porridge; pumpkin sponge cake
+llama-3-8b-instruct,Spain,1,Al-en-39,0,tortilla de patatas y churros con chocolate.,cake; candies; sweets; coke; coca cola
+llama-3-8b-instruct,Spain,1,An-ar-03,0,6,6; 5
+llama-3-8b-instruct,Spain,1,Ca-sp-06,1,lunch,the midday meal; lunch; breakfast
+llama-3-8b-instruct,Spain,1,Ca-sp-11,1,sunday,sunday; saturday
+llama-3-8b-instruct,Spain,1,Ca-sp-41,1,with family or in institutions.,in nursing homes; residence; nursing home; in a residence; residences; at home with people who help; at home with a caregiver; at your home
+llama-3-8b-instruct,Spain,1,Gu-ch-08,1,fútbol (soccer),soccer; football
+llama-3-8b-instruct,Spain,1,Gu-ch-38,1,4,4; 6; 3; 7; 5
+llama-3-8b-instruct,Spain,1,Ji-ko-14,1,wine,ham; serrano ham; the iberian ham; olive oil; the potato omelette; the paella
+llama-3-8b-instruct,Spain,1,Ji-ko-24,0,beach,ball pit; ball pits; playground; conventional park; amusement park; amusement parks; warner park madrid; the arcades; trampolines
+llama-3-8b-instruct,Spain,1,Ji-ko-25,1,"día de los reyes magos (three kings' day), día de la madre (mother's day), día de los padres (father's day), día de las abuelas (grandmothers' day), día de los abuelos (grandfathers' day), and navidad (christmas).",christmas; baptism; three kings' day; end of year; birthday; communion; wedding
+llama-3-8b-instruct,Spain,1,Ji-ko-26,0,"1. leaving home at 18-22 years old
+2. obtaining a driver's license at 18 years old
+3. starting to pay their own bills and expenses at 20-25 years old
+4. moving into their own apartment at 25-30 years old
+5. getting married and starting a family at 25-35 years old",pay own rent; start of formal education
+llama-3-8b-instruct,Spain,1,Ji-ko-28,0,the first day that people celebrate after a child is born in spain is the 15th day.,birthday; baptism day; baptism; day of birth
+llama-3-8b-instruct,Spain,1,Ji-ko-29,0,15th,18 years old; 18; the 18th birthday; anniversary
+llama-3-8b-instruct,Spain,1,Ji-ko-33,1,paseo or study at home.,to your house; house; they stay at home; home; to a nightclub; nightclub; to a park; park; to watch tv; to bed
+llama-3-8b-instruct,Spain,1,Ji-ko-34,0,"elementary school students in spain typically go to school from 9:00 am to 2:00 pm, monday to friday.",bus; coach; school bus; by bus; by car; car; walking; on foot; with his/her/their parents
+llama-3-8b-instruct,Spain,1,Ji-ko-35,1,convent schools.,private school; private schools; semi-private; charter school; hall of residence; private university
+llama-3-8b-instruct,Spain,1,Ji-ko-36,1,ies (instituto de enseñanza secundaria),english; english academy; college entrance exam preparation academy; business; mathematics; math; chemistry; pilar school
+llama-3-8b-instruct,Spain,1,Ji-ko-37,1,"t-shirts, blouses, jeans, and trousers.",informal; everyday clothes; daily clothes; uniform tracksuit; sports tracksuit
+llama-3-8b-instruct,Spain,1,Ji-ko-40,1,play sports or hang out with friends.,to eat; eat sandwich; to have lunch; play; play soccer; play football; chat; to speak; to smoke; go to toilet; play soccer; play football
+llama-3-8b-instruct,Spain,1,Ji-ko-42,1,"mathematics, spanish, foreign language, and history or geography.",history; language; castilian; spanish; language and literature; mathematics; english; history of philosophy
+llama-3-8b-instruct,Spain,1,Ji-ko-45,1,live music and parties.,alcohol; to get drunk; cheap alcohol; party; the party; a lot of partying; the artists
+llama-3-8b-instruct,Spain,1,Jo-sp-13,1,sailing,swim; swimming; water polo; surf; diving
+llama-3-8b-instruct,Spain,1,Jo-sp-19,1,andalusia.,andalusia; extremadura; galicia; castile and león
+llama-3-8b-instruct,Spain,1,Jod-ch-01,1,fork and knife,fork; spoon; knife; dishes
+llama-3-8b-instruct,Spain,1,Jod-ch-07,1,2.3,2; 1; 3
+llama-3-8b-instruct,Spain,1,Jod-ch-60,1,8,8
+llama-3-8b-instruct,Spain,1,Ki-pe-34,1,coffee,coffee; milk; juice; milk with cocoa; cocoa drink; colacao
+llama-3-8b-instruct,Spain,1,Kik-in-16,1,hot chocolate.,coffee; hot chocolate; chocolate; chocolate with churros; chicken soup; broth
+llama-3-8b-instruct,Spain,1,Kik-in-36,1,pep guardiola,ancelotti; xavi; pep guardiola; vigorous; simeone; del bosque; clement
+llama-3-8b-instruct,Spain,1,Kik-in-37,1,real madrid vs barcelona,real madrid vs fc barcelona; real madrid vs barcelona; real madrid vs football club barcelona; barcelona vs madrid; real madrid vs atlético de madrid; atletico madrid vs real madrid; barcelona vs espanyol; sevilla fc vs real betis balompié
+llama-3-8b-instruct,Spain,1,Na-ko-20,1,tennis,soccer; football; world cup of soccer; champions league; tennis; basketball
+llama-3-8b-instruct,Spain,1,Na-ko-29,0,santos alvear,david meca; mireia belmonte
+llama-3-8b-instruct,Spain,1,Na-ko-39,1,moneda de oro (a gold coin),money; give money; envelope with money; a gift from the wedding list
+llama-3-8b-instruct,Spain,1,Ne-ar-26,1,telefónica,correos; spanish radio and television corporation; tax agency; telephone
+llama-3-8b-instruct,Spain,1,Ne-ar-36,1,"tortilla de patatas, jamón ibérico, and pollo asado.",paella; king's cake; potato omelette; croquettes; roast meat; baked fish; french toasts; nougat; chocolate
+llama-3-8b-instruct,Spain,1,Ne-ar-38,1,tortas (cakes),rice; canned goods; milk; non-perishable products; legumes; money
+llama-3-8b-instruct,Spain,1,New-as-20,1,basketball.,basketball; indoor football; 7-a-side football
+llama-3-8b-instruct,Spain,1,New-ch-07,0,"tonic water, soda water, cola, orange juice, lemon-lime soda, and sangria.",dried fruits/nuts; peanuts; olives
+llama-3-8b-instruct,Spain,1,New-ch-16,0,"""oveja electrica""",campeones
+llama-3-8b-instruct,Spain,1,New-ch-32,1,microsoft office,spreadsheet; microsoft office; word; microsoft 365
+llama-3-8b-instruct,Spain,1,New-ch-38,1,"barcelona, valencia, bilbao, and the basque country.",barcelona; valencia; bilbao; andalusia; canary islands
+llama-3-8b-instruct,Spain,1,New-ch-44,1,1 month,6 months; 2 months; 3 months; 1-6 months
+llama-3-8b-instruct,Spain,1,New-ch-73,1,soccer (football),nightclubs; free pubs; bars; sports; reggaeton nightclubs
+llama-3-8b-instruct,Spain,1,New-en-05,1,tapas,pizza; the sandwich; sandwich; burger; mcdonald's burger; appetizers
+llama-3-8b-instruct,Spain,1,New-en-19,1,camp nou,bernabéu; santiago bernabeu; santiago bernabéu; santiago bernabéu stadium
+llama-3-8b-instruct,Spain,1,New-en-41,1,amancio ortega,amancio ortega; florentino pérez; juan roig
+llama-3-8b-instruct,Spain,1,New-en-47,0,a swimming pool,balls; flowers; bushes; fruit trees; hedges; plants; barbecue
+llama-3-8b-instruct,Spain,1,New-en-56,0,romanian,english; arabic; french
+llama-3-8b-instruct,Spain,1,New-en-68,1,"detention, suspension, expulsion, and parent-teacher conferences.",expulsion; expulsions; expulsion from the center; punishments; bad grades; coexistence classroom; punished the principal
+llama-3-8b-instruct,Spain,1,New-en-69,1,"cervantes, lorca, buñuel, góngora, and unamuno.","cervantes; miguel de cervantes; quevedo; unamuno (referring to miguel de unamuno, a spanish essayist, novelist, poet, playwright, and philosopher); miguel de unamuno; lorca; lope de vega; the generation of '27; valle-inclán; pío baroja"
+llama-3-8b-instruct,Spain,1,New-gr-06,1,tortilla de patatas,pizza; money; spanish omelette; barbecues
+llama-3-8b-instruct,Spain,1,New-gr-08,1,tinto de verano.,beer; rum-based mixed drinks; free cuba; mixed drinks; vodka; gin; wine with coca cola; mixed with soda
+llama-3-8b-instruct,Spain,1,New-gr-15,1,crema catalana,rice pudding; french toasts; natillas; cream-filled pastries; churros; honey-coated fritters; custard
+llama-3-8b-instruct,Spain,1,New-gr-58,1,nurses,waiter; waiters; cleaner; cleaners; teacher; doctor; dependents
+llama-3-8b-instruct,Spain,1,New-ha-08,0,garbanzos (chickpeas),cauliflower; fish; spinach; lentils; vegetables
+llama-3-8b-instruct,Spain,1,New-in-01,0,café costa,starbucks; nespresso
+llama-3-8b-instruct,Spain,1,New-in-62,1,universidad politécnica de madrid (upm),polytechnic university of madrid; comillas pontifical university or icade; upv
+llama-3-8b-instruct,Spain,1,New-ko-02,1,prenatal yoga.,pilates; do yoga and practice it; yoga; childbirth preparation
+llama-3-8b-instruct,Spain,1,New-ko-03,0,"""cantos de navidad""",the potato dance; potato dance; the courtyard of my house; the little car lere
+llama-3-8b-instruct,Spain,1,New-pe-06,1,fabada asturiana,stew; potatoes with meat; ratatouille; meatballs; veal; bean stew; tripe; lentils
+llama-3-8b-instruct,Spain,1,New-pe-20,1,volleyball,volleyball; voleibol; shovels; soccer; boules
+llama-3-8b-instruct,Spain,1,New-pe-49,0,morgues.,church; in the church; churches
+llama-3-8b-instruct,Spain,1,New-pe-65,0,7,10; 14; 9; 8
+llama-3-8b-instruct,Spain,1,New-pe-76,1,picnicking.,to run; corriendo; to walk; take a walk; rest; to have snacks; sunbathe
+llama-3-8b-instruct,Spain,1,New-pe-86,0,la sagrada familia,bell tower; giralda; picasso tower; tower of gold; tower of hercules; kio towers
+llama-3-8b-instruct,Spain,1,New-spme-05,1,"churros con chocolate, polvorones, mazapán, turrones, and alfajores.",french toasts; cheesecake; muffins; custard; natillas; churros; santiago cake; fritters; candied almonds
+llama-3-8b-instruct,Spain,1,New-su-24,1,"football (soccer), basketball, and tennis.",soccer; padel; tennis
+llama-3-8b-instruct,Spain,1,New-su-33,1,business casual,informal; casual; wear casual clothes.; casual clothes; comfortable formal wear
+llama-3-8b-instruct,Spain,1,New-su-34,1,coro (choir),piano; dance; band; choir; violin
+llama-3-8b-instruct,Spain,1,New-su-42,1,catholicism,catholic; catholicism; christianity
+llama-3-8b-instruct,Spain,1,New-su-57,1,cattle,pig livestock; pigs; bovine; bull; cows
+llama-3-8b-instruct,Spain,1,New-su-58,1,"cattle, pigs, sheep, goats, chickens, and horses.",pig; sheep; cows; cow; oxen; donkeys; female donkeys; none
+llama-3-8b-instruct,Spain,1,Ni-en-12,1,universidad autónoma de madrid (uam),university of salamanca; university of barcelona; complutense university of madrid; complutense of madrid; autonomous university of madrid; pompeu fabra university
+llama-3-8b-instruct,Spain,1,Ni-en-31,1,"turrón, polvorones, and rosca de reyes.",seafood; prawns; nougats; nougat; baked fish; roasted meats; meats; fish; ham; shredded meat; iberian ham; lobster; marzipans
+llama-3-8b-instruct,Spain,1,Ni-en-40,0,"""los peces en el río""",they drink and drink and drink again; the fish in the river; the little drummer boy; the little drummer; the little donkey from the savannah
+llama-3-8b-instruct,Spain,1,Sa-en-31,1,dog,dog; cat
+llama-3-8b-instruct,Spain,1,Sa-en-7,1,"churros, croissants, olives, almonds, and tortilla española.",appetizers; spicy potatoes; omelette; potato omelette; olives; beers; olives-squid rings; squid; octopus
+llama-3-8b-instruct,Spain,1,Ta-pe-21,1,canchas de fútbol,square; in the square; in parks; in the park; on the soccer field; football fields; street; school; club
+llama-3-8b-instruct,Spain,1,Ta-pe-29,1,football (soccer),soccer
+llama-3-8b-instruct,Spain,1,Th-en-03,1,la liga,soccer; football; football league; the football league; first division of football; professional football league; laliga; la liga; basketball club association; acb; champions league
+llama-3-8b-instruct,Spain,1,Th-en-11,0,lionel messi,rafael nadal; rafa nadal; pau gasol; fernando alonso; iniesta; iker casillas; cristiano ronaldo; messi
+llama-3-8b-instruct,Spain,1,Th-en-15,1,skiing,ski; soccer; snowboard
+llama-3-8b-instruct,Spain,1,Th-en-35,1,lunch,dinner; breakfast; lunch; food
+llama-3-8b-instruct,Spain,1,Th-en-37,1,25,30; 35; 25
+llama-3-8b-instruct,Spain,1,Th-en-44,1,paella.,stew; paella; grill; barbecue; omelette; wine; spanish omelette
+llama-3-8b-instruct,Spain,1,Th-en-45,1,dinner together,watch television; television; watch tv; go grocery shopping; shopping center; extracurricular activities; playground
+llama-3-8b-instruct,Spain,1,Th-en-51,1,mathematics,mathematics; language; natural sciences
+llama-3-8b-instruct,Spain,1,Th-en-53,1,fiesta de fin de curso,soccer; football; dance; graduation; end of the school year; basketball
+llama-3-8b-instruct,Spain,1,Tmp-ar-01,1,biblioteca universitaria.,university library; libraries; library; home; at home; cafeteria
+llama-3-8b-instruct,Iran,1,Al-en-01,1,pita bread with cheese or jam.,fruit; sandwich; cake and milk; bread and cheese; eggs; cereal
+llama-3-8b-instruct,Iran,1,Al-en-04,0,pomegranate,orange; tangerine; peach; banana
+llama-3-8b-instruct,Iran,1,Al-en-19,1,english,english; french
+llama-3-8b-instruct,Iran,1,Al-en-39,0,saffron rice and fish.,cake; pizza; sandwich; kebab; homemade cake
+llama-3-8b-instruct,Iran,1,An-ar-03,0,6,3
+llama-3-8b-instruct,Iran,1,Ca-sp-06,1,breakfast,lunch; dinner; breakfast
+llama-3-8b-instruct,Iran,1,Ca-sp-11,1,thursday,friday; thursday
+llama-3-8b-instruct,Iran,1,Ca-sp-41,1,with their children.,nursing home; in the nursing home; home; their house; accompanied by children; children's home; at home with a nurse; accompanied by eldest child
+llama-3-8b-instruct,Iran,1,Gu-ch-08,1,football,football; computer games
+llama-3-8b-instruct,Iran,1,Gu-ch-38,1,4,4; 2
+llama-3-8b-instruct,Iran,1,Ji-ko-14,1,petroleum,pistachio; saffron; carpet; rice; tea
+llama-3-8b-instruct,Iran,1,Ji-ko-24,0,football fields,park; water park; swimming; playstation
+llama-3-8b-instruct,Iran,1,Ji-ko-25,1,"nowruz (march 20/21), eid al-fitr (varies), eid al-adha (varies), muharram (varies)",nowruz holiday; nowruz holidays; eid holidays; eid days
+llama-3-8b-instruct,Iran,1,Ji-ko-29,0,15,1; one year; 1 to 10; 18; 50
+llama-3-8b-instruct,Iran,1,Ji-ko-34,0,"elementary school students in iran typically attend school from 8:00 am to 12:30 pm, with a one-hour break in between.",school service; with parents
+llama-3-8b-instruct,Iran,1,Ji-ko-35,1,madrasa,private tutor; private schools; language school
+llama-3-8b-instruct,Iran,1,Ji-ko-36,0,toos academy,maths; mathematics; math; physics; biology; experimental
+llama-3-8b-instruct,Iran,1,Ji-ko-37,1,"modest clothing, often covering the arms and legs.",school uniform; uniform; manteau and scarf for girls; shirt and trousers for boys; manteau
+llama-3-8b-instruct,Iran,1,Ji-ko-40,1,"students typically play sports, socialize, or listen to music.",football; game; food; rest; studying lessons; conversation
+llama-3-8b-instruct,Iran,1,Ji-ko-42,1,"mathematics, physics, chemistry, and farsi",mathematics; arabic; persian; persian literature; english; religious studies; physics; biology; chemistry
+llama-3-8b-instruct,Iran,1,Jo-sp-13,0,water skiing,swimming; waterpolo
+llama-3-8b-instruct,Iran,1,Jo-sp-19,1,khuzestan,north; north iran; khuzestan; kurdistan; western regions
+llama-3-8b-instruct,Iran,1,Jod-ch-01,1,"fork, spoon, and sometimes a knife.",spoon; fork; plate; knife
+llama-3-8b-instruct,Iran,1,Jod-ch-07,0,2.5,2; 1
+llama-3-8b-instruct,Iran,1,Jod-ch-60,1,8,8; 7
+llama-3-8b-instruct,Iran,1,Ki-pe-34,0,doogh,tea; coffee; lion
+llama-3-8b-instruct,Iran,1,Kik-in-16,1,chai (tea),tea; herbal tea; chocolate milk; coffee
+llama-3-8b-instruct,Iran,1,Kik-in-36,1,carlos queiroz,queiroz; ali daei; guardiola; zidane; angelotti; yahya golmohammadi; branko
+llama-3-8b-instruct,Iran,1,Kik-in-37,1,esteghlal vs persepolis,persepolis against esteghlal; persepolis versus esteghlal; esteghlal vs persepolis
+llama-3-8b-instruct,Iran,1,Na-ko-20,1,futsal,fifa world cup; world cup; wrestling; volleyball; football; summer olympics
+llama-3-8b-instruct,Iran,1,Na-ko-39,1,money.,money; cash; gold coin; flower; jewelry
+llama-3-8b-instruct,Iran,1,Ne-ar-06,1,"fruits, dates, and traditional iranian dishes such as kebabs, stews, and rice-based meals.",potage; zoolbia bamieh; haleem; halva; dates; sholeh zard
+llama-3-8b-instruct,Iran,1,Ne-ar-26,0,bank melli iran,oil company; mapna; khatam al-anbiya headquarters
+llama-3-8b-instruct,Iran,1,Ne-ar-36,0,"khoresh bademjan (eggplant stew) with rice, sabzi khordan (fresh herbs and flatbread), and shirazi salad.",kebab; chelo kebab koobideh; chicken kebab; herb rice with fish; broad bean rice with meat; chicken
+llama-3-8b-instruct,Iran,1,Ne-ar-38,0,date,gheimeh; sacrificial meat; stew; lentil rice; barberry rice with chicken; ghromeh sabzi; chicken stew with rice
+llama-3-8b-instruct,Iran,1,New-as-20,1,wrestling,volleyball; futsal; basketball; swimming; football
+llama-3-8b-instruct,Iran,1,New-ch-16,0,the white balloon,captain tsubasa; takhti; forty-two; offside
+llama-3-8b-instruct,Iran,1,New-ch-32,1,microsoft office,office; microsoft office; microsoft word; microsoft excel; adobe acrobat
+llama-3-8b-instruct,Iran,1,New-ch-38,1,"tehran, bandar abbas, bandar-e emam khomeini, bandar-e majid, and orumiyeh.",chabahar; qeshm; tehran; shiraz; isfahan; kurdistan; aras; anzali; bandar abbas
+llama-3-8b-instruct,Iran,1,New-ch-44,0,1-3 months,3 months; 1 month; 0
+llama-3-8b-instruct,Iran,1,New-ch-73,0,futsal and table tennis.,football; gym; bodybuilding; volleyball
+llama-3-8b-instruct,Iran,1,New-en-05,1,kebab,fried egg; egg; falafel; samosa; omelette
+llama-3-8b-instruct,Iran,1,New-en-19,1,azadi stadium,azadi stadium; azadi
+llama-3-8b-instruct,Iran,1,New-en-47,1,orchards,fruit tree; fruit trees; satellite dish; old tools; equipment
+llama-3-8b-instruct,Iran,1,New-en-56,1,english,english; turkish; france; german
+llama-3-8b-instruct,Iran,1,New-en-68,1,"corporal punishment, suspension, expulsion, and even imprisonment for serious offenses.",expulsion; invitation of parents to school; expulsion from school; low discipline score; commitment; corporal punishment; reprimand and record in the file; contacting parents; temporary dismissal
+llama-3-8b-instruct,Iran,1,New-en-69,0,"hafez, rumi, ferdowsi, ghalib, nizami, sadi, molière, goethe, dostoevsky, tolstoy, kafka, hemingway, camus, and kiarostami.",jalal al-e ahmad; dehkhoda; shamlou; sohrab sepehri; jamalzadeh
+llama-3-8b-instruct,Iran,1,New-gr-06,1,kebabs,fast food; kebab; ghormeh sabzi; pizza; rice with kebab
+llama-3-8b-instruct,Iran,1,New-gr-08,1,doogh.,raisin vodka; aragh sagi; wine; vodka; homemade alcohol like vodka
+llama-3-8b-instruct,Iran,1,New-gr-15,0,shirazi baklava,sholeh zard; faloodeh; traditional ice cream; rice pudding
+llama-3-8b-instruct,Iran,1,New-gr-58,1,teachers,labor; unskilled worker; teaching
+llama-3-8b-instruct,Iran,1,New-ha-08,0,lentils,abgoosht; soup; celery stew; potage; khash
+llama-3-8b-instruct,Iran,1,New-in-01,0,starbucks,lamiz; noon; cafe vionna
+llama-3-8b-instruct,Iran,1,New-in-62,1,sharif university of technology,sharif university of technology; sharif; university of tehran; amirkabir university
+llama-3-8b-instruct,Iran,1,New-ko-03,0,"""shahreza""",i have a round ball; i have a pretty gazelle; my handkerchief is lost under the cherry tree
+llama-3-8b-instruct,Iran,1,New-pe-06,1,khoresh bademjan,ghormeh sabzi; gheimeh; fesenjan; fesenjoon
+llama-3-8b-instruct,Iran,1,New-pe-20,1,beach volleyball,volleyball; kite flying
+llama-3-8b-instruct,Iran,1,New-pe-49,1,mosques,neighborhood mosque; mosque; living room
+llama-3-8b-instruct,Iran,1,New-pe-65,1,8,10; 13; 8; 9
+llama-3-8b-instruct,Iran,1,New-pe-76,1,picnicking,walking; picnic; badminton; sport; camping
+llama-3-8b-instruct,Iran,1,New-pe-86,1,milad tower,milad; milad tower; azadi tower; azadi
+llama-3-8b-instruct,Iran,1,New-spme-05,1,"gaz, baklava, shirazi cream, saffron cake, and kookoo saif.",language; cream puff; creamy; napoleon; napoleon pastry; danish pastry; danish; yazdi cake; baklava
+llama-3-8b-instruct,Iran,1,New-spme-37,1,engineering,medical; medicine; engineering; programming
+llama-3-8b-instruct,Iran,1,New-su-24,0,futsal,football; volleyball; dodgeball; walking in the park; run
+llama-3-8b-instruct,Iran,1,New-su-33,0,chador,manteu; white coat; formal dress; suit
+llama-3-8b-instruct,Iran,1,New-su-34,1,vocal music (ghazal),anthem; choral singing
+llama-3-8b-instruct,Iran,1,New-su-42,1,shia islam,islam; shia islam
+llama-3-8b-instruct,Iran,1,New-su-57,1,sheep,sheep; cow; chicken
+llama-3-8b-instruct,Iran,1,New-su-58,1,"sheep, goats, cattle, and poultry.",cow; donkey; horse; sheep; chicken
+llama-3-8b-instruct,Iran,1,Ni-en-12,1,sharif university of technology,sharif; sharif university of technology; sharif university; tehran university of medical sciences; university of tehran
+llama-3-8b-instruct,Iran,1,Sa-en-22,1,azad university,azad university; university of tehran
+llama-3-8b-instruct,Iran,1,Sa-en-31,1,dog,cat; dog
+llama-3-8b-instruct,Iran,1,Sa-en-7,0,"pistachios, dates, sumac crackers, rosewater cookies, and baklava.",crisps; cheesepuff; fruit leather; sunflower seeds; seed; peanut (snack)
+llama-3-8b-instruct,Iran,1,Ta-pe-21,1,schoolyards and streets.,alley; street; club; schoolyard; football field near the living area
+llama-3-8b-instruct,Iran,1,Ta-pe-29,0,futsal,football; tennis
+llama-3-8b-instruct,Iran,1,Th-en-03,1,iran pro league (football/soccer),football; volleyball
+llama-3-8b-instruct,Iran,1,Th-en-11,0,alireza beiranvand,ali daei; ali karimi; rezazadeh; gholamreza takhti; hassan yazdani
+llama-3-8b-instruct,Iran,1,Th-en-15,0,ice hockey,skiing
+llama-3-8b-instruct,Iran,1,Th-en-35,1,dinner,dinner; lunch
+llama-3-8b-instruct,Iran,1,Th-en-37,0,21,24; 25; 30; 27; 40
+llama-3-8b-instruct,Iran,1,Th-en-44,0,khoresht-e fesenjan (chicken or duck cooked in a pomegranate and walnut sauce) with steamed rice.,ghormeh sabzi; broth; kebab; chelo kebab koobideh; chicken kebab
+llama-3-8b-instruct,Iran,1,Th-en-45,1,watching tv together,watching tv; picnic; cafe hopping
+llama-3-8b-instruct,Iran,1,Th-en-51,1,mathematics,mathematics; biology; biology; chemistry
+llama-3-8b-instruct,Iran,1,Th-en-53,0,nowruz party,recreational camps; going to camp; sport; religious ceremonies
+llama-3-8b-instruct,Iran,1,Tmp-ar-01,1,libraries.,library; home; study hall
+llama-3-8b-instruct,Mexico,1,Al-en-01,1,tortilla chips with salsa or guacamole.,egg; sandwich; fruit with cereal; quesadillas; fruit; potato chips; crisps; chips; mango
+llama-3-8b-instruct,Mexico,1,Al-en-04,1,mango,mango; orange; apple; papaya; banana; lime; avocado; strawberry
+llama-3-8b-instruct,Mexico,1,Al-en-19,1,english,english
+llama-3-8b-instruct,Mexico,1,Al-en-36,1,pan de muerto,bread of the dead; sweets; candy; sugar skull; puff pastries; flaky buns; fruit; hot chocolate
+llama-3-8b-instruct,Mexico,1,Al-en-39,1,rosca de reyes.,cake; pizza; chicken with mole sauce; grilled meat
+llama-3-8b-instruct,Mexico,1,An-ar-03,1,5,5; 6; 7; 11; 3; 12
+llama-3-8b-instruct,Mexico,1,Ca-sp-06,1,breakfast,lunch; breakfast
+llama-3-8b-instruct,Mexico,1,Ca-sp-11,1,sunday,sunday; saturday; friday
+llama-3-8b-instruct,Mexico,1,Ca-sp-41,1,with family or in senior homes.,with family members; with relatives; with family; with their family; with their families; in a retiring home; nursing home; retiring home; in a nursing home; their own house; in the house of one of their children; with one of their children
+llama-3-8b-instruct,Mexico,1,Gu-ch-08,1,soccer (fútbol),soccer; football; basketball; baseball; american football; football
+llama-3-8b-instruct,Mexico,1,Gu-ch-38,0,8,4; 5
+llama-3-8b-instruct,Mexico,1,Ji-ko-14,1,petroleum,avocado; tequila; corn
+llama-3-8b-instruct,Mexico,1,Ji-ko-24,0,beach,public parks; parks; playgrounds; circuses; the kindergarten; daycare; chapultepec fair; six flags
+llama-3-8b-instruct,Mexico,1,Ji-ko-25,1,"día de los muertos (day of the dead), navidad (christmas), día de la familia (family day), and día de los abuelos (grandparents' day).",mother's day; christmas; father's day; grandfather's day; day of the dead; family day
+llama-3-8b-instruct,Mexico,1,Ji-ko-26,1,"1. age 12: children start to take on more responsibility and participate in household chores.
+2. age 15: children are expected to start contributing financially to the household.
+3. age 18: children are considered fully independent and can leave the family home.
+4. age 21: children are considered to be fully financially independent and are expected to start supporting themselves.",getting married; marriage; to be of legal age; to have finished their studies; financial solvency; get a job
+llama-3-8b-instruct,Mexico,1,Ji-ko-28,0,el día de las madres (mother's day) - the 10th of may.,baptism; birthday
+llama-3-8b-instruct,Mexico,1,Ji-ko-29,1,quinceañera (15),15; 50
+llama-3-8b-instruct,Mexico,1,Ji-ko-33,0,televisión.,home; to club or bar; street; to a party; gathering; friend's house
+llama-3-8b-instruct,Mexico,1,Ji-ko-34,0,"elementary school students in mexico typically attend school from monday to friday, from 8:30 am to 1:30 pm.",walking; on foot; by public transport; using their parents car; by bus; using the school bus; by car
+llama-3-8b-instruct,Mexico,1,Ji-ko-35,1,colegio particulares.,schools with a license from the s.e.p.; montessori schools
+llama-3-8b-instruct,Mexico,1,Ji-ko-36,0,prepa,tecmilenio university; la salle university
+llama-3-8b-instruct,Mexico,1,Ji-ko-37,1,"t-shirts, jeans, and sneakers.",school uniform; trousers; shirt
+llama-3-8b-instruct,Mexico,1,Ji-ko-40,1,"play soccer or other outdoor games, socialize with friends, or listen to music.",to chat; doing sports; have a meal; eat; smoke
+llama-3-8b-instruct,Mexico,1,Ji-ko-42,1,"spanish, mathematics, and one of the following: foreign language, science, or social science.",mathematics; spanish language; science; ethics; chemistry; history; geography; biology; physics
+llama-3-8b-instruct,Mexico,1,Ji-ko-45,1,live music and food.,to learn; to have fun; fun; university projects; free food and drinks
+llama-3-8b-instruct,Mexico,1,Jo-sp-13,0,surfing,swimming; diving
+llama-3-8b-instruct,Mexico,1,Jo-sp-19,1,bajío,north of mexico; north; the south of the country; south
+llama-3-8b-instruct,Mexico,1,Jod-ch-01,1,"forks, knives, and spoons.",fork; spoon; spoons; knife
+llama-3-8b-instruct,Mexico,1,Jod-ch-07,0,2.5,2; 1; 1.5; 3
+llama-3-8b-instruct,Mexico,1,Jod-ch-60,1,8,10; 8; 9; 8-12
+llama-3-8b-instruct,Mexico,1,Ki-pe-34,1,horchata,coffee; smoothie; milk; orange juice; a traditional hot mexican beverage made from cornmeal and water or milk; juice
+llama-3-8b-instruct,Mexico,1,Kik-in-16,1,hot chocolate.,a traditional hot mexican beverage made from cornmeal and water or milk; chocolate flavored beverage made from cornmeal and water or milk; coffee; hot chocolate; coca-cola
+llama-3-8b-instruct,Mexico,1,Kik-in-36,1,javier aguirre,"miguel herrera; miguel ""the louse"" herrera; tuca ferretti; pep guardiola; basque aguirre; jaime lozano"
+llama-3-8b-instruct,Mexico,1,Kik-in-37,1,américa vs chivas guadalajara,chivas vs america; america vs guadalajara; america vs chivas; rayados vs tigres; tigres vs rayados; america vs pumas
+llama-3-8b-instruct,Mexico,1,Na-ko-20,1,fútbol (soccer),football world cup; soccer world cup
+llama-3-8b-instruct,Mexico,1,Na-ko-29,0,césar salgado,fernanda gonzález; fernanda gonzáles; ricardo vargas; miguel de lara; andrea guevara
+llama-3-8b-instruct,Mexico,1,Na-ko-33,1,rosca de reyes,turkey; tamales; apple salad
+llama-3-8b-instruct,Mexico,1,Na-ko-39,0,moneda de oro,wedding gift; gifts; gift; alcohol; appliances
+llama-3-8b-instruct,Mexico,1,Ne-ar-26,1,femsa,pemex (mexican petroleum); cfe (federal electricity commission); air transport; sat (tax administration service)
+llama-3-8b-instruct,Mexico,1,Ne-ar-36,1,posole.,pozole; traditional soup made of pork and corn; mole sauce; pot mole; beef spicy stew; tamales
+llama-3-8b-instruct,Mexico,1,Ne-ar-38,1,tortas.,sandwiches; canned food; bread; rice and beans
+llama-3-8b-instruct,Mexico,1,New-as-20,0,tennis,basketball; swimming; boxing; indoor soccer
+llama-3-8b-instruct,Mexico,1,New-ch-07,0,"tequila: lime, salt, sangrita
+rum: cola, orange juice, pineapple juice
+whiskey: cola, ginger beer, apple juice
+vodka: lime, grapefruit juice, cranberry juice
+gin: tonic water, lime, grapefruit juice
+cognac: coffee, chocolate, orange liqueur",tacos; meat; peanuts; snacks
+llama-3-8b-instruct,Mexico,1,New-ch-16,0,"""como agua para chocolate""",rocky; ¡goool!; el mundial 86; los reyes del futbol; el chanfle
+llama-3-8b-instruct,Mexico,1,New-ch-32,1,microsoft office,ms office; microsoft office; office; microsoft word; ms word
+llama-3-8b-instruct,Mexico,1,New-ch-38,1,"tijuana, mexicali, guadalajara, monterrey, and lázaro cárdenas.",monterrey; veracruz; mexico city; cancún; harbours; ports; torreon; north
+llama-3-8b-instruct,Mexico,1,New-ch-44,1,30 days,3 months; 6 months; 1 month
+llama-3-8b-instruct,Mexico,1,New-ch-73,1,"soccer, beer pong, and electronic dance music (edm)",chess clubs; sport clubs; cooking clubs; music; music clubs; soccer clubs; football clubs; night clubs; performing arts; reading clubs
+llama-3-8b-instruct,Mexico,1,New-en-05,1,tacos,tacos; sandwich; sandwiches; chilaquiles; mixed grilled meats; traditional meat sandwich
+llama-3-8b-instruct,Mexico,1,New-en-19,1,azteca stadium,aztec stadium; jalisco stadium
+llama-3-8b-instruct,Mexico,1,New-en-41,0,alfonso romo garcía-mon.,carlos slim
+llama-3-8b-instruct,Mexico,1,New-en-47,0,a swimming pool.,fruit trees; flowerpots; grill; tree; children's games; clotheslines; old objects; discarded
+llama-3-8b-instruct,Mexico,1,New-en-56,1,english,english
+llama-3-8b-instruct,Mexico,1,New-en-68,1,"suspension, expulsion, detention, and parent-teacher conference.",expulsion; exclusion; suspension; disciplinary school report; disciplinary report
+llama-3-8b-instruct,Mexico,1,New-en-69,1,"octavio paz, juan rulfo, carlos fuentes, gabriel garcía márquez, and jorge luis borges.",gabriel garcía márquez; carlos fuentes; lope de vega; julio cortázar; octavio paz
+llama-3-8b-instruct,Mexico,1,New-gr-06,1,tacos al pastor,tacos; sandwiches; chilaquiles; pizza
+llama-3-8b-instruct,Mexico,1,New-gr-08,1,beer.,beer; tequila; whiskey; mezcal
+llama-3-8b-instruct,Mexico,1,New-gr-15,1,tres leches cake.,rice pudding; pastries; sweet bread; baked custard; cake; ice cream; charlotte; churros; fritter; cornbread; jelly
+llama-3-8b-instruct,Mexico,1,New-gr-58,1,teachers.,teaching; agriculture; masonry; gastronomy; stewardship; cashier
+llama-3-8b-instruct,Mexico,1,New-ha-08,0,beans.,traditional mole sauce; a traditional soup or stew made of pork and corn; sweet potato; corn on the cob
+llama-3-8b-instruct,Mexico,1,New-in-01,0,oxxo,starbucks; italian coffee; biscuits madero; cielito lindo; punta del cielo
+llama-3-8b-instruct,Mexico,1,New-in-62,1,instituto tecnológico y de estudios superiores de monterrey (itesm),monterrey institute of technology; national autonomous university of mexico; autonomous university of nuevo león; national polytechnic institute
+llama-3-8b-instruct,Mexico,1,New-ko-02,1,baby massage.,breathing and concentration; breathing exercises; excercising; childbirth preparation courses; use of contraceptives; breastfeeding; early stimulation
+llama-3-8b-instruct,Mexico,1,New-ko-03,0,"""la cucaracha""",the sea snake; the little toad; el chorrito; bells of bethlehem; twinkle twinkle little star; pin pon; one elephant was swinging; sweet orange; pretty little sky
+llama-3-8b-instruct,Mexico,1,New-pe-06,0,menudo,tacos; molel sauce; grilled meat; mixed grilled meats; barbecue; meat with chili; pork rind
+llama-3-8b-instruct,Mexico,1,New-pe-20,1,volleyball,volleyball; soccer; football; frisbee
+llama-3-8b-instruct,Mexico,1,New-pe-49,1,oratorios.,church; catholic church; home
+llama-3-8b-instruct,Mexico,1,New-pe-65,0,32,8; 9; 10; 14; 40; 13
+llama-3-8b-instruct,Mexico,1,New-pe-76,1,picnicking,walking; jogging; running; playing soccer; playing football; walking the dog; playing; relaxing
+llama-3-8b-instruct,Mexico,1,New-pe-86,0,cathedral of our lady of angels (la catedral metropolitana),latin american tower; reform tower
+llama-3-8b-instruct,Mexico,1,New-spme-05,1,"churros, tres leches cake, and alfajores.",marzipan; tamarind pulp candy; coconut candy; dulce de leche; wafers; duvalin; payaso lollipop
+llama-3-8b-instruct,Mexico,1,New-spme-37,1,engineering,engineering; medicine; sciences; international relations; cooking; business administration; business administration; law
+llama-3-8b-instruct,Mexico,1,New-su-24,1,"fútbol (soccer), volleyball, and basketball.",soccer; football; basketball
+llama-3-8b-instruct,Mexico,1,New-su-33,0,"formal attire, typically a suit and tie for men, and a skirt or pantsuit for women.",trousers and shirt
+llama-3-8b-instruct,Mexico,1,New-su-34,1,coros,guitar; playing guitar; flute; choir; school gatherings; paying drums
+llama-3-8b-instruct,Mexico,1,New-su-42,1,catholicism,catholic; roman catholic; catholicism; christian
+llama-3-8b-instruct,Mexico,1,New-su-57,1,cattle,cows; pigs; chicken; goats
+llama-3-8b-instruct,Mexico,1,New-su-58,1,"cattle, pigs, chickens, goats, and turkeys.",donkeys; horses; cows; dog; mule
+llama-3-8b-instruct,Mexico,1,Ni-en-12,1,national autonomous university of mexico (unam),national autonomous university of mexico; valle de mexico university; monterrey institute of technology
+llama-3-8b-instruct,Mexico,1,Ni-en-31,1,rosca de reyes.,turkey; seepweed stew; tamales; cod; leg of pork; stuffed chilli peppers; pasta
+llama-3-8b-instruct,Mexico,1,Ni-en-40,1,"""las posadas""",merry christmas; the fish in the river; the little donkey from the savannah; santa claus is coming to town; rudolph the reindeer; bell over bell; jingle bells
+llama-3-8b-instruct,Mexico,1,Sa-en-22,1,universidad nacional autónoma de méxico (unam),national autonomous university of mexico; monterrey institute of technology; autonomous university of nuevo leon; university of guadalajara; national polytechnic institute
+llama-3-8b-instruct,Mexico,1,Sa-en-31,1,dogs,dog; cat
+llama-3-8b-instruct,Mexico,1,Sa-en-7,1,"tortilla chips, churros, elote, chicharrón, tamarindo candies, and paletas.",tostadas; enchiladas; thick stuffed tortillas; fried tacos; flautas; thick tortillas with toppings; corn in a cup; ice cream; quesadilla; a traditional soup or stew made of pork and corn; tacos
+llama-3-8b-instruct,Mexico,1,Ta-pe-21,1,calles (streets),street; on the street; in parks; park; school; schoolyard; in sports units; court
+llama-3-8b-instruct,Mexico,1,Ta-pe-29,1,soccer (fútbol),soccer; football; tennis; auto racing
+llama-3-8b-instruct,Mexico,1,Th-en-03,1,liga mx,liga bbva mx; mexican football league; mexican soccer league; liga mx; lucha libre aaa; mexican baseball league
+llama-3-8b-instruct,Mexico,1,Th-en-11,0,cristiano ronaldo,"el chicharito; javier hernandez (chicharito); checo pérez; saul ""canelo"" alvarez; ""canelo"" alvarez; gignac"
+llama-3-8b-instruct,Mexico,1,Th-en-35,1,dinner,lunch; breakfast; dinner
+llama-3-8b-instruct,Mexico,1,Th-en-37,1,18,28; 21; 25; 18; 30; 17; 22
+llama-3-8b-instruct,Mexico,1,Th-en-44,1,tacos al pastor.,grilled meat; barbecue; tacos; pizza; tamales; stew; carnitas; fried pork; roasted pork; roast chicken
+llama-3-8b-instruct,Mexico,1,Th-en-45,1,dinner together,watch television; watch tv; board games; play mexican bingo; soccer; football; cinema
+llama-3-8b-instruct,Mexico,1,Th-en-51,1,spanish,mathematics; spanish; english; history
+llama-3-8b-instruct,Mexico,1,Th-en-53,0,fiestas de navidad (christmas parties),spring queen; independence day; day of the death offerings contests; day of the death altar contests; children's day
+llama-3-8b-instruct,Mexico,1,Tmp-ar-01,1,universidades y bibliotecas.,university library; libraries; library; home
+llama-3-8b-instruct,Assam,1,Al-en-01,0,momo,plantatin; musa balbisiana; semolina; rice flour; curd poha; curd-poha; mashed potato rice; potato rice; rice with milk; snacks
+llama-3-8b-instruct,Assam,1,Al-en-04,0,orange,malbhog banana; banana; mango; jackfruit; berry; coconut
+llama-3-8b-instruct,Assam,1,Al-en-19,1,bengali,english; hindi; bengali
+llama-3-8b-instruct,Assam,1,Al-en-39,1,pitha,rice pudding; cake; sweets; kidney bean; meat rice; tea; assamese food; puri vaji; flatbread and vegetable fries; fried roti
+llama-3-8b-instruct,Assam,1,An-ar-03,1,4,2; 3; 11; 2; 5; 4
+llama-3-8b-instruct,Assam,1,Ca-sp-06,0,breakfast,afternoon meal; afternoon; afternoon's; dinner
+llama-3-8b-instruct,Assam,1,Ca-sp-11,1,sunday,on sunday; sunday; saturday
+llama-3-8b-instruct,Assam,1,Ca-sp-41,1,institutions and old age homes.,home; house; own home; own house; own residence; self-built house
+llama-3-8b-instruct,Assam,1,Gu-ch-08,0,football,ludo; race; running; hide and seek; card; card game; cricket; video game; kabaddi; tug of war; tug-of-war
+llama-3-8b-instruct,Assam,1,Gu-ch-38,1,3,21; 3; 22; 12; 4
+llama-3-8b-instruct,Assam,1,Ji-ko-14,1,tea,tea leaf; tea; crude oil; petrol; rice; mineral resources; coal
+llama-3-8b-instruct,Assam,1,Ji-ko-24,0,boating,sports; playing sports; garden; bicycle; park; playground; moina parijat
+llama-3-8b-instruct,Assam,1,Ji-ko-25,1,"bihu, durga puja, saraswati puja, christmas, eid-al-fitr, eid-al-adha.",maternity leave; paternity leave; child care leave; bihu; durga puja; parental service
+llama-3-8b-instruct,Assam,1,Ji-ko-28,1,uruka,days of a month; after a month; 1 month; 1 month ceremony; showing outside; rice feeding ceremony; first rice-eating ceremony; purity; day of coming home from the hospital; one year; a year; first birthday; 1 year
+llama-3-8b-instruct,Assam,1,Ji-ko-29,0,60,1; 30; 25; 50
+llama-3-8b-instruct,Assam,1,Ji-ko-33,0,tea stalls or street food stalls.,sleeps at home; sleep; bed; walk; read; study table; home; house; study
+llama-3-8b-instruct,Assam,1,Ji-ko-34,1,"by bus, on foot, or by bicycle.",walk; bicycle; parent's; with parents; scooty; horse; school bus; van; public transport
+llama-3-8b-instruct,Assam,1,Ji-ko-35,1,english medium schools.,domestic education; exam; private tutor
+llama-3-8b-instruct,Assam,1,Ji-ko-36,1,science academy,computer; art; arts; science; science; commerce
+llama-3-8b-instruct,Assam,1,Ji-ko-37,1,"salwar kameez, casual t-shirts, jeans, and trousers.",shirt; pants; shalwar; chalwar; salwar; skirt; college uniform; uniform; sador mekhela; mekhela chador; churidar; shoes socks; tie; half shirt
+llama-3-8b-instruct,Assam,1,Ji-ko-40,1,"play outdoor games, chat with friends, or sleep.",eat; plays sports; sports; read; eats tiffin; play games; sing
+llama-3-8b-instruct,Assam,1,Ji-ko-42,1,"arts: english, history, geography, economics, political science
+science: physics, chemistry, mathematics, biology
+commerce: accountancy, business studies, economics",science; mathematics; maths; math; general knowledge; mathematics; maths; math; chemistry; biology; art; major; honorable subject; english; general intelligence test
+llama-3-8b-instruct,Assam,1,Ji-ko-45,0,bihu performances and food.,entertainment; one skilled citizen; honest witness citizen; tea; building friendship with students from other departments; opportunity to showcase other talents along with studies; enjoy the festive atmosphere
+llama-3-8b-instruct,Assam,1,Jo-sp-13,0,rafting,swim; swimming; boat race
+llama-3-8b-instruct,Assam,1,Jo-sp-19,1,brahmaputra valley,assam; entire assam; entire; all regions; sivasagar
+llama-3-8b-instruct,Assam,1,Jod-ch-01,1,jolpan (paddle) and haath (fork),bronze utensils; bronze; bell metal; brass utensils; brass; brass plate; steel; steel utensils; earthen; soil; earthen utensils
+llama-3-8b-instruct,Assam,1,Jod-ch-07,0,2.3,2; 1; 2.5; 3; 0; 9
+llama-3-8b-instruct,Assam,1,Jod-ch-60,1,9,8; 9; 7; 6; 5
+llama-3-8b-instruct,Assam,1,Ki-pe-34,1,tea,tea; juice; coffee; water; bottle gourd liqour
+llama-3-8b-instruct,Assam,1,Kik-in-16,1,assam tea,tea; coffee; soup; ram; beer; traditional liquor
+llama-3-8b-instruct,Assam,1,Kik-in-36,0,bhaskar jyoti barua,sujesh boro; prajwal singh; fine rava
+llama-3-8b-instruct,Assam,1,Kik-in-37,0,barbarians sc vs neroca fc,oil india duliajan vs assam state electricity board; assam state electricity board vs oil india duliajan
+llama-3-8b-instruct,Assam,1,Na-ko-19,0,prafulla behra,abhijit bhattacharya; abdul baten
+llama-3-8b-instruct,Assam,1,Na-ko-20,1,cricket,soccer; football; cricket; race; running; boxing; chess; badminton; swimming; wrestling
+llama-3-8b-instruct,Assam,1,Na-ko-29,0,rahul banerjee,elvis ali hazarika; sankardev
+llama-3-8b-instruct,Assam,1,Na-ko-33,1,pitha,snacks; sweet; pitha laru; bora rice snack; sour fish curry; curd poha; curd-poha; cream
+llama-3-8b-instruct,Assam,1,Na-ko-39,1,money.,clock; xorai; dry; flower bouquet; items used at home; clothes; xophura; money; bota
+llama-3-8b-instruct,Assam,1,Ne-ar-06,1,jolpan and zizira.,fruit; vegetable; pulao paneer; pilau; pilav; pilaf; watermelon; grape; spectacles; fried chickpeas; dates
+llama-3-8b-instruct,Assam,1,Ne-ar-09,1,"pitha, jolpan, and kebabs.",sweets; pilau; pilav; pilaf; fruit; biryani; fish meat; meat pilav; meat pilaf; meat pilau; semolina; vegetable
+llama-3-8b-instruct,Assam,1,Ne-ar-26,1,oil india limited.,assam gas company limited; assam power distribution company limited; tea auction center; oil india; o.n.g.c. (oil and natural gas corporation)
+llama-3-8b-instruct,Assam,1,Ne-ar-36,1,jolpan (assamese rice and fish curry),rice cake; ladoo; laddu; laru; coconut laddu; bora rice cake; banana rice cake; snacks
+llama-3-8b-instruct,Assam,1,Ne-ar-38,0,pitha,rice; black mole; coconut; fruit
+llama-3-8b-instruct,Assam,1,New-as-20,1,badminton,ludo; carrom; chess; gili danda; badminton
+llama-3-8b-instruct,Assam,1,New-ch-07,1,"jolpan, pakku deh, and chai",pea; almond; chana chutney; mixed chickpeas; fried meat
+llama-3-8b-instruct,Assam,1,New-ch-16,1,baandhon,run milkha run; 1983; go india; m. s. dhoni; mary kom; dangal
+llama-3-8b-instruct,Assam,1,New-ch-32,1,microsoft office,ms office; microsoft office; microsoft; ms word
+llama-3-8b-instruct,Assam,1,New-ch-38,1,"guwahati, silchar, and jorhat.",guwahati; jorhat; dibrugarh; digboi; margherita
+llama-3-8b-instruct,Assam,1,New-ch-44,1,3 months,3 months; 6 months; 8 months; 9 months; 10 months; 2 months; 12 months
+llama-3-8b-instruct,Assam,1,New-ch-73,1,cultural and literary clubs,night club; press club; dance club; music club
+llama-3-8b-instruct,Assam,1,New-en-05,1,thukpa,chowmein; assamese platter
+llama-3-8b-instruct,Assam,1,New-en-19,1,indira gandhi athletic stadium,nehru; nehru stadium; sarusajai stadium; barsapara stadium; dr. bhupen hazarika; small stadium
+llama-3-8b-instruct,Assam,1,New-en-41,0,rahul aggarwal,riniki bhuyan sharma; riniki bhunya sharma; hariprasanna hazarika; jesin kumbang paw; bhupen hazarika; hemendra prasad baruah; udbhav bharali; radha govinda baruah; munzir alam; pranjal saikia
+llama-3-8b-instruct,Assam,1,New-en-47,1,tea bushes,vegetables; vegetable; greens/vegetables; lemon; banana tree; chili pepper; fruit; henna tree; amita
+llama-3-8b-instruct,Assam,1,New-en-56,0,bengali,english; hindi
+llama-3-8b-instruct,Assam,1,New-en-68,1,"suspension, expulsion, detention, and reporting to parents.",disciplinary punishment; informing the guardian; parent-teacher conference; call parents; expulsion; expelled; expelled from school; not applicable; exempted from the teacher's teaching in class
+llama-3-8b-instruct,Assam,1,New-en-69,0,"rabindranath tagore, hiren gohain, bhabendra nath saikia, mamoni raja bonovi, and homen borgohain.",rasaraj laxminath bezbaroa; lakshminath bezbaruah; srimanta sankardev; birendranath bhattacharyya; banikanta kakati; goddess nalinibala
+llama-3-8b-instruct,Assam,1,New-gr-06,1,pitha,chinese food; chinese fast food; pork with rice; duck rice; chips; tea; indian roof
+llama-3-8b-instruct,Assam,1,New-gr-08,1,jolpan.,beer; lime; xaaj; vodka; traditional liquor
+llama-3-8b-instruct,Assam,1,New-gr-15,1,pitha,coconut laddu; tel pitha; til pitha; kholachaparia pitha; sesame rice cake; sticky rice cake; ghila pitha; rice cake; rasgulla; barfi
+llama-3-8b-instruct,Assam,1,New-gr-58,1,teachers,cooks of the midday meal; school cook; fourth grade employee; fourth grade; anganwadi teacher; private event staff
+llama-3-8b-instruct,Assam,1,New-ha-08,1,jolpan,rice flour; sandahguri; milk; snacks; soft rice; bitter gourd
+llama-3-8b-instruct,Assam,1,New-in-01,0,hornbill coffee,nescafe; ccd; bru gold; nestle
+llama-3-8b-instruct,Assam,1,New-in-62,1,guwahati university,tezpur university; assam engineering college; aec; assam science and technology university; dibrugarh university; gauhati university
+llama-3-8b-instruct,Assam,1,New-ko-03,1,"""koli koli""
+
+(i hope that's correct!",bihu song; lullaby; our sweet little girl; oh my beloved country; name of god
+llama-3-8b-instruct,Assam,1,New-pe-49,1,satras.,namghar; prayer house; temple; in the temple; church; doul; mosque
+llama-3-8b-instruct,Assam,1,New-pe-65,0,12,6; 7; 8; 3; 4
+llama-3-8b-instruct,Assam,1,New-pe-76,1,boating,see wild animals; take photos; cleaning; boat ride
+llama-3-8b-instruct,Assam,1,New-spme-05,1,"jolpan, lohori, and mitha.",coconut laddu; tel pitha; til pitha; kholachaparia pitha; sesame rice cake; sticky rice cake; ghila pitha; malpua; pedha; rasgulla; goja; cashew burfi
+llama-3-8b-instruct,Assam,1,New-spme-37,1,engineering,doctor; engineering curriculum; engineering; professor
+llama-3-8b-instruct,Assam,1,New-su-24,0,"badminton, football, cricket, and table tennis.",ludo; hide and seek; carrom; cricket; chess
+llama-3-8b-instruct,Assam,1,New-su-33,1,sari or traditional attire.,sador mekhela; mekhela chador; shirt; pants; elegant attire
+llama-3-8b-instruct,Assam,1,New-su-34,1,bihu,vocal music; singing; bihu; cultural centre; cultural center
+llama-3-8b-instruct,Assam,1,New-su-57,1,cattle,cow; goat; buffalo
+llama-3-8b-instruct,Assam,1,New-su-58,1,"buffalo, cattle, pigs, fowl, and fish.",cow; buffalo; duck; chicken
+llama-3-8b-instruct,Assam,1,Ni-en-12,1,gauhati university,guwahati university; gauhati university; tezpur university; dibrugarh university
+llama-3-8b-instruct,Assam,1,Ni-en-31,1,pitha and luchi.,sweets; fish meat; cake; chowmein; tea; pilau; pilav; pilaf
+llama-3-8b-instruct,Assam,1,Ni-en-40,0,"""bihu nama""",christmas celebration; christmas christmas; jingle bell jingle bell; wish you merry christmas and happy new year
+llama-3-8b-instruct,Assam,1,Sa-en-22,1,gauhati university,guwahati; gauhati university; assam agricultural university; dibrugarh university; tezpur university
+llama-3-8b-instruct,Assam,1,Sa-en-31,1,the golden retriever.,cow; dog; cat; goat
+llama-3-8b-instruct,Assam,1,Sa-en-7,1,"pani pitha, jolpan, laiu, and jarjira.",soft rice; sticky rice; flattened rice snack; rice beer snack; fried rice snack; flattened rice; yogurt; jaggery; doubt; curd poha; curd-poha; rice flour; plantatin; musa balbisiana; milk
+llama-3-8b-instruct,Assam,1,Ta-pe-21,1,school grounds and local maidans.,field; playground; yard
+llama-3-8b-instruct,Assam,1,Ta-pe-29,1,cricket,cricket; boxing
+llama-3-8b-instruct,Assam,1,Th-en-03,1,i-league,assam cricket league; assam premier club championship; assam state premier league
+llama-3-8b-instruct,Assam,1,Th-en-11,0,pritam singh boro,lovlina borgohain; sachin tendulkar; hima das; riyan parag; arjun bhogeswar baruah
+llama-3-8b-instruct,Assam,1,Th-en-15,0,hockey,football; cricket; badminton; ludo
+llama-3-8b-instruct,Assam,1,Th-en-35,0,lunch,afternoon meal; afternoon rice; dinner; snacks; morning snack
+llama-3-8b-instruct,Assam,1,Th-en-37,0,22,25; 23; 24; 21; 30; 18
+llama-3-8b-instruct,Assam,1,Th-en-44,1,dal and rice.,duck meat with ash gourd; luchi and meat; meat pilaf; meat rice; lentil rice; rice; pork with mustard greens; meat with taro leaves; fish; bread; south indian food
+llama-3-8b-instruct,Assam,1,Th-en-45,1,watching tv together,having tea together; talk; conversation; watching tv; tv; movie; lighting up lamps; pray; walk
+llama-3-8b-instruct,Assam,1,Th-en-51,0,assamese,mathematics; maths; math; science; english; political science
+llama-3-8b-instruct,Assam,1,Th-en-53,1,festivals,cultural evening; music competition; dance and song event; bhaona; rasleela; moina parijat
+llama-3-8b-instruct,Assam,1,Tmp-ar-01,1,guwahati and silchar.,library; hostel; house; home; lab; laboratory; college; pg; paying guest
+llama-3-8b-instruct,Greece,1,Al-en-01,1,loukoumades,toast; koulouri; fruit; biscuits; chocolate
+llama-3-8b-instruct,Greece,1,Al-en-04,1,watermelon,watermelon; apple; melon; mandarin; orange; banana
+llama-3-8b-instruct,Greece,1,Al-en-19,1,english,english; french; german
+llama-3-8b-instruct,Greece,1,Al-en-39,1,vasilopita (a sweet bread).,cake
+llama-3-8b-instruct,Greece,1,An-ar-03,1,5,6; 5
+llama-3-8b-instruct,Greece,1,Ca-sp-06,0,dinner.,lunch; breakfast
+llama-3-8b-instruct,Greece,1,Ca-sp-11,1,sunday,sunday; saturday
+llama-3-8b-instruct,Greece,1,Ca-sp-41,1,with family or in nursing homes.,houses of prosperity; nursing homes; nursing home; with pension; home with someone to take care of them
+llama-3-8b-instruct,Greece,1,Gu-ch-08,1,basketball,soccer; football; basketball; track and field
+llama-3-8b-instruct,Greece,1,Gu-ch-38,1,4,12; 10; 4
+llama-3-8b-instruct,Greece,1,Ji-ko-14,1,olive oil,olive oil; feta; greek yogurt; human resources; wine
+llama-3-8b-instruct,Greece,1,Ji-ko-24,0,beach,playground; playgrounds; playstation; sports clubs; cafes; cinema
+llama-3-8b-instruct,Greece,1,Ji-ko-25,1,"christmas (25th december), epiphany (6th january), easter sunday, easter monday, st. george's day (23rd april), and the assumption of the virgin mary (15th august).",christmas; easter; august 15th; new year's day
+llama-3-8b-instruct,Greece,1,Ji-ko-26,0,"1. leaving home at 18 years old
+2. moving to their own apartment at 20-22 years old
+3. getting married and starting a family in their late 20s to early 30s",marriage; job finding; work; coming of age; studies; military service
+llama-3-8b-instruct,Greece,1,Ji-ko-28,1,40 days,after 40 days; birthday; name day; new year's day; easter
+llama-3-8b-instruct,Greece,1,Ji-ko-29,0,60,18; 21
+llama-3-8b-instruct,Greece,1,Ji-ko-33,1,school or social gatherings.,study; sleep; tutoring center; night out
+llama-3-8b-instruct,Greece,1,Ji-ko-34,0,"elementary school students in greece typically go to school from 8:30 am to 1:00 pm, monday to thursday, and from 8:30 am to 12:30 pm on friday.",with the aprons; on foot; bus; public transport; car
+llama-3-8b-instruct,Greece,1,Ji-ko-35,1,private schools (private ekpaideutika),colleges; private schools; postgraduate; private nurseries; private vocational training institutes
+llama-3-8b-instruct,Greece,1,Ji-ko-36,1,lykeion (lyceum),mathematics; language; physics
+llama-3-8b-instruct,Greece,1,Ji-ko-37,1,"casual clothes, such as jeans and t-shirts.",casual; tracksuits; jeans; sportswear
+llama-3-8b-instruct,Greece,1,Ji-ko-40,1,"they chat with friends, play games, and engage in extracurricular activities.",spend time with their classmates; they discuss; spend time with their friends; smoking; copy notes; copy homework; eat; resting
+llama-3-8b-instruct,Greece,1,Ji-ko-42,1,"mathematics, physics, chemistry, and greek language.",language; mathematics; literature; english; physics; ancient
+llama-3-8b-instruct,Greece,1,Ji-ko-45,1,music and dancing,singers; music; concerts
+llama-3-8b-instruct,Greece,1,Jo-sp-13,0,sailing,polo; city; synchronized swimming; swimming
+llama-3-8b-instruct,Greece,1,Jo-sp-19,1,peloponnese,crete; thessaly; larissa; kastoria; volos; peloponnese
+llama-3-8b-instruct,Greece,1,Jod-ch-01,0,"fork, knife, and spoon.",dishes; pot; pan; frying pan; pan; glasses
+llama-3-8b-instruct,Greece,1,Jod-ch-07,1,2.5,3; 2; 1.5; 2.5
+llama-3-8b-instruct,Greece,1,Jod-ch-60,0,7,8; 9; 10
+llama-3-8b-instruct,Greece,1,Ki-pe-34,0,ellinikós kafé (greek coffee),coffee; milk
+llama-3-8b-instruct,Greece,1,Kik-in-16,1,wine.,tsipouro; ouzo; wine; rakomelo; raki
+llama-3-8b-instruct,Greece,1,Kik-in-36,0,ottmar hitzfeld,fatih terim; lucescu; diego simeone; bartzokas; ataman
+llama-3-8b-instruct,Greece,1,Kik-in-37,1,olympiacos vs panathinaikos,panathinaikos against olympiacos; olympiacos versus panathinaikos; aek vs paok
+llama-3-8b-instruct,Greece,1,Na-ko-29,0,alexis tsiripidis,aris grigoriadis; spiros gianniotis; demosthenes michalentzaki; apostolos tsagkarakis; antonis tsapatákis; yiannis drymonakos
+llama-3-8b-instruct,Greece,1,Na-ko-33,1,vasilopita,turkey; vasilopita; pork; chicken
+llama-3-8b-instruct,Greece,1,Na-ko-39,1,money.,throw rice; hug; money; mixer; gift
+llama-3-8b-instruct,Greece,1,Ne-ar-26,1,opap s.a.,public power corporation; ote; municipal water supply and sewerage company; hellenic railways organization
+llama-3-8b-instruct,Greece,1,Ne-ar-36,1,"moussaka, roasted lamb, and dolmades.",roast meat; meat with potatoes in the oven; meat; pies; pastitsio; easter meal
+llama-3-8b-instruct,Greece,1,Ne-ar-38,1,easter bread.,bread; pasta; rice; milk; croissant; cheese pie; rusks
+llama-3-8b-instruct,Greece,1,New-as-20,1,basketball,basketball; football
+llama-3-8b-instruct,Greece,1,New-ch-07,1,"ouzo: with water, fruit, or mezethes (small plates of food); metaxa: with water or coffee; tsipouro: with water, fruit, or mezethes.",nuts; potato chips; deli meats; olives
+llama-3-8b-instruct,Greece,1,New-ch-32,1,microsoft office,microsoft office; windows; excel; prospects; word
+llama-3-8b-instruct,Greece,1,New-ch-38,1,"thessaloniki, piraeus, athens.",crete; piraeus; athens; fatherland; kalamata
+llama-3-8b-instruct,Greece,1,New-ch-44,0,1-3 months,15 days; 1 week
+llama-3-8b-instruct,Greece,1,New-ch-73,0,"soccer, basketball, and rugby.",political factions; party members; political associations; democratic renewal vanguard; communist youth of greece; football
+llama-3-8b-instruct,Greece,1,New-en-05,1,gyros,gyro; round; pasta; souvlaki; pizza; pasta with sauce; legumes; oilive oil based dishes
+llama-3-8b-instruct,Greece,1,New-en-19,1,"olympiako stadio (""olympic stadium"")",olympic stadium athens; oaka; olympic; karaiskaki
+llama-3-8b-instruct,Greece,1,New-en-41,1,aristotle onassis,marinakis; onassis; niarchos; giannakopoulos; ivan savvidis
+llama-3-8b-instruct,Greece,1,New-en-47,1,olive trees.,flower beds; roses; flowers; warehouse; tools; trees
+llama-3-8b-instruct,Greece,1,New-en-56,1,english,english; albanian; greek
+llama-3-8b-instruct,Greece,1,New-en-68,1,"detention, suspension, expulsion, and parental notification.",expulsion from class; expulsion; punishment; non-household communication
+llama-3-8b-instruct,Greece,1,New-en-69,1,"aristotle, homer, sophocles, euripides, aristophanes, and modern greek writers such as nikos kazantzakis, andreas kalvos, and odysseas elytis.",papadiamantis; elitis; seferis; palamas; karyotakis; cavafy; alki zei; kazantzakis; dionysios solomos
+llama-3-8b-instruct,Greece,1,New-gr-06,1,souvlaki,pasta with minced meat; souvlaki; pizza; burger; steak
+llama-3-8b-instruct,Greece,1,New-gr-08,1,ouzo,beer; tsipouro; wine; ouzo
+llama-3-8b-instruct,Greece,1,New-gr-15,1,baklava,galaktoboureko; baklava; spoon sweet; syrupy sweets; tulumbakia; rice pudding
+llama-3-8b-instruct,Greece,1,New-gr-58,1,teachers,waiter; service; educator; worker; touristic
+llama-3-8b-instruct,Greece,1,New-ha-08,1,fava.,chickpeas; beans; bean soup; lentils; okra; legumes
+llama-3-8b-instruct,Greece,1,New-in-01,0,starbucks,coffee island; mikel; gregorys; coffee berry
+llama-3-8b-instruct,Greece,1,New-in-62,1,national technical university of athens (εθνικό μετσόβιο πολυτεχνείο),national technical university of athens; aristotelian
+llama-3-8b-instruct,Greece,1,New-ko-02,1,breathing exercises,painless childbirth classes; childbirth pain management exercises; instructions from a gynecologist; yoga
+llama-3-8b-instruct,Greece,1,New-ko-03,0,"""ta pedia tou pirea""","happily to clap my 2 hands; i'm clapping my hands with joy; oh little bunny; a small boat; hedgehog, zouzounia"
+llama-3-8b-instruct,Greece,1,New-pe-06,0,moussaka stew.,hare; rabbit; beef stew; rooster
+llama-3-8b-instruct,Greece,1,New-pe-20,1,beach volleyball.,rackets; soccer; football; beach volleyball; volleyball
+llama-3-8b-instruct,Greece,1,New-pe-49,1,churches.,orthodox church; church
+llama-3-8b-instruct,Greece,1,New-pe-65,1,12,23; 12; 20; 21; 10
+llama-3-8b-instruct,Greece,1,New-pe-76,1,hiking,picnic; hiking; walking; children's train; shooting; swings; pet walk
+llama-3-8b-instruct,Greece,1,New-pe-86,0,acropolis of athens,white; white tower
+llama-3-8b-instruct,Greece,1,New-spme-05,1,"baklava, galaktoboureko, loukoumades, tsoureki, and melomakarona.",galaktompoureko; baklava; kadaifi; tray sweets; tsoureki; melomakarona; rice pudding; spoon sweets
+llama-3-8b-instruct,Greece,1,New-spme-37,1,medicine,medical; medicine; doctor; lawyer; veterinary; european studies
+llama-3-8b-instruct,Greece,1,New-su-24,1,"football, basketball, and volleyball.",football; basketball; volleyball
+llama-3-8b-instruct,Greece,1,New-su-34,0,greek traditional music and dance,guitar; carols; concert; dancing party
+llama-3-8b-instruct,Greece,1,New-su-42,1,orthodox christianity,christianity; greek orthodox christianity
+llama-3-8b-instruct,Greece,1,New-su-57,1,sheep,sheep; lamb; goats; goat; cows; cow; chickens
+llama-3-8b-instruct,Greece,1,New-su-58,1,"goats, sheep, cattle, pigs, chickens, and bees.",horses; sheep; goats; donkeys; none
+llama-3-8b-instruct,Greece,1,Ni-en-12,1,national and kapodistrian university of athens,national and kapodistrian university of athens; national technical university of athens; aristotle university of thessaloniki; university of macedonia
+llama-3-8b-instruct,Greece,1,Ni-en-31,1,melomakarona and kourabiedes.,turkey; chicken; melomakarona; kourabiedes; pork; pan-fried pork
+llama-3-8b-instruct,Greece,1,Ni-en-40,0,"""christmas, christmas""",christmas; vandi's christmas; carols; christmas carols; last christmas; little drummer
+llama-3-8b-instruct,Greece,1,Sa-en-31,1,dogs,dog; cat
+llama-3-8b-instruct,Greece,1,Sa-en-7,1,"loukoumi, baklava, kourabiedes, galaktoboureko, tiropita, spanakopita, koulourakia, melomakarona.",potato chips; souvlaki; bougatsa; cheese pie; meat pie; nuts; fruits; yogurt; lacta; ion
+llama-3-8b-instruct,Greece,1,Ta-pe-21,1,schoolyards or local parks.,stadiums; in stadiums; schools; school; public stadiums; playgrounds; street; sports clubs
+llama-3-8b-instruct,Greece,1,Ta-pe-29,1,football (soccer),soccer; football; basketball; track and field; martial art
+llama-3-8b-instruct,Greece,1,Th-en-03,1,super league greece,super league greece; super league; super league 1; soccer; football; a1; basketball league
+llama-3-8b-instruct,Greece,1,Th-en-11,0,vasilis lampropoulos,antetokounmpo; giannis antetokounmpo; tsitsipas; tentoglou; galis; devetzi; sloukas
+llama-3-8b-instruct,Greece,1,Th-en-15,1,skiing,skiing; snowboard
+llama-3-8b-instruct,Greece,1,Th-en-35,1,dinner,lunch; dinner
+llama-3-8b-instruct,Greece,1,Th-en-37,0,21,18; 25; 19; 20; 28
+llama-3-8b-instruct,Greece,1,Th-en-44,1,moussaka.,pastitsio; moussaka; souvlaki
+llama-3-8b-instruct,Greece,1,Th-en-45,1,dinner together.,television; food
+llama-3-8b-instruct,Greece,1,Th-en-51,1,greek language,mathematics; language; physics; history
+llama-3-8b-instruct,Greece,1,Th-en-53,1,party!,tour of the parthenon; festival; cinema; theater; excursions; school celebrations
+llama-3-8b-instruct,Greece,1,Tmp-ar-01,1,"university libraries, coffee shops, and homes.",library; house; tutorial center; school libraries; study room; cafes
+llama-3-8b-instruct,Ethiopia,1,Al-en-01,1,injera with honey,potato fries; chips; bread; tea with bread; shiro; shiro wat; shiro stew
+llama-3-8b-instruct,Ethiopia,1,Al-en-04,1,mango,orange; mango
+llama-3-8b-instruct,Ethiopia,1,Al-en-19,0,arabic.,english
+llama-3-8b-instruct,Ethiopia,1,Al-en-32,0,injera,meat; chicken; meat cuts; cut meat
+llama-3-8b-instruct,Ethiopia,1,Al-en-39,0,injera with wats.,cake; bread; hamburger; burger; pizza; banana
+llama-3-8b-instruct,Ethiopia,1,An-ar-03,0,9,10; 5
+llama-3-8b-instruct,Ethiopia,1,Ca-sp-06,1,injera,injera; shiro; shiro wat; shiro stew
+llama-3-8b-instruct,Ethiopia,1,Ca-sp-11,1,sunday,sunday
+llama-3-8b-instruct,Ethiopia,1,Ca-sp-41,0,urban areas,mekedonia; center for the elderly care; elderly care center; religious places; religious institutions
+llama-3-8b-instruct,Ethiopia,1,Gu-ch-08,1,football (soccer),soccer; football
+llama-3-8b-instruct,Ethiopia,1,Gu-ch-38,0,8,4; 5
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-14,1,coffee,coffee; skin; animal skin; leather
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-24,0,football fields.,ednamall; edna mall; edinamol; bora; bora amusement park; television; tv; signal mall; centurymall; century mall
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-26,1,"* age 10-12: children start helping with household chores and participating in family decisions
+* age 12-14: children start taking on more responsibilities, such as caring for younger siblings
+* age 15-17: children start working part-time and contributing financially to the household
+* age 18: children are considered adults and are expected to be financially independent",getting a job; job; starting their work; work; getting married; married; marriage
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-28,0,43rd day after birth,after a week; christening; epiphany; baptism; one year; in 1 year; first year
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-29,0,40,25; 18; 1
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-33,1,religious gatherings or hangouts with friends.,study; go to study; home
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-34,1,"elementary school students in ethiopia typically walk to school, as most schools are located in rural areas and public transportation is limited.",walk; by using service; with family; taxi; bike; bicycle
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-35,1,private boarding schools.,st joseph's school; st. joseph school; st. joseph; nazareth school; nazeret school; vocational; career; computer engineering; computer training
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-36,0,english language academy,mathematics; math; accounting
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-37,1,uniforms,uniform
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-40,1,play football and chat with friends.,playing soccer; playing football; football; soccer; drink tea; tea; talking with a friend; chat; talk with friends; play
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-42,1,"amharic, english, mathematics, biology, chemistry, and physics.",natural science; social science; mathematics; math; english; citizenship; civics
+llama-3-8b-instruct,Ethiopia,1,Ji-ko-45,1,traditional ethiopian music and dance performances.,music; music program; sports; sports competition
+llama-3-8b-instruct,Ethiopia,1,Jo-sp-13,0,fishing,swimming; swim
+llama-3-8b-instruct,Ethiopia,1,Jo-sp-19,1,the amhara region.,amhara; oromia
+llama-3-8b-instruct,Ethiopia,1,Jod-ch-01,0,injera and fingers.,plate; big plate; tray
+llama-3-8b-instruct,Ethiopia,1,Jod-ch-07,0,2.3,2; 1.5; 1
+llama-3-8b-instruct,Ethiopia,1,Jod-ch-60,1,8,8
+llama-3-8b-instruct,Ethiopia,1,Ki-pe-34,1,tej,tea; coffee; milk
+llama-3-8b-instruct,Ethiopia,1,Kik-in-16,1,teff coffee,liquor; hot tea; tea; coffee
+llama-3-8b-instruct,Ethiopia,1,Kik-in-36,0,sendekta lemma,sewnet bishaw; wubetu abate; aserat haylie; asrat haile; gebremedhin haile
+llama-3-8b-instruct,Ethiopia,1,Kik-in-37,1,st. george vs. ethiopian coffee,ethiopian coffee vs st. george; coffee vs saint george; st. george vs coffee; saint george vs ethiopian coffee; st. george vs ethiopian coffee; coffee vs st. george; ethiopian coffee vs saint george; saint george vs coffee
+llama-3-8b-instruct,Ethiopia,1,Na-ko-20,1,athletics (track and field),running; run; athletics; champions league final; world cup
+llama-3-8b-instruct,Ethiopia,1,Na-ko-29,0,yirga gelaw.,yanet seyum
+llama-3-8b-instruct,Ethiopia,1,Na-ko-39,1,money.,clothes; household items; gabi
+llama-3-8b-instruct,Ethiopia,1,Ne-ar-06,1,injera with various stews and salads.,dates; meat; samosa; samboosa
+llama-3-8b-instruct,Ethiopia,1,Ne-ar-09,1,injera and wats.,meat cuts; cut meat; meat; bread
+llama-3-8b-instruct,Ethiopia,1,Ne-ar-26,1,ethiopian airlines,ethio telecom; tele; ethiopian telecommunication; ethiopian telecom
+llama-3-8b-instruct,Ethiopia,1,Ne-ar-36,1,injera with various wots (stews) and salads.,shiro; bread; meat; cake; potato wrap up
+llama-3-8b-instruct,Ethiopia,1,Ne-ar-38,1,injera,grits stew; pasta; macaroni; injera; bread
+llama-3-8b-instruct,Ethiopia,1,New-as-20,0,tebessalum (table tennis),boxing
+llama-3-8b-instruct,Ethiopia,1,New-ch-07,0,tej (honey wine) and coffee.,meat; raw meat; tebs; t’ibs; tibbs; roast meat; roasted meat; tibs; meat cuts; cut meat
+llama-3-8b-instruct,Ethiopia,1,New-ch-16,0,difret,woman; girl
+llama-3-8b-instruct,Ethiopia,1,New-ch-32,1,microsoft office,microsoft word; ms office; office; power geez; application software; software
+llama-3-8b-instruct,Ethiopia,1,New-ch-38,1,"addis ababa, djibouti, dire dawa, and port sudan.",dire dawa; diredawa; jigjiga; addis ababa
+llama-3-8b-instruct,Ethiopia,1,New-ch-44,0,3 months,6 months; 45 days
+llama-3-8b-instruct,Ethiopia,1,New-ch-73,1,football and volleyball.,football clubs; soccer clubs; art
+llama-3-8b-instruct,Ethiopia,1,New-en-05,0,injera,sambusa; shiri stew; shiro wot; shiro
+llama-3-8b-instruct,Ethiopia,1,New-en-19,1,addis ababa stadium,bahir dar stadium; bahir dar; addis ababa stadium; addis ababa; abebe bikila stadium
+llama-3-8b-instruct,Ethiopia,1,New-en-41,0,aman bankas,haile g/selassie; haile gebreselassie; bethlehem tilahun
+llama-3-8b-instruct,Ethiopia,1,New-en-47,0,coffee plants,vegetable; cabbage; toilet
+llama-3-8b-instruct,Ethiopia,1,New-en-56,0,amharic,english; arabic
+llama-3-8b-instruct,Ethiopia,1,New-en-68,0,"punishment, detention, suspension, expulsion, and corporal punishment.",peer pressure; casinos; expulsion from schools; foreign film
+llama-3-8b-instruct,Ethiopia,1,New-en-69,0,"tsegaye gebre-medhin, mengistu lemma, and worku goshu.",fiction; haddis alemayehu; balu girema
+llama-3-8b-instruct,Ethiopia,1,New-gr-06,1,injera,shiro wote; shiro; shiro stew; injera with shiro
+llama-3-8b-instruct,Ethiopia,1,New-gr-08,1,tella,tela; liquor; beer; teji
+llama-3-8b-instruct,Ethiopia,1,New-gr-15,0,injera with honey or fruit.,chopped meat; tebs; t’ibs; tibbs; roast meat; roasted meat; tibs; chicken stew; doro wot; butter
+llama-3-8b-instruct,Ethiopia,1,New-gr-58,1,teacher,cleaning; cleaner; labor; security; civil servants; government job
+llama-3-8b-instruct,Ethiopia,1,New-in-01,0,sidama,yirga chefie; harar
+llama-3-8b-instruct,Ethiopia,1,New-in-62,0,addis ababa university,bahirdar; bahir dar; bahirdar university; bahir dar university; areba minch; adama
+llama-3-8b-instruct,Ethiopia,1,New-ko-02,1,group discussion,birth follow up; sleeping position; nutrition; reproduction
+llama-3-8b-instruct,Ethiopia,1,New-ko-03,0,"""alabina""",my brother jacob; the bird told me
+llama-3-8b-instruct,Ethiopia,1,New-pe-06,1,tibs be seged (red stew),shiro; shiro wat; shiro stew; chicken stew; doro wot; grits; lentils
+llama-3-8b-instruct,Ethiopia,1,New-pe-49,1,gebeta,church; mosque; living room; place of faith
+llama-3-8b-instruct,Ethiopia,1,New-pe-65,0,14,11; 10; 7
+llama-3-8b-instruct,Ethiopia,1,New-pe-76,0,playing soccer,running; run; athletics; taking a photo
+llama-3-8b-instruct,Ethiopia,1,New-pe-86,0,adey abeba,fasil barrage; harar barrage; jegol barrage; jegol
+llama-3-8b-instruct,Ethiopia,1,New-spme-05,0,"dabo, gursha, and kulfi.",temmer; baqlaba; honey; packaged foods
+llama-3-8b-instruct,Ethiopia,1,New-spme-37,0,medicine,engineering; technology
+llama-3-8b-instruct,Ethiopia,1,New-su-24,1,football (soccer) and running.,soccer game; football game; ball
+llama-3-8b-instruct,Ethiopia,1,New-su-33,1,"traditional ethiopian attire, such as a habesha kemis or a gabbi.",white gown; gown
+llama-3-8b-instruct,Ethiopia,1,New-su-34,1,choir,sports education; dance; music; art
+llama-3-8b-instruct,Ethiopia,1,New-su-42,1,orthodox christianity,catholic; christianity; islam
+llama-3-8b-instruct,Ethiopia,1,New-su-57,1,cattle,sheep; cattle; chicken; lamb; ox; cow; donkey
+llama-3-8b-instruct,Ethiopia,1,New-su-58,1,"cattle, sheep, goats, and chickens.",ox; cow; horse; donkey; lamb
+llama-3-8b-instruct,Ethiopia,1,Ni-en-12,1,addis ababa university,addis ababa university; addis ababa; bahir dar; hawassa
+llama-3-8b-instruct,Ethiopia,1,Ni-en-31,1,doro wot and injera.,meat cuts; cut meat; meat; big bread; dough bread; difo dabo; bread; chicken stew; doro wot
+llama-3-8b-instruct,Ethiopia,1,Ni-en-40,0,"""yebetaw""",eyohe azna genaye; asina bel; traditional; cultural
+llama-3-8b-instruct,Ethiopia,1,Sa-en-22,1,addis ababa university,adigrat university; addis ababa university; soccer; football
+llama-3-8b-instruct,Ethiopia,1,Sa-en-31,1,dog,cat; dog
+llama-3-8b-instruct,Ethiopia,1,Sa-en-7,1,"kocho, tibs, injera, doro wot, and popcorn.",injera firfir; sandwich; biscuits; sambusa; tea with bread
+llama-3-8b-instruct,Ethiopia,1,Ta-pe-21,1,vacant lots and streets.,football field; on the field; field; on road; on asphalt; meskel square; cross square
+llama-3-8b-instruct,Ethiopia,1,Ta-pe-29,1,football (soccer),soccer; football
+llama-3-8b-instruct,Ethiopia,1,Th-en-03,0,there is no professional sports league in ethiopia.,football league; premier league; soccer; football; volleyball
+llama-3-8b-instruct,Ethiopia,1,Th-en-11,0,senay mezgebe,haile g/selassie; haile gebreselassie; abebe bikila; ababa bikila; tirunesh dibaba; deraretu tulu
+llama-3-8b-instruct,Ethiopia,1,Th-en-15,0,football,running; run; athletics; gym; gymnastics
+llama-3-8b-instruct,Ethiopia,1,Th-en-35,1,dinner,dinner; injera; breakfast
+llama-3-8b-instruct,Ethiopia,1,Th-en-37,1,18,25; 22; 18
+llama-3-8b-instruct,Ethiopia,1,Th-en-44,1,injera with wats (stews),tebs; t’ibs; tibbs; roast meat; roasted meat; tibs; chicken stew; doro wot; meat
+llama-3-8b-instruct,Ethiopia,1,Th-en-45,0,eating dinner together,dancing; dance; traditional dance; walk; dancing; dance
+llama-3-8b-instruct,Ethiopia,1,Th-en-51,0,amharic,technology research; thesis; senior essay; space science
+llama-3-8b-instruct,Ethiopia,1,Th-en-53,1,coffee ceremonies,party; private college
+llama-3-8b-instruct,Ethiopia,1,Tmp-ar-01,1,private tutorial centers.,library; park; space
+llama-3-8b-instruct,Northern_Nigeria,1,Al-en-01,1,puff-puff,noodles; bread; puff-puff; pancakes; cake; chin-chin
+llama-3-8b-instruct,Northern_Nigeria,1,Al-en-04,1,mango,banana; orange; watermelon; mango; date fruit; carrot; garden egg
+llama-3-8b-instruct,Northern_Nigeria,1,Al-en-19,0,french,hausa; english; arabic
+llama-3-8b-instruct,Northern_Nigeria,1,An-ar-03,1,5,5; 6; 7; 8; 9
+llama-3-8b-instruct,Northern_Nigeria,1,Ca-sp-06,0,breakfast,rice; dinner; rice and beans; bean dumplings; mashed food
+llama-3-8b-instruct,Northern_Nigeria,1,Ca-sp-11,1,friday,friday
+llama-3-8b-instruct,Northern_Nigeria,1,Ca-sp-41,1,with their children.,their houses; their daughters' house; their son's house
+llama-3-8b-instruct,Northern_Nigeria,1,Gu-ch-08,1,football,soccer; football; understanding; race
+llama-3-8b-instruct,Northern_Nigeria,1,Gu-ch-38,1,4,4; 5; 6
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-14,1,cotton,millet; hibiscus tea; cotton; food items; animal skin; rice; millet
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-24,0,football field,playground with swings; tourist attractions; zoo
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-25,1,"sallah, id-el-fitr, id-el-kabir",eid celebration; eid and christmas; christmas celebration; eid and christmas
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-28,0,"the first day that people celebrate after a child is born in northern nigeria is ""sebura"".",naming ceremony; after seven days
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-29,0,40th,one year; 1; 3; 10; mawlid (celebration of the birth of prophet muhammad)
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-33,1,madrasah or mosque.,return to class; class; house
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-34,1,by foot or on motorbikes.,foot journey; walking; on foot; leg; in a car; car; using a vehicle; vehicle; bicycle
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-35,0,almajiri islamic education.,well; bank; automated teller machine; western education; business
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-36,0,islamic madrasah,science
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-37,1,hijab and kaftan.,white; blue; school uniform; white jumper and trousers; cloth; clothes; trousers
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-40,1,"play football or other outdoor games, socialize with friends, or engage in casual conversations.",play; watching tv; business; visit
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-42,1,"english language, mathematics, and three other subjects.",lissafi; arithmetic; english; west african examinations council; entrance exam; national examinations council
+llama-3-8b-instruct,Northern_Nigeria,1,Ji-ko-45,0,music and food.,students; brilliant students; security guards
+llama-3-8b-instruct,Northern_Nigeria,1,Jo-sp-13,0,fishing,swimming; swimming race; race
+llama-3-8b-instruct,Northern_Nigeria,1,Jo-sp-19,1,kano state,jigawa; kano; kaduna; adamawa
+llama-3-8b-instruct,Northern_Nigeria,1,Jod-ch-01,0,"fork, knife, and spoon.",rice; corn; beans; armpit; spaghetti; millet
+llama-3-8b-instruct,Northern_Nigeria,1,Jod-ch-07,1,2.3,1; 2
+llama-3-8b-instruct,Northern_Nigeria,1,Jod-ch-60,1,8,8; 9
+llama-3-8b-instruct,Northern_Nigeria,1,Ki-pe-34,0,ponmo (hausa) or kunu (hausa/fulani),tea; pap; millet or sorghum porridge
+llama-3-8b-instruct,Northern_Nigeria,1,Kik-in-16,1,yasa (hausa pepper tea),tea; pap; millet or sorghum porridge
+llama-3-8b-instruct,Northern_Nigeria,1,Kik-in-36,0,abdu maikaba,salisu yusuff; good morning; gatekeeper
+llama-3-8b-instruct,Northern_Nigeria,1,Kik-in-37,0,kano pillars vs enyimba,kano pillars and katsina united; real madrid and barcelona
+llama-3-8b-instruct,Northern_Nigeria,1,Na-ko-19,0,i don't have that information.,mohammed adamu aris
+llama-3-8b-instruct,Northern_Nigeria,1,Na-ko-20,0,basketball,soccer; football; race
+llama-3-8b-instruct,Northern_Nigeria,1,Na-ko-33,1,kilishi.,mashed rice; mashed food; rice cake
+llama-3-8b-instruct,Northern_Nigeria,1,Na-ko-39,0,cash,kola nut; candy
+llama-3-8b-instruct,Northern_Nigeria,1,Ne-ar-06,1,"mai-gwari, tuwo masara, and suya.",food items; fruits; meat/chicken; vegetables; pap and bean cake; date fruit; potato; millet porridge and bean cakes; yam
+llama-3-8b-instruct,Northern_Nigeria,1,Ne-ar-09,1,"kilishi, suya, and rice.",rice meal; rice pudding; mashed food; chicken; malaria
+llama-3-8b-instruct,Northern_Nigeria,1,Ne-ar-26,0,first bank of nigeria limited,central bank of nigeria; federal inland revenue service
+llama-3-8b-instruct,Northern_Nigeria,1,Ne-ar-36,0,"suya, jollof rice, fried plantains, and puff-puff.",rice; pudding; mashed food; mashed food with soup; flatbread; malaria
+llama-3-8b-instruct,Northern_Nigeria,1,Ne-ar-38,1,rice.,rice; rice and beans; jollof rice; rice cake; millet
+llama-3-8b-instruct,Northern_Nigeria,1,New-as-20,0,kilta (a form of handball),riddle
+llama-3-8b-instruct,Northern_Nigeria,1,New-ch-16,0,beasts of no nation (2015),my story; ninety days
+llama-3-8b-instruct,Northern_Nigeria,1,New-ch-32,1,microsoft office,ofishin microsoft; fice
+llama-3-8b-instruct,Northern_Nigeria,1,New-ch-38,1,"kano, lagos, and port harcourt.",kano; china; twenty
+llama-3-8b-instruct,Northern_Nigeria,1,New-ch-44,0,3-6 months,3; 2
+llama-3-8b-instruct,Northern_Nigeria,1,New-ch-73,0,football and cricket,sug; mssn
+llama-3-8b-instruct,Northern_Nigeria,1,New-en-05,0,jollof rice,spaghetti; corn flour
+llama-3-8b-instruct,Northern_Nigeria,1,New-en-19,1,kano stadium,sani abacha; kano pillars
+llama-3-8b-instruct,Northern_Nigeria,1,New-en-41,1,aliko dangote,aliko ɗangote; aliko dangote; abdulsamad rabiu
+llama-3-8b-instruct,Northern_Nigeria,1,New-en-47,0,mango trees.,moringa; tomato; onion; salad
+llama-3-8b-instruct,Northern_Nigeria,1,New-en-56,1,hausa,hausa; english; arabic
+llama-3-8b-instruct,Northern_Nigeria,1,New-en-68,1,"lashing, caning, suspension, expulsion.",expel; sweep; washing toilet; suspension; whip
+llama-3-8b-instruct,Northern_Nigeria,1,New-en-69,0,"wole soyinka, chinua achebe, and ngugi wa thiong'o.",abubakar imam; abubakar gimba; abdulaziz sani madaki
+llama-3-8b-instruct,Northern_Nigeria,1,New-gr-06,1,suya,rice and beans; rice cake; bean dumplings
+llama-3-8b-instruct,Northern_Nigeria,1,New-gr-08,0,ponmo.,local beer
+llama-3-8b-instruct,Northern_Nigeria,1,New-gr-15,0,kulikuli,biscuit; hibiscus tea; completely; nakiya; lollipop; halaka kobo; tiger nut milk; katin gana; milk candy
+llama-3-8b-instruct,Northern_Nigeria,1,New-gr-58,0,teacher,two hundred; sweep; cleaning; labourer
+llama-3-8b-instruct,Northern_Nigeria,1,New-ha-08,0,okra,tuwo; tuwo with soup
+llama-3-8b-instruct,Northern_Nigeria,1,New-in-01,0,tastee fried chicken & coffee,coffee shop
+llama-3-8b-instruct,Northern_Nigeria,1,New-in-62,0,"federal university of technology, minna (futminna)",kano; bayero university; zaria; ahmadu bello university; wudil
+llama-3-8b-instruct,Northern_Nigeria,1,New-ko-02,0,antenatal clinic attendance,nurse's quarters; midwife
+llama-3-8b-instruct,Northern_Nigeria,1,New-pe-06,0,pepper pot stew.,taushe sauce; vegetable soup; kuka soup; vegetables soup; okra soup; tomatoes stews; melon seed
+llama-3-8b-instruct,Northern_Nigeria,1,New-pe-20,0,beach volleyball,kwado
+llama-3-8b-instruct,Northern_Nigeria,1,New-pe-49,1,mosques,mosque
+llama-3-8b-instruct,Northern_Nigeria,1,New-pe-65,0,12,10; 9; 13
+llama-3-8b-instruct,Northern_Nigeria,1,New-pe-76,0,playing football.,riding a bicycle; horse riding
+llama-3-8b-instruct,Northern_Nigeria,1,New-pe-86,0,shehu lamido tower,ado bayero's house; long bench; skyline university
+llama-3-8b-instruct,Northern_Nigeria,1,New-spme-05,0,"kuli-kuli, fura, and choba.",lemon; lemon spoon; lollipop; sugarcane candy; biscuit; hallaka kobo; hibiscus tea
+llama-3-8b-instruct,Northern_Nigeria,1,New-spme-37,1,medicine,business; medicine
+llama-3-8b-instruct,Northern_Nigeria,1,New-su-24,0,football (soccer),grandfather and grandchild play; swimming sport; dance
+llama-3-8b-instruct,Northern_Nigeria,1,New-su-33,1,hijab and trousers.,"clothes and cap; long, loose-fitting robe; shirt and trousers; english wears"
+llama-3-8b-instruct,Northern_Nigeria,1,New-su-42,1,islam,islam; christian; christianity
+llama-3-8b-instruct,Northern_Nigeria,1,New-su-57,1,cattle,sheep; goat; bull; cat
+llama-3-8b-instruct,Northern_Nigeria,1,New-su-58,1,"cattle, sheep, goats, and poultry.",bull; cows; cow; donkey
+llama-3-8b-instruct,Northern_Nigeria,1,Ni-en-12,1,ahmadu bello university (abu),ahmadu bello university; abu; ahmadu bello university (abu); kano; bayero university kano (buk); bayero university
+llama-3-8b-instruct,Northern_Nigeria,1,Ni-en-31,1,rice with stew and chicken.,chicken; meat; rice
+llama-3-8b-instruct,Northern_Nigeria,1,Sa-en-22,1,ahmadu bello university (abu) zaria.,ahmadu bello university; zaria
+llama-3-8b-instruct,Northern_Nigeria,1,Sa-en-31,1,goat,sheep; goat; bull; cow; chicken; duck
+llama-3-8b-instruct,Northern_Nigeria,1,Sa-en-7,1,"akara, puff-puff, chapman, and plantain chips.",fried bean cake; flour cake; malaria; kek
+llama-3-8b-instruct,Northern_Nigeria,1,Ta-pe-21,1,"empty spaces, streets, and fields.",football field; clearly; land; neighborhood field; school field
+llama-3-8b-instruct,Northern_Nigeria,1,Ta-pe-29,0,rugby,football
+llama-3-8b-instruct,Northern_Nigeria,1,Th-en-03,1,nigerian premier league (football),ball; football
+llama-3-8b-instruct,Northern_Nigeria,1,Th-en-11,0,mikel obi,ahmad musa; cristiano ronaldo
+llama-3-8b-instruct,Northern_Nigeria,1,Th-en-15,1,football,football
+llama-3-8b-instruct,Northern_Nigeria,1,Th-en-35,1,dinner,rice; dinner; breakfast
+llama-3-8b-instruct,Northern_Nigeria,1,Th-en-37,1,18,21; 18; 22
+llama-3-8b-instruct,Northern_Nigeria,1,Th-en-44,0,jollof rice,none; rice; mashed food
+llama-3-8b-instruct,Northern_Nigeria,1,Th-en-45,0,friday night jollof rice and suya.,cooking; house cleaning
+llama-3-8b-instruct,Northern_Nigeria,1,Th-en-51,0,islamic studies,english; tax; arithmetic; science
+llama-3-8b-instruct,Northern_Nigeria,1,Tmp-ar-01,0,mosques.,library
+llama-3-8b-instruct,Azerbaijan,1,Al-en-01,0,pita bread with cheese,"nuts; chips; traditional azerbaijani pastry in a round shape filled with anise or fennel seed, cumin, cinnamon, turmeric, salt and pepper.; shorgoghal; akuri; azerbaijani scrambled egg dish; eggs; milk product; lacticinia; dairy product"
+llama-3-8b-instruct,Azerbaijan,1,Al-en-04,0,pomegranate,apple; orange; pear
+llama-3-8b-instruct,Azerbaijan,1,Al-en-19,1,english,russian; english
+llama-3-8b-instruct,Azerbaijan,1,Al-en-39,1,plov and shakarpara.,cake; azerbaijani rice; pilau; pilav; pilaf
+llama-3-8b-instruct,Azerbaijan,1,An-ar-03,1,5,6; 5
+llama-3-8b-instruct,Azerbaijan,1,Ca-sp-06,1,breakfast,dinner; breakfast
+llama-3-8b-instruct,Azerbaijan,1,Ca-sp-11,1,sunday,friday; sunday; saturday; every day; weekend
+llama-3-8b-instruct,Azerbaijan,1,Ca-sp-41,1,with their children or in specialized retirement homes.,house; home; in family houses; with their family; rented house; rent; with their children; with their parents
+llama-3-8b-instruct,Azerbaijan,1,Gu-ch-08,1,futsal.,soccer; football; volleyball
+llama-3-8b-instruct,Azerbaijan,1,Gu-ch-38,1,4,4
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-14,1,oil,oil
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-24,1,swimming pools,entertainment centers; entertainment center; boulevard park; aqua park; nabran; game park
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-26,1,"* 7 years old: start of compulsory education
+* 14 years old: permission to work part-time
+* 16 years old: full-time education or vocational training
+* 18 years old: legal adulthood",getting married; marriage; moving out; finding a job; finding a home; finding a house; working
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-28,0,newroz (march 21st),fortieth day; the fortieth day after birth celebration; 40th day; 40; birthday
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-29,0,30,50; 18; 1; 20
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-33,1,məktəb (school),home; house; library
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-34,0,"elementary school students in azerbaijan usually start school at the age of 6-7 and attend school from 9:00 am to 3:00 pm, five days a week.",car; bus; metro; public transport; walk
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-35,1,madrasahs,lyceums; gymnasiums; private tutor; private university; private universities
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-36,1,gymnasium,mathematics; math; english; natural sciences
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-37,1,"jeans, t-shirts, and school uniforms.",school uniform
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-40,0,"play outdoor games, socialize with friends.",chat; study
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-42,1,"azerbaijani language, literature, and history, math, physics, chemistry, and foreign language (usually english).",mathematics; math; azerbaijani; physics; chemistry; geography; english; mother tongue; second language; history; biology
+llama-3-8b-instruct,Azerbaijan,1,Ji-ko-45,1,music concerts.,music performance; socializing; socialize
+llama-3-8b-instruct,Azerbaijan,1,Jo-sp-13,0,windsurfing,swimming
+llama-3-8b-instruct,Azerbaijan,1,Jo-sp-19,0,mingachevir region,imishli; gadabay; aghdam; goychay; guba; quba
+llama-3-8b-instruct,Azerbaijan,1,Jod-ch-01,1,"fork, spoon, and knife.",spoon; fork; knife
+llama-3-8b-instruct,Azerbaijan,1,Jod-ch-07,0,2.3,2; 0.5; 3; 1
+llama-3-8b-instruct,Azerbaijan,1,Jod-ch-60,1,8,8; 9
+llama-3-8b-instruct,Azerbaijan,1,Ki-pe-34,1,chai (tea),tea
+llama-3-8b-instruct,Azerbaijan,1,Kik-in-16,1,chai (tea),tea; coffee
+llama-3-8b-instruct,Azerbaijan,1,Kik-in-36,1,gurban gurbanov,gurban gurbanov
+llama-3-8b-instruct,Azerbaijan,1,Kik-in-37,1,qarabağ vs neftçi,neftchi vs qarabag; neftci vs qarabag; qarabag fk vs neftchi; qarabag fk vs neftci; qarabag vs neftchi; qarabag vs neftci
+llama-3-8b-instruct,Azerbaijan,1,Na-ko-19,0,"aghayev, emin",azər qarayev
+llama-3-8b-instruct,Azerbaijan,1,Na-ko-20,1,wrestling,wrestling; summer olympic games; soccer; football; european games
+llama-3-8b-instruct,Azerbaijan,1,Na-ko-29,0,dina muradowa,haci haciyev
+llama-3-8b-instruct,Azerbaijan,1,Na-ko-33,0,pomegranate seeds.,azerbaijani rice; pilau; pilav; pilaf; sweets; cake; russian salad; paytakht salati; olivier salad; paytaxt salati salad
+llama-3-8b-instruct,Azerbaijan,1,Na-ko-39,1,money.,money; flower
+llama-3-8b-instruct,Azerbaijan,1,Ne-ar-06,1,"pita bread with herbs, cheese, and vegetables, as well as traditional dishes such as kebabs, dolma, and pilaf.",dates; azerbaijani rice; pilau; pilav; pilaf; dolma; stuffed grape leaves; soup
+llama-3-8b-instruct,Azerbaijan,1,Ne-ar-09,1,"plov, kebabs, and baklava.",azerbaijani rice; pilau; pilav; pilaf; dates; dolma; stuffed grape leaves
+llama-3-8b-instruct,Azerbaijan,1,Ne-ar-26,1,socar (state oil company of azerbaijan republic),state oil company of azerbaijan; socar
+llama-3-8b-instruct,Azerbaijan,1,Ne-ar-36,1,"plov (a rice dish with meat, vegetables, and spices), dolma, kebabs, and sweets like baklava and shakarpara.",azerbaijani rice; pilau; pilav; pilaf; dolma; stuffed grape leaves; dushbara; dushbere; dumpling soup; dushpara
+llama-3-8b-instruct,Azerbaijan,1,Ne-ar-38,0,gözleme,halva; halvah; halwa; azerbaijani rice; pilau; pilav; pilaf; lamb; mutton; sheep
+llama-3-8b-instruct,Azerbaijan,1,New-as-20,0,wrestling,chess; basketball
+llama-3-8b-instruct,Azerbaijan,1,New-ch-07,0,"pomegranate juice, tea, and fruit (such as apple, orange, and grape).",oily food; oily meal; oily; fried meat; heavy meal; khash; khashi
+llama-3-8b-instruct,Azerbaijan,1,New-ch-16,0,"""fight club""",namus; honor
+llama-3-8b-instruct,Azerbaijan,1,New-ch-32,1,microsoft office,excel; microsoft excel; microsoft word; word; microsoft office; microsoft office programs
+llama-3-8b-instruct,Azerbaijan,1,New-ch-38,1,"baku, sumgayit, lankaran, and ganja",sumgait; baku; gadabay; guba; quba
+llama-3-8b-instruct,Azerbaijan,1,New-ch-44,1,1 month,3 months; three months; 2 months; two months; six months; 6 months; one month; 1 month
+llama-3-8b-instruct,Azerbaijan,1,New-ch-73,0,football,sports; music; debate; self-development; self-improvement; personal development
+llama-3-8b-instruct,Azerbaijan,1,New-en-05,1,plov,doner kebab; döner kebab; pasta; potato; scrambled egg; tomato egg; fried potato
+llama-3-8b-instruct,Azerbaijan,1,New-en-19,1,baku national stadium,tofiq bahramov stadium; tofig bahramov republican stadium; baku olympic stadium
+llama-3-8b-instruct,Azerbaijan,1,New-en-41,1,hikmet huseynov,mübariz mansimov; mubariz mansimov; hajji mirza zeynalabdin taghi; haji zeynalabdin taghiyev; zeynalabdin taghiyev; hajji mirza zeynalabdin taghiyev
+llama-3-8b-instruct,Azerbaijan,1,New-en-47,0,wine cellars,fruit tree; flower; vegetable garden; garbage; trash; tree
+llama-3-8b-instruct,Azerbaijan,1,New-en-56,1,russian,russian language; russian
+llama-3-8b-instruct,Azerbaijan,1,New-en-68,1,"detention, suspension, expulsion, and parental notification.",notice to parents; talking to parents; parent-teacher conference; meeting with parents; parent meeting; disciplinary punishments; get punished; punishment; scolded by the teacher; get suspended from school; suspension
+llama-3-8b-instruct,Azerbaijan,1,New-en-69,1,"jafar jabbarly, samad vurgun, mirza fatali akhundov, abbasgulu bakikhanov, rustam mustafayev, and nizami ganjavi.",nezāmi; nizami ganje'i; nizami; jamal ad-dīn abū muḥammad ilyās ibn-yūsuf ibn-zakkī; nizami ganjavi; fuzuli; muhammad bin suleyman; samad vurghun; mirza alakbar sabir; sabir; jafar jabbarly; jafar jabbarli; jafar gafar oghlu jabbarly; mikayil mushfig
+llama-3-8b-instruct,Azerbaijan,1,New-gr-06,0,lavash with khachapuri and cheese.,doner kebab; döner kebab; pizza; burger; fast food
+llama-3-8b-instruct,Azerbaijan,1,New-gr-08,1,pivo (beer),beer; araq; distilled spirit; arak; wine
+llama-3-8b-instruct,Azerbaijan,1,New-gr-15,1,shakarparaçeviz,dessert made of filo pastry sheets; pakhlava; baklava; half-moon shaped sweet pastry; shekarbura
+llama-3-8b-instruct,Azerbaijan,1,New-gr-58,1,teachers,teaching; tutoring; teacher; seller; sales staff; sales worker; service worker; service staff
+llama-3-8b-instruct,Azerbaijan,1,New-ha-08,0,pomegranate,dovga; dovgha; yogurt soup with vegetables; cabbage roll; cabbage dolma; farcellets de col; stuffed cabbage; soup; chigirtma; meal with egg; meat stew; meat soup; bozbash
+llama-3-8b-instruct,Azerbaijan,1,New-in-01,1,starbucks,starbucks; mado; gloria jean's coffee
+llama-3-8b-instruct,Azerbaijan,1,New-in-62,1,baku state university of oil and industry (bsuoi),azerbaijan technical university; azerbaijan state oil and industry university; ‎azerbaijan diplomatic academy; ada university; ada; bhos; baku higher oil school; baku engineering university
+llama-3-8b-instruct,Azerbaijan,1,New-ko-02,1,childbirth education classes,yoga; prenatal class; meditation
+llama-3-8b-instruct,Azerbaijan,1,New-ko-03,1,"""xalça xalça""",jujalarim; my little chicks; tiq tiq xanim; knock-knock lady; my playful ball
+llama-3-8b-instruct,Azerbaijan,1,New-pe-06,0,plov.,azerbaijani rice; pilau; pilav; pilaf; dolma; stuffed grape leaves; kutab; stuffed flatbread; gutap; qutab; kebab
+llama-3-8b-instruct,Azerbaijan,1,New-pe-20,0,beach soccer,volleyball
+llama-3-8b-instruct,Azerbaijan,1,New-pe-49,1,mosques,at mosques; mosque; at mosque; home; house
+llama-3-8b-instruct,Azerbaijan,1,New-pe-65,0,34,15; 12; 20; 17
+llama-3-8b-instruct,Azerbaijan,1,New-pe-76,1,picnicking,picnic; walking; walk; sports; exercising; drive cars; driving cars
+llama-3-8b-instruct,Azerbaijan,1,New-pe-86,0,heydar aliyev center,tv tower; maiden tower
+llama-3-8b-instruct,Azerbaijan,1,New-spme-05,1,"pofit, baklava, gurabiyâ, shokoladka, and kadaif.",dessert made of filo pastry sheets; pakhlava; baklava; half-moon shaped sweet pastry; shekarbura; dough filled with almonds; badambura; goghal; savory pastry
+llama-3-8b-instruct,Azerbaijan,1,New-spme-37,1,medicine,engineering; medicine; economy; computer science; business
+llama-3-8b-instruct,Azerbaijan,1,New-su-24,1,"football (soccer), wrestling",track and field; cycling; soccer; football; volleyball; gymnastics
+llama-3-8b-instruct,Azerbaijan,1,New-su-33,1,business casual.,black formal suit; professional clothes; formal clothes; suit; blouse and skirt; dress
+llama-3-8b-instruct,Azerbaijan,1,New-su-34,1,tar (traditional azerbaijani instrument),music; musical intrument; choir; violin; piano
+llama-3-8b-instruct,Azerbaijan,1,New-su-57,1,cattle,cow; sheep; goat
+llama-3-8b-instruct,Azerbaijan,1,New-su-58,1,"beef cattle, sheep, goats, pigs, and chickens.",cow; sheep; chicken
+llama-3-8b-instruct,Azerbaijan,1,Ni-en-12,1,baku state university (bsu),azerbaijan diplomatic academy; ada university; ada; unec; azerbaijan state university of economics; bhos; baku higher oil school
+llama-3-8b-instruct,Azerbaijan,1,Sa-en-31,1,dog,cat; dog
+llama-3-8b-instruct,Azerbaijan,1,Sa-en-7,1,"pita bread with herbs, lavash with cheese, and fried doughnuts (səməlifə) are popular snacks in azerbaijan.",chips; kutab; stuffed flatbread; gutap; qutab; pirozhki; cookie
+llama-3-8b-instruct,Azerbaijan,1,Ta-pe-21,1,parks and streets.,soccer field; football field; sports field; street; school yard
+llama-3-8b-instruct,Azerbaijan,1,Ta-pe-29,1,football,soccer; football
+llama-3-8b-instruct,Azerbaijan,1,Th-en-03,0,futsal premier league,azerbaijan premier league
+llama-3-8b-instruct,Azerbaijan,1,Th-en-11,1,teymur mammadov,rafael aghayev; teimour radjabov; teymur rajabov; teimour boris oghlu radjabov
+llama-3-8b-instruct,Azerbaijan,1,Th-en-15,1,alpine skiing,skiing; ski; snowboarding; figure skating
+llama-3-8b-instruct,Azerbaijan,1,Th-en-35,1,dinner,dinner
+llama-3-8b-instruct,Azerbaijan,1,Th-en-37,1,18,25; 18; 24
+llama-3-8b-instruct,Azerbaijan,1,Th-en-44,1,plov.,azerbaijani rice; pilau; pilav; pilaf; kebab; barbecue; grill; kutab; stuffed flatbread; gutap; qutab; cutlet; dolma; stuffed grape leaves
+llama-3-8b-instruct,Azerbaijan,1,Th-en-45,1,playing board games,tv; television; watch tv; watch television; watch series; to watch television; conversation; to talk; talk; board game; playing board game; play board game
+llama-3-8b-instruct,Azerbaijan,1,Th-en-51,1,mathematics,mathematics; math; physics
+llama-3-8b-instruct,Azerbaijan,1,Th-en-53,0,school parties (təsilər),sports competition; dance competition
+llama-3-8b-instruct,Azerbaijan,1,Tmp-ar-01,1,libraries and dormitories.,library; libraries; to the library; cafe; cafes; home; house; at home
+llama-3-8b-instruct,North_Korea,1,Al-en-01,0,kimchi,candy; finger-shaped biscuit; finger-shaped cookie; finger cookie; finger biscuit; puffed corn; puffed maize; corn puff; pea puff; cookie; biscuit; snack; cracker
+llama-3-8b-instruct,North_Korea,1,Al-en-04,1,apple,pear; apple; apricot; tangerine; mandarin
+llama-3-8b-instruct,North_Korea,1,Al-en-19,1,mandarin chinese,english; chinese
+llama-3-8b-instruct,North_Korea,1,Al-en-32,0,naengmyeon,rice cake; tteok; songpyeon; jeon; korean pancake; wild vegetable; wild greens; mountain greens
+llama-3-8b-instruct,North_Korea,1,Al-en-39,1,kimchi and cold noodles.,rice cake; tteok; meat; white rice; polished rice; noodles; rice; boiled rice; cooked rice; steamed rice; sea mustard soup; seaweed soup; korean cold noodles; cold noodles; raengmyŏn; naengmyeon; dumpling; mandu
+llama-3-8b-instruct,North_Korea,1,An-ar-03,0,4,7; 2; 8; 3; 12
+llama-3-8b-instruct,North_Korea,1,Ca-sp-06,1,lunch,breakfast; three meals; dinner; evening meal; supper; lunch
+llama-3-8b-instruct,North_Korea,1,Ca-sp-11,0,sunday,every day; every evening
+llama-3-8b-instruct,North_Korea,1,Ca-sp-41,1,institutions,house; home; old folks' home; old age home; nursing home; old people's home; retirement home; nursing hospital; care hospital; child's house
+llama-3-8b-instruct,North_Korea,1,Gu-ch-08,1,table tennis,marathon; running; soccer; play ball; ball game; tug-of-war; taekwondo; tae kwon-do; taekwon-do; tae kwon do; tae-kwon-do
+llama-3-8b-instruct,North_Korea,1,Gu-ch-38,1,4,4; 5; 6; 3
+llama-3-8b-instruct,North_Korea,1,Ji-ko-14,1,coal,iron ore; coal; lumber; wood; timber; walleye pollock; alaska pollock; gadus chalcogrammus; mineral; aquatic product; marine product; fishery product; steel; weapon; weaponry; arm; armament
+llama-3-8b-instruct,North_Korea,1,Ji-ko-24,0,none.,mangyongdae funfair; daesongsan amusement park; pyongyang munsu water park; munsu water park; water park; sledding hill; playground
+llama-3-8b-instruct,North_Korea,1,Ji-ko-25,1,"* january 14: day of the shining star (kim jong-il's birthday)
+* april 15: day of the sun (kim il-sung's birthday)
+* september 9: day of the foundation of the democratic people's republic of korea",ch'usŏk; chuseok; korean thanksgiving day; lunar new year; sŏllal; korean new year; birthday of kim jong un; birthday of president; birthday of kim family; birthday of kim jong il; birthday of kim il sung; international women's day; march 8
+llama-3-8b-instruct,North_Korea,1,Ji-ko-26,0,"according to north korean tradition:
+
+* 1st birthday: child's first haircut and introduction to social circle
+* 10th birthday: child begins attending school and starts to take on household chores
+* 16th birthday: child is considered a young adult and begins to take on more responsibilities
+* 18th birthday: child is considered an adult and is expected to be self-sufficient and contribute to family income",after marriage; marriage; graduation; university; conscripted into the army; join the army; military enlistment
+llama-3-8b-instruct,North_Korea,1,Ji-ko-28,1,100th day,10; after 10 days; 10 days after birth; after one month; after a month; one month after birth; a month after birth; 100th day; hundredth day
+llama-3-8b-instruct,North_Korea,1,Ji-ko-29,0,kim il-sung's birthday (april 15),60th birthday; 60; 1; first birthday; 61; 61st birthday
+llama-3-8b-instruct,North_Korea,1,Ji-ko-33,0,studying,house; home; neighborhood; town; village; friend's house; jangmadang; illegal market; informal market; marketplace; park
+llama-3-8b-instruct,North_Korea,1,Ji-ko-34,0,"elementary school students in north korea typically attend school from 8:30 am to 4:30 pm, monday to friday, with a one-hour lunch break.",on foot; walk; bike; bicycle; bus; subway
+llama-3-8b-instruct,North_Korea,1,Ji-ko-35,0,paebyol girls' schools.,english; mathematics; math; art; music; physical education; music; musical instrument; foreign language; computer; chinese
+llama-3-8b-instruct,North_Korea,1,Ji-ko-36,0,taedonggang academy,mathematics; math; english; computer; foreign language; art; music; physical education
+llama-3-8b-instruct,North_Korea,1,Ji-ko-37,1,uniforms,school uniform
+llama-3-8b-instruct,North_Korea,1,Ji-ko-40,0,they read patriotic literature and sing revolutionary songs.,rest; break; chat; chitchat; small talk; chatter; review; homework; assignment; jump rope; gymnastics; exercise; play with friends
+llama-3-8b-instruct,North_Korea,1,Ji-ko-42,1,"korean language, mathematics, science, social studies, and foreign language.",mathematics; math; korean; modern history; revolutionary history; modern and contemporary history; contemporary history; kim il sung revolutionary history; english; physical education; foreign language; science; natural science
+llama-3-8b-instruct,North_Korea,1,Jo-sp-13,0,rowing,swimming; water polo; synchronized swimming; synchronised swimming; artistic swimming
+llama-3-8b-instruct,North_Korea,1,Jo-sp-19,1,hwanghae province.,hwanghae province; hwanghae-do; hwanghae; p'yŏngan; pyongan province; p'yŏngan-do; pyongan; pyeongan; pyeong-an-do; hamgyeong-do; hamgyong province; hamgyeong; hamgyŏng; hamgyŏng-do; hamgyong
+llama-3-8b-instruct,North_Korea,1,Jod-ch-01,1,chopsticks,gimchi; kimch'i; kimchi; spoon; rice pot; rice cooker; cast-iron pot; iron pot; chopsticks; chopstick; soup
+llama-3-8b-instruct,North_Korea,1,Jod-ch-07,0,2.5,1; 2
+llama-3-8b-instruct,North_Korea,1,Jod-ch-60,1,8,8; 9; 10; 12
+llama-3-8b-instruct,North_Korea,1,Ki-pe-34,1,makgeolli,sungnyung; scorched rice water; scorched rice tea; scorched-rice water; scorched-rice tea; water; goat milk; milk
+llama-3-8b-instruct,North_Korea,1,Kik-in-16,0,korean ginseng tea.,coffee; green tea; milk
+llama-3-8b-instruct,North_Korea,1,Kik-in-36,0,kim jong-hun,kim jong-un; park du-ik
+llama-3-8b-instruct,North_Korea,1,Kik-in-37,0,april 25 vs ryemyong,april 25 vs. amnok river; april 25 sports team vs. amnokgang sports team
+llama-3-8b-instruct,North_Korea,1,Na-ko-19,0,kim il-ju,jin-sim jeong; jeong jin-sim; chŏng chin-sim; chin-sim chŏng
+llama-3-8b-instruct,North_Korea,1,Na-ko-20,1,table tennis,soccer; weightlifting; shooting; shooting sports; table tennis; ping-pong; basketball; volleyball
+llama-3-8b-instruct,North_Korea,1,Na-ko-33,1,tteokguk,rice cake; tteok; dumpling; half-moon-shaped rice cake; songpyeon; noodles; potato starch noodles; starch noodles; boiled pork; rice cake soup; dumpling soup; sticky rice cake; glutinous rice cake; rice cake; bean rice cake
+llama-3-8b-instruct,North_Korea,1,Na-ko-39,1,money.,money; bouquet; cash; rice; congratulatory money
+llama-3-8b-instruct,North_Korea,1,Ne-ar-26,0,korea kumgang tourism company,complexes; hwanghae iron and steel complex; kangson steel plant; pyongyang textile factory; steelworks; steelworks; automobile manufacturing plant; auto factory; car factory; automobile factory; automobile plant
+llama-3-8b-instruct,North_Korea,1,Ne-ar-36,0,naengmyeon (cold buckwheat noodles) and kimchi stew.,rice cake; tteok; cold noodles; soondae; sundae; korean sausage; boiled pork
+llama-3-8b-instruct,North_Korea,1,New-as-20,1,table tennis,table tennis; ping-pong; basketball; table tennis; volleyball; handball
+llama-3-8b-instruct,North_Korea,1,New-ch-07,1,"pyrus communis, hwanggeum-ju, and jangajji.",dried pollack; pollack; pollock; alaska pollock; stir-fried tofu; gimchi; kimch'i; kimchi; tofu; bean curd; potato tofu soup; pork soup; dog meat soup; meat; squid
+llama-3-8b-instruct,North_Korea,1,New-ch-16,0,"""run, grandma, run!""",family badminton team; last ball; run and run
+llama-3-8b-instruct,North_Korea,1,New-ch-32,0,microsoft office,woori office; woori
+llama-3-8b-instruct,North_Korea,1,New-ch-38,1,"rason economic zone, nampo, kaesong industrial complex.",rajin; rason; rajin-sŏnbong; chongjin; chŏngjin; wonsan; sinŭiju; sinuiju; hamhŭng; hamhung; pyongyang; pyongsong; pyŏngsŏng
+llama-3-8b-instruct,North_Korea,1,New-en-05,1,rice and kimchi.,tofu rice; artificial meat rice; soy meat rice; mock meat rice; kimbap; gimbap; pungpung-i rice cake; instant noodles; ramen; korean cold noodles; cold noodles; raengmyŏn; naengmyeon
+llama-3-8b-instruct,North_Korea,1,New-en-19,0,ryomyong stadium,rungrado may day stadium; the rungrado 1st of may stadium pyongyang; rungrado 1st of may stadium
+llama-3-8b-instruct,North_Korea,1,New-en-41,0,kim jong-un,foreign-currency-earning enterprise manager; foreign currency-earning enterprise; machinery factory; machinery factory manager; steelworks; steel mill; steel mill manager; steelworks manager
+llama-3-8b-instruct,North_Korea,1,New-en-47,0,nothing.,toilet; kitchen garden crops; vegetable garden crops; garden crops; fertilizer
+llama-3-8b-instruct,North_Korea,1,New-en-56,1,chinese,english; chinese
+llama-3-8b-instruct,North_Korea,1,New-en-68,1,"prison camps, execution, and forced labor.",cleaning; group punishment; self-criticism; punishment; corporal punishment; parent-teacher conference; parent-teacher meeting; standing punishment; writing a reflection; writing a self-criticism; writing reflections
+llama-3-8b-instruct,North_Korea,1,New-en-69,0,"kim il-sung, kim jong-il, kim jong-il's wife ko yong-hui, pak wan-so, o chong-hui, and yi in-jik.",kim so-wol; kim sowol; author from the japanese colonial period; writer during the japanese colonial period; ri ki-yong; ri chunku; ri chung-gu
+llama-3-8b-instruct,North_Korea,1,New-gr-06,0,bibimbap,artificial meat rice; soy meat rice; mock meat rice; pork belly; korean cold noodles; cold noodles; raengmyŏn; naengmyeon; soondae; sundae; korean sausage; chicken
+llama-3-8b-instruct,North_Korea,1,New-gr-08,1,soju,soju; homemade alcohol; nongtaegi; home brewed liquor; baijiu; shaojiu; pyongyang beer
+llama-3-8b-instruct,North_Korea,1,New-gr-15,0,patbingsu,puffed corn; puffed maize; popcorn; roasted beans; corn rice cake; korean taffy; yeot; hardtack
+llama-3-8b-instruct,North_Korea,1,New-gr-58,1,teacher,all; mine worker; miner; farm worker; rural mobilization; social mobilization
+llama-3-8b-instruct,North_Korea,1,New-ha-08,0,kimchi,muk; soybean paste soup; doenjang soup; bean paste soup; porridge
+llama-3-8b-instruct,North_Korea,1,New-in-62,0,kim il-sung university,kim chaek university of technology; chongjin mine and metal university
+llama-3-8b-instruct,North_Korea,1,New-ko-02,0,traditional childbirth education lectures,playing music; play music; enjoying music; enjoy music; prenatal music education; prenatal education music; good book; good movie; uplifting movie; nutritious food; good food; healthy food
+llama-3-8b-instruct,North_Korea,1,New-ko-03,0,"""our great nation""",theme song from boy general; song from 'boy general'; milky way in blue heaven; clever raccoon dog; half-moon; taehongdan potato
+llama-3-8b-instruct,North_Korea,1,New-pe-06,1,jjigae.,meat soup; soybean paste soup; doenjang soup; bean paste soup; fish soup; tofu soup; napa cabbage soup; cabbage soup
+llama-3-8b-instruct,North_Korea,1,New-pe-20,0,wrestling,swimming; underwater dance
+llama-3-8b-instruct,North_Korea,1,New-pe-65,0,14,10; 7; 12; 16
+llama-3-8b-instruct,North_Korea,1,New-pe-76,0,fishing,walk; run; sing; dance; people's health exercise; ride; go see flowers; blossom viewing
+llama-3-8b-instruct,North_Korea,1,New-pe-86,0,taejon tower,tower of the juche idea; juche tower
+llama-3-8b-instruct,North_Korea,1,New-spme-05,0,"kimchi-flavored lollipops, rice cakes, and sesame seeds candies.",candy; jawbreaker; jaw breaker; candy ball; chocolate; puffed bean candy; bean candy; gyeongheung chocolate
+llama-3-8b-instruct,North_Korea,1,New-spme-37,0,dentistry,english; chinese; computer; computer science; military; economics
+llama-3-8b-instruct,North_Korea,1,New-su-24,0,table tennis,chin-up bar; pull-up bar; high bar; horizontal bar; swing; people's health exercise; taekwondo; tae kwon-do; taekwon-do; tae kwon do; tae-kwon-do
+llama-3-8b-instruct,North_Korea,1,New-su-33,1,"traditional korean attire, often with a hanbok.",neat clothes; neat clothing; school uniform; korean traditional dress; hanbok; korean traditional clothes; suit
+llama-3-8b-instruct,North_Korea,1,New-su-34,1,p'yonghwa singing troupe,individual musical instrument; accordion; violin; musical instrument; vocal music; sing
+llama-3-8b-instruct,North_Korea,1,New-su-57,0,cattle,pig; chicken; dog; puppy; rabbit
+llama-3-8b-instruct,North_Korea,1,New-su-58,1,"rice, maize, and cattle.",cow
+llama-3-8b-instruct,North_Korea,1,Ni-en-12,1,kim il-sung university,kim il-sung university; kim jong un national defence university
+llama-3-8b-instruct,North_Korea,1,Sa-en-22,1,kim il-sung university,chosun university of physical education; chosun sports college; joseon college of physical education; chosun sports university; joseon sports college; joseon university of physical education; joseon sports university; chosun college of physical education; pyongyang sports college; pyongyang university of physical education; pyongyang sports university; pyongyang college of physical education; dprk sports university; dprk sports college; dprk college of physical education; north korea sports univ
+llama-3-8b-instruct,North_Korea,1,Sa-en-31,1,dogs,dog; puppy; cat; kitty
+llama-3-8b-instruct,North_Korea,1,Sa-en-7,1,"kimchi, rice cakes, and dried persimmon.",jawbreaker; jaw breaker; candy ball; candy; cookie; biscuit; snack; cracker; bombardment; puffed rice snack; fish-shaped snack; finger-shaped biscuit; finger-shaped cookie; finger cookie; finger biscuit; corn; potato; sweet potato
+llama-3-8b-instruct,North_Korea,1,Ta-pe-21,1,stadiums and schools.,playground; field; school playground; schoolyard; village yard; yard; home; at home
+llama-3-8b-instruct,North_Korea,1,Ta-pe-29,1,football (soccer),individual event; soccer; football; underwater ballet; taekwondo; tae kwon-do; taekwon-do; tae kwon do; tae-kwon-do; basketball; table tennis; ping-pong
+llama-3-8b-instruct,North_Korea,1,Th-en-03,0,football (soccer),republic championship; national ssireum competition
+llama-3-8b-instruct,North_Korea,1,Th-en-11,0,kim il-sung,pak yung-sun; yung-sun pak; song-ok jong; jong song-ok; sun-hui kye; kye sun-hui
+llama-3-8b-instruct,North_Korea,1,Th-en-15,1,figure skating,skate; skating; ski; skiing
+llama-3-8b-instruct,North_Korea,1,Th-en-35,1,dinner,breakfast; morning; dinner; evening
+llama-3-8b-instruct,North_Korea,1,Th-en-37,0,21,28; 27; 29; 17; 33; 26; 30
+llama-3-8b-instruct,North_Korea,1,Th-en-44,1,naengmyeon (cold noodles),rice; no difference; same as weekdays; bread; soondae; sundae; korean sausage; steamed pork meat; boiled pork meat; steamed pork; boiled pork; different from families and regions; it depends on families and regions
+llama-3-8b-instruct,North_Korea,1,Th-en-45,0,watching the evening news together.,have a talk; talk; talking; conversation; have a conversation; chat; chatter; market trading; informal market; marketplace; illegal market; jangmadang business; small-scale farming; vegetable gardening; kitchen garden farming; home gardening; cook foods; cooking; cook; television; watching television; watching tv; tv; watching movies; movies
+llama-3-8b-instruct,North_Korea,1,Th-en-51,1,history,mathematics; math; foreign language; kim il-sung revolutionary history; revolutionary history; hyukmyung history; kim il-sung hyukmyung history; history; english; political philosophy; politics; political thought
+llama-3-8b-instruct,North_Korea,1,Th-en-53,1,mass games,school sports; athletic meet; track meet; athletics competition; sport event; athletic sports; sports meet; field day; sports day; excursion; trip; going for a picnic; picnic; outing
+llama-3-8b-instruct,North_Korea,1,Tmp-ar-01,0,mount myohyang,classroom; school; school classroom; home; at home; dorm; dormitory; park; college; university
+llama-3-8b-instruct,West_Java,1,Al-en-01,0,krupuk.,cilok; jelly; rolled egg; cimol; candy; cilung
+llama-3-8b-instruct,West_Java,1,Al-en-04,1,durian,mango; durian; banana; lychee; lyre fruit; guava
+llama-3-8b-instruct,West_Java,1,Al-en-19,1,english,indonesian; english
+llama-3-8b-instruct,West_Java,1,Al-en-39,1,kue lapis.,cone-shaped rice; tumpeng; sponge cake; uduk rice; birthday cake; cake; liwet rice
+llama-3-8b-instruct,West_Java,1,An-ar-03,1,6,6; 12; 5; 11
+llama-3-8b-instruct,West_Java,1,Ca-sp-06,1,makan siang (lunch),lunch; breakfast; dinner
+llama-3-8b-instruct,West_Java,1,Ca-sp-11,1,sunday,sunday; everyday; every day; saturday
+llama-3-8b-instruct,West_Java,1,Ca-sp-41,0,"institutions such as nursing homes, orphanages, and social institutions.",child's house
+llama-3-8b-instruct,West_Java,1,Gu-ch-08,1,futsal,soccer; football; volleyball; basketball; badminton; swim
+llama-3-8b-instruct,West_Java,1,Gu-ch-38,0,8,4
+llama-3-8b-instruct,West_Java,1,Ji-ko-14,0,clove,shoes
+llama-3-8b-instruct,West_Java,1,Ji-ko-24,1,water park,swimming pool; city park; swing; slide; futsal field; water park; zoo
+llama-3-8b-instruct,West_Java,1,Ji-ko-25,0,"lebaran, idul fitri, maulid nabi, natal, and christmas.",eid holiday
+llama-3-8b-instruct,West_Java,1,Ji-ko-26,1,"* 12-15 years old: children start to take responsibility for their own daily routines and chores.
+* 15-18 years old: children start to participate in family decision-making and have more freedom in their daily activities.
+* 18-21 years old: children are considered adults and have full independence from their parents.",leaving home to make a living; sleep alone
+llama-3-8b-instruct,West_Java,1,Ji-ko-28,0,the 7th day.,40
+llama-3-8b-instruct,West_Java,1,Ji-ko-29,0,15th birthday,17 years; 17
+llama-3-8b-instruct,West_Java,1,Ji-ko-33,0,mall or park.,sleep in the room; hanging out at the stall; playing phone; playing handphone; playing mobile; playing cell phone; mosque; home; house; go home; play with friends
+llama-3-8b-instruct,West_Java,1,Ji-ko-34,1,"by bus, on foot, or by motorcycle.",walk; minibus; take a minibus; accompanied by parents; picked up; pick up; public transportation; take public transportation; take a motorcycle taxi; motorcycle taxi
+llama-3-8b-instruct,West_Java,1,Ji-ko-35,1,islamic boarding school (pesantren),tutoring place; private tutoring place; language couse; after-school course; after school course
+llama-3-8b-instruct,West_Java,1,Ji-ko-36,1,sman (sekolah menengah atas),ganesha operation tutoring; go; tutoring; english course; place for tutoring
+llama-3-8b-instruct,West_Java,1,Ji-ko-37,1,"sarong, batik, or casual clothing.",ordinary uniform; uniform; school uniform; batik uniform; scout uniform; white uniform
+llama-3-8b-instruct,West_Java,1,Ji-ko-40,1,"play games, socialize, and eat.",snacking in the canteen; eat; play; play football; hanging out; chatting with friends
+llama-3-8b-instruct,West_Java,1,Ji-ko-42,1,"bahasa indonesia, mathematics, physics, biology, and one elective subject.",mathematics; maths; math; english language; indonesian language; scholastic aptitude test (sat); natural science
+llama-3-8b-instruct,West_Java,1,Ji-ko-45,1,food stalls and live music performances.,snacks; lots of snacks; music stage; music event; show
+llama-3-8b-instruct,West_Java,1,Jo-sp-13,0,kitesurfing,swim
+llama-3-8b-instruct,West_Java,1,Jo-sp-19,1,priangan.,cianjur; indramayu; subang; garut
+llama-3-8b-instruct,West_Java,1,Jod-ch-01,0,"satek, kopi, and sumpit.",spoon; plate; fork; glass; hand
+llama-3-8b-instruct,West_Java,1,Jod-ch-07,1,2.3,2; 1; 3
+llama-3-8b-instruct,West_Java,1,Jod-ch-60,1,8,8; 9; 10
+llama-3-8b-instruct,West_Java,1,Ki-pe-34,1,es teh (hot tea with sugar),warm tea; tea; warm water; water; coffee
+llama-3-8b-instruct,West_Java,1,Kik-in-16,1,es teler.,bandrek; bajigur; tea; hot team; black coffee; coffee
+llama-3-8b-instruct,West_Java,1,Kik-in-36,0,santoso pancawina,shin tae yong; bojan hodak; djadjang nurdjaman
+llama-3-8b-instruct,West_Java,1,Kik-in-37,1,persija vs persib,persib versus persija
+llama-3-8b-instruct,West_Java,1,Na-ko-19,0,ade chandra,megawati; megawati hangestri
+llama-3-8b-instruct,West_Java,1,Na-ko-20,1,badminton,badminton; football; ball
+llama-3-8b-instruct,West_Java,1,Na-ko-33,0,kue putu.,long life noodles
+llama-3-8b-instruct,West_Java,1,Na-ko-39,1,uang pelicin (a cash gift),money; envelope containing money; envelope; gift; greetings; appliances
+llama-3-8b-instruct,West_Java,1,Ne-ar-06,1,"soto, krupuk, and es teler.",compote; dates; sugar palm fruit; banana compote; fruit soup; fritters
+llama-3-8b-instruct,West_Java,1,Ne-ar-09,0,"krupuk, martabak, and es teler.",chicken with coconut milk; ketupat; rendang; fried chili paste; ulen
+llama-3-8b-instruct,West_Java,1,Ne-ar-26,0,astra international,bri bank; regional water company; state electricity company
+llama-3-8b-instruct,West_Java,1,Ne-ar-36,1,nasi tumpeng.,karedok; meat; fruits; chicken rendang; rendang; balado
+llama-3-8b-instruct,West_Java,1,Ne-ar-38,0,krupuk.,yellow rice; boxed rice; cake; fruits
+llama-3-8b-instruct,West_Java,1,New-as-20,1,badminton,badminton; futsal; table tennis; basketball
+llama-3-8b-instruct,West_Java,1,New-ch-07,0,"bajigur, kopi, and rokok.",peanut; snack
+llama-3-8b-instruct,West_Java,1,New-ch-16,0,gara-gara baseball,garuda di dadaku
+llama-3-8b-instruct,West_Java,1,New-ch-32,1,microsoft office,microsoft exel; ms. excel; ms. word; web browser; microsoft office
+llama-3-8b-instruct,West_Java,1,New-ch-38,0,"cikarang, jakarta, and cirebon.",bandung; cianjur; karawang
+llama-3-8b-instruct,West_Java,1,New-ch-44,0,1-3 months,3 months
+llama-3-8b-instruct,West_Java,1,New-ch-73,1,"badminton, soccer, and volleyball.",sports; sports club
+llama-3-8b-instruct,West_Java,1,New-en-05,1,gado-gado,warteg food; fried chicken; noodles; fried noodles; fried rice
+llama-3-8b-instruct,West_Java,1,New-en-19,0,pakansari stadium,gelora bandung lautan api stadion; gelora bandung lautan api; jalak harupat; jalak harupat stadion; si jalak harupat; siliwangi
+llama-3-8b-instruct,West_Java,1,New-en-41,0,andi ariawan,haji ma'soem
+llama-3-8b-instruct,West_Java,1,New-en-47,1,pandanus plants.,garden; rice field; sunbathe place; kitchen; trees
+llama-3-8b-instruct,West_Java,1,New-en-56,0,hindi,english; english language
+llama-3-8b-instruct,West_Java,1,New-en-68,1,"detention, suspension, expulsion.",taken to the counseling office; suspension; drop out; repeating grade; unemployment
+llama-3-8b-instruct,West_Java,1,New-en-69,1,"pramoedya ananta toer, chairil anwar, ahmad tohari, and widji thukul.",chairil anwar; pramoedya ananta toer
+llama-3-8b-instruct,West_Java,1,New-gr-06,1,es teler.,seblak; tapioca meatball; meatball
+llama-3-8b-instruct,West_Java,1,New-gr-15,1,es teler,dodol; fermented cassava; misro; colenak; steamed cassava cake; layered cake
+llama-3-8b-instruct,West_Java,1,New-gr-58,0,teacher,porter; driver; security guard; construction worker
+llama-3-8b-instruct,West_Java,1,New-ha-08,1,gado-gado,dogfruit dish; dogfruit; vegetable; bitter melon dish; bitter melon; stink bean; karedok leunca; chicken buttock
+llama-3-8b-instruct,West_Java,1,New-in-01,0,starbucks,janji jiwa; kopi kenangan; kenangan; starbucks; kopi nako; purnama coffee shop
+llama-3-8b-instruct,West_Java,1,New-in-62,1,institut teknologi bandung (itb),bandung institute of technology; bandung institute of technology (itb)
+llama-3-8b-instruct,West_Java,1,New-ko-03,0,"""di balik milli""",tokecang; manuk dadali; balonku ada lima; ayun ambing
+llama-3-8b-instruct,West_Java,1,New-pe-06,0,gudeg.,sour soup; pumpkin; sweet potato
+llama-3-8b-instruct,West_Java,1,New-pe-20,1,volleyball,beach volleyball; volleyball; football; surfing
+llama-3-8b-instruct,West_Java,1,New-pe-49,0,purwakarta.,middle of the house; house; at the mosque; mosque; in the prayer room; in the room; large field
+llama-3-8b-instruct,West_Java,1,New-pe-65,0,34,10; 12
+llama-3-8b-instruct,West_Java,1,New-pe-76,0,visiting the tea plantations.,picnic; hanging out; sunbathe; jogging; exercise; eating together
+llama-3-8b-instruct,West_Java,1,New-pe-86,0,sunda kelapa tower,sate building; kujang sapasang tower
+llama-3-8b-instruct,West_Java,1,New-spme-05,1,"kue putu, kue cubit, and kue lapis.",chocolate banana; candy; popsicle; cotton candy; sweet martabak; serabi pancake; layered cake; fruit soup
+llama-3-8b-instruct,West_Java,1,New-spme-37,0,it (information technology),technique; business management; natural science
+llama-3-8b-instruct,West_Java,1,New-su-24,1,"badminton, sepak takraw, and futsal.",football; play football; badminton; chess
+llama-3-8b-instruct,West_Java,1,New-su-33,1,batik blouse and sarong.,uniform; batik; scout uniform
+llama-3-8b-instruct,West_Java,1,New-su-34,1,gamelan,karawitan; sundanese gamelan; drum band; band; kacapian
+llama-3-8b-instruct,West_Java,1,New-su-42,1,islam,islam
+llama-3-8b-instruct,West_Java,1,New-su-57,1,cattle,chicken; sheep; cow; goat; ox
+llama-3-8b-instruct,West_Java,1,New-su-58,1,"cattle, goats, sheep, pigs, chickens, and ducks.",ox
+llama-3-8b-instruct,West_Java,1,Ni-en-12,1,bandung institute of technology (itb),bandung institute of technology; bandung institute of technology (itb); university of indonesia; padjadjaran university; bogor agricultural institute
+llama-3-8b-instruct,West_Java,1,Ni-en-40,0,"""merry christmas, darling""",jingle bells; jingle bell
+llama-3-8b-instruct,West_Java,1,Sa-en-22,0,bandung institute of technology (itb),upi; unpad
+llama-3-8b-instruct,West_Java,1,Sa-en-31,1,cat,cat; dog; bird
+llama-3-8b-instruct,West_Java,1,Sa-en-7,1,"rujak, krupuk, gorengan, and martabak.",cilok; seblak; cireng; tapioca meatball; cuanki
+llama-3-8b-instruct,West_Java,1,Ta-pe-21,1,"stadiums, fields, and streets.",in the field; football field; field; in the yard; in the rice field
+llama-3-8b-instruct,West_Java,1,Ta-pe-29,1,badminton,football; play football; badminton
+llama-3-8b-instruct,West_Java,1,Th-en-03,1,indonesian football league (liga 1),bri league 1; mobile legends indonesia; league 1
+llama-3-8b-instruct,West_Java,1,Th-en-11,0,andik vermansyah,anthony sinisuka ginting; cristiano ronaldo; lionel messi; taufik hidayat
+llama-3-8b-instruct,West_Java,1,Th-en-35,1,dinner,dinner; breakfast; lunch
+llama-3-8b-instruct,West_Java,1,Th-en-37,1,18,18; 19; 23; 20
+llama-3-8b-instruct,West_Java,1,Th-en-45,0,watching tv together,watering
+llama-3-8b-instruct,West_Java,1,Th-en-51,0,indonesian.,mathematics; english language; natural science
+llama-3-8b-instruct,West_Java,1,Th-en-53,0,festival,scout; football; basketball; volleyball; flag-raising troop; sports
+llama-3-8b-instruct,West_Java,1,Tmp-ar-01,0,"universitas padjadjaran, universitas gadjah mada, and institut teknologi bandung.",library; café; friend's boarding house; campus

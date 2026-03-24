@@ -7,6 +7,30 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from collections import defaultdict
 from tqdm import tqdm
+
+# Folder names under mc_data/ (same as evaluation_utils); inlined so resolution works
+# even when evaluation_utils fails to import (e.g. wrong cwd / missing deps).
+_MC_MODEL_TO_FOLDER_FALLBACK = {
+    "llama-3-8b-instruct": "llama3-8b",
+    "llama3-8b-instruct": "llama3-8b",
+    "meta-llama/Meta-Llama-3-8B-Instruct": "llama3-8b",
+    "qwen3-4b": "qwen3-4b",
+    "qwen3-14b": "qwen3-14b",
+    "qwen3-32b": "qwen3-32b",
+    "Qwen/Qwen3-4B": "qwen3-4b",
+    "Qwen/Qwen3-14B": "qwen3-14b",
+    "Qwen/Qwen3-32B": "qwen3-32b",
+    "qwen3.5-35b": "qwen3.5-35b",
+    "Qwen/Qwen3.5-35B-A3B": "qwen3.5-35b",
+    "mistral-3-14b-instruct-2512": "mistral-3-14b-instruct-2512",
+}
+try:
+    from evaluation_utils import MC_MODEL_TO_FOLDER as _MC_FROM_EU
+    MC_MODEL_TO_FOLDER = {**_MC_MODEL_TO_FOLDER_FALLBACK, **_MC_FROM_EU}
+except Exception:
+    MC_MODEL_TO_FOLDER = dict(_MC_MODEL_TO_FOLDER_FALLBACK)
+
+
 def calculate_mc_accuracy(results_file=None):
     if results_file is None:
         results_file = input("Results file (e.g. llama-3-8b-instruct-mc_res_r1.csv): ")
@@ -18,14 +42,28 @@ def calculate_mc_accuracy(results_file=None):
         # If filename looks like <model>-mc_res_*.csv, try mc_data/<model>/<filename> first
         if '-mc_' in base:
             model_sub = base.split('-mc_')[0]
-            candidate = os.path.join(mc_data_dir, model_sub, base)
-            if os.path.isfile(candidate):
-                found = candidate
+            # Try folder = filename prefix, then canonical folder (e.g. llama-3-8b-instruct -> llama3-8b)
+            folders_to_try = [model_sub]
+            mapped = MC_MODEL_TO_FOLDER.get(model_sub)
+            if mapped and mapped not in folders_to_try:
+                folders_to_try.append(mapped)
+            for folder in folders_to_try:
+                candidate = os.path.join(mc_data_dir, folder, base)
+                if os.path.isfile(candidate):
+                    found = candidate
+                    break
         if found:
             results_file = found
         else:
             print(f"Error: File not found: {results_file}")
-            print(f"Also tried: mc_data/<model>/{base} (with model from filename) and scanning mc_data subfolders")
+            print(
+                f"Tried: mc_data/<model>/{base} (prefix + folder aliases), "
+                f"then every subfolder of {mc_data_dir!r}"
+            )
+            print(
+                f"Hint: pass an absolute path, or run from repo and ensure "
+                f"{os.path.join(mc_data_dir, 'llama3-8b', base)} exists."
+            )
             sys.exit(1)
 
     df = pd.read_csv(results_file, encoding='utf-8')

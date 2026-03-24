@@ -6,10 +6,11 @@ from datasets import load_dataset
 from tqdm.auto import tqdm
 from persona_generator import generate_persona_description, cap
 from tools.utils import country_to_language
-from tools.llm_utils import get_llm, generate_text_funcs
+from tools.llm_utils import get_llm, generate_text_funcs, MISTRAL_SGLANG_MODEL_ID
 from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy
 import json_repair
+from token_counter import add_input_tokens, add_output_tokens, get_model_folder
 
 
 def is_valid_set(ds, i):
@@ -33,22 +34,13 @@ def is_valid_set(ds, i):
     return True
 
 
-async def evaluate_hard_initial(ds, mode):
-    """Run initial evaluation for Hard difficulty.
-    
-    Args:
-        ds: Dataset to evaluate
-        mode: Mode (eng_*, ling_*, or e2l_*)
-    
-    Returns:
-        Tuple of (data dict, correct count, total count)
-    """
+async def evaluate_hard_initial(ds, mode, difficulty="Hard"):
     data = {}
     correct = total = 0
     iteration = 1
     persona_description = ""
-    n_sets = (len(ds) + 3) // 4
-    for i in tqdm(range(0, len(ds), 4), total=n_sets, desc="Initial eval (Hard)", unit="set"):
+    # n_sets = (len(ds) + 3) // 4
+    for i in tqdm(range(0, len(ds), 4), total=len(ds) // 4, desc="Initial eval (Hard)", unit="set"):
         # ensure set of 4 options is complete
         isValidSet = is_valid_set(ds, i)
         
@@ -77,7 +69,8 @@ async def evaluate_hard_initial(ds, mode):
                 pretranslated, translated = await generate_persona_description(
                     prompt_question, 
                     country, 
-                    mode
+                    mode,
+                    difficulty,
                 )
                 if "l2e" in mode or "e2l" in mode:
                     persona_description = translated
@@ -115,9 +108,12 @@ async def evaluate_hard_initial(ds, mode):
                     )
                 }
             ]
-            
+
+            add_input_tokens(difficulty, mode, chat_input)
             llm_instance = get_llm()
-            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
+            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=False)
+            out_text = (thinking_content or "") + "\n" + (response or "")
+            add_output_tokens(difficulty, mode, out_text)
 
             try:
                 result = json_repair.loads(response)
@@ -175,20 +171,12 @@ async def evaluate_hard_initial(ds, mode):
     return data, correct, total
 
 
-async def evaluate_easy_initial(ds, mode):
-    """Run initial evaluation for Easy difficulty.
-    
-    Args:
-        ds: Dataset to evaluate
-        mode: Mode (eng_*, ling_*, or e2l_*)
-    
-    Returns:
-        Tuple of (data dict, correct count, total count)
-    """
+async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
     data = {}
     correct = total = 0
-    n_questions = len(ds)
-    # Only do a single question (assume first item in ds)
+    # n_questions = len(ds)
+    n_questions = 200 # used temporarily for steering
+
     for i in tqdm(range(n_questions), total=n_questions, desc="Initial eval (Easy)", unit="q"):
         cur_row = ds[i]
         prompt_question = cur_row["prompt_question"]
@@ -207,7 +195,8 @@ async def evaluate_easy_initial(ds, mode):
         pretranslated, translated = await generate_persona_description(
             prompt_question, 
             country, 
-            mode
+            mode,
+            difficulty,
         )
         if "l2e" in mode or "e2l" in mode:
             persona_description = translated
@@ -247,9 +236,12 @@ async def evaluate_easy_initial(ds, mode):
                 )
             }
         ]
-        
+
+        add_input_tokens(difficulty, mode, chat_input)
         llm_instance = get_llm()
-        thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=True)
+        thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=False)
+        out_text = (thinking_content or "") + "\n" + (response or "")
+        add_output_tokens(difficulty, mode, out_text)
         try:
             result = json_repair.loads(response)
             response_answer = result["answer"].upper().strip()
@@ -297,7 +289,7 @@ async def run_initial_eval(difficulty, mode, custom=None):
     
     Args:
         difficulty: "Easy" or "Hard"
-        mode: Mode (eng_*, ling_*, or e2l_*)
+        mode: Mode (eng, ling, l2e, or e2l)
         custom: Optional custom suffix to append to database path
     
     Returns:
@@ -308,19 +300,23 @@ async def run_initial_eval(difficulty, mode, custom=None):
     print(f"Dataset loaded ({len(ds)} examples). Starting evaluation...")
 
     if difficulty == "Hard":
-        data, correct, total = await evaluate_hard_initial(ds, mode)
+        data, correct, total = await evaluate_hard_initial(ds, mode, difficulty)
     else:
-        data, correct, total = await evaluate_easy_initial(ds, mode)
+        data, correct, total = await evaluate_easy_initial(ds, mode, difficulty)
 
     model_to_save = {
+        "Qwen/Qwen3-32B": "qwen3_32b",
+        "google/gemma-2-27b-it": "gemma2_27b",
+        "meta-llama/Llama-3.3-70B-Instruct": "llama33_70b",
         "Qwen/Qwen3-4B": "qwen3_4b",
         "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
         "Qwen/Qwen3-14B": "qwen3_14b",
-        "Qwen/Qwen3-32B": "qwen3_32b",
+        MISTRAL_SGLANG_MODEL_ID: "mistral3_14b",
+        "Qwen/Qwen3.5-35B-A3B": "qwen3.5_35b",
     }
-    
-    # write results to database (initial write)
-    db_path = f"../results/{mode[-2:]}/{mode[:-3]}/{difficulty.lower()}_t{llm_utils.TEMPERATURE}_{model_to_save[llm_utils.MODEL_NAME]}"
+    model_folder = get_model_folder(llm_utils.MODEL_NAME)
+    # write results to database: results/{mode}/{model}/{file}
+    db_path = f"../results/{mode}/{model_folder}/{difficulty.lower()}_t{llm_utils.TEMPERATURE}_{model_to_save[llm_utils.MODEL_NAME]}"
     if custom:
         db_path += f"_{custom}"
     db_path += ".db"

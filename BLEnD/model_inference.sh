@@ -38,36 +38,34 @@ export GOOGLE_PROJECT_NAME=""
 #     "llama-3-8b-instruct"
 # )
 
-MODEL_KEYS=("llama-3-8b-instruct")
+MODEL_KEYS=("qwen3-14b")
 
 COUNTRIES=("South_Korea" "UK" "US" "Algeria" "China" "Indonesia" "Spain" "Iran" "Mexico" "Assam" "Greece" "Ethiopia" "Northern_Nigeria" "Azerbaijan" "North_Korea" "West_Java")
 
 
 # Iterate over models, countries, languages, and prompts
-for run_num in {1..5}; do
-    for model_key in "${MODEL_KEYS[@]}"; do
-        for i in "${!COUNTRIES[@]}"; do
-            country="${COUNTRIES[$i]}"
-            
-            python model_inference.py --model "$model_key" \
-                                    --language "English" \
-                                    --country "$country" \
-                                    --question_dir "./data/questions" \
-                                    --question_file "${country}_questions.csv" \
-                                    --question_col Translation \
-                                    --id_col ID \
-                                    --output_dir "./llama3-8b_baseline_r${run_num}" \
-                                    --output_file "${model_key}-${country}_English_result.csv" \
-                                    --model_cache_dir ".cache" \
-                                    --gpt_azure "False" \
-                                    --gpus "0,1,2,3" \
-                                    --temperature 0.6 \
-                                    --top_p 1 \
-                                    --num_iterations 1 \
-                                    --sample_size 100 \
-                                    --use_persona "False" \
-                                    --use_reasoning "False"
-        done
+for model_key in "${MODEL_KEYS[@]}"; do
+    for i in "${!COUNTRIES[@]}"; do
+        country="${COUNTRIES[$i]}"
+        
+        python model_inference.py --model "$model_key" \
+                                --language "English" \
+                                --country "$country" \
+                                --question_dir "./data/questions" \
+                                --question_file "${country}_questions.csv" \
+                                --question_col Translation \
+                                --id_col ID \
+                                --output_dir "./qwen3-14b_i5" \
+                                --output_file "${model_key}-${country}_English_result.csv" \
+                                --model_cache_dir ".cache" \
+                                --gpt_azure "False" \
+                                --gpus "0,1,2,3" \
+                                --temperature 0.6 \
+                                --top_p 1 \
+                                --num_iterations 5 \
+                                --sample_size 100 \
+                                --use_persona "True" \
+                                --use_reasoning "True"
     done
 done
         # if [ "$language" != "English" ]; then

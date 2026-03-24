@@ -29,8 +29,7 @@ Your goal is to produce a persona that:
 self_refine_prompt_easy = (
     "You are an expert at designing culturally informed personas to improve model performance on multiple-choice questions.\n\n"
     "{iterations_description}\n\n"
-    "Your task is to improve upon the given persona{plural_suffix} by revising the persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
-    "{learning_guidance}\n\n"
+    "Your task is to improve upon the given persona {feedback_tip} such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
     "Respond in valid JSON format with two keys:\n\n"
     "\"reasoning\": \"[Chain-of-Thought goes here, explaining why the new persona is effective. This must be a concise step-by-step analysis reasoning with no more than 5 sentences]\",\n"
     "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
@@ -46,8 +45,7 @@ self_refine_prompt_easy = (
 self_refine_prompt_hard = (
     "You are an expert at designing culturally informed personas to improve model performance on multiple-choice or true/false questions.\n\n"
     "{iterations_description}\n\n"
-    "Your task is to improve upon the given persona{plural_suffix}. The goal is to create a persona with the necessary cultural background or domain expertise to evaluate **all possible options** within the question's topic, rather than a persona fixated on a single specific answer.\n\n"
-    "{learning_guidance}\n\n"
+    "Your task is to improve upon the given persona {feedback_tip}. The goal is to create a persona with the necessary cultural background or domain expertise to evaluate **all possible options** within the question's topic.\n\n"
     "Respond in valid JSON format with two keys:\n\n"
     "\"reasoning\": \"[Chain-of-Thought goes here. Explain the broader category of the question (e.g., 'UK Sports Culture' rather than 'Cricket') and why a persona with broad expertise in that category is better suited to weigh multiple options than a narrowly focused one.]\",\n"
     "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
@@ -61,13 +59,87 @@ self_refine_prompt_hard = (
     "7. **ANTI-BIAS**: Do not include specific preferences or obsessions in the persona that would blindly bias the model toward one answer (e.g., do not say 'You love Cricket above all else'). Instead, describe a persona with deep knowledge of the *entire landscape* of the topic."
 )
 
+PERSONA_REFINE_MAX_TOKENS_QWEN35_HARD = 256 
+
+# self_refine_prompt_hard_qwen35 = (
+#     "You are an expert at designing culturally informed personas to improve model performance on true/false cultural questions. You do NOT see the answer options; the persona will be used to judge statements as true or false.\n\n"
+#     "{iterations_description}\n\n"
+#     "Your task is to improve upon the given persona {feedback_tip}. The goal is a persona with the cultural background or domain expertise to accurately judge true vs. false for the question's topic — without knowing or implying any specific answers. Focus on clarity and discriminative nuance rather than adding more breadth; do not lengthen the persona unnecessarily.\n\n"
+#     "Respond in valid JSON format with two keys:\n\n"
+#     "\"reasoning\": \"[Chain-of-Thought: explain the cultural domain or distinction that helps judge true vs. false for this question, and why the revised persona is well-suited. Keep to a few sentences.]\",\n"
+#     "\"revised_persona\": \"[Revised persona description.]\"\n\n"
+#     "IMPORTANT:\n\n"
+#     "1. You must respond only with a valid JSON object. No text, markdown, or formatting outside the JSON.\n"
+#     "2. The \"revised_persona\" key must contain only the persona description — no extra explanations or translations.\n"
+#     "3. The \"revised_persona\" must always start with {second_person_pronoun}, followed by the persona description.\n"
+#     "4. The \"revised_persona\" **must be written entirely in {language}**.\n"
+#     "5. If {language} is not English, do not include English words or idioms.\n"
+#     "6. **LENGTH**: Keep the revised persona similar in length to the one provided. Do not substantially lengthen it; aim for roughly the same word count. Avoid long lists of sub-topics.\n"
+#     "7. **SCOPE**: The persona can have focused expertise in the specific cultural domain that helps distinguish true from false for questions like this, but must NOT imply the correct answer or bias toward any outcome. Avoid both overly narrow (single-entity) and overly vague (long lists) descriptions.\n"
+#     "8. **ANTI-BIAS**: Do not include preferences or obsessions that would bias the model. Describe a persona with knowledge that supports accurate true/false judgment, without revealing or hinting at answers."
+# )
+
+self_refine_prompt_hard_qwen35 = (
+    "You are an expert in Epistemic Logic and Cultural Anthropology.\n\n"
+    "{iterations_description}\n\n"
+    "Your goal is to refine the persona {feedback_tip}. A successful refinement "
+    "moves away from generic 'expert' labels and toward a **situated authority** "
+    "who possesses the 'tacit knowledge' required to distinguish between common "
+    "misconceptions and lived reality.\n\n"
+    "### THE REFINEMENT STRATEGY\n"
+    "1. **Avoid Over-Specialization:** Do not narrow the persona to a single "
+    "sub-region or narrow age bracket if the question is about a broad national "
+    "custom, as this creates 'character bias' that ignores the broader truth.\n"
+    "2. **Focus on Contrast:** Define the persona as someone who specifically "
+    "understands the boundary between 'what outsiders think' and 'what locals actually do.'\n"
+    "3. **Epistemic Depth:** Describe the *source* of their knowledge (e.g., 'You have "
+    "vetted thousands of ethnographic records' or 'You have managed communal affairs "
+    "for decades') rather than just their personality.\n\n"
+    "### THE GOLDEN RULE\n"
+    "The persona must be a **real-world identity**. Do NOT mention 'answering questions,' "
+    "'options,' or 'MCQs.' The persona should describe *who the person is* and the "
+    "*breadth of their mastery*.\n\n"
+    "Respond in valid JSON format with two keys:\n\n"
+    "\"reasoning\": \"[Explain how the revised identity eliminates the bias of the "
+    "previous persona while maintaining superior factual recall.]\",\n"
+    "\"revised_persona\": \"[Persona description starting with {second_person_pronoun}.]\"\n\n"
+    "IMPORTANT:\n\n"
+    "1. You must respond only with a valid JSON object.\n"
+    "2. The content of the \"revised_persona\" key must contain only the persona description.\n"
+    "3. The \"revised_persona\" content must always start with {second_person_pronoun}.\n"
+    "4. The \"revised_persona\" **must be written entirely in {language}**.\n"
+    "5. **CRITICAL:** Do not 'leak' the answer into the persona. Do not make the persona "
+    "so specific that it would reasonably disagree with a broad cultural fact. Ensure the "
+    "identity maintains a 'high-altitude' view of the culture's diversity."
+)
+
 system_prompts = {
-    "eng_p1": prompt_1,
-    "ling_p1": lambda lang: language_to_prompt_1[lang],
-    "eng_p2": prompt_2,
-    "ling_p2": lambda lang: language_to_prompt_2[lang],
-    "e2l_p1": prompt_1,
-    "e2l_p2": prompt_2,
-    "l2e_p1": lambda lang: language_to_prompt_1[lang],
-    "l2e_p2": lambda lang: language_to_prompt_2[lang]
+    "eng": prompt_1,
+    "ling": lambda lang: language_to_prompt_1[lang],
+    "e2l": prompt_1,
+    "l2e": lambda lang: language_to_prompt_1[lang],
 }
+
+EXTERNAL_FEEDBACK_PROMPT_EASY = """
+You are a helpful assistant that provides concise, actionable feedback on a persona that will be used to answer cultural multiple-choice questions.
+
+You will be given:
+- the question
+- the persona
+- the model’s selected answer (for internal guidance only)
+
+Your task is to suggest how the persona itself can be improved to reason more accurately about the question.
+
+IMPORTANT CONSTRAINTS:
+- Do NOT mention answer choices, option letters, or which answer is correct.
+- Do NOT state or imply correctness, alignment, or validation of any answer.
+- Do NOT contrast the persona with a specific answer.
+- The feedback must be written as if the answer options are unknown to the reader.
+- Focus ONLY on improving the persona’s cultural knowledge, clarity, framing, or distinctions relevant to the question.
+
+Use the selected answer only as implicit guidance to identify gaps or weaknesses in the persona.
+The output should read as general persona-improvement advice, not answer justification.
+"""
+
+EXTERNAL_FEEDBACK_PROMPT_HARD = """You are a helpful assistant that provides concise, actionable feedback on a persona that will be used to answer cultural True/False questions. You will be given the question and the persona. Your task is to provide feedback on how the persona can be improved to answer the question accurately."""
+

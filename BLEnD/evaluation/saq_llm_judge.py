@@ -17,7 +17,11 @@ from evaluation_utils import get_nested_json_str
 
 
 def _extract_answer_from_response(raw_response):
-    """Extract the short answer from model output (may be JSON with 'answer' key)."""
+    """
+    Extract only the answer for the judge. For 5-iteration mode, responses are JSON
+    with 'answer' and 'reasoning'; we use only the 'answer' part. For baseline,
+    response is plain text (answer only).
+    """
     raw = str(raw_response or "").strip()
     if not raw:
         return ""
@@ -25,9 +29,21 @@ def _extract_answer_from_response(raw_response):
         obj = get_nested_json_str(raw)
         if isinstance(obj, dict) and "answer" in obj:
             ans = obj["answer"]
+            if ans is None:
+                return ""
             if isinstance(ans, list):
-                return ", ".join(str(a) for a in ans)
-            return str(ans)
+                return ", ".join(str(a).strip() for a in ans if a is not None).strip()
+            return str(ans).strip()
+    except Exception:
+        pass
+    try:
+        m = re.search(r'"answer"\s*:\s*"((?:[^"\\]|\\.)*)"', raw)
+        if m:
+            return m.group(1).replace("\\\"", '"').strip()
+        m = re.search(r'"answer"\s*:\s*\[(.*?)\]', raw, re.DOTALL)
+        if m:
+            inner = re.findall(r'"((?:[^"\\]|\\.)*)"', m.group(1))
+            return ", ".join(s.replace("\\\"", '"').strip() for s in inner).strip()
     except Exception:
         pass
     return raw
@@ -55,7 +71,7 @@ def saq_llm_judge(
     id_col,
     r_col,
     annotations_key="annotations",
-    judge_model="qwen3.5-35b",
+    judge_model="qwen3-32b",
     verbose=False,
 ):
     """
@@ -64,9 +80,24 @@ def saq_llm_judge(
     question_rows: list of dicts for the big CSV.
     """
     system_prompt = (
-        "You are a judge. Given a question, the model's answer, and the ground truth answers, "
-        "determine if the model's answer is correct. The model is correct if its answer matches "
-        "or is semantically equivalent to ANY of the ground truth answers. Reply with only YES or NO."
+        "You are a judge that determines if an answer is correct.\n\n"
+        "You are given a question, a model's answer, and a list of ground truth answers. "
+        "Return YES only if the model's answer satisfies the rules below. Otherwise return NO.\n\n"
+
+        "Rules:\n"
+        "1. If the model provides a single answer:\n"
+        "   - It must match semantically with ONE of the ground truth answers.\n\n"
+
+        "2. If the model provides multiple answers (e.g., 'a, b, or c'):\n"
+        "   - Treat each listed answer as a separate candidate.\n"
+        "   - Return YES if AT LEAST ONE listed answer exactly matches a ground truth answer.\n"
+        "   - Return NO if NONE of the listed answers match any ground truth answer.\n\n"
+
+        "3. For numeric answers:\n"
+        "   - Values must match exactly.\n"
+        "   - No rounding, approximation, ranges, or 'close enough' logic is allowed.\n"
+
+        "Reply with only YES or NO."
     )
 
     num_correct = 0
@@ -96,18 +127,19 @@ def saq_llm_judge(
             continue
         raw = raw.iloc[0]
         raw_resp = raw.get(r_col, "")
-        model_answer = _extract_answer_from_response(raw_resp)
+        model_answer = _extract_answer_from_response(raw_resp).lower()
         if not model_answer:
             model_answer = str(raw_resp or "").strip()[:500]
 
         ground_truth_str = _get_ground_truth_str(data, language)
+        print("model_answer: ", model_answer)
+        print("ground_truth_str: ", ground_truth_str)
         question_text = data.get("en_question", data.get("question", ""))[:200]
 
         user_prompt = (
             f"Question: {question_text}\n\n"
             f"Model's answer: {model_answer}\n\n"
             f"Ground truth (any match is correct): {ground_truth_str}\n\n"
-            "Is the model's answer correct? Reply YES or NO only."
         )
 
         try:
@@ -128,6 +160,8 @@ def saq_llm_judge(
             if verbose:
                 print(f"Judge error for {qid}: {e}")
             correct = 0
+        
+        print("correct: ", correct)
 
         num_total += 1
         if correct:

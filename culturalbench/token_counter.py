@@ -1,5 +1,6 @@
 import json
 import os
+import threading
 
 _MODEL_TO_FOLDER = {
     "meta-llama/Meta-Llama-3-8B-Instruct": "llama3-8b-instruct",
@@ -10,6 +11,7 @@ _MODEL_TO_FOLDER = {
     "Qwen/Qwen3-32B": "qwen3-32b",
     "google/gemma-2-27b-it": "gemma-2-27b-it",
     "meta-llama/Llama-3.3-70B-Instruct": "llama-3.3-70b-instruct",
+    "zai-org/GLM-4-9B-0414": "glm4-9b",
 }
 
 def get_model_folder(model_name):
@@ -44,24 +46,27 @@ def count_tokens_chat(chat_input):
     return count_tokens_text(_chat_to_text(chat_input))
 
 _totals = {}
+_totals_lock = threading.Lock()
 
 def _key(difficulty, mode):
     return f"{difficulty}_{mode}"
 
 def add_input_tokens(difficulty, mode, chat_input):
     k = _key(difficulty, mode)
-    if k not in _totals:
-        _totals[k] = {"input_tokens": 0, "output_tokens": 0}
     n = count_tokens_chat(chat_input)
-    _totals[k]["input_tokens"] += n
+    with _totals_lock:
+        if k not in _totals:
+            _totals[k] = {"input_tokens": 0, "output_tokens": 0}
+        _totals[k]["input_tokens"] += n
     return n
 
 def add_output_tokens(difficulty, mode, output_text):
     k = _key(difficulty, mode)
-    if k not in _totals:
-        _totals[k] = {"input_tokens": 0, "output_tokens": 0}
     n = count_tokens_text(output_text)
-    _totals[k]["output_tokens"] += n
+    with _totals_lock:
+        if k not in _totals:
+            _totals[k] = {"input_tokens": 0, "output_tokens": 0}
+        _totals[k]["output_tokens"] += n
     return n
 
 def get_totals():

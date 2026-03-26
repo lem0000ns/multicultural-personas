@@ -1,12 +1,13 @@
 """Evaluation functions for initial persona generation and testing."""
 
+import asyncio
 import json
 import os
 from datasets import load_dataset
 from tqdm.auto import tqdm
 from persona_generator import generate_persona_description, cap
 from tools.utils import country_to_language
-from tools.llm_utils import get_llm, generate_text_funcs, MISTRAL_SGLANG_MODEL_ID
+from tools.llm_utils import get_llm, generate_text_funcs, async_generate, MISTRAL_SGLANG_MODEL_ID, MAX_CONCURRENT
 from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy
 import json_repair
@@ -15,11 +16,11 @@ from token_counter import add_input_tokens, add_output_tokens, get_model_folder
 
 def is_valid_set(ds, i):
     """Check if a set of 4 options is complete and valid.
-    
+
     Args:
         ds: Dataset
         i: Starting index
-    
+
     Returns:
         True if all 4 options are valid, False otherwise
     """
@@ -34,101 +35,80 @@ def is_valid_set(ds, i):
     return True
 
 
-async def evaluate_hard_initial(ds, mode, difficulty="Hard"):
-    data = {}
-    correct = total = 0
-    iteration = 1
-    persona_description = ""
-    # n_sets = (len(ds) + 3) // 4
-    for i in tqdm(range(0, len(ds), 4), total=len(ds) // 4, desc="Initial eval (Hard)", unit="set"):
-        # ensure set of 4 options is complete
-        isValidSet = is_valid_set(ds, i)
-        
-        if not isValidSet:
-            continue
+async def _process_hard_set(i, ds, mode, difficulty, sem):
+    """Process a single Hard-mode question set (4 sub-questions). Returns (set_data, is_correct) or None."""
+    async with sem:
+        if not is_valid_set(ds, i):
+            return None
 
-        # iterate over one question at a time (4 options)
         isCorrect = True
-        isError = False
         cur_set_data = []
-        
+        persona_description = None
+        pretranslated = None
+
         for j in range(4):
             cur_row = ds[i + j]
             prompt_question = cur_row["prompt_question"]
             prompt_option = cur_row["prompt_option"]
             prompt_answer = cur_row["answer"]
             country = cur_row["country"]
-            
+
             if "eng" in mode or "e2l" in mode:
                 language = "English"
             else:
                 language = country_to_language[cap(country)].capitalize()
-            
+
             # use same persona description for same question (4 at a time)
             if j == 0:
                 pretranslated, translated = await generate_persona_description(
-                    prompt_question, 
-                    country, 
-                    mode,
-                    difficulty,
+                    prompt_question, country, mode, difficulty,
                 )
                 if "l2e" in mode or "e2l" in mode:
                     persona_description = translated
                 else:
                     persona_description = pretranslated
-                # if not in correct language, disregard this question (set of 4 options)
                 if persona_description is None:
-                    break
-            
-            # For qwen3 thinking mode in "ling" mode, add instruction to think in the relevant language
+                    return None
+
             thinking_instruction = ""
             if "ling" in mode and llm_utils.MODEL_NAME == "Qwen/Qwen3-4B":
                 thinking_instruction = f"You MUST write internal reasoning inside <think>...</think> in {language}. If any part of <think>...</think> is not {language}, regenerate the reasoning.\n\n"
-            
-            system_prompt = persona_description
+
             chat_input = [
-                {
-                    "role": "system",
-                    "content": system_prompt
-                },
-                {
-                    "role": "user",
-                    "content": (
-                        thinking_instruction +
-                        "Is this answer true or false for this question?\n"
-                        "You must choose either True or False, and provide a brief "
-                        "explanation for your answer.\n"
-                        "Respond in valid JSON format with two keys: \n"
-                        f"\"correct\" (either \"true\" or \"false\") and "
-                        f"\"reasoning\" (a short explanation in {language}). \n"
-                        "Example format: {\"correct\": \"{true/false}\", \"reasoning\": \"{reasoning}\"}\n"
-                        f"IMPORTANT: The reasoning must be in {language}.\n"
-                        f"Question: {prompt_question}\n"
-                        f"Answer: {prompt_option}"
-                    )
-                }
+                {"role": "system", "content": persona_description},
+                {"role": "user", "content": (
+                    thinking_instruction +
+                    "Is this answer true or false for this question?\n"
+                    "You must choose either True or False, and provide a brief "
+                    "explanation for your answer.\n"
+                    "Respond in valid JSON format with two keys: \n"
+                    f"\"correct\" (either \"true\" or \"false\") and "
+                    f"\"reasoning\" (a short explanation in {language}). \n"
+                    "Example format: {\"correct\": \"{true/false}\", \"reasoning\": \"{reasoning}\"}\n"
+                    f"IMPORTANT: The reasoning must be in {language}.\n"
+                    f"Question: {prompt_question}\n"
+                    f"Answer: {prompt_option}"
+                )}
             ]
 
             add_input_tokens(difficulty, mode, chat_input)
             llm_instance = get_llm()
-            thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=False)
+            thinking_content, response = await async_generate(llm_instance, chat_input, enable_thinking_bool=False)
             out_text = (thinking_content or "") + "\n" + (response or "")
             add_output_tokens(difficulty, mode, out_text)
 
             try:
                 result = json_repair.loads(response)
                 thinks_correct = (
-                    "true" 
-                    if "true" in result["correct"].lower().strip() 
+                    "true"
+                    if "true" in result["correct"].lower().strip()
                     else "false"
                 )
                 reasoning = result["reasoning"].strip()
             except Exception as e:
-                isError = True
-                print("Error parsing response: " + response + " " + str(e))
-                break
+                print(f"Error parsing response for set {i//4} option {j}: {response} {e}")
+                return None
 
-            # store data in JSON format
             item_data = {
                 "question": prompt_question,
                 "prompt_option": prompt_option,
@@ -137,48 +117,54 @@ async def evaluate_hard_initial(ds, mode, difficulty="Hard"):
                 "model_answer": thinks_correct,
                 "reasoning": reasoning,
                 "country": country,
-                "iteration": iteration
+                "iteration": 1
             }
-            
+
             if "l2e" in mode or "e2l" in mode:
                 item_data["pretranslated_persona"] = pretranslated
             if thinking_content is not None:
                 item_data["thinking_content"] = thinking_content
-                
+
             cur_set_data.append(item_data)
-            
-            # normalize to strings for comparison (convert 0/1 to false/true)
+
             correct_str = str(prompt_answer).lower().strip()
-            if correct_str in ["1", "true"]:
-                expected_answer = "true"
-            else:
-                expected_answer = "false"
-            if str(thinks_correct).lower() == expected_answer:
-                continue
-            else:
+            expected_answer = "true" if correct_str in ["1", "true"] else "false"
+            if str(thinks_correct).lower() != expected_answer:
                 isCorrect = False
 
-        if isError or len(cur_set_data) != 4:
+        if len(cur_set_data) != 4:
+            return None
+
+        set_data = {i + j: cur_set_data[j] for j in range(4)}
+        return (set_data, isCorrect)
+
+
+async def evaluate_hard_initial(ds, mode, difficulty="Hard"):
+    sem = asyncio.Semaphore(llm_utils.MAX_CONCURRENT)
+    set_indices = [i for i in range(0, len(ds), 4)]
+
+    tasks = [_process_hard_set(i, ds, mode, difficulty, sem) for i in set_indices]
+    results = []
+    for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc="Initial eval (Hard)", unit="set"):
+        results.append(await coro)
+
+    data = {}
+    correct = total = 0
+    for r in results:
+        if r is None:
             continue
-        
-        for j in range(4):
-            data[i + j] = cur_set_data[j]
-        
-        if isCorrect:
+        set_data, is_correct = r
+        data.update(set_data)
+        if is_correct:
             correct += 1
         total += 1
-    
+
     return data, correct, total
 
 
-async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
-    data = {}
-    correct = total = 0
-    # n_questions = len(ds)
-    n_questions = 200 # used temporarily for steering
-
-    for i in tqdm(range(n_questions), total=n_questions, desc="Initial eval (Easy)", unit="q"):
-        cur_row = ds[i]
+async def _process_easy_one(i, cur_row, mode, difficulty, sem):
+    """Process a single Easy-mode question. Returns (index, item_data, is_correct) or None."""
+    async with sem:
         prompt_question = cur_row["prompt_question"]
         option_a = cur_row["prompt_option_a"]
         option_b = cur_row["prompt_option_b"]
@@ -187,27 +173,21 @@ async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
         answer = cur_row["answer"]
         country = cur_row["country"]
 
-        if (option_a is None or option_b is None or option_c is None or 
-            option_d is None or answer is None or prompt_question is None or 
+        if (option_a is None or option_b is None or option_c is None or
+            option_d is None or answer is None or prompt_question is None or
             country is None):
-            continue
+            return None
 
         pretranslated, translated = await generate_persona_description(
-            prompt_question, 
-            country, 
-            mode,
-            difficulty,
+            prompt_question, country, mode, difficulty,
         )
         if "l2e" in mode or "e2l" in mode:
             persona_description = translated
         else:
             persona_description = pretranslated
 
-        # if not in correct language, disregard this question
         if persona_description is None:
-            continue
-        
-        system_prompt = persona_description
+            return None
 
         if "eng" in mode or "e2l" in mode:
             language = "English"
@@ -215,46 +195,34 @@ async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
             language = country_to_language[cap(country)].capitalize()
 
         chat_input = [
-            {
-                "role": "system",
-                "content": system_prompt
-            },
-            {
-                "role": "user",
-                "content": (
-                    "Instruction: You must select one option among A,B,C,D.\n"
-                    "Respond in valid JSON format with two keys: \n"
-                    f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and "
-                    f"\"reasoning\" (a short explanation in {language}). \n"
-                    "Example format: {\"answer\": \"{A/B/C/D}\", \"reasoning\": \"{reasoning}\"}\n"
-                    f"IMPORTANT: The reasoning must be in {language}.\n"
-                    f"\nQuestion: {prompt_question}\n"
-                    f"A. {option_a}\n"
-                    f"B. {option_b}\n"
-                    f"C. {option_c}\n"
-                    f"D. {option_d}"
-                )
-            }
+            {"role": "system", "content": persona_description},
+            {"role": "user", "content": (
+                "Instruction: You must select one option among A,B,C,D.\n"
+                "Respond in valid JSON format with two keys: \n"
+                f"\"answer\" (either \"A\", \"B\", \"C\", or \"D\") and "
+                f"\"reasoning\" (a short explanation in {language}). \n"
+                "Example format: {\"answer\": \"{A/B/C/D}\", \"reasoning\": \"{reasoning}\"}\n"
+                f"IMPORTANT: The reasoning must be in {language}.\n"
+                f"\nQuestion: {prompt_question}\n"
+                f"A. {option_a}\n"
+                f"B. {option_b}\n"
+                f"C. {option_c}\n"
+                f"D. {option_d}"
+            )}
         ]
 
         add_input_tokens(difficulty, mode, chat_input)
         llm_instance = get_llm()
-        thinking_content, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, enable_thinking_bool=False)
+        thinking_content, response = await async_generate(llm_instance, chat_input, enable_thinking_bool=False)
         out_text = (thinking_content or "") + "\n" + (response or "")
         add_output_tokens(difficulty, mode, out_text)
         try:
             result = json_repair.loads(response)
             response_answer = result["answer"].upper().strip()
             reasoning = result["reasoning"].strip()
-            
-            # store data in JSON format
-            options_dict = {
-                "A": option_a,
-                "B": option_b,
-                "C": option_c,
-                "D": option_d
-            }
-            
+
+            options_dict = {"A": option_a, "B": option_b, "C": option_c, "D": option_d}
+
             item_data = {
                 "question": prompt_question,
                 "options": options_dict,
@@ -265,33 +233,50 @@ async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
                 "country": country,
                 "iteration": 1
             }
-            
+
             if "l2e" in mode or "e2l" in mode:
                 item_data["pretranslated_persona"] = pretranslated
             if thinking_content is not None:
                 item_data["thinking_content"] = thinking_content
-            
-            data[i] = item_data
-            
-            # normalize to strings for comparison
-            if response_answer.upper() == answer.upper():
-                correct += 1
-            total += 1
-        except:
+
+            is_correct = response_answer.upper() == answer.upper()
+            return (i, item_data, is_correct)
+        except Exception:
             print("Error parsing response: " + response)
+            return None
+
+
+async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
+    sem = asyncio.Semaphore(llm_utils.MAX_CONCURRENT)
+    n_questions = len(ds)
+
+    tasks = [_process_easy_one(i, ds[i], mode, difficulty, sem) for i in range(n_questions)]
+    results = []
+    for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc="Initial eval (Easy)", unit="q"):
+        results.append(await coro)
+
+    data = {}
+    correct = total = 0
+    for r in results:
+        if r is None:
             continue
-    
+        idx, item_data, is_correct = r
+        data[idx] = item_data
+        if is_correct:
+            correct += 1
+        total += 1
+
     return data, correct, total
 
 
 async def run_initial_eval(difficulty, mode, custom=None):
     """Run initial evaluation (i1) for the given difficulty.
-    
+
     Args:
         difficulty: "Easy" or "Hard"
         mode: Mode (eng, ling, l2e, or e2l)
         custom: Optional custom suffix to append to database path
-    
+
     Returns:
         Tuple of (accuracy, db_path)
     """
@@ -313,6 +298,7 @@ async def run_initial_eval(difficulty, mode, custom=None):
         "Qwen/Qwen3-14B": "qwen3_14b",
         MISTRAL_SGLANG_MODEL_ID: "mistral3_14b",
         "Qwen/Qwen3.5-35B-A3B": "qwen3.5_35b",
+        "zai-org/GLM-4-9B-0414": "glm4_9b",
     }
     model_folder = get_model_folder(llm_utils.MODEL_NAME)
     # write results to database: results/{mode}/{model}/{file}
@@ -321,12 +307,11 @@ async def run_initial_eval(difficulty, mode, custom=None):
         db_path += f"_{custom}"
     db_path += ".db"
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
-    
+
     save_results(db_path, data, difficulty, mode)
-    
+
     accuracy = correct / total if total > 0 else 0
     save_accuracy(db_path, 1, difficulty, mode, accuracy, correct, total)
-    
+
     print(f"Initial Persona Accuracy for {difficulty}: {accuracy}")
     return accuracy, db_path
-

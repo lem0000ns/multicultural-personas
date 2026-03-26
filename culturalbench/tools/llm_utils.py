@@ -2,20 +2,22 @@
 
 import asyncio
 import os
-import torch
 import gc
 from functools import partial
-from transformers import AutoTokenizer, AutoModelForCausalLM
 from openai import OpenAI
 import time
 from .configs import EXTERNAL_FEEDBACK_PROMPT_EASY, EXTERNAL_FEEDBACK_PROMPT_HARD
 
 # Configuration
 os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
+SGLANG_HOST = os.environ.get("SGLANG_HOST", "localhost")
 MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 TEMPERATURE = 0.0
 
 SGLANG_CHAT_MAX_TOKENS = 1024
+
+MAX_CONCURRENT = 1  # 1 = serial; >1 for API/SGLang models
+LOCAL_MODELS = {"Qwen/Qwen3-4B"}  # models that must run serially (GPU-bound)
 
 STEERING_COEFFICIENT = None
 STEERING_MODEL = "Qwen/Qwen3-32B"  
@@ -28,6 +30,7 @@ STEERING_AXIS_FILENAMES = {
 
 # Global LLM instance
 llm = None
+_qwen3_4b_tokenizer = None
 
 # Lazy-loaded steering model + Assistant Axis (only when STEERING_COEFFICIENT is set)
 _steering_model = None
@@ -60,7 +63,10 @@ async def get_external_feedback(difficulty, question, persona, model_answer, fee
 
 def qwen3_4b_generate_thinking(llm_instance, messages, enable_thinking_bool=False, **kwargs):
     """Generate thinking and content from Qwen3"""
-    tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-4B")
+    global _qwen3_4b_tokenizer
+    if _qwen3_4b_tokenizer is None:
+        _qwen3_4b_tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-4B")
+    tokenizer = _qwen3_4b_tokenizer
     text = tokenizer.apply_chat_template(
         messages,
         tokenize=False,
@@ -114,7 +120,7 @@ def llama_3_8b_instruct_generate(
         Generated text string
     """
     client = OpenAI(
-        base_url="http://34.126.87.212:30000/v1",
+        base_url=f"http://{SGLANG_HOST}:30000/v1",
         api_key="EMPTY",
     )
     for n_try in range(10):
@@ -160,9 +166,13 @@ def qwen_3_sglang_generate(
     Get response from SGLang server using OpenAI-compatible API.
     Returns (thinking_content, response) to match other generate_text_funcs.
     """
-    _port = 30001 if model == "Qwen/Qwen3-14B" else 30002
+    _MODEL_PORTS = {
+        "Qwen/Qwen3-14B": 30001,
+        "zai-org/GLM-4-9B-0414": 30003,
+    }
+    _port = _MODEL_PORTS.get(model, 30002)
     client = OpenAI(
-        base_url=f"http://34.126.87.212:{_port}/v1",
+        base_url=f"http://{SGLANG_HOST}:{_port}/v1",
         api_key="EMPTY",
     )
     thinking_content = None
@@ -315,16 +325,25 @@ def _steering_generate(llm_instance, messages, max_tokens=8192, enable_thinking_
     return qwen3_32b_steering_generate(llm_instance, messages, max_tokens, enable_thinking_bool, use_steering=use_steering)
 
 _mistral_sglang = partial(qwen_3_sglang_generate, model=MISTRAL_SGLANG_API_MODEL)
+_glm4_sglang = partial(qwen_3_sglang_generate, model="zai-org/GLM-4-9B-0414")
 generate_text_funcs = {
    "Qwen/Qwen3-4B": qwen3_4b_generate_thinking,
    "meta-llama/Meta-Llama-3-8B-Instruct": llama_3_8b_instruct_generate,
    "Qwen/Qwen3-14B": partial(qwen_3_sglang_generate, model="Qwen/Qwen3-14B"),
    MISTRAL_SGLANG_MODEL_ID: _mistral_sglang,
    "Qwen/Qwen3.5-35B-A3B": _mistral_sglang,
+   "zai-org/GLM-4-9B-0414": _glm4_sglang,
    "Qwen/Qwen3-32B": _steering_generate,
    "google/gemma-2-27b-it": _steering_generate,
    "meta-llama/Llama-3.3-70B-Instruct": _steering_generate,
 }
+
+
+async def async_generate(llm_instance, chat_input, **kwargs):
+    """Async wrapper: runs the model-appropriate generate function in a thread pool."""
+    func = generate_text_funcs[MODEL_NAME]
+    return await asyncio.to_thread(func, llm_instance, chat_input, **kwargs)
+
 
 def get_llm():
     """Get or initialize the LLM instance. Returns None for SGLang-backed models. For steering, returns loaded STEERING_MODEL."""
@@ -337,6 +356,7 @@ def get_llm():
         "Qwen/Qwen3-14B",
         MISTRAL_SGLANG_MODEL_ID,
         "Qwen/Qwen3.5-35B-A3B",
+        "zai-org/GLM-4-9B-0414",
     ):
         return None
     if llm is None:

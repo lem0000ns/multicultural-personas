@@ -8,10 +8,13 @@ from tools.configs import (
     self_refine_prompt_hard_qwen35,
     PERSONA_REFINE_MAX_TOKENS_QWEN35_HARD,
 )
-from tools.llm_utils import get_llm, generate_text_funcs
+from tools.llm_utils import get_llm, generate_text_funcs, async_generate
 from tools import llm_utils
 from token_counter import add_input_tokens, add_output_tokens
-import googletrans
+try:
+    import googletrans
+except ImportError:
+    googletrans = None  # only needed for e2l/l2e translation modes
 from langdetect import detect
 import json
 import json_repair
@@ -177,7 +180,7 @@ async def generate_persona_description(question, country, mode, difficulty="Easy
     attempts = 3
     response = ""
     while attempts > 0:
-        _, response = generate_text_funcs[llm_utils.MODEL_NAME](llm_instance, chat_input, use_steering=False)
+        _, response = await async_generate(llm_instance, chat_input, use_steering=False)
         # check if response is in correct language
         if ("e2l" in mode or "eng" in mode) and not is_english(response):
             attempts -= 1
@@ -313,7 +316,7 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
     attempts = 3
     while attempts > 0:
         # _ is thinking content (not relevant)
-        _, response = generate_text_funcs[llm_utils.MODEL_NAME](
+        _, response = await async_generate(
             llm_instance, chat_input, use_steering=False, **max_tokens_kw
         )
         # sanitize json response

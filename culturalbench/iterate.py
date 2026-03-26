@@ -79,7 +79,20 @@ async def main():
         default="Qwen/Qwen3-32B",
         help="Model to load for steering (must have pre-computed axis). Default: Qwen/Qwen3-32B.",
     )
+    parser.add_argument(
+        "--max_concurrent",
+        type=int,
+        default=1,
+        help="Max concurrent questions to process in parallel (1=serial, >1 for API/SGLang models)",
+    )
     args = parser.parse_args()
+
+    # Set concurrency (auto-downgrade for local GPU models)
+    if args.max_concurrent > 1 and args.model in tools.llm_utils.LOCAL_MODELS:
+        print(f"WARNING: {args.model} is a local GPU model. Forcing max_concurrent=1")
+        tools.llm_utils.MAX_CONCURRENT = 1
+    else:
+        tools.llm_utils.MAX_CONCURRENT = args.max_concurrent
 
     # Assistant-axis steering: use steering model and set coefficient (positive=assistant, negative=persona)
     if args.steering_coefficient is not None:
@@ -102,7 +115,7 @@ async def main():
         effective_custom = f"{args.custom}_{sc_str}" if args.custom else sc_str
 
     effective_model = tools.llm_utils.MODEL_NAME
-    print(f"Config: mode={args.mode} difficulty={difficulty} model={effective_model} temperature={args.temperature} num_iterations={args.num_iterations} external={args.external} steering_coefficient={args.steering_coefficient}")
+    print(f"Config: mode={args.mode} difficulty={difficulty} model={effective_model} temperature={args.temperature} num_iterations={args.num_iterations} external={args.external} steering_coefficient={args.steering_coefficient} max_concurrent={tools.llm_utils.MAX_CONCURRENT}")
     print(f"Resume: {args.resume}")
 
     # track all accuracies
@@ -125,6 +138,7 @@ async def main():
             "Qwen/Qwen3-32B": "qwen3_32b",
             "google/gemma-2-27b-it": "gemma2_27b",
             "meta-llama/Llama-3.3-70B-Instruct": "llama33_70b",
+            "zai-org/GLM-4-9B-0414": "glm4_9b",
         }
         from token_counter import get_model_folder
         model_folder = get_model_folder(llm_utils.MODEL_NAME)

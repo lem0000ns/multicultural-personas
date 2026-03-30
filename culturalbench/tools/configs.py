@@ -4,7 +4,8 @@ from .utils import language_to_prompt_1, language_to_prompt_2
 
 footnote = """IMPORTANT:
 1. Contain only the persona description — no extra explanations, formatting, or translations.
-2. Always start with 'You are'... followed by the persona description."""
+2. Always start with 'You are'... followed by the persona description.
+3. The persona must be 3-5 sentences long."""
 
 prompt_1 = f"""You are an expert in crafting personas that will be used as a system prompt to a language model in answering a multiple-choice or true/false question accurately. You will be given the question and the relevant country that the question content is related to.
 

@@ -280,9 +280,10 @@ async def _process_hard_iter_set(i, data, mode, cur_iteration, is_translation_mo
                     "explanation for your answer.\n"
                     "Respond in valid JSON format with two keys: \n"
                     f"\"correct\" (either \"true\" or \"false\") and "
-                    f"\"reasoning\" (a short explanation in {language}). \n"
+                    f"\"reasoning\" (a short, brief explanation in {language}). \n"
                     "Example format: {\"correct\": \"{true/false}\", \"reasoning\": \"{reasoning}\"}\n"
                     f"IMPORTANT: The reasoning must be in {language}.\n"
+                    f"IMPORTANT: DO NOT output any other text than the JSON response.\n"
                     f"Question: {prompt_question}\n"
                     f"Answer: {prompt_option}"
                 )}

@@ -252,7 +252,7 @@ def main():
         "--model",
         type=str,
         default="Qwen/Qwen3-14B",
-        help="Model name, e.g. mistral-3-14b-instruct-2512 or Qwen/Qwen3-14B",
+        help="Model name, e.g. google/gemma-3-12b-it or Qwen/Qwen3-14B",
     )
     parser.add_argument("--majority", action="store_true", help="Run majority-vote accuracy across 5 runs (easy MCQ + hard True/False)")
     parser.add_argument("--llm-judge", action="store_true", help="Run LLM-as-a-judge to pick best answer across 5 runs and report accuracy")

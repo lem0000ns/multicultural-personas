@@ -61,8 +61,8 @@ async def main():
         "--model",
         type=str,
         required=False,
-        default=tools.llm_utils.MISTRAL_SGLANG_MODEL_ID,
-        help="Model to use (default: Mistral on SGLang port 30002)",
+        default=tools.llm_utils.GEMMA3_12B_SGLANG_MODEL_ID,
+        help="Model to use (default: google/gemma-3-12b-it on SGLang port 30002)",
     )
     parser.add_argument("--temperature", type=float, required=False, default=0.6, help="Temperature to use")
     parser.add_argument("--custom", type=str, required=False, default=None, help="Custom suffix to append to database path")
@@ -84,6 +84,12 @@ async def main():
         type=int,
         default=1,
         help="Max concurrent questions to process in parallel (1=serial, >1 for API/SGLang models)",
+    )
+    parser.add_argument(
+        "--max_questions",
+        type=int,
+        default=None,
+        help="Evaluate only the first N questions (Easy: N rows; Hard: N T/F sets = N*4 rows). Omit for full test set.",
     )
     args = parser.parse_args()
 
@@ -124,7 +130,9 @@ async def main():
     # run initial evaluation (if not resuming)
     if not args.resume:
         print("Running initial evaluation (iteration 1)...")
-        initial_accuracy, db_path = await run_initial_eval(difficulty, args.mode, effective_custom)
+        initial_accuracy, db_path = await run_initial_eval(
+            difficulty, args.mode, effective_custom, max_questions=args.max_questions
+        )
         all_accuracies.append(initial_accuracy)
     # calculate initial accuracy from database (if resuming)
     else:
@@ -133,7 +141,9 @@ async def main():
             "Qwen/Qwen3-4B": "qwen3_4b",
             "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
             "Qwen/Qwen3-14B": "qwen3_14b",
-            tools.llm_utils.MISTRAL_SGLANG_MODEL_ID: "mistral3_14b",
+            tools.llm_utils.GEMMA3_12B_SGLANG_MODEL_ID: "gemma3_12b",
+            tools.llm_utils.LEGACY_QWEN3_06B_SGLANG_MODEL_ID: "gemma3_12b",
+            tools.llm_utils.LEGACY_MISTRAL_SGLANG_MODEL_ID: "gemma3_12b",
             "Qwen/Qwen3.5-35B-A3B": "qwen3.5_35b",
             "Qwen/Qwen3-32B": "qwen3_32b",
             "google/gemma-2-27b-it": "gemma2_27b",

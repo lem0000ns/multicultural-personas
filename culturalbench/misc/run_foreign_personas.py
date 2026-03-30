@@ -25,7 +25,7 @@ from tools.utils import country_to_language
 MODEL_ID_TO_FULL = {
     "qwen3_4b": "Qwen/Qwen3-4B",
     "qwen3_14b": "Qwen/Qwen3-14B",
-    "qwen3_32b": "mistral-3-14b-instruct-2512",
+    "qwen3_32b": "google/gemma-3-12b-it",
     "llama3_8b": "meta-llama/Meta-Llama-3-8B-Instruct",
 }
 

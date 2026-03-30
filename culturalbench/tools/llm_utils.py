@@ -10,7 +10,7 @@ from .configs import EXTERNAL_FEEDBACK_PROMPT_EASY, EXTERNAL_FEEDBACK_PROMPT_HAR
 
 # Configuration
 os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
-SGLANG_HOST = os.environ.get("SGLANG_HOST", "localhost")
+SGLANG_HOST = os.environ.get("SGLANG_HOST", "34.126.87.212")
 MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 TEMPERATURE = 0.0
 
@@ -148,18 +148,56 @@ def llama_3_8b_instruct_generate(
 
     return None, content
 
-MISTRAL_SGLANG_MODEL_ID = "mistral-3-14b-instruct-2512"
-MISTRAL_SGLANG_API_MODEL = os.environ.get(
-    "MISTRAL_SGLANG_API_MODEL",
-    "mistralai/Ministral-3-14B-Instruct-2512",
+# SGLang :30002 default (see _MODEL_PORTS below; most models → 30002).
+GEMMA3_12B_SGLANG_MODEL_ID = "google/gemma-3-12b-it"
+GEMMA3_12B_SGLANG_API_MODEL = os.environ.get(
+    "GEMMA3_12B_SGLANG_API_MODEL",
+    "google/gemma-3-12b-it",
 )
+# Legacy CLI ids for the same port-30002 slot; still accepted.
+LEGACY_QWEN3_06B_SGLANG_MODEL_ID = "Qwen/Qwen3-0.6B"
+LEGACY_MISTRAL_SGLANG_MODEL_ID = "mistral-3-14b-instruct-2512"
+
+
+def _use_sglang_text_part_messages(model: str) -> bool:
+    """Use OpenAI-style text parts [{\"type\":\"text\",\"text\":...}] for chat content.
+
+    Gemma (and some other templates on SGLang) expect this shape. Override with env:
+      SGLANG_USE_TEXT_PART_MESSAGES=1  -> always convert for SGLang calls here
+      SGLANG_USE_TEXT_PART_MESSAGES=0  -> never convert (plain string content)
+      unset -> convert only for google/ models (default)
+    """
+    v = os.environ.get("SGLANG_USE_TEXT_PART_MESSAGES", "").strip().lower()
+    if v in ("1", "true", "yes", "all"):
+        return True
+    if v in ("0", "false", "no"):
+        return False
+    return model.startswith("google/")
+
+
+def _normalize_messages_text_parts(messages, model: str):
+    """Convert string message content to [{\"type\": \"text\", \"text\": \"...\"}]."""
+    if not messages or not _use_sglang_text_part_messages(model):
+        return messages
+    out = []
+    for m in messages:
+        if not isinstance(m, dict):
+            out.append(m)
+            continue
+        c = m.get("content")
+        if isinstance(c, str):
+            out.append({**m, "content": [{"type": "text", "text": c}]})
+        else:
+            out.append(m)
+    return out
+
 
 def qwen_3_sglang_generate(
     llm_instance=None,
     messages=None,
     max_tokens=SGLANG_CHAT_MAX_TOKENS,
     enable_thinking_bool=False,
-    model=MISTRAL_SGLANG_API_MODEL,
+    model=GEMMA3_12B_SGLANG_API_MODEL,
     **kwargs,
 ):
     """
@@ -177,12 +215,16 @@ def qwen_3_sglang_generate(
     )
     thinking_content = None
     content = None
+    api_messages = _normalize_messages_text_parts(messages, model)
+    print("$" * 100)
+    print(api_messages)
+    print("$" * 100)
     for n_try in range(10):
         try:
             time.sleep(0.5)
             create_kwargs = dict(
                 model=model,
-                messages=messages,
+                messages=api_messages,
                 temperature=0.6,
                 top_p=1,
                 max_tokens=max_tokens,
@@ -324,14 +366,17 @@ def qwen3_32b_steering_generate(
 def _steering_generate(llm_instance, messages, max_tokens=8192, enable_thinking_bool=False, use_steering=True, **kwargs):
     return qwen3_32b_steering_generate(llm_instance, messages, max_tokens, enable_thinking_bool, use_steering=use_steering)
 
-_mistral_sglang = partial(qwen_3_sglang_generate, model=MISTRAL_SGLANG_API_MODEL)
+_gemma3_12b_sglang = partial(qwen_3_sglang_generate, model=GEMMA3_12B_SGLANG_API_MODEL)
+_qwen35_sglang = partial(qwen_3_sglang_generate, model="Qwen/Qwen3.5-35B-A3B")
 _glm4_sglang = partial(qwen_3_sglang_generate, model="zai-org/GLM-4-9B-0414")
 generate_text_funcs = {
    "Qwen/Qwen3-4B": qwen3_4b_generate_thinking,
    "meta-llama/Meta-Llama-3-8B-Instruct": llama_3_8b_instruct_generate,
    "Qwen/Qwen3-14B": partial(qwen_3_sglang_generate, model="Qwen/Qwen3-14B"),
-   MISTRAL_SGLANG_MODEL_ID: _mistral_sglang,
-   "Qwen/Qwen3.5-35B-A3B": _mistral_sglang,
+   GEMMA3_12B_SGLANG_MODEL_ID: _gemma3_12b_sglang,
+   LEGACY_QWEN3_06B_SGLANG_MODEL_ID: _gemma3_12b_sglang,
+   LEGACY_MISTRAL_SGLANG_MODEL_ID: _gemma3_12b_sglang,
+   "Qwen/Qwen3.5-35B-A3B": _qwen35_sglang,
    "zai-org/GLM-4-9B-0414": _glm4_sglang,
    "Qwen/Qwen3-32B": _steering_generate,
    "google/gemma-2-27b-it": _steering_generate,
@@ -354,7 +399,9 @@ def get_llm():
     if MODEL_NAME in (
         "meta-llama/Meta-Llama-3-8B-Instruct",
         "Qwen/Qwen3-14B",
-        MISTRAL_SGLANG_MODEL_ID,
+        GEMMA3_12B_SGLANG_MODEL_ID,
+        LEGACY_QWEN3_06B_SGLANG_MODEL_ID,
+        LEGACY_MISTRAL_SGLANG_MODEL_ID,
         "Qwen/Qwen3.5-35B-A3B",
         "zai-org/GLM-4-9B-0414",
     ):

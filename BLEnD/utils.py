@@ -47,7 +47,9 @@ MODEL_PATHS = {
     'llama-3-8b-instruct':'meta-llama/Meta-Llama-3-8B-Instruct',
     'qwen3-14b':'Qwen/Qwen3-14B',
     'qwen3.5-35b':'Qwen/Qwen3.5-35B-A3B',
-    'mistral-3-14b-instruct-2512': "mistralai/Ministral-3-14B-Instruct-2512",
+    'google/gemma-3-12b-it': "google/gemma-3-12b-it",
+    'mistral-3-14b-instruct-2512': "google/gemma-3-12b-it",
+    'qwen3-0.6b': "google/gemma-3-12b-it",
 }
 
 COUNTRY_LANG = { 
@@ -242,10 +244,10 @@ def get_together_response(
             
     return response
 
-# SGLang server URLs (same as culturalbench: 30000 Llama, 30001 Qwen3-14B, 30002 Mistral)
+# SGLang server URLs (same as culturalbench: 30000 Llama, 30001 Qwen3-14B, 30002 Gemma-3-12B default)
 SGLANG_BASE_URL_LLAMA = "http://34.126.87.212:30000/v1"
 SGLANG_BASE_URL_QWEN3_14B = "http://34.126.87.212:30001/v1"
-SGLANG_BASE_URL_MISTRAL = "http://34.126.87.212:30002/v1"
+SGLANG_BASE_URL_GEMMA3_12B = "http://34.126.87.212:30002/v1"
 
 def _strip_think_block(content):
     if not content or not isinstance(content, str):
@@ -275,8 +277,12 @@ def get_sglang_response(
             'qwen3.5' in model_name.lower()
             or '35b-a3b' in model_name.lower()
             or 'mistral-3-14b-instruct' in model_name.lower()
+            or 'qwen3-0.6b' in model_name.lower()
+            or 'qwen3-0.6' in model_name.lower()
+            or 'gemma-3-12b' in model_name.lower()
+            or 'google/gemma-3-12b-it' in model_name.lower()
         ):
-            base_url = SGLANG_BASE_URL_MISTRAL
+            base_url = SGLANG_BASE_URL_GEMMA3_12B
         elif 'qwen3-14b' in model_name.lower():
             base_url = SGLANG_BASE_URL_QWEN3_14B
         else:
@@ -956,8 +962,12 @@ def get_model_response(model_name,prompt,model,tokenizer,temperature,top_p,gpt_a
         'qwen3.5' in model_name.lower()
         or '35b-a3b' in model_name.lower()
         or 'mistral-3-14b-instruct' in model_name.lower()
+        or 'qwen3-0.6b' in model_name.lower()
+        or 'qwen3-0.6' in model_name.lower()
+        or 'gemma-3-12b' in model_name.lower()
+        or 'google/gemma-3-12b-it' in model_name.lower()
     ):
-        response = get_sglang_response(prompt,model_name=MODEL_PATHS.get(model_name, model_name),temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max,base_url=SGLANG_BASE_URL_MISTRAL)
+        response = get_sglang_response(prompt,model_name=MODEL_PATHS.get(model_name, model_name),temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max,base_url=SGLANG_BASE_URL_GEMMA3_12B)
     elif 'qwen3-14b' in model_name:
         response = get_sglang_response(prompt,model_name=MODEL_PATHS[model_name],temperature=temperature,top_p=top_p,system_message=system_message,max_tokens=_max,base_url=SGLANG_BASE_URL_QWEN3_14B)
     elif 'Qwen' in model_name:

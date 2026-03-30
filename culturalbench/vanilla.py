@@ -152,7 +152,7 @@ if __name__ == "__main__":
         "--model",
         type=str,
         required=False,
-        default="mistral-3-14b-instruct-2512",
+        default="google/gemma-3-12b-it",
     )
     parser.add_argument("--difficulty", type=str, choices=["easy", "hard", "Easy", "Hard", "both"],
                         default="both", help="Difficulty: easy, hard, or both (default: both)")

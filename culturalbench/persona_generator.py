@@ -16,12 +16,22 @@ try:
 except ImportError:
     googletrans = None  # only needed for e2l/l2e translation modes
 from langdetect import detect
+from langdetect.lang_detect_exception import LangDetectException
 import json
 import json_repair
 
 def is_english(text):
     """Check if text is in English."""
-    return detect(text) == "en"
+    if text is None:
+        return False
+    s = str(text).strip()
+    if not s:
+        return False
+    try:
+        return detect(s) == "en"
+    except LangDetectException:
+        # langdetect raises on strings without detectable language features (e.g. ".", "").
+        return False
 
 async def translate_text_chunk(translator, text, language, max_retries=3):
     """Translate a single chunk of text with retry logic."""
@@ -310,14 +320,11 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
     ]
 
     add_input_tokens(difficulty, mode, chat_input)
-    max_tokens_kw = {}
-    if difficulty == "Hard" and llm_utils.MODEL_NAME == "Qwen/Qwen3.5-35B-A3B":
-        max_tokens_kw["max_tokens"] = PERSONA_REFINE_MAX_TOKENS_QWEN35_HARD
     attempts = 3
     while attempts > 0:
-        # _ is thinking content (not relevant)
+        # _ is thinking content (not relevant); max_tokens=None omits server-side cap (see llm_utils).
         _, response = await async_generate(
-            llm_instance, chat_input, use_steering=False, **max_tokens_kw
+            llm_instance, chat_input, use_steering=False, max_tokens=None
         )
         # sanitize json response
         try:

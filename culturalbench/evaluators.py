@@ -1,13 +1,20 @@
 """Evaluation functions for initial persona generation and testing."""
 
 import asyncio
-import json
 import os
 from datasets import load_dataset
 from tqdm.auto import tqdm
 from persona_generator import generate_persona_description, cap
 from tools.utils import country_to_language
-from tools.llm_utils import get_llm, generate_text_funcs, async_generate, MISTRAL_SGLANG_MODEL_ID, MAX_CONCURRENT
+from tools.llm_utils import (
+    get_llm,
+    generate_text_funcs,
+    async_generate,
+    GEMMA3_12B_SGLANG_MODEL_ID,
+    LEGACY_QWEN3_06B_SGLANG_MODEL_ID,
+    LEGACY_MISTRAL_SGLANG_MODEL_ID,
+    MAX_CONCURRENT,
+)
 from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy
 import json_repair
@@ -83,9 +90,10 @@ async def _process_hard_set(i, ds, mode, difficulty, sem):
                     "explanation for your answer.\n"
                     "Respond in valid JSON format with two keys: \n"
                     f"\"correct\" (either \"true\" or \"false\") and "
-                    f"\"reasoning\" (a short explanation in {language}). \n"
+                    f"\"reasoning\" (a short, brief explanation in {language}). \n"
                     "Example format: {\"correct\": \"{true/false}\", \"reasoning\": \"{reasoning}\"}\n"
                     f"IMPORTANT: The reasoning must be in {language}.\n"
+                    f"IMPORTANT: DO NOT output any other text than the JSON response.\n"
                     f"Question: {prompt_question}\n"
                     f"Answer: {prompt_option}"
                 )}
@@ -93,7 +101,9 @@ async def _process_hard_set(i, ds, mode, difficulty, sem):
 
             add_input_tokens(difficulty, mode, chat_input)
             llm_instance = get_llm()
+            print("*" * 100)
             thinking_content, response = await async_generate(llm_instance, chat_input, enable_thinking_bool=False)
+            print("*" * 100)
             out_text = (thinking_content or "") + "\n" + (response or "")
             add_output_tokens(difficulty, mode, out_text)
 
@@ -269,20 +279,30 @@ async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
     return data, correct, total
 
 
-async def run_initial_eval(difficulty, mode, custom=None):
+async def run_initial_eval(difficulty, mode, custom=None, max_questions=None):
     """Run initial evaluation (i1) for the given difficulty.
 
     Args:
         difficulty: "Easy" or "Hard"
         mode: Mode (eng, ling, l2e, or e2l)
         custom: Optional custom suffix to append to database path
+        max_questions: If set, only the first N questions are evaluated. For Hard mode, one
+            "question" is a full T/F set (4 rows in the dataset).
 
     Returns:
         Tuple of (accuracy, db_path)
     """
     print(f"Loading CulturalBench dataset ({difficulty})...")
     ds = load_dataset("kellycyy/CulturalBench", f"CulturalBench-{difficulty}", split="test")
-    print(f"Dataset loaded ({len(ds)} examples). Starting evaluation...")
+    if max_questions is not None and max_questions > 0:
+        if difficulty == "Hard":
+            n_rows = min(max_questions * 4, len(ds))
+        else:
+            n_rows = min(max_questions, len(ds))
+        ds = ds.select(range(n_rows))
+        print(f"Subset: first {max_questions} question(s) ({len(ds)} rows). Starting evaluation...")
+    else:
+        print(f"Dataset loaded ({len(ds)} examples). Starting evaluation...")
 
     if difficulty == "Hard":
         data, correct, total = await evaluate_hard_initial(ds, mode, difficulty)
@@ -296,7 +316,9 @@ async def run_initial_eval(difficulty, mode, custom=None):
         "Qwen/Qwen3-4B": "qwen3_4b",
         "meta-llama/Meta-Llama-3-8B-Instruct": "llama3_8b",
         "Qwen/Qwen3-14B": "qwen3_14b",
-        MISTRAL_SGLANG_MODEL_ID: "mistral3_14b",
+        GEMMA3_12B_SGLANG_MODEL_ID: "gemma3_12b",
+        LEGACY_QWEN3_06B_SGLANG_MODEL_ID: "gemma3_12b",
+        LEGACY_MISTRAL_SGLANG_MODEL_ID: "gemma3_12b",
         "Qwen/Qwen3.5-35B-A3B": "qwen3.5_35b",
         "zai-org/GLM-4-9B-0414": "glm4_9b",
     }

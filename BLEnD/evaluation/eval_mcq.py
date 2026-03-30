@@ -22,7 +22,8 @@ _MC_MODEL_TO_FOLDER_FALLBACK = {
     "Qwen/Qwen3-32B": "qwen3-32b",
     "qwen3.5-35b": "qwen3.5-35b",
     "Qwen/Qwen3.5-35B-A3B": "qwen3.5-35b",
-    "mistral-3-14b-instruct-2512": "mistral-3-14b-instruct-2512",
+    "google/gemma-3-12b-it": "gemma-3-12b-it",
+    "mistral-3-14b-instruct-2512": "gemma-3-12b-it",
 }
 try:
     from evaluation_utils import MC_MODEL_TO_FOLDER as _MC_FROM_EU

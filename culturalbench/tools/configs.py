@@ -43,12 +43,29 @@ self_refine_prompt_easy = (
     "6. **CRITICAL:** The revised persona must NOT explicitly state the correct answer, the option letter, or the specific text of the options. It must not be biased toward a specific choice. Instead, focus on defining a specific cultural identity, region, or profession that would inherently know the answer."
 )
 
+# self_refine_prompt_hard = (
+#     "You are an expert at designing culturally informed personas to improve model performance on multiple-choice or true/false questions.\n\n"
+#     "{iterations_description}\n\n"
+#     "Your task is to improve upon the given persona {feedback_tip}. The goal is to create a persona with the necessary cultural background or domain expertise to evaluate **all possible options** within the question's topic.\n\n"
+#     "Respond in valid JSON format with two keys:\n\n"
+#     "\"reasoning\": \"[Chain-of-Thought goes here. Explain the broader category of the question (e.g., 'UK Sports Culture' rather than 'Cricket') and why a persona with broad expertise in that category is better suited to weigh multiple options than a narrowly focused one.]\",\n"
+#     "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
+#     "IMPORTANT:\n\n"
+#     "1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.\n"
+#     "2. The content of the \"revised_persona\" key must contain only the persona description — no extra explanations, formatting, or translations.\n"
+#     "3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n"
+#     "4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n"
+#     "5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n"
+#     "6. **SCOPE CONSTRAINT**: The persona must be an expert in the **broad topic** (e.g., 'British Sports History'), NOT a specialist in one specific entity (e.g., 'Cricket Scholar') unless the question explicitly asks for a specialist. The persona must be capable of weighing competing answers fairly.\n"
+#     "7. **ANTI-BIAS**: Do not include specific preferences or obsessions in the persona that would blindly bias the model toward one answer (e.g., do not say 'You love Cricket above all else'). Instead, describe a persona with deep knowledge of the *entire landscape* of the topic."
+# )
+
 self_refine_prompt_hard = (
     "You are an expert at designing culturally informed personas to improve model performance on multiple-choice or true/false questions.\n\n"
     "{iterations_description}\n\n"
-    "Your task is to improve upon the given persona {feedback_tip}. The goal is to create a persona with the necessary cultural background or domain expertise to evaluate **all possible options** within the question's topic.\n\n"
+    "Your task is to improve upon the given persona by revising the persona such that it possesses the necessary cultural background, lived experience, or domain expertise to naturally derive the correct answer.\n\n"
     "Respond in valid JSON format with two keys:\n\n"
-    "\"reasoning\": \"[Chain-of-Thought goes here. Explain the broader category of the question (e.g., 'UK Sports Culture' rather than 'Cricket') and why a persona with broad expertise in that category is better suited to weigh multiple options than a narrowly focused one.]\",\n"
+    "\"reasoning\": \"[Chain-of-Thought goes here, explaining why the new persona is effective and how it addresses the previous model's failure based on the true/false responses. This must be a detailed and concise step-by-step analysis.]\",\n"
     "\"revised_persona\": \"[Revised persona description goes here.]\"\n\n"
     "IMPORTANT:\n\n"
     "1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.\n"
@@ -56,8 +73,6 @@ self_refine_prompt_hard = (
     "3. The \"revised_persona\" content must always start with {second_person_pronoun}, followed by the persona description.\n"
     "4. The \"revised_persona\" **must be written entirely in {language}**, with no words, sentences, or transliterations from any other language.\n"
     "5. If {language} is not English, the model must not include any English words, punctuation conventions, or idioms.\n"
-    "6. **SCOPE CONSTRAINT**: The persona must be an expert in the **broad topic** (e.g., 'British Sports History'), NOT a specialist in one specific entity (e.g., 'Cricket Scholar') unless the question explicitly asks for a specialist. The persona must be capable of weighing competing answers fairly.\n"
-    "7. **ANTI-BIAS**: Do not include specific preferences or obsessions in the persona that would blindly bias the model toward one answer (e.g., do not say 'You love Cricket above all else'). Instead, describe a persona with deep knowledge of the *entire landscape* of the topic."
 )
 
 PERSONA_REFINE_MAX_TOKENS_QWEN35_HARD = 256 

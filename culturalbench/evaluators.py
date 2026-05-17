@@ -101,9 +101,7 @@ async def _process_hard_set(i, ds, mode, difficulty, sem):
 
             add_input_tokens(difficulty, mode, chat_input)
             llm_instance = get_llm()
-            print("*" * 100)
             thinking_content, response = await async_generate(llm_instance, chat_input, enable_thinking_bool=False)
-            print("*" * 100)
             out_text = (thinking_content or "") + "\n" + (response or "")
             add_output_tokens(difficulty, mode, out_text)
 

@@ -17,7 +17,7 @@ TEMPERATURE = 0.0
 SGLANG_CHAT_MAX_TOKENS = 1024
 
 MAX_CONCURRENT = 1  # 1 = serial; >1 for API/SGLang models
-LOCAL_MODELS = {"Qwen/Qwen3-4B"}  # models that must run serially (GPU-bound)
+LOCAL_MODELS = set()  # HF models loaded in-process (GPU-bound); SGLang models are not local
 
 STEERING_COEFFICIENT = None
 STEERING_MODEL = "Qwen/Qwen3-32B"  
@@ -30,7 +30,6 @@ STEERING_AXIS_FILENAMES = {
 
 # Global LLM instance
 llm = None
-_qwen3_4b_tokenizer = None
 
 # Lazy-loaded steering model + Assistant Axis (only when STEERING_COEFFICIENT is set)
 _steering_model = None
@@ -61,51 +60,6 @@ def _get_external_feedback_sync(difficulty, question, persona, model_answer, fee
 async def get_external_feedback(difficulty, question, persona, model_answer, feedback_language=None):
     return await asyncio.to_thread(_get_external_feedback_sync, difficulty, question, persona, model_answer, feedback_language)
 
-def qwen3_4b_generate_thinking(llm_instance, messages, enable_thinking_bool=False, **kwargs):
-    """Generate thinking and content from Qwen3"""
-    global _qwen3_4b_tokenizer
-    if _qwen3_4b_tokenizer is None:
-        _qwen3_4b_tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-4B")
-    tokenizer = _qwen3_4b_tokenizer
-    text = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True, 
-        enable_thinking=enable_thinking_bool
-    )
-    model_inputs = tokenizer([text], return_tensors="pt").to(llm_instance.device)
-    
-    do_sample_bool = True if TEMPERATURE > 0.0 else False
-
-    # conduct text completion
-    generated_ids = llm_instance.generate(
-        **model_inputs,
-        max_new_tokens=2048,  # Reduced from 32768 to prevent OOM
-        temperature=TEMPERATURE,
-        top_p=0.95,
-        do_sample=do_sample_bool,
-    )
-    output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
-
-    # parsing thinking content
-    try:
-        # rindex finding 151668 (</think>)
-        index = len(output_ids) - output_ids[::-1].index(151668)
-    except ValueError:
-        index = 0
-    
-    thinking_decoded = tokenizer.decode(output_ids[:index], skip_special_tokens=True).strip("\n")
-    # Only use text inside <think> and </think> tags, if present
-    import re
-    think_match = re.search(r"<think>(.*?)</think>", thinking_decoded, re.DOTALL)
-    thinking_content = think_match.group(1).strip() if think_match else ""
-    content = tokenizer.decode(output_ids[index:], skip_special_tokens=True).strip("\n")
-
-    # Clear GPU cache after generation to free memory
-    if torch.cuda.is_available():
-        torch.cuda.empty_cache()
-    
-    return thinking_content, content
 
 def llama_3_8b_instruct_generate(
     llm_instance, messages, max_tokens=SGLANG_CHAT_MAX_TOKENS, enable_thinking_bool=False, **kwargs
@@ -216,9 +170,6 @@ def qwen_3_sglang_generate(
     thinking_content = None
     content = None
     api_messages = _normalize_messages_text_parts(messages, model)
-    print("$" * 100)
-    print(api_messages)
-    print("$" * 100)
     for n_try in range(10):
         try:
             time.sleep(0.5)
@@ -369,8 +320,9 @@ def _steering_generate(llm_instance, messages, max_tokens=8192, enable_thinking_
 _gemma3_12b_sglang = partial(qwen_3_sglang_generate, model=GEMMA3_12B_SGLANG_API_MODEL)
 _qwen35_sglang = partial(qwen_3_sglang_generate, model="Qwen/Qwen3.5-35B-A3B")
 _glm4_sglang = partial(qwen_3_sglang_generate, model="zai-org/GLM-4-9B-0414")
+_qwen3_4b_sglang = partial(qwen_3_sglang_generate, model="Qwen/Qwen3-4B")
 generate_text_funcs = {
-   "Qwen/Qwen3-4B": qwen3_4b_generate_thinking,
+   "Qwen/Qwen3-4B": _qwen3_4b_sglang,
    "meta-llama/Meta-Llama-3-8B-Instruct": llama_3_8b_instruct_generate,
    "Qwen/Qwen3-14B": partial(qwen_3_sglang_generate, model="Qwen/Qwen3-14B"),
    GEMMA3_12B_SGLANG_MODEL_ID: _gemma3_12b_sglang,
@@ -398,6 +350,7 @@ def get_llm():
         return model
     if MODEL_NAME in (
         "meta-llama/Meta-Llama-3-8B-Instruct",
+        "Qwen/Qwen3-4B",
         "Qwen/Qwen3-14B",
         GEMMA3_12B_SGLANG_MODEL_ID,
         LEGACY_QWEN3_06B_SGLANG_MODEL_ID,
@@ -406,18 +359,6 @@ def get_llm():
         "zai-org/GLM-4-9B-0414",
     ):
         return None
-    if llm is None:
-        if MODEL_NAME == "Qwen/Qwen3-4B":
-            llm = AutoModelForCausalLM.from_pretrained(
-                MODEL_NAME,
-                torch_dtype="auto",
-                device_map="auto",
-                low_cpu_mem_usage=True,
-                use_cache=True,
-            )
-            llm.eval()
-            if torch.cuda.is_available():
-                torch.cuda.empty_cache()
     return llm
 
 

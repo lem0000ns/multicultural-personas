@@ -8,6 +8,7 @@ from tools.utils import country_to_language
 from tools.llm_utils import get_llm, generate_text_funcs, async_generate, get_external_feedback
 from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy, load_previous_iteration
+from tools.memory import get_memory_store
 from token_counter import add_input_tokens, add_output_tokens
 import json_repair
 
@@ -53,7 +54,7 @@ def append_to_db(db_path, new_data, correct, total, iteration, difficulty, mode)
     return accuracy
 
 
-async def _process_easy_iter_one(i, item, mode, cur_iteration, is_translation_mode, external, sem):
+async def _process_easy_iter_one(i, item, mode, cur_iteration, is_translation_mode, external, sem, memory_store=None):
     """Process a single Easy-mode question in an iteration. Returns (index, base_data, is_correct) or None."""
     async with sem:
         try:
@@ -82,8 +83,24 @@ async def _process_easy_iter_one(i, item, mode, cur_iteration, is_translation_mo
                     persona_for_feedback = old_persona
                 feedback = await get_external_feedback("Easy", item["question"], persona_for_feedback, prev_answers, feedback_language=feedback_language)
 
+            long_term_memories = None
+            if memory_store and cur_iteration >= 2:
+                long_term_memories = await memory_store.retrieve(
+                    item["question"],
+                    item["country"],
+                    current_iteration=cur_iteration,
+                    options=item.get("options") or {},
+                    question_index=i,
+                )
+
             pretranslated, refine_response = await generate_new_persona(
-                "Easy", item["question"], previous_personas_data, mode, item["country"], feedback,
+                "Easy",
+                item["question"],
+                previous_personas_data,
+                mode,
+                item["country"],
+                feedback,
+                long_term_memories=long_term_memories,
             )
             if refine_response is None and is_translation_mode:
                 return None
@@ -176,18 +193,36 @@ async def _process_easy_iter_one(i, item, mode, cur_iteration, is_translation_mo
             return None
 
 
-async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, external=False):
+async def run_easy_iterations(
+    mode,
+    num_iterations,
+    db_path,
+    start_iteration=2,
+    external=False,
+    use_memory=True,
+    debug_memory=False,
+):
     """Run iterations for Easy difficulty."""
     accuracies = []
     is_translation_mode = "e2l" in mode or "l2e" in mode
+    memory_store = None
+    if use_memory and mode == "eng":
+        memory_store = get_memory_store(
+            db_path, "Easy", mode, enabled=True, debug_retrieval=debug_memory
+        )
+        if debug_memory:
+            print("Memory retrieval debug logging enabled (per-question)", flush=True)
+        await memory_store.sync_from_sqlite_async()
 
     for cur_iteration in range(start_iteration, num_iterations + 1):
-        data = load_previous_iteration(db_path, cur_iteration)
-        print(f"Currently running iteration {cur_iteration}")
+        data = load_previous_iteration(db_path, cur_iteration, "Easy", mode)
+        print(f"Currently running iteration {cur_iteration}", flush=True)
         sem = asyncio.Semaphore(llm_utils.MAX_CONCURRENT)
 
         tasks = [
-            _process_easy_iter_one(i, item, mode, cur_iteration, is_translation_mode, external, sem)
+            _process_easy_iter_one(
+                i, item, mode, cur_iteration, is_translation_mode, external, sem, memory_store
+            )
             for i, item in enumerate(data)
         ]
         results = []
@@ -206,12 +241,14 @@ async def run_easy_iterations(mode, num_iterations, db_path, start_iteration=2, 
             total += 1
 
         accuracy = append_to_db(db_path, new_data, correct, total, cur_iteration, "Easy", mode)
+        if memory_store:
+            await memory_store.sync_from_sqlite_async()
         accuracies.append(accuracy)
 
     return accuracies
 
 
-async def _process_hard_iter_set(i, data, mode, cur_iteration, is_translation_mode, external, sem):
+async def _process_hard_iter_set(i, data, mode, cur_iteration, is_translation_mode, external, sem, memory_store=None):
     """Process a single Hard-mode question set (4 sub-questions) in an iteration. Returns (set_data, is_correct) or None."""
     async with sem:
         prompt_question = data[i]["question"]
@@ -241,8 +278,25 @@ async def _process_hard_iter_set(i, data, mode, cur_iteration, is_translation_mo
                     persona_for_feedback = old_persona
                 feedback = await get_external_feedback("Hard", prompt_question, persona_for_feedback, None, feedback_language=feedback_language)
 
+            long_term_memories = None
+            if memory_store and cur_iteration >= 2:
+                prompt_options = [data[i + j]["prompt_option"] for j in range(4)]
+                long_term_memories = await memory_store.retrieve(
+                    prompt_question,
+                    data[i]["country"],
+                    current_iteration=cur_iteration,
+                    prompt_options=prompt_options,
+                    question_index=i // 4,
+                )
+
             pretranslated, refine_response = await generate_new_persona(
-                "Hard", prompt_question, previous_personas_data, mode, data[i]["country"], feedback,
+                "Hard",
+                prompt_question,
+                previous_personas_data,
+                mode,
+                data[i]["country"],
+                feedback,
+                long_term_memories=long_term_memories,
             )
             if refine_response is None and is_translation_mode:
                 return None
@@ -337,19 +391,37 @@ async def _process_hard_iter_set(i, data, mode, cur_iteration, is_translation_mo
         return (set_data, isCorrect)
 
 
-async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, external=False):
+async def run_hard_iterations(
+    mode,
+    num_iterations,
+    db_path,
+    start_iteration=2,
+    external=False,
+    use_memory=True,
+    debug_memory=False,
+):
     """Run iterations for Hard difficulty."""
     accuracies = []
     is_translation_mode = "e2l" in mode or "l2e" in mode
+    memory_store = None
+    if use_memory and mode == "eng":
+        memory_store = get_memory_store(
+            db_path, "Hard", mode, enabled=True, debug_retrieval=debug_memory
+        )
+        if debug_memory:
+            print("Memory retrieval debug logging enabled (per-question)", flush=True)
+        await memory_store.sync_from_sqlite_async()
 
     for cur_iteration in range(start_iteration, num_iterations + 1):
-        data = load_previous_iteration(db_path, cur_iteration)
-        print(f"Currently running iteration {cur_iteration} (Hard)")
+        data = load_previous_iteration(db_path, cur_iteration, "Hard", mode)
+        print(f"Currently running iteration {cur_iteration} (Hard)", flush=True)
         sem = asyncio.Semaphore(llm_utils.MAX_CONCURRENT)
         set_indices = list(range(0, len(data), 4))
 
         tasks = [
-            _process_hard_iter_set(i, data, mode, cur_iteration, is_translation_mode, external, sem)
+            _process_hard_iter_set(
+                i, data, mode, cur_iteration, is_translation_mode, external, sem, memory_store
+            )
             for i in set_indices
         ]
         results = []
@@ -368,14 +440,41 @@ async def run_hard_iterations(mode, num_iterations, db_path, start_iteration=2, 
             total += 1
 
         accuracy = append_to_db(db_path, new_data, correct, total, cur_iteration, "Hard", mode)
+        if memory_store:
+            await memory_store.sync_from_sqlite_async()
         accuracies.append(accuracy)
 
     return accuracies
 
 
-async def run_iterations(mode, num_iterations, difficulty, db_path, start_iteration=2, external=False):
+async def run_iterations(
+    mode,
+    num_iterations,
+    difficulty,
+    db_path,
+    start_iteration=2,
+    external=False,
+    use_memory=True,
+    debug_memory=False,
+):
     """Run iterations starting from iteration 2."""
     if difficulty == "Easy":
-        return await run_easy_iterations(mode, num_iterations, db_path, start_iteration, external)
+        return await run_easy_iterations(
+            mode,
+            num_iterations,
+            db_path,
+            start_iteration,
+            external,
+            use_memory,
+            debug_memory,
+        )
     else:
-        return await run_hard_iterations(mode, num_iterations, db_path, start_iteration, external)
+        return await run_hard_iterations(
+            mode,
+            num_iterations,
+            db_path,
+            start_iteration,
+            external,
+            use_memory,
+            debug_memory,
+        )

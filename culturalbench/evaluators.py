@@ -17,6 +17,8 @@ from tools.llm_utils import (
 )
 from tools import llm_utils
 from tools.db.db_utils import save_results, save_accuracy
+from tools.memory import get_memory_store
+from tools.response_utils import parse_easy_answer, parse_hard_answer
 import json_repair
 from token_counter import add_input_tokens, add_output_tokens, get_model_folder
 
@@ -52,6 +54,7 @@ async def _process_hard_set(i, ds, mode, difficulty, sem):
         cur_set_data = []
         persona_description = None
         pretranslated = None
+        persona_refine_reasoning = None
 
         for j in range(4):
             cur_row = ds[i + j]
@@ -67,7 +70,7 @@ async def _process_hard_set(i, ds, mode, difficulty, sem):
 
             # use same persona description for same question (4 at a time)
             if j == 0:
-                pretranslated, translated = await generate_persona_description(
+                pretranslated, translated, persona_refine_reasoning = await generate_persona_description(
                     prompt_question, country, mode, difficulty,
                 )
                 if "l2e" in mode or "e2l" in mode:
@@ -101,26 +104,40 @@ async def _process_hard_set(i, ds, mode, difficulty, sem):
 
             add_input_tokens(difficulty, mode, chat_input)
             llm_instance = get_llm()
-            thinking_content, response = await async_generate(llm_instance, chat_input, enable_thinking_bool=False)
-            out_text = (thinking_content or "") + "\n" + (response or "")
-            add_output_tokens(difficulty, mode, out_text)
-
-            try:
-                result = json_repair.loads(response)
-                thinks_correct = (
-                    "true"
-                    if "true" in result["correct"].lower().strip()
-                    else "false"
+            parsed_tf = None
+            thinking_content = None
+            response = ""
+            for attempt in range(3):
+                thinking_content, response = await async_generate(
+                    llm_instance, chat_input, enable_thinking_bool=False
                 )
-                reasoning = result["reasoning"].strip()
-            except Exception as e:
-                print(f"Error parsing response for set {i//4} option {j}: {response} {e}")
+                parsed_tf = parse_hard_answer(response)
+                if parsed_tf:
+                    out_text = (thinking_content or "") + "\n" + (response or "")
+                    add_output_tokens(difficulty, mode, out_text)
+                    break
+                preview = (response or "")[:300]
+                if not (response or "").strip():
+                    print(
+                        f"Error: empty model response set {i//4} opt {j} "
+                        f"(attempt {attempt + 1}/3). Is SGLang running?"
+                    )
+                else:
+                    print(
+                        f"Error parsing T/F JSON set {i//4} opt {j} "
+                        f"(attempt {attempt + 1}/3): {preview!r}"
+                    )
+
+            if not parsed_tf:
                 return None
+
+            thinks_correct, reasoning = parsed_tf
 
             item_data = {
                 "question": prompt_question,
                 "prompt_option": prompt_option,
                 "persona_description": persona_description,
+                "refine_reasoning": persona_refine_reasoning or "",
                 "correct_answer": prompt_answer,
                 "model_answer": thinks_correct,
                 "reasoning": reasoning,
@@ -186,7 +203,7 @@ async def _process_easy_one(i, cur_row, mode, difficulty, sem):
             country is None):
             return None
 
-        pretranslated, translated = await generate_persona_description(
+        pretranslated, translated, persona_refine_reasoning = await generate_persona_description(
             prompt_question, country, mode, difficulty,
         )
         if "l2e" in mode or "e2l" in mode:
@@ -194,7 +211,7 @@ async def _process_easy_one(i, cur_row, mode, difficulty, sem):
         else:
             persona_description = pretranslated
 
-        if persona_description is None:
+        if not persona_description or not str(persona_description).strip():
             return None
 
         if "eng" in mode or "e2l" in mode:
@@ -221,37 +238,49 @@ async def _process_easy_one(i, cur_row, mode, difficulty, sem):
 
         add_input_tokens(difficulty, mode, chat_input)
         llm_instance = get_llm()
-        thinking_content, response = await async_generate(llm_instance, chat_input, enable_thinking_bool=False)
-        out_text = (thinking_content or "") + "\n" + (response or "")
-        add_output_tokens(difficulty, mode, out_text)
-        try:
-            result = json_repair.loads(response)
-            response_answer = result["answer"].upper().strip()
-            reasoning = result["reasoning"].strip()
+        parsed = None
+        thinking_content = None
+        response = ""
+        for attempt in range(3):
+            thinking_content, response = await async_generate(
+                llm_instance, chat_input, enable_thinking_bool=False
+            )
+            parsed = parse_easy_answer(response)
+            if parsed:
+                out_text = (thinking_content or "") + "\n" + (response or "")
+                add_output_tokens(difficulty, mode, out_text)
+                break
+            preview = (response or "")[:300]
+            if not (response or "").strip():
+                print(f"Error: empty model response (attempt {attempt + 1}/3). Is SGLang running on port 30002?")
+            else:
+                print(f"Error parsing answer JSON (attempt {attempt + 1}/3): {preview!r}")
 
-            options_dict = {"A": option_a, "B": option_b, "C": option_c, "D": option_d}
-
-            item_data = {
-                "question": prompt_question,
-                "options": options_dict,
-                "persona_description": persona_description,
-                "correct_answer": answer,
-                "model_answer": response_answer,
-                "reasoning": reasoning,
-                "country": country,
-                "iteration": 1
-            }
-
-            if "l2e" in mode or "e2l" in mode:
-                item_data["pretranslated_persona"] = pretranslated
-            if thinking_content is not None:
-                item_data["thinking_content"] = thinking_content
-
-            is_correct = response_answer.upper() == answer.upper()
-            return (i, item_data, is_correct)
-        except Exception:
-            print("Error parsing response: " + response)
+        if not parsed:
             return None
+
+        response_answer, reasoning = parsed
+        options_dict = {"A": option_a, "B": option_b, "C": option_c, "D": option_d}
+
+        item_data = {
+            "question": prompt_question,
+            "options": options_dict,
+            "persona_description": persona_description,
+            "refine_reasoning": persona_refine_reasoning or "",
+            "correct_answer": answer,
+            "model_answer": response_answer,
+            "reasoning": reasoning,
+            "country": country,
+            "iteration": 1
+        }
+
+        if "l2e" in mode or "e2l" in mode:
+            item_data["pretranslated_persona"] = pretranslated
+        if thinking_content is not None:
+            item_data["thinking_content"] = thinking_content
+
+        is_correct = response_answer.upper() == answer.upper()
+        return (i, item_data, is_correct)
 
 
 async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
@@ -277,7 +306,7 @@ async def evaluate_easy_initial(ds, mode, difficulty="Easy"):
     return data, correct, total
 
 
-async def run_initial_eval(difficulty, mode, custom=None, max_questions=None):
+async def run_initial_eval(difficulty, mode, custom=None, max_questions=None, use_memory=True):
     """Run initial evaluation (i1) for the given difficulty.
 
     Args:
@@ -333,5 +362,14 @@ async def run_initial_eval(difficulty, mode, custom=None, max_questions=None):
     accuracy = correct / total if total > 0 else 0
     save_accuracy(db_path, 1, difficulty, mode, accuracy, correct, total)
 
-    print(f"Initial Persona Accuracy for {difficulty}: {accuracy}")
+    if use_memory and mode == "eng":
+        print(
+            f"Building memory index (summarize + embed) for iteration 1...",
+            flush=True,
+        )
+        memory_store = get_memory_store(db_path, difficulty, mode, enabled=True)
+        n_mem = await memory_store.sync_from_sqlite_async()
+        print(f"Memory index ready: {n_mem} records.", flush=True)
+
+    print(f"Initial Persona Accuracy for {difficulty}: {accuracy}", flush=True)
     return accuracy, db_path

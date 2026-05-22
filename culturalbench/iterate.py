@@ -11,18 +11,21 @@ from token_counter import write_to_json, get_totals, reset
 import tools.llm_utils
 from tools import llm_utils
 
-def calculate_accuracy_from_db(db_path, iteration, difficulty):
+def calculate_accuracy_from_db(db_path, iteration, difficulty, mode):
     """Calculate accuracy for a given iteration from database.
     
     Args:
         db_path: Path to database file
         iteration: Iteration number
         difficulty: "Easy" or "Hard"
+        mode: Mode string (e.g. "eng", "ling")
     
     Returns:
         Accuracy value
     """
-    results = load_results(db_path, iteration=iteration)
+    results = load_results(
+        db_path, iteration=iteration, difficulty=difficulty, mode=mode
+    )
     total = len(results) if difficulty == "Easy" else len(results) / 4
     correct = 0
     
@@ -91,7 +94,21 @@ async def main():
         default=None,
         help="Evaluate only the first N questions (Easy: N rows; Hard: N T/F sets = N*4 rows). Omit for full test set.",
     )
+    parser.add_argument(
+        "--no-memory",
+        action="store_true",
+        default=False,
+        help="Disable long-term memory retrieval (enabled by default for eng mode)",
+    )
+    parser.add_argument(
+        "--debug-memory",
+        action="store_true",
+        default=False,
+        help="Print retrieved memory summaries for each question",
+    )
     args = parser.parse_args()
+    use_memory = not args.no_memory
+    debug_memory = args.debug_memory
 
     # Set concurrency (auto-downgrade for local GPU models)
     if args.max_concurrent > 1 and args.model in tools.llm_utils.LOCAL_MODELS:
@@ -121,7 +138,9 @@ async def main():
         effective_custom = f"{args.custom}_{sc_str}" if args.custom else sc_str
 
     effective_model = tools.llm_utils.MODEL_NAME
-    print(f"Config: mode={args.mode} difficulty={difficulty} model={effective_model} temperature={args.temperature} num_iterations={args.num_iterations} external={args.external} steering_coefficient={args.steering_coefficient} max_concurrent={tools.llm_utils.MAX_CONCURRENT}")
+    if args.steering_coefficient is None:
+        tools.llm_utils.verify_sglang_model(effective_model)
+    print(f"Config: mode={args.mode} difficulty={difficulty} model={effective_model} temperature={args.temperature} num_iterations={args.num_iterations} memory={use_memory} debug_memory={debug_memory} steering_coefficient={args.steering_coefficient} max_concurrent={tools.llm_utils.MAX_CONCURRENT}")
     print(f"Resume: {args.resume}")
 
     # track all accuracies
@@ -131,7 +150,7 @@ async def main():
     if not args.resume:
         print("Running initial evaluation (iteration 1)...")
         initial_accuracy, db_path = await run_initial_eval(
-            difficulty, args.mode, effective_custom, max_questions=args.max_questions
+            difficulty, args.mode, effective_custom, max_questions=args.max_questions, use_memory=use_memory
         )
         all_accuracies.append(initial_accuracy)
     # calculate initial accuracy from database (if resuming)
@@ -156,17 +175,23 @@ async def main():
         if effective_custom:
             db_path += f"_{effective_custom}"
         db_path += ".db"
-        all_accuracies.append(calculate_accuracy_from_db(db_path, 1, difficulty))
-    
+        all_accuracies.append(calculate_accuracy_from_db(db_path, 1, difficulty, args.mode))
+        if use_memory and args.mode == "eng":
+            import asyncio
+            from tools.memory import get_memory_store
+            asyncio.run(
+                get_memory_store(db_path, difficulty, args.mode, enabled=True).sync_from_sqlite_async()
+            )
+
     if args.resume:
         # read last iteration from database
         print(f"Resume: reading last iteration from database")
-        iterations = get_all_iterations(db_path)
+        iterations = get_all_iterations(db_path, difficulty=difficulty, mode=args.mode)
         last_iteration = max(iterations) if iterations else 1
         start_iteration = last_iteration + 1
         
         for i in range(2, start_iteration):
-            all_accuracies.append(calculate_accuracy_from_db(db_path, i, difficulty))
+            all_accuracies.append(calculate_accuracy_from_db(db_path, i, difficulty, args.mode))
         print(f"Calculated accuracies up to iteration {last_iteration}")
         print("Accuracies: " + str(all_accuracies))
     else:
@@ -174,7 +199,16 @@ async def main():
 
     # run additional iterations
     if args.num_iterations > 1:
-        iteration_accuracies = await run_iterations(args.mode, args.num_iterations, difficulty, db_path, start_iteration, args.external)
+        iteration_accuracies = await run_iterations(
+            args.mode,
+            args.num_iterations,
+            difficulty,
+            db_path,
+            start_iteration,
+            args.external,
+            use_memory,
+            debug_memory,
+        )
         all_accuracies.extend(iteration_accuracies)
     else:
         print("\nNo additional iterations to run (num_iterations = 1)")
@@ -185,7 +219,9 @@ async def main():
         print(summary_line)
     totals = get_totals()
     if totals:
-        iter1_results = load_results(db_path, iteration=1)
+        iter1_results = load_results(
+            db_path, iteration=1, difficulty=difficulty, mode=args.mode
+        )
         num_questions = len(iter1_results) if difficulty == "Easy" else (len(iter1_results) // 4)
         to_write = totals
         if num_questions > 0:

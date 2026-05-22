@@ -168,14 +168,21 @@ def save_accuracy(db_path: str, iteration: int, difficulty: str, mode: str,
     conn.close()
 
 
-def load_results(db_path: str, iteration: Optional[int] = None, 
-                 country: Optional[str] = None) -> list:
+def load_results(
+    db_path: str,
+    iteration: Optional[int] = None,
+    country: Optional[str] = None,
+    difficulty: Optional[str] = None,
+    mode: Optional[str] = None,
+) -> list:
     """Load results from database with optional filters.
     
     Args:
         db_path: Path to the SQLite database file
         iteration: Optional iteration number to filter by
         country: Optional country to filter by
+        difficulty: Optional difficulty filter ("Easy" or "Hard")
+        mode: Optional mode filter (e.g. "eng", "ling")
     
     Returns:
         List of dictionaries containing results
@@ -197,6 +204,14 @@ def load_results(db_path: str, iteration: Optional[int] = None,
     if country is not None:
         query += " AND country = ?"
         params.append(country)
+
+    if difficulty is not None:
+        query += " AND difficulty = ?"
+        params.append(difficulty)
+
+    if mode is not None:
+        query += " AND mode = ?"
+        params.append(mode)
     
     # Order by id to maintain insertion order (critical for Hard mode grouping)
     query += " ORDER BY id"
@@ -216,17 +231,26 @@ def load_results(db_path: str, iteration: Optional[int] = None,
     return results
 
 
-def load_previous_iteration(db_path: str, iteration: int) -> list:
+def load_previous_iteration(
+    db_path: str,
+    iteration: int,
+    difficulty: str,
+    mode: str,
+) -> list:
     """Load results from the previous iteration.
     
     Args:
         db_path: Path to the SQLite database file
         iteration: Current iteration (will load iteration-1)
+        difficulty: "Easy" or "Hard"
+        mode: Mode string (e.g. "eng", "ling")
     
     Returns:
         List of dictionaries containing results from previous iteration
     """
-    return load_results(db_path, iteration=iteration - 1)
+    return load_results(
+        db_path, iteration=iteration - 1, difficulty=difficulty, mode=mode
+    )
 
 
 def load_all_iterations_for_question(db_path: str, question: str, country: str, 
@@ -271,11 +295,17 @@ def load_all_iterations_for_question(db_path: str, question: str, country: str,
     return results
 
 
-def get_all_iterations(db_path: str) -> list:
+def get_all_iterations(
+    db_path: str,
+    difficulty: Optional[str] = None,
+    mode: Optional[str] = None,
+) -> list:
     """Get list of all iteration numbers in the database.
     
     Args:
         db_path: Path to the SQLite database file
+        difficulty: Optional difficulty filter
+        mode: Optional mode filter
     
     Returns:
         Sorted list of iteration numbers
@@ -286,7 +316,16 @@ def get_all_iterations(db_path: str) -> list:
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
-    cursor.execute("SELECT DISTINCT iteration FROM results ORDER BY iteration")
+    query = "SELECT DISTINCT iteration FROM results WHERE 1=1"
+    params = []
+    if difficulty is not None:
+        query += " AND difficulty = ?"
+        params.append(difficulty)
+    if mode is not None:
+        query += " AND mode = ?"
+        params.append(mode)
+    query += " ORDER BY iteration"
+    cursor.execute(query, params)
     iterations = [row[0] for row in cursor.fetchall()]
     
     conn.close()

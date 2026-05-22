@@ -8,6 +8,7 @@ from tools.configs import (
     self_refine_prompt_hard_qwen35,
     PERSONA_REFINE_MAX_TOKENS_QWEN35_HARD,
 )
+from tools.memory.memory_utils import format_long_term_memories
 from tools.llm_utils import get_llm, generate_text_funcs, async_generate
 from tools import llm_utils
 from token_counter import add_input_tokens, add_output_tokens
@@ -19,6 +20,15 @@ from langdetect import detect
 from langdetect.lang_detect_exception import LangDetectException
 import json
 import json_repair
+
+LONG_TERM_MEMORIES_PREAMBLE = (
+    "The following are summarized examples from similar past questions (use as inspiration only). "
+    "Each summary describes what the question was about and how the revised persona aimed to "
+    "answer it better. Before refining the persona for the current question, study these "
+    "examples and look for useful patterns (cultural framing, specificity, domain expertise). "
+    "Use any patterns you identify to inform a stronger revised persona, without copying "
+    "any example verbatim.\n\n"
+)
 
 def is_english(text):
     """Check if text is in English."""
@@ -162,19 +172,37 @@ def cap(country):
     return " ".join(country_words)
 
 
+def _parse_initial_persona_response(response, mode):
+    """Parse initial persona output. Eng returns (persona, refine_reasoning); others return (persona, None)."""
+    if mode == "eng":
+        try:
+            obj = json_repair.loads(response)
+            if isinstance(obj, dict):
+                persona = obj.get("persona") or obj.get("revised_persona") or ""
+                reasoning = obj.get("reasoning", "")
+                if persona:
+                    return persona.strip(), (reasoning or "").strip()
+        except Exception:
+            pass
+        return response.strip(), ""
+    return response, None
+
+
 async def generate_persona_description(question, country, mode, difficulty="Easy"):
     llm_instance = get_llm()
     if "eng" in mode or "e2l" in mode:
         language = "English"
     else:
         language = country_to_language[cap(country)].lower()
-    
-    # Get system prompt - call lambda for ling mode
-    if "eng" in mode or "e2l" in mode:
+
+    # Get system prompt - call lambda for ling mode; eng uses JSON persona+reasoning prompt
+    if mode == "eng":
+        system_prompt = system_prompts["eng_json"]
+    elif "e2l" in mode:
         system_prompt = system_prompts[mode]
     else:
         system_prompt = system_prompts[mode](language)
-    
+
     question_t = questions_translated[language.capitalize()]
     country_t = countries_translated[country.lower()]
     persona_description_t = persona_descriptions_translated[language.capitalize()]
@@ -191,8 +219,12 @@ async def generate_persona_description(question, country, mode, difficulty="Easy
     response = ""
     while attempts > 0:
         _, response = await async_generate(llm_instance, chat_input, use_steering=False)
-        # check if response is in correct language
-        if ("e2l" in mode or "eng" in mode) and not is_english(response):
+        if mode == "eng":
+            persona_text, _ = _parse_initial_persona_response(response, mode)
+            if persona_text and is_english(persona_text):
+                break
+            attempts -= 1
+        elif ("e2l" in mode or "eng" in mode) and not is_english(response):
             attempts -= 1
         elif ("l2e" in mode or "ling" in mode) and is_english(response):
             attempts -= 1
@@ -206,11 +238,25 @@ async def generate_persona_description(question, country, mode, difficulty="Easy
     elif "l2e" in mode:
         translated_response = await translate_text(response, language_to_code["English"], parse=False)
 
-    # outputs direct string response, no json, of persona description
-    return response, translated_response
+    if mode == "eng":
+        persona_text, refine_reasoning = _parse_initial_persona_response(response, mode)
+        if not persona_text or not persona_text.strip():
+            print("Error: failed to generate valid eng persona (empty response)")
+            return None, translated_response, None
+        return persona_text, translated_response, refine_reasoning
+
+    return response, translated_response, None
 
 
-async def generate_new_persona(difficulty, question, previous_personas_data, mode, country, feedback=None):
+async def generate_new_persona(
+    difficulty,
+    question,
+    previous_personas_data,
+    mode,
+    country,
+    feedback=None,
+    long_term_memories=None,
+):
     """Generate new persona description through self-refinement.
     
     For eng mode, generate english persona description. For ling mode, generate persona 
@@ -276,6 +322,15 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
             user_content += "\n\n" + f"{feedback_t}: " + feedback
         user_content += "\n\n"
 
+        if long_term_memories:
+            lt_block = format_long_term_memories(long_term_memories)
+            user_content = (
+                LONG_TERM_MEMORIES_PREAMBLE
+                + lt_block
+                + "\n\n---\n\nCurrent question:\n\n"
+                + user_content
+            )
+
     # Hard mode
     else:
         iterations_description = "You will be provided with a question and its corresponding persona description."
@@ -311,7 +366,16 @@ async def generate_new_persona(difficulty, question, previous_personas_data, mod
         if feedback:
             user_content += "\n\n" + f"{feedback_t}: " + feedback
         user_content += "\n\n"
-        
+
+        if long_term_memories:
+            lt_block = format_long_term_memories(long_term_memories)
+            user_content = (
+                LONG_TERM_MEMORIES_PREAMBLE
+                + lt_block
+                + "\n\n---\n\nCurrent question:\n\n"
+                + user_content
+            )
+
     chat_input = [
         {"role": "system",
         "content": self_refine_prompt},

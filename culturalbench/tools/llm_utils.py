@@ -10,7 +10,7 @@ from .configs import EXTERNAL_FEEDBACK_PROMPT_EASY, EXTERNAL_FEEDBACK_PROMPT_HAR
 
 # Configuration
 os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
-SGLANG_HOST = os.environ.get("SGLANG_HOST", "34.126.87.212")
+SGLANG_HOST = os.environ.get("SGLANG_HOST", "127.0.0.1")
 MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 TEMPERATURE = 0.0
 
@@ -194,7 +194,10 @@ def qwen_3_sglang_generate(
             print("Sleep for 10 sec, then retry...")
             time.sleep(10)
     else:
-        print("Error: Failed to generate response")
+        print(
+            f"Error: Failed to generate response from SGLang "
+            f"(model={model}, host={SGLANG_HOST}, port={_port}) after 10 retries"
+        )
 
     if content is None:
         return None, ""
@@ -321,6 +324,7 @@ _gemma3_12b_sglang = partial(qwen_3_sglang_generate, model=GEMMA3_12B_SGLANG_API
 _qwen35_sglang = partial(qwen_3_sglang_generate, model="Qwen/Qwen3.5-35B-A3B")
 _glm4_sglang = partial(qwen_3_sglang_generate, model="zai-org/GLM-4-9B-0414")
 _qwen3_4b_sglang = partial(qwen_3_sglang_generate, model="Qwen/Qwen3-4B")
+_qwen3_32b_sglang = partial(qwen_3_sglang_generate, model="Qwen/Qwen3-32B")
 generate_text_funcs = {
    "Qwen/Qwen3-4B": _qwen3_4b_sglang,
    "meta-llama/Meta-Llama-3-8B-Instruct": llama_3_8b_instruct_generate,
@@ -330,10 +334,41 @@ generate_text_funcs = {
    LEGACY_MISTRAL_SGLANG_MODEL_ID: _gemma3_12b_sglang,
    "Qwen/Qwen3.5-35B-A3B": _qwen35_sglang,
    "zai-org/GLM-4-9B-0414": _glm4_sglang,
-   "Qwen/Qwen3-32B": _steering_generate,
+   "Qwen/Qwen3-32B": _qwen3_32b_sglang,
    "google/gemma-2-27b-it": _steering_generate,
    "meta-llama/Llama-3.3-70B-Instruct": _steering_generate,
 }
+
+
+def verify_sglang_model(model_name: str | None = None) -> bool:
+    """Warn if MODEL_NAME is not in the SGLang server's /v1/models list."""
+    model_name = model_name or MODEL_NAME
+    if model_name not in generate_text_funcs:
+        return True
+    if model_name in ("google/gemma-2-27b-it", "meta-llama/Llama-3.3-70B-Instruct"):
+        return True  # steering path, not SGLang
+    _MODEL_PORTS = {"Qwen/Qwen3-14B": 30001, "zai-org/GLM-4-9B-0414": 30003}
+    port = _MODEL_PORTS.get(model_name, 30002)
+    try:
+        client = OpenAI(base_url=f"http://{SGLANG_HOST}:{port}/v1", api_key="EMPTY")
+        listed = [m.id for m in client.models.list().data]
+        if model_name not in listed:
+            print(
+                f"\n*** SGLang model mismatch (port {port}) ***\n"
+                f"  Requested: {model_name}\n"
+                f"  Served:    {listed}\n"
+                f"  Fix: use --model {listed[0]!r} or start SGLang with the requested model.\n"
+                f"  Empty responses / parse errors will occur until this is fixed.\n"
+            )
+            return False
+    except Exception as e:
+        print(
+            f"\n*** Cannot reach SGLang at {SGLANG_HOST}:{port} ***\n"
+            f"  {e}\n"
+            f"  Start the server before running iterate.py.\n"
+        )
+        return False
+    return True
 
 
 async def async_generate(llm_instance, chat_input, **kwargs):
@@ -352,6 +387,7 @@ def get_llm():
         "meta-llama/Meta-Llama-3-8B-Instruct",
         "Qwen/Qwen3-4B",
         "Qwen/Qwen3-14B",
+        "Qwen/Qwen3-32B",
         GEMMA3_12B_SGLANG_MODEL_ID,
         LEGACY_QWEN3_06B_SGLANG_MODEL_ID,
         LEGACY_MISTRAL_SGLANG_MODEL_ID,

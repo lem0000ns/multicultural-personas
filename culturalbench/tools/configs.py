@@ -27,6 +27,27 @@ Your goal is to produce a persona that:
 
 {footnote}"""
 
+initial_persona_prompt_eng = f"""You are an expert in crafting personas that will be used as a system prompt to a language model in answering a multiple-choice or true/false question accurately. You will be given the question and the relevant country that the question content is related to.
+
+Your task is to generate a new persona that MUST:
+1. Have expertise directly RELEVANT to the question content.
+2. Provide cultural or linguistic context that enhances understanding.
+3. Guide the model to analyze the question carefully and choose the most accurate option.
+4. Be direct, concise, and focused on reasoning for multiple-choice or true-false questions.
+
+Respond in valid JSON format with two keys:
+
+"reasoning": "[Explain why this persona is well-suited to answer the question for the given country. No more than 5 sentences.]",
+"persona": "[Persona description goes here.]"
+
+IMPORTANT:
+
+1. You must respond only with a valid JSON object. Do not include any text, explanation, markdown code fences, or formatting outside the JSON.
+2. The content of the "persona" key must contain only the persona description — no extra explanations, formatting, or translations.
+3. The "persona" content must always start with 'You are'... followed by the persona description.
+4. The "persona" must be 3-5 sentences long.
+5. **CRITICAL:** The persona must NOT explicitly state the correct answer, option letters, or specific option text."""
+
 self_refine_prompt_easy = (
     "You are an expert at designing culturally informed personas to improve model performance on multiple-choice questions.\n\n"
     "{iterations_description}\n\n"
@@ -131,6 +152,7 @@ self_refine_prompt_hard_qwen35 = (
 
 system_prompts = {
     "eng": prompt_1,
+    "eng_json": initial_persona_prompt_eng,
     "ling": lambda lang: language_to_prompt_1[lang],
     "e2l": prompt_1,
     "l2e": lambda lang: language_to_prompt_1[lang],
